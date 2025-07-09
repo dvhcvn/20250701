@@ -6,10 +6,34 @@
     <title>Đơn vị hành chính</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Tailwind config for custom theme
+      tailwind.config = {
+        darkMode: "media",
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                50: "#eff6ff",
+                500: "#3b82f6",
+                600: "#2563eb",
+                700: "#1d4ed8",
+              },
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body class="p-4 bg-slate-100 font-sans">
-    <div class="max-w-4xl mx-auto mt-8 p-8 bg-white rounded-2xl shadow-2xl">
-      <h1 class="text-3xl font-bold text-center text-gray-800 mb-6">
+  <body
+    class="p-4 bg-slate-100 dark:bg-gray-900 font-sans transition-colors duration-300"
+  >
+    <div
+      class="max-w-4xl mx-auto mt-8 p-8 bg-white dark:bg-gray-800 rounded-2xl shadow-2xl dark:shadow-gray-900/50 transition-all duration-300"
+    >
+      <h1
+        class="text-3xl font-bold text-center text-gray-800 dark:text-white mb-6"
+      >
         Đơn vị hành chính
       </h1>
       <div class="mb-6 flex flex-col sm:flex-row gap-4">
@@ -17,60 +41,62 @@
           type="text"
           id="addressInput"
           placeholder="Nhập địa chỉ cũ"
-          class="flex-grow border border-slate-300 px-4 py-3 rounded-lg w-full text-base transition-colors duration-200 ease-in-out focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-500/20 disabled:opacity-50 disabled:cursor-not-allowed"
+          class="flex-grow border border-slate-300 dark:border-gray-600 px-4 py-3 rounded-lg w-full text-base bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 transition-all duration-200 ease-in-out focus:outline-none focus:border-primary-500 focus:ring-4 focus:ring-primary-500/20 disabled:opacity-50 disabled:cursor-not-allowed"
         />
         <button
           id="searchButton"
-          class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold cursor-pointer transition-all duration-200 ease-in-out hover:-translate-y-px shadow-lg shadow-blue-500/25 min-w-[120px] flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:transform-none"
+          class="bg-primary-500 hover:bg-primary-600 dark:bg-primary-600 dark:hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-semibold cursor-pointer transition-all duration-200 ease-in-out hover:-translate-y-px shadow-lg shadow-primary-500/25 dark:shadow-primary-600/25 min-w-[120px] flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:transform-none"
         >
           <span id="buttonText">Tìm kiếm</span>
           <div
             id="loadingSpinner"
-            class="border-4 border-black/10 border-l-blue-500 rounded-full w-6 h-6 animate-spin hidden"
+            class="border-4 border-white/20 border-l-white rounded-full w-6 h-6 animate-spin hidden"
           ></div>
         </button>
       </div>
       <div class="mb-6">
-        <h3 class="text-lg font-semibold text-gray-700 mb-2">Xem nhanh:</h3>
+        <h3 class="text-lg font-semibold text-gray-700 dark:text-gray-300 mb-2">
+          Xem nhanh:
+        </h3>
         <div id="exampleButtons" class="flex flex-wrap gap-2">
           <button
-            class="bg-slate-200 hover:bg-slate-300 text-slate-600 px-4 py-2 rounded-lg font-medium cursor-pointer transition-colors duration-200 ease-in-out whitespace-nowrap"
+            class="bg-slate-200 hover:bg-slate-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-slate-600 dark:text-gray-300 px-4 py-2 rounded-lg font-medium cursor-pointer transition-colors duration-200 ease-in-out whitespace-nowrap"
             data-address="Trung Tự, Đống Đa, Hà Nội"
           >
             Trung Tự, Đống Đa, Hà Nội
           </button>
           <button
-            class="bg-slate-200 hover:bg-slate-300 text-slate-600 px-4 py-2 rounded-lg font-medium cursor-pointer transition-colors duration-200 ease-in-out whitespace-nowrap"
+            class="bg-slate-200 hover:bg-slate-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-slate-600 dark:text-gray-300 px-4 py-2 rounded-lg font-medium cursor-pointer transition-colors duration-200 ease-in-out whitespace-nowrap"
             data-address="Lộc Thọ, Nha Trang"
           >
             Lộc Thọ, Nha Trang
           </button>
           <button
-            class="bg-slate-200 hover:bg-slate-300 text-slate-600 px-4 py-2 rounded-lg font-medium cursor-pointer transition-colors duration-200 ease-in-out whitespace-nowrap"
+            class="bg-slate-200 hover:bg-slate-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-slate-600 dark:text-gray-300 px-4 py-2 rounded-lg font-medium cursor-pointer transition-colors duration-200 ease-in-out whitespace-nowrap"
             data-address="Tân Phong, Quận 7"
           >
             Tân Phong, Quận 7
           </button>
           <button
-            class="bg-slate-200 hover:bg-slate-300 text-slate-600 px-4 py-2 rounded-lg font-medium cursor-pointer transition-colors duration-200 ease-in-out whitespace-nowrap"
+            class="bg-slate-200 hover:bg-slate-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-slate-600 dark:text-gray-300 px-4 py-2 rounded-lg font-medium cursor-pointer transition-colors duration-200 ease-in-out whitespace-nowrap"
             data-address="Đạo Lý, Hà Nam"
           >
             Đạo Lý, Hà Nam
           </button>
           <button
-            class="bg-slate-200 hover:bg-slate-300 text-slate-600 px-4 py-2 rounded-lg font-medium cursor-pointer transition-colors duration-200 ease-in-out whitespace-nowrap"
+            class="bg-slate-200 hover:bg-slate-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-slate-600 dark:text-gray-300 px-4 py-2 rounded-lg font-medium cursor-pointer transition-colors duration-200 ease-in-out whitespace-nowrap"
             data-address="Cửa Nam, Nam Định"
           >
             Cửa Nam, Nam Định
           </button>
           <button
-            class="bg-slate-200 hover:bg-slate-300 text-slate-600 px-4 py-2 rounded-lg font-medium cursor-pointer transition-colors duration-200 ease-in-out whitespace-nowrap"
+            class="bg-slate-200 hover:bg-slate-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-slate-600 dark:text-gray-300 px-4 py-2 rounded-lg font-medium cursor-pointer transition-colors duration-200 ease-in-out whitespace-nowrap"
             data-address="Cửa Nam, Vinh"
           >
             Cửa Nam, Vinh
           </button>
           <button
-            class="bg-slate-200 hover:bg-slate-300 text-slate-600 px-4 py-2 rounded-lg font-medium cursor-pointer transition-colors duration-200 ease-in-out whitespace-nowrap"
+            class="bg-slate-200 hover:bg-slate-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-slate-600 dark:text-gray-300 px-4 py-2 rounded-lg font-medium cursor-pointer transition-colors duration-200 ease-in-out whitespace-nowrap"
             data-address="Cửa Nam, HN"
           >
             Cửa Nam, HN
@@ -79,7 +105,10 @@
       </div>
       <div id="results" class="space-y-4">
         <!-- Results will be displayed here -->
-        <p class="text-center text-gray-500" id="initialMessage">
+        <p
+          class="text-center text-gray-500 dark:text-gray-400"
+          id="initialMessage"
+        >
           Nhập địa chỉ và nhấn 'Tìm kiếm' để xem kết quả.
         </p>
       </div>
@@ -115,10 +144,12 @@
        * @param {string} type The type of message (e.g., 'info', 'error').
        */
       function displayMessage(message, type = "info") {
+        const textColor =
+          type === "error"
+            ? "text-red-500 dark:text-red-400"
+            : "text-gray-500 dark:text-gray-400";
         resultsDiv.innerHTML = `
-                <p class="text-center text-lg ${
-                  type === "error" ? "text-red-500" : "text-gray-500"
-                }">
+                <p class="text-center text-lg ${textColor}">
                     ${message}
                 </p>
             `;
@@ -139,9 +170,9 @@
         // Create a card for the original address
         const originalCard = document.createElement("div");
         originalCard.className =
-          "bg-slate-50 border border-slate-200 rounded-xl p-6 mb-4 shadow-md bg-blue-50";
+          "bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-xl p-6 mb-4 shadow-md";
         originalCard.innerHTML = `
-                <h3 class="text-xl font-semibold text-gray-800 mb-2">${addressText}</h3>
+                <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">${addressText}</h3>
             `;
         resultsDiv.appendChild(originalCard);
         // Check if there are actual results in the 'result' array
@@ -149,22 +180,22 @@
           apiResponseData.result.forEach((res) => {
             const resultCard = document.createElement("div");
             resultCard.className =
-              "bg-slate-50 border border-slate-200 rounded-xl p-6 mb-4 shadow-md";
+              "bg-slate-50 dark:bg-gray-700 border border-slate-200 dark:border-gray-600 rounded-xl p-6 mb-4 shadow-md";
             const citationHeader = res.citation ? res.citation.header : "N/A";
             const citationLine = res.citation
               ? res.citation.line
               : "Không có dòng trích dẫn.";
             resultCard.innerHTML = `
-                        <p class="text-gray-600 mb-1"><strong>Mã số:</strong> ${
+                        <p class="text-gray-600 dark:text-gray-300 mb-1"><strong>Mã số:</strong> ${
                           res.ward_code || "N/A"
                         }</p>
-                        <p class="text-gray-600 mb-1"><strong>Tên đầy đủ:</strong> ${
+                        <p class="text-gray-600 dark:text-gray-300 mb-1"><strong>Tên đầy đủ:</strong> ${
                           res.ward_name || "N/A"
                         }</p>
-                        <p class="text-gray-600 mb-1"><strong>Trực thuộc:</strong> ${
+                        <p class="text-gray-600 dark:text-gray-300 mb-1"><strong>Trực thuộc:</strong> ${
                           res.province_name || "N/A"
                         }</p>
-                        <div class="bg-gray-100 p-3 rounded-md text-sm text-gray-600">
+                        <div class="bg-gray-100 dark:bg-gray-800 p-3 rounded-md text-sm text-gray-600 dark:text-gray-400">
                             <p class="font-medium">${citationHeader}</p>
                             <p>${citationLine}</p>
                         </div>
@@ -174,9 +205,9 @@
         } else {
           const noResultCard = document.createElement("div");
           noResultCard.className =
-            "bg-slate-50 border border-slate-200 rounded-xl p-6 mb-4 shadow-md bg-yellow-50";
+            "bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-xl p-6 mb-4 shadow-md";
           noResultCard.innerHTML = `
-                    <p class="text-gray-700">Không tìm thấy chi tiết đơn vị hành chính mới trong dữ liệu này.</p>
+                    <p class="text-gray-700 dark:text-gray-300">Không tìm thấy chi tiết đơn vị hành chính mới trong dữ liệu này.</p>
                 `;
           resultsDiv.appendChild(noResultCard);
         }
