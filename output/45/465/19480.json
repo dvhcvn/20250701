@@ -1,8 +1,8 @@
 {
   "address": "Xã Thanh, Huyện Hướng Hóa, Tỉnh Quảng Trị",
-  "ellapsedInMs": 9710,
-  "estimatedCost": 0.0873488,
-  "thought": "**Determining the New Ward for an Old Address**\n\nOkay, so I've got an address to work with: \"Xã Thanh, Huyện Hướng Hóa, Tỉnh Quảng Trị.\"  My goal is to find the new administrative unit, the new ward, for this location.  First, I've identified the province as \"Tỉnh Quảng Trị\".  That's my starting point.\n\nNext, I'll need to find the relevant legal document, the resolution.  Given the province, I'm looking for anything related to Quảng Trị.  Ah, here it is: \"1680/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Trị\".  Perfect. This looks promising.\n\nNow, the old ward is \"Xã Thanh\". I'm going to scan this resolution, focusing on finding \"Xã Thanh.\"  Bingo! Line 57 reads: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Thanh, Thuận và Lìa thành xã mới có tên gọi là **xã Lìa**.\"  So, it looks like \"Xã Thanh\" has been merged.\n\nTo confirm this, I need to check for any special conditions or further details within the resolution.  It states that after the changes, Quảng Trị will have 78 administrative units, including 69 communes. This confirms \"Xã Thanh\" has been restructured.  Also, it specifically mentions that the restructuring detailed in the resolution creates the new units.  This should give me a high level of confidence.\n\nFinally, I need to consult the \"New wards\" list to get the final confirmation and proper codes.  Searching for \"xã Lìa\", and I found a perfect match: `{\"ward_code\":\"19577\",\"ward_name\":\"Xã Lìa\",\"province_name\":\"Tỉnh Quảng Trị\"}`.\n\nNow I can easily format the output with the proper citation, a high confidence level (given the clear merge), the province name, the ward code, and the new ward name.  We've successfully located the new administrative unit!\n",
+  "ellapsedInMs": 21968,
+  "estimatedCost": 0.0884938,
+  "thought": "**Determining the New Administrative Unit for \"Xã Thanh\"**\n\nOkay, let's break this down. My goal is to pinpoint the new administrative entity for \"Xã Thanh, Huyện Hướng Hóa, Tỉnh Quảng Trị.\"  First, I'm checking the broader context.  Since we're dealing with \"Tỉnh Quảng Trị,\" I know the province itself hasn't been merged into anything based on the relevant province-level resolutions (specifically 60-NQ/TW).  Next, I need to zero in on the sub-provincial level, looking for resolutions detailing administrative changes *within* Quảng Trị.  That brings me to \"1680/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Trị,\" which seems promising.\n\nNow the real work begins.  I'm scanning this document, line by line, focusing on mentions of \"xã Thanh.\"  Ah-ha! Line 57 is the key.  It explicitly states the merger of \"Thanh,\" \"Thuận,\" and \"Lìa\" *into* a new ward named \"Lìa.\" This is definitive.\n\nConfidence is high here because the resolution isn't ambiguous. It clearly describes a complete merging, eliminating any doubt about the fate of \"Xã Thanh.\" So, the new ward *must* be \"Xã Lìa.\"\n\nTo finalize this, I've got to find the specific ward code for \"Xã Lìa\" within the dataset.  A quick search reveals the corresponding code, ensuring the output is perfectly structured.\n\nTherefore, the final output will be a JSON array containing the province, the new ward name, the ward code, and a citation to validate the findings. The source reference, \"1680/NQ-UBTVQH15,\" line 57, will be included for absolute clarity and reproducibility. This is a solid result.\n",
   "result": [
     {
       "citation": {
@@ -11,7 +11,7 @@
       },
       "confidence": "high",
       "province_name": "Tỉnh Quảng Trị",
-      "ward_code": "19577",
+      "ward_code": "19489",
       "ward_name": "Xã Lìa"
     }
   ]
