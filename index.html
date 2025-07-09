@@ -3,9 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Đơn vị hành chính</title>
-    <!-- Tailwind CSS CDN -->
+    <title>Đơn vị hành chính mới tháng 7, 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
     <script>
       // Tailwind config for custom theme
       tailwind.config = {
@@ -15,10 +18,19 @@
             colors: {
               primary: {
                 50: "#eff6ff",
+                100: "#dbeafe",
+                200: "#bfdbfe",
+                300: "#93c5fd",
+                400: "#60a5fa",
                 500: "#3b82f6",
                 600: "#2563eb",
                 700: "#1d4ed8",
+                800: "#1e40af",
+                900: "#1e3a8a",
               },
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"], // Use Inter font
             },
           },
         },
@@ -26,31 +38,33 @@
     </script>
   </head>
   <body
-    class="p-4 bg-slate-100 dark:bg-gray-900 font-sans transition-colors duration-300"
+    class="p-4 bg-slate-100 dark:bg-gray-900 font-sans transition-colors duration-300 min-h-screen flex flex-col items-center justify-center"
   >
     <div
-      class="max-w-4xl mx-auto mt-8 p-8 bg-white dark:bg-gray-800 rounded-2xl shadow-2xl dark:shadow-gray-900/50 transition-all duration-300"
+      class="max-w-4xl w-full mx-auto p-8 bg-white dark:bg-gray-800 rounded-2xl shadow-2xl dark:shadow-gray-900/50 transition-all duration-300 mb-8"
     >
       <h1
         class="text-3xl font-bold text-center text-gray-800 dark:text-white mb-6"
       >
-        Đơn vị hành chính
+        Đơn vị hành chính mới tháng 7, 2025
       </h1>
       <div class="mb-6 flex flex-col sm:flex-row gap-4">
         <input
           type="text"
           id="addressInput"
-          placeholder="Nhập địa chỉ cũ"
+          placeholder="Nhập đơn vị hành chính cũ"
           class="flex-grow border border-slate-300 dark:border-gray-600 px-4 py-3 rounded-lg w-full text-base bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 transition-all duration-200 ease-in-out focus:outline-none focus:border-primary-500 focus:ring-4 focus:ring-primary-500/20 disabled:opacity-50 disabled:cursor-not-allowed"
         />
         <button
           id="searchButton"
           class="bg-primary-500 hover:bg-primary-600 dark:bg-primary-600 dark:hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-semibold cursor-pointer transition-all duration-200 ease-in-out hover:-translate-y-px shadow-lg shadow-primary-500/25 dark:shadow-primary-600/25 min-w-[120px] flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:transform-none"
+          aria-live="polite"
         >
           <span id="buttonText">Tìm kiếm</span>
           <div
             id="loadingSpinner"
             class="border-4 border-white/20 border-l-white rounded-full w-6 h-6 animate-spin hidden"
+            role="status"
           ></div>
         </button>
       </div>
@@ -70,18 +84,6 @@
             data-address="Lộc Thọ, Nha Trang"
           >
             Lộc Thọ, Nha Trang
-          </button>
-          <button
-            class="bg-slate-200 hover:bg-slate-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-slate-600 dark:text-gray-300 px-4 py-2 rounded-lg font-medium cursor-pointer transition-colors duration-200 ease-in-out whitespace-nowrap"
-            data-address="Tân Phong, Quận 7"
-          >
-            Tân Phong, Quận 7
-          </button>
-          <button
-            class="bg-slate-200 hover:bg-slate-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-slate-600 dark:text-gray-300 px-4 py-2 rounded-lg font-medium cursor-pointer transition-colors duration-200 ease-in-out whitespace-nowrap"
-            data-address="Đạo Lý, Hà Nam"
-          >
-            Đạo Lý, Hà Nam
           </button>
           <button
             class="bg-slate-200 hover:bg-slate-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-slate-600 dark:text-gray-300 px-4 py-2 rounded-lg font-medium cursor-pointer transition-colors duration-200 ease-in-out whitespace-nowrap"
@@ -105,227 +107,219 @@
       </div>
       <div id="results" class="space-y-4">
         <!-- Results will be displayed here -->
-        <p
-          class="text-center text-gray-500 dark:text-gray-400"
-          id="initialMessage"
-        >
-          Nhập địa chỉ và nhấn 'Tìm kiếm' để xem kết quả.
-        </p>
       </div>
     </div>
+
+    <footer class="mt-8 text-center text-gray-600 dark:text-gray-400">
+      <p class="items-center">
+        <a
+          href="https://github.com/dvhcvn/20250701"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-primary-600 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300 font-medium transition-colors duration-200"
+          aria-label="GitHub Repository"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+      </p>
+    </footer>
+
     <script>
-      const addressInput = document.getElementById("addressInput");
-      const searchButton = document.getElementById("searchButton");
-      const buttonText = document.getElementById("buttonText");
-      const loadingSpinner = document.getElementById("loadingSpinner");
-      const resultsDiv = document.getElementById("results");
-      const initialMessage = document.getElementById("initialMessage");
-      const exampleButtonsContainer = document.getElementById("exampleButtons");
-      /**
-       * Shows or hides the loading spinner and disables/enables the search button.
-       * @param {boolean} isLoading True to show spinner and disable button, false otherwise.
-       */
-      function setLoadingState(isLoading) {
-        if (isLoading) {
-          buttonText.classList.add("hidden");
-          loadingSpinner.classList.remove("hidden");
-          searchButton.disabled = true;
-          addressInput.disabled = true;
-        } else {
-          buttonText.classList.remove("hidden");
-          loadingSpinner.classList.add("hidden");
-          searchButton.disabled = false;
-          addressInput.disabled = false;
+      (function () {
+        const addressInput = document.getElementById("addressInput");
+        const searchButton = document.getElementById("searchButton");
+        const buttonText = document.getElementById("buttonText");
+        const loadingSpinner = document.getElementById("loadingSpinner");
+        const resultsDiv = document.getElementById("results");
+        const exampleButtonsContainer =
+          document.getElementById("exampleButtons");
+
+        // --- UI State Management ---
+        /**
+         * Shows or hides the loading spinner and disables/enables the search button and input.
+         * @param {boolean} isLoading True to show spinner and disable elements, false otherwise.
+         */
+        function setLoadingState(isLoading) {
+          searchButton.disabled = isLoading;
+          addressInput.disabled = isLoading;
+          if (isLoading) {
+            buttonText.classList.add("hidden");
+            loadingSpinner.classList.remove("hidden");
+            searchButton.setAttribute("aria-busy", "true");
+          } else {
+            buttonText.classList.remove("hidden");
+            loadingSpinner.classList.add("hidden");
+            searchButton.removeAttribute("aria-busy");
+          }
         }
-      }
-      /**
-       * Displays a message in the results area.
-       * @param {string} message The message to display.
-       * @param {string} type The type of message (e.g., 'info', 'error').
-       */
-      function displayMessage(message, type = "info") {
-        const textColor =
-          type === "error"
-            ? "text-red-500 dark:text-red-400"
-            : "text-gray-500 dark:text-gray-400";
-        resultsDiv.innerHTML = `
+
+        /**
+         * Displays a message in the results area.
+         * @param {string} message The message to display.
+         * @param {string} type The type of message (e.g., 'info', 'error').
+         */
+        function displayMessage(message, type = "info") {
+          const textColor =
+            type === "error"
+              ? "text-red-500 dark:text-red-400"
+              : "text-gray-500 dark:text-gray-400";
+          resultsDiv.innerHTML = `
                 <p class="text-center text-lg ${textColor}">
                     ${message}
                 </p>
             `;
-      }
-      /**
-       * Renders the search results to the DOM.
-       * @param {Object} apiResponseData The full API response object containing 'address', 'thought', and 'result' array.
-       */
-      function renderResults(apiResponseData) {
-        resultsDiv.innerHTML = ""; // Clear previous results
-        if (!apiResponseData || Object.keys(apiResponseData).length === 0) {
-          displayMessage(
-            "Không tìm thấy thông tin thay đổi cụ thể cho đơn vị hành chính này."
-          );
-          return;
         }
-        const addressText = apiResponseData.address || "N/A";
-        // Create a card for the original address
-        const originalCard = document.createElement("div");
-        originalCard.className =
-          "bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-xl p-6 mb-4 shadow-md";
-        originalCard.innerHTML = `
-                <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">${addressText}</h3>
-            `;
-        resultsDiv.appendChild(originalCard);
-        // Check if there are actual results in the 'result' array
-        if (apiResponseData.result && apiResponseData.result.length > 0) {
+
+        // --- Result Rendering ---
+        /**
+         * Renders the search results to the DOM.
+         * @param {Object} apiResponseData The full API response object containing 'address', 'thought', and 'result' array.
+         */
+        function renderResults(apiResponseData) {
+          resultsDiv.innerHTML = ""; // Clear previous results
+
+          if (
+            !apiResponseData ||
+            Object.keys(apiResponseData).length === 0 ||
+            !apiResponseData.result ||
+            apiResponseData.result.length === 0
+          ) {
+            displayMessage(
+              "Không tìm thấy thông tin cho đơn vị hành chính này."
+            );
+            return;
+          }
+
+          // Create a card for the original address (always show this)
+          const addressText = apiResponseData.address;
+          if (typeof addressText === "string") {
+            const originalCard = document.createElement("div");
+            originalCard.className =
+              "bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-xl p-6 mb-4 shadow-md";
+            originalCard.innerHTML = `
+                    <h3 class="text-xl font-normal text-gray-800 dark:text-white mb-2">
+                        ${addressText}
+                    </h3>
+                `;
+            resultsDiv.appendChild(originalCard);
+          }
+
+          // Render the results found
           apiResponseData.result.forEach((res) => {
             const resultCard = document.createElement("div");
             resultCard.className =
-              "bg-slate-50 dark:bg-gray-700 border border-slate-200 dark:border-gray-600 rounded-xl p-6 mb-4 shadow-md";
-            const citationHeader = res.citation ? res.citation.header : "N/A";
-            const citationLine = res.citation
-              ? res.citation.line
-              : "Không có dòng trích dẫn.";
+              "bg-slate-50 dark:bg-gray-700 border border-slate-200 dark:border-gray-600 rounded-xl p-6 shadow-md";
+
+            const wardCode = res.ward_code || "N/A";
+            const wardName = res.ward_name || "N/A";
+            const provinceName = res.province_name || "N/A";
             resultCard.innerHTML = `
-                        <p class="text-gray-600 dark:text-gray-300 mb-1"><strong>Mã số:</strong> ${
-                          res.ward_code || "N/A"
-                        }</p>
-                        <p class="text-gray-600 dark:text-gray-300 mb-1"><strong>Tên đầy đủ:</strong> ${
-                          res.ward_name || "N/A"
-                        }</p>
-                        <p class="text-gray-600 dark:text-gray-300 mb-1"><strong>Trực thuộc:</strong> ${
-                          res.province_name || "N/A"
-                        }</p>
+                        <p class="text-gray-600 dark:text-gray-300 mb-1"><strong>Mã số:</strong> ${wardCode}</p>
+                        <p class="text-gray-600 dark:text-gray-300 mb-1"><strong>Tên đầy đủ:</strong> ${wardName}</p>
+                        <p class="text-gray-600 dark:text-gray-300 mb-3"><strong>Trực thuộc:</strong> ${provinceName}</p>
+                    `;
+
+            const citationHeader = res.citation?.header;
+            const citationLine = res.citation?.line;
+            if (
+              typeof citationHeader === "string" &&
+              citationHeader.length > 0 &&
+              typeof citationLine === "string" &&
+              citationLine.length > 0
+            ) {
+              resultCard.innerHTML += `
                         <div class="bg-gray-100 dark:bg-gray-800 p-3 rounded-md text-sm text-gray-600 dark:text-gray-400">
-                            <p class="font-medium">${citationHeader}</p>
-                            <p>${citationLine}</p>
+                            <p class="font-medium mb-1">${citationHeader}</p>
+                            <p class="text-xs">${citationLine}</p>
                         </div>
                     `;
+            }
+
             resultsDiv.appendChild(resultCard);
           });
-        } else {
-          const noResultCard = document.createElement("div");
-          noResultCard.className =
-            "bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-xl p-6 mb-4 shadow-md";
-          noResultCard.innerHTML = `
-                    <p class="text-gray-700 dark:text-gray-300">Không tìm thấy chi tiết đơn vị hành chính mới trong dữ liệu này.</p>
-                `;
-          resultsDiv.appendChild(noResultCard);
         }
-      }
-      /**
-       * Handles the search logic when the button is clicked.
-       */
-      async function handleSearch() {
-        const searchTerm = addressInput.value.trim();
-        initialMessage.classList.add("hidden"); // Hide initial message on search
-        if (searchTerm === "") {
-          displayMessage("Vui lòng nhập địa chỉ để tìm kiếm.");
-          return;
-        }
-        setLoadingState(true); // Show loading spinner
-        try {
-          // Step 1: Call the parser API
-          console.log("Calling parser API with:", searchTerm);
+
+        // --- Search Logic ---
+        /**
+         * Fetches data from the parser API.
+         * @param {string} searchTerm The address to parse.
+         * @returns {Promise<Array>} Parsed data from the API.
+         */
+        async function fetchParsedData(searchTerm) {
           const parserResponse = await fetch(
             "https://dvhcvn.vercel.app/demo/parser/api",
             {
               method: "POST",
-              headers: {
-                "Content-Type": "text/plain",
-              },
+              headers: { "Content-Type": "text/plain" },
               body: searchTerm,
             }
           );
-          console.log("Parser API response status:", parserResponse.status);
-          if (!parserResponse.ok) {
-            throw new Error(
-              `Lỗi HTTP từ Parser API! Trạng thái: ${parserResponse.status}`
-            );
-          }
           const parsedData = await parserResponse.json();
-          console.log("Parsed Data from API:", parsedData);
           if (!parsedData || parsedData.length === 0) {
-            displayMessage(
-              "Không thể phân tích địa chỉ. Vui lòng thử định dạng khác hoặc địa chỉ cụ thể hơn.",
-              "error"
-            );
-            setLoadingState(false);
-            return;
+            throw new Error("Không tìm thấy dữ liệu phân tích từ địa chỉ này.");
           }
+          return parsedData;
+        }
+
+        /**
+         * Fetches detailed administrative unit data.
+         * @param {Array} parsedData Parsed data containing IDs.
+         * @returns {Promise<Object>} Detailed data from the GitHub JSON.
+         */
+        async function fetchDetailData(parsedData) {
           // Extract all IDs and sort them by length in ascending order
           // This assumes that shorter IDs represent higher-level administrative units (province/city)
           // and longer IDs represent lower-level units (ward).
           const ids = parsedData
             .map((item) => item.id)
-            .sort((a, b) => a.length - b.length);
-          console.log("Sorted IDs:", ids);
-          let dataUrl;
-          if (ids.length === 3) {
-            // Format: province/district/ward
-            dataUrl = `https://raw.githubusercontent.com/dvhcvn/20250701/refs/heads/main/output/${ids[0]}/${ids[1]}/${ids[2]}.json`;
-          } else if (ids.length === 2) {
-            // Format: province/district (if ward is not provided/found)
-            dataUrl = `https://raw.githubusercontent.com/dvhcvn/20250701/refs/heads/main/output/${ids[0]}/${ids[1]}.json`;
-          } else {
-            displayMessage(
-              "Không thể xác định đường dẫn đơn vị hành chính hợp lệ từ địa chỉ đã phân tích.",
-              "error"
-            );
-            setLoadingState(false);
-            return;
-          }
-          console.log("Fetching detail data from URL:", dataUrl);
+            .sort((a, b) => a.length - b.length)
+            .join("/");
+          const dataUrl = `https://raw.githubusercontent.com/dvhcvn/20250701/refs/heads/main/output/${ids}.json`;
           const detailResponse = await fetch(dataUrl);
-          console.log(
-            "Detail data API response status:",
-            detailResponse.status
-          );
-          if (!detailResponse.ok) {
-            // If the specific JSON file doesn't exist, it's not necessarily an error,
-            // but rather no change information for that specific unit.
-            if (detailResponse.status === 404) {
-              displayMessage(
-                "Không tìm thấy thông tin thay đổi cụ thể cho đơn vị hành chính này.",
-                "info"
-              );
-            } else {
-              throw new Error(
-                `Lỗi HTTP từ API dữ liệu chi tiết! Trạng thái: ${detailResponse.status}`
-              );
-            }
-            setLoadingState(false);
+          return await detailResponse.json();
+        }
+
+        /**
+         * Handles the search logic when the button is clicked or Enter is pressed.
+         */
+        async function handleSearch() {
+          const searchTerm = addressInput.value.trim();
+          if (searchTerm === "") {
             return;
           }
-          const detailData = await detailResponse.json();
-          console.log("Detail Data from API:", detailData);
-          renderResults(detailData); // Pass the full object, which contains the 'result' array
-        } catch (error) {
-          console.error("Lỗi trong quá trình tra cứu địa chỉ:", error);
-          displayMessage(
-            `Đã xảy ra lỗi: ${error.message}. Vui lòng thử lại sau.`,
-            "error"
-          );
-        } finally {
-          setLoadingState(false); // Hide loading spinner regardless of success or failure
+
+          setLoadingState(true); // Show loading spinner
+          resultsDiv.innerHTML = ""; // Clear previous results immediately
+
+          try {
+            const parsedData = await fetchParsedData(searchTerm);
+            const detailData = await fetchDetailData(parsedData);
+            renderResults(detailData);
+          } catch (error) {
+            console.error("Search error:", error);
+            displayMessage("Lỗi dữ liệu, vui lòng thử lại sau.", "error");
+          } finally {
+            setLoadingState(false); // Hide loading spinner regardless of success or failure
+          }
         }
-      }
-      // Event Listeners
-      searchButton.addEventListener("click", handleSearch);
-      addressInput.addEventListener("keypress", (event) => {
-        if (event.key === "Enter") {
-          handleSearch();
-        }
-      });
-      // Add event listeners for example buttons
-      exampleButtonsContainer.addEventListener("click", (event) => {
-        if (event.target.hasAttribute("data-address")) {
-          const exampleAddress = event.target.dataset.address;
-          addressInput.value = exampleAddress;
-          handleSearch();
-        }
-      });
-      // Initial state
-      displayMessage("Nhập địa chỉ và nhấn 'Tìm kiếm' để xem kết quả.");
+
+        // --- Event Listeners ---
+        searchButton.addEventListener("click", handleSearch);
+        addressInput.addEventListener("keypress", (event) => {
+          if (event.key === "Enter") {
+            handleSearch();
+          }
+        });
+
+        // Add event listeners for example buttons
+        exampleButtonsContainer.addEventListener("click", (event) => {
+          if (event.target.hasAttribute("data-address")) {
+            const exampleAddress = event.target.dataset.address;
+            addressInput.value = exampleAddress;
+            handleSearch();
+          }
+        });
+      })();
     </script>
   </body>
 </html>
