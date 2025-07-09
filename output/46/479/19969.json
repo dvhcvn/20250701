@@ -1,0 +1,18 @@
+{
+  "address": "Phường Thủy Dương, Thị xã Hương Thủy, Thành phố Huế",
+  "ellapsedInMs": 7347,
+  "estimatedCost": 0.0036371000000000003,
+  "thought": "**Identifying the New Administrative Unit for Phường Thủy Dương**\n\nOkay, so the user wants to know the new administrative unit for \"Phường Thủy Dương, Thị xã Hương Thủy, Thành phố Huế\". First things first, the province is \"Thành phố Huế\".  Since resolution 60-NQ/TW states that Huế isn't undergoing any province-level mergers, that part is easy - it stays \"Thành phố Huế\".\n\nNow for the tricky part: finding what happened to \"Phường Thủy Dương\".  I need to check the relevant resolutions on administrative restructuring.  I immediately skipped the ones for Hanoi, Ha Tinh, Hai Phong, Quang Ninh, and Quang Tri because they're in different provinces.\n\nThe key is in `1675/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Huế`. I have to carefully scan this document.  I quickly see that Thủy Vân, Xuân Phú, and Vỹ Dạ became Vỹ Dạ. Thủy Biều, Thủy Bằng, and Thủy Xuân became Thủy Xuân.  Still no Thủy Dương.\n\nAha! Line 18 is the golden ticket: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Thủy Dương, phườngThủy Phương và xã Thủy Thanh thành phường mới có tên gọi là **phường Thanh Thủy**.\"  Bingo! \"Phường Thủy Dương\" is now part of \"Phường Thanh Thủy\".\n\nNow, I need the ward code for \"Phường Thanh Thủy\".  A quick search in the \"New wards\" list reveals:  `{\"ward_code\":\"19969\",\"ward_name\":\"Phường Thanh Thủy\",\"province_name\":\"Thành phố Huế\"}`.\n\nTherefore, the new administrative unit is \"Phường Thanh Thủy\" with a ward code of \"19969\". My confidence in this answer is \"high\" because the resolution explicitly outlines this merger.  My citation for this is from `1675/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Huế`, specifically line 18.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1675/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Huế",
+        "line": "18. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Thủy Dương, phườngThủy Phương và xã Thủy Thanh thành phường mới có tên gọi là **phường Thanh Thủy**."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Huế",
+      "ward_code": "19969",
+      "ward_name": "Phường Thanh Thủy"
+    }
+  ]
+}

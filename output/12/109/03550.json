@@ -1,0 +1,18 @@
+{
+  "address": "Xã Sì Lở Lầu, Huyện Phong Thổ, Tỉnh Lai Châu",
+  "ellapsedInMs": 7556,
+  "estimatedCost": 0.0026746,
+  "thought": "**Determining the New Administrative Unit for \"Xã Sì Lở Lầu\"**\n\nOkay, so I need to figure out the new administrative unit for \"Xã Sì Lở Lầu, Huyện Phong Thổ, Tỉnh Lai Châu.\" Let's break this down.\n\nFirst, the province. The old address includes \"Tỉnh Lai Châu.\" Checking the `60-NQ/TW` resolution, I see that Lai Châu isn't listed for any province mergers. Therefore, the province remains \"Tỉnh Lai Châu.\" Simple enough.\n\nNext, the ward itself: \"Xã Sì Lở Lầu.\" Now, this is where it gets interesting. I need to consult the `Other resolutions`.  I immediately see a relevant entry in `1670/NQ-UBTVQH15`:  This resolution is about rearranging communes within Lai Châu province. Line 16 is crucial here. It states that \"Sì Lở Lầu\" (along with other communes) is being *merged* to form a *new* commune, and the new commune *retains* the name \"Xã Sì Lở Lầu.\"  This merger alters the boundaries, and thus the composition, but not the name.\n\nNow, to solidify this, I need to check the `New wards` data.  Bingo! There it is: `{\"ward_code\":\"03562\",\"ward_name\":\"Xã Sì Lở Lầu\",\"province_name\":\"Tỉnh Lai Châu\"}`. This directly confirms the existence of a new \"Xã Sì Lở Lầu\" and its code. The province matches, as expected.\n\nTherefore, the output structure will include:\n\n*   `province_name`: \"Tỉnh Lai Châu\"\n*   `ward_name`: \"Xã Sì Lở Lầu\"\n*   `ward_code`: \"03562\"\n*   `citation`: The crucial resolution `1670/NQ-UBTVQH15`, specifically the part that mentions \"Sì Lở Lầu\" (Line 16). The important line in that resolution explicitly mentions the new \"Xã Sì Lở Lầu.\"\n*   `confidence`: High, given the direct match of the ward name to its new listing and its connection to the resolution.\n\nJust to double-check my thinking, looking back at the resolution and the new ward data, it is a clean and unambiguous case.  The resolution 1670/NQ-UBTVQH15 clearly and directly addresses the situation.  The new ward data aligns perfectly.  This is a high-confidence match.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1670/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lai Châu",
+        "line": "16. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Vàng Ma Chải,Mồ Sì San, Pa Vây Sử và Sì Lở Lầu thành xã mới có tên gọi là xã Sì Lở Lầu."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lai Châu",
+      "ward_code": "03562",
+      "ward_name": "Xã Sì Lở Lầu"
+    }
+  ]
+}

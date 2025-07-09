@@ -1,0 +1,18 @@
+{
+  "address": "Phường Phúc Tân, Quận Hoàn Kiếm, Thành phố Hà Nội",
+  "ellapsedInMs": 5379,
+  "estimatedCost": 0.0020571,
+  "thought": "**Navigating the Administrative Unit Reorganization**\n\nOkay, so I've got an address: \"Phường Phúc Tân, Quận Hoàn Kiếm, Thành phố Hà Nội\" and the task is to pinpoint its new administrative unit(s).  First, I need to methodically check the data I have.\n\nMy process will be straightforward. I'll begin by verifying the province; this seems elementary but it's important to confirm Hà Nội hasn't been restructured at a higher level. Resolution 60-NQ/TW states that Hà Nội remains unchanged as \"Thành phố Hà Nội\", which confirms my initial intuition.\n\nNext, I'll dive into the details, focusing on finding \"Phường Phúc Tân\".  I'll start with the \"Other resolutions\" data, particularly Resolution 1656/NQ-UBTVQH15, which deals with administrative re-organization in Hà Nội. Bingo! This resolution *explicitly* lists \"Phường Phúc Tân\" as being absorbed into a new ward: \"phường Hồng Hà\".\n\nNow, I need to validate this finding within the \"New wards\" data. I'll search for \"phường Hồng Hà\" in the Hà Nội data and, just as expected, there's a direct match: `{\"ward_code\":\"00097\",\"ward_name\":\"Phường Hồng Hà\",\"province_name\":\"Thành phố Hà Nội\"}`.\n\nThe confidence here is exceptionally high.  The resolution clearly and unequivocally links \"Phường Phúc Tân\" to \"phường Hồng Hà\".  I can confidently construct the JSON output, following the established schema, and move on to the next query.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội",
+        "line": "14. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Chương Dương, Phúc Tân, Phúc Xá, một phần diện tích tự nhiên, quy mô dân số của các phường Nhật Tân, Phú Thượng, Quảng An, Thanh Lương, Tứ Liên, Yên Phụ, một phần diện tích tự nhiên của phường Bồ Đề và phường Ngọc Thụy, phần còn lại của phường Bạch Đằng sau khi sắp xếp theo quy định tại khoản 6 Điều này thành phường mới có tên gọi là phường Hồng Hà."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hà Nội",
+      "ward_code": "00097",
+      "ward_name": "Phường Hồng Hà"
+    }
+  ]
+}

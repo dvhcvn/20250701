@@ -1,0 +1,28 @@
+{
+  "address": "Xã Kông Bơ La, Huyện KBang, Tỉnh Gia Lai",
+  "ellapsedInMs": 7168,
+  "estimatedCost": 0.0027676,
+  "thought": "**Address Mapping Analysis: \"Xã Kông Bơ La\" in Gia Lai Province**\n\nOkay, so I've got an old Vietnamese address: \"Xã Kông Bơ La\" in \"Tỉnh Gia Lai.\" My task is to map this to the new administrative unit. Let's see how I'll tackle this.\n\nFirst, I identify the key elements: the ward \"Xã Kông Bơ La\" and the province \"Tỉnh Gia Lai.\"  I'll start by checking the province resolutions, specifically \"60-NQ/TW\". I need to see if Gia Lai has been merged or changed. It looks like \"Tỉnh Gia Lai\" is listed as a province that *is* merged. According to that document, Gia Lai absorbed Bình Định, but keeps its original name. Good, so the province name remains the same.\n\nNext, I'll dive into the other resolutions, focusing on anything related to \"Xã Kông Bơ La.\"  I found Resolution 1664/NQ-UBTVQH15, which deals with administrative unit rearrangements in Gia Lai.  I skim the text and there it is: \"64. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đông, Nghĩa An và Kông Bơ La thành xã mới có tên gọi là **xã Kông Bơ La**.\" Perfect! This resolution explicitly states that the old \"Xã Kông Bơ La\" is now part of the *new* \"Xã Kông Bơ La,\" along with two other wards.\n\nNow for the final check: the \"New Wards\" list. I'll search for \"Xã Kông Bơ La\" in \"Tỉnh Gia Lai\".  And there it is! A matching entry: `{\"ward_code\":\"23674\",\"ward_name\":\"Xã Kông Bơ La\",\"province_name\":\"Tỉnh Gia Lai\"}`.\n\nThe confidence is very high. I have confirmation from the province resolution that Gia Lai retains its name, along with the specific resolution detailing that the old \"Xã Kông Bơ La\" is part of the new \"Xã Kông Bơ La,\" and finally, the matching entry in the \"New Wards\" list. This should make the JSON output straightforward and accurate.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Gia Lai và tỉnh Bình Định, lấy tên là tỉnh Gia Lai"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "23674",
+      "ward_name": "Xã Kông Bơ La"
+    },
+    {
+      "citation": {
+        "header": "1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai",
+        "line": "64. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đông, Nghĩa An và Kông Bơ La thành xã mới có tên gọi là xã Kông Bơ La."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "23674",
+      "ward_name": "Xã Kông Bơ La"
+    }
+  ]
+}

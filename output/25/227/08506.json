@@ -1,0 +1,18 @@
+{
+  "address": "Xã Chu Hóa, Thành phố Việt Trì, Tỉnh Phú Thọ",
+  "ellapsedInMs": 5032,
+  "estimatedCost": 0.0017104999999999998,
+  "thought": "**Mapping an Old Address to New Administrative Units**\n\nOkay, here's how I'd approach this. The user wants to map an old address, specifically \"Xã Chu Hóa\", \"Tỉnh Phú Thọ\", to the new administrative structure. First, I need to identify the old ward and province. Easy enough: \"Xã Chu Hóa\" is the old ward, and \"Tỉnh Phú Thọ\" is the province.\n\nNext, I'll consult the province resolutions, starting with 60-NQ/TW. This confirms that \"Tỉnh Phú Thọ\" has remained as \"Tỉnh Phú Thọ\", which is great.\n\nNow, the crucial step: I need to check other relevant resolutions, specifically 1676/NQ-UBTVQH15, for \"Xã Chu Hóa\". Bingo! Line 1 of this resolution is the key. It states that the entire area and population of \"Xã Chu Hóa\" has been combined with Thanh Đình and Hy Cương to create a new ward named **\"Xã Hy Cương\"**.\n\nWith that resolved, I can now cross-reference this information with the \"New wards\" data. I'll search for \"Xã Hy Cương\" and find the details: `{\"ward_code\":\"08515\",\"ward_name\":\"Xã Hy Cương\",\"province_name\":\"Tỉnh Phú Thọ\"}`.\n\nFinally, I'll construct the JSON output. The `citation` will include the resolution header and the specific line I used. The `confidence` level is definitely \"high\" because this mapping is explicitly stated in the resolution. The `province_name` is \"Tỉnh Phú Thọ\" from the new ward data. The `ward_code` will be \"08515,\" and `ward_name` is \"Xã Hy Cương,\" both taken directly from the \"New wards\" data.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "1. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Thanh Đình, Chu Hóa và Hy Cương thành xã mới có tên gọi là xã Hy Cương."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "08515",
+      "ward_name": "Xã Hy Cương"
+    }
+  ]
+}

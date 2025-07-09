@@ -1,0 +1,18 @@
+{
+  "address": "Xã Núi Tô, Huyện Tri Tôn, Tỉnh An Giang",
+  "ellapsedInMs": 7240,
+  "estimatedCost": 0.0023032,
+  "thought": "**Mapping the Old Address to the New Administrative Unit**\n\nOkay, let's break this down. My goal is to determine the new administrative unit for the provided address, specifically regarding \"Xã Núi Tô\" within \"Huyện Tri Tôn,\" An Giang Province. This requires a systematic approach based on resolutions and the new ward list.\n\nFirst, I need to identify the components: \"Xã Núi Tô\" (ward), \"Huyện Tri Tôn\" (district – though, as the prompt indicates, this level might be eliminated), and An Giang Province.\n\nThe initial step is to cross-reference An Giang Province against the province resolutions (60-NQ/TW). Finding it in the \"Các đơn vị hành chính cấp tỉnh không thực hiện sáp nhập\" or \"Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất\" sections is crucial. Luckily, the resolution states \"Hợp nhất tỉnh An Giang và tỉnh Kiên Giang, lấy tên là tỉnh An Giang,\" meaning the province name remains \"Tỉnh An Giang.\" That's a high-confidence match.\n\nNext, I need to consult the other resolutions, specifically 1654/NQ-UBTVQH15, to understand how \"Xã Núi Tô\" is being affected. I'll search for \"Xã Núi Tô\" within the lines of the resolution. The pertinent section, line 23, states \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Tri Tôn, xã Núi Tô và xã Châu Lăng thành xã mới có tên gọi là **xã Tri Tôn**.\" This is the key. \"Xã Núi Tô\" is being *merged* into \"Xã Tri Tôn.\"\n\nFinally, I will cross-reference that information with the provided \"New Wards\" data. Specifically, I need to find \"Xã Tri Tôn\" within the new wards list. I find the record: `{\"ward_code\":\"30544\",\"ward_name\":\"Xã Tri Tôn\",\"province_name\":\"Tỉnh An Giang\"}`. It's a perfect match: the new ward name, code, and province align perfectly.\n\nTherefore, the output will be as follows:\n\n*   `province_name`: \"Tỉnh An Giang\"\n*   `ward_name`: \"Xã Tri Tôn\"\n*   `ward_code`: \"30544\"\n*   `citation`:\n    *   `header`: \"1654/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh An Giang\"\n    *   `line`: \"23. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Tri Tôn, xã Núi Tô và xã Châu Lăng thành xã mới có tên gọi là xã Tri Tôn.\"\n*   `confidence`: \"high\" since there is a direct mention of \"Xã Núi Tô\" being merged into \"Xã Tri Tôn\"\n\nThis output reflects a high degree of confidence due to the direct correspondence between the resolution's restructuring and the new ward data. It should be correct.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1654/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh An Giang",
+        "line": "23. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Tri Tôn, xã Núi Tô và xã Châu Lăng thành xã mới có tên gọi là xã Tri Tôn."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh An Giang",
+      "ward_code": "30544",
+      "ward_name": "Xã Tri Tôn"
+    }
+  ]
+}

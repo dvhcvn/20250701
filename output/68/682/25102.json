@@ -1,0 +1,18 @@
+{
+  "address": "Xã Đạ M'ri, Huyện Đạ Huoai, Tỉnh Lâm Đồng",
+  "ellapsedInMs": 8610,
+  "estimatedCost": 0.0030160000000000005,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm presented with the challenge of mapping an old Vietnamese address (\"Xã Đạ M'ri, Huyện Đạ Huoai, Tỉnh Lâm Đồng\") to the new administrative structure. My first step is to identify the core components: the old ward (\"Xã Đạ M'ri\"), district (\"Huyện Đạ Huoai\" - though I understand we're ultimately focused on wards), and province (\"Tỉnh Lâm Đồng\").\n\nGiven the context, I need to consult the relevant resolutions, particularly Resolution 60-NQ/TW regarding province-level changes.  The resolution confirms that \"Tỉnh Lâm Đồng\" remains \"Tỉnh Lâm Đồng\", but I note the merging of neighboring provinces. This is important context.\n\nThe critical piece of the puzzle lies in Resolution 1671/NQ-UBTVQH15.  This is where things get interesting.  I find a direct mention of \"thị trấn Đạ M'ri\" – which, in light of administrative restructuring and the specific focus on ward-level changes, I'm reasonably confident can be treated as effectively synonymous with the provided \"Xã Đạ M'ri\". The resolution clearly states that \"thị trấn Đạ M'ri\" (along with \"xã Hà Lâm\") is being absorbed into a new ward: \"xã Đạ Huoai 2\".\n\nNow, I cross-reference this finding with my \"New wards\" data.  There, I confirm the existence of \"Xã Đạ Huoai 2\" with the correct `ward_code`, `ward_name`, and crucially, the unchanged `province_name` of \"Tỉnh Lâm Đồng\". The data confirms:  `{\"ward_code\":\"25105\",\"ward_name\":\"Xã Đạ Huoai 2\",\"province_name\":\"Tỉnh Lâm Đồng\"}`.\n\nI now need to refine my understanding of  \"thị trấn Đạ M'ri\" vs \"Xã Đạ M'ri\". Both are administrative units at the \"cấp xã\" level, though one is urban (\"thị trấn\") and the other is rural (\"xã\"). Given the specificity of the resolution and the restructuring context, I'm confident in the mapping.\n\nWith this confidence, I will proceed to construct the JSON output. The `citation` will reference the resolution explicitly. The `confidence` will be \"high\" due to the direct mapping provided by the resolution.  The `province_name` will be \"Tỉnh Lâm Đồng\" and the `ward_code` and `ward_name` will be derived from the \"New wards\" data.\n\nHaving done a final schema check, I am ready to render the output.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng",
+        "line": "34. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Đạ M'ri và xã Hà Lâm thành xã mới có tên gọi là xã Đạ Huoai 2."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "25105",
+      "ward_name": "Xã Đạ Huoai 2"
+    }
+  ]
+}

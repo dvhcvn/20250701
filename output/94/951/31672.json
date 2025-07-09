@@ -1,0 +1,18 @@
+{
+  "address": "Xã Đại Ân  2, Huyện Trần Đề, Tỉnh Sóc Trăng",
+  "ellapsedInMs": 8153,
+  "estimatedCost": 0.0028065,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, let's break this down. The user provided an old address: \"Xã Đại Ân 2, Huyện Trần Đề, Tỉnh Sóc Trăng,\" and wants to find the new administrative unit based on these resolutions.\n\nFirst, I extracted the key components from the old address: \"Xã Đại Ân 2\" (ward), \"Huyện Trần Đề\" (district - *though the prompt emphasizes ignoring districts*), and \"Tỉnh Sóc Trăng\" (province).\n\nNext, I delved into the province resolutions (60-NQ/TW). Bingo! The relevant text states that \"Tỉnh Sóc Trăng\" merged with \"Thành phố Cần Thơ\" and \"Tỉnh Hậu Giang\", forming a new unit named \"Thành phố Cần Thơ\".  So, the new province is definitely \"Thành phố Cần Thơ\".\n\nThen, I shifted focus to other resolutions (1668/NQ-UBTVQH15). I was looking for any mention of \"Xã Đại Ân 2\" and found the crucial line: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Trần Đề, xã Đại Ân 2 và xã Trung Bình thành xã mới có tên gọi là xã Trần Đề.\"  This confirms that \"Xã Đại Ân 2\" is now part of the new ward, \"Xã Trần Đề\".\n\nTo solidify this, I cross-referenced this new ward name with the \"New wards\" data.  There it was:  `{\"ward_code\":\"31673\",\"ward_name\":\"Xã Trần Đề\",\"province_name\":\"Thành phố Cần Thơ\"}`. The data perfectly aligns! The new ward name, its code, and the new province name all match.\n\nThe province mapping confirmed it. Old: Tỉnh Sóc Trăng. Based on Resolution 60-NQ/TW: \"Hợp nhất thành phố cần Thơ, tỉnh Sóc Trăng và tỉnh Hậu Giang; lấy tên là thành phố Cần Thơ\", which confirms it.\n\nTherefore, the old address \"Xã Đại Ân 2, Huyện Trần Đề, Tỉnh Sóc Trăng\" has been mapped to the new administrative unit: \"Xã Trần Đề,\" with ward code \"31673\" in \"Thành phố Cần Thơ.\" My confidence in this result is very high because of the direct matches and the clear evidence from the resolutions. The district information was useful for the initial context but was irrelevant for the final output as the prompt requested.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1668/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Cần Thơ",
+        "line": "93. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Trần Đề, xã Đại Ân 2 và xã Trung Bình thành xã mới có tên gọi là xã Trần Đề."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Cần Thơ",
+      "ward_code": "31673",
+      "ward_name": "Xã Trần Đề"
+    }
+  ]
+}

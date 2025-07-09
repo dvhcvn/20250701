@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Phước Dân, Huyện Ninh Phước, Tỉnh Ninh Thuận",
+  "ellapsedInMs": 7633,
+  "estimatedCost": 0.0028929,
+  "thought": "**My Analysis of the Administrative Unit Change**\n\nOkay, here's what I've figured out about the old address \"Thị trấn Phước Dân, Huyện Ninh Phước, Tỉnh Ninh Thuận\". First, I need to understand what happened to the province.  I know \"Tỉnh Ninh Thuận\" had a resolution (60-NQ/TW) associated with it. Sure enough, that resolution shows \"Tỉnh Ninh Thuận\" merged into \"Tỉnh Khánh Hoà.\"\n\nNow, I have to pinpoint the new administrative unit for \"Thị trấn Phước Dân.\" Since the province changed, I'll focus my search on the new province, \"Tỉnh Khánh Hoà.\" I start by looking in the \"Other resolutions\" category and I'm hoping to find something directly related to \"Thị trấn Phước Dân.\" Bingo! Resolution \"1667/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Khánh Hòa\" jumps out. Line 30 is key: it explicitly states that \"Thị trấn Phước Dân\" is being merged with other units to form a new ward named \"xã Ninh Phước.\" This is a direct hit!\n\nNext, I need to confirm this \"xã Ninh Phước.\" I search the \"New wards\" data for it, focusing on \"Tỉnh Khánh Hòa.\" And there it is:  `{\"ward_code\":\"22870\",\"ward_name\":\"Xã Ninh Phước\",\"province_name\":\"Tỉnh Khánh Hòa\"}`. This confirms the new ward name and its associated code.\n\nSo, the output will be JSON with:\n*   `province_name`: \"Tỉnh Khánh Hòa\" (derived from the province merger)\n*   `ward_name`: \"Xã Ninh Phước\" (from resolution 1667/NQ-UBTVQH15)\n*   `ward_code`: \"22870\" (from the new ward data)\n*   `citation`: with a pointer to that critical line in \"1667/NQ-UBTVQH15.\"\n\nI'm confident in this.  The mapping is explicit and unambiguous.  No other resolutions or new wards seem relevant. It's a clear, well-supported conclusion. It should be \"high\" confidence in this case.  I need to make sure to build the JSON as described so that the output of this is in a standard format.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1667/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Khánh Hòa",
+        "line": "30. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Phước Dân, xã Phước Thuận và xã Phước Hải thành xã mới có tên gọi là xã Ninh Phước."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Khánh Hòa",
+      "ward_code": "22870",
+      "ward_name": "Xã Ninh Phước"
+    }
+  ]
+}

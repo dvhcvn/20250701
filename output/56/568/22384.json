@@ -1,0 +1,18 @@
+{
+  "address": "Xã Vĩnh Lương, Thành phố Nha Trang, Tỉnh Khánh Hòa",
+  "ellapsedInMs": 6941,
+  "estimatedCost": 0.0026607,
+  "thought": "**Analyzing the Address Mapping Request**\n\nOkay, so I'm presented with a task: to map an old Vietnamese address, specifically \"Xã Vĩnh Lương\" in \"Tỉnh Khánh Hòa,\" to its current administrative unit.  This is straightforward enough. Let's break it down.\n\nFirst, I need to pinpoint the relevant old ward and province.  \"Xã Vĩnh Lương\" is clearly the old ward, and \"Tỉnh Khánh Hòa\" is the province. The inclusion of \"Thành phố Nha Trang\" in the original address is a common occurrence. Still, I should focus on provinces and wards for the initial analysis, because it could be a reference to a city within the province.\n\nNext, I'll consult the provided resolutions, starting with Resolution 60-NQ/TW.  This resolution confirms that \"Tỉnh Khánh Hòa\" remains \"Tỉnh Khánh Hòa\" after any potential mergers. That's a consistency check complete!\n\nNow, I shift my attention to Resolution 1667/NQ-UBTVQH15.  My search within this resolution centers on \"Xã Vĩnh Lương.\" And there it is, line 50. It's explicitly stated: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Vĩnh Hòa, Vĩnh Hải, Vĩnh Phước, Vĩnh Thọ, xãVĩnh Lương và xã Vĩnh Phương thành phường mới có tên gọi là **phường Bắc Nha Trang**.\" Bingo! The old ward \"Xã Vĩnh Lương\" has been absorbed into the new \"phường Bắc Nha Trang.\"\n\nNow, I cross-reference this finding with the new ward data. I search for \"Phường Bắc Nha Trang,\" and lo and behold, there's a perfect match:  `{\"ward_code\":\"22333\",\"ward_name\":\"Phường Bắc Nha Trang\",\"province_name\":\"Tỉnh Khánh Hòa\"}`. There are no other wards that \"Xã Vĩnh Lương\" could have been merged into.\n\nThe resolution and data align perfectly. This gives me extremely high confidence in the mapping. I'm ready to craft the JSON output:\n\n*   The citation information comes from the resolution 1667/NQ-UBTVQH15.\n*   The text of the citation is line 50.\n*   The confidence is \"high\".\n*   \"Tỉnh Khánh Hòa\" is the province.\n*   \"22333\" is the ward code.\n*   \"Phường Bắc Nha Trang\" is the new ward.\n\nAnd there you have it, the complete and accurate address mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1667/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Khánh Hòa",
+        "line": "50. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Vĩnh Hòa, Vĩnh Hải, Vĩnh Phước, Vĩnh Thọ, xãVĩnh Lương và xã Vĩnh Phương thành phường mới có tên gọi là phường Bắc Nha Trang."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Khánh Hòa",
+      "ward_code": "22333",
+      "ward_name": "Phường Bắc Nha Trang"
+    }
+  ]
+}

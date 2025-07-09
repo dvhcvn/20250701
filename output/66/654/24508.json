@@ -1,0 +1,18 @@
+{
+  "address": "Xã Ea Yông, Huyện Krông Pắc, Tỉnh Đắk Lắk",
+  "ellapsedInMs": 5918,
+  "estimatedCost": 0.0023404,
+  "thought": "**My Analysis of Address Mapping for Administrative Unit Changes**\n\nOkay, so I've got an old address with \"Xã Ea Yông\" in \"Huyện Krông Pắc,\" \"Tỉnh Đắk Lắk\" and I need to map it to a new administrative unit. First, I confirmed the initial administrative breakdown – ward, district, and province. Then, I dug into the resolutions.\n\nThe province-level resolution, 60-NQ/TW, confirms that Đắk Lắk still exists as Đắk Lắk even after a merger, which is good. Then, I went straight to other resolutions, specifically looking for \"Xã Ea Yông\" or \"Huyện Krông Pắc.\" Bingo! Resolution 1660/NQ-UBTVQH15 provides the key: the consolidation of several areas, explicitly including \"Xã Ea Yông\" from \"Huyện Krông Pắc,\" into the new \"xã Krông Pắc.\" That's the link.\n\nNext, I checked the new wards data. I searched for \"Xã Krông Pắc\" within \"Tỉnh Đắk Lắk\", and found a direct match: `{\"ward_code\":\"24490\",\"ward_name\":\"Xã Krông Pắc\",\"province_name\":\"Tỉnh Đắk Lắk\"}`. Perfect.\n\nThe province name \"Tỉnh Đắk Lắk\" is consistent across the resolutions and the new ward data. It's a high-confidence match because the resolution directly addresses the old ward, which is then mapped by the corresponding new ward data. I'm going to set my output as JSON format containing the new ward code and name, with the original resolution as the citation. This is a pretty straightforward, high-confidence case.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1660/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đắk Lắk",
+        "line": "25. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Phước An và các xã Hòa An (huyện Krông Pắc), Ea Yông, Hòa Tiến thành xã mới có tên gọi là xã Krông Pắc."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đắk Lắk",
+      "ward_code": "24490",
+      "ward_name": "Xã Krông Pắc"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Phú Khánh, Huyện Thạnh Phú, Tỉnh Bến Tre",
+  "ellapsedInMs": 7752,
+  "estimatedCost": 0.0242941,
+  "thought": "**Finding the New Administrative Unit**\n\nOkay, so I'm presented with the old address \"Xã Phú Khánh, Huyện Thạnh Phú, Tỉnh Bến Tre\" and need to determine its corresponding new ward. My thinking goes like this: first, I need to pinpoint the relevant resolutions, particularly the \"Other resolutions\" section. I'll be looking for any mention of \"Xã Phú Khánh.\"\n\nSince the province has undergone a merger (according to the guidelines I have), specifically Bến Tre being merged into Vĩnh Long (as per 60-NQ/TW), I need to adjust my search accordingly. I'll be looking for resolutions referencing \"Vĩnh Long,\" knowing that Bến Tre's data will be incorporated.\n\nI'll start with resolution \"1687/NQ-UBTVQH15,\" which seems relevant. Sure enough, line 75 within that resolution explicitly mentions \"Xã Phú Khánh.\" It indicates that \"Xã Phú Khánh\" and several other wards are being merged into a new ward called \"xã Đại Điền.\" Bingo!\n\nNow, I've got my key information: the new ward name (\"xã Đại Điền\") and the new province (\"Tỉnh Vĩnh Long\"). All that's left is to find the corresponding `ward_code` for this new ward within the \"New wards\" list.\n\nI'll search for `{\"ward_name\":\"Xã Đại Điền\",\"province_name\":\"Tỉnh Vĩnh Long\"}`. Found it! The `ward_code` is \"29194.\"\n\nWith all this information, I can now construct the JSON output. I'm highly confident in this result because the mapping is direct and explicit in the resolution. The `citation` will be the resolution's header and the relevant line. The `province_name` will be \"Tỉnh Vĩnh Long,\" the `ward_code` will be \"29194,\" and the `ward_name` will be \"xã Đại Điền.\" Done!\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long",
+        "line": "75. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Phú Khánh, Tân Phong, Thới Thạnh và Đại Điền thành xã mới có tên gọi là xã Đại Điền."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "29194",
+      "ward_name": "Xã Đại Điền"
+    }
+  ]
+}

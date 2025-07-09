@@ -1,0 +1,18 @@
+{
+  "address": "Phường Phú Hài, Thành phố Phan Thiết, Tỉnh Bình Thuận",
+  "ellapsedInMs": 8065,
+  "estimatedCost": 0.0031669999999999997,
+  "thought": "**Analysis of Address Restructuring for \"Phường Phú Hài\"**\n\nAlright, let's break this down. The user wants to know the new administrative unit for \"Phường Phú Hài, Thành phố Phan Thiết, Tỉnh Bình Thuận\". My first step is to isolate the key information: the old ward (\"Phường Phú Hài\") and the old province (\"Tỉnh Bình Thuận\").\n\nNow, the game plan is to navigate through the provided resolutions and new ward data.  I need to find a direct link between the old and new administrative structure.\n\nFirst, I need to check for any province mergers. The \"60-NQ/TW\" resolution indicates that \"Tỉnh Bình Thuận\" is now part of \"Tỉnh Lâm Đồng\".  This is crucial because it sets the new province context for our search.\n\nNext, I'll meticulously go through the \"other resolutions\" list, focusing on any mentions of \"Phường Phú Hài\".  I was looking for a direct reference to it being merged into a new ward.\n\nBingo! Resolution 1671/NQ-UBTVQH15 stands out. Specifically, line 111 states that \"Phường Phú Hài\" is merged with other wards to form the new \"phường Phú Thủy\".  The province in this resolution is \"tỉnh Lâm Đồng\", perfectly aligning with the province change we previously established.\n\nTo confirm, I'll cross-reference this with the \"New wards\" data.  I'm looking for \"phường Phú Thủy\" in \"tỉnh Lâm Đồng\".  And there it is: `{\"ward_code\":\"22924\",\"ward_name\":\"Phường Phú Thuỷ\",\"province_name\":\"Tỉnh Lâm Đồng\"}`. Note the slight spelling difference \"Phú Thủy\" vs \"Phú Thuỷ\" (y vs ỷ), but this is common in Vietnamese and is definitely a match.\n\nThis looks solid. To construct the output, I'll leverage the matching resolution as the `citation`. The `confidence` is high because we have a clear, direct merge with a consistent province change. The `province_name` is \"Tỉnh Lâm Đồng\". The `ward_code` comes from the \"New wards\" list, along with the `ward_name`.\n\nI also checked other lines in the same resolution and found that the formation of \"Phường Phan Thiết\" does *not* affect \"Phường Phú Hài\".  My conclusion is that the new ward for \"Phường Phú Hài\" is definitively \"Phường Phú Thủy\" (or \"Phường Phú Thuỷ\").\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng",
+        "line": "111. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Thanh Hải, Phú Hài và Phú Thủy thành phường mới có tên gọi là phường Phú Thủy."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "22924",
+      "ward_name": "Phường Phú Thuỷ"
+    }
+  ]
+}

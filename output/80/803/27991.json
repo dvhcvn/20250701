@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Bến Lức, Huyện Bến Lức, Tỉnh Long An",
+  "ellapsedInMs": 6220,
+  "estimatedCost": 0.0023715999999999997,
+  "thought": "**Analyzing the Address Transformation**\n\nOkay, so I'm tasked with mapping this old Vietnamese address to the new administrative structure.  The input is \"Thị trấn Bến Lức, Huyện Bến Lức, Tỉnh Long An\". Let's break this down systematically.\n\nFirst, I need to identify the components:  \"Thị trấn Bến Lức\" is the old ward, \"Huyện Bến Lức\" the old district, and \"Tỉnh Long An\" the old province.\n\nNow, the province merger is the likely first step. I consult the province resolutions, specifically 60-NQ/TW, and it clearly states a merger.  \"Tỉnh Long An\" is now part of the new province \"Tỉnh Tây Ninh\".  Good.  This is the first piece of the puzzle.\n\nNext, I need to understand what's happened at the ward level. Resolution 1682/NQ-UBTVQH15, concerning \"Tỉnh Tây Ninh\", is the one to investigate. I'll scan the text.  And bingo! Line 37 is the key: it explicitly mentions \"Thị trấn Bến Lức\" and \"Huyện Bến Lức\". It tells me that the old area has been reorganized as the new \"Xã Bến Lức\" (ward).\n\nFinally, for confirmation, I consult the list of new wards.  And there it is:  `{\"ward_code\":\"27991\",\"ward_name\":\"Xã Bến Lức\",\"province_name\":\"Tỉnh Tây Ninh\"}`.  The match is perfect.  The province, ward name, and code align.\n\nTherefore, my final output should be:\n\n*   `province_name`: \"Tỉnh Tây Ninh\"\n*   `ward_name`: \"Xã Bến Lức\"\n*   `ward_code`: \"27991\"\n*   `citation`: The information originates from Resolution 1682/NQ-UBTVQH15, particularly line 37.\n*   The overall confidence is **high**, as all the pieces fit together seamlessly and are clearly documented.\n\nExcellent. This address transformation is now accurate and well-documented.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1682/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tây Ninh",
+        "line": "37. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã An Thạnh (huyện Bến Lức), xã Thanh Phú và thị trấn Bến Lức thành xã mới có tên gọi là xã Bến Lức."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tây Ninh",
+      "ward_code": "27991",
+      "ward_name": "Xã Bến Lức"
+    }
+  ]
+}

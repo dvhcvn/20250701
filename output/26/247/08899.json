@@ -1,0 +1,18 @@
+{
+  "address": "Xã Hoàng Lâu, Huyện Tam Dương, Tỉnh Vĩnh Phúc",
+  "ellapsedInMs": 8866,
+  "estimatedCost": 0.0031932999999999996,
+  "thought": "**Address Mapping for Hoàng Lâu**\n\nOkay, so I'm tackling this Vietnamese address mapping task. I've got \"Xã Hoàng Lâu, Huyện Tam Dương, Tỉnh Vĩnh Phúc\" as my starting point. The goal is to figure out the new province, ward name, and ward code based on these administrative reorganizations.\n\nFirst, I parsed the address. \"Xã Hoàng Lâu\" is the ward, \"Huyện Tam Dương\" is the district, and \"Tỉnh Vĩnh Phúc\" is the province.  I know districts are being eliminated, so the key is finding where \"Hoàng Lâu\" ended up.\n\nMy initial thought is to check province resolutions, specifically Resolution 60-NQ/TW. Ah, there it is! \"Tỉnh Vĩnh Phúc\" was merged into \"Tỉnh Phú Thọ.\"  So, my new province name is definitely \"Tỉnh Phú Thọ.\"\n\nNext, I'm diving into \"Other resolutions.\"  I'm looking for direct mentions of \"Hoàng Lâu\" or at least its old district context. And there it is! Resolution 1676/NQ-UBTVQH15, \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ\", specifically Line 73. It clearly states \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Hoàng Đan, Hoàng Lâu và An Hòa thành xã mới có tên gọi là **xã Hoàng An**.\" Bingo!  That's my new ward name: \"Xã Hoàng An.\"\n\nNow, I'm cross-referencing this with the \"New wards\" data to confirm and get the `ward_code`.  A quick search reveals `{\"ward_code\":\"08896\",\"ward_name\":\"Xã Hoàng An\",\"province_name\":\"Tỉnh Phú Thọ\"}`. Perfect! Everything aligns. The province name matches what I deduced earlier, and the `ward_code` is present.\n\nNow, building the JSON output. I've got:\n\n*   `province_name`: \"Tỉnh Phú Thọ\"\n*   `ward_name`: \"Xã Hoàng An\"\n*   `ward_code`: \"08896\"\n\nAnd for the `citation`, I'm including:\n\n*   `header`: \"1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ\"\n*   `line`: \"73. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Hoàng Đan, Hoàng Lâu và An Hòa thành xã mới có tên gọi là **xã Hoàng An**.\"\n\nFor the `confidence`, it's high. I've got a direct mapping from \"Hoàng Lâu\" to \"Hoàng An\" in the resolution, and the province merger is clear.\n\nI'm double-checking other resolutions now, just to be thorough. I'm looking for \"Hoàng Lâu\" and also the old district name \"Tam Dương.\" Resolution 1676/NQ-UBTVQH15 is the only relevant one. Line 71 and Line 74 do mention a new ward named \"Tam Dương\" and \"Tam Dương Bắc\" respectively, but they are not the result of a merge with \"Hoàng Lâu\" - so it doesn't change my answer.\n\nSo, yeah, \"Xã Hoàng An\" is definitely the correct new ward for \"Xã Hoàng Lâu.\"  I'm confident with this mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "73. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Hoàng Đan, Hoàng Lâu và An Hòa thành xã mới có tên gọi là xã Hoàng An."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "08896",
+      "ward_name": "Xã Hoàng An"
+    }
+  ]
+}

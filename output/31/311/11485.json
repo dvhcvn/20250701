@@ -1,0 +1,28 @@
+{
+  "address": "Xã Liên Xuân, Thành phố Thuỷ Nguyên, Thành phố Hải Phòng",
+  "ellapsedInMs": 6538,
+  "estimatedCost": 0.0027968000000000003,
+  "thought": "**My Analysis of Address Mapping for Xã Liên Xuân**\n\nOkay, so I'm tackling this address mapping problem. The user's given me an old address, \"Xã Liên Xuân, Thành phố Thuỷ Nguyên, Thành phố Hải Phòng,\" and I need to figure out the corresponding new administrative units. Here's how I'm approaching it:\n\nFirst, I identify the old ward (\"Xã Liên Xuân\") and province (\"Thành phố Hải Phòng\") directly from the provided address. Simple enough.\n\nNext, I need to confirm the province name, especially since this area has been through a merger. I'm checking the relevant resolutions (60-NQ/TW) and, as expected, it clearly states that \"Thành phố Hải Phòng\" is the correct and current province name after the merger.\n\nNow, the crucial part: I'm digging into \"Other resolutions\" to find the fate of \"Xã Liên Xuân.\" I'm specifically looking at Resolution 1669/NQ-UBTVQH15. Bingo! Line 6 of the resolution states that *part* of \"Xã Liên Xuân\" has been merged into \"phường Lưu Kiếm.\" Line 69 then reveals that the *remaining part* of \"Xã Liên Xuân\" has been merged into \"xã Việt Khê.\"\n\nWith these findings, I now know the new wards: \"phường Lưu Kiếm\" and \"xã Việt Khê.\" To ensure accuracy, I'm cross-referencing these names with the \"New wards\" list, specifically to retrieve the associated codes and confirm the names.\n\nConsidering the information, the resolution explicitly states and clarifies the splitting of \"Xã Liên Xuân\" into the two wards. I'm feeling confident in this mapping.\n\nFinally, I'll output the results in the requested JSON format, accurately reflecting the mappings I've uncovered.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "6. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Trần Hưng Đạo (thành phố Thủy Nguyên), phường Lưu Kiếm, một phần diện tích tự nhiên, quy mô dân số của xã Liên Xuân và một phần diện tích tự nhiên của xã Quang Trung (thành phố Thủy Nguyên)thành phường mới có tên gọi là phường Lưu Kiếm."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "11488",
+      "ward_name": "Phường Lưu Kiếm"
+    },
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "69. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Ninh Sơn và phần còn lại của xã Liên Xuân sau khi sắp xếp theo quy định tại khoản 6 Điều này thành xã mới có tên gọi là xã Việt Khê."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "11503",
+      "ward_name": "Xã Việt Khê"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Đại Lào, Thành phố Bảo Lộc, Tỉnh Lâm Đồng",
+  "ellapsedInMs": 6483,
+  "estimatedCost": 0.0024021,
+  "thought": "**My Thought Process for Mapping an Old Vietnamese Address**\n\nOkay, so I need to translate this old Vietnamese address to its current administrative structure. Here's how I'll approach it:\n\nFirst, I'll break down the address: **Xã Đại Lào** (ward), **Thành phố Bảo Lộc** (city/district), and **Tỉnh Lâm Đồng** (province). Even though the prompt mentions \"eliminating all districts,\" \"Thành phố Bảo Lộc\" is a city, and often acts like a district. Therefore, I'll treat it as the immediate parent of the ward.\n\nNext, I'll check my province resolutions. I need to see if there have been any changes to \"Tỉnh Lâm Đồng.\" According to resolution 60-NQ/TW, it looks like Lâm Đồng has merged with some neighboring provinces, but the province name itself remains unchanged. Good.\n\nNow, I'll delve into the other resolutions. My focus is on finding \"Xã Đại Lào.\" Resolution 1671/NQ-UBTVQH15, line 106, is the key! It explicitly states that \"Xã Đại Lào\" will be incorporated into the new ward called **Phường 3 Bảo Lộc**. Bingo!\n\nI'll double-check this against my \"New Wards\" data. Yup, there it is: \"Phường 3 Bảo Lộc\" associated with \"Tỉnh Lâm Đồng\" and has a specific code, \"24841.\" Perfect match.\n\nBased on this, I'll construct my JSON output. The `citation.header` will point to resolution 1671/NQ-UBTVQH15, and the `citation.line` will be the crucial line 106. Since this is a direct, clear mapping with no ambiguity, I'll confidently mark this as \"high.\" The `province_name`, `ward_code`, and `ward_name` will be derived directly from the new ward data.\n\nFinally, the request implies there could be multiple mappings. However, in this case, the analysis yields a *single*, definitive mapping. That will be my output.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng",
+        "line": "106. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Lộc Tiến, xã Lộc Châu và xã Đại Lào thành phường mới có tên gọi là Phường 3 Bảo Lộc."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "24841",
+      "ward_name": "Phường 3 Bảo Lộc"
+    }
+  ]
+}

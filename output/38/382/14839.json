@@ -1,0 +1,18 @@
+{
+  "address": "Phường Quảng Cư, Thành phố Sầm Sơn, Tỉnh Thanh Hóa",
+  "ellapsedInMs": 5524,
+  "estimatedCost": 0.0016996,
+  "thought": "**My Analysis of the Address Mapping Request**\n\nOkay, so I'm being asked to figure out the new administrative unit for an old address. I understand. The user wants to map an old address to the new administrative structure based on some provided resolutions and new ward data. This is a common task, and I know exactly how to approach it.\n\nFirst, I need to pinpoint the province. Ah, \"Tỉnh Thanh Hóa.\" Excellent. Now, I'll quickly check the province resolutions. Ah, perfect. \"Tỉnh Thanh Hoá\" is listed under \"Các đơn vị hành chính cấp tỉnh không thực hiện sáp nhập\" in Resolution 60-NQ/TW. Okay, so that means the province name remains \"Tỉnh Thanh Hóa.\" That's easy enough.\n\nNext, I need to identify the specific ward. The address mentions \"Phường Quảng Cư.\" Got it. Now, the key is to look through those \"Other resolutions,\" especially since the user has specified that's where I can find the crucial information. Here we go. Ah, I see \"1686/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thanh Hóa.\" This looks promising!\n\nScanning through the resolution... Bingo! Line 134 is the key. It's merging several wards, including \"Phường Quảng Cư,\" into a *new* ward. The resolution clearly states that \"Phường Quảng Cư\" is part of the merger into a \"phường Sầm Sơn.\" Fantastic.\n\nNow, let's check the \"New wards\" data to confirm. Yes, there it is! \"phường Sầm Sơn\" is found with the `ward_code`: \"16531\" and the `province_name`: \"Tỉnh Thanh Hóa.\" Excellent! The resolution explicitly states the merge. There's no room for doubt. It's a clear and direct match. I'm feeling confident about this one.\n\nFinally, I just need to construct the JSON output based on the user's defined schema: `citation`, `confidence`, `province_name`, `ward_code`, and `ward_name`. I'll set a high confidence level because the resolution is very specific and there's a direct connection to the ward I am looking for. I've got all the pieces I need. Ready to provide the answer!\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1686/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thanh Hóa",
+        "line": "134. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Bắc Sơn (thành phố Sầm Sơn), Quảng Tiến, Quảng Cư, Trung Sơn, Trường Sơn, Quảng Châu và Quảng Thọ thành phường mới có tên gọi là phường Sầm Sơn."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thanh Hóa",
+      "ward_code": "16531",
+      "ward_name": "Phường Sầm Sơn"
+    }
+  ]
+}

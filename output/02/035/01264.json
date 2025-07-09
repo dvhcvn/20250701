@@ -1,0 +1,18 @@
+{
+  "address": "Xã Vĩ Thượng, Huyện Quang Bình, Tỉnh Hà Giang",
+  "ellapsedInMs": 6874,
+  "estimatedCost": 0.0027925,
+  "thought": "**My Analysis of the Administrative Address Mapping**\n\nOkay, so I'm tasked with mapping the old address \"Xã Vĩ Thượng, Huyện Quang Bình, Tỉnh Hà Giang\" to its current administrative structure, and I've got a plan.\n\nFirst, I need to understand that \"Tỉnh Hà Giang\" has been restructured.  My initial search of the provided resolutions (specifically 60-NQ/TW) reveals the merger of Hà Giang with Tuyên Quang, now forming \"Tỉnh Tuyên Quang.\"  This confirms a province-level change.\n\nNext, I look at the ward (\"Xã Vĩ Thượng\").  I'll search within \"Other resolutions\" for its specific fate.  Bingo! Resolution 1684/NQ-UBTVQH15 details the merger.  Line 86 specifically states that \"Xã Vĩ Thượng,\" along with two others, is consolidated into the new \"Xã Tiên Yên.\"  A direct match!\n\nNow, I'll cross-reference this new ward with the provided new wards list within \"Tỉnh Tuyên Quang.\" The list includes \"Xã Tiên Yên\" with code \"01261,\" perfectly aligning with my findings.\n\nThe district information (\"Huyện Quang Bình\") isn't directly mapped, but it's important for context. I'll note that the administrative restructuring seems to eliminate the district level, so I won't include that in my output.\n\nFinally, because there's such a clear, direct merge documented in the resolutions, my confidence in this mapping is \"high.\" My output will be a JSON structure containing:\n\n*   **province_name:** \"Tỉnh Tuyên Quang\" (from the province merge)\n*   **ward_name:** \"Xã Tiên Yên\" (from the ward merge resolution)\n*   **ward_code:** \"01261\" (from the new wards list)\n*   **citation:**  Including both the province merge resolution (60-NQ/TW) and the ward merge resolution (1684/NQ-UBTVQH15), with the respective lines quoted.\n\nSince the prompt asks for *all possible* ward candidates, and I've only found one definite match, I'll ensure that the output clearly reflects a single, high-confidence mapping to \"Xã Tiên Yên.\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW; 1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "Hợp nhất tỉnh Tuyên Quang và tỉnh Hà Giang, lấy tên là tỉnh Tuyên Quang; 86. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Vĩ Thượng, Hương Sơn và Tiên Yên thành xã mới có tên gọi là xã Tiên Yên."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "01261",
+      "ward_name": "Xã Tiên Yên"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "address": "Xã EaBia, Huyện Sông Hinh, Tỉnh Phú Yên",
+  "ellapsedInMs": 7820,
+  "estimatedCost": 0.0033103,
+  "thought": "**My Analysis of Mapping an Old Vietnamese Address**\n\nOkay, so I'm being asked to figure out where an old address in Vietnam falls under the new administrative structure. Let's break this down systematically, given my expertise in this area:\n\nFirst, I need to identify the old province and ward. The old province is clearly Tỉnh Phú Yên, and the old ward is Xã EaBia. The district is also noted as Huyện Sông Hinh, which is critical because the resolutions often reference districts.\n\nNow, the crucial step: checking for any province mergers, specifically focusing on the 60-NQ/TW resolution. Right away, I see that Tỉnh Phú Yên was merged into Tỉnh Đắk Lắk. That immediately changes the playing field.\n\nNext, I need to delve into other relevant resolutions. The key one here is `1660/NQ-UBTVQH15`, which deals with the reorganization of administrative units within Đắk Lắk. This is perfect! I need to find references to Xã EaBia and Huyện Sông Hinh within this document.\n\nAnd there it is! Line 76: Xã Ea Bia is being *partially* merged into the new ward, Xã Đức Bình. And Line 77: the *remaining part* of Xã Ea Bia is merged into Xã Sông Hinh.  The resolution also clearly uses the Huyện Sông Hinh context.\n\nNow for the final verification. I'll cross-reference these new wards with my `New wards` data. I see that Xã Đức Bình has a matching entry: `{\"ward_code\":\"22222\",\"ward_name\":\"Xã Đức Bình\",\"province_name\":\"Tỉnh Đắk Lắk\"}`.  And for Xã Sông Hinh, I have a matching entry: `{\"ward_code\":\"22207\",\"ward_name\":\"Xã Sông Hinh\",\"province_name\":\"Tỉnh Đắk Lắk\"}`. Everything fits perfectly!\n\nConsidering that the original ward is explicitly mentioned in the resolution, the province merger is clear, and all my data points align, I'm confident in this mapping. My confidence level is high.\n\nFinally, I'll output the data as a JSON array, indicating the citation, confidence, province name, ward code, and ward name for each of the two newly identified wards: Đức Bình and Sông Hinh.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1660/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đắk Lắk",
+        "line": "76. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Sơn Giang, Đức Bình Đông, Đức Bình Tây và một phần diện tích tự nhiên, quy mô dân số của xã Ea Bia thành xã mới có tên gọi là xã Đức Bình."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đắk Lắk",
+      "ward_code": "22222",
+      "ward_name": "Xã Đức Bình"
+    },
+    {
+      "citation": {
+        "header": "1660/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đắk Lắk",
+        "line": "77. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Hai Riêng, xã Ea Trol, xã Sông Hinh và phần còn lại của xã Ea Bia sau khi sắp xếp theo quy định tại khoản 76 Điều này thành xã mới có tên gọi là xã Sông Hinh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đắk Lắk",
+      "ward_code": "22207",
+      "ward_name": "Xã Sông Hinh"
+    }
+  ]
+}

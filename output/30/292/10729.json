@@ -1,0 +1,28 @@
+{
+  "address": "Xã Thượng Quận, Thị xã Kinh Môn, Tỉnh Hải Dương",
+  "ellapsedInMs": 7863,
+  "estimatedCost": 0.0035182,
+  "thought": "**Identifying the New Administrative Unit for \"Xã Thượng Quận\"**\n\nOkay, let's break this down. My goal is to figure out the current administrative unit (ward) for the old address \"Xã Thượng Quận, Thị xã Kinh Môn, Tỉnh Hải Dương.\" This is a straightforward task, but it requires careful analysis.\n\nFirst, I need to check for any province mergers. The input states \"Tỉnh Hải Dương,\" and I recall that Resolution 60-NQ/TW merged \"Tỉnh Hải Dương\" with \"thành phố Hải Phòng,\" creating the new province. So, my initial `province_name` in the output will be \"Thành phố Hải Phòng.\"\n\nNow comes the crucial part: analyzing the provided resolutions. I'll search for mentions of \"Thượng Quận\" within the relevant resolutions, specifically in the `other resolutions` section. I'm focusing on finding how \"Xã Thượng Quận\" is being reorganized.\n\nResolution 1669/NQ-UBTVQH15 is key here. It contains two lines that are relevant to \"Thượng Quận.\" Line 42 states that a portion of \"Xã Thượng Quận\" merges with \"phường An Phụ\" and \"xã Hiệp Hòa\" to form \"phường Trần Liễu.\" Then, Line 109 indicates the remaining portion of \"Xã Thượng Quận\" merges with \"thị trấn Phú Thái,\" \"các xã Kim Xuyên, Kim Anh, Kim Liên\" to form \"xã Phú Thái.\"\n\nFrom this, I can infer that \"Xã Thượng Quận\" has been split into two new units: \"phường Trần Liễu\" and \"xã Phú Thái.\"\n\nNext, I need to confirm the existence of these new wards within the \"New wards\" list.  I'll check for \"phường Trần Liễu\" and \"xã Phú Thái,\" confirming their presence, and I'll grab their corresponding `ward_code` values and ensure the correct `province_name`.\n\nGiven that these mappings are clear-cut and directly sourced from the resolution, my confidence level for both of these new units will be \"high\". The output will, therefore, be structured as an array of objects, providing the citation details (resolution header and relevant line), the high confidence, the province name \"Thành phố Hải Phòng,\" the corresponding `ward_code` and the `ward_name` for each newly created unit - \"phường Trần Liễu\" and \"xã Phú Thái.\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "42. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân sốcủa phường An Phụ, xãHiệp Hòa và một phần diện tích tự nhiên, quy mô dân số của xã Thượng Quận thành phường mới có tên gọi là phường Trần Liễu."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "10729",
+      "ward_name": "Phường Trần Liễu"
+    },
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "109. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Phú Thái, các xã Kim Xuyên, Kim Anh, Kim Liên và phần còn lạicủa xã Thượng Quận sau khi sắp xếp theo quy định tại khoản 42 Điều nàythành xã mới có tên gọi là xã Phú Thái."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "10750",
+      "ward_name": "Xã Phú Thái"
+    }
+  ]
+}

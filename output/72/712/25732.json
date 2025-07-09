@@ -1,0 +1,18 @@
+{
+  "address": "Phường An Tịnh, Thị xã Trảng Bàng, Tỉnh Tây Ninh",
+  "ellapsedInMs": 6679,
+  "estimatedCost": 0.0024173,
+  "thought": "**Identifying the New Administrative Unit for the Old Address**\n\nOkay, so I've got \"Phường An Tịnh, Thị xã Trảng Bàng, Tỉnh Tây Ninh\" as the old address. Let's break this down. First, the province is clearly \"Tỉnh Tây Ninh.\" No need to second-guess that. I'll quickly check if there have been any recent provincial mergers, but I'm pretty sure Tây Ninh has remained untouched based on my knowledge of the latest resolutions. Confirmed - the \"60-NQ/TW\" doesn't list any changes to Tây Ninh.\n\nNext, the ward is \"Phường An Tịnh.\" Now, time to dig through the relevant resolutions for any mergers or splits. I'll zero in on \"1682/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tây Ninh\" because it's the most likely place to find information on ward-level changes within Tây Ninh.\n\nScanning through the lines, I'm looking for \"Phường An Tịnh.\" Bingo! Line 94 is the key: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Lộc Hưng và phường An Tịnh thành phường mới có tên gọi là **phường An Tịnh**.\"  This clearly states that \"Phường An Tịnh\" *is* the new name after a merger with \"Phường Lộc Hưng.\" That means the existing ward is being preserved through a merger.\n\nNow, to confirm the details, I'll cross-reference this with the \"New wards\" data.  I'm looking for \"Phường An Tịnh\" within \"Tỉnh Tây Ninh.\" Perfect, there's a match! The data confirms the name and, crucially, gives me the ward code: \"25732\".\n\nFinally, I'll construct the JSON output.\n\n*   `province_name`: \"Tỉnh Tây Ninh\" (straightforward from the input and confirmed by the province-level check).\n*   `ward_name`: \"Phường An Tịnh\" (from the resolution and the new ward data).\n*   `ward_code`: \"25732\" (directly from the matching entry in the new ward data).\n*   `citation`: The crucial line will be from \"1682/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tây Ninh\", specifically \"94. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Lộc Hưng và phường An Tịnh thành phường mới có tên gọi là **phường An Tịnh**.\"\n*   `confidence`: I'd say this is high confidence. The resolution explicitly states the new name of the combined ward, and the ward code from the \"new wards\" data aligns perfectly. It's a clean and direct match.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1682/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tây Ninh",
+        "line": "94. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Lộc Hưng và phường An Tịnh thành phường mới có tên gọi là phường An Tịnh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tây Ninh",
+      "ward_code": "25732",
+      "ward_name": "Phường An Tịnh"
+    }
+  ]
+}

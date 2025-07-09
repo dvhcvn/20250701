@@ -1,0 +1,18 @@
+{
+  "address": "Xã Lưu Nghiệp Anh, Huyện Trà Cú, Tỉnh Trà Vinh",
+  "ellapsedInMs": 5752,
+  "estimatedCost": 0.0022321000000000003,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm presented with a Vietnamese address: \"Xã Lưu Nghiệp Anh, Huyện Trà Cú, Tỉnh Trà Vinh.\"  My goal is to map this to the *new* administrative structure.  Here's how I'm breaking it down:\n\nFirst, I need to identify the *old* province and ward.  \"Xã Lưu Nghiệp Anh\" is clearly the old ward, and \"Tỉnh Trà Vinh\" is the old province. Easy enough.\n\nNext, I have to account for any province mergers.  The \"60-NQ/TW\" resolution tells me that Trà Vinh merged with other provinces to form \"Tỉnh Vĩnh Long.\"  So, my *new* province is definitely \"Tỉnh Vĩnh Long.\"\n\nNow comes the tricky part: mapping the ward.  I'm looking for information on \"Xã Lưu Nghiệp Anh\" within the context of \"Tỉnh Vĩnh Long.\"  The provided resolutions are key here.  I zero in on \"1687/NQ-UBTVQH15,\" which specifically deals with ward rearrangements in Vĩnh Long.  Line 52 in that resolution is gold: it states that \"Xã Lưu Nghiệp Anh\" *exists*, but it is formed by merging with another ward. The name is the same.\n\nFinally, I cross-reference this with the \"New wards\" data.  And there it is: a direct match!  I have a ward named \"Xã Lưu Nghiệp Anh\" in \"Tỉnh Vĩnh Long,\" and it has a corresponding code, \"29476.\"\n\nTherefore, my final mapping is crystal clear. I can confidently construct the JSON output: the new province is Vĩnh Long, the ward is Lưu Nghiệp Anh, the ward code is 29476, with a clear citation for the resolution. The confidence here is exceptionally high given the direct match and straightforward province merger. I'm satisfied.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long",
+        "line": "52. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân của xã An Quảng Hữu và xã Lưu Nghiệp Anh thành xã mới có tên gọi là xã Lưu Nghiệp Anh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "29476",
+      "ward_name": "Xã Lưu Nghiệp Anh"
+    }
+  ]
+}

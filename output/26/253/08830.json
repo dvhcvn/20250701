@@ -1,0 +1,28 @@
+{
+  "address": "Xã Yên Thạch, Huyện Sông Lô, Tỉnh Vĩnh Phúc",
+  "ellapsedInMs": 6448,
+  "estimatedCost": 0.0022485,
+  "thought": "**Finding the New Administrative Unit for an Old Address**\n\nOkay, so I've got an old address: \"Xã Yên Thạch, Huyện Sông Lô, Tỉnh Vĩnh Phúc.\" My task is to figure out the current administrative unit. Here's how I'm going to approach this, step-by-step:\n\nFirst, I need to establish the starting point. I see \"Tỉnh Vĩnh Phúc\" – the old province. I immediately think to check for province-level changes. I know about Resolution 60-NQ/TW, so I'll go there. Ah, yes, \"Hợp nhất tỉnh Vĩnh Phúc, tỉnh Phú Thọ và tỉnh Hoà Bình; lấy tên là tỉnh Phú Thọ.\" So, Vĩnh Phúc was merged and the new province is Phú Thọ. Good, that establishes my starting frame.\n\nNext, I need to pinpoint \"Xã Yên Thạch\" (the old ward). Now, I'll search for resolutions that deal with *both* \"Xã Yên Thạch\" and the *new* province, Phú Thọ.  Specifically, I'm looking at `1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ`.\n\nBingo! Line 59 jumps out: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đồng Thịnh (huyện Sông Lô), Tứ Yên, Đức Bác và Yên Thạch thành xã mới có tên gọi là **xã Sông Lô**.\"  This *explicitly* mentions \"Yên Thạch\" and merges it into \"Xã Sông Lô\" – *perfect*.  The context of \"huyện Sông Lô\" confirms I am on the correct track.\n\nNow, I'll double-check by looking at the \"New Wards\" and confirming \"xã Sông Lô\" in \"Tỉnh Phú Thọ\". My search reveals: `{\"ward_code\":\"08848\",\"ward_name\":\"Xã Sông Lô\",\"province_name\":\"Tỉnh Phú Thọ\"}` - it is a confirmed match!\n\nGiven that the resolution *specifically* states the merger of \"Yên Thạch\" into \"Xã Sông Lô,\" and the province mapping is crystal clear, I'm very confident in this. This information will inform the construction of a JSON output that describes this administrative change.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "4. Hợp nhất tỉnh Vĩnh Phúc, tỉnh Phú Thọ và tỉnh Hoà Bình; lấy tên là tỉnh Phú Thọ"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "08848",
+      "ward_name": "Xã Sông Lô"
+    },
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "59. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đồng Thịnh (huyện Sông Lô), Tứ Yên, Đức Bác và Yên Thạch thành xã mới có tên gọi là xã Sông Lô."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "08848",
+      "ward_name": "Xã Sông Lô"
+    }
+  ]
+}

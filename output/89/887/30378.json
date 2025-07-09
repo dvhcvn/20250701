@@ -1,0 +1,18 @@
+{
+  "address": "Phường Long Châu, Thị xã Tân Châu, Tỉnh An Giang",
+  "ellapsedInMs": 6709,
+  "estimatedCost": 0.0026075,
+  "thought": "**My Analysis of the Administrative Unit Change**\n\nOkay, here's the breakdown of how I'm approaching this. The user has given me an old address: \"Phường Long Châu, Thị xã Tân Châu, Tỉnh An Giang\". My goal is to identify the new administrative unit (ward) for that location.\n\nFirst things first, I immediately recognized \"Tỉnh An Giang\" as the province.  I'm familiar with the recent administrative changes, so my next step is to quickly check for any province mergers. Consulting my knowledge base, particularly documents like \"60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất\" and similar resolutions, I see that An Giang hasn't been merged with any other province. Excellent.\n\nNow, the core of the problem lies within the ward itself, \"Phường Long Châu.\" I need to see if it's been reorganized. I'll focus my search on the resolutions that deal with administrative adjustments within An Giang. Specifically, I'm zeroing in on \"1654/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh An Giang.\"\n\nAnd Bingo!  Line 86 of that resolution is the key. It specifically states that \"Phường Long Châu\" (along with \"Phường Long Hưng\" and \"Phường Long Phú\") has been merged into a new ward: \"Phường Long Phú.\" That's a very clear indication of the shift.\n\nTo be extra certain, I need to verify \"Phường Long Phú\" in my database of new wards. Searching within \"Tỉnh An Giang,\" I quickly locate the entry for the new ward: `{\"ward_code\":\"30377\",\"ward_name\":\"Phường Long Phú\",\"province_name\":\"Tỉnh An Giang\"}`. This confirms the new administrative structure.\n\nTherefore, my final output will be a JSON response that reflects this analysis. I'll include the relevant citation from the resolution – \"1654/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh An Giang\" – specifically line 86. The *confidence* level will be set to \"high\" because the resolution explicitly mentions the old ward in relation to the new ward. The final JSON will include the ward code (\"30377\"), the ward name (\"Phường Long Phú\"), and the province name (\"Tỉnh An Giang\").  This should provide a reliable answer to the user's inquiry.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1654/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh An Giang",
+        "line": "86. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Long Hưng, Long Châu và Long Phú thành phường mới có tên gọi là **phường Long Phú**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh An Giang",
+      "ward_code": "30377",
+      "ward_name": "Phường Long Phú"
+    }
+  ]
+}

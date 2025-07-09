@@ -1,0 +1,18 @@
+{
+  "address": "Xã Hưng Long, Thị xã Mỹ Hào, Tỉnh Hưng Yên",
+  "ellapsedInMs": 8201,
+  "estimatedCost": 0.0033931,
+  "thought": "**My Analysis of the Administrative Unit Change**\n\nOkay, so I'm presented with an old address: \"Xã Hưng Long, Thị xã Mỹ Hào, Tỉnh Hưng Yên,\" and I need to figure out its new administrative unit (ward).  My initial approach is straightforward: break it down step-by-step.\n\nFirst, I identified the province: \"Tỉnh Hưng Yên.\"  I'll immediately check for any province mergers using the `60-NQ/TW` resolution.  Luckily, Hưng Yên remains Hưng Yên, even after incorporating Thái Bình.  So, no complications there.\n\nNext, I need to pinpoint the ward. The address mentions \"Xã Hưng Long.\"  My next step is to delve into other resolutions, specifically focusing on those concerning Hưng Yên.  Resolution `1666/NQ-UBTVQH15` seems particularly relevant, as it deals with administrative rearrangements.\n\nI scanned through this resolution, paying close attention to any mention of \"Hưng Long\" within Hưng Yên.  Line 98 immediately caught my eye: it *explicitly* lists \"Xã Hưng Long\" as being merged into the new \"phường Đường Hào.\" That's a strong lead.\n\nTo confirm, I cross-referenced this with the \"New wards\" list, where I found a matching entry for \"phường Đường Hào\" with its ward code and province name. This confirms my earlier finding.\n\nNow, considering the input address \"Thị xã Mỹ Hào,\" the presence of \"phường Mỹ Hào\" in the same resolution is intriguing. However,  line 97 of the resolution which mentions \"phường Mỹ Hào\" describes it as being formed from different units (\"phường Bần Yên Nhân,\" \"Nhân Hòa,\" \"Phan Đình Phùng,\" and \"xã Cẩm Xá\").  It does *not* include \"Xã Hưng Long\".\n\nTherefore, while the old address specifies \"Thị xã Mỹ Hào,\" the resolution creating \"phường Mỹ Hào\" is relevant because it concerns the same province and addresses, this also means that \"Xã Hưng Long\" does not belong in the new \"phường Mỹ Hào.\"  The input question asks for *all possible new ward candidates*, but given that \"Xã Hưng Long\" is explicitly merged into \"phường Đường Hào,\" I am most confident in identifying *that* as the correct ward.  There is a potential for misunderstanding the reorganization process if considering the context of the old address.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên",
+        "line": "98. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Dị Sử, phường Phùng Chí Kiên và các xã Xuân Dục, Hưng Long, Ngọc Lâm thành phường mới có tên gọi là phường Đường Hào."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "12133",
+      "ward_name": "Phường Đường Hào"
+    }
+  ]
+}

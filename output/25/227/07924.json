@@ -1,0 +1,18 @@
+{
+  "address": "Xã Thụy Vân, Thành phố Việt Trì, Tỉnh Phú Thọ",
+  "ellapsedInMs": 6888,
+  "estimatedCost": 0.0029737,
+  "thought": "**Finding the New Administrative Unit for the Old Address**\n\nOkay, so I've got \"Xã Thụy Vân, Thành phố Việt Trì, Tỉnh Phú Thọ.\"  First things first: *Phú Thọ* is the province.  I quickly check for province mergers, and while Phú Thọ did *technically* merge with Vĩnh Phúc and Hòa Bình, it retains its name, so no immediate issue there.\n\nNow, the crucial part: finding out where \"Xã Thụy Vân\" ended up.  I need to go through the other resolutions.  Looking specifically for \"Thụy Vân,\" I quickly spot it in the *1676/NQ-UBTVQH15* resolution.  Excellent!\n\nSpecifically, resolution item 133 says that \"Xã Thụy Vân,\" along with Minh Phương and Nông Trang, becomes the new \"Phường Nông Trang.\" Perfect! That's my answer.\n\nTo be absolutely certain, I cross-reference this with the `new_wards` data.  Sure enough, \"Phường Nông Trang\" is there, with a code and the same province name.  The new ward is \"Phường Nông Trang,\" and it's in \"Tỉnh Phú Thọ.\"  The confidence here is high, because the resolution clearly and explicitly states this change.\n\nI double-checked to make sure no other resolutions mentioned \"Thụy Vân\" in a conflicting way, but there was only the one clear mapping.\n\nTherefore, the JSON output is:\n\n```json\n{\n  \"province_name\": \"Tỉnh Phú Thọ\",\n  \"ward_name\": \"Phường Nông Trang\",\n  \"ward_code\": \"07894\",\n  \"confidence\": \"high\",\n  \"citation\": {\n    \"header\": \"1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ\",\n    \"line\": \"133. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Minh Phương, phường Nông Trang và xã Thụy Vân thành phường mới có tên gọi là **phường Nông Trang**.\"\n  }\n}\n```\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "133. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Minh Phương, phường Nông Trang và xã Thụy Vân thành phường mới có tên gọi là phường Nông Trang."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "07894",
+      "ward_name": "Phường Nông Trang"
+    }
+  ]
+}

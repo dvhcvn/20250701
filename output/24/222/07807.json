@@ -1,0 +1,18 @@
+{
+  "address": "Phường Quang Châu, Thị Xã Việt Yên, Tỉnh Bắc Giang",
+  "ellapsedInMs": 5646,
+  "estimatedCost": 0.0020712,
+  "thought": "**Deconstructing an Old Address: My Mapping Strategy**\n\nAlright, let's break this down. The user's given me an old address: \"Phường Quang Châu, Thị Xã Việt Yên, Tỉnh Bắc Giang.\" My task is to translate this to the current administrative units, right?  Okay, here's my game plan.\n\nFirst, I need to establish the baseline: \"Tỉnh Bắc Giang\" (Bắc Giang Province).  Province boundaries are often the most stable starting point.  I'll immediately consult my province resolutions, particularly those linked to Resolution 60-NQ/TW.  Ah, here it is: \"Hợp nhất tỉnh Bắc Ninh và tỉnh Bắc Giang, lấy tên là tỉnh Bắc Ninh.\" So, Bắc Giang is now Bắc Ninh. Got it.\n\nNext, I zero in on the specific ward: \"Phường Quang Châu.\" I'll now be looking within the context of the *new* province, Bắc Ninh, for any relevant resolutions.  Crucially, I'm specifically searching \"Other resolutions\" for references to \"Phường Quang Châu.\"\n\nMy search leads me to Resolution 1658/NQ-UBTVQH15.  Perfect! And there it is on line 90: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Quang Châu, Vân Trung, Tăng Tiến và Nếnh thành phường mới có tên gọi là **phường Nếnh**.\"  \"Phường Quang Châu\" is explicitly merged into \"Phường Nếnh.\" That's a direct hit!\n\nFinally, I need to verify. My \"New wards\" list should have the details.  Ah, there it is: `{\"ward_code\":\"07795\",\"ward_name\":\"Phường Nếnh\",\"province_name\":\"Tỉnh Bắc Ninh\"}`.  Bingo!\n\nI'll now construct my JSON output. Since I have a direct resolution for the province change and the ward merger, I can confidently set the `confidence` level to \"high.\" My output will look something like this:\n\n```json\n{\n  \"province_name\": \"Tỉnh Bắc Ninh\",\n  \"ward_name\": \"Phường Nếnh\",\n  \"ward_code\": \"07795\",\n  \"confidence\": \"high\",\n  \"citation\": \"1658/NQ-UBTVQH15, Line 90\"\n}\n```\n\nThat should be a clean and accurate mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh",
+        "line": "90. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Quang Châu, Vân Trung, Tăng Tiến và Nếnh thành phường mới có tên gọi là phường Nếnh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "07795",
+      "ward_name": "Phường Nếnh"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Vĩnh Trung, Thành phố Móng Cái, Tỉnh Quảng Ninh",
+  "ellapsedInMs": 8048,
+  "estimatedCost": 0.0029490000000000002,
+  "thought": "**Finding the New Administrative Unit for the Old Address**\n\nOkay, so I've got \"Xã Vĩnh Trung, Thành phố Móng Cái, Tỉnh Quảng Ninh\". My first task is to figure out the new administrative setup. I know my source for this is primarily resolutions and decisions, and I'll need to meticulously check them.\n\nFirst, I recognize \"Tỉnh Quảng Ninh\". I'll quickly check the province name against any potential changes defined in resolution 60-NQ/TW. Ah, no changes there, \"Tỉnh Quảng Ninh\" remains as is. That's a quick win.\n\nNow, focusing on the ward, \"Xã Vĩnh Trung\". The key is to comb through relevant resolutions looking for mentions of this specific ward. I'm focusing on \"Other resolutions\" here, searching for matches on \"Xã Vĩnh Trung.\"\n\nBingo! In resolution 1679/NQ-UBTVQH15, I found the line I was looking for. Line 21 explicitly states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Vĩnh Trung và xã Vĩnh Thực thành xã mới có tên gọi là **xã Vĩnh Thực**.\" That's the key! \"Xã Vĩnh Trung\" is being merged into \"Xã Vĩnh Thực.\"\n\nNow, I'll double-check my \"New wards\" data to make sure \"Xã Vĩnh Thực\" is present. Excellent, there it is! `{\"ward_code\":\"06757\",\"ward_name\":\"Xã Vĩnh Thực\",\"province_name\":\"Tỉnh Quảng Ninh\"}`. This confirms the new ward name and associated code.  I've got a match.\n\nI'm also being thorough, so I'll scan the other resolutions for *any* mention of \"Xã Vĩnh Trung\" – just to be absolutely certain. It's a good practice to prevent any confusion, especially when dealing with names that sound alike. I found \"Vĩnh Trung\" in the An Giang resolution but that isn't the one I need. I also found it in the Cần Thơ resolution, but that isn't the one I need either.\n\nMy analysis boils down to a clear conclusion: The only relevant resolution for \"Xã Vĩnh Trung\" in \"Tỉnh Quảng Ninh\" is 1679/NQ-UBTVQH15. The cited line is definitive: \"Xã Vĩnh Trung\" becomes \"Xã Vĩnh Thực.\" I feel very confident.\n\nSo, here's my JSON output:\n\n```json\n{\n  \"province_name\": \"Tỉnh Quảng Ninh\",\n  \"ward_name\": \"Xã Vĩnh Thực\",\n  \"ward_code\": \"06757\",\n  \"citation\": {\n    \"header\": \"1679/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ninh\",\n    \"line\": \"21. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Vĩnh Trung và xã Vĩnh Thực thành xã mới có tên gọi là **xã Vĩnh Thực**.\"\n  },\n  \"confidence\": \"high\"\n}\n```\n\nThis is a high-confidence finding given the clarity of the source resolution and the unambiguous language used. I'm confident in this output.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1679/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ninh",
+        "line": "21. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Vĩnh Trung và xã Vĩnh Thực thành xã mới có tên gọi là xã Vĩnh Thực."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ninh",
+      "ward_code": "06757",
+      "ward_name": "Xã Vĩnh Thực"
+    }
+  ]
+}

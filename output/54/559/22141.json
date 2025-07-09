@@ -1,0 +1,18 @@
+{
+  "address": "Xã An Xuân, Huyện Tuy An, Tỉnh Phú Yên",
+  "ellapsedInMs": 5820,
+  "estimatedCost": 0.0030092,
+  "thought": "**Finding the New Administrative Unit for \"Xã An Xuân\"**\n\nOkay, so I need to figure out the current administrative location of \"Xã An Xuân, Huyện Tuy An, Tỉnh Phú Yên\".  My thinking goes like this:  first, I have to check for any province mergers, as these are common. I know from my experience that in Vietnam, provinces often consolidate. Looking through the relevant documentation, I confirmed that \"Tỉnh Phú Yên\" was indeed merged with \"Đắk Lắk\", becoming \"Tỉnh Đắk Lắk\". This is a key first step.\n\nNow, with the new province identified, I need to delve into the \"Other resolutions\" related to \"Tỉnh Đắk Lắk\" to see if there were any changes to the old district. I quickly zeroed in on \"1660/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đắk Lắk\" because this type of resolution often contains the details I require. After a quick scan, I focused on line 63, which, thankfully, explicitly mentioned \"An Xuân\".  It states that \"An Xuân\" (along with An Nghiệp and An Lĩnh) was merged to form a new ward named \"Xã Tuy An Tây\". Excellent!\n\nThe next step is to nail down the precise code and details for this new ward.  I'll query my ward database for the entry: `{\"ward_name\":\"Xã Tuy An Tây\",\"province_name\":\"Tỉnh Đắk Lắk\"}`.  I immediately found the matching entry: `{\"ward_code\":\"22132\",\"ward_name\":\"Xã Tuy An Tây\",\"province_name\":\"Tỉnh Đắk Lắk\"}`.\n\nFinally, I'll craft the output for this specific address. The `citation` will point directly to resolution \"1660/NQ-UBTVQH15\", line 63. Given the specificity and direct match, the `confidence` level should be set to \"high\". The rest is straightforward: the `province_name` is \"Tỉnh Đắk Lắk\", the `ward_code` is \"22132\", and the `ward_name` is \"Xã Tuy An Tây\".  My work here is done.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1660/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đắk Lắk",
+        "line": "63. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã An Nghiệp, An Xuân và An Lĩnh thành xã mới có tên gọi là xã Tuy An Tây."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đắk Lắk",
+      "ward_code": "22132",
+      "ward_name": "Xã Tuy An Tây"
+    }
+  ]
+}

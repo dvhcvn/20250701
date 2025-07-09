@@ -1,0 +1,18 @@
+{
+  "address": "Xã Xuân Nội, Huyện Trùng Khánh, Tỉnh Cao Bằng",
+  "ellapsedInMs": 7115,
+  "estimatedCost": 0.0027589,
+  "thought": "**Analyzing the Vietnamese Address for Mapping**\n\nOkay, so I'm presented with the address \"Xã Xuân Nội, Huyện Trùng Khánh, Tỉnh Cao Bằng\" and the task of mapping it to the new administrative structure. My first step is to break down this address: \"Xã Xuân Nội\" is the old ward, \"Huyện Trùng Khánh\" is the old district, and \"Tỉnh Cao Bằng\" is the old province.\n\nNow, the crucial part: I need to verify if the province has undergone any changes, specifically looking at the 60-NQ/TW document. Fortunately, \"Tỉnh Cao Bằng\" is listed under \"Các đơn vị hành chính cấp tỉnh không thực hiện sáp nhập,\" meaning the province name remains the same.\n\nNext, I zero in on \"Xã Xuân Nội\" and the relevant resolutions within Tỉnh Cao Bằng. I'm focusing on \"1657/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Cao Bằng.\" Line 45 is the key here. It explicitly states that \"Xã Xuân Nội,\" along with other wards, is merged into a new ward called \"**Xã Quang Trung**.\" The old district, \"Huyện Trùng Khánh,\" is also consistent with the resolution.\n\nSince I've identified the new ward as \"Xã Quang Trung,\" I need to confirm its details in the \"New wards\" list. Bingo! There's a match: `{\"ward_code\":\"01465\",\"ward_name\":\"Xã Quang Trung\",\"province_name\":\"Tỉnh Cao Bằng\"}`.\n\nWith all the pieces in place, I can construct the final JSON output:\n\n*   `province_name`: \"Tỉnh Cao Bằng\" (no change)\n*   `ward_name`: \"Xã Quang Trung\"\n*   `ward_code`: \"01465\"\n*   `confidence`: \"high\" (because the resolution is unambiguous)\n*   `citation`: The resolution clearly supports my conclusion.\n\nI've double-checked for any edge cases or ambiguity, but the resolution directly and clearly states the merger of \"Xã Xuân Nội\" into \"Xã Quang Trung.\"  The context within the resolution, with mention of the original district, solidifies this as the correct mapping.  The confidence level should be high as there are no competing or conflicting results from the data. The district information also aligns with the resolution, therefore increasing my confidence in this final answer.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1657/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Cao Bằng",
+        "line": "45. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Quang Trung(huyện Trùng Khánh), Tri Phương và Xuân Nộithành xã mới có tên gọi là **xã Quang Trung**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Cao Bằng",
+      "ward_code": "01465",
+      "ward_name": "Xã Quang Trung"
+    }
+  ]
+}

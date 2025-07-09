@@ -1,0 +1,18 @@
+{
+  "address": "Xã Vinh Quang, Huyện Chiêm Hóa, Tỉnh Tuyên Quang",
+  "ellapsedInMs": 8415,
+  "estimatedCost": 0.0032024999999999996,
+  "thought": "**Address Mapping Analysis: Xã Vinh Quang, Huyện Chiêm Hóa, Tỉnh Tuyên Quang**\n\nOkay, so the user wants me to map an old Vietnamese address. It's: Xã Vinh Quang, Huyện Chiêm Hóa, Tỉnh Tuyên Quang. Straightforward enough, let's break this down systematically.\n\nFirst, I need to establish the context. We're dealing with administrative boundary changes, likely due to some recent resolutions. The input address gives me a clear starting point: Vinh Quang (ward), Chiêm Hóa (district), and Tuyên Quang (province).\n\nThe initial step is always to check the province resolution (60-NQ/TW). In this case, Tuyên Quang remains Tuyên Quang. That's good to know and confirms that the province name in the final output will be \"Tỉnh Tuyên Quang\".\n\nNow, the real work begins with the other resolutions. My primary focus is on identifying any resolutions that mention \"Xã Vinh Quang\" within \"Tỉnh Tuyên Quang.\" I'm looking for direct matches and clear indicators of merging or renaming.\n\nResolution 1684/NQ-UBTVQH15 catches my eye. Scanning through it, I find a crucial line: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Vinh Quang, Bình Nhân và Kim Bình thành xã mới có tên gọi là **xã Kim Bình**.\" Bingo! \"Xã Vinh Quang\" is explicitly mentioned as being merged into a new ward called \"Xã Kim Bình\". That's a strong match.\n\nThere's another line about \"thị trấn Vinh Quang\", but that's a township, not the ward I'm looking for, so I'm putting less weight on that one. We're interested in the *exact* type match.\n\nNext, I need to verify this \"Xã Kim Bình\" in my list of new wards. Sure enough, there it is: `{\"ward_code\":\"02350\",\"ward_name\":\"Xã Kim Bình\",\"province_name\":\"Tỉnh Tuyên Quang\"}`. Perfect!\n\nNow, the matter of \"Huyện Chiêm Hóa\". Given the input address includes a district that has been dissolved, I have to assume the district boundary is now contained within the new ward boundary. The other resolutions state \"eliminating all districts\" which seems to be the case. I'll need to check the exact resolution text again to be certain.\n\nSo, for the output: I'll include the resolution as the citation. The confidence level is high because we have a direct match on the ward name and confirmed province. The province name is \"Tỉnh Tuyên Quang.\" The ward code and name come directly from the `new_wards` list:  \"02350\" and \"Xã Kim Bình\", respectively. This should cover the request. The JSON output will be constructed with this information.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "17. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Vinh Quang, Bình Nhân và Kim Bình thành xã mới có tên gọi là **xã Kim Bình**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "02350",
+      "ward_name": "Xã Kim Bình"
+    }
+  ]
+}

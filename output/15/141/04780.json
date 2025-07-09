@@ -1,0 +1,18 @@
+{
+  "address": "Xã Hán Đà, Huyện Yên Bình, Tỉnh Yên Bái",
+  "ellapsedInMs": 5707,
+  "estimatedCost": 0.0031291,
+  "thought": "**Determining the New Ward for an Old Address**\n\nOkay, so I've got a query to find the new administrative unit, specifically the ward, for an old address: \"Xã Hán Đà, Huyện Yên Bình, Tỉnh Yên Bái\". My process will be methodical, drawing upon my understanding of administrative changes and the available data.\n\nFirst, I need to break down the old address. I've identified \"Tỉnh Yên Bái\" as the old province and \"Xã Hán Đà\" as the old ward. Now, I'll need to account for any province mergers. My knowledge of Resolution 60-NQ/TW tells me that Yên Bái merged with Lào Cai, now forming the province of \"Tỉnh Lào Cai\".\n\nWith the new province name established, I need to search through my data for any changes affecting \"Xã Hán Đà\" within the new province. I'll be meticulously checking both \"Other resolutions\" and the \"New wards\" data. Scanning the \"Other resolutions,\" I spot Resolution 1673/NQ-UBTVQH15. This resolution is key. It directly states that \"Xã Hán Đà\" was merged into a new ward called \"**Xã Thác Bà**\". Bingo!\n\nTo confirm this, I'll check my \"New wards\" list for \"Xã Thác Bà\" in \"Tỉnh Lào Cai.\" A quick search yields the data: `{\"ward_code\":\"04717\",\"ward_name\":\"Xã Thác Bà\",\"province_name\":\"Tỉnh Lào Cai\"}`. This confirms the new ward.\n\nFinally, I'll structure my output as a JSON response. Given the direct and clear mention of the merge in the resolution, I'll assign a \"high\" confidence level. The citation will, of course, reference Resolution 1673/NQ-UBTVQH15, specifically mentioning the relevant section concerning the \"Xã Hán Đà\" merge. This will provide a traceable and justifiable answer.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai",
+        "line": "31. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Thác Bà và các xã Vũ Linh, Bạch Hà, Hán Đà, Vĩnh Kiên, Đại Minh thành xã mới có tên gọi là xã Thác Bà."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "04717",
+      "ward_name": "Xã Thác Bà"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Minh Bảo, Thành phố Yên Bái, Tỉnh Yên Bái",
+  "ellapsedInMs": 7240,
+  "estimatedCost": 0.0024246,
+  "thought": "**Identifying the New Administrative Unit for \"Xã Minh Bảo\"**\n\nOkay, let's break this down. The user's given me the old address, \"Xã Minh Bảo, Thành phố Yên Bái, Tỉnh Yên Bái,\" and I need to find the new equivalent.  First, I identify \"Tỉnh Yên Bái\" as the old province and \"Xã Minh Bảo\" as the old ward.  Now, the game begins!\n\nI immediately check for any province mergers in resolution 60-NQ/TW. Ah, there it is! \"Hợp nhất tỉnh Lào Cai và tỉnh Yên Bái, lấy tên là tỉnh Lào Cai.\"  Right, so Yên Bái is now part of Lào Cai.  That means the new province is \"Tỉnh Lào Cai.\"  \n\nNext step is to dive into resolutions for changes *within* the new province. I'm searching for relevant resolutions concerning \"Tỉnh Lào Cai.\"  Resolution 1673/NQ-UBTVQH15, \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai,\" looks promising. I scan the lines, specifically looking for \"Xã Minh Bảo.\"\n\nBingo! Line 87 jumps out: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Nam Cường (thành phố Yên Bái) và các xã Minh Bảo, Tuy Lộc, Cường Thịnh thành phường mới có tên gọi là **phường Nam Cường**.\" There it is! \"Xã Minh Bảo\" is being merged into \"phường Nam Cường.\"  That's the key.\n\nNow, I cross-reference this with the \"New wards\" data, checking for \"phường Nam Cường\" within \"Tỉnh Lào Cai.\" The data matches: `{\"ward_code\":\"04273\",\"ward_name\":\"Phường Nam Cường\",\"province_name\":\"Tỉnh Lào Cai\"}`. Perfect.\n\nTherefore, the new administrative unit for \"Xã Minh Bảo\" is **\"Phường Nam Cường\"** in the province of **\"Tỉnh Lào Cai\"**.  My confidence is high because the mapping is explicit within the resolution. I can now confidently construct the JSON output:\n\n*   `province_name`: \"Tỉnh Lào Cai\"\n*   `ward_name`: \"Phường Nam Cường\"\n*   `ward_code`: \"04273\"\n*   `citation`:\n    *   `header`: \"1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai\"\n    *   `line`: \"87. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Nam Cường (thành phố Yên Bái) và các xã Minh Bảo, Tuy Lộc, Cường Thịnh thành phường mới có tên gọi là phường Nam Cường.\"\n*   `confidence`: \"high\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai",
+        "line": "87. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Nam Cường (thành phố Yên Bái) và các xã Minh Bảo, Tuy Lộc, Cường Thịnh thành phường mới có tên gọi là phường Nam Cường."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "04273",
+      "ward_name": "Phường Nam Cường"
+    }
+  ]
+}

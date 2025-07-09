@@ -1,0 +1,18 @@
+{
+  "address": "Xã Giang Ma, Huyện Tam Đường, Tỉnh Lai Châu",
+  "ellapsedInMs": 8370,
+  "estimatedCost": 0.0031248,
+  "thought": "**Address Mapping Process: A Detailed Analysis**\n\nOkay, let's break this down systematically. My objective is to accurately map the old Vietnamese address \"Xã Giang Ma, Huyện Tam Đường, Tỉnh Lai Châu\" to its new administrative unit, considering the resolutions and new ward data provided.\n\nFirst, I identified \"Xã Giang Ma\" as the old ward and \"Tỉnh Lai Châu\" as the old province.  Now, I need to verify how these units have been affected by any administrative changes.\n\nI began by consulting the Province Resolutions (specifically 60-NQ/TW).  Fortunately, \"Tỉnh Lai Châu\" is listed under those not undergoing merging, so its province name remains unchanged. Excellent, that's straightforward.\n\nNext, I delved into the `other_resolutions` to see if there were any affecting \"Xã Giang Ma\" within \"Tỉnh Lai Châu\". Resolution \"1670/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lai Châu\" proved crucial.  Line 11 clearly states that \"Xã Giang Ma,\" along with \"Hồ Thầu\" and \"Tả Lèng\", are now consolidated into a new \"xã Tả Lèng\".  Aha! This is the key.\n\nNow, I needed to locate this new \"xã Tả Lèng\" in the `new_wards` data.  And there it is: `{\"ward_code\":\"03405\",\"ward_name\":\"Xã Tả Lèng\",\"province_name\":\"Tỉnh Lai Châu\"}`. The province name is consistent with the province resolution as well.\n\nTo construct the output, I'll leverage this information:\n\n*   `province_name`: \"Tỉnh Lai Châu\" (confirmed by both the province resolution and the new ward data).\n*   `ward_name`: \"Xã Tả Lèng\" (explicitly defined in resolution 1670 and confirmed in `new_wards`).\n*   `ward_code`: \"03405\" (retrieved from the `new_wards` data).\n*   `citation`:  I'll include the relevant resolution and the specific line citing the consolidation:  `{\"header\": \"1670/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lai Châu\", \"line\": \"11. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của cácxã Giang Ma,Hồ Thầu và Tả Lèngthành xã mới có tên gọi là **xã Tả Lèng**.\"}`.\n*   `confidence`:  \"high\". This mapping is direct and unambiguous, resting on a clear resolution and confirmed data.\n\nI've thoroughly vetted the process, and I'm confident in this approach.  Given the input, I'm ready to produce the correctly formatted JSON output, consistent with the expected schema.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1670/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lai Châu",
+        "line": "11. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của cácxã Giang Ma,Hồ Thầu và Tả Lèngthành xã mới có tên gọi là **xã Tả Lèng**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lai Châu",
+      "ward_code": "03405",
+      "ward_name": "Xã Tả Lèng"
+    }
+  ]
+}

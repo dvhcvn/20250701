@@ -1,0 +1,18 @@
+{
+  "address": "Xã Sa Bình, Huyện Sa Thầy, Tỉnh Kon Tum",
+  "ellapsedInMs": 8252,
+  "estimatedCost": 0.0033169000000000002,
+  "thought": "**My Assessment of the Address Mapping**\n\nOkay, so I'm tasked with mapping this old Vietnamese address to the new administrative structure.  Here's my thinking: I need to take the old components - \"Xã Sa Bình\" ward, \"Huyện Sa Thầy\" district, and \"Tỉnh Kon Tum\" province - and figure out how they relate to the current system.\n\nFirst, I looked at the province. Resolution 60-NQ/TW doesn't list Kon Tum as a province that's *not* changing, so I check the list of mergers.  Aha!  It states that \"Tỉnh Kon Tum\" and \"Tỉnh Quảng Ngãi\" are merging, becoming \"Tỉnh Quảng Ngãi\". Easy enough.\n\nNow, for the ward. The relevant resolution is 1677/NQ-UBTVQH15, specifically for the Quảng Ngãi province. I scrutinized the lines in the resolution to see what's happening with \"Xã Sa Bình\". I find line 73: it states that \"Xã Sa Bình\" is part of the new \"Xã Sa Bình\" along with some other wards. This is a very clear mapping.\n\nI then cross-referenced this information with the \"New Wards\" data.  I was looking for \"Xã Sa Bình\" in \"Tỉnh Quảng Ngãi\".  There it is!  Ward code 23534, ward name \"Xã Sa Bình,\" in the correct province.\n\nSo, I'm confident in this mapping. The province change is well-documented in the resolution.  The ward change is explicit in the sub-resolution. My confidence in the mapping is high.\n\nMy output should be JSON that reflects this, with the new province as \"Tỉnh Quảng Ngãi\", the ward as \"Xã Sa Bình\", with the specific ward code of 23534, and the necessary citations for both the province merger (specifically the line in 60-NQ/TW that describes the merger) and the ward change (the exact line in 1677/NQ-UBTVQH15 that tells me which former wards are going into the new \"Xã Sa Bình\".  I'll include just the ward-specific line as the main citation since the province change is inferred.",
+  "result": [
+    {
+      "citation": {
+        "header": "1677/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ngãi",
+        "line": "73. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Sa Nghĩa, Hơ Moong và Sa Bình thành xã mới có tên gọi là xã Sa Bình."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ngãi",
+      "ward_code": "23534",
+      "ward_name": "Xã Sa Bình"
+    }
+  ]
+}

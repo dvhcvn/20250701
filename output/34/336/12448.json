@@ -1,0 +1,28 @@
+{
+  "address": "Phường Phú Khánh, Thành phố Thái Bình, Tỉnh Thái Bình",
+  "ellapsedInMs": 8178,
+  "estimatedCost": 0.0037789,
+  "thought": "**My Analysis of the Administrative Unit Change**\n\nOkay, so I'm tasked with finding the new administrative unit for \"Phường Phú Khánh, Thành phố Thái Bình, Tỉnh Thái Bình.\" This means I need to sift through these resolutions and new ward data, taking into account the administrative changes.\n\nFirst, I broke down the old address. I immediately recognized the key issue: \"Thành phố Thái Bình\" is a district that's no longer relevant since the resolutions eliminate all districts. The focus here is on the province and ward.\n\nI went straight to the province-level changes, checking for \"Tỉnh Thái Bình.\" Resolution 60-NQ/TW states that it has been *merged* with \"Hưng Yên\", becoming \"Tỉnh Hưng Yên\". So, \"Tỉnh Thái Bình\" is no more. I'll need to remember that.\n\nNow, the main task: finding \"Phường Phú Khánh\" in the new structure, keeping in mind the new province name \"Tỉnh Hưng Yên.\" I started with \"Other resolutions.\"\n\nResolution 1666/NQ-UBTVQH15, \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên,\" immediately caught my eye.  I noticed \"phường Thái Bình\" and initially got confused since the old address has \"Thành phố Thái Bình.\"  But then I found it! Line 104 explicitly states that \"phường Phú Khánh\" is merging with some other wards to form a *new* ward.\n\nCrucially, it says that the new ward will be called \"phường Vũ Phúc.\" Bingo!\n\nI confirmed this with the \"New wards\" data. There's a record: `{\"ward_code\":\"12466\",\"ward_name\":\"Phường Vũ Phúc\",\"province_name\":\"Tỉnh Hưng Yên\"}`.  Perfect match. This solidly links the old \"Phường Phú Khánh\" to the new \"phường Vũ Phúc\" in \"Tỉnh Hưng Yên.\"\n\nI briefly scanned the other resolutions, but none of them applied to \"Hưng Yên\", so I'm confident in my finding. The new administrative unit for \"Phường Phú Khánh, Thành phố Thái Bình, Tỉnh Thái Bình\" is **phường Vũ Phúc, Tỉnh Hưng Yên**.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "6. Hợp nhất tỉnh Hưng Yên và tỉnh Thái Bình, lấy tên là tỉnh Hưng Yên"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "12466",
+      "ward_name": "Phường Vũ Phúc"
+    },
+    {
+      "citation": {
+        "header": "1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên",
+        "line": "104. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Phú Khánh và các xã Nguyên Xá (huyện Vũ Thư), Song An, Trung An, Vũ Phúc thành phường mới có tên gọi là phường Vũ Phúc."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "12466",
+      "ward_name": "Phường Vũ Phúc"
+    }
+  ]
+}

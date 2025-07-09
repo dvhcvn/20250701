@@ -1,0 +1,18 @@
+{
+  "address": "Xã Đôn Thuận, Thị xã Trảng Bàng, Tỉnh Tây Ninh",
+  "ellapsedInMs": 7122,
+  "estimatedCost": 0.0025616000000000002,
+  "thought": "**Identifying the New Administrative Unit**\n\nOkay, let's break this down. My goal is to determine the new administrative unit for \"Xã Đôn Thuận, Thị xã Trảng Bàng, Tỉnh Tây Ninh,\" considering the provided resolutions and new ward data.\n\nFirst, I need to parse the input address. \"Xã Đôn Thuận\" is the old ward, and \"Tỉnh Tây Ninh\" is the old province. \"Thị xã Trảng Bàng\" is a district; the prompt indicates that I should focus on ward and province.\n\nNext, I'll check the Province Resolutions, specifically \"60-NQ/TW.\" Thankfully, Tây Ninh is listed; it remains \"Tỉnh Tây Ninh\" even after any potential mergers. So, the province name stays consistent.\n\nNow, I'll dive into the core resolution: \"1682/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tây Ninh.\" I need to find \"Xã Đôn Thuận\" within this resolution. Scanning the lines, I hit gold at line 58. It clearly states that \"Xã Đôn Thuận\" is being merged with \"Xã Hưng Thuận\" to form a new \"Xã Hưng Thuận.\" That's the key.\n\nWith the new ward name in hand, I'll cross-reference it with the \"New wards\" data.  I find a perfect match: `{\"ward_code\":\"25711\",\"ward_name\":\"Xã Hưng Thuận\",\"province_name\":\"Tỉnh Tây Ninh\"}`. This confirms the new ward name and its associated province, confirming my previous finding.\n\nBased on this, I can confidently construct the JSON output: the province is \"Tỉnh Tây Ninh,\" the new ward is \"Xã Hưng Thuận,\" and its code is \"25711.\"  The citation will include the relevant resolution and line number for verification. The confidence level is \"high\" because of the direct match within the resolution and the new ward data.\n\nJust to be thorough, I quickly glance at another line in \"Other resolutions\", line 93. It turns out that this is not relevant to \"Xã Đôn Thuận\".\n\nTherefore, I'm confident in the result. I have a definitive answer based on solid evidence.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1682/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tây Ninh",
+        "line": "58. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Đôn Thuận và xã Hưng Thuận thành xã mới có tên gọi là xã Hưng Thuận."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tây Ninh",
+      "ward_code": "25711",
+      "ward_name": "Xã Hưng Thuận"
+    }
+  ]
+}

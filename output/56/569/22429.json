@@ -1,0 +1,18 @@
+{
+  "address": "Phường Cam Lợi, Thành phố Cam Ranh, Tỉnh Khánh Hòa",
+  "ellapsedInMs": 5406,
+  "estimatedCost": 0.0017358,
+  "thought": "**Mapping an Old Vietnamese Address to New Administrative Units**\n\nOkay, so I've got this old Vietnamese address, \"Phường Cam Lợi\" in \"Tỉnh Khánh Hòa,\" and I need to figure out its modern equivalent.  My first instinct is to identify the old ward and province, which I've done. Now, let's break this down systematically.\n\nFirst, I'll consult my province resolution database (specifically, 60-NQ/TW).  I need to confirm that \"Khánh Hòa\" is still \"Khánh Hòa,\" and luckily, the resolution confirms this, mentioning a past merger that didn't change the province's name. Good, that takes care of the province.\n\nNext, I'll dive into the more detailed resolutions, starting with 1667/NQ-UBTVQH15.  A quick search for \"Phường Cam Lợi\" is essential here. Bingo! Line 55 spells it out clearly. It states that \"Phường Cam Lợi\" was merged, along with a few others, into the new \"Phường Cam Linh.\"  This is key information.\n\nNow, I'll cross-reference this finding with my \"New wards\" dataset. I'll search for \"Phường Cam Linh\" to pull up the relevant details. I find the entry: `{\"ward_code\":\"22432\",\"ward_name\":\"Phường Cam Linh\",\"province_name\":\"Tỉnh Khánh Hòa\"}`. Perfect! This confirms the new ward name and the province.\n\nFinally, I'll compile my output:\n\n*   `province_name`: \"Tỉnh Khánh Hòa\" (based on both the merge resolution and new data).\n*   `ward_name`: \"Phường Cam Linh\" (from 1667/NQ-UBTVQH15).\n*   `ward_code`: \"22432\" (directly from the \"New wards\" data).\n*   `confidence`: \"high\" (the direct mention in the resolution makes me very confident in this mapping).\n*   `citation`:  I'll ensure I cite the specific resolution (1667/NQ-UBTVQH15) and line (55) to support my conclusion. This provides a clear and traceable audit trail.  And that should be a complete and accurate mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1667/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Khánh Hòa",
+        "line": "55. Sắp xếp bộ diện tích tự nhiên, quy mô dân số của các phường Cam Thuận, Cam Lợi và Cam Linh thành phường mới có tên gọi là phường Cam Linh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Khánh Hòa",
+      "ward_code": "22432",
+      "ward_name": "Phường Cam Linh"
+    }
+  ]
+}

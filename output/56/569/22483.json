@@ -1,0 +1,18 @@
+{
+  "address": "Xã Cam Lập, Thành phố Cam Ranh, Tỉnh Khánh Hòa",
+  "ellapsedInMs": 8151,
+  "estimatedCost": 0.0030004999999999997,
+  "thought": "**Mapping Old Vietnamese Address to New Administrative Units**\n\nOkay, I've got this. The user wants to map an old address, \"Xã Cam Lập, Thành phố Cam Ranh, Tỉnh Khánh Hòa,\" to its new administrative unit. My initial plan is to break it down: identify the old ward, district, and province. Then, I need to check the relevant resolutions and the new ward data to make the connections.\n\nFirst, I see \"Xã Cam Lập,\" \"Thành phố Cam Ranh,\" and \"Tỉnh Khánh Hòa.\"  The mention of \"eliminating all districts\" is a key indicator. I'll need to keep this in mind as I process the data.\n\nI'm starting with the province. Resolution 60-NQ/TW states that Khánh Hòa remains Khánh Hòa, even after absorbing Ninh Thuận. So, the output will include \"Tỉnh Khánh Hòa\" for `province_name`.\n\nNow, I move on to resolution 1667/NQ-UBTVQH15, which concerns Khánh Hòa's ward-level adjustments. I'm scanning for \"Xã Cam Lập\" within its lines. Bingo! Line 1 explicitly states that \"Xã Cam Lập\" is merged into \"xã Nam Cam Ranh.\" This is my key to unlocking the mapping.\n\nNext, I'll check the \"New wards\" data. I'm searching for \"Xã Nam Cam Ranh.\" Perfect, I find a direct match: `{\"ward_code\":\"22480\",\"ward_name\":\"Xã Nam Cam Ranh\",\"province_name\":\"Tỉnh Khánh Hòa\"}`.\n\nBuilding the JSON output is straightforward now. The `citation.header` will be \"1667/NQ-UBTVQH15,\" and the relevant `citation.line` is that merger statement. I'm confident about this mapping, so the `confidence` will be \"high.\" The `province_name` is \"Tỉnh Khánh Hòa,\" the `ward_code` is \"22480,\" and the `ward_name` is \"Xã Nam Cam Ranh.\"\n\nConsidering the \"eliminating all districts\" context, the new data lists province names for each ward, suggesting the district level is, indeed, removed. The resolution 1667/NQ-UBTVQH15, focused on \"cấp xã\" within \"Tỉnh Khánh Hòa,\" supports this, reflecting a streamlined structure. The mapping is clear and direct.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1667/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Khánh Hòa",
+        "line": "1. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Cam Lập, Cam Bình, Cam Thịnh Đông và Cam Thịnh Tây thành xã mới có tên gọi là xã Nam Cam Ranh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Khánh Hòa",
+      "ward_code": "22480",
+      "ward_name": "Xã Nam Cam Ranh"
+    }
+  ]
+}

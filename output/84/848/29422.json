@@ -1,0 +1,28 @@
+{
+  "address": "Xã Mỹ Long Bắc, Huyện Cầu Ngang, Tỉnh Trà Vinh",
+  "ellapsedInMs": 5474,
+  "estimatedCost": 0.0020686,
+  "thought": "**Mapping an Old Address to New Units**\n\nOkay, so I'm looking at this old address: \"Xã Mỹ Long Bắc, Huyện Cầu Ngang, Tỉnh Trà Vinh.\"  My goal is to figure out the corresponding new address based on the latest administrative changes.  Let's break this down systematically.\n\nFirst, the province: \"Tỉnh Trà Vinh.\" I know I need to check the province resolutions. Specifically, I need to consult Resolution 60-NQ/TW.  Ah, here it is: \"Hợp nhất tỉnh Bến Tre, tỉnh Vĩnh Long và tỉnh Trà Vinh; lấy tên là tỉnh Vĩnh Long.\"  So, \"Tỉnh Trà Vinh\" has been merged into \"Tỉnh Vĩnh Long.\" Easy enough.\n\nNow, for the ward: \"Xã Mỹ Long Bắc.\" This is where I need to pay closer attention to the relevant resolutions, particularly Resolution 1687/NQ-UBTVQH15.  Since Trà Vinh has merged into Vĩnh Long, this resolution applies.  Line 46 catches my eye: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Mỹ Long, xã Mỹ Long Bắc và xã Mỹ Long Nam thành xã mới có tên gọi là **xã Mỹ Long**.\" Bingo! \"Xã Mỹ Long Bắc\" is explicitly listed as being merged into the new \"xã Mỹ Long.\"\n\nFinally, I need to confirm this with the new ward data. I have a data entry: `{\"ward_code\":\"29419\",\"ward_name\":\"Xã Mỹ Long\",\"province_name\":\"Tỉnh Vĩnh Long\"}`. This perfectly aligns with my findings: the new ward is \"Xã Mỹ Long\" in \"Tỉnh Vĩnh Long.\"\n\nTherefore, I'm confident in my conclusion: \"Xã Mỹ Long Bắc, Huyện Cầu Ngang, Tỉnh Trà Vinh\" now maps to \"Xã Mỹ Long, Tỉnh Vĩnh Long.\" The evidence is clear and concise, with direct references to the resolutions defining the mergers. High confidence!\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Bến Tre, tỉnh Vĩnh Long và tỉnh Trà Vinh; lấy tên là tỉnh Vĩnh Long"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "29419",
+      "ward_name": "Xã Mỹ Long"
+    },
+    {
+      "citation": {
+        "header": "1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long",
+        "line": "Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Mỹ Long, xã Mỹ Long Bắc và xã Mỹ Long Nam thành xã mới có tên gọi là xã Mỹ Long."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "29419",
+      "ward_name": "Xã Mỹ Long"
+    }
+  ]
+}

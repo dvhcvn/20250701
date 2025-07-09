@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Phú Long, Huyện Hàm Thuận Bắc, Tỉnh Bình Thuận",
+  "ellapsedInMs": 8202,
+  "estimatedCost": 0.0035199,
+  "thought": "**Analyzing and Mapping the Old Address**\n\nOkay, so I'm tasked with mapping an old address to the new administrative units.  I'm dealing with \"Tỉnh Bình Thuận\" and \"Thị trấn Phú Long\".  My first thought is to dig into the provincial resolutions, specifically 60-NQ/TW, to see if \"Tỉnh Bình Thuận\" was renamed or merged.  And, as suspected, it was!  It's now \"Tỉnh Lâm Đồng\".  That's key.\n\nNext, I need to find \"Thị trấn Phú Long\" within the context of \"Tỉnh Lâm Đồng\" using the \"Other resolutions.\" I understand that all the districts are being eliminated so this step is more to provide context and find the ward. Resolution 1671/NQ-UBTVQH15 looks promising.  I scan the document and find a relevant line, specifically, line 108.  It's clear that \"Thị trấn Phú Long\" is being merged into the new \"Phường Hàm Thắng\".  Bingo! That seems like a direct hit.\n\nI quickly cross-reference this with the \"New wards\" list, looking for \"Phường Hàm Thắng\" in \"Tỉnh Lâm Đồng\". And there it is: `{\"ward_code\":\"22933\",\"ward_name\":\"Phường Hàm Thắng\",\"province_name\":\"Tỉnh Lâm Đồng\"}`. This is a perfect match!\n\nTo be absolutely sure, I've checked other resolutions for \"Phú Long\", but they all concern different provinces and different types of administrative units (xãs).  None of them are relevant to \"Thị trấn Phú Long.\"\n\nGiven the explicit nature of Resolution 1671/NQ-UBTVQH15, line 108, which specifically mentions \"thị trấn Phú Long,\" and the matching entry in the \"New wards\" list, I'm confident in the following mapping:\n\n*   `province_name`: \"Tỉnh Lâm Đồng\"\n*   `ward_name`: \"Phường Hàm Thắng\"\n*   `ward_code`: \"22933\"\n*   `citation`: \"1671/NQ-UBTVQH15, line 108\"\n*   `confidence`: \"high\"\n\nThe mapping is clear, and the confidence level is high based on this direct, explicit reference.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng",
+        "line": "108. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Xuân An, thị trấn Phú Long và xã Hàm Thắng thành phường mới có tên gọi là phường Hàm Thắng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "22933",
+      "ward_name": "Phường Hàm Thắng"
+    }
+  ]
+}

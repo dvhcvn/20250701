@@ -1,0 +1,18 @@
+{
+  "address": "Xã Phạm Kha, Huyện Thanh Miện, Tỉnh Hải Dương",
+  "ellapsedInMs": 6367,
+  "estimatedCost": 0.0023212,
+  "thought": "**Analyzing and Mapping the Vietnamese Address**\n\nOkay, so I've been given a Vietnamese address and need to map it to the new administrative structure. Let's break this down systematically. First, the old province is \"Tỉnh Hải Dương\". I need to consult the provincial resolutions (specifically 60-NQ/TW) to see what's happened to it. Ah, here it is: \"Hợp nhất tỉnh Hải Dương và thành phố Hải Phòng, lấy tên là thành phố Hải Phòng\". So, \"Tỉnh Hải Dương\" is now part of \"Thành phố Hải Phòng\". That's step one.\n\nNext, I need to focus on the ward. The old ward is \"Xã Phạm Kha\". Now, I'll consult resolution 1669/NQ-UBTVQH15, looking specifically for mention of \"Xã Phạm Kha\". Excellent, line 107 provides the answer. It states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Phạm Kha... thành xã mới có tên gọi là **xã Nguyễn Lương Bằng**.\" Perfect, it's a merger.\n\nNow, I need to confirm this new ward. I have a list of `New wards`, and I'll search for \"Xã Nguyễn Lương Bằng\" within the `province_name` \"Thành phố Hải Phòng\". There it is: `{\"ward_code\":\"11242\",\"ward_name\":\"Xã Nguyễn Lương Bằng\",\"province_name\":\"Thành phố Hải Phòng\"}`. The data is consistent.\n\nNow, I can construct the output JSON, which is straightforward. The `province_name` is \"Thành phố Hải Phòng\" (from the province merger). The `ward_name` is \"Xã Nguyễn Lương Bằng\" (as confirmed by the resolution). The `ward_code` is \"11242\" (from the new wards list).  Finally, I'll include the citation: `header`: \"1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng\" and `line`: \"107. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Phạm Kha... thành xã mới có tên gọi là **xã Nguyễn Lương Bằng**.\" Because this is a direct, clear mapping based on official documentation, I'll assign a `confidence` of \"high\".  That should cover it.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "107. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Phạm Kha, xã Nhân Quyền, phần còn lại của xã Thanh Tùng và xã Đoàn Tùng sau khi sắp xếp theo quy định tại khoản 88 Điều này thành xã mới có tên gọi là xã Nguyễn Lương Bằng."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "11242",
+      "ward_name": "Xã Nguyễn Lương Bằng"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Phường Mỹ Bình, Thành phố Long Xuyên, Tỉnh An Giang",
+  "ellapsedInMs": 6279,
+  "estimatedCost": 0.0031179,
+  "thought": "**Determining the New Administrative Unit for \"Phường Mỹ Bình\"**\n\nOkay, so the user wants to know the current administrative unit for \"Phường Mỹ Bình, Thành phố Long Xuyên, Tỉnh An Giang.\"  My initial approach is straightforward: I need to verify the old address against the relevant legal documents and data.\n\nFirst, I identified the old ward (\"Phường Mỹ Bình\") and province (\"Tỉnh An Giang\").  I started by checking the provincial resolutions, specifically \"60-NQ/TW,\" to see if \"Tỉnh An Giang\" had undergone any changes.  Thankfully, that resolution only mentioned a merger that *didn't* affect the province's name – it's still \"Tỉnh An Giang.\"\n\nNext, I delved into the `other_resolutions` list, carefully looking for any mention of \"Phường Mỹ Bình\" within \"Tỉnh An Giang.\" Bingo! I found it in \"1654/NQ-UBTVQH15.\" This resolution is crucial. It clearly states that \"Phường Mỹ Bình\" along with several other wards, are being merged to form the new \"Phường Long Xuyên.\"\n\nTo confirm the new ward's existence and get its official details, I then checked the `new_wards` list for \"Phường Long Xuyên\" in \"Tỉnh An Giang.\" There it was!  The list confirmed the ward's name and code.\n\nGiven all this information, I'm confident in my findings.  The final output is a JSON object with:\n\n*   `province_name`: \"Tỉnh An Giang\"\n*   `ward_name`: \"Phường Long Xuyên\"\n*   `ward_code`: \"30307\"\n*   A `citation` referencing \"1654/NQ-UBTVQH15.\"\n*   And finally, a `confidence` level of \"high\" because the resolution directly addresses the merger and the new ward is validated by the data.  This is a clean-cut case.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1654/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh An Giang",
+        "line": "80. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Mỹ Bình, Mỹ Long, Mỹ Xuyên, Mỹ Phước, Mỹ Quý và Mỹ Hòa thành phường mới có tên gọi là phường Long Xuyên."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh An Giang",
+      "ward_code": "30307",
+      "ward_name": "Phường Long Xuyên"
+    }
+  ]
+}

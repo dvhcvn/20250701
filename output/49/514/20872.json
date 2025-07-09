@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tiên Ngọc, Huyện Tiên Phước, Tỉnh Quảng Nam",
+  "ellapsedInMs": 7461,
+  "estimatedCost": 0.0028659000000000002,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm tasked with mapping this old address, \"Xã Tiên Ngọc, Huyện Tiên Phước, Tỉnh Quảng Nam,\" to the new administrative structure.  The goal is to provide a confident and accurate mapping, ignoring the district level as per instructions.\n\nFirst, I parsed the address. \"Xã Tiên Ngọc\" is the key. \"Huyện Tiên Phước\" (the district) is relevant for context but will be ignored for the final output.  \"Tỉnh Quảng Nam\" is the province.\n\nNext, I looked at the province level.  I checked the \"không thực hiện sáp nhập\" (no merger) and the \"mới sau sáp nhập, hợp nhất\" (new after merger, consolidation) lists within the province resolutions. Quảng Nam isn't on the \"no merger\" list, but it *is* on the \"merger\" list! The resolution 60-NQ/TW states that Quảng Nam and Đà Nẵng merged, becoming \"Thành phố Đà Nẵng\". So, my new province becomes Đà Nẵng.\n\nNow for the crucial part: the ward mapping. I zeroed in on the \"Other resolutions\" and searched for \"Xã Tiên Ngọc.\" Resolution 1659/NQ-UBTVQH15, line 35, hits the jackpot! It clearly states that \"Xã Tiên Ngọc\" *merged* with other wards to form a new ward called \"Xã Lãnh Ngọc.\"  Bingo! The resolution 1667/NQ-UBTVQH15 is for Khánh Hòa province, so irrelevant.\n\nTo be extra certain, I cross-referenced this new ward with the provided list of \"New wards.\"  And there it is: `{\"ward_code\":\"20875\",\"ward_name\":\"Xã Lãnh Ngọc\",\"province_name\":\"Thành phố Đà Nẵng\"}`. This perfectly aligns with my findings.  The information about \"Xã Tiên Phước\" being a new ward *in* Đà Nẵng is interesting but not directly relevant to *this* mapping.\n\nTherefore, my final output will be: the new province is Thành phố Đà Nẵng, the new ward is Xã Lãnh Ngọc (code: 20875), and the citation is 1659/NQ-UBTVQH15, specifically line 35. The confidence level is high because there's a direct reference and the mapping is clear.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng",
+        "line": "35. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tiên Lãnh, Tiên Ngọc và Tiên Hiệp thành xã mới có tên gọi là xã Lãnh Ngọc."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "20875",
+      "ward_name": "Xã Lãnh Ngọc"
+    }
+  ]
+}

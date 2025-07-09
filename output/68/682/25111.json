@@ -1,0 +1,18 @@
+{
+  "address": "Xã Đạ Oai, Huyện Đạ Huoai, Tỉnh Lâm Đồng",
+  "ellapsedInMs": 6636,
+  "estimatedCost": 0.0023006999999999997,
+  "thought": "**Analyzing and Mapping the Vietnamese Address**\n\nOkay, so I'm presented with the old address \"Xã Đạ Oai, Huyện Đạ Huoai, Tỉnh Lâm Đồng\" and need to map it to the new administrative units. First, I identify the key components: \"Xã Đạ Oai\" (ward), \"Huyện Đạ Huoai\" (district - but I'm told to eliminate districts for this exercise, so it's really just contextual), and \"Tỉnh Lâm Đồng\" (province).\n\nNext, I look at the province resolutions, specifically 60-NQ/TW, to see if anything changed with \"Tỉnh Lâm Đồng.\"  Thankfully, it's straightforward. \"Tỉnh Lâm Đồng\" remains \"Tỉnh Lâm Đồng,\" though it absorbed Đắk Nông and Bình Thuận.\n\nThen, I dig into the other resolutions, focusing on \"Xã Đạ Oai.\"  Resolution 1671/NQ-UBTVQH15 catches my eye. Line 33 is the key: it explicitly states that \"Xã Đạ Oai\" is being merged into the new \"Xã Đạ Huoai.\" Perfect!\n\nNow, I cross-reference this information with the \"New wards\" data.  There's a clean match:  `{\"ward_code\":\"25099\",\"ward_name\":\"Xã Đạ Huoai\",\"province_name\":\"Tỉnh Lâm Đồng\"}`.  It's exactly what I needed.\n\nFinally, I construct the output.  The old ward is definitely mapped to the new \"Xã Đạ Huoai\" as outlined in resolution 1671.  Since this is a clear and direct mapping with explicit citation, my confidence level should be \"high\". The province remains \"Tỉnh Lâm Đồng\". Therefore, I'll structure the output array to present this single, clear mapping according to the schema.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng",
+        "line": "33. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Mađaguôi, xã Mađaguôi và xã Đạ Oai thành xã mới có tên gọi là xã Đạ Huoai."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "25099",
+      "ward_name": "Xã Đạ Huoai"
+    }
+  ]
+}

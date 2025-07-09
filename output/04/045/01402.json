@@ -1,0 +1,18 @@
+{
+  "address": "Xã Cải Viên, Huyện Hà Quảng, Tỉnh Cao Bằng",
+  "ellapsedInMs": 6736,
+  "estimatedCost": 0.0024065000000000002,
+  "thought": "**Mapping an Old Vietnamese Address to New Administrative Units: A Detailed Analysis**\n\nOkay, so I'm tackling this address mapping problem, aiming to translate an old Vietnamese address to its updated administrative unit. The input indicates \"Xã Cải Viên\" in \"Huyện Hà Quảng\", \"Tỉnh Cao Bằng\".  My initial thought is to break this down into province, district, and ward for analysis. However, given the instructions, the district might be less crucial here, but definitely useful context for interpreting the provided resolutions.\n\nMy process starts by confirming \"Tỉnh Cao Bằng\" in the Province Resolutions (60-NQ/TW).  Fortunately, it's explicitly stated that Cao Bằng remains unchanged, solidifying that part of the address.\n\nNext, I delve into resolution 1657/NQ-UBTVQH15, the key document for this mapping. I'm looking for any direct mention of \"Xã Cải Viên\", and Bingo! Line 27 nails it: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Nội Thôn, Cải Viên và Tổng Cọt thành xã mới có tên gọi là **xã Tổng Cọt**.\"  Perfect! \"Xã Cải Viên\" is being merged into \"Xã Tổng Cọt.\"\n\nTo finalize this, I consult the `New Wards` list. I search for \"Xã Tổng Cọt\" and immediately find the entry with the ward code \"01414,\" which confirms \"Tỉnh Cao Bằng\" as the province. The province name matches.\n\nConsidering all the direct evidence – the specific mention in the resolution and the clear mapping to the new ward – I can confidently construct the JSON output:  This mapping is high-confidence due to the explicit citation within the resolution.\n\nHere's the data structure I'm using:\n\n*   `citation.header`: \"1657/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Cao Bằng\"\n*   `citation.line`: \"27. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Nội Thôn, Cải Viên và Tổng Cọt thành xã mới có tên gọi là **xã Tổng Cọt**.\"\n*   `confidence`: \"high\"\n*   `province_name`: \"Tỉnh Cao Bằng\"\n*   `ward_code`: \"01414\"\n*   `ward_name`: \"Xã Tổng Cọt\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1657/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Cao Bằng",
+        "line": "27. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Nội Thôn, Cải Viên và Tổng Cọt thành xã mới có tên gọi là xã Tổng Cọt."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Cao Bằng",
+      "ward_code": "01414",
+      "ward_name": "Xã Tổng Cọt"
+    }
+  ]
+}

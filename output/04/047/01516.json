@@ -1,0 +1,18 @@
+{
+  "address": "Xã Trung Phúc, Huyện Trùng Khánh, Tỉnh Cao Bằng",
+  "ellapsedInMs": 6616,
+  "estimatedCost": 0.0023197,
+  "thought": "**Determining the New Ward for \"Xã Trung Phúc\"**\n\nOkay, let's break this down. My task is to figure out the new administrative unit for the old address \"Xã Trung Phúc, Huyện Trùng Khánh, Tỉnh Cao Bằng.\" As an expert, I'll take a methodical approach.\n\nFirst, I identified the province: \"Tỉnh Cao Bằng.\" Then, I checked the relevant province resolutions, specifically Resolution 60-NQ/TW.  Good news, \"Tỉnh Cao Bằng\" wasn't merged.  This part is straightforward.\n\nNext, I dove into other resolutions related to \"Tỉnh Cao Bằng,\" and Resolution 1657/NQ-UBTVQH15 jumped out. Bingo! Line 46 in that resolution is key. It states that \"Xã Trung Phúc\" *merged* with \"Cao Thăng\" and \"Đoài Dương\" to become the new \"xã Đoài Dương.\"\n\nThat gives me what I need. From the \"New wards\" list, I'll find \"xã Đoài Dương\" and pull its `ward_code` and `province_name`. The data shows the `ward_code` is \"01525\" and the `province_name` is \"Tỉnh Cao Bằng.\"\n\nNow, to solidify this, I'll construct the JSON output. The `citation` will be the relevant line from Resolution 1657. The `confidence` level is \"high\" because the resolution explicitly maps \"Xã Trung Phúc\" to \"xã Đoài Dương.\"  There's no ambiguity, and this is a clear-cut case. I double-checked the rest of the text and it confirms the straightforward mapping. It is important to note that the district (\"Huyện Trùng Khánh\") may have changed, but this is a ward-level change. So, the output will represent this:\n*   `citation`: The relevant line from the resolution that supports the mapping.\n*   `confidence`: \"high\"\n*   `province_name`: \"Tỉnh Cao Bằng\"\n*   `ward_code`: \"01525\"\n*   `ward_name`: \"Xã Đoài Dương\"\nIt is a simple, precise, and fully confident resolution to the query.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1657/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Cao Bằng",
+        "line": "46. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Trung Phúc, Cao Thăng và Đoài Dương thành xã mới có tên gọi là xã Đoài Dương."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Cao Bằng",
+      "ward_code": "01525",
+      "ward_name": "Xã Đoài Dương"
+    }
+  ]
+}

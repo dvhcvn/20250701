@@ -1,0 +1,18 @@
+{
+  "address": "Phường Mạo Khê, Thành phố Đông Triều, Tỉnh Quảng Ninh",
+  "ellapsedInMs": 8489,
+  "estimatedCost": 0.0029642999999999996,
+  "thought": "**My Analysis of the Administrative Unit Mapping**\n\nOkay, so I'm presented with an old address and need to pinpoint its corresponding new administrative unit. My initial approach is to break down the old address:  \"Phường Mạo Khê, Thành phố Đông Triều, Tỉnh Quảng Ninh\" into its constituent parts - ward, district (though I know districts are being phased out in this scenario), and province.  I've got \"Phường Mạo Khê\" as the old ward, \"Thành phố Đông Triều\" as the old district, and \"Tỉnh Quảng Ninh\" as the province.\n\nFirst, I consult the provincial resolutions (60-NQ/TW).  \"Tỉnh Quảng Ninh\" is explicitly listed under those provinces *not* undergoing mergers. Excellent. That simplifies things, the province name is staying put.\n\nNext, I delve into the key resolution, 1679/NQ-UBTVQH15.  Bingo! Line 25 directly addresses \"Phường Mạo Khê\". It states that \"Phường Mạo Khê\", along with some other wards, is merged *into* a *new* ward also named \"Phường Mạo Khê\". This is crucial. While the composition might have changed, the name remains the same, which is a significant clue.\n\nI also note line 23 which mentions \"phường Đông Triều\" as a new ward, but the focus remains on the ward from the input address, which is \"Phường Mạo Khê\".\n\nNow, I cross-reference this information with the list of \"New wards\".  I see `{\"ward_code\":\"07069\",\"ward_name\":\"Phường Mạo Khê\",\"province_name\":\"Tỉnh Quảng Ninh\"}`.  Perfect! This confirms that a ward named \"Phường Mạo Khê\" exists in Quảng Ninh, precisely what the resolution indicates.\n\nGiven the resolution explicitly calls the new unit \"phường Mạo Khê\" and the new ward list corroborates it, my confidence is quite high.  The old ward name directly maps to a new ward with the same name.  Moreover, the resolution is quite explicit: \"thành phường mới có tên gọi là **phường Mạo Khê**\". The fact that the province isn't changing according to resolution 60-NQ/TW further strengthens the case.\n\nWhile I consider the district restructuring, the primary task is identifying the *ward*.  Line 25 of 1679/NQ-UBTVQH15, concerning \"Phường Mạo Khê\", is the decisive factor. Therefore, my conclusion is clear: the new ward is \"Phường Mạo Khê\" (code 07069) in \"Tỉnh Quảng Ninh\". This is a straightforward mapping based on the explicit language of the resolution.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1679/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ninh",
+        "line": "25. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Xuân Sơn, Kim Sơn, Yên Thọ và Mạo Khê thành phường mới có tên gọi là phường Mạo Khê."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ninh",
+      "ward_code": "07069",
+      "ward_name": "Phường Mạo Khê"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Liêm Phong, Huyện Thanh Liêm, Tỉnh Hà Nam",
+  "ellapsedInMs": 6863,
+  "estimatedCost": 0.0027954,
+  "thought": "**My Reasoning for Address Mapping**\n\nOkay, here's how I'm approaching this address mapping problem. The user's goal is to convert an old address to a new one, based on the history of administrative unit changes in Vietnam. I need to make sure the response is valid JSON and follows the schema.\n\nFirst, I identified \"Tỉnh Hà Nam\" as the old province. Resolution 60-NQ/TW shows that \"Tỉnh Hà Nam\" merged with other provinces to become \"Tỉnh Ninh Bình\".  So, that's my first key piece of information.\n\nNext, I looked at the old ward: \"Xã Liêm Phong\". I checked Resolution 1674/NQ-UBTVQH15, specifically line 6. This resolution stated that \"Xã Liêm Phong\" was merged with other wards to form \"Xã Liêm Hà\". Bingo!\n\nI then cross-referenced this new \"Xã Liêm Hà\" with the provided new ward data.  I found a match:  `{\"ward_code\":\"13456\",\"ward_name\":\"Xã Liêm Hà\",\"province_name\":\"Tỉnh Ninh Bình\"}`.  The province names aligned perfectly with the information from the province resolution.\n\nSince the user asks for all possible new wards and there is only one direct mapping, \"Xã Liêm Hà\" is the answer.\n\nTherefore, the final JSON I generate will reflect this direct mapping. It will include \"Tỉnh Ninh Bình\" as the new province name, \"Xã Liêm Hà\" as the new ward name, the ward code \"13456\", and a high confidence level because the mapping is clear. The citations will include the relevant parts of both resolutions used in the process. I will double-check that the JSON is properly formatted, adhering to the specified schema, without any extraneous comments, characters or text.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW; 1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "Hợp nhất tỉnh Hà Nam, tỉnh Ninh Bình và tỉnh Nam Định; lấy tên là tỉnh Ninh Bình. 6. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Liêm Phong, Liêm Cần và Thanh Hà thành xã mới có tên gọi là xã Liêm Hà."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "13456",
+      "ward_name": "Xã Liêm Hà"
+    }
+  ]
+}

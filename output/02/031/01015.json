@@ -1,0 +1,28 @@
+{
+  "address": "Xã Đường Hồng, Huyện Bắc Mê, Tỉnh Hà Giang",
+  "ellapsedInMs": 7878,
+  "estimatedCost": 0.0032614999999999996,
+  "thought": "**Finding the New Administrative Unit**\n\nOkay, let's break this down. The user provided an old address: \"Xã Đường Hồng, Huyện Bắc Mê, Tỉnh Hà Giang.\" My task is to determine the corresponding new administrative unit, considering any relevant reorganizations.\n\nFirst, I identified the old province, \"Tỉnh Hà Giang.\"  Knowing that, I immediately looked for resolutions regarding province mergers.  And there it was: Resolution 60-NQ/TW states that Hà Giang merged with Tuyên Quang to form \"Tỉnh Tuyên Quang.\"  So, that's the new province.\n\nNext, I noted the old ward and district: \"Xã Đường Hồng\" and \"Huyện Bắc Mê\". I then needed to delve into the relevant resolutions concerning changes within Tuyên Quang, keeping in mind that this includes the old Hà Giang area. Resolution 1684/NQ-UBTVQH15, \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang,\" is key here.\n\nLine 67 of the resolution confirms that \"Xã Đường Hồng\" *remains* \"Xã Đường Hồng\" after the reorganization. Line 68 is about \"Xã Bắc Mê\", but that's a new ward. It is not the relevant case here, the original address's ward is \"Xã Đường Hồng.\"\n\nI then double-checked my findings with the \"New Wards\" data.  I found a matching entry: `{\"ward_code\":\"01012\",\"ward_name\":\"Xã Đường Hồng\",\"province_name\":\"Tỉnh Tuyên Quang\"}`.  Perfect!  This confirms that the new ward is indeed \"Xã Đường Hồng\" within the new province of \"Tỉnh Tuyên Quang\".  The other \"Xã Bắc Mê\" is not the relevant one in this case, its formation involved \"thị trấn Yên Phú, xã Yên Phong và xã Lạc Nông\".\n\nIn conclusion, the new administrative unit for \"Xã Đường Hồng, Huyện Bắc Mê, Tỉnh Hà Giang\" is **\"Xã Đường Hồng, Tỉnh Tuyên Quang\"**.  The district designation of \"Huyện Bắc Mê\" remains.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "1. Hợp nhất tỉnh Tuyên Quang và tỉnh Hà Giang, lấy tên là tỉnh Tuyên Quang"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "01012",
+      "ward_name": "Xã Đường Hồng"
+    },
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "67. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đường Âm, Phú Nam và Đường Hồng thành xã mới có tên gọi là xã Đường Hồng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "01012",
+      "ward_name": "Xã Đường Hồng"
+    }
+  ]
+}

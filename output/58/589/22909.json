@@ -1,0 +1,18 @@
+{
+  "address": "Xã Phước Diêm, Huyện Thuận Nam, Tỉnh Ninh Thuận",
+  "ellapsedInMs": 6315,
+  "estimatedCost": 0.0021267,
+  "thought": "**Mapping an Old Vietnamese Address to New Administrative Units**\n\nOkay, here's how I'd approach this. The user has given me an old address: \"Xã Phước Diêm, Huyện Thuận Nam, Tỉnh Ninh Thuận\" and wants to map it to the new administrative structure.\n\nFirst, I'd break down the address.  \"Xã Phước Diêm\" is the old ward, and \"Tỉnh Ninh Thuận\" is the old province.\n\nNow, I'd check for any province mergers. Given the user's input, I know \"60-NQ/TW\" might be relevant.  A quick search reveals that \"Tỉnh Ninh Thuận\" *was* merged, becoming \"Tỉnh Khánh Hoà.\"\n\nNext, I need to find the new ward for \"Xã Phước Diêm.\" I'll scrutinize the provided \"Other resolutions\".  And there it is! Resolution \"1667/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Khánh Hòa\" specifically addresses \"Xã Phước Diêm.\"  Line 34 states that \"Xã Phước Diêm\" and \"Xã Cà Ná\" are merged into a new \"Xã Cà Ná.\"\n\nNow I cross-reference this with the \"New wards\" list.  A match appears for \"Xã Cà Ná\" in \"Tỉnh Khánh Hòa\". Its `ward_code` is 22909.\n\nFinally, I'd construct the JSON output: the new province is \"Tỉnh Khánh Hoà,\" the new ward is \"Xã Cà Ná,\" with the code 22909. The citation will point to Resolution \"1667/NQ-UBTVQH15,\" because that's the key resolution here.  I'd assign a \"high\" confidence level because this mapping is a direct result of that specific resolution.\n\nBefore finalizing, I would double-check the other provided resolutions, just to make sure there aren't any conflicting or overlapping mappings involving either \"Xã Phước Diêm\" or \"Tỉnh Ninh Thuận\" (or even \"Tỉnh Khánh Hoà\" now). Resolution \"1671/NQ-UBTVQH15\" is about \"Tỉnh Lâm Đồng,\" so irrelevant.\n\nWith that, the mapping seems sound. This is a clear-cut case.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1667/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Khánh Hòa",
+        "line": "34. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Phước Diêm và xã Cà Ná thành xã mới có tên gọi là xã Cà Ná."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Khánh Hòa",
+      "ward_code": "22909",
+      "ward_name": "Xã Cà Ná"
+    }
+  ]
+}

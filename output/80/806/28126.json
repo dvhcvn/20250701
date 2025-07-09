@@ -1,0 +1,28 @@
+{
+  "address": "Xã Long Cang, Huyện Cần Đước, Tỉnh Long An",
+  "ellapsedInMs": 6155,
+  "estimatedCost": 0.0022873000000000004,
+  "thought": "**Mapping an Old Address to New Administrative Units**\n\nOkay, I'm tasked with mapping the old address \"Xã Long Cang, Huyện Cần Đước, Tỉnh Long An\" to its current equivalent based on provided data. Let's break this down systematically.\n\nFirst, I need to identify the old province.  \"Tỉnh Long An\" is straightforward.  Now, the crucial step is verifying if this province was affected by any administrative changes. I'll consult the province resolutions, specifically 60-NQ/TW, to check for any mergers or renamings.  Ah, there it is!  \"Tỉnh Long An\" is mentioned in the merge resolution, specifying the merger with \"Tây Ninh.\"  The resulting province name is \"Tỉnh Tây Ninh\". So, I know the new province.\n\nNext up, the ward: \"Xã Long Cang\".  I need to ascertain if this ward underwent any restructuring.  I'll delve into the relevant resolutions, particularly 1682/NQ-UBTVQH15, to see if \"Xã Long Cang\" is listed. I'll search through the `lines` of the resolution. Excellent, Line 39 clarifies things: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Long Định, Phước Vân và Long Cang thành xã mới có tên gọi là **xã Long Cang**.\"  The resolution indicates a merge, but crucially, the name remains \"xã Long Cang\". The header confirms this resolution applies to the new province \"Tỉnh Tây Ninh\".\n\nNow, I'll cross-reference this information with the new ward data. I need to ensure that \"Xã Long Cang\" exists within the jurisdiction of \"Tỉnh Tây Ninh\" based on the new data. Bingo! `{\"ward_code\":\"28126\",\"ward_name\":\"Xã Long Cang\",\"province_name\":\"Tỉnh Tây Ninh\"}` aligns perfectly. This is a clear confirmation.\n\nTo assess the confidence in my mapping, I'll consider these points:\n\n*   The province mapping is explicitly stated and unambiguous in the resolution.\n*   The ward mapping is also very clear, showing that the ward name is retained.\n*   The new ward data perfectly validates my findings.\n\nTherefore, the confidence level is unequivocally \"high\".\n\nFinally, I'll generate the JSON output, effectively mapping the old address to the current administrative structure.  The resolution 1682/NQ-UBTVQH15 has been reviewed, and the new data also confirms the merge and retention of the name.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Tây Ninh và tỉnh Long An, lấy tên là tỉnh Tây Ninh"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tây Ninh",
+      "ward_code": "28126",
+      "ward_name": "Xã Long Cang"
+    },
+    {
+      "citation": {
+        "header": "1682/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tây Ninh",
+        "line": "39. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Long Định, Phước Vân và Long Cang thành xã mới có tên gọi là xã Long Cang."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tây Ninh",
+      "ward_code": "28126",
+      "ward_name": "Xã Long Cang"
+    }
+  ]
+}

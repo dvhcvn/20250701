@@ -1,0 +1,28 @@
+{
+  "address": "Xã Thạch Lương, Thị xã Nghĩa Lộ, Tỉnh Yên Bái",
+  "ellapsedInMs": 6051,
+  "estimatedCost": 0.0024018,
+  "thought": "**Determining the New Administrative Unit for Xã Thạch Lương**\n\nOkay, so the user wants to know the current administrative unit for \"Xã Thạch Lương, Thị xã Nghĩa Lộ, Tỉnh Yên Bái.\"  Let's break this down systematically. First, I recognize the old province: \"Tỉnh Yên Bái.\"  Now, I need to check for any province-level changes, specifically referencing those province resolutions like 60-NQ/TW. Ah, yes! \"Hợp nhất tỉnh Lào Cai và tỉnh Yên Bái, lấy tên là tỉnh Lào Cai\" tells me Yên Bái merged with Lào Cai. So, the old province is now part of \"Tỉnh Lào Cai.\"\n\nNext, I identify the specific ward: \"Xã Thạch Lương.\"  Now comes the crucial part – searching for any adjustments related to *that* specific ward within the context of the merged province. I need to dig into \"Other resolutions,\" particularly those regarding the administrative reorganization of Lào Cai. Bingo! Resolution 1673/NQ-UBTVQH15, \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai,\" seems promising. Let's see... and there it is, line 84:  \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Cầu Thia và các xã Thanh Lương, Thạch Lương, Phúc Sơn, Hạnh Sơn thành phường mới có tên gọi là **phường Cầu Thia**.\"  Perfect! That directly addresses \"Xã Thạch Lương\" and confirms its integration into \"phường Cầu Thia.\"\n\nTo be absolutely certain, I'll quickly double-check the \"New wards\" data.  Yep, there it is: `{\"ward_code\":\"04681\",\"ward_name\":\"Phường Cầu Thia\",\"province_name\":\"Tỉnh Lào Cai\"}`.  The match is clean.\n\nGiven the explicit nature of the resolution and the clear province merger, my confidence level is high. Now, I'll just structure the response as JSON to provide the user with the most helpful answer.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Lào Cai và tỉnh Yên Bái, lấy tên là tỉnh Lào Cai"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "04681",
+      "ward_name": "Phường Cầu Thia"
+    },
+    {
+      "citation": {
+        "header": "1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai",
+        "line": "Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Cầu Thia và các xã Thanh Lương, Thạch Lương, Phúc Sơn, Hạnh Sơn thành phường mới có tên gọi là phường Cầu Thia."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "04681",
+      "ward_name": "Phường Cầu Thia"
+    }
+  ]
+}

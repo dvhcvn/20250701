@@ -1,0 +1,28 @@
+{
+  "address": "Xã Trạm Tấu, Huyện Trạm Tấu, Tỉnh Yên Bái",
+  "ellapsedInMs": 9718,
+  "estimatedCost": 0.0032386,
+  "thought": "**Address Mapping for Vietnamese Administrative Units**\n\nOkay, so I'm tasked with mapping an old Vietnamese address to its current administrative unit. The old address is within \"Xã Trạm Tấu,\" from the province of \"Tỉnh Yên Bái.\"  I need to figure out what that translates to now.\n\nFirst things first, I've got to determine the new province based on the provided merge information. It looks like \"Tỉnh Yên Bái\" was merged into \"Tỉnh Lào Cai\" – resolution 60-NQ/TW is key here.\n\nNow, with \"Tỉnh Lào Cai\" established, I need to check the resolutions specific to ward changes within that province. The provided resolution is 1673/NQ-UBTVQH15, which concerns the arrangement of administrative units in \"Tỉnh Lào Cai,\" so it's a solid lead.\n\nI'm zeroing in on \"Xã Trạm Tấu\" within this resolution. Scanning the document, line 5 jumps out: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Pá Lau, Pá Hu, Túc Đán và Trạm Tấu thành xã mới có tên gọi là **xã Trạm Tấu**.\"  Bingo! This directly references \"Trạm Tấu\" in the formation of a *new* \"xã Trạm Tấu.\" That's a good candidate.\n\nLine 6 mentions \"thị trấn Trạm Tấu\" in creating \"xã Hạnh Phúc.\" While potentially relevant (related to the same district), since my task is to identify one or multiple new wards that may be the new administrative unit corresponding to the given address and to include all candidates, I'll keep this in mind. But since the original ward is explicitly mentioned in Line 5, I'm leaning heavily towards \"xã Trạm Tấu\".\n\nNow I need to cross-reference this information with the \"New wards\" data I have. Line 5 leads me to find the new ward: \"xã Trạm Tấu,\" and indeed I find a match: `{\"ward_code\":\"04606\",\"ward_name\":\"Xã Trạm Tấu\",\"province_name\":\"Tỉnh Lào Cai\"}`. Perfect. In addition, line 6 leads to find the new ward: \"xã Hạnh Phúc\", and I found a match: `{\"ward_code\":\"04585\",\"ward_name\":\"Xã Hạnh Phúc\",\"province_name\":\"Tỉnh Lào Cai\"}`.\n\nPutting it all together, the old ward, \"Xã Trạm Tấu,\" from \"Tỉnh Yên Bái,\" is now \"xã Trạm Tấu\" within \"Tỉnh Lào Cai\" – and there's another candidate of \"xã Hạnh Phúc\", also in \"Tỉnh Lào Cai\". The resolution's line 5 and the province merge provide a very strong case.\n\nSo, for an address within the old ward, the probable new ward candidates are both \"xã Trạm Tấu\" and \"xã Hạnh Phúc\". I'm confident in this mapping. Now I need to output the results based on the schema and structure I was given.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Lào Cai và tỉnh Yên Bái, lấy tên là tỉnh Lào Cai"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "04606",
+      "ward_name": "Xã Trạm Tấu"
+    },
+    {
+      "citation": {
+        "header": "1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai",
+        "line": "5. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Pá Lau, Pá Hu, Túc Đán và Trạm Tấu thành xã mới có tên gọi là xã Trạm Tấu."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "04606",
+      "ward_name": "Xã Trạm Tấu"
+    }
+  ]
+}

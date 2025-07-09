@@ -1,0 +1,18 @@
+{
+  "address": "Xã Thị Hoa, Huyện Hạ Lang, Tỉnh Cao Bằng",
+  "ellapsedInMs": 4307,
+  "estimatedCost": 0.0015894999999999998,
+  "thought": "**My Mapping Strategy for Vietnamese Address Transformation**\n\nOkay, so I'm tackling this Vietnamese address mapping task. The user wants me to translate an old address to the new administrative structure, leveraging provided resolutions and ward data. Here's my approach:\n\nFirst, I need to break down the old address: \"Xã Thị Hoa\" (ward), \"Huyện Hạ Lang\" (district), and \"Tỉnh Cao Bằng\" (province).\n\nNext, I'll consult the province-level resolutions (specifically, 60-NQ/TW). Good, \"Tỉnh Cao Bằng\" is listed under those not undergoing a merger. That's straightforward: \"Tỉnh Cao Bằng\" remains \"Tỉnh Cao Bằng.\"\n\nNow, I'll dive into the resolutions pertinent to \"Xã Thị Hoa\" within Cao Bằng. Resolution 1657/NQ-UBTVQH15 seems promising. Ah, there it is! Line 50 clearly states that \"Xã Thị Hoa\" is being merged with \"Thị trấn Thanh Nhật\" and \"Xã Thống Nhất\" to form the new \"Xã Hạ Lang\".\n\nI'll double-check this against the \"New Wards\" data. Yup, the entry for \"Xã Hạ Lang\" in \"Tỉnh Cao Bằng\" confirms the details: `{\"ward_code\":\"01558\",\"ward_name\":\"Xã Hạ Lang\",\"province_name\":\"Tỉnh Cao Bằng\"}`.\n\nGiven the explicit nature of the resolution and the unchanged province, I'm feeling confident in this mapping. Now, I'll construct the JSON output and provide it to the user.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1657/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Cao Bằng",
+        "line": "50. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Thanh Nhật, xã Thống Nhất và xã Thị Hoa thành xã mới có tên gọi là xã Hạ Lang."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Cao Bằng",
+      "ward_code": "01558",
+      "ward_name": "Xã Hạ Lang"
+    }
+  ]
+}

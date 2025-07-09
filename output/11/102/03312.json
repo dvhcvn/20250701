@@ -1,0 +1,18 @@
+{
+  "address": "Xã Nặm Lịch, Huyện Mường Ảng, Tỉnh Điện Biên",
+  "ellapsedInMs": 5582,
+  "estimatedCost": 0.0020098,
+  "thought": "**My Mapping of \"Xã Nặm Lịch\" to New Administrative Units**\n\nOkay, so I've got this old address, \"Xã Nặm Lịch, Huyện Mường Ảng, Tỉnh Điện Biên,\" and I need to figure out its new location based on these resolutions and the new ward data.  Let's break it down:\n\nFirst things first, I identify the old ward as \"Xã Nặm Lịch\" and the old province as \"Tỉnh Điện Biên.\"  Easy enough.  Now, I'm checking the province resolutions (like 60-NQ/TW) to see if \"Tỉnh Điện Biên\" is affected by any mergers or name changes.  Good news, it's listed under \"Các đơn vị hành chính cấp tỉnh không thực hiện sáp nhập,\" so the province name stays the same.\n\nNext, I need to dive into those other resolutions (like 1661/NQ-UBTVQH15) specifically looking for \"Xã Nặm Lịch.\"  Ah, bingo!  Line 29 explicitly states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Nặm Lịch, Xuân Lao và Mường Lạn thành xã mới có tên gọi là **xã Mường Lạn**.\"  Perfect, it's being merged.\n\nNow, I cross-reference this information with the \"New wards\" data.  I search for \"Xã Mường Lạn\" within \"Tỉnh Điện Biên,\" and there it is: `{\"ward_code\":\"03313\",\"ward_name\":\"Xã Mường Lạn\",\"province_name\":\"Tỉnh Điện Biên\"}`.  The match is clean.\n\nFinally, putting it all together for the JSON output: the citation header will be \"1661/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Điện Biên\" and the specific line cited will be \"29. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Nặm Lịch, Xuân Lao và Mường Lạn thành xã mới có tên gọi là **xã Mường Lạn**.\" The `confidence` is high because the resolution directly addresses the old ward.  The `province_name` is \"Tỉnh Điện Biên.\" The new ward code is \"03313\" and the ward name is \"Xã Mường Lạn.\"  Simple and accurate. I'm satisfied.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1661/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Điện Biên",
+        "line": "29. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Nặm Lịch, Xuân Lao và Mường Lạn thành xã mới có tên gọi là xã Mường Lạn."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Điện Biên",
+      "ward_code": "03313",
+      "ward_name": "Xã Mường Lạn"
+    }
+  ]
+}

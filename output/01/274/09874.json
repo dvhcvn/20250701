@@ -1,0 +1,28 @@
+{
+  "address": "Xã Song Phương, Huyện Hoài Đức, Thành phố Hà Nội",
+  "ellapsedInMs": 8606,
+  "estimatedCost": 0.0037501,
+  "thought": "**Analysis of Administrative Unit Changes for \"Xã Song Phương\"**\n\nOkay, let's break this down. The user's query is straightforward: they need to know the new wards for the old address \"Xã Song Phương, Huyện Hoài Đức, Thành phố Hà Nội.\"  I need to dig into the relevant resolutions and data.\n\nFirst, the province is easily confirmed. Hà Nội isn't undergoing any province-level mergers based on the regulations (\"60-NQ/TW\"). So, the province remains \"Thành phố Hà Nội.\"  That's the easy part.\n\nNow, the real work begins. I've got to find \"Song Phương\" in the list of administrative changes.  I know to look in Resolution \"1656/NQ-UBTVQH15\" because that deals specifically with Hà Nội's social unit restructuring.\n\nHere's where it gets interesting.  Scanning through the resolution, I hit the relevant section:\n\n*   **Line 104** states that a *portion* of \"Song Phương\" is absorbed into \"xã Sơn Đồng\".\n*   **Line 105** then clarifies that *the remaining part* of \"Song Phương\" (after the Line 104 rearrangement) becomes part of \"xã An Khánh\".\n\nThis is the key! \"Song Phương\" has been split. Some of it goes to \"Sơn Đồng\", and the rest to \"An Khánh\".\n\nNow, I need to confirm the details of these new wards.  I've got the \"New Wards\" list and can easily look up \"Sơn Đồng\" and \"An Khánh\".\n\n1.  \"Xã Sơn Đồng\" is there. I've got: `{ \"ward_code\": \"09871\", \"ward_name\": \"Xã Sơn Đồng\", \"province_name\": \"Thành phố Hà Nội\" }`. Excellent.\n2.  \"Xã An Khánh\" is also present, with: `{ \"ward_code\": \"09877\", \"ward_name\": \"Xã An Khánh\", \"province_name\": \"Thành phố Hà Nội\" }`.  Perfect match.\n\nFinally, a quick sanity check:  both new wards are indeed in \"Thành phố Hà Nội,\" which aligns with the original province. The confidence level is high because the resolution is explicit, and all the data checks out. Therefore, my output will be an array of objects.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội",
+        "line": "104. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Lại Yên, Sơn Đồng, Tiền Yên, một phần diện tích tự nhiên, quy mô dân số của các xã An Khánh, Song Phương, Vân Côn, một phần diện tích tự nhiên của xã An Thượng và phần còn lại của xã Vân Canh sau khi sắp xếp theo quy định tại khoản 36 Điều này thành xã mới có tên gọi là xã Sơn Đồng."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hà Nội",
+      "ward_code": "09871",
+      "ward_name": "Xã Sơn Đồng"
+    },
+    {
+      "citation": {
+        "header": "1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội",
+        "line": "105. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Đông La, phần còn lại của phường Dương Nội sau khi sắp xếp theo quy định tại các khoản 37, 38, 44 Điều này, phần còn lại của xã An Khánh sau khi sắp xếp theo quy định tại khoản 37, khoản 104 Điều này, phần còn lại của xã La Phù sau khi sắp xếp theo quy định tại khoản 44 Điều này và phần còn lại của các xã Song Phương, Vân Côn, An Thượng sau khi sắp xếp theo quy định tại khoản 104 Điều này thành xã mới có tên gọi là xã An Khánh."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hà Nội",
+      "ward_code": "09877",
+      "ward_name": "Xã An Khánh"
+    }
+  ]
+}

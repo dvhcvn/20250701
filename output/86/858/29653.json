@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tân Long, Huyện Mang Thít, Tỉnh Vĩnh Long",
+  "ellapsedInMs": 8643,
+  "estimatedCost": 0.0036699999999999997,
+  "thought": "**Finding the New Administrative Unit for \"Xã Tân Long\"**\n\nOkay, so I need to figure out the new administrative unit (ward) for the old address \"Xã Tân Long, Huyện Mang Thít, Tỉnh Vĩnh Long.\"  My initial thought is to cross-reference the old address with the available resolutions and new ward data.  I'll approach this systematically:\n\nFirst, I need to check for any province mergers. Examining Resolution 60-NQ/TW reveals that Vĩnh Long was *not* merged. So \"Tỉnh Vĩnh Long\" remains \"Tỉnh Vĩnh Long.\" That's good.\n\nNext, I'll search through the \"Other resolutions\" to see if there's any mention of \"Xã Tân Long\" in Vĩnh Long.  I'll start scanning the available documents: 1663/NQ-UBTVQH15 (Đồng Tháp), 1668/NQ-UBTVQH15 (Cần Thơ), and so on.  No matches for Vĩnh Long in those resolutions. Keep going, now checking 1680, 1682, 1683, 1684, 1685 and 1687. Aha!  Resolution 1687/NQ-UBTVQH15 specifically deals with Vĩnh Long.  This is promising.\n\nNow, I'll delve into Resolution 1687/NQ-UBTVQH15. Line 2 explicitly states that \"Xã Tân An Hội, Tân Long và Tân Long Hội\" are merged to form a new ward called \"Xã Tân Long Hội.\" Perfect.  My original address mentions \"Xã Tân Long\" in Vĩnh Long. While it doesn't specify the district, since the resolution is for Vĩnh Long and the input is from Vĩnh Long, I'm confident in this match.\n\nTo confirm, I'll check the \"New wards\" data. I found it!  The entry `{\"ward_code\":\"29653\",\"ward_name\":\"Xã Tân Long Hội\",\"province_name\":\"Tỉnh Vĩnh Long\"}` confirms the new ward name and code.\n\nFinally, I'll assemble the JSON output. The `citation` will reference the specific line in Resolution 1687/NQ-UBTVQH15. The `confidence` will be \"high\" because of the direct mention in the resolution.  The `province_name` is \"Tỉnh Vĩnh Long.\" The `ward_code` and `ward_name` come directly from the \"New wards\" data.\n\nLet me just double-check to be sure, that there aren't any other wards named \"Tân Long.\" Scanning through the documents reveals there's only one \"Xã Tân Long\" mentioned, and that is in Đồng Tháp, which has a resolution and a new ward. However, this is not relevant to Vĩnh Long. Now I'm sure this is the right answer.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long",
+        "line": "2. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tân An Hội, Tân Long và Tân Long Hội thành xã mới có tên gọilà xã Tân Long Hội."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "29653",
+      "ward_name": "Xã Tân Long Hội"
+    }
+  ]
+}

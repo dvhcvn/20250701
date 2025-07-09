@@ -1,0 +1,28 @@
+{
+  "address": "Xã Ngân Thủy, Huyện Lệ Thủy, Tỉnh Quảng Bình",
+  "ellapsedInMs": 9307,
+  "estimatedCost": 0.0031538,
+  "thought": "**Analyzing and Mapping the Vietnamese Address**\n\nOkay, so I'm presented with an old Vietnamese address: \"Xã Ngân Thủy, Huyện Lệ Thủy, Tỉnh Quảng Bình\" and need to determine its corresponding new administrative unit based on provided resolutions and new ward data. This is a fairly straightforward task, given the recent administrative changes in Vietnam, but I'll need to meticulously follow the evidence.\n\nMy first step is to break down the old address into its components: Ward (Xã Ngân Thủy), District (Huyện Lệ Thủy), and Province (Tỉnh Quảng Bình). Then, I'll dive into the resolutions, starting with the provincial-level changes outlined in Resolution 60-NQ/TW. I'll search for \"Tỉnh Quảng Bình\" in the \"No Merger\" list, but it's not there, which indicates it *has* been affected by a merger. Scanning the \"Merger\" list, I quickly spot item 9: \"Hợp nhất tỉnh Quảng Bình và tỉnh Quảng Trị, lấy tên là tỉnh Quảng Trị.\" Excellent! This gives me my first high-confidence mapping: \"Tỉnh Quảng Bình\" becomes \"Tỉnh Quảng Trị.\"\n\nNow, I need to focus on the ward. I'll move to Resolution 1680/NQ-UBTVQH15 and search for \"Ngân Thủy.\" Bingo! Line 35 explicitly states, \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Kim Thủy, Ngân Thủy và Lâm Thủythành xã mới có tên gọi là **xã Kim Ngân**.\" This resolution is the key.  \"Xã Ngân Thủy\" is clearly merging into \"Xã Kim Ngân.\" Another high-confidence mapping, confirmed.\n\nNext, I'll check my \"New Wards\" list for \"Xã Kim Ngân.\"  Sure enough, it's there: `{\"ward_code\":\"19318\",\"ward_name\":\"Xã Kim Ngân\",\"province_name\":\"Tỉnh Quảng Trị\"}`. Perfect alignment! The new ward name matches, and its province is correctly listed as \"Tỉnh Quảng Trị,\" which I deduced earlier.\n\nNow, concerning the district.  The resolutions generally discuss the \"eliminating of districts,\" so the district information from the old address is not directly mapped to a new district. Instead, the ward is mapped directly to a new ward within the new province. And since Resolution 1680/NQ-UBTVQH15, line 35 is about \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Trị\", this confirms that the original wards were within the scope of Quảng Trị or provinces that merged into Quảng Trị.\n\nTherefore, my final mapping is:\n\nOld: Xã Ngân Thủy, Tỉnh Quảng Bình\nNew: Xã Kim Ngân, Tỉnh Quảng Trị\n\nThe confidence in this mapping is high, as it's based on explicit, confirmed resolutions.  The district information is effectively \"dropped\" in this context as part of the broader administrative restructuring. It's important to recognize that, while the old district doesn't have a direct *new* district counterpart, the ward is directly relevant to the restructuring, along with the province.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Quảng Bình và tỉnh Quảng Trị, lấy tên là tỉnh Quảng Trị"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Trị",
+      "ward_code": "19318",
+      "ward_name": "Xã Kim Ngân"
+    },
+    {
+      "citation": {
+        "header": "1680/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Trị",
+        "line": "35. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Kim Thủy, Ngân Thủy và Lâm Thủythành xã mới có tên gọi là xã Kim Ngân."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Trị",
+      "ward_code": "19318",
+      "ward_name": "Xã Kim Ngân"
+    }
+  ]
+}

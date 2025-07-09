@@ -1,0 +1,18 @@
+{
+  "address": "Phường Năng Tĩnh, Thành phố Nam Định, Tỉnh Nam Định",
+  "ellapsedInMs": 6846,
+  "estimatedCost": 0.0023238,
+  "thought": "**Mapping the Old to the New: A Nam Định Ward Re-Classification**\n\nOkay, so I'm looking at this old address, \"Phường Năng Tĩnh, Thành phố Nam Định, Tỉnh Nam Định\", and I need to figure out its new administrative location. I'll break this down methodically, as usual. First, I see the old ward is \"Phường Năng Tĩnh\" and the old province is \"Tỉnh Nam Định.\"\n\nNow, let's consult the resolutions. I immediately spot resolution 60-NQ/TW, which details the merging of provinces. And there it is: \"Hợp nhất tỉnh Hà Nam, tỉnh Ninh Bình và tỉnh Nam Định; lấy tên là tỉnh Ninh Bình.\" So, \"Tỉnh Nam Định\" is now part of \"Tỉnh Ninh Bình.\" That simplifies things considerably.\n\nNext, I need to check for ward-level reorganizations, which leads me to resolution 1674/NQ-UBTVQH15. This is the key: \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình.\"  Looking closely, line 114 is crucial. It states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Quang Trung (thành phố Nam Định), Vị Xuyên, Lộc Vượng, Cửa Bắc, Trần Hưng Đạo, Năng Tĩnh, Cửa Nam và xã Mỹ Phúc thành phường mới có tên gọi là **phường Nam Định**.\" Bingo! \"Phường Năng Tĩnh\" is explicitly *included* in this merger to form the new \"Phường Nam Định.\"\n\nFinally, I have the new ward data to verify. `{\"ward_code\":\"13669\",\"ward_name\":\"Phường Nam Định\",\"province_name\":\"Tỉnh Ninh Bình\"}`. This perfectly aligns with my findings: the new ward name is \"Phường Nam Định,\" and the province is indeed \"Tỉnh Ninh Bình.\"\n\nSo, I can confidently construct the JSON output:\n\n*   `province_name`: \"Tỉnh Ninh Bình\" (from the province merge resolution)\n*   `ward_name`: \"Phường Nam Định\" (from resolution 1674/NQ-UBTVQH15)\n*   `ward_code`: \"13669\" (from the new ward data)\n*   `citation`:  (Referencing the pertinent line from the cited resolution.)\n    *   `header`: \"1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình\"\n    *   `line`: \"114. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Quang Trung (thành phố Nam Định), Vị Xuyên, Lộc Vượng, Cửa Bắc, Trần Hưng Đạo, Năng Tĩnh, Cửa Nam và xã Mỹ Phúc thành phường mới có tên gọi là **phường Nam Định**.\"\n*   `confidence`: \"high\" (Because the mapping is explicitly documented and confirmed).\n\nThis should be a solid and accurate re-classification of the old \"Phường Năng Tĩnh.\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "114. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Quang Trung (thành phố Nam Định), Vị Xuyên, Lộc Vượng, Cửa Bắc, Trần Hưng Đạo, Năng Tĩnh, Cửa Nam và xã Mỹ Phúc thành phường mới có tên gọi là phường Nam Định."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "13669",
+      "ward_name": "Phường Nam Định"
+    }
+  ]
+}

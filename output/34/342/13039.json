@@ -1,0 +1,28 @@
+{
+  "address": "Xã Vân Trường, Huyện Tiền Hải, Tỉnh Thái Bình",
+  "ellapsedInMs": 5159,
+  "estimatedCost": 0.002212,
+  "thought": "**Identifying the New Administrative Unit for the Old Address**\n\nOkay, so I've got an old address: \"Xã Vân Trường, Huyện Tiền Hải, Tỉnh Thái Bình.\" My mission is to figure out the current ward. First things first, I need to pinpoint the old province: \"Tỉnh Thái Bình.\"  Then, I'm digging into those province resolutions, particularly those like 60-NQ/TW, to see if anything dramatic happened to Thái Bình. Ah, here we go, \"Hợp nhất tỉnh Hưng Yên và tỉnh Thái Bình, lấy tên là tỉnh Hưng Yên\" – so, Thái Bình is gone, swallowed up by Hưng Yên.  Now, the province is \"Tỉnh Hưng Yên.\"\n\nNext, I need to focus on \"Xã Vân Trường,\" the old ward. Time to hit the \"Other resolutions\" for mentions of \"Xã Vân Trường\" and the old district, \"Huyện Tiền Hải\" (which, remember, is now part of Hưng Yên).  Bingo! Resolution 1666/NQ-UBTVQH15 popped up, the one about the administrative rearrangements in Hưng Yên.  Line 46 is crucial: it explicitly states that \"Xã Vân Trường\" got merged, along with some others, into a new ward called \"**xã Tây Tiền Hải**.\"\n\nNow, I'll cross-reference the \"New wards\" to confirm this. I'm looking for \"xã Tây Tiền Hải\" in \"Tỉnh Hưng Yên.\"  And there it is: `{\"ward_code\":\"13039\",\"ward_name\":\"Xã Tây Tiền Hải\",\"province_name\":\"Tỉnh Hưng Yên\"}`.  That's a clean match.  Given the explicit nature of the resolution, my confidence in this finding is very high.  Time to package it all up in the JSON output.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Hưng Yên và tỉnh Thái Bình, lấy tên là tỉnh Hưng Yên"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "13039",
+      "ward_name": "Xã Tây Tiền Hải"
+    },
+    {
+      "citation": {
+        "header": "1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên",
+        "line": "Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Phương Công, Vân Trường và Bắc Hải thành xã mới có tên gọi là xã Tây Tiền Hải."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "13039",
+      "ward_name": "Xã Tây Tiền Hải"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "address": "Xã Vị Đông, Huyện Vị Thuỷ, Tỉnh Hậu Giang",
+  "ellapsedInMs": 8739,
+  "estimatedCost": 0.0032165,
+  "thought": "**Address Mapping Analysis: From \"Xã Vị Đông\" to New Wards**\n\nOkay, so I'm tasked with figuring out the new administrative location for a place that *used* to be \"Xã Vị Đông\" in \"Tỉnh Hậu Giang\".  First, I need to get the lay of the land, so I'll check the provided resolutions and new ward data.\n\nFirst, I recognized that \"Tỉnh Hậu Giang\" doesn't exist anymore as an independent province.  Resolution 60-NQ/TW states that it's been merged into \"Thành phố Cần Thơ\". So, that's my starting point: we're looking for the new location *within* \"Thành phố Cần Thơ.\"\n\nNow for \"Xã Vị Đông\". The key here seems to be resolution 1668/NQ-UBTVQH15, the one about the administrative rearrangements in Cần Thơ. I dove into it and found line 47:  \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Vị Đông, Vị Bình và Vị Thanh thành xã mới có tên gọi là **xã Vị Thanh 1**.\"  Eureka!  That's the direct answer!  \"Xã Vị Đông\" *became* part of \"Xã Vị Thanh 1.\"\n\nThe next step is to confirm this in the \"New wards\" data.  Sure enough, there it is: `{\"ward_code\":\"31465\",\"ward_name\":\"Xã Vị Thanh 1\",\"province_name\":\"Thành phố Cần Thơ\"}`. Perfect match.\n\nI had to be absolutely sure, so I reviewed other potential ambiguities. The address *also* mentioned \"Huyện Vị Thuỷ.\"  I kept in mind that districts are eliminated, and that the primary focus is on mapping \"Xã Vị Đông\". Line 45 described the creation of \"Xã Vị Thủy\" and Line 46 described the creation of \"Xã Vĩnh Thuận Đông\". These weren't directly relevant to my main focus.\n\nThere's also \"Phường Vị Thanh\" in the new wards. But the resolution *explicitly* lists \"Xã Vị Đông\", \"Xã Vị Bình\", and \"Xã Vị Thanh\" merging into \"Xã Vị Thanh 1\". Given that information, I'm confident \"Phường Vị Thanh\" is either a different entity or a higher-level unit, not directly connected to the transformation of \"Xã Vị Đông.\"  The resolution is crystal clear about \"Xã Vị Thanh 1.\"\n\nThe question explicitly asks for \"all possible new ward candidates\". Considering this and the unambiguous mapping in the resolution, I need to confirm there aren't *other* resolutions that could map to \"Xã Vị Đông\", and if there are other wards that it could be. As far as I can tell, the resolution is exclusive on this subject.\n\nTherefore, my conclusive answer, given the clear-cut merging described, is that the primary and most definitive mapping for \"Xã Vị Đông\" is **\"Xã Vị Thanh 1\"**.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất thành phố cần Thơ, tỉnh Sóc Trăng và tỉnh Hậu Giang; lấy tên là thành phố Cần Thơ"
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Cần Thơ",
+      "ward_code": "31465",
+      "ward_name": "Xã Vị Thanh 1"
+    },
+    {
+      "citation": {
+        "header": "1668/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Cần Thơ",
+        "line": "Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Vị Đông, Vị Bình và Vị Thanh thành xã mới có tên gọi là xã Vị Thanh 1."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Cần Thơ",
+      "ward_code": "31465",
+      "ward_name": "Xã Vị Thanh 1"
+    }
+  ]
+}

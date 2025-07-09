@@ -1,0 +1,18 @@
+{
+  "address": "Xã Pú Nhung, Huyện Tuần Giáo, Tỉnh Điện Biên",
+  "ellapsedInMs": 9114,
+  "estimatedCost": 0.0028547000000000004,
+  "thought": "**Reconciling Old and New Vietnamese Administrative Units: A Detailed Analysis**\n\nOkay, so I'm presented with an old Vietnamese address: \"Xã Pú Nhung, Huyện Tuần Giáo, Tỉnh Điện Biên,\" and the task is to map this to the current administrative units.  I'm approaching this systematically. First, I need to break down the old address into its components.  I have:\n\n*   **Old Ward:** Xã Pú Nhung\n*   **Old District:** Huyện Tuần Giáo\n*   **Old Province:** Tỉnh Điện Biên\n\nNow, the game is to use my knowledge of these resolutions to perform the mapping.\n\nMy initial thought is to check Province Resolutions first, focusing on Resolution 60-NQ/TW. This is to determine if the province has undergone any changes.  Fortunately, I see \"Tỉnh Điện Biên\" listed within the non-merging provinces. That makes things a bit simpler. So, the province name \"Tỉnh Điện Biên\" remains unchanged.\n\nNext, I have to dig deeper into the actual ward and district changes, and that's where I need to look at Resolution 1661/NQ-UBTVQH15. I'm scanning through the `lines` of this resolution, searching for any mention of \"Xã Pú Nhung\" or \"Huyện Tuần Giáo\".\n\nLine 21 mentions \"thị trấn Tuần Giáo\" and the creation of a new \"xã Tuần Giáo.\" Interesting, but this isn't what I'm looking for directly. The district level is not the same as the town level.\n\nThen, Line 24 jumps out at me: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Rạng Đông, Ta Ma và Pú Nhung thành xã mới có tên gọi là **xã Pú Nhung**.\" This is gold! It *explicitly* addresses my old ward, \"Pú Nhung,\" and clearly states its merger with two other wards to create a *new* ward that *retains* the name \"Xã Pú Nhung.\" Bingo!\n\nNow, I'm confident I have a solid lead, but I need confirmation. I need to consult the \"New wards\" data to cross-reference my findings.  I'll see if I can find the new \"Xã Pú Nhung\" in my list.  And there it is: `{\"ward_code\":\"03260\",\"ward_name\":\"Xã Pú Nhung\",\"province_name\":\"Tỉnh Điện Biên\"}`. The data validates everything. \"Xã Pú Nhung\" exists in Điện Biên, and I have the correct ward code.\n\nNow I can pull together the JSON output with a confidence level of \"high\" because I have a direct citation, a clear match in the new ward data, and the province is unchanged.\n\nSo here's what I'll present:\n\n*   `citation.header`: \"1661/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Điện Biên\"\n*   `citation.line`: \"24. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Rạng Đông, Ta Ma và Pú Nhung thành xã mới có tên gọi là **xã Pú Nhung**.\"\n*   `confidence`: \"high\"\n*   `province_name`: \"Tỉnh Điện Biên\"\n*   `ward_code`: \"03260\"\n*   `ward_name`: \"Xã Pú Nhung\"\n\nThat provides a detailed and accurate mapping of the old address to the new administrative unit. I'm satisfied. It's a clean and complete analysis!\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1661/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Điện Biên",
+        "line": "24. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Rạng Đông, Ta Ma và Pú Nhung thành xã mới có tên gọi là xã Pú Nhung."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Điện Biên",
+      "ward_code": "03260",
+      "ward_name": "Xã Pú Nhung"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Phước Vĩnh Đông, Huyện Cần Giuộc, Tỉnh Long An",
+  "ellapsedInMs": 8361,
+  "estimatedCost": 0.0027352,
+  "thought": "**My Approach to Mapping the Old Vietnamese Address**\n\nOkay, so I'm tasked with translating an old Vietnamese address into its current administrative equivalent. Let's break this down systematically.\n\nFirst, I identified the original components: **Xã Phước Vĩnh Đông** (ward), **Huyện Cần Giuộc** (district), and **Tỉnh Long An** (province).  Now, to map this to the present day.\n\nI began by consulting the province resolutions, specifically looking for \"Tỉnh Long An.\" I found Resolution 60-NQ/TW, which indicated a merger with Tây Ninh, forming a new \"Tỉnh Tây Ninh.\" This meant \"Long An\" no longer exists as an independent entity, and its territory is now part of Tây Ninh.\n\nNext, I delved into the \"Other Resolutions\" data.  I specifically looked for \"Xã Phước Vĩnh Đông.\" Line 49 of Resolution 1682/NQ-UBTVQH15 jumped out at me.  It's clear and concise: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đông Thạnh, Phước Vĩnh Đông và Tân Tập thành xã mới có tên gọi là **xã Tân Tập**.\" This resolution directly addressed my target ward, stating it was merged to form \"Xã Tân Tập.\"  The header of this same resolution explicitly mentions it's about \"Tỉnh Tây Ninh\" consistent with the province merger I found previously.\n\nI then confirmed this with the \"New Wards\" data.  I searched for \"Xã Tân Tập\" and found a matching entry: `{\"ward_code\":\"28207\",\"ward_name\":\"Xã Tân Tập\",\"province_name\":\"Tỉnh Tây Ninh\"}`.  It's a perfect match, solidifying the new ward name and its location under \"Tỉnh Tây Ninh.\"\n\nTo be absolutely sure, I've cross-referenced everything. The merge of Long An into Tây Ninh explains how a Tây Ninh resolution could affect a former Long An unit.  The resolution itself directly names \"Phước Vĩnh Đông\" and links it to \"Tân Tập.\"  And finally, the new ward data confirms this new mapping. This gives me very high confidence.\n\nTherefore, my final JSON output will reflect this clear path:\n\n*   `province_name`: \"Tỉnh Tây Ninh\" (from the province merger)\n*   `ward_name`: \"Xã Tân Tập\" (from the specific resolution)\n*   `ward_code`: \"28207\" (from the new wards data)\n*   `citation`: \"1682/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tây Ninh\" (with the specific line: \"49. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đông Thạnh, Phước Vĩnh Đông và Tân Tập thành xã mới có tên gọi là **xã Tân Tập**.\")\n*   `confidence`: \"high\" due to the direct citation and confirmation.\n\nI'm confident in this mapping. It's consistent with all the data I've reviewed.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1682/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tây Ninh",
+        "line": "49. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đông Thạnh, Phước Vĩnh Đông và Tân Tập thành xã mới có tên gọi là xã Tân Tập."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tây Ninh",
+      "ward_code": "28207",
+      "ward_name": "Xã Tân Tập"
+    }
+  ]
+}

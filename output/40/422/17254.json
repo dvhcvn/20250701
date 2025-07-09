@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Trà Lân, Huyện Con Cuông, Tỉnh Nghệ An",
+  "ellapsedInMs": 6116,
+  "estimatedCost": 0.0022994,
+  "thought": "**Mapping Old to New: A Case of Thị trấn Trà Lân**\n\nOkay, here's my thought process on this address mapping. We've got an address in \"Thị trấn Trà Lân\" within \"Huyện Con Cuông,\" \"Tỉnh Nghệ An\" and need to find its corresponding new administrative unit, considering that we're supposed to \"eliminate all districts\" from the output.\n\nFirst, I need to pinpoint the relevant resolutions and data. I'm focusing on \"Tỉnh Nghệ An\" because that's our key province. Checking the Province Resolutions, specifically 60-NQ/TW, confirms that Nghệ An is *not* undergoing any province-level merges, so its name remains unchanged. Good.\n\nNext, I scan other resolutions for mentions of \"Thị trấn Trà Lân\" and \"Nghệ An.\" Resolution 1678/NQ-UBTVQH15 catches my attention: \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Nghệ An\". Bingo! Line 7 explicitly states that \"Thị trấn Trà Lân\" is being merged with other units to form \"xã Con Cuông.\"\n\nI now check the `new_wards` data to see if I can find \"xã Con Cuông\". And there it is: `{\"ward_code\":\"17254\",\"ward_name\":\"Xã Con Cuông\",\"province_name\":\"Tỉnh Nghệ An\"}`.\n\nPutting it all together, I have a direct match: \"Thị trấn Trà Lân\" is merged into \"xã Con Cuông\", and the province, \"Tỉnh Nghệ An\", remains.  The resolution provides clear documentation for this change. The confidence level here is high, because the merging process is clearly stated in resolution 1678/NQ-UBTVQH15.\n\nTherefore, the output will be as follows, formatted correctly into JSON:\n`\n{\n  \"citation\": \"1678/NQ-UBTVQH15: Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Trà Lân, xã Chi Khê và xã Yên Khê thành xã mới có tên gọi là **xã Con Cuông**.\",\n  \"confidence\": \"high\",\n  \"province_name\": \"Tỉnh Nghệ An\",\n  \"ward_code\": \"17254\",\n  \"ward_name\": \"Xã Con Cuông\"\n}\n`\n\nThis reflects the precise mapping we needed.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1678/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Nghệ An",
+        "line": "7. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Trà Lân, xã Chi Khê và xã Yên Khê thành xã mới có tên gọi là xã Con Cuông."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Nghệ An",
+      "ward_code": "17254",
+      "ward_name": "Xã Con Cuông"
+    }
+  ]
+}

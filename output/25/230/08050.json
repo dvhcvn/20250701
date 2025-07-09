@@ -1,0 +1,18 @@
+{
+  "address": "Xã Ca Đình, Huyện Đoan Hùng, Tỉnh Phú Thọ",
+  "ellapsedInMs": 6802,
+  "estimatedCost": 0.0027818,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm presented with a Vietnamese address: Xã Ca Đình, Huyện Đoan Hùng, Tỉnh Phú Thọ, and I need to figure out its corresponding new administrative unit based on these resolutions and a list of new wards.  This should be straightforward, let's break it down.\n\nFirst, I identified the components: Ward - Xã Ca Đình, District - Huyện Đoan Hùng (which, knowing the context, will likely be obsolete), and Province - Tỉnh Phú Thọ.\n\nThe first step is to verify if the province has been affected. I checked the province resolutions. Specifically, resolution 60-NQ/TW doesn't indicate a merge or split for Phú Thọ. Fortunately, the resolution notes that Phú Thọ remains.\n\nNext, I delved into the other resolutions, focusing on any mention of \"Xã Ca Đình.\" Resolution 1676/NQ-UBTVQH15, concerning Phú Thọ's administrative unit reorganisation, is crucial.  Skimming the lines, I immediately zeroed in on line 18.  And there it is! \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Phú Lâm, Ca Đình và Tây Cốc thành xã mới có tên gọi là **xã Tây Cốc**.\" Bingo! \"Xã Ca Đình\" is explicitly merged into \"Xã Tây Cốc.\"\n\nTo cement this, I verified that \"Xã Tây Cốc\" exists in the \"New wards\" list, under the correct province, Tỉnh Phú Thọ.  That's how I identified `{\"ward_code\":\"08023\",\"ward_name\":\"Xã Tây Cốc\",\"province_name\":\"Tỉnh Phú Thọ\"}`\n\nThe high confidence rating is justified here.  The Province mapping is clear. The ward mapping is explicit and corroborated by the \"New wards\" list. Therefore I constructed the output JSON.\n\nThe resulting JSON includes the relevant citation:  1676/NQ-UBTVQH15, Line 18. The confidence is high. The Province is confirmed as Tỉnh Phú Thọ, and the ward details are now defined as  \"Xã Tây Cốc\" (ward_code: 08023). Based on this I'm certain this is the correct mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "18. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Phú Lâm, Ca Đình và Tây Cốc thành xã mới có tên gọi là xã Tây Cốc."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "08023",
+      "ward_name": "Xã Tây Cốc"
+    }
+  ]
+}

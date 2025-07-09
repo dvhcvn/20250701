@@ -1,0 +1,18 @@
+{
+  "address": "Xã Vàng Đán, Huyện Nậm Pồ, Tỉnh Điện Biên",
+  "ellapsedInMs": 6643,
+  "estimatedCost": 0.0023239000000000003,
+  "thought": "**My Mapping Process for Address Changes**\n\nOkay, so I'm dealing with an address change scenario here, mapping an old administrative address to a new one based on resolutions and ward data. Let's break this down systematically.\n\nFirst, I need to extract the relevant parts from the old address \"Xã Vàng Đán, Huyện Nậm Pồ, Tỉnh Điện Biên\". I quickly identify \"Xã Vàng Đán\" as the old ward and \"Tỉnh Điện Biên\" as the province.\n\nNow, the province needs checking against the primary resolution, specifically 60-NQ/TW. I scan this to see if Điện Biên has been merged or remains unchanged. Fortunately, it's explicitly stated as unchanged. That's a good start.\n\nNext, I need to delve into the other resolutions, focusing on any that mention \"Xã Vàng Đán\" within \"Tỉnh Điện Biên\". And bingo! Resolution \"1661/NQ-UBTVQH15\" pops up, directly addressing this scenario: it clearly indicates that \"Xã Vàng Đán\" is being merged with \"Xã Nà Bủng\" to form a *new* \"xã Nà Bủng\".\n\nWith that critical information, I then check the new ward data for \"xã Nà Bủng\" within \"Tỉnh Điện Biên\". And there it is:  `{\"ward_code\":\"03176\",\"ward_name\":\"Xã Nà Bủng\",\"province_name\":\"Tỉnh Điện Biên\"}`.  Perfect. This confirms the new ward's existence, code, and province.\n\nNow, to construct the output JSON.  I'm confident in:\n\n*   `province_name`: \"Tỉnh Điện Biên\" (unchanged).\n*   `ward_name`: \"Xã Nà Bủng\" (from the resolution and new ward data).\n*   `ward_code`: \"03176\" (from the new ward data).\n*   `citation`: The crucial resolution, \"1661/NQ-UBTVQH15\".\n*   `confidence`: Very high. This is a clear, direct, and explicit match based on the provided data.\n\nCrucially, the prompt also mentions eliminating districts. However, the available data and the output schema focus on wards and provinces. Therefore, I'm focusing solely on those two levels for this response.  The resolution provides a direct mapping, and the new ward list confirms the new administrative unit's information. It's a clean and straightforward process.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1661/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Điện Biên",
+        "line": "8. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Vàng Đán và xã Nà Bủng thành xã mới có tên gọi là xã Nà Bủng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Điện Biên",
+      "ward_code": "03176",
+      "ward_name": "Xã Nà Bủng"
+    }
+  ]
+}

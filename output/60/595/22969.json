@@ -1,0 +1,28 @@
+{
+  "address": "Thị trấn Liên Hương, Huyện Tuy Phong, Tỉnh Bình Thuận",
+  "ellapsedInMs": 8742,
+  "estimatedCost": 0.0033098,
+  "thought": "**My Analysis of Address Mapping for Thị trấn Liên Hương**\n\nOkay, I've got this. The user is asking to translate an old Vietnamese address to the new administrative structure.  The key is to use the provided resolutions, focusing on province mergers and ward changes.\n\nFirst, I need to pinpoint the old administrative units within the address: \"Thị trấn Liên Hương, Huyện Tuy Phong, Tỉnh Bình Thuận\". I quickly identify the ward (\"Thị trấn Liên Hương\"), district (\"Huyện Tuy Phong\"), and province (\"Tỉnh Bình Thuận\").  While I note the district, my focus here is on the ward's original province, which is where the change happens.\n\nNow, I look for province mergers. Resolution 60-NQ/TW is the first stop.  Aha!  It states that \"Tỉnh Bình Thuận\" is merged into \"Tỉnh Lâm Đồng\".  This is my initial key insight.  From this, I know that my final result *must* be within \"Tỉnh Lâm Đồng\".\n\nNext, I need to find the fate of \"Thị trấn Liên Hương\".  I scour the \"Other resolutions\" section, and there it is: Resolution 1671/NQ-UBTVQH15, specifically line 42.  This resolution is about administrative unit changes in \"Tỉnh Lâm Đồng\", which is exactly what I'm looking for. It explicitly says \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Liên Hương và các xã Bình Thạnh (huyện Tuy Phong), Phước Thể, Phú Lạc thành xã mới có tên gọi là **xã Liên Hương**.\"  Perfect! \"Thị trấn Liên Hương\" is now \"Xã Liên Hương\". This confirms that \"Liên Hương\" is the correct final ward. I note this also explicitly mentions \"huyện Tuy Phong\" for context.\n\nTo confirm and finalize, I cross-reference this information with the \"New wards\" data.  I search for \"Xã Liên Hương\", and I find a match: `{\"ward_code\":\"22969\",\"ward_name\":\"Xã Liên Hương\",\"province_name\":\"Tỉnh Lâm Đồng\"}`. This perfectly aligns with my findings from the resolutions. The name, code, and province are consistent.\n\nTherefore, my final JSON output will reflect this clear mapping. The `citation` will point to Resolution 1671/NQ-UBTVQH15, line 42, and the `confidence` will be \"high\" because of the direct match and explicit resolution. The `province_name` will be \"Tỉnh Lâm Đồng\", and the `ward_code` and `ward_name` will come directly from the \"New wards\" data: `22969` and `\"Xã Liên Hương\"` respectively. I think I have fully captured the reasoning process and am ready to implement the final output.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "14. Hợp nhất tỉnh Lâm Đồng, tỉnh Đắk Nông và tỉnh Bình Thuận; lấy tên là tỉnh Lâm Đồng"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "22969",
+      "ward_name": "Xã Liên Hương"
+    },
+    {
+      "citation": {
+        "header": "1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng",
+        "line": "42. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Liên Hương và các xã Bình Thạnh (huyện Tuy Phong), Phước Thể, Phú Lạc thành xã mới có tên gọi là xã Liên Hương."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "22969",
+      "ward_name": "Xã Liên Hương"
+    }
+  ]
+}

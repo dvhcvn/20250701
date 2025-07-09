@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Mù Căng Chải, Huyện Mù Căng Chải, Tỉnh Yên Bái",
+  "ellapsedInMs": 7900,
+  "estimatedCost": 0.0029461,
+  "thought": "**Analysis of Administrative Unit Changes**\n\nOkay, here's what I've worked out. The user wants to map an old address to a new administrative structure.  The input address is \"Thị trấn Mù Căng Chải, Huyện Mù Căng Chải, Tỉnh Yên Bái\". My starting point is to identify the relevant old units: \"Thị trấn Mù Căng Chải\" (ward), \"Huyện Mù Căng Chải\" (district), and \"Tỉnh Yên Bái\" (province).\n\nFirst, I looked at provincial resolutions. I found that \"Tỉnh Yên Bái\" was merged into \"Tỉnh Lào Cai\" according to resolution 60-NQ/TW.  Next, I needed to check for resolutions impacting ward-level changes.  The crucial resolution here is 1673/NQ-UBTVQH15, which specifically addresses the re-organization of *communes* within \"Tỉnh Lào Cai\".\n\nThis resolution states that \"Thị trấn Mù Cang Chải\" (note the spelling variation \"Cang\" vs \"Căng\") along with other communes will be merged into a new \"xã Mù Cang Chải\".  This *must* be the old \"Thị trấn Mù Căng Chải\" because of the province merger.\n\nThen I cross-referenced this against the \"New wards\" data.  The resolution provides the new ward name. The data perfectly matches, showing a \"ward_code\" of \"04456\" and a \"ward_name\" of \"Xã Mù Cang Chải\" under the correct new province \"Tỉnh Lào Cai\".\n\nConfidence is high because: (1) the province merger is clear, (2) the resolution directly impacts the old unit name, and (3) the data confirms the new unit details. The spelling variation \"Căng\" vs \"Cang\" is minor and common in Vietnamese contexts, probably a typo in the original data or a minor variation.\n\nTherefore, the final output will be:\n\n*   **Citation:** \"1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai\", with the relevant line being \"2. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Mù Cang Chải và các xã Kim Nọi, Mồ Dề, Chế Cu Nha thành xã mới có tên gọi là xã Mù Cang Chải.\"\n*   **Confidence:** \"high\"\n*   **Province:** \"Tỉnh Lào Cai\"\n*   **Ward Code:** \"04456\"\n*   **Ward Name:** \"Xã Mù Cang Chải\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai",
+        "line": "2. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Mù Cang Chải và các xã Kim Nọi, Mồ Dề, Chế Cu Nha thành xã mới có tên gọi là xã Mù Cang Chải."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "04456",
+      "ward_name": "Xã Mù Cang Chải"
+    }
+  ]
+}

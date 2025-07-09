@@ -1,0 +1,18 @@
+{
+  "address": "Xã Sa Nghĩa, Huyện Sa Thầy, Tỉnh Kon Tum",
+  "ellapsedInMs": 8063,
+  "estimatedCost": 0.0028272,
+  "thought": "**Mapping an Old Vietnamese Address to New Administrative Units**\n\nOkay, so I've got an old Vietnamese address: \"Xã Sa Nghĩa,\" \"Huyện Sa Thầy,\" \"Tỉnh Kon Tum.\" The task is to map this to the new administrative structure, eliminating districts.\n\nFirst, I need to understand that the province \"Tỉnh Kon Tum\" might have changed.  I checked the province resolutions (60-NQ/TW) and found that Kon Tum is *not* listed as \"không thực hiện sáp nhập\" (no merger).  Looking at the \"mới sau sáp nhập, hợp nhất\" (new after merger) list, I see \"Hợp nhất tỉnh Kon Tum và tỉnh Quảng Ngãi, lấy tên là tỉnh Quảng Ngãi\" - so, \"Tỉnh Kon Tum\" now becomes \"Tỉnh Quảng Ngãi.\" This is my first key finding.\n\nNow, on to the key resolution, 1677/NQ-UBTVQH15. It focuses on the province of Quảng Ngãi (which aligns with my findings from the province resolutions).  I need to find \"Xã Sa Nghĩa\" within this resolution.  Bingo! Line 73 states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Sa Nghĩa, Hơ Moong và Sa Bình thành xã mới có tên gọi là **xã Sa Bình**.\" This is the core of the mapping.  \"Xã Sa Nghĩa\" is *specifically* mentioned and *becomes* \"Xã Sa Bình.\"\n\nNext, I need to validate this against the \"New Wards\" data. I search for \"Xã Sa Bình\" and \"Tỉnh Quảng Ngãi,\" and I get a perfect match: `{\"ward_code\":\"23534\",\"ward_name\":\"Xã Sa Bình\",\"province_name\":\"Tỉnh Quảng Ngãi\"}`.  Excellent!\n\nMy JSON output is straightforward:\n\n*   `province_name`: \"Tỉnh Quảng Ngãi\" (from province merger)\n*   `ward_name`: \"Xã Sa Bình\" (from ward merger resolution)\n*   `ward_code`: \"23534\" (from new wards data)\n*   `citation`: \"1677/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ngãi\", with a specific line reference.\n*   `confidence`: \"high\" (because the mapping is direct and unambiguous).\n\nI did briefly review the other line in the resolution, concerning \"thị trấn Sa Thầy\" and \"xã Sa Thầy.\" Although \"Huyện Sa Thầy\" is in the old address, the *ward* address is \"Xã Sa Nghĩa\" and is *explicitly* covered by line 73. Line 72 is irrelevant to this specific ward.\n\nIn conclusion, \"Xã Sa Nghĩa\" in \"Tỉnh Kon Tum\" is now \"Xã Sa Bình\" in \"Tỉnh Quảng Ngãi,\" with high confidence based on the resolution 1677/NQ-UBTVQH15 and the new ward data. This is a solid, clean map.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1677/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ngãi",
+        "line": "73. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Sa Nghĩa, Hơ Moong và Sa Bình thành xã mới có tên gọi là xã Sa Bình."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ngãi",
+      "ward_code": "23534",
+      "ward_name": "Xã Sa Bình"
+    }
+  ]
+}

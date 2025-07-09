@@ -1,0 +1,18 @@
+{
+  "address": "Xã Trường Thành, Huyện An Lão, Thành phố Hải Phòng",
+  "ellapsedInMs": 7808,
+  "estimatedCost": 0.0034586,
+  "thought": "**My Analysis of the Administrative Unit Change**\n\nOkay, so I'm presented with an old address: \"Xã Trường Thành, Huyện An Lão, Thành phố Hải Phòng\". My task is to determine the current administrative unit for this. Here's how I'm approaching this, step-by-step:\n\nFirst, the province is clearly \"Thành phố Hải Phòng\". Now, I need to check if there have been any mergers or name changes for the province itself.  I quickly glance at the `60-NQ/TW` document and see that there was a merger between \"Hải Dương\" and \"Hải Phòng,\" but the resultant name is simply \"Thành phố Hải Phòng.\" No change to the name itself!\n\nNext, I have to dive into the `Other resolutions` and pinpoint any potential changes impacting \"Xã Trường Thành.\" I'm specifically searching within documents related to \"Thành phố Hải Phòng\". I meticulously go through the resolutions, looking for that specific ward.\n\nAha! **Resolution 1669/NQ-UBTVQH15** catches my eye. This resolution is all about rearranging the administrative units of \"Hải Phòng\".  On line 49, it states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Bát Trang, Trường Thọ và Trường Thành thành xã mới có tên gọi là **xã An Trường**.\" Bingo! This is the key. \"Xã Trường Thành\" is explicitly mentioned as being merged with \"Bát Trang\" and \"Trường Thọ\" to form the new ward, \"xã An Trường.\" The citation perfectly fits the bill. The header, \"1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng\", further confirms this resolution's relevance.\n\nNow that I've identified the new ward, \"xã An Trường\", I need to cross-reference it with my `New wards` list to verify the details and acquire the `ward_code`.  A quick lookup confirms: `{\"ward_code\":\"11635\",\"ward_name\":\"Xã An Trường\",\"province_name\":\"Thành phố Hải Phòng\"}`. Everything aligns perfectly.\n\nFinally, I'll compile my findings into a JSON output. I'm certain about this conclusion; it's a \"high\" confidence level because of that direct mention and mapping in the resolution.\n\nMy final output will look something like this.\n*   `province_name`: \"Thành phố Hải Phòng\".\n*   `ward_name`: \"Xã An Trường\"\n*   `ward_code`: \"11635\".\n*   `citation`:\n    *   `header`: \"1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng\"\n    *   `line`: \"49. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Bát Trang, Trường Thọ và Trường Thành thành xã mới có tên gọi là **xã An Trường**.\"\n*   `confidence`: \"high\".\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "49. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Bát Trang, Trường Thọ và Trường Thành thành xã mới có tên gọi là xã An Trường."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "11635",
+      "ward_name": "Xã An Trường"
+    }
+  ]
+}

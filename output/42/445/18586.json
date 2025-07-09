@@ -1,0 +1,18 @@
+{
+  "address": "Xã Thạch Kênh, Huyện Thạch Hà, Tỉnh Hà Tĩnh",
+  "ellapsedInMs": 6321,
+  "estimatedCost": 0.0024541,
+  "thought": "**Mapping an Old Vietnamese Address to a New Administrative Unit**\n\nOkay, here's how I'm approaching this. The user wants to map an old address, \"Xã Thạch Kênh\" in \"Huyện Thạch Hà\", \"Tỉnh Hà Tĩnh\" to a new ward. My plan is to methodically go through the resolutions and the new ward data.\n\nFirst, I identified the components of the old address. I've got \"Xã Thạch Kênh,\" \"Huyện Thạch Hà,\" and \"Tỉnh Hà Tĩnh\" - the old ward, district, and province.\n\nNext, I checked the province resolutions, specifically 60-NQ/TW, to see if anything changed about Hà Tĩnh. Thankfully, it's listed under those *not* being merged, meaning \"Tỉnh Hà Tĩnh\" remains unchanged. Good.\n\nNow for the meat of the matter: I scanned other resolutions, and I found the key piece of information in 1665/NQ-UBTVQH15. Line 22 directly addresses \"Xã Thạch Kênh\"!  It says that \"Xã Thạch Kênh,\" along with \"Thạch Liên\" and \"Ích Hậu,\" is being merged into the new ward called \"xã Đông Kinh.\" Perfect match! The header of the resolution also confirms this is about Hà Tĩnh.\n\nTo confirm and ensure completeness, I cross-referenced this with the \"New wards\" data.  Sure enough, I found \"xã Đông Kinh\" with the ward code \"18586\" and province name \"Tỉnh Hà Tĩnh.\" This cements the mapping.\n\nFrom all of this, I can confidently construct the output JSON: a \"high\" confidence level because the resolution explicitly mentions \"Xã Thạch Kênh\" and gives me a direct mapping to \"xã Đông Kinh.\"  The province name will be \"Tỉnh Hà Tĩnh,\" and I can pull the ward code and name from the new ward data.\n\nFinally, I checked for any other potential mappings or resolutions just to be absolutely sure, but this is a pretty straightforward, single, and clear case of administrative reorganization.  There are no other viable options based on the data provided. I have a definitive mapping for the user.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh",
+        "line": "22. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Thạch Kênh, Thạch Liên và Ích Hậu thành xã mới có tên gọi là xã Đông Kinh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hà Tĩnh",
+      "ward_code": "18586",
+      "ward_name": "Xã Đông Kinh"
+    }
+  ]
+}

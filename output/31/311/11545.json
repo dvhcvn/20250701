@@ -1,0 +1,18 @@
+{
+  "address": "Phường Tam Hưng, Thành phố Thuỷ Nguyên, Thành phố Hải Phòng",
+  "ellapsedInMs": 7897,
+  "estimatedCost": 0.0028636,
+  "thought": "**Identifying the New Administrative Unit**\n\nOkay, here's what I'm thinking. The user wants to find the updated administrative unit for \"Phường Tam Hưng, Thành phố Thuỷ Nguyên, Thành phố Hải Phòng,\" which is a bit of a puzzle. My plan is:\n\n1.  **Break it down:** I'll first isolate the old ward name (\"Phường Tam Hưng\") and the province (\"Thành phố Hải Phòng\"). I recognize \"Thành phố Thuỷ Nguyên\" is a district and irrelevant here.\n\n2.  **Province Check:** I need to make sure the province is still the same. I'll check \"60-NQ/TW\" resolutions to see if \"Thành phố Hải Phòng\" is listed for any mergers. Thankfully, it's mentioned for a merger *with* Hải Dương, but the resulting name *remains* \"Thành phố Hải Phòng.\" Good. The province is consistent.\n\n3.  **Ward Dive:** Now, the critical part. I'll search resolutions for changes impacting \"Phường Tam Hưng\" within \"Thành phố Hải Phòng.\" I see \"1656/NQ-UBTVQH15,\" which mentions \"Tam Hưng,\" but it's for Hà Nội, a dead end. Then, bingo! Resolution \"1669/NQ-UBTVQH15\" is a perfect fit. Line 4 states the merging of \"Tam Hưng\" *and* it's in Hải Phòng, into a new ward called \"Phường Nam Triệu.\" Excellent!\n\n4.  **Confirm the New Ward:** Based on that resolution, I'll search my \"New wards\" database for \"Phường Nam Triệu\" in \"Thành phố Hải Phòng\". Sure enough, it matches perfectly: `{\"ward_code\":\"11542\",\"ward_name\":\"Phường Nam Triệu\",\"province_name\":\"Thành phố Hải Phòng\"}`.\n\n5.  **Confidence Check:** The province name is solid, and the ward change is *explicitly* stated in the relevant resolution. The \"New wards\" data confirms the outcome. Everything aligns. Confidence is high.\n\n6.  **The Output:** I'll build the response with a citation from the relevant resolution, a confidence level of \"high,\" and the new administrative unit data: `{\"ward_code\": \"11542\", \"ward_name\": \"Phường Nam Triệu\", \"province_name\": \"Thành phố Hải Phòng\"}`. That should be a clean, accurate answer.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "4. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Nam Triệu Giang, Lập Lễ và Tam Hưng thành phường mới có tên gọi là phường Nam Triệu."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "11542",
+      "ward_name": "Phường Nam Triệu"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Phường Lộc Thọ, Thành phố Nha Trang, Tỉnh Khánh Hòa",
+  "ellapsedInMs": 5851,
+  "estimatedCost": 0.0021332,
+  "thought": "**My Analysis of the Address Mapping**\n\nOkay, so I'm tasked with figuring out the new administrative location for an old address. The old address is in \"Tỉnh Khánh Hòa\" and \"Phường Lộc Thọ,\" and I need to map it based on provided resolutions and new ward data.\n\nFirst, the province is straightforward: \"Tỉnh Khánh Hòa.\" I confirmed this by checking resolution 60-NQ/TW, which confirms Khánh Hòa remains Khánh Hòa, even after a potential merger with Ninh Thuận (though that didn't happen).\n\nThe tricky part is \"Phường Lộc Thọ.\" I dug into resolution 1667/NQ-UBTVQH15, and line 49 is the key. It clearly states that \"Phường Lộc Thọ\" is being *merged* with several other wards to form a *new* ward called \"Phường Nha Trang.\" That's a direct, unambiguous mapping.\n\nNow, I cross-referenced this with the provided new ward data. I found that the data entry with `ward_code:\"22366\",\"ward_name\":\"Phường Nha Trang\",\"province_name\":\"Tỉnh Khánh Hòa\"` perfectly aligns with the resolution.  The other listed new wards don't apply to \"Phường Lộc Thọ.\"\n\nTherefore, my conclusion is clear:\n\n*   The `province_name` is \"Tỉnh Khánh Hòa.\"\n*   The `ward_name` is \"Phường Nha Trang.\"\n*   The `ward_code` is \"22366.\"\n*   The `citation` should be from \"1667/NQ-UBTVQH15\", specifically line 49.\n*   My `confidence` in this mapping is very high because it's based on a precise and direct statement in the resolution.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1667/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Khánh Hòa",
+        "line": "49. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Vạn Thạnh, Lộc Thọ, Vĩnh Nguyên, Tân Tiến và Phước Hòa thành phường mới có tên gọi là phường Nha Trang."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Khánh Hòa",
+      "ward_code": "22366",
+      "ward_name": "Phường Nha Trang"
+    }
+  ]
+}

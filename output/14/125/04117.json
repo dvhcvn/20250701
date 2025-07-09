@@ -1,0 +1,18 @@
+{
+  "address": "Xã Mương Chanh, Huyện Mai Sơn, Tỉnh Sơn La",
+  "ellapsedInMs": 8605,
+  "estimatedCost": 0.0036569999999999997,
+  "thought": "**Determining the New Ward for the Given Address**\n\nOkay, here's my thought process. The user wants the new administrative unit (ward) for the old address \"Xã Mương Chanh, Huyện Mai Sơn, Tỉnh Sơn La\". I'll use my expertise in understanding these restructuring resolutions to figure this out.\n\nFirst, I always check the province resolutions to ensure there wasn't a province-level merger. The relevant resolution is 60-NQ/TW, and it clearly states \"Tỉnh Sơn La\" is not undergoing any changes. So, the province name will remain \"Tỉnh Sơn La.\"\n\nNext, I look at the more detailed resolutions. I can quickly skip those for Lào Cai, Nghệ An, and Thanh Hóa. I then focus on the relevant resolution, 1681/NQ-UBTVQH15, which deals with Sơn La.\n\n*   **Key Finding:** Line 47 of this resolution is the jackpot! It says that \"xã Chiềng Chung (huyện Mai Sơn)\" and \"xã Mường Chanh\" will merge to form *a new* \"xã Mường Chanh.\" This is directly relevant to the input address.\n\nNow, let's confirm the new ward in the database with the New Wards data. I find an entry for \"Xã Mường Chanh\" in \"Tỉnh Sơn La\" with code \"04117.\" It perfectly aligns with what was defined in the resolution.\n\n**Conclusion:**\n\nGiven the merge that has occurred, the province \"Tỉnh Sơn La\" is unchanged, and \"Xã Mường Chanh\" from \"Huyện Mai Sơn\" (and therefore, Sơn La) was merged with \"xã Chiềng Chung (huyện Mai Sơn)\" to form a new ward also named \"xã Mường Chanh.\" In this case, the name is retained after the merger.\n\nThis gives me very high confidence because a specific line in the resolution dictates this merge and a matching entry in the New Wards list confirms this.\n\nThe output JSON will reflect:\n*   `province_name`: \"Tỉnh Sơn La\"\n*   `ward_name`: \"Xã Mường Chanh\"\n*   `ward_code`: \"04117\"\n*   `citation`: The line from resolution 1681/NQ-UBTVQH15, and I'll include the header.\n*   `confidence`: \"high\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1681/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Sơn La",
+        "line": "47. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Chiềng Chung (huyện Mai Sơn) và xã Mường Chanh thành xã mới có tên gọi là xã Mường Chanh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Sơn La",
+      "ward_code": "04117",
+      "ward_name": "Xã Mường Chanh"
+    }
+  ]
+}

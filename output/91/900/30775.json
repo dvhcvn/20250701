@@ -1,0 +1,28 @@
+{
+  "address": "Phường Pháo Đài, Thành phố Hà Tiên, Tỉnh Kiên Giang",
+  "ellapsedInMs": 7649,
+  "estimatedCost": 0.0028396000000000003,
+  "thought": "**Mapping an Old Vietnamese Address to New Administrative Units**\n\nOkay, so I've got this old Vietnamese address: \"Phường Pháo Đài, Thành phố Hà Tiên, Tỉnh Kiên Giang.\" My task is to figure out the corresponding new administrative unit. Let's break this down.\n\nFirst, I identified the key components of the old address: \"Phường Pháo Đài\" (the old ward), \"Thành phố Hà Tiên\" (the old district, even though we're supposedly eliminating districts, it's still part of the old structure), and \"Tỉnh Kiên Giang\" (the old province).\n\nNow, to get the new information, I consulted those resolutions. The first thing I noticed was Resolution 60-NQ/TW, which showed that \"Tỉnh Kiên Giang\" had been merged with another province to become \"Tỉnh An Giang\" – this is important. Then, digging deeper, I found Resolution 1654/NQ-UBTVQH15, the real gem. This resolution specifically mentions \"Phường Pháo Đài\" and its fate. It states that \"Phường Pháo Đài\" was *merged* with other wards to form the new ward \"Phường Hà Tiên\"! Bingo!\n\nTo confirm, I checked the new ward data. I found a match:  `{\"ward_code\":\"30769\",\"ward_name\":\"Phường Hà Tiên\",\"province_name\":\"Tỉnh An Giang\"}`. It's a perfect alignment.\n\nNow, a small caveat. The resolution also mentions \"Mỹ Đức\" being merged. There's also a new \"Xã Mỹ Đức\" listed in the new ward data, but it's *not* the direct result of the merge of the original wards. This is confusing, but given the prompt asks for the *direct* correspondence, \"Phường Hà Tiên\" is the clear answer for my given address. So, I have confidently mapped \"Phường Pháo Đài, Thành phố Hà Tiên, Tỉnh Kiên Giang\" to \"Phường Hà Tiên, Tỉnh An Giang.\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "23. Hợp nhất tỉnh An Giang và tỉnh Kiên Giang, lấy tên là tỉnh An Giang"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh An Giang",
+      "ward_code": "30769",
+      "ward_name": "Phường Hà Tiên"
+    },
+    {
+      "citation": {
+        "header": "1654/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh An Giang",
+        "line": "92. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Pháo Đài, Bình San, Mỹ Đức và Đông Hồ thành phường mới có tên gọi là phường Hà Tiên."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh An Giang",
+      "ward_code": "30769",
+      "ward_name": "Phường Hà Tiên"
+    }
+  ]
+}

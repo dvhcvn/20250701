@@ -1,0 +1,18 @@
+{
+  "address": "Xã Noong Hẻo, Huyện Sìn Hồ, Tỉnh Lai Châu",
+  "ellapsedInMs": 7473,
+  "estimatedCost": 0.002751,
+  "thought": "**Identifying the New Administrative Unit**\n\nOkay, here's how I'm thinking through this. The user has given me an old address, \"Xã Noong Hẻo, Huyện Sìn Hồ, Tỉnh Lai Châu,\" and wants to know the new ward.  My first step is to break down this address.  I've got \"Xã Noong Hẻo,\" the old ward, and \"Tỉnh Lai Châu,\" the province.\n\nNow, let's consult the resolutions. I immediately look at Province Resolutions, specifically 60-NQ/TW.  This document deals with provincial-level changes.  The good news is that Lai Châu isn't merging with anyone according to this resolution. So, I can confidently say that the `province_name` remains \"Tỉnh Lai Châu\".\n\nNext, the ward \"Xã Noong Hẻo.\"  I'll need to dig into the `other_resolutions` data for any ward-level changes.  Ah, here we are!  Resolution 1670/NQ-UBTVQH15, \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lai Châu,\" looks promising.  Scanning through it, I find line 22: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số củacác xã Pa Khóa, Noong Hẻo vàPu Sam Cáp thành xã mới có tên gọi là **xã Pu Sam Cáp**.\"  Bingo! This resolution directly states that \"Noong Hẻo\" is merging into, or becoming part of, \"Xã Pu Sam Cáp.\"\n\nTo finalize this, I need to check the `new_wards` data. I'm looking for \"Xã Pu Sam Cáp\" and confirm that `{\"ward_code\":\"03532\",\"ward_name\":\"Xã Pu Sam Cáp\",\"province_name\":\"Tỉnh Lai Châu\"}` exists. Perfect. It matches the new ward name and the province, solidifying my findings.\n\nSince I have such a direct and explicit citation, my confidence level for this mapping is **high**.  The output will need to reflect this clear conclusion: `province_name` is \"Tỉnh Lai Châu,\"  `ward_name` is \"Xã Pu Sam Cáp,\"  `ward_code` is \"03532,\" and I'll include the relevant citation from Resolution 1670/NQ-UBTVQH15, line 22. This is a pretty straightforward and reliable mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1670/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lai Châu",
+        "line": "22. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số củacác xã Pa Khóa, Noong Hẻo vàPu Sam Cáp thành xã mới có tên gọi là xã Pu Sam Cáp."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lai Châu",
+      "ward_code": "03532",
+      "ward_name": "Xã Pu Sam Cáp"
+    }
+  ]
+}

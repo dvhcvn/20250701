@@ -1,0 +1,18 @@
+{
+  "address": "Phường Tân Vạn, Thành phố Biên Hòa, Tỉnh Đồng Nai",
+  "ellapsedInMs": 7526,
+  "estimatedCost": 0.0030377,
+  "thought": "**Determining the New Ward for \"Phường Tân Vạn, Thành phố Biên Hòa, Tỉnh Đồng Nai\"**\n\nOkay, so I've been tasked with figuring out the new administrative unit for the old address \"Phường Tân Vạn, Thành phố Biên Hòa, Tỉnh Đồng Nai\". First, I need to break this down. It's \"Phường Tân Vạn\" in the province of \"Tỉnh Đồng Nai\". Though \"Thành phố Biên Hòa\" is technically a district within Đồng Nai, the resolutions usually focus on ward and province-level changes.\n\nI'm starting by checking the province resolutions (60-NQ/TW), but it's pretty straightforward here. Đồng Nai remains Đồng Nai, even though it merged with Bình Phước, so that helps confirm the `province_name` later on.\n\nNow for the real work. I need to comb through these resolutions. The crucial one seems to be **1662/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Nai**. Line 68 is key: it *explicitly* states that \"phường Tân Vạn\" is being merged into a new ward called \"**phường Biên Hòa**\". Bingo! I've found a direct match. The province is also confirmed as \"tỉnh Đồng Nai.\" The other resolutions are for different provinces, so I can safely ignore them.\n\nNow, I'm checking the \"New wards\" data.  I'm looking for \"phường Biên Hòa\" in Đồng Nai. And there it is: `{\"ward_code\":\"26068\",\"ward_name\":\"Phường Biên Hòa\",\"province_name\":\"Tỉnh Đồng Nai\"}`.  Perfect! It's a clean match.\n\nTherefore, my final answer: The new ward for \"Phường Tân Vạn\" is \"Phường Biên Hòa\" with ward code \"26068\". The source is **1662/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Nai**, specifically line \"68. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Tân Hạnh, Hóa An, Bửu Hòa và Tân Vạn thành phường mới có tên gọi là **phường Biên Hòa**.\" This is a high-confidence match; it's a direct and explicit statement.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1662/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Nai",
+        "line": "68. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Tân Hạnh, Hóa An, Bửu Hòa và Tân Vạn thành phường mới có tên gọi là phường Biên Hòa."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đồng Nai",
+      "ward_code": "26068",
+      "ward_name": "Phường Biên Hòa"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tân Hương, Huyện Tân Kỳ, Tỉnh Nghệ An",
+  "ellapsedInMs": 8403,
+  "estimatedCost": 0.0034864,
+  "thought": "**My Analysis of the Administrative Unit Change**\n\nOkay, so I'm presented with an old address: \"Xã Tân Hương, Huyện Tân Kỳ, Tỉnh Nghệ An\".  My task is to find the new administrative unit.  Here's how I'm thinking through this process:\n\nFirst, the province is straightforward: \"Tỉnh Nghệ An\".  Quick check – no province mergers affecting that area according to the `60-NQ/TW` resolution.  So, \"Tỉnh Nghệ An\" stays as is.\n\nNext, I need to look into the ward-level changes.  The relevant resolution for Nghệ An is `1678/NQ-UBTVQH15`.  I'll scan through this resolution, specifically focusing on \"Huyện Tân Kỳ\" to see what happened to its wards.\n\nI zero in on the lines within this resolution, and here's what I find:\n\n*   Line 78 mentions a merger forming \"xã Tân Kỳ,\" but that's irrelevant here.\n*   Line 79 mentions \"xã Tân Phú\", which does not mention Xã Tân Hương.\n*   **Crucially, line 83 is where it gets interesting: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Phú Sơn, Tân Hương và Nghĩa Hành thành xã mới có tên gọi là xã Nghĩa Hành.\" Bingo!  This line explicitly includes \"Xã Tân Hương\" in the merger to form \"Xã Nghĩa Hành.\"**\n*   Line 84 mentions a merger forming \"xã Tiên Đồng,\" but is not relevant to our area.\n\nSo, according to the resolution, \"Xã Tân Hương\" is absorbed into the new \"Xã Nghĩa Hành\".  Now I'll cross-reference that against my `New wards` list to verify.\n\nA quick search for \"Xã Nghĩa Hành\" within \"Tỉnh Nghệ An\" confirms the existence of this new ward. It's identified as `{\"ward_code\":\"17326\",\"ward_name\":\"Xã Nghĩa Hành\",\"province_name\":\"Tỉnh Nghệ An\"}`.\n\nTherefore, the new ward is definitely \"Xã Nghĩa Hành.\" The province remains the same.  I can confidently construct the JSON output:  \"Tỉnh Nghệ An\" as the province, \"Xã Nghĩa Hành\" as the ward name, and `17326` as the ward code.  The citation will be  `1678/NQ-UBTVQH15`, line 83, because that explicitly states the merger.  And my confidence level is high because the resolution provides a very specific and unambiguous statement.\n\nThe district isn't specifically mentioned in the new ward name, but it *was* present in the old address. The resolutions I've looked at usually specify the old district for clarity, but in this case, the resolution simply merged the wards into the new \"Xã Nghĩa Hành.\" I'm confident in my conclusion.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1678/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Nghệ An",
+        "line": "83. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Phú Sơn, Tân Hương và Nghĩa Hành thành xã mới có tên gọi là xã Nghĩa Hành."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Nghệ An",
+      "ward_code": "17326",
+      "ward_name": "Xã Nghĩa Hành"
+    }
+  ]
+}

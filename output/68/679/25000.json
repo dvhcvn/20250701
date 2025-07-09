@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Di Linh, Huyện Di Linh, Tỉnh Lâm Đồng",
+  "ellapsedInMs": 6642,
+  "estimatedCost": 0.0022701,
+  "thought": "**Analyzing the Address Mapping: Di Linh Town**\n\nOkay, I'm diving into this address mapping request. The user wants to translate an old address, specifically \"Thị trấn Di Linh, Huyện Di Linh, Tỉnh Lâm Đồng,\" into its new administrative unit. My initial step is to break down this old address. I immediately identify \"Thị trấn Di Linh\" as the old ward, \"Huyện Di Linh\" as the old district (though the prompt mentioned eliminating districts, so this is primarily context), and \"Tỉnh Lâm Đồng\" as the old province.\n\nNow, I'm checking the relevant resolutions. First, I focused on province-level resolutions, like 60-NQ/TW, to see if \"Tỉnh Lâm Đồng\" had changed significantly. The resolution confirms that while Lâm Đồng now includes Đắk Nông and Bình Thuận, the province name itself remains \"Tỉnh Lâm Đồng.\"\n\nNext, I need to check resolutions for \"Thị trấn Di Linh.\" Resolution 1671/NQ-UBTVQH15 is the key here.  Line 21 specifically states that \"Thị trấn Di Linh\" is being merged with other areas to form the new \"xã Di Linh.\" Bingo! This is a clear indicator of the change.\n\nTo confirm this, I cross-reference the new ward data. I'm looking for \"xã Di Linh\" within \"Tỉnh Lâm Đồng.\" And there it is: a data entry showing \"Xã Di Linh\" with the code \"25000\" within \"Tỉnh Lâm Đồng.\"  This solidifies my conclusion.\n\nFinally, I'm constructing the JSON output. Given the clear mapping, the `confidence` level is high. I'll include resolution 1671/NQ-UBTVQH15 as the `citation`. The new province name is \"Tỉnh Lâm Đồng,\" the new `ward_code` is \"25000,\" and the new `ward_name` is \"Xã Di Linh.\" This is a straightforward and well-defined mapping due to the direct correspondence in the resolutions and data. I'm confident in this output.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng",
+        "line": "21. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Di Linh và các xã Liên Đầm, Tân Châu, Gung Ré thành xã mới có tên gọi là xã Di Linh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "25000",
+      "ward_name": "Xã Di Linh"
+    }
+  ]
+}

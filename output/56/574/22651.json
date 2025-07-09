@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Diên Khánh, Huyện Diên Khánh, Tỉnh Khánh Hòa",
+  "ellapsedInMs": 5913,
+  "estimatedCost": 0.002436,
+  "thought": "**Analysis of Address Mapping: \"Thị trấn Diên Khánh, Huyện Diên Khánh, Tỉnh Khánh Hòa\"**\n\nOkay, I'm breaking down this address to figure out the new administrative unit. First, I identify the old components: \"Thị trấn Diên Khánh\" as the old ward, \"Huyện Diên Khánh\" as the old district (though, the prompt specifies ignoring districts eventually), and \"Tỉnh Khánh Hòa\" as the province.\n\nNext, I need to check provincial resolutions to see if \"Tỉnh Khánh Hòa\" has changed. Resolution 60-NQ/TW shows that \"Tỉnh Khánh Hòa\" remains \"Tỉnh Khánh Hòa\" even after a merger. This is key for the output `province_name`.\n\nNow, I zero in on \"Thị trấn Diên Khánh.\" Resolution 1667/NQ-UBTVQH15 is relevant here. Specifically, line 12 states that the entire area and population of \"Thị trấn Diên Khánh,\" along with \"xã Diên An\" and \"xã Diên Toàn,\" are merged into a new \"xã Diên Khánh.\" This is my decisive link.\n\nFinally, I check the \"New wards\" data for \"xã Diên Khánh\" within \"Tỉnh Khánh Hòa.\" I find a matching entry: `{\"ward_code\":\"22651\",\"ward_name\":\"Xã Diên Khánh\",\"province_name\":\"Tỉnh Khánh Hòa\"}`. This perfectly aligns with my analysis.\n\nBased on this, I'll construct the JSON output. The `citation` will be \"1667/NQ-UBTVQH15\" because that resolution directly addresses the old ward. The `confidence` is \"high\" due to the direct mapping in the resolution. The final output JSON will reflect these findings, including the new ward code and name.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1667/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Khánh Hòa",
+        "line": "12. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Diên Khánh, xã Diên An và xã Diên Toàn thành xã mới có tên gọi là xã Diên Khánh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Khánh Hòa",
+      "ward_code": "22651",
+      "ward_name": "Xã Diên Khánh"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Phường Hải Tân, Thành phố Hải Dương, Tỉnh Hải Dương",
+  "ellapsedInMs": 7060,
+  "estimatedCost": 0.0029258,
+  "thought": "**Determining the New Administrative Unit for \"Phường Hải Tân\"**\n\nOkay, so I've been asked to find the current administrative unit for \"Phường Hải Tân, Thành phố Hải Dương, Tỉnh Hải Dương.\" This is a straightforward task, but it requires a systematic approach, which I'll lay out:\n\nFirst, I need to isolate the key components. I see \"Tỉnh Hải Dương\" (province) and \"Phường Hải Tân\" (ward). The initial step is to account for province changes. A quick check of relevant resolutions reveals Resolution 60-NQ/TW, which indicates that \"Tỉnh Hải Dương\" was merged with \"Thành phố Hải Phòng,\" now known as \"Thành phố Hải Phòng.\"\n\nNext, I need to focus on ward-level changes within this new province. My primary resource here will be the \"Other Resolutions\" section, particularly looking for documents referencing \"Thành phố Hải Phòng\" and specifically \"Phường Hải Tân\". This brings me to Resolution 1669/NQ-UBTVQH15, which seems relevant.\n\nScanning through this resolution, line 30 catches my eye: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Hải Tân, phườngTân Hưng, xã Ngọc Sơn và phần còn lại của phường Trần Phú sau khi sắp xếp theo quy định tại khoản 26 Điều này thành phường mới có tên gọi là **phường Tân Hưng**.\" Bingo! This explicitly states that \"Phường Hải Tân\" is merged into \"Phường Tân Hưng.\"\n\nNow, I need to confirm this within the structured data. I search for \"phường Tân Hưng\" within the context of \"Thành phố Hải Phòng\" and it is easily found: `{\"ward_code\":\"10537\",\"ward_name\":\"Phường Tân Hưng\",\"province_name\":\"Thành phố Hải Phòng\"}`.\n\nTo complete the response, I'll need to construct the JSON output and provide a high confidence rating, given the direct nature of the resolution. Before finalizing, I'll quickly double-check other resolutions for any conflicting information or additional changes to \"Thành phố Hải Dương\" or \"Phường Hải Tân.\" Upon a thorough review of the cited resolution, it becomes clear that there are no conflicting factors. Specifically, line 25, which cites \"phường Trần Hưng Đạo (thành phố Hải Dương)\", indicates its merger with other wards into \"phường Hải Dương\".\n\nThe mapping is therefore clear and straightforward. The final JSON output will reflect the province change (from \"Tỉnh Hải Dương\" to \"Thành phố Hải Phòng\"), the new ward name (\"Phường Tân Hưng\"), the ward code, and the relevant citation from Resolution 1669/NQ-UBTVQH15. The confidence level is \"high\" due to the explicit mapping provided in the resolution.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "30. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Hải Tân, phườngTân Hưng, xã Ngọc Sơn và phần còn lại của phường Trần Phú sau khi sắp xếp theo quy định tại khoản 26 Điều này thành phường mới có tên gọi là **phường Tân Hưng**."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "10537",
+      "ward_name": "Phường Tân Hưng"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Bàn Tân Định, Huyện Giồng Riềng, Tỉnh Kiên Giang",
+  "ellapsedInMs": 8946,
+  "estimatedCost": 0.0032095,
+  "thought": "**My Mapping Strategy for the Vietnamese Address**\n\nOkay, here's how I'm thinking about this mapping: the goal is to translate an old Vietnamese address into its corresponding new administrative units, given resolutions and a list of new wards. I'll need to break down the problem into these steps:\n\n1.  **Old Address Dissection**: I have an old address that consists of \"Xã Bàn Tân Định\" (ward), \"Huyện Giồng Riềng\" (district), and \"Tỉnh Kiên Giang\" (province).\n\n2.  **Province Resolution Assessment**: The first resolution to analyze is 60-NQ/TW. I'll check if \"Tỉnh Kiên Giang\" is on the \"no change\" list.  It's not. Then, I'll search the \"post-merger/consolidation\" list for \"Tỉnh Kiên Giang.\" Lo and behold, item 23 states the merger of An Giang and Kiên Giang to form \"Tỉnh An Giang.\" Bingo! This gives me high confidence that the province has changed.\n\n3.  **Specific Ward Resolution Scrutiny**: Now, I'll delve into the resolution 1654/NQ-UBTVQH15, specifically regarding \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh An Giang.\"  This is relevant because Kiên Giang is now part of An Giang. I'll meticulously read the lines, searching for \"Xã Bàn Tân Định.\" Line 61 explicitly details its consolidation with other wards to form \"xã Giồng Riềng.\" That's a perfect match!  The mention of \"Huyện Giồng Riềng\" alongside various wards confirms the resolution's jurisdiction.\n\n4.  **Verification Against New Wards List**: Next, I'll cross-reference the identified new ward (\"xã Giồng Riềng\") and the new province (\"Tỉnh An Giang\") with the provided list.  I'll look for \"xã Giồng Riềng\" within \"Tỉnh An Giang.\"  And there it is: `{\"ward_code\":\"30904\",\"ward_name\":\"Xã Giồng Riềng\",\"province_name\":\"Tỉnh An Giang\"}`.  It's a perfect match, confirming the new ward's code and name.\n\n5.  **JSON Output Assembly**: Now I can confidently construct the output. The `province_name` will be \"Tỉnh An Giang,\" the `ward_name` will be \"Xã Giồng Riềng,\" and the `ward_code` is \"30904.\" The citation will reference the relevant resolution that performed the merger. Crucially, the confidence level will be high because both the province and ward transformations are explicitly documented in the resolutions and verified against the new data.\n\n**Regarding Districts**: Considering the prompt's instruction to \"eliminate all districts,\" I'm treating \"Huyện Giồng Riềng\" as obsolete in the new structure. Its name in the resolution is merely used to pinpoint the geographical origin of certain wards.\n\nIn summary, this seems pretty straightforward: a province change via 60-NQ/TW, a ward merger clearly stated in 1654/NQ-UBTVQH15, and verification against the new ward data, all point towards a high confidence mapping. This is based on explicit mentions in the resolution, a clear and precise match.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1654/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh An Giang",
+        "line": "61. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Giồng Riềng và các xã Bàn Tân Định, Thạnh Hòa, Bàn Thạch, Thạnh Bình thành xã mới có tên gọi là xã Giồng Riềng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh An Giang",
+      "ward_code": "30904",
+      "ward_name": "Xã Giồng Riềng"
+    }
+  ]
+}

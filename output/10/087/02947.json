@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Phố Ràng, Huyện Bảo Yên, Tỉnh Lào Cai",
+  "ellapsedInMs": 4329,
+  "estimatedCost": 0.0014606999999999999,
+  "thought": "**Navigating the Address Change Puzzle**\n\nOkay, I've got a new one.  Someone wants me to figure out how an old address maps to new administrative units.  The address is \"Thị trấn Phố Ràng\", \"Tỉnh Lào Cai\", right?  First, I need to get the old ward name and province – easy enough.  \"Thị trấn Phố Ràng\" is the old ward, and \"Tỉnh Lào Cai\" is the province.\n\nNow, the real work begins. I have to consult the resolutions, starting with the provincial ones, like that 60-NQ/TW.  Ah, good, Lào Cai seems to have kept its name.  No merging there.\n\nNext, I'll comb through the \"Other resolutions\" looking for mentions of \"Thị trấn Phố Ràng\" and, bingo! Resolution 1673/NQ-UBTVQH15 jumps out. It explicitly states that \"Thị trấn Phố Ràng\" is being merged with other areas to form a new ward, \"Xã Bảo Yên\". That sounds promising.\n\nFinal step: Validate this with the \"New wards\" data. I'll check to see if \"Xã Bảo Yên\" exists in \"Tỉnh Lào Cai\".  Yes!  There's a perfect match:  `{\"ward_code\":\"02947\",\"ward_name\":\"Xã Bảo Yên\",\"province_name\":\"Tỉnh Lào Cai\"}`.\n\nDone.  We have a solid connection between the old \"Thị trấn Phố Ràng\" and the new \"Xã Bảo Yên\". Confidence is high; the resolution is direct and clear.  Time to build that JSON output with a confident score!\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai",
+        "line": "60. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Phố Ràng và các xã Yên Sơn, Lương Sơn, Xuân Thượng thành xã mới có tên gọi là xã Bảo Yên."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "02947",
+      "ward_name": "Xã Bảo Yên"
+    }
+  ]
+}

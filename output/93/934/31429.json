@@ -1,0 +1,18 @@
+{
+  "address": "Xã Hiệp Hưng, Huyện Phụng Hiệp, Tỉnh Hậu Giang",
+  "ellapsedInMs": 7219,
+  "estimatedCost": 0.0026396,
+  "thought": "**Mapping an Old Vietnamese Address to a New Administrative Unit**\n\nOkay, here's how I'm thinking about this. The user wants to map an old address to its new equivalent, given resolutions and the new ward data. It's a straightforward process, but it requires careful attention to detail and good domain knowledge.\n\nFirst, I identified the old province, which is \"Tỉnh Hậu Giang\". Then, I looked into province mergers, specifically \"60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất\".  That document clearly states \"Hợp nhất thành phố cần Thơ, tỉnh Sóc Trăng và tỉnh Hậu Giang; lấy tên là thành phố Cần Thơ\". Therefore, \"Tỉnh Hậu Giang\" is now part of \"Thành phố Cần Thơ.\" Easy.\n\nNext, the old ward: \"Xã Hiệp Hưng\".  Now, I needed to check relevant ward resolutions.  The key resolution is \"1668/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Cần Thơ\" because the new province is indeed \"Thành phố Cần Thơ.\" Line 62 of that resolution is crucial: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Cây Dương và xã Hiệp Hưng thành xã mới có tên gọi là **xã Hiệp Hưng**.\"  Bingo! It explicitly says \"Xã Hiệp Hưng\" is involved in a merger.\n\nNow for the final verification: I looked at the \"New wards\" data.  There's a perfectly matching entry: `{\"ward_code\":\"31396\",\"ward_name\":\"Xã Hiệp Hưng\",\"province_name\":\"Thành phố Cần Thơ\"}`. The name matches, and the province matches the new province I determined earlier.\n\nPutting it all together, the old province is merged into \"Thành phố Cần Thơ\", and the old ward is part of a merger that *creates a new* ward also named \"Xã Hiệp Hưng\" within \"Thành phố Cần Thơ.\"  With that, the confidence in my mapping is very high.\n\nTherefore, the output should be:\n*   `province_name`: \"Thành phố Cần Thơ\"\n*   `ward_name`: \"Xã Hiệp Hưng\"\n*   `ward_code`: \"31396\"\n*   `confidence`: \"high\"\n*   `citation`:\n    *   `header`: \"1668/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Cần Thơ\"\n    *   `line`: \"62. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Cây Dương và xã Hiệp Hưng thành xã mới có tên gọi là xã Hiệp Hưng.\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1668/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Cần Thơ",
+        "line": "62. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Cây Dương và xã Hiệp Hưng thành xã mới có tên gọi là xã Hiệp Hưng."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Cần Thơ",
+      "ward_code": "31396",
+      "ward_name": "Xã Hiệp Hưng"
+    }
+  ]
+}

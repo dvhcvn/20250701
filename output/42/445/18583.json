@@ -1,0 +1,18 @@
+{
+  "address": "Xã Thạch Châu, Huyện Thạch Hà, Tỉnh Hà Tĩnh",
+  "ellapsedInMs": 6509,
+  "estimatedCost": 0.0022703000000000003,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm tasked with figuring out the new administrative unit for \"Xã Thạch Châu\" in the old address. Let's break this down systematically. First, I need to identify the components of the old address: the ward, district, and province. I see \"Xã Thạch Châu\" for the ward, \"Huyện Thạch Hà\" for the district (though the instructions mention eliminating districts), and \"Tỉnh Hà Tĩnh\" for the province.\n\nNext, I'll consult the relevant resolutions. My first check is for provincial changes using Resolution 60-NQ/TW. Ah, \"Tỉnh Hà Tĩnh\" is listed under those not undergoing any mergers. That's a solid start.\n\nNow, on to the other resolutions, specifically 1665/NQ-UBTVQH15. I'll scan these for any mention of \"Xã Thạch Châu\". Bingo! Line 26: it details the merger of \"Xã Thạch Châu\" with other wards to form \"Xã Mai Phụ.\" Perfect!\n\nNow I'll cross-reference this with the \"New wards\" list. And there it is: I find \"Xã Mai Phụ\" with the province \"Tỉnh Hà Tĩnh\" and the ward code \"18583.\" That's a match!\n\nSo, the new administrative unit for \"Xã Thạch Châu\" is clearly \"Xã Mai Phụ.\"  My confidence is high because the resolution explicitly mentions the old ward and links it to this new ward. And because \"Xã Mai Phụ\"  is also in the list of new wards, I've got confirmation on both ends. This will be a pretty straightforward JSON output:\n\n```json\n{\n  \"province_name\": \"Tỉnh Hà Tĩnh\",\n  \"ward_name\": \"Xã Mai Phụ\",\n  \"ward_code\": \"18583\",\n  \"citation\": {\n    \"header\": \"1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh\",\n    \"line\": \"26. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Thạch Mỹ, Thạch Châu, Phù Lưu và Mai Phụthành xã mới có tên gọi là **xã Mai Phụ**.\"\n  },\n  \"confidence\": \"high\"\n}\n```\n\nThis should be a pretty definitive answer.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh",
+        "line": "26. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Thạch Mỹ, Thạch Châu, Phù Lưu và Mai Phụthành xã mới có tên gọi là xã Mai Phụ."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hà Tĩnh",
+      "ward_code": "18583",
+      "ward_name": "Xã Mai Phụ"
+    }
+  ]
+}

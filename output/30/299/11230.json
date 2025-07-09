@@ -1,0 +1,18 @@
+{
+  "address": "Xã Kiến Phúc, Huyện Ninh Giang, Tỉnh Hải Dương",
+  "ellapsedInMs": 7273,
+  "estimatedCost": 0.0028801,
+  "thought": "**Identifying the New Administrative Unit**\n\nOkay, here's what I've got. The user needs to find the current administrative unit (ward) for the old address \"Xã Kiến Phúc, Huyện Ninh Giang, Tỉnh Hải Dương\". My process is straightforward, but it's important to be methodical and precise with this kind of geographical data.\n\nFirst, I identified the old province, \"Tỉnh Hải Dương.\" Then, I needed to check if that province was merged or renamed through resolutions like 60-NQ/TW. Ah, yes, \"Tỉnh Hải Dương\" was merged with the city of Hải Phòng, becoming \"Thành phố Hải Phòng.\"\n\nNow, focusing on the old ward, \"Xã Kiến Phúc,\" and its old district, \"Huyện Ninh Giang,\" which was part of Hải Dương. Time to scour \"Other resolutions.\" I was looking for something relevant to both \"Xã Kiến Phúc\" and \"Huyện Ninh Giang.\" The key was resolution 1669/NQ-UBTVQH15, concerning the restructuring of administrative units in Hải Phòng (since Hải Dương is now part of it).\n\nLine 101 of that resolution was the goldmine. It explicitly states that \"Xã Kiến Phúc\" and other adjacent areas have been restructured into a new ward called \"**xã Khúc Thừa Dụ**.\" Excellent! That takes care of the ward name.\n\nNext, I quickly checked the \"New wards\" section to confirm the existence of \"xã Khúc Thừa Dụ\" within \"Thành phố Hải Phòng\" and to get its code. Found it: `{\"ward_code\":\"11224\",\"ward_name\":\"Xã Khúc Thừa Dụ\",\"province_name\":\"Thành phố Hải Phòng\"}`. This confirms everything.\n\nNow, it's about constructing the output:\n\n*   `province_name`: \"Thành phố Hải Phòng\" (from the province merger).\n*   `ward_name`: \"Xã Khúc Thừa Dụ\" (from resolution 1669/NQ-UBTVQH15).\n*   `ward_code`: \"11224\".\n*   `citation`: The relevant parts of resolution 1669/NQ-UBTVQH15\n*   `confidence`: High, because it was a direct and clear match.\n\nI just quickly re-checked for any ambiguities by searching other resolutions with similar terms, but found nothing relevant. The link between \"Xã Kiến Phúc, Huyện Ninh Giang\" and the new ward \"Xã Khúc Thừa Dụ\" within \"Thành phố Hải Phòng\" is definitive and unambiguous.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "101. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số củaxã Bình Xuyên và xã Hồng Phong (huyện Ninh Giang), xã Kiến Phúcthành xã mới có tên gọi là **xã Khúc Thừa Dụ**."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "11224",
+      "ward_name": "Xã Khúc Thừa Dụ"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Cư San, Huyện M'Đrắk, Tỉnh Đắk Lắk",
+  "ellapsedInMs": 6265,
+  "estimatedCost": 0.0023032,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm tasked with translating this old Vietnamese address to the current administrative structure. My first thought is to break down the input address: \"Xã Cư San\" (ward), \"Huyện M'Đrắk\" (district), and \"Tỉnh Đắk Lắk\" (province).\n\nNow, the core of this seems to be the ward level, as I see a specific resolution addressing it. I need to sift through these resolutions and the new ward data.\n\nFirst, I examined the provincial resolution, which mentions Đắk Lắk. Good, it confirms Đắk Lắk stays Đắk Lắk after merging with Phú Yên. No surprises there.\n\nThen, I focused on the specific resolution (1660/NQ-UBTVQH15). And bingo! Line 38 directly mentions \"Xã Cư San.\" It clearly states that \"Xã Cư San\" is merged into \"Xã Krông Á.\" That's crucial. I need to confirm this with the 'New Wards' data to get a perfect match.\n\nSure enough, there's \"Xã Krông Á\" with the province \"Tỉnh Đắk Lắk.\" Perfect. The mapping is solid, high confidence.\n\nThe prompt did say to consider \"eliminating all districts,\" so \"Huyện M'Đrắk\" is no longer relevant. I'll need to keep that in mind when formulating the output.\n\nI also checked to see if \"Xã M'Drắk\" was a candidate for \"Xã Cư San.\" From the resolutions, \"Xã M'Drắk\" is formed from different units, so it's not the correct mapping.\n\nSo, the clear mapping here is \"Xã Cư San\" (old) becomes \"Xã Krông Á\" (new) within the province \"Tỉnh Đắk Lắk.\" I'll construct the JSON output accordingly, and since the resolution specifically addresses \"Xã Cư San\", I'd say the confidence level is high.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1660/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đắk Lắk",
+        "line": "38. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Cư San và xã Krông Á thành xã mới có tên gọi là xã Krông Á."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đắk Lắk",
+      "ward_code": "24444",
+      "ward_name": "Xã Krông Á"
+    }
+  ]
+}

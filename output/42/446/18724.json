@@ -1,0 +1,18 @@
+{
+  "address": "Xã Cẩm Quan, Huyện Cẩm Xuyên, Tỉnh Hà Tĩnh",
+  "ellapsedInMs": 6982,
+  "estimatedCost": 0.0025353,
+  "thought": "**Navigating the Administrative Unit Restructuring: A Breakdown**\n\nOkay, so I'm presented with an old address: \"Xã Cẩm Quan, Huyện Cẩm Xuyên, Tỉnh Hà Tĩnh.\" My task is to determine the corresponding new administrative unit (ward).  I've got the lay of the land now, let's break this down.\n\nFirst, I parsed the input. I'm focusing on the old ward, district (although I know districts are being eliminated), and province names: \"Xã Cẩm Quan,\" \"Huyện Cẩm Xuyên,\" and \"Tỉnh Hà Tĩnh.\" I also have the provincial resolutions and a list of the new wards.\n\nI checked the Province Resolution (60-NQ/TW).  \"Tỉnh Hà Tĩnh\" appears under \"Các đơn vị hành chính cấp tỉnh không thực hiện sáp nhập,\" meaning it remains unchanged. That gives me high confidence in the province.\n\nNext, I thoroughly inspected the \"Other Resolutions\" provided. I was on the lookout for mentions of \"Xã Cẩm Quan.\" Bingo!  Resolution 1665/NQ-UBTVQH15 popped up, specifically addressing the restructuring of administrative units in Hà Tĩnh.  The crucial line is: \"12. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Cẩm Xuyên, xã Cẩm Quang và xã Cẩm Quan thành xã mới có tên gọi là **xã Cẩm Xuyên**.\"  This resolution directly states that \"Xã Cẩm Quan\" is merged into \"Xã Cẩm Xuyên.\"  Perfect, that gives me a high confidence for the ward change.\n\nThen, I scanned the \"New Wards\" list, seeking a match for \"Xã Cẩm Xuyên\" and \"Tỉnh Hà Tĩnh.\"  Success!  I found: `{\"ward_code\":\"18673\",\"ward_name\":\"Xã Cẩm Xuyên\",\"province_name\":\"Tỉnh Hà Tĩnh\"}`.  This confirms the existence of the new ward.\n\nFinally, putting it all together, I construct the JSON output. I'm extremely confident because the province and ward changes are explicitly confirmed by the resolutions.  The output includes the citation (header and line from the resolution), the confidence level (\"high\"), the province name (\"Tỉnh Hà Tĩnh\"), the ward code (\"18673\"), and the new ward name (\"Xã Cẩm Xuyên\"). I think I've got this one locked down.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh",
+        "line": "12. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Cẩm Xuyên, xã Cẩm Quang và xã Cẩm Quan thành xã mới có tên gọi là xã Cẩm Xuyên."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hà Tĩnh",
+      "ward_code": "18673",
+      "ward_name": "Xã Cẩm Xuyên"
+    }
+  ]
+}

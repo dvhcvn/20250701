@@ -1,0 +1,28 @@
+{
+  "address": "Xã Nhơn Ninh, Huyện Tân Thạnh, Tỉnh Long An",
+  "ellapsedInMs": 6953,
+  "estimatedCost": 0.006393099999999999,
+  "thought": "**Determining the New Administrative Unit**\n\nOkay, so I'm tackling this address: \"Xã Nhơn Ninh, Huyện Tân Thạnh, Tỉnh Long An.\" My first thought is to check for province mergers. Looking at \"60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất,\" I find that \"Tỉnh Long An\" has been merged with \"Tỉnh Tây Ninh\" – and the combined province is now just \"Tỉnh Tây Ninh.\"  That's my starting point.\n\nNext, I need to figure out what happened to \"Xã Nhơn Ninh.\" I'll check both \"Other resolutions\" and the \"New wards\" data.  Specifically, I'm looking for \"Xã Nhơn Ninh\" in the text of these resolutions and in the list of new wards.\n\nImmediately, resolution 1682/NQ-UBTVQH15 catches my eye. It concerns administrative changes in Tây Ninh. Line 14 of that resolution is perfect: it details a merger of \"Tân Thành (huyện Tân Thạnh),\" \"Tân Ninh,\" and *our* \"Nhơn Ninh\" into a brand-new \"Xã Nhơn Ninh.\" Bingo! The resolution directly addresses \"Nhơn Ninh\" and mentions \"Huyện Tân Thạnh\" – a clear match.\n\nJust to be thorough, I then scanned the \"New wards\" data. There it is: `{\"ward_code\":\"27856\",\"ward_name\":\"Xã Nhơn Ninh\",\"province_name\":\"Tỉnh Tây Ninh\"}`. It's a clean match, confirming the name and the new province.\n\n**My Analysis:**  Based on this evidence, I'm highly confident. The old \"Xã Nhơn Ninh\" (from Huyện Tân Thạnh, Tỉnh Long An) is part of a merger that resulted in a *new* administrative unit also named \"Xã Nhơn Ninh,\" now located within the new province \"Tỉnh Tây Ninh.\"  Resolution 1682/NQ-UBTVQH15, specifically line 14, provides the precise details of this change. Both data sources strongly support this conclusion.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "18. Hợp nhất tỉnh Tây Ninh và tỉnh Long An, lấy tên là tỉnh Tây Ninh"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tây Ninh",
+      "ward_code": "27856",
+      "ward_name": "Xã Nhơn Ninh"
+    },
+    {
+      "citation": {
+        "header": "1682/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tây Ninh",
+        "line": "14. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tân Thành (huyện Tân Thạnh), Tân Ninh và Nhơn Ninh thành xã mới có tên gọi là xã Nhơn Ninh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tây Ninh",
+      "ward_code": "27856",
+      "ward_name": "Xã Nhơn Ninh"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Cẩm Yên, Huyện Thạch Thất, Thành phố Hà Nội",
+  "ellapsedInMs": 6827,
+  "estimatedCost": 0.0027532000000000004,
+  "thought": "**Determining the New Ward for an Old Address**\n\nOkay, so I've got an old address: \"Xã Cẩm Yên, Huyện Thạch Thất, Thành phố Hà Nội.\" My task is to figure out its new administrative unit (ward).  I'll break this down methodically.\n\nFirst, I identify the old ward (\"Xã Cẩm Yên\") and province (\"Thành phố Hà Nội\").  The province is simple, \"Thành phố Hà Nội\" isn't being merged according to Resolution 60-NQ/TW, so it remains the same.  Good.\n\nNow, I dive into the resolutions. I know I'm looking for mentions of \"Xã Cẩm Yên\" specifically within \"Thành phố Hà Nội\" across the resolutions. I've got two resolutions to check. The second resolution mentions Thanh Hóa, which is irrelevant to my current investigation. So, it's immediately dismissed.\n\nThat leaves the first resolution, 1656/NQ-UBTVQH15. I carefully read through it, line by line. Bingo! Line 93 is the key. It *explicitly* states that \"Xã Cẩm Yên\" is being merged into the new ward called \"Xã Thạch Thất\". Perfect. This is a clear and direct match. There's no ambiguity here.\n\nNow, I cross-reference this information with the \"New wards\" list.  I search for \"Xã Thạch Thất\" in \"Thành phố Hà Nội\".  There's a clean match:  `{\"ward_code\":\"09955\",\"ward_name\":\"Xã Thạch Thất\",\"province_name\":\"Thành phố Hà Nội\"}`.\n\nI have a very high confidence in this result because the resolution provides a clear and direct mapping of the old ward to the new one. The JSON output will reflect this with a \"high\" confidence, citing the relevant line (93) from resolution 1656/NQ-UBTVQH15 as the source. The \"province_name\" remains \"Thành phố Hà Nội\". The \"ward_code\" and \"ward_name\" will be pulled directly from the new ward entry.  All set!\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội",
+        "line": "93. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Liên Quan và các xã Cẩm Yên, Đại Đồng, Kim Quan, Lại Thượng, Phú Kim thành xã mới có tên gọi là xã Thạch Thất."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hà Nội",
+      "ward_code": "09955",
+      "ward_name": "Xã Thạch Thất"
+    }
+  ]
+}

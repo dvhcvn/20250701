@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tân Lập, Huyện Thanh Sơn, Tỉnh Phú Thọ",
+  "ellapsedInMs": 7133,
+  "estimatedCost": 0.0049687,
+  "thought": "**The Case of Xã Tân Lập, Huyện Thanh Sơn, Tỉnh Phú Thọ**\n\nOkay, so the user wants to know the current administrative unit for the old address \"Xã Tân Lập, Huyện Thanh Sơn, Tỉnh Phú Thọ.\" First, I need to check for province mergers. Resolution 60-NQ/TW doesn't indicate any changes to \"Tỉnh Phú Thọ\" (Phú Thọ Province), so that's straightforward.\n\nNow, I'm digging into the \"Other resolutions\" to find mentions of \"Tân Lập\" in Thanh Sơn, Phú Thọ.  After a quick scan, I've got a relevant hit in `1676/NQ-UBTVQH15`. I immediately see a section about \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ.\" Bingo!\n\nLine 43 of that resolution is the money shot: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Tân Lập và xã Tân Minh (huyện Thanh Sơn), xã Văn Miếu thành xã mới có tên gọi là **xã Văn Miếu**.\"  That's it! \"Xã Tân Lập\" (the old address) is merged with \"Tân Minh\" and \"Văn Miếu\" to create the new \"Xã Văn Miếu.\"  My confidence is high; this is a direct match.\n\nNow, I need to get the `ward_code` for the new \"Xã Văn Miếu\" in Phú Thọ Province. I'll check the `New wards` list, and there it is: `{\"ward_code\":\"08611\",\"ward_name\":\"Xã Văn Miếu\",\"province_name\":\"Tỉnh Phú Thọ\"}`. Perfect.\n\nFinally, I'll package this up into the JSON output. The `province_name` will be \"Tỉnh Phú Thọ.\" The `ward_name` is \"Xã Văn Miếu,\" the `ward_code` is \"08611,\" the citation comes directly from `1676/NQ-UBTVQH15`, line 43, and the confidence level is set to \"high\" because of the definitive match.  Done!\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "43. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Tân Lập và xã Tân Minh (huyện Thanh Sơn), xã Văn Miếu thành xã mới có tên gọi là xã Văn Miếu."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "08611",
+      "ward_name": "Xã Văn Miếu"
+    }
+  ]
+}

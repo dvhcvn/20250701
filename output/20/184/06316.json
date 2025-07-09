@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tràng Phái, Huyện Văn Quan, Tỉnh Lạng Sơn",
+  "ellapsedInMs": 8379,
+  "estimatedCost": 0.0032086999999999997,
+  "thought": "**Identifying the New Administrative Unit for \"Xã Tràng Phái\"**\n\nOkay, let's break this down systematically. The user's input is \"Xã Tràng Phái, Huyện Văn Quan, Tỉnh Lạng Sơn,\" and I need to determine its new administrative unit.\n\nFirst, the province is straightforward: \"Tỉnh Lạng Sơn.\"  Then, the provincial-level restructuring doesn't affect Lạng Sơn based on the relevant resolutions (60-NQ/TW).  Next, I have to dive deeper into specific ward-level changes within Lạng Sơn.\n\nAfter reviewing relevant resolutions, \"1672/NQ-UBTVQH15\" is key.  Line 26 explicitly states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tân Thành (huyện Cao Lộc), Tràng Phái và Tân Đoàn thành xã mới có tên gọi là**xã Tân Đoàn**.\"  This clearly indicates that \"Xã Tràng Phái\" is *absorbed* into \"Xã Tân Đoàn.\"\n\nI then double-check the \"New wards\" list for \"Xã Tân Đoàn.\" I find the entry: `{\"ward_code\":\"06316\",\"ward_name\":\"Xã Tân Đoàn\",\"province_name\":\"Tỉnh Lạng Sơn\"}`. This confirms the new ward's code and name.\n\nTherefore, the output should be a JSON object with:\n\n*   `province_name`: \"Tỉnh Lạng Sơn\" (unchanged).\n*   `ward_name`: \"Xã Tân Đoàn\" (as per the resolution).\n*   `ward_code`: \"06316\" (from the \"New wards\" list).\n*   A citation for resolution \"1672/NQ-UBTVQH15\", specifically line 26, the relevant section detailing the merger.\n*   The confidence level will be set to \"high\" because the resolution provides a definitive statement regarding the merger of \"Tràng Phái\" into \"Tân Đoàn.\"\n\nRegarding \"Huyện Văn Quan,\" mentioned in the input address, it's mentioned in the resolution (line 22) as a separate case. However, in line 26, it details \"Tràng Phái\" being merged into \"Tân Đoàn.\" Even though the resolution doesn't specify which district Tràng Phái belongs to in line 26, the key information is that \"Tràng Phái\" is definitively part of the newly formed \"Tân Đoàn.\" The district context, while useful, doesn't overrule the direct statement about Tràng Phái's merger into the new unit, so I'm confident.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1672/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lạng Sơn",
+        "line": "26. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tân Thành (huyện Cao Lộc), Tràng Phái và Tân Đoàn thành xã mới có tên gọi là**xã Tân Đoàn**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lạng Sơn",
+      "ward_code": "06316",
+      "ward_name": "Xã Tân Đoàn"
+    }
+  ]
+}

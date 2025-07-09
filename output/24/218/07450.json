@@ -1,0 +1,28 @@
+{
+  "address": "Xã Đông Hưng, Huyện Lục Nam, Tỉnh Bắc Giang",
+  "ellapsedInMs": 7243,
+  "estimatedCost": 0.0031029,
+  "thought": "**My Analysis of Administrative Unit Changes**\n\nOkay, so I'm tasked with figuring out the new administrative unit for \"Xã Đông Hưng, Huyện Lục Nam, Tỉnh Bắc Giang.\"  My first move is always to establish the old province – \"Tỉnh Bắc Giang.\"  From there, I'll need to account for any province mergers. My database tells me about Resolution 60-NQ/TW, which indicates a merger of Bắc Ninh and Bắc Giang into \"Tỉnh Bắc Ninh.\"  So, right away, \"Tỉnh Bắc Giang\" becomes \"Tỉnh Bắc Ninh\" in my mental map.\n\nNext up, I need to focus on \"Xã Đông Hưng.\"  I immediately look through resolutions related to *either* \"Tỉnh Bắc Ninh\" (the new province) or \"Tỉnh Bắc Giang\" (the original, now merged one). I locate Resolution 1658/NQ-UBTVQH15, specific to administrative unit adjustments within \"Tỉnh Bắc Ninh.\"  And bingo!  Line 41 of that resolution is the key: it clearly states that the area and population of \"Xã Đông Hưng\" have been *merged into* \"xã Đông Phú.\"  That's a direct, unambiguous match.\n\nTo be absolutely sure, I checked my database to confirm \"Xã Đông Phú\" exists within \"Tỉnh Bắc Ninh,\" and there it is: `{\"ward_code\":\"07450\",\"ward_name\":\"Xã Đông Phú\",\"province_name\":\"Tỉnh Bắc Ninh\"}`.  Perfect.\n\nI also reviewed other resolutions that mentioned \"Đông Hưng\" – just to be thorough.  These included instances of \"Đông Hưng\" in An Giang, Cà Mau, Hưng Yên, Hải Phòng, and Ho Chi Minh City. However, given my initial province was Bắc Giang, and the resolutions mentioned units unrelated to that province, I determined they were irrelevant in this specific scenario.\n\nThe resolution regarding \"xã Đông Hưng\" *and* \"xã Đông Phú\" is so explicit, I'm highly confident in my findings.  It's a straightforward merger.  Therefore, my final output will reflect that – specifically, a JSON object reflecting \"Xã Đông Phú\" as the new administrative unit for the old address.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "5. Hợp nhất tỉnh Bắc Ninh và tỉnh Bắc Giang, lấy tên là tỉnh Bắc Ninh"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "07450",
+      "ward_name": "Xã Đông Phú"
+    },
+    {
+      "citation": {
+        "header": "1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh",
+        "line": "41. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Đông Hưng và xã Đông Phú thành xã mới có tên gọi là xã Đông Phú."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "07450",
+      "ward_name": "Xã Đông Phú"
+    }
+  ]
+}

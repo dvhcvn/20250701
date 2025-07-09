@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn P Rao, Huyện Đông Giang, Tỉnh Quảng Nam",
+  "ellapsedInMs": 7771,
+  "estimatedCost": 0.0028363999999999998,
+  "thought": "**My Mapping Process for the Old Vietnamese Address**\n\nAlright, I've got this Vietnamese address to translate into the new administrative structure: \"Thị trấn P Rao, Huyện Đông Giang, Tỉnh Quảng Nam\".  First things first, I'll need to figure out what's changed.\n\n*   **Province Shift:** I identified \"Tỉnh Quảng Nam\" as the old province. I checked my province resolution list (specifically, 60-NQ/TW), and found a match indicating the merger: \"Hợp nhất tỉnh Quảng Nam và thành phố Đà Nẵng, lấy tên là thành phố Đà Nẵng\". So, old \"Tỉnh Quảng Nam\" is now \"Thành phố Đà Nẵng\". Easy enough.\n\n*   **Ward Identification and Search:** Next, I focused on the ward, \"Thị trấn P Rao.\" I immediately scanned \"Other resolutions\" for it, allowing for the likely variation to \"Thị trấn Prao\" (which, let's be honest, is probably just a typo or a naming convention thing). Bingo! Resolution 1659/NQ-UBTVQH15 popped up, and it's spot on: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Prao và các xã Tà Lu, A Rooi, Zà Hung thành xã mới có tên gọi là xã Đông Giang.\"  That looks promising! And it's for \"thành phố Đà Nẵng\", which, remember, is the merged province.\n\n*   **New Ward Verification:**  Based on that resolution, the new ward is \"xã Đông Giang.\"  I checked the \"New wards\" list for a match. Boom!  `{\"ward_code\":\"20467\",\"ward_name\":\"Xã Đông Giang\",\"province_name\":\"Thành phố Đà Nẵng\"}` lines up perfectly.  Perfect match!\n\n*   **Confidence Check:** Before I finalize this, I always double-check. I searched for *other* instances of \"xã Đông Giang\".  There's one in \"Tỉnh Lâm Đồng\" (the resolution is 1671/NQ-UBTVQH15, a different Đông Giang). Different province, different resolution, totally unrelated. My confidence in this initial mapping is now sky-high.\n\n*   **Final JSON Output:**  Based on all this, I've constructed my output:\n\n    *   `province_name`: \"Thành phố Đà Nẵng\"\n    *   `ward_name`: \"Xã Đông Giang\"\n    *   `ward_code`: \"20467\"\n    *   `citation`:\n        *   `header`: \"1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng\"\n        *   `line`: \"79. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Prao và các xã Tà Lu, A Rooi, Zà Hung thành xã mới có tên gọi là xã Đông Giang.\"\n    *   `confidence`: \"high\"\n\nI'm confident this is the correct mapping. My process was methodical, cross-checking every step.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng",
+        "line": "79. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Prao và các xã Tà Lu, A Rooi, Zà Hung thành xã mới có tên gọi là xã Đông Giang."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "20467",
+      "ward_name": "Xã Đông Giang"
+    }
+  ]
+}

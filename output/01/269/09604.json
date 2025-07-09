@@ -1,0 +1,28 @@
+{
+  "address": "Xã Thanh Mỹ, Thị xã Sơn Tây, Thành phố Hà Nội",
+  "ellapsedInMs": 8031,
+  "estimatedCost": 0.0046354,
+  "thought": "**Analysis of Administrative Changes in Sơn Tây, Hà Nội**\n\nOkay, so I've got an old address, \"Xã Thanh Mỹ, Thị xã Sơn Tây, Thành phố Hà Nội,\" and I need to figure out the new administrative unit. My initial thought process is to break it down and compare it against the relevant legislative acts, specifically resolutions regarding administrative boundary changes.\n\nFirst, I parsed the address: \"Xã Thanh Mỹ\" is the old ward, \"Thị xã Sơn Tây\" is the old district (though districts are less crucial in this specific lookup), and \"Thành phố Hà Nội\" is the province.  I'll be focusing my search on \"Thành phố Hà Nội\" and the specific mention of \"Xã Thanh Mỹ.\"\n\nI immediately jump to Resolution 1656/NQ-UBTVQH15, a key document for these kinds of reorganizations.  Line 50 of that resolution immediately catches my eye: it states that \"Xã Thanh Mỹ\" *contributes* to the creation of \"Phường Sơn Tây.\" This is a strong indicator.\n\nBut I dig deeper. Line 51 also explicitly mentions \"Xã Thanh Mỹ,\" specifically \"the remaining part of Xã Thanh Mỹ after the arrangement as per clause 50\" that then contributes to the creation of another new ward named \"Phường Tùng Thiện\".\n\nIt's clear then, that \"Xã Thanh Mỹ\" *wasn't* simply renamed; it was *split* between two new wards: \"Phường Sơn Tây\" and \"Phường Tùng Thiện.\"\n\nNow I cross-reference this with my \"New wards\" list, checking for these new wards within \"Thành phố Hà Nội\". Sure enough, I find:\n\n*   `{\"ward_code\":\"09574\",\"ward_name\":\"Phường Sơn Tây\",\"province_name\":\"Thành phố Hà Nội\"}`\n*   `{\"ward_code\":\"09604\",\"ward_name\":\"Phường Tùng Thiện\",\"province_name\":\"Thành phố Hà Nội\"}`\n\nBoth match perfectly. This confirms that my initial analysis from the resolution is accurate. My confidence level here is high, because the resolution clearly and explicitly details this split. I'm going to structure the output accordingly.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội",
+        "line": "50. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Ngô Quyền, Phú Thịnh, Viên Sơn, xã Đường Lâm, một phần diện tích tự nhiên, quy mô dân số của phường Trung Hưng, phường Sơn Lộc và xã Thanh Mỹ thành phường mới có tên gọi là **phường Sơn Tây**."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hà Nội",
+      "ward_code": "09574",
+      "ward_name": "Phường Sơn Tây"
+    },
+    {
+      "citation": {
+        "header": "1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội",
+        "line": "51. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Xuân Khanh, phường Trung Sơn Trầm, xã Xuân Sơn, phần còn lại của phường Trung Hưng, phường Sơn Lộc và xã Thanh Mỹ sau khi sắp xếp theo quy định tại khoản 50 Điều này thành phường mới có tên gọi là **phường Tùng Thiện**."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hà Nội",
+      "ward_code": "09604",
+      "ward_name": "Phường Tùng Thiện"
+    }
+  ]
+}

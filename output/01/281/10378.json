@@ -1,0 +1,18 @@
+{
+  "address": "Xã Cao Sơn Tiến, Huyện Ứng Hòa, Thành phố Hà Nội",
+  "ellapsedInMs": 5438,
+  "estimatedCost": 0.0028725,
+  "thought": "**Determining the New Ward for a Given Address**\n\nOkay, so I've been tasked with finding the new administrative unit, the ward, for the old address \"Xã Cao Sơn Tiến, Huyện Ứng Hòa, Thành phố Hà Nội\". My process is pretty straightforward:\n\nFirst, I need to break down the information. I've identified the old ward as \"Xã Cao Sơn Tiến\" and the old province as \"Thành phố Hà Nội\".  The first step is to check if there have been any province-level changes. Resolution 60-NQ/TW is clear: \"Thành phố Hà Nội\" isn't being merged or renamed, so that part is simple. The province remains the same.\n\nNext, the crucial step: I need to dig into the resolutions to see if \"Xã Cao Sơn Tiến\" has been mentioned in any of them.  I'm looking line-by-line in the resolution files. After sifting through the data, I found what I needed in `1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội`. Specifically, line 68 caught my eye.  It explicitly states the fate of \"Xã Cao Sơn Tiến\". It confirms that its natural area and population is merged with other units to form a new ward called \"**xã Vân Đình**.\"\n\nNow that I know the new ward name, the next step is to find its official code and verify its province within my \"New wards\" list. I can search through that list, looking for `\"ward_name\": \"Xã Vân Đình\"` and `\"province_name\": \"Thành phố Hà Nội\"`. And there it is: `{\"ward_code\":\"10354\",\"ward_name\":\"Xã Vân Đình\",\"province_name\":\"Thành phố Hà Nội\"}`.\n\nI have strong confidence in this result. The resolution language is very clear.  The resolution directly states the merging, meaning a direct and certain mapping.\n\nFinally, I'll need to generate the JSON output following the specified schema to return the correct, updated information.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội",
+        "line": "68. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Vân Đình và các xã Cao Sơn Tiến, Phương Tú, Tảo Dương Văn thành xã mới có tên gọi là xã Vân Đình."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hà Nội",
+      "ward_code": "10354",
+      "ward_name": "Xã Vân Đình"
+    }
+  ]
+}

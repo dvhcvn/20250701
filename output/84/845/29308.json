@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Cầu Kè, Huyện Cầu Kè, Tỉnh Trà Vinh",
+  "ellapsedInMs": 7083,
+  "estimatedCost": 0.0021956,
+  "thought": "**Mapping an Old Address to a New Administrative Unit: A Detailed Analysis**\n\nOkay, so I'm presented with an old address: \"Thị trấn Cầu Kè, Huyện Cầu Kè, Tỉnh Trà Vinh.\" My task is to map this to the new administrative structure, and I'm confident I can do this efficiently and accurately.\n\nFirst, I need to break down the address.  I immediately recognize \"Thị trấn Cầu Kè\" as the old ward and \"Tỉnh Trà Vinh\" as the old province. This is my starting point.\n\nNext, I'll leverage my knowledge of provincial resolutions (specifically 60-NQ/TW, which is relevant in Vietnam). I'll swiftly scan these resolutions to look for mentions of \"Tỉnh Trà Vinh.\"  Ah, there it is!  The resolution explicitly states a merger:  \"Hợp nhất tỉnh Bến Tre, tỉnh Vĩnh Long và tỉnh Trà Vinh; lấy tên là tỉnh Vĩnh Long.\" In essence, Trà Vinh has been absorbed into Vĩnh Long, so my new target province is \"Tỉnh Vĩnh Long.\"\n\nNow, the real work begins.  I'll dive into other relevant resolutions, paying close attention to ones that address ward-level changes within Vĩnh Long, and more specifically, to those that mention \"Thị trấn Cầu Kè.\" I found resolution 1687/NQ-UBTVQH15, a key document dealing with administrative changes in Vĩnh Long.  Bingo!  Line 37 of this resolution confirms my hypothesis: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Cầu Kè, xã Hòa Ân và xã Châu Điền thành xã mới có tên gọi là **xã Cầu Kè**.\"  This resolution directly addresses \"thị trấn Cầu Kè\" and the fact that it is now part of the administrative jurisdiction of \"Tỉnh Vĩnh Long.\" It specifies the formation of a new unit, \"xã Cầu Kè\" by combining three existing units.\n\nTo solidify my findings, I need to corroborate this information with the most current ward data. I'll search for \"xã Cầu Kè\" within the \"Tỉnh Vĩnh Long\" data set. I expect to see the new administrative unit's information.  And there it is: `{\"ward_code\":\"29308\",\"ward_name\":\"Xã Cầu Kè\",\"province_name\":\"Tỉnh Vĩnh Long\"}`. This is a perfect match!  This new data confirms the resolution's findings, solidifying the new ward information.\n\nFinally, I'm ready to construct the JSON output. I'm going to set `citation` to refer to the resolution that explicitly outlines the ward change. My `confidence` level is very high; both the provincial merger and the ward information are supported by directly relevant official documents.  The `province_name` will be \"Tỉnh Vĩnh Long,\" and the new `ward_code` and `ward_name` are derived directly from the ward data.  A clean and accurate mapping, ready to be deployed.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long",
+        "line": "37. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Cầu Kè, xã Hòa Ân và xã Châu Điền thành xã mới có tên gọi là xã Cầu Kè."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "29308",
+      "ward_name": "Xã Cầu Kè"
+    }
+  ]
+}

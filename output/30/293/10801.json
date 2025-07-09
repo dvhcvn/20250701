@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tam Kỳ, Huyện Kim Thành, Tỉnh Hải Dương",
+  "ellapsedInMs": 8324,
+  "estimatedCost": 0.0033068000000000004,
+  "thought": "**Identifying the New Administrative Unit**\n\nOkay, here's how I'm thinking through this. The user is asking about an old address: \"Xã Tam Kỳ, Huyện Kim Thành, Tỉnh Hải Dương.\" My goal is to determine the current administrative unit for this area.\n\nFirst, I need to understand what happened to \"Tỉnh Hải Dương.\" I'll check province resolutions, specifically those related to the 60-NQ/TW series. According to those resolutions, \"Tỉnh Hải Dương\" was merged with \"Thành phố Hải Phòng,\" and the new name is \"Thành phố Hải Phòng.\"\n\nNow, let's look at \"Xã Tam Kỳ.\" I'll search for it in any relevant \"Other resolutions,\" focusing on those mentioning \"Hải Dương\" or \"Hải Phòng.\" Resolution 1669/NQ-UBTVQH15, titled \"Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng,\" seems promising. Line 112 of this resolution is the key: it explicitly states that \"Xã Tam Kỳ\" is being merged with other wards to form a new ward called \"Xã Kim Thành.\"\n\nNext, I'll cross-reference this information with data on \"New wards.\"  I'll find \"Xã Kim Thành\" in that list, and it confirms the new name, along with a ward code and the province name, which is \"Thành phố Hải Phòng\" – aligning with the province merger I found earlier.\n\nFinally, I'll construct the JSON output:\n\n*   `province_name`: \"Thành phố Hải Phòng\"\n*   `ward_name`: \"Xã Kim Thành\"\n*   `ward_code`: \"10804\"\n*   `citation`:\n    *   `header`: \"1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng\"\n    *   `line`: \"112. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đồng Cẩm, Tam Kỳ, Đại Đức và phần còn lại của xã Hòa Bình sau khi sắp xếp theo quy định tại khoản 79 Điều nàythành xã mới có tên gọi là **xã Kim Thành**.\"\n*   `confidence`: \"high\"\n\nThe confidence level is high because Resolution 1669 directly outlines the specific ward merger. The province merger confirms that the \"Hải Phòng\" province name is correct. And I also noted that line 111 mentions \"Ngũ Phúc (huyện Kim Thành)\", so it is aligned with the original address.\n\nThis JSON output accurately reflects the current administrative unit for the provided old address.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "112. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đồng Cẩm, Tam Kỳ, Đại Đức và phần còn lại của xã Hòa Bình sau khi sắp xếp theo quy định tại khoản 79 Điều nàythành xã mới có tên gọi là **xã Kim Thành**."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "10804",
+      "ward_name": "Xã Kim Thành"
+    }
+  ]
+}

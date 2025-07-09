@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Tam Đảo, Huyện Tam Đảo, Tỉnh Vĩnh Phúc",
+  "ellapsedInMs": 5861,
+  "estimatedCost": 0.0019902,
+  "thought": "**My Analysis of the Administrative Address Mapping**\n\nOkay, so I'm tasked with re-mapping an old address, \"Tỉnh Vĩnh Phúc, Thị trấn Tam Đảo,\" to its current administrative equivalents. This requires a meticulous process of cross-referencing resolutions and current data.\n\nFirst, I identified the original units: \"Tỉnh Vĩnh Phúc\" and \"Thị trấn Tam Đảo\". I then went to the province-level resolutions, specifically checking for any \"sáp nhập, hợp nhất\" (mergers or consolidations) that might involve Vĩnh Phúc. The resolution 60-NQ/TW revealed a significant change: the merger of Vĩnh Phúc, Phú Thọ, and Hòa Bình into a new province, which would now be known as \"Tỉnh Phú Thọ.\" This significantly impacts the province mapping.\n\nNext, I turned my attention to ward-level changes. I scrutinized other relevant resolutions, and resolution 1676/NQ-UBTVQH15 became crucial. Within its text, I found the specific mention of \"Thị trấn Tam Đảo\". This particular resolution clearly states a consolidation of multiple townships and communes, including \"Thị trấn Tam Đảo,\" to form a new commune called \"Xã Tam Đảo.\"\n\nWith this information, I cross-referenced the new wards data. I looked for \"Xã Tam Đảo\" within \"Tỉnh Phú Thọ\" and confirmed the existence of a corresponding entry: `{\"ward_code\":\"08911\",\"ward_name\":\"Xã Tam Đảo\",\"province_name\":\"Tỉnh Phú Thọ\"}`. This is a perfect match.\n\nFinally, I constructed the output JSON. The `province_name` is set to \"Tỉnh Phú Thọ\" based on the province merger. The `ward_name` is \"Xã Tam Đảo,\" derived from resolution 1676/NQ-UBTVQH15. The `ward_code` is \"08911\" from the matching data entry. The citation is crucial: I included the resolution header and the precise line detailing the \"Thị trấn Tam Đảo\" merger into the new commune. And importantly, I'm marking the `confidence` as \"high\" because the mapping is based on explicit, clearly defined information. It's a clean, direct result of the evidence.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "68. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Hợp Châu, thị trấn Tam Đảo, xã Hồ Sơn và xã Minh Quang thành xã mới có tên gọi là xã Tam Đảo."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "08911",
+      "ward_name": "Xã Tam Đảo"
+    }
+  ]
+}

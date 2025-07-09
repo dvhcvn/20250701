@@ -1,0 +1,18 @@
+{
+  "address": "Xã Thượng Long, Huyện Phú Lộc, Thành phố Huế",
+  "ellapsedInMs": 7499,
+  "estimatedCost": 0.0031614,
+  "thought": "**Identifying the New Administrative Unit for \"Xã Thượng Long, Huyện Phú Lộc, Thành phố Huế\"**\n\nOkay, here's my thought process. The user wants to find the new administrative unit for the old address \"Xã Thượng Long, Huyện Phú Lộc, Thành phố Huế\". I need to consult the resolutions and the \"New Wards\" data.\n\nFirst, I parsed the address: \"Xã Thượng Long\" is the ward, \"Huyện Phú Lộc\" is the district (which might be eliminated), and \"Thành phố Huế\" is the province/city.\n\n**Step 1: Province/City Check**\n\nI checked the merger resolutions (60-NQ/TW), and \"Thành phố Huế\" is listed as a province that won't be merged. So, \"Thành phố Huế\" remains \"Thành phố Huế\".\n\n**Step 2: Identifying the New Ward**\n\nI need to dig deeper into the resolutions for \"Thành phố Huế\", specifically looking for \"Thượng Long\". I'm specifically looking at the lines of the resolutions relevant to \"Thành phố Huế\".\n\nI found resolution **1675/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Huế**. Line 32 immediately caught my eye: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Thượng Quảng, Thượng Long và Hương Hữu thành xã mới có tên gọi là **xã Long Quảng**.\" Perfect! \"Xã Thượng Long\" is merging into \"Xã Long Quảng\".\n\n**Step 3: Validation**\n\nNext, I cross-referenced the new ward data to find \"Xã Long Quảng\". And sure enough, there it is: `{\"ward_code\":\"20182\",\"ward_name\":\"Xã Long Quảng\",\"province_name\":\"Thành phố Huế\"}`.  This confirms my findings.\n\n**Step 4: JSON Output Construction**\n\nI'm now ready to put together the JSON output:\n\n*   `province_name`: \"Thành phố Huế\" (confirmed from step 1)\n*   `ward_name`: \"Xã Long Quảng\" (from resolution 1675)\n*   `ward_code`: \"20182\" (from the new wards list)\n*   `citation`: Contains the full resolution citation and the relevant line.\n*   `confidence`: \"high\". The match is direct and unambiguous.\n\n**Additional Checks**\n\nI double-checked if \"Xã Thượng Long\" appears in other resolutions, just to make sure there's no confusion. I found **1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ**, which *mentions* \"Xã Thượng Long\" but in an entirely different province. It's irrelevant here.\n\nThis appears to be a solid solution. The answer is clear and consistent.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1675/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Huế",
+        "line": "32. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Thượng Quảng, Thượng Long và Hương Hữu thành xã mới có tên gọi là **xã Long Quảng**."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Huế",
+      "ward_code": "20182",
+      "ward_name": "Xã Long Quảng"
+    }
+  ]
+}

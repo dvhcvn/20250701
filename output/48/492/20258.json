@@ -1,0 +1,18 @@
+{
+  "address": "Phường Hòa Cường Nam, Quận Hải Châu, Thành phố Đà Nẵng",
+  "ellapsedInMs": 7164,
+  "estimatedCost": 0.0027763999999999996,
+  "thought": "**Analyzing the Administrative Unit Mapping**\n\nOkay, here's how I'm approaching this: I need to map the old address, \"Phường Hòa Cường Nam, Quận Hải Châu, Thành phố Đà Nẵng,\" to a new administrative unit. First, I identify the key components: the old ward (\"Phường Hòa Cường Nam\") and the old province (\"Thành phố Đà Nẵng\").  \n\nThen, I'm consulting the relevant resolutions. I start with the province-level ones.  I quickly cross-reference \"Thành phố Đà Nẵng\" with \"60-NQ/TW,\" but it's not a province slated for amalgamation.  However, resolution \"60-NQ/TW\" *does* mention it in a different context related to the merger of Quảng Nam and Đà Nẵng, which is helpful context when I generate the `province_name` in the final output, since the resulting name is the same.\n\nNext, I look for specific ward-level resolutions. I find \"1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng\". Crucially, line 2 of this resolution directly addresses my ward: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Bình Thuận, Hòa Thuận Tây, Hòa Cường Bắc và Hòa Cường Nam thành phường mới có tên gọi là phường Hòa Cường.\"  Perfect! This is the explicit mapping I need.\n\nNow, I cross-reference this information with my \"New wards\" data.  I quickly find that `{\"ward_code\":\"20257\",\"ward_name\":\"Phường Hòa Cường\",\"province_name\":\"Thành phố Đà Nẵng\"}` perfectly matches the new ward. There's another ward with the \"province_name\": `{\"ward_code\":\"20380\",\"ward_name\":\"Xã Tây Hồ\",\"province_name\":\"Thành phố Đà Nẵng\"}`, but it is not relevant, so I will ignore it.\n\nFinally, I'll generate the JSON output. I'm confident in this mapping. The `citation` will be \"1659/NQ-UBTVQH15,\" and I'll reference the specific line that states the merger.  My `confidence` level is high because of the direct mention and clear mapping. The `province_name` will be \"Thành phố Đà Nẵng,\" confirmed by both the province resolution (regarding Quảng Nam merging with Đà Nẵng) and the new ward data. The `ward_code` will be \"20257,\" and the `ward_name` will be \"Phường Hòa Cường,\" both from the \"New wards\" data.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng",
+        "line": "2. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Bình Thuận, Hòa Thuận Tây, Hòa Cường Bắc và Hòa Cường Nam thành phường mới có tên gọi là phường Hòa Cường."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "20257",
+      "ward_name": "Phường Hòa Cường"
+    }
+  ]
+}

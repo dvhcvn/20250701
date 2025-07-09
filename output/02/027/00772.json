@@ -1,0 +1,28 @@
+{
+  "address": "Xã Thượng Phùng, Huyện Mèo Vạc, Tỉnh Hà Giang",
+  "ellapsedInMs": 6083,
+  "estimatedCost": 0.0022322,
+  "thought": "**Mapping an Old Address to New Administrative Units**\n\nOkay, so I'm being asked to figure out the new administrative location for \"Xã Thượng Phùng, Huyện Mèo Vạc, Tỉnh Hà Giang\". This is a pretty straightforward process, given the resolutions and data I have.\n\nFirst, I identified the old ward (\"Xã Thượng Phùng\") and province (\"Tỉnh Hà Giang\").  Then, I consulted the province resolutions, specifically 60-NQ/TW.  This resolution indicates that Hà Giang merged with Tuyên Quang, becoming \"Tỉnh Tuyên Quang\".\n\nNext, I needed to check *other* resolutions, specifically 1684/NQ-UBTVQH15, to see what happened to \"Xã Thượng Phùng\" within the context of the *new* province. Bingo! Line 50 of that resolution clearly states that \"Xã Thượng Phùng\" was merged with other wards to form a new ward named \"xã Sơn Vĩ\".  And the header of that resolution confirmed it was referring to \"Tỉnh Tuyên Quang\".\n\nNow, I had the new ward name: \"xã Sơn Vĩ\".  So, I checked my \"New wards\" data.  There it was:  `{\"ward_code\":\"00778\",\"ward_name\":\"Xã Sơn Vĩ\",\"province_name\":\"Tỉnh Tuyên Quang\"}`.  Perfect match!\n\nMy confidence level is definitely *high* on this one.  The province mapping was explicit, and the ward mapping was clearly stated in the resolution.  The new ward data confirmed the existence of this new ward.  Now, I'll package this all into a nice JSON output with the appropriate citation, confidence level, province name, ward code, and ward name.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Tuyên Quang và tỉnh Hà Giang, lấy tên là tỉnh Tuyên Quang"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "00778",
+      "ward_name": "Xã Sơn Vĩ"
+    },
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "50. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Thượng Phùng, Xín Cái và Sơn Vĩ thành xã mới có tên gọi là xã Sơn Vĩ."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "00778",
+      "ward_name": "Xã Sơn Vĩ"
+    }
+  ]
+}

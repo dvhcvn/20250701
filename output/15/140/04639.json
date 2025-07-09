@@ -1,0 +1,18 @@
+{
+  "address": "Xã Sùng Đô, Huyện Văn Chấn, Tỉnh Yên Bái",
+  "ellapsedInMs": 7109,
+  "estimatedCost": 0.0023056,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm tackling this Vietnamese address mapping challenge. It looks like the user's provided an old address and some relevant data, and my job is to pinpoint its new location. Here's how I'm thinking about it:\n\nFirst, I need to break down the old address. I've identified the old ward as \"Xã Sùng Đô,\" the old district as \"Huyện Văn Chấn\" (though I understand districts are being phased out in this scenario), and the province as \"Tỉnh Yên Bái.\"\n\nNow, to the resolutions. I've got to find the crucial ones to link the old to the new.  Initially, I'll search for \"Tỉnh Yên Bái\" within the Province Resolutions, specifically the 60-NQ/TW. Aha! I found the merger information. It states that \"Tỉnh Yên Bái\" is now part of \"Tỉnh Lào Cai.\"  This is key, the province has changed!\n\nNext, I'll delve into the other resolutions, focusing on 1673/NQ-UBTVQH15. I'll need to look for any mention of \"Xã Sùng Đô.\" Scrolling through the lines, line 10 jumps out. It clearly states the consolidation of several wards, including \"Xã Sùng Đô,\" to form the new ward, \"Xã Sơn Lương.\" Perfect!\n\nNow, let's turn to the New Wards data. I'm searching for \"Xã Sơn Lương\" to get the latest, most accurate info. And there it is! I find the entry with the code \"04651,\" the name \"Xã Sơn Lương,\" and critically, the new province name: \"Tỉnh Lào Cai\" – which aligns perfectly with my findings from the province resolution.\n\nFinally, I'll construct the JSON output. The `province_name` is \"Tỉnh Lào Cai\" due to the merger.  The `ward_name` is \"Xã Sơn Lương\" because of resolution 1673/NQ-UBTVQH15, line 10. The `ward_code` is \"04651,\" from the New Wards data. I'll include the citation, clearly outlining the crucial line from the resolution, and since I have a direct correlation between the old ward in the resolution merging into the new ward, I'm comfortable assigning a `confidence` of \"high.\" This should be an accurate and complete mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai",
+        "line": "10. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Nậm Mười, Sùng Đô, Suối Quyền và Sơn Lương thành xã mới có tên gọi là xã Sơn Lương."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "04651",
+      "ward_name": "Xã Sơn Lương"
+    }
+  ]
+}

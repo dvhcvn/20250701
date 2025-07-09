@@ -1,0 +1,18 @@
+{
+  "address": "Phường Lái Hiếu, Thành phố Ngã Bảy, Tỉnh Hậu Giang",
+  "ellapsedInMs": 7804,
+  "estimatedCost": 0.0026167,
+  "thought": "**Mapping the Old Address to the New Administrative Unit**\n\nOkay, so I've got an old address in my hands: \"Phường Lái Hiếu, Thành phố Ngã Bảy, Tỉnh Hậu Giang\". The task is to figure out the new administrative unit based on these resolutions and ward data. Let's break this down.\n\nFirst, I need to identify the components: Ward: Phường Lái Hiếu, District (implied: Thành phố Ngã Bảy), and Province: Tỉnh Hậu Giang.\n\nNow, I'm going to consult the Provincial Resolutions, specifically 60-NQ/TW. I'll check if \"Tỉnh Hậu Giang\" is listed as not being affected by any changes. Not there. Then I move on to the mergers. Ah, there it is! \"Hợp nhất thành phố cần Thơ, tỉnh Sóc Trăng và tỉnh Hậu Giang; lấy tên là thành phố Cần Thơ\" - that's the key. **Tỉnh Hậu Giang** is now part of **Thành phố Cần Thơ**.\n\nNext, I need to dive into the other resolutions, particularly 1668/NQ-UBTVQH15. I'm looking for \"Phường Lái Hiếu\". Bingo! Line 22 states, \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Lái Hiếu, Hiệp Thành và Ngã Bảy thành phường mới có tên gọi là **phường Ngã Bảy**.\" So, my old ward is now part of the new \"phường Ngã Bảy\".  And the header of that resolution?  Perfect, it's for \"thành phố Cần Thơ,\" which aligns with my province merger. This means the province is now \"Thành phố Cần Thơ\".\n\nThen, I'm going to double-check against the New Wards data. I need to see if \"phường Ngã Bảy\" is listed. Yup, there it is: `{\"ward_code\":\"31340\",\"ward_name\":\"Phường Ngã Bảy\",\"province_name\":\"Thành phố Cần Thơ\"}`. The data is consistent!\n\nSo, to construct the JSON output:\n\n*   The `citation.header` is pulled from 1668/NQ-UBTVQH15: \"Sắp xếp các đơn vị hành chính cấp xã của thành phố Cần Thơ.\"\n*   The `citation.line` is that specific line, line 22: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Lái Hiếu, Hiệp Thành và Ngã Bảy thành phường mới có tên gọi là **phường Ngã Bảy**.\"\n*   `confidence` is set to \"high\" because this is a direct, clear match.\n*   The `province_name` is \"Thành phố Cần Thơ\" (from the province merger and new ward data).\n*   The `ward_code` is \"31340\".\n*   The `ward_name` is \"Phường Ngã Bảy\".\n\nFinally, I remember the instruction to look for multiple new wards, but in this case, there's a single, definitive new ward. So the output is simple, and it's a solid, high-confidence mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1668/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Cần Thơ",
+        "line": "22. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Lái Hiếu, Hiệp Thành và Ngã Bảy thành phường mới có tên gọi là phường Ngã Bảy."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Cần Thơ",
+      "ward_code": "31340",
+      "ward_name": "Phường Ngã Bảy"
+    }
+  ]
+}

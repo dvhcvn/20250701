@@ -1,0 +1,18 @@
+{
+  "address": "Xã Đại Lãnh, Huyện Đại Lộc, Tỉnh Quảng Nam",
+  "ellapsedInMs": 7970,
+  "estimatedCost": 0.0030299000000000003,
+  "thought": "**My Mapping Process for the Old Address**\n\nOkay, so I'm being asked to translate this old address \"Xã Đại Lãnh, Huyện Đại Lộc, Tỉnh Quảng Nam\" to its current equivalent using resolutions and new ward data.  I'll break it down step-by-step, drawing on my knowledge of these administrative changes.\n\nFirst, I recognize \"Tỉnh Quảng Nam\" as the old province. I instantly think of resolution 60-NQ/TW, which dictates the merger of Quảng Nam and Đà Nẵng, resulting in \"Thành phố Đà Nẵng\".  So, I immediately update my thinking - \"Tỉnh Quảng Nam\" is now \"Thành phố Đà Nẵng\".\n\nNext, I need to figure out what happened to \"Xã Đại Lãnh\". Time to delve into the resolutions. Given the \"Thành phố Đà Nẵng\" context, I'm specifically looking for any mentions of \"Xã Đại Lãnh\" within the relevant resolutions.\n\nImmediately, 1659/NQ-UBTVQH15 catches my eye. It details the administrative rearrangement of wards within Đà Nẵng. I scan through it, and there it is: line 68. It explicitly states that \"Xã Đại Lãnh, Đại Hưng and Đại Sơn\" are merged into the new ward, \"Xã Thượng Đức\".  This is a perfect match!\n\nI also spot resolution 1667/NQ-UBTVQH15, but it's about Khánh Hòa province - a completely different geographic context. Therefore, I disregard it.  Similarly, 1686/NQ-UBTVQH15 deals with Thanh Hóa, which is irrelevant.\n\nSo, according to 1659/NQ-UBTVQH15, the old \"Xã Đại Lãnh\" is now part of \"Xã Thượng Đức\" in \"Thành phố Đà Nẵng\".  I'll quickly cross-check that information against the \"New wards\" data.  And there it is: `{\"ward_code\":\"20506\",\"ward_name\":\"Xã Thượng Đức\",\"province_name\":\"Thành phố Đà Nẵng\"}`. It aligns perfectly.\n\nNow I can construct the JSON output. Given the clear match and the specific resolution line, I'll set the `confidence` to \"high\". The `citation` will be \"1659/NQ-UBTVQH15\", and I'll include the relevant line number.  I'll output \"Thành phố Đà Nẵng\" as the `province_name`,  \"20506\" as the `ward_code`, and \"Xã Thượng Đức\" as the `ward_name`. Done.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng",
+        "line": "68. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đại Lãnh, Đại Hưng và Đại Sơn thành xã mới có tên gọi là xã Thượng Đức."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "20506",
+      "ward_name": "Xã Thượng Đức"
+    }
+  ]
+}

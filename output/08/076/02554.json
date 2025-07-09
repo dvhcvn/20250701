@@ -1,0 +1,18 @@
+{
+  "address": "Xã Bình Yên, Huyện Sơn Dương, Tỉnh Tuyên Quang",
+  "ellapsedInMs": 6590,
+  "estimatedCost": 0.0030543000000000002,
+  "thought": "**Finding the New Administrative Unit for Xã Bình Yên**\n\nOkay, so I've got the old address: \"Xã Bình Yên, Huyện Sơn Dương, Tỉnh Tuyên Quang.\" My task is to figure out the new administrative unit, right? First, I'll break it down: \"Xã Bình Yên\" is the ward, \"Huyện Sơn Dương\" is the district, and \"Tỉnh Tuyên Quang\" is the province. Now, I need to sift through these resolutions and the new wards data.\n\nThe province-level resolution (60-NQ/TW) tells me that while Tuyên Quang merged with Hà Giang, it retained its name. Good to know for the `province_name` field. Now, let's dive into the specifics, focusing on where \"Xã Bình Yên\" within Tuyên Quang might have changed.\n\nI started looking, and right away I eliminated a few. There's a \"Xã Bình Yên\" mentioned in resolutions about Hà Nội and Thái Nguyên, but those are clearly not our target. However, then I hit gold: Resolution 1684/NQ-UBTVQH15. This one deals specifically with Tuyên Quang! It says that \"Xã Bình Yên,\" along with Lương Thiện and Minh Thanh, *merged* to form a new ward called \"Xã Minh Thanh.\" Bingo! This is the key.\n\nBased on that resolution, I'm confident that the new `ward_name` is \"Xã Minh Thanh.\" I'll need to double-check the `new_wards` data, but everything I've seen so far points directly to this conclusion. The `province_name` should, of course, be \"Tỉnh Tuyên Quang\" because, as we saw earlier, that name remained unchanged. I'm going to confirm everything in the new wards data to make absolutely sure.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "35. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Bình Yên, Lương Thiện và Minh Thanh thành xã mới có tên gọi là xã Minh Thanh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "02554",
+      "ward_name": "Xã Minh Thanh"
+    }
+  ]
+}

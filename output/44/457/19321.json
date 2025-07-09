@@ -1,0 +1,28 @@
+{
+  "address": "Xã Trường Thủy, Huyện Lệ Thủy, Tỉnh Quảng Bình",
+  "ellapsedInMs": 6244,
+  "estimatedCost": 0.0022455,
+  "thought": "**My Approach to Mapping the Old Vietnamese Address**\n\nOkay, I'm diving into this Vietnamese address mapping task. The goal is clear: translate the old address, \"Xã Trường Thủy, Huyện Lệ Thủy, Tỉnh Quảng Bình,\" into the new administrative structure. Here's my thought process:\n\nFirst, I need to break down the input. I immediately identify \"Xã Trường Thủy\" as the old ward and \"Tỉnh Quảng Bình\" as the old province. Now, the real work begins.\n\nThe core of this will be the province resolutions, specifically the ones related to mergers and reorganizations. I need to check if Quảng Bình was merged or kept as is.  The resolution 60-NQ/TW tells the tale:  \"Hợp nhất tỉnh Quảng Bình và tỉnh Quảng Trị, lấy tên là tỉnh Quảng Trị.\" Bingo! It's a merger. \"Tỉnh Quảng Bình\" is now \"Tỉnh Quảng Trị.\"\n\nNext, I shift my focus to the *new* province, Quảng Trị. I'm looking for resolutions specifically mentioning \"Xã Trường Thủy.\"  The resolution 1680/NQ-UBTVQH15 catches my eye. Scrolling through, line 33 is the key. It details the merger: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Trường Thủy, Mai Thủy và Phú Thủy thành xã mới có tên gọi là **xã Trường Phú**.\"  This seals it! \"Xã Trường Thủy\" has been absorbed into the new \"Xã Trường Phú.\"\n\nNow, I'll cross-reference the \"New wards\" data. I'm looking for the ward_code and province_name for \"Xã Trường Phú.\"  And there it is: `ward_code`: \"19309\" and `province_name`: \"Tỉnh Quảng Trị.\"  Perfect! It aligns with the new province and confirms my resolution findings.\n\nThe confidence level here is high. \"Xã Trường Thủy\" is explicitly referenced in the merger resolution, clearly pointing to \"Xã Trường Phú.\"\n\nFinally, I'll package all this into the required JSON output, ensuring it adheres to the specified schema. Done!\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "9. Hợp nhất tỉnh Quảng Bình và tỉnh Quảng Trị, lấy tên là tỉnh Quảng Trị"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Trị",
+      "ward_code": "19309",
+      "ward_name": "Xã Trường Phú"
+    },
+    {
+      "citation": {
+        "header": "1680/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Trị",
+        "line": "33. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Trường Thủy, Mai Thủy và Phú Thủythành xã mới có tên gọi là xã Trường Phú."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Trị",
+      "ward_code": "19309",
+      "ward_name": "Xã Trường Phú"
+    }
+  ]
+}

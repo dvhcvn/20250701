@@ -1,0 +1,28 @@
+{
+  "address": "Xã Hoàng Tây, Thị xã Kim Bảng, Tỉnh Hà Nam",
+  "ellapsedInMs": 6896,
+  "estimatedCost": 0.0029323,
+  "thought": "**Analyzing Administrative Unit Changes: A Step-by-Step Approach**\n\nOkay, here's how I'm approaching this: The user needs to find the new ward for an old address (\"Xã Hoàng Tây, Thị xã Kim Bảng, Tỉnh Hà Nam\"). I've got a plan to break this down.\n\nFirst, I parsed the old address. It's: \"Xã Hoàng Tây\" (ward), \"Thị xã Kim Bảng\" (district), and \"Tỉnh Hà Nam\" (province).\n\nNext, I dove into the relevant resolutions. Initial check on Resolution 60-NQ/TW shows Hà Nam isn't on the \"no merger\" list, but it *is* on the list of merged provinces (item 8), merging with Ninh Bình and Nam Định. Aha! So, the new province will be Ninh Bình.\n\nNow, I'm analyzing the other resolutions, focusing on Ninh Bình.  Resolution 1674/NQ-UBTVQH15 catches my attention: \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình\". That's the one!\n\nSkimming through, line 105 mentions Kim Bảng, but not Hoàng Tây. However, then line 106 states \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Tân Tựu và xã Hoàng Tây thành phường mới có tên gọi là **phường Kim Thanh**.\" *There* it is! It's *explicitly* mentioning \"Xã Hoàng Tây\" and the new ward name: \"phường Kim Thanh.\"  And given that Hà Nam merged into Ninh Bình, this seems like the correct interpretation.\n\nI quickly checked the other line of resolution 1674 for confirming information, but line 108 is not relevant.\n\nThe other resolution, 1678/NQ-UBTVQH15, relates to Nghệ An, which is irrelevant here.\n\nTherefore, my final conclusion is \"phường Kim Thanh\".\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "8. Hợp nhất tỉnh Hà Nam, tỉnh Ninh Bình và tỉnh Nam Định; lấy tên là tỉnh Ninh Bình"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "",
+      "ward_name": ""
+    },
+    {
+      "citation": {
+        "header": "1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "106. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Tân Tựu và xã Hoàng Tây thành phường mới có tên gọi là phường Kim Thanh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "13402",
+      "ward_name": "Phường Kim Thanh"
+    }
+  ]
+}

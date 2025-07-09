@@ -1,0 +1,28 @@
+{
+  "address": "Thị trấn Tuy Phước, Huyện Tuy Phước, Tỉnh Bình Định",
+  "ellapsedInMs": 7522,
+  "estimatedCost": 0.0023499,
+  "thought": "**Mapping an Old Vietnamese Address to New Administrative Units**\n\nOkay, so I've got this Vietnamese address I need to sort out: \"Thị trấn Tuy Phước\", \"Tỉnh Bình Định\". My goal is to figure out the corresponding new administrative unit. Here's how I'm approaching this, step-by-step.\n\nFirst, I need to figure out what the *current* ward and province are. Looks like it's \"Thị trấn Tuy Phước\" in \"Tỉnh Bình Định\".  Easy enough. Now the detective work begins.\n\nNext, I need to check these Province Resolutions, specifically 60-NQ/TW. This is where things get interesting. I'm looking for \"Tỉnh Bình Định\" in this list of province mergers. Bingo!  It says that \"Hợp nhất tỉnh Gia Lai và tỉnh Bình Định, lấy tên là tỉnh Gia Lai\" – essentially, \"Tỉnh Bình Định\" merged into \"Tỉnh Gia Lai.\"  That's a huge clue!  I need to remember that.\n\nNow, I turn to other Resolutions, like 1664/NQ-UBTVQH15. This one is for \"tỉnh Gia Lai\", so it's relevant since Bình Định is now part of Gia Lai. I have to see if \"Thị trấn Tuy Phước\" is mentioned in the lines of this resolution. And there it is, line 16, clearly states that \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Tuy Phước, thị trấn Diêu Trì và các xã Phước Thuận, Phước Nghĩa, Phước Lộc thành xã mới có tên gọi là **xã Tuy Phước**.\" This solidifies the \"Thị trấn Tuy Phước\" now belonging to \"Xã Tuy Phước.\"\n\nSo now, I need to make sure this \"Xã Tuy Phước\" matches anything in the list of \"New wards\" I've been given. Let's see... Yup! There it is: `{\"ward_code\":\"21952\",\"ward_name\":\"Xã Tuy Phước\",\"province_name\":\"Tỉnh Gia Lai\"}`.  The name matches, and critically, the new province is \"Tỉnh Gia Lai,\" which matches the province merger information I found earlier. Perfect.\n\nMy confidence in this mapping is high. The old ward is directly referenced in the resolution creating the new ward, and the province merger is clear and confirmed. The new ward exists and is correctly associated with the new province.  I'm confident in my answer. Now to structure this into a clean JSON output and be done.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Gia Lai và tỉnh Bình Định, lấy tên là tỉnh Gia Lai"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "21952",
+      "ward_name": "Xã Tuy Phước"
+    },
+    {
+      "citation": {
+        "header": "1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai",
+        "line": "16. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Tuy Phước, thị trấn Diêu Trì và các xã Phước Thuận, Phước Nghĩa, Phước Lộc thành xã mới có tên gọi là xã Tuy Phước."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "21952",
+      "ward_name": "Xã Tuy Phước"
+    }
+  ]
+}

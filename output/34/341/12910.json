@@ -1,0 +1,28 @@
+{
+  "address": "Xã Thái Nguyên, Huyện Thái Thụy, Tỉnh Thái Bình",
+  "ellapsedInMs": 7548,
+  "estimatedCost": 0.003241,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm tasked with mapping this old address to its new equivalent.  Let's break it down: \"Xã Thái Nguyên\" in \"Huyện Thái Thụy\", \"Tỉnh Thái Bình\".  The core goal here is to determine the new ward, district, and province.\n\nMy initial thought is to first pinpoint the resolution that will tell me the new province. I'll need to check the \"không thực hiện sáp nhập\" and \"mới sau sáp nhập, hợp nhất\" lists in the provided province resolutions. \"Tỉnh Thái Bình\" isn't listed as \"không thực hiện sáp nhập\", but it's listed as being merged into \"Tỉnh Hưng Yên\" according to Resolution 60-NQ/TW. So, \"Tỉnh Thái Bình\" is now \"Tỉnh Hưng Yên\".\n\nNow, the trickier part: finding the new ward.  I'll scour the provided resolutions for mentions of \"Xã Thái Nguyên\". Scanning Resolution 1666/NQ-UBTVQH15 (Hưng Yên), I notice line 34 mentions a new ward name but doesn't mention the original ward. But in line 40, there's a hit!  This line specifically says that \"Thái Hưng (huyện Thái Thụy)\" and \"Thái Nguyên\" are merging into \"Xã Thái Ninh.\" This is a strong lead, especially since it's in a resolution for the new province, \"Hưng Yên\".\n\nTo be thorough, I cross-reference this \"Xã Thái Ninh\" with the provided new ward data.  And there it is: a data entry matching \"Xã Thái Ninh\" with the province \"Tỉnh Hưng Yên.\" Perfect!  This confirms my finding.\n\nTherefore, with high confidence, I can conclude that the old \"Xã Thái Nguyên\" in \"Tỉnh Thái Bình\" (now \"Tỉnh Hưng Yên\") is mapped to the new ward \"Xã Thái Ninh\".  The evidence is strong: a direct name match in the resolutions and a matching entry in the new ward data.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "6. Hợp nhất tỉnh Hưng Yên và tỉnh Thái Bình, lấy tên là tỉnh Hưng Yên"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "12922",
+      "ward_name": "Xã Thái Ninh"
+    },
+    {
+      "citation": {
+        "header": "1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên",
+        "line": "40. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Thái Hưng (huyện Thái Thụy), Thái Thượng, Hòa An và Thái Nguyên thành xã mới có tên gọi là xã Thái Ninh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "12922",
+      "ward_name": "Xã Thái Ninh"
+    }
+  ]
+}

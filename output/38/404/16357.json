@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tượng Văn, Huyện Nông Cống, Tỉnh Thanh Hóa",
+  "ellapsedInMs": 6693,
+  "estimatedCost": 0.0026098000000000002,
+  "thought": "**Identifying the New Administrative Unit for \"Xã Tượng Văn, Huyện Nông Cống, Tỉnh Thanh Hóa\"**\n\nOkay, let's break this down systematically. The user wants the new ward for the old address. First, I see \"Tỉnh Thanh Hóa\" is the province. Quickly checking the relevant resolutions, 60-NQ/TW confirms this province hasn't undergone any major administrative restructuring at the provincial level. So, \"Tỉnh Thanh Hóa\" is unchanged.\n\nNext, the old ward is \"Xã Tượng Văn\". Now, I'll dive into the resolutions, focusing on changes within Thanh Hóa. Resolution \"1686/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thanh Hóa\" is the key one here. Line 39 within that resolution states it explicitly: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tượng Sơn, Tượng Văn và Tượng Lĩnh thành xã mới có tên gọi là **xã Tượng Lĩnh**.\" Boom! \"Xã Tượng Văn\" is merged into \"Xã Tượng Lĩnh\".\n\nNow, I cross-reference this with the \"New Wards\" data. And there it is: `{\"ward_code\":\"16363\",\"ward_name\":\"Xã Tượng Lĩnh\",\"province_name\":\"Tỉnh Thanh Hóa\"}`. Perfect match.\n\nTo be thorough, I'm checking the other lines in that resolution. Lines 34, 35, and 36 don't mention \"Xã Tượng Văn\", which confirms the line 39 is the relevant one.\n\nSo, the JSON output is straightforward:\n\n*   `province_name`: \"Tỉnh Thanh Hóa\"\n*   `ward_name`: \"Xã Tượng Lĩnh\"\n*   `ward_code`: \"16363\"\n*   `citation`: `\"1686/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thanh Hóa\"`: line \"39. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tượng Sơn, Tượng Văn và Tượng Lĩnh thành xã mới có tên gọi là **xã Tượng Lĩnh**.\"\n*   `confidence`: \"high\". The merging is clearly stated, and the \"Xã Tượng Lĩnh\" appears in new ward lists.",
+  "result": [
+    {
+      "citation": {
+        "header": "1686/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thanh Hóa",
+        "line": "39. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tượng Sơn, Tượng Văn và Tượng Lĩnh thành xã mới có tên gọi là xã Tượng Lĩnh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thanh Hóa",
+      "ward_code": "16363",
+      "ward_name": "Xã Tượng Lĩnh"
+    }
+  ]
+}

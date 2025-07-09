@@ -1,0 +1,18 @@
+{
+  "address": "Phường An Khánh, Quận Ninh Kiều, Thành phố Cần Thơ",
+  "ellapsedInMs": 6110,
+  "estimatedCost": 0.0028842,
+  "thought": "**Determining the New Ward for an Old Address**\n\nOkay, so I've got \"Phường An Khánh, Quận Ninh Kiều, Thành phố Cần Thơ\" – the classic \"what's the current ward for this old address\" problem.  Let's break this down.\n\nFirst, I see \"Thành phố Cần Thơ,\" so I know the province. Time for a quick check on potential mergers. Ah yes, I recall \"60-NQ/TW\" - yep, Cần Thơ's still Cần Thơ, even after the province boundaries shifted a bit. That confirms my province context.\n\nNow, I'm diving into the resolutions specifically for \"Thành phố Cần Thơ.\" My goal is to find \"Phường An Khánh.\" I sift through the resolutions, and, bingo, \"1668/NQ-UBTVQH15\" is the key. And there it is, line 3: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường An Khánh và phường Hưng Lợi thành phường mới có tên gọi là **phường Tân An**.\" This is gold!\n\nSo, \"phường Tân An\" is the new name.  Next, I need the `ward_code`.  I'll consult the \"New wards\" list for \"Thành phố Cần Thơ.\" And there it is: `{\"ward_code\":\"31147\",\"ward_name\":\"Phường Tân An\",\"province_name\":\"Thành phố Cần Thơ\"}`.\n\nI always do a final sanity check, scanning for any *other* mentions of \"Phường An Khánh\" within those Cần Thơ resolutions, just to be sure. Nope, nothing else. Perfect.\n\nConfidence is high here. The resolution is explicit: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường An Khánh ... thành phường mới có tên gọi là phường Tân An.\" It's a direct, unambiguous mapping.\n\nNow, I'll package all that up into the appropriate JSON output, and I'm good to go.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1668/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Cần Thơ",
+        "line": "3. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường An Khánh và phường Hưng Lợi thành phường mới có tên gọi là **phường Tân An**."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Cần Thơ",
+      "ward_code": "31147",
+      "ward_name": "Phường Tân An"
+    }
+  ]
+}

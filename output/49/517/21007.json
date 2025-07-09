@@ -1,0 +1,28 @@
+{
+  "address": "Xã Tam Trà, Huyện Núi Thành, Tỉnh Quảng Nam",
+  "ellapsedInMs": 7995,
+  "estimatedCost": 0.0028886,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm tasked with taking an old Vietnamese address and figuring out its equivalent in the new administrative setup.  The old address is: Xã Tam Trà (Ward Tam Trà), Huyện Núi Thành (Núi Thành District), Tỉnh Quảng Nam (Quảng Nam Province).  Here's how I'm approaching this:\n\nFirst, I need to understand the province-level changes.  I'm checking the Province Resolutions, specifically 60-NQ/TW. I see that Quảng Nam isn't on the \"no change\" list.  However, it *is* on the \"merged/changed\" list, specifically merging with Đà Nẵng to become \"Thành phố Đà Nẵng.\"  So, my first takeaway: the province has become Đà Nẵng.\n\nNext, I zero in on specific resolutions affecting this ward. I identified Resolution 1659/NQ-UBTVQH15, which deals with ward rearrangements within Đà Nẵng.  I'm going through its lines, looking for \"Tam Trà.\" Bingo! Line 28 explicitly states that Tam Trà, along with Tam Mỹ Đông and Tam Mỹ Tây, is being merged into the new ward called \"Xã Tam Mỹ.\"  This is key!\n\nNow I cross-reference this with the new ward data I have. I see \"Xã Tam Mỹ\" with ward code \"21004\" and, crucially, within \"Thành phố Đà Nẵng.\"  This aligns perfectly with what I've learned from the resolutions. It confirms that the merger of Tam Trà into Tam Mỹ is correct and that the province change is also valid.\n\nFinally, I need to address the district, \"Huyện Núi Thành.\"  The prompt says to eliminate all districts.  Resolution 1659/NQ-UBTVQH15 helps, although not directly. It shows that \"thị trấn Núi Thành\" and other communes historically from \"Huyện Núi Thành\" are forming \"xã Núi Thành\" within Đà Nẵng. I deduce that the \"Huyện Núi Thành\" district designation has, indeed, been eliminated, and its components are being reshaped within the new Đà Nẵng administrative structure.\n\nTherefore, my final mapping for the old address \"Xã Tam Trà, Huyện Núi Thành, Tỉnh Quảng Nam\" is to the new ward \"Xã Tam Mỹ,\" with the understanding that \"Huyện Núi Thành\" no longer exists as a district, but the area is now part of Đà Nẵng, which includes a new \"xã Núi Thành\" *ward*.  The most important mapping is to \"Xã Tam Mỹ.\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Quảng Nam và thành phố Đà Nẵng, lấy tên là thành phố Đà Nẵng"
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "21004",
+      "ward_name": "Xã Tam Mỹ"
+    },
+    {
+      "citation": {
+        "header": "1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng",
+        "line": "Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tam Mỹ Đông, Tam Mỹ Tây và Tam Trà thành xã mới có tên gọi là xã Tam Mỹ."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "21004",
+      "ward_name": "Xã Tam Mỹ"
+    }
+  ]
+}

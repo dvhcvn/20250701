@@ -1,0 +1,18 @@
+{
+  "address": "Xã Mỹ Thạnh, Huyện Thủ Thừa, Tỉnh Long An",
+  "ellapsedInMs": 7510,
+  "estimatedCost": 0.0091056,
+  "thought": "**Determining the New Administrative Unit for \"Xã Mỹ Thạnh, Huyện Thủ Thừa, Tỉnh Long An\"**\n\nOkay, here's my thought process. The user has given me an old address and wants the new administrative unit. First, I need to account for potential province mergers. Looking at document `60-NQ/TW`, I see that \"Tỉnh Long An\" has been merged into \"Tỉnh Tây Ninh.\" So, my new province name is definitely \"Tỉnh Tây Ninh.\"\n\nNext, I need to figure out what happened to \"Xã Mỹ Thạnh\" specifically within \"Huyện Thủ Thừa.\" I dive into other resolutions, focusing on any changes related to \"Tỉnh Long An\" and \"Huyện Thủ Thừa\". I find `1682/NQ-UBTVQH15`, which is relevant.  Line 22 is the key: it clearly states that the ward \"Xã Mỹ Thạnh\" from \"Huyện Thủ Thừa\" *remains* \"Xã Mỹ Thạnh\" after the administrative reorganization. I can be pretty confident about this now, and I just need to verify it.\n\nI then check my `New wards` list to confirm. Searching for \"Xã Mỹ Thạnh\" and \"Tỉnh Tây Ninh,\" I find a perfect match:  `{\"ward_code\":\"28051\",\"ward_name\":\"Xã Mỹ Thạnh\",\"province_name\":\"Tỉnh Tây Ninh\"}`.  The code, name, and new province perfectly align with what I've deduced.\n\nTherefore, the JSON output is straightforward:\n\n*   `province_name`: \"Tỉnh Tây Ninh\" (from the province merger).\n*   `ward_name`: \"Xã Mỹ Thạnh\" (from Resolution 1682).\n*   `ward_code`: \"28051\" (from the `New wards` list).\n*   `citation`: The header of the resolution and the exact line number from the resolution.\n*   `confidence`: High, given the direct match I found.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1682/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tây Ninh",
+        "line": "22. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Bình An, Mỹ Lạc, Mỹ Thạnh và phần còn lại của xã Tân Thành (huyện Thủ Thừa) sau khi sắp xếp theo quy định tại khoản 20 Điều này thành xã mới có tên gọi là **xã Mỹ Thạnh**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tây Ninh",
+      "ward_code": "28051",
+      "ward_name": "Xã Mỹ Thạnh"
+    }
+  ]
+}

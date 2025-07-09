@@ -1,0 +1,28 @@
+{
+  "address": "Xã Bình Nghĩa, Huyện Bình Lục, Tỉnh Hà Nam",
+  "ellapsedInMs": 6097,
+  "estimatedCost": 0.0023542,
+  "thought": "**My Analysis of the Address Mapping**\n\nOkay, so I'm tasked with figuring out the new administrative unit for an old address. Here's how I'm approaching this:\n\nFirst, I identified the components of the old address: \"Xã Bình Nghĩa\" (Ward), \"Huyện Bình Lục\" (District), and \"Tỉnh Hà Nam\" (Province). Now, the key is to trace these through the provided resolutions.\n\nThe initial step is to examine the Provincial Resolutions, specifically Resolution 60-NQ/TW. This reveals that \"Tỉnh Hà Nam\" is now part of \"Tỉnh Ninh Bình\" due to a merger.  That's my first key piece of information.\n\nNext, I need to find something relevant to the specific ward, \"Xã Bình Nghĩa\".  I'm searching other resolutions and stumble upon resolution 1674/NQ-UBTVQH15. This is critical because it details the restructuring of administrative units *within Ninh Bình*.  And bingo, it explicitly states that \"Xã Bình Nghĩa\" is merged into a new ward called \"Xã Bình Lục\"!  This resolution is directly relevant because it's dealing with Ninh Binh, which is where Ha Nam became a part of.\n\nNow, with \"Xã Bình Lục\" in mind, I cross-reference the `New wards` data.  And there it is: a record for \"Xã Bình Lục\" in \"Tỉnh Ninh Bình\" with a specific code. It's a perfect match!\n\nTherefore, my final conclusion is clear: based on the resolutions, \"Xã Bình Nghĩa\" is now part of \"Xã Bình Lục\" in \"Tỉnh Ninh Bình\". The \"high\" confidence is deserved because I found the specific direct mapping I was looking for. Now, I will format the output as JSON according to the schema.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Hà Nam, tỉnh Ninh Bình và tỉnh Nam Định; lấy tên là tỉnh Ninh Bình"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "13504",
+      "ward_name": "Xã Bình Lục"
+    },
+    {
+      "citation": {
+        "header": "1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "1. Sắp xếp toàn bộ diện tích tự nhiên quy mô dân số của các xã Bình Nghĩa, Tràng An và Đồng Du thành xã mới có tên gọi là xã Bình Lục."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "13504",
+      "ward_name": "Xã Bình Lục"
+    }
+  ]
+}

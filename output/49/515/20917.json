@@ -1,0 +1,28 @@
+{
+  "address": "Xã Trà Bui, Huyện Bắc Trà My, Tỉnh Quảng Nam",
+  "ellapsedInMs": 8049,
+  "estimatedCost": 0.0033004999999999996,
+  "thought": "**Address Mapping Analysis: A Detailed Breakdown**\n\nOkay, so I'm presented with a Vietnamese address and need to pinpoint its new location based on these administrative changes. The address is \"Xã Trà Bui, Tỉnh Quảng Nam.\" My first step is to identify the old province and ward: Quảng Nam and Trà Bui.\n\nNow, I'm checking the province resolutions. 60-NQ/TW states that Quảng Nam merged with Đà Nẵng, becoming Thành phố Đà Nẵng. That's straightforward.\n\nNext, I dig into the specific resolutions concerning ward rearrangements. The one that immediately stands out is 1659/NQ-UBTVQH15. It explicitly mentions \"Xã Trà Bui\" and states that Trà Bui and Trà Đốc were merged into a new ward called \"Trà Đốc\". And critically, this happens within the new \"Thành phố Đà Nẵng\", which aligns perfectly with my province analysis. This is looking like a strong match.\n\nI also checked 1677/NQ-UBTVQH15, but this deals with Quảng Ngãi. While it *does* mention \"Trà Bùi\", the spelling is different (with the diacritic), and it is relevant for Quảng Ngãi not Quảng Nam. The province merger confirms that Quảng Ngãi remains Quảng Ngãi. Therefore this resolution does not apply.\n\nHere's where things get interesting.  The prompt emphasizes finding exact matches. The input is \"Trà Bui\" but this resolution has \"Trà Bùi\".  A minor difference.  Do I consider this a typo or a valid variance in spelling? Vietnamese can have diacritical variations. While I should *technically* follow the exact spelling, the similarity is notable, and it adds a layer of uncertainty.  Should I consider both resolutions?  *Strictly* speaking, only 1659/NQ-UBTVQH15 matches the *exact* input. The other option, while *similar*, is in the wrong province and has a diacritical difference.  I'll need to flag this potential ambiguity.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "10. Hợp nhất tỉnh Quảng Nam và thành phố Đà Nẵng, lấy tên là thành phố Đà Nẵng"
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "20920",
+      "ward_name": "Xã Trà Đốc"
+    },
+    {
+      "citation": {
+        "header": "1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng",
+        "line": "42. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Trà Bui và xã Trà Đốc thành xã mới có tên gọi là xã Trà Đốc."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "20920",
+      "ward_name": "Xã Trà Đốc"
+    }
+  ]
+}

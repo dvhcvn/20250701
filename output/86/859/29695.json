@@ -1,0 +1,18 @@
+{
+  "address": "Xã Trung Hiếu, Huyện  Vũng Liêm, Tỉnh Vĩnh Long",
+  "ellapsedInMs": 6723,
+  "estimatedCost": 0.0022813,
+  "thought": "**My Analysis of Address Mapping**\n\nOkay, here's how I'm approaching this address mapping task. The user wants me to link an old address to a new administrative unit, and I've been given some resolutions and a list of new wards to work with. Let's see...\n\nFirst, I need to figure out the original geographical context. I've identified the old ward as \"Xã Trung Hiếu,\" the district as \"Huyện Vũng Liêm,\" and the province as \"Tỉnh Vĩnh Long.\" Now, time to analyze the resolutions.\n\nI'm starting with the broader context, checking the province-level resolutions (specifically, 60-NQ/TW). The goal here is to determine if \"Tỉnh Vĩnh Long\" underwent any significant changes. I check the \"không thực hiện sáp nhập\" (no mergers) and \"mới sau sáp nhập, hợp nhất\" (new after mergers) lists.  I see a mention of Vĩnh Long being *merged* with Bến Tre and Trà Vinh, but the *name* remains \"Tỉnh Vĩnh Long.\" So, no province-level renaming or major boundary shifts that impact this specific lookup.\n\nNext, I zero in on the specific resolution, `1687/NQ-UBTVQH15`, which is about administrative re-organization within Vĩnh Long.  Ah, here's the key line: `9. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Vũng Liêm, xã Trung Hiếu và xã Trung Thành thành xã mới có tên gọi là**xã Trung Thành**.` This is it!  This resolution explicitly states that \"Xã Trung Hiếu\" is merged *with* \"thị trấn Vũng Liêm\" and \"xã Trung Thành\" to form a *new* ward called \"xã Trung Thành.\"  This confirms my suspicion.\n\nNow I double-check the provided list of *new* wards. I'm looking for \"Xã Trung Thành,\" and there it is: `{\"ward_code\":\"29659\",\"ward_name\":\"Xã Trung Thành\",\"province_name\":\"Tỉnh Vĩnh Long\"}`. This perfectly aligns with what the resolution dictates. It validates my understanding of the mapping.\n\nTherefore, \"Xã Trung Hiếu\" from the *old* address has been re-designated as part of \"Xã Trung Thành\" with a ward code of \"29659.\"  The province, \"Tỉnh Vĩnh Long,\" remains the same. The confidence should be high on this result because the resolution provides a clear and direct mapping instruction.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long",
+        "line": "9. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Vũng Liêm, xã Trung Hiếu và xã Trung Thành thành xã mới có tên gọi là**xã Trung Thành**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "29659",
+      "ward_name": "Xã Trung Thành"
+    }
+  ]
+}

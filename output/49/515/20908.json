@@ -1,0 +1,18 @@
+{
+  "address": "Xã Trà Đông, Huyện Bắc Trà My, Tỉnh Quảng Nam",
+  "ellapsedInMs": 6942,
+  "estimatedCost": 0.0026275,
+  "thought": "**Address Mapping Analysis: Xã Trà Đông to Xã Trà Liên**\n\nOkay, so I'm tasked with mapping this old Vietnamese address, \"Xã Trà Đông\" in \"Tỉnh Quảng Nam,\" to its new administrative unit. Given the elimination of districts, I'll focus on the ward and province transformations.\n\nFirst, I identified the components: \"Xã Trà Đông,\" \"Huyện Bắc Trà My\" (though I know to ignore this due to the prompt), and \"Tỉnh Quảng Nam.\"\n\nNext, I went through the province resolutions (60-NQ/TW).  I quickly confirmed that \"Tỉnh Quảng Nam\" wasn't on the \"no merger\" list. However, I found a clear hit in the \"post-merger\" list: \"Hợp nhất tỉnh Quảng Nam và thành phố Đà Nẵng, lấy tên là thành phố Đà Nẵng.\" So, \"Tỉnh Quảng Nam\" becomes \"Thành phố Đà Nẵng\" - good to know.\n\nThen, the other resolutions (1659/NQ-UBTVQH15) were consulted, focusing on \"Xã Trà Đông.\" Bingo! Line 39 explicitly states, \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Trà Đông, Trà Nú và Trà Kót thành xã mới có tên gọi là **xã Trà Liên**.\" This is exactly what I was looking for.\n\nAfter that, I needed to check the \"New Wards\" data.  I looked for \"Xã Trà Liên\" and found it: `{\"ward_code\":\"20908\",\"ward_name\":\"Xã Trà Liên\",\"province_name\":\"Thành phố Đà Nẵng\"}`. This perfectly aligns with the province merger I found earlier! \"Xã Trà Liên\" is correctly listed under \"Thành phố Đà Nẵng\".\n\nThis analysis leads me to a **high-confidence** mapping. Both the province and the ward change are explicitly covered in resolutions and the new ward data confirms the final administrative structure. The citation is based on the relevant resolution, with a specific line referencing the name change from \"Xã Trà Đông\" to \"Xã Trà Liên\". So, the output will reflect this clean transformation to \"Xã Trà Liên\" under \"Thành phố Đà Nẵng,\" with the ward code from the dataset.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng",
+        "line": "39. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Trà Đông, Trà Nú và Trà Kót thành xã mới có tên gọi là xã Trà Liên."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "20908",
+      "ward_name": "Xã Trà Liên"
+    }
+  ]
+}

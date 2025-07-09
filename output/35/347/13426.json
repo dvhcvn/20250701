@@ -1,0 +1,28 @@
+{
+  "address": "Xã Kim Bình, Thành phố Phủ Lý, Tỉnh Hà Nam",
+  "ellapsedInMs": 8152,
+  "estimatedCost": 0.0036004,
+  "thought": "**Analysis of Address Restructuring for \"Xã Kim Bình, Thành phố Phủ Lý, Tỉnh Hà Nam\"**\n\nOkay, let's break this down. The user's query is straightforward: identify the new administrative unit(s) for the old address \"Xã Kim Bình, Thành phố Phủ Lý, Tỉnh Hà Nam\".\n\nFirst, the breakdown: We're dealing with \"Xã Kim Bình\" (ward), within \"Thành phố Phủ Lý\" (city/district), and in \"Tỉnh Hà Nam\" (province).\n\nThe key initial step is to account for province changes.  The provided data reveals that \"Tỉnh Hà Nam\" was merged, becoming part of \"Tỉnh Ninh Bình.\" This is crucial for accurate output.\n\nNow, I need to sift through the resolutions. I immediately skip the Đồng Nai resolution (1662/NQ-UBTVQH15) – irrelevant province. But then, I hit paydirt with 1674/NQ-UBTVQH15 concerning Ninh Bình (the new province for Hà Nam). This is the critical resolution.\n\n*   **Line 109** caught my eye; it discusses restructuring within \"thành phố Phủ Lý,\" the city in our old address. It mentions the creation of \"phường Hà Nam,\" but doesn't explicitly include \"Xã Kim Bình.\" Still, promising.\n\n*   Then, **Line 110** jumps out: this is it! It explicitly states, \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Lê Hồng Phong, **xã Kim Bình** và xã Phù Vân thành phường mới có tên gọi là **phường Phù Vân**.\"  It's a perfect match: \"Xã Kim Bình\" is directly mentioned, now becoming part of \"phường Phù Vân.\" That resolves the key part of the query.\n\nCrucially, this aligns with the province change – the new administrative unit will reside within \"Tỉnh Ninh Bình.\"  Verifying this with the \"New wards\" data confirms this match: `{\"ward_code\":\"13291\",\"ward_name\":\"Phường Phù Vân\",\"province_name\":\"Tỉnh Ninh Bình\"}` confirms the data and gives a very high confidence level to the answer.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "8. Hợp nhất tỉnh Hà Nam, tỉnh Ninh Bình và tỉnh Nam Định; lấy tên là tỉnh Ninh Bình"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "13291",
+      "ward_name": "Phường Phù Vân"
+    },
+    {
+      "citation": {
+        "header": "1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "110. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Lê Hồng Phong, xã Kim Bình và xã Phù Vân thành phường mới có tên gọi là phường Phù Vân."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "13291",
+      "ward_name": "Phường Phù Vân"
+    }
+  ]
+}

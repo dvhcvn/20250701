@@ -1,0 +1,28 @@
+{
+  "address": "Xã Tiên Tiến, Huyện Phù Cừ, Tỉnh Hưng Yên",
+  "ellapsedInMs": 7098,
+  "estimatedCost": 0.0035485000000000004,
+  "thought": "**Analyzing the Address Transformation**\n\nOkay, so the user's looking for the new administrative unit for \"Xã Tiên Tiến, Huyện Phù Cừ, Tỉnh Hưng Yên.\" My analysis begins with understanding the relevant provincial changes.  I first acknowledge that Hưng Yên is still \"Tỉnh Hưng Yên,\" despite its merger with Thái Bình, which is significant for outputting the correct `province_name`.\n\nI then zero in on the key resolution, 1666/NQ-UBTVQH15, which deals directly with administrative restructuring in Hưng Yên.  I scanned the resolution carefully, noting that line 5 discusses merging \"Minh Tân\" from \"Huyện Phù Cừ\" into a new ward. However, the more relevant point is on line 7.  It explicitly states the formation of a *new* \"Xã Tiên Tiến\" by merging \"Đình Cao,\" \"Nhật Quang,\" and \"Tiên Tiến.\" Given that the *old* address included \"Xã Tiên Tiến,\" this is a strong indicator of the correct new ward. It is not specifying the district of \"Tiên Tiến\" in this line, but in the context of the resolution, the relevant context is \"tỉnh Hưng Yên\" for all mentioned wards.\n\nTo confirm, I double-checked the `New wards` list, specifically searching for \"Xã Tiên Tiến\" within \"Tỉnh Hưng Yên.\"  Lo and behold, a perfect match: `{\"ward_code\":\"12424\",\"ward_name\":\"Xã Tiên Tiến\",\"province_name\":\"Tỉnh Hưng Yên\"}`.  The match is confirmed by line 7 of the resolution 1666/NQ-UBTVQH15. I am therefore confident in the transformation.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Hưng Yên và tỉnh Thái Bình, lấy tên là tỉnh Hưng Yên"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "12424",
+      "ward_name": "Xã Tiên Tiến"
+    },
+    {
+      "citation": {
+        "header": "1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên",
+        "line": "7. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đình Cao, Nhật Quang và Tiên Tiến thành xã mới có tên gọi là xã Tiên Tiến."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "12424",
+      "ward_name": "Xã Tiên Tiến"
+    }
+  ]
+}

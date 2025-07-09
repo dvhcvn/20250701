@@ -1,0 +1,28 @@
+{
+  "address": "Xã Nguyên Phúc, Huyện Bạch Thông, Tỉnh Bắc Kạn",
+  "ellapsedInMs": 8407,
+  "estimatedCost": 0.0030291000000000003,
+  "thought": "**My Analysis of the Address Mapping**\n\nOkay, so I've been tasked with mapping this old Vietnamese address to its new administrative equivalent. It seems straightforward, but I need to be meticulous.  Here's my thought process:\n\nFirst, I identified the old address components: \"Xã Nguyên Phúc\" (the ward), \"Huyện Bạch Thông\" (the district - but I know districts are no longer a factor, it's just context), and \"Tỉnh Bắc Kạn\" (the province).\n\nThe real work begins with processing those crucial resolutions. I started with Resolution 60-NQ/TW. Checking the list of provinces *not* undergoing mergers, Bắc Kạn wasn't on it. Aha! That's a good starting point. Checking the provinces *undergoing* mergers, I found it: \"Hợp nhất tỉnh Bắc Kạn và tỉnh Thái Nguyên, lấy tên là tỉnh Thái Nguyên\". Perfect! So, Bắc Kạn is now part of Thái Nguyên. That's my first key piece of information.\n\nNext up, Resolution 1683/NQ-UBTVQH15. This deals specifically with the restructuring of wards in Thái Nguyên, so it's directly relevant now that Bắc Kạn is merged in. I had to sift through the lines of this resolution to find \"Xã Nguyên Phúc\". On line 61, bingo! It clearly states that \"Xã Nguyên Phúc\" is being merged with other wards to form \"xã Cẩm Giàng\". That looks very promising.  Then, I double-checked line 63, just to be sure.  While it mentions \"xã Bạch Thông\", and it's from the old district, it's formed from different wards, and explicitly *not* \"Nguyên Phúc\". So I've successfully differentiated these new wards.\n\nNow, I cross-referenced this against the provided new ward data. I found that \"Xã Cẩm Giàng\" does, in fact, exist in the new wards list, and crucially, it's listed under \"Tỉnh Thái Nguyên\", which confirms the province merger. I checked for \"Xã Bạch Thông\" as well, but it's clearly not related to \"Nguyên Phúc\".\n\nConsidering all this, my confidence in this mapping is high. The province merger is explicit, and the resolution explicitly links \"Xã Nguyên Phúc\" to \"xã Cẩm Giàng\", which is then confirmed by the new ward data. I'm now ready to construct the JSON output. My final conclusion is one entry for  \"Xã Cẩm Giàng\".\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Bắc Kạn và tỉnh Thái Nguyên, lấy tên là tỉnh Thái Nguyên"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thái Nguyên",
+      "ward_code": "02008",
+      "ward_name": "Xã Cẩm Giàng"
+    },
+    {
+      "citation": {
+        "header": "1683/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thái Nguyên",
+        "line": "61. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Quân Hà, Nguyên Phúc, Mỹ Thanh và Cẩm Giàng thành xã mới có tên gọi là xã Cẩm Giàng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thái Nguyên",
+      "ward_code": "02008",
+      "ward_name": "Xã Cẩm Giàng"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Phú Đa, Huyện Phú Vang, Thành phố Huế",
+  "ellapsedInMs": 5618,
+  "estimatedCost": 0.0020964,
+  "thought": "**Deconstructing and Reconstructing an Old Address**\n\nOkay, so I'm presented with the task of mapping \"Thị trấn Phú Đa, Huyện Phú Vang, Thành phố Huế\" to its new administrative unit. My initial thought process is to break this down methodically.\n\nFirst, I need to pinpoint the key components: \"Thị trấn Phú Đa\" is the old ward, and \"Thành phố Huế\" is the old province. Simple enough.\n\nNext, I have to consider any changes in the province itself. I immediately consult the relevant resolutions, specifically looking for \"Thành phố Huế.\" The good news is, resolution \"60-NQ/TW\" explicitly states that \"Thành phố Huế\" is *not* being merged. That saves me a step.\n\nNow, I shift my focus to the ward level, \"Thị trấn Phú Đa.\" I meticulously scan the provided resolutions, zeroing in on any mention of this ward. And there it is! Resolution \"1675/NQ-UBTVQH15\" provides the answer: \"Sắp xếp các đơn vị hành chính cấp xã của thành phố Huế.\" It clearly states that \"Thị trấn Phú Đa, xã Phú Gia và xã Vinh Hà\" are consolidated into a new unit, \"xã Phú Vang\".\n\nI've got the new ward name, now I need to confirm its code. I compare \"xã Phú Vang\" and \"Thành phố Huế\" to the `New wards` list. Lo and behold, there's a perfect match:  `{\"ward_code\":\"19942\",\"ward_name\":\"Xã Phú Vang\",\"province_name\":\"Thành phố Huế\"}`. Jackpot!\n\nThis confirms the new ward's code. This is a very clean cut case so I am highly confident.\n\nTherefore, the final output JSON will include:\n\n*   The citation details from \"1675/NQ-UBTVQH15\".\n*   \"High\" confidence.\n*   The matching new ward information with its code and province.",
+  "result": [
+    {
+      "citation": {
+        "header": "1675/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Huế",
+        "line": "26. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số củathị trấn Phú Đa, xã Phú Gia và xã Vinh Hà thành xã mới có tên gọi là xã Phú Vang."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Huế",
+      "ward_code": "19942",
+      "ward_name": "Xã Phú Vang"
+    }
+  ]
+}

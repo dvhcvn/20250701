@@ -1,0 +1,18 @@
+{
+  "address": "Xã Ma Đa Guôi, Huyện Đạ Huoai, Tỉnh Lâm Đồng",
+  "ellapsedInMs": 7055,
+  "estimatedCost": 0.0024510000000000005,
+  "thought": "**Address Mapping: Old to New Administrative Units**\n\nOkay, I'm working with a Vietnamese address and need to translate the old administrative unit, \"Xã Ma Đa Guôi\" in \"Tỉnh Lâm Đồng,\" to its modern equivalent based on provided resolutions and ward data. Let's break this down systematically.\n\nFirst, I identified the original province and ward.  \"Xã Ma Đa Guôi\" is the ward, and \"Tỉnh Lâm Đồng\" is the province.  The province name, \"Lâm Đồng,\" is a common one, so I had to confirm if there were any mergers or name changes. Looking into resolution `60-NQ/TW`, I see that \"Tỉnh Lâm Đồng\" remained unchanged. That part is straightforward.\n\nNow, the main focus is \"Xã Ma Đa Guôi.\" I'll need to scrutinize the resolutions for information on any changes to this specific ward. Checking the `Other resolutions` data, specifically `1671/NQ-UBTVQH15`, I hit paydirt.  The resolution says, \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Mađaguôi, xã Mađaguôi và xã Đạ Oai thành xã mới có tên gọi là **xã Đạ Huoai**.\"  \n\nThe input address mentions \"Ma Đa Guôi,\" which, with my expertise, I recognize as \"Mađaguôi\" (allowing for minor diacritic and spacing variations).  This, along with the other mentions in the resolution, points directly to \"Xã Đạ Huoai\" as the new unit. This is a very clear match.\n\nTo confirm this mapping, I'll cross-reference \"Xã Đạ Huoai\" with the `New wards` dataset.  And there it is: `{\"ward_code\":\"25099\",\"ward_name\":\"Xã Đạ Huoai\",\"province_name\":\"Tỉnh Lâm Đồng\"}`.  The match is perfect: \"Xã Đạ Huoai\" in \"Tỉnh Lâm Đồng.\"\n\nBased on these findings, I'm confident in constructing the JSON output.  The citation will point to the relevant resolution. My confidence is high because of the direct match in the wording of the resolution. The province will be \"Tỉnh Lâm Đồng\" because it remained unchanged. The ward code will be \"25099,\" and the ward name is \"Xã Đạ Huoai\".  Essentially, the input address \"Xã Ma Đa Guôi\" (which is essentially \"Mađaguôi\") has been successfully mapped to the new ward, \"Xã Đạ Huoai\".\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng",
+        "line": "33. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Mađaguôi, xã Mađaguôi và xã Đạ Oai thành xã mới có tên gọi là xã Đạ Huoai."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "25099",
+      "ward_name": "Xã Đạ Huoai"
+    }
+  ]
+}

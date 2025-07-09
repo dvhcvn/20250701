@@ -1,0 +1,18 @@
+{
+  "address": "Phường Mộc Lỵ, Thị xã Mộc Châu, Tỉnh Sơn La",
+  "ellapsedInMs": 5664,
+  "estimatedCost": 0.0017783,
+  "thought": "**Address Mapping Analysis: Phường Mộc Lỵ, Thị xã Mộc Châu, Tỉnh Sơn La**\n\nOkay, so the user wants to map this old address. Let's see... \"Phường Mộc Lỵ, Thị xã Mộc Châu, Tỉnh Sơn La\". First, the province is pretty straightforward: **Tỉnh Sơn La**.\n\nNow, I'll need to check the relevant resolutions to see if anything's changed. I'll start with the provincial-level ones, like the resolution on administrative mergers (60-NQ/TW). Good, it looks like **Tỉnh Sơn La isn't listed for any large-scale mergers.**\n\nNext, I need to focus on *Phường Mộc Lỵ* specifically. I'll search for resolutions that might impact this particular ward. Ah, here we go, \"1681/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Sơn La\" looks promising.  Let's see... Line 65 is the key!  It states that all of *Phường Mộc Lỵ* will be merged with *Phường Mường Sang* and *Xã Chiềng Hắc* to form a brand new ward named **Phường Mộc Châu**.\n\nNow to make sure this is accurate, I'll need to check the \"New wards\" data. I'm looking for a new ward named \"Phường Mộc Châu\" in \"Tỉnh Sơn La\". There it is! `{\"ward_code\":\"03980\",\"ward_name\":\"Phường Mộc Châu\",\"province_name\":\"Tỉnh Sơn La\"}`. That's a perfect match.\n\nSo, I can confidently construct the JSON output:\n\n*   **`citation`**: I'll include the header and line 65 from the relevant resolution.\n*   **`confidence`**: Definitely high here; it's a direct and clear mapping.\n*   **`province_name`**:  \"Tỉnh Sơn La\" - stays the same.\n*   **`ward_code`**: \"03980\"\n*   **`ward_name`**: \"Phường Mộc Châu\"\n\nPerfect. That should accurately map the old address.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1681/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Sơn La",
+        "line": "65. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Mộc Lỵ, phường Mường Sang và xã Chiềng Hắc thành phường mới có tên gọi là phường Mộc Châu."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Sơn La",
+      "ward_code": "03980",
+      "ward_name": "Phường Mộc Châu"
+    }
+  ]
+}

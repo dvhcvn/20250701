@@ -1,0 +1,18 @@
+{
+  "address": "Xã An Bình Tây, Huyện Ba Tri, Tỉnh Bến Tre",
+  "ellapsedInMs": 8678,
+  "estimatedCost": 0.0029971999999999998,
+  "thought": "**My Analysis of the Administrative Address Mapping**\n\nOkay, so I'm tackling this address: \"Xã An Bình Tây, Huyện Ba Tri, Tỉnh Bến Tre\". Let's break this down systematically, focusing on the changes. First, I need to understand that the user wants to map old addresses to current administrative units.\n\nMy initial approach is to start with the province.  \"Tỉnh Bến Tre\" rings a bell.  I immediately cross-reference it with those critical province resolutions, especially the ones concerning boundary adjustments. Ah, there it is! Resolution 60-NQ/TW describes the merger of Bến Tre, Vĩnh Long, and Trà Vinh, resulting in \"Tỉnh Vĩnh Long.\" That's the first piece.\n\nNow, I shift my attention to \"Xã An Bình Tây.\" The next logical step is to consult the secondary resolutions, those specific to ward-level changes within provinces. I'm searching for direct mentions of \"Xã An Bình Tây.\" Bingo! Resolution 1687/NQ-UBTVQH15 catches my eye. It details the re-organization within \"Tỉnh Vĩnh Long,\" which, of course, used to be Bến Tre. Specifically, line 83 from this resolution clarifies the merging of \"Xã An Bình Tây\" into \"xã Ba Tri.\" Perfect - a direct mapping!\n\nThis resolution is quite helpful, as it directly addresses our initial address. I'm noting the language used is straightforward, leaving little room for ambiguity.\n\nNext, I need to find the ward code for the new ward.  Armed with \"xã Ba Tri\" and \"Tỉnh Vĩnh Long,\" I look through the list of new administrative wards.  A quick search reveals a clear match: `{\"ward_code\":\"29110\",\"ward_name\":\"Xã Ba Tri\",\"province_name\":\"Tỉnh Vĩnh Long\"}`. That gives me the ward code, completing the mapping process.\n\nI will construct the output, making sure to show clearly the derivation for each field:\n\n*   `province_name`: \"Tỉnh Vĩnh Long\" - derived from Resolution 60-NQ/TW.\n*   `ward_name`: \"Xã Ba Tri\" - derived from line 83 of Resolution 1687/NQ-UBTVQH15.\n*   `ward_code`: \"29110\" - directly from the new ward list.\n*   `citation`:  I'll include the header and relevant line from the resolutions, for traceability.\n*   `confidence`: \"high\" - given the clear and direct linking between the old and new units.\n\nLet me double-check my logic: the provincial re-organization is the foundation, followed by the specific ward re-organization. Yes, this is a clear and high-confidence mapping, I am satisfied with the mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long",
+        "line": "83. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Ba Tri và các xã Vĩnh Hòa (huyện Ba Tri), An Đức, Vĩnh An,An Bình Tây thành xã mới có tên gọi là xã Ba Tri."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "29110",
+      "ward_name": "Xã Ba Tri"
+    }
+  ]
+}

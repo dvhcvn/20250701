@@ -1,0 +1,18 @@
+{
+  "address": "Xã Lê Hóa, Huyện Tuyên Hóa, Tỉnh Quảng Bình",
+  "ellapsedInMs": 6774,
+  "estimatedCost": 0.002682,
+  "thought": "**My Analysis of the Address Mapping**\n\nOkay, so I'm tasked with figuring out the new administrative unit for an old Vietnamese address.  Let's break this down. First, I need to understand the old address: it's \"Xã Lê Hóa\" in \"Huyện Tuyên Hóa\", which is within \"Tỉnh Quảng Bình\".\n\nNow, I start by cross-referencing this information with the province resolutions (like 60-NQ/TW). I quickly notice that Quảng Bình is indeed mentioned in a resolution, specifically about a merger with Quảng Trị.  So, based on this, the new province becomes \"Tỉnh Quảng Trị\".\n\nNext, I look at the more specific resolutions (1680/NQ-UBTVQH15) related to Quảng Trị, given the province merger.  I'm searching for \"Xã Lê Hóa\" in these resolutions. Line 9 jumps out at me:  it's talking about consolidating  \"Lê Hóa\" *and* a few other wards into a new ward called \"**xã Đồng Lê**\".  This is significant. Line 12 talks about merging a few different wards and does *not* mention Lê Hóa.\n\nSo, I turn to the \"New wards\" data.  I look for \"Xã Đồng Lê\" within \"Tỉnh Quảng Trị\", and bingo!  I find a match: `{\"ward_code\":\"18949\",\"ward_name\":\"Xã Đồng Lê\",\"province_name\":\"Tỉnh Quảng Trị\"}`.\n\nPutting it all together, I can construct my output.  The province is \"Tỉnh Quảng Trị\".  The new ward is clearly \"Xã Đồng Lê\", and its code is \"18949\".  My citation will point directly to the relevant line in the resolution, and because the old ward was explicitly mentioned in the process of mapping to the new ward, I'd give this mapping a \"high\" confidence level.\n\nFinally, the request implies I might find multiple matches, but in this instance, there's only one clear answer. Therefore, I'm confident in this as the most suitable mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1680/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Trị",
+        "line": "9. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Đồng Lê vàcác xã Kim Hóa, Lê Hóa, Thuận Hóa, Sơn Hóathành xã mới có tên gọi là xã Đồng Lê."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Trị",
+      "ward_code": "18949",
+      "ward_name": "Xã Đồng Lê"
+    }
+  ]
+}

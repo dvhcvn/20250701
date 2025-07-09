@@ -1,0 +1,28 @@
+{
+  "address": "Xã Tân Tiến, Huyện Hưng Hà, Tỉnh Thái Bình",
+  "ellapsedInMs": 11279,
+  "estimatedCost": 0.0063834,
+  "thought": "**Determining the New Administrative Unit for \"Xã Tân Tiến, Huyện Hưng Hà, Tỉnh Thái Bình\"**\n\nOkay, let's break this down systematically. The user's query requires us to find the current administrative unit for an old address. First, the old province is \"Tỉnh Thái Bình\". I know from province resolutions (specifically, 60-NQ/TW) that Thái Bình merged with Hưng Yên, so it's now \"Tỉnh Hưng Yên\".\n\nNext, we identify the specific old ward and district: \"Xã Tân Tiến, Huyện Hưng Hà\".  My approach is to then search \"Other resolutions\" for mentions of \"Tân Tiến\" in the context of \"Hưng Hà\" or the now-renamed \"Hưng Yên.\"\n\nLooking at resolution 1666/NQ-UBTVQH15, concerning the restructuring of administrative units in Hưng Yên, line 72 jumps out. It explicitly states, \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tân Tiến (huyện Hưng Hà), Thái Phương, Đoan Hùng và Phúc Khánh thành xã mới có tên gọi là **xã Tiên La**.\" Bingo! This is a perfect match for our old ward and district.\n\nI then check my \"New wards\" list and confirm that \"Xã Tiên La\" is, in fact, listed in Hưng Yên.  It's assigned ward code \"12634\".  I'll need to cross-reference this information to construct the JSON output.\n\nI went through other \"Tân Tiến\" mentions to make sure I am unambiguous in my determination.\n\nMy confidence level is high because this resolution directly addresses the old ward and district, and the province merger is straightforward. This is clearly the correct solution.\n\nThe output will be:\n\n```json\n{\n  \"province_name\": \"Tỉnh Hưng Yên\",\n  \"ward_name\": \"Xã Tiên La\",\n  \"ward_code\": \"12634\",\n  \"citation\": \"1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên\",\n  \"confidence\": \"high\"\n}\n```\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "6. Hợp nhất tỉnh Hưng Yên và tỉnh Thái Bình, lấy tên là tỉnh Hưng Yên"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "12634",
+      "ward_name": "Xã Tiên La"
+    },
+    {
+      "citation": {
+        "header": "1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên",
+        "line": "72. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tân Tiến (huyện Hưng Hà), Thái Phương, Đoan Hùng và Phúc Khánh thành xã mới có tên gọi là xã Tiên La."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "12634",
+      "ward_name": "Xã Tiên La"
+    }
+  ]
+}

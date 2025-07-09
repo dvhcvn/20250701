@@ -1,0 +1,18 @@
+{
+  "address": "Xã Đại Bình, Huyện Đầm Hà, Tỉnh Quảng Ninh",
+  "ellapsedInMs": 7090,
+  "estimatedCost": 0.0020877,
+  "thought": "**Analysis of Address Restructuring: \"Xã Đại Bình, Huyện Đầm Hà, Tỉnh Quảng Ninh\"**\n\nOkay, so I've got this address to work with: \"Xã Đại Bình, Huyện Đầm Hà, Tỉnh Quảng Ninh\". My goal is to determine the *new* administrative unit it now falls under. First, I always start with the province.  It's \"Tỉnh Quảng Ninh,\" so I double-checked `60-NQ/TW` to be sure there were no province-level mergers.  Good, Quảng Ninh remains Quảng Ninh.\n\nNext, I need to focus on the ward and district.  \"Xã Đại Bình, Huyện Đầm Hà\". I quickly noticed that the resolutions eliminate districts, so \"Huyện Đầm Hà\" is no longer the relevant district. My attention is now solely on \"Xã Đại Bình\" within \"Tỉnh Quảng Ninh.\"\n\nI then went through my available resolutions, looking for any that mentioned \"Xã Đại Bình\" in \"Tỉnh Quảng Ninh.\" The first one, `1654/NQ-UBTVQH15`, was for An Giang, so I skipped that. Then, I hit the jackpot with `1679/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ninh`. Line 12 explicitly states that \"Xã Đại Bình\", along with a few others, will be merged into a new unit: \"**xã Đầm Hà**\". Bingo!\n\nI confirmed this by checking my \"New Wards\" data.  I was looking for an entry for \"xã Đầm Hà\" in \"Tỉnh Quảng Ninh.\" And there it was: `{\"ward_code\":\"06895\",\"ward_name\":\"Xã Đầm Hà\",\"province_name\":\"Tỉnh Quảng Ninh\"}`. It's a perfect match!\n\nTherefore, the updated administrative unit for \"Xã Đại Bình\" is \"Xã Đầm Hà.\"  I'm confident in this conclusion. I can build the JSON output now. The `citation` is `1679/NQ-UBTVQH15`, the `confidence` is high. The `province_name` is still \"Tỉnh Quảng Ninh\". The `ward_code` is \"06895,\" and the `ward_name` is \"Xã Đầm Hà\". Done. This was a pretty straightforward one.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1679/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ninh",
+        "line": "12. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Đầm Hà và các xã Tân Bình, Đại Bình, Tân Lập, Đầm Hà thành xã mới có tên gọi là xã Đầm Hà."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ninh",
+      "ward_code": "06895",
+      "ward_name": "Xã Đầm Hà"
+    }
+  ]
+}

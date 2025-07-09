@@ -1,0 +1,18 @@
+{
+  "address": "Phường Vỹ Dạ, Quận Thuận Hóa, Thành phố Huế",
+  "ellapsedInMs": 6966,
+  "estimatedCost": 0.0025013,
+  "thought": "**My Thought Process on Mapping the Old Address**\n\nOkay, I'm tasked with translating an old address into the new administrative structure.  The key pieces are \"Phường Vỹ Dạ\" and \"Thành phố Huế\".  My first instinct is to pin down the old ward and province.\n\nThe province, \"Thành phố Huế,\" is pretty straightforward. I check the province resolutions, specifically 60-NQ/TW, to see if anything happened to it.  Good news, it's listed under \"Các đơn vị hành chính cấp tỉnh không thực hiện sáp nhập,\" so \"Thành phố Huế\" remains untouched.\n\nNow, for the ward, \"Phường Vỹ Dạ.\"  I dive into the `other_resolutions`.  Bingo!  Resolution 1675/NQ-UBTVQH15 catches my eye. It details the *restructuring* of the wards in Huế. Line 14 explicitly states, \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Thủy Vân, Xuân Phú và Vỹ Dạ thành phường mới có tên gọi là **phường Vỹ Dạ**.\"  Crucially, it mentions the *same* name.\n\nThis means the *old* \"Phường Vỹ Dạ\" was folded into a *new* \"Phường Vỹ Dạ\" along with \"Thủy Vân\" and \"Xuân Phú.\" The name is the same, but it's a new entity. I need to find the specific entry for this new ward.\n\nI then check the `new_wards_data`.  The entry `{\"ward_code\":\"19777\",\"ward_name\":\"Phường Vỹ Dạ\",\"province_name\":\"Thành phố Huế\"}` is a perfect match!  This confirms my hypothesis – this is the new \"Phường Vỹ Dạ\" I'm looking for.\n\nI'm confident in this mapping.  My reasoning is:\n\n*   The old province is unchanged.\n*   The resolution explicitly states the old ward's name and its merger into a new ward of the *same* name.\n*   The data contains the exact new ward with the corresponding ward code and province.\n\nTherefore, the `JSON` output will be based on this specific resolution, with a \"high\" confidence level because of the direct mapping, with province name as \"Thành phố Huế,\" and the new ward name and code from my matching entry.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1675/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Huế",
+        "line": "14. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Thủy Vân, Xuân Phú và Vỹ Dạ thành phường mới có tên gọi là phường Vỹ Dạ."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Huế",
+      "ward_code": "19777",
+      "ward_name": "Phường Vỹ Dạ"
+    }
+  ]
+}

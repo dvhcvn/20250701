@@ -1,0 +1,17 @@
+{
+  "address": "Xã Vũ Bản, Huyện Bình Lục, Tỉnh Hà Nam",
+  "ellapsedInMs": 8451,
+  "estimatedCost": 0.0028153,
+  "thought": "**Navigating Vietnamese Administrative Changes: A Focused Analysis**\n\nOkay, so I'm tackling this Vietnamese address mapping problem. The goal is to figure out the corresponding administrative units under the new system for an old address. Here's how I'm thinking about it:\n\nFirst, I need to break down the input address: \"Xã Vũ Bản, Huyện Bình Lục, Tỉnh Hà Nam\". From that, I can extract the old ward (\"Xã Vũ Bản\"), district (\"Huyện Bình Lục\"), and province (\"Tỉnh Hà Nam\").  I'm aware that the districts are being eliminated so they are for context only.\n\nNow, the real work begins with processing the resolutions. The key is to see how the old administrative units translate to the new ones.\n\nInitially, I looked at the province level. Based on Resolution 60-NQ/TW, I determined that \"Tỉnh Hà Nam\" is *not* in the \"không thực hiện sáp nhập\" (no mergers) list, but it *is* in the \"mới sau sáp nhập, hợp nhất\" (new after mergers) list, specifically as part of the merger into \"Tỉnh Ninh Bình\".  Therefore, my high-confidence mapping is that the old province \"Tỉnh Hà Nam\" is now \"Tỉnh Ninh Bình\".\n\nNext, I delved into the other relevant resolutions, specifically looking for any mentions of \"Xã Vũ Bản\".  This is where things got a bit tricky.\n\nResolution 1674/NQ-UBTVQH15, concerning Ninh Bình, does mention \"xã Vụ Bản\" in its line 25. However, this is creating a *new* ward named \"xã Vụ Bản\" from other old wards. This isn't the same \"Xã Vũ Bản\" from my input address.  The old \"Xã Vũ Bản\" (from Hà Nam) isn't explicitly mentioned in this resolution. It only creates a *new* \"Vụ Bản\" from existing entities. Given the merging history, while the resolution applies to Ninh Bình (the destination province), it doesn't directly map the *old* \"Xã Vũ Bản.\"\n\nI also checked Resolution 1676/NQ-UBTVQH15 for Phú Thọ, but it's irrelevant. It's for a different province entirely, and although it mentions *towns* and *wards*, none correspond to my specific \"Xã Vũ Bản\" input.\n\n**In summary:**\n\n*   I've confirmed \"Tỉnh Hà Nam\" is now \"Tỉnh Ninh Bình\".\n*   I haven't found a direct mapping for \"Xã Vũ Bản\" from Hà Nam to a specific *new* ward name within the new administrative structure of Ninh Bình based on the provided resolutions. Resolution 1674 is the closest match, but that resolution creates *a new* \"Vụ Bản\" and does not account for the one I am looking for.\n*   I need to further investigate if there are other resolutions or data sources that might clarify the specific fate of that old ward. I may need to look for supplemental datasets to confirm this mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Hà Nam, tỉnh Ninh Bình và tỉnh Nam Định; lấy tên là tỉnh Ninh Bình"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": ""
+    }
+  ]
+}

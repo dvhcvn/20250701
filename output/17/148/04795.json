@@ -1,0 +1,18 @@
+{
+  "address": "Phường Thịnh Lang, Thành phố Hòa Bình, Tỉnh Hoà Bình",
+  "ellapsedInMs": 6925,
+  "estimatedCost": 0.0035399000000000003,
+  "thought": "**My Analysis of the Administrative Unit Change**\n\nOkay, so I'm presented with an old address: \"Phường Thịnh Lang, Thành phố Hòa Bình, Tỉnh Hoà Bình.\" My task is to determine the new administrative unit (ward) for it. Here's how I'm approaching this, step-by-step:\n\nFirst, I identify the old province: \"Tỉnh Hoà Bình\". Then, I need to check relevant province resolutions, specifically those related to potential mergers (like the 60-NQ/TW series).  My initial check reveals a key resolution: \"Hợp nhất tỉnh Vĩnh Phúc, tỉnh Phú Thọ và tỉnh Hoà Bình; lấy tên là tỉnh Phú Thọ.\" This means \"Tỉnh Hoà Bình\" was merged into \"Tỉnh Phú Thọ\" – a critical piece of the puzzle.\n\nNext, I need to focus on the old ward, \"Phường Thịnh Lang.\" The challenge is to find how it's been affected by the changes. I begin searching \"Other resolutions,\" specifically looking for \"Phường Thịnh Lang\" within the context of *either* the original \"Tỉnh Hoà Bình\" or, since it's now merged, \"Tỉnh Phú Thọ\". I look at the `lines` of the resolutions for mentions.\n\nMy search leads me to Resolution \"1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ\".  This resolution seems promising because it directly deals with administrative changes *within* Phú Thọ.  Inside the resolution, I find line 143: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Đồng Tiến, Hữu Nghị, Phương Lâm, Quỳnh Lâm, Tân Thịnh, Thịnh Lang và Trung Minh thành phường mới có tên gọi là **phường Hòa Bình**.\" Boom! This is the smoking gun! It explicitly states that \"Phường Thịnh Lang\" *is being merged into* a new ward called \"Phường Hòa Bình.\" The heading of the resolution reinforces the relevant change for Phú Thọ.\n\nTo be absolutely sure, I'll verify this new \"phường Hòa Bình\" in the \"New wards\" list for \"Tỉnh Phú Thọ.\" And there it is: `{\"ward_code\":\"04795\",\"ward_name\":\"Phường Hòa Bình\",\"province_name\":\"Tỉnh Phú Thọ\"}`. This confirms the new ward information.\n\nFinally, I'll construct the JSON output. The `province_name` is clearly \"Tỉnh Phú Thọ.\" The `ward_name` is \"Phường Hòa Bình.\"  I have the `ward_code` as \"04795.\" And, of course, the `citation` details the critical resolution and its specific line. The confidence level here is \"high,\" given the direct match and clear resolution. It is the solution!\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "143. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Đồng Tiến, Hữu Nghị, Phương Lâm, Quỳnh Lâm, Tân Thịnh, Thịnh Lang và Trung Minh thành phường mới có tên gọi là phường Hòa Bình."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "04795",
+      "ward_name": "Phường Hòa Bình"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Sông Khoai, Thị xã Quảng Yên, Tỉnh Quảng Ninh",
+  "ellapsedInMs": 7578,
+  "estimatedCost": 0.0029776,
+  "thought": "**Analysis of Address and Resolution Mapping**\n\nOkay, so I'm presented with an old Vietnamese address and need to pinpoint its corresponding new administrative unit. My initial step is to break down the provided address: \"Xã Sông Khoai, Thị xã Quảng Yên, Tỉnh Quảng Ninh\". From this, I immediately identify \"Xã Sông Khoai\" as the old ward, \"Thị xã Quảng Yên\" as the old district (which, though eliminated in many cases, might offer context), and \"Tỉnh Quảng Ninh\" as the old province.\n\nNow, I'm working with the resolutions. First, I consult the province-level changes, specifically 60-NQ/TW. This confirms that \"Tỉnh Quảng Ninh\" remains unchanged. Then, I dive into the other resolutions, focusing on ward-level modifications, knowing I must specifically look for \"Xã Sông Khoai\".\n\nMy focus lands on resolution 1679/NQ-UBTVQH15, concerning Quảng Ninh province. Line 31 jumps out: it explicitly states that \"Xã Sông Khoai\" is merged into \"phường Hiệp Hòa\". This is the key piece of information I needed.  Line 32, regarding other wards, does not impact \"Xã Sông Khoai\".\n\nTo solidify this mapping, I now consult the provided \"New wards\" list, searching for \"phường Hiệp Hòa\". There it is, perfectly matching:  `{\"ward_code\":\"07147\",\"ward_name\":\"Phường Hiệp Hòa\",\"province_name\":\"Tỉnh Quảng Ninh\"}`. The province confirmation is consistent with my initial analysis.\n\nGiven the explicit resolution and the direct match, I'm confident in constructing the output:\n\n*   **`citation.header`**: \"1679/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ninh\"\n*   **`citation.line`**: \"31. Sắp xếp toàn bộ diện tích tự nhiên và quy mô dân số của phường Cộng Hòa, xã Sông Khoai và xã Hiệp Hòa thành phường mới có tên gọi là phường Hiệp Hòa.\"\n*   **`confidence`**: \"high\"\n*   **`province_name`**: \"Tỉnh Quảng Ninh\"\n*   **`ward_code`**: \"07147\"\n*   **`ward_name`**: \"Phường Hiệp Hòa\"\n\nFinally, I've confirmed that based on these clear findings, there's only one relevant new ward candidate to be suggested. My analysis is complete.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1679/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ninh",
+        "line": "31. Sắp xếp toàn bộ diện tích tự nhiên và quy mô dân số của phường Cộng Hòa, xã Sông Khoai và xã Hiệp Hòa thành phường mới có tên gọi là phường Hiệp Hòa."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ninh",
+      "ward_code": "07147",
+      "ward_name": "Phường Hiệp Hòa"
+    }
+  ]
+}

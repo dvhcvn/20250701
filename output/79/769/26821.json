@@ -1,0 +1,28 @@
+{
+  "address": "Phường Linh Đông, Thành phố Thủ Đức, Thành phố Hồ Chí Minh",
+  "ellapsedInMs": 8070,
+  "estimatedCost": 0.0037215,
+  "thought": "**Identifying the New Administrative Units for \"Phường Linh Đông\"**\n\nOkay, so I'm presented with \"Phường Linh Đông, Thành phố Thủ Đức, Thành phố Hồ Chí Minh\" and need to determine its corresponding new administrative units based on the resolutions and data I have.\n\nFirst, I identified the old ward as \"Phường Linh Đông\" and the old province as \"Thành phố Hồ Chí Minh.\"  It's important to note that \"Thành phố Thủ Đức\" is a *city* within Thành phố Hồ Chí Minh, but the resolutions address changes at the province and ward levels.  Specifically, the resolutions about Ho Chi Minh City mention \"thành phố Thủ Đức\" in the context of wards, so I need to keep that in mind.\n\nI then checked Resolution 60-NQ/TW, which, while mentioning the merger of provinces, confirms that Thành phố Hồ Chí Minh remains \"Thành phố Hồ Chí Minh.\"  This is relevant for my final output, ensuring the `province_name` is correct.\n\nNext, the critical step was examining the other resolutions, and specifically 1685/NQ-UBTVQH15 (Thành phố Hồ Chí Minh).  This resolution proved to be key. It explicitly states that \"một phần diện tích tự nhiên, quy mô dân số của phường Linh Đông\" was merged into the new ward \"phường Hiệp Bình\" (line 67).  Furthermore, it states that \"phần còn lại của phường Linh Đông sau khi sắp xếp theo quy định tại khoản 67 Điều này\" was merged into the new ward \"phường Thủ Đức\" (line 68).  This is very clear and conclusive.\n\nBased on these resolutions, I identified the new wards as \"phường Hiệp Bình\" and \"phường Thủ Đức.\" Then, I cross-referenced this with the `New wards` list and found the correct entries.  I confirmed the `province_name` as \"Thành phố Hồ Chí Minh\" for both new wards, aligning with my understanding from the province resolution.\n\nGiven the explicit wording in the resolution, the direct mapping of the old ward to the new wards, and the consistency in province names, I have very high confidence in my findings. Therefore, I will construct a JSON output with the two new wards, their respective ward codes, and the correct province name, citing the relevant resolution.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1685/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của Thành phố Hồ Chí Minh",
+        "line": "67. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Hiệp Bình Chánh, phường Hiệp Bình Phước và một phần diện tích tự nhiên, quy mô dân số của phường Linh Đông thành phường mới có tên gọi là phường Hiệp Bình."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hồ Chí Minh",
+      "ward_code": "26809",
+      "ward_name": "Phường Hiệp Bình"
+    },
+    {
+      "citation": {
+        "header": "1685/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của Thành phố Hồ Chí Minh",
+        "line": "68. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Bình Thọ, Linh Chiểu, Trường Thọ, một phần diện tích tự nhiên, quy mô dân số của phường Linh Tây và phần còn lại của phường Linh Đông sau khi sắp xếp theo quy định tại khoản 67 Điều này thành phường mới có tên gọi là phường Thủ Đức."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hồ Chí Minh",
+      "ward_code": "26824",
+      "ward_name": "Phường Thủ Đức"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Nga Thạch, Huyện Nga Sơn, Tỉnh Thanh Hóa",
+  "ellapsedInMs": 7257,
+  "estimatedCost": 0.0025349,
+  "thought": "**Address Mapping for Xã Nga Thạch, Thanh Hóa**\n\nOkay, so I need to map an old Vietnamese address. Let's see... the address is Xã Nga Thạch, Huyện Nga Sơn, Tỉnh Thanh Hóa. My first step is to break down the address into its components. I've got the ward, Xã Nga Thạch, the district, Huyện Nga Sơn, and the province, Tỉnh Thanh Hóa. Now, I need to check the resolutions.\n\nI'll start with 60-NQ/TW. This resolution lists the provinces and which ones are merging. I quickly scan it and find \"Tỉnh Thanh Hóa\" under \"Các đơn vị hành chính cấp tỉnh không thực hiện sáp nhập,\" meaning it's staying the same. Excellent! High confidence for the province being unchanged.\n\nNext, 1686/NQ-UBTVQH15 seems very relevant. It's about adjusting administrative units in Thanh Hóa. I'll search for \"Xã Nga Thạch\" in the lines. Aha! Line 14 is the key: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Nga Văn, Nga Phượng, Nga Thạch và Nga Thắng thành xã mới có tên gọi là **xã Nga Thắng**.\"  It explicitly states that Xã Nga Thạch is merging into Xã Nga Thắng.\n\nNow, I need to check the \"New wards\" data. I'll look for \"Xã Nga Thắng\". Bingo! `{\"ward_code\":\"16114\",\"ward_name\":\"Xã Nga Thắng\",\"province_name\":\"Tỉnh Thanh Hóa\"}`.  It's a perfect match.\n\nAlright, time to construct the JSON output. I'll use the resolution header and the line from the resolution. My confidence is high because everything fits together neatly. The province remains \"Tỉnh Thanh Hóa\", and the new ward details are \"ward_code\": \"16114\", \"ward_name\": \"Xã Nga Thắng\".\n\nI've double-checked the format and requirements. It's valid JSON, no comments or control tokens, and follows the correct schema. This should be a straightforward mapping. The old address is \"Xã Nga Thạch, Huyện Nga Sơn, Tỉnh Thanh Hóa\". The province stays the same. The resolution and the \"New wards\" data confirm that Xã Nga Thạch becomes Xã Nga Thắng. Everything checks out perfectly.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1686/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thanh Hóa",
+        "line": "14. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Nga Văn, Nga Phượng, Nga Thạch và Nga Thắng thành xã mới có tên gọi là xã Nga Thắng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thanh Hóa",
+      "ward_code": "16114",
+      "ward_name": "Xã Nga Thắng"
+    }
+  ]
+}

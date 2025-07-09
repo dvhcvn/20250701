@@ -1,0 +1,18 @@
+{
+  "address": "Xã Bản Hồ, Thị xã Sa Pa, Tỉnh Lào Cai",
+  "ellapsedInMs": 7194,
+  "estimatedCost": 0.0027208,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm tasked with mapping this old Vietnamese address to the new administrative structure. Let's see... the input address gives me \"Xã Bản Hồ\" as the old ward, \"Thị xã Sa Pa\" as the old district, and \"Tỉnh Lào Cai\" as the old province.\n\nFirst, I need to check the province resolutions. Ah, \"60-NQ/TW\" confirms that the province name remains \"Tỉnh Lào Cai\" – good, that's straightforward. High confidence on that one.\n\nNext, I'll comb through the other resolutions looking for mentions of \"Xã Bản Hồ\" or \"Thị xã Sa Pa\", and I'll focus on those within the context of \"Tỉnh Lào Cai\". Bingo! Resolution \"1673/NQ-UBTVQH15\" is relevant. Line 67 is the key: it explicitly states that \"Xã Bản Hồ\" (from Thị xã Sa Pa) is merged with \"xã Thanh Bình\" to form a *new* \"xã Bản Hồ\". Crucially, the *name* is kept, but the composition changes.\n\nNow, I'll cross-reference that with the list of new wards. I find exactly what I need: a new ward entry with \"Xã Bản Hồ\", province \"Tỉnh Lào Cai\", and the code \"03046\". Perfect.\n\nPutting it all together, the province is confirmed as \"Tỉnh Lào Cai\" with high confidence. Resolution 1673/NQ-UBTVQH15, line 67, directly addresses \"Xã Bản Hồ\" within \"Thị xã Sa Pa\" in \"Tỉnh Lào Cai\" and explains the merger.  And, the new ward list clearly shows a ward named \"Xã Bản Hồ\" in the correct province. Given the resolution explicitly uses the phrase \"thành xã mới có tên gọi là xã Bản Hồ\" and that the new ward is also \"Xã Bản Hồ\" in \"Tỉnh Lào Cai\", I have high confidence in this mapping.\n\nTherefore, the JSON output will be straightforward:  Province: \"Tỉnh Lào Cai\", Ward: \"Xã Bản Hồ\", Ward Code: \"03046\", Confidence: \"high\". The citation will point to Resolution 1673/NQ-UBTVQH15, line 67, highlighting the crucial merger information.  Done.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai",
+        "line": "67. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Thanh Bình (thị xã Sa Pa) và xã Bản Hồ thành xã mới có tên gọi là xã Bản Hồ."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "03046",
+      "ward_name": "Xã Bản Hồ"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "address": "Thị trấn Lai Uyên, Huyện Bàu Bàng, Tỉnh Bình Dương",
+  "ellapsedInMs": 9335,
+  "estimatedCost": 0.0034688,
+  "thought": "**Mapping \"Thị trấn Lai Uyên\" to New Administrative Units**\n\nOkay, so I'm presented with the task of translating an old address, specifically \"Thị trấn Lai Uyên, Huyện Bàu Bàng, Tỉnh Bình Dương,\" into the new administrative structure.  I know my way around these regulations, so let's break this down systematically.\n\nFirst, I see \"Tỉnh Bình Dương\" in the old address.  I immediately consult the \"60-NQ/TW\" resolution, as this often contains province-level reorganizations.  And there it is: \"Hợp nhất tỉnh Bà Rịa - Vũng Tàu, tỉnh Bình Dương và Thành phố Hồ Chí Minh; lấy tên là Thành phố Hồ Chí Minh.\" Bingo! \"Tỉnh Bình Dương\" is now part of \"Thành phố Hồ Chí Minh.\"\n\nNext, the tricky part – the ward.  \"Thị trấn Lai Uyên\" is the key.  I need to dive into the resolutions, especially those related to ward restructuring.  The relevant one here seems to be \"1685/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của Thành phố Hồ Chí Minh.\"\n\nScanning through, line 142 catches my eye: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Trừ Văn Thố, xã Cây Trường II và một phần diện tích tự nhiên, quy mô dân số của thị trấn Lai Uyên thành xã mới có tên gọi là **xã Trừ Văn Thố**.\"  Ah, so \"Thị trấn Lai Uyên\" is *partly* merged into \"xã Trừ Văn Thố.\"\n\nThen, line 143 clarifies: \"Sắp xếp phần còn lại của thị trấn Lai Uyên sau khi sắp xếp theo quy định tại khoản 142 Điều này thành xã mới có tên gọi là **xã Bàu Bàng**.\" The rest goes into \"xã Bàu Bàng.\"  This is a clean split.\n\nNow, I check the \"New wards\" data to confirm. I find:\n\n*   `{\"ward_code\":\"25819\",\"ward_name\":\"Xã Trừ Văn Thố\",\"province_name\":\"Thành phố Hồ Chí Minh\"}`\n*   `{\"ward_code\":\"25822\",\"ward_name\":\"Xã Bàu Bàng\",\"province_name\":\"Thành phố Hồ Chí Minh\"}`\n\nThese match perfectly!\n\nWith the resolution clearly stating the split and the data confirming it, my confidence is high. This is a direct mapping based on explicit text. Therefore, the JSON output is:\n\n*   For \"xã Trừ Văn Thố\":\n    *   `citation`: `\"1685/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của Thành phố Hồ Chí Minh\", \"142. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Trừ Văn Thố, xã Cây Trường II và một phần diện tích tự nhiên, quy mô dân số của thị trấn Lai Uyên thành xã mới có tên gọi là **xã Trừ Văn Thố**.\"`\n    *   `confidence`: \"high\"\n    *   `province_name`: \"Thành phố Hồ Chí Minh\"\n    *   `ward_code`: \"25819\"\n    *   `ward_name`: \"Xã Trừ Văn Thố\"\n*   For \"xã Bàu Bàng\":\n    *   `citation`: `\"1685/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của Thành phố Hồ Chí Minh\", \"143. Sắp xếp phần còn lại của thị trấn Lai Uyên sau khi sắp xếp theo quy định tại khoản 142 Điều này thành xã mới có tên gọi là **xã Bàu Bàng**.\"`\n    *   `confidence`: \"high\"\n    *   `province_name`: \"Thành phố Hồ Chí Minh\"\n    *   `ward_code`: \"25822\"\n    *   `ward_name`: \"Xã Bàu Bàng\"\n\nAnd that's that.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1685/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của Thành phố Hồ Chí Minh",
+        "line": "142. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Trừ Văn Thố, xã Cây Trường II và một phần diện tích tự nhiên, quy mô dân số của thị trấn Lai Uyên thành xã mới có tên gọi là xã Trừ Văn Thố."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hồ Chí Minh",
+      "ward_code": "25819",
+      "ward_name": "Xã Trừ Văn Thố"
+    },
+    {
+      "citation": {
+        "header": "1685/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của Thành phố Hồ Chí Minh",
+        "line": "143. Sắp xếp phần còn lại của thị trấn Lai Uyên sau khi sắp xếp theo quy định tại khoản 142 Điều này thành xã mới có tên gọi là xã Bàu Bàng."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hồ Chí Minh",
+      "ward_code": "25822",
+      "ward_name": "Xã Bàu Bàng"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Bằng Hành, Huyện Bắc Quang, Tỉnh Hà Giang",
+  "ellapsedInMs": 6802,
+  "estimatedCost": 0.0023897,
+  "thought": "**Mapping an Old Vietnamese Address to a New Ward**\n\nOkay, here's how I'm approaching this. The task is to take an old Vietnamese address and figure out its equivalent in the new administrative system. The specific address I'm working with is Xã Bằng Hành, Huyện Bắc Quang, Tỉnh Hà Giang.\n\nMy first step is to break down the address into its components: the ward (Xã Bằng Hành), the district (Huyện Bắc Quang), and the province (Tỉnh Hà Giang). Straightforward enough.\n\nNow, I need to consult the resolutions and the list of new wards. I start with the province. Looking at the province resolutions, I quickly find that \"Tỉnh Hà Giang\" has merged with \"Tỉnh Tuyên Quang,\" and the new province is called \"Tỉnh Tuyên Quang.\" This tells me I need to be focused on anything related to Tuyên Quang from here on.\n\nNext, I dig into the other resolutions. My goal here is to find anything that mentions \"Xã Bằng Hành\" or \"Huyện Bắc Quang.\" Bingo! I find Resolution 1684/NQ-UBTVQH15. This resolution explicitly states that \"Xã Bằng Hành\" is being *reformed*. It's merging with \"Kim Ngọc\" and \"Vô Điếm\" but keeping the name \"Xã Bằng Hành.\" This is key. It confirms that the ward still exists in some form, even after the changes. This resolution also tells us that relevant district level changes are also happening.\n\nThen, I cross-reference this information with the `new_wards` list. Lo and behold, there's an entry for \"Xã Bằng Hành\" in the correct new province, \"Tỉnh Tuyên Quang\"! The `ward_code` and `ward_name` are a perfect match.\n\nThe fact that the resolution *explicitly* addresses the re-formation of \"Xã Bằng Hành,\" combined with the direct match in the `new_wards` list, gives me a very high level of confidence in this mapping.\n\nTherefore, the final output will be a JSON object containing the resolution citation, the specific line that confirms the mapping, a \"high\" confidence level, the new province name (\"Tỉnh Tuyên Quang\"), the new ward code, and the new ward name. I'm ready to proceed with constructing the final JSON response.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "81. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Kim Ngọc, Vô Điếm và Bằng Hành thành xã mới có tên gọi là xã Bằng Hành."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "01180",
+      "ward_name": "Xã Bằng Hành"
+    }
+  ]
+}

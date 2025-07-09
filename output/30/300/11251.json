@@ -1,0 +1,28 @@
+{
+  "address": "Xã Đoàn Tùng, Huyện Thanh Miện, Tỉnh Hải Dương",
+  "ellapsedInMs": 7987,
+  "estimatedCost": 0.0035058999999999997,
+  "thought": "**Determining the New Administrative Unit for \"Xã Đoàn Tùng\"**\n\nOkay, so I'm tasked with figuring out where \"Xã Đoàn Tùng, Huyện Thanh Miện, Tỉnh Hải Dương\" is now. My approach is pretty straightforward:\n\n1.  **Province First:** I need to find out if \"Tỉnh Hải Dương\" (Hai Duong Province) has changed. The crucial document \"60-NQ/TW\" confirms that Hai Duong has merged with Hai Phong City, becoming \"Thành phố Hải Phòng\". Excellent, that's step one.\n\n2.  **Ward Dive:** Now for the messy bit – the actual wards. I have to scour the resolutions to see how \"Xã Đoàn Tùng\" has been reorganized. I'm focusing on \"Other resolutions\" and searching specifically for \"Đoàn Tùng\".\n\n3.  **The Reveal:** Aha! Two key resolutions provide the answer. `1669/NQ-UBTVQH15` is the goldmine.  \n    *   Line 88 states that \"Xã Đoàn Tùng\" contributes *partially* to the new \"Xã Thượng Hồng\", along with other old wards.\n    *   Line 107 then reveals the *remaining part* of \"Xã Đoàn Tùng\" is absorbed into \"Xã Nguyễn Lương Bằng\", also with other wards.\n    *   This tells me \"Xã Đoàn Tùng\" is no longer a complete entity.\n\n4.  **Connecting the Dots:** Essentially, \"Xã Đoàn Tùng\" is now split between \"Xã Thượng Hồng\" and \"Xã Nguyễn Lương Bằng.\" So, now I check the `New wards` list to grab the `ward_code` for each of these. I find:\n    *   `{\"ward_code\":\"10993\",\"ward_name\":\"Xã Thượng Hồng\",\"province_name\":\"Thành phố Hải Phòng\"}`\n    *   `{\"ward_code\":\"11242\",\"ward_name\":\"Xã Nguyễn Lương Bằng\",\"province_name\":\"Thành phố Hải Phòng\"}`\n\n5.  **Confidence Check:** The mapping here is pretty direct. The resolutions clearly and explicitly state the parts and contributions to the new wards. So, my confidence level in this is \"high.\" I'm confident I have a good answer.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "88. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Bình Xuyên (huyện Bình Giang), một phần diện tích tự nhiên của xã Thanh Tùng, xã Đoàn Tùng vàphần còn lại củacác xã Thúc Kháng,Thái Minh, Tân Hồng, Thái Dương,Thái Hòa sau khi sắp xếp theo quy định tại khoản 87 Điều này thành xã mới có tên gọi là xã Thượng Hồng."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "10993",
+      "ward_name": "Xã Thượng Hồng"
+    },
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "107. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Phạm Kha, xã Nhân Quyền, phần còn lại của xã Thanh Tùng và xã Đoàn Tùng sau khi sắp xếp theo quy định tại khoản 88 Điều này thành xã mới có tên gọi là xã Nguyễn Lương Bằng."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "11242",
+      "ward_name": "Xã Nguyễn Lương Bằng"
+    }
+  ]
+}

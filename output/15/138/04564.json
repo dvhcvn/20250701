@@ -1,0 +1,18 @@
+{
+  "address": "Xã Việt Cường, Huyện Trấn Yên, Tỉnh Yên Bái",
+  "ellapsedInMs": 8769,
+  "estimatedCost": 0.0035370999999999996,
+  "thought": "**Identifying the New Administrative Unit for the Provided Address**\n\nOkay, so I've got this old address: \"Xã Việt Cường, Huyện Trấn Yên, Tỉnh Yên Bái,\" and I need to figure out the new ward.  My first instinct is to break it down.\n\n*   **Step 1:  Pinpoint the Old Province and Ward**\n    \"Tỉnh Yên Bái\" is the old province, and \"Xã Việt Cường\" is the old ward. Simple enough.\n\n*   **Step 2:  Province Mergers -  Always the First Stop**\n    I need to check for any province mergers using the standard methodology. I've got a mental checklist of key resolutions. I scan those documents looking for the province and sure enough, Resolution 60-NQ/TW states that \"Tỉnh Yên Bái\" merged with \"Tỉnh Lào Cai.\"  The new province name is now \"Tỉnh Lào Cai.\"\n\n*   **Step 3:  Ward Changes within the *New* Province**\n    Since we're dealing with \"Tỉnh Lào Cai\" now, I need to focus my search on resolutions related to *that* province.  I've got a system for finding these.  I'm quickly able to locate Resolution \"1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai.\"\n\n    This is promising.  I scan the document for \"Xã Việt Cường\" specifically. Aha!  Line 37 is the jackpot. It says: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Việt Cường, Vân Hội và Việt Hồng thành xã mới có tên gọi là **xã Việt Hồng**.\"  Boom!  \"Xã Việt Cường\" is directly mentioned and merged into \"Xã Việt Hồng.\"\n\n*   **Step 4:  Details of the *New* Ward**\n    I head over to my \"New wards\" list for details on \"Xã Việt Hồng\" within the province \"Tỉnh Lào Cai.\" I find the relevant information: `{\"ward_code\":\"04564\",\"ward_name\":\"Xã Việt Hồng\",\"province_name\":\"Tỉnh Lào Cai\"}`.  Perfect.\n\n*   **Step 5:  Construct the Output**\n    My confidence in this match is high.  The old ward is explicitly mentioned and mapped to the new ward in a formal resolution. Therefore:\n\n    *   `citation.header`: \"1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai\"\n    *   `citation.line`: \"37. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Việt Cường, Vân Hội và Việt Hồng thành xã mới có tên gọi là xã Việt Hồng.\"\n    *   `confidence`: \"high\"\n    *   `province_name`: \"Tỉnh Lào Cai\"\n    *   `ward_code`: \"04564\"\n    *   `ward_name`: \"Xã Việt Hồng\"\n\nI need to confirm the output is an array of objects.\n\nLet me just double-check to be absolutely sure. Okay, old address \"Xã Việt Cường, Huyện Trấn Yên, Tỉnh Yên Bái\", New Province: Tỉnh Lào Cai, Resolution 1673/NQ-UBTVQH15, Line 37 links old Xa Viet Cuong to the New Xa Viet Hong. New Xa Viet Hong has code 04564.  Yup, that should be it.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai",
+        "line": "37. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Việt Cường, Vân Hội và Việt Hồng thành xã mới có tên gọi là xã Việt Hồng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "04564",
+      "ward_name": "Xã Việt Hồng"
+    }
+  ]
+}

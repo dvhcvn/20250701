@@ -1,0 +1,28 @@
+{
+  "address": "Phường Cẩm Nam, Thành phố Hội An, Tỉnh Quảng Nam",
+  "ellapsedInMs": 7891,
+  "estimatedCost": 0.002797,
+  "thought": "**My Analysis of the Administrative Reorganization for \"Phường Cẩm Nam\"**\n\nOkay, so I'm tasked with figuring out the new administrative unit for the old address \"Phường Cẩm Nam, Thành phố Hội An, Tỉnh Quảng Nam.\"  My initial approach is straightforward: I need to trace this address through the relevant legal resolutions, specifically focusing on province and ward reorganizations.\n\nFirst, I identified the old province, \"Tỉnh Quảng Nam.\" Then, I immediately checked for any province mergers or changes documented in the relevant resolutions, particularly Resolution 60-NQ/TW. Ah, there it is! \"Tỉnh Quảng Nam\" was merged with \"Thành phố Đà Nẵng,\" resulting in \"Thành phố Đà Nẵng\" as the new province.\n\nNow, I turn my attention to the old ward: \"Phường Cẩm Nam.\"  I'll need to dig through other resolutions to see how \"Phường Cẩm Nam\" was affected. Searching for \"Phường Cẩm Nam\" and the new province \"Thành phố Đà Nẵng\" quickly brings up Resolution 1659/NQ-UBTVQH15, concerning the restructuring of administrative units in Đà Nẵng. And there it is, line 21, explicitly states that \"Phường Cẩm Nam\" was merged with other wards to form \"Phường Hội An.\" Bingo!\n\nNext, I need to confirm the existence of this new ward in the database of new administrative units.  A quick check confirms that \"Phường Hội An\" indeed exists within \"Thành phố Đà Nẵng,\" and the database provides its code: `{\"ward_code\":\"20410\",\"ward_name\":\"Phường Hội An\",\"province_name\":\"Thành phố Đà Nẵng\"}`.\n\nTo complete the analysis, I'll construct the JSON output. The `province_name` will be \"Thành phố Đà Nẵng,\" the `ward_name` will be \"Phường Hội An,\" and the `ward_code` will be \"20410.\" The `citation` will reference Resolution 1659/NQ-UBTVQH15 and the specific line (line 21) that confirms the merger.  Given the direct and explicit nature of this resolution, I'm confident in the result; so, I'll set the `confidence` to \"high\".\n\nBefore I finalize everything, it's always a good practice to double-check. I'll scan the surrounding lines in Resolution 1659/NQ-UBTVQH15 just to ensure there are no other relevant entries. Line 22 and 23 mentioned new wards like \"Hội An Đông\" and \"Hội An Tây\", but none are relevant to the address I started with.\n\nSo, I'm confident that \"Phường Cẩm Nam\" is now part of the new ward, \"Phường Hội An,\" within \"Thành phố Đà Nẵng.\" I have the supporting evidence and the relevant resolution to back this up.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "10. Hợp nhất tỉnh Quảng Nam và thành phố Đà Nẵng, lấy tên là thành phố Đà Nẵng"
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "20410",
+      "ward_name": "Phường Hội An"
+    },
+    {
+      "citation": {
+        "header": "1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng",
+        "line": "21. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Minh An, Cẩm Phô, Sơn Phong, Cẩm Nam và xã Cẩm Kim thành phường mới có tên gọi là phường Hội An."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "20410",
+      "ward_name": "Phường Hội An"
+    }
+  ]
+}

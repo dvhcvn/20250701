@@ -1,0 +1,18 @@
+{
+  "address": "Xã Song Giang, Huyện Gia Bình, Tỉnh Bắc Ninh",
+  "ellapsedInMs": 6562,
+  "estimatedCost": 0.0024356,
+  "thought": "**Address Mapping for Vietnamese Administrative Units**\n\nOkay, here's how I'd approach this. First, I need to break down the input address \"Xã Song Giang, Huyện Gia Bình, Tỉnh Bắc Ninh\" to its components: old ward, district, and province. So, I see \"Xã Song Giang,\" \"Huyện Gia Bình,\" and \"Tỉnh Bắc Ninh.\" The district is mainly for context since we're restructuring, but it helps in pinpointing the right resolution.\n\nNext, I'll examine the resolutions, starting with the provincial level. I'm looking for mentions of \"Tỉnh Bắc Ninh.\"  Resolution 60-NQ/TW states that it merges with \"Bắc Giang,\" but keeps the name \"Bắc Ninh\". That will be crucial for the `province_name` in my final JSON output.\n\nThen, I'll dive into the specific resolutions related to the province, and I found \"1658/NQ-UBTVQH15,\" which seems relevant. Within that, I'll look for \"Xã Song Giang.\" Aha! Line 15 says \"Xã Song Giang\" merges with \"Xã Đại Lai.\" This is a direct hit! This merge will inform the new ward name and the citation details for my output.\n\nNow, I'll go to the \"New wards\" data. I'll search for \"Xã Đại Lai.\"  I quickly find it listed as `{\"ward_code\":\"09469\",\"ward_name\":\"Xã Đại Lai\",\"province_name\":\"Tỉnh Bắc Ninh\"}`. Perfect! This confirms the new ward's code and name, and the province name, already established.\n\nMy output will be in JSON format:\n\n*   The citation information will be from the resolution \"1658/NQ-UBTVQH15.\"\n*   `confidence` will be \"high\" because the resolution provides a clear and direct answer.\n*   The `province_name` will be \"Tỉnh Bắc Ninh.\"\n*   And finally, the `ward_code` will be \"09469\" and the `ward_name` will be \"Xã Đại Lai.\"\n\nSince the resolution explicitly states that \"Xã Song Giang\" becomes part of \"Xã Đại Lai,\" this is the only logical and definitive candidate. There's no ambiguity here.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh",
+        "line": "15. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Song Giang và xã Đại Lai thành xã mới có tên gọi là xã Đại Lai."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "09469",
+      "ward_name": "Xã Đại Lai"
+    }
+  ]
+}

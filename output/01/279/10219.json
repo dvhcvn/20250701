@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tự Nhiên, Huyện Thường Tín, Thành phố Hà Nội",
+  "ellapsedInMs": 8212,
+  "estimatedCost": 0.08504689999999998,
+  "thought": "**My Reasoning on Administrative Unit Change**\n\nOkay, so the user needs the new administrative unit for the old address \"Xã Tự Nhiên, Huyện Thường Tín, Thành phố Hà Nội.\"  I immediately know I need to consult the relevant resolutions, specifically \"1656/NQ-UBTVQH15,\" as that deals with the reorganization of administrative units within Hanoi (\"Thành phố Hà Nội\").\n\nMy first step is to quickly scan that resolution for \"Xã Tự Nhiên.\"  Bingo! Line 58 is the key.  It clearly states that \"Xã Tự Nhiên\" is being merged with other units to form the new unit called \"**Xã Chương Dương**.\"  The resolution's directness gives me very high confidence in this mapping.\n\nNow, I need to find the `ward_code` for \"Xã Chương Dương.\"  I'll check the \"New wards\" list for Hanoi.  A quick search reveals the exact entry:  `{\"ward_code\":\"10237\",\"ward_name\":\"Xã Chương Dương\",\"province_name\":\"Thành phố Hà Nội\"}`.  That's a perfect match!\n\nTherefore, the only thing left to do is output the `ward_code` and other details of the new ward, in JSON format, which means an array with a single object containing the relevant data.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội",
+        "line": "58. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Chương Dương, Lê Lợi, Thắng Lợi, Tự Nhiên, một phần diện tích tự nhiên, quy mô dân số của xã Tô Hiệu và xã Vạn Nhất thành xã mới có tên gọi là **xã Chương Dương**."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hà Nội",
+      "ward_code": "10237",
+      "ward_name": "Xã Chương Dương"
+    }
+  ]
+}

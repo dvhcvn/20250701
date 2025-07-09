@@ -1,0 +1,18 @@
+{
+  "address": "Xã Cư M'ta, Huyện M'Đrắk, Tỉnh Đắk Lắk",
+  "ellapsedInMs": 9930,
+  "estimatedCost": 0.0028209,
+  "thought": "**Address Mapping Analysis: Xã Cư M'ta, Đắk Lắk Province**\n\nAlright, let's break this down. The task is to take an old Vietnamese address and figure out its modern equivalent, considering administrative changes. The specific address is \"Xã Cư M'ta, Huyện M'Đrắk, Tỉnh Đắk Lắk\". Since all districts are eliminated, we mainly need to focus on the ward and province.\n\nMy initial step is to identify each component. We have \"Xã Cư M'ta\" as the ward, \"Huyện M'Đrắk\" as the district (though irrelevant now), and \"Tỉnh Đắk Lắk\" as the province.\n\nNext, I'll consult the relevant provincial resolutions. Resolution 60-NQ/TW is key here. I'll search for \"Tỉnh Đắk Lắk\" within the document. It clearly states \"Hợp nhất tỉnh Đắk Lắk và tỉnh Phú Yên, lấy tên là tỉnh Đắk Lắk.\" This is straightforward: while Phú Yên was absorbed, the province name for our old address remains \"Tỉnh Đắk Lắk\". Good.\n\nNow for the ward. I need to dive into Resolution 1660/NQ-UBTVQH15, looking for \"Xã Cư M'ta\". Bingo! Line 37 reads: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Cư Króa và xã Cư M'ta thành xã mới có tên gọi là **xã Cư M'ta**.\" This is the key piece of information. The old \"Xã Cư M'ta\" was merged with \"Xã Cư Króa\" to form a *new* ward, which *also* goes by \"Xã Cư M'ta\".\n\nFinally, I'll consult the \"New Wards Data\". I'm looking for a match for \"Xã Cư M'ta\" under \"Tỉnh Đắk Lắk\". And there it is: `{\"ward_code\":\"24436\",\"ward_name\":\"Xã Cư M’ta\",\"province_name\":\"Tỉnh Đắk Lắk\"}`. It matches perfectly!\n\nBuilding the JSON output is now easy. The `citation` will be the resolution that explicitly mentions the merger. My confidence is \"high\" because the resolution provides a direct mapping, and we have a confirmed new ward. The `province_name` is \"Tỉnh Đắk Lắk\", and the `ward_code` and `ward_name` are straight from the new data.\n\nTo solidify my analysis, I'll review my plan. So, I see it like this:\n\n**Province Mapping**\n\n*   Resolution 60-NQ/TW\n*   `Hợp nhất tỉnh Đắk Lắk và tỉnh Phú Yên, lấy tên là tỉnh Đắk Lắk`\n*   The Province is still `Tỉnh Đắk Lắk`\n\n**Ward Mapping**\n\n*   Resolution 1660/NQ-UBTVQH15\n*   Line 37: `Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Cư Króa và xã Cư M'ta thành xã mới có tên gọi là **xã Cư M'ta**`\n*   The old Ward \"Xã Cư M'ta\" is now a *new* ward also named \"Xã Cư M'ta\"\n\nEssentially, the ward remained the same name, although it has a different population and area, which is what is in our new database.\n\nI am confident in my analysis.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1660/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đắk Lắk",
+        "line": "37. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Cư Króa và xã Cư M'ta thành xã mới có tên gọi là xã Cư M'ta."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đắk Lắk",
+      "ward_code": "24436",
+      "ward_name": "Xã Cư M’ta"
+    }
+  ]
+}

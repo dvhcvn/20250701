@@ -1,0 +1,18 @@
+{
+  "address": "Xã Yên Lâm, Huyện Hàm Yên, Tỉnh Tuyên Quang",
+  "ellapsedInMs": 7590,
+  "estimatedCost": 0.0029078999999999997,
+  "thought": "**Determining the New Administrative Unit**\n\nOkay, so I'm given the old address: \"Xã Yên Lâm, Huyện Hàm Yên, Tỉnh Tuyên Quang\". My first step is to establish the province, which is \"Tỉnh Tuyên Quang\".  The critical piece of information here is resolution 60-NQ/TW. This resolution deals with administrative changes, and it's key to understanding the province-level modifications.  It tells me that Tuyên Quang and Hà Giang *merged*, but retain the name \"Tỉnh Tuyên Quang\". So, the province name remains unchanged.\n\nNow, I need to pinpoint changes at the *ward* level. I meticulously search through the `other resolutions`, focusing specifically on those relating to Tuyên Quang.  And there it is, Resolution 1684/NQ-UBTVQH15, which concerns itself with the rearrangement of administrative units at the *commune* level within Tuyên Quang. Section 19 of this resolution is the jackpot! It states unequivocally: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Yên Lâm và xã Yên Phú thành xã mới có tên gọi là **xã Yên Phú**.\"  Bingo! The resolution directly addresses \"Xã Yên Lâm\" and clarifies its fate: it's been merged with \"Xã Yên Phú\".\n\nThe next task is to verify the existence and details of this new ward. I check the `New wards` list, hunting for \"Xã Yên Phú\" within \"Tỉnh Tuyên Quang\".  And there it is: `{\"ward_code\":\"02398\",\"ward_name\":\"Xã Yên Phú\",\"province_name\":\"Tỉnh Tuyên Quang\"}`.  Perfect match! This confirms the information from the resolution. Just for double-checking I search if  \"Xã Yên Lâm\" itself is in the list, but it's not. That strengthens the conclusion: Yên Lâm is now part of Yên Phú.\n\nBased on this evidence, I'm extremely confident. The resolution provides a direct link between the old and the new administrative unit.  The new ward is clearly \"Xã Yên Phú\". I can now confidently construct the JSON output with high confidence. The citation will be the relevant resolution, the new province will be Tỉnh Tuyên Quang, and the new ward details will reflect the information found in the `New wards` list.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "19. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Yên Lâm và xã Yên Phú thành xã mới có tên gọi là xã Yên Phú."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "02398",
+      "ward_name": "Xã Yên Phú"
+    }
+  ]
+}

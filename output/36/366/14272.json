@@ -1,0 +1,28 @@
+{
+  "address": "Xã Hải Sơn, Huyện Hải Hậu, Tỉnh Nam Định",
+  "ellapsedInMs": 5763,
+  "estimatedCost": 0.0026011,
+  "thought": "**Identifying the New Administrative Unit for a Given Address**\n\nOkay, here's how I'd approach this problem. The user's looking for the updated administrative unit for \"Xã Hải Sơn, Huyện Hải Hậu, Tỉnh Nam Định\".  My initial thought is to break this down logically and go step-by-step.\n\nFirst, I need to pinpoint the *old* province, which is \"Tỉnh Nam Định.\" Then, I have to check for any province-level changes. Resolution 60-NQ/TW is a good place to start for \"Tỉnh Nam Định.\" Aha! It shows a merger. It looks like \"Tỉnh Nam Định\" was combined with \"Tỉnh Hà Nam\" and \"Tỉnh Ninh Bình\" to form \"Tỉnh Ninh Bình\".  So, the output `province_name` should definitely be \"Tỉnh Ninh Bình.\"\n\nNext, I'll identify the old ward: \"Xã Hải Sơn.\" Now the real work begins. I've got to search for this old ward within the context of the *new* province, \"Tỉnh Ninh Bình.\" I'll need to dig into resolutions specific to that province.  I found \"1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình,\" which seems promising.\n\nBingo! Line 47 is the key. It clearly states that \"Xã Hải Sơn\" was merged along with \"Thị trấn Cồn\" and \"Xã Hải Tân\" to create a new \"Xã Hải Tiến.\"  That's a solid lead. Now, I have to double-check the \"New wards\" list for this \"Xã Hải Tiến\" to make sure it matches. I found `{\"ward_code\":\"14218\",\"ward_name\":\"Xã Hải Tiến\",\"province_name\":\"Tỉnh Ninh Bình\"}`, which is a perfect match!\n\nThe confidence level here is definitely high. The resolution explicitly merges these wards into \"Xã Hải Tiến,\" and there's no ambiguity. The user needs clear and accurate information, and I believe this confirms the change. So, I will be constructing the JSON output now.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Hà Nam, tỉnh Ninh Bình và tỉnh Nam Định; lấy tên là tỉnh Ninh Bình"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "14218",
+      "ward_name": "Xã Hải Tiến"
+    },
+    {
+      "citation": {
+        "header": "1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "47. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Cồn, xã Hải Sơn và xã Hải Tân thành xã mới có tên gọi là xã Hải Tiến."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "14218",
+      "ward_name": "Xã Hải Tiến"
+    }
+  ]
+}

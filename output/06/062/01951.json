@@ -1,0 +1,18 @@
+{
+  "address": "Xã Đức Vân, Huyện Ngân Sơn, Tỉnh Bắc Kạn",
+  "ellapsedInMs": 6765,
+  "estimatedCost": 0.0022824,
+  "thought": "**My Analysis of Address Mapping**\n\nOkay, here's what I'm thinking as I tackle this address mapping. The user wants to find the new administrative unit for \"Xã Đức Vân, Huyện Ngân Sơn, Tỉnh Bắc Kạn\". First, I need to break down the address. From the input \"Xã Đức Vân, Huyện Ngân Sơn, Tỉnh Bắc Kạn,\" I identify the old administrative structure: \"Xã Đức Vân\" is the ward, \"Huyện Ngân Sơn\" is the district, and \"Tỉnh Bắc Kạn\" is the province.  Even though the prompt specifies the districts are being eliminated, it's useful to understand the original structure.\n\nNext, I need to see how the province, \"Tỉnh Bắc Kạn,\" has been affected by the administrative changes.  Checking resolution 60-NQ/TW reveals that Bắc Kạn was merged with Thái Nguyên. The resolution clearly states, \"Hợp nhất tỉnh Bắc Kạn và tỉnh Thái Nguyên, lấy tên là tỉnh Thái Nguyên.\" Therefore, the new province is \"Tỉnh Thái Nguyên.\"\n\nNow, I shift my focus to the ward level. I scrutinize the \"Other resolutions\" for mentions of \"Xã Đức Vân.\"  Bingo! Resolution \"1683/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thái Nguyên\" has a crucial line. Line 51 explicitly states, \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Vân Tùng, xã Cốc Đán và xã Đức Vân thành xã mới có tên gọi là **xã Ngân Sơn**.\"  This directly addresses the merging of \"Xã Đức Vân\" into a new ward called \"Xã Ngân Sơn.\"\n\nTo confirm, I then check the list of \"New wards\" for \"Xã Ngân Sơn\" and its corresponding province. I find the entry `{\"ward_code\":\"01954\",\"ward_name\":\"Xã Ngân Sơn\",\"province_name\":\"Tỉnh Thái Nguyên\"}`. Perfect match!  The new ward name aligns with the resolution, and the province matches the result from the province merger.\n\nWith all this information, I can now construct the JSON output. The province becomes \"Tỉnh Thái Nguyên\" because of the merger. The ward is now \"Xã Ngân Sơn,\" identified in the resolution.  The ward code is \"01954,\" according to the \"New wards\" list. The citation should clearly point back to the relevant resolution, with \"1683/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thái Nguyên\" as the header, and specifically line 51 that clearly addresses the ward. Finally, I'm highly confident in this mapping because there's a clear line from the old ward to the new, and the province mapping is straightforward. The output should accurately reflect these findings.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1683/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thái Nguyên",
+        "line": "51. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Vân Tùng, xã Cốc Đán và xã Đức Vân thành xã mới có tên gọi là xã Ngân Sơn."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thái Nguyên",
+      "ward_code": "01954",
+      "ward_name": "Xã Ngân Sơn"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Hòa Phong, Huyện Hòa Vang, Thành phố Đà Nẵng",
+  "ellapsedInMs": 7180,
+  "estimatedCost": 0.0029919999999999994,
+  "thought": "**Analysis of Vietnamese Address Mapping**\n\nOkay, here's how I'm approaching this address mapping task.  First, I've identified the key components of the old address: \"Xã Hòa Phong\" (the ward) and \"Thành phố Đà Nẵng\" (the province). \"Huyện Hòa Vang\" provides some context as the district but is less important at this stage.\n\nMy initial step is always to check the province resolutions. I need to understand if Đà Nẵng was affected by any mergers or name changes. Resolution 60-NQ/TW is a good place to start.  And, as expected, it tells me that Đà Nẵng remains Đà Nẵng, having absorbed Quảng Nam at one point. This confirms the validity of using \"Thành phố Đà Nẵng\" for the province.\n\nNext, I need to delve deeper and examine other resolutions specifically related to Đà Nẵng, looking for any mention of \"Hòa Phong\".  I found 1659/NQ-UBTVQH15, which is exactly what I was hoping for. It explicitly states that \"Xã Hòa Phong\" and \"Xã Hòa Phú\" have been merged to form a new ward, \"Xã Hòa Vang.\" Bingo!  I also scanned other resolutions, and they refer to Hòa Phong in different provinces, so I can safely ignore them.\n\nNow, with this crucial information, I have a clear mapping: the old \"Xã Hòa Phong\" in \"Thành phố Đà Nẵng\" is now \"Xã Hòa Vang\".  Finally, I need to confirm the new ward in the \"New wards\" list.  I'm looking for \"Xã Hòa Vang\" within \"Thành phố Đà Nẵng\", and the data structure confirms a perfect match:  ward code \"20320\", ward name \"Xã Hòa Vang\".\n\nTherefore, I'm confident in the mapping. The citation will be `1659/NQ-UBTVQH15`, and the output JSON should include the following: a high `confidence`, \"Thành phố Đà Nẵng\" for the province name, \"20320\" for the ward code, and \"Xã Hòa Vang\" for the ward name. I have a definitive result.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng",
+        "line": "24. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Hòa Phong và xã Hòa Phú thành xã mới có tên gọi là xã Hòa Vang."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "20320",
+      "ward_name": "Xã Hòa Vang"
+    }
+  ]
+}

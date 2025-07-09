@@ -1,0 +1,28 @@
+{
+  "address": "Xã Hồng Lĩnh, Huyện Hưng Hà, Tỉnh Thái Bình",
+  "ellapsedInMs": 7650,
+  "estimatedCost": 0.0031081,
+  "thought": "**My Analysis of the Administrative Unit Change for \"Xã Hồng Lĩnh, Huyện Hưng Hà, Tỉnh Thái Bình\"**\n\nOkay, so the user needs the new administrative unit for that old address. My thought process went like this: first, I need to break down the old address into its parts. We're looking at \"Xã Hồng Lĩnh\" (ward) in \"Huyện Hưng Hà\" (district) within \"Tỉnh Thái Bình\" (province).  Province and ward are key, district offers vital context.\n\nThe initial step is to determine if the province has changed.  I needed to check resolutions related to administrative boundary changes.  Specifically, I looked for \"Tỉnh Thái Bình.\" Bingo!  Resolution 60-NQ/TW states that \"Tỉnh Thái Bình\" and \"Tỉnh Hưng Yên\" merged to become just \"Tỉnh Hưng Yên.\"  This means our starting point is now Hưng Yên, not Thái Bình.\n\nNow I had to locate \"Xã Hồng Lĩnh\" within the context of the new or, relevantly, the old, province of Hưng Yên/Thái Bình in the resolutions. I did a thorough search of these resolutions, paying close attention to any mention of \"Hồng Lĩnh\".  I quickly discarded resolutions for other provinces like Hà Tĩnh.  Then, I hit paydirt with Resolution 1666/NQ-UBTVQH15 concerning Hưng Yên.  Line 71 of that resolution was the crucial piece. It explicitly stated the merger of \"Hồng Lĩnh\" with several other wards to form the new ward, **\"Xã Hưng Hà\"**... and importantly, within \"Huyện Hưng Hà\"!  This fit perfectly with the user's initial address.\n\nNext, I cross-referenced this with my \"New Wards\" data.  Sure enough, I found the entry for \"Xã Hưng Hà\" with the correct `province_name`, `ward_name` and `ward_code`.  A perfect match!\n\nFinally, the JSON output is straightforward: my `province_name` is \"Tỉnh Hưng Yên\", my `ward_name` is \"Xã Hưng Hà\", and the `ward_code` is drawn from the matching entry, alongside `citation` for resolution, line, and a `confidence` of \"high\" - because this is a direct, clear match within the relevant province. That’s my reasoned interpretation.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Hưng Yên và tỉnh Thái Bình, lấy tên là tỉnh Hưng Yên"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "12586",
+      "ward_name": "Xã Hưng Hà"
+    },
+    {
+      "citation": {
+        "header": "1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên",
+        "line": "71. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Hòa Bình, Minh Khai và Thống Nhất (huyện Hưng Hà), các xã Kim Trung, Hồng Lĩnh, Văn Lang, thị trấn Hưng Hà thành xã mới có tên gọi là xã Hưng Hà."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "12586",
+      "ward_name": "Xã Hưng Hà"
+    }
+  ]
+}

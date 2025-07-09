@@ -1,0 +1,18 @@
+{
+  "address": "Phường Ninh Dương, Thành phố Móng Cái, Tỉnh Quảng Ninh",
+  "ellapsedInMs": 6271,
+  "estimatedCost": 0.0023019,
+  "thought": "**Determining the New Ward for the Given Address**\n\nOkay, so I've got this address to work with: \"Phường Ninh Dương\", \"Tỉnh Quảng Ninh\". My job is to figure out the new ward for it.  The user's asking the right question, so let's get to it.\n\nFirst, I need to get the old ward and province names. Check! \"Phường Ninh Dương\", \"Tỉnh Quảng Ninh\" - got it.\n\nNow, I'll start with the Province Resolutions (60-NQ/TW).  I need to check if Quảng Ninh was merged or remained the same. It looks like it stayed untouched because Quảng Ninh is listed under \"Các đơn vị hành chính cấp tỉnh không thực hiện sáp nhập\" - meaning no changes for Quảng Ninh.\n\nNext up, the `other_resolutions` list. I need to zero in on \"Phường Ninh Dương.\" Ah, there it is! Resolution \"1679/NQ-UBTVQH15\" is the one. Line 50 says that \"phường Ninh Dương\" is merging with Ka Long and Vạn Ninh to form a new ward: \"phường Móng Cái 2\". Bingo!\n\nOkay, time to check the `new_wards` list against my findings.  I'm looking for \"Phường Móng Cái 2\" and \"Tỉnh Quảng Ninh.\"  Yes, `{\"ward_code\":\"06709\",\"ward_name\":\"Phường Móng Cái 2\",\"province_name\":\"Tỉnh Quảng Ninh\"}` is the perfect match.\n\nI'm feeling pretty confident about this.  The resolution directly states the merger. Also, although there's an entry for \"Xã Hải Hòa\", that one gets merged into Móng Cái 1 not Ninh Dương, so not relevant. The mapping is explicit and clear. So, high confidence it is.\n\nBased on all of this, here's my JSON:\n\n*   `citation`: \"1679/NQ-UBTVQH15\"\n*   `confidence`: \"high\"\n*   `province_name`: \"Tỉnh Quảng Ninh\"\n*   `ward_code`: \"06709\"\n*   `ward_name`: \"Phường Móng Cái 2\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1679/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ninh",
+        "line": "50. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Ninh Dương, phường Ka Long và xã Vạn Ninh thành phường mới có tên gọi là phường Móng Cái 2."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ninh",
+      "ward_code": "06709",
+      "ward_name": "Phường Móng Cái 2"
+    }
+  ]
+}

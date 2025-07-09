@@ -1,0 +1,18 @@
+{
+  "address": "Xã Thượng Bằng La, Huyện Văn Chấn, Tỉnh Yên Bái",
+  "ellapsedInMs": 7927,
+  "estimatedCost": 0.0028003,
+  "thought": "**Analyzing the Address and Determining the New Administrative Unit**\n\nOkay, so I've been presented with an old address: \"Xã Thượng Bằng La, Huyện Văn Chấn, Tỉnh Yên Bái,\" and I need to figure out its new administrative unit (ward) based on a set of resolutions and a list of new wards.  Let's break this down.\n\nFirst, I identified the old province and ward: \"Tỉnh Yên Bái\" and \"Xã Thượng Bằng La,\" respectively.  Then, I dove into the relevant resolutions.  The key here is understanding province-level changes, specifically resolution 60-NQ/TW. I checked if \"Tỉnh Yên Bái\" was listed under \"không thực hiện sáp nhập\" (no merger), which it wasn't.  Then I looked for it under \"mới sau sáp nhập, hợp nhất\" (new after merger).  Bingo!  The resolution stated that \"Tỉnh Yên Bái\" merged with \"Lào Cai,\" becoming \"Tỉnh Lào Cai.\"  This is the first piece of the puzzle.\n\nNext, I focused on other resolutions, specifically 1673/NQ-UBTVQH15, which concerns the restructuring of administrative units within Lào Cai. Since \"Yên Bái\" is now part of \"Lào Cai\", this resolution is crucial. I scanned the lines for \"Thượng Bằng La.\" Line 12 was the key: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Nông trường Trần Phú và xã Thượng Bằng La thành xã mới có tên gọi là **xã Thượng Bằng La**.\"  This clearly states that \"Thượng Bằng La\" exists in the newly formed units and explicitly states the new ward name as the old one.  Essentially, the ward keeps the same name, but its boundaries might have changed due to the inclusion of \"thị trấn Nông trường Trần Phú\".\n\nNow, I cross-referenced this with the \"New wards\" list. I looked for \"Xã Thượng Bằng La\" under \"Tỉnh Lào Cai.\"  And there it was: `{\"ward_code\":\"04705\",\"ward_name\":\"Xã Thượng Bằng La\",\"province_name\":\"Tỉnh Lào Cai\"}`. Perfect match! The ward's name is unchanged, but the province is now \"Lào Cai\", and I have a ward code.\n\nBased on all this, I'm extremely confident. The citation comes from the resolution and the specific line, and my final JSON output will reflect the province change and the ward details:  `{\"ward_code\":\"04705\",\"ward_name\":\"Xã Thượng Bằng La\",\"province_name\":\"Tỉnh Lào Cai\"}` with a high confidence level because the name from the input address is found explicitly in the resolutions and the resulting new name. This analysis provides a solid, defensible solution based on the evidence provided. I've re-checked my logic and every step holds up.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai",
+        "line": "12. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Nông trường Trần Phú và xã Thượng Bằng La thành xã mới có tên gọi là xã Thượng Bằng La."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "04705",
+      "ward_name": "Xã Thượng Bằng La"
+    }
+  ]
+}

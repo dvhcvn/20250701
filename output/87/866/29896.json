@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tân Thuận Đông, Thành phố Cao Lãnh, Tỉnh Đồng Tháp",
+  "ellapsedInMs": 8543,
+  "estimatedCost": 0.0031423,
+  "thought": "**My Analysis of the Administrative Unit Change for \"Xã Tân Thuận Đông\"**\n\nOkay, let's break this down systematically. The user has given me the old address: \"Xã Tân Thuận Đông, Thành phố Cao Lãnh, Tỉnh Đồng Tháp\" and wants the new administrative unit. My process is as follows:\n\n1.  **Initial Identification:** First, I've identified the old province as \"Tỉnh Đồng Tháp,\" the old ward as \"Xã Tân Thuận Đông,\" and implicitly, the old district as \"Thành phố Cao Lãnh.\" (Although districts were dissolved, I need to know where it was formerly)\n\n2.  **Province Merger Check (60-NQ/TW):** I always start with a province merger check, but in this case, the resolution *Hợp nhất tỉnh Tiền Giang và tỉnh Đồng Tháp, lấy tên là tỉnh Đồng Tháp* simply confirms that Đồng Tháp remains Đồng Tháp. No change here.\n\n3.  **Specific Ward Resolution Search:**  My next step is to examine resolutions that might impact this particular ward. The key document is \"1663/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Tháp.\"  I'm specifically looking for any mentions of \"Xã Tân Thuận Đông\".\n\n4.  **The Crucial Find:**  Line 95 of that resolution is the goldmine! It clearly states: *\"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của Phường 1, Phường 3, Phường 4 và Phường 6 (thành phố Cao Lãnh), phường Hòa Thuận, các xã Hòa An, Tịnh Thới, Tân Thuận Tây, **Tân Thuận Đông** thành phường mới có tên gọi là **phường Cao Lãnh**.\"*  Bingo! \"Xã Tân Thuận Đông\" is being absorbed into the new \"phường Cao Lãnh\".\n\n5.  **Confirmation and Data Extraction:** I double-checked the \"New wards\" to confirm, and the match is perfect:  `{\"ward_code\":\"29869\",\"ward_name\":\"Phường Cao Lãnh\",\"province_name\":\"Tỉnh Đồng Tháp\"}`.\n\n6.  **JSON Output Construction:** Based on this, I'll generate the following JSON output:\n\n    *   `province_name`: \"Tỉnh Đồng Tháp\" (unchanged)\n    *   `ward_name`: \"Phường Cao Lãnh\" (the new ward)\n    *   `ward_code`: \"29869\" (the code for phường Cao Lãnh)\n    *   `citation`: Will include the header \"1663/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Tháp\" and the specific line \"95. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của Phường 1, Phường 3, Phường 4 và Phường 6 (thành phố Cao Lãnh), phường Hòa Thuận, các xã Hòa An, Tịnh Thới, Tân Thuận Tây, Tân Thuận Đông thành phường mới có tên gọi là **phường Cao Lãnh**.\"\n    *   `confidence`: \"high\" since the resolution provides direct and unambiguous confirmation.\n\n7. **Further Review:** I did a further scan of `1663/NQ-UBTVQH15`, but there were no other relevant mentions of `Tân Thuận Đông`.\n\nThis is a straightforward case with a clear resolution.  The output is accurate and based on sound legal reasoning.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1663/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Tháp",
+        "line": "95. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của Phường 1, Phường 3, Phường 4 và Phường 6 (thành phố Cao Lãnh), phường Hòa Thuận, các xã Hòa An, Tịnh Thới, Tân Thuận Tây, Tân Thuận Đông thành phường mới có tên gọi là phường Cao Lãnh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đồng Tháp",
+      "ward_code": "29869",
+      "ward_name": "Phường Cao Lãnh"
+    }
+  ]
+}

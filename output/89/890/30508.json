@@ -1,0 +1,18 @@
+{
+  "address": "Phường Núi Voi, Thị xã Tịnh Biên, Tỉnh An Giang",
+  "ellapsedInMs": 5777,
+  "estimatedCost": 0.0021739999999999997,
+  "thought": "**Address Mapping Analysis: From \"Phường Núi Voi\" to \"Phường Chi Lăng\"**\n\nAlright, let's break this down systematically. I've been given an old address with \"Tỉnh An Giang\" and \"Phường Núi Voi,\" and the task is to pinpoint its equivalent in the current administrative structure.\n\nFirst, the province. The input says \"Tỉnh An Giang\".  I quickly checked the resolutions regarding province mergers and found that while there *was* a merger with Kiên Giang, the resulting province is still called \"Tỉnh An Giang\". So, no change there.\n\nNext, the ward. The challenge is \"Phường Núi Voi\". I'll dive into the relevant resolutions, particularly \"1654/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh An Giang\". Scanning through, I focused on the lines concerning wards. Bingo! Line 89 explicitly states that the area of \"Phường Núi Voi\", along with \"Phường Chi Lăng\" and \"Xã Tân Lợi\", has been merged to create a new ward, and that new ward is called \"Phường Chi Lăng\".\n\nNow, time to confirm that new ward. I have a dataset of \"New wards\" to cross-reference. I found an exact match: `{\"ward_code\":\"30505\",\"ward_name\":\"Phường Chi Lăng\",\"province_name\":\"Tỉnh An Giang\"}`.\n\nPutting it all together, I can construct the JSON output. I'm quite confident in this mapping: \"Tỉnh An Giang\" remains the province and \"Phường Chi Lăng\", with ward code \"30505\", is the new ward. The citation for this is the relevant section from the resolution I found earlier, specifically, line 89. This should be a clean and accurate mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1654/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh An Giang",
+        "line": "89. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Núi Voi, phường Chi Lăng và xã Tân Lợi thành phường mới có tên gọi là phường Chi Lăng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh An Giang",
+      "ward_code": "30505",
+      "ward_name": "Phường Chi Lăng"
+    }
+  ]
+}

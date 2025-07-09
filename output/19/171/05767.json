@@ -1,0 +1,18 @@
+{
+  "address": "Xã Phúc Lương, Huyện Đại Từ, Tỉnh Thái Nguyên",
+  "ellapsedInMs": 7381,
+  "estimatedCost": 0.0027269,
+  "thought": "**Identifying the New Administrative Unit for \"Xã Phúc Lương, Huyện Đại Từ, Tỉnh Thái Nguyên\"**\n\nAlright, let's break this down. My task is to pinpoint the new administrative unit, the ward, for the address \"Xã Phúc Lương, Huyện Đại Từ, Tỉnh Thái Nguyên.\"  First things first, I need to understand the old context. We have \"Xã Phúc Lương\" in \"Tỉnh Thái Nguyên,\" specifically in \"Huyện Đại Từ.\"  The prompt indicates districts are irrelevant, but it's helpful for my internal logic to keep this initial information organized.\n\nI'll start by checking the province resolutions. Resolution 60-NQ/TW states that \"Tỉnh Thái Nguyên\" remains \"Tỉnh Thái Nguyên\" even after mergers. This is straightforward and essential for establishing the `province_name` in my output.\n\nNext, I need to delve into the other resolutions, specifically focusing on \"Xã Phúc Lương.\"  Resolution 1683/NQ-UBTVQH15, \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thái Nguyên,\" is the key.  Line 28 in that resolution is irrelevant because it involves different wards. However, line 29 is crucial.  It details the merger of \"Minh Tiến,\" \"Phúc Lương,\" and \"Đức Lương\" to form the new ward, **\"Xã Đức Lương.\"**  There it is, \"Xã Phúc Lương\" explicitly merged into \"Xã Đức Lương.\" That's the winner!\n\nNow, I'll validate this by cross-referencing with the \"New wards\" data. I'll search for \"Xã Đức Lương\" in the provided list.  Bingo! The entry `{\"ward_code\":\"05776\",\"ward_name\":\"Xã Đức Lương\",\"province_name\":\"Tỉnh Thái Nguyên\"}` confirms my finding.\n\nFinally, I'll construct the JSON output.  The citation will be \"1683/NQ-UBTVQH15,\" line 29: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Minh Tiến, Phúc Lương và Đức Lương thành xã mới có tên gọi là **xã Đức Lương**.\" The `confidence` will be \"high\" because the resolution directly addresses the merger. The `province_name` is \"Tỉnh Thái Nguyên,\" confirmed by both the province resolution and the new ward data.  The `ward_code` will be \"05776,\" and of course, the `ward_name` is \"Xã Đức Lương.\"  Since the prompt permits multiple new units but in this case, there's a clear single successor for the old unit, that's what I'll deliver.  Done.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1683/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thái Nguyên",
+        "line": "29. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Minh Tiến, Phúc Lương và Đức Lương thành xã mới có tên gọi là xã Đức Lương."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thái Nguyên",
+      "ward_code": "05776",
+      "ward_name": "Xã Đức Lương"
+    }
+  ]
+}

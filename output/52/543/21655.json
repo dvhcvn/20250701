@@ -1,0 +1,28 @@
+{
+  "address": "Phường Tam Quan Bắc, Thị xã Hoài Nhơn, Tỉnh Bình Định",
+  "ellapsedInMs": 6883,
+  "estimatedCost": 0.0025039,
+  "thought": "**My Analysis of the Address Mapping**\n\nOkay, so I'm dealing with an old address: \"Phường Tam Quan Bắc, Thị xã Hoài Nhơn, Tỉnh Bình Định,\" and I need to map it to current administrative units.  Given my expertise, I'm going to follow a clear process. First, I recognize \"Tỉnh Bình Định\" as the starting province.  Knowing these regions, I'll dive into the relevant resolutions and ward data.\n\nMy initial thought is to check for province changes. Bingo! Resolution 60-NQ/TW states the merger of Bình Định with Gia Lai, forming \"Tỉnh Gia Lai.\" That's the first critical piece. Now, I need to focus on the ward.  \"Phường Tam Quan Bắc\" is my target.  Resolution 1664/NQ-UBTVQH15, line 118, specifically addresses this ward. It states that \"Phường Tam Quan Bắc\" merges with Hoài Sơn and Hoài Châu Bắc to form the new ward, \"Phường Hoài Nhơn Bắc.\"\n\nLooking at the provided new ward data, I find a perfect match: `{\"ward_code\":\"21655\",\"ward_name\":\"Phường Hoài Nhơn Bắc\",\"province_name\":\"Tỉnh Gia Lai\"}`. This confirms the resolution's findings. I also see \"Phường Tam Quan,\" but my intuition tells me that is the wrong match, as the source text refers to Phường Tam Quan Bắc, and specifically merged into Phường Hoài Nhơn Bắc.\n\nThe output will be structured as a JSON object, clearly indicating:\n\n*   `province_name`: \"Tỉnh Gia Lai\".\n*   `ward_name`: \"Phường Hoài Nhơn Bắc\".\n*   `ward_code`: \"21655\".\n*   `citation`: The specific resolution and line.\n*   `confidence`: \"high\" – because this mapping is a direct result of the resolution's explicit statement.\n\nThe analysis is clear and straightforward: \"Phường Tam Quan Bắc\" maps directly to \"Phường Hoài Nhơn Bắc\" within the newly formed province, \"Tỉnh Gia Lai\".  I'm confident in this mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Gia Lai và tỉnh Bình Định, lấy tên là tỉnh Gia Lai"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "21655",
+      "ward_name": "Phường Hoài Nhơn Bắc"
+    },
+    {
+      "citation": {
+        "header": "1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai",
+        "line": "118. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Tam Quan Bắc, xã Hoài Sơn và xã Hoài Châu Bắc thành phường mới có tên gọi là phường Hoài Nhơn Bắc."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "21655",
+      "ward_name": "Phường Hoài Nhơn Bắc"
+    }
+  ]
+}

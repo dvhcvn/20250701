@@ -1,0 +1,28 @@
+{
+  "address": "Xã Văn Xuôi, Huyện Tu Mơ Rông, Tỉnh Kon Tum",
+  "ellapsedInMs": 5898,
+  "estimatedCost": 0.0023402999999999996,
+  "thought": "**Mapping Old Vietnamese Address to New Administrative Units**\n\nOkay, so I've got this old Vietnamese address to decipher: \"Xã Văn Xuôi, Huyện Tu Mơ Rông, Tỉnh Kon Tum\". My goal is to figure out the corresponding new administrative unit. Easy enough, let's break it down.\n\nFirst, I've identified the key components: the old ward is \"Xã Văn Xuôi,\" and the old province is \"Tỉnh Kon Tum.\"  Now, I'm thinking, \"Province mergers are a good place to start,\" so I dive into the '60-NQ/TW' document regarding administrative changes.  I quickly find that \"Tỉnh Kon Tum\" is mentioned in a merger with \"Tỉnh Quảng Ngãi,\" resulting in... you guessed it, \"Tỉnh Quảng Ngãi.\" Okay, so \"Kon Tum\" is now \"Quảng Ngãi.\" Got it.\n\nNext, I need to see what happened to \"Xã Văn Xuôi.\"  Time to scour the \"Other resolutions.\" I zero in on \"1677/NQ-UBTVQH15,\" the one about ward arrangements in Quảng Ngãi. Bingo! Line 63 explicitly states that \"Xã Văn Xuôi\" is being merged into a new ward called \"Xã Măng Ri.\"  Perfect!\n\nNow, I'll cross-reference this information with the \"New wards\" data.  I search for \"Xã Măng Ri\" and, sure enough, there it is: `{\"ward_code\":\"23446\",\"ward_name\":\"Xã Măng Ri\",\"province_name\":\"Tỉnh Quảng Ngãi\"}`.  The province name confirms my earlier finding.\n\nAlright, putting it all together, I can confidently map \"Xã Văn Xuôi, Tỉnh Kon Tum\" to \"Xã Măng Ri, Tỉnh Quảng Ngãi.\" The resolution is very clear, so my confidence level is high. Now, let's create that JSON output.  Done!\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Kon Tum và tỉnh Quảng Ngãi, lấy tên là tỉnh Quảng Ngãi"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ngãi",
+      "ward_code": "23446",
+      "ward_name": "Xã Măng Ri"
+    },
+    {
+      "citation": {
+        "header": "1677/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ngãi",
+        "line": "63. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Ngọk Yêu, Văn Xuôi, Tê Xăng, Ngọk Lây và Măng Ri thành xã mới có tên gọi là xã Măng Ri."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ngãi",
+      "ward_code": "23446",
+      "ward_name": "Xã Măng Ri"
+    }
+  ]
+}

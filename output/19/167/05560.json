@@ -1,0 +1,18 @@
+{
+  "address": "Xã Phúc Chu, Huyện Định Hóa, Tỉnh Thái Nguyên",
+  "ellapsedInMs": 6469,
+  "estimatedCost": 0.0023818,
+  "thought": "**Determining the New Ward for an Old Address**\n\nOkay, so I've got this old address: \"Xã Phúc Chu, Huyện Định Hóa, Tỉnh Thái Nguyên.\" My task is to figure out the corresponding new administrative unit (ward). First, I identified the old province and ward: Tỉnh Thái Nguyên and Xã Phúc Chu, respectively.\n\nNext, I checked relevant province resolutions, including the one regarding the merger of Bắc Kạn and Thái Nguyên.  That confirmed that \"Tỉnh Thái Nguyên\" remains the relevant province, albeit with some historical context.\n\nThe crucial part was diving into other resolutions. Specifically, resolution 1683/NQ-UBTVQH15, titled \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thái Nguyên\", explicitly states that \"Xã Phúc Chu, Bảo Linh, Đồng Thịnh\" are merged into the new \"xã Định Hóa\". This is a definitive resolution.\n\nTo solidify this, I then cross-referenced this with my `New wards` list and found a matching entry for \"Xã Định Hóa\" in \"Tỉnh Thái Nguyên\" (`{\"ward_code\":\"05569\",\"ward_name\":\"Xã Định Hóa\",\"province_name\":\"Tỉnh Thái Nguyên\"}`). This direct match confirms the correct ward code.\n\nBased on this clear mapping, I'll construct my JSON output.  The `citation` will point to resolution 1683/NQ-UBTVQH15 and the relevant section, and I'll assign a `confidence` of \"high\" because of the explicit resolution. The `province_name` will be \"Tỉnh Thái Nguyên\", the `ward_code` will be \"05569\", and the `ward_name` will be \"Xã Định Hóa\".\n\nI also double-checked to see if there were any other mentions of \"Xã Phúc Chu\" or \"Tỉnh Thái Nguyên\" that might indicate a conflict or alternative mapping.  There weren't. Everything points directly to \"Xã Định Hóa\".  Case closed.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1683/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thái Nguyên",
+        "line": "4. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Chợ Chuvà các xã Phúc Chu, Bảo Linh, Đồng Thịnh thành xã mới có tên gọi là xã Định Hóa."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thái Nguyên",
+      "ward_code": "05569",
+      "ward_name": "Xã Định Hóa"
+    }
+  ]
+}

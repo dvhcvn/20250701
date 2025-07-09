@@ -1,0 +1,18 @@
+{
+  "address": "Xã Cốc Rế, Huyện Xín Mần, Tỉnh Hà Giang",
+  "ellapsedInMs": 7326,
+  "estimatedCost": 0.0026882,
+  "thought": "**My Thought Process on Mapping an Old Vietnamese Address**\n\nAlright, let's break this down. My goal is to map this old Vietnamese address, \"Xã Cốc Rế, Huyện Xín Mần, Tỉnh Hà Giang,\" to its current administrative units. I've got a plan:\n\nFirst, I need to isolate the key components.  \"Xã Cốc Rế\" is the old ward, and \"Tỉnh Hà Giang\" is the old province. Easy enough.\n\nNow, I'm going to consult those province resolutions (like 60-NQ/TW).  I'll look for \"Tỉnh Hà Giang,\" and bingo!  I find the resolution that merges Hà Giang with Tuyên Quang, creating \"Tỉnh Tuyên Quang.\" So, my new province name is set.\n\nNext up:  resolutions like 1684/NQ-UBTVQH15, these should contain the ward mapping.  I need to find \"Xã Cốc Rế\" in the lines. Aha! Line 103 explicitly states that Cốc Rế is absorbed into \"Xã Trung Thịnh.\"  Perfect.\n\nNow, I'll cross-reference this with the provided new ward data.  I'm looking for \"Xã Trung Thịnh\" within \"Tỉnh Tuyên Quang.\"  The data matches!  I've got a ward code (\"01117\") to go along with it.\n\nPutting it all together, here's my JSON output:\n\n```json\n[\n  {\n    \"province_name\": \"Tỉnh Tuyên Quang\",\n    \"ward_name\": \"Xã Trung Thịnh\",\n    \"ward_code\": \"01117\",\n    \"citation\": {\n      \"header\": \"1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang\",\n      \"line\": \"103. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Cốc Rế, Thu Tà và Trung Thịnh thành xã mới có tên gọi là **xã Trung Thịnh**.\"\n    },\n    \"confidence\": \"high\"\n  }\n]\n```\n\nI'm confident in this because both the province and ward changes are clearly documented in the resolutions and new data.\n\nI made sure to double-check the other resolution line to be sure it's not relevant.\n\nI also noted that the old address included \"Huyện Xín Mần,\" but the resolutions discuss eliminating all districts. Therefore, district information isn't included in the final output.\n\nI've also reviewed the schema, and I'm confident my output adheres to it exactly.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "103. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Cốc Rế, Thu Tà và Trung Thịnh thành xã mới có tên gọi là xã Trung Thịnh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "01117",
+      "ward_name": "Xã Trung Thịnh"
+    }
+  ]
+}

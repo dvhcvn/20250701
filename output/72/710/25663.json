@@ -1,0 +1,18 @@
+{
+  "address": "Xã Hiệp Thạnh, Huyện Gò Dầu, Tỉnh Tây Ninh",
+  "ellapsedInMs": 6519,
+  "estimatedCost": 0.0036769000000000003,
+  "thought": "**My Analysis of the Administrative Unit Change for \"Xã Hiệp Thạnh, Huyện Gò Dầu, Tỉnh Tây Ninh\"**\n\nOkay, so I need to figure out the new administrative location for this address. First, I'll check for any province mergers. The information I have shows that \"Tỉnh Tây Ninh\" wasn't merged, it remains \"Tỉnh Tây Ninh\" according to the \"60-NQ/TW\" document. Now, I have to find the resolution that covers the old ward, \"Xã Hiệp Thạnh.\"\n\nI'll search within the `other_resolutions` for mentions of \"Hiệp Thạnh.\" Resolution 1682/NQ-UBTVQH15 seems promising as it deals with administrative adjustments in Tây Ninh. Line 55 mentions \"Hiệp Thạnh (huyện Châu Thành)\" - irrelevant, the input is Gò Dầu. However, line 60 hits the mark: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Hiệp Thạnh (huyện Gò Dầu), Phước Trạch và Phước Thạnh thành xã mới có tên gọi là **xã Phước Thạnh**.\" Bingo! This matches my input exactly: \"Hiệp Thạnh (huyện Gò Dầu)\". The new ward is \"xã Phước Thạnh.\"\n\nTo confirm, I'll check the `new_wards` list for \"xã Phước Thạnh\" in \"Tỉnh Tây Ninh.\" There it is: `{\"ward_code\":\"25663\",\"ward_name\":\"Xã Phước Thạnh\",\"province_name\":\"Tỉnh Tây Ninh\"}`. Perfect.\n\nNow, I'll assemble the output: the `citation` will be the resolution header and line 60. The `confidence` is high because this is a direct match based on the old ward and district. The `province_name`, `ward_code`, and `ward_name` all come from that confirmed entry in the `new_wards` list. I'm ready to present the updated information.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1682/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tây Ninh",
+        "line": "60. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Hiệp Thạnh (huyện Gò Dầu), Phước Trạch và Phước Thạnh thành xã mới có tên gọi là **xã Phước Thạnh**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tây Ninh",
+      "ward_code": "25663",
+      "ward_name": "Xã Phước Thạnh"
+    }
+  ]
+}

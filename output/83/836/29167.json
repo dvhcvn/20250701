@@ -1,0 +1,28 @@
+{
+  "address": "Xã Tân Thủy, Huyện Ba Tri, Tỉnh Bến Tre",
+  "ellapsedInMs": 5891,
+  "estimatedCost": 0.0021672,
+  "thought": "**Determining the New Administrative Unit for \"Xã Tân Thủy\"**\n\nOkay, so the user wants to know the current ward for \"Xã Tân Thủy, Huyện Ba Tri, Tỉnh Bến Tre\".  My first step is to recognize the old province, \"Tỉnh Bến Tre\".  Now, I immediately need to consider province mergers, checking against 60-NQ/TW.  Ah, yes, \"Hợp nhất tỉnh Bến Tre, tỉnh Vĩnh Long và tỉnh Trà Vinh; lấy tên là tỉnh Vĩnh Long.\"  So, \"Tỉnh Bến Tre\" has become \"Tỉnh Vĩnh Long\".\n\nNext, I have to pinpoint the old ward, which is \"Xã Tân Thủy\".  The key here is to find the relevant resolution within the new provincial context of Vĩnh Long.  I've found \"1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long\".  Excellent, line 81 looks promising: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Tiệm Tôm, xã An Hòa Tây và xã Tân Thủy thành xã mới có tên gọi là **xã Tân Thủy**.\"\n\nThis is crucial. The old \"xã Tân Thủy\" is being *merged* with others to create a *new* \"xã Tân Thủy\".  This means the name hasn't changed, but the actual administrative boundaries might have.  Now I need to cross-reference this information with a list of \"New wards\" in \"Tỉnh Vĩnh Long\".  Perfect, the entry {\"ward_code\":\"29167\",\"ward_name\":\"Xã Tân Thủy\",\"province_name\":\"Tỉnh Vĩnh Long\"} lines up perfectly.\n\nBased on the direct language in the resolution stating the old ward is part of the new ward and then being able to perfectly match it with available data, I'm confident in this conclusion. The confidence is high. Now, I simply need to format the information into the required JSON output.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Bến Tre, tỉnh Vĩnh Long và tỉnh Trà Vinh; lấy tên là tỉnh Vĩnh Long"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "29167",
+      "ward_name": "Xã Tân Thủy"
+    },
+    {
+      "citation": {
+        "header": "1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long",
+        "line": "81. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Tiệm Tôm, xã An Hòa Tây và xã Tân Thủy thành xã mới có tên gọi là xã Tân Thủy."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "29167",
+      "ward_name": "Xã Tân Thủy"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Phường Nghĩa Đức, Thành phố Gia Nghĩa, Tỉnh Đắk Nông",
+  "ellapsedInMs": 8028,
+  "estimatedCost": 0.0031471,
+  "thought": "**Analyzing and Mapping the Old Vietnamese Address**\n\nOkay, here's how I'd approach this. My goal is to accurately map the old address \"Phường Nghĩa Đức, Tỉnh Đắk Nông\" to its new administrative unit, considering the provided resolutions and the list of new wards.\n\nFirst, the given old ward and province are \"Phường Nghĩa Đức\" and \"Tỉnh Đắk Nông.\" I'll need to use this information to create a structured JSON output.\n\nMy first thought is to check if \"Tỉnh Đắk Nông\" is unchanged under the Province Resolutions (60-NQ/TW). It's not. I see that it's part of a merger. \"Hợp nhất tỉnh Lâm Đồng, tỉnh Đắk Nông và tỉnh Bình Thuận; lấy tên là tỉnh Lâm Đồng.\" Consequently, the new province for \"Tỉnh Đắk Nông\" is \"Tỉnh Lâm Đồng.\"\n\nNow, I shift my focus to \"Phường Nghĩa Đức.\" I'll need to scrutinize the resolutions for changes related to this specific ward. My primary tool here will be `1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng`.\n\nScanning that resolution, I immediately zero in on line 116. It states, \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Quảng Thành, Nghĩa Thành, Nghĩa Đức và xã Đắk Ha thành phường mới có tên gọi là **phường Bắc Gia Nghĩa**.\" Perfect! \"Phường Nghĩa Đức\" is explicitly mentioned in a merger, and it points to \"phường Bắc Gia Nghĩa\" within the updated \"Tỉnh Lâm Đồng.\" This is looking like a high-confidence match.\n\nI also glance at `1678/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Nghệ An`, but I'm careful to note that while it mentions \"Nghĩa Đức,\" it's \"xã Nghĩa Đức\" within \"tỉnh Nghệ An,\" and our input is \"Phường Nghĩa Đức\" in \"Tỉnh Đắk Nông\". So this is irrelevant.\n\nFrom the \"New wards\" list, I'm confirming that \"Phường Bắc Gia Nghĩa\" matches the provided data: `{\"ward_code\":\"24611\",\"ward_name\":\"Phường Bắc Gia Nghĩa\",\"province_name\":\"Tỉnh Lâm Đồng\"}`. This confirms the new code.\n\nFinally, putting this all together, I construct the JSON output. I'll use \"Tỉnh Lâm Đồng\" as the new province from the merger. The ward is \"Phường Bắc Gia Nghĩa\" with ward code \"24611.\" The citation clearly states 1671/NQ-UBTVQH15, line 116. Given the clarity of this mapping, I'll confidently assign a \"high\" confidence level to the output.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng",
+        "line": "116. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Quảng Thành, Nghĩa Thành, Nghĩa Đức và xã Đắk Ha thành phường mới có tên gọi là phường Bắc Gia Nghĩa."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "24611",
+      "ward_name": "Phường Bắc Gia Nghĩa"
+    }
+  ]
+}

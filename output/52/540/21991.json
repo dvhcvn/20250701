@@ -1,0 +1,18 @@
+{
+  "address": "Xã Phước Mỹ, Thành phố Quy Nhơn, Tỉnh Bình Định",
+  "ellapsedInMs": 7982,
+  "estimatedCost": 0.0035486,
+  "thought": "**My Analysis of the Administrative Address Change**\n\nOkay, let's break this down systematically. The user needs to find the new administrative unit for \"Xã Phước Mỹ, Thành phố Quy Nhơn, Tỉnh Bình Định.\" My first step, as always, is to identify the old province: \"Tỉnh Bình Định.\" Then, I need to check for any province mergers, specifically focusing on Resolution 60-NQ/TW. Bingo! I find that \"Tỉnh Bình Định\" was merged into \"Tỉnh Gia Lai.\" So, \"Tỉnh Gia Lai\" is definitely our new province.\n\nNext, I zero in on \"Xã Phước Mỹ.\" I've got a list of resolutions to sift through, hoping to find a direct reference to this specific ward. I carefully read through the resolutions, looking for a match with the city context - Quy Nhon.\n\nI scan `1659/NQ-UBTVQH15`, and it mentions \"Phước Mỹ\", but in Danang. Next, I jump to `1664/NQ-UBTVQH15` that deals with Gia Lai. And Eureka! I find a relevant entry: \"104. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Bùi Thị Xuân và xã Phước Mỹ thành phường mới có tên gọi là **phường Quy Nhơn Tây**.\" This *is* it! It references \"Xã Phước Mỹ\" in the correct city context.\n\nSo, the new ward is \"phường Quy Nhơn Tây\". I'll use the \"New wards\" list to verify it. Searching for \"phường Quy Nhơn Tây\" in \"Tỉnh Gia Lai,\" I find `{\"ward_code\":\"21589\",\"ward_name\":\"Phường Quy Nhơn Tây\",\"province_name\":\"Tỉnh Gia Lai\"}`. Perfect match.\n\nFinally, I'll compile the results into a JSON output. It will be:\n\n*   `province_name`: \"Tỉnh Gia Lai\"\n*   `ward_name`: \"Phường Quy Nhơn Tây\"\n*   `ward_code`: \"21589\"\n*   `citation`:\n    *   `header`: \"1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai\"\n    *   `line`: \"104. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Bùi Thị Xuân và xã Phước Mỹ thành phường mới có tên gọi là **phường Quy Nhơn Tây**.\"\n*   `confidence`: \"high\" (because it's a direct match and confirmed by the province merger).\n\nThis is a pretty straightforward case, and I have high confidence in this solution.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai",
+        "line": "104. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Bùi Thị Xuân và xã Phước Mỹ thành phường mới có tên gọi là **phường Quy Nhơn Tây**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "21589",
+      "ward_name": "Phường Quy Nhơn Tây"
+    }
+  ]
+}

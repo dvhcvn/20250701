@@ -1,0 +1,18 @@
+{
+  "address": "Xã Liên Sơn, Huyện Gia Viễn, Tỉnh Ninh Bình",
+  "ellapsedInMs": 9359,
+  "estimatedCost": 0.0035841,
+  "thought": "**Finding the New Administrative Unit for \"Xã Liên Sơn, Huyện Gia Viễn, Tỉnh Ninh Bình\"**\n\nOkay, so the user wants the new administrative unit for that old address. Let's break this down systematically. First, I need to identify the old province and ward: Tỉnh Ninh Bình and Xã Liên Sơn, respectively, with Huyện Gia Viễn serving as contextual information. Since the prompt states we're eliminating districts, Gia Viễn is primarily for disambiguation.\n\nNext, I need to check for any province mergers. Given the user's expertise, this is a standard preliminary check. Looking at the resolutions, specifically 60-NQ/TW, it confirms that Tỉnh Ninh Bình remains unchanged, which is as expected.\n\nNow, the crucial step: scanning for resolutions specifically related to \"Xã Liên Sơn\" within \"Tỉnh Ninh Bình.\" The `other_resolutions` file is my primary resource. After a quick scan, Resolution 1674/NQ-UBTVQH15, \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình,\" immediately grabs my attention. Line 69 of this resolution directly addresses \"Xã Liên Sơn (huyện Gia Viễn).\" It states the merger of \"Liên Sơn (huyện Gia Viễn), Gia Phú và Gia Hưng\" into a new ward named \"xã Gia Hưng.\" Bingo! This is a high-confidence match.\n\nI have to be careful though. Scanning further, I noticed another mention of \"xã Liên Sơn\" in the same resolution (line 105). However, that's \"Liên Sơn\" from \"thị xã Kim Bảng\" – a completely different geographic context. My original address is firmly in \"Huyện Gia Viễn,\" so this other \"Liên Sơn\" is irrelevant for this query.\n\nNext, I'll cross-reference the identified new ward with the `new_wards` data. I expect to find an entry for \"xã Gia Hưng\" in \"Tỉnh Ninh Bình.\" Lo and behold, there's a perfect match: `{\"ward_code\":\"14482\",\"ward_name\":\"Xã Gia Hưng\",\"province_name\":\"Tỉnh Ninh Bình\"}`. This confirms my findings.\n\nFinally, I'll double-check my findings for any ambiguities or overlooked details. Are there any other \"Xã Liên Sơn\" in Ninh Bình that I might be confusing? No, the resolution is quite explicit: \"Liên Sơn (huyện Gia Viễn).\" Are there any other resolutions that might affect this specific address? The search was comprehensive. Given the direct match, I can assign a \"high\" confidence level to this conclusion. The resolution 1674/NQ-UBTVQH15 specifically deals with the merge.\n\nTherefore, the old address \"Xã Liên Sơn, Huyện Gia Viễn, Tỉnh Ninh Bình\" is now \"xã Gia Hưng,\" with ward code 14482, in Tỉnh Ninh Bình. And the supporting citation is 1674/NQ-UBTVQH15, line 69.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "69. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Liên Sơn (huyện Gia Viễn), Gia Phú và Gia Hưng thành xã mới có tên gọi là xã Gia Hưng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "14482",
+      "ward_name": "Xã Gia Hưng"
+    }
+  ]
+}

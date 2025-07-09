@@ -1,0 +1,28 @@
+{
+  "address": "Phường Cổ Thành, Thành phố Chí Linh, Tỉnh Hải Dương",
+  "ellapsedInMs": 5749,
+  "estimatedCost": 0.002212,
+  "thought": "**Finding the New Administrative Unit for an Old Address**\n\nOkay, so I've got this address to work with: \"Phường Cổ Thành, Thành phố Chí Linh, Tỉnh Hải Dương.\" My task is clear: figure out where this place is now.  Let's break it down methodically.\n\nFirst, the province – \"Tỉnh Hải Dương\". Right, so I need to check those province resolutions (like 60-NQ/TW) to see if it's been merged or changed. Ah, here it is: \"Hợp nhất tỉnh Hải Dương và thành phố Hải Phòng, lấy tên là thành phố Hải Phòng.\"  So, \"Tỉnh Hải Dương\" is now part of \"Thành phố Hải Phòng\". Got it.\n\nNext, the ward itself: \"Phường Cổ Thành\".  Time to delve into those \"Other resolutions,\" especially the ones related to \"Thành phố Hải Phòng\" since that's where \"Tỉnh Hải Dương\" now resides.  I'm looking for \"Phường Cổ Thành\" or something close.  Here we go, Resolution \"1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng\".  Bingo! Line 35 is the key: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Phả Lại, phường Cổ Thành và xã Nhân Huệ thành phường mới có tên gọi là **phường Chí Linh**.\"  This is exactly what I needed.  It explicitly states \"phường Cổ Thành\" is being merged into \"phường Chí Linh\".\n\nFinally, I just need to verify \"phường Chí Linh\" in the \"New wards\" data, in the context of \"Thành phố Hải Phòng\". Yup, the data lines up perfectly: `{\"ward_code\":\"10546\",\"ward_name\":\"Phường Chí Linh\",\"province_name\":\"Thành phố Hải Phòng\"}`. This is a match!\n\nSo, the conclusion is straightforward.  \"Phường Cổ Thành,\" which *was* in \"Tỉnh Hải Dương\" (now part of \"Thành phố Hải Phòng\"), is now, without a doubt, \"Phường Chí Linh\" within \"Thành phố Hải Phòng\".  I'm confident in this, the resolution leaves no room for ambiguity.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Hải Dương và thành phố Hải Phòng, lấy tên là thành phố Hải Phòng"
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "10546",
+      "ward_name": "Phường Chí Linh"
+    },
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "35. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Phả Lại, phườngCổ Thành và xã Nhân Huệ thành phường mới có tên gọi là phườngChí Linh."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "10546",
+      "ward_name": "Phường Chí Linh"
+    }
+  ]
+}

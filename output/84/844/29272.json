@@ -1,0 +1,18 @@
+{
+  "address": "Xã An Trường A, Huyện Càng Long, Tỉnh Trà Vinh",
+  "ellapsedInMs": 7301,
+  "estimatedCost": 0.0028534,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm presented with a Vietnamese address and need to translate it to the new administrative units.  The address is \"Xã An Trường A, Huyện Càng Long, Tỉnh Trà Vinh\".  First, I identify the key components: \"Xã An Trường A\" is the old ward, \"Huyện Càng Long\" is the old district (though districts are being dissolved in these updates), and \"Tỉnh Trà Vinh\" is the old province.\n\nNow, the game plan. I need to go through the provided resolutions, starting with the provincial ones. I quickly locate the resolution that merged \"Tỉnh Trà Vinh\" with \"Tỉnh Bến Tre\" and \"Tỉnh Vĩnh Long,\" ultimately forming \"Tỉnh Vĩnh Long.\"  So, right there, I know the new province name.\n\nNext, I need to find the specific resolution affecting the ward \"Xã An Trường A\".  The provided resolution \"1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long\" looks promising.  Scanning through, I immediately find line 30, which explicitly states that \"Xã An Trường A\" is being merged into the new ward \"Xã An Trường.\"  Perfect! This confirms the new ward's name and its connection to the resolution.\n\nNow, I look up the \"New wards\" data.  I find the entry for \"Xã An Trường\" with `ward_code:\"29275\"`, and confirm it's in \"Tỉnh Vĩnh Long\".  Everything aligns.\n\nTime to construct the output. The `province_name` is clearly \"Tỉnh Vĩnh Long\".  The `ward_name` is \"Xã An Trường\", and the `ward_code` is \"29275\".  For the `citation`, I'll include the resolution \"1687/NQ-UBTVQH15\" with the specific line \"30. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tân Bình (huyện Càng Long), An Trường Avà An Trường thành xã mới có tên gọi là xã An Trường.\"  This provides the full context. Finally, because there's a direct and explicit mapping within the resolution, I'm confident in setting the `confidence` to \"high\".  The JSON schema is correctly followed.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long",
+        "line": "30. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tân Bình (huyện Càng Long), An Trường Avà An Trường thành xã mới có tên gọi là xã An Trường."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "29275",
+      "ward_name": "Xã An Trường"
+    }
+  ]
+}

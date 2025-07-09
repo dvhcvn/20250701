@@ -1,0 +1,18 @@
+{
+  "address": "Xã Nga Phú, Huyện Nga Sơn, Tỉnh Thanh Hóa",
+  "ellapsedInMs": 6196,
+  "estimatedCost": 0.0024517,
+  "thought": "**Finding the New Administrative Unit for \"Xã Nga Phú\"**\n\nOkay, here's how I'm approaching this. The user's given me the old address \"Xã Nga Phú, Huyện Nga Sơn, Tỉnh Thanh Hóa.\" My goal is to determine the new administrative unit, likely a ward, for that address.\n\nFirst, I identified the province, \"Tỉnh Thanh Hóa.\"  Since I know to consult resolution 60-NQ/TW, I checked it. Thankfully, \"Tỉnh Thanh Hoá\" is listed as not undergoing any mergers. This means the province remains unchanged.\n\nNow, focusing on the ward, \"Xã Nga Phú,\" I needed to dive into other relevant resolutions. I immediately turned to `1686/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thanh Hóa`.  I carefully went through the lines of this resolution. Initially, I didn't see \"Xã Nga Phú\" mentioned in the early lines. But, ah-ha! On line 17, I found it: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Nga Điền, **Nga Phú** và Nga An thành xã mới có tên gọi là **xã Nga An**.\"  That's the key! \"Xã Nga Phú\" is explicitly included in the merger to form \"Xã Nga An.\"\n\nTo be absolutely sure, I checked the \"New wards\" data.  I searched for \"Xã Nga An\" and found a matching entry: `{\"ward_code\":\"16144\",\"ward_name\":\"Xã Nga An\",\"province_name\":\"Tỉnh Thanh Hóa\"}`. Perfect! This confirms the information from the resolution.\n\nFinally, I constructed the JSON output. My confidence is very high here because the resolution specifically addresses \"Xã Nga Phú\" and links it directly to the new \"Xã Nga An.\"  The `ward_code` comes from the confirmed \"New wards\" data. The citation details the exact line from resolution `1686/NQ-UBTVQH15` that provided the critical information.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1686/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thanh Hóa",
+        "line": "17. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Nga Điền, Nga Phú và Nga An thành xã mới có tên gọi là xã Nga An."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thanh Hóa",
+      "ward_code": "16144",
+      "ward_name": "Xã Nga An"
+    }
+  ]
+}

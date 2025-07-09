@@ -1,0 +1,28 @@
+{
+  "address": "Xã Cẩm Hà, Thành phố Hội An, Tỉnh Quảng Nam",
+  "ellapsedInMs": 8266,
+  "estimatedCost": 0.0034781,
+  "thought": "**Navigating the Administrative Unit Maze**\n\nOkay, so I'm tasked with identifying the new administrative unit for the old address: \"Xã Cẩm Hà, Thành phố Hội An, Tỉnh Quảng Nam.\"  My first instinct is to break it down.  I've got a ward (\"Xã Cẩm Hà\") and a province (\"Tỉnh Quảng Nam\").  \"Thành phố Hội An\" is a district, but the instructions are pretty clear that I need to focus on province and ward levels, so I can safely ignore that.\n\nFirst things first, I need to check for province mergers.  Resolution 60-NQ/TW is my starting point. And yes, there it is: \"Hợp nhất tỉnh Quảng Nam và thành phố Đà Nẵng, lấy tên là thành phố Đà Nẵng\". So, \"Tỉnh Quảng Nam\" is now \"Thành phố Đà Nẵng.\" Simple enough, that's high-confidence.\n\nNow for the tricky part:  finding what happened to \"Xã Cẩm Hà.\" I need to scan through the provided resolutions, specifically looking for \"Cẩm Hà\".  Let's see...\n\nI've got these \"other resolutions\" to check: 1654/NQ-UBTVQH15 (An Giang), 1659/NQ-UBTVQH15 (Đà Nẵng), 1663/NQ-UBTVQH15 (Đồng Tháp), and 1665/NQ-UBTVQH15 (Hà Tĩnh).\n\nI can quickly dismiss An Giang and Đồng Tháp – nothing there.  But Đà Nẵng and Hà Tĩnh... those are promising.\n\nIn the Đà Nẵng resolution (1659), bingo! Resolution 23:  \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Thanh Hà, Tân An, Cẩm An và **xã Cẩm Hà** thành phường mới có tên gọi là **phường Hội An Tây**.\" Okay, so \"Xã Cẩm Hà\" is merged into \"phường Hội An Tây.\"\n\nBut wait... then, in the Hà Tĩnh resolution (1665), I find resolution 15: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Cẩm Thịnh, Cẩm Hà và Cẩm Hưng thành xã mới có tên gọi là **xã Cẩm Hưng**.\"  Hold on a minute!  \"Xã Cẩm Hà\" is also merged into \"xã Cẩm Hưng\" in Hà Tĩnh?  This is a conflict!\n\nSo, I need to reconcile this.  The original address is in \"Tỉnh Quảng Nam,\" which has become \"Thành phố Đà Nẵng\" after the province merger.  Therefore, the \"Xã Cẩm Hà\" I'm looking for *must* be the one in Đà Nẵng, not Hà Tĩnh.  The correct result should be from the resolution for \"Thành phố Đà Nẵng.\"  This means \"Xã Cẩm Hà\" now belongs to **\"phường Hội An Tây\"**.  That makes sense. This is how I'll proceed.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Quảng Nam và thành phố Đà Nẵng, lấy tên là thành phố Đà Nẵng"
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "20401",
+      "ward_name": "Phường Hội An Tây"
+    },
+    {
+      "citation": {
+        "header": "1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng",
+        "line": "23. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Thanh Hà, Tân An, Cẩm An và xã Cẩm Hà thành phường mới có tên gọi là phường Hội An Tây."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "20401",
+      "ward_name": "Phường Hội An Tây"
+    }
+  ]
+}

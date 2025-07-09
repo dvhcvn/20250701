@@ -1,0 +1,28 @@
+{
+  "address": "Xã Phước Ninh, Huyện Quế Sơn, Tỉnh Quảng Nam",
+  "ellapsedInMs": 8022,
+  "estimatedCost": 0.0035041,
+  "thought": "**Address Mapping Analysis: From Old to New Vietnamese Administrative Units**\n\nOkay, here's how I'm approaching this address mapping problem. First, I need to break down the original address: \"Xã Phước Ninh, Huyện Quế Sơn, Tỉnh Quảng Nam.\" I can readily identify \"Xã Phước Ninh\" as the ward, \"Huyện Quế Sơn\" as the district (though I'm keeping in mind that the districts are being eliminated, so this is just for context), and \"Tỉnh Quảng Nam\" as the province.\n\nNow, the crucial step is to account for province mergers and name changes. The provided information specifically mentions \"Hợp nhất tỉnh Quảng Nam và thành phố Đà Nẵng, lấy tên là thành phố Đà Nẵng,\" indicating that \"Tỉnh Quảng Nam\" is now part of \"Thành phố Đà Nẵng.\" This change is fundamental to finding the correct new ward.\n\nNext, I'll need to scrutinize the resolutions provided, especially focusing on those related to \"Thành phố Đà Nẵng.\" I'm looking for \"Xã Phước Ninh\" within these resolutions. Resolution 1659/NQ-UBTVQH15 (Đà Nẵng) immediately jumps out. It includes two mentions of \"Phước Ninh\": line 1, where \"Phước Ninh\" is being merged into the new \"phường Hải Châu,\" and line 59, where \"Phước Ninh\" is merged into \"xã Quế Phước.\"  Resolutions related to other provinces are irrelevant to this specific address.\n\nBased on the context, and because Quảng Nam merged with Đà Nẵng, both \"phường Hải Châu\" and \"xã Quế Phước\" from Resolution 1659 are potential matches. Now, I need to check the \"New wards\" list for those names, and when I do, I find \"Phường Hải Châu\" in the list with the details: `{\"ward_code\":\"20242\",\"ward_name\":\"Phường Hải Châu\",\"province_name\":\"Thành phố Đà Nẵng\"}`.\n\nTherefore, the old address \"Xã Phước Ninh, Huyện Quế Sơn, Tỉnh Quảng Nam\" is likely mapped to **\"Phường Hải Châu,\" Thành phố Đà Nẵng.** It's important to consider \"xã Quế Phước\" because it could have also have applied, depending on further context.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng",
+        "line": "1. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Thanh Bình, Thuận Phước, Thạch Thang, Phước Ninh và Hải Châu thành phường mới có tên gọi là phường Hải Châu."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "20242",
+      "ward_name": "Phường Hải Châu"
+    },
+    {
+      "citation": {
+        "header": "1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng",
+        "line": "59. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Quế Lâm, Phước Ninh và Ninh Phước thành xã mới có tên gọi là xã Quế Phước."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "20669",
+      "ward_name": "Xã Quế Phước"
+    }
+  ]
+}

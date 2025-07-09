@@ -1,0 +1,28 @@
+{
+  "address": "Xã Phước Tân Hưng, Huyện Châu Thành, Tỉnh Long An",
+  "ellapsedInMs": 6726,
+  "estimatedCost": 0.0036560000000000004,
+  "thought": "**Identifying the New Administrative Unit for the Old Address**\n\nOkay, so I've got \"Xã Phước Tân Hưng, Huyện Châu Thành, Tỉnh Long An\". Let's break this down. First, the old province is \"Tỉnh Long An.\" I need to check for any mergers or name changes related to Long An.  I immediately look at the 60-NQ/TW resolutions. Ah, here it is: \"Hợp nhất tỉnh Tây Ninh và tỉnh Long An, lấy tên là tỉnh Tây Ninh.\"  So, Long An got merged into Tây Ninh, and the new province is \"Tỉnh Tây Ninh\".\n\nNow, I need to find the specific resolution impacting this area.  Since Long An is now part of Tây Ninh, I'll search through \"Other resolutions\" for references to either.  Perfect, I found \"1682/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tây Ninh\". This looks promising.\n\nTime to delve into that resolution, specifically looking for \"Phước Tân Hưng\" and \"Huyện Châu Thành.\" Scanning line by line...Bingo! Line 55: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Tầm Vu và các xã Hiệp Thạnh (huyện Châu Thành), Phú Ngãi Trị, Phước Tân Hưng thành xã mới có tên gọi là **xã Tầm Vu**.\"  It explicitly mentions \"Phước Tân Hưng\" and \"Huyện Châu Thành\", and crucially, it states that \"Phước Tân Hưng\" is now part of a new ward called \"Xã Tầm Vu.\"\n\nTo confirm, I'll cross-reference this with the \"New wards\" list.  Yup, there it is:  \"{\"ward_code\":\"28210\",\"ward_name\":\"Xã Tầm Vu\",\"province_name\":\"Tỉnh Tây Ninh\"}\".  This is a perfect match!  The new ward name and the new province name align.\n\nTherefore, the output will be based on the information I found. I'm going to create a JSON output. This will include the citation, confidence (which is high since there's a direct match in the resolution), the new province name which is \"Tỉnh Tây Ninh\", the ward code, and the new ward name \"Xã Tầm Vu.\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Tây Ninh và tỉnh Long An, lấy tên là tỉnh Tây Ninh"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tây Ninh",
+      "ward_code": "28210",
+      "ward_name": "Xã Tầm Vu"
+    },
+    {
+      "citation": {
+        "header": "1682/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tây Ninh",
+        "line": "55. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Tầm Vu và các xã Hiệp Thạnh (huyện Châu Thành), Phú Ngãi Trị, Phước Tân Hưng thành xã mới có tên gọi là xã Tầm Vu."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tây Ninh",
+      "ward_code": "28210",
+      "ward_name": "Xã Tầm Vu"
+    }
+  ]
+}

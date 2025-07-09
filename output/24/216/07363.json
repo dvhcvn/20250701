@@ -1,0 +1,28 @@
+{
+  "address": "Xã Ngọc Lý, Huyện Tân Yên, Tỉnh Bắc Giang",
+  "ellapsedInMs": 8686,
+  "estimatedCost": 0.003602,
+  "thought": "**My Analysis of the Administrative Unit Change**\n\nOkay, so I've been asked to find the new ward for the old address \"Xã Ngọc Lý, Huyện Tân Yên, Tỉnh Bắc Giang.\"  This means I need to sift through a bunch of resolutions and data on administrative restructuring.  Here's how I approached this, step-by-step:\n\nFirst, I identified \"Tỉnh Bắc Giang\" as the old province. Immediately, I went to my province resolutions (specifically, 60-NQ/TW) to see if Bắc Giang was involved in any mergers.  Bingo! It was merged with Bắc Ninh to form \"Tỉnh Bắc Ninh.\"\n\nNext, I zeroed in on the specific ward \"Xã Ngọc Lý.\" My hunch was to check \"Other resolutions\" for any mention of \"Ngọc Lý\" or even \"Tân Yên,\" since the old district name might still be relevant in this restructuring context.  I scanned the resolutions carefully, and Resolution 1658/NQ-UBTVQH15 jumped out at me.  It's focused on \"Tỉnh Bắc Ninh\" (the correct new province!), and it explicitly stated the merger of \"Xã Ngọc Lý\" with several other units to form the new ward, \"Xã Tân Yên\"!  This was a direct hit.\n\nThe resolution header, \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh,\" perfectly matched the new province I derived earlier.  This solidified my initial match.\n\nNow, to be absolutely certain, I went to the \"New wards\" data and looked for \"Xã Tân Yên\" within \"Tỉnh Bắc Ninh.\"  There it was:  `{\"ward_code\":\"07339\",\"ward_name\":\"Xã Tân Yên\",\"province_name\":\"Tỉnh Bắc Ninh\"}`.  This was a perfect match, confirming that \"Xã Ngọc Lý\" has indeed been reorganized into the new \"Xã Tân Yên.\"\n\nOf course, I didn't stop there. I checked other resolutions mentioning \"Tân Yên\" to eliminate any potential ambiguity. Resolutions from other provinces using the same name, or indicating that it wasn't rearranged, were found. These were for different provinces (Lạng Sơn, Sơn La, Tuyên Quang), and therefore irrelevant.\n\nBased on this methodical analysis of the province merge, the specific resolution, and the new ward data, I'm confident in my conclusion: the new administrative unit for \"Xã Ngọc Lý, Huyện Tân Yên, Tỉnh Bắc Giang\" is \"Xã Tân Yên, Tỉnh Bắc Ninh.\" The high confidence comes from the direct link provided by the explicit mention of \"Ngọc Lý\" in the resolution creating the new ward \"Tân Yên.\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "5. Hợp nhất tỉnh Bắc Ninh và tỉnh Bắc Giang, lấy tên là tỉnh Bắc Ninh"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "07339",
+      "ward_name": "Xã Tân Yên"
+    },
+    {
+      "citation": {
+        "header": "1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh",
+        "line": "56. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Cao Thượng và các xã Cao Xá, Việt Lập, Ngọc Lý thành xã mới có tên gọi là xã Tân Yên."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "07339",
+      "ward_name": "Xã Tân Yên"
+    }
+  ]
+}

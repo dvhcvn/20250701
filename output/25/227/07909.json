@@ -1,0 +1,18 @@
+{
+  "address": "Phường Thanh Miếu, Thành phố Việt Trì, Tỉnh Phú Thọ",
+  "ellapsedInMs": 5694,
+  "estimatedCost": 0.0020596,
+  "thought": "**Determining the New Ward for the Input Address**\n\nOkay, so I've got an old address: \"Phường Thanh Miếu, Thành phố Việt Trì, Tỉnh Phú Thọ\".  My first task is straightforward - extract the old ward and province.  Easy enough: \"Phường Thanh Miếu\" and \"Tỉnh Phú Thọ\", respectively.\n\nNext, I need to check for any province mergers that might impact my search.  Thankfully, Resolution 60-NQ/TW doesn't present a problem here; it consolidates provinces, but \"Tỉnh Phú Thọ\" remains \"Tỉnh Phú Thọ\".  No complications there.\n\nNow comes the crucial part: I have to find the resolution that deals with ward changes *within* \"Tỉnh Phú Thọ\".  Resolution \"1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ\" is the one.  Line 134 is the key line: it explicitly states that \"Phường Thanh Miếu\" is *part* of a newly formed \"Phường Thanh Miếu\", along with other units.  Crucially, it is mentioned as being a *part* of a new \"Phường Thanh Miếu\".\n\nThis strongly suggests that the *old* \"Phường Thanh Miếu\" is now subsumed within the *new* \"Phường Thanh Miếu\".  To confirm, I'll cross-reference this with my \"New wards\" data.  I'm looking for \"Phường Thanh Miếu\" in the list, and bingo! I find `{\"ward_code\":\"07909\",\"ward_name\":\"Phường Thanh Miếu\",\"province_name\":\"Tỉnh Phú Thọ\"}`.  It matches perfectly.\n\nThe resolution provides clear and direct information.  The old ward is described as a part of the newly formed \"Phường Thanh Miếu\", therefore I have very high confidence in the match. I'm ready to construct the JSON output reflecting my findings.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "134. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Thọ Sơn, Tiên Cát, Bạch Hạc, Thanh Miếu và xã Sông Lô thành phường mới có tên gọi là phường Thanh Miếu."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "07909",
+      "ward_name": "Phường Thanh Miếu"
+    }
+  ]
+}

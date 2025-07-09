@@ -1,0 +1,18 @@
+{
+  "address": "Xã Cam Thành Nam, Thành phố Cam Ranh, Tỉnh Khánh Hòa",
+  "ellapsedInMs": 5889,
+  "estimatedCost": 0.002058,
+  "thought": "**My Thought Process in Mapping the Old Address**\n\nOkay, so I'm given an old Vietnamese address (\"Xã Cam Thành Nam\", \"Tỉnh Khánh Hòa\") and I need to figure out its corresponding new administrative unit. My initial thought is to break this down into a step-by-step process.\n\nFirst, I identify the key components: the old ward (\"Xã Cam Thành Nam\") and the province (\"Tỉnh Khánh Hòa\").  With these, I can begin my investigation.\n\nI immediately turn to the Province Resolutions (specifically, 60-NQ/TW) to see if there have been any major provincial changes.  Khánh Hòa is the province I'm starting with, but I need to confirm if it has been merged or renamed. The resolution doesn't indicate Khánh Hòa has been merged with any other province so that information is helpful and gives me confidence in the next steps.\n\nNow I delve into other relevant resolutions (1667/NQ-UBTVQH15).  I know this is where I'll likely find details regarding the specific ward changes. I'll meticulously scan the resolution's content (`lines`) looking for a direct link between \"Xã Cam Thành Nam\" and a new ward.  Eureka! Line 53 directly mentions \"Xã Cam Thành Nam\" being reorganized into \"phường Bắc Cam Ranh\". This is a crucial piece of the puzzle!\n\nNext, I need to validate this finding. I check the `New wards` data to ensure \"Phường Bắc Cam Ranh\" exists and that it's associated with \"Tỉnh Khánh Hòa\".  And yes, there it is! Confirmed.\n\nFinally, I'll compile the results into the required JSON format:\n\n*   The `province_name` is \"Tỉnh Khánh Hòa\" (unchanged).\n*   The `ward_name` is \"Phường Bắc Cam Ranh\".\n*   The `ward_code` is \"22411\".\n*   The `citation` will accurately reflect the resolution and the relevant line (Line 53).\n*   The `confidence` level is \"high\" since there's a clear and direct mapping between the old and new administrative units.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1667/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Khánh Hòa",
+        "line": "53. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Cam Nghĩa, phườngCam Phúc Bắc và xã Cam Thành Nam thành phường mới có tên gọi là phường Bắc Cam Ranh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Khánh Hòa",
+      "ward_code": "22411",
+      "ward_name": "Phường Bắc Cam Ranh"
+    }
+  ]
+}

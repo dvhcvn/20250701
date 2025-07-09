@@ -1,0 +1,28 @@
+{
+  "address": "Xã Tân Bửu, Huyện Bến Lức, Tỉnh Long An",
+  "ellapsedInMs": 8716,
+  "estimatedCost": 0.0033362,
+  "thought": "**Analysis of Address Mapping: \"Xã Tân Bửu, Huyện Bến Lức, Tỉnh Long An\"**\n\nOkay, so I'm presented with a tricky mapping task: \"Xã Tân Bửu, Huyện Bến Lức, Tỉnh Long An\" needs to be translated into the new administrative structure. My initial thought process is to break this down. First, I see \"Tỉnh Long An\" - that's the starting point. I know from my familiarity with the administrative changes that province mergers have been in play.\n\nMy first check will be the relevant resolutions. I immediately identify Resolution 60-NQ/TW as a potential source for information on province mergers. A quick scan reveals: \"Hợp nhất tỉnh Tây Ninh và tỉnh Long An, lấy tên là tỉnh Tây Ninh.\" Aha! \"Tỉnh Long An\" is now part of \"Tỉnh Tây Ninh.\" That’s the first piece of the puzzle. I need to keep this in mind as I process the old address.\n\nNow, I shift focus to the ward level. My primary tool here is Resolution 1682/NQ-UBTVQH15, specifically designed for changes in Tây Ninh, which is now relevant. I carefully comb through the lines of this resolution, searching for any mention of \"Xã Tân Bửu.\" Bingo! Line 36 jumps out: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Tân Bửu và xã Lương Hòa thành xã mới có tên gọi là xã Lương Hòa.\" This is a direct hit! The old \"Xã Tân Bửu\" is now part of the new \"Xã Lương Hòa.\" I can practically feel the mapping coming together.\n\nOf course, I need to be meticulous. I double-check the resolution for any further mentions of Bến Lức and the surrounding areas, which are part of the original address. Lines 35 and 37 also mention districts like Bến Lức, but their context is for other old wards within the Huyện Bến Lức. Line 36 remains the critical link here.\n\nWith the new ward name established, I cross-reference this with the provided \"New Wards\" data. I'm looking for \"Xã Lương Hòa\" within \"Tỉnh Tây Ninh.\" And there it is: `{\"ward_code\":\"28003\",\"ward_name\":\"Xã Lương Hòa\",\"province_name\":\"Tỉnh Tây Ninh\"}`. A perfect match!\n\nThe structure for the JSON output is quite straightforward at this point. \"Tỉnh Tây Ninh\" becomes the `province_name`, \"Xã Lương Hòa\" is the `ward_name`, and the associated `ward_code` is 28003. Since this mapping is directly stated in the resolution, and it's unambiguous, a \"high\" `confidence` is absolutely warranted. And of course, the citation will point to Resolution 1682/NQ-UBTVQH15. With the lines of code and data combined, I'm confident in the output and the mapping I'm providing.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Tây Ninh và tỉnh Long An, lấy tên là tỉnh Tây Ninh"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tây Ninh",
+      "ward_code": "28003",
+      "ward_name": "Xã Lương Hòa"
+    },
+    {
+      "citation": {
+        "header": "1682/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tây Ninh",
+        "line": "36. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Tân Bửu và xã Lương Hòa thành xã mới có tên gọi là xã Lương Hòa."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tây Ninh",
+      "ward_code": "28003",
+      "ward_name": "Xã Lương Hòa"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Duy Trinh, Huyện Duy Xuyên, Tỉnh Quảng Nam",
+  "ellapsedInMs": 5872,
+  "estimatedCost": 0.0020537999999999997,
+  "thought": "**My Analysis of the Administrative Address Change**\n\nOkay, let's break this down. The user provided an old address and wants it mapped to a new administrative unit. My initial task is to decipher this based on the available data, specifically resolutions and new ward information.\n\nFirst, I identified the old province and ward: \"Tỉnh Quảng Nam\" and \"Xã Duy Trinh\" respectively, within the address \"Xã Duy Trinh, Huyện Duy Xuyên, Tỉnh Quảng Nam\". Straightforward enough.\n\nNext, I delved into the province resolutions. I found that \"Tỉnh Quảng Nam\" was merged with \"thành phố Đà Nẵng\", resulting in the new province name: \"Thành phố Đà Nẵng\". This is crucial for the mapping.\n\nThen, I shifted focus to the ward-level changes, checking for \"Xã Duy Trinh\".  And there it was! Resolution 1659/NQ-UBTVQH15, specifically line 62, clearly stated that \"Xã Duy Trinh\" was part of a merger to form the new ward \"Xã Duy Xuyên\".\n\nTo solidify this, I consulted the `new_wards` data, and sure enough, there was an entry for \"Xã Duy Xuyên\" within \"Thành phố Đà Nẵng\", with a specific ward code: `{\"ward_code\":\"20623\",\"ward_name\":\"Xã Duy Xuyên\",\"province_name\":\"Thành phố Đà Nẵng\"}`. This perfectly aligned with my findings.\n\nBased on this comprehensive analysis, I can now construct the JSON output. The cited resolution will be the source for the `citation.header` and specific line.  My confidence in this mapping is high because all the information is consistent and verifiable.  The new province will be \"Thành phố Đà Nẵng\", and the new ward code and name are from the `new_wards` data. This should be a clean and accurate transformation.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng",
+        "line": "62. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Duy Trung, Duy Sơn và Duy Trinh thành xã mới có tên gọi là xã Duy Xuyên."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "20623",
+      "ward_name": "Xã Duy Xuyên"
+    }
+  ]
+}

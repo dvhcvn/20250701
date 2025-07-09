@@ -1,0 +1,18 @@
+{
+  "address": "Phường Vĩnh Thông, Thành phố Rạch Giá, Tỉnh Kiên Giang",
+  "ellapsedInMs": 7947,
+  "estimatedCost": 0.0030381,
+  "thought": "**My Analysis of Address Mapping**\n\nOkay, let's break this down. The user's asking me to map this old address: \"Phường Vĩnh Thông, Thành phố Rạch Giá, Tỉnh Kiên Giang\" to its new administrative unit.\n\nFirst, I need to pinpoint the province and ward.  It's \"Tỉnh Kiên Giang\" and \"Phường Vĩnh Thông,\" respectively.  \n\nNow, I'm going to consult the relevant resolutions. My focus starts with province mergers.  I check the \"60-NQ/TW\" resolution. It states that \"Tỉnh Kiên Giang\" merged with \"Tỉnh An Giang\" to form a new \"Tỉnh An Giang\".\n\nNext, I need to find the new ward within \"Tỉnh An Giang\".  I check \"Other resolutions\". Resolution \"1654/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh An Giang\" seems promising.  Looking at line 90, it says,  \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Vĩnh Thông, xã Phi Thông và xã Mỹ Lâm thành phường mới có tên gọi là phường Vĩnh Thông.\" Bingo!  That directly mentions the ward \"Phường Vĩnh Thông\" within the new province.\n\nI checked another resolution which is not relevant.\n\nNow, I cross-reference the \"New wards\" list for the `ward_code` of \"Phường Vĩnh Thông\" in \"Tỉnh An Giang\".  I find it: {\"ward_code\":\"30760\",\"ward_name\":\"Phường Vĩnh Thông\",\"province_name\":\"Tỉnh An Giang\"}.\n\nBased on this, my analysis is very confident. The old province changed to a new one, but the ward name remained the same. So, the mapping is: \"Tỉnh Kiên Giang\" (old) to \"Tỉnh An Giang\" (new), and \"Phường Vĩnh Thông\" (old) to \"Phường Vĩnh Thông\" (new) with a ward code of \"30760\".\n\nHere's the JSON output I've constructed based on my findings:\n\n```json\n[\n  {\n    \"citation\": {\n      \"header\": \"60-NQ/TW\",\n      \"line\": \"Hợp nhất tỉnh An Giang và tỉnh Kiên Giang, lấy tên là tỉnh An Giang\"\n    },\n    \"confidence\": \"high\",\n    \"province_name\": \"Tỉnh An Giang\",\n    \"ward_code\": \"30760\",\n    \"ward_name\": \"Phường Vĩnh Thông\"\n  },\n  {\n    \"citation\": {\n      \"header\": \"1654/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh An Giang\",\n      \"line\": \"90. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Vĩnh Thông, xã Phi Thông và xã Mỹ Lâm thành phường mới có tên gọi là phường Vĩnh Thông.\"\n    },\n    \"confidence\": \"high\",\n    \"province_name\": \"Tỉnh An Giang\",\n    \"ward_code\": \"30760\",\n    \"ward_name\": \"Phường Vĩnh Thông\"\n  }\n]\n```\n\nSince the request is clear cut, I'm confident with this output.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1654/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh An Giang",
+        "line": "90. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Vĩnh Thông, xã Phi Thông và xã Mỹ Lâm thành phường mới có tên gọi là phường Vĩnh Thông."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh An Giang",
+      "ward_code": "30760",
+      "ward_name": "Phường Vĩnh Thông"
+    }
+  ]
+}

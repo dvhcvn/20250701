@@ -1,0 +1,18 @@
+{
+  "address": "Xã Trung Hải, Huyện Gio Linh, Tỉnh Quảng Trị",
+  "ellapsedInMs": 6461,
+  "estimatedCost": 0.0022687999999999996,
+  "thought": "**Mapping an Old Vietnamese Address to the New System**\n\nAlright, let's break this down. The user's goal is clear: they want to find the new equivalent of an old Vietnamese address. It seems like we're dealing with administrative changes based on resolutions and new ward data. I've got a handle on the structure of this task.\n\nFirst, I need to get the lay of the land. The old address includes \"Xã Trung Hải\" (the old ward), \"Huyện Gio Linh\" (the old district, which I note the prompt says to ignore), and \"Tỉnh Quảng Trị\" (the old province).\n\nNext, I need to understand what's happening at the province level. I'm checking the Province Resolutions (60-NQ/TW).  Fortunately, Quảng Trị isn't slated to be eliminated, but it's *merging* with Quảng Bình.  So,  \"Tỉnh Quảng Trị\" is still the province, but it's the result of a merger. That's good to keep in mind.\n\nNow I delve into the \"Other resolutions.\" I'm looking for \"Xã Trung Hải\" in this section. Boom! Resolution 1680/NQ-UBTVQH15 provides the key. It details the merging of \"Xã Trung Hải,\" \"Trung Giang,\" and \"Trung Sơn\" to create a new ward, \"Xã Bến Hải.\" This is the core of the transformation.\n\nI then confirm this in the \"New wards\" data.  There it is: `{\"ward_code\":\"19501\",\"ward_name\":\"Xã Bến Hải\",\"province_name\":\"Tỉnh Quảng Trị\"}`. Everything lines up perfectly.\n\nTherefore, the output should be structured to show that \"Xã Trung Hải\" is now \"Xã Bến Hải,\" in the same province. The resolution is explicit, and the new ward data confirms everything. Given the direct match, I'm confident in calling this \"high\" confidence. The JSON structure is straightforward, and I'll fill in the fields accordingly. Let's make sure the schema is followed. I'm ready to craft that final JSON output with the citation info, ward code and name, province name, and the \"high\" confidence indicator.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1680/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Trị",
+        "line": "44. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Trung Hải, Trung Giang và Trung Sơn thành xã mới có tên gọi là xã Bến Hải."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Trị",
+      "ward_code": "19501",
+      "ward_name": "Xã Bến Hải"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "address": "Phường Yên Phụ, Quận Tây Hồ, Thành phố Hà Nội",
+  "ellapsedInMs": 7755,
+  "estimatedCost": 0.0043468000000000005,
+  "thought": "**Understanding the New Administrative Unit**\n\nOkay, so I'm presented with an old address: \"Phường Yên Phụ, Quận Tây Hồ, Thành phố Hà Nội.\" My task is to determine the current ward for that address.  First, I need to establish the province, which is straightforward: \"Thành phố Hà Nội\". No province mergers, as per Resolution 60-NQ/TW.\n\nNow, I dive into the crucial step: researching potential ward rearrangements within Hanoi. Specifically, I'm looking for relevant resolutions. My focus goes straight to the \"1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội.\"\n\nScanning this resolution, I immediately see line 14 mentions \"Phường Yên Phụ\" contributing to the new \"Phường Hồng Hà,\" along with a few other wards. The very next line, line 28, says the remaining part of the old \"Phường Yên Phụ\" merges into the new \"Phường Tây Hồ.\"\n\nThis is clear. \"Phường Yên Phụ\" is no longer a standalone ward. It has been split and merged into two new wards: \"Phường Hồng Hà\" and \"Phường Tây Hồ\".\n\nNext, I need to verify details like codes and province names of these new wards, so that data integrity is assured. The data regarding \"Phường Hồng Hà\" is `{\"ward_code\":\"00097\",\"ward_name\":\"Phường Hồng Hà\",\"province_name\":\"Thành phố Hà Nội\"}` and for \"Phường Tây Hồ\" is `{\"ward_code\":\"00103\",\"ward_name\":\"Phường Tây Hồ\",\"province_name\":\"Thành phố Hà Nội\"}`\n\nThe confidence level here is very high. The resolution is explicit and provides a direct mapping from the old \"Phường Yên Phụ\" to the two new wards.\n\nTherefore, the final output will be a JSON array, representing the two new ward candidates, along with their details and citations, indicating the reorganization.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội",
+        "line": "14. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Chương Dương, Phúc Tân, Phúc Xá, một phần diện tích tự nhiên, quy mô dân số của các phường Nhật Tân, Phú Thượng, Quảng An, Thanh Lương, Tứ Liên, Yên Phụ, một phần diện tích tự nhiên của phường Bồ Đề và phường Ngọc Thụy, phần còn lại của phường Bạch Đằng sau khi sắp xếp theo quy định tại khoản 6 Điều này thành phường mới có tên gọi là **phường Hồng Hà**."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hà Nội",
+      "ward_code": "00097",
+      "ward_name": "Phường Hồng Hà"
+    },
+    {
+      "citation": {
+        "header": "1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội",
+        "line": "28. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Bưởi, một phần diện tích tự nhiên, quy mô dân số của phường Phú Thượng và phường Xuân La, phần còn lại của các phường Nhật Tân, Quảng An, Tứ Liên, Yên Phụ sau khi sắp xếp theo quy định tại khoản 14 Điều này, phần còn lại của phường Nghĩa Đô sau khi sắp xếp theo quy định tại khoản 4, khoản 26 Điều này và phần còn lại của phường Thụy Khuê sau khi sắp xếp theo quy định tại khoản 3 Điều này thành phường mới có tên gọi là **phường Tây Hồ**."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hà Nội",
+      "ward_code": "00103",
+      "ward_name": "Phường Tây Hồ"
+    }
+  ]
+}

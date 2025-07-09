@@ -1,0 +1,28 @@
+{
+  "address": "Xã Hướng Thọ Phú, Thành phố Tân An, Tỉnh Long An",
+  "ellapsedInMs": 8290,
+  "estimatedCost": 0.004146499999999999,
+  "thought": "**My Analysis of the Administrative Reorganization**\n\nOkay, let's break this down. The user provided an old address: \"Xã Hướng Thọ Phú, Thành phố Tân An, Tỉnh Long An.\" My task is to identify the corresponding new administrative unit.\n\nFirst, I segmented the old address: \"Xã Hướng Thọ Phú\" (the ward), \"Thành phố Tân An\" (the district), and \"Tỉnh Long An\" (the province). Given my expertise, I immediately recognized the need to consider both province-level and ward-level changes, especially since the \"district\" level is being eliminated in this context.\n\nStep 1: Province-Level Change. I checked the provided resolutions for province mergers. Resolution 60-NQ/TW states that \"Tỉnh Long An\" is merged with another province to become \"Tỉnh Tây Ninh.\" So, the new province name is definitely \"Tỉnh Tây Ninh\".\n\nStep 2: Ward-Level Investigation. Now, I focused on ward-level resolutions, specifically searching for \"Xã Hướng Thọ Phú\" and \"Thành phố Tân An\". Resolution 1682/NQ-UBTVQH15, concerning administrative adjustments in \"Tỉnh Tây Ninh,\" proved critical.  Item 84 of this resolution explicitly states that \"Xã Hướng Thọ Phú,\" along with other wards and parts of another, is being combined to form a new ward named **\"phường Long An.\"** Excellent! The old \"Thành phố Tân An\" is also mentioned in the context of the wards affected by this change.\n\nStep 3: Verification. I cross-referenced the new ward name \"phường Long An\" against the \"New Wards\" data. And there it was: `{\"ward_code\":\"27694\",\"ward_name\":\"Phường Long An\",\"province_name\":\"Tỉnh Tây Ninh\"}`. This perfectly matches the resolution's findings!\n\nGiven the explicit mention of \"Xã Hướng Thọ Phú\" in the resolution, along with the correct province-level change, I'm highly confident in this mapping. To double-check, I verified that \"Thành phố Tân An\" in the resolution refers to the old Long An district.\n\nTherefore, my final analysis is:\n\n*   **Old Address:** Xã Hướng Thọ Phú, Thành phố Tân An, Tỉnh Long An\n*   **New Province:** Tỉnh Tây Ninh (from Resolution 60-NQ/TW)\n*   **New Ward:** Phường Long An (from Resolution 1682/NQ-UBTVQH15)\n*   **New Ward Code:** 27694\n\nThe mapping is complete, and the confidence level is very high based on the direct references and alignments.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "18. Hợp nhất tỉnh Tây Ninh và tỉnh Long An, lấy tên là tỉnh Tây Ninh"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tây Ninh",
+      "ward_code": "27694",
+      "ward_name": "Phường Long An"
+    },
+    {
+      "citation": {
+        "header": "1682/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tây Ninh",
+        "line": "84. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của Phường 1 và Phường 3 (thành phố Tân An), Phường 4, Phường 5, Phường 6, xã Hướng Thọ Phú, phần còn lại của xã Bình Thạnh (huyện Thủ Thừa) sau khi sắp xếp theo quy định tại khoản 20 Điều này thành phường mới có tên gọi là phường Long An."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tây Ninh",
+      "ward_code": "27694",
+      "ward_name": "Phường Long An"
+    }
+  ]
+}

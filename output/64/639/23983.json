@@ -1,0 +1,18 @@
+{
+  "address": "Xã Ia Phang, Huyện Chư Pưh, Tỉnh Gia Lai",
+  "ellapsedInMs": 5928,
+  "estimatedCost": 0.0020637,
+  "thought": "**Analyzing the Vietnamese Address Re-mapping Request**\n\nOkay, so I'm tackling this Vietnamese address re-mapping problem. The user wants to map an old address to the new administrative units, which means I've got to understand how these units have changed.\n\nFirst, I need to break down the old address: it's \"Xã Ia Phang\" (ward), \"Huyện Chư Pưh\" (district), and \"Tỉnh Gia Lai\" (province). Easy enough.\n\nNext, I need to see how these units have evolved. I'll start with the province, looking at the provided province resolutions. \"Tỉnh Gia Lai\" is mentioned in resolution 60-NQ/TW, and it seems the province name has remained unchanged. Good news, one less thing to worry about.\n\nNow, the wards and districts. I'll scour the \"other_resolutions\" file, focusing on \"Xã Ia Phang.\" Aha! Resolution 1664/NQ-UBTVQH15 is a direct hit! It explicitly states that \"Xã Ia Phang\" is merged into \"xã Chư Pưh\" as part of the re-organization. This is key.\n\nThen, I'll check the \"new_wards\" data to see if \"Xã Chư Pưh\" exists. And there it is: a record with the correct name, code, and province (\"Tỉnh Gia Lai\"). Perfect!\n\nSo, the conclusion is straightforward. The old ward, \"Xã Ia Phang,\" is now part of the new ward, \"Xã Chư Pưh,\" according to the specific resolution. My confidence is \"high\" because there's a clear, explicit resolution for this. The new ward is located in the province Gia Lai.\n\nI'll structure the output as requested: an array of objects, each containing the citation (resolution details), confidence (high), the new province name, the new ward code, and the new ward name. It's a clean and confident re-mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai",
+        "line": "57. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Nhơn Hòa, xã Chư Don và xã Ia Phang thành xã mới có tên gọi là xã Chư Pưh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "23942",
+      "ward_name": "Xã Chư Pưh"
+    }
+  ]
+}

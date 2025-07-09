@@ -1,0 +1,28 @@
+{
+  "address": "Xã Trực Đại, Huyện Trực Ninh, Tỉnh Nam Định",
+  "ellapsedInMs": 7864,
+  "estimatedCost": 0.0034438000000000003,
+  "thought": "**Identifying the New Administrative Unit**\n\nOkay, here's what I've determined based on the old address, provided resolutions, and the list of new wards. I started with \"Xã Trực Đại, Tỉnh Nam Định\". The first step was to identify the new province and ward.\n\nFirst, I looked at province changes.  Resolution 60-NQ/TW states that Nam Định merged with Hà Nam and Ninh Bình, becoming Ninh Bình. So, \"Tỉnh Nam Định\" is now \"Tỉnh Ninh Bình\".  Confidence: High, as it's a direct merger cited in a central resolution.\n\nNext, the ward identification. I searched the \"Other resolutions\" for \"Xã Trực Đại.\" Resolution 1674/NQ-UBTVQH15 was key. It specifically stated \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Trực Đại, Trực Thái và Trực Thắng thành xã mới có tên gọi là **xã Minh Thái**.\" This is a clear rename and merge, meaning \"Xã Trực Đại\" is now \"Xã Minh Thái\". Confidence: High, as this is a direct, explicit mapping.\n\nWith the new ward name in hand, I then looked at the \"New wards\" list for \"Xã Minh Thái\" under \"Tỉnh Ninh Bình.\" The entry matched perfectly:  `{\"ward_code\":\"14071\",\"ward_name\":\"Xã Minh Thái\",\"province_name\":\"Tỉnh Ninh Bình\"}`. This confirms the ward code as 14071.\n\nTherefore, the final output will be:\n\n*   `province_name`: \"Tỉnh Ninh Bình\"\n*   `ward_name`: \"Xã Minh Thái\"\n*   `ward_code`: \"14071\"\n*   `citation`: The resolution that directly maps \"Xã Trực Đại\" to \"Xã Minh Thái\". Specifically:\n    *   `header`: \"1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình\"\n    *   `line`: \"39. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Trực Đại, Trực Thái và Trực Thắng thành xã mới có tên gọi là xã Minh Thái.\"\n*   `confidence`: \"high\"\n\nThe process and all necessary checks are completed, and I'm confident in the result. I ensured the structure and all elements of the result are in accordance with the required schema.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Hà Nam, tỉnh Ninh Bình và tỉnh Nam Định; lấy tên là tỉnh Ninh Bình"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "14071",
+      "ward_name": "Xã Minh Thái"
+    },
+    {
+      "citation": {
+        "header": "1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "39. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Trực Đại, Trực Thái và Trực Thắng thành xã mới có tên gọi là xã Minh Thái."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "14071",
+      "ward_name": "Xã Minh Thái"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Xuân Giao, Huyện Bảo Thắng, Tỉnh Lào Cai",
+  "ellapsedInMs": 7328,
+  "estimatedCost": 0.0026515,
+  "thought": "**Determining the New Ward for the Given Address**\n\nOkay, so I've got the old address: \"Xã Xuân Giao, Huyện Bảo Thắng, Tỉnh Lào Cai.\" First things first, I need to isolate the key components: the ward \"Xã Xuân Giao\" and the province \"Tỉnh Lào Cai.\" The district, \"Huyện Bảo Thắng,\" is irrelevant since the resolutions clearly indicate district-level changes.\n\nMy strategy is straightforward: first, I'll analyze the province resolutions, specifically Resolution 60-NQ/TW, to see if \"Tỉnh Lào Cai\" is being merged or altered. Thankfully, it's not – \"Hợp nhất tỉnh Lào Cai và tỉnh Yên Bái, lấy tên là tỉnh Lào Cai\" explicitly states it remains the same. That's my base.\n\nNext, I'll dive into the specific resolutions related to the old ward and province. I'm looking for mentions of \"Xã Xuân Giao\" within resolutions concerning \"Tỉnh Lào Cai.\" Resolution 1673/NQ-UBTVQH15, \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai,\" seems promising. Bingo! Line 45 says, \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Xuân Giao, Thống Nhất và Gia Phú thành xã mới có tên gọi là **xã Gia Phú**.\" That's the key.\n\nNow, I'll cross-reference this information with the \"New wards\" data. I'm searching for \"xã Gia Phú\" within that list. And there it is: `{\"ward_code\":\"02923\",\"ward_name\":\"Xã Gia Phú\",\"province_name\":\"Tỉnh Lào Cai\"}`. Perfect match!\n\nBased on these findings, I'm confident in constructing the JSON output. I'll use the relevant line from the resolution for the citation and mark the confidence level as \"high\" because of the clear, direct mapping. The province name is \"Tỉnh Lào Cai\" as confirmed earlier. The ward code and name will come directly from the \"New wards\" data.\n\nTo be absolutely sure, I've re-examined the resolutions for any conflicting information or alternative candidates, especially regarding \"Xã Xuân Giao\" and \"Tỉnh Lào Cai,\" but there are no other relevant entries. Therefore, my final conclusion is clear: the old ward \"Xã Xuân Giao\" is now part of the new ward \"Xã Gia Phú\" in \"Tỉnh Lào Cai.\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai",
+        "line": "45. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Xuân Giao, Thống Nhất và Gia Phú thành xã mới có tên gọi là xã Gia Phú."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "02923",
+      "ward_name": "Xã Gia Phú"
+    }
+  ]
+}

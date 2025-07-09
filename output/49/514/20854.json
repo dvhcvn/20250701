@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Tiên Kỳ, Huyện Tiên Phước, Tỉnh Quảng Nam",
+  "ellapsedInMs": 7762,
+  "estimatedCost": 0.0030699,
+  "thought": "**Address Mapping for Vietnamese Administrative Units**\n\nOkay, I'm working with an old address: \"Thị trấn Tiên Kỳ, Huyện Tiên Phước, Tỉnh Quảng Nam.\" My goal is to map this to the new administrative structure.\n\nFirst, I need to break down the old address into its components.  I identify \"Thị trấn Tiên Kỳ\" as the old ward, \"Huyện Tiên Phước\" as the old district, and \"Tỉnh Quảng Nam\" as the old province.\n\nNow, I look at the province resolutions (specifically 60-NQ/TW).  I quickly find that \"Tỉnh Quảng Nam\" was merged with Đà Nẵng, becoming \"Thành phố Đà Nẵng.\" High confidence there.\n\nNext, I need to investigate any resolutions related to \"Thị trấn Tiên Kỳ.\"  I scan through other resolutions and find \"1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng.\"  Within that resolution, line 36 specifically mentions \"Thị trấn Tiên Kỳ\" and describes its merger with several other wards to form the new ward \"xã Tiên Phước.\" This is a key finding!\n\nI also come across another resolution, \"1678/NQ-UBTVQH15,\" but it deals with a \"Tiên Kỳ\" in Nghệ An, not Quảng Nam. It's irrelevant here.\n\nWith \"xã Tiên Phước\" identified, I cross-reference with the \"New wards\" data.  I find a perfect match:  `{\"ward_code\":\"20854\",\"ward_name\":\"Xã Tiên Phước\",\"province_name\":\"Thành phố Đà Nẵng\"}`.\n\nPutting it all together, I can construct the JSON output.  The province name is now \"Thành phố Đà Nẵng,\" the ward name is \"Xã Tiên Phước,\" and the ward code is \"20854.\"  The citation is from resolution \"1659/NQ-UBTVQH15,\" line 36. Given the direct match of \"Thị trấn Tiên Kỳ\" and the clear province merger, I'd give this a high confidence rating.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng",
+        "line": "36. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Tiên Kỳ và các xã Tiên Mỹ, Tiên Phong, Tiên Thọ thành xã mới có tên gọi là xã Tiên Phước."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "20854",
+      "ward_name": "Xã Tiên Phước"
+    }
+  ]
+}

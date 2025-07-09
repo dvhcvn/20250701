@@ -1,0 +1,18 @@
+{
+  "address": "Xã Kiến Quốc, Huyện Kiến Thuỵ, Thành phố Hải Phòng",
+  "ellapsedInMs": 6228,
+  "estimatedCost": 0.0026085,
+  "thought": "**Analyzing the Address Change**\n\nOkay, so I'm presented with an old address: Xã Kiến Quốc, Huyện Kiến Thuỵ, Thành phố Hải Phòng. The task is to map this to new administrative units.  I'll start by breaking down the key components: the old ward (Xã Kiến Quốc), the old district (Huyện Kiến Thuỵ), and the old province (Thành phố Hải Phòng).\n\nFirst, I looked at the province level using Resolution 60-NQ/TW, which indicated that while Hải Phòng merged with Hải Dương, the province name remains \"Thành phố Hải Phòng\".  So that part's straightforward.\n\nThen, the critical piece is to find the relevant information about the ward change within Resolution 1669/NQ-UBTVQH15.  Scanning the lines, line 55 is the key.  It states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Ngũ Phúc (huyện Kiến Thụy), Kiến Quốc và Du Lễ thành xã mới có tên gọi là **xã Nghi Dương**.\"  Bingo! \"Xã Kiến Quốc\" is explicitly mentioned as merging into \"Xã Nghi Dương\", and the district \"Huyện Kiến Thuỵ\" matches the old address. This is a very clear indication of the transformation.\n\nFinally, I cross-referenced this with the \"New wards\" list.  I was expecting to find \"Xã Nghi Dương\" there, and sure enough, I found `{\"ward_code\":\"11713\",\"ward_name\":\"Xã Nghi Dương\",\"province_name\":\"Thành phố Hải Phòng\"}`. This confirms the match and validates my analysis.\n\nThe confidence level here is high because the resolution provides a clear and direct statement about the specific ward in question. There is no ambiguity.  Therefore, I'll output an array of objects, providing the citation details (header and line number) from the resolution, the high confidence level, and the new province and ward details.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "55. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Ngũ Phúc (huyện Kiến Thụy), Kiến Quốc và Du Lễ thành xã mới có tên gọi là xã Nghi Dương."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "11713",
+      "ward_name": "Xã Nghi Dương"
+    }
+  ]
+}

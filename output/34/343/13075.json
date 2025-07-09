@@ -1,0 +1,28 @@
+{
+  "address": "Thị trấn Kiến Xương, Huyện Kiến Xương, Tỉnh Thái Bình",
+  "ellapsedInMs": 6186,
+  "estimatedCost": 0.0019839,
+  "thought": "**My Thought Process for Address Mapping**\n\nOkay, so I'm tasked with translating an old address to the latest administrative structure, given these resolutions and new ward data. Here's how I'm approaching this:\n\nFirst, I need to account for any province mergers. The old address includes \"Tỉnh Thái Bình.\" I quickly referenced `60-NQ/TW` and found the resolution merging Thái Bình and Hưng Yên: \"Hợp nhất tỉnh Hưng Yên và tỉnh Thái Bình, lấy tên là tỉnh Hưng Yên.\"  So, \"Tỉnh Thái Bình\" now becomes \"Tỉnh Hưng Yên.\" Easy enough.\n\nNext, I look at the old ward and district, which is \"Thị trấn Kiến Xương, Huyện Kiến Xương.\" I'll need to check the \"Other resolutions,\" specifically `1666/NQ-UBTVQH15`, for any ward reorganizations.  Line 79 immediately caught my eye: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Bình Minh và xã Quang Trung (huyện Kiến Xương), xã Quang Minh, xã Quang Bình, thị trấn Kiến Xương thành xã mới có tên gọi là **xã Kiến Xương**.\" Bingo!  \"Thị trấn Kiến Xương\" is being integrated into the newly formed \"Xã Kiến Xương\".\n\nNow, I cross-reference this information with the \"New wards\" data.  I'm looking for \"Xã Kiến Xương\" under the new province, \"Tỉnh Hưng Yên.\"  Perfect! `{\"ward_code\":\"13075\",\"ward_name\":\"Xã Kiến Xương\",\"province_name\":\"Tỉnh Hưng Yên\"}` matches exactly. This is a clear, direct mapping.\n\nThe province merger and the explicit ward change in the resolution give me high confidence in this mapping. Now, I just need to construct the JSON output according to the specified schema. It should be a straightforward translation of what I've just determined.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Hưng Yên và tỉnh Thái Bình, lấy tên là tỉnh Hưng Yên"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "13075",
+      "ward_name": "Xã Kiến Xương"
+    },
+    {
+      "citation": {
+        "header": "1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên",
+        "line": "79. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Bình Minh và xã Quang Trung (huyện Kiến Xương), xã Quang Minh, xã Quang Bình, thị trấn Kiến Xương thành xã mới có tên gọi là xã Kiến Xương."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "13075",
+      "ward_name": "Xã Kiến Xương"
+    }
+  ]
+}

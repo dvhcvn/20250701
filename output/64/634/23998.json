@@ -1,0 +1,18 @@
+{
+  "address": "Xã Yang Bắc, Huyện Đăk Pơ, Tỉnh Gia Lai",
+  "ellapsedInMs": 6885,
+  "estimatedCost": 0.0025711999999999996,
+  "thought": "**Analysis of Address Mapping: Vietnamese Administrative Unit Transformation**\n\nAlright, let's break this down. We're given an old Vietnamese address, and my task is to pinpoint its corresponding new administrative unit based on these resolutions. It seems straightforward enough.\n\nFirst, I need to extract the relevant components from the input address: \"Xã Yang Bắc\" (old ward), \"Huyện Đăk Pơ\" (old district), and \"Tỉnh Gia Lai\" (old province). Easy.\n\nNow, I'm diving into the resolutions. The initial check is for province-level changes, specifically 60-NQ/TW. Ah, \"Tỉnh Gia Lai\" is mentioned, but the resolution states it remains unchanged, despite the merger with Bình Định. Good to know.\n\nNext, I need to focus on resolution 1664/NQ-UBTVQH15, which deals specifically with administrative reorganizations within Gia Lai. This is key. I'm searching for mentions of \"Xã Yang Bắc\" within its lines.\n\nBingo! Line 61: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Đak Pơ và các xã Hà Tam, An Thành, Yang Bắc thành xã mới có tên gọi là **xã Đak Pơ**.\"  Perfect! It's explicit: \"Xã Yang Bắc\" is absorbed into the new \"xã Đak Pơ\".  Line 73 provides no relevant information.\n\nNow, I'll consult the \"New wards\" list for confirmation.  Yes, \"Xã Đak Pơ\" is present in the list, with the ward code \"23995\".\n\nConsidering all this, it's clear:  \"Xã Yang Bắc\" maps directly to the new \"Xã Đak Pơ\" (ward code \"23995\") in Gia Lai province. Since there is explicit and clear mention of the change, I'd say my confidence level is high.\n\nFinally, I'm constructing the JSON output as specified. I'm using the resolution header and line 61 as the citation, setting the confidence to \"high\", the province name to \"Tỉnh Gia Lai\", and providing \"23995\" and \"Xã Đak Pơ\" as the ward code and name, respectively. Since only one new ward candidate is identified, I conclude that \"Xã Đak Pơ\" is the best fit.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai",
+        "line": "61. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Đak Pơ và các xã Hà Tam, An Thành, Yang Bắc thành xã mới có tên gọi là xã Đak Pơ."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "23995",
+      "ward_name": "Xã Đak Pơ"
+    }
+  ]
+}

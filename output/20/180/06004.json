@@ -1,0 +1,18 @@
+{
+  "address": "Xã Quốc Khánh, Huyện Tràng Định, Tỉnh Lạng Sơn",
+  "ellapsedInMs": 8060,
+  "estimatedCost": 0.0031254,
+  "thought": "**Address Mapping Analysis: Tỉnh Lạng Sơn - Xã Quốc Khánh**\n\nOkay, let's break this down systematically. The user has given me an old Vietnamese address and wants me to figure out the new administrative equivalent. The address is in Lạng Sơn, specifically \"Xã Quốc Khánh\".\n\nFirst, the easy part: Province. The address explicitly states \"Tỉnh Lạng Sơn\".  I need to check the resolutions related to provincial changes. Resolution 60-NQ/TW doesn't show any changes for \"Tỉnh Lạng Sơn\", so that's simple enough - the province name remains the same. Confirmed.\n\nNow, the ward: \"Xã Quốc Khánh.\"  I've got the relevant resolution, 1672/NQ-UBTVQH15. I need to scan it carefully. Aha! Line 5 is what I'm looking for. It states that \"Xã Tri Phương, Đội Cấn và Quốc Khánh\" were merged to form a *new* \"Xã Quốc Khánh\".  Crucial. This means the old \"Xã Quốc Khánh\" *is* involved in a merger, but the output ward is also \"Xã Quốc Khánh\".\n\nNext step: cross-reference with the \"New wards\" data. I'm searching for \"Xã Quốc Khánh\" within \"Tỉnh Lạng Sơn.\" And there it is:  `{\"ward_code\":\"06004\",\"ward_name\":\"Xã Quốc Khánh\",\"province_name\":\"Tỉnh Lạng Sơn\"}`.  Perfect match. No ambiguity here.\n\nI'm confident in this analysis.  The province name is unchanged. The resolution clearly states \"Xã Quốc Khánh\" *is* part of a merger, and a new ward with the *exact same name* exists in the new data.  It's a direct mapping.  The presence of the old \"Chi Lăng\" in the new data is confusing, but the resolutions are clear and the new \"Quoc Khanh\" matches. I'm getting a \"high\" confidence score on this. Now, to structure the output JSON.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1672/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lạng Sơn",
+        "line": "5. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tri Phương, Đội Cấn và Quốc Khánh thành xã mới có tên gọi là**xã Quốc Khánh**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lạng Sơn",
+      "ward_code": "06004",
+      "ward_name": "Xã Quốc Khánh"
+    }
+  ]
+}

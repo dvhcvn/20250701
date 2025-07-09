@@ -1,0 +1,18 @@
+{
+  "address": "Xã Phùng Minh, Huyện Ngọc Lặc, Tỉnh Thanh Hóa",
+  "ellapsedInMs": 6416,
+  "estimatedCost": 0.0025801,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm presented with a Vietnamese address and need to translate the old administrative units into the new ones, considering recent resolutions. First, I'll break down the original address: Xã Phùng Minh (Ward), Huyện Ngọc Lặc (District), and Tỉnh Thanh Hóa (Province).\n\nMy initial step is to reference the province resolutions, specifically the 60-NQ/TW.  Fortunately, \"Tỉnh Thanh Hóa\" is listed. The resolution states it's *not* subject to any mergers, so the province name remains the same.  Straightforward enough.\n\nNext, I need to consult other key resolutions, specifically 1686/NQ-UBTVQH15. I'll search through the `lines` meticulously. Bingo! Line 98 jumps out at me: it explicitly details the merger of \"Xã Phùng Minh\" along with other wards into a new ward called \"**Xã Kiên Thọ**\".  That's my key finding.\n\nNow, I'll cross-reference this information with the provided `New wards` data.  I'm looking for \"xã Kiên Thọ\", and there it is: `{\"ward_code\":\"15112\",\"ward_name\":\"Xã Kiên Thọ\",\"province_name\":\"Tỉnh Thanh Hóa\"}`.  Perfect match.  The province name confirms the result from the previous check.\n\nSince the resolution explicitly mentions \"Xã Phùng Minh\" merging into \"Xã Kiên Thọ\", I can construct the JSON output with high confidence. The mapping is directly stated. Let me double check if \"Xã Phùng Minh\" is mentioned elsewhere in the resolution, for ambiguity. Nope, just the one appearance. Clear and concise. The mapping is very precise and high confidence.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1686/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thanh Hóa",
+        "line": "98. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Phúc Thịnh, Phùng Minh và Kiên Thọ thành xã mới có tên gọi là xã Kiên Thọ."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thanh Hóa",
+      "ward_code": "15112",
+      "ward_name": "Xã Kiên Thọ"
+    }
+  ]
+}

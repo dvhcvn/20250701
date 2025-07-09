@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Cửa Tùng, Huyện Vĩnh Linh, Tỉnh Quảng Trị",
+  "ellapsedInMs": 7433,
+  "estimatedCost": 0.0025516999999999996,
+  "thought": "**Address Mapping for Vietnamese Administrative Units**\n\nOkay, so I'm tackling this Vietnamese address mapping task. The goal is to translate an old address to the current administrative structure based on the available resolutions and the updated ward data. First, I need to break down the input address: \"Thị trấn Cửa Tùng\" is the ward, \"Huyện Vĩnh Linh\" is the district, and \"Tỉnh Quảng Trị\" is the province. While the prompt mentions eliminating districts, understanding the old district is helpful for context and initial checks.\n\nNow, let's dive into the resolutions. Starting with the province-level resolutions, like 60-NQ/TW, I need to see if \"Tỉnh Quảng Trị\" is affected by any mergers or reorganizations.  It's not in the list of provinces *not* undergoing changes, but it *is* in the list of provinces that *are* changing. It indicates a merger, but it will still be \"Tỉnh Quảng Trị\", which is important for the final output.\n\nNext, I need to focus on specific ward-level resolutions. I'm looking for anything that mentions \"Thị trấn Cửa Tùng\". Resolution \"1680/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Trị\" is key. Line 37 directly addresses it: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Cửa Tùng và các xã Vĩnh Giang, Hiền Thành, Kim Thạch thành xã mới có tên gọi là **xã Cửa Tùng**.\"  Bingo! This directly maps the old ward to the new one.\n\nWith this in hand, I can cross-reference the updated ward data. Sure enough, there's a match for \"Xã Cửa Tùng\" with the code \"19414.\" This provides the basis for the JSON output.  \"Xã Cửa Tùng\" is the new ward, and \"Tỉnh Quảng Trị\" is the province confirmed by the province-level resolution.\n\nI'm feeling confident about this match, as the resolution line is a direct association, and the ward data confirms it.  I've double-checked other relevant resolution lines just in case, but none are applicable to this address. The only relevant new ward is \"Xã Cửa Tùng\", so I'm good to construct the final output.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1680/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Trị",
+        "line": "37. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Cửa Tùng và các xã Vĩnh Giang, Hiền Thành, Kim Thạch thành xã mới có tên gọi là xã Cửa Tùng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Trị",
+      "ward_code": "19414",
+      "ward_name": "Xã Cửa Tùng"
+    }
+  ]
+}

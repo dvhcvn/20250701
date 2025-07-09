@@ -1,0 +1,28 @@
+{
+  "address": "Phường Gia Cẩm, Thành phố Việt Trì, Tỉnh Phú Thọ",
+  "ellapsedInMs": 6078,
+  "estimatedCost": 0.0021918,
+  "thought": "**My Analysis of Address Mapping for \"Phường Gia Cẩm, Thành phố Việt Trì, Tỉnh Phú Thọ\"**\n\nOkay, I've got the task. The user wants a new administrative unit for \"Phường Gia Cẩm, Thành phố Việt Trì, Tỉnh Phú Thọ\" based on these resolutions. Let's break it down:\n\nFirst, I need to isolate the key information: the old ward, \"Gia Cẩm,\" and the old province, \"Tỉnh Phú Thọ.\" Straightforward enough.\n\nNext, I have to verify if there were any province mergers affecting \"Tỉnh Phú Thọ.\" I'll consult the \"60-NQ/TW\" resolution. Ah, there it is! \"Hợp nhất tỉnh Vĩnh Phúc, tỉnh Phú Thọ và tỉnh Hoà Bình; lấy tên là tỉnh Phú Thọ.\" So, Phú Thọ *is* the resulting name. The province name remains the same, which simplifies things.\n\nNow, for the crucial part: ward resolutions. I'll scour the \"Other resolutions\" for mentions of \"Phường Gia Cẩm\" within \"Tỉnh Phú Thọ.\" Bingo! Resolution \"1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ\" specifically lists it: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Tân Dân, Gia Cẩm, Minh Nông, Dữu Lâu và xã Trưng Vương thành phường mới có tên gọi là **phường Việt Trì**.\" \"Phường Gia Cẩm\" is merging into \"phường Việt Trì.\" That's a strong indicator.\n\nLet's confirm this in the \"New wards\" data. I'll search for \"phường Việt Trì\" within \"Tỉnh Phú Thọ.\" Perfect match: `{\"ward_code\":\"07900\",\"ward_name\":\"Phường Việt Trì\",\"province_name\":\"Tỉnh Phú Thọ\"}`.\n\nGiven the explicit merger mentioned in the resolution and this new ward data confirmation, I have high confidence in this mapping.\n\nNow, I'll just structure the output JSON according to the schema. Easy peasy.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Vĩnh Phúc, tỉnh Phú Thọ và tỉnh Hoà Bình; lấy tên là tỉnh Phú Thọ"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "07900",
+      "ward_name": "Phường Việt Trì"
+    },
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "132. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Tân Dân, Gia Cẩm, Minh Nông, Dữu Lâu và xã Trưng Vương thành phường mới có tên gọi là phường Việt Trì."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "07900",
+      "ward_name": "Phường Việt Trì"
+    }
+  ]
+}

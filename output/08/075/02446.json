@@ -1,0 +1,18 @@
+{
+  "address": "Xã Trung Trực, Huyện Yên Sơn, Tỉnh Tuyên Quang",
+  "ellapsedInMs": 6322,
+  "estimatedCost": 0.0030514,
+  "thought": "**My Analysis of the Administrative Reorganization of \"Xã Trung Trực\"**\n\nOkay, let's break this down. The user's query focuses on identifying the new administrative unit for \"Xã Trung Trực, Huyện Yên Sơn, Tỉnh Tuyên Quang\". My process involves several key steps to ensure accuracy.\n\nFirst, I identified the province as \"Tỉnh Tuyên Quang.\"  I quickly cross-referenced this with known province restructuring resolutions. Resolution 60-NQ/TW didn't list Tuyên Quang for disestablishment. However, it *did* mention a merger with Hà Giang, resulting in \"Tỉnh Tuyên Quang\" as the new, albeit modified, province name. This requires careful consideration for the `province_name` field.\n\nNext, I focused on the specific ward, \"Xã Trung Trực.\" My strategy involves searching for relevant resolutions. I specifically looked for \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang.\"  Sure enough, Resolution 1684/NQ-UBTVQH15, line 30, was a direct hit. It explicitly stated the merger of \"Xã Trung Trực,\" along with \"Phúc Ninh\" and \"Xuân Vân,\" into a *new* unit called \"xã Xuân Vân.\" This is a clear indicator.\n\nTo confirm, I then checked the \"New wards\" list for \"xã Xuân Vân\" within \"Tỉnh Tuyên Quang.\" Bingo! I found the entry: `{\"ward_code\":\"02449\",\"ward_name\":\"Xã Xuân Vân\",\"province_name\":\"Tỉnh Tuyên Quang\"}`. This perfectly aligns with my initial findings.\n\nConsidering all the evidence, my confidence in this mapping is very high. The resolution provides a clear and direct association between \"Xã Trung Trực\" and \"xã Xuân Vân.\" The \"Tỉnh Tuyên Quang\" province confirmation solidifies the overall conclusion. There appears to be no ambiguity here. My final conclusion is that \"Xã Trung Trực\" is now part of \"xã Xuân Vân,\" code \"02449,\" within the modified \"Tỉnh Tuyên Quang\". This solution should satisfy the user's request.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "30. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Trung Trực, Phúc Ninh và Xuân Vân thành xã mới có tên gọi là xã Xuân Vân."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "02449",
+      "ward_name": "Xã Xuân Vân"
+    }
+  ]
+}

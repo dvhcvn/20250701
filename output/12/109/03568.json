@@ -1,0 +1,18 @@
+{
+  "address": "Xã Mù Sang, Huyện Phong Thổ, Tỉnh Lai Châu",
+  "ellapsedInMs": 7423,
+  "estimatedCost": 0.0022407000000000004,
+  "thought": "**Analysis of Administrative Unit Mapping: \"Xã Mù Sang, Huyện Phong Thổ, Tỉnh Lai Châu\"**\n\nOkay, so I've been tasked with mapping the old address \"Xã Mù Sang, Huyện Phong Thổ, Tỉnh Lai Châu\" to its new administrative unit.  My process is pretty straightforward, but crucial for accuracy in this kind of data management.\n\nFirst, I confirmed the province: \"Tỉnh Lai Châu\". Then, I double-checked that Lai Châu hasn't undergone a province-level merger, which it hasn't, based on Resolution 60-NQ/TW. This is a quick sanity check to avoid wasting time down a rabbit hole.\n\nNow, I dive into the more granular level – the *xã* (ward) level.  I had to scrutinize the resolutions specific to Lai Châu, focusing on ward-level adjustments.  I immediately found Resolution 1670/NQ-UBTVQH15, which concerns itself precisely with the re-organization of xã in Lai Châu.  That's a good sign!\n\nHere's where it got interesting. Looking at line 15 of that resolution, I found the critical piece of information: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tung Qua Lìn, Mù Sang và Dào San thành xã mới có tên gọi là xã Dào San.\"  Essentially, \"Xã Mù Sang\" is *merged* into the new \"Xã Dào San\". Bingo!  That's the new administrative unit for this address.\n\nFrom there, it was a matter of cross-referencing this information with the updated ward data (contained in the `New wards` data set).  I located \"Xã Dào San\" and retrieved its corresponding code: \"03571\".\n\nSo, the final JSON output will be:\n\n*   `province_name`: \"Tỉnh Lai Châu\" (confirmed, no province-level changes)\n*   `ward_name`: \"Xã Dào San\" (from Resolution 1670/NQ-UBTVQH15)\n*   `ward_code`: \"03571\" (from the `New wards` data)\n*   `citation`:  This is key for transparency and auditability:  I'll include the resolution details.\n    *   `header`: \"1670/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lai Châu\"\n    *   `line`: \"15. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tung Qua Lìn, Mù Sang và Dào San thành xã mới có tên gọi là xã Dào San.\"\n*   `confidence`: \"high\" - given the explicit mention and mapping in the resolution, I'm quite confident in this result.\n\nThis approach ensures a traceable, reliable, and well-documented mapping, essential for maintaining data integrity in administrative changes.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1670/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lai Châu",
+        "line": "15. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của cácxã Tung Qua Lìn,Mù Sang vàDào Santhành xã mới có tên gọi là **xã Dào San**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lai Châu",
+      "ward_code": "03571",
+      "ward_name": "Xã Dào San"
+    }
+  ]
+}

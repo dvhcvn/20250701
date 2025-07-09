@@ -1,0 +1,18 @@
+{
+  "address": "Xã Liên Hội, Huyện Văn Quan, Tỉnh Lạng Sơn",
+  "ellapsedInMs": 7639,
+  "estimatedCost": 0.0032854999999999994,
+  "thought": "**Finding the New Administrative Unit for \"Xã Liên Hội\"**\n\nOkay, let's break this down. The user has given me the old address \"Xã Liên Hội, Huyện Văn Quan, Tỉnh Lạng Sơn,\" and they want the new ward.  First, I'll identify the province: \"Tỉnh Lạng Sơn.\"\n\nNow, I need to check the 60-NQ/TW resolutions. Fortunately, \"Tỉnh Lạng Sơn\" is listed under \"Các đơn vị hành chính cấp tỉnh không thực hiện sáp nhập,\" so the province name remains \"Tỉnh Lạng Sơn.\" Easy.\n\nNext, I need to focus on \"Xã Liên Hội\" itself. I'll search \"Other resolutions\" specifically within \"Tỉnh Lạng Sơn\" for any mention of \"Xã Liên Hội.\"  Aha! Resolution \"1672/NQ-UBTVQH15\" pops up: \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lạng Sơn.\" This looks promising.\n\nLet's examine line 23. Bingo! It states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Trấn Ninh, Liên Hội và Điềm He thành xã mới có tên gọi là**xã Điềm He**.\"  Clear as day: \"Xã Liên Hội\" has been merged into \"Xã Điềm He.\"\n\nNow, I'll cross-reference \"Xã Điềm He\" with the \"New wards\" database for \"Tỉnh Lạng Sơn.\" There's a perfect match:  `{\"ward_code\":\"06280\",\"ward_name\":\"Xã Điềm He\",\"province_name\":\"Tỉnh Lạng Sơn\"}`.  Excellent.\n\nBuilding the JSON output is straightforward now:\n\n*   `province_name`: \"Tỉnh Lạng Sơn\" (Confirmed).\n*   `ward_name`: \"Xã Điềm He\" (From the resolution).\n*   `ward_code`: \"06280\" (From the database match).\n*   `citation`: \"1672/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lạng Sơn,\" specifically, line 23.\n*   `confidence`: High, because the resolution explicitly and completely covers the merger of \"Xã Liên Hội\" into \"Xã Điềm He.\"\n\nJust to be thorough, I'm re-checking the entire process with the original input: \"Xã Liên Hội, Huyện Văn Quan, Tỉnh Lạng Sơn.\" The province stays the same. The resolution clearly states the merger. The database provides the accurate ward code.  My confidence in this result is absolute.  The output will be an array of objects.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1672/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lạng Sơn",
+        "line": "23. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Trấn Ninh, Liên Hội và Điềm He thành xã mới có tên gọi là**xã Điềm He**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lạng Sơn",
+      "ward_code": "06280",
+      "ward_name": "Xã Điềm He"
+    }
+  ]
+}

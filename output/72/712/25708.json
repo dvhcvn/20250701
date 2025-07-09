@@ -1,0 +1,18 @@
+{
+  "address": "Phường Trảng Bàng, Thị xã Trảng Bàng, Tỉnh Tây Ninh",
+  "ellapsedInMs": 6877,
+  "estimatedCost": 0.0023051,
+  "thought": "**Analysis of Administrative Unit Changes in Tây Ninh**\n\nOkay, so I'm looking at mapping an old address to a new administrative unit, specifically in Tây Ninh province. First, the province is straightforward: the old address clearly indicates \"Tỉnh Tây Ninh.\"  I quickly checked the provincial resolutions. Resolution 60-NQ/TW doesn't list Tây Ninh for any mergers or name changes at the provincial level. So, \"Tỉnh Tây Ninh\" remains valid.\n\nNow, for the ward. The old address has \"Phường Trảng Bàng.\" I need to see what's changed there. Resolution 1682/NQ-UBTVQH15 is key. Line 93 is explicit: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường An Hòa và phường Trảng Bàng thành phường mới có tên gọi là phường Trảng Bàng.\"  So, the *name* \"Phường Trảng Bàng\" is retained, but it's now a *combination* of the old Trảng Bàng and An Hòa. Crucially, it's a *new* administrative entity.\n\nNext, I cross-reference this with the provided new ward data.  Bingo! The data includes: `{\"ward_code\":\"25708\",\"ward_name\":\"Phường Trảng Bàng\",\"province_name\":\"Tỉnh Tây Ninh\"}`. This perfectly aligns with the resolution.  The ward name matches, and it's within the right province.  \n\nThe confidence here is exceptionally high.  The resolution provides direct evidence of the merger and name retention. The new data gives a specific code, solidifying this mapping.  My output will need to reflect this, adhering to the specified schema:\n\n*   **`citation.header`**: \"1682/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tây Ninh\"\n*   **`citation.line`**: \"93. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường An Hòa và phường Trảng Bàng thành phường mới có tên gọi là phường Trảng Bàng.\"\n*   **`confidence`**: \"high\"\n*   **`province_name`**: \"Tỉnh Tây Ninh\" (from the new ward data)\n*   **`ward_code`**: \"25708\" (from the new ward data)\n*   **`ward_name`**: \"Phường Trảng Bàng\" (from the new ward data)\n\nThis is a clean and confident match.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1682/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tây Ninh",
+        "line": "93. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường An Hòa và phường Trảng Bàng thành phường mới có tên gọi là phường Trảng Bàng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tây Ninh",
+      "ward_code": "25708",
+      "ward_name": "Phường Trảng Bàng"
+    }
+  ]
+}

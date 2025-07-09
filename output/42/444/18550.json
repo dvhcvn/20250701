@@ -1,0 +1,18 @@
+{
+  "address": "Xã Hương Trà, Huyện Hương Khê, Tỉnh Hà Tĩnh",
+  "ellapsedInMs": 8499,
+  "estimatedCost": 0.00431,
+  "thought": "**Analyzing the Address and Determining the New Administrative Unit**\n\nOkay, I've got this. The user is asking about an old address, \"Xã Hương Trà, Huyện Hương Khê, Tỉnh Hà Tĩnh,\" and wants to know the new ward. This is a standard administrative unit mapping task. My approach will be methodical and thorough.\n\nFirst, I need to zero in on the province: \"Tỉnh Hà Tĩnh.\" Thankfully, the initial check for province mergers using the `60-NQ/TW` resolutions confirms that \"Tỉnh Hà Tĩnh\" remains unchanged. Good start.\n\nNow, the focus shifts to \"Xã Hương Trà.\" I need to find its new administrative unit. I'll meticulously scan the other relevant resolutions, specifically looking for any mentions of \"Xã Hương Trà.\" Resolution `1665/NQ-UBTVQH15` seems promising. Indeed, line 54 clearly states, \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Lộc Yên, Hương Trà và Hương Đô thành xã mới có tên gọi là **xã Hương Đô**.\" Bingo! The old ward, \"Xã Hương Trà,\" is being merged into the new ward, \"Xã Hương Đô.\" The province, \"Tỉnh Hà Tĩnh,\" also aligns perfectly. This is a direct hit!\n\nNext, I'll need to confirm the new ward details.  I'll consult the \"New wards\" list for \"xã Hương Đô.\" I see `{\"ward_code\":\"18550\",\"ward_name\":\"Xã Hương Đô\",\"province_name\":\"Tỉnh Hà Tĩnh\"}`, confirming the ward code and province.\n\nNow I need to double-check my work.  I'm going to re-scan the `other resolutions` for \"Hương Trà\" to ensure I haven't missed anything. I note:\n\n*   `1659/NQ-UBTVQH15` contains \"phường Hương Trà\" but not in \"Tỉnh Hà Tĩnh.\"\n*   `1665/NQ-UBTVQH15` does contain the crucial line \"xã Hương Trà\" -> \"xã Hương Đô\" (Hà Tĩnh).\n*   `1675/NQ-UBTVQH15` has \"phường Hương Trà\" but not in \"Tỉnh Hà Tĩnh.\"\n*   `1677/NQ-UBTVQH15` mentions \"xã Hương Trà\" but not in \"Tỉnh Hà Tĩnh\"\n\nRe-checking confirms the initial finding: `1665/NQ-UBTVQH15` is the defining resolution.  The output will be:\n\n*   `province_name`: \"Tỉnh Hà Tĩnh\"\n*   `ward_name`: \"Xã Hương Đô\"\n*   `ward_code`: \"18550\"\n*   `citation`: `header`: \"1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh\", `line`: \"54. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Lộc Yên, Hương Trà và Hương Đô thành xã mới có tên gọi là **xã Hương Đô**.\"\n*   `confidence`: \"high\"\n\nI'm confident in this mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh",
+        "line": "54. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Lộc Yên, Hương Trà và Hương Đô thành xã mới có tên gọi là xã Hương Đô."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hà Tĩnh",
+      "ward_code": "18550",
+      "ward_name": "Xã Hương Đô"
+    }
+  ]
+}

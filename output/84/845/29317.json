@@ -1,0 +1,18 @@
+{
+  "address": "Xã An Phú Tân, Huyện Cầu Kè, Tỉnh Trà Vinh",
+  "ellapsedInMs": 9238,
+  "estimatedCost": 0.0030407,
+  "thought": "**Analysis of Old Vietnamese Address Mapping**\n\nOkay, so I'm tasked with mapping the old address \"Xã An Phú Tân, Huyện Cầu Kè, Tỉnh Trà Vinh\" to its new administrative unit. My initial thought is to break down the address and leverage the resolutions and new ward data provided.  Since the prompt explicitly states to \"eliminate all districts\", I'll set aside Huyện Cầu Kè for now. My focus will be on the province and ward.\n\nFirst, I need to check for any province mergers. Examining the province resolutions, specifically 60-NQ/TW, I quickly locate \"Tỉnh Trà Vinh.\"  Ah, there it is! \"Hợp nhất tỉnh Bến Tre, tỉnh Vĩnh Long và tỉnh Trà Vinh; lấy tên là tỉnh Vĩnh Long.\"  So, Trà Vinh is now part of Vĩnh Long.  That's my first key piece of information.  The `province_name` in my output will definitely be \"Tỉnh Vĩnh Long.\"\n\nNext, I need to pinpoint the new ward for \"Xã An Phú Tân.\"  I'll scan the resolutions, looking for any mention of the ward's name. Bingo!  Resolution `1687/NQ-UBTVQH15` for \"tỉnh Vĩnh Long\" seems promising.  I immediately focus on the `lines`, and there it is: \"39. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Hòa Tân và xã An Phú Tân thành xã mới có tên gọi là **xã An Phú Tân**.\" Perfect! Not only does it explicitly mention \"Xã An Phú Tân,\" it confirms that a *new* unit is formed and *also* named \"Xã An Phú Tân\". This aligns perfectly with the province merge I identified earlier.\n\nTo solidify my findings, I'll cross-reference this with the `new_wards` data.  And there it is: `{\"ward_code\":\"29317\",\"ward_name\":\"Xã An Phú Tân\",\"province_name\":\"Tỉnh Vĩnh Long\"}`.  The ward name, code, and province align seamlessly. This further validates my previous findings.\n\nNow, it's time to construct the JSON output.  Based on my thorough analysis, I'm confident in the following:\n\n*   `province_name`: \"Tỉnh Vĩnh Long\"\n*   `ward_name`: \"Xã An Phú Tân\"\n*   `ward_code`: \"29317\"\n*   `citation`:  This will include the resolution header and relevant line:\n    *   `header`: \"1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long\"\n    *   `line`: \"39. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Hòa Tân và xã An Phú Tân thành xã mới có tên gọi là **xã An Phú Tân**.\"\n*   `confidence`: \"high\". The direct match within the resolution, the consistent information across the new ward data, and the clear province merge all point towards a very high degree of certainty.\n\nBefore finalizing, I'll quickly double-check everything.  The old address in Trà Vinh is now Vĩnh Long. The resolution and the new ward data align perfectly. The merging of \"Xã Hòa Tân\" and the original \"Xã An Phú Tân\" to form the new unit with the same name feels extremely solid. Yes, I'm comfortable declaring a high confidence level for this mapping. This is a clean and definitive match.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long",
+        "line": "39. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Hòa Tân và xã An Phú Tân thành xã mới có tên gọi là xã An Phú Tân."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "29317",
+      "ward_name": "Xã An Phú Tân"
+    }
+  ]
+}

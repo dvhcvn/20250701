@@ -1,0 +1,18 @@
+{
+  "address": "Xã Đan Trường, Huyện Nghi Xuân, Tỉnh Hà Tĩnh",
+  "ellapsedInMs": 6760,
+  "estimatedCost": 0.0025035,
+  "thought": "**Address Mapping Analysis: Xã Đan Trường, Huyện Nghi Xuân, Tỉnh Hà Tĩnh**\n\nOkay, so I've been given an old Vietnamese address: \"Xã Đan Trường, Huyện Nghi Xuân, Tỉnh Hà Tĩnh\" and the task is to map this to new administrative units.  First, I break it down.  I need to find the old ward, district, and province: \"Xã Đan Trường\" is the old ward, \"Huyện Nghi Xuân\" is the old district (though the instructions specify eliminating districts), and \"Tỉnh Hà Tĩnh\" is the old province.\n\nNow, the analysis begins. I'll need to scrutinize these resolutions. I immediately check resolution 60-NQ/TW for \"Tỉnh Hà Tĩnh\".  Perfect! That one's simple, \"Tỉnh Hà Tĩnh\" remains \"Tỉnh Hà Tĩnh\". High confidence on the province mapping.\n\nNext, I dig into the other resolutions, specifically looking for \"Xã Đan Trường\" or \"Huyện Nghi Xuân\" within \"Tỉnh Hà Tĩnh\". I find resolution 1665/NQ-UBTVQH15, a key for this region's changes. Aha! Line 36 explicitly states that \"Xã Đan Trường, Xuân Hải, Xuân Hội và Xuân Phổ\" are merged into the new \"xã Đan Hải\". This is important.\n\nNow, I cross-reference this finding with the \"New wards\" data.  I look for the new ward, \"xã Đan Hải\", which should contain \"Xã Đan Trường\".  Sure enough, I find \"{\"ward_code\":\"18364\",\"ward_name\":\"Xã Đan Hải\",\"province_name\":\"Tỉnh Hà Tĩnh\"}\".  It's a perfect match!\n\nTherefore, the old ward \"Xã Đan Trường\" in \"Tỉnh Hà Tĩnh\" now belongs to the new ward \"Xã Đan Hải\" (ward code \"18364\"), also in \"Tỉnh Hà Tĩnh\". Since there's a direct mapping in the resolutions and the new ward data confirms it, I'd rate the confidence level as \"high\" for this mapping. I'm ready to construct the JSON output reflecting this.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh",
+        "line": "36. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đan Trường, Xuân Hải, Xuân Hội và Xuân Phổ thành xã mới có tên gọi là xã Đan Hải."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hà Tĩnh",
+      "ward_code": "18364",
+      "ward_name": "Xã Đan Hải"
+    }
+  ]
+}

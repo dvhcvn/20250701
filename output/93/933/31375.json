@@ -1,0 +1,28 @@
+{
+  "address": "Xã Đông Phú, Huyện Châu Thành, Tỉnh Hậu Giang",
+  "ellapsedInMs": 7193,
+  "estimatedCost": 0.004732200000000001,
+  "thought": "**Determining the New Administrative Unit for \"Xã Đông Phú, Huyện Châu Thành, Tỉnh Hậu Giang\"**\n\nOkay, so I've been asked to find the new administrative unit for \"Xã Đông Phú\" in the old address. My first step is to establish the current province.  \"Tỉnh Hậu Giang\" is clearly the old province, but I know from experience that administrative boundaries often change.  I need to check for province-level reorganizations, specifically focusing on Resolution 60-NQ/TW.\n\nSure enough, Resolution 60 indicates a merger:  \"Hợp nhất thành phố Cần Thơ, tỉnh Sóc Trăng và tỉnh Hậu Giang; lấy tên là thành phố Cần Thơ.\"  So, \"Tỉnh Hậu Giang\" is now part of \"Thành phố Cần Thơ\".  That's my new province.\n\nNext, I have to pinpoint the specific fate of \"Xã Đông Phú\". Time to search through the \"Other resolutions\" section, focusing on those relevant to \"Thành phố Cần Thơ,\" the new province, and, as a backup, anything mentioning the old province.  I've found Resolution 1668/NQ-UBTVQH15, and this looks promising.\n\nLine 55 of that resolution is the key: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Mái Dầm, thị trấn Ngã Sáu và xã Đông Phú thành xã mới có tên gọi là **xã Châu Thành**.\" Bingo!  \"Xã Đông Phú\" is explicitly mentioned as being merged into a new ward called \"Xã Châu Thành\".\n\nNow, I'll cross-reference this with the \"New wards\" list for \"Thành phố Cần Thơ\" to confirm.  There it is: `{\"ward_code\":\"31366\",\"ward_name\":\"Xã Châu Thành\",\"province_name\":\"Thành phố Cần Thơ\"}`. This confirms the new ward name and its associated code.\n\nTherefore, my final JSON output will be:\n\n*   `province_name`: \"Thành phố Cần Thơ\" (due to province merger).\n*   `ward_name`: \"Xã Châu Thành\" (from Resolution 1668, line 55).\n*   `ward_code`: \"31366\" (from the new wards list).\n*   `citation`: \"1668/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Cần Thơ\", \"55. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Mái Dầm, thị trấn Ngã Sáu và xã Đông Phú thành xã mới có tên gọi là **xã Châu Thành**.\"\n*   `confidence`: \"high\".  The explicit mention of \"Xã Đông Phú\" in the resolution provides a very high level of certainty.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "19. Hợp nhất thành phố cần Thơ, tỉnh Sóc Trăng và tỉnh Hậu Giang; lấy tên là thành phố Cần Thơ"
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Cần Thơ",
+      "ward_code": "31366",
+      "ward_name": "Xã Châu Thành"
+    },
+    {
+      "citation": {
+        "header": "1668/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Cần Thơ",
+        "line": "55. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Mái Dầm, thị trấn Ngã Sáu và xã Đông Phú thành xã mới có tên gọi là **xã Châu Thành**."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Cần Thơ",
+      "ward_code": "31366",
+      "ward_name": "Xã Châu Thành"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Ea Kuăng, Huyện Krông Pắc, Tỉnh Đắk Lắk",
+  "ellapsedInMs": 6204,
+  "estimatedCost": 0.0022956,
+  "thought": "**Identifying the New Administrative Unit**\n\nOkay, let me break this down. The user's given me an old address – Xã Ea Kuăng, Huyện Krông Pắc, Tỉnh Đắk Lắk – and I need to figure out its new ward. Simple enough, I've got a plan.\n\nFirst, I parsed the input to identify the old components: **Xã Ea Kuăng**, the ward; **Huyện Krông Pắc**, the district; and **Tỉnh Đắk Lắk**, the province. Easy peasy.\n\nNext, I went through the Province Resolutions (60-NQ/TW), but it's not relevant in this case. Đắk Lắk's name didn't change with that resolution.\n\nNow, the important part: the \"Other Resolutions.\" I scanned through those lines, and bingo! Resolution 1660/NQ-UBTVQH15, line 28, hit the mark. It explicitly states that \"Xã Ea Kuăng\" *becomes* part of \"Xã Ea Phê.\"  That's my key finding.\n\nNow, I checked the \"New wards\" list for \"Xã Ea Phê.\" And there it is! I found a match: `{\"ward_code\":\"24502\",\"ward_name\":\"Xã Ea Phê\",\"province_name\":\"Tỉnh Đắk Lắk\"}`. The province name aligns perfectly with what I already know.\n\nThe solution is now clear.\n\nI have a direct reference. \"Xã Ea Kuăng\" merges into \"Xã Ea Phê\" according to the relevant resolution. This means my output will include a \"high\" confidence level because this is a direct, explicitly stated change. The citation will come from that resolution, specifying the header and line. The new province, ward code, and ward name are all directly provided as well. I'm ready to construct the JSON output.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1660/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đắk Lắk",
+        "line": "28. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Ea Kuăng, Ea Hiu và Ea Phê thành xã mới có tên gọi là xã Ea Phê."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đắk Lắk",
+      "ward_code": "24502",
+      "ward_name": "Xã Ea Phê"
+    }
+  ]
+}

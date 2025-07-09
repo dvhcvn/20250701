@@ -1,0 +1,28 @@
+{
+  "address": "Xã Diên Lạc, Huyện Diên Khánh, Tỉnh Khánh Hòa",
+  "ellapsedInMs": 5696,
+  "estimatedCost": 0.0020740000000000003,
+  "thought": "**Mapping an Old Vietnamese Address to the New Administrative Structure**\n\nOkay, so I've got this Vietnamese address to translate, specifically \"Tỉnh Khánh Hòa\" and \"Xã Diên Lạc,\" into the current administrative system. Here's my thought process:\n\nFirst, I need to pinpoint the province. It's \"Tỉnh Khánh Hòa.\" I'll check my resolutions to see if the province has been merged or renamed. Ah, Resolution 60-NQ/TW shows that Khánh Hòa did merge with Ninh Thuận, but the province name itself remains \"Tỉnh Khánh Hòa.\"\n\nNext, the ward is \"Xã Diên Lạc.\" I need to cross-reference this with the relevant resolutions for \"Tỉnh Khánh Hòa.\" I find Resolution 1667/NQ-UBTVQH15, which deals specifically with rearranging wards. Bingo! Line 13 of this resolution reveals the juicy details: \"Xã Diên Lạc\" was created from merging \"Diên Thạnh,\" \"Diên Lạc,\" and \"Diên Hòa.\" So, it's the *same* name, but this \"Xã Diên Lạc\" is a *new* entity.\n\nNow, I look at my \"New wards\" data. Searching for \"Xã Diên Lạc\" within \"Tỉnh Khánh Hòa,\" I find a perfect match: `{\"ward_code\":\"22678\",\"ward_name\":\"Xã Diên Lạc\",\"province_name\":\"Tỉnh Khánh Hòa\"}`. This confirms the new ward's existence.\n\nGiven the explicit nature of the resolution – stating the old \"Xã Diên Lạc\" is now part of this new ward – and the corroborating data, I have very high confidence in this mapping.\n\nTime to construct the JSON output, and I'm good to go!\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "13. Hợp nhất tỉnh Ninh Thuận và tỉnh Khánh Hoà, lấy tên là tỉnh Khánh Hoà"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Khánh Hòa",
+      "ward_code": "22678",
+      "ward_name": "Xã Diên Lạc"
+    },
+    {
+      "citation": {
+        "header": "1667/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Khánh Hòa",
+        "line": "13. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Diên Thạnh, Diên Lạc và Diên Hòa thành xã mới có tên gọi là xã Diên Lạc."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Khánh Hòa",
+      "ward_code": "22678",
+      "ward_name": "Xã Diên Lạc"
+    }
+  ]
+}

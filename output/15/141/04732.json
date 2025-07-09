@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tân Nguyên, Huyện Yên Bình, Tỉnh Yên Bái",
+  "ellapsedInMs": 5590,
+  "estimatedCost": 0.0029754,
+  "thought": "**Determining the New Administrative Unit**\n\nOkay, so I'm presented with the old address: \"Xã Tân Nguyên, Huyện Yên Bình, Tỉnh Yên Bái.\" My task is to figure out the current administrative equivalent. Let's break this down systematically.\n\nFirst, I need to identify the old province, which is \"Tỉnh Yên Bái.\" I know to check for any province mergers using the \"60-NQ/TW\" document.  Ah, here it is: \"Hợp nhất tỉnh Lào Cai và tỉnh Yên Bái, lấy tên là tỉnh Lào Cai.\"  So, \"Tỉnh Yên Bái\" is now part of \"Tỉnh Lào Cai.\"\n\nNext, I have to pinpoint the specific ward, \"Xã Tân Nguyên.\"  I'll delve into the \"Other resolutions\" to see what I can find. Bingo! Resolution \"1673/NQ-UBTVQH15\" mentions \"Xã Tân Nguyên.\"  Specifically, line 33 states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Cảm Ân, Mông Sơn, Tân Nguyên và Bảo Ái thành xã mới có tên gọi là **xã Bảo Ái**.\" Excellent!  That gives me the new ward name: \"xã Bảo Ái.\"\n\nNow, to solidify this, I'll confirm \"Xã Bảo Ái\" exists in the \"New wards\" list.  Yup, there it is: `{\"ward_code\":\"04750\",\"ward_name\":\"Xã Bảo Ái \",\"province_name\":\"Tỉnh Lào Cai\"}`.\n\nPutting it all together, my output will be a JSON object containing the province, the ward name, the ward code, and the relevant citation. Since the old ward was *explicitly* merged into a new, clearly named ward, and that new ward is in my provided list, I'm feeling very confident. It's a high-confidence determination.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai",
+        "line": "33. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Cảm Ân, Mông Sơn, Tân Nguyên và Bảo Ái thành xã mới có tên gọi là xã Bảo Ái."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "04750",
+      "ward_name": "Xã Bảo Ái"
+    }
+  ]
+}

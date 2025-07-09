@@ -1,0 +1,28 @@
+{
+  "address": "Xã Trần Phán, Huyện Đầm Dơi, Tỉnh Cà Mau",
+  "ellapsedInMs": 8058,
+  "estimatedCost": 0.002967,
+  "thought": "**Address Mapping Analysis: Vietnamese Administrative Units**\n\nOkay, so I'm tackling this Vietnamese address mapping task. I've got to break it down. First, I see the province is \"Tỉnh Cà Mau\".  I quickly checked the key resolutions: 60-NQ/TW doesn't show any changes for Cà Mau's provincial boundaries. So, it remains \"Tỉnh Cà Mau\" after the proposed mergers.  Excellent.  Next, I have \"Xã Trần Phán\" as the ward. Time to dig into the local resolutions.\n\nI found resolution 1655/NQ-UBTVQH15, which is focused on administrative adjustments within Cà Mau. Line 4 of this resolution is crucial: it explicitly states that the *old* \"Xã Trần Phán\" is being *combined* with \"Xã Tân Trung\" to form a *new* \"Xã Trần Phán.\" The name is retained, which is helpful, but the geographic boundaries and population have clearly changed due to the merger.  This is important to note.\n\nThen I looked at the \"New wards\" data. I found a direct match:  `{\"ward_code\":\"32161\",\"ward_name\":\"Xã Trần Phán\",\"province_name\":\"Tỉnh Cà Mau\"}`.  Perfect! This new data point confirms that the post-merger ward retains the \"Xã Trần Phán\" name. So, even though it's technically a *new* ward, this is the best match.\n\nThe address also mentions \"Huyện Đầm Dơi\". According to line 6 in the resolution, multiple old units including \"thị trấn Đầm Dơi\" will now form a new \"Xã Đầm Dơi\". While \"Huyện Đầm Dơi\" as a district is eliminated, the \"Xã Đầm Dơi\" is a ward. This indicates administrative changes at that level. I need to be careful here, as I'm unsure if the old \"Xã Trần Phán\" was part of the old \"thị trấn Đầm Dơi\" as this does not appear to be specified in the data.\n\nSo, in conclusion: Based on this evidence, I'd map the old \"Xã Trần Phán\" to the *new* \"Xã Trần Phán\" identified by ward code `32161`.  While \"Huyện Đầm Dơi\" is eliminated, the data indicates that there is a \"Xã Đầm Dơi\" created from old units. This indicates that it's important to know the original context of the old address to determine if there were other components that have changed. It is also important to know that the new \"Xã Trần Phán\" in the \"New Wards\" is not the same as the original. Its boundaries are different because of its merger with \"Xã Tân Trung\".\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Bạc Liêu và tỉnh Cà Mau, lấy tên là tỉnh Cà Mau"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Cà Mau",
+      "ward_code": "32161",
+      "ward_name": "Xã Trần Phán"
+    },
+    {
+      "citation": {
+        "header": "1655/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Cà Mau",
+        "line": "4. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Tân Trung và xã Trần Phán thành xã mới có tên gọi là xã Trần Phán."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Cà Mau",
+      "ward_code": "32161",
+      "ward_name": "Xã Trần Phán"
+    }
+  ]
+}

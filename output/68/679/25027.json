@@ -1,0 +1,18 @@
+{
+  "address": "Xã Liên Đầm, Huyện Di Linh, Tỉnh Lâm Đồng",
+  "ellapsedInMs": 5641,
+  "estimatedCost": 0.0019679,
+  "thought": "**Address Mapping Logic: Linking Old to New Administrative Units**\n\nOkay, so I've got this address to map: \"Xã Liên Đầm, Huyện Di Linh, Tỉnh Lâm Đồng.\" My thought process breaks down like this:\n\nFirst, I need to isolate the old administrative units: \"Xã Liên Đầm\" (ward), \"Huyện Di Linh\" (district), and \"Tỉnh Lâm Đồng\" (province). Easy enough.\n\nNext, I'll dive into the resolutions, starting with the provincial ones. I need to see if there have been any name changes for \"Tỉnh Lâm Đồng.\" Resolution 60-NQ/TW doesn't show any, which means the province name is still valid. Good.\n\nNow, I'll look for any resolutions that specifically mention \"Xã Liên Đầm\" or \"Huyện Di Linh\" within \"Tỉnh Lâm Đồng.\" Bingo! Resolution 1671/NQ-UBTVQH15 spells it out: \"Xã Liên Đầm\" is merged, along with some other units, into the new \"Xã Di Linh\". Perfect!\n\nTo confirm, I'll cross-reference this information with the \"New wards\" data.  I'm looking for \"Xã Di Linh\" within \"Tỉnh Lâm Đồng\", and there it is:  `{\"ward_code\":\"25000\",\"ward_name\":\"Xã Di Linh\",\"province_name\":\"Tỉnh Lâm Đồng\"}`. This perfectly matches the resolution's findings.\n\nSince the old ward is explicitly mentioned in the resolution, and the new ward resulting from the merger is clearly stated, with a province that hasn't changed, I'm feeling very confident.  The output JSON will be straightforward and accurate, with a \"high\" confidence level.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng",
+        "line": "21. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Di Linh và các xã Liên Đầm, Tân Châu, Gung Ré thành xã mới có tên gọi là xã Di Linh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "25000",
+      "ward_name": "Xã Di Linh"
+    }
+  ]
+}

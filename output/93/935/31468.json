@@ -1,0 +1,28 @@
+{
+  "address": "Xã Vị Bình, Huyện Vị Thuỷ, Tỉnh Hậu Giang",
+  "ellapsedInMs": 5736,
+  "estimatedCost": 0.0022015,
+  "thought": "**Mapping an Old Address: From Hậu Giang to Thành phố Cần Thơ**\n\nOkay, so I've got this old address: \"Xã Vị Bình, Huyện Vị Thuỷ, Tỉnh Hậu Giang.\" My task is to map this to the new administrative divisions. Let's see...\n\nFirst, the province: \"Tỉnh Hậu Giang\". Right, I remember that resolution 60-NQ/TW. Ah yes, it's been merged into \"Thành phố Cần Thơ.\" So, that's step one.\n\nNext, the ward: \"Xã Vị Bình.\"  Now, I need to look for resolutions regarding ward re-organization. Let's search the \"Other resolutions\" focusing on \"Xã Vị Bình\" and within the context of the new province, now \"Thành phố Cần Thơ\". Excellent, I've found it: resolution 1668/NQ-UBTVQH15. And there it is, line 47:  \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Vị Đông, Vị Bình và Vị Thanh thành xã mới có tên gọi là **xã Vị Thanh 1**.\"  Brilliant! \"Xã Vị Bình\" is directly merged into \"Xã Vị Thanh 1\".\n\nNow, I need to confirm this \"Xã Vị Thanh 1\" within the \"New wards\" data. Yep, there it is:  `{\"ward_code\":\"31465\",\"ward_name\":\"Xã Vị Thanh 1\",\"province_name\":\"Thành phố Cần Thơ\"}`. Perfect! That's a match.\n\nThe resolution is quite explicit, so I'm very confident in this mapping.\n\nTime to construct the JSON output. This is straightforward now.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất thành phố cần Thơ, tỉnh Sóc Trăng và tỉnh Hậu Giang; lấy tên là thành phố Cần Thơ"
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Cần Thơ",
+      "ward_code": "31465",
+      "ward_name": "Xã Vị Thanh 1"
+    },
+    {
+      "citation": {
+        "header": "1668/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Cần Thơ",
+        "line": "Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Vị Đông, Vị Bình và Vị Thanh thành xã mới có tên gọi là xã Vị Thanh 1."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Cần Thơ",
+      "ward_code": "31465",
+      "ward_name": "Xã Vị Thanh 1"
+    }
+  ]
+}

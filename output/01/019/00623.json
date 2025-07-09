@@ -1,0 +1,18 @@
+{
+  "address": "Phường Phương Canh, Quận Nam Từ Liêm, Thành phố Hà Nội",
+  "ellapsedInMs": 8480,
+  "estimatedCost": 0.0032196999999999994,
+  "thought": "**Determining the New Ward for \"Phường Phương Canh\"**\n\nOkay, so I've been asked to find the new administrative unit for the old address \"Phường Phương Canh, Quận Nam Từ Liêm, Thành phố Hà Nội.\"  First, I need to figure out which province this is in. The address indicates \"Thành phố Hà Nội,\" so I checked the provincial resolutions (specifically 60-NQ/TW) to see if Hà Nội was merged. The resolution explicitly states that Hà Nội remains unchanged.\n\nNext, I need to find \"Phường Phương Canh\" in Hà Nội within the relevant resolutions. I quickly homed in on \"1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội.\" Line 36 of that document is the key here. It details the merging of several wards, including \"Phường Phương Canh,\" into a new ward. The text says \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Phương Canh... thành phường mới có tên gọi là **phường Xuân Phương**.\"  That's my answer! \"Phường Phương Canh\" is entirely merged into \"Phường Xuân Phương\".\n\nTo confirm, I looked up \"Phường Xuân Phương\" in the \"New wards\" data for Hà Nội. I found the entry: `{\"ward_code\":\"00622\",\"ward_name\":\"Phường Xuân Phương \",\"province_name\":\"Thành phố Hà Nội\"}`.  I see there's a trailing space in \"Phường Xuân Phương \" in the data, but it's not a deal-breaker for me. The primary concern is getting the correct ward name, and the schema expects a string, so the slight discrepancy is acceptable.\n\nThe resolution is explicit: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Phương Canh... thành phường mới có tên gọi là phường Xuân Phương\".  The confidence level here is definitely \"high\" because the mapping is direct and unambiguous.\n\nBased on all of that, here's my understanding of the output:\n\n*   The source document is \"1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội\".\n*   The relevant line from the document is \"36. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Phương Canh, phường Xuân Phương, một phần diện tích tự nhiên, quy mô dân số của phường Đại Mỗ và phường Tây Mỗ, một phần diện tích tự nhiên của xã Vân Canh, phần còn lại của phường Minh Khai (quận Bắc Từ Liêm) sau khi sắp xếp theo quy định tại các khoản 30, 33, 34 và phần còn lại của phường Phúc Diễn sau khi sắp xếp theo quy định tại khoản 31 Điều này thành phường mới có tên gọi là **phường Xuân Phương**.\"\n*   I have a \"high\" level of confidence in this result.\n*   The province name is \"Thành phố Hà Nội.\"\n*   The ward code is \"00622.\"\n*   And the new ward name is \"Phường Xuân Phương \" (note the trailing space).\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội",
+        "line": "36. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Phương Canh, phường Xuân Phương, một phần diện tích tự nhiên, quy mô dân số của phường Đại Mỗ và phường Tây Mỗ, một phần diện tích tự nhiên của xã Vân Canh, phần còn lại của phường Minh Khai (quận Bắc Từ Liêm) sau khi sắp xếp theo quy định tại các khoản 30, 33, 34 và phần còn lại của phường Phúc Diễn sau khi sắp xếp theo quy định tại khoản 31 Điều này thành phường mới có tên gọi là phường Xuân Phương."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hà Nội",
+      "ward_code": "00622",
+      "ward_name": "Phường Xuân Phương "
+    }
+  ]
+}

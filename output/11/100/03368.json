@@ -1,0 +1,18 @@
+{
+  "address": "Xã Phu Luông, Huyện Điện Biên, Tỉnh Điện Biên",
+  "ellapsedInMs": 5053,
+  "estimatedCost": 0.0025169,
+  "thought": "**Determining the New Ward for the Given Address**\n\nOkay, so I've got this address to work with: \"Xã Phu Luông, Huyện Điện Biên, Tỉnh Điện Biên.\" My goal is to figure out the new administrative unit, the ward, that corresponds to it.\n\nFirst, I need to pinpoint the province. That's easy; it's \"Tỉnh Điện Biên.\" Now, I have to check for any province-level administrative changes. Thankfully, \"Tỉnh Điện Biên\" isn't listed among the provinces that have undergone mergers. So, the province name remains the same.\n\nNext, I'll dive into the resolutions, looking specifically within the \"Tỉnh Điện Biên\" section for any ward changes. Resolution \"1661/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Điện Biên\" looks promising.  I scan the document and find line 36. This is key: it states that \"Phu Luông\" *along with* \"Mường Lói\" and \"Mường Nhà\" has been merged to form a *new* ward called \"**xã Mường Nhà**.\"\n\nNow, to solidify this, I'll cross-reference the \"New Wards\" list. I search for \"xã Mường Nhà,\" and there it is: `{\"ward_code\":\"03368\",\"ward_name\":\"Xã Mường Nhà\",\"province_name\":\"Tỉnh Điện Biên\"}`. That's a perfect match! I also quickly check to see if \"Phu Luông\" is listed as a new ward, but it isn't.\n\nGiven the explicit wording of the resolution, merging \"Phu Luông\" into the \"Mường Nhà\" ward, and with the clear listing of \"Mường Nhà\" in the new wards list, I have high confidence in this determination. So, my final step is to construct the JSON output reflecting my findings.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1661/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Điện Biên",
+        "line": "36. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Mường Lói, Phu Luông và Mường Nhà thành xã mới có tên gọi là xã Mường Nhà."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Điện Biên",
+      "ward_code": "03368",
+      "ward_name": "Xã Mường Nhà"
+    }
+  ]
+}

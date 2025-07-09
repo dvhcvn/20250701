@@ -1,0 +1,18 @@
+{
+  "address": "Xã Ea Tân, Huyện Krông Năng, Tỉnh Đắk Lắk",
+  "ellapsedInMs": 7652,
+  "estimatedCost": 0.0029778,
+  "thought": "**My Thought Process: Mapping an Old Vietnamese Address**\n\nOkay, so I've got this old Vietnamese address, \"Xã Ea Tân, Huyện Krông Năng, Tỉnh Đắk Lắk,\" and the task is to translate it to the new administrative setup.  The key is to use the provided resolutions and the \"New wards\" data.  Let's break this down systematically.\n\nFirst, I need to understand the old address. \"Xã Ea Tân\" is the old ward, \"Huyện Krông Năng\" is the old district (though I'm eliminating districts in this exercise), and \"Tỉnh Đắk Lắk\" is the province.  Got it.\n\nNext, I'll dive into the province resolutions. Specifically, I'm checking 60-NQ/TW for \"Tỉnh Đắk Lắk.\"  Item 15 is straightforward: the province name remains \"Tỉnh Đắk Lắk.\" High confidence there.\n\nNow, I'm onto the \"Other resolutions.\"  I'm looking for mentions of \"Xã Ea Tân\" *within* the context of \"Tỉnh Đắk Lắk.\"  Resolution 1660/NQ-UBTVQH15, \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đắk Lắk,\" is where I expect to find the relevant information.  Line 22 hits the mark: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Ea Tóh, Ea Tân và Dliê Ya thành xã mới có tên gọi là **xã Dliê Ya**.\"  Boom! \"Xã Ea Tân\" is merged into \"Xã Dliê Ya.\"  That's a high-confidence match. Resolution 1664/NQ-UBTVQH15 is a non-starter; it's for Gia Lai, not Đắk Lắk.\n\nTime to look at the \"New wards\" data.  I need to find \"Xã Dliê Ya\" within \"Tỉnh Đắk Lắk.\"  I quickly locate the record: `{\"ward_code\":\"24346\",\"ward_name\":\"Xã Dliê Ya\",\"province_name\":\"Tỉnh Đắk Lắk\"}`.  Perfect.\n\nNow, I put it all together. The province is \"Tỉnh Đắk Lắk\" (from 60-NQ/TW). The new ward name is \"Xã Dliê Ya,\" and its code is \"24346.\" The citation will point directly to resolution 1660/NQ-UBTVQH15, line 22, to be precise.  And my confidence is high because there's an explicit mention of the old ward being merged.\n\nI double-checked my work. Old address: Xã Ea Tân, Huyện Krông Năng, Tỉnh Đắk Lắk.  The province mapping is correct.  I'm confident in my approach.  Done.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1660/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đắk Lắk",
+        "line": "22. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Ea Tóh, Ea Tân và Dliê Ya thành xã mới có tên gọi là xã Dliê Ya."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đắk Lắk",
+      "ward_code": "24346",
+      "ward_name": "Xã Dliê Ya"
+    }
+  ]
+}

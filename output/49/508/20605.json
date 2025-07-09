@@ -1,0 +1,18 @@
+{
+  "address": "Xã Duy Phú, Huyện Duy Xuyên, Tỉnh Quảng Nam",
+  "ellapsedInMs": 6569,
+  "estimatedCost": 0.0027289000000000002,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm tackling this Vietnamese address mapping task. I've got an old address with \"Xã Duy Phú,\" in \"Huyện Duy Xuyên,\" \"Tỉnh Quảng Nam.\" The goal is to figure out the new administrative unit.\n\nFirst, I identified the address components. Then, I dug into the data. I started with Province Resolutions (60-NQ/TW), immediately hitting a shift – Quảng Nam is now part of Đà Nẵng, becoming \"Thành phố Đà Nẵng.\"\n\nNext, I focused on Resolution 1659/NQ-UBTVQH15, specifically looking for \"Xã Duy Phú.\" Bingo! Line 63 spells it out: Duy Phú is folded into a new \"Xã Thu Bồn.\"\n\nI cross-referenced this with the \"New Wards\" data. \"Xã Thu Bồn\" is listed, and it's confirmed within \"Thành phố Đà Nẵng.\" The corresponding ward code is \"20611.\"\n\nThis gives me a clear path to build the JSON output: the new province is \"Thành phố Đà Nẵng,\" the new ward is \"Xã Thu Bồn,\" and the ward code is \"20611.\"  I'm confident in this mapping because the resolution explicitly connects \"Duy Phú\" to \"Thu Bồn.\" And the citation, including the specific line number, solidifies this.\n\nJust to be thorough, I checked the other resolution lines to see if \"Duy Phú\" could be part of multiple new wards. But, line 63 is the only place it is mentioned.\n\nTherefore, the final result is clear, and the confidence level is high because there's a straightforward correspondence between the provided information and my analysis.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng",
+        "line": "63. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Duy Châu, Duy Hoà, Duy Phú và Duy Tân thành xã mới có tên gọi là xã Thu Bồn."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "20611",
+      "ward_name": "Xã Thu Bồn"
+    }
+  ]
+}

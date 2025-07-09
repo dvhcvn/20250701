@@ -1,0 +1,18 @@
+{
+  "address": "Phường Duy Minh, Thị xã Duy Tiên, Tỉnh Hà Nam",
+  "ellapsedInMs": 5574,
+  "estimatedCost": 0.0018141000000000001,
+  "thought": "**Address Mapping Analysis: \"Phường Duy Minh\", \"Tỉnh Hà Nam\"**\n\nOkay, here's how I'd approach this. The user wants to find the new administrative units for an old address. My brain's whirring, and I've got to break it down systematically.\n\nFirst, I see \"Phường Duy Minh\" in \"Tỉnh Hà Nam.\" That's the starting point. I need to figure out what happened to those specific units.\n\nI'm thinking province resolution 60-NQ/TW needs to be checked. Ah, there it is: \"Hợp nhất tỉnh Hà Nam, tỉnh Ninh Bình và tỉnh Nam Định; lấy tên là tỉnh Ninh Bình\" – that means Hà Nam is gone, merged into Ninh Bình. So, the province name changes. Keep that in mind.\n\nNext, I scan for resolution 1674/NQ-UBTVQH15, the real workhorse. I'm searching for \"Phường Duy Minh.\" Aha! Line 101: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Duy Minh, phường Duy Hải và một phần diện tích tự nhiên, quy mô dân số của phường Hoàng Đông thành phường mới có tên gọi là **phường Duy Hà**.\" Bingo! \"Phường Duy Minh\" is explicitly absorbed into \"Phường Duy Hà.\" That's crucial.\n\nNow, I'm checking the \"New wards\" data, just to confirm. I'm looking for \"Phường Duy Hà.\" The data shows `ward_code`: \"13336\" and `province_name`: \"Tỉnh Ninh Bình,\" which agrees with the province merger information I have. Perfect.\n\nAlright, the output is clear. I'll construct a JSON structure. The *citation* will be the resolution header and the line from 1674/NQ-UBTVQH15. My *confidence* is going to be high. It's an unambiguous match.  The *province_name* is \"Tỉnh Ninh Bình\" because of the merger. The *ward_code* is \"13336,\" and the *ward_name* is \"Phường Duy Hà.\" Easy peasy.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "101. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Duy Minh, phường Duy Hải và một phần diện tích tự nhiên, quy mô dân số của phường Hoàng Đông thành phường mới có tên gọi là phường Duy Hà."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "13336",
+      "ward_name": "Phường Duy Hà"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Bản Giang, Huyện Tam Đường, Tỉnh Lai Châu",
+  "ellapsedInMs": 6212,
+  "estimatedCost": 0.0023629000000000002,
+  "thought": "**My Analysis of the Address Mapping**\n\nOkay, I've got a Vietnamese address: \"Xã Bản Giang, Huyện Tam Đường, Tỉnh Lai Châu\". My goal is to map this to the new administrative structure. First, I identify the crucial components: \"Xã Bản Giang\" is the old ward, and \"Tỉnh Lai Châu\" is the old province.\n\nNow, let's dive into the resolutions. I know province-level mergers are often addressed separately, so I check \"60-NQ/TW\". Thankfully, it explicitly states that \"Tỉnh Lai Châu\" wasn't merged. That simplifies things!\n\nNext, I need to pinpoint the specific change related to \"Xã Bản Giang.\" I scan through other resolutions, focusing on those concerning \"Tỉnh Lai Châu.\" Resolution \"1670/NQ-UBTVQH15\" seems relevant. I quickly scan the lines and finally hit paydirt: line 35. It says, \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Tân Phong, phường Đông Phong và các xã San Thàng, Nùng Nàng,Bản Giang thành phường mới có tên gọi là **phường Tân Phong**.\" Bingo! \"Xã Bản Giang\" is being merged into \"Phường Tân Phong.\"\n\nNow, I cross-reference this with the \"New Wards\" data. I'm looking for \"Phường Tân Phong\". And there it is: `{\"ward_code\":\"03408\",\"ward_name\":\"Phường Tân Phong\",\"province_name\":\"Tỉnh Lai Châu\"}`. The data aligns perfectly.\n\nFinally, I can construct the output. The province remains \"Tỉnh Lai Châu,\" and the new ward is \"Phường Tân Phong,\" with a `ward_code` of \"03408\". I'll include the relevant citation from \"1670/NQ-UBTVQH15,\" line 35, and confidently assign a \"high\" confidence level because the resolution explicitly spells out the ward's fate. This should be a reliable mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1670/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lai Châu",
+        "line": "35. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Tân Phong, phường Đông Phong và các xã San Thàng, Nùng Nàng,Bản Giang thành phường mới có tên gọi là **phường Tân Phong**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lai Châu",
+      "ward_code": "03408",
+      "ward_name": "Phường Tân Phong"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "address": "Xã Xuyên Mộc, Huyện Xuyên Mộc, Tỉnh Bà Rịa - Vũng Tàu",
+  "ellapsedInMs": 7888,
+  "estimatedCost": 0.0027955000000000002,
+  "thought": "**Address Mapping Analysis for Ward Xuyên Mộc**\n\nOkay, I'm tackling this address mapping task. I've got an old address in mind: Xã Xuyên Mộc, Huyện Xuyên Mộc, Tỉnh Bà Rịa - Vũng Tàu. I need to map it to its new administrative unit, leveraging these resolutions and new ward data.\n\nFirst, I identified the key components of the old address. Now, the main challenge lies in the province change and any potential ward rearrangements. I'll need to meticulously analyze the relevant resolutions.\n\nLooking at Province Resolutions (60-NQ/TW), I quickly ascertained that Bà Rịa - Vũng Tàu isn't explicitly listed in the \"not merged\" list, which is a good starting point. Then, I found the bombshell. It *is* in the list of what's been merged! Specifically, item 16 indicates the province was combined with Bình Dương and Hồ Chí Minh City to become \"Thành phố Hồ Chí Minh.\" Bingo! Now I know where to focus.\n\nNext, I need to check other relevant resolutions. I immediately turned to resolution 1685/NQ-UBTVQH15, which concerns administrative rearrangement within Hồ Chí Minh City, the new province. This is crucial because Bà Rịa - Vũng Tàu is now part of it. I found the specific line that mentions my ward: \"160. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Bông Trang, Bưng Riềng và Xuyên Mộc thành xã mới có tên gọi là **xã Xuyên Mộc**.\"  This is it! My old \"Xã Xuyên Mộc\" is part of a merger that produces a *new* \"Xã Xuyên Mộc.\" It's essentially a renaming and consolidation.\n\nThen, I cross-referenced this with the new ward data. I found the perfect match: `{\"ward_code\":\"26632\",\"ward_name\":\"Xã Xuyên Mộc\",\"province_name\":\"Thành phố Hồ Chí Minh\"}`. This perfectly aligns with the name change and the new province identified earlier.\n\nSynthesizing it all: The province changed, but more importantly, the original ward participated in a merger resulting in a *new* Xã Xuyên Mộc. It all fits like a glove. The merging and renaming is confirmed in the resolution line.\n\nRegarding confidence: The information is robust. All parts - province merging, the ward's inclusion in the resolution - perfectly align. It's a high-confidence match because the old ward name is explicitly referenced in creating the new one. No ambiguity here.\n\nI'm confident in the output! I can construct my JSON output, citing the relevant resolution, with a \"high\" confidence level and the newly provided ward code and name. This will ensure an accurate and well-documented address mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Bà Rịa - Vũng Tàu, tỉnh Bình Dương và Thành phố Hồ Chí Minh; lấy tên là Thành phố Hồ Chí Minh"
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hồ Chí Minh",
+      "ward_code": "26632",
+      "ward_name": "Xã Xuyên Mộc"
+    },
+    {
+      "citation": {
+        "header": "1685/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của Thành phố Hồ Chí Minh",
+        "line": "160. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Bông Trang, Bưng Riềng và Xuyên Mộc thành xã mới có tên gọi là xã Xuyên Mộc."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hồ Chí Minh",
+      "ward_code": "26632",
+      "ward_name": "Xã Xuyên Mộc"
+    }
+  ]
+}

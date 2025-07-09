@@ -1,0 +1,18 @@
+{
+  "address": "Phường Vĩnh Thọ, Thành phố Nha Trang, Tỉnh Khánh Hòa",
+  "ellapsedInMs": 7960,
+  "estimatedCost": 0.0031668,
+  "thought": "**Analysis of Address Restructuring: \"Phường Vĩnh Thọ, Thành phố Nha Trang, Tỉnh Khánh Hòa\"**\n\nOkay, let's break this down systematically. The user has provided an old address: \"Phường Vĩnh Thọ, Thành phố Nha Trang, Tỉnh Khánh Hòa,\" and wants to find the corresponding new administrative unit. My expertise in this area dictates a structured approach.\n\nFirst, I need to isolate the key components: the old province (\"Tỉnh Khánh Hòa\") and the old ward (\"Phường Vĩnh Thọ\"). Province changes often require checking Resolution 60-NQ/TW.  A quick search confirms that the province name, \"Tỉnh Khánh Hòa\", remains unchanged. That's straightforward.\n\nNow, the crucial step:  finding how \"Phường Vĩnh Thọ\" has been affected. I'll need to thoroughly examine the relevant province resolutions, paying close attention to any mentions of \"Phường Vĩnh Thọ\". Resolution \"1667/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Khánh Hòa\" looks promising. Bingo! Line 50 of that resolution is definitive:  it explicitly details the merging of \"Phường Vĩnh Thọ\" and several other wards/xã into a new \"phường Bắc Nha Trang\".\n\nThis is the key piece of information.  Now, I need to cross-reference this with the \"New wards\" data.  I'll look for \"phường Bắc Nha Trang\" within \"Tỉnh Khánh Hòa\".  And there it is:  `{\"ward_code\":\"22333\",\"ward_name\":\"Phường Bắc Nha Trang\",\"province_name\":\"Tỉnh Khánh Hòa\"}`. Perfect match.\n\nThe address information has helped in eliminating district level detail, and only mapping ward-level restructuring is required. This new information can be transformed into a clear JSON output. Given the clear direct line from the resolution to the new ward, the confidence in this mapping is very high.  I can confidently construct the output with the citation, the relevant line from the resolution, high confidence, the original province name which is \"Tỉnh Khánh Hòa\", the specific ward code, and the new ward name \"Phường Bắc Nha Trang\".  The district (\"Thành phố Nha Trang\") is irrelevant in this process and is correctly eliminated. The schema doesn't ask for a district and the focus is on identifying the *new* ward.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1667/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Khánh Hòa",
+        "line": "50. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Vĩnh Hòa, Vĩnh Hải, Vĩnh Phước, Vĩnh Thọ, xãVĩnh Lương và xã Vĩnh Phương thành phường mới có tên gọi là phường Bắc Nha Trang."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Khánh Hòa",
+      "ward_code": "22333",
+      "ward_name": "Phường Bắc Nha Trang"
+    }
+  ]
+}

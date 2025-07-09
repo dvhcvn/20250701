@@ -1,0 +1,18 @@
+{
+  "address": "Xã Phụng Hiệp, Huyện Phụng Hiệp, Tỉnh Hậu Giang",
+  "ellapsedInMs": 6782,
+  "estimatedCost": 0.0023672,
+  "thought": "**Analysis of Administrative Unit Mapping**\n\nOkay, here's what I've got. The user wants to map an old address, specifically \"Xã Phụng Hiệp, Huyện Phụng Hiệp, Tỉnh Hậu Giang\", to its current administrative unit. I'm going to piece this together using the provided resolutions and the \"New wards\" data.\n\nFirst, I see \"Tỉnh Hậu Giang\" in the old address. A quick glance at the province resolutions (like 60-NQ/TW) confirms my suspicion – Hậu Giang merged into \"Thành phố Cần Thơ\". That's step one.\n\nNext, I need to figure out where \"Xã Phụng Hiệp\" is now. Resolution 1668/NQ-UBTVQH15 is key here. It explicitly mentions reorganizing administrative units, and it's specifically about \"thành phố Cần Thơ.\" Bingo! This resolution states that \"xã Hòa Mỹ\" and \"xã Phụng Hiệp\" are merged to form a *new* \"xã Phụng Hiệp.\" This new \"Xã Phụng Hiệp\" is within Cần Thơ, not the old Hậu Giang.\n\nNow, checking the \"New wards\" data, I find a matching entry: `{\"ward_code\":\"31420\",\"ward_name\":\"Xã Phụng Hiệp\",\"province_name\":\"Thành phố Cần Thơ\"}`. The name and the province perfectly align!\n\nPutting it all together, the resolution clearly states the old \"Xã Phụng Hiệp\" from Hậu Giang is *now* part of a new \"Xã Phụng Hiệp\" within \"Thành phố Cần Thơ\". The new ward data confirms this. There's really no ambiguity here. This is a high-confidence match.\n\nI'll construct the JSON output accordingly. The citation will be from resolution 1668/NQ-UBTVQH15 with the specific line about the merge. The confidence level is high because the resolution is very clear, and the data corroborates the findings. The province is \"Thành phố Cần Thơ,\" the ward code is \"31420,\" and the ward name is \"Xã Phụng Hiệp.\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1668/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Cần Thơ",
+        "line": "63. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Hòa Mỹ và xã Phụng Hiệp thành xã mới có tên gọi là xã Phụng Hiệp."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Cần Thơ",
+      "ward_code": "31420",
+      "ward_name": "Xã Phụng Hiệp"
+    }
+  ]
+}

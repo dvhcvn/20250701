@@ -1,0 +1,18 @@
+{
+  "address": "Phường Thành Tô, Quận Hải An, Thành phố Hải Phòng",
+  "ellapsedInMs": 5104,
+  "estimatedCost": 0.0017874,
+  "thought": "**Analyzing Address Data and Administrative Unit Changes**\n\nOkay, so I'm presented with an address: \"Phường Thành Tô, Thành phố Hải Phòng\" and need to figure out its new administrative unit. My initial steps are clear.\n\nFirst, I need to pinpoint the \"old\" ward and province. Easy – it's \"Phường Thành Tô\" and \"Thành phố Hải Phòng\".\n\nNext, I need to account for any province mergers. Checking `60-NQ/TW`, I find that the province's name remains the same after consolidation, so that's straightforward.\n\nThen, the critical part: I'll delve into the `Other resolutions` data, specifically searching for \"Phường Thành Tô\". Here's where the critical clue pops up: `1669/NQ-UBTVQH15`. This resolution explicitly states that \"Phường Thành Tô\" was merged into a new ward called \"Phường Hải An\". That seals it!\n\nMy final step is to retrieve the necessary details for \"Phường Hải An\" from the `New wards` data, looking specifically for entries in \"Thành phố Hải Phòng\". I find: `{\"ward_code\":\"11413\",\"ward_name\":\"Phường Hải An\",\"province_name\":\"Thành phố Hải Phòng\"}`. This perfectly aligns with my findings.\n\nSince the resolution explicitly mentions the merger of \"Phường Thành Tô\" into \"Phường Hải An\", my confidence in this mapping is very high. With this information, I can now construct the required JSON output, ensuring it adheres to the provided schema. I'm ready to proceed.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "14. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Cát Bi, Đằng Lâm, Thành Tô, Đằng Hải, Tràng Cát, một phần diện tích tự nhiên, quy mô dân số của phường Nam Hải vàmột phần diện tích tự nhiên của phường Đông Hải 2thành phường mới có tên gọi là phường Hải An."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "11413",
+      "ward_name": "Phường Hải An"
+    }
+  ]
+}

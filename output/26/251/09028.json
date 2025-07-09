@@ -1,0 +1,18 @@
+{
+  "address": "Xã Đồng Cương, Huyện Yên Lạc, Tỉnh Vĩnh Phúc",
+  "ellapsedInMs": 8059,
+  "estimatedCost": 0.0034437000000000005,
+  "thought": "**My Analysis of \"Xã Đồng Cương, Huyện Yên Lạc, Tỉnh Vĩnh Phúc\"**\n\nOkay, so the user needs the new administrative unit for \"Xã Đồng Cương, Huyện Yên Lạc, Tỉnh Vĩnh Phúc\". Let's break this down. First, I identify the old province: \"Tỉnh Vĩnh Phúc\". I know I need to check provincial resolutions (60-NQ/TW series) to see if \"Tỉnh Vĩnh Phúc\" was affected. And there it is: \"Hợp nhất tỉnh Vĩnh Phúc, tỉnh Phú Thọ và tỉnh Hoà Bình; lấy tên là tỉnh Phú Thọ\". This immediately tells me the new province is \"Tỉnh Phú Thọ\".\n\nNext, I need to identify the ward \"Xã Đồng Cương\" and the district \"Huyện Yên Lạc\". The district is useful context, but I need to focus on what happened to \"Xã Đồng Cương\".  Since we are eliminating districts, I'll move on to searching resolutions for either \"Đồng Cương\" or \"Yên Lạc\" (the ward name and part of the district name). Common names like this can be tricky, so it's best to cast a wide net.\n\nI scan the resolutions and find **1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ**.  And bingo! Line 81 reads, \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Yên Lạc, xã Bình Định và xã Đồng Cương thành xã mới có tên gọi là **xã Yên Lạc**.\" This is perfect! It explicitly mentions \"Xã Đồng Cương\" and it is merging into \"Xã Yên Lạc\", and it's in the correct province.\n\nTo be thorough, I check the list of \"New wards\" and there it is:  \"{\"ward_code\":\"09025\",\"ward_name\":\"Xã Yên Lạc\",\"province_name\":\"Tỉnh Phú Thọ\"}\" - an exact match!\n\nThe final JSON output should be:\n*   `province_name`: \"Tỉnh Phú Thọ\"\n*   `ward_name`: \"Xã Yên Lạc\"\n*   `ward_code`: \"09025\"\n*   `citation`:\n    *   `header`: \"1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ\"\n    *   `line`: \"81. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Yên Lạc, xã Bình Định và xã Đồng Cương thành xã mới có tên gọi là **xã Yên Lạc**.\"\n*   `confidence`: \"high\"\n\nI'll quickly double-check other resolutions for \"Yên Lạc\" and \"Đồng Cương\". I see mentions in Cao Bằng, Thái Nguyên, and Thanh Hóa, but those are irrelevant.  The 1676 resolution for Phú Thọ is the only direct match, and it's a solid one. This result is correct.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "81. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Yên Lạc, xã Bình Định và xã Đồng Cương thành xã mới có tên gọi là xã Yên Lạc."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "09025",
+      "ward_name": "Xã Yên Lạc"
+    }
+  ]
+}

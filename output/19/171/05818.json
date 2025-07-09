@@ -1,0 +1,28 @@
+{
+  "address": "Xã Hoàng Nông, Huyện Đại Từ, Tỉnh Thái Nguyên",
+  "ellapsedInMs": 5737,
+  "estimatedCost": 0.0019965,
+  "thought": "**Address Mapping Logic: A Thought Process**\n\nOkay, so I'm presented with an old Vietnamese address and the task of figuring out its new administrative equivalent. Let's break this down systematically. First, I need to *understand* what the input address actually means.\n\nI'm looking at \"Xã Hoàng Nông, Huyện Đại Từ, Tỉnh Thái Nguyên\". The key pieces are the old ward (\"Xã Hoàng Nông\") and the province (\"Tỉnh Thái Nguyên\").\n\nNow, to see if anything changed with \"Tỉnh Thái Nguyên\" I'll check province resolutions, specifically focusing on those that might describe mergers or name changes. Ah, here's one: 60-NQ/TW, regarding the merger of Bắc Kạn and Thái Nguyên. It confirms \"Tỉnh Thái Nguyên\" remained, so no surprises there.\n\nNext, it's time to dig into \"Other resolutions,\" scanning for anything related to \"Xã Hoàng Nông\" within the province of \"Tỉnh Thái Nguyên.\" Bingo! Resolution \"1683/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thái Nguyên\" has exactly what I need. Line 31 clearly states that \"Xã Hoàng Nông\" will be merged with other communes into a new commune called \"Xã La Bằng\".\n\nTo be absolutely sure, I'll cross-reference this information with the \"New wards\" list. Checking `{\"ward_code\":\"05818\",\"ward_name\":\"Xã La Bằng\",\"province_name\":\"Tỉnh Thái Nguyên\"}` verifies that this new ward exists and belongs to the correct province.\n\nBased on all of this I can now construct the JSON output. We've got our *province_name* (confirmed as \"Tỉnh Thái Nguyên\"), our *ward_name* (\"Xã La Bằng\"), and the relevant *ward_code* (\"05818\"). My citation is the resolution I used, and the *confidence* is high; it's a direct and well-defined mapping. I can generate the JSON with confidence.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Bắc Kạn và tỉnh Thái Nguyên, lấy tên là tỉnh Thái Nguyên"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thái Nguyên",
+      "ward_code": "05818",
+      "ward_name": "Xã La Bằng"
+    },
+    {
+      "citation": {
+        "header": "1683/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thái Nguyên",
+        "line": "31. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Hoàng Nông, Tiên Hội và La Bằng thành xã mới có tên gọi là xã La Bằng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thái Nguyên",
+      "ward_code": "05818",
+      "ward_name": "Xã La Bằng"
+    }
+  ]
+}

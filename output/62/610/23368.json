@@ -1,0 +1,28 @@
+{
+  "address": "Xã Đắk Long, Huyện Đắk Glei, Tỉnh Kon Tum",
+  "ellapsedInMs": 8086,
+  "estimatedCost": 0.0034780999999999996,
+  "thought": "**Analysis of Address Mapping: \"Xã Đắk Long, Huyện Đắk Glei, Tỉnh Kon Tum\"**\n\nAlright, let's break this down systematically. My task is to map this old address to its new administrative unit, considering the provided resolutions and new ward data.\n\nFirst, I identified the original province, \"Tỉnh Kon Tum.\"  The province resolutions (specifically 60-NQ/TW) clearly state that Kon Tum merged with Quảng Ngãi to form \"Tỉnh Quảng Ngãi.\"  This simplifies things; the new province is definitely Quảng Ngãi.\n\nNext, I focused on the ward, \"Xã Đắk Long.\" Resolution 1677/NQ-UBTVQH15 became key here. Initially, some lines mentioned \"Đăk Long,\" but they referred to a \"Đăk Hà\" district, which is irrelevant to the \"Đắk Glei\" district in our input address. Then, line 92 hit the jackpot! It explicitly states that \"Xã Đăk Long (huyện Đăk Glei)\" is one of the five communes *not* undergoing rearrangement. Bingo! This is a direct match to our input.\n\nBased on this, and confirmed by the new ward data, where \"ward_name\" matches the original \"Xã Đăk Long\" and the \"province_name\" is now \"Tỉnh Quảng Ngãi,\" I'm confident in the mapping.  The \"ward_code\" is 23368.\n\nSo, the JSON output will reflect this direct mapping. The \"province_name\" will be \"Tỉnh Quảng Ngãi,\" the \"ward_name\" will be \"Xã Đăk Long,\" the \"ward_code\" will be \"23368,\" and the relevant resolution will be cited. My confidence level is high because of the explicit confirmation in the resolution that this ward did *not* change. This is straightforward!\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Kon Tum và tỉnh Quảng Ngãi, lấy tên là tỉnh Quảng Ngãi"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ngãi",
+      "ward_code": "23368",
+      "ward_name": "Xã Đăk Long"
+    },
+    {
+      "citation": {
+        "header": "1677/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ngãi",
+        "line": "92. Sau khi sắp xếp, tỉnh Quảng Ngãi có 96 đơn vị hành chính cấp xã, gồm 86 xã, 09 phường và 01 đặc khu; trong đó có 81 xã, 09 phường, 01 đặc khu hình thành sau sắp xếp quy định tại Điều này và 05 xã không thực hiện sắp xếp là các xã Đăk Long (huyện Đăk Glei), Ba Xa, Rờ Kơi, Mô Rai, Ia Đal."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ngãi",
+      "ward_code": "23368",
+      "ward_name": "Xã Đăk Long"
+    }
+  ]
+}

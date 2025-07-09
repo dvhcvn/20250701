@@ -1,0 +1,28 @@
+{
+  "address": "Xã An Đức, Huyện Ba Tri, Tỉnh Bến Tre",
+  "ellapsedInMs": 8655,
+  "estimatedCost": 0.0037466,
+  "thought": "**Determining the New Administrative Unit for \"Xã An Đức, Huyện Ba Tri, Tỉnh Bến Tre\"**\n\nOkay, so I've been asked to find the new administrative unit for \"Xã An Đức, Huyện Ba Tri, Tỉnh Bến Tre\".  The process I'm going through is fairly straightforward, but it requires a methodical approach to ensure accuracy.  First, I have to check for any province mergers, which would obviously impact the overall address.\n\nLooking at \"60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất\", I immediately see that \"Tỉnh Bến Tre\" has been merged. Specifically, \"Hợp nhất tỉnh Bến Tre, tỉnh Vĩnh Long và tỉnh Trà Vinh; lấy tên là tỉnh Vĩnh Long\".  So, \"Tỉnh Bến Tre\" is now \"Tỉnh Vĩnh Long\". This changes the province part of the address.\n\nNext, I need to investigate what happened to \"Xã An Đức\".  I'll delve into the \"Other resolutions\" focusing on those related to \"Tỉnh Bến Tre\" or now \"Tỉnh Vĩnh Long\". I meticulously scan each resolution for any mention of \"An Đức\".\n\nThe crucial piece of information is found in \"1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long\". Within this resolution, line 83 is key: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Ba Tri và các xã Vĩnh Hòa (huyện Ba Tri), An Đức, Vĩnh An,An Bình Tây thành xã mới có tên gọi là **xã Ba Tri**.\"\n\nThat's it!  \"An Đức\" and \"Huyện Ba Tri\" are explicitly mentioned in this resolution, and the resulting new ward is \"Xã Ba Tri\".\n\nNow, I cross-reference this information with the \"New wards\" list to verify and obtain the necessary code.  I locate \"Xã Ba Tri\" and find its associated data: `{\"ward_code\":\"29110\",\"ward_name\":\"Xã Ba Tri\",\"province_name\":\"Tỉnh Vĩnh Long\"}`.\n\nBuilding the JSON output is now simple:\n\n*   `province_name`: \"Tỉnh Vĩnh Long\" (from the province merger)\n*   `ward_name`: \"Xã Ba Tri\" (from resolution 1687/NQ-UBTVQH15)\n*   `ward_code`: \"29110\" (from the new wards list)\n*   `confidence`: \"high\" (because the resolution clearly details the changes, and the province merger is confirmed)\n*   `citation`:  1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long (specific line).\n\nTo be absolutely sure, I did a quick check for any other \"An Đức\" mentions that might be relevant, but only found a reference in \"1669/NQ-UBTVQH15\" concerning \"Hải Phòng\", which is unrelated.\n\nTherefore, the final answer, with high confidence, is: the old \"Xã An Đức, Huyện Ba Tri, Tỉnh Bến Tre\" is now part of the new ward, \"Xã Ba Tri,\" located in \"Tỉnh Vĩnh Long,\" with ward code \"29110.\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Bến Tre, tỉnh Vĩnh Long và tỉnh Trà Vinh; lấy tên là tỉnh Vĩnh Long"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "29110",
+      "ward_name": "Xã Ba Tri"
+    },
+    {
+      "citation": {
+        "header": "1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long",
+        "line": "83. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Ba Tri và các xã Vĩnh Hòa (huyện Ba Tri), An Đức, Vĩnh An,An Bình Tây thành xã mới có tên gọi là xã Ba Tri."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "29110",
+      "ward_name": "Xã Ba Tri"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Sủng Trà, Huyện Mèo Vạc, Tỉnh Hà Giang",
+  "ellapsedInMs": 6872,
+  "estimatedCost": 0.0022648000000000004,
+  "thought": "**My Analysis of the Address Mapping**\n\nOkay, so I'm tackling this Vietnamese address mapping task. I've got an old address and need to figure out its current administrative location. Here's my thought process:\n\nFirst, I need to break down the old address: \"Xã Sủng Trà\" (ward), \"Huyện Mèo Vạc\" (district), and \"Tỉnh Hà Giang\" (province).\n\nNext, I have to account for provincial mergers. Looking at Resolution 60-NQ/TW, I see that Hà Giang has merged into Tuyên Quang. Therefore, my new province will be \"Tỉnh Tuyên Quang\".\n\nNow, the crucial part: I've been given a specific resolution, 1684/NQ-UBTVQH15, that seems relevant. It deals with administrative unit adjustments within Tuyên Quang, which makes sense considering the province merger.\n\nI'm scanning through this resolution to see if I can find something about \"Sủng Trà\". Aha! Line 49 says \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Lũng Chinh, Sủng Trà và Sủng Máng thành xã mới có tên gọi là **xã Sủng Máng**.\" This tells me that \"Sủng Trà\" is now part of \"Xã Sủng Máng\".\n\nFinally, I need to confirm this with the \"New Wards\" data. I'll check if \"Xã Sủng Máng\" exists in Tuyên Quang. Bingo! There it is, with its ward code.\n\nSo, here's my resulting JSON output:\n\n```json\n{\n  \"province_name\": \"Tỉnh Tuyên Quang\",\n  \"ward_name\": \"Xã Sủng Máng\",\n  \"ward_code\": \"00787\",\n  \"citation\": {\n    \"header\": \"1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang\",\n    \"line\": \"49. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Lũng Chinh, Sủng Trà và Sủng Máng thành xã mới có tên gọi là **xã Sủng Máng**.\"\n  },\n  \"confidence\": \"high\"\n}\n```\n\nMy reasoning is straightforward, and the evidence directly supports my conclusions. I'm pretty confident about this mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "49. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Lũng Chinh, Sủng Trà và Sủng Máng thành xã mới có tên gọi là xã Sủng Máng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "00787",
+      "ward_name": "Xã Sủng Máng"
+    }
+  ]
+}

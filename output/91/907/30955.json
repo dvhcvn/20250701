@@ -1,0 +1,18 @@
+{
+  "address": "Xã Vĩnh Hòa Hưng Bắc, Huyện Gò Quao, Tỉnh Kiên Giang",
+  "ellapsedInMs": 7105,
+  "estimatedCost": 0.0028403,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm presented with the task of mapping an old Vietnamese address, specifically \"Xã Vĩnh Hòa Hưng Bắc, Huyện Gò Quao, Tỉnh Kiên Giang\", to its current administrative structure. My first step is to break down the address. I identify \"Xã Vĩnh Hòa Hưng Bắc\" as the old ward and \"Tỉnh Kiên Giang\" as the old province.\n\nNow, I need to account for any province mergers. My analysis of resolution \"60-NQ/TW\" reveals that Kiên Giang was merged into An Giang, forming the new province, \"Tỉnh An Giang.\" This is crucial.\n\nNext, I need to check for ward-level changes within this new context – An Giang. Fortunately, I have access to relevant resolutions. Resolution \"1654/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh An Giang\" is my key resource. Within this resolution, line 59 directly addresses \"Xã Vĩnh Hòa Hưng Bắc.\" It states that \"Xã Vĩnh Hòa Hưng Bắc\" and \"Xã Vĩnh Hòa Hưng Nam\" are merged into a new ward: \"Xã Vĩnh Hòa Hưng\". Bingo!\n\nNow, I look at the provided \"New wards\" data. I find a perfect match: `{\"ward_code\":\"30970\",\"ward_name\":\"Xã Vĩnh Hòa Hưng\",\"province_name\":\"Tỉnh An Giang\"}`. This is exactly what I was hoping for.\n\nPutting it all together, I can construct the JSON output. The new province is \"Tỉnh An Giang,\" the new ward is \"Xã Vĩnh Hòa Hưng,\" and the ward code is \"30970.\" My citation comes directly from the resolution and line 59. The confidence level is high because there's a direct, unambiguous mapping based on official resolutions. I've also double-checked all my steps and cross-referenced the data to ensure accuracy. This is a solid result.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1654/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh An Giang",
+        "line": "59. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Vĩnh Hòa Hưng Bắc và xã Vĩnh Hòa Hưng Nam thành xã mới có tên gọi là xã Vĩnh Hòa Hưng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh An Giang",
+      "ward_code": "30970",
+      "ward_name": "Xã Vĩnh Hòa Hưng"
+    }
+  ]
+}

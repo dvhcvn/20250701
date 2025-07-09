@@ -1,0 +1,18 @@
+{
+  "address": "Xã Phan Sào Nam, Huyện Phù Cừ, Tỉnh Hưng Yên",
+  "ellapsedInMs": 6486,
+  "estimatedCost": 0.0025374,
+  "thought": "**Finding the New Administrative Unit**\n\nOkay, so I'm presented with \"Xã Phan Sào Nam, Huyện Phù Cừ, Tỉnh Hưng Yên\" and the task is to pinpoint its new administrative unit.  My first instinct is to zero in on the province: \"Tỉnh Hưng Yên.\"  I need to check for any province-level mergers or consolidations first, as that would impact the entire geographical context. Looking at the relevant document, \"60-NQ/TW,\" I find that Hưng Yên *remains* Hưng Yên, even after absorbing Thái Bình. Good, one less variable to worry about.\n\nNow, I'll focus on the specific *xã*: \"Xã Phan Sào Nam.\"  The next step is to drill down into the more granular resolutions, specifically those related to administrative rearrangements *within* Hưng Yên.  Resolution \"1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên\" looks promising.  Scanning through it, I quickly find what I'm looking for in line 6: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Phan Sào Nam, Minh Hoàng và Đoàn Đào thành xã mới có tên gọi là **xã Đoàn Đào**.\"  Bingo!  This resolution explicitly states the fate of Phan Sào Nam.\n\nThis is a pretty clear-cut case, so I'm confident.  To solidify this, I'll now cross-reference this information with the list of *new* wards. Searching for \"Xã Đoàn Đào\" within Hưng Yên, I expect to find it. And there it is: `{\"ward_code\":\"12406\",\"ward_name\":\"Xã Đoàn Đào\",\"province_name\":\"Tỉnh Hưng Yên\"}`.  Perfect confirmation.\n\nNow, the final step is to package this information neatly. I'll construct the JSON output, noting the resolution, the specific line that confirms the merger, and a high confidence level due to the direct nature of the resolution.  This should provide a clear and concise answer.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên",
+        "line": "6. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Phan Sào Nam, Minh Hoàng và Đoàn Đào thành xã mới có tên gọi là xã Đoàn Đào."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "12406",
+      "ward_name": "Xã Đoàn Đào"
+    }
+  ]
+}

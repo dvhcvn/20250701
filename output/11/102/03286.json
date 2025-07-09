@@ -1,0 +1,18 @@
+{
+  "address": "Xã Mường Đăng, Huyện Mường Ảng, Tỉnh Điện Biên",
+  "ellapsedInMs": 7271,
+  "estimatedCost": 0.0024748,
+  "thought": "**My Analysis of Address Reorganization**\n\nOkay, so I'm tasked with figuring out the new administrative unit for the old address \"Xã Mường Đăng, Huyện Mường Ảng, Tỉnh Điện Biên.\" My approach is clear: use the available resolutions and a list of new wards to pinpoint the correct information.\n\nFirst, I'll *parse* the input, identifying the old address components and the relevant resolutions.  Crucially, I'll need to check if \"Tỉnh Điện Biên\" has been merged or not, and then zero in on \"Xã Mường Đăng\" within the other resolutions. Finally, I'll compare the new wards against the data.\n\nLooking at the province resolutions (60-NQ/TW), I see that \"Tỉnh Điện Biên\" isn't being merged. Excellent, that gives me a confirmed province name for the output. So \"Tỉnh Điện Biên\" remains \"Tỉnh Điện Biên\".\n\nNow, the core of the problem lies in the other resolutions (1661/NQ-UBTVQH15).  I'll scan them for \"Xã Mường Đăng.\" Line 27 tells the story: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Mường Đăng, Ngối Cáy và Nà Tấu thành xã mới có tên gọi là **xã Nà Tấu**.\"  Bingo! \"Xã Mường Đăng\" is being absorbed into \"xã Nà Tấu.\"\n\nNext, I'll cross-reference that information with the list of *New Wards*. I'll specifically look for \"xã Nà Tấu\" in \"Tỉnh Điện Biên.\"  And there it is! I have a matching entry: `{\"ward_code\":\"03316\",\"ward_name\":\"Xã Nà Tấu\",\"province_name\":\"Tỉnh Điện Biên\"}`.\n\nNow it's time to build the output.  The `province_name` is \"Tỉnh Điện Biên.\" The `ward_name` is \"Xã Nà Tấu,\" and the `ward_code` is \"03316.\" For citation, the appropriate resolution is \"1661/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Điện Biên,\" specifically line 27. I have high confidence in this result because the matching is explicit and direct. Finally, I'll make sure the output is in the required array format.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1661/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Điện Biên",
+        "line": "27. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Mường Đăng, Ngối Cáy và Nà Tấu thành xã mới có tên gọi là xã Nà Tấu."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Điện Biên",
+      "ward_code": "03316",
+      "ward_name": "Xã Nà Tấu"
+    }
+  ]
+}

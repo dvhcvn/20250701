@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Kon Dơng, Huyện Mang Yang, Tỉnh Gia Lai",
+  "ellapsedInMs": 6856,
+  "estimatedCost": 0.0025568,
+  "thought": "**My Analysis of the Administrative Unit Change**\n\nOkay, so I'm presented with an old address: \"Thị trấn Kon Dơng, Huyện Mang Yang, Tỉnh Gia Lai,\" and I need to figure out its new ward. My approach is pretty straightforward: break down the address, analyze the provided resolutions, and then map the old to the new.\n\nFirst, I parsed the old address. I've got \"Thị trấn Kon Dơng\" as the ward, \"Huyện Mang Yang\" as the district (which, even though districts are being adjusted, helps with context), and \"Tỉnh Gia Lai\" as the province.\n\nNext, I checked province-level resolutions, specifically the ones related to mergers and consolidations. Resolution \"60-NQ/TW\" confirms that \"Tỉnh Gia Lai\" remains \"Tỉnh Gia Lai\" after any potential mergers, which simplifies things. I can move forward confidently knowing the province name isn't changing.\n\nThen, I dove into the \"Other Resolutions\" focusing on \"Thị trấn Kon Dơng\". Resolution \"1664/NQ-UBTVQH15\" is key here. Line 91 explicitly states that \"Thị trấn Kon Dơng,\" along with other areas, will become the new \"Xã Mang Yang.\" Bingo! This direct mapping is what I was looking for. Line 95 is irrelevant in this process.\n\nNow, I cross-reference this information with the list of \"New Wards.\" I find an entry for \"Xã Mang Yang,\" with the corresponding ward code \"23794.\" This perfectly aligns with the resolution. I also see \"Xã Ayun,\" but that isn't the result for \"Thị trấn Kon Dơng\" according to the resolutions.\n\nTherefore, \"Thị trấn Kon Dơng\" from the old address now belongs to \"Xã Mang Yang\" with a `ward_code` of \"23794,\" and the province remains \"Tỉnh Gia Lai.\" This is a high-confidence mapping because it's based on explicit wording in the provided resolutions. I'm now ready to construct the JSON output reflecting this.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai",
+        "line": "91. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Kon Dơng và các xã Đăk Yă, Đak Djrăng, Hải Yang thành xã mới có tên gọi là xã Mang Yang."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "23794",
+      "ward_name": "Xã Mang Yang"
+    }
+  ]
+}

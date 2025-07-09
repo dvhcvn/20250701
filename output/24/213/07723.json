@@ -1,0 +1,18 @@
+{
+  "address": "Xã Lãng Sơn, Thành phố Bắc Giang, Tỉnh Bắc Giang",
+  "ellapsedInMs": 8469,
+  "estimatedCost": 0.0032136,
+  "thought": "**Determining the New Administrative Unit for \"Xã Lãng Sơn\"**\n\nOkay, let's break this down systematically. My goal is to map the old address \"Xã Lãng Sơn, Thành phố Bắc Giang, Tỉnh Bắc Giang\" to its new administrative unit, based on the provided resolutions and the new ward data.\n\nFirst, I identify the key components of the old address. I've got the old province, \"Tỉnh Bắc Giang,\" and the old ward, \"Xã Lãng Sơn.\" The \"Thành phố Bắc Giang\" is a district-level unit, but given the nature of these administrative reorganizations (eliminating districts), I'll primarily focus on the province and ward for this mapping.\n\nNow, let's deal with the province mergers. Resolution 60-NQ/TW states that \"Hợp nhất tỉnh Bắc Ninh và tỉnh Bắc Giang, lấy tên là tỉnh Bắc Ninh.\"  This is straightforward; \"Tỉnh Bắc Giang\" is now part of \"Tỉnh Bắc Ninh.\"\n\nNext, I'll delve into the ward-level resolutions, specifically looking for mentions of \"Xã Lãng Sơn\" within the new province, \"Tỉnh Bắc Ninh.\" I'm particularly interested in 1658/NQ-UBTVQH15, which deals with the reorganization of administrative units at the commune/ward level in Bắc Ninh.\n\nScanning through this resolution, I find some initial promising information. Line 92 mentions the creation of \"Phường Bắc Giang\" from several other wards. However, it doesn't include \"Xã Lãng Sơn.\" But Line 95 is the crucial one: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Tân An và các xã Quỳnh Sơn, Trí Yên, Lãng Sơn thành phường mới có tên gọi là **phường Tân An**.\" Bingo! \"Xã Lãng Sơn\" is explicitly mentioned in the process of merging into the new \"Phường Tân An.\"\n\nTo confirm, I quickly scan the list of \"New wards\" to verify the existence and structure of \"Phường Tân An\" within \"Tỉnh Bắc Ninh.\" It matches perfectly: `{\"ward_code\":\"07682\",\"ward_name\":\"Phường Tân An\",\"province_name\":\"Tỉnh Bắc Ninh\"}`.\n\nBuilding the JSON output is now simple. The `citation` will be the relevant line (95) from 1658/NQ-UBTVQH15. The `confidence` will be \"high\" because this is a direct match, and \"Xã Lãng Sơn\" is explicitly mapped to \"Phường Tân An.\"\n\nLet's address potential ambiguities. The old address includes \"Thành phố Bắc Giang.\" However, \"Phường Bắc Giang\" is formed from a completely different set of wards, and the resolution *specifically* states that \"Xã Lãng Sơn\" is merged into \"Phường Tân An.\" No other resolutions mention \"Xã Lãng Sơn,\" so \"Phường Tân An\" is the definitive new ward for this old address. The new province is confirmed to be \"Tỉnh Bắc Ninh.\" Therefore my conclusion is as follows:\n\nNew Province: Tỉnh Bắc Ninh\nNew Ward: Phường Tân An.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh",
+        "line": "95. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Tân An và các xã Quỳnh Sơn, Trí Yên, Lãng Sơn thành phường mới có tên gọi là phường Tân An."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "07682",
+      "ward_name": "Phường Tân An"
+    }
+  ]
+}

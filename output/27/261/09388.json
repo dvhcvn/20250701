@@ -1,0 +1,18 @@
+{
+  "address": "Phường Châu Khê, Thành phố Từ Sơn, Tỉnh Bắc Ninh",
+  "ellapsedInMs": 8066,
+  "estimatedCost": 0.0028661999999999997,
+  "thought": "**Determining the New Ward for \"Phường Châu Khê, Thành phố Từ Sơn, Tỉnh Bắc Ninh\"**\n\nOkay, so I've got the address: \"Phường Châu Khê, Thành phố Từ Sơn, Tỉnh Bắc Ninh.\" My first step is to identify the old ward and province.  Easy enough: \"Phường Châu Khê\" is the old ward, and \"Tỉnh Bắc Ninh\" is the old province.\n\nNext, I need to check for any province-level changes, specifically regarding Bắc Ninh.  I'll consult the relevant resolutions, particularly 60-NQ/TW. Ah, there it is: \"Hợp nhất tỉnh Bắc Ninh và tỉnh Bắc Giang, lấy tên là tỉnh Bắc Ninh.\"  So, Bắc Ninh remains Bắc Ninh. That simplifies things, and I can be confident that the `province_name` in my output will be \"Tỉnh Bắc Ninh.\"\n\nNow, the real work begins. I've got to dig into the \"Other resolutions\" to find anything about \"Phường Châu Khê\" within \"Tỉnh Bắc Ninh.\" I'm looking for any direct mentions or any hints about boundary adjustments.  Bingo! Resolution 1658/NQ-UBTVQH15 catches my eye. It's about administrative adjustments in Bắc Ninh, which is exactly what I need.\n\nLine 74 of that resolution is the key: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Châu Khê, Hương Mạc và Phù Khê thành phường mới có tên gọi là **phường Phù Khê**.\" Perfect! \"Phường Châu Khê\" is clearly being merged into \"Phường Phù Khê.\"  This is a direct, clear-cut finding.\n\nNow, I need the details for the new ward, \"Phường Phù Khê.\"  I'll look in the \"New wards\" data.  I'm searching within \"Tỉnh Bắc Ninh\" for \"Phường Phù Khê\".  And there it is: `{\"ward_code\":\"09379\",\"ward_name\":\"Phường Phù Khê\",\"province_name\":\"Tỉnh Bắc Ninh\"}`. Excellent.\n\nFinally, I can construct the JSON output:\n\n*   **`citation`**:  I'll cite Resolution 1658/NQ-UBTVQH15, Line 74, because that's the specific source of this merge information.\n*   **`confidence`**:  Given the directness of the resolution, the confidence is \"high.\" There's no ambiguity here.\n*   **`province_name`**: As we confirmed earlier, it remains \"Tỉnh Bắc Ninh.\"\n*   **`ward_code`**: I'll use \"09379\", from the \"New Wards\" data.\n*   **`ward_name`**: \"Phường Phù Khê\", also from the \"New Wards\" data.\n\nLet's do a quick final check: \"Phường Châu Khê\" is now \"Phường Phù Khê,\" and the province remains \"Tỉnh Bắc Ninh.\"  This should be a solid and accurate response.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh",
+        "line": "74. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Châu Khê, Hương Mạc và Phù Khê thành phường mới có tên gọi là phường Phù Khê."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "09379",
+      "ward_name": "Phường Phù Khê"
+    }
+  ]
+}

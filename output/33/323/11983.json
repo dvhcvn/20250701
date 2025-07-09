@@ -1,0 +1,18 @@
+{
+  "address": "Xã Bảo Khê, Thành phố Hưng Yên, Tỉnh Hưng Yên",
+  "ellapsedInMs": 6579,
+  "estimatedCost": 0.0026152,
+  "thought": "**My Analysis of the Administrative Unit Change for \"Xã Bảo Khê\"**\n\nOkay, so I'm presented with \"Xã Bảo Khê, Thành phố Hưng Yên, Tỉnh Hưng Yên\" and tasked with finding its new administrative unit. First, I break down the address: \"Xã Bảo Khê\" is the ward, and \"Tỉnh Hưng Yên\" is the province.  I'll start by checking the province resolutions, specifically 60-NQ/TW. Ah, \"Tỉnh Hưng Yên\" is mentioned, but it's regarding a merger with Thái Bình that *didn't* happen.  So, the province name remains the same, which is a good starting point.\n\nNext, I dig into the `other_resolutions` for information about \"Xã Bảo Khê.\" Bingo! Resolution \"1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên\" jumps out.  Looking closely, line 95 is the key: it explicitly states that \"Xã Bảo Khê\" is merged with other entities to form \"Phường Sơn Nam.\"  Perfect, that's my answer.\n\nNow, to confirm, I check the `new_wards` list for \"Phường Sơn Nam.\" Yup, it's there: `{\"ward_code\":\"11983\",\"ward_name\":\"Phường Sơn Nam\",\"province_name\":\"Tỉnh Hưng Yên\"}`. That solidifies it.\n\nSo, here's my conclusion:  \"Xã Bảo Khê\" is now part of \"Phường Sơn Nam,\" code 11983, still in \"Tỉnh Hưng Yên.\" My citation is clear: Resolution 1666, line 95. And I'm giving this a \"high\" confidence rating because this resolution directly addresses the specific ward in question. This is a very clear-cut case of administrative restructuring.  It's a textbook example of how to track these changes with the available data.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên",
+        "line": "95. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Lam Sơn, các xã Phú Cường, Hùng Cường, Bảo Khê và phần còn lại của xã Ngọc Thanh sau khi sắp xếp theo quy định tại khoản 11 Điều này thành phường mới có tên gọi là phường Sơn Nam."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "11983",
+      "ward_name": "Phường Sơn Nam"
+    }
+  ]
+}

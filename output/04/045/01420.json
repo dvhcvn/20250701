@@ -1,0 +1,18 @@
+{
+  "address": "Xã Thượng Thôn, Huyện Hà Quảng, Tỉnh Cao Bằng",
+  "ellapsedInMs": 5615,
+  "estimatedCost": 0.0017752,
+  "thought": "**Address Mapping Analysis: \"Xã Thượng Thôn\" in \"Tỉnh Cao Bằng\"**\n\nOkay, so the task is to map this old Vietnamese address to a new administrative unit.  Let's break this down systematically.  First, I've got to identify the initial components: \"Xã Thượng Thôn\" (the old ward) and \"Tỉnh Cao Bằng\" (the province).\n\nNow, the important part: I need to check the Province Resolutions (specifically, the 60-NQ/TW series) to understand if there are any province-level mergers or changes.  A quick scan shows that \"Tỉnh Cao Bằng\" isn't merging with anything. Good, so the province name remains the same.\n\nNext, I'll dive into the other resolutions, focusing on 1657/NQ-UBTVQH15.  The goal here is to find mentions of \"Xã Thượng Thôn\".  Bingo! Line 26 in the resolution clearly states that \"Xã Thượng Thôn\" is merging with another area to become \"xã Lũng Nặm\".\n\nThat's a direct connection!  Now I just need to cross-reference this information with the \"New wards\" list.  I locate \"Xã Lũng Nặm\", and it gives me its ward code, ward name, and province name.\n\nBuilding the JSON output is now straightforward.  I'll use the resolution as the `citation`.  Given the direct mapping and explicit merging, the `confidence` level is definitely \"high\". The `province_name` is \"Tỉnh Cao Bằng\" (confirmed earlier).  The `ward_code` is \"01393\" and the `ward_name` is \"Xã Lũng Nặm\", as specified in the \"New wards\" list.  Final result: a high-confidence mapping from the old address to the new administrative structure.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1657/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Cao Bằng",
+        "line": "26. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Thượng Thôn và xã Lũng Nặm thành xã mới có tên gọi là xã Lũng Nặm."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Cao Bằng",
+      "ward_code": "01393",
+      "ward_name": "Xã Lũng Nặm"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Hạ Long, Huyện Vân Đồn, Tỉnh Quảng Ninh",
+  "ellapsedInMs": 8538,
+  "estimatedCost": 0.003434,
+  "thought": "**Identifying the New Administrative Unit**\n\nOkay, let's break this down. The user provided an old address, \"Xã Hạ Long, Huyện Vân Đồn, Tỉnh Quảng Ninh,\" and I need to figure out the corresponding new unit. The goal is to identify the new administrative ward.\n\nFirst, I parsed the address: \"Xã Hạ Long\" is the ward, \"Huyện Vân Đồn\" the historical district (since districts are being reorganized), and \"Tỉnh Quảng Ninh\" is the province. The prompt mentioned \"eliminating all districts,\" so I'll focus on the ward and province.\n\nNow, I checked the province resolutions (60-NQ/TW). Quảng Ninh is listed as not being merged, so that's straightforward. It remains Quảng Ninh.\n\nThe crucial part is the local resolution 1679/NQ-UBTVQH15, concerning Quảng Ninh's wards. I went through the relevant lines, specifically looking for \"Xã Hạ Long\". I found two key pieces of information:\n\n*   **Line 43** mentions \"phường Hạ Long\" - a new *urban* ward created from two other wards. That's *not* what I'm looking for. My address is *rural* \"Xã Hạ Long\".\n*   **Line 52** is the key. It details the merger of multiple wards and Cái Rồng town into a new entity: \"đặc khu Vân Đồn\". Significantly, it *explicitly* lists \"Xã Hạ Long\" among the wards being merged. This strongly suggests that \"Xã Hạ Long\" is now part of the \"đặc khu Vân Đồn\".\n\nTo confirm, I double-checked the \"New Wards\" list. I found \"Phường Hạ Long\" (that's the urban one, not the target), and I found \"Đặc khu Vân Đồn\". That matches *perfectly* with the merging described in Resolution 1679.\n\nTherefore, the old \"Xã Hạ Long\" is now part of the new \"Đặc khu Vân Đồn\". I have high confidence in this because the resolution explicitly lists \"Xã Hạ Long.\" The province remains Quảng Ninh. I've prepared the following JSON output to reflect my analysis.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1679/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ninh",
+        "line": "52. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân sốcủa thị trấn Cái Rồng và các xã Bản Sen, Bình Dân, Đài Xuyên, Đoàn Kết, Đông Xá, Hạ Long, Minh Châu, Ngọc Vừng, Quan Lạn, Thắng Lợi,Vạn Yên thành đặc khu có tên gọi là đặc khu Vân Đồn."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ninh",
+      "ward_code": "06994",
+      "ward_name": "Đặc khu Vân Đồn"
+    }
+  ]
+}

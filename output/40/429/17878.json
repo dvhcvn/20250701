@@ -1,0 +1,18 @@
+{
+  "address": "Xã Khánh Hợp, Huyện Nghi Lộc, Tỉnh Nghệ An",
+  "ellapsedInMs": 6997,
+  "estimatedCost": 0.0024268000000000002,
+  "thought": "**Analyzing the Address Mapping: Khánh Hợp, Nghi Lộc, Nghệ An**\n\nOkay, let's break this down. The user's requesting an address mapping, specifically for \"Xã Khánh Hợp\" in Nghi Lộc district, Nghệ An province, to a new administrative unit.\n\nFirst, the key is to isolate the components: \"Xã Khánh Hợp,\" the old ward; \"Huyện Nghi Lộc,\" the old district (though the prompt suggests we're ignoring districts); and \"Tỉnh Nghệ An,\" the province.\n\nNow, checking the province resolutions (60-NQ/TW), Nghệ An is straightforward. They're *not* being merged, so \"Tỉnh Nghệ An\" remains unchanged. Good.\n\nThe real meat is in the \"Other resolutions.\" I need to find something relevant to \"Xã Khánh Hợp.\" Bingo! Resolution 1678/NQ-UBTVQH15, concerning Nghệ An's ward-level adjustments, is key. Line 51 nails it: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Khánh Hợp, Nghi Thạch và Thịnh Trường thành xã mới có tên gọi là **xã Đông Lộc**.\" That's the conversion!\n\nNext, I need to validate this new ward, \"xã Đông Lộc,\" against the \"New wards\" data.  Yep, there it is: `{\"ward_code\":\"17878\",\"ward_name\":\"Xã Đông Lộc\",\"province_name\":\"Tỉnh Nghệ An\"}`. It aligns perfectly with the province and the name.\n\nSo, let's assemble the output JSON. We have the province (\"Tỉnh Nghệ An\"), the new ward (\"Xã Đông Lộc\"), the ward code (\"17878\"), and the crucial citation: Resolution 1678/NQ-UBTVQH15, line 51, providing the transformation logic.  The confidence level should be high – the resolution provides a very specific answer.\n\nTo be thorough, I quickly checked if any other resolutions had similar references, but there's nothing else that directly relates to \"Xã Khánh Hợp,\" specifically when it comes to ward changes. Nothing in the \"Nghi Lộc\" resolutions pertains to \"Khánh Hợp.\" \"Xã Nghi Lộc\" and \"Xã Khánh Hợp\" are not related in any other resolutions, so the current output, with \"Xã Đông Lộc,\" is the correct association.\n\nI'm confident in this mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1678/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Nghệ An",
+        "line": "51. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Khánh Hợp, Nghi Thạch và Thịnh Trường thành xã mới có tên gọi là xã Đông Lộc."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Nghệ An",
+      "ward_code": "17878",
+      "ward_name": "Xã Đông Lộc"
+    }
+  ]
+}

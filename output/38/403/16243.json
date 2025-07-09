@@ -1,0 +1,18 @@
+{
+  "address": "Xã Mậu Lâm, Huyện Như Thanh, Tỉnh Thanh Hóa",
+  "ellapsedInMs": 7390,
+  "estimatedCost": 0.0024934,
+  "thought": "**Analysis of Administrative Unit Mapping: \"Xã Mậu Lâm, Huyện Như Thanh, Tỉnh Thanh Hóa\"**\n\nOkay, so I've been presented with the task of mapping this old address to its current administrative structure. First, I need to break down the input into its constituent parts: the old ward (\"Xã Mậu Lâm\"), district (\"Huyện Như Thanh\"), and province (\"Tỉnh Thanh Hóa\").\n\nMy initial step is to reference the province resolutions, specifically 60-NQ/TW.  Thankfully, Thanh Hóa is listed as a province *not* undergoing any mergers or significant changes. So, \"Tỉnh Thanh Hóa\" is straightforward; it remains \"Tỉnh Thanh Hóa\".\n\nNow, for the more complex part: the ward.  I need to dive into resolution 1686/NQ-UBTVQH15. Bingo! Line 117 states *explicitly* that \"Xã Mậu Lâm\" is being rearranged with \"Xã Phú Nhuận\" to create a *new* ward, *also* named \"Xã Mậu Lâm\".  This is crucial.\n\nNext, I'll cross-reference this with the \"New wards\" data.  I find the entry: `{\"ward_code\":\"16249\",\"ward_name\":\"Xã Mậu Lâm\",\"province_name\":\"Tỉnh Thanh Hóa\"}`. This perfectly aligns with my findings from the resolution. The new ward's name matches the old, and the province is correct.\n\nConfidence? High. The resolution provides a direct, unambiguous statement regarding the specific ward in question. Although the district is mentioned in the resolution (lines 118, 119), it focuses on eliminating all the districts. The new Xã Mậu Lâm is within the same province as the old. The province didn't change and the ward name remained the same.\n\nTherefore, the JSON output is straightforward: the citation will be the relevant line from the resolution, the confidence is \"high\", the province is \"Tỉnh Thanh Hóa\" (confirmed by both the data and the resolutions), the new ward code is \"16249\", and the new ward name is \"Xã Mậu Lâm\". It's a clean and decisive mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1686/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thanh Hóa",
+        "line": "117. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Phú Nhuận và xã Mậu Lâm thành xã mới có tên gọi là xã Mậu Lâm."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thanh Hóa",
+      "ward_code": "16249",
+      "ward_name": "Xã Mậu Lâm"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Trà Giang, Huyện Bắc Trà My, Tỉnh Quảng Nam",
+  "ellapsedInMs": 7582,
+  "estimatedCost": 0.0029253,
+  "thought": "**Identifying the New Administrative Unit for \"Xã Trà Giang\"**\n\nOkay, let's break this down systematically. The user's input, \"Xã Trà Giang, Huyện Bắc Trà My, Tỉnh Quảng Nam,\" requires me to determine the current administrative unit. I'll need to work backward from the known old address.\n\nFirst, I identify the old province: \"Tỉnh Quảng Nam\". Then, I need to check for any province mergers. Referring to relevant resolutions, I find \"10. Hợp nhất tỉnh Quảng Nam và thành phố Đà Nẵng, lấy tên là thành phố Đà Nẵng\". Aha! \"Tỉnh Quảng Nam\" has become part of \"Thành phố Đà Nẵng\".\n\nNow, I shift my focus to \"Thành phố Đà Nẵng\" and specifically to resolutions related to ward changes within that province. I examine the provided resolutions, looking for any mention of \"Xã Trà Giang\".  I find resolution \"1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng.\"  This is promising!\n\nInside this resolution, I see: \"43. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Trà My và các xã Trà Sơn, Trà Giang, Trà Dương thành xã mới có tên gọi là **xã Trà My**.\"  This clearly states that \"Xã Trà Giang\" (along with others) is now part of the new \"Xã Trà My\". Crucially, the \"Huyện Bắc Trà My\" from the original address aligns with \"thị trấn Trà My\" and helps confirm the connection.\n\nI then check other resolutions mentioning \"Xã Trà Giang\" (resolutions related to Hưng Yên and Quảng Ngãi), but they aren't relevant to Quảng Nam or Đà Nẵng.\n\nNext, based on my findings, I need to pinpoint the new ward in the `New wards` list. The province is now \"Thành phố Đà Nẵng\", and the new ward name is \"Xã Trà My\". Searching the list, the entry `{\"ward_code\":\"20900\",\"ward_name\":\"Xã Trà My\",\"province_name\":\"Thành phố Đà Nẵng\"}` perfectly matches my criteria.\n\nFinally, I construct the JSON output. I'll have a high `confidence` because the resolution provides a clear and direct mapping. The `province_name` will be \"Thành phố Đà Nẵng\", the `ward_code` will be \"20900\", and the `ward_name` will be \"Xã Trà My\". The `citation` will include the relevant parts of resolution 1659/NQ-UBTVQH15. I am confident in this solution.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng",
+        "line": "43. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Trà My và các xã Trà Sơn, Trà Giang, Trà Dương thành xã mới có tên gọi là xã Trà My."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "20900",
+      "ward_name": "Xã Trà My"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tân Phú Tây, Huyện Mỏ Cày Bắc, Tỉnh Bến Tre",
+  "ellapsedInMs": 7087,
+  "estimatedCost": 0.0027657000000000003,
+  "thought": "**Mapping Old Address to New Administrative Units**\n\nOkay, so I'm tasked with taking this old address, \"Xã Tân Phú Tây, Huyện Mỏ Cày Bắc, Tỉnh Bến Tre,\" and figuring out its new location, post-administrative changes. Let's break this down systematically.\n\nFirst, I identify the key components: the old province, which is \"Tỉnh Bến Tre,\" and the ward, \"Xã Tân Phú Tây.\" The old district, \"Huyện Mỏ Cày Bắc,\" is noted for context, but since districts are often eliminated or reconfigured, it's not the primary focus here.\n\nNext, I need to consult those province merger resolutions. I immediately spot \"Tỉnh Bến Tre\" in the list, and the resolution 60-NQ/TW clearly states a merger with Vĩnh Long and Trà Vinh, resulting in the new province of \"Tỉnh Vĩnh Long.\" That's a crucial piece of the puzzle.\n\nNow, on to the ward. I need to comb through other relevant resolutions for \"Tân Phú Tây.\"  Bingo! Resolution 1687/NQ-UBTVQH15 details a re-arrangement for several wards in Vĩnh Long, and line 67 specifically says that \"Xã Tân Phú Tây\" is merging into \"Xã Phước Mỹ Trung\".  This is a direct mapping, exactly what I was hoping for.\n\nMoving to the `New wards` data, I search for the newly identified ward in the new province. I find `{\"ward_name\":\"Xã Phước Mỹ Trung\",\"province_name\":\"Tỉnh Vĩnh Long\"}`.  The match is perfect: \"Xã Phước Mỹ Trung\" is indeed now a ward in \"Tỉnh Vĩnh Long,\" and I have its code, \"28915\".\n\nNow, assembling the final JSON output is straightforward. My confidence in this mapping is very high. The province merger is a documented fact. The ward merger is explicitly stated in the resolution, and the new ward data confirms the existence and code of the resulting unit.  I'll include the relevant citation information:  resolution 1687/NQ-UBTVQH15 with the specific line detailing the \"Xã Tân Phú Tây\" merge. This direct, unambiguous mapping should be readily accepted.  All clear.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long",
+        "line": "67. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Phước Mỹ Trung và các xã Phú Mỹ, Thạnh Ngãi, Tân Phú Tây thành xã mới có tên gọi là xã Phước Mỹ Trung."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "28915",
+      "ward_name": "Xã Phước Mỹ Trung"
+    }
+  ]
+}

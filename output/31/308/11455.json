@@ -1,0 +1,48 @@
+{
+  "address": "Phường Ngọc Xuyên, Quận Đồ Sơn, Thành phố Hải Phòng",
+  "ellapsedInMs": 7271,
+  "estimatedCost": 0.0034742,
+  "thought": "**Navigating the Reorganization of Ngọc Xuyên Ward**\n\nAlright, let's break this down. The user's got an old address, \"Phường Ngọc Xuyên, Quận Đồ Sơn, Thành phố Hải Phòng\", and needs to translate it into the new administrative structure. No problem. First, I pinpointed the components: \"Phường Ngọc Xuyên\" is the ward, \"Quận Đồ Sơn\" is the district (though we know districts are being eliminated), and \"Thành phố Hải Phòng\" is the province.\n\nNow, checking the provincial resolutions, specifically 60-NQ/TW, confirmed that \"Thành phố Hải Phòng\" is the surviving entity after a merger. Next, I dug into the other resolutions, and bingo! Resolution 1669/NQ-UBTVQH15, \"Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng\", is where the meat of the matter lies.\n\nLines 18 and 19 of that resolution are crucial. They clearly state that \"Phường Ngọc Xuyên\" is *split* between two new wards: \"Phường Nam Đồ Sơn\" and \"Phường Đồ Sơn\". I then cross-referenced this with the \"New Wards\" data to get the `ward_code` and confirm \"Thành phố Hải Phòng\" as the `province_name` for both new wards.\n\nTherefore, the output will include *both* \"Phường Nam Đồ Sơn\" and \"Phường Đồ Sơn\", along with their respective ward codes, as potential new mappings for the old \"Phường Ngọc Xuyên\". The confidence in this mapping is high, given the explicit and detailed language in the resolution outlining the reorganization. It's a textbook case of a clear and confident association.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Hải Dương và thành phố Hải Phòng, lấy tên là thành phố Hải Phòng"
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "11737",
+      "ward_name": "Phường Nam Đồ Sơn"
+    },
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "18. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Minh Đức (quận Đồ Sơn), Bàng La, Hợp Đức, một phần diện tích tự nhiên, quy mô dân số của phường Vạn Hương và phường Ngọc Xuyênthành phường mới có tên gọi là phường Nam Đồ Sơn."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "11737",
+      "ward_name": "Phường Nam Đồ Sơn"
+    },
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Hải Dương và thành phố Hải Phòng, lấy tên là thành phố Hải Phòng"
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "11455",
+      "ward_name": "Phường Đồ Sơn"
+    },
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "19. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Hải Sơn, một phần diện tích tự nhiên của phường Tân Thành và phần còn lại của phường Vạn Hương, phường Ngọc Xuyên sau khi sắp xếp theo quy định tại khoản 18 Điều này thành phường mới có tên gọi là phường Đồ Sơn."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "11455",
+      "ward_name": "Phường Đồ Sơn"
+    }
+  ]
+}

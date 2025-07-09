@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tứ Xã, Huyện Lâm Thao, Tỉnh Phú Thọ",
+  "ellapsedInMs": 8786,
+  "estimatedCost": 0.0032063,
+  "thought": "**Mapping \"Xã Tứ Xã, Huyện Lâm Thao, Tỉnh Phú Thọ\" to New Administrative Units**\n\nOkay, here's how I'm approaching this mapping task. First, I need to break down the input address: \"Xã Tứ Xã, Huyện Lâm Thao, Tỉnh Phú Thọ\".  I'm focusing on the province (\"Tỉnh Phú Thọ\") and ward (\"Xã Tứ Xã\") for the initial analysis.\n\nI'm starting with the province. I'll check the provided resolutions, specifically the \"60-NQ/TW\" document, to see if there have been any changes or consolidations for \"Tỉnh Phú Thọ\". The document explicitly states \"Hợp nhất tỉnh Vĩnh Phúc, tỉnh Phú Thọ và tỉnh Hoà Bình; lấy tên là tỉnh Phú Thọ\". So, while there was an initial merger, the province's name remains \"Tỉnh Phú Thọ\", which gives me high confidence in this mapping.\n\nNow, for the ward \"Xã Tứ Xã\".  I'll scan the available resolutions for any mentions of this ward. I found resolution \"1676/NQ-UBTVQH15\", specifically section 4, which is the key: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tứ Xã, Sơn Vi và Phùng Nguyên thành xã mới có tên gọi là **xã Phùng Nguyên**.\" This clearly states that \"Xã Tứ Xã\" was merged into a new ward called \"Xã Phùng Nguyên\".  This gives me another high-confidence mapping.\n\nNext, I need to validate this with the provided \"New wards\" data.  I'll look for \"Xã Phùng Nguyên\" within \"Tỉnh Phú Thọ\".  I find a perfect match: `{\"ward_code\":\"08521\",\"ward_name\":\"Xã Phùng Nguyên\",\"province_name\":\"Tỉnh Phú Thọ\"}`. This confirms the new ward name and the province.\n\nFinally, I'll construct the JSON output:\n\n*   `province_name`: \"Tỉnh Phú Thọ\" (from the province resolution).\n*   `ward_name`: \"Xã Phùng Nguyên\" (from the ward resolution).\n*   `ward_code`: \"08521\" (from the \"New wards\" data).\n*   `confidence`: \"high\" (because both the province and ward mappings are explicitly stated).\n*   `citation`:  Since the schema suggests a single `citation` object, I will list both relevant sources as follows. Since there are multiple lines of citation data for both cases, I will likely put the `citation` object as an array:\n    *   `citation`:\n        *   `header`: \"60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất\"\n        *   `line`: \"Hợp nhất tỉnh Vĩnh Phúc, tỉnh Phú Thọ và tỉnh Hoà Bình; lấy tên là tỉnh Phú Thọ\"\n    *   `citation`:\n        *   `header`: \"1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ\"\n        *   `line`: \"4. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tứ Xã, Sơn Vi và Phùng Nguyên thành xã mới có tên gọi là **xã Phùng Nguyên**.\"\n\nThis complete JSON object represents my analysis and will provide a high-confidence mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "4. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tứ Xã, Sơn Vi và Phùng Nguyên thành xã mới có tên gọi là xã Phùng Nguyên."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "08521",
+      "ward_name": "Xã Phùng Nguyên"
+    }
+  ]
+}

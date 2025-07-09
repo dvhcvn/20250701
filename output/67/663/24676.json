@@ -1,0 +1,18 @@
+{
+  "address": "Xã Đức Mạnh, Huyện Đắk Mil, Tỉnh Đắk Nông",
+  "ellapsedInMs": 7225,
+  "estimatedCost": 0.0028163999999999997,
+  "thought": "**Address Mapping for Đức Mạnh, Đắk Mil**\n\nOkay, so I've got an address to map: \"Xã Đức Mạnh, Huyện Đắk Mil, Tỉnh Đắk Nông.\" My initial task is to break this down into its administrative components: old ward (\"Xã Đức Mạnh\"), old district (\"Huyện Đắk Mil\"), and old province (\"Tỉnh Đắk Nông\").  Now comes the crucial part – verifying how these units have changed.\n\nFirst, I need to check for any province mergers, and the 60-NQ/TW resolution comes into play. Ah, there it is! \"Tỉnh Đắk Nông\" has merged into \"Tỉnh Lâm Đồng.\" That's a high-confidence change; it's a direct, unambiguous statement within the resolution.\n\nNext, it's time to delve into the ward-specific resolutions. Resolution 1671/NQ-UBTVQH15, concerning Lâm Đồng, is key. Scanning through it, I find the pertinent lines, specifically line 81: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Đắk Mil, xã Đức Mạnh và xã Đức Minh thành xã mới có tên gọi là **xã Đức Lập**.\"  Bingo!  \"Xã Đức Mạnh\" is explicitly mentioned as part of the consolidation into \"Xã Đức Lập.\"  No ambiguity there.  Then, I confirm this by checking the new ward data to get the corresponding `ward_code` and ensure the province name aligns with the previous step.\n\nGiven the explicit merger details within the resolution (1671/NQ-UBTVQH15) and the clear province name change derived from resolution 60-NQ/TW, I can confidently map \"Xã Đức Mạnh\" to \"Xã Đức Lập\" in the new province of \"Tỉnh Lâm Đồng\".  This should result in a JSON output including the pertinent citation from the resolution, a \"high\" confidence level, and the new ward and province details.  Therefore, I should output:\n\n*   `citation`:\n    *   `header`: \"1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng\"\n    *   `line`: \"81. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Đắk Mil, xã Đức Mạnh và xã Đức Minh thành xã mới có tên gọi là **xã Đức Lập**.\"\n*   `confidence`: \"high\"\n*   `province_name`: \"Tỉnh Lâm Đồng\" (from province merger)\n*   `ward_code`: \"24664\" (from new wards data for Xã Đức Lập)\n*   `ward_name`: \"Xã Đức Lập\" (from resolution)\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng",
+        "line": "81. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Đắk Mil, xã Đức Mạnh và xã Đức Minh thành xã mới có tên gọi là xã Đức Lập."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "24664",
+      "ward_name": "Xã Đức Lập"
+    }
+  ]
+}

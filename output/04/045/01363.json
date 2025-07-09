@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Thông Nông, Huyện Hà Quảng, Tỉnh Cao Bằng",
+  "ellapsedInMs": 6813,
+  "estimatedCost": 0.0026571000000000003,
+  "thought": "**Analyzing the Administrative Restructuring of Thị trấn Thông Nông**\n\nAlright, let's break this down. My task is to pinpoint the new administrative unit, the ward, for the old address \"Thị trấn Thông Nông, Huyện Hà Quảng, Tỉnh Cao Bằng.\" I'll use the provided resolutions and the \"New wards\" data to find the answer.\n\nFirst, the obvious: I'll parse the input address. \"Thị trấn Thông Nông\" is the old ward, and \"Tỉnh Cao Bằng\" is the province. While districts are considered here, the province is crucial context.\n\nNext, I need to confirm the province remains the same. Fortunately, the \"Các đơn vị hành chính cấp tỉnh không thực hiện sáp nhập\" resolution (60-NQ/TW) lists \"Tỉnh Cao Bằng\" as unchanged, solidifying that aspect.\n\nNow, let's dive into the core of the matter: resolution 1657/NQ-UBTVQH15, specific to \"tỉnh Cao Bằng.\" I need to find where \"Thị trấn Thông Nông\" is mentioned. After meticulously scanning the lines, I hit paydirt: line 23. This is the key. It states that \"Thị trấn Thông Nông\", along with other entities, will form the new ward called \"Xã Thông Nông.\" Bingo!\n\nWith the new ward name in hand, I can cross-reference it with the \"New wards\" data.  I'm looking for a ward with `ward_name`: \"Xã Thông Nông\" and `province_name`: \"Tỉnh Cao Bằng.\"  And there it is! `{\"ward_code\":\"01363\",\"ward_name\":\"Xã Thông Nông\",\"province_name\":\"Tỉnh Cao Bằng\"}`.  A perfect match.\n\nFinally, I'll compile the output. I'm highly confident in this result because the resolution clearly names the new ward. The citation will be \"1657/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Cao Bằng\" with line 23 as the relevant passage. The `confidence` will be \"high,\" the `province_name` is \"Tỉnh Cao Bằng,\" the `ward_code` is \"01363,\" and the `ward_name` is \"Xã Thông Nông.\"  Case closed.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1657/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Cao Bằng",
+        "line": "23. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Thông Nông, xã Đa Thông và xã Lương Can thành xã mới có tên gọi là xã Thông Nông."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Cao Bằng",
+      "ward_code": "01363",
+      "ward_name": "Xã Thông Nông"
+    }
+  ]
+}

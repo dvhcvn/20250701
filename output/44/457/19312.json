@@ -1,0 +1,18 @@
+{
+  "address": "Xã Sen Thủy, Huyện Lệ Thủy, Tỉnh Quảng Bình",
+  "ellapsedInMs": 7318,
+  "estimatedCost": 0.0032288,
+  "thought": "**Here's how I'm thinking about mapping the old address to the new administrative units:**\n\nI'm starting with the input address and need to figure out the corresponding new location based on resolutions and new ward data. My first step is to identify the old province and ward from the input. Since the input is \"Xã Sen Thủy, Tỉnh Quảng Bình\", I know the old ward is \"Xã Sen Thủy\" and the old province is \"Tỉnh Quảng Bình\".\n\nNext, I'm checking province resolutions, specifically resolution 60-NQ/TW, to see if there have been any changes. I found that \"Tỉnh Quảng Bình\" was merged with another province, resulting in the new province \"Tỉnh Quảng Trị.\"\n\nNow, with the new province in mind, I need to find the new ward for \"Xã Sen Thủy\".  I'm searching for relevant resolutions and found resolution 1680/NQ-UBTVQH15, where I carefully reviewed the lines. Line 31 caught my attention, which mentions \"Xã Sen Thủy\" and indicates that it's been combined with other wards to form \"Xã Sen Ngư\".\n\nTo confirm, I'm cross-referencing this information with the new ward data. I'm searching the \"New wards\" data for \"Xã Sen Ngư\" within \"Tỉnh Quảng Trị\", and I found a perfect match: \"Xã Sen Ngư\" with the code \"19288\". This confirms the mapping.\n\nSince the old ward is explicitly mentioned in the resolution and mapped to a new ward, I'm confident in this mapping. Now I need to construct the output JSON.  The `citation` will point to the specific resolution line.  The `confidence` level is \"high\" because the resolution directly addresses the old ward and its new configuration.  I'll then include the `province_name`, `ward_code`, and `ward_name` based on the confirmed data. So, the JSON is ready to be delivered.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1680/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Trị",
+        "line": "31. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Hưng Thủy, Sen Thủy và Ngư Thủythành xã mới có tên gọi là xã Sen Ngư."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Trị",
+      "ward_code": "19288",
+      "ward_name": "Xã Sen Ngư"
+    }
+  ]
+}

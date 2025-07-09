@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tân Khánh Đông, Thành phố Sa Đéc, Tỉnh Đồng Tháp",
+  "ellapsedInMs": 7174,
+  "estimatedCost": 0.0026495,
+  "thought": "**Address Mapping Analysis: Xã Tân Khánh Đông to Phường Sa Đéc**\n\nOkay, so I'm presented with an address: \"Xã Tân Khánh Đông, Thành phố Sa Đéc, Tỉnh Đồng Tháp,\" and the task is to map this old address to a new administrative unit. My initial steps involve breaking down the address components: \"Xã Tân Khánh Đông\" is the old ward, \"Thành phố Sa Đéc\" is the old district (or city functioning as a district in this case), and \"Tỉnh Đồng Tháp\" is the old province.\n\nFirst, I quickly check if the province name, Đồng Tháp, has changed, which a quick skim of the resolutions confirms it has not. I'm focusing on resolution 1663/NQ-UBTVQH15. I zeroed in on line 98, which is where the magic happens. It explicitly states that \"Xã Tân Khánh Đông\" *is* part of the consolidation into a new ward called \"Phường Sa Đéc\". Bingo!\n\nI then cross-referenced that with the provided new ward data. I see a matching entry: `{\"ward_code\":\"29905\",\"ward_name\":\"Phường Sa Đéc\",\"province_name\":\"Tỉnh Đồng Tháp\"}`. Perfect match. The fact that the resolution *directly* mentions the old ward merging into this specific new ward boosts my confidence significantly.\n\nNow, there's a slight wrinkle with \"Xã An Hòa\" listed as a new ward, but the resolution states \"phường An Hòa\" was merged into \"Phường Sa Đéc\". This creates a slight ambiguity, but the input address explicitly maps to the identified \"Phường Sa Đéc\". The distinction could be due to a split, renaming, or slightly different levels of administrative units. Regardless, the \"Xã Tân Khánh Đông\" to \"Phường Sa Đéc\" mapping is clear.\n\nTherefore, the final output will be a JSON object mapping \"Xã Tân Khánh Đông\" to \"Phường Sa Đéc\" with a high confidence level, supported by direct evidence from the relevant resolution.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1663/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Tháp",
+        "line": "98. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của Phường 1, Phường 2, Phường 3 và Phường 4 (thành phố Sa Đéc), phường An Hòa, phường Tân Quy Đông, xã Tân Khánh Đông, xã Tân Quy Tây thành phường mới có tên gọi là phường Sa Đéc."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đồng Tháp",
+      "ward_code": "29905",
+      "ward_name": "Phường Sa Đéc"
+    }
+  ]
+}

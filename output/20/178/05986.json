@@ -1,0 +1,18 @@
+{
+  "address": "Xã Hoàng Đồng, Thành phố Lạng Sơn, Tỉnh Lạng Sơn",
+  "ellapsedInMs": 5788,
+  "estimatedCost": 0.0020261999999999997,
+  "thought": "**Finding the New Administrative Unit for a Given Address**\n\nOkay, so I've got an address to work with: \"Xã Hoàng Đồng, Thành phố Lạng Sơn, Tỉnh Lạng Sơn.\" My primary goal is to determine the new administrative unit, likely a ward, for this address. Here's my thought process:\n\nFirst, I need to pinpoint the province: \"Tỉnh Lạng Sơn\".  That's straightforward. Then, I'll cross-reference that against my database of province resolutions.  I recall a crucial resolution, specifically *60-NQ/TW*, which I know addresses administrative re-organizations.  Indeed, checking that, Lạng Sơn is listed as not being merged with anyone else, so no province-level changes to account for.\n\nNext, I need to delve into any relevant ward-level resolutions within Lạng Sơn.  I'm looking for a specific resolution related to administrative rearrangements, and I find \"1672/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lạng Sơn\" seems promising.  I then meticulously scan this document. Bingo! Line 62 explicitly states that \"Xã Hoàng Đồng\" is being merged with \"Phường Tam Thanh\" to form a new ward named \"Phường Tam Thanh\".\n\nWith this critical information in hand, I can now confirm the old ward is indeed \"Xã Hoàng Đồng\".  My task then becomes mapping the old ward to the new one using the specific resolution line. I see that  \"Xã Hoàng Đồng\" directly corresponds to the resolution's line 62.\n\nI've extracted the name of the new ward, \"Phường Tam Thanh.\" Now, I consult my master list of wards with their associated codes, specifically, the 'New wards' dataset, to find the ward code.  I verify it there: `\"ward_code\":\"05986\",\"ward_name\":\"Phường Tam Thanh\",\"province_name\":\"Tỉnh Lạng Sơn\"`.\n\nFinally, I'll compile my findings into a well-structured JSON output. The `citation` will pinpoint the relevant resolution header and line for clarity.  I have high `confidence` in my findings, since the old ward is explicitly mapped to the new. I have the `province_name` \"Tỉnh Lạng Sơn,\" confirmed by the resolution as well as the new ward list. I have my `ward_code`, \"05986,\" and the associated `ward_name`, \"Phường Tam Thanh\".  And that's that.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1672/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lạng Sơn",
+        "line": "62. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Tam Thanh và xã Hoàng Đồng thành phường mới có tên gọi là**phường Tam Thanh**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lạng Sơn",
+      "ward_code": "05986",
+      "ward_name": "Phường Tam Thanh"
+    }
+  ]
+}

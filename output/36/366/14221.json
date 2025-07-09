@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Thịnh Long, Huyện Hải Hậu, Tỉnh Nam Định",
+  "ellapsedInMs": 6144,
+  "estimatedCost": 0.0021263000000000002,
+  "thought": "**Determining the New Ward for \"Thị trấn Thịnh Long\"**\n\nOkay, so I've been tasked with finding the new administrative unit for the old address \"Thị trấn Thịnh Long, Tỉnh Nam Định.\"  Let's break this down systematically.\n\nFirst, I need to identify the initial old ward and province.  That's straightforward: \"Thị trấn Thịnh Long\" and \"Tỉnh Nam Định.\"\n\nNext, I'll dive into the resolutions.  I'm looking for any province merges. Bingo! Resolution 60-NQ/TW states that \"Tỉnh Nam Định\" was merged into a new province called \"Tỉnh Ninh Bình.\"  This is a solid, high-confidence change.\n\nNow, I'll drill down further. I need to find something specific to \"Thị trấn Thịnh Long.\" Resolution 1674/NQ-UBTVQH15 seems promising.  And there it is, line 52: it explicitly states that \"Thị trấn Thịnh Long\" *and* other units \"thành xã mới có tên gọi là **xã Hải Thịnh**.\" This resolution is titled \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình,\" which perfectly aligns with the province change I identified earlier.\n\nThe final step is to cross-reference this new ward, \"Xã Hải Thịnh,\" against the list of new wards.  And there it is,  `{\"ward_code\":\"14221\",\"ward_name\":\"Xã Hải Thịnh\",\"province_name\":\"Tỉnh Ninh Bình\"}`.  It's a perfect match!\n\nTherefore, the output will be:\n\n*   `province_name`: \"Tỉnh Ninh Bình\"\n*   `ward_name`: \"Xã Hải Thịnh\"\n*   `ward_code`: \"14221\"\n*   `citation`:  (Resolution 1674/NQ-UBTVQH15 with the specific line)\n*   `confidence`: \"high\" (because everything lines up perfectly and explicitly).\n\nThis is a clean, well-supported solution. I can confidently assert that \"Thị trấn Thịnh Long\" is now part of \"Xã Hải Thịnh\" in \"Tỉnh Ninh Bình,\" based on the provided resolutions.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "52. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Thịnh Long, xã Hải Châu và xã Hải Ninh thành xã mới có tên gọi là xã Hải Thịnh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "14221",
+      "ward_name": "Xã Hải Thịnh"
+    }
+  ]
+}

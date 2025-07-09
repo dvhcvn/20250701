@@ -1,0 +1,28 @@
+{
+  "address": "Xã Tân Mỹ, Huyện Đức Hòa, Tỉnh Long An",
+  "ellapsedInMs": 7110,
+  "estimatedCost": 0.004197899999999999,
+  "thought": "**Determining the New Administrative Unit for \"Xã Tân Mỹ, Huyện Đức Hòa, Tỉnh Long An\"**\n\nOkay, so I need to figure out the current administrative location for the old address \"Xã Tân Mỹ, Huyện Đức Hòa, Tỉnh Long An.\" My process will be as follows:\n\nFirst, I identified \"Tỉnh Long An\" as the old province. Next, I checked for any province mergers using document \"60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất.\" Aha, I saw that Long An was merged into Tây Ninh, resulting in the new province name \"Tỉnh Tây Ninh.\"\n\nNow, regarding the old ward \"Xã Tân Mỹ.\" The challenge is, given the province merger, I need to look for it within the context of the *new* province, Tỉnh Tây Ninh. Therefore, I'm going to scan the relevant resolutions, particularly \"Other resolutions\" focusing on Tây Ninh, to find mentions of \"Xã Tân Mỹ\" in the relevant resolutions.\n\nThat led me to \"1682/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tây Ninh\". And Bingo! Line 29 is the key: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Hậu Nghĩa, xã Đức Lập Thượng và xã Tân Mỹ thành xã mới có tên gọi là **xã Hậu Nghĩa**.\" This confirms that \"Xã Tân Mỹ\" is now part of the new ward, \"Xã Hậu Nghĩa.\"\n\nTo solidify this, I cross-referenced this new ward with the \"New wards\" data. Searching for \"xã Hậu Nghĩa\" yielded a perfect match: `{\"ward_code\":\"27931\",\"ward_name\":\"Xã Hậu Nghĩa\",\"province_name\":\"Tỉnh Tây Ninh\"}`.  Everything aligns perfectly.\n\nSo, the JSON output is straightforward: the new province is \"Tỉnh Tây Ninh\", the new ward is \"Xã Hậu Nghĩa\" with a code of \"27931.\" The citation is \"1682/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tây Ninh\" (line: \"29. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Hậu Nghĩa, xã Đức Lập Thượng và xã Tân Mỹ thành xã mới có tên gọi là **xã Hậu Nghĩa**.\") with a high confidence level because it is an explicit resolution. That should do it.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "18. Hợp nhất tỉnh Tây Ninh và tỉnh Long An, lấy tên là tỉnh Tây Ninh"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tây Ninh",
+      "ward_code": "27931",
+      "ward_name": "Xã Hậu Nghĩa"
+    },
+    {
+      "citation": {
+        "header": "1682/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tây Ninh",
+        "line": "29. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Hậu Nghĩa, xã Đức Lập Thượng và xã Tân Mỹ thành xã mới có tên gọi là xã Hậu Nghĩa."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tây Ninh",
+      "ward_code": "27931",
+      "ward_name": "Xã Hậu Nghĩa"
+    }
+  ]
+}

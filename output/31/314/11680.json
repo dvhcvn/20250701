@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Núi Đối, Huyện Kiến Thuỵ, Thành phố Hải Phòng",
+  "ellapsedInMs": 5579,
+  "estimatedCost": 0.0020063,
+  "thought": "**My Analytical Breakdown of the Address Mapping Task**\n\nOkay, here's how I'm approaching this address mapping problem. The user wants to map an old address to new administrative units.  I've got a specific address, \"Thị trấn Núi Đối\" in \"Thành phố Hải Phòng,\" and I need to figure out where it belongs now.\n\nFirst, I need to understand the old context. I need to know the old \"ward\" (which I'm assuming is \"Thị trấn Núi Đối\") and the province (\"Thành phố Hải Phòng\").  Then, I'll dive into the resolutions.\n\nI see that \"Thành phố Hải Phòng\" is involved in a resolution. Specifically, Resolution 60-NQ/TW states that it merged with Hải Dương, and the merged entity retains the name \"Thành phố Hải Phòng.\" Good to know – that helps me understand how the province context has evolved.\n\nNext, I need to meticulously scrutinize the other resolutions, particularly 1669/NQ-UBTVQH15. I'm searching specifically for \"Thị trấn Núi Đối\" within the text.  Bingo! Line 51 directly addresses \"Thị trấn Núi Đối.\" It states that \"Thị trấn Núi Đối\" *and* parts of some surrounding areas are merging to create a new \"xã Kiến Thụy.\" This is the key.\n\nNow, I need to validate this against my \"New Wards\" data. Does \"xã Kiến Thụy\" exist in my list?  And does its `province_name` match the current province name, \"Thành phố Hải Phòng\"?  Yes, it does.\n\nBecause the resolution explicitly states the merge of \"Thị trấn Núi Đối\" into \"xã Kiến Thụy,\" and because that new ward is correctly identified in the province, I'm feeling *very* confident about this mapping.  The provided resolution data gives me a definitive answer.\n\nFinally, I'll structure my output according to the user's schema, and I'll be ready to present the mapped address.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "51. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Núi Đối, các xãThanh Sơn (huyện Kiến Thụy), Thuận Thiên, Hữu Bằng và một phần diện tích tự nhiên, quy mô dân số của xã Kiến Hưng thành xã mới có tên gọi là xã Kiến Thụy."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "11680",
+      "ward_name": "Xã Kiến Thụy"
+    }
+  ]
+}

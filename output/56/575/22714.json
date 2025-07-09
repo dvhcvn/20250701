@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Tô Hạp, Huyện Khánh Sơn, Tỉnh Khánh Hòa",
+  "ellapsedInMs": 6028,
+  "estimatedCost": 0.002332,
+  "thought": "**Determining the New Ward for the Given Address**\n\nOkay, so I've got \"Thị trấn Tô Hạp, Huyện Khánh Sơn, Tỉnh Khánh Hòa\" and need to figure out its new administrative ward.  First, the province is clear: \"Tỉnh Khánh Hòa\".  I know I need to check the relevant province resolutions, especially 60-NQ/TW. This resolution helps with the name and boundaries of provinces but it doesn't seem to indicate any mergers or significant changes for Khánh Hòa itself, other than that it absorbed Ninh Thuận in the past. Therefore, Khánh Hòa still exists as \"Tỉnh Khánh Hòa\".\n\nNow, I'm specifically looking for information about \"Thị trấn Tô Hạp\" within those resolutions.  Ah, here it is: 1667/NQ-UBTVQH15, a resolution focused on restructuring administrative units in Khánh Hòa. Line 27 is the key: it explicitly states that \"Thị trấn Tô Hạp\", along with Sơn Hiệp and Sơn Bình communes, are being merged into a *new* commune called \"Xã Khánh Sơn\". Perfect!\n\nNext, I'll cross-reference this finding with my \"New wards\" dataset. I'm looking for \"Xã Khánh Sơn,\" and there it is:  `{\"ward_code\":\"22714\",\"ward_name\":\"Xã Khánh Sơn\",\"province_name\":\"Tỉnh Khánh Hòa\"}`.\n\nPutting it all together, I can construct the JSON output.  The citation will be 1667/NQ-UBTVQH15, line 27. The confidence is high because the mapping is explicit.  The province name is definitely \"Tỉnh Khánh Hòa\". The ward code is 22714, and the new ward name is \"Xã Khánh Sơn\".  This should be a clean and accurate answer.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1667/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Khánh Hòa",
+        "line": "27. Sắp xếp toàn bộ diện tích tự nhiên và quy mô dân số của thị trấn Tô Hạp, xã Sơn Hiệp và xã Sơn Bình thành xã mới có tên gọi là xã Khánh Sơn."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Khánh Hòa",
+      "ward_code": "22714",
+      "ward_name": "Xã Khánh Sơn"
+    }
+  ]
+}

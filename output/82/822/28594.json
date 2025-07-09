@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Chợ Gạo, Huyện Chợ Gạo, Tỉnh Tiền Giang",
+  "ellapsedInMs": 7305,
+  "estimatedCost": 0.0024292,
+  "thought": "**Thinking Through This Address Mapping**\n\nOkay, so I'm dealing with an old Vietnamese address and need to figure out the corresponding new administrative unit.  The input is \"Thị trấn Chợ Gạo\" in \"Tỉnh Tiền Giang,\" which is a classic scenario.  Here's my thinking:\n\nFirst, I identified the old ward and province.  Easy enough.  Now, I need to see how the province merger affects things.  The province resolution, 60-NQ/TW, states that \"Tỉnh Tiền Giang\" merged into \"Tỉnh Đồng Tháp.\"  Therefore, the address now falls under \"Tỉnh Đồng Tháp.\"  This is the first, crucial step.\n\nNext, I have to examine any resolutions related to the old ward.  I'm looking specifically for \"Thị trấn Chợ Gạo\" within the existing resolutions.  Resolution 1663/NQ-UBTVQH15, concerning the administrative re-organization of \"Tỉnh Đồng Tháp,\" is a key finding.  It explicitly mentions \"Thị trấn Chợ Gạo\" and states that this old ward, along with two communes, forms the new \"Xã Chợ Gạo.\"  Bingo!\n\nNow, the important caveat here is the *order* of events. The province merger occurred *before* this ward restructuring. Because \"Thị trấn Chợ Gạo\" was originally in \"Tỉnh Tiền Giang,\" but is now in \"Tỉnh Đồng Tháp\" after the merger, the subsequent restructuring resolution *would* apply to the ward that is now within the merged province.\n\nI double-checked my findings with the `new_wards` data. \"Xã Chợ Gạo\" is indeed listed in the `new_wards` table, with a province of \"Tỉnh Đồng Tháp,\" which perfectly aligns with my understanding.\n\nGiven the explicit province merger, the clear mention of \"Thị trấn Chợ Gạo\" in the relevant resolution, and the confirmed presence of the new \"Xã Chợ Gạo\" in the updated data, I'm feeling very confident.  It's a high-confidence match. I'll need to construct the JSON output accordingly, citing the resolution and providing the new province name, ward code, and ward name.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1663/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Tháp",
+        "line": "68. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Chợ Gạo, xã Long Bình Điền và xã Song Bình thành xã mới có tên gọi là xã Chợ Gạo."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đồng Tháp",
+      "ward_code": "28594",
+      "ward_name": "Xã Chợ Gạo"
+    }
+  ]
+}

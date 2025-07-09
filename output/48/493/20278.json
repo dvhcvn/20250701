@@ -1,0 +1,18 @@
+{
+  "address": "Phường An Hải Nam, Quận Sơn Trà, Thành phố Đà Nẵng",
+  "ellapsedInMs": 7122,
+  "estimatedCost": 0.0023637999999999997,
+  "thought": "**My Analysis of the Administrative Address Mapping**\n\nOkay, here's how I'm approaching this mapping problem. The user's given me an old address and some data on administrative changes, and my task is to figure out the new ward.\n\nFirst, I need to understand the initial setup. The user has provided \"Phường An Hải Nam\" in \"Thành phố Đà Nẵng\" as the old address. My primary goal is to determine the corresponding new administrative unit.\n\nThe first step is checking the province. My initial thought is to assess any provincial mergers or divisions. I look at resolutions and quickly see that \"Thành phố Đà Nẵng\" is listed in a resolution noting provinces that won't be merged. However, the next relevant resolution states that \"tỉnh Quảng Nam\" and \"Thành phố Đà Nẵng\" were merged, but the name is retained. So, \"Thành phố Đà Nẵng\" is still \"Thành phố Đà Nẵng\".\n\nNow, onto the wards. I need to focus on \"Phường An Hải Nam\". I search through other resolutions, and I find a critical one: \"1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng\". This resolution directly addresses my question. It explicitly states that \"Phường An Hải Nam\" is *merged* into \"phường An Hải\". This is precisely what I need.\n\nNext, I look up the details for \"Phường An Hải\" in the provided data. I find the ward code \"20275\" and confirm it's still located in \"Thành phố Đà Nẵng\".\n\nGiven this information, I can confidently construct the output. I'll cite the resolution directly referencing the ward change. My confidence in this mapping is high because of the explicit statement in the resolution. The province name is \"Thành phố Đà Nẵng\", confirming the provincial analysis. The new ward code is \"20275\", and the new ward name is \"Phường An Hải\".\n\nIn short, \"Phường An Hải Nam\" in \"Thành phố Đà Nẵng\" is now mapped to \"Phường An Hải\" with the code \"20275\", and it remains in \"Thành phố Đà Nẵng\". It's a clear-cut case thanks to the specific resolution detailing the ward merge.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng",
+        "line": "5. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Phước Mỹ, An Hải Bắc và An Hải Nam thành phường mới có tên gọi là phường An Hải."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "20275",
+      "ward_name": "Phường An Hải"
+    }
+  ]
+}

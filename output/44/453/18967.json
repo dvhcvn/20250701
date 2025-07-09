@@ -1,0 +1,18 @@
+{
+  "address": "Xã Lâm Hóa, Huyện Tuyên Hóa, Tỉnh Quảng Bình",
+  "ellapsedInMs": 7862,
+  "estimatedCost": 0.0028983999999999998,
+  "thought": "**Mapping Old Vietnamese Addresses to New Administrative Units**\n\nOkay, let's break this down. My goal is to figure out the new administrative unit for an old Vietnamese address, specifically \"Xã Lâm Hóa\" in \"Huyện Tuyên Hóa\", \"Tỉnh Quảng Bình\". This involves parsing resolutions and comparing them with new ward data.\n\nFirst, I identify the existing units: \"Xã Lâm Hóa\", \"Huyện Tuyên Hóa\", and \"Tỉnh Quảng Bình\".  The prompt says \"eliminating all districts,\" but I'll note \"Huyện Tuyên Hóa\" for context.\n\nThen, I'll analyze the province resolutions, specifically 60-NQ/TW. I check if \"Tỉnh Quảng Bình\" is on the \"no merger\" list – nope. Next, I look if it’s merged. Bingo! It's merged with \"Tỉnh Quảng Trị\" according to the \"mới sau sáp nhập, hợp nhất\" list. So, my new province is \"Tỉnh Quảng Trị\".\n\nNow, I move on to resolution 1680/NQ-UBTVQH15, which concerns \"tỉnh Quảng Trị\". This matches, which is good.  I scan the resolution's lines for \"Xã Lâm Hóa.\" Line 7 jumps out: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Lâm Hóa và xã Thanh Hóathành xã mới có tên gọi là **xã Tuyên Lâm**.\" Perfect! \"Xã Lâm Hóa\" becomes \"Xã Tuyên Lâm.\"\n\nNext, I cross-reference this with the new ward data. The first entry, `{\"ward_code\":\"18958\",\"ward_name\":\"Xã Tuyên Lâm\",\"province_name\":\"Tỉnh Quảng Trị\"}`, aligns perfectly. This confirms the mapping: \"Xã Lâm Hóa\" to \"Xã Tuyên Lâm\" in \"Tỉnh Quảng Trị\".\n\nI'll double check \"Xã Tuyên Hóa\" - the old district matches the name. Examining the resolution again, I note that line 12 creates \"xã Tuyên Hóa\" from other wards, not including \"Xã Lâm Hóa.\" So, no need to confuse these two.\n\nThe JSON output will be straightforward:  the new province is \"Tỉnh Quảng Trị,\" the new ward is \"Xã Tuyên Lâm\" with code \"18958\", and the confidence level is \"high\" due to the direct mapping in the resolution. The citation will be clear, referencing both the resolution header and line 7: \"1680/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Trị, line 7.\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1680/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Trị",
+        "line": "7. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Lâm Hóa và xã Thanh Hóathành xã mới có tên gọi là xã Tuyên Lâm."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Trị",
+      "ward_code": "18958",
+      "ward_name": "Xã Tuyên Lâm"
+    }
+  ]
+}

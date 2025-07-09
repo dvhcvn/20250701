@@ -1,0 +1,28 @@
+{
+  "address": "Xã Mồ Dề, Huyện Mù Căng Chải, Tỉnh Yên Bái",
+  "ellapsedInMs": 6303,
+  "estimatedCost": 0.002238,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm tasked with figuring out the new administrative unit for an old Vietnamese address. It looks like it's a straightforward mapping, leveraging available data and resolutions. Here's my thought process:\n\nFirst, I need to break down the input address to pinpoint the old administrative components. I've got \"Xã Mồ Dề\" as the ward, \"Huyện Mù Căng Chải\" as the district, and \"Tỉnh Yên Bái\" as the province.\n\nNow, I'm going to dive into the province resolutions. Immediately, resolution 60-NQ/TW pops up. It clearly states that \"Tỉnh Yên Bái\" is merged with \"Tỉnh Lào Cai\" and the new province is called \"Tỉnh Lào Cai\". That simplifies things significantly.\n\nNext, I need to process other relevant resolutions to determine the fate of \"Xã Mồ Dề\". I carefully scanned the resolution text, and boom! Resolution 1673/NQ-UBTVQH15 catches my eye. It explicitly mentions that \"Xã Mồ Dề\" is merged, along with other wards, to form the new \"xã Mù Cang Chải\". This resolution also references \"tỉnh Lào Cai\", which aligns with the province merger I found earlier. Perfect!\n\nTo solidify this mapping, I'll cross-reference this information with the new ward data. I'm searching for \"Xã Mù Cang Chải\" and the associated province. And there it is: a data entry indicating \"Xã Mù Cang Chải\" with a province name of \"Tỉnh Lào Cai,\" matching my previous findings. The ward code is 04456.\n\nGiven this robust analysis, my JSON output is going to be:\n*   `province_name`: \"Tỉnh Lào Cai\"\n*   `ward_name`: \"Xã Mù Cang Chải\"\n*   `ward_code`: \"04456\"\n*   `citation`: \"Resolution 1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai\"\n*   `confidence`: \"high\"\n\nThe confidence level is high because there's direct confirmation from the resolution and it aligns with the data. This address mapping is now complete. I'm confident in the output.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Lào Cai và tỉnh Yên Bái, lấy tên là tỉnh Lào Cai"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "04456",
+      "ward_name": "Xã Mù Cang Chải"
+    },
+    {
+      "citation": {
+        "header": "1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai",
+        "line": "2. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Mù Cang Chải và các xã Kim Nọi, Mồ Dề, Chế Cu Nha thành xã mới có tên gọi là xã Mù Cang Chải."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "04456",
+      "ward_name": "Xã Mù Cang Chải"
+    }
+  ]
+}

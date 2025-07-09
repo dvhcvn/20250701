@@ -1,0 +1,28 @@
+{
+  "address": "Xã Nam Dương, Thị xã Chũ, Tỉnh Bắc Giang",
+  "ellapsedInMs": 9011,
+  "estimatedCost": 0.0078546,
+  "thought": "**My Analysis of the Administrative Unit Change**\n\nOkay, here's how I'm approaching this. The user has given me an old address and wants the corresponding new one. It's: \"Xã Nam Dương, Thị xã Chũ, Tỉnh Bắc Giang.\"\n\nFirst, I need to identify the *old* province, which is \"Tỉnh Bắc Giang.\"  Then I have to check for any province mergers. Right, the resolution 60-NQ/TW states that Bắc Giang merged with Bắc Ninh.  So now, we are dealing with \"Tỉnh Bắc Ninh.\"\n\nNext, I look for the old ward, which is \"Xã Nam Dương.\" I will search for this ward within resolutions related to \"Tỉnh Bắc Ninh\" (or, if the resolution pre-dates the merger or refers to the old name). Resolution 1658/NQ-UBTVQH15 seems relevant.\n\nLooking at resolution 1658/NQ-UBTVQH15, specifically line 36, I find: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Tân Mộc và xã Nam Dương thành xã mới có tên gọi là **xã Nam Dương**.\" This tells me that \"Xã Nam Dương\" (old) merged with \"xã Tân Mộc\" to form a *new* \"xã Nam Dương.\"  It's the same name, but a different entity now.\n\nOkay, now I must check the `New wards` list for this new \"Xã Nam Dương\" in \"Tỉnh Bắc Ninh.\" Bingo! The list contains: `{\"ward_code\":\"07603\",\"ward_name\":\"Xã Nam Dương\",\"province_name\":\"Tỉnh Bắc Ninh\"}`. That's a match!\n\nNow, the confidence level.  The province merger is a slam dunk, explicitly stated in 60-NQ/TW.  The ward restructuring is just as clear in 1658/NQ-UBTVQH15.  We then find the correct match in the `New wards` list. High confidence.\n\nTo double-check the old address, let's make sure everything makes sense. Again: \"Xã Nam Dương, Thị xã Chũ, Tỉnh Bắc Giang.\" The resolution 1658/NQ-UBTVQH15 is in \"tỉnh Bắc Ninh,\" but since the merger, that's fine. The resolution explicitly tells us that the new \"Xã Nam Dương\" includes the old one.  And then, the match in the `New wards` list... perfect. The old address also includes \"Thị xã Chũ\" (district). Since the schema does not ask for district information, I only need to map the ward and province.\n\nFinal check:\n*   Province: Bắc Giang -> Bắc Ninh (high confidence).\n*   Ward: Xã Nam Dương (old) -> Xã Nam Dương (new) (high confidence).\n*   New ward code: 07603\n\nSo, based on my analysis, I'm confident in the output.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "5. Hợp nhất tỉnh Bắc Ninh và tỉnh Bắc Giang, lấy tên là tỉnh Bắc Ninh"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "07603",
+      "ward_name": "Xã Nam Dương"
+    },
+    {
+      "citation": {
+        "header": "1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh",
+        "line": "36. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Tân Mộc và xã Nam Dương thành xã mới có tên gọi là xã Nam Dương."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "07603",
+      "ward_name": "Xã Nam Dương"
+    }
+  ]
+}

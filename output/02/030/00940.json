@@ -1,0 +1,18 @@
+{
+  "address": "Xã Phương Tiến, Huyện Vị Xuyên, Tỉnh Hà Giang",
+  "ellapsedInMs": 8211,
+  "estimatedCost": 0.0033086,
+  "thought": "**My Analysis of the Administrative Reorganization**\n\nOkay, here's how I'm approaching this. The user gave me an old address: \"Xã Phương Tiến, Huyện Vị Xuyên, Tỉnh Hà Giang\" and wants to know its new administrative unit.\n\nFirst, I need to identify the *province*. That's \"Tỉnh Hà Giang\". Then, I check if any major reorganizations occurred for that province, specifically in resolution 60-NQ/TW. Ah, \"Hợp nhất tỉnh Tuyên Quang và tỉnh Hà Giang, lấy tên là tỉnh Tuyên Quang\" – Hà Giang was *merged* into Tuyên Quang. So, the new province is definitely \"Tỉnh Tuyên Quang\".\n\nNow, onto the specific *ward* – \"Xã Phương Tiến\". I have to dig into \"Other Resolutions\", particularly looking for \"Xã Phương Tiến\" in the context of either Hà Giang *or* Tuyên Quang. Bingo! Resolution 1684/NQ-UBTVQH15, \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang\", specifically mentions \"Xã Phương Tiến\": line 72 states that \"Xã Phương Tiến\" is merged with \"Xã Thanh Thủy\" to form the new \"Xã Thanh Thủy\". Perfect.\n\nNext, I cross-reference this information with the \"New wards\" data. I search for \"Xã Thanh Thủy\" within \"Tỉnh Tuyên Quang\" and, unsurprisingly, it's there! The entry is `{\"ward_code\":\"00928\",\"ward_name\":\"Xã Thanh Thủy\",\"province_name\":\"Tỉnh Tuyên Quang\"}`.\n\nGiven the direct, unambiguous matching in the resolution and the straightforward confirmation in the \"New wards\" list, I'm highly confident in this mapping.\n\nLet me just double-check for other relevant information. In 1684/NQ-UBTVQH15, line 76 mentions \"thị trấn Vị Xuyên\" and \"xã Việt Lâm\", but not \"Xã Phương Tiến\". Line 72 of that same resolution is the source that mentions \"Xã Phương Tiến\". This makes my original analysis correct.\n\nSince the request asked for one *or* multiple new wards, and \"Xã Phương Tiến\" is explicitly merged *into* \"Xã Thanh Thủy\", there's only one relevant new administrative unit.\n\nTherefore, the output will reflect this high-confidence mapping: merging \"Xã Phương Tiến\" into \"Xã Thanh Thủy\" in the new province of \"Tỉnh Tuyên Quang\", with ward code \"00928\".\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "72. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Phương Tiến và xã Thanh Thủy thành xã mới có tên gọi là xã Thanh Thủy."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "00928",
+      "ward_name": "Xã Thanh Thủy"
+    }
+  ]
+}

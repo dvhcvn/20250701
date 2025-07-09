@@ -1,0 +1,28 @@
+{
+  "address": "Xã Song Phú, Huyện Tam Bình, Tỉnh Vĩnh Long",
+  "ellapsedInMs": 6501,
+  "estimatedCost": 0.0026785000000000003,
+  "thought": "**Determining the New Administrative Unit for \"Xã Song Phú, Huyện Tam Bình, Tỉnh Vĩnh Long\"**\n\nOkay, so I've got \"Xã Song Phú, Huyện Tam Bình, Tỉnh Vĩnh Long\" as the old address. My task is to figure out the new administrative unit, and I'm going to leverage my understanding of the relevant resolutions and data.\n\nFirst, I need to confirm the province.  I immediately think about province mergers, so I'll check `60-NQ/TW`.  Ah, right!  That resolution covers the merger of Bến Tre, Vĩnh Long, and Trà Vinh, but the new name is still \"Tỉnh Vĩnh Long\".  So, the province hasn't changed. Good.\n\nNext, I need to focus on \"Xã Song Phú\".  I'll scan the `Other resolutions` for anything related to this ward in Vĩnh Long.  I quickly zero in on `1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long`.  This looks promising.  I scan the document and see line 23 which says that the communes of Tân Phú, Long Phú, Phú Thịnh, and Song Phú were merged to form a *new* \"xã Song Phú\". That’s the key! The *name* is retained, but the composition has changed.\n\nNow, I need to cross-reference this with the \"New wards\" list.  I search for \"Xã Song Phú\" within Vĩnh Long.  Bingo! I find `{\"ward_code\":\"29740\",\"ward_name\":\"Xã Song Phú\",\"province_name\":\"Tỉnh Vĩnh Long\"}`.  That’s a direct hit!\n\nGiven `1687/NQ-UBTVQH15` *explicitly* states the creation of a *new* \"Xã Song Phú\" from the merger, and the ward list confirms its existence and name, I'm extremely confident about the result. Therefore the confidence will be high. I'm ready to construct the JSON output with this information.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "20. Hợp nhất tỉnh Bến Tre, tỉnh Vĩnh Long và tỉnh Trà Vinh; lấy tên là tỉnh Vĩnh Long"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "29740",
+      "ward_name": "Xã Song Phú"
+    },
+    {
+      "citation": {
+        "header": "1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long",
+        "line": "23. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tân Phú (huyện Tam Bình),Long Phú, Phú Thịnhvà Song Phú thành xã mới có tên gọi là xã Song Phú."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "29740",
+      "ward_name": "Xã Song Phú"
+    }
+  ]
+}

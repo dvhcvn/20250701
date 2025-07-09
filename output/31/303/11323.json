@@ -1,0 +1,18 @@
+{
+  "address": "Phường Phan Bội Châu, Quận Hồng Bàng, Thành phố Hải Phòng",
+  "ellapsedInMs": 8185,
+  "estimatedCost": 0.0030547,
+  "thought": "**Analysis of Address Transformation: \"Phường Phan Bội Châu\" to New Administrative Unit**\n\nOkay, so I've got an address: \"Phường Phan Bội Châu, Thành phố Hải Phòng\", and the task is to map it to its new administrative unit. My initial approach is as follows:\n\nFirst, I need to pinpoint the old ward and province. Easy, \"Phường Phan Bội Châu\" is the ward, and \"Thành phố Hải Phòng\" is the province. Now, I will look at the relevant resolutions. 60-NQ/TW doesn't appear to be of interest here (it's related to the province merger but doesn't change the province name). I need to check the relevant resolutions (1669/NQ-UBTVQH15) for any changes affecting \"Phường Phan Bội Châu\" within \"Thành phố Hải Phòng\".\n\nEureka! Line 8 of that resolution states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Hoàng Văn Thụ, Minh Khai, Phan Bội Châu, Thượng Lý, Sở Dầu, Hùng Vương và một phần diện tích tự nhiên của phường Gia Viên thành phường mới có tên gọi là **phường Hồng Bàng**.\" This is gold! It explicitly says \"Phường Phan Bội Châu\" is *merged into* \"Phường Hồng Bàng.\"\n\nNow, I cross-reference this finding with my \"New Wards\" data. I'm looking for a match, and there it is: `{\"ward_code\":\"11311\",\"ward_name\":\"Phường Hồng Bàng\",\"province_name\":\"Thành phố Hải Phòng\"}`. This perfectly aligns with my findings.\n\nBased on this, my confidence level is high. The resolution is very clear.\n\nMy output will be as follows:\n\n*   `province_name`: \"Thành phố Hải Phòng\" (confirmed by the resolution)\n*   `ward_name`: \"Phường Hồng Bàng\" (from the resolution and new ward data)\n*   `ward_code`: \"11311\" (from the new ward data)\n*   `confidence`: \"high\" (explicitly stated in the resolution)\n*   `citation`: The header and line 8 of resolution 1669/NQ-UBTVQH15\n\nI'm confident in this result. I have thoroughly considered the relevant resolutions and data. The address mapping is therefore: \"Phường Phan Bội Châu\" (old) -> \"Phường Hồng Bàng\" (new).\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "8. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Hoàng Văn Thụ, Minh Khai, Phan Bội Châu, Thượng Lý, Sở Dầu, Hùng Vương và một phần diện tích tự nhiên của phường Gia Viên thành phường mới có tên gọi là phường Hồng Bàng."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "11311",
+      "ward_name": "Phường Hồng Bàng"
+    }
+  ]
+}

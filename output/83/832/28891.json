@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tân Thiềng, Huyện Chợ Lách, Tỉnh Bến Tre",
+  "ellapsedInMs": 8781,
+  "estimatedCost": 0.0030236,
+  "thought": "**Address Mapping and Administrative Unit Transformation**\n\nAlright, I'm working with a request to map an old address to new administrative units.  The provided address is \"Xã Tân Thiềng, Huyện Chợ Lách, Tỉnh Bến Tre.\"  My initial task is straightforward: to parse that and identify the constituent parts. So, I see \"Xã Tân Thiềng\" as the ward, \"Huyện Chợ Lách\" as the district, and \"Tỉnh Bến Tre\" as the province.\n\nNow, here's where it gets interesting. I need to account for any province mergers or renames.  Looking at the relevant information, specifically \"60-NQ/TW,\" I find that \"Tỉnh Bến Tre\" was merged with other provinces, becoming \"Tỉnh Vĩnh Long.\" Okay, got it. \"Bến Tre\" is now \"Vĩnh Long.\"\n\nNext step: I need to consult the ward resolutions for \"Tân Thiềng\" and \"Chợ Lách\" within the *new* provincial context of Vĩnh Long.  The provided resolution, \"1687/NQ-UBTVQH15,\" seems pertinent: \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long.\"  I'm looking for \"Tân Thiềng\" within the lines of this document.\n\nAnd there it is!  Line 65: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xãPhú Sơn, Tân Thiềng và Vĩnh Thành thành xã mới có tên gọi là **xã Vĩnh Thành**.\"  Bingo!  \"Tân Thiềng\" is being merged into \"Vĩnh Thành.\" The resolution mentions the district \"huyện Chợ Lách\". \n\nNow, I need to match that new ward name, \"Vĩnh Thành,\" to the provided \"New wards\" data to get its code and confirm its province.  The \"New wards\" data says `{\"ward_code\":\"28894\",\"ward_name\":\"Xã Vĩnh Thành\",\"province_name\":\"Tỉnh Vĩnh Long\"}`.  Perfect match!\n\nMy confidence is high here.\n\nLet's do a quick double-check on the district association. The input address had \"Huyện Chợ Lách\", while line 65, which includes \"Tân Thiềng\", is about ward merging and does not include an explicit association of \"Huyện Chợ Lách\". However, this resolution is for the province of Vĩnh Long, the other wards in line 65 are also from Vĩnh Long, \"Tân Thiềng\" was in Bến Tre before the merger into Vĩnh Long, and the resolution mentions \"Chợ Lách\" elsewhere. Specifically, it mentions \"xã Long Thới (huyện Chợ Lách)\" and \"xã Vĩnh Hòa (huyện Chợ Lách)\" in lines 64 and 66, respectively. This gives me a good indication that \"Chợ Lách\" is within the scope of this resolution and that the ward association is correct.\n\nBased on all this, I'm ready to construct the JSON output.  I'll pull the citation header and the specific line mentioning the old ward from the resolution.  The `confidence` will be set to \"High.\" The output JSON will contain the new province name, ward code, and ward name. I've successfully mapped the old address to its updated administrative unit.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long",
+        "line": "65. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xãPhú Sơn, Tân Thiềng và Vĩnh Thành thành xã mới có tên gọi là xã Vĩnh Thành."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "28894",
+      "ward_name": "Xã Vĩnh Thành"
+    }
+  ]
+}

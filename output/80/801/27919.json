@@ -1,0 +1,28 @@
+{
+  "address": "Xã Bình Hòa Bắc, Huyện Đức Huệ, Tỉnh Long An",
+  "ellapsedInMs": 7711,
+  "estimatedCost": 0.0026956000000000003,
+  "thought": "**Mapping an Old Address to New Administrative Units**\n\nOkay, I've got this. The user wants to map an old address, \"Xã Bình Hòa Bắc, Huyện Đức Huệ, Tỉnh Long An,\" to its new administrative units.  As a spatial data expert, I understand the need for precision, so let's break this down systematically.\n\nFirst, I need to isolate the key components of the old address.  I immediately recognize \"Tỉnh Long An\" as the old province and \"Xã Bình Hòa Bắc\" as the old ward.  Now, the real work begins.\n\nGiven \"Tỉnh Long An\" I immediately look to the provincial resolutions. Resolution 60-NQ/TW is where I expect to find province-level changes.  Sure enough, it says that \"Tỉnh Tây Ninh\" is the successor to \"Tỉnh Long An,\" so that's my new province.\n\nNext, I need to focus on \"Xã Bình Hòa Bắc.\"  I sift through other resolutions and find 1682/NQ-UBTVQH15.  Bingo! This resolution specifically addresses the restructuring of wards in Tây Ninh. It explicitly states that \"Xã Bình Hòa Bắc\" is *merged* with \"Bình Hòa Nam\" and \"Bình Thành\" to form the new ward called \"Xã Đức Huệ.\"  This is a direct hit!\n\nNow, I cross-reference this information with the \"New wards\" data.  There it is: \"Xã Đức Huệ\" listed under \"Tỉnh Tây Ninh\" with `ward_code: \"27925\"`.  This confirms everything!  The province and ward names match perfectly.\n\nTo be absolutely sure, I'll quickly check the ward names one last time. Old address: \"Xã Bình Hòa Bắc\". Resolution 1682/NQ-UBTVQH15: *Explicitly* mentions \"Xã Bình Hòa Bắc\" merging into the new \"Xã Đức Huệ\". Done.\n\nTherefore, the mapping is straightforward. The `province_name` is \"Tỉnh Tây Ninh,\" the `ward_name` is \"Xã Đức Huệ,\" and the `ward_code` is \"27925.\"  The `citation` will be 1682/NQ-UBTVQH15. And my confidence level? High. This is a clear-cut case with a definitive resolution that directly addresses the old ward.  I'm confident in this mapping. Now, time to generate the JSON output.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Tây Ninh và tỉnh Long An, lấy tên là tỉnh Tây Ninh"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tây Ninh",
+      "ward_code": "27925",
+      "ward_name": "Xã Đức Huệ"
+    },
+    {
+      "citation": {
+        "header": "1682/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tây Ninh",
+        "line": "26. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của của các xã Bình Hòa Bắc, Bình Hòa Nam và Bình Thành thành xã mới có tên gọi là xã Đức Huệ."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tây Ninh",
+      "ward_code": "27925",
+      "ward_name": "Xã Đức Huệ"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "address": "Xã Phú Quý, Thị xã Cai Lậy, Tỉnh Tiền Giang",
+  "ellapsedInMs": 8575,
+  "estimatedCost": 0.0034002,
+  "thought": "**My Analysis of the Administrative Unit Change**\n\nOkay, here's what I've figured out, following the user's request: They're asking about the new administrative location of \"Xã Phú Quý, Thị xã Cai Lậy, Tỉnh Tiền Giang\". My focus is on determining the present-day equivalent of that.\n\nFirst, I recognized that \"Tỉnh Tiền Giang\" merged with \"Tỉnh Đồng Tháp\" based on resolution 60-NQ/TW. This means the province is now \"Tỉnh Đồng Tháp.\"  Therefore, anything from \"Tỉnh Tiền Giang\" now falls under \"Tỉnh Đồng Tháp.\"\n\nNext, I zeroed in on \"Xã Phú Quý\" within the context of \"Thị xã Cai Lậy.\"  The crucial piece of information is resolution 1663/NQ-UBTVQH15, specifically targeting the reorganization of administrative units in \"Tỉnh Đồng Tháp.\" This resolution explicitly states, in line 102, that \"Xã Phú Quý\" along with other wards became the new \"Phường Nhị Quý.\"\n\nI then confirmed this in the data I have, which indicates that \"Phường Nhị Quý\" has a `ward_code` of \"28477\".  Crucially, I also checked for any other potential matches. There's \"Xã Phú Cường\" (in Đồng Tháp, but not the right one). There's \"Đặc khu Phú Quý\" in \"Tỉnh Lâm Đồng\" (but, clearly, not the one we're looking for).\n\nSo, my final output will be:\n\n*   `province_name`: \"Tỉnh Đồng Tháp\" (result of the province merger).\n*   `ward_name`: \"Phường Nhị Quý\" (confirmed by the resolution).\n*   `ward_code`: \"28477\" (corresponding to \"Phường Nhị Quý\").\n*   `citation`: \"1663/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Tháp\", with the specific line \"102. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Nhị Mỹ, xã Phú Quý và xã Nhị Quý thành phường mới có tên gọi là **phường Nhị Quý**.\" supporting the change.\n*   `confidence`: \"high\" (given the direct reference in the resolution and the clear provincial merger).\n\nThe context of \"Thị xã Cai Lậy\" is confirmed within the relevant resolution, ensuring that the former ward \"Xã Phú Quý\" from \"Thị xã Cai Lậy\" in \"Tỉnh Tiền Giang\" is now accurately represented as \"Phường Nhị Quý\" in \"Tỉnh Đồng Tháp.\" The resolution's repeated references to \"Thị xã Cai Lậy\" solidify this linkage.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Tiền Giang và tỉnh Đồng Tháp, lấy tên là tỉnh Đồng Tháp"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đồng Tháp",
+      "ward_code": "28477",
+      "ward_name": "Phường Nhị Quý"
+    },
+    {
+      "citation": {
+        "header": "1663/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Tháp",
+        "line": "102. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Nhị Mỹ, xã Phú Quý và xã Nhị Quý thành phường mới có tên gọi là **phường Nhị Quý**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đồng Tháp",
+      "ward_code": "28477",
+      "ward_name": "Phường Nhị Quý"
+    }
+  ]
+}

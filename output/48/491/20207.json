@@ -1,0 +1,18 @@
+{
+  "address": "Phường Thanh Khê Đông, Quận Thanh Khê, Thành phố Đà Nẵng",
+  "ellapsedInMs": 5840,
+  "estimatedCost": 0.0020902,
+  "thought": "**Mapping the Old to the New: A Thanh Khê Case**\n\nOkay, so I've got a user request to map an old address to a new administrative unit. The address is in \"Phường Thanh Khê Đông, Quận Thanh Khê, Thành phố Đà Nẵng,\" and I need to figure out where that is now.\n\nFirst, I identified the old ward (\"Phường Thanh Khê Đông\") and province (\"Thành phố Đà Nẵng\"). Then, I dove into the resolutions. Resolution 60-NQ/TW didn't outright say Đà Nẵng was merging, but it mentioned Đà Nẵng in context of merging with Quảng Nam, though the province name stayed the same. So that tells me \"Thành phố Đà Nẵng\" is still the province.\n\nNext, I looked in `other_resolutions`. And bingo! I found resolution 1659/NQ-UBTVQH15. Line 3 specifically mentions \"Phường Thanh Khê Đông\" getting merged into a new ward: \"phường Thanh Khê\". That's my key!\n\nSo, I confirmed this with the `new_wards` data.  \"Phường Thanh Khê\" exists in my dataset with the correct province name and code.\n\nThis is a pretty straightforward case. I'm going to set the confidence level to \"high\" because I have a direct resolution that explicitly details the old ward's fate and its new designation.\n\nMy output will be:\n\n*   **Citation:** Resolution 1659/NQ-UBTVQH15\n*   **Confidence:** High\n*   **Province Name:** Thành phố Đà Nẵng\n*   **Ward Code:**  20209\n*   **Ward Name:** Phường Thanh Khê\n\nDone.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng",
+        "line": "3. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Xuân Hà, Chính Gián, Thạc Gián, Thanh Khê Tây và Thanh Khê Đông thành phường mới có tên gọi là phường Thanh Khê."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "20209",
+      "ward_name": "Phường Thanh Khê"
+    }
+  ]
+}

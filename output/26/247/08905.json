@@ -1,0 +1,28 @@
+{
+  "address": "Xã Hội Thịnh, Huyện Tam Dương, Tỉnh Vĩnh Phúc",
+  "ellapsedInMs": 8958,
+  "estimatedCost": 0.0030564,
+  "thought": "**Mapping Old Vietnamese Addresses: My Approach**\n\nOkay, so I'm tackling this address mapping problem. The goal is to figure out the new administrative location of \"Xã Hội Thịnh, Huyện Tam Dương, Tỉnh Vĩnh Phúc\" based on the provided resolutions and new ward list.  Given the instructions to ignore districts in the final output, I'll be focusing on the province and ward level.\n\nFirst, I identified the components of the old address:  \"Xã Hội Thịnh\" (ward), \"Huyện Tam Dương\" (district, for context), and \"Tỉnh Vĩnh Phúc\" (province).\n\nThen I started with the province resolution, specifically Resolution 60-NQ/TW.  \"Tỉnh Vĩnh Phúc\" wasn't listed under \"không thực hiện sáp nhập,\" but it *was* listed under \"mới sau sáp nhập, hợp nhất,\" indicating it merged into a new province. Bingo! \"Hợp nhất tỉnh Vĩnh Phúc, tỉnh Phú Thọ và tỉnh Hoà Bình; lấy tên là tỉnh Phú Thọ\" tells me the *new* province is \"Tỉnh Phú Thọ.\"\n\nNext, I jumped into other resolutions, looking for \"Xã Hội Thịnh.\" Resolution `1676/NQ-UBTVQH15` caught my eye. It explicitly mentions: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Duy Phiên, Thanh Vân và Hội Thịnh thành xã mới có tên gọi là **xã Hội Thịnh**.\" This resolution is specific to \"tỉnh Phú Thọ,\" which lines up perfectly with what I found in the province resolution.  Crucially, it shows that the *old* \"Xã Hội Thịnh\" is now part of this *new* \"Xã Hội Thịnh,\" merged with other wards.\n\nTo double-check, I cross-referenced the new ward list. Sure enough, there it is:  `{\"ward_code\":\"08905\",\"ward_name\":\"Xã Hội Thịnh\",\"province_name\":\"Tỉnh Phú Thọ\"}`. This confirms the new location and the exact ward name. The code also helps increase the reliability of this information.\n\nSo, here's my confident conclusion: The old \"Xã Hội Thịnh\" from \"Tỉnh Vĩnh Phúc\" has been re-mapped to \"Tỉnh Phú Thọ.\"  Resolution `1676/NQ-UBTVQH15` is the key, explicitly forming a *new* ward \"Xã Hội Thịnh\" from several old wards, and the new ward list gives me further confirmation with the new location and other information.  I'd rate my confidence as *high*.\n\nLet's quickly address the district, \"Huyện Tam Dương,\" for thoroughness.  Resolution 1676/NQ-UBTVQH15 focused on \"tỉnh Phú Thọ\". The context of the resolution, the fact that the old \"Tỉnh Vĩnh Phúc\" became part of \"Tỉnh Phú Thọ,\" strongly implies that the \"Xã Hội Thịnh\" it refers to is the *same* one from the original address. However, it's worth noting the resolution doesn't explicitly define the districts involved, so a conservative approach would be to specify the change at the province and ward level only.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Vĩnh Phúc, tỉnh Phú Thọ và tỉnh Hoà Bình; lấy tên là tỉnh Phú Thọ"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "08905",
+      "ward_name": "Xã Hội Thịnh"
+    },
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "72. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Duy Phiên, Thanh Vân và Hội Thịnh thành xã mới có tên gọi là xã Hội Thịnh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "08905",
+      "ward_name": "Xã Hội Thịnh"
+    }
+  ]
+}

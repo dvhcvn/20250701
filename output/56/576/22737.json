@@ -1,0 +1,18 @@
+{
+  "address": "Xã Song Tử Tây, Huyện Trường Sa, Tỉnh Khánh Hòa",
+  "ellapsedInMs": 7654,
+  "estimatedCost": 0.0026457,
+  "thought": "**Address Mapping Analysis: Xã Song Tử Tây**\n\nOkay, so I've been tasked with mapping an old address, \"Xã Song Tử Tây, Huyện Trường Sa, Tỉnh Khánh Hòa,\" to its new administrative unit. My initial steps involve breaking down the address components: old ward, district, and province.  I've identified \"Xã Song Tử Tây\" as the old ward, \"Huyện Trường Sa\" as the old district, and \"Tỉnh Khánh Hòa\" as the old province.\n\nNow, I'm digging into the resolutions. First, I checked \"60-NQ/TW\" regarding province-level changes. It mentions Khánh Hòa in the context of a merger with Ninh Thuận, but importantly, the province name \"Tỉnh Khánh Hòa\" *remains unchanged*.  No issues there.\n\nNext, I scrutinized the `other_resolutions` array, focusing on mentions of \"Xã Song Tử Tây\" or \"Tỉnh Khánh Hòa.\"  Resolution \"1667/NQ-UBTVQH15\" is the key here. Specifically, line 65 caught my eye: it outlines the consolidation of \"thị trấn Trường Sa,\" \"xã Song Tử Tây,\" and \"xã Sinh Tồn\" into a new *special administrative unit* named \"**đặc khu Trường Sa**.\"  Bingo! That directly addresses the old ward I'm working with.\n\nI then cross-referenced this resolution with the `new_wards` data.  And, sure enough, it confirms the existence of  \"Đặc khu Trường Sa\" with the `ward_code` \"22736\" and its `province_name` being \"Tỉnh Khánh Hòa\".  This perfectly aligns with the resolution's findings.\n\nBased on this analysis, the mapping is straightforward and highly confident.  The old ward \"Xã Song Tử Tây\" is explicitly merged into the new ward, \"Đặc khu Trường Sa\", as stated in \"1667/NQ-UBTVQH15.\" The province name, \"Tỉnh Khánh Hòa,\" remains unchanged despite the Ninh Thuan merger.  The `new_wards` data provides the definitive `ward_code` for the newly formed \"Đặc khu Trường Sa.\" This is a clean, direct, and well-supported mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1667/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Khánh Hòa",
+        "line": "65. Sắp xếptoàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Trường Sa, xã Song Tử Tây và xã Sinh Tồn thành đặc khu có tên gọi là đặc khu Trường Sa."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Khánh Hòa",
+      "ward_code": "22736",
+      "ward_name": "Đặc khu Trường Sa"
+    }
+  ]
+}

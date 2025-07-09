@@ -1,0 +1,28 @@
+{
+  "address": "Xã Xín Chải, Huyện Vị Xuyên, Tỉnh Hà Giang",
+  "ellapsedInMs": 6718,
+  "estimatedCost": 0.0025423,
+  "thought": "**Mapping \"Xã Xín Chải\" to the New Administrative Unit**\n\nOkay, so I'm looking at this old address: \"Xã Xín Chải, Huyện Vị Xuyên, Tỉnh Hà Giang.\" My first thought is to identify the old province, which is clearly \"Tỉnh Hà Giang.\"  Now, I need to check those province resolutions.  Aha! Resolution 60-NQ/TW states that Hà Giang merged with Tuyên Quang, becoming \"Tỉnh Tuyên Quang.\"\n\nNext, I zero in on \"Xã Xín Chải.\" I'll need to comb through the \"Other resolutions\" for any mention of it. Bingo!  Resolution 1684/NQ-UBTVQH15 catches my eye.  It discusses administrative changes in Tuyên Quang.  And there it is: \"Xã Xín Chải\" is being merged with \"Thanh Đức\" and \"Lao Chải\" to form a new \"Xã Lao Chải.\"  That's a direct mapping.\n\nJust to be thorough, I'll quickly check the \"New wards\" data for \"Xã Lao Chải\" in \"Tỉnh Tuyên Quang\" to confirm. Yep, the entry `{\"ward_code\":\"00937\",\"ward_name\":\"Xã Lao Chải\",\"province_name\":\"Tỉnh Tuyên Quang\"}`  perfectly matches what I've found.\n\nI also need to consider any potential ambiguities. The old district, \"Huyện Vị Xuyên,\" is mentioned. While districts are eliminated, the resolutions sometimes refer to old district names when describing ward changes. Resolution 1684/NQ-UBTVQH15 does mention \"thị trấn Vị Xuyên\" and \"xã Vị Xuyên,\" but it explicitly states that \"Xã Xín Chải\" is merged into \"Xã Lao Chải.\"  There is no ambiguity here. This is a clear and direct mapping.\n\nTherefore, my final JSON output will be straightforward.  My `citation` will point to Resolution 1684/NQ-UBTVQH15.  The `confidence` is high because the resolution directly addresses the merger of \"Xã Xín Chải.\" The `province_name` is \"Tỉnh Tuyên Quang.\"  The `ward_code` is the code for \"Xã Lao Chải,\" and the `ward_name` is, of course, \"Xã Lao Chải.\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Tuyên Quang và tỉnh Hà Giang, lấy tên là tỉnh Tuyên Quang"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "00937",
+      "ward_name": "Xã Lao Chải"
+    },
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "71. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Xín Chải, Thanh Đức và Lao Chải thành xã mới có tên gọi là xã Lao Chải."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "00937",
+      "ward_name": "Xã Lao Chải"
+    }
+  ]
+}

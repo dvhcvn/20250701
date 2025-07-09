@@ -1,0 +1,18 @@
+{
+  "address": "Phường Nhơn Phú, Thành phố Quy Nhơn, Tỉnh Bình Định",
+  "ellapsedInMs": 7843,
+  "estimatedCost": 0.0036385,
+  "thought": "**My Analysis of the Administrative Unit Change**\n\nOkay, here's how I'd approach this. The user has given me an old address and wants the new administrative unit. My initial thought is to break down the old address, identify the province and ward, and then meticulously examine the resolutions and lists to find the corresponding new unit.\n\nFirst, I identified the original province as \"Tỉnh Bình Định\" and the ward as \"Phường Nhơn Phú\". Now, I'll consult resolution 60-NQ/TW to see if \"Tỉnh Bình Định\" has been affected by any mergers. Bingo! It's merged with \"Tỉnh Gia Lai\", so the new province should be \"Tỉnh Gia Lai.\"\n\nNext, I need to check the \"Other resolutions\" for information about \"Phường Nhơn Phú.\" I quickly eliminate irrelevant resolutions based on the province. \"1664/NQ-UBTVQH15\" is the key as it covers \"Tỉnh Gia Lai\".\n\nI carefully went through resolution 1664, specifically looking for mentions of \"Phường Nhơn Phú.\" I found it in item 106, which states that \"Phường Nhơn Phú\" merges into the new \"phường Quy Nhơn Bắc.\" This is a solid match!\n\nNow, to solidify this, I check the \"New wards\" list for \"phường Quy Nhơn Bắc\" with the new province \"Tỉnh Gia Lai.\" There's a perfect match: `{\"ward_code\":\"21553\",\"ward_name\":\"Phường Quy Nhơn Bắc\",\"province_name\":\"Tỉnh Gia Lai\"}`.\n\nMy confidence is very high. I have a direct citation from the resolution and it's consistent.\n\nSo, the old address: \"Phường Nhơn Phú, Thành phố Quy Nhơn, Tỉnh Bình Định\" now becomes part of the new administrative unit: `{\"ward_code\":\"21553\",\"ward_name\":\"Phường Quy Nhơn Bắc\",\"province_name\":\"Tỉnh Gia Lai\"}`.  The province changed and then the ward changed based on the resolutions. It's a clean and straightforward process.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai",
+        "line": "106. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Trần Quang Diệu và phường Nhơn Phú thành phường mới có tên gọi là **phường Quy Nhơn Bắc**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "21553",
+      "ward_name": "Phường Quy Nhơn Bắc"
+    }
+  ]
+}

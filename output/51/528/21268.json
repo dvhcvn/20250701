@@ -1,0 +1,18 @@
+{
+  "address": "Xã Nghĩa Hòa, Huyện Tư Nghĩa, Tỉnh Quảng Ngãi",
+  "ellapsedInMs": 5886,
+  "estimatedCost": 0.0020772,
+  "thought": "**Identifying the New Administrative Unit for the Old Address**\n\nOkay, so I've got this old address: \"Xã Nghĩa Hòa, Huyện Tư Nghĩa, Tỉnh Quảng Ngãi,\" and I need to figure out the new ward.  My first step is to identify the old province and ward, which are clearly \"Tỉnh Quảng Ngãi\" and \"Xã Nghĩa Hòa,\" respectively.\n\nNext, I'll check province resolutions, specifically \"60-NQ/TW,\" which should cover any recent mergers or consolidations.  Thankfully, the province name \"Tỉnh Quảng Ngãi\" *does* appear, and it confirms the name remains the same. Excellent.\n\nNow, I'll dig into the other resolutions, focusing on \"Xã Nghĩa Hòa\" within \"Tỉnh Quảng Ngãi.\" Ah-ha! I've found `1677/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ngãi`.  Line 14 is the key: it explicitly states that \"Xã Nghĩa Hòa,\" along with a few others, will be merged to form the new ward, \"Xã Tư Nghĩa.\"\n\nWith the new ward identified, \"Xã Tư Nghĩa,\" I'll cross-reference it in the \"New Wards\" data, again filtering for \"Tỉnh Quảng Ngãi.\" The data aligns perfectly, providing the ward code as \"21235\".\n\nFinally, I can build the JSON output. The `province_name` is \"Tỉnh Quảng Ngãi,\" the `ward_name` is \"Xã Tư Nghĩa,\" and the `ward_code` is \"21235.\" For the `citation`, I'll point to `1677/NQ-UBTVQH15` because that's the resolution that drives this change.  And the `confidence` level is definitely \"high\" because the resolution directly addresses the merger and includes \"Xã Nghĩa Hòa\" in the formation of \"Xã Tư Nghĩa.\" This is a clean and explicit match.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1677/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ngãi",
+        "line": "14. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn La Hà và các xã Nghĩa Trung, Nghĩa Thương, Nghĩa Hòa thành xã mới có tên gọi là xã Tư Nghĩa."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ngãi",
+      "ward_code": "21235",
+      "ward_name": "Xã Tư Nghĩa"
+    }
+  ]
+}

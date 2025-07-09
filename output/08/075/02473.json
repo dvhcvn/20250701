@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Yên Sơn, Huyện Yên Sơn, Tỉnh Tuyên Quang",
+  "ellapsedInMs": 6849,
+  "estimatedCost": 0.003068,
+  "thought": "**Finding the New Administrative Unit for the Old Address**\n\nOkay, so I've got \"Thị trấn Yên Sơn, Huyện Yên Sơn, Tỉnh Tuyên Quang\" and I need to figure out the new administrative structure. First, I pinpoint \"Tỉnh Tuyên Quang\" as the province.  I immediately check the relevant province-level resolutions. While I don't see Tuyên Quang on the list of provinces *not* undergoing changes, I *do* see that Tuyên Quang has merged with Hà Giang, though it will retain the name \"Tuyên Quang\". That's a key piece of information for my final output regarding the `province_name`.\n\nNext, I dive into the ward-level resolutions for Tuyên Quang, specifically searching for \"1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang\".  I'm looking closely for references to \"Thị trấn Yên Sơn\" in the document. Bingo! Line 32 explicitly states that \"Thị trấn Yên Sơn\" will be merged with other xã (communes) to form a *new* \"xã Yên Sơn\". That's the target!\n\nNow, I cross-reference this information with the \"New wards\" list for Tuyên Quang. I search for \"Xã Yên Sơn\" and find a match:  `{\"ward_code\":\"02473\",\"ward_name\":\"Xã Yên Sơn\",\"province_name\":\"Tỉnh Tuyên Quang\"}`.  Perfect.\n\nFinally, I construct the JSON output.  The `province_name` will be \"Tỉnh Tuyên Quang\" (informed by the merger with Hà Giang, but retaining the original name),  `ward_name` is \"Xã Yên Sơn\", and the `ward_code` is \"02473\".  For the citation, I'll include the relevant resolution,  \"1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang\" and specifically the line confirming the change: \"32. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Yên Sơn và cácxã Tứ Quận, Lang Quán, Chân Sơn thành xã mới có tên gọi là **xã Yên Sơn**.\"  This is a high-confidence match, given the clarity of the resolution.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "32. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Yên Sơn và cácxã Tứ Quận, Lang Quán, Chân Sơn thành xã mới có tên gọi là xã Yên Sơn."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "02473",
+      "ward_name": "Xã Yên Sơn"
+    }
+  ]
+}

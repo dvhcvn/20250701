@@ -1,0 +1,18 @@
+{
+  "address": "Xã Mường Khong, Huyện Tuần Giáo, Tỉnh Điện Biên",
+  "ellapsedInMs": 6524,
+  "estimatedCost": 0.0022008,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I've been tasked with mapping this old Vietnamese address to new administrative units.  The input is \"Xã Mường Khong, Huyện Tuần Giáo, Tỉnh Điện Biên.\"  The tricky part is that the instructions say \"eliminating all districts,\" so \"Huyện Tuần Giáo\" is definitely an old district. I need to figure out what's replaced it.\n\nFirst, I identified the old units: \"Xã Mường Khong\" (the ward), \"Huyện Tuần Giáo\" (the district - old!), and \"Tỉnh Điện Biên\" (the province).  That's my starting point.\n\nNext, I looked at the province resolutions (specifically 60-NQ/TW).  I quickly found \"Tỉnh Điện Biên\" in the list, and it's marked as \"không thực hiện sáp nhập\" - no changes.  So, \"Tỉnh Điện Biên\" stays \"Tỉnh Điện Biên.\" Easy enough.\n\nNow, on to the more detailed resolutions, starting with 1661/NQ-UBTVQH15.  This one is relevant to \"tỉnh Điện Biên.\" I scanned through the text, looking for any mention of \"Xã Mường Khong.\"  Bingo! Line 25: It explicitly states that \"Xã Mường Khong\" is being merged with other wards to form \"xã Chiềng Sinh.\"\n\nThen, I double-checked the list of \"New Wards\" I was given. Sure enough, there's a match for \"xã Chiềng Sinh\" with the correct province.\n\nBased on this, it's pretty clear:  \"Xã Mường Khong\" now belongs to \"xã Chiềng Sinh,\" and \"Tỉnh Điện Biên\" remains unchanged.  My confidence is high because there's a direct reference in the resolution.\n\nJust to be thorough, I checked another line in the resolution relating to \"Xã Tuần Giáo.\"  But, it's completely separate from the mapping I'm doing and doesn't affect \"Xã Mường Khong\" in any way.  I can safely ignore that.\n\nSo, the new mapping is straightforward: \"Xã Mường Khong\" -> \"xã Chiềng Sinh,\" and the province remains \"Tỉnh Điện Biên.\"  That's the output I need to generate.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1661/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Điện Biên",
+        "line": "25. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Nà Sáy, Mường Thín, Mường Khong và Chiềng Sinh thành xã mới có tên gọi là xã Chiềng Sinh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Điện Biên",
+      "ward_code": "03283",
+      "ward_name": "Xã Chiềng Sinh"
+    }
+  ]
+}

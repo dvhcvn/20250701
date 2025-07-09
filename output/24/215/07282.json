@@ -1,0 +1,28 @@
+{
+  "address": "Xã Đồng Kỳ, Huyện Yên Thế, Tỉnh Bắc Giang",
+  "ellapsedInMs": 8219,
+  "estimatedCost": 0.0032081999999999996,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm tasked with figuring out how an old Vietnamese address translates to the new administrative units.  The original address is: Xã Đồng Kỳ (Ward), Huyện Yên Thế (District), and Tỉnh Bắc Giang (Province).  My process involves dissecting the relevant resolutions.\n\nFirst, I need to check the province merge resolutions (specifically Resolution 60-NQ/TW). Bắc Giang isn't on the \"no merge\" list, but it *is* on the \"merge\" list. Aha! It's merged with Bắc Ninh to become Bắc Ninh. That simplifies things a bit.  Now, the province is definitely Bắc Ninh.\n\nNext, I dig into the other resolutions, focusing on ones mentioning \"Xã Đồng Kỳ\" or \"Huyện Yên Thế.\" Resolution 1658/NQ-UBTVQH15 (regarding Bắc Ninh) is the key. Line 53 directly addresses \"Xã Đồng Kỳ.\"  It states that the old \"Xã Đồng Kỳ\" is merged with \"Đồng Hưu\" and \"Đồng Vương\" to form a *new* \"Xã Đồng Kỳ.\"  Perfect! This confirms the ward is still called \"Đồng Kỳ\" but it's now part of the new configuration. Line 54 also suggests that the district is now in Bac Ninh.\n\nNow, I cross-reference this information with the \"New wards\" data.  I'm looking for \"Xã Đồng Kỳ\" in \"Tỉnh Bắc Ninh.\"  And there it is: a perfect match!  `{\"ward_code\":\"07282\",\"ward_name\":\"Xã Đồng Kỳ\",\"province_name\":\"Tỉnh Bắc Ninh\"}`.  Therefore, after this resolution, the ward is still called Dong Ky, and the district is still Huyen Yen The, but they are now in Bac Ninh.\n\nSo, based on my analysis, the old address, Xã Đồng Kỳ, Huyện Yên Thế, Tỉnh Bắc Giang, would be mapped to the new administrative unit, Xã Đồng Kỳ (ward_code: 07282), Huyện Yên Thế, Tỉnh Bắc Ninh.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "5. Hợp nhất tỉnh Bắc Ninh và tỉnh Bắc Giang, lấy tên là tỉnh Bắc Ninh"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "07282",
+      "ward_name": "Xã Đồng Kỳ"
+    },
+    {
+      "citation": {
+        "header": "1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh",
+        "line": "53. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đồng Hưu, Đồng Vương và Đồng Kỳ thành xã mới có tên gọi là xã Đồng Kỳ."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "07282",
+      "ward_name": "Xã Đồng Kỳ"
+    }
+  ]
+}

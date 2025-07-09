@@ -1,0 +1,18 @@
+{
+  "address": "Xã Thọ Diên, Huyện Thọ Xuân, Tỉnh Thanh Hóa",
+  "ellapsedInMs": 7450,
+  "estimatedCost": 0.0029427999999999998,
+  "thought": "**Determining the New Ward for the Given Address**\n\nOkay, so I've got \"Xã Thọ Diên, Huyện Thọ Xuân, Tỉnh Thanh Hóa\" to work with. First, the province is \"Tỉnh Thanh Hóa\".  Easy enough, I check the relevant resolutions to see if the province structure has changed. Thankfully, \"60-NQ/TW\" specifically states that \"Tỉnh Thanh Hóa\" is *not* being merged or reorganized at the provincial level. Good.\n\nNow, focusing on the ward \"Xã Thọ Diên\". I need to dig into the resolutions to see what's happening to it.  I'm searching for \"Thọ Diên\" within the relevant documents. Aha! Resolution \"1686/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thanh Hóa\" looks promising. I scan the lines and quickly find the key: Line 55 confirms that \"Thọ Diên\" is being merged. It states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Xuân Hòa (huyện Thọ Xuân), Thọ Hải, Thọ Diên và Xuân Hưng thành xã mới có tên gọi là xã Xuân Hòa.\"\n\nSo, \"Thọ Diên\" is now part of \"Xã Xuân Hòa\". I need to find the specific administrative details for this new ward, which I can readily find.\n\nLet's double check there is nothing else, just to be absolutely certain... Scanning again \"Other resolutions\" for \"Thọ Diên\":\n- \"1686/NQ-UBTVQH15\":\n    - Line 53: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Thọ Xuân và các xã Xuân Hồng, Xuân Trường, Xuân Giang thành xã mới có tên gọi là xã Thọ Xuân.\" (No Thọ Diên)\n    - Line 55: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Xuân Hòa (huyện Thọ Xuân), Thọ Hải, Thọ Diên và Xuân Hưng thành xã mới có tên gọi là xã Xuân Hòa.\" (Yes, Thọ Diên is merged into Xã Xuân Hòa)\n    - Line 59: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Phú Xuân (huyện Thọ Xuân), Quảng Phú và Xuân Tín thành xã mới có tên gọi là xã Xuân Tín.\" (No Thọ Diên)\n\nPerfect. Given the explicit wording of the resolution, I'm highly confident in this mapping. The output JSON will reflect this and the necessary citations from the resolution.  The `ward_code` will be pulled from the established list for \"Xã Xuân Hòa\", which has the code \"15520\". I can now construct the output as per the requirements.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1686/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thanh Hóa",
+        "line": "55. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Xuân Hòa (huyện Thọ Xuân), Thọ Hải, Thọ Diên và Xuân Hưng thành xã mới có tên gọi là xã Xuân Hòa."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thanh Hóa",
+      "ward_code": "15520",
+      "ward_name": "Xã Xuân Hòa"
+    }
+  ]
+}

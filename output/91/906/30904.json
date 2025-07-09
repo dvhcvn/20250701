@@ -1,0 +1,28 @@
+{
+  "address": "Thị Trấn Giồng Riềng, Huyện Giồng Riềng, Tỉnh Kiên Giang",
+  "ellapsedInMs": 8359,
+  "estimatedCost": 0.0031451,
+  "thought": "**Address Mapping Analysis: A Thoughtful Reconstruction**\n\nAlright, I'm tasked with mapping this old Vietnamese address to its current equivalent. Here's how I'm approaching this, step-by-step.\n\nFirst, I identified the components of the old address: \"Thị Trấn Giồng Riềng\" (ward), \"Huyện Giồng Riềng\" (district), and \"Tỉnh Kiên Giang\" (province).\n\nNow, the analysis. I'll begin by looking at the province level.  Based on Resolution 60-NQ/TW, it seems \"Tỉnh Kiên Giang\" isn't listed under \"không thực hiện sáp nhập,\" so I checked the \"mới sau sáp nhập, hợp nhất\" list. And there it is! Item 23 clearly states, *“Hợp nhất tỉnh An Giang và tỉnh Kiên Giang, lấy tên là tỉnh An Giang.”* So, Kiên Giang is now An Giang.  This is a high-confidence change, and I'll remember that.\n\nNext, I looked at Resolution 1654/NQ-UBTVQH15, which is about the rearrangement of administrative units in An Giang – highly relevant here.  My focus now is on the ward.  I scanned the resolution for \"Thị Trấn Giồng Riềng.\"  Bingo! Line 61 states that the \"Thị Trấn Giồng Riềng\" is combined with some other areas to create a new \"Xã Giồng Riềng.\" The district information (\"Huyện Giồng Riềng\") is there, and provides useful context for the ward context, but the problem statement indicates the district is being consolidated so finding the new ward is the most important component.\n\nNow, I cross-reference this with the list of \"New wards.\" I'm looking for \"Xã Giồng Riềng\" specifically in \"Tỉnh An Giang.\"  And there it is: a perfect match!  `{\"ward_code\":\"30904\",\"ward_name\":\"Xã Giồng Riềng\",\"province_name\":\"Tỉnh An Giang\"}`.\n\nTo output the JSON correctly, I know the province change (Kiên Giang -> An Giang) is solid, high-confidence change based on the merger. The ward change (Thị Trấn Giồng Riềng -> Xã Giồng Riềng) is also high confidence because it's directly stated in the resolution. I'll make sure to cite the specific resolution and line.  \n\nI made sure I have all the data I need: the `ward_code`, the `ward_name`, and the `province_name`, as well as the important citation. I then confirmed that the information matches the expected output JSON schema. Everything seems to be in order!\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh An Giang và tỉnh Kiên Giang, lấy tên là tỉnh An Giang"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh An Giang",
+      "ward_code": "30904",
+      "ward_name": "Xã Giồng Riềng"
+    },
+    {
+      "citation": {
+        "header": "1654/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh An Giang",
+        "line": "61. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Giồng Riềng và các xã Bàn Tân Định, Thạnh Hòa, Bàn Thạch, Thạnh Bình thành xã mới có tên gọi là xã Giồng Riềng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh An Giang",
+      "ward_code": "30904",
+      "ward_name": "Xã Giồng Riềng"
+    }
+  ]
+}

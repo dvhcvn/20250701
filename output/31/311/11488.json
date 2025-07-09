@@ -1,0 +1,18 @@
+{
+  "address": "Phường Lưu Kiếm, Thành phố Thuỷ Nguyên, Thành phố Hải Phòng",
+  "ellapsedInMs": 5791,
+  "estimatedCost": 0.0021895,
+  "thought": "**Determining the New Ward for the Given Address**\n\nOkay, so I've got an address: \"Phường Lưu Kiếm, Thành phố Thuỷ Nguyên, Thành phố Hải Phòng.\" My task is to figure out the corresponding new ward, given some resolutions and a list of new wards.\n\nFirst, I need to pinpoint the province. Easy enough, it's \"Thành phố Hải Phòng.\" Now, I'll cross-reference this with any relevant resolutions. I'll quickly check Resolution 60-NQ/TW, first for any non-merger cases, then for merger scenarios. Looks like \"Thành phố Hải Phòng\" isn't listed under non-mergers, but under the mergers, it's formed by combining with \"tỉnh Hải Dương\". Thankfully, this confirms the province name remains \"Thành phố Hải Phòng.\"\n\nNow, the focus shifts to the ward itself, \"Phường Lưu Kiếm.\" I need to find the specific resolution related to ward reorganization. Resolution \"1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng\" seems to be the key here.\n\nLine 6 of that resolution is crucial. It explicitly states that \"phường Lưu Kiếm\" (along with some other units) will form a *new* ward, and that new ward will also be called \"phường Lưu Kiếm\"! This is a clear indicator.\n\nNow I'll cross-reference this with the \"New wards\" list. Bingo! There's a direct match: `{\"ward_code\":\"11488\",\"ward_name\":\"Phường Lưu Kiếm\",\"province_name\":\"Thành phố Hải Phòng\"}`. This is exactly what I'm looking for.\n\nGiven the explicit wording of the resolution, the old \"phường Lưu Kiếm\" directly contributes to the *new* \"phường Lưu Kiếm,\" and this is a direct, uncomplicated mapping, so my confidence in this result is \"high\". I can now confidently output the JSON with the correct new ward information.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "6. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Trần Hưng Đạo (thành phố Thủy Nguyên), phường Lưu Kiếm, một phần diện tích tự nhiên, quy mô dân số của xã Liên Xuân và một phần diện tích tự nhiên của xã Quang Trung (thành phố Thủy Nguyên)thành phường mới có tên gọi là phường Lưu Kiếm."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "11488",
+      "ward_name": "Phường Lưu Kiếm"
+    }
+  ]
+}

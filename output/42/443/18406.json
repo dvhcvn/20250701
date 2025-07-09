@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Nghèn, Huyện Can Lộc, Tỉnh Hà Tĩnh",
+  "ellapsedInMs": 7288,
+  "estimatedCost": 0.0022931,
+  "thought": "**My Analysis of Address Mapping: \"Thị trấn Nghèn, Huyện Can Lộc, Tỉnh Hà Tĩnh\"**\n\nOkay, here's how I'm approaching this address mapping. The user wants me to translate the old address to its new administrative equivalent. First, I need to break down the original address: \"Thị trấn Nghèn, Huyện Can Lộc, Tỉnh Hà Tĩnh\". From this, I've identified the old ward (\"Thị trấn Nghèn\"), the old district (\"Huyện Can Lộc\" - though the user mentioned that districts are eliminated in this process, so I'll keep that in mind as context), and the old province (\"Tỉnh Hà Tĩnh\").\n\nMy next step is to examine the province resolutions – specifically, resolution 60-NQ/TW. This resolution confirms that \"Tỉnh Hà Tĩnh\" is *not* being merged or altered at the province level. That gives me high confidence in retaining \"Tỉnh Hà Tĩnh\" as the province name.\n\nNow, the crucial step. I'm going to delve into the \"Other resolutions\" to find any relevant information about \"Thị trấn Nghèn\" within the context of \"Tỉnh Hà Tĩnh\". Resolution 1665/NQ-UBTVQH15 catches my attention: \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh\". And there it is, line 27: it explicitly states that \"Thị trấn Nghèn\", along with \"xã Thiên Lộc\" and \"xã Vượng Lộc\", are merged to form a new ward called \"**xã Can Lộc**\". Bingo!\n\nTo solidify this mapping, I cross-reference the \"New wards\" data.  I find the entry: `{\"ward_code\":\"18406\",\"ward_name\":\"Xã Can Lộc\",\"province_name\":\"Tỉnh Hà Tĩnh\"}`.  It's a perfect match!  This provides the ward code and confirms the new ward name and province name.\n\nBased on this comprehensive analysis, my confidence in this mapping is very high.  I'll construct the following JSON output:\n\n```json\n{\n  \"province_name\": \"Tỉnh Hà Tĩnh\",\n  \"ward_name\": \"Xã Can Lộc\",\n  \"ward_code\": \"18406\",\n  \"citation\": {\n    \"header\": \"1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh\",\n    \"line\": \"27. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Nghènxã Thiên Lộc và xã Vượng Lộc thành xã mới có tên gọi là xã Can Lộc.\"\n  },\n  \"confidence\": \"high\"\n}\n```\n\nThis reflects the direct mapping provided by resolution 1665/NQ-UBTVQH15.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh",
+        "line": "27. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Nghènxã Thiên Lộc và xã Vượng Lộc thành xã mới có tên gọi là xã Can Lộc."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hà Tĩnh",
+      "ward_code": "18406",
+      "ward_name": "Xã Can Lộc"
+    }
+  ]
+}

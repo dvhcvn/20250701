@@ -1,0 +1,18 @@
+{
+  "address": "Xã Cò  Nòi, Huyện Mai Sơn, Tỉnh Sơn La",
+  "ellapsedInMs": 6249,
+  "estimatedCost": 0.0025195,
+  "thought": "**Mapping \"Xã Cò Nòi\" in Sơn La to a New Administrative Unit**\n\nOkay, so I've got an address to map: \"Xã Cò Nòi, Huyện Mai Sơn, Tỉnh Sơn La\".  First things first, I've got to confirm the province.  I checked `60-NQ/TW` and \"Tỉnh Sơn La\" isn't listed for any mergers, so that stays the same. Easy.\n\nNext, the tricky part:  \"Xã Cò Nòi.\"  I started by looking through the \"Other resolutions\" list.  I skipped over Lào Cai and Nghệ An, but when I hit `1681/NQ-UBTVQH15` for Sơn La, I hit paydirt. Line 43 of that resolution is *very* explicit: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Hát Lót, xã Hát Lót và xã Cò Nòi thành xã mới có tên gọi là **xã Mai Sơn**.\"  Boom. \"Xã Cò Nòi\" becomes part of \"Xã Mai Sơn\".\n\nNow, time to double-check that \"Xã Mai Sơn\" is in the new wards list.  Sure enough, under \"Tỉnh Sơn La,\" I find  `{\"ward_code\":\"04105\",\"ward_name\":\"Xã Mai Sơn\",\"province_name\":\"Tỉnh Sơn La\"}`.  Perfect match.  The `ward_code` is 04105.\n\nSince the resolution is so clear about the merger, my confidence level is high. The citation is going to be `1681/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Sơn La`, specifically line 43. I'm feeling confident about this one.\n\nSo the final output will be:\n\n*   `province_name`: \"Tỉnh Sơn La\"\n*   `ward_name`: \"Xã Mai Sơn\"\n*   `ward_code`: \"04105\"\n*   `confidence`: \"high\"\n*   `citation`: `\"1681/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Sơn La\" (line 43)`\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1681/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Sơn La",
+        "line": "43. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Hát Lót, xã Hát Lót và xã Cò Nòi thành xã mới có tên gọi là xã Mai Sơn."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Sơn La",
+      "ward_code": "04105",
+      "ward_name": "Xã Mai Sơn"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Yên Phú, Huyện Yên Mỹ, Tỉnh Hưng Yên",
+  "ellapsedInMs": 7296,
+  "estimatedCost": 0.0051915,
+  "thought": "**Identifying the New Administrative Unit for \"Xã Yên Phú, Huyện Yên Mỹ, Tỉnh Hưng Yên\"**\n\nOkay, let's break this down. The user's given address is \"Xã Yên Phú, Huyện Yên Mỹ, Tỉnh Hưng Yên\". My task is to determine the new administrative unit, likely a ward, based on recent administrative changes.\n\nFirst, I need to confirm the province.  I'll consult Resolution 60-NQ/TW regarding province mergers. It indicates that Hưng Yên *remains* Hưng Yên after merging with Thái Bình. So the province name stays as \"Tỉnh Hưng Yên\".\n\nNext, I'll search for relevant resolutions specifically concerning \"Tỉnh Hưng Yên\".  I found \"1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên\". This is where the crucial information should reside.\n\nI examined the resolution line by line, focusing on \"Xã Yên Phú\" and \"Huyện Yên Mỹ\". Line 23 is about merging entities into a \"xã Yên Mỹ\", but it doesn't include \"Yên Phú.\" However, line 24 is the key: it explicitly states that \"Xã Yên Phú\", along with \"Thanh Long\" and \"Việt Yên\", will be merged to form a new ward named \"xã Việt Yên.\"  This directly addresses the input address!\n\nThis leads me to \"xã Việt Yên\". Now, I must check the \"New wards\" list for this new ward to get the `ward_code`. I found it: `{\"ward_code\":\"12091\",\"ward_name\":\"Xã Việt Yên\",\"province_name\":\"Tỉnh Hưng Yên\"}`.\n\nI have high confidence in this result because the resolution explicitly states the merger of \"Xã Yên Phú\" into \"xã Việt Yên\". I double-checked the other resolutions, and \"Xã Yên Phú\" is only mentioned in this line of the \"1666/NQ-UBTVQH15\" document.\n\nTherefore, the output will be a JSON array containing the information derived, formatted according to the schema provided.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên",
+        "line": "24. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Yên Phú, Thanh Long và Việt Yên thành xã mới có tên gọi là xã Việt Yên."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "12091",
+      "ward_name": "Xã Việt Yên"
+    }
+  ]
+}

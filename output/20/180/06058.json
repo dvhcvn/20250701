@@ -1,0 +1,18 @@
+{
+  "address": "Xã Quốc Việt, Huyện Tràng Định, Tỉnh Lạng Sơn",
+  "ellapsedInMs": 4972,
+  "estimatedCost": 0.0017517000000000001,
+  "thought": "**Address Mapping Logic: Lạng Sơn Province**\n\nOkay, so I'm looking at this Vietnamese address and need to pinpoint how the old administrative structure relates to the new one. The user wants me to translate \"Tỉnh Lạng Sơn\" and \"Xã Quốc Việt\" into the current system, using the provided data on resolutions and new wards.\n\nFirst, the province is straightforward. \"Tỉnh Lạng Sơn\" is clearly \"Tỉnh Lạng Sơn\". Resolution 60-NQ/TW explicitly states that Lạng Sơn isn't affected by any province-level mergers or changes, so that checks out.\n\nNext, the more interesting bit: \"Xã Quốc Việt.\"  I need to dig into the resolutions to see how it's changed.  Resolution 1672/NQ-UBTVQH15 looks promising.  Bingo! Line 7 details the merging of \"Xã Đào Viên\" and \"Xã Quốc Việt\" to form a *new* \"Xã Quốc Việt.\" That's the key.\n\nNow, I need to confirm the new ward in the \"New wards\" data. I'm looking for a ward named \"Xã Quốc Việt\" in \"Tỉnh Lạng Sơn.\" The data confirms a match with the correct \"ward_code\" and \"ward_name.\"\n\nThe confidence here is high. The resolution directly states the *old* \"Xã Quốc Việt\" is part of the *new* \"Xã Quốc Việt,\" and I've found a matching entry in the \"New wards\" list. It's a clean, direct mapping. I'll just need to construct the JSON output, including the resolution citation, a high confidence level, and the new ward details.  That should be it.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1672/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lạng Sơn",
+        "line": "7. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Đào Viên và xã Quốc Việt thành xã mới có tên gọi là**xã Quốc Việt**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lạng Sơn",
+      "ward_code": "06058",
+      "ward_name": "Xã Quốc Việt"
+    }
+  ]
+}

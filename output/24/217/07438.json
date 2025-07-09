@@ -1,0 +1,18 @@
+{
+  "address": "Xã Thái Đào, Huyện Lạng Giang, Tỉnh Bắc Giang",
+  "ellapsedInMs": 7751,
+  "estimatedCost": 0.0026238,
+  "thought": "**Mapping an Old Address to a New Administrative Unit**\n\nOkay, here's my thought process on this one. The user gave me an old address: \"Xã Thái Đào, Huyện Lạng Giang, Tỉnh Bắc Giang\". The task is to identify the new administrative unit (ward) for that. My approach is methodical:\n\n1.  **Province Identification:** First, I pinpointed the old province: \"Tỉnh Bắc Giang\".\n2.  **Province Merger Check:** I needed to see if this province still exists. I checked resolutions and found \"60-NQ/TW\" which explicitly stated that \"Tỉnh Bắc Giang\" was merged with \"Tỉnh Bắc Ninh\". So, we're now dealing with \"Tỉnh Bắc Ninh\".\n3.  **Ward Identification:** Next, I isolated the old ward: \"Xã Thái Đào\".\n4.  **New Province Ward Resolution Review:** Now, the crucial part: I searched resolutions pertinent to \"Tỉnh Bắc Ninh\" for any ward changes. Resolution \"1658/NQ-UBTVQH15\" seemed relevant.\n5.  **Specific Ward Merger Found:** Line \"49\" of that resolution directly addressed \"Xã Thái Đào\". It stated the merger of \"Xã Thái Đào\" along with \"Xã Tân Dĩnh\" and \"Xã Đại Lâm\" into the new ward, **\"Xã Tân Dĩnh\"**. This is a direct hit!\n6.  **New Ward Data Confirmation:** I cross-referenced this with my \"new wards\" data.  I found a matching entry: `{\"ward_code\":\"07432\",\"ward_name\":\"Xã Tân Dĩnh\",\"province_name\":\"Tỉnh Bắc Ninh\"}`. Perfect match.\n7.  **JSON Output Construction:** Based on this analysis, I will output the following JSON:\n    *   `province_name`: \"Tỉnh Bắc Ninh\" (derived from the province merger).\n    *   `ward_name`: \"Xã Tân Dĩnh\" (as per the merger resolution).\n    *   `ward_code`: \"07432\" (confirmed in new wards data).\n    *   `citation`: with the relevant parts of \"1658/NQ-UBTVQH15\".\n    *   `confidence`: \"high\" – because we have a direct citation, and a clear, unambiguous mapping.\n\nNow, I paused to double-check if \"Xã Lạng Giang\" played a role. I reviewed the resolution again and saw that it was formed from a different set of wards. The crucial point is that \"Xã Thái Đào\" is merged into \"Xã Tân Dĩnh\", so \"Xã Lạng Giang\" is not relevant here. My initial analysis is sound, and \"Xã Tân Dĩnh\" is the correct new ward for the old address.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh",
+        "line": "49. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tân Dĩnh, Thái Đào và Đại Lâm thành xã mới có tên gọi là xã Tân Dĩnh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "07432",
+      "ward_name": "Xã Tân Dĩnh"
+    }
+  ]
+}

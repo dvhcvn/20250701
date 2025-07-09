@@ -1,0 +1,18 @@
+{
+  "address": "Xã Phượng Lâu, Thành phố Việt Trì, Tỉnh Phú Thọ",
+  "ellapsedInMs": 6159,
+  "estimatedCost": 0.0021176,
+  "thought": "**Mapping an Old Vietnamese Address to a New Administrative Unit**\n\nOkay, so I've got this Vietnamese address, \"Xã Phượng Lâu\" in \"Thành phố Việt Trì,\" Phú Thọ province, and I need to map it to its new administrative unit. My process is pretty straightforward. First, I identify the components of the old address: ward, district, and province. It looks like \"Xã Phượng Lâu,\" Thành phố Việt Trì (though the prompt mentioned eliminating districts, that's just part of the old address format) in Phú Thọ province.\n\nNext, I need to consult the resolutions. My instinct is to check for province-level changes first, looking at 60-NQ/TW. I scan the lists for \"Tỉnh Phú Thọ.\"  It's not in the list of provinces *not* undergoing changes, but it *is* in the list of those *changing*. I see entry 4: \"Hợp nhất tỉnh Vĩnh Phúc, tỉnh Phú Thọ và tỉnh Hoà Bình; lấy tên là tỉnh Phú Thọ.\"  This tells me Phú Thọ remains Phú Thọ, but it now encompasses Vĩnh Phúc and Hòa Bình. That confirms the province.\n\nNow for the crucial part: the ward mapping.  I move on to 1676/NQ-UBTVQH15 and search for \"Xã Phượng Lâu\". Bingo! Line 135 nails it: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Vân Phú và các xã Phượng Lâu, Hùng Lô, Kim Đức thành phường mới có tên gọi là **phường Vân Phú**.\"  It clearly states that \"Xã Phượng Lâu\" is *merged* into the new \"Phường Vân Phú.\"\n\nFinally, I cross-reference this with the \"New Wards\" data.  I search for \"phường Vân Phú,\" and there it is: `{\"ward_code\":\"07918\",\"ward_name\":\"Phường Vân Phú\",\"province_name\":\"Tỉnh Phú Thọ\"}`. Perfect match! It confirms the ward code, name, and province.\n\nSo, the old \"Xã Phượng Lâu\" maps directly to the new \"Phường Vân Phú,\" code 07918. The province remains \"Tỉnh Phú Thọ.\" This is a high-confidence mapping because the resolution explicitly addresses this specific ward, and the data aligns perfectly.  I'll assemble the JSON output with a confidence level of \"high\" because of the clarity in the resolution.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "135. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Vân Phú và các xã Phượng Lâu, Hùng Lô, Kim Đức thành phường mới có tên gọi là phường Vân Phú."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "07918",
+      "ward_name": "Phường Vân Phú"
+    }
+  ]
+}

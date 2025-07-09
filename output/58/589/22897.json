@@ -1,0 +1,18 @@
+{
+  "address": "Xã Phước Nam, Huyện Thuận Nam, Tỉnh Ninh Thuận",
+  "ellapsedInMs": 7962,
+  "estimatedCost": 0.0030583,
+  "thought": "**Mapping Vietnamese Addresses - My Analysis**\n\nOkay, so I'm presented with an old Vietnamese address and the goal is to map it to the current administrative structure. First things first: the province is \"Tỉnh Ninh Thuận.\" A quick check of the relevant resolutions reveals that \"Tỉnh Ninh Thuận\" no longer exists as an independent entity. Resolution 60-NQ/TW shows that it was merged with \"Tỉnh Khánh Hoà,\" so that's the new province.\n\nNow, let's look at the ward: \"Xã Phước Nam.\" I need to find its current counterpart. Resolution 1667/NQ-UBTVQH15, concerning administrative adjustments in \"Tỉnh Khánh Hòa,\" is the key.  And there it is!  It explicitly states that \"Xã Phước Nam\" was *merged* with other wards to form a new ward called \"**Xã Thuận Nam**.\"  Since \"Tỉnh Ninh Thuận\" is now part of \"Tỉnh Khánh Hòa,\" this resolution directly applies.\n\nNext, I cross-reference this with the list of current wards.  The entry: `{\"ward_code\":\"22897\",\"ward_name\":\"Xã Thuận Nam\",\"province_name\":\"Tỉnh Khánh Hòa\"}` confirms the mapping. I also checked for other potential matches or similar names, just to be thorough, but nothing else seems relevant in this context.\n\nBased on the evidence, I'm highly confident in this mapping. The old province was merged, and the old ward is explicitly mentioned in a resolution that defines the new ward.  The resolution is crystal clear: \"Xã Phước Nam\" becomes \"Xã Thuận Nam\". And the \"New wards\" information corroborates this.  The only mapping in this case is: \"Xã Phước Nam\" becomes \"Xã Thuận Nam\".\n\nHere's the JSON output:\n\n```json\n{\n  \"province_name\": \"Tỉnh Khánh Hoà\",\n  \"ward_name\": \"Xã Thuận Nam\",\n  \"ward_code\": \"22897\",\n  \"confidence\": \"high\",\n  \"citation\": {\n    \"header\": \"1667/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Khánh Hòa\",\n    \"line\": \"33. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Phước Nam, Phước Ninh và Phước Minh thành xã mới có tên gọi là **xã Thuận Nam**.\"\n  }\n}\n```\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1667/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Khánh Hòa",
+        "line": "33. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Phước Nam, Phước Ninh và Phước Minh thành xã mới có tên gọi là xã Thuận Nam."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Khánh Hoà",
+      "ward_code": "22897",
+      "ward_name": "Xã Thuận Nam"
+    }
+  ]
+}

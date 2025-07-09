@@ -1,0 +1,28 @@
+{
+  "address": "Thị trấn Phú Thịnh, Huyện Phú Ninh, Tỉnh Quảng Nam",
+  "ellapsedInMs": 8364,
+  "estimatedCost": 0.0036826000000000003,
+  "thought": "**Determining the New Ward for the Given Address**\n\nOkay, so I've got to figure out the new administrative unit (ward) for the old address \"Thị trấn Phú Thịnh, Huyện Phú Ninh, Tỉnh Quảng Nam.\"  My first step is to break down the old address: \"Thị trấn Phú Thịnh\" is the ward, and \"Tỉnh Quảng Nam\" is the province.  I know I need to check these resolutions against my new ward data.\n\nFirst, I quickly review the province resolutions. Ah, resolution 60-NQ/TW states that \"Tỉnh Quảng Nam\" merged into \"Thành phố Đà Nẵng\". That's crucial.  The `province_name` field in the final output must reflect this change.\n\nNow, I'm carefully going through the other resolutions, focusing on anything related to \"Phú Thịnh\" within the context of Quảng Nam *or* Đà Nẵng. I've got a list of resolutions to check.\n\nResolution 1656/NQ-UBTVQH15, concerning Hanoi, mentions \"Phường Phú Thịnh,\" but that's in a completely different city, so I can disregard it.\n\nNext, Resolution 1659/NQ-UBTVQH15 catches my attention immediately.  It's about Đà Nẵng, which is now relevant because of the Quảng Nam merge.  And look at this: it specifically mentions \"thị trấn Phú Thịnh\" in the context of Đà Nẵng! The resolution states that \"thị trấn Phú Thịnh\" is now part of the new \"xã Chiên Đàn\". The old address is \"Thị trấn Phú Thịnh, Huyện Phú Ninh, Tỉnh Quảng Nam\". This seems to be a very strong candidate. I double-checked the new ward list and found a matching entry: `{\"ward_code\":\"20364\",\"ward_name\":\"Xã Chiên Đàn\",\"province_name\":\"Thành phố Đà Nẵng\"}`. Bingo!\n\nThere's another resolution (34.) mentioning \"xã Phú Ninh\" as a new ward, but the old address had a \"Huyện Phú Ninh\". This resolution seems to be changing wards, not merging districts. So it's not a match.\n\nFinally, Resolutions 1662/NQ-UBTVQH15 for Đồng Nai also mention \"Phú Thịnh,\" but these are in Đồng Nai, not Quảng Nam or Đà Nẵng, so they are irrelevant.\n\nSo, based on my analysis, \"Thị trấn Phú Thịnh, Huyện Phú Ninh, Tỉnh Quảng Nam\" is now \"Xã Chiên Đàn\" in \"Thành phố Đà Nẵng\". The data perfectly aligns.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Quảng Nam và thành phố Đà Nẵng, lấy tên là thành phố Đà Nẵng"
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "20364",
+      "ward_name": "Xã Chiên Đàn"
+    },
+    {
+      "citation": {
+        "header": "1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng",
+        "line": "33. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Phú Thịnh, xã Tam Đàn và xã Tam Thái thành xã mới có tên gọi là **xã Chiên Đàn**."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "20364",
+      "ward_name": "Xã Chiên Đàn"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Gia Khánh, Huyện Bình Xuyên, Tỉnh Vĩnh Phúc",
+  "ellapsedInMs": 7353,
+  "estimatedCost": 0.002831,
+  "thought": "**Identifying the New Administrative Unit for \"Thị trấn Gia Khánh, Huyện Bình Xuyên, Tỉnh Vĩnh Phúc\"**\n\nOkay, let's break this down. The user's asking about \"Thị trấn Gia Khánh\" in Vĩnh Phúc province. First, I need to account for the province change since the prompt mentions eliminating districts.\n\n*   **Province Merge:** I immediately checked `60-NQ/TW` and confirmed that \"Tỉnh Vĩnh Phúc\" is now part of \"Tỉnh Phú Thọ.\" This is a high-confidence change. The old district information might be helpful for tracing, but isn't the primary focus.\n\n*   **Ward Resolutions:** I then looked through the \"Other resolutions\" data, focusing on mentions of \"Thị trấn Gia Khánh.\" I quickly found `1676/NQ-UBTVQH15`, which is for Phú Thọ, which is consistent with the province change.\n\n    *   This resolution, specifically line 88, states that \"Thị trấn Gia Khánh,\" \"xã Hương Sơn,\" and \"xã Thiện Kế\" *are merged to form a new commune called \"xã Bình Xuyên.\"* Bingo! That's exactly what I'm looking for. This resolution is for the correct new province.\n\n*   **Verification:** To be absolutely certain, I checked the `New wards` data, searching for \"xã Bình Xuyên.\" Sure enough, it's there:  `{\"ward_code\":\"08950\",\"ward_name\":\"Xã Bình Xuyên\",\"province_name\":\"Tỉnh Phú Thọ\"}`. This confirms the new ward name and the new province association.\n\n*   **Schema & Confidence:** My output will be based on:\n    *   The old province \"Tỉnh Vĩnh Phúc\" is now part of \"Tỉnh Phú Thọ.\"\n    *   \"Thị trấn Gia Khánh\" merged with \"xã Hương Sơn\" and \"xã Thiện Kế\" to form \"xã Bình Xuyên.\"\n    *   The new \"xã Bình Xuyên\" is located in \"Tỉnh Phú Thọ.\"\n    *   The confidence level is high because there's a direct match in the resolution and confirmation of the new ward in the appropriate province. I believe this analysis is complete and accurate.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "88. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Gia Khánh, xã Hương Sơn và xã Thiện Kế thành xã mới có tên gọi là xã Bình Xuyên."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "08950",
+      "ward_name": "Xã Bình Xuyên"
+    }
+  ]
+}

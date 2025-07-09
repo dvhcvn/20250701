@@ -1,0 +1,18 @@
+{
+  "address": "Xã Văn Nho, Huyện Bá Thước, Tỉnh Thanh Hóa",
+  "ellapsedInMs": 5780,
+  "estimatedCost": 0.0020016,
+  "thought": "**Determining the New Ward for the Given Address**\n\nOkay, so I've got this old address: \"Xã Văn Nho, Huyện Bá Thước, Tỉnh Thanh Hóa.\" My goal is to figure out the new administrative unit, the ward, that corresponds to it. Let's see how I'd approach this.\n\nFirst, I need to establish the province. It's \"Tỉnh Thanh Hóa.\"  Quick check against `60-NQ/TW` to see if there have been any province mergers. Nope, \"Tỉnh Thanh Hoá\" is listed as a non-merged province. Good. It's consistent.\n\nNow, let's focus on the ward itself: \"Xã Văn Nho.\"  I need to dig into the resolutions to find the changes.  `1686/NQ-UBTVQH15` seems relevant for Thanh Hóa. Bingo! Line 87 is the key: it talks specifically about \"Xã Văn Nho.\"  It clearly states that the old \"Xã Văn Nho\", along with \"Xã Kỳ Tân\", has been reorganized into a *new* \"Xã Văn Nho\". The name stays the same, but the composition changes.\n\nOkay, let's check the list of new wards now.  I'll search for \"Xã Văn Nho\" within \"Tỉnh Thanh Hóa.\"  There it is!  I found a match: `{\"ward_code\":\"14974\",\"ward_name\":\"Xã Văn Nho\",\"province_name\":\"Tỉnh Thanh Hóa\"}`. Perfect.\n\nConfidence is high here. The resolution directly links the old \"Xã Văn Nho\" to the new \"Xã Văn Nho\". The province is unchanged. The new ward list confirms the existence of the new ward, complete with a unique code. This is a solid, straightforward transformation. So, the new ward is \"Xã Văn Nho.\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1686/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thanh Hóa",
+        "line": "87. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Kỳ Tân và xã Văn Nho thành xã mới có tên gọi là xã Văn Nho."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thanh Hóa",
+      "ward_code": "14974",
+      "ward_name": "Xã Văn Nho"
+    }
+  ]
+}

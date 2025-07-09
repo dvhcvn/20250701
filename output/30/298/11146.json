@@ -1,0 +1,28 @@
+{
+  "address": "Xã Nguyên Giáp, Huyện Tứ Kỳ, Tỉnh Hải Dương",
+  "ellapsedInMs": 6341,
+  "estimatedCost": 0.0024567,
+  "thought": "**Address Mapping - Hải Dương to Hải Phòng**\n\nOkay, so I've got this Vietnamese address \"Tỉnh Hải Dương - Xã Nguyên Giáp\" and I need to figure out where it is now.  Sounds straightforward enough. Let's break it down.\n\nFirst, **Tỉnh Hải Dương**.  Easy peasy. I know about resolution 60-NQ/TW, the one about province mergers.  Boom!  That old \"Tỉnh Hải Dương\" is now part of \"Thành phố Hải Phòng\".  So, that's step one done.\n\nNext, **Xã Nguyên Giáp**.  Right, time to dig into the resolutions.  I'm looking for resolution 1669/NQ-UBTVQH15, because that's usually where the ward-level changes are outlined.  I'm scanning the `lines` and... bingo! Line 98 jumps out at me:  \"Sắp xếp toàn bộ... xã Nguyên Giáp... thành xã mới có tên gọi là **xã Nguyên Giáp**.\"\n\nNow, this is key. It's explicitly *the same name*!  \"Xã Nguyên Giáp\" (old) is part of the *new* \"Xã Nguyên Giáp\".  This suggests a direct continuation of the ward, although its exact boundaries might have shifted because of the mergers with Hà Kỳ, Hà Thanh, and a portion of Tiên Động.\n\nJust to be absolutely sure, I'm checking the new wards list.  I'm looking for \"Xã Nguyên Giáp\" within \"Thành phố Hải Phòng\".  And there it is! `{\"ward_code\":\"11146\",\"ward_name\":\"Xã Nguyên Giáp\",\"province_name\":\"Thành phố Hải Phòng\"}`.  Perfect.\n\nOkay, let's assess the confidence here.  We've got a solid match.  The province change is clear from 60-NQ/TW.  The ward name being explicitly retained in 1669/NQ-UBTVQH15 as *the* new name gives me a very high confidence level.  And the new wards list confirms everything.\n\nNow, all that's left is to construct the JSON output.  Done!\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Hải Dương và thành phố Hải Phòng, lấy tên là thành phố Hải Phòng"
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "11146",
+      "ward_name": "Xã Nguyên Giáp"
+    },
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "98. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Hà Kỳ, Nguyên Giáp, Hà Thanh và phần còn lại của xã Tiên Động sau khi sắp xếp theo quy định tại khoản 97 Điều này thành xã mới có tên gọi là xã Nguyên Giáp."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "11146",
+      "ward_name": "Xã Nguyên Giáp"
+    }
+  ]
+}

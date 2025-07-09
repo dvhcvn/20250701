@@ -1,0 +1,18 @@
+{
+  "address": "Xã Cư KBang, Huyện Ea Súp, Tỉnh Đắk Lắk",
+  "ellapsedInMs": 6181,
+  "estimatedCost": 0.0023082,
+  "thought": "**Analyzing and Mapping the Vietnamese Address**\n\nOkay, so I'm presented with a Vietnamese address: \"Xã Cư KBang, Huyện Ea Súp, Tỉnh Đắk Lắk\" and tasked with finding its new administrative equivalent. The user wants to eliminate all mention of districts, so that's the first thing to bear in mind.\n\nFirst, I need to break down the old address. I quickly identify the key components: Xã Cư KBang (Ward), Huyện Ea Súp (District - which will be discarded, but useful for context), and Tỉnh Đắk Lắk (Province).\n\nMy immediate thought is to check the province resolutions. I need to see if there's been any significant change to Đắk Lắk itself. Looking through the province resolutions, I find resolution 60-NQ/TW. This one confirms that Đắk Lắk is *still* Đắk Lắk, though it absorbed Phú Yên in the process. This means the province name isn't changing.\n\nNext, I shift focus to the \"Other resolutions,\" specifically 1660/NQ-UBTVQH15. I zero in on \"Xã Cư KBang\" and quickly find a crucial line in the document. Line 4 states that \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Ia Jlơi, Cư Kbang và Ea Rốk thành xã mới có tên gọi là **xã Ea Rốk**.\" Bingo! The old ward, Cư KBang, is being merged into the new ward, Ea Rốk.\n\nNow, I cross-reference this with the list of \"New wards.\" I'm looking for \"Xã Ea Rốk\" in Tỉnh Đắk Lắk. And there it is! I find the corresponding information:  `{\"ward_code\":\"24217\",\"ward_name\":\"Xã Ea Rốk\",\"province_name\":\"Tỉnh Đắk Lắk\"}`.\n\nWith all the pieces in place, I can confidently construct the JSON output:\n\n*   The citation information comes directly from the resolution.\n*   The \"confidence\" is high because this is a direct, explicit mapping.\n*   The `province_name` and `ward_code/ward_name` are pulled from the \"New Wards\" data, confirming the new address.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1660/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đắk Lắk",
+        "line": "4. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Ia Jlơi, Cư Kbang và Ea Rốk thành xã mới có tên gọi là xã Ea Rốk."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đắk Lắk",
+      "ward_code": "24217",
+      "ward_name": "Xã Ea Rốk"
+    }
+  ]
+}

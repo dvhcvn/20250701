@@ -1,0 +1,18 @@
+{
+  "address": "Xã Lai Hưng, Huyện Bàu Bàng, Tỉnh Bình Dương",
+  "ellapsedInMs": 6420,
+  "estimatedCost": 0.0025751,
+  "thought": "**Reconciling Old Administrative Units with New Data**\n\nOkay, so I've got an old address to work with: \"Xã Lai Hưng, Huyện Bàu Bàng, Tỉnh Bình Dương.\" The user wants me to map this to the current administrative structure.\n\nFirst, I identified the old province, \"Tỉnh Bình Dương.\" Based on resolution 60-NQ/TW, Bình Dương was part of a merger to create Thành phố Hồ Chí Minh, so that's the new province.\n\nNow for the ward. The key is \"Xã Lai Hưng.\"  I immediately turned to resolution 1685/NQ-UBTVQH15. Line 95 explicitly states that \"Xã Lai Hưng\" *and* \"xã Tân Hưng\" were consolidated into the new \"Phường Bến Cát.\"  Perfect!  This is a direct mapping.\n\nNext, I verified this using the new wards data.  I was able to locate \"Phường Bến Cát\" with the correct `province_name`, which is \"Thành phố Hồ Chí Minh,\" confirming the province mapping. I also checked for \"Xã Lai Hưng\" in the new wards data but found it doesn't exist. This is expected since the resolution clearly describes its merger. There is also a \"Phường Tân Hưng\" in the new wards data, but since the resolution only mentions the *old* \"xã Tân Hưng\" being part of the merge, the \"Phường Tân Hưng\" is unrelated.\n\nTherefore, my conclusion is clear:  \"Xã Lai Hưng, Huyện Bàu Bàng, Tỉnh Bình Dương\" is now part of \"Phường Bến Cát,\" which is located in \"Thành phố Hồ Chí Minh.\" I'm very confident in this answer given the direct language and mapping within the resolution, and it's backed up by the provided data.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1685/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của Thành phố Hồ Chí Minh",
+        "line": "95. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Tân Hưng (huyện Bàu Bàng), xã Lai Hưng và phần còn lại của phường Mỹ Phước sau khi sắp xếp theo quy định tại khoản 94 Điều này thành phường mới có tên gọi là phường Bến Cát."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hồ Chí Minh",
+      "ward_code": "25813",
+      "ward_name": "Phường Bến Cát"
+    }
+  ]
+}

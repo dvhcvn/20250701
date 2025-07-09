@@ -1,0 +1,18 @@
+{
+  "address": "Xã Liêm Sơn, Huyện Thanh Liêm, Tỉnh Hà Nam",
+  "ellapsedInMs": 9766,
+  "estimatedCost": 0.0028454,
+  "thought": "**My Analysis of Address Mapping for \"Xã Liêm Sơn, Huyện Thanh Liêm, Tỉnh Hà Nam\"**\n\nOkay, so I've been tasked with mapping this old address to its current administrative units. The key here is to leverage the provided resolutions and new ward data to perform this transformation.\n\nFirst, I identified the original province and ward: \"Tỉnh Hà Nam\" and \"Xã Liêm Sơn,\" respectively. Straight away, I know I'll be dealing with potential changes due to the province merger.\n\nI started by consulting Resolution 60-NQ/TW, which outlined the mergers and consolidations.  I found that \"Tỉnh Hà Nam\" was, indeed, merged into \"Tỉnh Ninh Bình.\" That's the first critical piece.  High confidence in this finding, as it's a direct statement in a major resolution.\n\nNext, I delved into the other relevant resolutions, specifically looking for any mentions of \"Xã Liêm Sơn.\"  And Bingo! Resolution 1674/NQ-UBTVQH15, concerning the restructuring of wards within \"Tỉnh Ninh Bình,\" explicitly stated that \"Xã Liêm Sơn\" was being combined with other wards to form a new ward called \"**xã Thanh Bình**.\"  This is exactly what I was looking for.\n\nThis resolution confirms the province name alignment as it is under \"Tỉnh Ninh Bình\".  I'm increasingly confident in this mapping.\n\nNow, I needed to locate the corresponding \"ward_code\" and confirm the \"province_name\" from the \"New wards\" data.  The match was clear: \"Xã Thanh Bình\" in the resolutions corresponded to the record with the matching `{\"ward_code\":\"13483\",\"ward_name\":\"Xã Thanh Bình\",\"province_name\":\"Tỉnh Ninh Bình\"}`. This final piece confirmed the province name.\n\nGiven the explicit nature of the resolutions and the clear mapping from old to new units, I'd rate this a high confidence mapping.\n\nTherefore, my final JSON output would be structured with these details, with the primary citation referencing the key resolution that mentioned the original address, `1674/NQ-UBTVQH15`.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "8. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Liêm Sơn, Liêm Thuận và Liêm Túc thành xã mới có tên gọi là xã Thanh Bình."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "13483",
+      "ward_name": "Xã Thanh Bình"
+    }
+  ]
+}

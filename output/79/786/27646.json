@@ -1,0 +1,18 @@
+{
+  "address": "Xã Phước Kiển, Huyện Nhà Bè, Thành phố Hồ Chí Minh",
+  "ellapsedInMs": 8508,
+  "estimatedCost": 0.0027039,
+  "thought": "**Analysis of Administrative Unit Mapping**\n\nOkay, so I'm tasked with mapping an old address to a new administrative unit. My initial understanding is: I need to take an old address, break it down into its components (ward, district, province), and then use resolutions and the list of new wards to figure out the corresponding new information.  This seems straightforward enough, but I'll need to be meticulous.\n\nFirst, the input address gives me: \"Xã Phước Kiển\" (old ward), \"Huyện Nhà Bè\" (old district), and \"Thành phố Hồ Chí Minh\" (old province).  Got it.\n\nNow, I'll consult the resolutions. I know \"60-NQ/TW\" is a key starting point for province-level changes. I immediately checked for \"Thành phố Hồ Chí Minh\" in the \"no merger\" section, but it wasn't there. That raised a flag. I carefully re-read and found the crucial part: while \"Hà Nội\" is explicitly not merging, HCM wasn't listed, BUT it *was* listed in a section regarding new provinces AFTER mergers. It says \"Hợp nhất tỉnh Bà Rịa - Vũng Tàu, tỉnh Bình Dương và Thành phố Hồ Chí Minh; lấy tên là Thành phố Hồ Chí Minh.\" So, they merged, but the name stayed the same. Good to know - this tells me the `province_name` remains \"Thành phố Hồ Chí Minh\".\n\nNext, I need to focus on \"Xã Phước Kiển\". I know the relevant resolution for ward-level changes in Ho Chi Minh City is \"1685/NQ-UBTVQH15\". Line 134 specifically addresses this. Bingo! It states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Nhà Bè và các xã Phú Xuân, Phước Kiển, Phước Lộc thành xã mới có tên gọi là **xã Nhà Bè**.\"  That's my key! \"Xã Phước Kiển\" is being merged into \"Xã Nhà Bè\".\n\nNow I look at the `New wards` list and compare:\n*   Phường An Phú: No\n*   Xã Nhà Bè: Yes!  Province name matches and the ward name also matches.  Perfect.\n\nI feel confident in my analysis. I'll construct the output JSON like this:\n\n*   The citation information comes directly from the crucial resolution \"1685/NQ-UBTVQH15\" and the very specific line 134.\n*   The `confidence` should be \"high\" because the resolution provides a direct mapping.\n*   The `province_name` is \"Thành phố Hồ Chí Minh,\" confirmed by both the province resolution and the new ward data.\n*   The `ward_code` and `ward_name` are taken from the matching new ward data, with the code \"27655\" and the name \"Xã Nhà Bè.\"\n\nThis is a clean and solid mapping. I'm ready to move on.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1685/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của Thành phố Hồ Chí Minh",
+        "line": "134. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Nhà Bè và các xã Phú Xuân, Phước Kiển, Phước Lộc thành xã mới có tên gọi là xã Nhà Bè."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hồ Chí Minh",
+      "ward_code": "27655",
+      "ward_name": "Xã Nhà Bè"
+    }
+  ]
+}

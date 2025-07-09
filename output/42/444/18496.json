@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Hương Khê, Huyện Hương Khê, Tỉnh Hà Tĩnh",
+  "ellapsedInMs": 5562,
+  "estimatedCost": 0.0018313,
+  "thought": "**Mapping the Old to the New: A Step-by-Step Analysis**\n\nOkay, here's what I'm thinking as I tackle this address mapping problem. The user wants to translate an old address to a new administrative unit, and I need to figure out the right output.\n\nFirst, I need to pinpoint the key pieces of information: the old ward, \"Thị trấn Hương Khê,\" and the old province, \"Tỉnh Hà Tĩnh.\" With these in hand, my initial step is to check if \"Tỉnh Hà Tĩnh\" has been involved in any province-level mergers or changes. My quick scan of the provided resolutions reveals that \"Tỉnh Hà Tĩnh\" remains untouched, as confirmed by resolution \"60-NQ/TW.\"\n\nNext, I shift my focus to the ward itself, \"Thị trấn Hương Khê.\" I begin to review the relevant resolutions to see if I can find any specifics on this ward. After an examination, I found the resolution \"1665/NQ-UBTVQH15,\" which is directly relevant to this case. After digging deeper, I found that \"Thị trấn Hương Khê\" is part of the merged unit that forms \"Xã Hương Khê.\"\n\nNow, it's time to confirm this match with the new ward data. I search for \"Xã Hương Khê\" within the `New wards` data, making sure the `province_name` aligns with \"Tỉnh Hà Tĩnh.\" Thankfully, I find a perfect match: a record with the correct ward name, code (\"18496\"), and matching province name.\n\nHaving established a solid connection between the old ward and the new, I can construct the JSON output. I'll include the relevant citation from the resolution, indicating a high confidence level due to the direct match. The `province_name` will remain \"Tỉnh Hà Tĩnh,\" and the `ward_code` and `ward_name` will be derived from the identified new ward data.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh",
+        "line": "52. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Hương Khê, xã Hương Long vàxã Phú Gia thành xã mới có tên gọi là xã Hương Khê."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hà Tĩnh",
+      "ward_code": "18496",
+      "ward_name": "Xã Hương Khê"
+    }
+  ]
+}

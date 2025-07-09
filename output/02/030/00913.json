@@ -1,0 +1,28 @@
+{
+  "address": "Thị trấn Vị Xuyên, Huyện Vị Xuyên, Tỉnh Hà Giang",
+  "ellapsedInMs": 7760,
+  "estimatedCost": 0.0028805,
+  "thought": "**My Mapping Strategy for the Vietnamese Address**\n\nOkay, so I'm tackling this Vietnamese address mapping task. I've got to transform an old address (\"Thị trấn Vị Xuyên\", \"Huyện Vị Xuyên\", \"Tỉnh Hà Giang\") into its new administrative structure, based on resolutions and new ward data. Here's how I'm thinking about it:\n\nFirst, I need to parse the input address to grab the old ward, district, and province. Easy enough. Next, I'll check for any province mergers. Given the province is \"Hà Giang,\" I immediately think of the potential merger with Tuyên Quang, as outlined in resolution 60-NQ/TW. Bingo! That confirms \"Hà Giang\" becomes \"Tuyên Quang.\"\n\nNow, for the tricky part: the ward mapping.  I'll start by searching for \"Thị trấn Vị Xuyên\" within the provided resolutions, specifically 1674/NQ-UBTVQH15 and 1684/NQ-UBTVQH15. Resolution 1684/NQ-UBTVQH15 seems promising, particularly section 76. It explicitly states that \"Thị trấn Vị Xuyên\" (along with other entities) will become \"Xã Vị Xuyên.\" This is the key piece of information.\n\nNext, I'll cross-reference this with the \"New wards\" data to confirm the new ward details for \"Xã Vị Xuyên,\" which, thankfully, matches the new province, \"Tỉnh Tuyên Quang.\"\n\nThe resolution also mentions \"Xã Việt Lâm\" contributing to the new \"Xã Vị Xuyên,\" which requires some additional parsing. It's a key detail to note, because the original address is \"Thị trấn Vị Xuyên.\" I also checked the New Wards to confirm \"Xã Việt Lâm\" still exists.\n\nSince the resolution is so explicit about \"Thị trấn Vị Xuyên\" becoming part of \"Xã Vị Xuyên,\" and the data aligns, I'm feeling very confident about this mapping. The \"Xã Việt Lâm\" detail will be noted for context.\n\nFinally, I'll package up this information into the correct JSON format and consider the task complete.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Tuyên Quang và tỉnh Hà Giang, lấy tên là tỉnh Tuyên Quang"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "00913",
+      "ward_name": "Xã Vị Xuyên"
+    },
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "76. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Vị Xuyên, thị trấn Nông trường Việt Lâm, xã Đạo Đức và một phần diện tích tự nhiên, quy mô dân số của xã Việt Lâmthành xã mới có tên gọi là xã Vị Xuyên."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "00913",
+      "ward_name": "Xã Vị Xuyên"
+    }
+  ]
+}

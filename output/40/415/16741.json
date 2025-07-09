@@ -1,0 +1,28 @@
+{
+  "address": "Xã Thông Thụ, Huyện Quế Phong, Tỉnh Nghệ An",
+  "ellapsedInMs": 8895,
+  "estimatedCost": 0.0031781000000000005,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm tasked with figuring out the new administrative location for an old Vietnamese address. It's: \"Xã Thông Thụ, Huyện Quế Phong, Tỉnh Nghệ An\". My first step is to break down this address into its components: ward, district, and province.\n\nThe province, \"Tỉnh Nghệ An\", is straightforward. Resolution 60-NQ/TW explicitly states that \"Tỉnh Nghệ An\" remains unchanged. Good. That's one part locked down.\n\nNext, I need to check how the district and ward have been affected. I'm going through resolutions, specifically 1659/NQ-UBTVQH15 and 1678/NQ-UBTVQH15, looking for any information on \"Xã Thông Thụ\" or \"Huyện Quế Phong\".\n\n1659/NQ-UBTVQH15, concerning Đà Nẵng, is a dead end. Not relevant to Nghệ An.\n\nNow, 1678/NQ-UBTVQH15, that's where things get interesting. Line 57 mentions \"xã Quế Phong\", but it's *created* from a collection of other wards, not including \"Xã Thông Thụ.\"  It's also creating a *ward* named \"Quế Phong\" not a district. However, line 58 is key: it directly addresses \"Xã Thông Thụ\" and says that it is merged with \"xã Đồng Văn (huyện Quế Phong)\" to form a *new* ward also named \"xã Thông Thụ\". This clearly tells me that the \"Huyện Quế Phong\" district is being eliminated, and the old \"Xã Thông Thụ\" is being reshaped into the new \"Xã Thông Thụ\".\n\nTherefore, I need to confirm the new ward in the provided list. Lo and behold, there's a match: `{\"ward_code\":\"16744\",\"ward_name\":\"Xã Thông Thụ\",\"province_name\":\"Tỉnh Nghệ An\"}`. Bingo!\n\nSo, considering \"Tỉnh Nghệ An\" remains unchanged and \"Xã Thông Thụ\" (from Huyện Quế Phong) is explicitly mentioned in Resolution 1678/NQ-UBTVQH15 as being part of the *new* \"Xã Thông Thụ,\" I'm confident in my mapping. The new address is straightforward, it's just the new ward \"Xã Thông Thụ\" within the unaltered \"Tỉnh Nghệ An\". It's important to clarify that \"Huyện Quế Phong\" is no longer a district, but a *ward* under a different reorganization.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh không thực hiện sáp nhập",
+        "line": "9. Tỉnh Nghệ An"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Nghệ An",
+      "ward_code": "16744",
+      "ward_name": "Xã Thông Thụ"
+    },
+    {
+      "citation": {
+        "header": "1678/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Nghệ An",
+        "line": "58. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Đồng Văn (huyện Quế Phong) và xã Thông Thụ thành xã mới có tên gọi là xã Thông Thụ."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Nghệ An",
+      "ward_code": "16744",
+      "ward_name": "Xã Thông Thụ"
+    }
+  ]
+}

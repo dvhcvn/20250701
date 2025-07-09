@@ -1,0 +1,28 @@
+{
+  "address": "Phường Văn Đẩu, Quận Kiến An, Thành phố Hải Phòng",
+  "ellapsedInMs": 7121,
+  "estimatedCost": 0.0028263000000000003,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm presented with a Vietnamese address: \"Phường Văn Đẩu, Quận Kiến An, Thành phố Hải Phòng\" and I need to figure out its corresponding new administrative units. Here's how I'm approaching this, step by step:\n\nFirst things first, I'm identifying the key components of the address. It's clear that \"Phường Văn Đẩu\" is the old ward and \"Thành phố Hải Phòng\" is the old province.\n\nNow, I'm diving into the resolutions. My initial check with the province-level resolution (60-NQ/TW) tells me that \"Thành phố Hải Phòng\" remains unchanged, which is helpful.\n\nNext, I'm meticulously examining other relevant resolutions, specifically 1669/NQ-UBTVQH15, to pinpoint any mentions of \"Phường Văn Đẩu\". Bingo! Line 16 of the resolution specifies that \"Phường Văn Đẩu\" contributed to the creation of the new \"Phường Kiến An\". It goes on further to say in Line 17 that the *remaining* part of \"Phường Văn Đẩu\" contributed to \"Phường Phù Liễn\". This is a crucial piece of the puzzle.\n\nWith the new ward mapping established, I'm now cross-referencing this information with the list of \"New Wards.\" I am looking for the relevant ward codes and names within \"Thành phố Hải Phòng\". I quickly find that \"Phường Kiến An\" has a ward code of 11443 and \"Phường Phù Liễn\" has a ward code of 11446.\n\nGiven that the resolution explicitly details the split of \"Phường Văn Đẩu\" across these two new wards, I'm confident in this mapping. There's no ambiguity here.\n\nFinally, I'm constructing the JSON output as requested. I'll include the necessary information for both \"Phường Kiến An\" and \"Phường Phù Liễn\", along with a \"high\" confidence level and the relevant citations to support my findings.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "16. Sắp xếp một phần diện tích tự nhiên, quy mô dân số của các phường Nam Sơn(quận Kiến An), Đồng Hòa, Bắc Sơn, Trần Thành Ngọvà Văn Đẩu thành phường mới có tên gọi là phường Kiến An."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "11443",
+      "ward_name": "Phường Kiến An"
+    },
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "17. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Bắc Hà, phườngNgọc Sơn,một phần diện tích tự nhiên của thị trấn Trường Sơn và phần còn lại của các phường Nam Sơn (quận Kiến An), Đồng Hòa, Bắc Sơn, Trần Thành Ngọ, Văn Đẩu sau khi sắp xếp theo quy định tại khoản 16 Điều này thành phường mới có tên gọi là phường Phù Liễn."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "11446",
+      "ward_name": "Phường Phù Liễn"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Sơn Kiên, Huyện Hòn Đất, Tỉnh Kiên Giang",
+  "ellapsedInMs": 6747,
+  "estimatedCost": 0.0022311,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm tasked with figuring out the new location for an address that used to be in \"Tỉnh Kiên Giang,\" specifically \"Xã Sơn Kiên.\" Here's how I'm approaching this, step-by-step:\n\nFirst, I identified the original province and ward: \"Tỉnh Kiên Giang\" and \"Xã Sơn Kiên.\" Then, I started digging into the resolutions. I immediately found resolution 60-NQ/TW, which clearly states that \"Tỉnh Kiên Giang\" was merged into \"Tỉnh An Giang.\" That's the first major piece of the puzzle.\n\nNext, I looked at other resolutions, focusing on any mention of \"Xã Sơn Kiên.\" Resolution 1654/NQ-UBTVQH15 stood out. Specifically, line 74 of that resolution talks about restructuring several wards in \"Tỉnh An Giang,\" including \"Xã Sơn Kiên.\" It states that the existing wards \"Sơn Bình,\" \"Mỹ Thái,\" and \"Sơn Kiên\" are being merged to form a *new* \"Xã Sơn Kiên.\"  This is significant. While the name stays the same, it represents a new administrative unit.\n\nTo confirm this, I checked the new wards list, looking for \"Xã Sơn Kiên\" within \"Tỉnh An Giang.\"  And there it was:  `{\"ward_code\":\"30835\",\"ward_name\":\"Xã Sơn Kiên\",\"province_name\":\"Tỉnh An Giang\"}`. It's a perfect match!\n\nGiven the clear province merger, the specific mention of \"Xã Sơn Kiên\" in the resolution creating a new entity, and the matching entry in the new wards list, my confidence level is very high.\n\nTherefore, here's my interpretation, ready for the JSON output:\n\n*   The province is now \"Tỉnh An Giang.\"\n*   The correct ward is \"Xã Sơn Kiên\" with code \"30835\".\n*   The relevant citation is resolution 1654/NQ-UBTVQH15, specifically line 74.\n*   I can confidently say the old \"Xã Sơn Kiên\" is now part of the new \"Xã Sơn Kiên\" within \"Tỉnh An Giang.\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1654/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh An Giang",
+        "line": "74. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Sơn Bình, Mỹ Thái và Sơn Kiên thành xã mới có tên gọi là xã Sơn Kiên."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh An Giang",
+      "ward_code": "30835",
+      "ward_name": "Xã Sơn Kiên"
+    }
+  ]
+}

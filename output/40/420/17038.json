@@ -1,0 +1,18 @@
+{
+  "address": "Xã Yên Hợp, Huyện Quỳ Hợp, Tỉnh Nghệ An",
+  "ellapsedInMs": 7021,
+  "estimatedCost": 0.0028677,
+  "thought": "**Address Mapping for Vietnamese Administrative Units**\n\nOkay, so I've been given a Vietnamese address: \"Xã Yên Hợp, Huyện Quỳ Hợp, Tỉnh Nghệ An\". My task is to figure out the new administrative unit this old address maps to.  First, I need to break down the provided address to its constituent parts. I quickly identified the old ward as \"Xã Yên Hợp\", the old district as \"Huyện Quỳ Hợp\", and the old province as \"Tỉnh Nghệ An\".\n\nNext, I had to consult the province resolutions, specifically 60-NQ/TW, to see if there were any changes at the provincial level.  Fortunately, \"Tỉnh Nghệ An\" is listed under those provinces *not* undergoing merger or division.  So, \"Tỉnh Nghệ An\" remains \"Tỉnh Nghệ An\" – that's a straightforward starting point.\n\nNow, the real work begins. I need to focus on \"Xã Yên Hợp\" within \"Tỉnh Nghệ An\".  I'm referencing resolution `1678/NQ-UBTVQH15`, which details the re-organization of communes in Nghệ An province.  I meticulously went through each line, and found it in line 65!  It clearly states that \"Xã Yên Hợp\" (along with a few others) will be merged into a new commune called \"Xã Tam Hợp\".\n\nI need to cross-reference this information.  I check the \"New wards\" list for \"Xã Tam Hợp\" in \"Tỉnh Nghệ An\". Bingo!  The entry `{\"ward_code\":\"17059\",\"ward_name\":\"Xã Tam Hợp\",\"province_name\":\"Tỉnh Nghệ An\"}` confirms the information from the resolution.  This gives me a high level of confidence in the mapping.\n\nTherefore, the old address \"Xã Yên Hợp, Huyện Quỳ Hợp, Tỉnh Nghệ An\" now maps to the new ward, \"Xã Tam Hợp\" (code: 17059) within \"Tỉnh Nghệ An.\"  My JSON output will accurately reflect this, citing the relevant lines from resolution 1678/NQ-UBTVQH15.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1678/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Nghệ An",
+        "line": "65. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tam Hợp (huyện Quỳ Hợp), Đồng Hợp, Nghĩa Xuân và Yên Hợp thành xã mới có tên gọi là xã Tam Hợp."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Nghệ An",
+      "ward_code": "17059",
+      "ward_name": "Xã Tam Hợp"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Phong Nha, Huyện Bố Trạch, Tỉnh Quảng Bình",
+  "ellapsedInMs": 5621,
+  "estimatedCost": 0.0020234,
+  "thought": "**My Approach to Address Mapping**\n\nOkay, so I'm dealing with a request to translate an old Vietnamese address into its current form, leveraging resolutions and updated ward data. Let's break down my thought process:\n\nFirst, I need to pinpoint the essential components of the original address: the ward (\"Thị trấn Phong Nha\"), district (\"Huyện Bố Trạch\"), and province (\"Tỉnh Quảng Bình\"). That's my starting point.\n\nNext, I'll dive into the relevant resolutions. My first check will be against any province-level transformations. Aha! I see that \"Tỉnh Quảng Bình\" is caught up in Resolution 60-NQ/TW, specifically the one that merges it into \"Tỉnh Quảng Trị.\" So, my target province is already shifting.\n\nNow, on to the finer details. I need to focus on the ward level changes. Resolution 1680/NQ-UBTVQH15 seems promising, and I'll search its content for \"Thị trấn Phong Nha.\" Bingo! Line 19 of this resolution is a perfect match, directly stating that \"Thị trấn Phong Nha\" is being integrated into a new \"Xã Phong Nha.\" This fits beautifully with the new province name I just deduced.\n\nMy next step is to consult the \"New wards\" data. I'm looking for \"Xã Phong Nha\" in this dataset, and there it is. I've found a corresponding entry that gives me the ward code (\"19138\") and confirms it's within \"Tỉnh Quảng Trị.\"\n\nFinally, I'll construct the JSON output. I'll include \"Tỉnh Quảng Trị\" as the new province, \"Xã Phong Nha\" as the new ward, and \"19138\" as the ward code. I'll also add a citation to the specific line from the resolution that supports the mapping. And, given the direct match and clear resolution, I'm comfortable assigning a \"high\" confidence level to this translation. That's a solid, well-supported mapping, I'd say.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1680/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Trị",
+        "line": "19. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Phong Nha và các xã Lâm Trạch, Xuân Trạch, Phúc Trạch thành xã mới có tên gọi là xã Phong Nha."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Trị",
+      "ward_code": "19138",
+      "ward_name": "Xã Phong Nha"
+    }
+  ]
+}

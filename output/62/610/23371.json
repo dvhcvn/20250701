@@ -1,0 +1,18 @@
+{
+  "address": "Xã Đắk KRoong, Huyện Đắk Glei, Tỉnh Kon Tum",
+  "ellapsedInMs": 7790,
+  "estimatedCost": 0.0025114,
+  "thought": "**Analyzing and Mapping a Vietnamese Address**\n\nOkay, so I'm presented with an old Vietnamese address: \"Xã Đắk KRoong, Huyện Đắk Glei, Tỉnh Kon Tum\".  My task is to map this to the new administrative units.  Here's how I'm thinking through this, step by step:\n\nFirst, I need to pinpoint the old province, which is \"Tỉnh Kon Tum.\"  I immediately check the province resolutions, specifically 60-NQ/TW.  Bingo! It's right there: \"Hợp nhất tỉnh Kon Tum và tỉnh Quảng Ngãi, lấy tên là tỉnh Quảng Ngãi\".  So, \"Tỉnh Kon Tum\" is now \"Tỉnh Quảng Ngãi\".  That's my first key piece of information.\n\nNext, I identify the specific ward: \"Xã Đắk KRoong\".  Now the hunt for relevant resolutions begins. I found that resolution \"1677/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ngãi\" is crucial because it deals directly with the changes in Quảng Ngãi after the Kon Tum merger.  And here it is, on line 71: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Đăk Kroong và xã Đăk Môn thành xã mới có tên gọi là **xã Đăk Môn**.\"  Perfect! It explicitly states that \"Xã Đắk KRoong\" was merged into \"Xã Đăk Môn.\"\n\nNow I need to cross-reference this information with the \"New wards\" list. I search for \"Xã Đăk Môn\", and I get: `{\"ward_code\":\"23374\",\"ward_name\":\"Xã Đăk Môn\",\"province_name\":\"Tỉnh Quảng Ngãi\"}`.  It's a direct match!\n\nI also need to verify that \"Xã Đắk KRoong\" wasn't one of the unchanged wards mentioned in the resolution.  Line 92 says: \"...và 05 xã không thực hiện sắp xếp là các xã Đăk Long (huyện Đăk Glei), Ba Xa, Rờ Kơi, Mô Rai, Ia Đal.\"  The old address is in \"Huyện Đắk Glei\", which makes \"Đăk Long\" a ward to consider, but \"Đắk KRoong\" *was* merged and *not* one of the unchanged ones.\n\nPutting it all together, I'm extremely confident about this mapping.  My JSON output will look like this: the `province_name` will be \"Tỉnh Quảng Ngãi\", the `ward_name` will be \"Xã Đăk Môn\", and the `ward_code` will be \"23374.\" The `citation` will be to resolution \"1677/NQ-UBTVQH15\", line 71. The `confidence` is definitely \"high\" because of the direct merge instruction in the resolution.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1677/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ngãi",
+        "line": "71. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Đăk Kroong và xã Đăk Môn thành xã mới có tên gọi là xã Đăk Môn."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ngãi",
+      "ward_code": "23374",
+      "ward_name": "Xã Đăk Môn"
+    }
+  ]
+}

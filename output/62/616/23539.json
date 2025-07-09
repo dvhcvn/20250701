@@ -1,0 +1,18 @@
+{
+  "address": "Xã Sa Sơn, Huyện Sa Thầy, Tỉnh Kon Tum",
+  "ellapsedInMs": 6803,
+  "estimatedCost": 0.0024157,
+  "thought": "**Identifying the New Administrative Unit**\n\nOkay, here's how I'm approaching this. The user gave me an old address (\"Xã Sa Sơn, Huyện Sa Thầy, Tỉnh Kon Tum\") and needs me to find the new ward. My plan is pretty standard: first, identify the old province and ward. Got it, \"Xã Sa Sơn\" in \"Tỉnh Kon Tum.\"\n\nNow, the resolutions. The province data seems to be the key here. I'm starting with the \"province resolutions\" (60-NQ/TW), and sure enough, Kon Tum is listed. It merged with Quảng Ngãi! Okay, so \"Tỉnh Kon Tum\" is now part of \"Tỉnh Quảng Ngãi\".\n\nNext, I need to check the \"Other resolutions\" for \"Xã Sa Sơn\" *within* the *new* province. The resolutions list has a promising entry: 1677/NQ-UBTVQH15. It explicitly mentions \"Xã Sa Sơn\" and says it's merged with \"thị trấn Sa Thầy\" and \"xã Sa Nhơn\" to form a *new* ward called \"Xã Sa Thầy\". Perfect, that's what I was hoping for. It also confirms that this resolution relates to \"Tỉnh Quảng Ngãi\", which aligns perfectly with the province merger I just found.\n\nNow, let's check the \"New wards\" data. The resolution tells me the new ward is \"Xã Sa Thầy\". I checked the \"New wards\" data, and there it is:  `{\"ward_code\":\"23527\",\"ward_name\":\"Xã Sa Thầy\",\"province_name\":\"Tỉnh Quảng Ngãi\"}`. Nailed it!\n\nSo, the JSON output is going to be: the citation from the resolution, the relevant line from that resolution, a \"high\" confidence level because everything lines up so nicely, and the correct new province name, ward code and ward name. Easy.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1677/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ngãi",
+        "line": "72. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Sa Thầy, xã Sa Sơn và xã Sa Nhơn thành xã mới có tên gọi là xã Sa Thầy."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ngãi",
+      "ward_code": "23527",
+      "ward_name": "Xã Sa Thầy"
+    }
+  ]
+}

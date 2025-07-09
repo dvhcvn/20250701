@@ -1,0 +1,18 @@
+{
+  "address": "Xã Thới Bình, Huyện Thới Bình, Tỉnh Cà Mau",
+  "ellapsedInMs": 6340,
+  "estimatedCost": 0.0022398,
+  "thought": "**Address Mapping for Cà Mau Province**\n\nOkay, so I'm tasked with mapping this old Vietnamese address to the new administrative structure. Let's break this down systematically. First, I need to extract the relevant components from the input address: \"Xã Thới Bình\" (the old ward), \"Huyện Thới Bình\" (the old district), and \"Tỉnh Cà Mau\" (the old province).\n\nNow, the core of this task hinges on the administrative changes detailed in these resolutions. Starting with the provincial level, I consult Resolution 60-NQ/TW. Cà Mau isn't listed under those *not* undergoing mergers, so I look in the merger section. Ah, here it is: \"Hợp nhất tỉnh Bạc Liêu và tỉnh Cà Mau, lấy tên là tỉnh Cà Mau.\" So, Cà Mau *did* absorb Bạc Liêu, but the province's name remains \"Tỉnh Cà Mau.\" This simplifies things.\n\nNext, I need to understand what happened to \"Xã Thới Bình\" and \"Huyện Thới Bình.\" I scan through other relevant resolutions and bingo! Resolution 1655/NQ-UBTVQH15 details the adjustments in Cà Mau's administrative units. Specifically, line 20 states, \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Thới Bình và xã Thới Bình thành xã mới có tên gọi là **xã Thới Bình**.\" This confirms that the old \"Xã Thới Bình\" merged with \"thị trấn Thới Bình\" to form a *new* \"Xã Thới Bình.\" This is a strong, direct hit!\n\nFinally, I need to find the corresponding entry in the list of new wards. I'm looking for a ward with the name \"Xã Thới Bình\" within \"Tỉnh Cà Mau.\" Here it is: `{\"ward_code\":\"32065\",\"ward_name\":\"Xã Thới Bình\",\"province_name\":\"Tỉnh Cà Mau\"}`. Perfect match!\n\nBased on these findings, I can confidently construct the output JSON: the province is \"Tỉnh Cà Mau,\" the new ward is \"Xã Thới Bình\" with code \"32065,\" and the citation is from \"1655/NQ-UBTVQH15,\" line 20. The confidence level is \"high\" because the resolution directly mentions the merging and resulting new ward. The evidence is solid.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1655/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Cà Mau",
+        "line": "20. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Thới Bình và xã Thới Bình thành xã mới có tên gọi là xã Thới Bình."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Cà Mau",
+      "ward_code": "32065",
+      "ward_name": "Xã Thới Bình"
+    }
+  ]
+}

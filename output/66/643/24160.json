@@ -1,0 +1,18 @@
+{
+  "address": "Xã Cư ÊBur, Thành phố Buôn Ma Thuột, Tỉnh Đắk Lắk",
+  "ellapsedInMs": 6565,
+  "estimatedCost": 0.0029213,
+  "thought": "**My Analysis of the Administrative Unit Change**\n\nOkay, so I'm presented with an old address: \"Xã Cư ÊBur, Thành phố Buôn Ma Thuột, Tỉnh Đắk Lắk\". The task is to identify the new administrative unit (ward) for this address. First, I broke down the address components: \"Xã Cư ÊBur\" (ward), \"Thành phố Buôn Ma Thuột\" (city/district), and \"Tỉnh Đắk Lắk\" (province).\n\nImmediately, I need to check the relevant resolutions and new ward data. I know I should start with the province resolutions (60-NQ/TW). The province, \"Tỉnh Đắk Lắk,\" is mentioned in this resolution, although it talks about a merge with Phú Yên. However, that doesn't affect my main concern here - the province remains \"Tỉnh Đắk Lắk\". This is vital information for the `province_name` field.\n\nNext, I looked at resolution 1660/NQ-UBTVQH15, which deals specifically with the reorganization of wards in Đắk Lắk. This is where the magic happens. I found this line \"82. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Thành Công, Tân Tiến, Tân Thành, Tự An, Tân Lợi và xã Cư Êbur thành phường mới có tên gọi là **phường Buôn Ma Thuột**.\" This is it! My input, \"Xã Cư ÊBur,\" is explicitly merged into \"phường Buôn Ma Thuột.\" I went through the rest of the relevant parts for double-check, but the result stands.\n\nTo confirm, I double-checked the \"New Wards\" data, and I found the match `{\"ward_code\":\"24133\",\"ward_name\":\" Phường Buôn Ma Thuột\",\"province_name\":\"Tỉnh Đắk Lắk\"}`. It all confirms: the old ward \"Xã Cư ÊBur\" has been consolidated into the new ward \"Phường Buôn Ma Thuột\". Case closed.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1660/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đắk Lắk",
+        "line": "82. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Thành Công, Tân Tiến, Tân Thành, Tự An, Tân Lợi và xã Cư Êbur thành phường mới có tên gọi là phường Buôn Ma Thuột."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đắk Lắk",
+      "ward_code": "24133",
+      "ward_name": "Phường Buôn Ma Thuột"
+    }
+  ]
+}

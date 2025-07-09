@@ -1,0 +1,18 @@
+{
+  "address": "Xã Thượng Lộc, Huyện Can Lộc, Tỉnh Hà Tĩnh",
+  "ellapsedInMs": 6457,
+  "estimatedCost": 0.0022638999999999997,
+  "thought": "**Analysis of Administrative Unit Mapping: \"Xã Thượng Lộc\" to New Structure**\n\nOkay, I've got the task. The user wants me to map the old address, \"Xã Thượng Lộc, Huyện Can Lộc, Tỉnh Hà Tĩnh,\" to the new administrative structure, given some resolutions and ward data. Let's break this down.\n\nFirst things first, the province is clearly \"Tỉnh Hà Tĩnh.\" Thankfully, after checking resolution 60-NQ/TW, it confirms that \"Tỉnh Hà Tĩnh\" remains the province name. No issues there.\n\nNow, focusing on the ward, \"Xã Thượng Lộc.\" I need to find the specific resolution impacting this ward. After searching the \"Other resolutions,\" I identified 1665/NQ-UBTVQH15, the relevant one.\n\nLine 27 wasn't helpful. But then, *bingo*! Line 32 clearly states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Đồng Lộc, **xã Thượng Lộc** và xã Mỹ Lộc thành xã mới có tên gọi là **xã Đồng Lộc**.\" That's the key! \"Xã Thượng Lộc\" is being merged into the new \"Xã Đồng Lộc.\"\n\nSo, I need to get the details of this new \"Xã Đồng Lộc.\" Consulting the \"New wards\" data, I find: `{\"ward_code\":\"18484\",\"ward_name\":\"Xã Đồng Lộc\",\"province_name\":\"Tỉnh Hà Tĩnh\"}`.\n\nPutting it all together, I can construct the JSON output.\n\nBased on the explicit mention in the resolution, I'm confident about this mapping. The old \"Xã Thượng Lộc\" becomes part of the new \"Xã Đồng Lộc\" with code \"18484\" under \"Tỉnh Hà Tĩnh.\" The relevant line from the resolution, of course, will be included as the citation. This is a solid, straightforward resolution and mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh",
+        "line": "32. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Đồng Lộc, xã Thượng Lộc và xã Mỹ Lộc thành xã mới có tên gọi là xã Đồng Lộc."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hà Tĩnh",
+      "ward_code": "18484",
+      "ward_name": "Xã Đồng Lộc"
+    }
+  ]
+}

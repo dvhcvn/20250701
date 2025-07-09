@@ -1,0 +1,28 @@
+{
+  "address": "Xã KRông Búk, Huyện Krông Pắc, Tỉnh Đắk Lắk",
+  "ellapsedInMs": 9027,
+  "estimatedCost": 0.0031561,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm tasked with mapping this old Vietnamese address to the current administrative structure.  The input is \"Tỉnh Đắk Lắk, Xã KRông Búk, Huyện Krông Pắc\".  Let's break this down systematically.\n\nFirst, the province is straightforward: \"Tỉnh Đắk Lắk\".  A quick check against the resolutions confirms that Đắk Lắk remains Đắk Lắk, though I do note that Phú Yên was *supposedly* merged into it, although this has no impact on mapping *within* Đắk Lắk.  So far, so good.\n\nNow, the tricky part: \"Xã KRông Búk, Huyện Krông Pắc\". I need to consult the relevant resolutions. Resolution \"1660/NQ-UBTVQH15\" is key. Line 15 actually creates a *new* \"xã Krông Búk\" from the merger of Cư Né and Chứ Kbô. This is confusing because the input *already* mentions a \"Xã KRông Búk\"! But then I keep reading...\n\nLine 29 is the real game-changer. It explicitly states that the *old* \"xã Krông Búk\" (the one from the input address) *and* \"Ea Kly\" were merged to form a *new* \"Ea Kly\". Therefore, the \"Xã KRông Búk\" from the old address is no more.\n\nNow I need to cross-reference with the provided \"New wards\" data.  There *is* an entry for \"Xã Krông Búk\" (code 24310). However, given that resolution line 29 shows that the original \"Xã Krông Búk\" was merged to form \"Ea Kly\", and resolution line 15 *creates* a new \"Xã Krông Búk\" (the one with code 24310) from the merger of Cư Né and Chứ Kbô, I can conclude with certainty that the \"Xã KRông Búk\" in the original address has been *absorbed* into \"Ea Kly\", and the \"Xã Krông Búk\" (code 24310) is a new ward altogether. The address \"Xã KRông Búk, Huyện Krông Pắc\" is now \"Xã Ea Kly, Huyện Krông Pắc\".\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "15. Hợp nhất tỉnh Đắk Lắk và tỉnh Phú Yên, lấy tên là tỉnh Đắk Lắk"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đắk Lắk",
+      "ward_code": "24496",
+      "ward_name": "Xã Ea Kly"
+    },
+    {
+      "citation": {
+        "header": "1660/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đắk Lắk",
+        "line": "29. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Krông Búk và xã Ea Kly thành xã mới có tên gọi là xã Ea Kly."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đắk Lắk",
+      "ward_code": "24496",
+      "ward_name": "Xã Ea Kly"
+    }
+  ]
+}

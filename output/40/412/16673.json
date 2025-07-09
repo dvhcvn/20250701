@@ -1,0 +1,18 @@
+{
+  "address": "Phường Hưng Phúc, Thành phố Vinh, Tỉnh Nghệ An",
+  "ellapsedInMs": 7020,
+  "estimatedCost": 0.0096426,
+  "thought": "**Determining the New Administrative Unit for \"Phường Hưng Phúc\"**\n\nOkay, so the user wants to know the current administrative unit for \"Phường Hưng Phúc, Thành phố Vinh, Tỉnh Nghệ An.\" My first step is clear: I need to pinpoint the relevant province, which is \"Tỉnh Nghệ An\" in this case.  Since the user specified an address with that province, that simplifies the initial search.\n\nKnowing the province, I'll then delve into the resolutions related to \"Tỉnh Nghệ An\" to see if there have been any administrative changes. I specifically need to scan for mentions of \"Phường Hưng Phúc\" and observe how it's been restructured. Once I identify the new unit, I'll consult the \"New wards\" list for the relevant `ward_code` and `ward_name`.  Finally, I will construct the appropriate JSON output based on these findings, as the user requested.\n\n**Province Check & Resolution 1678/NQ-UBTVQH15:**\n\nI quickly confirmed that \"Tỉnh Nghệ An\" is listed in \"60-NQ/TW,\" indicating that the province name itself isn't being merged. Excellent, that's straightforward. Now, focusing on \"Phường Hưng Phúc,\" I found that Resolution 1678/NQ-UBTVQH15 seems promising. Line 116 specifically addresses the restructuring in Nghệ An.\n\nReading further, line 116 states that the merging of several wards, including \"Phường Hưng Phúc,\" will create the new \"phường Trường Vinh.\" Bingo! That gives me the direct answer.\n\n**New Wards List & Confidence:**\n\nI checked the \"New wards\" list and quickly found the entry for \"phường Trường Vinh\": `{\"ward_code\":\"16690\",\"ward_name\":\"Phường Trường Vinh\",\"province_name\":\"Tỉnh Nghệ An\"}`.\n\nGiven the explicit nature of the resolution, the restructuring of \"Phường Hưng Phúc\" into \"Phường Trường Vinh\" is undeniable. I have high confidence in this conclusion.\n\n**Output Structure:**\n\nI will now format the output in JSON format with an array of objects, containing the citation, confidence level (\"high\" in this case), `province_name`, `ward_code`, and `ward_name` for the new \"phường Trường Vinh.\" This ensures the user receives the information in a clear and structured way.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1678/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Nghệ An",
+        "line": "116. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Bến Thủy, Hưng Dũng, Hưng Phúc, Trung Đô, Trường Thi, Vinh Tân và xã Hưng Hòa thành phường mới có tên gọi là **phường Trường Vinh**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Nghệ An",
+      "ward_code": "16690",
+      "ward_name": "Phường Trường Vinh"
+    }
+  ]
+}

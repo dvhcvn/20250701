@@ -1,0 +1,28 @@
+{
+  "address": "Xã Minh Khương, Huyện Hàm Yên, Tỉnh Tuyên Quang",
+  "ellapsedInMs": 10042,
+  "estimatedCost": 0.0034241999999999996,
+  "thought": "**Address Mapping Analysis: Xã Minh Khương, Huyện Hàm Yên, Tỉnh Tuyên Quang**\n\nAlright, let's break this down. The user wants me to map an old Vietnamese address, specifically Xã Minh Khương, Huyện Hàm Yên, Tỉnh Tuyên Quang, to the new administrative structure based on the provided resolutions and the new wards list.\n\nFirst, I need to identify the key components of the old address: Xã Minh Khương (the ward), Huyện Hàm Yên (the district), and Tỉnh Tuyên Quang (the province). Easy enough.\n\nNext, I'll need to check the relevant resolutions. Let's start with Resolution 60-NQ/TW to see if there are any province-level changes.  Tỉnh Tuyên Quang isn't listed in the \"no mergers\" list, which is good.  It *is* listed in the \"post-merger\" list, and the name remains \"Tỉnh Tuyên Quang.\" So, the province seems straightforward. High confidence on that.\n\nNow, Resolution 1684/NQ-UBTVQH15 is the key here.  I need to search for \"Xã Minh Khương\" within the lines. Bingo! Line 20 explicitly states, \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Yên Thuận, Minh Khương và Bạch Xa thành xã mới có tên gọi là **xã Bạch Xa**.\" This is a crucial piece of the puzzle.  The old ward, Minh Khương, is being merged into the new ward, Bạch Xa.\n\nThe district, Hàm Yên, isn't specifically mentioned in that line of the resolution, but it's *implied* within the context of the whole resolution, relating to Tuyên Quang. Given the old address and the location of the mentioned wards, I can be fairly sure that the district of Hàm Yên is applicable here.\n\nFinally, let's check the list of new wards. I need to find \"Xã Bạch Xa\" within Tỉnh Tuyên Quang. And there it is: {\"ward_code\":\"02380\",\"ward_name\":\"Xã Bạch Xa\",\"province_name\":\"Tỉnh Tuyên Quang\"}. Perfect match.\n\nI'm also noting the potential connection to \"Hàm Yên\" and \"Tân Thành\" in the same resolution and new ward list. This highlights that I need to be aware of related unit re-organizations, even though Minh Khương isn't merging with those.\n\nAs a final check, let's focus again on that important line 20. The resolution doesn't give a direct answer about the district, so I will have to do a small amount of inference, making sure to show this in the returned answer. Given the resolution and the addresses mentioned, I'm confident that Minh Khương is merged into Bạch Xa, and the province is the same, so there is high confidence in this mapping. Now I'll generate the output.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "1. Hợp nhất tỉnh Tuyên Quang và tỉnh Hà Giang, lấy tên là tỉnh Tuyên Quang"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "02380",
+      "ward_name": "Xã Bạch Xa"
+    },
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "20. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Yên Thuận, Minh Khương và Bạch Xa thành xã mới có tên gọi là xã Bạch Xa."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "02380",
+      "ward_name": "Xã Bạch Xa"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "address": "Xã Liên Chung, Huyện Tân Yên, Tỉnh Bắc Giang",
+  "ellapsedInMs": 7725,
+  "estimatedCost": 0.0032815999999999995,
+  "thought": "**Analyzing the Address and Relevant Resolutions**\n\nOkay, so I'm presented with the old address \"Xã Liên Chung, Huyện Tân Yên, Tỉnh Bắc Giang.\" My task is to figure out the new administrative unit. First, I'll break it down: \"Xã Liên Chung\" (ward), \"Huyện Tân Yên\" (district - this isn't important for the task), and \"Tỉnh Bắc Giang\" (province).\n\nThe prompt implies we need to work with the provided resolutions. I know I must start with the province changes. Bingo! Resolution 60-NQ/TW states that \"Tỉnh Bắc Giang\" merges with \"Tỉnh Bắc Ninh.\" Therefore, \"Xã Liên Chung\" will now belong to \"Tỉnh Bắc Ninh.\"\n\nNow, I'll focus on the resolutions regarding \"Tỉnh Bắc Ninh.\" Resolution 1658/NQ-UBTVQH15 is the key one. Scanning it, I see:\n\n- Line 56 mentions \"xã Tân Yên\" but it's formed from different wards. Not relevant for now.\n- Line 59 confirms it! \"Xã Liên Chung\" *is* merged with \"Hợp Đức\" and \"Phúc Hòa\" to form \"xã Phúc Hoà.\" That's my answer for the new ward!\n\nI've also checked the other resolutions (1672, 1681, 1684) quickly, but they relate to different provinces, so I can ignore them.\n\nFinally, I need to confirm that \"xã Phúc Hoà\" is in the `New wards` list. I find the entry: `{\"ward_code\":\"07330\",\"ward_name\":\"Xã Phúc Hòa\",\"province_name\":\"Tỉnh Bắc Ninh\"}`. Perfect, it's there! I've also checked if \"xã Tân Yên\" exists, and it's also in the list, but, \"Xã Liên Chung\" was not merged into this.\n\n**Conclusion:**\n\nThe old ward \"Xã Liên Chung, Tỉnh Bắc Giang\" is now part of the new ward \"Xã Phúc Hoà, Tỉnh Bắc Ninh\".  The `ward_code` for \"Xã Phúc Hoà\" is 07330. The province has changed from Bắc Giang to Bắc Ninh.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Bắc Ninh và tỉnh Bắc Giang, lấy tên là tỉnh Bắc Ninh"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "07330",
+      "ward_name": "Xã Phúc Hòa"
+    },
+    {
+      "citation": {
+        "header": "1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh",
+        "line": "Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Hợp Đức, Liên Chung và Phúc Hòa thành xã mới có tên gọi là xã Phúc Hoà."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "07330",
+      "ward_name": "Xã Phúc Hòa"
+    }
+  ]
+}

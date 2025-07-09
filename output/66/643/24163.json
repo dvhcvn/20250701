@@ -1,0 +1,18 @@
+{
+  "address": "Xã Ea Tu, Thành phố Buôn Ma Thuột, Tỉnh Đắk Lắk",
+  "ellapsedInMs": 5535,
+  "estimatedCost": 0.0022277,
+  "thought": "**Mapping an Old Address to New Administrative Units**\n\nOkay, so I'm tasked with taking this old address, \"Xã Ea Tu, Thành phố Buôn Ma Thuột, Tỉnh Đắk Lắk,\" and figuring out its current location based on these resolutions and new ward data.  First things first: the province is Đắk Lắk, so that's easy.  I need to check resolution 60-NQ/TW to see if anything changed with Đắk Lắk, but it looks like it just absorbed Phú Yên, so Đắk Lắk is still Đắk Lắk.  Good.\n\nNext, I have to dig into the specifics of \"Xã Ea Tu.\" Resolution 1660/NQ-UBTVQH15 is the key here. Scanning through the lines, I hit line 83: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Tân An, xã Ea Tu và xã Hòa Thuận thành phường mới có tên gọi là **phường Tân An**.\"  Bingo!  \"Xã Ea Tu\" is explicitly mentioned as being merged into \"phường Tân An.\"\n\nNow, I'll need to check the \"New wards\" list for that ward. Found it:  `{\"ward_code\":\"24163\",\"ward_name\":\" Phường Tân An\",\"province_name\":\"Tỉnh Đắk Lắk\"}`.\n\nPutting it all together, I can construct the JSON output.  The citation comes from the resolution.  The confidence is high, because the mapping is explicitly stated.  The province name is \"Tỉnh Đắk Lắk.\"  The ward code and name are from the new ward data, \"24163\" and \"Phường Tân An\", respectively.\n\nJust to be absolutely sure, I'll double-check the resolution again for any other mentions of \"Xã Ea Tu,\" but I'm confident that this is the correct mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1660/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đắk Lắk",
+        "line": "83. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Tân An, xã Ea Tu và xã Hòa Thuận thành phường mới có tên gọi là phường Tân An."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đắk Lắk",
+      "ward_code": "24163",
+      "ward_name": "Phường Tân An"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "address": "Xã Tân Thành Bình, Huyện Mỏ Cày Bắc, Tỉnh Bến Tre",
+  "ellapsedInMs": 8033,
+  "estimatedCost": 0.0025819000000000003,
+  "thought": "**My Analysis of Address Mapping: Bến Tre to Vĩnh Long**\n\nOkay, so I'm tasked with mapping this old address, which is essentially a matter of understanding the administrative changes. The user wants to translate \"Xã Tân Thành Bình, Huyện Mỏ Cày Bắc, Tỉnh Bến Tre\" into its modern equivalent. Let's break this down.\n\nFirst, the province. I immediately see the user mentioned \"Tỉnh Bến Tre.\" My knowledge of these things kicks in; I recall the province merger. I pull up Resolution 60-NQ/TW and confirm the key point: \"Hợp nhất tỉnh Bến Tre, tỉnh Vĩnh Long và tỉnh Trà Vinh; lấy tên là tỉnh Vĩnh Long.\" Boom. Bến Tre is now part of Vĩnh Long. So, that part is straightforward and high confidence.\n\nNext is the ward, \"Xã Tân Thành Bình.\" Now this is where it gets interesting. I need to dig deeper. Resolution 1687/NQ-UBTVQH15 catches my attention: \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long.\" Aha! This must be the key. And there it is: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tân Bình (huyện Mỏ Cày Bắc), Thành An, Hòa Lộc và Tân Thành Bình thành xã mới có tên gọi là **xã Tân Thành Bình**.\"\n\nOkay, so the name \"Xã Tân Thành Bình\" is staying the same, but the *composition* is changing. This old \"Xã Tân Thành Bình\" from Bến Tre is being absorbed into this new \"Xã Tân Thành Bình\" in Vĩnh Long. This is the crucial point for mapping! The name is the link, along with the resolution details of the geographical merger.\n\nNow for the final verification: I check the new ward data. There it is: `{\"ward_code\":\"28921\",\"ward_name\":\"Xã Tân Thành Bình\",\"province_name\":\"Tỉnh Vĩnh Long\"}`. Perfect match! It aligns with both the resolution and the province mapping.\n\nThis makes my confidence level high. The province mapping is explicit. The ward, even though it's a merger, uses the *same name* we are looking for. The resolution directly mentions \"Xã Tân Thành Bình\" as part of the new unit. This shows it is a direct lineage. We're talking a high-confidence mapping here, with a clear trail from the resolution.\n\nTherefore, my final output will be:\n\n*   `province_name`: \"Tỉnh Vĩnh Long\"\n*   `ward_name`: \"Xã Tân Thành Bình\"\n*   `ward_code`: \"28921\"\n*   `citation`: \"1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long\" and specific line.\n*   `confidence`: \"high\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Bến Tre, tỉnh Vĩnh Long và tỉnh Trà Vinh; lấy tên là tỉnh Vĩnh Long"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "28921",
+      "ward_name": "Xã Tân Thành Bình"
+    },
+    {
+      "citation": {
+        "header": "1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long",
+        "line": "68. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xãTân Bình (huyện Mỏ Cày Bắc),Thành An, Hòa Lộc và Tân Thành Bình thành xã mới có tên gọi là xã Tân Thành Bình."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "28921",
+      "ward_name": "Xã Tân Thành Bình"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "address": "Xã Phước Lý, Huyện Cần Giuộc, Tỉnh Long An",
+  "ellapsedInMs": 9665,
+  "estimatedCost": 0.0032648,
+  "thought": "**Navigating the Complexities of Administrative Unit Changes**\n\nOkay, so I'm presented with a tricky address mapping problem:  \"Xã Phước Lý, Huyện Cần Giuộc, Tỉnh Long An\". The goal is to figure out the new administrative unit based on provided resolutions and new ward data.  Here's my thought process:\n\nFirst, I need to break down the old address.  I've got \"Xã Phước Lý\" in \"Huyện Cần Giuộc\" of \"Tỉnh Long An\".  The prompt says to ignore the districts, which makes things a bit simpler.\n\nNext, I look at the province mergers.  The document \"60-NQ/TW\" mentions \"Tỉnh Long An\" and indicates it merged into \"Tỉnh Tây Ninh\".  So, we're transitioning from \"Tỉnh Long An\" to \"Tỉnh Tây Ninh.\"\n\nNow, the crucial part: the ward resolutions. I'm focusing on those resolutions specific to \"Xã Phước Lý\" and its old district, \"Huyện Cần Giuộc\".  The key document seems to be 1682/NQ-UBTVQH15 concerning \"tỉnh Tây Ninh\".\n\nLooking at resolution 1682/NQ-UBTVQH15, line 45 is relevant: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Long Thượng, Phước Hậu và Phước Lý thành xã mới có tên gọi là **xã Phước Lý**.\" This is the key.  \"Xã Phước Lý\" is *merged* with others to create a *new* \"Xã Phước Lý\".  Critically, this resolution *is* for \"tỉnh Tây Ninh,\" which, as we established, encompasses the old \"Tỉnh Long An\" now.\n\nI cross-reference.  The old address is from \"Tỉnh Long An\", but since the province merged, that old address is now, effectively, within the \"tỉnh Tây Ninh\" jurisdiction.  This makes resolution 1682/NQ-UBTVQH15 applicable.\n\nI dive deeper into line 45. The resolution *creates* a new \"Xã Phước Lý\" by merging the old \"Xã Phước Lý\" with \"Long Thượng\" and \"Phước Hậu\".  The provided new ward data, with the code, name, and province, corroborates this: `{\"ward_code\":\"28165\",\"ward_name\":\"Xã Phước Lý\",\"province_name\":\"Tỉnh Tây Ninh\"}`. Everything aligns!\n\nThere's also line 47:  \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Cần Giuộc, xã Phước Lại và xã Long Hậu thành xã mới có tên gọi là **xã Cần Giuộc**\". The old address mentions \"Huyện Cần Giuộc\", and \"thị trấn Cần Giuộc\" *may* have been the administrative center. But the key is that my focus is on \"Xã Phước Lý,\" which this *does* address.\n\nTherefore, my conclusion is clear: based on the resolution details and merging of the province, the new administrative unit for the old address \"Xã Phước Lý, Huyện Cần Giuộc, Tỉnh Long An\" corresponds to **{\"ward_code\":\"28165\",\"ward_name\":\"Xã Phước Lý\",\"province_name\":\"Tỉnh Tây Ninh\"}**.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Tây Ninh và tỉnh Long An, lấy tên là tỉnh Tây Ninh"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tây Ninh",
+      "ward_code": "28165",
+      "ward_name": "Xã Phước Lý"
+    },
+    {
+      "citation": {
+        "header": "1682/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tây Ninh",
+        "line": "45. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Long Thượng, Phước Hậu và Phước Lý thành xã mới có tên gọi là xã Phước Lý."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tây Ninh",
+      "ward_code": "28165",
+      "ward_name": "Xã Phước Lý"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "address": "Xã Phước Thái, Huyện Ninh Phước, Tỉnh Ninh Thuận",
+  "ellapsedInMs": 8052,
+  "estimatedCost": 0.0033244999999999998,
+  "thought": "**My Analysis of the Administrative Unit Change**\n\nOkay, so the user wants me to find the new address for \"Xã Phước Thái, Huyện Ninh Phước, Tỉnh Ninh Thuận.\" My process is pretty straightforward here. First, I identify the old province, which is \"Tỉnh Ninh Thuận.\"  I know right away that I need to check for province-level changes, specifically those outlined in the relevant resolutions.\n\nLooking at these resolutions, I see that \"Tỉnh Ninh Thuận\" has been merged with \"Tỉnh Khánh Hòa.\"  So, my new province is now \"Tỉnh Khánh Hòa.\"  That narrows my search considerably.\n\nNext, I zero in on \"Xã Phước Thái\". I need to search through other resolutions, keeping an eye out for mentions of \"Xã Phước Thái\" within either \"Tỉnh Ninh Thuận\" or the newly formed \"Tỉnh Khánh Hòa.\" I find a few potential candidates.\n\nFirst, I see resolution 1662/NQ-UBTVQH15 related to Đồng Nai, but that’s clearly not relevant.  Then, in resolution 1667/NQ-UBTVQH15 (Khánh Hòa), I find a crucial entry: line 31.  It states that \"Xã Phước Thái\" and \"Xã Phước Hữu\" have merged to form \"Xã Phước Hữu\" in Khánh Hòa.  This is promising!\n\nTo confirm, I double-check the \"New wards\" list, searching for \"Xã Phước Hữu\" within \"Tỉnh Khánh Hòa.\"  I find a match:  `{\"ward_code\":\"22891\",\"ward_name\":\"Xã Phước Hữu\",\"province_name\":\"Tỉnh Khánh Hòa\"}`. Perfect.\n\nSince the prompt indicates district-level changes are already accounted for, I can ignore the original district information (\"Huyện Ninh Phước\") for now; I am only interested in province and ward level changes at this point.\n\nTherefore, the updated administrative unit for the old address should be a JSON object containing `province_name: \"Tỉnh Khánh Hòa\"`, `ward_name: \"Xã Phước Hữu\"`, `ward_code: \"22891\"`, and the relevant citation - 1667/NQ-UBTVQH15, line 31.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Ninh Thuận và tỉnh Khánh Hoà, lấy tên là tỉnh Khánh Hoà"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Khánh Hòa",
+      "ward_code": "22891",
+      "ward_name": "Xã Phước Hữu"
+    },
+    {
+      "citation": {
+        "header": "1667/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Khánh Hòa",
+        "line": "31. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Phước Thái và xã Phước Hữu thành xã mới có tên gọi là xã Phước Hữu."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Khánh Hòa",
+      "ward_code": "22891",
+      "ward_name": "Xã Phước Hữu"
+    }
+  ]
+}

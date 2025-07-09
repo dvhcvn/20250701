@@ -1,0 +1,28 @@
+{
+  "address": "Thị trấn Mai Châu, Huyện Mai Châu, Tỉnh Hoà Bình",
+  "ellapsedInMs": 6984,
+  "estimatedCost": 0.0026203,
+  "thought": "**My Analysis of the Administrative Address Mapping**\n\nOkay, so I'm tasked with mapping this old address to its current administrative structure. First, I need to pinpoint the *old* province, which is \"Tỉnh Hoà Bình\". Then, I consult the province resolutions, specifically 60-NQ/TW. This resolution clearly states a merger involving \"Tỉnh Hoà Bình\" into a new province. Bingo, the merging leads to the formation of \"Tỉnh Phú Thọ.\" So, \"Tỉnh Hoà Bình\" is now \"Tỉnh Phú Thọ.\"\n\nNext, I need to figure out the ward. The old ward is \"Thị trấn Mai Châu\". I've got to check other relevant resolutions, and here's where 1676/NQ-UBTVQH15 comes into play. Line 119 of this document is very explicit: \"Thị trấn Mai Châu\" is *merged into* \"xã Mai Châu\". This confirms the shift. And this resolution is regarding the \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ\", which is precisely what I'm looking for given the province change.\n\nNow, I look at the new wards list to make sure everything lines up. I search for \"Xã Mai Châu\" within \"Tỉnh Phú Thọ\" and I find a perfect match: `{\"ward_code\":\"05200\",\"ward_name\":\"Xã Mai Châu\",\"province_name\":\"Tỉnh Phú Thọ\"}`. I also check for other possible matches to be sure. There aren't any other candidates that fit.\n\nWith everything aligned, I can confidently construct the JSON output:\n\n*   `province_name`: \"Tỉnh Phú Thọ\"\n*   `ward_name`: \"Xã Mai Châu\"\n*   `ward_code`: \"05200\"\n*   `citation`: \"1676/NQ-UBTVQH15\" (for the ward mapping) and 60-NQ/TW (for the Province change)\n*   `confidence`: \"high\" - everything's a perfect match.\n\nI've carefully verified all the details: from the province change to the specific ward level mapping. The old address was \"Thị trấn Mai Châu, Huyện Mai Châu, Tỉnh Hoà Bình,\" which is now mapped to \"Xã Mai Châu, Tỉnh Phú Thọ.\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Vĩnh Phúc, tỉnh Phú Thọ và tỉnh Hoà Bình; lấy tên là tỉnh Phú Thọ"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "05200",
+      "ward_name": "Xã Mai Châu"
+    },
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "119. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Mai Châu, các xã Nà Phòn, Thành Sơn, Tòng Đậu và một phần diện tích tự nhiên, quy mô dân số của xã Đồng Tân thành xã mới có tên gọi là xã Mai Châu."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "05200",
+      "ward_name": "Xã Mai Châu"
+    }
+  ]
+}

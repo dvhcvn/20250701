@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Lim, Huyện Tiên Du, Tỉnh Bắc Ninh",
+  "ellapsedInMs": 7030,
+  "estimatedCost": 0.0030363,
+  "thought": "**Determining the New Ward for \"Thị trấn Lim\" in Bắc Ninh**\n\nOkay, let's break this down systematically. The user's provided address is \"Thị trấn Lim, Huyện Tiên Du, Tỉnh Bắc Ninh\". My goal is to identify the new administrative unit (ward) for \"Thị trấn Lim.\"\n\nFirst, I identified the key components of the old address: \"Thị trấn Lim\" as the old ward, and \"Tỉnh Bắc Ninh\" as the old province. \"Huyện Tiên Du\" (district) is useful for context, but not a primary focus here.\n\nNext, I examined the available resolutions. I checked if \"Tỉnh Bắc Ninh\" was slated for any mergers or name changes in Resolution 60-NQ/TW.  Fortunately, I found that while there *was* talk of merging with Bắc Giang, the resulting province would *still* be \"Tỉnh Bắc Ninh\".  So, the province name is stable.\n\nWith the province stable, I focused on resolutions concerning specific ward changes. I scanned the *other_resolutions* for mentions of \"Thị trấn Lim\".  Bingo! Resolution 1658/NQ-UBTVQH15, specifically clause 8, was crucial. It states that \"Thị trấn Lim, xã Nội Duệ and xã Phú Lâm\" are merged to form a *new* ward called \"xã Tiên Du\".\n\nNow, I needed to confirm this new ward. I cross-referenced this with the *new_wards* data.  I was looking for an entry with \"Xã Tiên Du\" and \"Tỉnh Bắc Ninh\".  And there it was: `{\"ward_code\":\"09319\",\"ward_name\":\"Xã Tiên Du\",\"province_name\":\"Tỉnh Bắc Ninh\"}`.\n\nWith this data, I built the JSON output.  The province name remains \"Tỉnh Bắc Ninh.\"  The new ward is clearly \"Xã Tiên Du\" with the code \"09319\", directly cited from resolution 1658/NQ-UBTVQH15. I've set the confidence to \"high\" because the mapping is direct and unambiguous.\n\nFinally, I performed a final sanity check, ensuring all fields are present, have the correct data types, and the output is an array. Everything aligns perfectly. We have a definitive answer.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh",
+        "line": "8. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Lim, xã Nội Duệ và xã Phú Lâm thành xã mới có tên gọi là xã Tiên Du."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "09319",
+      "ward_name": "Xã Tiên Du"
+    }
+  ]
+}

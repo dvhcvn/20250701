@@ -1,0 +1,28 @@
+{
+  "address": "Xã Thừa Đức, Huyện Bình Đại, Tỉnh Bến Tre",
+  "ellapsedInMs": 8516,
+  "estimatedCost": 0.0032800999999999998,
+  "thought": "**Analyzing the Address Mapping: Xã Thừa Đức, Huyện Bình Đại, Tỉnh Bến Tre**\n\nOkay, let's break this down systematically. I'm given the old address \"Xã Thừa Đức, Huyện Bình Đại, Tỉnh Bến Tre\" and need to map it to a new administrative unit, likely a ward, based on these resolutions.\n\nFirst, the province. \"Tỉnh Bến Tre\" is a known entity. I quickly check resolution 60-NQ/TW, and sure enough, it confirms the merger. \"Tỉnh Bến Tre\" is now part of \"Tỉnh Vĩnh Long.\" That's the easy part.\n\nNext, the ward \"Xã Thừa Đức\". This is where it gets interesting. I need to sift through the \"Other Resolutions\" looking for any mention of it.  I scanned the list, and a few stood out but only one was relevant:\n *   1662/NQ-UBTVQH15 (Đồng Nai) mentions \"Thừa Đức\", but it's in a different province, Đồng Nai, so it's irrelevant.\n *   1679/NQ-UBTVQH15 (Quảng Ninh) has no mention of \"Thừa Đức.\"\n *   1687/NQ-UBTVQH15 (Vĩnh Long): Now we are getting somewhere. In item 95, it states, \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Thừa Đức và xã Thới Thuận thành xã mới có tên gọi là **xã Thới Thuận**.\" Bingo! This is a direct hit! The resolution specifies the merger of \"Xã Thừa Đức\" into \"Xã Thới Thuận,\" and importantly, in the context of \"Tỉnh Vĩnh Long,\" which we know is the current province.\n\nI'll quickly cross-check that \"Xã Thới Thuận\" against the \"New Wards\" list. There it is: `{\"ward_code\":\"29107\",\"ward_name\":\"Xã Thới Thuận\",\"province_name\":\"Tỉnh Vĩnh Long\"}`. Confirmed!\n\nSince the prompt indicates district boundaries are being eliminated, the resolution's focus on wards is perfect. Item 95 of Resolution 1687/NQ-UBTVQH15 provides a clear and unambiguous mapping: \"Xã Thừa Đức\" now belongs to \"Xã Thới Thuận,\" located in the new province of \"Tỉnh Vĩnh Long.\" The older address is thus accurately reflected in the new mapping as *Xã Thới Thuận, Tỉnh Vĩnh Long*.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Bến Tre, tỉnh Vĩnh Long và tỉnh Trà Vinh; lấy tên là tỉnh Vĩnh Long"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "29107",
+      "ward_name": "Xã Thới Thuận"
+    },
+    {
+      "citation": {
+        "header": "1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long",
+        "line": "95. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Thừa Đức và xã Thới Thuận thành xã mới có tên gọi là xã Thới Thuận."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "29107",
+      "ward_name": "Xã Thới Thuận"
+    }
+  ]
+}

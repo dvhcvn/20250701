@@ -1,0 +1,18 @@
+{
+  "address": "Xã Kông Lơng Khơng, Huyện KBang, Tỉnh Gia Lai",
+  "ellapsedInMs": 5962,
+  "estimatedCost": 0.0020751,
+  "thought": "**Navigating Vietnamese Administrative Restructuring**\n\nOkay, so I'm dealing with an address mapping challenge in Vietnam, specifically translating an old address to a new administrative unit.  The input is \"Xã Kông Lơng Khơng\" in \"Tỉnh Gia Lai.\"  Let's break this down systematically.\n\nFirst, I need to verify if there were any provincial changes. Consulting \"60-NQ/TW,\" I find mention of \"Tỉnh Gia Lai,\" specifically noting a merger with Bình Định. However, the resolution states they kept the name \"Tỉnh Gia Lai.\"  So, my province name remains unchanged. Good.\n\nNext, I need to pinpoint what happened to \"Xã Kông Lơng Khơng.\" I'm diving into the relevant resolutions, particularly \"1664/NQ-UBTVQH15.\" Scanning through, I initially see some irrelevant reorganizations. But, eureka! Line 65 states exactly what I need: it says \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Kông Lơng Khơng và xã Tơ Tung thành xã mới có tên gọi là **xã Tơ Tung**.\" Bingo!  \"Xã Kông Lơng Khơng\" has been absorbed into \"Xã Tơ Tung.\"\n\nNow, to solidify this. I search the \"New wards\" list for \"Xã Tơ Tung\" in \"Tỉnh Gia Lai.\"  And there it is:  `{\"ward_code\":\"23668\",\"ward_name\":\"Xã Tơ Tung\",\"province_name\":\"Tỉnh Gia Lai\"}`.  Perfect match!\n\nSo, for my JSON output: I'll use that line from the resolution (1664/NQ-UBTVQH15) as the `citation`. The mapping is direct and clear, so I'll set the `confidence` to \"high.\"  The `province_name` is \"Tỉnh Gia Lai\" (as established).  Finally, the `ward_code` will be \"23668,\" and the `ward_name` is \"Xã Tơ Tung.\"  This is a clean and confident mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai",
+        "line": "65. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Kông Lơng Khơng và xã Tơ Tung thành xã mới có tên gọi là xã Tơ Tung."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "23668",
+      "ward_name": "Xã Tơ Tung"
+    }
+  ]
+}

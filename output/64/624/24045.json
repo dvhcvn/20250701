@@ -1,0 +1,18 @@
+{
+  "address": "Phường Sông Bờ, Thị xã Ayun Pa, Tỉnh Gia Lai",
+  "ellapsedInMs": 5697,
+  "estimatedCost": 0.0019152,
+  "thought": "**Address Mapping Analysis: \"Phường Sông Bờ, Thị xã Ayun Pa, Tỉnh Gia Lai\"**\n\nOkay, so I've got this Vietnamese address to map: \"Phường Sông Bờ, Thị xã Ayun Pa, Tỉnh Gia Lai\". The task is to figure out the new administrative unit based on some provided resolutions and new ward data. Here's my thought process:\n\nFirst, I need to break down the address. \"Phường Sông Bờ\" is the old ward, and \"Tỉnh Gia Lai\" is the old province.\n\nNext, I have to check for any province mergers. From my understanding of the \"60-NQ/TW\" document, it looks like there were some province consolidations. But, and this is good, \"Tỉnh Gia Lai\" *wasn't* merged. It remains \"Tỉnh Gia Lai\".\n\nNow, the real work begins: ward-level analysis. I'm going to dig into the resolutions to see what happened to \"Phường Sông Bờ\". I found a key resolution: \"1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai\". Line 126 in this resolution is the jackpot! It states that \"Phường Sông Bờ\" was merged with a few other wards to create a brand new ward named \"phường Ayun Pa\". Perfect!\n\nTo be absolutely sure, I'll cross-reference this with the \"New wards\" data. Yep, there it is: `{\"ward_code\":\"24044\",\"ward_name\":\"Phường Ayun Pa\",\"province_name\":\"Tỉnh Gia Lai\"}`. The province matches, and the ward name is spot on.\n\nNow, let's assemble the final JSON output. My confidence is high here, because there's a direct reference and the mapping is crystal clear.  The `citation` will pull from that specific line in the resolution. Since the province didn't change, that stays as \"Tỉnh Gia Lai\". We have the `ward_code` \"24044\" and the `ward_name` \"Phường Ayun Pa\".\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai",
+        "line": "126. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Đoàn Kết, Sông Bờ, Cheo Reo và Hòa Bình thành phường mới có tên gọi là phường Ayun Pa."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "24044",
+      "ward_name": "Phường Ayun Pa"
+    }
+  ]
+}

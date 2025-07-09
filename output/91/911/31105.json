@@ -1,0 +1,18 @@
+{
+  "address": "Xã Thổ Châu, Thành phố Phú Quốc, Tỉnh Kiên Giang",
+  "ellapsedInMs": 7159,
+  "estimatedCost": 0.0024829,
+  "thought": "**My Analysis of Address Mapping for Xã Thổ Châu**\n\nOkay, I've got a clear picture of what needs to be done. We're starting with an old address: Xã Thổ Châu, part of Phú Quốc City and Kiên Giang Province. The task is to map this to a new administrative structure based on the provided resolutions and new ward data.\n\nFirst, I identified the components of the old address. Ignoring the district per the prompt instructions, I have \"Xã Thổ Châu\" in \"Tỉnh Kiên Giang.\"\n\nNext, I need to understand the impact of the province-level changes outlined in Resolution 60-NQ/TW.  I checked if \"Tỉnh Kiên Giang\" was on the list of provinces *not* to be merged, and it wasn't. Then, looking at the *merge* list, line 23 clearly states the merger of An Giang and Kiên Giang, resulting in \"Tỉnh An Giang.\" This is a solid, high-confidence change.\n\nNow, let's examine Resolution 1654/NQ-UBTVQH15. I zeroed in on \"Xã Thổ Châu\" and immediately found line 96, which indicates the transformation of all the area of \"Xã Thổ Châu\" into the special zone \"đặc khu Thổ Châu.\" This is a direct, unambiguous mapping from the old to the new.\n\nTo validate and finalize this, I checked the new ward data. I found \"đặc khu Thổ Châu\" in the `New wards` list, and its province name is indeed \"Tỉnh An Giang\" – matching what I derived from Resolution 60-NQ/TW.\n\nTherefore, the JSON output is straightforward. We have a *high-confidence* mapping: \"Xã Thổ Châu\" becomes \"Đặc khu Thổ Châu,\" now within \"Tỉnh An Giang.\" The `ward_code` is 31105.\n\nThe citations will be: Resolution 1654/NQ-UBTVQH15, line 96 for the ward change, and Resolution 60-NQ/TW, line 23 of the \"sáp nhập, hợp nhất\" section for the province change.\n\nThe request specifies to include all possible candidates, but in this case, the mapping is definitive. Thus, the output will contain a single object, accurately reflecting the unambiguous transformation of the original address.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1654/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh An Giang",
+        "line": "96. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Thổ Châu thành đặc khu có tên gọi là đặc khu Thổ Châu."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh An Giang",
+      "ward_code": "31105",
+      "ward_name": "Đặc khu Thổ Châu"
+    }
+  ]
+}

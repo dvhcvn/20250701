@@ -1,0 +1,18 @@
+{
+  "address": "Phường Nam Triệu Giang, Thành phố Thuỷ Nguyên, Thành phố Hải Phòng",
+  "ellapsedInMs": 6368,
+  "estimatedCost": 0.0018763,
+  "thought": "**My Analysis of the Address Mapping**\n\nOkay, so I'm presented with the task of mapping an old address, specifically \"Phường Nam Triệu Giang\", \"Thành phố Hải Phòng\", to its new administrative equivalent.  This requires a careful step-by-step approach.\n\nFirst, I need to pinpoint the old ward and province from the input address.  That's easy: \"Phường Nam Triệu Giang\" is the ward, and \"Thành phố Hải Phòng\" is the province.  Now comes the crucial part: cross-referencing this information with relevant resolutions and data.\n\nI'll start with the Province Resolutions (60-NQ/TW).  I need to check if \"Thành phố Hải Phòng\" is involved in any mergers or consolidations.  Crucially, I check the \"không thực hiện sáp nhập\" (no merger) and \"mới sau sáp nhập, hợp nhất\" (post-merger/consolidation) lists.  Thankfully, the latter is what matters here.  I see a mention of \"Hợp nhất tỉnh Hải Dương và thành phố Hải Phòng, lấy tên là thành phố Hải Phòng\" (Merging Hai Duong province and Hai Phong city, keeping the name Hai Phong city).  This confirms that \"Thành phố Hải Phòng\" remains \"Thành phố Hải Phòng\" after any changes.  So, the province name is consistent. Excellent.\n\nNext, I'll dive into the \"Other resolutions,\" specifically looking for mentions of \"Phường Nam Triệu Giang\".  I'm hoping for a direct correlation or a clear indication of a reorganization.  Bingo! Resolution \"1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng\" comes to the rescue. It states: \"4. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Nam Triệu Giang, Lập Lễ và Tam Hưng thành phường mới có tên gọi là **phường Nam Triệu**.\"  This is a direct hit!  \"Phường Nam Triệu Giang\" is explicitly mentioned, and the new ward name is provided: \"phường Nam Triệu\".\n\nNow, I'll leverage the \"New wards\" data.  I need to find the entry for \"phường Nam Triệu\" within \"Thành phố Hải Phòng\".  Indeed, there it is:  `{\"ward_code\":\"11542\",\"ward_name\":\"Phường Nam Triệu\",\"province_name\":\"Thành phố Hải Phòng\"}`. This perfectly aligns with my findings.\n\nFinally, I'll construct the JSON output.  The `citation` will include the resolution header and the relevant line. The `confidence` is going to be high because the mapping is direct and supported by the resolution.  The `province_name` is confirmed as \"Thành phố Hải Phòng,\" the `ward_code` is \"11542,\" and the `ward_name` is \"Phường Nam Triệu\".  This should provide a robust and accurate mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "4. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Nam Triệu Giang, Lập Lễ và Tam Hưng thành phường mới có tên gọi là phường Nam Triệu."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "11542",
+      "ward_name": "Phường Nam Triệu"
+    }
+  ]
+}

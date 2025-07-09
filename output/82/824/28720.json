@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Vàm Láng, Huyện Gò Công Đông, Tỉnh Tiền Giang",
+  "ellapsedInMs": 8454,
+  "estimatedCost": 0.003029,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm tasked with mapping this old Vietnamese address to its current equivalent, given some resolutions and a list of new wards.  It's a straightforward process, but detail is key. First, I need to break down the old address:  We're starting with Thị trấn Vàm Láng in Huyện Gò Công Đông, Tiền Giang province. The key here is the request to \"eliminate all districts\".\n\nAlright, let's start with the province.  I'll zero in on the relevant province resolution, **60-NQ/TW**.  Immediately, I find it - **\"Hợp nhất tỉnh Tiền Giang và tỉnh Đồng Tháp, lấy tên là tỉnh Đồng Tháp\"**.  So, Tiền Giang is gone, replaced by Đồng Tháp.  That's my starting point.\n\nNow, on to the ward level. I need to comb through other resolutions for information on the former ward, Thị trấn Vàm Láng.  The resolution relevant to the area is **1663/NQ-UBTVQH15**. I'm looking for any mention of \"Thị trấn Vàm Láng\". Bingo! Line 80 states **\"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Vàm Láng, xã Kiểng Phước và xã Gia Thuận thành xã mới có tên gọi là xã Gia Thuận.\"**  Excellent.  This means Vàm Láng has been merged into a new ward called Gia Thuận. Furthermore, and importantly, the resolution confirms that this reorganization is happening within Đồng Tháp province, which aligns with my previous finding.\n\nThe final step is verifying this mapping against the \"New Wards\" data.  I'll search for \"Xã Gia Thuận\" in the list.  Perfect match! I found it: `{\"ward_code\":\"28720\",\"ward_name\":\"Xã Gia Thuận\",\"province_name\":\"Tỉnh Đồng Tháp\"}`.  The new ward name, the correct code and the new province name all check out.\n\nThe evidence is clear and consistent. Tiền Giang is now Đồng Tháp. Vàm Láng is now Gia Thuận. It's a high-confidence mapping. Now, I have to ensure the JSON output accurately reflects this analysis:\n\n*   `province_name`: \"Tỉnh Đồng Tháp\"\n*   `ward_name`: \"Xã Gia Thuận\"\n*   `ward_code`: \"28720\"\n*   `confidence`: \"high\"\n*   `citation`:\n    *   `header`: \"1663/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Tháp\"\n    *   `line`: \"80. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Vàm Láng, xã Kiểng Phước và xã Gia Thuận thành xã mới có tên gọi là xã Gia Thuận.\"\n\nGiven the prompt, the primary focus is the ward mapping, so I select the resolution that directly addresses the ward change. I will create a single citation that encompasses the merging information from the ward reorganization resolution. This is the most direct and accurate representation of my findings.  I'm confident in this output.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1663/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Tháp",
+        "line": "80. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Vàm Láng, xã Kiểng Phước và xã Gia Thuận thành xã mới có tên gọi là xã Gia Thuận."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đồng Tháp",
+      "ward_code": "28720",
+      "ward_name": "Xã Gia Thuận"
+    }
+  ]
+}

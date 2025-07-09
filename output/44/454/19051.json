@@ -1,0 +1,18 @@
+{
+  "address": "Xã Liên Trường, Huyện Quảng Trạch, Tỉnh Quảng Bình",
+  "ellapsedInMs": 6381,
+  "estimatedCost": 0.0021928,
+  "thought": "**Mapping an Old Vietnamese Address to a New Administrative Unit**\n\nOkay, so I've got a classic Vietnamese address mapping problem. The user wants to translate an old address to the modern system. Let's break this down systematically.\n\nFirst, I need to identify the old province: \"Tỉnh Quảng Bình\". Then, I'll consult the province resolutions, specifically those related to merges and changes, like 60-NQ/TW. Ah, there it is! \"Tỉnh Quảng Bình\" is mentioned in the resolution describing the merge with Quảng Trị, which established the new province as \"Tỉnh Quảng Trị\". So, we're dealing with \"Tỉnh Quảng Trị\" now.\n\nNext up, the old ward: \"Xã Liên Trường\". I'll scan through the \"Other resolutions\" looking for this specific ward. And bingo! Resolution 1680/NQ-UBTVQH15, concerning Quảng Trị, describes the consolidation of \"Liên Trường\", \"Phù Cảnh\", and \"Quảng Thanh\" into a new ward called \"**xã Tân Gianh**\". Perfect, the province lines up.\n\nNow, I'll cross-reference \"xã Tân Gianh\" against the \"New wards\" list to get the metadata. Yep, found it: `{\"ward_code\":\"19051\",\"ward_name\":\"Xã Tân Gianh\",\"province_name\":\"Tỉnh Quảng Trị\"}`.\n\nPutting it all together, here's my interpretation for the user:\n\n*   `province_name`: \"Tỉnh Quảng Trị\"\n*   `ward_name`: \"Xã Tân Gianh\"\n*   `ward_code`: \"19051\"\n*   `citation`:\n    *   `header`: \"1680/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Trị\"\n    *   `line`: \"13. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Phù Cảnh, Liên Trường và Quảng Thanh thành xã mới có tên gọi là xã Tân Gianh.\"\n*   `confidence`: \"high\"\n\nI've double-checked for any ambiguities, but it's a straightforward case. No other resolutions mention \"Liên Trường\", and \"Tỉnh Quảng Bình\" only shows up in the province merge documents. This mapping is clear and confident.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1680/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Trị",
+        "line": "13. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Phù Cảnh, Liên Trường và Quảng Thanh thành xã mới có tên gọi là xã Tân Gianh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Trị",
+      "ward_code": "19051",
+      "ward_name": "Xã Tân Gianh"
+    }
+  ]
+}

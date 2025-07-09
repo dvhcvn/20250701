@@ -1,0 +1,28 @@
+{
+  "address": "Thị trấn Tam Sơn, Huyện Quản Bạ, Tỉnh Hà Giang",
+  "ellapsedInMs": 6355,
+  "estimatedCost": 0.002682,
+  "thought": "**Navigating Administrative Changes in Hà Giang**\n\nOkay, so I'm presented with an old address: \"Thị trấn Tam Sơn, Huyện Quản Bạ, Tỉnh Hà Giang.\" My task is to figure out the current administrative unit. I'm going to approach this systematically.\n\nFirst, I need to break down the old address. I recognize \"Tỉnh Hà Giang\" as the province and \"Thị trấn Tam Sơn\" as the ward. Now, I recall that there was a significant administrative change in this region. I'll start by checking any relevant province-level resolutions, especially those related to mergers or boundary adjustments.\n\nA quick search through my province resolution data reveals resolution 60-NQ/TW, which indicates a merger.  \"Hợp nhất tỉnh Tuyên Quang và tỉnh Hà Giang, lấy tên là tỉnh Tuyên Quang\" This merger clarifies that Hà Giang is no longer an independent province; it's now part of Tuyên Quang. That's a key piece of information.\n\nNext, I need to focus on the ward. I'll search for resolutions specifically impacting \"Thị trấn Tam Sơn,\" but this time, within the context of the newly established province, \"Tỉnh Tuyên Quang.\" I'm looking for any mention of the old ward, but within the context of its new provincial authority.\n\nBingo! Resolution 1684/NQ-UBTVQH15, concerning administrative re-organization within Tuyên Quang, is right on target. It specifically states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Tam Sơn, xã Quyết Tiến và xã Quản Bạ thành xã mới có tên gọi là **xã Quản Bạ**.\" This is exactly what I needed.  It directly merges \"Thị trấn Tam Sơn\" into a new unit, \"xã Quản Bạ\" under the new province.\n\nTo confirm, I'll quickly double-check my list of new wards for \"xã Quản Bạ\" within \"Tỉnh Tuyên Quang\". And there it is! `{\"ward_code\":\"00874\",\"ward_name\":\"Xã Quản Bạ\",\"province_name\":\"Tỉnh Tuyên Quang\"}`.  The evidence is clear.\n\nI'm confident in this conclusion. The resolution directly addresses the shift, the merger, and the new designation. This is a solid match. Time to construct that JSON output.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "1. Hợp nhất tỉnh Tuyên Quang và tỉnh Hà Giang, lấy tên là tỉnh Tuyên Quang"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "00874",
+      "ward_name": "Xã Quản Bạ"
+    },
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "64. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Tam Sơn, xã Quyết Tiến và xã Quản Bạ thành xã mới có tên gọi là xã Quản Bạ."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "00874",
+      "ward_name": "Xã Quản Bạ"
+    }
+  ]
+}

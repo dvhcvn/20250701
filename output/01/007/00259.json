@@ -1,0 +1,18 @@
+{
+  "address": "Phường Đồng Nhân, Quận Hai Bà Trưng, Thành phố Hà Nội",
+  "ellapsedInMs": 7056,
+  "estimatedCost": 0.0026706000000000004,
+  "thought": "**Identifying the New Administrative Unit for Phường Đồng Nhân**\n\nOkay, so I've got this address to work with: \"Phường Đồng Nhân, Quận Hai Bà Trưng, Thành phố Hà Nội.\" My task is to figure out the new administrative unit(s) based on the relevant resolutions and data. Let's break this down systematically.\n\nFirst, I need to check the province-level resolutions (specifically, 60-NQ/TW). Good, it looks like \"Thành phố Hà Nội\" is listed as a province that *isn't* undergoing any mergers or splits. So, that part remains unchanged.\n\nNow, on to the more granular details. I'm focusing on \"Phường Đồng Nhân,\" and I need to consult other key resolutions. Resolution 1656/NQ-UBTVQH15 seems promising, given its focus on municipal-level reorganizations. I'll search its lines for \"phường Đồng Nhân.\" Bingo! Line 6 is the key. It clearly states that \"phường Đồng Nhân\" is merged into a new ward called \"**phường Hai Bà Trưng**,\" along with other wards. This is exactly what I was looking for.\n\nNext, I'll cross-reference this information with the new ward data. I'll search for \"Phường Hai Bà Trưng\" there, and I find a perfect match: `{\"ward_code\":\"00256\",\"ward_name\":\"Phường Hai Bà Trưng\",\"province_name\":\"Thành phố Hà Nội\"}`.\n\nThe confidence level here is high, and this is because this specific information is explicitly defined in the resolution: The address's old ward is part of the new \"phường Hai Bà Trưng\". The province name stays the same. The data matches. So I am very sure.\n\nTherefore, the final output will be:\n\n*   `province_name`: \"Thành phố Hà Nội\" (confirmed by the unchanged provincial status and the new ward data).\n*   `ward_name`: \"Phường Hai Bà Trưng\" (derived directly from Resolution 1656/NQ-UBTVQH15, Line 6).\n*   `ward_code`: \"00256\" (from the matching new ward data).\n*   `confidence`: \"high\"\n*   `citation`: \"1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội\", Line 6.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội",
+        "line": "6. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Đồng Nhân, phường Phố Huế, một phần diện tích tự nhiên, quy mô dân số của các phường Bạch Đằng, Lê Đại Hành, Nguyễn Du, Thanh Nhàn và phần còn lại của phường Phạm Đình Hổ sau khi sắp xếp theo quy định tại khoản 2 Điều này thành phường mới có tên gọi là phường Hai Bà Trưng."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hà Nội",
+      "ward_code": "00256",
+      "ward_name": "Phường Hai Bà Trưng"
+    }
+  ]
+}

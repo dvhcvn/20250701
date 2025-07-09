@@ -1,0 +1,18 @@
+{
+  "address": "Xã Yên Kiện, Huyện Đoan Hùng, Tỉnh Phú Thọ",
+  "ellapsedInMs": 8056,
+  "estimatedCost": 0.0036967000000000002,
+  "thought": "**My Analysis of the Administrative Unit Change**\n\nOkay, so I'm tasked with finding the new administrative unit for \"Xã Yên Kiện, Huyện Đoan Hùng, Tỉnh Phú Thọ.\"  My first step, as always, is to identify the province and ward:  \"Tỉnh Phú Thọ\" and \"Xã Yên Kiện,\" respectively.  Then, I need to consult the resolutions and new wards data.\n\nI initially checked resolution 60-NQ/TW to see if \"Tỉnh Phú Thọ\" had been altered.  It turns out, the province's name remains \"Tỉnh Phú Thọ\" after merging with Vĩnh Phúc and Hòa Bình.  That checks out.\n\nNext, I zeroed in on the \"Other resolutions\" for \"Tỉnh Phú Thọ.\" Resolution 1676/NQ-UBTVQH15, \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ,\" is the key.  I looked closely at its lines.  Line 19 is the golden nugget: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Hùng Long, Yên Kiện và Chân Mộng thành xã mới có tên gọi là **xã Chân Mộng**.\"  Bingo! \"Xã Yên Kiện\" is explicitly mentioned as being merged into the new \"Xã Chân Mộng.\"\n\nTo confirm, I double-checked the \"New wards\" data.  There it is: `{\"ward_code\":\"08038\",\"ward_name\":\"Xã Chân Mộng\",\"province_name\":\"Tỉnh Phú Thọ\"}`.  The province lines up.  The result is certain because the resolution explicitly confirms the merger.\n\nTherefore, \"Xã Yên Kiện\" is now \"Xã Chân Mộng\" in \"Tỉnh Phú Thọ.\"  My confidence is high.\n\nHere's the JSON output, formatted according to the provided schema:\n\n```json\n[\n  {\n    \"citation\": {\n      \"header\": \"1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ\",\n      \"line\": \"19. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Hùng Long, Yên Kiện và Chân Mộng thành xã mới có tên gọi là **xã Chân Mộng**.\"\n    },\n    \"confidence\": \"high\",\n    \"province_name\": \"Tỉnh Phú Thọ\",\n    \"ward_code\": \"08038\",\n    \"ward_name\": \"Xã Chân Mộng\"\n  }\n]\n```\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "19. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Hùng Long, Yên Kiện và Chân Mộng thành xã mới có tên gọi là xã Chân Mộng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "08038",
+      "ward_name": "Xã Chân Mộng"
+    }
+  ]
+}

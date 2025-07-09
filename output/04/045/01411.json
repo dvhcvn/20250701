@@ -1,0 +1,18 @@
+{
+  "address": "Xã Nội Thôn, Huyện Hà Quảng, Tỉnh Cao Bằng",
+  "ellapsedInMs": 7075,
+  "estimatedCost": 0.0021765,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm tasked with mapping this old Vietnamese address to the new administrative structure. Let's break this down systematically. The user has given me:\n\n1.  **The Old Address Data:** They've provided an old address: \"Xã Nội Thôn\" (ward), \"Huyện Hà Quảng\" (district), and \"Tỉnh Cao Bằng\" (province).\n\n2.  **My Process:** My initial approach is as follows:\n    *   **Identify the components:** I need to first grab the old ward, district, and province from the provided address, which I've done.\n    *   **Province Check:** Then, I need to consult the Provincial Resolutions, starting with the 60-NQ/TW. This is the place to see what's changed about the bigger units. I check if \"Tỉnh Cao Bằng\" is on the \"don't merge\" list. Bingo, it is!  So, \"Tỉnh Cao Bằng\" remains unchanged.\n    *   **Resolution Lookup (1657/NQ-UBTVQH15):** Now, the core work. I need to comb through other resolutions, specifically 1657/NQ-UBTVQH15. I'm searching for \"Xã Nội Thôn\" (the ward name). And there it is! Line 27: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Nội Thôn, Cải Viên và Tổng Cọt thành xã mới có tên gọi là **xã Tổng Cọt**.\" That's the key.  \"Xã Nội Thôn\" is merging into \"Xã Tổng Cọt.\"\n    *   **Cross-referencing:** Now, to validate, I look in the `New Wards` data. I'm looking for \"Xã Tổng Cọt\" to ensure this matches the province name from the starting data.  Here it is: `{\"ward_code\":\"01414\",\"ward_name\":\"Xã Tổng Cọt\",\"province_name\":\"Tỉnh Cao Bằng\"}`. It matches perfectly!\n\n3.  **Constructing the Output:** Given this information, I can now confidently build the JSON output:\n\n    *   `citation`: The reference is to the resolution, as well as the specific line within the document.\n    *   `confidence`: This is a \"high\" confidence scenario. There is a clear mapping within the data.\n    *   `province_name`: \"Tỉnh Cao Bằng\" (unmodified).\n    *   `ward_code`: \"01414\".\n    *   `ward_name`: \"Xã Tổng Cọt\".\n\n4.  **Double-Checking:** Finally, to be thorough, I quickly scan the rest of the relevant lines in the resolution to verify there are no other ward mappings that would cause an issue.  Nothing else of significance is found.\n\nThis all checks out.  The old \"Xã Nội Thôn\" now maps to \"Xã Tổng Cọt\" in \"Tỉnh Cao Bằng,\" with \"high\" confidence.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1657/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Cao Bằng",
+        "line": "27. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Nội Thôn, Cải Viên và Tổng Cọt thành xã mới có tên gọi là xã Tổng Cọt."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Cao Bằng",
+      "ward_code": "01414",
+      "ward_name": "Xã Tổng Cọt"
+    }
+  ]
+}

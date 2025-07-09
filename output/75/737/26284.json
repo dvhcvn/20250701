@@ -1,0 +1,18 @@
+{
+  "address": "Xã Đồi 61, Huyện Trảng Bom, Tỉnh Đồng Nai",
+  "ellapsedInMs": 5983,
+  "estimatedCost": 0.0018991,
+  "thought": "**My Mapping Process for the Old Address**\n\nOkay, so I'm tackling this old address: \"Xã Đồi 61, Huyện Trảng Bom, Tỉnh Đồng Nai\".  My goal is to figure out the corresponding new administrative unit.  Here's how I'm thinking about it:\n\nFirst, I need to confirm the province.  The address says \"Tỉnh Đồng Nai\".  I immediately check the province-level resolutions. Aha!  I see resolution \"Hợp nhất tỉnh Đồng Nai và tỉnh Bình Phước, lấy tên là tỉnh Đồng Nai\"  – meaning Đồng Nai remained the name, even if there were some boundary changes. So, \"Tỉnh Đồng Nai\" it is.\n\nNext, I zero in on \"Xã Đồi 61\" – the old ward.  Time to dig into the relevant resolutions. I quickly find resolution \"1662/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Nai\".  This looks promising. I scan through it, and there it is, line 9: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Đồi 61 và xã An Viễn thành xã mới có tên gọi là **xã An Viễn**.\" Bingo!  \"Xã Đồi 61\" *merged* with \"Xã An Viễn\" to create a *new* \"Xã An Viễn\".\n\nNow, I'll use that *new* ward name, \"Xã An Viễn\", to find the details in the \"New wards\" data.  I search for that name, and it aligns perfectly: `{\"ward_code\":\"26296\",\"ward_name\":\"Xã An Viễn\",\"province_name\":\"Tỉnh Đồng Nai\"}`.  The match is clean.\n\nThis is a pretty straightforward mapping.  I feel confident about this one.  Here's the JSON structure I'll use:\n\n*   `citation`: \"1662/NQ-UBTVQH15, Line 9\" (because that's the resolution and line that does the direct mapping)\n*   `confidence`: \"high\" (because it's a clear, direct mention in the resolution)\n*   `province_name`: \"Tỉnh Đồng Nai\" (Confirmed at multiple levels)\n*   `ward_code`: \"26296\"\n*   `ward_name`: \"Xã An Viễn\"\n\nDone! That's a good one to file away.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1662/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Nai",
+        "line": "9. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Đồi 61 và xã An Viễn thành xã mới có tên gọi là xã An Viễn."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đồng Nai",
+      "ward_code": "26296",
+      "ward_name": "Xã An Viễn"
+    }
+  ]
+}

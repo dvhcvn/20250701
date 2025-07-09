@@ -1,0 +1,28 @@
+{
+  "address": "Xã Đắk Sôr, Huyện Krông Nô, Tỉnh Đắk Nông",
+  "ellapsedInMs": 8980,
+  "estimatedCost": 0.0033813000000000003,
+  "thought": "**Analysis of Address Mapping: Xã Đắk Sôr, Huyện Krông Nô, Tỉnh Đắk Nông**\n\nAlright, let's break this down. My task is to map this old address to its new administrative unit. First, I identify the initial elements: \"Xã Đắk Sôr, Huyện Krông Nô, Tỉnh Đắk Nông\".\n\nStep one: **Province** - \"Tỉnh Đắk Nông\". I immediately check the provided resolutions, specifically looking for any mentions of province changes. Resolution 60-NQ/TW jumps out: it clearly states the merger of \"Tỉnh Lâm Đồng, tỉnh Đắk Nông và tỉnh Bình Thuận\" into \"Tỉnh Lâm Đồng\". Therefore, \"Tỉnh Đắk Nông\" is now part of \"Tỉnh Lâm Đồng.\"\n\nStep two: **Ward** - \"Xã Đắk Sôr\". Now I need to find the new equivalent. I turn to the \"Other resolutions\" and search for any reference to \"Xã Đắk Sôr.\" Bingo! Resolution 1671/NQ-UBTVQH15 within the context of \"Tỉnh Lâm Đồng\" explicitly states a restructuring: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Buôn Choáh, Đắk Sôr và Nam Đà thành xã mới có tên gọi là **xã Nam Đà**.\" This is a perfect match – \"Xã Đắk Sôr\" is now part of \"Xã Nam Đà\" within \"Tỉnh Lâm Đồng.\"\n\nStep three: **Verification** - I consult the \"New wards\" list for \"Tỉnh Lâm Đồng\" to confirm the newly mapped unit. Searching for \"Xã Nam Đà\" in \"Tỉnh Lâm Đồng\" yields a clear result: `{\"ward_code\":\"24697\",\"ward_name\":\"Xã Nam Đà\",\"province_name\":\"Tỉnh Lâm Đồng\"}`. This confirms our resolution-based mapping.\n\nStep four: **Final check** - Given the \"Huyện Krông Nô\" reference, I need to ensure there are no ambiguities. Resolution 1671 point 85 concerns *another* \"Xã Krông Nô\" formation, but through a different restructuring process. Crucially, that resolution does not impact the straightforward \"Xã Đắk Sôr\" > \"Xã Nam Đà\" mapping. There is another Xã Krông Nô in Lâm Đồng, and also in Đắk Lắk. But the mapping is to Nam Đà. And since the address is in Đắk Nông, and we found it is now in Lâm Đồng, the new Krông Nô formation is irrelevent. Resolution 1660/NQ-UBTVQH15, concerning Đắk Lắk, isn't relevant either.\n\n**Conclusion:** The mapping is clear and direct. \"Xã Đắk Sôr, Huyện Krông Nô, Tỉnh Đắk Nông\" is now \"Xã Nam Đà, Tỉnh Lâm Đồng.\" I'm confident in this mapping, based on a direct resolution for the province restructuring, and a clear ward-level merge and name change. I'll construct the output JSON accordingly.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "14. Hợp nhất tỉnh Lâm Đồng, tỉnh Đắk Nông và tỉnh Bình Thuận; lấy tên là tỉnh Lâm Đồng"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "24697",
+      "ward_name": "Xã Nam Đà"
+    },
+    {
+      "citation": {
+        "header": "1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng",
+        "line": "84. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Buôn Choáh, Đắk Sôr và Nam Đà thành xã mới có tên gọi là xã Nam Đà."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "24697",
+      "ward_name": "Xã Nam Đà"
+    }
+  ]
+}

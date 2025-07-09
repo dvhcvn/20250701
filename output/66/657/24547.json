@@ -1,0 +1,18 @@
+{
+  "address": "Xã Ea Tiêu, Huyện Cư Kuin, Tỉnh Đắk Lắk",
+  "ellapsedInMs": 6838,
+  "estimatedCost": 0.002445,
+  "thought": "**Address Mapping Analysis: Đắk Lắk Province**\n\nOkay, so I've got an address to map, specifically one from the old administrative system in Đắk Lắk. My goal is to figure out the new ward associated with the old address, leveraging the provided resolutions and new ward data.\n\nFirst, I need to understand the initial administrative context. The old address is from \"Xã Ea Tiêu\" in \"Huyện Cư Kuin,\" Đắk Lắk Province. (Even though the prompt mentioned eliminating districts, that information is helpful for contextual understanding.)\n\nNext, I turned to the province-level resolutions. I had to determine if any province-level changes happened first. Looking at the \"Các đơn vị hành chính cấp tỉnh không thực hiện sáp nhập\" and \"Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất\" lists, I found that Đắk Lắk was not slated for any major changes. However, there was a mention that Đắk Lắk and Phú Yên *had* merged, though the name, Đắk Lắk, was retained.\n\nFocusing on the more specific resolution, I zeroed in on the \"1660/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đắk Lắk\" resolution, which is highly relevant. Within the lines of the resolution, I found the key piece of information. Line 51 explicitly stated that \"Xã Ea Tiêu\" would be merged into a new administrative unit and renamed \"Xã Ea Ktur.\"\n\nDouble-checking this with the provided new ward data, I can see that the new data perfectly aligns with my findings: `{\"ward_code\":\"24544\",\"ward_name\":\"Xã Ea Ktur\",\"province_name\":\"Tỉnh Đắk Lắk\"}`. This confirms the new ward name and province.\n\nTherefore, my final JSON output is straightforward. The `province_name` will be \"Tỉnh Đắk Lắk.\" The `ward_name` will be \"Xã Ea Ktur.\" The `ward_code` is \"24544.\" The `citation` will be \"1660/NQ-UBTVQH15,\" the resolution responsible for the change. I have very high `confidence` in this mapping because the resolution explicitly merges the old ward into the new one. This is a clear-cut case.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1660/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đắk Lắk",
+        "line": "51. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Ea Tiêu, xã Ea Ktur và phần còn lại của xã Ea Bhốk sau khi sắp xếp theo quy định tại khoản 50 Điều này thành xã mới có tên gọi là xã Ea Ktur."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đắk Lắk",
+      "ward_code": "24544",
+      "ward_name": "Xã Ea Ktur"
+    }
+  ]
+}

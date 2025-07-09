@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tú Lệ, Huyện Văn Chấn, Tỉnh Yên Bái",
+  "ellapsedInMs": 8388,
+  "estimatedCost": 0.0029342,
+  "thought": "**My Thought Process: Mapping an Old Vietnamese Address**\n\nOkay, so I've been tasked with mapping an old Vietnamese address to its new administrative units.  The address is in Yên Bái, specifically Xã Tú Lệ in Huyện Văn Chấn.  Since I'm dealing with older data, I need to consult the relevant resolutions and the new ward data to determine the current province and ward for this address.\n\nFirst things first, the province. I know Yên Bái is now likely part of a merger.  I'll look at Resolution 60-NQ/TW, and sure enough, there's the smoking gun: \"Hợp nhất tỉnh Lào Cai và tỉnh Yên Bái, lấy tên là tỉnh Lào Cai.\"  Bingo!  So, my new province is definitely Lào Cai.\n\nNow for the tricky part: the ward, Tú Lệ.  I'll immediately turn to the ward resolution documents, particularly 1673/NQ-UBTVQH15.  My search focuses on lines mentioning \"Xã Tú Lệ\".  And there it is!  Line 4: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Cao Phạ và xã Tú Lệ thành xã mới có tên gọi là **xã Tú Lệ**.\" Perfect!  This clearly states that the old Tú Lệ (from Yên Bái, now part of Lào Cai) was merged to form a *new* Tú Lệ. The resolution's title confirms that it's concerning administrative units within Lào Cai.\n\nExcellent, with the resolution in hand, I need to cross-reference this with the \"new_wards\" data. Let's see... and there it is: `{\"ward_code\":\"04630\",\"ward_name\":\"Xã Tú Lệ\",\"province_name\":\"Tỉnh Lào Cai\"}`.  The name, province, and even a ward code!\n\nNow to construct my output JSON:\n\n*   `province_name`: \"Tỉnh Lào Cai\" (from the province merger)\n*   `ward_name`: \"Xã Tú Lệ\" (from the resolution and new data)\n*   `ward_code`: \"04630\" (from the new ward data)\n*   `citation`:  This is important. The evidence is solid here, so I'll include the relevant resolution and line:\n    *   `header`: \"1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai\"\n    *   `line`: \"4. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Cao Phạ và xã Tú Lệ thành xã mới có tên gọi là **xã Tú Lệ**.\"\n*   `confidence`: \"high\". I'm extremely confident because the old ward name is directly linked in the resolution to the *new* ward name, and I've confirmed that this new ward exists with the correct province and code.\n\nLet's do a final check to ensure everything aligns.\n**Original address**: Xã Tú Lệ, Huyện Văn Chấn, Tỉnh Yên Bái\n**Province mapping**: Resolved. \"Tỉnh Yên Bái\" --> \"Tỉnh Lào Cai\"\n**Ward mapping**: Resolved. \"Xã Tú Lệ\" --> \"Xã Tú Lệ\"\n\nSeems I have a conclusive result.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai",
+        "line": "4. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Cao Phạ và xã Tú Lệ thành xã mới có tên gọi là xã Tú Lệ."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "04630",
+      "ward_name": "Xã Tú Lệ"
+    }
+  ]
+}

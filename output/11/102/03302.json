@@ -1,0 +1,18 @@
+{
+  "address": "Xã Xuân Lao, Huyện Mường Ảng, Tỉnh Điện Biên",
+  "ellapsedInMs": 6753,
+  "estimatedCost": 0.0021814,
+  "thought": "**Finding the New Administrative Unit for the Old Address**\n\nOkay, so I've got this old address: \"Xã Xuân Lao, Huyện Mường Ảng, Tỉnh Điện Biên,\" and I need to figure out the new ward it belongs to. My approach is pretty straightforward, based on the provided resolutions and the list of new wards.\n\nFirst, I'll break down the old address. I've got \"Xã Xuân Lao\" as the old ward, \"Huyện Mường Ảng\" as the old district, and \"Tỉnh Điện Biên\" as the old province.\n\nNow, the province is a quick check. I'll refer to those Province Resolutions (60-NQ/TW), and sure enough, \"Tỉnh Điện Biên\" is listed as a province that isn't being merged. Good, so the province name stays the same.\n\nNext, I need to dig into those Other Resolutions (1661/NQ-UBTVQH15). I'm looking for \"Xã Xuân Lao\" in the lines. Aha! Line 29 is the key: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Nặm Lịch, Xuân Lao và Mường Lạn thành xã mới có tên gọi là **xã Mường Lạn**.\"  This directly states that \"Xã Xuân Lao\" is merging into \"xã Mường Lạn.\"  Perfect.\n\nNow for the final step. I'll cross-reference \"Xã Mường Lạn\" with the \"New wards\" list, and I find a match: `{\"ward_code\":\"03313\",\"ward_name\":\"Xã Mường Lạn\",\"province_name\":\"Tỉnh Điện Biên\"}`. That confirms everything.\n\nSo, here's my resulting JSON output:\n\n*   `province_name`: \"Tỉnh Điện Biên\" (from the initial check)\n*   `ward_name`: \"Xã Mường Lạn\" (from the resolution and the new wards list)\n*   `ward_code`: \"03313\" (from the new wards list)\n*   `confidence`: \"high\" (because the resolution specifically outlines the merger)\n*   `citation`:\n    *   `header`: \"1661/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Điện Biên\"\n    *   `line`: \"29. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Nặm Lịch, Xuân Lao và Mường Lạn thành xã mới có tên gọi là **xã Mường Lạn**.\"\n\nThe fact that the resolution mentions eliminating districts is worth noting, but since the schema doesn't call for district information in the output, I've focused on the province and ward, which is what the user requires.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1661/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Điện Biên",
+        "line": "29. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Nặm Lịch, Xuân Lao và Mường Lạn thành xã mới có tên gọi là xã Mường Lạn."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Điện Biên",
+      "ward_code": "03313",
+      "ward_name": "Xã Mường Lạn"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Phường Ninh Giang, Thành phố Hoa Lư, Tỉnh Ninh Bình",
+  "ellapsedInMs": 6903,
+  "estimatedCost": 0.0031212,
+  "thought": "**Determining the New Administrative Unit for \"Phường Ninh Giang\"**\n\nOkay, so the user wants to know where \"Phường Ninh Giang, Thành phố Hoa Lư, Tỉnh Ninh Bình\" is now. My first step is to confirm the province.  \"Tỉnh Ninh Bình\" is the starting point, and I need to make sure there haven't been any province mergers that would affect the address.  Resolution 60-NQ/TW doesn't indicate any changes to the province name itself, so \"Tỉnh Ninh Bình\" remains correct.\n\nNow, focusing on the specific ward, \"Phường Ninh Giang,\" I need to comb through the relevant administrative arrangement resolutions. Resolution \"1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình\" looks promising.  Scanning through the lines, I immediately see the key information. Line 122 states that \"Phường Ninh Giang\" is merged into the new \"phường Tây Hoa Lư.\" Crucially, lines 123, 124, and 125 confirm that \"Phường Ninh Giang\" isn't included in other newly formed wards. I also noticed line 35 about a new *xã* Ninh Giang, but the user is asking about a *phường*, so that's not relevant in this context.\n\nWith the merger confirmed, I need to verify \"phường Tây Hoa Lư\" exists. Checking the list of new wards for \"Tỉnh Ninh Bình,\" I find `{\"ward_code\":\"14533\",\"ward_name\":\"Phường Tây Hoa Lư\",\"province_name\":\"Tỉnh Ninh Bình\"}`. This perfectly matches the findings in the resolution.\n\nFinally, I can confidently construct the JSON output. The `citation` will pinpoint the specific resolution and line for verification. The `confidence` will be \"high\" because this is a direct, unambiguous match. The `province_name` is \"Tỉnh Ninh Bình,\" and the `ward_code` and `ward_name` come directly from the new ward data. That should be a complete and accurate answer to the user's query.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "122. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Ninh Giang, các xã Trường Yên, Ninh Hòa, Phúc Sơn, Gia Sinh và phần còn lại của xã Gia Tân sau khi sắp xếp theo quy định tại khoản 71 Điều này thành phường mới có tên gọi là phường Tây Hoa Lư."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "14533",
+      "ward_name": "Phường Tây Hoa Lư"
+    }
+  ]
+}

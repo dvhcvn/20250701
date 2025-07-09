@@ -1,0 +1,18 @@
+{
+  "address": "Xã Diễn Lộc, Huyện Diễn Châu, Tỉnh Nghệ An",
+  "ellapsedInMs": 6702,
+  "estimatedCost": 0.0022982000000000002,
+  "thought": "**My Thought Process for Mapping the Old Address**\n\nOkay, so I'm presented with an old Vietnamese address and need to translate it to the new administrative structure. Let's break this down systematically. First, I have to *interpret* the old address: \"Xã Diễn Lộc, Huyện Diễn Châu, Tỉnh Nghệ An\". It's pretty straightforward, indicating a ward, district, and province. My initial task is to identify those old units. From this address, I can clearly deduce: Old Ward: \"Xã Diễn Lộc\", Old District: \"Huyện Diễn Châu\", and Old Province: \"Tỉnh Nghệ An\". The district information is only for context, since all districts have been eliminated in this migration.\n\nNow, the real work begins. I've got to consult those critical province resolutions, specifically 60-NQ/TW, to see if Nghệ An province has been affected. And there it is! \"Tỉnh Nghệ An\" is listed under the \"không thực hiện sáp nhập\" (not merged) category. That's great news, the province name stays as is.\n\nNext, I turn my attention to the other resolutions, like 1678/NQ-UBTVQH15, where I'll search for the specific old ward, \"Xã Diễn Lộc.\" And Bingo! Line 16 of the resolution directly addresses this. It explicitly states that \"Xã Diễn Lộc\" (and some others) is merged into a new ward called \"**xã Tân Châu**.\" This is a definitive connection.\n\nNow, I cross-reference this information with the new ward data. I look for \"xã Tân Châu\" within \"Tỉnh Nghệ An\", and I find a perfect match.  There's a clean entry `{\"ward_code\":\"17488\",\"ward_name\":\"Xã Tân Châu\",\"province_name\":\"Tỉnh Nghệ An\"}`.\n\nWith these pieces in place, I can construct the JSON output:  The `province_name` will be \"Tỉnh Nghệ An\" because of resolution 60-NQ/TW. The `ward_name` will be \"Xã Tân Châu\" which is directly mentioned in resolution 1678/NQ-UBTVQH15. The `ward_code` will be \"17488\". For the `citation`, I'll pull the header and line from resolution 1678/NQ-UBTVQH15, the ones that directly confirm the merger. Since I have a direct match and clear citation, my confidence level for this mapping will be \"high\".\n\nFinally, I'll do a quick check to ensure the output adheres to the specified schema, confirming that all required fields are present and properly formatted. This looks like a solid, well-supported mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1678/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Nghệ An",
+        "line": "16. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Diễn Lộc, Diễn Lợi, Diễn Phú và Diễn Thọ thành xã mới có tên gọi là xã Tân Châu."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Nghệ An",
+      "ward_code": "17488",
+      "ward_name": "Xã Tân Châu"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Nghi Lâm, Huyện Nghi Lộc, Tỉnh Nghệ An",
+  "ellapsedInMs": 5674,
+  "estimatedCost": 0.0018721,
+  "thought": "**My Approach to Address Mapping**\n\nOkay, so I need to map this old Vietnamese address – \"Xã Nghi Lâm, Huyện Nghi Lộc, Tỉnh Nghệ An\" – to the new administrative structure.  My expert intuition immediately tells me this is a standard spatial lookup task, with a twist of needing to understand historical resolutions.\n\nFirst, I'll dissect the address:  \"Xã Nghi Lâm\" is the old ward, \"Huyện Nghi Lộc\" is the district, and \"Tỉnh Nghệ An\" is the province.  Classic.\n\nNow, I'll start with the province. I'll need to consult those province resolutions, specifically 60-NQ/TW, to see if Nghệ An has been subject to any mergers or changes. Excellent! The resolution clearly states that \"Tỉnh Nghệ An\" is listed under \"Các đơn vị hành chính cấp tỉnh không thực hiện sáp nhập.\" So, no change there, the province remains \"Tỉnh Nghệ An.\"\n\nNext, I zero in on that ward, \"Xã Nghi Lâm.\" I'll need to check other resolutions to find the mapping for this old ward. Specifically, resolution 1678/NQ-UBTVQH15.  Bingo! Line 50 of that resolution nails it: it states that \"Xã Nghi Lâm\" (along with others) is *merged* into a new ward called \"**xã Phúc Lộc**.\" That's the key.\n\nNow I need to validate this new ward.  I'll compare \"Xã Phúc Lộc\" with my dataset of \"New wards\" data.  I'll want to check that it exists in the new data and that the province name matches what I expect. I've got a match! I see `{\"ward_code\":\"17857\",\"ward_name\":\"Xã Phúc Lộc\",\"province_name\":\"Tỉnh Nghệ An\"}`. Perfect.\n\nFinally, the output:  \"Tỉnh Nghệ An\" as the province, \"Xã Phúc Lộc\" (with code \"17857\") as the new ward. The confidence is definitely \"high\" here – there's a direct and explicit mapping in the resolution.  I'll be sure to include the relevant citation (the resolution header and that specific line) for full traceability and transparency.  Another successful mapping!\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1678/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Nghệ An",
+        "line": "50. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Nghi Công Bắc, Nghi Công Nam, Nghi Lâm và Nghi Mỹ thành xã mới có tên gọi là xã Phúc Lộc."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Nghệ An",
+      "ward_code": "17857",
+      "ward_name": "Xã Phúc Lộc"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "address": "Xã Bình Khánh , Huyện Mỏ Cày Nam, Tỉnh Bến Tre",
+  "ellapsedInMs": 10020,
+  "estimatedCost": 0.0035594999999999997,
+  "thought": "**Finding the New Administrative Unit for the Old Address**\n\nOkay, so I've got this old address: \"Xã Bình Khánh , Huyện Mỏ Cày Nam, Tỉnh Bến Tre\".  My task is to pinpoint the new administrative unit, the new ward, based on that old information.  First, I'll break it down systematically.\n\n1.  **Province First:**  \"Tỉnh Bến Tre\" is my starting point.  I know from experience with these data sets that province changes are common.  So, I checked for province mergers or renamings.\n\n2.  **Province Resolutions (60-NQ/TW):**  Aha!  I found it. \"Tỉnh Bến Tre\" was merged with other provinces to form \"Tỉnh Vĩnh Long\". Now, I need to keep that in mind. This is crucial for matching the correct context in future resolutions. \"Tỉnh Bến Tre\" is now \"Tỉnh Vĩnh Long\"\n\n3.  **Specific Ward:**  The key is \"Xã Bình Khánh\".  I'll use that as my primary search term within my database of resolutions.\n\n4.  **Searching Other Resolutions:**  I need to check *all* relevant resolutions, focusing on the new province name, which is \"Vĩnh Long\", or, if the resolution precedes the province change, I need to check for old province names too.\n\n    I checked Resolution 1654/NQ-UBTVQH15, Resolution 1685/NQ-UBTVQH15. I am aware of these other resolutions with \"Bình Khánh\" but those are not relevant. They are for other areas. Then... Bingo!\n\n    Resolution 1687/NQ-UBTVQH15 (Tỉnh Vĩnh Long) appears very promising. Line 70 perfectly aligns with my search for \"Bình Khánh\" and the correct province - the *new* province of Vĩnh Long. Line 70 is the winner. This line states \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số of các xã Định Thủy, Phước Hiệp và Bình Khánh thành xã mới có tên gọi là **xã Đồng Khởi**.\"  This clearly indicates that \"Xã Bình Khánh\" is now a part of \"Xã Đồng Khởi.\"  But...\n\n    Line 71 of the same resolution also caught my eye as it deals with \"huyện Mỏ Cày Nam\" mentioned in the original address. Line 71 creates \"xã Mỏ Cày.\"\n\n5.  **Cross-referencing with \"New Wards\" Data:**  I then check the \"New Wards\" data.\n\n    I confirmed that \"Xã Đồng Khởi\" has the following entry: `{\"ward_code\":\"28945\",\"ward_name\":\"Xã Đồng Khởi\",\"province_name\":\"Tỉnh Vĩnh Long\"}`. This perfectly matches the resolution and confirms the new ward.\n\n    \"Xã Mỏ Cày\" has the following entry:  `{\"ward_code\":\"28903\",\"ward_name\":\"Xã Mỏ Cày\",\"province_name\":\"Tỉnh Vĩnh Long\"}`. This is another relevant entry to note.\n\n6.  **Confidence Check:**  The province merger is clear and straightforward. Resolution 1687/NQ-UBTVQH15 directly addresses the old address, mentioning both \"Bình Khánh\" and \"Mỏ Cày Nam\" within the context of the *new* province. The direct merge of the old ward to \"Xã Đồng Khởi\" is explicitly stated.  The creation of \"Xã Mỏ Cày\" based on the \"Huyện Mỏ Cày Nam\" address is also significant.  My confidence is very high. Therefore, I can confidently identify \"Xã Đồng Khởi\" as the new administrative unit.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "20. Hợp nhất tỉnh Bến Tre, tỉnh Vĩnh Long và tỉnh Trà Vinh; lấy tên là tỉnh Vĩnh Long"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "28945",
+      "ward_name": "Xã Đồng Khởi"
+    },
+    {
+      "citation": {
+        "header": "1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long",
+        "line": "70. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Định Thủy, Phước Hiệp và Bình Khánh thành xã mới có tên gọi là xã Đồng Khởi."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "28945",
+      "ward_name": "Xã Đồng Khởi"
+    }
+  ]
+}

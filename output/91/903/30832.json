@@ -1,0 +1,28 @@
+{
+  "address": "Xã Mỹ Hiệp Sơn, Huyện Hòn Đất, Tỉnh Kiên Giang",
+  "ellapsedInMs": 5828,
+  "estimatedCost": 0.0022700999999999997,
+  "thought": "**Mapping an Old Address to New Administrative Units**\n\nOkay, so I'm tasked with taking an old address and figuring out its current location based on these resolutions and ward data. First, I need to break down the input address, \"Xã Mỹ Hiệp Sơn, Huyện Hòn Đất, Tỉnh Kiên Giang.\"  I can easily spot the old ward, \"Xã Mỹ Hiệp Sơn,\" and the old province, \"Tỉnh Kiên Giang.\"\n\nNow, the province is a key, so I immediately check the province resolutions, specifically 60-NQ/TW.  Ah, here it is: \"Hợp nhất tỉnh An Giang và tỉnh Kiên Giang, lấy tên là tỉnh An Giang.\"  So, \"Kiên Giang\" is merged into \"An Giang.\"  The new province is now \"Tỉnh An Giang.\" Got it.\n\nNext, I need to find the fate of \"Xã Mỹ Hiệp Sơn.\"  I'll look at other resolutions, especially 1654/NQ-UBTVQH15.  Bingo! Line 75: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Sóc Sơn và các xã Mỹ Hiệp Sơn, Mỹ Phước, Mỹ Thuận thành xã mới có tên gọi là **xã Mỹ Thuận**.\"  There it is, \"Xã Mỹ Hiệp Sơn\" is explicitly merged into \"xã Mỹ Thuận.\"\n\nNow, I cross-reference with the \"New wards\" data.  I'm expecting to find \"xã Mỹ Thuận\" and \"Tỉnh An Giang.\"  And there it is: `{\"ward_code\":\"30838\",\"ward_name\":\"Xã Mỹ Thuận\",\"province_name\":\"Tỉnh An Giang\"}`.  Perfect match!\n\nFinally, I need to put it all together.  The old ward is clearly mentioned in the resolution. The new province is from the merger resolution, and the new ward name is explicitly stated in the merger detail.  My confidence level should definitely be \"high.\" Everything lines up perfectly.  \n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh An Giang và tỉnh Kiên Giang, lấy tên là tỉnh An Giang"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh An Giang",
+      "ward_code": "30838",
+      "ward_name": "Xã Mỹ Thuận"
+    },
+    {
+      "citation": {
+        "header": "1654/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh An Giang",
+        "line": "Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Sóc Sơn và các xã Mỹ Hiệp Sơn, Mỹ Phước, Mỹ Thuận thành xã mới có tên gọi là xã Mỹ Thuận."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh An Giang",
+      "ward_code": "30838",
+      "ward_name": "Xã Mỹ Thuận"
+    }
+  ]
+}

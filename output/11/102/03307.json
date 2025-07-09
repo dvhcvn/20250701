@@ -1,0 +1,18 @@
+{
+  "address": "Xã Ẳng Nưa, Huyện Mường Ảng, Tỉnh Điện Biên",
+  "ellapsedInMs": 6426,
+  "estimatedCost": 0.0020571,
+  "thought": "**Address Mapping: Xã Ẳng Nưa to Xã Mường Ảng**\n\nOkay, so I've got this Vietnamese address to translate, and it seems pretty straightforward given the available data. First, I need to break down the old address: \"Xã Ẳng Nưa\" is the old ward, part of \"Huyện Mường Ảng\" (which, by the way, the prompt says is irrelevant since districts are all gone), and in the province of \"Tỉnh Điện Biên.\"\n\nNow, I'm consulting those province resolutions. I need to make sure Điện Biên wasn't merged. Yep, and according to the list under 60-NQ/TW, Điện Biên *didn't* merge. Good. Its province name will remain \"Tỉnh Điện Biên.\"\n\nNext, the more critical part: Resolution 1661/NQ-UBTVQH15. I've got to find the line that covers Xã Ẳng Nưa. Ah, here it is: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Mường Ảng, xã Ẳng Nưa và xã Ẳng Cang thành xã mới có tên gọi là **xã Mường Ảng**.\"  Perfect! This clearly states that Xã Ẳng Nưa merges into the new Xã Mường Ảng.\n\nNow, I cross-reference this information with the new wards data. I'm looking for a ward with `ward_name` \"Xã Mường Ảng\" and in the `province_name` \"Tỉnh Điện Biên.\"  And bingo!  Found it: `{\"ward_code\":\"03256\",\"ward_name\":\"Xã Mường Ảng\",\"province_name\":\"Tỉnh Điện Biên\"}`.\n\nPutting it all together, I can construct the JSON output. The `citation` will be the line from the resolution, something like \"Resolution 1661/NQ-UBTVQH15, Line: \"Sắp xếp...Xã Ẳng Nưa...xã Mường Ảng.\"  The `confidence` level is definitely \"high\" because the resolution is explicit, and the new ward data confirms it. The `province_name` is \"Tỉnh Điện Biên,\" the `ward_code` is \"03256,\" and the `ward_name` is \"Xã Mường Ảng.\" This is a clean and confident match.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1661/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Điện Biên",
+        "line": "26. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Mường Ảng, xã Ẳng Nưa và xã Ẳng Cang thành xã mới có tên gọi là xã Mường Ảng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Điện Biên",
+      "ward_code": "03256",
+      "ward_name": "Xã Mường Ảng"
+    }
+  ]
+}

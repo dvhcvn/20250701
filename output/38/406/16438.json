@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Tân Phong, Huyện Quảng Xương, Tỉnh Thanh Hóa",
+  "ellapsedInMs": 8365,
+  "estimatedCost": 0.0035746000000000003,
+  "thought": "**My Analysis of Administrative Unit Changes**\n\nOkay, so I'm presented with the old address \"Thị trấn Tân Phong, Huyện Quảng Xương, Tỉnh Thanh Hóa\". My task is to determine the current administrative unit.  Here's my thought process:\n\n1.  **Breaking Down the Address:**  First, I identify the key components: \"Tỉnh Thanh Hóa\" (province) and \"Thị trấn Tân Phong\" (ward).\n\n2.  **Province Stability:** I consult the relevant resolutions, specifically the ones related to provincial-level administrative reorganizations. I find that \"Tỉnh Thanh Hoá\" is listed as a province that isn't undergoing any mergers or splits, so \"Tỉnh Thanh Hóa\" remains the province.\n\n3.  **Ward Transformation:**  Now, I dive into resolutions focused on ward-level changes within \"Tỉnh Thanh Hóa\". I zero in on resolutions that mention \"Tân Phong\" and \"Thanh Hóa\".  Aha!  Resolution 1686/NQ-UBTVQH15, concerning the reorganization of administrative units within Thanh Hóa, is key.  It explicitly states that \"Thị trấn Tân Phong,\" along with \"xã Quảng Đức\" and \"xã Quảng Định,\" will be merged to form a new ward called \"Xã Lưu Vệ\".  This is a direct and precise match.\n\n4.  **Confirming the New Ward:**  I then cross-reference this information with a list of new wards (`new_wards`) to verify the details for \"Xã Lưu Vệ\" within \"Tỉnh Thanh Hóa\".  Sure enough, I find the entry: `{\"ward_code\":\"16438\",\"ward_name\":\"Xã Lưu Vệ\",\"province_name\":\"Tỉnh Thanh Hóa\"}`.  This confirms the new ward's code and name.\n\n5.  **Constructing the Output:** With this confirmed information, I'm confident in constructing the final JSON output:\n    *   `province_name`: \"Tỉnh Thanh Hóa\"\n    *   `ward_name`: \"Xã Lưu Vệ\"\n    *   `ward_code`: \"16438\"\n    *   `citation`:  This will point to the relevant resolution:\n        *   `header`: \"1686/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thanh Hóa\"\n        *   `line`: \"27. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Tân Phong, xã Quảng Đức và xã Quảng Định thành xã mới có tên gọi là **xã Lưu Vệ**.\"\n    *   `confidence`: \"high\". The direct and specific mapping makes this a very confident conclusion.\n\n**Important Considerations and Edge Cases:**  As an extra check, I scanned for any other instances of \"Tân Phong\" in the database to rule out any potential confusion. I noted other cases where \"Tân Phong\" was renamed or merged. Because the initial mention of \"Thị trấn Tân Phong\" and \"Tỉnh Thanh Hóa\" is clearly present in the right resolution, there is no chance that any other location would lead to errors.\n\n**In summary, the new administrative unit for \"Thị trấn Tân Phong, Huyện Quảng Xương, Tỉnh Thanh Hóa\" is \"Xã Lưu Vệ\" in \"Tỉnh Thanh Hóa\", with a very high confidence level.**\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1686/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thanh Hóa",
+        "line": "27. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Tân Phong, xã Quảng Đức và xã Quảng Định thành xã mới có tên gọi là xã Lưu Vệ."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thanh Hóa",
+      "ward_code": "16438",
+      "ward_name": "Xã Lưu Vệ"
+    }
+  ]
+}

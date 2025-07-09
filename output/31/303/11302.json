@@ -1,0 +1,18 @@
+{
+  "address": "Phường Sở Dầu, Quận Hồng Bàng, Thành phố Hải Phòng",
+  "ellapsedInMs": 6793,
+  "estimatedCost": 0.0024569,
+  "thought": "**Mapping Old Address to New Administrative Units**\n\nOkay, so I'm tasked with taking an old address and figuring out its current administrative unit. It's: \"Phường Sở Dầu, Quận Hồng Bàng, Thành phố Hải Phòng\". First, I need to isolate the old ward and province. Easy enough: \"Phường Sở Dầu\" and \"Thành phố Hải Phòng\".\n\nNow, time to consult those crucial province resolutions (specifically, 60-NQ/TW). Let's see... \"Hợp nhất tỉnh Hải Dương và thành phố Hải Phòng, lấy tên là thành phố Hải Phòng\". Ah, so \"Thành phố Hải Phòng\" remains the province name. Good.\n\nNext, I'm diving into the resolutions concerning \"Phường Sở Dầu\". Resolution \"1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng\" is the key. Right here: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường ... Sở Dầu ... thành phường mới có tên gọi là phường Hồng Bàng.\" Bingo! \"Phường Sở Dầu\" is completely merged into \"phường Hồng Bàng\".\n\nNow, let's verify that in the \"New wards\" data. Yep, there it is: `{\"ward_code\":\"11311\",\"ward_name\":\"Phường Hồng Bàng\",\"province_name\":\"Thành phố Hải Phòng\"}`. I also see \"Phường Gia Viên\", but the resolution clearly states \"một phần diện tích tự nhiên của phường Gia Viên thành phường mới có tên gọi là phường Hồng Bàng\". This means \"Gia Viên\" still exists as a separate entity, but that's not our focus.  Our focus is \"Sở Dầu\", which is *entirely* subsumed by \"Hồng Bàng\".\n\nSo, the new ward is \"Phường Hồng Bàng\", the province is still \"Thành phố Hải Phòng\", and the ward code is \"11311\". I'm confident about this mapping - it's a \"high\" confidence level because the resolution is very specific: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường ... Sở Dầu ... thành phường mới có tên gọi là phường Hồng Bàng\".\n\nLet me double-check the schema to ensure I'm providing the right information: `citation`, `confidence`, `province_name`, `ward_code`, `ward_name`. All good.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "8. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Hoàng Văn Thụ, Minh Khai, Phan Bội Châu, Thượng Lý, Sở Dầu, Hùng Vương và một phần diện tích tự nhiên của phường Gia Viên thành phường mới có tên gọi là phường Hồng Bàng."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "11311",
+      "ward_name": "Phường Hồng Bàng"
+    }
+  ]
+}

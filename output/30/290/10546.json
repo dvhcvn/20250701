@@ -1,0 +1,18 @@
+{
+  "address": "Phường Phả Lại, Thành phố Chí Linh, Tỉnh Hải Dương",
+  "ellapsedInMs": 7988,
+  "estimatedCost": 0.0026179000000000003,
+  "thought": "**My Analysis of the Administrative Address Mapping**\n\nOkay, so I'm tackling this address conversion: \"Phường Phả Lại, Thành phố Chí Linh, Tỉnh Hải Dương\". My goal is to map this old address to the new administrative structure, and I'm leveraging the provided resolutions and the new ward data to do it accurately.\n\nFirst, I need to handle the province. The old province is \"Tỉnh Hải Dương\". I'm cross-referencing this with \"60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất\".  The resolution clearly states that \"Hợp nhất tỉnh Hải Dương và thành phố Hải Phòng, lấy tên là thành phố Hải Phòng\".  Therefore, \"Tỉnh Hải Dương\" now becomes \"Thành phố Hải Phòng\".  Simple.\n\nNext up: the ward.  We have \"Phường Phả Lại\" in \"Thành phố Chí Linh\".  I'm focusing my attention on the \"Other resolutions\" for these specific locations.  Resolution \"1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng\" is the key.  Line 35 is crucial: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Phả Lại, phường Cổ Thành và xã Nhân Huệ thành phường mới có tên gọi là **phường Chí Linh**.\"  Boom!  That's a direct hit. It explicitly mentions \"Phường Phả Lại\" and defines \"Phường Chí Linh\" as the new ward.  The header indicates this resolution applies to \"thành phố Hải Phòng\", which aligns perfectly with my province mapping.\n\nBefore I lock it in, I need to verify that this newly formed \"Phường Chí Linh\" exists in my \"New wards\" data.  A quick check shows `{\"ward_code\":\"10546\",\"ward_name\":\"Phường Chí Linh\",\"province_name\":\"Thành phố Hải Phòng\"}`. Excellent! The data confirms the resolution's findings.\n\nNow, constructing the output. Based on this, I'm going with:\n\n*   `province_name`: \"Thành phố Hải Phòng\" (province merge).\n*   `ward_name`: \"Phường Chí Linh\" (from resolution 1669/NQ-UBTVQH15).\n*   `ward_code`: \"10546\" (from the \"New wards\" data).\n*   `citation`:\n    *   `header`: \"1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng\"\n    *   `line`: \"35. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Phả Lại, phường Cổ Thành và xã Nhân Huệ thành phường mới có tên gọi là **phường Chí Linh**.\"\n*   `confidence`: \"high\". The direct mention of \"Phường Phả Lại\" and the clear mapping from the resolution make me very confident in this answer.\n\nI did quickly double-check other lines in that resolution (Lines 36 and 39) to make absolutely sure there weren't any other new wards that might also include elements of \"Phường Phả Lại\", but those didn't apply here.  So I'm good. This looks correct.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "35. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Phả Lại, phườngCổ Thành và xã Nhân Huệ thành phường mới có tên gọi là phườngChí Linh."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "10546",
+      "ward_name": "Phường Chí Linh"
+    }
+  ]
+}

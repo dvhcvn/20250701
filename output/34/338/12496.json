@@ -1,0 +1,18 @@
+{
+  "address": "Xã Quỳnh Giao, Huyện Quỳnh Phụ, Tỉnh Thái Bình",
+  "ellapsedInMs": 7957,
+  "estimatedCost": 0.0029699,
+  "thought": "**Determining the New Administrative Unit for \"Xã Quỳnh Giao\"**\n\nOkay, so I've been tasked with figuring out the new administrative unit for \"Xã Quỳnh Giao, Huyện Quỳnh Phụ, Tỉnh Thái Bình.\" My initial thought is to break this down methodically. First, I need to pinpoint the old province, which is \"Tỉnh Thái Bình.\"  The first step is to check if this province has been involved in any mergers or renamings, specifically in the context of resolution 60-NQ/TW. Aha!  It appears \"Tỉnh Thái Bình\" was merged with \"Hưng Yên\" to form \"Tỉnh Hưng Yên.\"\n\nNow, focusing on the specific \"Xã Quỳnh Giao,\" I'll need to search resolutions for this ward within the *new* provincial context, meaning \"Hưng Yên.\"  I've identified a relevant resolution, 1666/NQ-UBTVQH15, that focuses on the reorganization of communes in Hưng Yên.  Bingo! Line 63 of this resolution explicitly states, *\"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Quỳnh Hoa, Quỳnh Minh, Quỳnh Giao và Quỳnh Thọ thành xã mới có tên gọi là xã Minh Thọ.\"* This clearly states that \"Quỳnh Giao\" is being absorbed into a new entity called \"Xã Minh Thọ.\"\n\nNext, I'll cross-reference \"Xã Minh Thọ\" in the database of new wards within \"Tỉnh Hưng Yên.\" There's a perfect match:  `{\"ward_code\":\"12511\",\"ward_name\":\"Xã Minh Thọ\",\"province_name\":\"Tỉnh Hưng Yên\"}`.  That validates my findings.\n\nSo, the output I'll provide will be:\n\n*   `province_name`: \"Tỉnh Hưng Yên\" (due to the province merger)\n*   `ward_name`: \"Xã Minh Thọ\" (based on the resolution)\n*   `ward_code`: \"12511\" (from the new wards data)\n*   `citation`:  This will point to \"1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên,\" specifically line 63, which details the merger.\n*   `confidence`: High – the old ward is explicitly mentioned in the resolution and its merging into the new ward is clear.\n\nI'll double-check for any other mentions of \"Quỳnh Giao\" or \"Quỳnh Phụ\" within the relevant resolution to ensure there are no confusing overlaps. While the resolution does mention other reorganizations in the Quỳnh Phụ district area, none of them involve \"Quỳnh Giao.\"  Therefore, \"Xã Minh Thọ\" remains the definitive answer. The confidence level is high because there's a direct and unambiguous link from the old ward to the new one. This should be a clear and accurate result.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên",
+        "line": "63. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Quỳnh Hoa, Quỳnh Minh, Quỳnh Giao và Quỳnh Thọ thành xã mới có tên gọi là xã Minh Thọ."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "12511",
+      "ward_name": "Xã Minh Thọ"
+    }
+  ]
+}

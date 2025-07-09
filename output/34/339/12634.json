@@ -1,0 +1,18 @@
+{
+  "address": "Xã Phúc Khánh, Huyện Hưng Hà, Tỉnh Thái Bình",
+  "ellapsedInMs": 8567,
+  "estimatedCost": 0.0034389999999999993,
+  "thought": "**My Analysis of the Administrative Unit Change**\n\nOkay, so I've been given an old address, \"Xã Phúc Khánh, Huyện Hưng Hà, Tỉnh Thái Bình,\" and I need to find the corresponding new administrative unit. First things first, I've broken down the problem: I need to identify the old province and ward, and then I'll use the available resolutions and data to pinpoint the new unit.\n\nI can see that the old ward is \"Xã Phúc Khánh,\" and the old province is \"Tỉnh Thái Bình,\" part of \"Huyện Hưng Hà.\" Now, I know that provinces have been merged and changed, so I need to check for that first. I'll start with the province resolutions (60-NQ/TW). A quick search reveals that \"Tỉnh Thái Bình\" is now part of \"Tỉnh Hưng Yên\" due to a merger. So, my search will have to be in the context of the new province \"Hưng Yên.\"\n\nI'll proceed to check the available resolutions, focusing on \"Xã Phúc Khánh\" within the Hưng Yên context. I'm especially interested in resolutions related to administrative rearrangements. Resolution 1666/NQ-UBTVQH15, concerning Hưng Yên, jumps out: line 72 describes the merger of several existing wards, including \"Phúc Khánh,\" into a new ward called \"Xã Tiên La.\" This resolution also correctly identifies \"Huyện Hưng Hà,\" further solidifying the connection.\n\nI've got to be sure, so I will check other resolutions for the same \"Phúc Khánh\" and see if there are any conflicts. I've also identified \"Phúc Khánh\" in \"Lào Cai\" and \"Phú Thọ,\" but the context is different. Neither of these seems to apply, so they are not the correct \"Phúc Khánh.\"\n\nTo confirm, I can check the \"New wards\" list for \"xã Tiên La\" in \"Tỉnh Hưng Yên.\" The data confirms: \"{\"ward_code\":\"12634\",\"ward_name\":\"Xã Tiên La\",\"province_name\":\"Tỉnh Hưng Yên\"}\".\n\nGiven the clear match and the information from resolution 1666, I'm confident. The JSON output will be as follows:\n\n```json\n{\n  \"province_name\": \"Tỉnh Hưng Yên\",\n  \"ward_name\": \"Xã Tiên La\",\n  \"ward_code\": \"12634\",\n  \"confidence\": \"high\",\n  \"citation\": {\n    \"header\": \"1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên\",\n    \"line\": \"72. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tân Tiến (huyện Hưng Hà), Thái Phương, Đoan Hùng và Phúc Khánh thành xã mới có tên gọi là **xã Tiên La**.\"\n  }\n}\n```\n\nThe old \"Xã Phúc Khánh\" in \"Tỉnh Thái Bình\" (now Hưng Yên) has been reorganized into the new \"Xã Tiên La,\" and the relevant administrative data is now confirmed. This seems to be the best and only valid interpretation.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên",
+        "line": "72. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tân Tiến (huyện Hưng Hà), Thái Phương, Đoan Hùng và Phúc Khánh thành xã mới có tên gọi là xã Tiên La."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "12634",
+      "ward_name": "Xã Tiên La"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Phường Xuân Tăng, Thành phố Lào Cai, Tỉnh Lào Cai",
+  "ellapsedInMs": 6012,
+  "estimatedCost": 0.0024666,
+  "thought": "**Finding the New Administrative Unit for \"Phường Xuân Tăng\"**\n\nOkay, so the user needs to know the current administrative unit for \"Phường Xuân Tăng, Thành phố Lào Cai, Tỉnh Lào Cai.\" Let's break this down. First, I need to check the relevant resolutions and new ward data.\n\nI start by identifying the province, which is \"Tỉnh Lào Cai.\"  Then, I need to understand any changes at the province level. Resolution 60-NQ/TW doesn't change the name, but it *does* note a merger with Tỉnh Yên Bái, which is something I'll need to remember for the `province_name` field.\n\nThe crucial information is likely in resolution 1673/NQ-UBTVQH15. I'm looking specifically for mentions of \"Phường Xuân Tăng.\"  Line 89 is key: it explicitly states that \"Phường Xuân Tăng\" is merged into a *new* ward called \"phường Cam Đường.\" This is precisely what I need. Further, line 90 discusses another new ward, \"phường Lào Cai\", which does *not* include Xuân Tăng. Finally, line 92 lists wards *not* rearranged, and Xuân Tăng is absent, which strongly confirms the previous merger.\n\nTo solidify this, I check the \"New wards\" data.  I find \"phường Cam Đường\" with its associated `ward_code` and `ward_name`, which confirms the resolution.  I also find \"phường Lào Cai.\"\n\nBased on this, it's clear: the old \"Phường Xuân Tăng\" is now part of the new \"phường Cam Đường\" in Tỉnh Lào Cai. I'll use the data from the \"New Wards\" information for this. My confidence in this answer is high because of the explicit statement in the resolution and the cross-referencing with the \"New Wards\" dataset. Now, let's create the final JSON output.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai",
+        "line": "89. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Nam Cường (thành phố Lào Cai), Xuân Tăng, Pom Hán, Bắc Cường, Bắc Lệnh, Bình Minh và xã Cam Đường thành phường mới có tên gọi là phường Cam Đường."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "02671",
+      "ward_name": "Phường Cam Đường"
+    }
+  ]
+}

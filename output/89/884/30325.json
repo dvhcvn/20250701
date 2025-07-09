@@ -1,0 +1,18 @@
+{
+  "address": "Phường Núi Sam, Thành phố Châu Đốc, Tỉnh An Giang",
+  "ellapsedInMs": 6207,
+  "estimatedCost": 0.0022606,
+  "thought": "**Mapping \"Phường Núi Sam\" to New Administrative Units**\n\nOkay, let's break this down. My task is to map the old address \"Phường Núi Sam, Thành phố Châu Đốc, Tỉnh An Giang\" to its new administrative unit. It's a classic spatial analysis problem, and thankfully, the information provided seems adequate.\n\nFirst, I identified the old province, \"Tỉnh An Giang,\" and the old ward, \"Phường Núi Sam.\" That's the starting point.\n\nNext, I need to consult the resolutions. I know \"Tỉnh An Giang\" should remain the same after any administrative changes, so I'm looking for its mention. Resolution 60-NQ/TW confirms that An Giang remains An Giang. This makes things easier.\n\nNow, for the key: the resolutions regarding ward changes. Specifically, 1654/NQ-UBTVQH15. I'm focusing on lines that mention \"Phường Núi Sam.\" Line 84 is the jackpot! It clearly states that \"Phường Núi Sam\" is *merged into* \"phường Vĩnh Tế.\" Bingo!\n\nSo, the new ward is \"Phường Vĩnh Tế.\" Now I just need to verify that this ward is in my provided list of new wards. I found it: `{\"ward_code\":\"30325\",\"ward_name\":\"Phường Vĩnh Tế\",\"province_name\":\"Tỉnh An Giang\"}`. Perfect match! The province is correct, and so is the ward.\n\nTherefore, the output is clear. I'll construct the JSON.\n\n*   `province_name`: \"Tỉnh An Giang\" (unchanged, as confirmed by the first resolution)\n*   `ward_name`: \"Phường Vĩnh Tế\" (explicitly stated in the second resolution)\n*   `ward_code`: \"30325\" (from the new wards list)\n*   `confidence`: \"high\" (the resolution is very explicit about this merger)\n*   `citation`: referencing the relevant section of 1654/NQ-UBTVQH15.\n\nThis is a clean and confident mapping. The resolution directly addresses the situation.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1654/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh An Giang",
+        "line": "84. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Núi Sam, xã Vĩnh Tế và phần còn lại của xã Vĩnh Châu sau khi sắp xếp theo quy định tại khoản 83 Điều này thành phường mới có tên gọi là phường Vĩnh Tế."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh An Giang",
+      "ward_code": "30325",
+      "ward_name": "Phường Vĩnh Tế"
+    }
+  ]
+}

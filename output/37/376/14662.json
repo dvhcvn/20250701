@@ -1,0 +1,18 @@
+{
+  "address": "Xã Thượng Kiệm, Huyện Kim Sơn, Tỉnh Ninh Bình",
+  "ellapsedInMs": 5045,
+  "estimatedCost": 0.0020999,
+  "thought": "**Determining the New Administrative Unit**\n\nOkay, so the user needs help with an old address: \"Xã Thượng Kiệm, Huyện Kim Sơn, Tỉnh Ninh Bình\".  My first thought is to break this down.  \"Tỉnh Ninh Bình\" is the province, and I need to start there. I quickly check my knowledge base for any provincial reorganizations, especially looking at something like resolution 60-NQ/TW.  Ah, right.  Ninh Binh was part of a merger initially, but it was *reverted* so the province name remains \"Tỉnh Ninh Bình\". Good.\n\nNext up, \"Xã Thượng Kiệm\".  I need to search for that within the context of Ninh Binh. I'll need to dig through my \"Other resolutions\" data. Specifically, I'm looking for anything about *sắp xếp* (reorganization) of administrative units within Ninh Binh.  I'm expecting to find a resolution, and, bingo, there it is: 1674/NQ-UBTVQH15.\n\nLine 93 is what I need. It explicitly states that \"Xã Thượng Kiệm\" is being merged. It seems that \"Xã Thượng Kiệm\" is now part of a new ward called \"Xã Phát Diệm,\" along with \"Thị trấn Phát Diệm\" and \"Xã Kim Chính.\" This sounds promising.\n\nLet me just quickly verify this \"Xã Phát Diệm\" in my \"New wards\" list.  Yup, there it is: `{\"ward_code\":\"14620\",\"ward_name\":\"Xã Phát Diệm\",\"province_name\":\"Tỉnh Ninh Bình\"}`. Perfect match. The fact that the resolution *explicitly* spells out the merger gives me high confidence in this result.  So I'm confident in saying the old address is now a part of \"Xã Phát Diệm\". Now, to build that JSON output the user is looking for.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "93. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Phát Diệm, xã Thượng Kiệm và xã Kim Chính thành xã mới có tên gọi là xã Phát Diệm."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "14620",
+      "ward_name": "Xã Phát Diệm"
+    }
+  ]
+}

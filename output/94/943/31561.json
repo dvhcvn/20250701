@@ -1,0 +1,18 @@
+{
+  "address": "Xã Đại Hải, Huyện Kế Sách, Tỉnh Sóc Trăng",
+  "ellapsedInMs": 7484,
+  "estimatedCost": 0.0028468,
+  "thought": "**Mapping an Old Vietnamese Address to New Administrative Units**\n\nOkay, so I've got this old Vietnamese address: Xã Đại Hải, Huyện Kế Sách, Tỉnh Sóc Trăng. The task is to figure out the new administrative unit based on these resolutions and new ward data. Straightforward, I think.\n\nFirst, I break it down. Province: Tỉnh Sóc Trăng. District: Huyện Kế Sách. Ward: Xã Đại Hải.\n\nNow, I look at the Province Resolutions (60-NQ/TW) to see what's changed. Aha! \"Tỉnh Sóc Trăng\" is mentioned in the list of mergers. It's now part of \"Thành phố Cần Thơ.\" So, the new province should be \"Thành phố Cần Thơ.\" That seems pretty clear-cut.\n\nNext, I check other resolutions (1668/NQ-UBTVQH15) specifically related to \"Thành phố Cần Thơ.\" Bingo. This resolution applies here.  I scan the document for \"Xã Đại Hải.\"  Line 77 jumps out at me: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Ba Trinh và xã Đại Hải thành xã mới có tên gọi là **xã Đại Hải**.\"  Perfect! This confirms that the old \"Xã Đại Hải\" has become a *new* \"Xã Đại Hải\" in the new province.\n\nAlright, time to consult the new wards data. I'm looking for a ward named \"Xã Đại Hải\" within \"Thành phố Cần Thơ.\"  Found it!  `{\"ward_code\":\"31561\",\"ward_name\":\"Xã Đại Hải\",\"province_name\":\"Thành phố Cần Thơ\"}`.\n\nPutting it all together, I construct the JSON output. The `province_name` is \"Thành phố Cần Thơ\" from the province resolution. The `ward_name` is \"Xã Đại Hải\" confirmed by both the other resolution and new data, which gives me `ward_code` as well.  The citation will refer to the 1668/NQ-UBTVQH15 resolution. Line 77 is key, so I'll include that.  And the confidence level is definitely \"high\" because we've got a direct match on the ward name *and* the province merger is clean.\n\nNow, I briefly double-checked the district. While districts are eliminated, and the resolution focuses on province and ward, \"Kế Sách\" is mentioned in the resolution. It seems consistent that this old district name is now a ward in Cần Thơ. My focus is on the Ward/Province mapping as that is confirmed.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1668/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Cần Thơ",
+        "line": "77. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Ba Trinh và xã Đại Hải thành xã mới có tên gọi là xã Đại Hải."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Cần Thơ",
+      "ward_code": "31561",
+      "ward_name": "Xã Đại Hải"
+    }
+  ]
+}

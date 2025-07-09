@@ -1,0 +1,18 @@
+{
+  "address": "Xã Quảng Minh, Thành phố Sầm Sơn, Tỉnh Thanh Hóa",
+  "ellapsedInMs": 8080,
+  "estimatedCost": 0.0032129999999999997,
+  "thought": "**Determining the New Administrative Unit for \"Xã Quảng Minh\"**\n\nOkay, so the user wants to know the current administrative location for the old address \"Xã Quảng Minh, Thành phố Sầm Sơn, Tỉnh Thanh Hóa\". My expert eye immediately identifies \"Tỉnh Thanh Hóa\" as the province.  I know the first step is to confirm if there have been any province-level mergers, but I've got this memorized!  \"Tỉnh Thanh Hóa\" is listed as a province that did *not* undergo any mergers according to the relevant resolutions (60-NQ/TW), so we're good there.\n\nNow, the main focus shifts to finding the *new* ward. I know \"Xã Quảng Minh\" is the key.  I start digging through resolutions related to Thanh Hóa, and bingo! Resolution 1686/NQ-UBTVQH15 catches my attention - it's all about rearranging local administrative units. Perfect! I scan the document for \"Xã Quảng Minh\" and, boom, line 135 nails it: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Quảng Vinh và các xã Quảng Minh, Đại Hùng, Quảng Giao thành phường mới có tên gọi là **phường Nam Sầm Sơn**.\"  This is exactly what I needed!\n\nThe resolution is crystal clear: \"Xã Quảng Minh\" is being merged into \"Phường Nam Sầm Sơn.\"  To confirm, I double-check the \"New wards\" section of the document. \"Phường Nam Sầm Sơn\" is there with the correct `ward_code` (16516) and `province_name` (\"Tỉnh Thanh Hóa\").  Everything lines up perfectly.\n\nJust to be thorough, I quickly glance at what happened to \"Thành phố Sầm Sơn,\" as it was part of the original address. The resolution mentions *phường* Bắc Sơn *within* \"Thành phố Sầm Sơn\" being merged into another new ward (phường Sầm Sơn), implying the city itself still exists, but our schema is focused on the ward level changes.\n\nTherefore, my analysis is highly confident. The user's requested JSON data will clearly reflect that \"Xã Quảng Minh\" now falls under \"Phường Nam Sầm Sơn\" within \"Tỉnh Thanh Hóa.\" The resolution 1686/NQ-UBTVQH15 provides the necessary citation and confirmation of this fact.  I can move forward with constructing the final output.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1686/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thanh Hóa",
+        "line": "135. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Quảng Vinh và các xã Quảng Minh, Đại Hùng, Quảng Giao thành phường mới có tên gọi là **phường Nam Sầm Sơn**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thanh Hóa",
+      "ward_code": "16516",
+      "ward_name": "Phường Nam Sầm Sơn"
+    }
+  ]
+}

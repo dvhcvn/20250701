@@ -1,0 +1,18 @@
+{
+  "address": "Xã An Phú Trung, Huyện Ba Tri, Tỉnh Bến Tre",
+  "ellapsedInMs": 7510,
+  "estimatedCost": 0.0025393,
+  "thought": "**Determining the New Administrative Unit for \"Xã An Phú Trung\"**\n\nOkay, here's how I'd approach this, given my expertise in these administrative changes: The user has given me \"Xã An Phú Trung, Huyện Ba Tri, Tỉnh Bến Tre,\" and I need to find its current equivalent. First, I identify the province: \"Tỉnh Bến Tre.\" Then, I immediately look into province-level resolutions (specifically, something along the lines of 60-NQ/TW).  A quick search reveals that \"Tỉnh Bến Tre\" was merged with other provinces.  Ah, here it is: \"Hợp nhất tỉnh Bến Tre, tỉnh Vĩnh Long và tỉnh Trà Vinh; lấy tên là tỉnh Vĩnh Long.\" So, \"Tỉnh Bến Tre\" is now part of \"Tỉnh Vĩnh Long.\"\n\nNext, I zero in on the specific ward, \"Xã An Phú Trung.\" Now, I'm looking for relevant resolutions regarding ward-level changes within the new province, \"Tỉnh Vĩnh Long.\" I'll need to look beyond the general province mergers. I'm searching \"Other resolutions\" for references to \"An Phú Trung\" within the context of either the old province \"Bến Tre\" or the new one, \"Vĩnh Long.\"\n\nAha! Resolution \"1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long\" seems relevant. Scanning that resolution, line 86 jumps out: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Mỹ Thạnh (huyện Ba Tri), An Phú Trung và An Ngãi Trung thành xã mới có tên gọi là **xã An Ngãi Trung**.\" Excellent! This explicitly mentions \"An Phú Trung\" being merged into \"Xã An Ngãi Trung.\" And the old location confirms it, specifically the information the user gave in the address.\n\nNow, I'll need to verify this against a list of new wards in \"Tỉnh Vĩnh Long.\" I search for \"xã An Ngãi Trung\" in the new list. There it is: `{\"ward_code\":\"29143\",\"ward_name\":\"Xã An Ngãi Trung\",\"province_name\":\"Tỉnh Vĩnh Long\"}`. Perfect! This confirms the resolution's findings.\n\nBased on this analysis, I'm confident in the following JSON output:\n\n```json\n{\n  \"province_name\": \"Tỉnh Vĩnh Long\",\n  \"ward_name\": \"Xã An Ngãi Trung\",\n  \"ward_code\": \"29143\",\n  \"citation\": {\n    \"header\": \"1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long\",\n    \"line\": \"86. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Mỹ Thạnh (huyện Ba Tri), An Phú Trung và An Ngãi Trung thành xã mới có tên gọi là **xã An Ngãi Trung**.\"\n  },\n  \"confidence\": \"high\"\n}\n```\n\nThe confidence is \"high\" because we have a direct and clear resolution specifically outlining this merger, and it's consistent with the new ward data. It should give a precise result.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long",
+        "line": "86. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Mỹ Thạnh (huyện Ba Tri), An Phú Trung và An Ngãi Trung thành xã mới có tên gọi là xã An Ngãi Trung."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "29143",
+      "ward_name": "Xã An Ngãi Trung"
+    }
+  ]
+}

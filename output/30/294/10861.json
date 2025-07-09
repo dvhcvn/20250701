@@ -1,0 +1,18 @@
+{
+  "address": "Xã Thanh Tân, Huyện Thanh Hà, Tỉnh Hải Dương",
+  "ellapsedInMs": 7793,
+  "estimatedCost": 0.0046472,
+  "thought": "**Analyzing the Address and Determining the New Administrative Unit**\n\nOkay, so I'm tasked with finding the new ward for the old address \"Xã Thanh Tân, Huyện Thanh Hà, Tỉnh Hải Dương\". My process will be methodical, starting with any potential province mergers.\n\nFirst, I need to check if \"Tỉnh Hải Dương\" has been merged with another province.  Per \"60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất,\" \"Tỉnh Hải Dương\" is now part of \"Thành phố Hải Phòng.\" This means the output `province_name` should be \"Thành phố Hải Phòng\".\n\nNext, I'll search for \"Xã Thanh Tân\" within resolutions related to the new province name, \"Thành phố Hải Phòng\". I'll consider resolutions that might have used the old province name as well, just to be thorough. Resolution \"1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng\" seems relevant.\n\nExamining that resolution closely, specifically line 76 states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Thanh Hà, xã Thanh Sơn (huyện Thanh Hà) và xã Thanh Tânthành xã mới có tên gọi là **xã Thanh Hà**.\" Bingo! This line directly addresses \"Xã Thanh Tân\" and its district, \"Huyện Thanh Hà.\"  The new ward name is clearly stated as \"xã Thanh Hà\".\n\nThen, I'll confirm this new ward, \"xã Thanh Hà,\" using the \"New wards\" list for \"Thành phố Hải Phòng\".  Indeed, I found: `{\"ward_code\":\"10813\",\"ward_name\":\"Xã Thanh Hà\",\"province_name\":\"Thành phố Hải Phòng\"}`. This is a strong match.\n\nI reviewed the other lines of the resolution, lines 77, 78, and 95, but none of those mention \"Thanh Tân\", so they are not relevant to the query.\n\nWith all of this information, I can now construct the JSON output. The `province_name` is \"Thành phố Hải Phòng\" due to the merger. The `ward_name` is \"Xã Thanh Hà\" from resolution line 76. The `ward_code` is \"10813\". The `citation` will include the resolution header and the relevant line. Finally, the `confidence` level will be \"high\" because the resolution provides a direct match and clearly states the new name.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "76. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Thanh Hà, xã Thanh Sơn (huyện Thanh Hà) và xã Thanh Tânthành xã mới có tên gọi là xã Thanh Hà."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "10813",
+      "ward_name": "Xã Thanh Hà"
+    }
+  ]
+}

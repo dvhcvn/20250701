@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tân Mộc, Huyện Lục Ngạn, Tỉnh Bắc Giang",
+  "ellapsedInMs": 7782,
+  "estimatedCost": 0.0027599,
+  "thought": "**Mapping the Old Administrative Address**\n\nOkay, let's break this down. The user's input asks me to convert \"Xã Tân Mộc, Huyện Lục Ngạn, Tỉnh Bắc Giang\" to its current equivalent.  My first step is always to identify the province; it's straightforward here: \"Tỉnh Bắc Giang.\"\n\nSince I'm an expert in this, I immediately think about province mergers.  Resolution 60-NQ/TW is the key one here, which states \"Hợp nhất tỉnh Bắc Ninh và tỉnh Bắc Giang, lấy tên là tỉnh Bắc Ninh.\" So, \"Tỉnh Bắc Giang\" is now part of \"Tỉnh Bắc Ninh.\"\n\nNow, focusing on the ward, \"Xã Tân Mộc.\"  I'll need to dig into the relevant resolutions regarding administrative rearrangements. The key document appears to be \"1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh.\" I scan through it methodically.\n\nAh, line 30 mentions \"thị trấn Phì Điền\" and several other wards to form \"xã Lục Ngạn\", but \"Xã Tân Mộc\" isn't included there.  Then, line 36 reveals the critical piece: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Tân Mộc và xã Nam Dương thành xã mới có tên gọi là **xã Nam Dương**.\" Bingo!  That's the direct mapping.\n\nThe next step is to ensure \"Xã Nam Dương\" is in the new wards data. And there it is: `{\"ward_code\":\"07603\",\"ward_name\":\"Xã Nam Dương\",\"province_name\":\"Tỉnh Bắc Ninh\"}`.  Perfect match.\n\nFinally, I craft the output structure. I'll include the new province \"Tỉnh Bắc Ninh,\" the new ward \"Xã Nam Dương,\" with the associated ward code \"07603.\" The resolution citation will be \"1658/NQ-UBTVQH15\" with the specific line \"36. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Tân Mộc và xã Nam Dương thành xã mới có tên gọi là **xã Nam Dương**.\" And, given the clear and direct mapping, I'll confidently assign a \"high\" confidence level.\n\nBefore finalizing, a quick double-check: Are there any other resolutions that might mention \"Xã Tân Mộc\"? No.  Are there any other possible new wards for \"Xã Tân Mộc\"? No, the resolution clearly states the merge into \"Xã Nam Dương.\" The old address also mentions \"Huyện Lục Ngạn\", but these resolutions explicitly outline the elimination of districts. I've covered all bases.\n\nThe output will clearly reflect that \"Xã Tân Mộc\" is now part of \"Xã Nam Dương\" in \"Tỉnh Bắc Ninh.\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh",
+        "line": "36. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Tân Mộc và xã Nam Dương thành xã mới có tên gọi là xã Nam Dương."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "07603",
+      "ward_name": "Xã Nam Dương"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Ea Ô, Huyện Ea Kar, Tỉnh Đắk Lắk",
+  "ellapsedInMs": 6742,
+  "estimatedCost": 0.0022398,
+  "thought": "**Address Mapping Analysis: Xã Ea Ô, Huyện Ea Kar, Tỉnh Đắk Lắk**\n\nAlright, let's break this down. The user's input gives us an old Vietnamese address: Xã Ea Ô, Huyện Ea Kar, Tỉnh Đắk Lắk. My task is to map this to the new administrative structure, leveraging provided resolutions and ward data.\n\nFirst, I identified the components: **Xã Ea Ô** (ward), **Huyện Ea Kar** (district), and **Tỉnh Đắk Lắk** (province). The province is straightforward; resolution 60-NQ/TW states that Đắk Lắk absorbed Phú Yên but retained its name. So, the new province name *remains* \"Tỉnh Đắk Lắk\".\n\nThe crucial part is the ward.  I dived into resolution 1660/NQ-UBTVQH15.  Bingo! Line 31 explicitly mentions Xã Ea Ô. It clearly states that the old \"Xã Ea Ô\" merged with \"Xã Cư Elang\" to form a *new* \"Xã Ea Ô\". Perfect match!\n\nNext, I checked the \"New wards\" data.  And there it is: a new ward with `ward_code:\"24403\"`, `ward_name:\"Xã Ea Ô\"`, and crucially, `province_name:\"Tỉnh Đắk Lắk\"`.  This confirms my findings.\n\nThis is a high-confidence match. Resolution 60-NQ/TW confirms the province. Resolution 1660/NQ-UBTVQH15 explicitly outlines the ward change, and the \"New wards\" data backs it up.\n\nTherefore, my output will be a JSON object detailing this. I'll use the resolution's header and specific line for the `citation`, and the `confidence` will be \"high\". The new address information is: province name \"Tỉnh Đắk Lắk\", `ward_code` \"24403\", and `ward_name` \"Xã Ea Ô\".  We have a solid map.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1660/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đắk Lắk",
+        "line": "31. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Cư Elang và xã Ea Ô thành xã mới có tên gọi là xã Ea Ô."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đắk Lắk",
+      "ward_code": "24403",
+      "ward_name": "Xã Ea Ô"
+    }
+  ]
+}

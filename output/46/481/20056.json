@@ -1,0 +1,18 @@
+{
+  "address": "Xã Trung Sơn, Huyện A Lưới, Thành phố Huế",
+  "ellapsedInMs": 8286,
+  "estimatedCost": 0.0035219,
+  "thought": "**Identifying the New Administrative Unit for the Old Address**\n\nOkay, let's break this down. The user is asking about an old address, \"Xã Trung Sơn, Huyện A Lưới, Thành phố Huế.\" My immediate thought is to start with the province, which is \"Thành phố Huế.\" I know from my familiarity with the data that province mergers are handled by `60-NQ/TW`, and a quick check confirms that \"Thành phố Huế\" is *not* listed for a merger. So, we're good there.\n\nNext, I need to pinpoint the specific resolution that covers this area. Based on my experience, I'll focus on the \"Other resolutions\" section, as this often contains the specifics of ward-level changes. The resolution `1675/NQ-UBTVQH15` immediately stands out as relevant, specifically addressing ward-level re-organization within Huế. Bingo!\n\nWithin that resolution, I'm looking for \"Trung Sơn.\" And there it is: line 35 directly states that \"Xã Trung Sơn\" (along with a few others) is being merged to create the new \"Xã A Lưới 1.\"  This is key.\n\nNow, I need to verify this new name, so I'll cross-reference it against my `New wards` list.  A quick search for \"Xã A Lưới 1\" confirms it's there, with code `20056` and, importantly, the province as \"Thành phố Huế.\"  Everything's lining up perfectly.\n\nTo finalize this, I'm going to double-check that there isn't another \"Trung Sơn\" that could cause confusion, and that my chosen resolution is actually the one for Hue. A quick scan of all instances of \"Trung Sơn\" in the data, in provinces other than \"Thành phố Huế\", confirms that our initial resolution is the one. Therefore, our answer is simple, the former address now is \"Xã A Lưới 1.\"\n\nSo, I'm confident I can construct the output: \"Thành phố Huế\" remains the province. The new ward is \"Xã A Lưới 1,\" with code \"20056.\" The `citation` will point directly to line 35 of `1675/NQ-UBTVQH15`, and the `confidence` level is high because this resolution explicitly states the change. That should cover it!\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1675/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Huế",
+        "line": "35. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Hồng Thủy, Hồng Vân, Trung Sơn và Hồng Kim thành xã mới có tên gọi là xã A Lưới 1."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Huế",
+      "ward_code": "20056",
+      "ward_name": "Xã A Lưới 1"
+    }
+  ]
+}

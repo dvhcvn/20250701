@@ -1,0 +1,18 @@
+{
+  "address": "Xã Trường Minh, Huyện Nông Cống, Tỉnh Thanh Hóa",
+  "ellapsedInMs": 7746,
+  "estimatedCost": 0.002733,
+  "thought": "**Finding the New Ward for \"Xã Trường Minh\"**\n\nOkay, here's how I'm approaching this. The user has given me an old address: \"Xã Trường Minh, Huyện Nông Cống, Tỉnh Thanh Hóa\". My task is to find the corresponding new administrative unit (ward) using my knowledge and the provided resolutions.\n\nFirst, I quickly identify that we're dealing with \"Tỉnh Thanh Hóa\". Now, I check my province-level resolutions. There's a resolution, \"60-NQ/TW,\" which explicitly states that \"Tỉnh Thanh Hóa\" is *not* undergoing any province-level changes. That's good to know.\n\nNext, I need to focus on ward-level changes within \"Tỉnh Thanh Hóa\". I find the resolution \"1686/NQ-UBTVQH15,\" which seems relevant as it concerns \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thanh Hóa\". I start scanning through it, and bingo! Line 37 directly addresses \"Xã Trường Minh.\" It states that \"Xã Trường Minh\" is being merged with other xã (communes) to form the new commune, \"xã Trường Văn\".\n\nTo be thorough, I verify that \"Xã Trường Văn\" actually exists in the provided \"New wards\" list, and of course, it does! The entry: `{\"ward_code\":\"16348\",\"ward_name\":\"Xã Trường Văn\",\"province_name\":\"Tỉnh Thanh Hóa\"}` confirms its existence.\n\nThe only potential for ambiguity could lie in the \"Huyện Nông Cống\" part of the address. The resolution, which I'm relying on, is focused on merging communes within the province. I quickly double-check the relevant lines (34, 35, 36) to ensure the address's district (huyện) is consistent with the resolution's overall context, and it is. The resolution explicitly mentions Huyện Nông Cống in several other lines.\n\nThe evidence is clear and direct. \"Xã Trường Minh\" is explicitly mapped to \"Xã Trường Văn\" in the relevant resolution. I'm very confident in this finding.\n\nTherefore, the output will be:\n\n*   `citation`: \"Line 37: Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Trường Minh, Trường Trung, Trường Sơn và Trường Giang thành xã mới có tên gọi là xã Trường Văn.\" and the header of the resolution \"1686/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thanh Hóa\".\n*   `confidence`: High.\n*   `province_name`: Tỉnh Thanh Hóa\n*   `ward_code`: 16348\n*   `ward_name`: Xã Trường Văn\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1686/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thanh Hóa",
+        "line": "37. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Trường Minh, Trường Trung, Trường Sơn và Trường Giang thành xã mới có tên gọi là xã Trường Văn."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thanh Hóa",
+      "ward_code": "16348",
+      "ward_name": "Xã Trường Văn"
+    }
+  ]
+}

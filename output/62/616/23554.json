@@ -1,0 +1,18 @@
+{
+  "address": "Xã Ya ly, Huyện Sa Thầy, Tỉnh Kon Tum",
+  "ellapsedInMs": 7445,
+  "estimatedCost": 0.0029969000000000003,
+  "thought": "**Analysis of Administrative Unit Mapping**\n\nOkay, here's how I'm approaching this mapping task, given the old address \"Xã Ya ly, Huyện Sa Thầy, Tỉnh Kon Tum\".  I need to figure out the new province and ward for this location, and it looks like a clear-cut case.\n\nFirst, I identified the old province and ward:  \"Tỉnh Kon Tum\" and \"Xã Ya ly\", respectively. Then, I dug into the provincial merger resolutions to see what happened to \"Kon Tum\". Resolution 60-NQ/TW shows that Kon Tum was *merged* into Quảng Ngãi. So, the new province will definitely be \"Tỉnh Quảng Ngãi\".\n\nNext, the critical step: finding the new ward.  I searched other relevant resolutions, specifically within the context of the *new* province \"Tỉnh Quảng Ngãi,\" for \"Ya ly\". Bingo! Resolution 1677/NQ-UBTVQH15, concerning Quảng Ngãi, directly addresses the issue. Line 74 states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Ya Xiêr, Ya Tăng và Ya Ly thành xã mới có tên gọi là **xã Ya Ly**.\" This is a perfect match – the old \"Xã Ya ly\" is clearly being restructured to become a *new* \"Xã Ya Ly\" within the new province.\n\nFinally, I checked my \"New wards\" data.  There it is: `{\"ward_code\":\"23548\",\"ward_name\":\"Xã Ya Ly\",\"province_name\":\"Tỉnh Quảng Ngãi\"}`. This perfectly aligns with my findings from the resolution and confirms the new ward's code and name.\n\nGiven the direct correspondence from the resolution and the explicit match with the new ward data, I'd say the \"confidence\" is high. I'll construct the JSON output:\n\n*   `province_name`: \"Tỉnh Quảng Ngãi\"\n*   `ward_name`: \"Xã Ya Ly\"\n*   `ward_code`: \"23548\"\n*   `confidence`: \"high\"\n*   `citation`:\n    *   `header`: \"1677/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ngãi\"\n    *   `line`: \"74. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Ya Xiêr, Ya Tăng và Ya Ly thành xã mới có tên gọi là **xã Ya Ly**.\"\n\nIt's a textbook case of a clear and confident mapping, due to the resolutions.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1677/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ngãi",
+        "line": "74. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Ya Xiêr, Ya Tăng và Ya Ly thành xã mới có tên gọi là xã Ya Ly."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ngãi",
+      "ward_code": "23548",
+      "ward_name": "Xã Ya Ly"
+    }
+  ]
+}

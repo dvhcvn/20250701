@@ -1,0 +1,18 @@
+{
+  "address": "Xã Vũ Bình, Huyện Lạc Sơn, Tỉnh Hoà Bình",
+  "ellapsedInMs": 7624,
+  "estimatedCost": 0.0027443999999999997,
+  "thought": "**My Analysis of Address \"Xã Vũ Bình, Huyện Lạc Sơn, Tỉnh Hoà Bình\"**\n\nOkay, here's my breakdown of how to find the new ward for the old address \"Xã Vũ Bình, Huyện Lạc Sơn, Tỉnh Hoà Bình\".  First, I need to understand the re-organization.\n\n1.  **Province Identification:** The old province is \"Tỉnh Hoà Bình.\"\n2.  **Province Merger Check:** I know that \"Tỉnh Hoà Bình\" was merged. I referenced `60-NQ/TW` and confirmed it's now part of \"Tỉnh Phú Thọ.\" So, I'll need to focus my search there.\n3.  **Relevant Resolutions:** I'll look at the resolutions for \"Tỉnh Phú Thọ.\"  Specifically, `1676/NQ-UBTVQH15`, which handles ward adjustments.\n4.  **Old Ward Identification:** Now, I'm zeroing in on \"Xã Vũ Bình\" within that resolution.  Looking at line 105, it states, \"...sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Vụ Bản, xã Hương Nhượng và xã Vũ Bình thành xã mới có tên gọi là **xã Lạc Sơn**.\" Perfect! That's exactly what I needed.  It explicitly states \"Xã Vũ Bình\" is now part of \"Xã Lạc Sơn.\"\n5.  **Examine Other Mentions:** No other mention of \"Xã Vũ Bình\" in the relevant resolution or any other area.\n6.  **Verify New Ward:** I need to make sure \"Xã Lạc Sơn\" exists in my \"New wards\" data.  The entry confirms: `{\"ward_code\":\"05266\",\"ward_name\":\"Xã Lạc Sơn\",\"province_name\":\"Tỉnh Phú Thọ\"}`.  It's a perfect match!\n7.  **JSON Output:** My final output will be in JSON format, with a high level of confidence because of the explicit mapping of \"Xã Vũ Bình\" to \"Xã Lạc Sơn\" in the resolution.  The `Huyện Lạc Sơn` is helpful context, although not strictly needed to map the ward.\n\nThe array of objects is:\n\n```json\n[\n  {\n    \"province_name\": \"Tỉnh Phú Thọ\",\n    \"ward_name\": \"Xã Lạc Sơn\",\n    \"ward_code\": \"05266\",\n    \"citation\": {\n      \"header\": \"1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ\",\n      \"line\": \"105. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Vụ Bản, xã Hương Nhượng và xã Vũ Bình thành xã mới có tên gọi là **xã Lạc Sơn**.\"\n    },\n    \"confidence\": \"high\"\n  }\n]\n```\n\nThat should cover it.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "105. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Vụ Bản, xã Hương Nhượng và xã Vũ Bình thành xã mới có tên gọi là xã Lạc Sơn."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "05266",
+      "ward_name": "Xã Lạc Sơn"
+    }
+  ]
+}

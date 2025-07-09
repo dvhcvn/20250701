@@ -1,0 +1,18 @@
+{
+  "address": "Xã Ẳng Tở, Huyện Mường Ảng, Tỉnh Điện Biên",
+  "ellapsedInMs": 5568,
+  "estimatedCost": 0.0019648,
+  "thought": "**Identifying the New Administrative Unit**\n\nOkay, let's break this down. The user's given me an old address – \"Xã Ẳng Tở, Tỉnh Điện Biên\" – and I need to figure out its new ward. Here's my thought process:\n\nFirst, I need to isolate the key components.  \"Xã Ẳng Tở\" is the old ward, and \"Tỉnh Điện Biên\" is the province. Now, I have to work through the resolutions. I know there's a specific resolution dealing with provinces, so I check it. The \"không thực hiện sáp nhập\" list in the Province Resolutions (60-NQ/TW) *does* include \"Tỉnh Điện Biên\", which means its province name is unchanged. That's a good starting point.\n\nNext, I have to dig deeper into the other resolutions. I'm looking for anything related to \"Xã Ẳng Tở\" within \"Tỉnh Điện Biên\". Bingo! Resolution \"1661/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Điện Biên\" seems relevant. Scanning that resolution, I land on line 28: *This explicitly states a merger of \"Xã Ẳng Tở\" into \"xã Búng Lao\".*\n\nOkay, so I now know the old ward is part of \"xã Búng Lao\". The next step is to find details about \"xã Búng Lao\". I have a `new_wards` list, so I search it for \"xã Búng Lao\" within \"Tỉnh Điện Biên\".  There it is! `{\"ward_code\":\"03301\",\"ward_name\":\"Xã Búng Lao\",\"province_name\":\"Tỉnh Điện Biên\"}`.\n\nFinally, I piece together the output.  The province remains \"Tỉnh Điện Biên\" (from the province check). The new ward is definitively \"Xã Búng Lao\" (from the resolution and the `new_wards` list), with ward code \"03301\" (also from the list). I'll include the relevant resolution as the citation. Given that this is a direct statement within the resolution, my confidence level for this information is \"high\". I'm confident in this analysis.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1661/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Điện Biên",
+        "line": "28. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Ẳng Tở, Chiềng Đông và Búng Lao thành xã mới có tên gọi là xã Búng Lao."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Điện Biên",
+      "ward_code": "03301",
+      "ward_name": "Xã Búng Lao"
+    }
+  ]
+}

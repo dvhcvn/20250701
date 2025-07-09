@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Phú Túc, Huyện Krông Pa, Tỉnh Gia Lai",
+  "ellapsedInMs": 9394,
+  "estimatedCost": 0.0033298,
+  "thought": "**My Analysis of Address Mapping for \"Thị trấn Phú Túc, Huyện Krông Pa, Tỉnh Gia Lai\"**\n\nOkay, so I'm presented with the address \"Thị trấn Phú Túc, Huyện Krông Pa, Tỉnh Gia Lai\" and need to map it to a new administrative unit. My initial steps are clear: I'll identify the old ward, district, and province from the input.  In this case, it's pretty straightforward: \"Thị trấn Phú Túc\" (ward), \"Huyện Krông Pa\" (district), and \"Tỉnh Gia Lai\" (province).  Despite the instruction to eliminate districts, the source documents still mention them. My priority is on the ward and province for accurate mapping.\n\nNext, I'll dive into the province resolutions, specifically checking if \"Tỉnh Gia Lai\" has been merged or changed. The resolution 60-NQ/TW clearly states that Gia Lai *remained*, but absorbed Bình Định.  Importantly, the name stayed \"Tỉnh Gia Lai\". This is good to know.\n\nNow, I'll scan through the other resolutions, focusing on any mentions of \"Thị trấn Phú Túc\" or the broader context of Gia Lai.  Here's where it gets interesting. Resolution 1664/NQ-UBTVQH15, concerning Gia Lai, is the key. Line 82 is what I was looking for:  \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Phú Túc và các xã Phú Cần, Chư Ngọc, Ia Mlah, Đất Bằng thành xã mới có tên gọi là **xã Phú Túc**.\"  Bingo!  \"Thị trấn Phú Túc\" is directly mentioned and is consolidated into a *new* \"xã Phú Túc\" within the province of Gia Lai.\n\nThis is a very strong indicator.  My next step is to cross-reference with the \"New wards\" list to confirm.  And indeed, I find `{\"ward_code\":\"24076\",\"ward_name\":\"Xã Phú Túc\",\"province_name\":\"Tỉnh Gia Lai\"}`.  The match is perfect. The province name aligns perfectly with the resolution.\n\nBefore finalizing, I'll conduct a quick check for potential ambiguities. I quickly scan other resolutions (1656, 1660, 1662, 1687) looking for any other \"Phú Túc\" mentions, but I'm careful to analyze the context.  There are a couple in different provinces, but they reference \"old\" Phú Túc units, or are merged into a different new ward name.  The new \"xã Phú Túc\" in Gia Lai is unique.\n\nTherefore, I'm confident in my output.  I'll use the relevant resolution and line as the citation, and the high confidence level reflects the clear mapping.  The final output is: `province_name`: \"Tỉnh Gia Lai\", `ward_code`: \"24076\", and `ward_name`: \"Xã Phú Túc\".\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai",
+        "line": "82. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Phú Túc và các xã Phú Cần, Chư Ngọc, Ia Mlah, Đất Bằng thành xã mới có tên gọi là xã Phú Túc."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "24076",
+      "ward_name": "Xã Phú Túc"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Phước Đức, Huyện Phước Sơn, Tỉnh Quảng Nam",
+  "ellapsedInMs": 7379,
+  "estimatedCost": 0.0029299,
+  "thought": "**Analyzing and Mapping Vietnamese Address Changes**\n\nOkay, so I'm presented with the task of translating an old Vietnamese address, specifically \"Tỉnh Quảng Nam\" and \"Xã Phước Đức,\" to its current administrative equivalents. My strategy involves meticulous checking against provided resolutions and a list of new wards.\n\nFirst, I identified the original province and ward, \"Tỉnh Quảng Nam\" and \"Xã Phước Đức,\" respectively. Then, I dug into the provincial resolutions, beginning with 60-NQ/TW. This immediately revealed that \"Tỉnh Quảng Nam\" was merged with Đà Nẵng, becoming \"Thành phố Đà Nẵng\".\n\nNext, I focused on resolutions related to \"Thành phố Đà Nẵng,\" specifically looking for mentions of \"Xã Phước Đức\". I found the critical piece in resolution 1659/NQ-UBTVQH15. This resolution explicitly addresses \"Xã Phước Đức,\" stating it's being merged with other wards to form the new ward \"Xã Phước Năng\" within the \"Thành phố Đà Nẵng\" boundaries. This is a very strong match.\n\nI also, of course, had to consider the possibility of name collisions. So, I scanned other resolutions for \"Xã Phước Đức\" across other provinces, like Đồng Nai, Gia Lai, Khánh Hòa, and Vĩnh Long. No other province had any relevant matches for \"Phước Đức\". Therefore, the \"Xã Phước Đức\" I'm looking for *only* pertains to \"Thành phố Đà Nẵng.\"\n\nWith the resolution confirmed, I looked at the provided list of \"New wards\" to find the corresponding entry. The data structure clearly provides the \"ward_code,\" \"ward_name,\" and \"province_name.\" Sure enough, I located the perfectly matching entry: `{\"ward_code\":\"20734\",\"ward_name\":\"Xã Phước Năng\",\"province_name\":\"Thành phố Đà Nẵng\"}`.\n\nFinally, I compiled the information into a clear JSON output: \"Thành phố Đà Nẵng\" (province from the merger), \"Xã Phước Năng\" (ward name from the resolution), \"ward_code\": \"20734\" (from the new wards list), and included the relevant citation from the resolution. I'm confident in this mapping, so I'd assign a \"high\" confidence level because the resolution is very specific and direct.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng",
+        "line": "88. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Phước Đức, Phước Mỹ và Phước Năng thành xã mới có tên gọi là xã Phước Năng."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "20734",
+      "ward_name": "Xã Phước Năng"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "address": "Phường Thọ Xương, Thành phố Bắc Giang, Tỉnh Bắc Giang",
+  "ellapsedInMs": 6067,
+  "estimatedCost": 0.0023349,
+  "thought": "**My Mapping Analysis: Reconciling Old and New Administrative Units**\n\nOkay, so I'm tackling this old address: \"Phường Thọ Xương, Thành phố Bắc Giang, Tỉnh Bắc Giang\".  My goal is to figure out where this fits in the new administrative landscape. I need to identify the province and ward.  First, let's break it down.\n\nI see \"Tỉnh Bắc Giang\" - that's the province. Then there's \"Phường Thọ Xương\" - that's the ward.  I can skip the district level for now, based on the problem description.\n\nMy initial thought is to check if there are any resolutions regarding \"Tỉnh Bắc Giang\". I see resolution 60-NQ/TW states that \"Tỉnh Bắc Giang\" is merged into \"Tỉnh Bắc Ninh\".  So, the province is now \"Tỉnh Bắc Ninh\".\n\nNext, \"Phường Thọ Xương\". I'll search for resolutions that mention it. Bingo! Resolution 1658/NQ-UBTVQH15, concerning \"tỉnh Bắc Ninh\", states \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Thọ Xương...thành phường mới có tên gọi là **phường Bắc Giang**.\"  Perfect match! This resolution *specifically* merges \"Thọ Xương\" into \"Bắc Giang\", and the resolution title confirms this is in \"tỉnh Bắc Ninh\". I can ignore the \"Thọ Xương\" resolution for \"tỉnh Thanh Hóa\" as it is irrelevant.\n\nTo confirm, I'll cross-reference this with the \"New wards\" data.  I was right, there it is: `{\"ward_code\":\"07210\",\"ward_name\":\"Phường Bắc Giang\",\"province_name\":\"Tỉnh Bắc Ninh\"}`.  It's an exact match!\n\nTherefore, based on my analysis of these resolutions and the new administrative unit data, \"Phường Thọ Xương, Thành phố Bắc Giang, Tỉnh Bắc Giang\" maps directly to \"Phường Bắc Giang, Tỉnh Bắc Ninh\".  I'm highly confident in this result; the resolution is quite explicit.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "5. Hợp nhất tỉnh Bắc Ninh và tỉnh Bắc Giang, lấy tên là tỉnh Bắc Ninh"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "07210",
+      "ward_name": "Phường Bắc Giang"
+    },
+    {
+      "citation": {
+        "header": "1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh",
+        "line": "92. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Thọ Xương, Ngô Quyền, Xương Giang, Hoàng Văn Thụ, Trần Phú, Dĩnh Kế và Dĩnh Trì thành phường mới có tên gọi là phường Bắc Giang."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "07210",
+      "ward_name": "Phường Bắc Giang"
+    }
+  ]
+}

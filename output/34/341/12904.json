@@ -1,0 +1,28 @@
+{
+  "address": "Xã Thụy Phong, Huyện Thái Thụy, Tỉnh Thái Bình",
+  "ellapsedInMs": 9822,
+  "estimatedCost": 0.0037294,
+  "thought": "**Address Mapping Analysis: Xã Thụy Phong, Huyện Thái Thụy, Tỉnh Thái Bình**\n\nOkay, let's break this down systematically. My task is to accurately map the old Vietnamese administrative address \"Xã Thụy Phong, Huyện Thái Thụy, Tỉnh Thái Bình\" to the new, current administrative structure.  Since I'm dealing with historical data, I need to consult relevant resolutions and data on province mergers and ward reorganizations.\n\nFirst, I identified \"Tỉnh Thái Bình\" as the old province and \"Xã Thụy Phong\" as the ward.  The initial step is to account for potential province mergers. I immediately reviewed the 60-NQ/TW resolution (likely a key document for this purpose).  Sure enough, I found that \"Tỉnh Thái Bình\" was merged with \"Tỉnh Hưng Yên,\" resulting in \"Tỉnh Hưng Yên\" as the *new* province.\n\nWith the new province identified, I next shifted focus to resolutions regarding ward-level changes within Hưng Yên.  I zeroed in on the 1666/NQ-UBTVQH15 resolution, specifically titled \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên.\" This seems to be the critical document for ward reorganization in the *new* province.\n\nWithin this resolution, I meticulously searched for mentions of \"Xã Thụy Phong.\"  Line 38 caught my attention: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Thụy Thanh, Thụy Phong và Thụy Duyên thành xã mới có tên gọi là **xã Nam Thụy Anh**.\" Bingo!  This is a direct mapping: \"Xã Thụy Phong\" is explicitly slated to become part of the new ward, \"Xã Nam Thụy Anh\".\n\nI didn't need to consult any resolutions pertaining to the *old* province (Thái Bình) because the task specified to use the *new* province.\n\nTo ensure there's no ambiguity or overlap, I scanned other resolutions, like 1680/NQ-UBTVQH15 regarding Quảng Trị.  That resolution mentioned other wards and was irrelevant to this mapping effort.\n\nNow, with \"Xã Nam Thụy Anh\" definitively identified as the new ward, the final step is to validate this against the \"New wards\" data provided.  I confirmed that `{\"ward_code\":\"12904\",\"ward_name\":\"Xã Nam Thụy Anh\",\"province_name\":\"Tỉnh Hưng Yên\"}` perfectly aligns with my findings.\n\nGiven this clear and direct mapping, I have high confidence in this result. Therefore, the resulting JSON structure will be built from the province merger and the resolution information:\n\n*   `citation`:\n    *   `header`: \"1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên\"\n    *   `line`: \"38. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Thụy Thanh, Thụy Phong và Thụy Duyên thành xã mới có tên gọi là xã Nam Thụy Anh.\"\n*   `confidence`: \"high\"\n*   `province_name`: \"Tỉnh Hưng Yên\"\n*   `ward_code`: \"12904\"\n*   `ward_name`: \"Xã Nam Thụy Anh\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "6. Hợp nhất tỉnh Hưng Yên và tỉnh Thái Bình, lấy tên là tỉnh Hưng Yên"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "12904",
+      "ward_name": "Xã Nam Thụy Anh"
+    },
+    {
+      "citation": {
+        "header": "1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên",
+        "line": "38. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Thụy Thanh, Thụy Phong và Thụy Duyên thành xã mới có tên gọi là xã Nam Thụy Anh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "12904",
+      "ward_name": "Xã Nam Thụy Anh"
+    }
+  ]
+}

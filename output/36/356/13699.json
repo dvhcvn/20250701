@@ -1,0 +1,28 @@
+{
+  "address": "Phường Mỹ Xá, Thành phố Nam Định, Tỉnh Nam Định",
+  "ellapsedInMs": 6605,
+  "estimatedCost": 0.0037118999999999997,
+  "thought": "**Navigating the Administrative Unit Restructuring for \"Phường Mỹ Xá\"**\n\nOkay, so I'm presented with the challenge of finding the new administrative unit for \"Phường Mỹ Xá, Thành phố Nam Định, Tỉnh Nam Định\".  Given my expertise in these data sets, I immediately start by establishing the provincial context. I know I need to check `60-NQ/TW` to confirm any provincial mergers. Sure enough, \"Tỉnh Nam Định\" was absorbed into the newly created \"Tỉnh Ninh Bình\".  This shifts my focus.\n\nNext, I have to find the fate of \"Phường Mỹ Xá\". I methodically search through my `Other resolutions` and `New wards` data, specifically targeting resolutions relevant to \"Tỉnh Ninh Bình.\" My goal is to locate a specific mapping.\n\nAnd bingo! Resolution `1674/NQ-UBTVQH15`, focused on restructuring within Ninh Bình, is where I find the critical information. Line 118 explicitly states the restructuring of \"Phường Mỹ Xá\" and \"Xã Đại An\" to form a new ward, and the new ward name is **\"phường Thành Nam\"**. That's the key.\n\nNow, I cross-reference this information. I delve into the `New wards` list, quickly finding \"phường Thành Nam\" with the code \"13699\".\n\nMy reasoning is coming together seamlessly.  I'll then build the structured JSON output. I'm confident in this mapping: `province_name` is \"Tỉnh Ninh Bình,\" `ward_name` is \"Phường Thành Nam,\" `ward_code` is \"13699\". I will incorporate the key citation from resolution `1674/NQ-UBTVQH15` as justification, specifically line 118, and I can confidently assign a \"high\" confidence level because this is a direct, explicitly stated mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Hà Nam, tỉnh Ninh Bình và tỉnh Nam Định; lấy tên là tỉnh Ninh Bình"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "13699",
+      "ward_name": "Phường Thành Nam"
+    },
+    {
+      "citation": {
+        "header": "1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "118. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Mỹ Xá và xã Đại An thành phường mới có tên gọi là phường Thành Nam."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "13699",
+      "ward_name": "Phường Thành Nam"
+    }
+  ]
+}

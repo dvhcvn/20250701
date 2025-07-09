@@ -1,0 +1,18 @@
+{
+  "address": "Xã Ngọc Đường, Thành phố Hà Giang, Tỉnh Hà Giang",
+  "ellapsedInMs": 8667,
+  "estimatedCost": 0.0033322,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, I'm working through this address mapping problem. First, I have the old address components: \"Xã Ngọc Đường\" (Ward), \"Thành phố Hà Giang\" (City/District - although not relevant for the final output, I'm keeping it in mind for context), and \"Tỉnh Hà Giang\" (Province).\n\nMy initial step is to account for province-level mergers, and I see from the 60-NQ/TW resolution that \"Tỉnh Hà Giang\" is now part of \"Tỉnh Tuyên Quang.\" This is straightforward and I'll make a note to ensure the `province_name` in my output is \"Tỉnh Tuyên Quang.\"\n\nNext, I'm going through the other resolutions looking for any mention of \"Xã Ngọc Đường.\"  I quickly discard the resolutions that aren't relevant, and then I focus on 1684/NQ-UBTVQH15 (Tuyên Quang) because it's in the correct province. Bingo! In section 70, I find: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Ngọc Đường và phần còn lại của xã Yên Định sau khi sắp xếp theo quy định tại khoản 69 Điều nàythành xã mới có tên gọi là **xã Ngọc Đường**.\" This is a direct hit! It explicitly states that \"Xã Ngọc Đường\" is reshaped by merging with part of \"Xã Yên Định\" *but retains the same name*. This is a strong indicator of a successful mapping.\n\nI'm making sure to check the other sections of 1684/NQ-UBTVQH15, just to confirm that nothing else might affect \"Xã Ngọc Đường\". No conflicting or confusing information there.\n\nNow, with a high degree of confidence that \"Xã Ngọc Đường\" is mapped, I need to check the \"New wards\" list for a corresponding entry. I find: `{\"ward_code\":\"00700\",\"ward_name\":\"Xã Ngọc Đường\",\"province_name\":\"Tỉnh Tuyên Quang\"}`. This perfectly aligns with my findings: the new province name, and the new ward name \"Xã Ngọc Đường\".\n\nBased on all this evidence, I'm comfortable assigning a \"high\" confidence level to this mapping. The old ward is clearly referenced in the resolution, and it's present in the \"New wards\" list with the correct information.\n\nFinally, I'm constructing the JSON output. I'm taking the citation and line from 1684/NQ-UBTVQH15 that directly mentions the ward's re-organization. The `province_name` is taken from the provincial merger, and the `ward_code` and `ward_name` are taken from the matching entry in the \"New wards\" list.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "70. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Ngọc Đường và phần còn lại của xã Yên Định sau khi sắp xếp theo quy định tại khoản 69 Điều nàythành xã mới có tên gọi là xã Ngọc Đường."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "00700",
+      "ward_name": "Xã Ngọc Đường"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "address": "Xã Lại Sơn, Huyện Kiên Hải, Tỉnh Kiên Giang",
+  "ellapsedInMs": 5668,
+  "estimatedCost": 0.00194,
+  "thought": "**Analyzing the Administrative Restructuring of Xã Lại Sơn**\n\nOkay, so I've got this old address: \"Xã Lại Sơn, Huyện Kiên Hải, Tỉnh Kiên Giang\". The goal is to map this to the *new* administrative units. I've got a plan. First things first:  \"Tỉnh Kiên Giang\" - easy, that's the starting point. I need to check the relevant resolutions and data.\n\nMy initial thought is to cross-reference against the standard province resolutions. And bam! Resolution 60-NQ/TW states \"Hợp nhất tỉnh An Giang và tỉnh Kiên Giang, lấy tên là tỉnh An Giang\". So, Kiên Giang is *now* part of An Giang. That's step one down.\n\nNext, I need to focus on the district and ward specifics: \"Huyện Kiên Hải\" and \"Xã Lại Sơn\". I immediately head to the database and start searching for resolutions that specifically mention \"Kiên Hải\" or \"Lại Sơn.\" Bingo! I find resolution \"1654/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh An Giang\", and it says exactly what I need: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của huyện Kiên Hải thành đặc khu có tên gọi là **đặc khu Kiên Hải**.\"  Essentially, they're turning the entire *Huyện Kiên Hải* into a \"special zone\" called \"đặc khu Kiên Hải\".\n\nNow to confirm this, I cross-reference with the provided new ward data. I find a record: `{\"ward_code\":\"31108\",\"ward_name\":\"Đặc khu Kiên Hải\",\"province_name\":\"Tỉnh An Giang\"}`. It's a perfect match!\n\nThe confidence level here is super high. Resolution 1654 explicitly says \"toàn bộ diện tích tự nhiên, quy mô dân số của huyện Kiên Hải thành đặc khu Kiên Hải\". And since \"Xã Lại Sơn\" *was* within \"Huyện Kiên Hải\", it's now undeniably part of \"đặc khu Kiên Hải\". The old address directly maps to the new special zone.  I'm ready to construct the JSON output reflecting the accurate transformation.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh An Giang và tỉnh Kiên Giang, lấy tên là tỉnh An Giang"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh An Giang",
+      "ward_code": "31108",
+      "ward_name": "Đặc khu Kiên Hải"
+    },
+    {
+      "citation": {
+        "header": "1654/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh An Giang",
+        "line": "94. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của huyện Kiên Hải thành đặc khu có tên gọi là đặc khu Kiên Hải."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh An Giang",
+      "ward_code": "31108",
+      "ward_name": "Đặc khu Kiên Hải"
+    }
+  ]
+}

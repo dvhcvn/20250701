@@ -1,0 +1,28 @@
+{
+  "address": "Xã Ngọc Thuận, Huyện Giồng Riềng, Tỉnh Kiên Giang",
+  "ellapsedInMs": 7956,
+  "estimatedCost": 0.0029528999999999996,
+  "thought": "**Mapping \"Xã Ngọc Thuận\" to New Administrative Units**\n\nOkay, let's break this down. The user's providing an old address, \"Xã Ngọc Thuận, Huyện Giồng Riềng, Tỉnh Kiên Giang,\" and I need to map it to the new administrative structure. Here's how I'm thinking about it:\n\nFirst, I see \"Tỉnh Kiên Giang.\"  Easy enough, I'll check the province resolutions. Ah, right, resolution 60-NQ/TW states that Kiên Giang merged with An Giang, so now it's \"Tỉnh An Giang.\"\n\nNext, I need to figure out what happened to \"Xã Ngọc Thuận.\" I'll dive into resolution 1654/NQ-UBTVQH15. Scanning through, line 65 jumps out: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Ngọc Thuận, Ngọc Thành và Ngọc Chúc thành xã mới có tên gọi là **xã Ngọc Chúc**.\" Perfect, \"Xã Ngọc Thuận\" is now part of \"Xã Ngọc Chúc.\"\n\nNow, I'll cross-reference that with the new wards list. And there it is: `{\"ward_code\":\"30928\",\"ward_name\":\"Xã Ngọc Chúc\",\"province_name\":\"Tỉnh An Giang\"}`. That's a direct match!\n\nSo, the JSON output is shaping up like this:\n\n*   `province_name`: \"Tỉnh An Giang\" (because of the province merge)\n*   `ward_name`: \"Xã Ngọc Chúc\" (from that key line in the resolution)\n*   `ward_code`: \"30928\" (from the new wards list)\n*   `confidence`: \"high\" (it's a clean, direct match with the resolution)\n*   `citation`: Will be specific to resolution 1654/NQ-UBTVQH15, line 65\n\nI'll just double-check the \"Huyện Giồng Riềng\" part. The resolution mentions it, but not specifically in line 65. The way I read the instructions, all the district levels get eliminated so I focus on the ward and the province. Since the resolution focuses on which wards are merged, I'll ignore any district level information here.\n\nIn short, it's a straightforward transformation thanks to the resolutions providing very clear mapping for the province and ward. I'm ready to provide the answer with high confidence, with the right citations.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh An Giang và tỉnh Kiên Giang, lấy tên là tỉnh An Giang"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh An Giang",
+      "ward_code": "30928",
+      "ward_name": "Xã Ngọc Chúc"
+    },
+    {
+      "citation": {
+        "header": "1654/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh An Giang",
+        "line": "65. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Ngọc Thuận, Ngọc Thành và Ngọc Chúc thành xã mới có tên gọi là xã Ngọc Chúc."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh An Giang",
+      "ward_code": "30928",
+      "ward_name": "Xã Ngọc Chúc"
+    }
+  ]
+}

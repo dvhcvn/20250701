@@ -1,0 +1,28 @@
+{
+  "address": "Thị trấn Cát Thành, Huyện Trực Ninh, Tỉnh Nam Định",
+  "ellapsedInMs": 8265,
+  "estimatedCost": 0.0034584999999999998,
+  "thought": "**Identifying the New Administrative Unit**\n\nOkay, here's how I'm approaching this: The user is asking about an old address. My primary goal is to determine the new administrative unit.\n\nFirst, I need to understand the old province. It's \"Tỉnh Nam Định.\" I need to cross-reference that against resolutions related to province changes.  Looking at `60-NQ/TW`, I find that \"Tỉnh Nam Định\" was merged. Specifically, it's now part of \"Tỉnh Ninh Bình.\"\n\nNext, I have to pinpoint the specific ward, which is \"Thị trấn Cát Thành.\"  I'll now begin a detailed search through the relevant resolutions for any mention of this specific ward.\n\nI'll start with `1656/NQ-UBTVQH15`, but that's for Hà Nội, so not relevant. `1664/NQ-UBTVQH15` (Gia Lai) has \"thị trấn Cát Tiến,\" a close name but not an exact match. `1671/NQ-UBTVQH15` for Lâm Đồng doesn't list specific ward names for merging. `1672/NQ-UBTVQH15` (Lạng Sơn) has no match.\n\nAh-ha! `1674/NQ-UBTVQH15` is crucial because it addresses the province that absorbed Nam Định: Ninh Bình.  Looking more closely at this resolution, line 36 jumps out. It explicitly states that \"thị trấn Cát Thành\" is being merged into the new \"xã Cát Thành,\" along with two other wards.\n\nThis is a very strong signal. I need to be absolutely certain though. I'll double-check this new information.\n\nI'll consult my database of `New wards` to verify if a \"xã Cát Thành\" exists within \"Tỉnh Ninh Bình.\" I find a perfect match: `{\"ward_code\":\"14056\",\"ward_name\":\"Xã Cát Thành\",\"province_name\":\"Tỉnh Ninh Bình\"}`. This absolutely confirms it!\n\nThe resolution provides clear and direct mapping of the old ward to the new administrative unit, and the database backs it up. Therefore, the old address now belongs to `Xã Cát Thành, Tỉnh Ninh Bình`. The confidence level is extremely high.  Now I can construct the final JSON output with complete confidence.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Hà Nam, tỉnh Ninh Bình và tỉnh Nam Định; lấy tên là tỉnh Ninh Bình"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "14056",
+      "ward_name": "Xã Cát Thành"
+    },
+    {
+      "citation": {
+        "header": "1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "36. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Cát Thành, xã Việt Hùng và xã Trực Đạo thành xã mới có tên gọi là xã Cát Thành."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "14056",
+      "ward_name": "Xã Cát Thành"
+    }
+  ]
+}

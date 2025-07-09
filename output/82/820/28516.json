@@ -1,0 +1,28 @@
+{
+  "address": "Xã Ngũ Hiệp, Huyện Cai Lậy, Tỉnh Tiền Giang",
+  "ellapsedInMs": 9044,
+  "estimatedCost": 0.0037859000000000005,
+  "thought": "**Finding the New Administrative Unit for the Old Address**\n\nOkay, so I've got this old address: \"Xã Ngũ Hiệp, Huyện Cai Lậy, Tỉnh Tiền Giang.\" My goal is to figure out the new administrative unit, likely a ward, for this address. Here's my thought process:\n\nFirst, I need to pinpoint the old province. It's \"Tỉnh Tiền Giang.\" Then, the first thing to check is any province mergers or changes documented in Resolution 60-NQ/TW. Ah, yes, \"Tiền Giang\" merged with \"Đồng Tháp\" to become \"Tỉnh Đồng Tháp.\" Good, that clarifies things.\n\nNow, the old ward is \"Xã Ngũ Hiệp.\"  Since \"Tiền Giang\" is now part of \"Đồng Tháp,\" I'll start looking for \"Ngũ Hiệp\" within resolutions related to \"Đồng Tháp.\" Specifically, I'm examining \"Other resolutions\" where ward reorganizations and mergers are usually outlined.\n\nI've found Resolution \"1663/NQ-UBTVQH15,\" which seems relevant to ward adjustments in \"Đồng Tháp.\"  Bingo! Line 53 explicitly states that \"Xã Ngũ Hiệp\" was formed from a merger of \"Tam Bình\" and \"Ngũ Hiệp.\" Importantly, the *name* is retained, but it's a new entity.\n\nNext, I'll search the \"New wards\" list for \"Xã Ngũ Hiệp\" under \"Tỉnh Đồng Tháp.\"  And there it is: `{\"ward_code\":\"28516\",\"ward_name\":\"Xã Ngũ Hiệp\",\"province_name\":\"Tỉnh Đồng Tháp\"}`. Perfect!\n\nNow, a quick sanity check. I know \"Ngũ Hiệp\" can be a common name. I need to ensure I'm getting the right \"Ngũ Hiệp.\" I see references to \"Ngũ Hiệp\" in resolutions about Hà Nội, specifically merging into \"Thanh Trì\" and \"Nam Phù.\"  However, the original address explicitly stated \"Huyện Cai Lậy, Tỉnh Tiền Giang.\" The Hà Nội references are clearly irrelevant here. I am looking for something in the former \"Tiền Giang\". The \"Ngũ Hiệp\" in Đồng Tháp is the one I need, and it matches the old and new form of the ward.\n\nTherefore, with a high degree of confidence, I can construct the JSON output. We've got a definitive match, and the province merger is well-established. I'm ready to provide the updated ward information.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Tiền Giang và tỉnh Đồng Tháp, lấy tên là tỉnh Đồng Tháp"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đồng Tháp",
+      "ward_code": "28516",
+      "ward_name": "Xã Ngũ Hiệp"
+    },
+    {
+      "citation": {
+        "header": "1663/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Tháp",
+        "line": "53. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Tam Bình và xã Ngũ Hiệp thành xã mới có tên gọi là xã Ngũ Hiệp."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đồng Tháp",
+      "ward_code": "28516",
+      "ward_name": "Xã Ngũ Hiệp"
+    }
+  ]
+}

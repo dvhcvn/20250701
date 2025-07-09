@@ -1,0 +1,18 @@
+{
+  "address": "Xã Đạm Bri, Thành phố Bảo Lộc, Tỉnh Lâm Đồng",
+  "ellapsedInMs": 8593,
+  "estimatedCost": 0.0030524,
+  "thought": "**Analyzing the Administrative Reorganization: A Deep Dive**\n\nOkay, let's break this down. We have an old address – \"Xã Đạm Bri\" in \"Thành phố Bảo Lộc,\" \"Tỉnh Lâm Đồng\" – and the task is to pinpoint its new ward assignment based on recent government resolutions.  My initial approach will be methodical: first, parsing the old address components, then meticulously cross-referencing these elements with the available resolutions.\n\nThe first step is straightforward; identify the old ward, city/district, and province. Done. Next, I need to check the province resolutions to understand if any broader territorial changes affect \"Tỉnh Lâm Đồng.\" The 60-NQ/TW resolution mentions a merger, but thankfully, \"Tỉnh Lâm Đồng\" remains \"Tỉnh Lâm Đồng\" after the consolidation. No immediate impact here.\n\nNow, the crucial step: parsing the 1671/NQ-UBTVQH15 resolution.  I'm scanning for \"Xã Đạm Bri,\" and, Aha! Line 105 catches my eye.  It details the consolidation of \"Phường 2 (thành phố Bảo Lộc),\" \"xã Lộc Tân,\" and **\"xã ĐamBri\"** into a new ward: \"Phường 2 Bảo Lộc.\"\n\n*This is it!*  A quick double-check reveals a *very* minor spelling variance - \"Đạm Bri\" versus \"ĐamBri.\" In my experience, these kinds of inconsistencies are common in such data sets and often represent typos or common regional variations. Given the context (we're dealing with Bảo Lộc, Lâm Đồng), this minor difference is virtually certain to be the same entity.  The resolution provides direct evidence of the transformation.\n\nSince \"Phường 2 Bảo Lộc\" is the identified new ward, the next step is to confirm the new ward in the provided \"New wards\" list.  \"Phường 2 Bảo Lộc\" appears there, with the correct province, and a ward code of \"24820.\" Everything aligns perfectly.\n\nTherefore, my final JSON output will reflect this:  The province is \"Tỉnh Lâm Đồng,\" the new ward is \"Phường 2 Bảo Lộc,\" with ward code \"24820.\" The citation will clearly reference line 105 of the 1671/NQ-UBTVQH15 resolution.\n\nI feel *very* confident about this conclusion. Despite the minor spelling difference, the context and direct match within the resolution make this a high-confidence finding.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng",
+        "line": "105. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của Phường 2 (thành phố Bảo Lộc), xã Lộc Tân và xã ĐamBri thành phường mới có tên gọi là Phường 2 Bảo Lộc."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "24820",
+      "ward_name": "Phường 2 Bảo Lộc"
+    }
+  ]
+}

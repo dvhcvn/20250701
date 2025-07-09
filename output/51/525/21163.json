@@ -1,0 +1,18 @@
+{
+  "address": "Xã Trà Xinh, Huyện Trà Bồng, Tỉnh Quảng Ngãi",
+  "ellapsedInMs": 7108,
+  "estimatedCost": 0.0027968,
+  "thought": "**Determining the New Administrative Unit for \"Xã Trà Xinh\"**\n\nOkay, let's break this down systematically. The user has given me the old address \"Xã Trà Xinh, Huyện Trà Bồng, Tỉnh Quảng Ngãi\" and needs the new administrative unit. First, the province.  \"Tỉnh Quảng Ngãi\" is our starting point. I know from Resolution 60-NQ/TW that the merge with Kon Tum didn't actually change the province name, so \"Tỉnh Quảng Ngãi\" it remains. Good.\n\nNext, I need to look at the relevant resolution for administrative rearrangements at the ward level: 1677/NQ-UBTVQH15. I'll meticulously go through each line, specifically looking for \"Xã Trà Xinh.\"  Lines 26 and 27 were dismissals - no mention. Ah! Line 28 is the jackpot! It explicitly states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Sơn Trà, Trà Phong và **Trà Xinh** thành xã mới có tên gọi là **xã Tây Trà**.\"  Perfect. \"Xã Trà Xinh\" is being merged into \"Xã Tây Trà.\"  I double-checked lines 31, but nothing.\n\nNow, I need to confirm this new \"Xã Tây Trà\" against the provided \"New Wards\" data.  A quick check...and there it is:  `{\"ward_code\":\"21154\",\"ward_name\":\"Xã Tây Trà\",\"province_name\":\"Tỉnh Quảng Ngãi\"}`. Confirmed.  This is consistent.\n\nTherefore, the output will be:\n\n*   `province_name`: \"Tỉnh Quảng Ngãi\" (stays the same)\n*   `ward_name`: \"Xã Tây Trà\" (from the resolution and confirmed in new ward data)\n*   `ward_code`: \"21154\" (from the new ward data)\n*   `citation`: with the header from the resolution and the exact line number providing the mapping\n*   `confidence`: \"high\". The resolution explicitly states the mapping, and the \"New Wards\" data verifies its existence. It's as solid as it gets.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1677/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ngãi",
+        "line": "28. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Sơn Trà, Trà Phong và Trà Xinh thành xã mới có tên gọi là xã Tây Trà."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ngãi",
+      "ward_code": "21154",
+      "ward_name": "Xã Tây Trà"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "address": "Xã Tân Lân, Huyện Cần Đước, Tỉnh Long An",
+  "ellapsedInMs": 8259,
+  "estimatedCost": 0.0031831000000000003,
+  "thought": "**Analysis of Administrative Unit Mapping**\n\nOkay, let's break this down. The user's goal is to remap the old address \"Xã Tân Lân, Huyện Cần Đước, Tỉnh Long An\" to its new administrative equivalent.  My initial assessment is to first identify the changes due to any province mergers.\n\nI quickly identified the crucial resolution: \"Hợp nhất tỉnh Tây Ninh và tỉnh Long An, lấy tên là tỉnh Tây Ninh.\" This clearly states that Long An has merged into Tây Ninh.  Therefore, we're now dealing with \"Tỉnh Tây Ninh\" as the new province.\n\nNext, I need to pinpoint the specific \"Xã Tân Lân, Huyện Cần Đước\" and how it's being affected.  Scanning the resolutions, specifically 1682/NQ-UBTVQH15, a key finding emerges.  Line 42 explicitly addresses the merger of \"xã Phước Đông (huyện Cần Đước)\" *and* \"xã Tân Lân\" into the new \"xã Tân Lân\".\n\nThe mention of \"(huyện Cần Đước)\" is critical. While it doesn't explicitly state \"Tỉnh Long An\", the resolution is *for* \"tỉnh Tây Ninh,\" the merged province. The fact that the resolution mentions \"xã Phước Đông (huyện Cần Đước)\" strongly suggests that the \"huyện Cần Đước\" referred to is the *old* Cần Đước from Long An, as Long An is now part of Tây Ninh. There's no other plausible interpretation here.\n\nFurther corroboration comes from the subsequent lines in 1682/NQ-UBTVQH15, showing merging of the remaining areas to form \"xã Cần Đước\".\n\nChecking the provided \"New wards\" list, I find a perfect match:  `{\"ward_code\":\"28138\",\"ward_name\":\"Xã Tân Lân\",\"province_name\":\"Tỉnh Tây Ninh\"}`.  This aligns perfectly with resolution 42. So that's our new \"Xã Tân Lân\".\n\nThe confidence level here is exceptionally high.  The province merger is definitive. The resolution, focusing on Tây Ninh, clearly outlines the new \"Xã Tân Lân\", specifically referencing Cần Đước. Therefore, I can confidently state that the old \"Xã Tân Lân, Huyện Cần Đước, Tỉnh Long An\" now maps to the new \"Xã Tân Lân\" in Tỉnh Tây Ninh.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "18. Hợp nhất tỉnh Tây Ninh và tỉnh Long An, lấy tên là tỉnh Tây Ninh"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tây Ninh",
+      "ward_code": "28138",
+      "ward_name": "Xã Tân Lân"
+    },
+    {
+      "citation": {
+        "header": "1682/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tây Ninh",
+        "line": "42. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Phước Đông (huyện Cần Đước) và xã Tân Lân thành xã mới có tên gọi là xã Tân Lân."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tây Ninh",
+      "ward_code": "28138",
+      "ward_name": "Xã Tân Lân"
+    }
+  ]
+}

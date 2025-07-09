@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tế Lợi, Huyện Nông Cống, Tỉnh Thanh Hóa",
+  "ellapsedInMs": 5315,
+  "estimatedCost": 0.0019549,
+  "thought": "**Determining the New Ward for the Given Address**\n\nOkay, so I've got \"Xã Tế Lợi, Huyện Nông Cống, Tỉnh Thanh Hóa\". My task is to find the corresponding new administrative unit (ward) based on the provided resolutions and the \"New wards\" list.  First things first:\n\n1.  **Province Identification:** The province is clearly \"Tỉnh Thanh Hóa\".  A quick glance at the provided resolutions shows that resolution \"60-NQ/TW\" confirms no changes at the provincial level.  High confidence there.\n\n2.  **Ward-Specific Resolution Search:**  Now, I need to focus on the ward itself.  The relevant resolution for this is \"1686/NQ-UBTVQH15\", specifically for the province of Thanh Hóa and deals with the merging of smaller wards. I'll need to scan the lines within that document looking for \"Xã Tế Lợi.\"\n\n3.  **The Key Match:** Bingo! Line 35 is the jackpot. It says \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Trung Thành (huyện Nông Cống), Tế Nông, Tế Thắng và Tế Lợi thành xã mới có tên gọi là **xã Thắng Lợi**.\"  This directly states that \"Xã Tế Lợi\" has been merged into a new ward called \"Xã Thắng Lợi.\"\n\n4.  **Verification:** Just to be sure, I'll cross-reference this information with the \"New wards\" list.  And there it is: \"{\"ward_code\":\"16309\",\"ward_name\":\"Xã Thắng Lợi\",\"province_name\":\"Tỉnh Thanh Hóa\"}\". Perfect match.\n\n5.  **Confidence Assessment:**  The merging is explicitly stated in the resolution, and it's consistent with the new ward data. High confidence. I've got this one.\n\n6.  **Json:** Ready to output the result as a json object.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1686/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thanh Hóa",
+        "line": "35. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Trung Thành (huyện Nông Cống), Tế Nông, Tế Thắng và Tế Lợi thành xã mới có tên gọi là xã Thắng Lợi."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thanh Hóa",
+      "ward_code": "16309",
+      "ward_name": "Xã Thắng Lợi"
+    }
+  ]
+}

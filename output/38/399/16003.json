@@ -1,0 +1,18 @@
+{
+  "address": "Xã Hoằng Phụ, Huyện Hoằng Hóa, Tỉnh Thanh Hóa",
+  "ellapsedInMs": 6905,
+  "estimatedCost": 0.0026744,
+  "thought": "**My Analysis of the Administrative Unit Change**\n\nOkay, so I'm presented with the old address \"Xã Hoằng Phụ, Huyện Hoằng Hóa, Tỉnh Thanh Hóa.\" My task is clear: figure out the new administrative unit.\n\nFirst, I extract the crucial pieces: \"Xã Hoằng Phụ\" (the old ward) and \"Tỉnh Thanh Hóa\" (the old province). Then, I cross-reference \"Tỉnh Thanh Hóa\" against my province merger data. Good news, it wasn't merged. Resolution \"60-NQ/TW\" confirms this.\n\nNow, the real work begins. I delve into the relevant province's resolutions, specifically looking for \"Xã Hoằng Phụ.\" Resolution \"1686/NQ-UBTVQH15,\" concerning Thanh Hóa, is immediately promising. And there it is, line 21 explicitly states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Hoằng Đông, Hoằng Ngọc, **Hoằng Phụ** và Hoằng Thanh thành xã mới có tên gọi là **xã Hoằng Thanh**.\" Bingo!\n\nThis tells me \"Xã Hoằng Phụ\" has been merged into \"Xã Hoằng Thanh.\" Next, I verify the existence of \"Xã Hoằng Thanh\" in my \"New wards\" data, and there it is, complete with the code \"16000.\"\n\nMy confidence level is high because I have a direct citation from a key resolution, specifically mentioning the merge. To be absolutely sure, I've checked other resolutions to verify that \"Xã Hoằng Phụ\" isn't mentioned elsewhere, and confirming this merge is the only relevant occurrence.\n\nTherefore, my final output will be a JSON structure containing:\n\n*   `province_name`: \"Tỉnh Thanh Hóa\"\n*   `ward_name`: \"Xã Hoằng Thanh\"\n*   `ward_code`: \"16000\"\n*   `citation`: \"1686/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thanh Hóa\" with line \"21. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Hoằng Đông, Hoằng Ngọc, Hoằng Phụ và Hoằng Thanh thành xã mới có tên gọi là xã Hoằng Thanh.\"\n*   `confidence`: \"high\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1686/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thanh Hóa",
+        "line": "21. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Hoằng Đông, Hoằng Ngọc, Hoằng Phụ và Hoằng Thanh thành xã mới có tên gọi là xã Hoằng Thanh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thanh Hóa",
+      "ward_code": "16000",
+      "ward_name": "Xã Hoằng Thanh"
+    }
+  ]
+}

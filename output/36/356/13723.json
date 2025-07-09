@@ -1,0 +1,18 @@
+{
+  "address": "Xã Mỹ Tân, Thành phố Nam Định, Tỉnh Nam Định",
+  "ellapsedInMs": 8143,
+  "estimatedCost": 0.0038350999999999997,
+  "thought": "**Finding the New Administrative Unit for \"Xã Mỹ Tân\"**\n\nOkay, let's break this down. The user's looking for the new administrative unit for the old address \"Xã Mỹ Tân, Thành phố Nam Định, Tỉnh Nam Định\".  My initial thought is to cross-reference the old and new data, starting with the province.\n\n1.  **Province Identification:**  I see \"Tỉnh Nam Định\" which I immediately recognize.\n2.  **Province Merger Check:** I pulled up the relevant resolutions (60-NQ/TW) and confirmed \"Tỉnh Nam Định\" was merged into \"Tỉnh Ninh Bình.\" So, the new province is definitely \"Tỉnh Ninh Bình.\"\n3.  **Diving Deeper:** Now I need to check the specific resolutions that deal with changes within \"Tỉnh Ninh Bình,\" focusing on any mention of \"Thành phố Nam Định\" or more importantly, \"Xã Mỹ Tân.\" Resolution 1674/NQ-UBTVQH15 seems promising, and I spot relevant lines:\n    *   Line 95 is irrelevant, but I will review it later if needed.\n    *   Line 114: while it mentions \"Thành phố Nam Định\", it doesn't cover \"Xã Mỹ Tân\", so I skip it.\n    *   Line 115! Bingo! It says \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Lộc Hạ, xã Mỹ Tân và xã Mỹ Trung thành phường mới có tên gọi là **phường Thiên Trường**.\" This directly addresses \"Xã Mỹ Tân\" and implies \"Thành phố Nam Định\" based on the previous lines!\n4.  **Ward Matching:** This resolution 1674/NQ-UBTVQH15, line 115, is clear: \"Xã Mỹ Tân\" is now part of \"phường Thiên Trường\".\n5.  **Verification:** Just to be absolutely sure, I'll cross-reference this with the \"New Wards\" data.  Yep, there it is:  `{\"ward_code\":\"13684\",\"ward_name\":\"Phường Thiên Trường\",\"province_name\":\"Tỉnh Ninh Bình\"}`.\n6.  **Confidence Assessment:**  Given the direct and explicit nature of the resolution, my confidence in this finding is very high.\n7.  **Final JSON Output:** Based on all the above, I'll generate the following output, citing the pertinent resolution:\n\n    *   `province_name`: \"Tỉnh Ninh Bình\" (from province merger)\n    *   `ward_name`: \"Phường Thiên Trường\" (from resolution 1674/NQ-UBTVQH15, line 115)\n    *   `ward_code`: \"13684\" (from new wards list)\n    *   `confidence`: \"high\"\n    *   `citation`:\n        *   `header`: \"1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình\"\n        *   `line`: \"115. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Lộc Hạ, xã Mỹ Tân và xã Mỹ Trung thành phường mới có tên gọi là **phường Thiên Trường**.\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "115. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Lộc Hạ, xã Mỹ Tân và xã Mỹ Trung thành phường mới có tên gọi là **phường Thiên Trường**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "13684",
+      "ward_name": "Phường Thiên Trường"
+    }
+  ]
+}

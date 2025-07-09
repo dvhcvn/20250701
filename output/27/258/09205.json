@@ -1,0 +1,18 @@
+{
+  "address": "Xã Yên Trung, Huyện Yên Phong, Tỉnh Bắc Ninh",
+  "ellapsedInMs": 7827,
+  "estimatedCost": 0.003382,
+  "thought": "**My Analysis of the Administrative Reorganization in Bắc Ninh**\n\nOkay, here's how I'm approaching this. The user has given me the old address, \"Xã Yên Trung, Huyện Yên Phong, Tỉnh Bắc Ninh,\" and I need to identify the new administrative unit based on the provided resolutions and the \"new wards\" data.\n\nFirst, the province is clear: Bắc Ninh (\"Tỉnh Bắc Ninh\").  I quickly check Resolution 60-NQ/TW to see if any province-level changes apply.  While it mentions a potential merger, it doesn't change the province name, so it's not immediately relevant to the *ward* level.\n\nNext, I dive into Resolution 1658/NQ-UBTVQH15, the key resolution for Bắc Ninh's ward-level adjustments.  I notice a potential wrinkle:  Line 3 of the resolution speaks about a *new* \"Xã Yên Phong,\" but the old address refers to \"Huyện Yên Phong,\" which I need to keep separate. The question is: What happened to *Xã* Yên Trung?\n\nFortunately, line 6 of the same resolution clears it up: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Dũng Liệt và xã Yên Trung thành xã mới có tên gọi là **xã Yên Trung**.\"  Bingo! The *old* \"Xã Yên Trung\" is being merged with \"Xã Dũng Liệt\" to become a *new* \"Xã Yên Trung.\" This is exactly what I was looking for.\n\nFinally, I confirm this with the \"new wards\" data.  There's a \"Xã Yên Phong,\" but that's the *new* one mentioned in line 3.  The important entry is `{\"ward_code\":\"09205\",\"ward_name\":\"Xã Yên Trung\",\"province_name\":\"Tỉnh Bắc Ninh\"}`.  This *confirms* the new \"Xã Yên Trung\" created by the merger of the old \"Xã Yên Trung\" and \"Xã Dũng Liệt.\"\n\nTherefore, based on my analysis of the resolution and the provided data, the new administrative unit for the old address \"Xã Yên Trung, Huyện Yên Phong, Tỉnh Bắc Ninh\" is the *new* \"Xã Yên Trung,\" resulting from the merger with \"Xã Dũng Liệt.\" The new \"Xã Yên Trung\" ward code is `09205`.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh",
+        "line": "6. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Dũng Liệt và xã Yên Trung thành xã mới có tên gọi là xã Yên Trung."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "09205",
+      "ward_name": "Xã Yên Trung"
+    }
+  ]
+}

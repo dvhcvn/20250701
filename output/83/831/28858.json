@@ -1,0 +1,18 @@
+{
+  "address": "Xã Hữu Định, Huyện Châu Thành, Tỉnh Bến Tre",
+  "ellapsedInMs": 9284,
+  "estimatedCost": 0.0043175,
+  "thought": "**Determining the New Ward for the Given Address**\n\nOkay, so I've got \"Xã Hữu Định, Huyện Châu Thành, Tỉnh Bến Tre\" and need to figure out its new administrative home. My initial thought process is to break this down into a few crucial steps: first, verify if any province mergers are in play. Second, I need to go through the provided resolutions to pinpoint \"Xã Hữu Định\" and understand any re-organization that may have occurred. Then, I need to precisely determine the new ward, and finally, find the relevant codes and province information for that ward, and package everything into the correct JSON structure.\n\nFirst, I looked at that handy list \"60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất\".  Bingo! \"Tỉnh Bến Tre\" is no longer its own entity; it's now part of \"Tỉnh Vĩnh Long\" along with two others. Good to know.  My new province name is \"Tỉnh Vĩnh Long\".\n\nNext, I delved into the \"Other resolutions.\" I started methodically through them, line by line.  And there it was: Resolution 1687/NQ-UBTVQH15.  Specifically, line 120 caught my eye.  It explicitly states the fate of \"Xã Hữu Định\"! It's being merged with others to form \"phường Phú Tân.\" The resolution's header also directly references \"Tỉnh Vĩnh Long,\" which perfectly aligns with my earlier province finding.  That's a pretty strong indication, a direct and clear match.\n\nBased on line 120, \"phường Phú Tân\" is the new ward.  Now to locate its details.  I flipped over to the \"New wards\" list and quickly found the matching entry: `{\"ward_code\":\"28858\",\"ward_name\":\"Phường Phú Tân\",\"province_name\":\"Tỉnh Vĩnh Long\"}`. This confirms my findings and ties everything neatly together.\n\nFinally, the JSON. I'll construct it to reflect what I've discovered: `citation.header` with the resolution's title, the relevant line as `citation.line`, set `confidence` to \"high\" (because it's a direct and clear match), and populated the rest: `province_name` as \"Tỉnh Vĩnh Long,\" and the `ward_code` and `ward_name` from my \"New wards\" lookup.\n\nI did briefly glance back at the original address, specifically the \"Huyện Châu Thành\" part. It wasn't specifically stated in line 120, but it is implicitly understood. I am confident in my assessment, and my output should reflect this precise, and I hope, comprehensive answer.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long",
+        "line": "120. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Phú Tân, xã Hữu Định và xã Phước Thạnh thành phường mới có tên gọi là phường Phú Tân."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "28858",
+      "ward_name": "Phường Phú Tân"
+    }
+  ]
+}

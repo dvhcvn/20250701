@@ -1,0 +1,18 @@
+{
+  "address": "Xã Lâm Thủy, Huyện Lệ Thủy, Tỉnh Quảng Bình",
+  "ellapsedInMs": 7919,
+  "estimatedCost": 0.0028885,
+  "thought": "**Address Mapping Analysis: From Lâm Thủy to Kim Ngân**\n\nOkay, here's how I'm thinking through this address mapping problem. The goal is to figure out the new administrative unit for \"Xã Lâm Thủy\" in Quảng Bình, given the available resolutions and new ward data.\n\nFirst, I identified the original components: \"Xã Lâm Thủy\" within \"Huyện Lệ Thủy\" in \"Tỉnh Quảng Bình.\"  Next, I had to consider province-level changes.  The \"60-NQ/TW\" resolution didn't block Quảng Bình from merging, and, in fact, confirmed the merger with Quảng Trị, changing the province to \"Tỉnh Quảng Trị.\"\n\nNow, the crucial step: I turned to \"1680/NQ-UBTVQH15,\" the key resolution for restructuring Quảng Trị's communes.  Scanning through it, I honed in on line 35.  It explicitly states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Kim Thủy, Ngân Thủy và Lâm Thủythành xã mới có tên gọi là **xã Kim Ngân**.\"  Bingo! \"Lâm Thủy\" is being merged into \"Kim Ngân.\"\n\nTo confirm, I double-checked the \"New wards\" data.  There it was:  `{\"ward_code\":\"19318\",\"ward_name\":\"Xã Kim Ngân\",\"province_name\":\"Tỉnh Quảng Trị\"}`.  The province now matches the merged province, and I've found my new ward.\n\nThe final JSON output is straightforward: province is \"Tỉnh Quảng Trị,\" ward is \"Xã Kim Ngân,\" with code \"19318,\" and a \"high\" confidence level because of the direct mapping in the resolution.  My cited source is  \"1680/NQ-UBTVQH15,\" specifically line 35.\n\nI also considered other potential matches like \"Xã Lệ Thủy,\" \"Xã Cam Hồng,\" and \"Xã Mỹ Thủy,\" but they were ruled out because \"Lâm Thủy\" was specifically merged into \"Kim Ngân\" according to the resolution. This is a clear-cut case, and my output reflects that.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1680/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Trị",
+        "line": "35. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Kim Thủy, Ngân Thủy và Lâm Thủythành xã mới có tên gọi là xã Kim Ngân."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Trị",
+      "ward_code": "19318",
+      "ward_name": "Xã Kim Ngân"
+    }
+  ]
+}

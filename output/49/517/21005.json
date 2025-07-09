@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tam Mỹ Đông, Huyện Núi Thành, Tỉnh Quảng Nam",
+  "ellapsedInMs": 7717,
+  "estimatedCost": 0.0028036,
+  "thought": "**My Thought Process for Mapping Old Vietnamese Addresses**\n\nOkay, here's how I'm approaching this address mapping problem.  First, I've got to break down the old address:  it's \"Xã Tam Mỹ Đông\" in \"Huyện Núi Thành\" of \"Tỉnh Quảng Nam.\"\n\nStep one, as always, is to figure out the **province**. I'm using those Provincial Resolutions (60-NQ/TW). Quảng Nam *is* on the \"sáp nhập, hợp nhất\" list, specifically stating it was merged with Đà Nẵng.  So, the new province is definitely **Thành phố Đà Nẵng**. That's a good starting point.\n\nNext, I'm diving into the \"Other Resolutions\" (1659/NQ-UBTVQH15), specifically looking for \"Tam Mỹ Đông\".  Bingo! Line 28 directly states that Tam Mỹ Đông, along with Tam Mỹ Tây and Tam Trà, are merged into a new unit, \"Xã Tam Mỹ\".  The resolution's header even mentions *Đà Nẵng*! This is promising.\n\nNow, let's see if \"Tam Mỹ\" exists in the \"New Wards\" data.  Yep, there it is: \"Xã Tam Mỹ\" with ward code \"21004\" and, importantly, listed under \"Thành phố Đà Nẵng\".  This confirms everything!\n\nI'm feeling confident about this match, it's a high-confidence mapping. So, the JSON output will be straightforward:  the header is the resolution, and the line is specifically the \"Tam Mỹ\" line. The new province, of course, is Đà Nẵng, the ward code is 21004, and the new ward name is \"Xã Tam Mỹ.\"\n\nRegarding that \"Huyện Núi Thành\" district mentioned in the original address, while the prompt wants me to eliminate them, the resolution does mention \"thị trấn Núi Thành\", a town, being merged into \"xã Núi Thành.\" It seems the intent is to reorganize the subunits under the new province, which aligns with my focus on the ward mapping.\n\nFinally, the prompt specifies to account for the possibility of multiple new wards, but in this particular case, there's a clear, one-to-one mapping.  Done!\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng",
+        "line": "28. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tam Mỹ Đông, Tam Mỹ Tây và Tam Trà thành xã mới có tên gọi là xã Tam Mỹ."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "21004",
+      "ward_name": "Xã Tam Mỹ"
+    }
+  ]
+}

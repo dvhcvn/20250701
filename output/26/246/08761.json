@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Lập Thạch, Huyện Lập Thạch, Tỉnh Vĩnh Phúc",
+  "ellapsedInMs": 8607,
+  "estimatedCost": 0.0030959,
+  "thought": "**Address Mapping Analysis: \"Thị trấn Lập Thạch\"**\n\nOkay, so I'm tackling this Vietnamese address mapping. The goal is to accurately translate an old address (\"Thị trấn Lập Thạch,\" \"Huyện Lập Thạch,\" \"Tỉnh Vĩnh Phúc\") into its new administrative structure, leveraging these resolutions and new ward data.\n\nFirst, I parsed the initial address. \"Thị trấn Lập Thạch\" is the crucial element here, the old ward name. \"Huyện Lập Thạch\" and \"Tỉnh Vĩnh Phúc\" provide essential context.\n\nNow, the province level. I quickly checked Resolution 60-NQ/TW.  \"Tỉnh Vĩnh Phúc\" wasn't on the \"no merger\" list, but it *was* on the \"merger/consolidation\" list. It turns out \"Tỉnh Vĩnh Phúc\" was absorbed and combined into \"Tỉnh Phú Thọ\" – a straightforward provincial shift.\n\nNext, I focused on Resolution 1676/NQ-UBTVQH15. I needed to find \"Thị trấn Lập Thạch\" within this document. Bingo! Line 62 explicitly states that \"Thị trấn Lập Thạch\" along with certain other components, were consolidated to create the new \"xã Lập Thạch\". This is direct evidence. Line 66, although it relates to the same administrative area, is not relevant to \"Thị trấn Lập Thạch\".\n\nSo, \"Thị trấn Lập Thạch\" becomes \"xã Lập Thạch,\" according to the resolution. Now, I cross-referenced this with the new ward data.  I quickly found \"xã Lập Thạch\" with the ward code \"08761,\" residing within \"Tỉnh Phú Thọ\" which is in alignment with my findings from the provincial resolution.\n\nBased on this, my JSON output is pretty clear: I can say with high confidence that the old \"Thị trấn Lập Thạch\" now maps to \"Xã Lập Thạch\" (ward code \"08761\") within \"Tỉnh Phú Thọ\". The relevant citation clearly references Line 62 of the resolution, and it's a solid, explicit match.\n\nI did a quick check for edge cases. While it's tempting to think about \"Phường Xuân Hòa\" (08746) in relation to the old \"xã Xuân Hòa\" mentioned, the resolution's wording is crystal clear about \"Thị trấn Lập Thạch\" becoming part of the new \"Xã Lập Thạch\".  The \"Phường Xuân Hòa\" data points to a different administrative element. Therefore, my conclusion is safe and direct. I'm pretty confident in this mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "62. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Lập Thạch và các xã Xuân Hòa, Tử Du, Vân Trục thành xã mới có tên gọi là xã Lập Thạch."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "08761",
+      "ward_name": "Xã Lập Thạch"
+    }
+  ]
+}

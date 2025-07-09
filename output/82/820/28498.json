@@ -1,0 +1,28 @@
+{
+  "address": "Xã Long Tiên, Huyện Cai Lậy, Tỉnh Tiền Giang",
+  "ellapsedInMs": 9366,
+  "estimatedCost": 0.0034586,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm tackling this address conversion. It looks like we're starting with an old Vietnamese address: \"Xã Long Tiên,\" \"Huyện Cai Lậy,\" and \"Tỉnh Tiền Giang.\" My goal is to map this to a new administrative structure, particularly the new ward.\n\nFirst, I need to understand the big picture. Since we're told to ignore districts in the final output, I'll keep an eye on them for context. I'll need to use the available resolutions and the ward data to confirm the mapping.\n\nHere's the plan, and what I'm thinking:\n\n1.  **Province Mapping:** I started by checking the province resolutions (specifically 60-NQ/TW). \"Tỉnh Tiền Giang\" wasn't listed as unchanged. But, lo and behold, item 21 showed \"Hợp nhất tỉnh Tiền Giang và tỉnh Đồng Tháp, lấy tên là tỉnh Đồng Tháp.\" So, the old \"Tỉnh Tiền Giang\" is now part of \"Tỉnh Đồng Tháp.\" Easy enough.\n\n2.  **Ward Mapping:** Now for the trickier part, the ward. I had to sift through other resolutions and found one specifically focused on administrative changes in Đồng Tháp (1663/NQ-UBTVQH15). Bingo! This one directly addresses \"Xã Long Tiên.\" A line in the resolution, specifically item 52, said it all: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Mỹ Long (huyện Cai Lậy), Long Trung và Long Tiên thành xã mới có tên gọi là **xã Long Tiên**.\" This line states that the *old* \"Xã Long Tiên\" is being merged to *new* \"Xã Long Tiên.\" The district \"Huyện Cai Lậy\" also is mentioned, it is part of the merged old \"Xã Long Tiên\". Excellent.\n\n3.  **New Data Confirmation:** Time to double-check against the provided new ward data. I searched for \"Xã Long Tiên\" in \"Tỉnh Đồng Tháp.\" There it was: a perfect match! Ward name: \"Xã Long Tiên\", ward code: \"28504\". Perfect!\n\n4.  **Confidence Check:** I'm feeling good about this mapping. The province transformation from \"Tiền Giang\" to \"Đồng Tháp\" is clear. The other resolution explicitly merges the old \"Xã Long Tiên\" into the new one, and the new data confirms its existence. It's a high-confidence match.\n\n5.  **Output Construction:** I'll construct the JSON output:\n\n    *   `province_name`: \"Tỉnh Đồng Tháp\"\n    *   `ward_name`: \"Xã Long Tiên\"\n    *   `ward_code`: \"28504\"\n    *   `confidence`: \"high\"\n    *   `citation`: An array of objects to reflect the dual citings:\n        *   Object 1:\n            *   `header`: \"60-NQ/TW\"\n            *   `line`: \"21. Hợp nhất tỉnh Tiền Giang và tỉnh Đồng Tháp, lấy tên là tỉnh Đồng Tháp\"\n        *   Object 2:\n            *   `header`: \"1663/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Tháp\"\n            *   `line`: \"52. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Mỹ Long (huyện Cai Lậy), Long Trung và Long Tiên thành xã mới có tên gọi là **xã Long Tiên**.\"\n\nI think that gives a clear and accurate mapping, with supporting evidence.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW",
+        "line": "21. Hợp nhất tỉnh Tiền Giang và tỉnh Đồng Tháp, lấy tên là tỉnh Đồng Tháp"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đồng Tháp",
+      "ward_code": "28504",
+      "ward_name": "Xã Long Tiên"
+    },
+    {
+      "citation": {
+        "header": "1663/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Tháp",
+        "line": "52. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Mỹ Long (huyện Cai Lậy), Long Trung và Long Tiên thành xã mới có tên gọi là xã Long Tiên."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đồng Tháp",
+      "ward_code": "28504",
+      "ward_name": "Xã Long Tiên"
+    }
+  ]
+}

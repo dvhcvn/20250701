@@ -1,0 +1,18 @@
+{
+  "address": "Xã Đạo Tú, Huyện Tam Dương, Tỉnh Vĩnh Phúc",
+  "ellapsedInMs": 8338,
+  "estimatedCost": 0.0030123999999999997,
+  "thought": "**My Thought Process on Mapping an Old Vietnamese Address**\n\nOkay, so I've been tasked with mapping an old Vietnamese address to its new equivalent. The old address is \"Xã Đạo Tú, Huyện Tam Dương, Tỉnh Vĩnh Phúc.\"  The goal here is to determine the new province, ward, and associated codes, leveraging the provided resolutions and new ward data.\n\nFirst, I break down the address into its components: the old ward \"Xã Đạo Tú,\" the old district \"Huyện Tam Dương\" (though I know we're eliminating districts in this mapping), and the province \"Tỉnh Vĩnh Phúc.\"\n\nNow, I start by examining the provided province merger resolutions (specifically, 60-NQ/TW).  I quickly find that \"Tỉnh Vĩnh Phúc\" is merged with \"Tỉnh Phú Thọ\" and \"Tỉnh Hoà Bình\" to form \"Tỉnh Phú Thọ.\"  This is a high-confidence mapping, so \"Tỉnh Phú Thọ\" will be my new province.\n\nNext, I need to figure out what happened to \"Xã Đạo Tú\" and its old district. I delve into the `other_resolutions` data.  Bingo!  Resolution 1676/NQ-UBTVQH15, specific to \"Tỉnh Phú Thọ,\" is key.  Line 71 explicitly states the merging of \"Xã Đạo Tú\" and other wards into a new ward called \"**Xã Tam Dương**.\" This is a perfect match!\n\nTo confirm, I cross-reference this with the `new_wards` data.  There it is: \"Xã Tam Dương\" with code 08869, listed under \"Tỉnh Phú Thọ.\"  The province names align perfectly, solidifying my finding.\n\nSo, here's my plan for the JSON output:\n\n*   `province_name`: \"Tỉnh Phú Thọ\" (from the province merger)\n*   `ward_name`: \"Xã Tam Dương\" (from the resolutions and new wards)\n*   `ward_code`: \"08869\" (from the new wards)\n*   `citation`:  I'm debating the citations since I need to pick one. The ward-level resolution directly addresses the fate of \"Xã Đạo Tú.\"  So, I will prioritize `1676/NQ-UBTVQH15` with the specific line about the ward merger for the citation.\n*   `confidence`: \"high\" - all components are explicitly linked.\n\nThe final piece is the `citation`. I need to choose the most relevant resolution. The ward-level resolution (1676/NQ-UBTVQH15) is more specific to the task at hand: determining the new ward from the old.  The province change is important, but for this *specific* mapping the *ward* resolution is the most direct answer.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "71. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Hợp Hòa, thị trấn Kim Long, xã Hướng Đạo và xã Đạo Tú thành xã mới có tên gọi là xã Tam Dương."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "08869",
+      "ward_name": "Xã Tam Dương"
+    }
+  ]
+}

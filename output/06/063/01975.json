@@ -1,0 +1,18 @@
+{
+  "address": "Xã Vi Hương, Huyện Bạch Thông, Tỉnh Bắc Kạn",
+  "ellapsedInMs": 6684,
+  "estimatedCost": 0.0024446,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, let's break this down. We're looking at mapping \"Xã Vi Hương, Huyện Bạch Thông, Tỉnh Bắc Kạn\" to the new administrative structure. My first step is to identify the key components: the old province, \"Tỉnh Bắc Kạn,\" and the old ward, \"Xã Vi Hương.\"\n\nProvince-level changes are a good starting point. I need to consult those province resolutions, specifically 60-NQ/TW. Ah, there it is: \"Hợp nhất tỉnh Bắc Kạn và tỉnh Thái Nguyên, lấy tên là tỉnh Thái Nguyên.\" So, \"Tỉnh Bắc Kạn\" is now part of \"Tỉnh Thái Nguyên.\" That's easy enough. \"Tỉnh Thái Nguyên\" it is for the `province_name` field.\n\nNext, I'll dive into the resolutions, focusing on 1683/NQ-UBTVQH15, to see what happened to \"Xã Vi Hương.\" Bingo! Line 60: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Phủ Thông và các xã Vi Hương, Tân Tú, Lục Bình thành xã mới có tên gọi là xã Phủ Thông.\" It's merged into \"Xã Phủ Thông.\"\n\nNow, let's cross-reference this with the \"New wards\" data. Searching for \"Xã Phủ Thông,\" I find the entry: `{\"ward_code\":\"01969\",\"ward_name\":\"Xã Phủ Thông\",\"province_name\":\"Tỉnh Thái Nguyên\"}`. This perfectly aligns with the province change identified earlier. The ward code is \"01969,\" the ward name is \"Xã Phủ Thông,\" and the province name is indeed \"Tỉnh Thái Nguyên.\"\n\nBased on this analysis, I'll construct the JSON output. The `citation.header` will be \"1683/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thái Nguyên\" and `citation.line` will be line 60. The `confidence` is definitely \"high\" because the resolution explicitly mentions the old ward and links it directly to the new ward with matching province information. The `province_name` will be \"Tỉnh Thái Nguyên,\" the `ward_code` will be \"01969,\" and the `ward_name` will be \"Xã Phủ Thông.\"\n\nFinally, I'll double-check for any ambiguities. Are there other resolutions that might complicate things? No. Any other \"new wards\" that could be a possible mapping? No. This is a clean, direct, and straightforward mapping. The output should be a single, precise entry in the array.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1683/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thái Nguyên",
+        "line": "60. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Phủ Thông và các xã Vi Hương, Tân Tú, Lục Bình thành xã mới có tên gọi là xã Phủ Thông."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thái Nguyên",
+      "ward_code": "01969",
+      "ward_name": "Xã Phủ Thông"
+    }
+  ]
+}

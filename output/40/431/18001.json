@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Hưng Nguyên, Huyện Hưng Nguyên, Tỉnh Nghệ An",
+  "ellapsedInMs": 8479,
+  "estimatedCost": 0.0033569999999999997,
+  "thought": "**My Analysis of the Address Mapping**\n\nOkay, so I'm presented with the task of mapping the old address \"Thị trấn Hưng Nguyên, Huyện Hưng Nguyên, Tỉnh Nghệ An\" to its new equivalent. My initial approach is to break this down systematically.\n\nFirst, I need to confirm the province. I quickly refer to Resolution 60-NQ/TW and see that \"Tỉnh Nghệ An\" (Nghệ An Province) isn't slated for any changes. This is straightforward; the `province_name` will remain \"Tỉnh Nghệ An\".\n\nNext comes the trickier part: the ward. The address mentions \"Thị trấn Hưng Nguyên.\" I immediately start searching through the provided \"Other resolutions\" for mentions of this old ward.\n\nI quickly scan through a few irrelevant resolutions (Hưng Yên and Phú Thọ). Then, I hit the jackpot with \"1678/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Nghệ An,\" the key resolution for Nghệ An Province.  Specifically, line 26 jumps out at me: it explicitly states that \"Thị trấn Hưng Nguyên\" is merged along with a few other entities into a new administrative unit called \"xã Hưng Nguyên\". Perfect!\n\nTo be absolutely sure, I check the \"New wards\" list for this new ward. And there it is: `{\"ward_code\":\"18001\",\"ward_name\":\"Xã Hưng Nguyên\",\"province_name\":\"Tỉnh Nghệ An\"}`. This confirms the new ward is indeed \"Xã Hưng Nguyên\".\n\nBecause the resolution directly mentions \"Thị trấn Hưng Nguyên\" and its reorganization, I can be highly confident in this mapping. There's no ambiguity here. My final output will reflect this: the province \"Tỉnh Nghệ An\" remains unchanged, the old ward \"Thị trấn Hưng Nguyên\" is now mapped to \"Xã Hưng Nguyên\" with a high confidence level based on this direct, explicit statement from the relevant resolution. I will craft the JSON output incorporating the appropriate code, citation and confidence level. I also verified through careful reading that \"Xã Hưng Nguyên Nam\" described in the same resolution doesn't have any relation to the old ward.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1678/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Nghệ An",
+        "line": "26. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Hưng Nguyên và các xã Hưng Đạo, Hưng Tây, Thịnh Mỹ thành xã mới có tên gọi là xã Hưng Nguyên."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Nghệ An",
+      "ward_code": "18001",
+      "ward_name": "Xã Hưng Nguyên"
+    }
+  ]
+}

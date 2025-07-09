@@ -1,0 +1,18 @@
+{
+  "address": "Xã Khổng Lào, Huyện Phong Thổ, Tỉnh Lai Châu",
+  "ellapsedInMs": 6773,
+  "estimatedCost": 0.0024079,
+  "thought": "**Identifying the New Administrative Unit for the Old Address**\n\nOkay, so I've been tasked with figuring out the new administrative unit for the old address \"Xã Khổng Lào, Huyện Phong Thổ, Tỉnh Lai Châu\".  My process is straightforward:\n\nFirst, I parsed the address.  I grabbed \"Xã Khổng Lào\" as the old ward name and \"Tỉnh Lai Châu\" as the old province.\n\nNext, I went straight to the province-level resolutions (specifically, 60-NQ/TW). Good news – \"Tỉnh Lai Châu\" isn't slated for any mergers based on that document. It's listed under \"Các đơn vị hành chính cấp tỉnh không thực hiện sáp nhập,\" so Lai Chau stays Lai Chau.\n\nNow, I needed to delve into other relevant resolutions. I immediately turned to resolution \"1670/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lai Châu\".  I scanned this carefully, looking for any mention of \"Khổng Lào.\" Bingo! Line 17 is the key: it explicitly states that the old wards of \"Hoang Thèn, Bản Lang và Khổng Lào\" are merging to create a *new* \"Xã Khổng Lào.\" This is my strongest clue.\n\nTo confirm and complete the picture, I cross-referenced this with the list of \"New Wards\". There it was – \"Xã Khổng Lào\" (with code \"03583\") under \"Tỉnh Lai Châu.\"\n\nTherefore, I'm confident my answer is:\n\n*   `province_name`: \"Tỉnh Lai Châu\" (unchanged)\n*   `ward_name`: \"Xã Khổng Lào\" (the new ward, as stated in the resolution)\n*   `ward_code`: \"03583\"\n*   `citation`: \"1670/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lai Châu\", specifically line 17 which states the formation of the new Xa Khong Lao\n*   `confidence`: \"high\" (because the old and new ward names match precisely, and the province remained unchanged).\n\nThis is a pretty clear-cut case, supported by the specific resolution and the \"New Wards\" list. I'm satisfied with this.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1670/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lai Châu",
+        "line": "17. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Hoang Thèn,Bản Lang vàKhổng Làothành xã mới có tên gọi là **xã Khổng Lào**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lai Châu",
+      "ward_code": "03583",
+      "ward_name": "Xã Khổng Lào"
+    }
+  ]
+}

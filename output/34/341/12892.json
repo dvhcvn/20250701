@@ -1,0 +1,28 @@
+{
+  "address": "Xã Thụy Duyên, Huyện Thái Thụy, Tỉnh Thái Bình",
+  "ellapsedInMs": 5839,
+  "estimatedCost": 0.0021478,
+  "thought": "**My Mapping Strategy for the Old Address**\n\nOkay, so I've been tasked with mapping the old address \"Xã Thụy Duyên, Huyện Thái Thụy, Tỉnh Thái Bình\" to the new administrative units.  Let's break this down systematically.\n\nFirst, I need to identify the obvious: \"Tỉnh Thái Bình\" (Thai Binh Province) is the starting point. My internal knowledge base kicks in, reminding me of resolution 60-NQ/TW, which outlines province mergers. I immediately check the relevant resolutions and find that \"Tỉnh Thái Bình\" was merged with Hưng Yên, resulting in the new \"Tỉnh Hưng Yên\" (Hung Yen Province). So, my initial mapping for the province is straightforward.\n\nNext, I zero in on \"Xã Thụy Duyên\" (Thuy Duyen Commune). Now comes the deeper dive into the resolutions. I'll search through \"Other resolutions\" specifically looking for mentions of \"Thụy Duyên\" alongside either \"Tỉnh Thái Bình\" or the newly formed \"Tỉnh Hưng Yên\". My intuition, honed by experience, leads me to resolution 1666/NQ-UBTVQH15. And Bingo! Line 38 of that resolution explicitly states the re-organization of communes including \"Thụy Duyên\" into a new commune called \"**xã Nam Thụy Anh**\". This is precisely what I need.\n\nTo solidify my finding, I move to verify this. Using my \"New wards\" lookup table, I search for the newly formed \"xã Nam Thụy Anh\" in conjunction with \"Tỉnh Hưng Yên\". The data entry `{\"ward_code\":\"12904\",\"ward_name\":\"Xã Nam Thụy Anh\",\"province_name\":\"Tỉnh Hưng Yên\"}` confirms my initial finding - a perfect match!\n\nThe resolution provides a clear and direct mapping: \"Xã Thụy Duyên\" to \"xã Nam Thụy Anh\". This level of explicit information and the confirming lookup leaves me very confident in the mapping. I’d rate the confidence level as ‘high’.\n\nNow it's time to generate the JSON output based on this research.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Hưng Yên và tỉnh Thái Bình, lấy tên là tỉnh Hưng Yên"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "12904",
+      "ward_name": "Xã Nam Thụy Anh"
+    },
+    {
+      "citation": {
+        "header": "1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên",
+        "line": "38. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Thụy Thanh, Thụy Phong và Thụy Duyên thành xã mới có tên gọi là xã Nam Thụy Anh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "12904",
+      "ward_name": "Xã Nam Thụy Anh"
+    }
+  ]
+}

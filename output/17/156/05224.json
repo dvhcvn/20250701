@@ -1,0 +1,28 @@
+{
+  "address": "Xã Cun Pheo, Huyện Mai Châu, Tỉnh Hoà Bình",
+  "ellapsedInMs": 7773,
+  "estimatedCost": 0.0029227,
+  "thought": "**Analyzing and Mapping the Vietnamese Address**\n\nOkay, so I'm tasked with taking an old Vietnamese address and figuring out its current equivalent. The input is \"Xã Cun Pheo, Huyện Mai Châu, Tỉnh Hoà Bình\". First things first, I need to identify the old province, which is \"Tỉnh Hoà Bình.\"\n\nNow, I'll consult the \"60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất\" document to see if Hòa Bình underwent any mergers or consolidations.  And, bingo!  It looks like \"Tỉnh Hoà Bình\" was merged into \"Tỉnh Phú Thọ\" per \"Hợp nhất tỉnh Vĩnh Phúc, tỉnh Phú Thọ và tỉnh Hoà Bình; lấy tên là tỉnh Phú Thọ\". So, \"Tỉnh Hoà Bình\" is now \"Tỉnh Phú Thọ.\"\n\nNext, I'll dive into the ward-specific resolutions. I'll focus on resolutions that could affect \"Xã Cun Pheo\" or \"Huyện Mai Châu\" within Phú Thọ.  The resolution \"1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ\" looks promising.  I scan the relevant lines, particularly focusing on \"Xã Cun Pheo\".\n\nLine 119 mentions \"thị trấn Mai Châu,\" and \"Thành Sơn,\" but nothing about \"Xã Cun Pheo\". However, line 122 is what I'm looking for! It explicitly states \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Cun Pheo, Hang Kia, Pà Cò và phần còn lại của xã Đồng Tân... thành xã mới có tên gọi là **xã Pà Cò**.\"  There it is, a direct mapping: \"Xã Cun Pheo\" is now part of \"xã Pà Cò.\" Line 123 is irrelevant because it involves another reorganization in the Mai Châu district.\n\nNow, to match this to a specific new ward, I'll consult the \"New wards\" list for \"xã Pà Cò\" within \"Tỉnh Phú Thọ.\"  And there it is: `{\"ward_code\":\"05212\",\"ward_name\":\"Xã Pà Cò\",\"province_name\":\"Tỉnh Phú Thọ\"}`. Perfect!\n\nFinally, I need to assess my confidence in this mapping. Given the explicit and direct statement in the resolution (\"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Cun Pheo, Hang Kia, Pà Cò ... thành xã mới có tên gọi là xã Pà Cò.\"), this is a very high-confidence match.  The mapping is clear-cut.\n\nI'll now construct the appropriate JSON output based on this analysis. This should be a straightforward translation of the old address to the new administrative structure.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Vĩnh Phúc, tỉnh Phú Thọ và tỉnh Hoà Bình; lấy tên là tỉnh Phú Thọ"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "05212",
+      "ward_name": "Xã Pà Cò"
+    },
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "122. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Cun Pheo, Hang Kia, Pà Cò và phần còn lại của xã Đồng Tân sau khi sắp xếp theo quy định tại khoản 119 Điều này thành xã mới có tên gọi là xã Pà Cò."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "05212",
+      "ward_name": "Xã Pà Cò"
+    }
+  ]
+}

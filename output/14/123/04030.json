@@ -1,0 +1,18 @@
+{
+  "address": "Phường Đông Sang, Thị xã Mộc Châu, Tỉnh Sơn La",
+  "ellapsedInMs": 5868,
+  "estimatedCost": 0.0020426999999999997,
+  "thought": "**Determining the New Ward for the Given Address**\n\nOkay, I've got the address: \"Phường Đông Sang, Thị xã Mộc Châu, Tỉnh Sơn La.\" Time to analyze this. First, I need to verify that \"Tỉnh Sơn La\" remains unchanged. I check the province resolutions (60-NQ/TW), and sure enough, Sơn La is listed as not undergoing any mergers. Good.\n\nNext, I dive into the other resolutions (1681/NQ-UBTVQH15). I'm looking specifically for \"Phường Đông Sang.\" Ah, there it is! Line 66: it explicitly states that \"phường Đông Sang\" and \"phường Mộc Sơn\" are being merged to create the new \"phường Mộc Sơn\". This is promising.\n\nNow, let's see if \"Phường Mộc Sơn\" is in the new wards data. Bingo! I find the entry: `{\"ward_code\":\"03979\",\"ward_name\":\"Phường Mộc Sơn\",\"province_name\":\"Tỉnh Sơn La\"}`. This confirms the new ward.\n\nThe old ward \"Phường Đông Sang\" is definitely mapped to \"Phường Mộc Sơn\" according to the resolution. The \"Phường Mộc Sơn\" exists in new wards data, including its code and province details. It's a clear-cut case, and I have high confidence in this mapping.\n\nJust to be thorough, I quickly scan the rest of the relevant lines to make sure no other mentions of \"Phường Đông Sang\" might complicate the analysis. I want to be absolutely certain. Lines 1 and 65 are clean and unrelated to the address in question. Alright, I'm confident. The final answer is **Phường Mộc Sơn**.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1681/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Sơn La",
+        "line": "66. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Đông Sang và phường Mộc Sơn thành phường mới có tên gọi là phường Mộc Sơn."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Sơn La",
+      "ward_code": "03979",
+      "ward_name": "Phường Mộc Sơn"
+    }
+  ]
+}

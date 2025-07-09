@@ -1,0 +1,18 @@
+{
+  "address": "Phường Hà Khánh, Thành phố Hạ Long, Tỉnh Quảng Ninh",
+  "ellapsedInMs": 8153,
+  "estimatedCost": 0.0033666999999999994,
+  "thought": "**Identifying the New Administrative Unit for \"Phường Hà Khánh, Thành phố Hạ Long, Tỉnh Quảng Ninh\"**\n\nOkay, here's my thought process. I need to figure out what happened to \"Phường Hà Khánh\" in \"Tỉnh Quảng Ninh\". First, I need to isolate the ward and province: \"Phường Hà Khánh\" and \"Tỉnh Quảng Ninh\" respectively. \"Thành phố Hạ Long\" is a district and irrelevant to the immediate task.\n\nNow, I'll go through the resolutions. I know Quảng Ninh isn't undergoing any province-level changes, according to the 60-NQ/TW document.\n\nNext, I need to check the other resolutions.  I'm looking specifically for \"Phường Hà Khánh\". Bingo! Resolution 1679/NQ-UBTVQH15, line 41, is exactly what I need. It says \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Hà Khánh và phường Cao Xanh thành phường mới có tên gọi là **phường Cao Xanh**.\"\n\nThat's it! \"Phường Hà Khánh\" is now part of \"Phường Cao Xanh\", and it's all in \"Tỉnh Quảng Ninh\". I can cross-check that with the \"New wards\" data.  \"Phường Cao Xanh\" is listed there: `{\"ward_code\":\"06658\",\"ward_name\":\"Phường Cao Xanh\",\"province_name\":\"Tỉnh Quảng Ninh\"}`. It's a perfect match!\n\nSince there's a direct resolution, and a clear mapping, I'm confident about this.  The output should be a JSON object detailing the citation from the resolution, the province, and the new ward information. And it should look something like this:\n\n```json\n[\n  {\n    \"citation\": {\n      \"header\": \"1679/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ninh\",\n      \"line\": \"41. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Hà Khánh và phường Cao Xanh thành phường mới có tên gọi là phường Cao Xanh.\"\n    },\n    \"confidence\": \"high\",\n    \"province_name\": \"Tỉnh Quảng Ninh\",\n    \"ward_code\": \"06658\",\n    \"ward_name\": \"Phường Cao Xanh\"\n  }\n]\n```\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1679/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ninh",
+        "line": "41. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Hà Khánh và phường Cao Xanh thành phường mới có tên gọi là phường Cao Xanh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ninh",
+      "ward_code": "06658",
+      "ward_name": "Phường Cao Xanh"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Lâm Giang, Huyện Văn Yên, Tỉnh Yên Bái",
+  "ellapsedInMs": 7231,
+  "estimatedCost": 0.0024856,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm looking at this old Vietnamese address: \"Xã Lâm Giang, Huyện Văn Yên, Tỉnh Yên Bái.\" My task is to map this to the new administrative structure.  I know I need to figure out the province and ward from the old address first.  Province: \"Tỉnh Yên Bái\". Ward: \"Xã Lâm Giang\".\n\nMy initial thought is to check those pesky provincial resolutions (specifically 60-NQ/TW) to see if \"Tỉnh Yên Bái\" was affected.  And, sure enough, I find that \"Hợp nhất tỉnh Lào Cai và tỉnh Yên Bái, lấy tên là tỉnh Lào Cai.\"  Bingo!  \"Tỉnh Yên Bái\" is now part of \"Tỉnh Lào Cai.\" So my new province name is definitely \"Tỉnh Lào Cai.\"\n\nNext, I need to check other relevant resolutions, specifically looking for \"Xã Lâm Giang\" in relation to either \"Tỉnh Lào Cai\" or, if the resolution is older, \"Tỉnh Yên Bái.\" I'm expecting to find information about the *new* structure. Resolution 1673/NQ-UBTVQH15 catches my eye.  This resolution is about \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai.\" It's perfect!  Line 17 states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Lang Thíp và xã Lâm Giang thành xã mới có tên gọi là **xã Lâm Giang**.\" Boom!  This confirms that \"Xã Lâm Giang\" is a key part of the new setup, specifically *the name of the new ward.*  It looks like it's been merged with \"xã Lang Thíp\" but the resulting ward *retains* the name \"Xã Lâm Giang.\"\n\nNow, to solidify this, I need to consult the \"New wards\" list to confirm the mapping.  And, there it is: {\"ward_code\":\"04381\",\"ward_name\":\"Xã Lâm Giang\",\"province_name\":\"Tỉnh Lào Cai\"}.  This is a clean, direct match! It all fits together beautifully.\n\nMy logic is as follows:\n\n*   Old ward: \"Xã Lâm Giang\"\n*   Old province: \"Tỉnh Yên Bái\"\n*   New province (post-merge): \"Tỉnh Lào Cai\"\n*   Resolution 1673/NQ-UBTVQH15, line 17, merges \"xã Lâm Giang\" and \"xã Lang Thíp\", *retaining* the \"xã Lâm Giang\" name.\n*   Found new ward: \"Xã Lâm Giang\" with code \"04381\" in \"Tỉnh Lào Cai\".\n\nGiven the direct matching and clear supporting resolution, I have high confidence in this mapping. Now, let's format this correctly.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai",
+        "line": "17. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Lang Thíp và xã Lâm Giang thành xã mới có tên gọi là xã Lâm Giang."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "04381",
+      "ward_name": "Xã Lâm Giang"
+    }
+  ]
+}

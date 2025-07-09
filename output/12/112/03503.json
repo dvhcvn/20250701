@@ -1,0 +1,18 @@
+{
+  "address": "Xã Trung Chải, Huyện Nậm Nhùn, Tỉnh Lai Châu",
+  "ellapsedInMs": 6944,
+  "estimatedCost": 0.0028667999999999996,
+  "thought": "**Finding the New Administrative Unit**\n\nOkay, let's break this down. The user's looking for the new administrative unit for \"Xã Trung Chải, Huyện Nậm Nhùn, Tỉnh Lai Châu.\" First things first, I need to identify the old ward (\"Xã Trung Chải\"), the old district (\"Huyện Nậm Nhùn,\" which helps with context), and the old province (\"Tỉnh Lai Châu\").\n\nMy strategy is to consult the relevant resolutions, starting with the provincial ones. I quickly see that Lai Châu isn't undergoing any major provincial level changes per resolution 60-NQ/TW, so it remains \"Tỉnh Lai Châu.\" That's good. Now, I need to dig into the district and ward-level resolutions.\n\nI zero in on 1670/NQ-UBTVQH15, as that seems most promising. Skimming it, line 26 mentions a consolidation involving \"thị trấn Nậm Nhùn\" – not quite what I'm looking for, but it's helpful context. Then, bingo! Line 29 explicitly states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Nậm Ban, Trung Chải và Pa Tần thành xã mới có tên gọi là **xã Pa Tần**.\" That's it! \"Xã Trung Chải\" is being merged into \"Xã Pa Tần.\"\n\nNow, I cross-reference this information with the \"New wards\" list. Sure enough, there's an entry: `{\"ward_code\":\"03503\",\"ward_name\":\"Xã Pa Tần\",\"province_name\":\"Tỉnh Lai Châu\"}`. Perfect match.\n\nThe final JSON output is clear:\n\n*   `province_name`: \"Tỉnh Lai Châu\"\n*   `ward_name`: \"Xã Pa Tần\"\n*   `ward_code`: \"03503\"\n*   `citation`: \"1670/NQ-UBTVQH15\" (or similar reference)\n*   `confidence`: \"high\" (because it's a direct mapping of the old ward to the new one in the correct province).\n\nThe user's old address, \"Xã Trung Chải, Huyện Nậm Nhùn, Tỉnh Lai Châu,\" now maps to \"Xã Pa Tần, Tỉnh Lai Châu\" with a high degree of certainty.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1670/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lai Châu",
+        "line": "29. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Nậm Ban, Trung Chải vàPa Tầnthành xã mới có tên gọi là **xã Pa Tần**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lai Châu",
+      "ward_code": "03503",
+      "ward_name": "Xã Pa Tần"
+    }
+  ]
+}

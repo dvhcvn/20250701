@@ -1,0 +1,18 @@
+{
+  "address": "Xã Phong Châu, Huyện Trùng Khánh, Tỉnh Cao Bằng",
+  "ellapsedInMs": 8161,
+  "estimatedCost": 0.0033136,
+  "thought": "**Mapping Old Vietnamese Address to New Administrative Units**\n\nOkay, so I'm tackling this address mapping. The input has me looking at an old address: Xã Phong Châu, Huyện Trùng Khánh, Tỉnh Cao Bằng.  My initial focus is on identifying the old ward, district, and province.  Easy enough: \"Xã Phong Châu\" is the ward, \"Huyện Trùng Khánh\" is the district, and \"Tỉnh Cao Bằng\" is the province.\n\nNow, the province resolution (60-NQ/TW) is my first stop to see if \"Tỉnh Cao Bằng\" has been merged. Nope, it's explicitly listed as a province *not* undergoing changes.  So, \"Tỉnh Cao Bằng\" remains the province.\n\nThe tricky part is figuring out the ward and district. I need to dig into the other resolutions specifically for \"Tỉnh Cao Bằng\". I'm looking for either \"Xã Phong Châu\" or \"Huyện Trùng Khánh\" in these documents.\n\nResolution 1657/NQ-UBTVQH15 seems promising.  Line 45 mentions \"Huyện Trùng Khánh\" but not \"Xã Phong Châu.\"  Line 47 talks about \"thị trấn Trùng Khánh,\" also relevant, creating \"xã Trùng Khánh\".  Then, bingo! Line 48: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Chí Viễn, Phong Châu và Đàm Thủythành xã mới có tên gọi là **xã Đàm Thủy**.\"  That's a direct hit! \"Xã Phong Châu\" is merged into \"xã Đàm Thủy.\"\n\nThe other resolutions aren't relevant. I verify this mapping by checking that \"xã Đàm Thủy\" is in the new wards list, which it is. That gives me the ward code: 01501.\n\nTherefore, my final JSON output is pretty straightforward: Province remains \"Tỉnh Cao Bằng\", new ward is \"Xã Đàm Thủy\" with code 01501, and the citation is line 48 of 1657/NQ-UBTVQH15.  This is a high-confidence mapping because of the clear, direct correspondence.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1657/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Cao Bằng",
+        "line": "48. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Chí Viễn, Phong Châu và Đàm Thủythành xã mới có tên gọi là **xã Đàm Thủy**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Cao Bằng",
+      "ward_code": "01501",
+      "ward_name": "Xã Đàm Thủy"
+    }
+  ]
+}

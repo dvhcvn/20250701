@@ -1,0 +1,18 @@
+{
+  "address": "Phường Hòa Thọ Đông, Quận Cẩm Lệ, Thành phố Đà Nẵng",
+  "ellapsedInMs": 7807,
+  "estimatedCost": 0.0027214,
+  "thought": "**Mapping Old Address to New Administrative Units: Đà Nẵng, Vietnam**\n\nOkay, so I'm tackling this address mapping problem. The goal is to translate an old Vietnamese address to the new administrative structure, and I've got a plan. First, I need to break down the old address:  \"Phường Hòa Thọ Đông,\" \"Quận Cẩm Lệ,\" and \"Thành phố Đà Nẵng.\"  While the district information might seem less important given the prompt's directive, it's good context to keep in mind.\n\nI'll start with the province. Looking at Resolution 60-NQ/TW, I search for \"Thành phố Đà Nẵng\". It *isn't* on the list of provinces *not* undergoing changes. Then, I look for it on the list of *newly* formed or merged provinces.  Aha!  It states \"10. Hợp nhất tỉnh Quảng Nam và thành phố Đà Nẵng, lấy tên là thành phố Đà Nẵng.\"  Effectively, Đà Nẵng *is* the new province, formed by a merger with Quảng Nam, but the province name itself remains \"Thành phố Đà Nẵng\".  Excellent, that's settled.\n\nNext, I zero in on the ward level.  I know the old ward is \"Phường Hòa Thọ Đông.\" I'll check Resolution 1659/NQ-UBTVQH15, the one related to Đà Nẵng's administrative adjustments.  I scan the document's lines for \"Phường Hòa Thọ Đông.\" Bingo!  Line 11 states:  \"11. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Hòa Thọ Tây, Hòa Thọ Đông và Khuê Trung thành phường mới có tên gọi là **phường Cẩm Lệ**.\"  This is a direct mapping! \"Hòa Thọ Đông\" merges into the new \"Cẩm Lệ.\"\n\nTo confirm, I'll check the `New wards` data to find \"phường Cẩm Lệ.\"  Yep, there it is: `{\"ward_code\":\"20260\",\"ward_name\":\"Phường Cẩm Lệ\",\"province_name\":\"Thành phố Đà Nẵng\"}`. It all lines up perfectly.  I did see \"Xã Tây Hồ\" in the new data too, but it's not relevant here as the resolution explicitly links \"Hòa Thọ Đông\" to \"Cẩm Lệ\".\n\nTherefore, constructing the JSON is straightforward. The `province_name` is \"Thành phố Đà Nẵng\" (confirmed by the province resolution). The `ward_name` is \"Phường Cẩm Lệ\" (confirmed by the specific ward resolution), and the `ward_code` is \"20260\". The `citation` will point directly to Resolution 1659/NQ-UBTVQH15. The `confidence` is \"high\" since we have a clear, direct mapping. I'm confident in the result. I noted my self-correction to handle any edge cases involving multiple resolutions. I've considered that the prompt requests *all* options.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng",
+        "line": "11. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Hòa Thọ Tây, Hòa Thọ Đông và Khuê Trung thành phường mới có tên gọi là phường Cẩm Lệ."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "20260",
+      "ward_name": "Phường Cẩm Lệ"
+    }
+  ]
+}

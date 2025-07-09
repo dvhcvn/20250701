@@ -1,0 +1,18 @@
+{
+  "address": "Xã An Phú, Huyện Lục Yên, Tỉnh Yên Bái",
+  "ellapsedInMs": 5908,
+  "estimatedCost": 0.0087417,
+  "thought": "**Determining the New Administrative Unit for \"Xã An Phú, Huyện Lục Yên, Tỉnh Yên Bái\"**\n\nOkay, here's how I'm approaching this. The user has given me an old address, and I need to figure out the new administrative unit. First, I know there have been province mergers, so I'll check `60-NQ/TW` to see if Yên Bái was involved. Bingo, it was merged with Lào Cai to form \"Tỉnh Lào Cai\".\n\nNow, I'll focus on finding \"Xã An Phú\" in the relevant resolutions. I'm specifically looking for any relating to \"Tỉnh Yên Bái\" or the new province, \"Tỉnh Lào Cai\". Ah, resolution `1673/NQ-UBTVQH15` looks promising. Scanning through it, I find line 28: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã An Phú, Vĩnh Lạc, Minh Tiến và Mường Lai thành xã mới có tên gọi là **xã Mường Lai**.\" Perfect!  It *explicitly* mentions \"Xã An Phú\" and clearly states it's being merged into \"Xã Mường Lai.\"\n\nTo be absolutely sure, I'll double-check my `New wards` list.  I'm looking for \"xã Mường Lai\" with \"Tỉnh Lào Cai\" as the province. Yup, there it is:  `{\"ward_code\":\"04345\",\"ward_name\":\"Xã Mường Lai\",\"province_name\":\"Tỉnh Lào Cai\"}`.\n\nSo, here's my confident output: I've got \"Tỉnh Lào Cai\" as the province, \"Xã Mường Lai\" as the new ward name (thanks to the resolution), and \"04345\" as the ward code (from the list).  The citation is the specific line from the resolution, and my confidence is high because it's a direct merger statement.  Good to go!\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai",
+        "line": "28. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã An Phú, Vĩnh Lạc, Minh Tiến và Mường Lai thành xã mới có tên gọi là xã Mường Lai."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "04345",
+      "ward_name": "Xã Mường Lai"
+    }
+  ]
+}

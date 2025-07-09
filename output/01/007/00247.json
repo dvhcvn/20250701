@@ -1,0 +1,28 @@
+{
+  "address": "Phường Phạm Đình Hổ, Quận Hai Bà Trưng, Thành phố Hà Nội",
+  "ellapsedInMs": 8964,
+  "estimatedCost": 0.0045815000000000005,
+  "thought": "**Identifying the New Wards for Phường Phạm Đình Hổ**\n\nOkay, let's break this down. My task is to find the new administrative units corresponding to the old address \"Phường Phạm Đình Hổ, Quận Hai Bà Trưng, Thành phố Hà Nội.\" I'll use the provided resolutions and new ward data to determine the matches.\n\nFirst, I confirmed the province; \"Thành phố Hà Nội\" remains unchanged according to resolution \"60-NQ/TW\".\n\nNext, I focused on the old ward, \"Phường Phạm Đình Hổ.\" I dug into the \"Other resolutions\" and found resolution \"1656/NQ-UBTVQH15,\" which deals with administrative rearrangement in Hà Nội.\n\nExamining the lines of that resolution that mention \"Phường Phạm Đình Hổ\" was key. Two lines stood out:\n\n*   Line 2 states that \"một phần diện tích tự nhiên, quy mô dân số của các phường ... Phạm Đình Hổ\" is merged into the new ward, **phường Cửa Nam**.\n*   Line 6 states that \"phần còn lại của phường Phạm Đình Hổ sau khi sắp xếp theo quy định tại khoản 2 Điều này\" is merged into the new ward, **phường Hai Bà Trưng**.\n\nNext, I cross-referenced these new ward names with the \"New wards\" list, confirming that both \"phường Cửa Nam\" and \"phường Hai Bà Trưng\" exist in \"Thành phố Hà Nội.\" I found `{\"ward_code\":\"00082\",\"ward_name\":\"Phường Cửa Nam\",\"province_name\":\"Thành phố Hà Nội\"}` and `{\"ward_code\":\"00256\",\"ward_name\":\"Phường Hai Bà Trưng\",\"province_name\":\"Thành phố Hà Nội\"}` respectively.\n\nBased on the direct statements in the resolution, I have high confidence in these matches. It's explicitly stated that parts of the old ward were absorbed into the two new wards.\n\nTherefore, the JSON output needs to reflect this: the relevant citations, high confidence level, and correct province, ward code, and ward name. I'll construct an array with two objects, one for each new ward.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội",
+        "line": "2. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Hàng Bài, Phan Chu Trinh, Trần Hưng Đạo, một phần diện tích tự nhiên, quy mô dân số của các phường Cửa Nam, Nguyễn Du, Phạm Đình Hổ và phần còn lại của các phường Hàng Bông, Hàng Trống, Tràng Tiền sau khi sắp xếp theo quy định tại khoản 1 Điều này thành phường mới có tên gọi là phường Cửa Nam."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hà Nội",
+      "ward_code": "00082",
+      "ward_name": "Phường Cửa Nam"
+    },
+    {
+      "citation": {
+        "header": "1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội",
+        "line": "6. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Đồng Nhân, phường Phố Huế, một phần diện tích tự nhiên, quy mô dân số của các phường Bạch Đằng, Lê Đại Hành, Nguyễn Du, Thanh Nhàn và phần còn lại của phường Phạm Đình Hổ sau khi sắp xếp theo quy định tại khoản 2 Điều này thành phường mới có tên gọi là phường Hai Bà Trưng."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hà Nội",
+      "ward_code": "00256",
+      "ward_name": "Phường Hai Bà Trưng"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Cư Bông, Huyện Ea Kar, Tỉnh Đắk Lắk",
+  "ellapsedInMs": 7124,
+  "estimatedCost": 0.0024763,
+  "thought": "**My Thought Process for Mapping the Old Address**\n\nOkay, so I'm given an old Vietnamese address, \"Xã Cư Bông\" in \"Tỉnh Đắk Lắk,\" and I need to figure out its new administrative equivalent using provided resolutions and the \"New Wards\" list. This is straightforward; I just need to systematically apply my knowledge of administrative mapping.\n\nFirst, I identified the old ward and province: \"Xã Cư Bông,\" and \"Tỉnh Đắk Lắk,\" respectively.  Then, I'll dive into the resolutions, starting with the provincial resolutions (60-NQ/TW).  I need to check if Đắk Lắk was subject to a merger.  I quickly see that Đắk Lắk isn't in the list of provinces *not* undergoing changes.  Looking at the merge list, it's mentioned that it merged with Phú Yên but retains the Đắk Lắk name.  Excellent, the province name remains \"Tỉnh Đắk Lắk.\"\n\nNext, I need to check the other resolutions (1660/NQ-UBTVQH15) for ward-level changes. I searched for \"Xã Cư Bông\" within the resolution text. And Bingo!  Line 33 directly states that the area and population of \"Xã Cư Bông\" and \"Xã Cư Yang\" were merged to form a new ward, called \"Xã Cư Yang\".  Perfect! That's a direct mapping.\n\nNow, I cross-reference this new ward with the \"New Wards\" list. I'm looking for \"Xã Cư Yang\" with the province \"Tỉnh Đắk Lắk.\" I quickly found a matching entry: `{\"ward_code\":\"24406\",\"ward_name\":\"Xã Cư Yang\",\"province_name\":\"Tỉnh Đắk Lắk\"}`. This confirms the new ward's code.\n\nMy final output will be a JSON structure containing:\n\n*   `province_name`: \"Tỉnh Đắk Lắk\"\n*   `ward_name`: \"Xã Cư Yang\"\n*   `ward_code`: \"24406\"\n*   `citation`:  This will include the resolution header \"1660/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đắk Lắk\" and the specific line \"33. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Cư Bông và xã Cư Yang thành xã mới có tên gọi là **xã Cư Yang**.\"\n*   `confidence`: \"high\" since the mapping is direct and clear.\n\nBefore finalizing, I quickly double-checked the other lines in the resolutions to be absolutely sure \"Xã Cư Bông\" wasn't mentioned elsewhere in a different context.  Line 30 mentions a different merger, but not involving \"Xã Cư Bông\".  So, all's clear. The map is certain and complete.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1660/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đắk Lắk",
+        "line": "33. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Cư Bông và xã Cư Yang thành xã mới có tên gọi là xã Cư Yang."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đắk Lắk",
+      "ward_code": "24406",
+      "ward_name": "Xã Cư Yang"
+    }
+  ]
+}

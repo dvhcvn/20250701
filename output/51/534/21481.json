@@ -1,0 +1,18 @@
+{
+  "address": "Xã Phổ Châu, Thị xã Đức Phổ, Tỉnh Quảng Ngãi",
+  "ellapsedInMs": 8137,
+  "estimatedCost": 0.0030076,
+  "thought": "**Identifying the New Administrative Unit for \"Xã Phổ Châu\"**\n\nOkay, so the task is to figure out the new ward for the old address \"Xã Phổ Châu, Thị xã Đức Phổ, Tỉnh Quảng Ngãi\".  My expertise in spatial data and administrative structures kicks in immediately.  The process is clear: break down the old address, check the relevant resolutions, and then cross-reference with the new ward lists.\n\nFirst, the obvious: \"Xã Phổ Châu\" is the old ward, \"Thị xã Đức Phổ\" is the old district (though the prompt mentioned eliminating districts, they're still present in the resolutions related to the *old* structure, so I need to be careful), and \"Tỉnh Quảng Ngãi\" is the old province.\n\nNext, I'll quickly verify the province. Resolution 60-NQ/TW states that Quảng Ngãi remains Quảng Ngãi after a merger (if any). Thankfully, it's consistent. Easy peasy.\n\nNow for the real work: finding \"Xã Phổ Châu\" in the resolutions, specifically those affecting Quảng Ngãi. Resolution 1677/NQ-UBTVQH15 looks promising. And bingo! Line 87 in that resolution explicitly states that \"Xã Phổ Châu\" is merged with \"phường Phổ Thạnh\" to form a new ward called \"**phường Sa Huỳnh**\".  Perfect!\n\nI then verify that \"phường Sa Huỳnh\" is indeed listed in the new ward list for Quảng Ngãi. And there it is: `{\"ward_code\":\"21478\",\"ward_name\":\"Phường Sa Huỳnh\",\"province_name\":\"Tỉnh Quảng Ngãi\"}`.  That's a direct match. The answer is clear: the new administrative unit for \"Xã Phổ Châu\" is \"Phường Sa Huỳnh\".\n\nHowever, I'm a meticulous analyst, so let's double-check any potential ambiguities.  Line 86 of the same resolution caught my eye, as it mentions \"Thị xã Đức Phổ\" and a new ward \"phường Đức Phổ.\" But critically, \"Xã Phổ Châu\" is *not* mentioned in the creation of \"Phường Đức Phổ\".  Good, that eliminates a potential misinterpretation.\n\nNow, the potential confusion. A new ward listed is \"Xã Nguyễn Nghiêm\" - the resolution said that \"phường Nguyễn Nghiêm\" (of \"thị xã Đức Phổ\") was merged into \"phường Đức Phổ\". If \"Xã Nguyễn Nghiêm\" is a *new* ward, this creates a contradiction, as the resolution clearly states that \"phường Nguyễn Nghiêm\" *ceased* to exist. This needs more investigation, but it does not invalidate my original finding, as it does not affect \"Xã Phổ Châu\".\n\nTherefore, after a thorough review of the provided resolutions and new ward lists, I can confidently conclude that the new administrative unit for \"Xã Phổ Châu\" is indeed \"Phường Sa Huỳnh\". Case closed.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1677/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ngãi",
+        "line": "87. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Phổ Thạnh và xã Phổ Châu thành phường mới có tên gọi là **phường Sa Huỳnh**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ngãi",
+      "ward_code": "21478",
+      "ward_name": "Phường Sa Huỳnh"
+    }
+  ]
+}

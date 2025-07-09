@@ -1,0 +1,18 @@
+{
+  "address": "Xã Phúc Đồng, Huyện Hương Khê, Tỉnh Hà Tĩnh",
+  "ellapsedInMs": 6491,
+  "estimatedCost": 0.002428,
+  "thought": "**Identifying the New Administrative Unit for \"Xã Phúc Đồng\"**\n\nOkay, let's break this down. The user provided an old address: \"Xã Phúc Đồng, Huyện Hương Khê, Tỉnh Hà Tĩnh\" and needs help identifying the new ward. My approach is pretty standard for this type of problem.\n\nFirst, I need to confirm the province. The old address states \"Tỉnh Hà Tĩnh.\" I checked `60-NQ/TW`, the resolution for province mergers, and found that \"Tỉnh Hà Tĩnh\" is listed as a province *not* undergoing a merger. So, \"Tỉnh Hà Tĩnh\" remains the correct province. Easy.\n\nNext, I need to dig into the ward-level reorganizations within Hà Tĩnh. Specifically, I'm focusing on the resolution `1665/NQ-UBTVQH15`, which details the restructuring of xã units in Hà Tĩnh. After scanning through this resolution, I'm specifically looking for any mention of \"Phúc Đồng.\"\n\nAh, here's the crucial part: Line 56 of the resolution states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Hòa Hải, Phúc Đồng và Hương Bình thành xã mới có tên gọi là **xã Hương Bình**.\" This tells me *exactly* what I need! \"Xã Phúc Đồng\" is being merged with \"Hòa Hải\" and \"Hương Bình\" to form the new ward, \"Xã Hương Bình.\"\n\nNow, I cross-reference this information with the list of \"New wards.\" The relevant entry is: `{\"ward_code\":\"18523\",\"ward_name\":\"Xã Hương Bình\",\"province_name\":\"Tỉnh Hà Tĩnh\"}`. Perfect! This matches everything.\n\nTherefore, my final output will be:\n\n*   `province_name`: \"Tỉnh Hà Tĩnh\" (confirmed).\n*   `ward_name`: \"Xã Hương Bình\" (identified from resolution `1665/NQ-UBTVQH15`).\n*   `ward_code`: \"18523\" (from the \"New wards\" list).\n*   `confidence`: \"high\" (the resolution explicitly and clearly describes the merger).\n*   `citation`:\n    *   `header`: \"1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh\"\n    *   `line`: \"56. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Hòa Hải, Phúc Đồng và Hương Bình thành xã mới có tên gọi là **xã Hương Bình**.\"\n\nIt's a straightforward resolution and a clear result.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh",
+        "line": "56. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Hòa Hải, Phúc Đồng và Hương Bình thành xã mới có tên gọi là xã Hương Bình."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hà Tĩnh",
+      "ward_code": "18523",
+      "ward_name": "Xã Hương Bình"
+    }
+  ]
+}

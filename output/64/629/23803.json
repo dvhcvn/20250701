@@ -1,0 +1,18 @@
+{
+  "address": "Xã Đăk Yă, Huyện Mang Yang, Tỉnh Gia Lai",
+  "ellapsedInMs": 8384,
+  "estimatedCost": 0.0028896,
+  "thought": "**Analysis of Address Mapping: Xã Đăk Yă, Huyện Mang Yang, Tỉnh Gia Lai**\n\nOkay, here's how I'm approaching this address mapping task. The goal is to determine the new administrative unit corresponding to \"Xã Đăk Yă, Huyện Mang Yang, Tỉnh Gia Lai,\" keeping in mind the provided resolutions and new ward data.  I've got a clear plan of action: first, I identify the old administrative levels. Then, I cross-reference the province, district, and ward with the relevant resolutions to find corresponding changes.\n\nMy initial assessment indicates the old address is in Gia Lai province, Mang Yang district, and Đăk Yă ward. I start by looking at the province level. Resolution 60-NQ/TW states that Gia Lai merged with Bình Định, but the province name itself *remains* Gia Lai. So, \"Tỉnh Gia Lai\" is my starting point for the province name.\n\nNext, I zero in on the wards. I scrutinize the \"Other resolutions\" for mentions of \"Xã Đăk Yă.\" Resolution 1664/NQ-UBTVQH15 stands out. Line 91 is a direct hit: it explicitly states that \"Xã Đăk Yă\" is *merged into* \"Xã Mang Yang.\" This is a clear and direct mapping, which gives me high confidence in this result. I am looking for the new administrative units, so the merging of \"Xã Đăk Yă\" to \"Xã Mang Yang\" is what I am focused on here.\n\nBased on line 91, \"Xã Mang Yang\" is the new ward. Now I cross-reference this information with the `New wards` data to ensure accuracy. I confirm there's an entry for \"Xã Mang Yang, Tỉnh Gia Lai,\" and it contains a ward code.\n\nFinally, I construct the JSON output. Given my high confidence in the direct mapping, I'll set the `confidence` level to \"high\". The resolution line, the province name (which remains \"Tỉnh Gia Lai\"), the ward code, and the new ward name (\"Xã Mang Yang\") are now determined.\n\nImportantly, while the district \"Huyện Mang Yang\" appears in the old address, and in the relevant resolution line, the prompt specifically mentions \"eliminating all districts\" and doesn't specify any output structure that includes a district. So, the output will only reflect the mapped province and ward as requested. Furthermore, because \"Xã Mang Yang\" is the only direct merger associated with \"Xã Đăk Yă\", this is the only ward that meets the criteria of being a new corresponding administrative unit.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai",
+        "line": "91. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Kon Dơng và các xã Đăk Yă, Đak Djrăng, Hải Yang thành xã mới có tên gọi là xã Mang Yang."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "23794",
+      "ward_name": "Xã Mang Yang"
+    }
+  ]
+}

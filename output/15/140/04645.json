@@ -1,0 +1,28 @@
+{
+  "address": "Xã An Lương, Huyện Văn Chấn, Tỉnh Yên Bái",
+  "ellapsedInMs": 7720,
+  "estimatedCost": 0.0037771000000000002,
+  "thought": "**Analyzing the Administrative Restructuring of \"Xã An Lương, Huyện Văn Chấn, Tỉnh Yên Bái\"**\n\nOkay, so the user wants to know the current administrative unit for the old address \"Xã An Lương, Huyện Văn Chấn, Tỉnh Yên Bái.\" I'll break this down methodically. First, I identify the old province: \"Tỉnh Yên Bái.\" Then, I check for province-level changes, specifically resolution 60-NQ/TW. It clearly states that \"Tỉnh Yên Bái\" merged with \"Tỉnh Lào Cai.\"\n\nNow, focusing on \"Xã An Lương,\" I need to find its current status. I check relevant resolutions for \"Xã An Lương\" within the context of the new province, \"Tỉnh Lào Cai.\" Resolution 1673/NQ-UBTVQH15 stands out. Line 22 explicitly states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã An Lương và xã Mỏ Vàng thành xã mới có tên gọi là **xã Mỏ Vàng**.\" This is a direct hit! It confirms that \"Xã An Lương\" has been merged into \"Xã Mỏ Vàng\".\n\nTo confirm, I also check the list of new wards. There's a perfect match: `{\"ward_code\":\"04450\",\"ward_name\":\"Xã Mỏ Vàng\",\"province_name\":\"Tỉnh Lào Cai\"}`. This aligns perfectly with the resolution.\n\nFinally, I'll construct the output JSON. The `province_name` is \"Tỉnh Lào Cai\" due to the province merger. The `ward_name` is \"Xã Mỏ Vàng\" from resolution 1673/NQ-UBTVQH15. The `ward_code` is \"04450\" from the new wards list. The `citation` will point to the relevant line from that resolution. Given the direct and clear statement in 1673/NQ-UBTVQH15 about the merger, I have high confidence in this conclusion.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Lào Cai và tỉnh Yên Bái, lấy tên là tỉnh Lào Cai"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "04450",
+      "ward_name": "Xã Mỏ Vàng"
+    },
+    {
+      "citation": {
+        "header": "1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai",
+        "line": "22. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã An Lương và xã Mỏ Vàng thành xã mới có tên gọi là xã Mỏ Vàng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "04450",
+      "ward_name": "Xã Mỏ Vàng"
+    }
+  ]
+}

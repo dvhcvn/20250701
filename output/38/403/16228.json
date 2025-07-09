@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Bến Sung, Huyện Như Thanh, Tỉnh Thanh Hóa",
+  "ellapsedInMs": 6783,
+  "estimatedCost": 0.0022997,
+  "thought": "**My Analysis of the Address Mapping**\n\nOkay, so I'm tasked with taking this old address, \"Thị trấn Bến Sung, Huyện Như Thanh, Tỉnh Thanh Hóa,\" and figuring out its current administrative unit. Given my expertise, I know the process: I need to methodically break it down.\n\nFirst, I recognized \"Tỉnh Thanh Hóa\" as the province. A quick check of province-level resolutions like 60-NQ/TW confirmed that Thanh Hóa remained intact.\n\nThen, I identified the specific ward, \"Thị trấn Bến Sung.\"  This is where the real work begins. I dived into \"Other resolutions\" and immediately found the relevant piece of legislation: \"1686/NQ-UBTVQH15.\" Line 118 was the key. It stated *explicitly* that the entire \"thị trấn Bến Sung\" *merged into* a new ward called \"xã Như Thanh\". This is a clean, direct transition.\n\nMy next step was to validate this with the \"New wards\" data.  Sure enough, I found an entry: `{\"ward_code\":\"16228\",\"ward_name\":\"Xã Như Thanh\",\"province_name\":\"Tỉnh Thanh Hóa\"}`.  The match was perfect.\n\nBased on the clear language of the resolution, the high level of specificity it offered, and the consistent corroboration with the ward data, my confidence in this mapping is very high. I am constructing the following JSON output to provide the relevant mapping:\n\n```json\n{\n  \"citation\": {\n    \"header\": \"1686/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thanh Hóa\",\n    \"line\": \"118. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Bến Sung, xã Xuân Khang, xã Hải Long và một phần diện tích tự nhiên, quy mô dân số của xã Yên Thọ (huyện Như Thanh) thành xã mới có tên gọi là xã Như Thanh.\"\n  },\n  \"confidence\": \"high\",\n  \"province_name\": \"Tỉnh Thanh Hóa\",\n  \"ward_code\": \"16228\",\n  \"ward_name\": \"Xã Như Thanh\"\n}\n```\n\nThis should be a reliable and accurate representation of how \"Thị trấn Bến Sung\" now fits into the current administrative structure. This demonstrates the correct workflow for solving these problems.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1686/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thanh Hóa",
+        "line": "118. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Bến Sung, xã Xuân Khang, xã Hải Long và một phần diện tích tự nhiên, quy mô dân số của xã Yên Thọ (huyện Như Thanh) thành xã mới có tên gọi là xã Như Thanh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thanh Hóa",
+      "ward_code": "16228",
+      "ward_name": "Xã Như Thanh"
+    }
+  ]
+}

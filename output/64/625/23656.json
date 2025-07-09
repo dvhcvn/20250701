@@ -1,0 +1,18 @@
+{
+  "address": "Xã Lơ Ku, Huyện KBang, Tỉnh Gia Lai",
+  "ellapsedInMs": 6525,
+  "estimatedCost": 0.0025893,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, I've got this. The user wants me to map an old Vietnamese address to its new administrative unit. Let's break this down logically. First, I need to extract the relevant components from the input address: \"Xã Lơ Ku\" (ward), \"Huyện KBang\" (district), and \"Tỉnh Gia Lai\" (province).\n\nNow, the plan is to systematically go through the provided resolutions and the `new_wards` list. The initial check of the Province Resolutions (60-NQ/TW) is straightforward: \"Tỉnh Gia Lai\" remains \"Tỉnh Gia Lai\" after the merging. No changes there.\n\nThe crucial part is the `other_resolutions` list. I need to find mentions of \"Xã Lơ Ku\" or \"Huyện KBang\". Bingo! Resolution \"1664/NQ-UBTVQH15\" is key. It *explicitly* states that \"Xã Lơ Ku\" is merged into \"xã Kbang\". That's a direct mapping right there.\n\nNext, I'll cross-reference this with the `new_wards` list. I'm looking for \"Xã Kbang\". And there it is: a new ward entry with the matching name, code \"23638\", and the correct province, \"Tỉnh Gia Lai\". This solidifies the mapping.\n\nSince I have a direct mention and clear mapping from the resolution, the confidence level should be \"high\". The output should be a single JSON object.\n\nI've reviewed the requirements to ensure I'm adhering to the specifications. I will generate a valid JSON array of potential new wards. Everything checks out.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai",
+        "line": "63. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Kbang, xã Lơ Ku và xã Đak Smar thành xã mới có tên gọi là xã Kbang."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "23638",
+      "ward_name": "Xã Kbang"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Cư Huê, Huyện Ea Kar, Tỉnh Đắk Lắk",
+  "ellapsedInMs": 6535,
+  "estimatedCost": 0.0025995,
+  "thought": "**Analysis of Administrative Unit Change for \"Xã Cư Huê\"**\n\nOkay, so I'm presented with an old address: Xã Cư Huê, Huyện Ea Kar, Tỉnh Đắk Lắk. My task is to map this to the new administrative structure. Let's break this down systematically.\n\nFirst, I need to confirm the province. The input says Tỉnh Đắk Lắk.  I quickly glance at the province resolutions (specifically Resolution 60-NQ/TW) and find confirmation: \"Hợp nhất tỉnh Đắk Lắk và tỉnh Phú Yên, lấy tên là tỉnh Đắk Lắk\". Great, the province remains Đắk Lắk. This aligns perfectly.\n\nNext, the critical part: the ward. I need to figure out what happened to \"Xã Cư Huê.\"  I delve into the \"Other resolutions,\" focusing on those related to Đắk Lắk. Bingo! Resolution 1660/NQ-UBTVQH15, specifically line 30, nails it: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Ea Kar và các xã Cư Huê, Ea Đar, Ea Kmút, Cư Ni, Xuân Phú thành xã mới có tên gọi là xã Ea Kar.\"  This is crystal clear. \"Xã Cư Huê\" is being merged into the new \"Xã Ea Kar.\" This is key!\n\nNow, I look up \"Xã Ea Kar\" in the \"New wards\" data.  I find a match: `{\"ward_code\":\"24373\",\"ward_name\":\"Xã Ea Kar\",\"province_name\":\"Tỉnh Đắk Lắk\"}`. The province name also lines up.\n\nTherefore, the mapping is extremely straightforward and high-confidence.  I'd use the specific line from Resolution 1660 as the `citation`. The new ward's code, name, and province are now fully confirmed. I'm ready to construct the accurate JSON output reflecting this administrative change.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1660/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đắk Lắk",
+        "line": "30. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Ea Kar và các xã Cư Huê, Ea Đar, Ea Kmút, Cư Ni, Xuân Phú thành xã mới có tên gọi là xã Ea Kar."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đắk Lắk",
+      "ward_code": "24373",
+      "ward_name": "Xã Ea Kar"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tư Mại, Thành phố Bắc Giang, Tỉnh Bắc Giang",
+  "ellapsedInMs": 8006,
+  "estimatedCost": 0.0029848,
+  "thought": "**My Analysis of the Administrative Unit Mapping**\n\nOkay, so I'm tackling this address: \"Xã Tư Mại, Thành phố Bắc Giang, Tỉnh Bắc Giang\".  I need to figure out where it falls in the new administrative landscape based on the resolutions and the provided new ward data.\n\nFirst, I identified the components: old province \"Tỉnh Bắc Giang\", old ward \"Xã Tư Mại\", and the city/district within the province, \"Thành phố Bắc Giang.\"  The prompt emphasizes the removal of districts, so this city likely is now just part of the new province structure.\n\nNext, I looked at Province Resolutions, specifically 60-NQ/TW.  Bingo! \"Tỉnh Bắc Giang\" is explicitly mentioned, but it's *merged* into \"Tỉnh Bắc Ninh\".  That's a high-confidence merge, easy to track.\n\nNow, for \"Xã Tư Mại\".  I reviewed 1658/NQ-UBTVQH15, the one related to administrative rearrangements in Bắc Ninh.  I scanned the document, focusing on mentions of \"Xã Tư Mại\". And found it! Paragraph 98 directly states \"Xã Tư Mại\" is merged along with \"phường Cảnh Thụy\" and \"xã Tiến Dũng\" into the new \"phường Cảnh Thụy\".\n\nThen, I validated \"phường Cảnh Thụy\" against the \"New wards\" data. It's a perfect match:  \"phường Cảnh Thụy\" with code \"07738,\" under the new province \"Tỉnh Bắc Ninh\".\n\nThe only other potentially relevant phrase, \"phường Bắc Giang\", *was* in the resolution, but that didn't help, as \"Xã Tư Mại\" wasn't listed as part of the new ward being created from those other wards.  I'm confident in the finding of \"phường Cảnh Thụy\".\n\nSo, my final JSON output is pretty straightforward: the new province is \"Tỉnh Bắc Ninh\". The old ward \"Xã Tư Mại\" is now part of \"phường Cảnh Thụy\", ward code \"07738\". The citation is from resolution 1658/NQ-UBTVQH15. Paragraph 98 is the specific line that identifies this. And it's a high-confidence match because \"Xã Tư Mại\" is explicitly mentioned in the mapping process.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh",
+        "line": "98. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Cảnh Thụy, xã Tiến Dũng và xã Tư Mại thành phường mới có tên gọi là phường Cảnh Thụy."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "07738",
+      "ward_name": "Phường Cảnh Thụy"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tam Anh Nam, Huyện Núi Thành, Tỉnh Quảng Nam",
+  "ellapsedInMs": 6640,
+  "estimatedCost": 0.0025383,
+  "thought": "**My Mapping Process for Vietnamese Administrative Units**\n\nOkay, so I'm tackling this Vietnamese address mapping task. I've got \"Xã Tam Anh Nam\" in \"Huyện Núi Thành\", Quảng Nam Province.  My goal is to find its new administrative equivalent.\n\nFirst, I need to understand the province-level changes.  I checked the resolutions regarding province mergers and found that Quảng Nam has been merged with Đà Nẵng, becoming \"Thành phố Đà Nẵng.\"  That's my new province.\n\nNow, looking at resolution 1659/NQ-UBTVQH15, specifically for Đà Nẵng, I zeroed in on the ward data.  I carefully examined the resolution, and line 29 clearly states that \"Xã Tam Anh Nam\" will be merged into a new ward called \"xã Tam Anh\".  Perfect match!\n\nNext, I cross-referenced this with the \"New wards\" data.  I found \"xã Tam Anh\" associated with \"Thành phố Đà Nẵng\" in the data.  The associated `ward_code` is also available there.\n\nSince the problem statement indicates eliminating districts, I'm inferring the mapping is directly from the old ward to the new ward within the new province. Therefore, I can confidently construct my JSON output:  `province_name`: \"Thành phố Đà Nẵng\", `ward_name`: \"Xã Tam Anh\", `ward_code`: \"20984\".\n\nI'm including the resolution information for citation, particularly line 29 of 1659/NQ-UBTVQH15, as evidence of the mapping. My confidence level is high because I have a direct match between the old ward and the new ward in the provided data.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng",
+        "line": "29. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tam Hòa, Tam Anh Bắc và Tam Anh Nam thành xã mới có tên gọi là xã Tam Anh."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "20984",
+      "ward_name": "Xã Tam Anh"
+    }
+  ]
+}

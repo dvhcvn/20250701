@@ -1,0 +1,28 @@
+{
+  "address": "Xã Đức Lân, Huyện Mộ Đức, Tỉnh Quảng Ngãi",
+  "ellapsedInMs": 8567,
+  "estimatedCost": 0.0032727,
+  "thought": "**Address Mapping for Đức Lân**\n\nOkay, so I'm tasked with mapping the old Vietnamese address \"Xã Đức Lân, Huyện Mộ Đức, Tỉnh Quảng Ngãi\" to its new administrative equivalent.  My first step is to break down the address: \"Xã Đức Lân\" (ward), \"Huyện Mộ Đức\" (district), and \"Tỉnh Quảng Ngãi\" (province).\n\nI've got the necessary data: province resolutions (specifically, Resolution 60-NQ/TW) and other relevant resolutions, along with a \"New Wards\" dataset. I'll need to carefully analyze these resources.\n\nFirst, I checked the province resolutions. Quảng Ngãi remains \"Tỉnh Quảng Ngãi\", despite the potential merge with Kon Tum mentioned. That's straightforward.\n\nNext, the crucial part: the \"Other resolutions,\" particularly 1677/NQ-UBTVQH15. I'm looking for \"Xã Đức Lân.\" Bingo! Line 25 states,  \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Đức Phong và xã Đức Lân thành xã mới có tên gọi là **xã Lân Phong**.\"  This is a direct mapping! \"Xã Đức Lân\" is merged into \"Xã Lân Phong\".\n\nNow, let's find \"Xã Lân Phong\" in the \"New Wards\" data. It's there, with code \"21433\" and the province name confirmed as \"Tỉnh Quảng Ngãi.\"\n\nIt's tempting to consider the former district, \"Huyện Mộ Đức\". Resolution 1677 mentions the town (\"thị trấn Mộ Đức\") within Mộ Đức merging to create \"Xã Mộ Đức.\" However, since the prompt specifies eliminating all districts, and given that \"Xã Đức Lân\" is explicitly incorporated into \"Xã Lân Phong,\" my conclusion is solid. The resolution's direct and specific mapping outweighs any lingering district-level considerations.\n\nTherefore, the mapping is clear:  The province is \"Tỉnh Quảng Ngãi,\" the new ward is \"Xã Lân Phong\" (code \"21433\").  This information will go into the JSON output, with the specific resolution and line number as a citation, and a \"high\" confidence level because the mapping is explicitly defined. I'll double-check this, but it seems correct.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Kon Tum và tỉnh Quảng Ngãi, lấy tên là tỉnh Quảng Ngãi"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ngãi",
+      "ward_code": "21433",
+      "ward_name": "Xã Lân Phong"
+    },
+    {
+      "citation": {
+        "header": "1677/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ngãi",
+        "line": "25. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Đức Phong và xã Đức Lân thành xã mới có tên gọi là xã Lân Phong."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ngãi",
+      "ward_code": "21433",
+      "ward_name": "Xã Lân Phong"
+    }
+  ]
+}

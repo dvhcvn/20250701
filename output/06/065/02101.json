@@ -1,0 +1,28 @@
+{
+  "address": "Xã Thanh Mai, Huyện Chợ Mới, Tỉnh Bắc Kạn",
+  "ellapsedInMs": 8285,
+  "estimatedCost": 0.0031462,
+  "thought": "**Identifying the New Administrative Unit**\n\nOkay, so I'm presented with the old address \"Xã Thanh Mai, Huyện Chợ Mới, Tỉnh Bắc Kạn\" and need to figure out its current equivalent. My approach here is pretty standard for these sorts of spatial remapping problems.\n\nFirst, I identified the old province, \"Tỉnh Bắc Kạn\".  That immediately flagged the need to check for province mergers.  Sure enough, based on resolution 60-NQ/TW, Bắc Kạn was merged into Thái Nguyên. So, \"Tỉnh Bắc Kạn\" is now \"Tỉnh Thái Nguyên.\"\n\nNext, I zeroed in on the ward, \"Xã Thanh Mai\".  Now, I needed to check any relevant resolutions. My first instinct was to search resolutions for *both* the old and new province, as pre-merger resolutions might still be relevant.  And bingo!  Resolution 1683/NQ-UBTVQH15, concerning Thái Nguyên, mentioned \"Xã Thanh Mai.\" It clearly states that \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Thanh Vận, Mai Lạp và Thanh Mai thành xã mới có tên gọi là xã Thanh Mai.\" That means, specifically, *our* \"Xã Thanh Mai\" is now part of the *new* \"Xã Thanh Mai\" in Thái Nguyên. This appears to be a name retention with the merging of smaller surrounding entities.\n\nI quickly checked other resolutions to ensure that no conflicting information existed.  One resolution did mention \"Thanh Mai,\" but it was for Hanoi, which is irrelevant here.\n\nThen, I looked at the \"New wards\" data, just to confirm.  And there it was: a clear match! `{\"ward_code\":\"02101\",\"ward_name\":\"Xã Thanh Mai\",\"province_name\":\"Tỉnh Thái Nguyên\"}`.\n\nPutting it all together, I'm highly confident in this mapping. We have the province merger, the specific resolution for Thái Nguyên that explicitly includes the old ward, and the confirmed listing of \"Xã Thanh Mai\" in the new province's data.\n\nThe \"Huyện Chợ Mới\" part of the old address isn't directly used for the final ward determination. The resolution focuses on the amalgamation of multiple entities, but \"Xã Thanh Mai\" is one of them.  The district information would only become relevant if there were *multiple* \"Xã Thanh Mai\" within the *old* province, requiring disambiguation. However, the resolution for \"Thái Nguyên\" directly and comprehensively addresses the matter. In this case, I've got a very strong mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Bắc Kạn và tỉnh Thái Nguyên, lấy tên là tỉnh Thái Nguyên"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thái Nguyên",
+      "ward_code": "02101",
+      "ward_name": "Xã Thanh Mai"
+    },
+    {
+      "citation": {
+        "header": "1683/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thái Nguyên",
+        "line": "72. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Thanh Vận, Mai Lạp và Thanh Mai thành xã mới có tên gọi là xã Thanh Mai."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thái Nguyên",
+      "ward_code": "02101",
+      "ward_name": "Xã Thanh Mai"
+    }
+  ]
+}

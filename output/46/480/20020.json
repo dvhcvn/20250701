@@ -1,0 +1,18 @@
+{
+  "address": "Phường Hương Chữ, Thị xã Hương Trà, Thành phố Huế",
+  "ellapsedInMs": 5861,
+  "estimatedCost": 0.0037251999999999997,
+  "thought": "**Identifying the New Administrative Unit for Phường Hương Chữ**\n\nOkay, so the user wants to know the new administrative unit for \"Phường Hương Chữ, Thị xã Hương Trà, Thành phố Huế.\"  Let's break this down systematically.\n\nFirst, I need to pinpoint the province, which is \"Thành phố Huế.\"  Now, I have to check the province resolutions. Ah, here it is, \"Thành phố Huế\" is listed under \"Các đơn vị hành chính cấp tỉnh không thực hiện sáp nhập\" (Resolution 60-NQ/TW). So, the province name, \"Thành phố Huế,\" stays the same.\n\nNext, I'll need to look through resolutions specifically for \"Thành phố Huế.\" I see a promising one: \"1675/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Huế.\" Bingo!\n\nNow, I'm going to carefully read this resolution, specifically the lines that might mention \"Phường Hương Chữ.\" Let's see... Line 6: Nope. Ah, here it is in Line 7: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Hương Xuân, **phường Hương Chữ** và xã Hương Toàn thành phường mới có tên gọi là **phường Kim Trà**.\"\n\nExcellent!  This clearly states that \"Phường Hương Chữ\" is being merged into the new ward, \"Phường Kim Trà.\"\n\nNow, I need to get the ward code for \"phường Kim Trà.\"  Scanning the \"New wards\" list, I quickly find it: `{\"ward_code\":\"20017\",\"ward_name\":\"Phường Kim Trà\",\"province_name\":\"Thành phố Huế\"}`.\n\nPutting it all together, I can construct the final JSON output:\n\n*   `province_name`: \"Thành phố Huế\"\n*   `ward_name`: \"Phường Kim Trà\"\n*   `ward_code`: \"20017\"\n*   `citation`:\n    *   `header`: \"1675/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Huế\"\n    *   `line`: \"7. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Hương Xuân, phường Hương Chữ và xã Hương Toàn thành phường mới có tên gọi là **phường Kim Trà**.\"\n*   `confidence`: \"high\" - because the association of old and new units is explicitly stated.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1675/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Huế",
+        "line": "7. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Hương Xuân, phường Hương Chữ và xã Hương Toàn thành phường mới có tên gọi là phường Kim Trà."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Huế",
+      "ward_code": "20017",
+      "ward_name": "Phường Kim Trà"
+    }
+  ]
+}

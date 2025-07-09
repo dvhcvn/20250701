@@ -1,0 +1,18 @@
+{
+  "address": "Xã Lạc Lâm, Huyện Đơn Dương, Tỉnh Lâm Đồng",
+  "ellapsedInMs": 7715,
+  "estimatedCost": 0.0026398000000000003,
+  "thought": "**Here's how I'm thinking about identifying the new administrative unit for the provided address:**\n\nFirst, I need to understand the old address. It's \"Xã Lạc Lâm\", in \"Tỉnh Lâm Đồng\". Okay, got it. Now, I need to navigate the data, beginning with the province.  I'll start by checking the Province Resolutions, specifically 60-NQ/TW.\n\nI'm looking at the lists: \"Các đơn vị hành chính cấp tỉnh không thực hiện sáp nhập\" and \"Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất\".  I quickly see that \"Tỉnh Lâm Đồng\" isn't in the first list.  Moving to the second, bingo! Line 14 mentions the merging of Lâm Đồng, Đắk Nông, and Bình Thuận, but confirms the *name* \"Tỉnh Lâm Đồng\" remains. High confidence on the province being correct.\n\nNext, I need to dig into the other resolutions. I'm focusing on those mentioning \"Xã Lạc Lâm\".\n\n**Resolution 1671/NQ-UBTVQH15 (Lâm Đồng) is the key.** Looking through the lines, I see Line 3: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Lạc Lâm và xã Ka Đô thành xã mới có tên gọi là **xã Ka Đô**.\"  This is it! \"Xã Lạc Lâm\" is specifically mentioned as merging into \"xã Ka Đô\".  That feels pretty solid.\n\nJust to be thorough, I quickly scan the rest of the resolutions, but none of them mention \"Xã Lạc Lâm\".\n\nNow, I'll double-check my findings against the \"New wards\" list. From the resolution, the new ward is \"Xã Ka Đô\". Let's see if it's in the list.  Yep! `{\"ward_code\":\"24943\",\"ward_name\":\"Xã Ka Đô\",\"province_name\":\"Tỉnh Lâm Đồng\"}`. It's a perfect match!\n\nTherefore, the province name remains \"Tỉnh Lâm Đồng\" (confirmed by 60-NQ/TW). The new ward for \"Xã Lạc Lâm\" is \"Xã Ka Đô\" (confirmed by resolution 1671/NQ-UBTVQH15, and verified in the \"New wards\" list). I'd rate the confidence as \"high\" because we have an explicit mention in the resolution leading to a clear new ward and it being confirmed by our other sources. I will make sure to include the citation in the output to be correct and clear.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng",
+        "line": "3. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Lạc Lâm và xã Ka Đô thành xã mới có tên gọi là xã Ka Đô."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "24943",
+      "ward_name": "Xã Ka Đô"
+    }
+  ]
+}

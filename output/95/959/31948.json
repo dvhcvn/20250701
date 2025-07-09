@@ -1,0 +1,18 @@
+{
+  "address": "Xã Phong Thạnh Đông, Thị xã Giá Rai, Tỉnh Bạc Liêu",
+  "ellapsedInMs": 7415,
+  "estimatedCost": 0.0024422,
+  "thought": "**Address Mapping for Xã Phong Thạnh Đông**\n\nOkay, let's break this down. The user has given me an old address, \"Xã Phong Thạnh Đông, Thị xã Giá Rai, Tỉnh Bạc Liêu\" and wants it mapped to the new administrative units.  I need to figure this out with these resolutions and new ward data.\n\nFirst, I need to understand what this address represents.  I can quickly identify \"Xã Phong Thạnh Đông\" as the old ward and \"Tỉnh Bạc Liêu\" as the old province.\n\nNow, a crucial step: checking for province mergers.  Resolution 60-NQ/TW tells me that \"Tỉnh Bạc Liêu\" merged with \"Tỉnh Cà Mau\" to become... well, \"Tỉnh Cà Mau\".  Got it.  So, we're now dealing with Cà Mau.\n\nNext, I'll focus on the ward.  I need to find \"Xã Phong Thạnh Đông\" within the provided resolutions.  Aha!  Resolution 1655/NQ-UBTVQH15, concerning the rearrangement of administrative units in Cà Mau, mentions it directly in point 59.  This is key!\n\nThe resolution states that the areas of \"phường Láng Tròn, xã Phong Tân and xã Phong Thạnh Đông\" have been formed to a new ward with the name of \"phường Láng Tròn\".  Okay, so \"Phường Láng Tròn\" is the new ward.\n\nLet's verify this against the new ward data.  I'll check if the name and province from the resolution match any entries in the \"New wards\" data.  There's a perfect match:  `{\"ward_code\":\"31951\",\"ward_name\":\"Phường Láng Tròn\",\"province_name\":\"Tỉnh Cà Mau\"}`.  Excellent.\n\nBuilding the JSON output is straightforward now:\n*   `province_name`: \"Tỉnh Cà Mau\"\n*   `ward_name`: \"Phường Láng Tròn\"\n*   `ward_code`: \"31951\"\n*   For the citation, I'll include the resolution header and the relevant line.\n\nTo be sure that my result is correct, I'll take a quick look to see if there is any other related resolution that may affect the result.\n\nGiven that the address is specifically \"Xã Phong Thạnh Đông\", I'll verify if there is any other resolution that mentions \"Xã Phong Thạnh\" (without \"Đông\"). After review the details, it becomes apparent that only Resolution 59 correctly maps the specified old ward.\n\nThis should have a high confidence level because of the direct matching and clear resolution.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1655/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Cà Mau",
+        "line": "59. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Láng Tròn, xã Phong Tân và xã Phong Thạnh Đông thành phường mới có tên gọi là phường Láng Tròn."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Cà Mau",
+      "ward_code": "31951",
+      "ward_name": "Phường Láng Tròn"
+    }
+  ]
+}

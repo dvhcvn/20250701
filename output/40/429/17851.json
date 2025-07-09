@@ -1,0 +1,18 @@
+{
+  "address": "Xã Nghi Quang, Huyện Nghi Lộc, Tỉnh Nghệ An",
+  "ellapsedInMs": 6872,
+  "estimatedCost": 0.0022345999999999998,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm tasked with taking an old Vietnamese address and figuring out its current administrative unit.  The address is specific: it includes Xã Nghi Quang in Huyện Nghi Lộc, which is in Tỉnh Nghệ An.  My goal is to provide a confident and documented mapping to the *new* administrative unit.\n\nFirst, I identified the original components: the *ward* (Xã Nghi Quang), the *district* (Huyện Nghi Lộc, but the instructions specifically state to disregard districts), and the *province* (Tỉnh Nghệ An).\n\nI started with the province, checking the province resolutions (specifically 60-NQ/TW).  Tỉnh Nghệ An is clearly listed as not being subject to any mergers, so I know the province name remains the same.\n\nNext, I delved into the \"Other resolutions.\" I zeroed in on the resolution concerning Nghệ An, particularly 1678/NQ-UBTVQH15, as that seemed the most relevant.  In line 52 of that resolution, my search hit paydirt. It explicitly states that Xã Nghi Quang, along with other wards, is being merged into a *new* ward called **Xã Trung Lộc**.\n\nTo solidify the information, I checked the \"New wards\" data.  And, sure enough, I found a matching entry: `{\"ward_code\":\"17866\",\"ward_name\":\"Xã Trung Lộc\",\"province_name\":\"Tỉnh Nghệ An\"}`.\n\nI now have all the pieces I need. My output will be a JSON structure containing:\n\n*   The province name: \"Tỉnh Nghệ An\" (confirmed from the resolutions).\n*   The new ward name: \"Xã Trung Lộc\" (from the relevant resolution and confirmed in the new ward data).\n*   The ward code: \"17866\" (also from the new ward data).\n*   A \"high\" confidence level because this mapping is a precise, direct association.\n*   A complete citation to back up my claim: resolution 1678/NQ-UBTVQH15, line 52, which explicitly states the merger of Xã Nghi Quang into Xã Trung Lộc.\n\nThe request was for one *or* multiple new wards, but this is a straightforward one-to-one correspondence.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1678/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Nghệ An",
+        "line": "52. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Nghi Long, Nghi Quang, Nghi Thuận và Nghi Xá thành xã mới có tên gọi là xã Trung Lộc."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Nghệ An",
+      "ward_code": "17866",
+      "ward_name": "Xã Trung Lộc"
+    }
+  ]
+}

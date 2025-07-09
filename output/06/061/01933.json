@@ -1,0 +1,28 @@
+{
+  "address": "Xã Đồng Phúc, Huyện Ba Bể, Tỉnh Bắc Kạn",
+  "ellapsedInMs": 8584,
+  "estimatedCost": 0.0032156,
+  "thought": "**Analyzing the Address Transformation: Xã Đồng Phúc, Huyện Ba Bể, Tỉnh Bắc Kạn**\n\nOkay, so I'm tackling this address: \"Xã Đồng Phúc, Huyện Ba Bể, Tỉnh Bắc Kạn.\" My goal is to figure out the corresponding new administrative unit. First, it's clear we're dealing with old data.\n\nI start by recognizing \"Tỉnh Bắc Kạn\". Based on my knowledge, and a quick check of the resolutions (specifically, 60-NQ/TW), I see that Bắc Kạn merged with Thái Nguyên, becoming \"Tỉnh Thái Nguyên\". That narrows things down.\n\nNext, I identify \"Xã Đồng Phúc\" and \"Huyện Ba Bể\". Now, I go searching through relevant resolutions. I come across \"1658/NQ-UBTVQH15,\" but it's about Bắc Ninh, a dead end. However, \"1683/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thái Nguyên\" is much more promising.\n\nThis resolution confirms my hunch.  Line 49 clearly states that the old \"Xã Đồng Phúc\" (previously in Bắc Kạn, now part of Thái Nguyên) was *merged* with Quảng Khê, Hoàng Trĩ, and Bằng Phúc to form a *new* \"Xã Đồng Phúc\".  Crucially, it's in Thái Nguyên, matching what I expected.\n\nAlso, it mentions \"Huyện Ba Bể\". The same resolution, line 45, reveals \"Xã Ba Bể\" has been formed from Cao Thượng, Nam Mẫu and Khang Ninh. It makes me believe that the old address included the old \"Xã Đồng Phúc\" within \"Huyện Ba Bể\".\n\nThen, using the \"New wards\" data, I find a perfect match:  `{\"ward_code\":\"01933\",\"ward_name\":\"Xã Đồng Phúc\",\"province_name\":\"Tỉnh Thái Nguyên\"}`.  Bingo! That confirms the new \"Xã Đồng Phúc\" from resolution 1683/NQ-UBTVQH15. I also see `{\"ward_code\":\"01906\",\"ward_name\":\"Xã Ba Bể\",\"province_name\":\"Tỉnh Thái Nguyên\"}` confirms the creation of \"Xã Ba Bể\".\n\nTherefore, I can confidently conclude that the old \"Xã Đồng Phúc, Huyện Ba Bể, Tỉnh Bắc Kạn\" now corresponds to the new \"Xã Đồng Phúc\" and the new \"Xã Ba Bể\" in \"Tỉnh Thái Nguyên\", as defined by resolution 1683/NQ-UBTVQH15.  The address \"Xã Đồng Phúc, Huyện Ba Bể, Tỉnh Bắc Kạn\" should now map to the new \"Xã Đồng Phúc\" in \"Tỉnh Thái Nguyên\" in resolution 1683/NQ-UBTVQH15, since this new ward was formed from a merge of the old ward, with others.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Bắc Kạn và tỉnh Thái Nguyên, lấy tên là tỉnh Thái Nguyên"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thái Nguyên",
+      "ward_code": "01933",
+      "ward_name": "Xã Đồng Phúc"
+    },
+    {
+      "citation": {
+        "header": "1683/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thái Nguyên",
+        "line": "49. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Quảng Khê, Hoàng Trĩ, Bằng Phúc và Đồng Phúc thành xã mới có tên gọi là xã Đồng Phúc."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thái Nguyên",
+      "ward_code": "01933",
+      "ward_name": "Xã Đồng Phúc"
+    }
+  ]
+}

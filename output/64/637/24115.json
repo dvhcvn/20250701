@@ -1,0 +1,18 @@
+{
+  "address": "Xã Krông Năng, Huyện Krông Pa, Tỉnh Gia Lai",
+  "ellapsedInMs": 7991,
+  "estimatedCost": 0.0029866,
+  "thought": "**Mapping an Old Address to a New Administrative Unit**\n\nOkay, so I've got this old Vietnamese address: \"Xã Krông Năng, Huyện Krông Pa, Tỉnh Gia Lai\".  My task is to figure out the corresponding new administrative unit.  Here's how I'm approaching this:\n\nFirst, I need to break down the old address.  It looks like I have an \"old ward\" (Xã Krông Năng), an \"old district\" (Huyện Krông Pa), and an \"old province\" (Tỉnh Gia Lai).  Easy enough.\n\nNext, I need to check the province resolutions to see if the province itself has been changed.  Looking at resolution 60-NQ/TW, I see that Gia Lai was merged with Bình Định but kept the name \"Gia Lai\". So, that part is simple; the province name remains \"Tỉnh Gia Lai\".\n\nNow, the interesting part.  I've got to dig into the \"Other Resolutions\" to find what happened to \"Xã Krông Năng\". I'm specifically looking for mentions of \"Xã Krông Năng\" within Gia Lai province, the old province.\n\nI see resolution 1660/NQ-UBTVQH15, but that's related to Đắk Lắk province, not Gia Lai. I move on.\n\nThen, finally, I hit resolution 1664/NQ-UBTVQH15, and Bingo! This resolution *is* for Gia Lai province. It states that \"Xã Krông Năng\" (along with Ia Rmok and Ia Dreh) is merged into the new ward called \"Xã Ia Dreh\". I'm confident.\n\nNow to verify this. I need to consult my \"New Wards\" list. I search for \"Xã Ia Dreh\" in Gia Lai province and find a match: `{\"ward_code\":\"24100\",\"ward_name\":\"Xã Ia Dreh\",\"province_name\":\"Tỉnh Gia Lai\"}`. Perfect!\n\nFinally, it's just a matter of constructing the output JSON. The `citation` will be 1664/NQ-UBTVQH15, that directly describes this ward merge. The `confidence` will be \"high\" because this resolution directly states the mapping.  The `province_name` is \"Tỉnh Gia Lai\", the `ward_code` and `ward_name` are extracted from my \"New wards\" lookup. I'm all set!\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai",
+        "line": "83. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Ia Rmok, Krông Năng và Ia Dreh thành xã mới có tên gọi là xã Ia Dreh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "24100",
+      "ward_name": "Xã Ia Dreh"
+    }
+  ]
+}

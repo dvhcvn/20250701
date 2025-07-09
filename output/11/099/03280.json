@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tỏa Tình, Huyện Tuần Giáo, Tỉnh Điện Biên",
+  "ellapsedInMs": 7522,
+  "estimatedCost": 0.0024618,
+  "thought": "**Analysis of Address Transformation: \"Xã Tỏa Tình, Huyện Tuần Giáo, Tỉnh Điện Biên\"**\n\nOkay, so I've been given an old Vietnamese address and I need to map it to the new administrative units, given the provided resolutions and new ward data. Here's my breakdown:\n\nFirst, I identified the components of the old address: \"Xã Tỏa Tình\" (old ward), \"Huyện Tuần Giáo\" (old district, but that's going to be less important in the end), and \"Tỉnh Điện Biên\" (old province).\n\nThe province, \"Tỉnh Điện Biên\", is listed in resolution 60-NQ/TW under \"Các đơn vị hành chính cấp tỉnh không thực hiện sáp nhập,\" meaning it remains unchanged.\n\nThen, I looked at the most relevant resolution: 1661/NQ-UBTVQH15 concerning Điện Biên.  I scanned the resolution and saw line 22 was key. This line explicitly states that \"Xã Tỏa Tình\" is part of the merger to form a new ward called \"Xã Quài Tở\" along with Tênh Phông and Quài Tở.\n\nNext, I cross-referenced this new ward information with the \"New wards\" data, confirming that \"Xã Quài Tở\" is indeed a valid new ward and matching the province.  I found the code and name: `{\"ward_code\":\"03295\",\"ward_name\":\"Xã Quài Tở\",\"province_name\":\"Tỉnh Điện Biên\"}`.\n\nGiven the direct correspondence and clear mapping outlined in the resolution, I can confidently construct the JSON output:\n\nMy `citation` will be the resolution header and line 22. The `confidence` is \"high\" due to the explicit mention of \"Xã Tỏa Tình\" being merged into \"Xã Quài Tở\". The final output will be: \"province_name\": \"Tỉnh Điện Biên\", \"ward_code\": \"03295\", and \"ward_name\": \"Xã Quài Tở\".\n\nAnd finally, since this is a one-to-one mapping – \"Xã Tỏa Tình\" becoming a part of \"Xã Quài Tở\" – I know I've found all the possible candidates. This should be a straightforward and accurate mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1661/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Điện Biên",
+        "line": "22. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tỏa Tình, Tênh Phông và Quài Tở thành xã mới có tên gọi là xã Quài Tở."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Điện Biên",
+      "ward_code": "03295",
+      "ward_name": "Xã Quài Tở"
+    }
+  ]
+}

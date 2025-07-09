@@ -1,0 +1,18 @@
+{
+  "address": "Xã Khánh An, Huyện Yên Khánh, Tỉnh Ninh Bình",
+  "ellapsedInMs": 7464,
+  "estimatedCost": 0.0027522,
+  "thought": "**Finding the New Administrative Unit for Xã Khánh An**\n\nOkay, so I've got \"Xã Khánh An, Huyện Yên Khánh, Tỉnh Ninh Bình\".  My first step is always to break it down.  I've got the old ward (\"Xã Khánh An\"), the old district (\"Huyện Yên Khánh\" - although the prompt says we're eliminating districts, this is still useful context), and the old province (\"Tỉnh Ninh Bình\").  I need to find the *new* ward.\n\nFirst, I checked the province resolutions (specifically 60-NQ/TW).  Ninh Bình remains Ninh Bình, just merged with Hà Nam and Nam Định. That's good to confirm.  Now I need to delve into the other resolutions. I'm looking for \"Xã Khánh An\" within the context of \"Tỉnh Ninh Bình.\"\n\nBingo! Resolution 1674/NQ-UBTVQH15 is relevant.  I'm scanning for \"Khánh An\" and I quickly find it in line 125:  \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Ninh Phúc và các xã Khánh Hòa, Khánh Phú, Khánh An thành phường mới có tên gọi là **phường Đông Hoa Lư**.\"  Excellent, \"Xã Khánh An\" is absorbed into the new \"phường Đông Hoa Lư\".\n\nNext, I cross-reference this with the \"New wards\" data. I'm looking for \"phường Đông Hoa Lư\".  And there it is:  `{\"ward_code\":\"14566\",\"ward_name\":\"Phường Đông Hoa Lư\",\"province_name\":\"Tỉnh Ninh Bình\"}`. Perfect match!\n\nSo, the old \"Xã Khánh An\" from \"Tỉnh Ninh Bình\" is explicitly mentioned in resolution 1674/NQ-UBTVQH15 as being part of the merger to form the new \"phường Đông Hoa Lư\".  \"Phường Đông Hoa Lư\" exists in the \"New wards\" list, confirming the change. I'm feeling very confident about this one.  I've got a direct link and a clear mapping.  I double-checked for any other mentions of \"Xã Khánh An\" in the resolutions for Ninh Bình, and there were none that conflicted. The other \"Xã Khánh An\" entries are for other provinces, so those are irrelevant.  I'm ready to provide the answer.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "125. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Ninh Phúc và các xã Khánh Hòa, Khánh Phú, Khánh An thành phường mới có tên gọi là **phường Đông Hoa Lư**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "14566",
+      "ward_name": "Phường Đông Hoa Lư"
+    }
+  ]
+}

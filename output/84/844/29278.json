@@ -1,0 +1,18 @@
+{
+  "address": "Xã Huyền Hội, Huyện Càng Long, Tỉnh Trà Vinh",
+  "ellapsedInMs": 6847,
+  "estimatedCost": 0.00232,
+  "thought": "**Address Mapping Analysis: Huyền Hội, Càng Long, Trà Vinh**\n\nOkay, so I'm tasked with figuring out the new administrative unit for the old address \"Xã Huyền Hội, Huyện Càng Long, Tỉnh Trà Vinh\".  It's pretty straightforward, following these steps.\n\nFirst, I identify the components: \"Xã Huyền Hội\" is the old ward, and \"Tỉnh Trà Vinh\" is the old province.\n\nNext, I need to check for any province mergers. Given my knowledge, I immediately think of the resolutions related to administrative boundary changes.  I pull up the province resolutions and search for \"Tỉnh Trà Vinh\". Bingo! Resolution 60-NQ/TW states that Trà Vinh merged with Bến Tre and Vĩnh Long to form Vĩnh Long. So, my `province_name` in the output will definitely be \"Tỉnh Vĩnh Long.\" That's a solid start.\n\nNow, on to the wards. I have to delve into the \"Other resolutions\" focusing on ward reorganizations.  I specifically look for \"Xã Huyền Hội.\"  I quickly find Resolution 1687/NQ-UBTVQH15, a key document for Vĩnh Long's ward changes.  Line 31 in that resolution is gold: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Huyền Hội và xã Tân An thành xã mới có tên gọi là **xã Tân An**.\"  This clearly states the merger of \"Xã Huyền Hội\" into \"Xã Tân An\". This seems promising, but I always verify.\n\nI then check my \"New wards\" list for \"Xã Tân An\".  And there it is: `{\"ward_code\":\"29278\",\"ward_name\":\"Xã Tân An\",\"province_name\":\"Tỉnh Vĩnh Long\"}`.  It matches perfectly!\n\nGiven all this, the confidence level must be high. The province merger is definitive, and the ward merger is explicit in the resolution.  The new ward information also lines up perfectly.\n\nTherefore, the output should be a JSON structure with the following details: I'll cite the relevant resolution and line. The province will be Vĩnh Long. And the key will be that \"Xã Huyền Hội\" maps now to the new ward, \"Xã Tân An\", with ward code 29278, within the province of Vĩnh Long. The confidence level is high because both province and ward mappings are unequivocally documented.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long",
+        "line": "31. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Huyền Hội và xã Tân An thành xã mới có tên gọi là xã Tân An."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "29278",
+      "ward_name": "Xã Tân An"
+    }
+  ]
+}

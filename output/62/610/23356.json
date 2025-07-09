@@ -1,0 +1,18 @@
+{
+  "address": "Xã Đắk Choong, Huyện Đắk Glei, Tỉnh Kon Tum",
+  "ellapsedInMs": 6949,
+  "estimatedCost": 0.0026434,
+  "thought": "**Mapping an Old Vietnamese Address to New Administrative Units**\n\nOkay, so I've got this old Vietnamese address to map: \"Tỉnh Kon Tum, Xã Đắk Choong\".  My task is to figure out the corresponding new administrative unit based on the provided data.  Here's my thought process:\n\nFirst, I identified the old province and ward:  \"Tỉnh Kon Tum\" and \"Xã Đắk Choong\" respectively. Easy enough.\n\nNext, I jumped into the province resolutions. I found that \"Tỉnh Kon Tum\" was involved in a merge, and is now part of \"Tỉnh Quảng Ngãi\" based on Resolution 60-NQ/TW.  Okay, that's the new province, check.\n\nNow, on to Resolution 1677/NQ-UBTVQH15.  This one deals specifically with \"Tỉnh Quảng Ngãi\", which matches the new province from the previous step. Excellent.  I meticulously combed through this resolution, specifically looking for \"Xã Đắk Choong\".  And there it was! Line 67 explicitly states that \"Xã Đắk Choong\" and \"Xã Xốp\" were merged to form a new ward, called \"Xã Xốp\".  Line 92 confirmed this by stating that Đắk Choong was not among the wards which did not change.\n\nSo, from Resolution 1677, \"Xã Xốp\" seems to be the new ward.  But I need to be absolutely sure.  I cross-referenced this against the \"New Wards\" data. And bingo!  I found \"Xã Xốp\" in the list with a matching province name and code: `{\"ward_code\":\"23356\",\"ward_name\":\"Xã Xốp\",\"province_name\":\"Tỉnh Quảng Ngãi\"}`.  That solidifies it.\n\nTherefore, my final output will be a JSON object with:\n\n*   `province_name`: \"Tỉnh Quảng Ngãi\"\n*   `ward_name`: \"Xã Xốp\"\n*   `ward_code`: \"23356\"\n*   `citation`:  A clear reference to Resolution 1677/NQ-UBTVQH15, specifically line 67.\n*   `confidence`: \"high\" - because the mapping is direct, explicit and confirmed. I'm satisfied.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1677/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ngãi",
+        "line": "67. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Đăk Choong và xã Xốp thành xã mới có tên gọi là xã Xốp."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ngãi",
+      "ward_code": "23356",
+      "ward_name": "Xã Xốp"
+    }
+  ]
+}

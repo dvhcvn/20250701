@@ -1,0 +1,18 @@
+{
+  "address": "Xã Hàm Ninh, Thành phố Phú Quốc, Tỉnh Kiên Giang",
+  "ellapsedInMs": 7183,
+  "estimatedCost": 0.0023619,
+  "thought": "**Determining the New Administrative Unit for \"Xã Hàm Ninh\"**\n\nOkay, so I'm presented with an old address that needs to be updated.  It's \"Xã Hàm Ninh\" in \"Thành phố Phú Quốc,\" part of \"Tỉnh Kiên Giang.\"  First, I break it down: \"Xã Hàm Ninh\" is the ward, \"Thành phố Phú Quốc\" is the district (though its role here is a bit unclear, given the resolutions), and \"Tỉnh Kiên Giang\" is the province. My task is to figure out the new province and ward.\n\nMy initial thought is to tackle the province first.  I check the provincial resolutions (60-NQ/TW) and immediately find \"Tỉnh Kiên Giang.\"  The resolution states that Kiên Giang merges with An Giang to form \"Tỉnh An Giang.\"  That's straightforward enough - the new province is An Giang.\n\nNext, I delve into the other resolutions, focusing on \"Xã Hàm Ninh\" and \"Thành phố Phú Quốc.\" Bingo! Resolution 1654/NQ-UBTVQH15 catches my eye.  Line 95 specifically mentions \"Xã Hàm Ninh\" being incorporated into a new \"đặc khu Phú Quốc.\"  This is where it gets a bit tricky; \"Thành phố Phú Quốc\" was the old district, but now \"đặc khu Phú Quốc\" seems to be a ward-level entity.  The resolution is crystal clear, though: \"Xã Hàm Ninh\" is part of the new \"đặc khu Phú Quốc.\"\n\nNow, I cross-reference this with the provided list of `new_wards`.  I'm looking for \"đặc khu Phú Quốc\" and, thankfully, it's there!  The entry `{\"ward_code\":\"31078\",\"ward_name\":\"Đặc khu Phú Quốc\",\"province_name\":\"Tỉnh An Giang\"}` confirms that this aligns perfectly with my previous findings, especially the fact that the province is now \"Tỉnh An Giang\".\n\nPutting it all together:  \"Xã Hàm Ninh\" is absorbed into the \"đặc khu Phú Quốc,\" which has the code \"31078,\" and the province is now \"Tỉnh An Giang.\" The direct reference in the resolution and the matching entry in the `new_wards` list give me a high degree of confidence in this answer.  It's a textbook case of finding the right administrative reorganization.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1654/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh An Giang",
+        "line": "95. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Dương Đông, phường An Thới và các xã Dương Tơ, Hàm Ninh, Cửa Dương, Bãi Thơm, Gành Dầu, Cửa Cạn thành đặc khu có tên gọi là đặc khu Phú Quốc."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh An Giang",
+      "ward_code": "31078",
+      "ward_name": "Đặc khu Phú Quốc"
+    }
+  ]
+}

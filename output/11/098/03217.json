@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Tủa Chùa, Huyện Tủa Chùa, Tỉnh Điện Biên",
+  "ellapsedInMs": 5169,
+  "estimatedCost": 0.0017703,
+  "thought": "**Address Mapping Logic for Administrative Unit Changes**\n\nOkay, so I'm being asked to figure out the new administrative unit for an old address. My primary focus is on mapping \"Thị trấn Tủa Chùa\" (old ward) to its current equivalent. First, I need to establish the old province; it's \"Tỉnh Điện Biên.\" I check for any province mergers, but resolution 60-NQ/TW tells me Điện Biên remains as is.\n\nNext, I look for \"Thị trấn Tủa Chùa\" in the provided resolutions. Resolution 1661/NQ-UBTVQH15 catches my eye. It explicitly states, in section 16, that \"thị trấn Tủa Chùa\" is merging with Mường Báng and Nà Tòng to form \"Xã Tủa Chùa.\" Bingo!\n\nNow, I cross-reference this with the \"New wards\" data, and there it is: \"Xã Tủa Chùa\" (with the code 03217) under \"Tỉnh Điện Biên.\" Perfect match.\n\nTherefore, the JSON output is straightforward:\n\n*   `citation`:  Resolution 1661/NQ-UBTVQH15, specifically section 16, provides the authority for this mapping.\n*   `confidence`: High, given the explicit nature of the merger mentioned in the resolution.\n*   `province_name`: \"Tỉnh Điện Biên\" (as confirmed by the province-level resolution and the new ward data).\n*   `ward_code`: \"03217\"\n*   `ward_name`: \"Xã Tủa Chùa\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1661/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Điện Biên",
+        "line": "16. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Tủa Chùa, xã Mường Báng và xã Nà Tòng thành xã mới có tên gọi là xã Tủa Chùa."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Điện Biên",
+      "ward_code": "03217",
+      "ward_name": "Xã Tủa Chùa"
+    }
+  ]
+}

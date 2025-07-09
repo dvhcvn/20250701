@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Ninh Cường, Huyện Trực Ninh, Tỉnh Nam Định",
+  "ellapsedInMs": 8799,
+  "estimatedCost": 0.0028003,
+  "thought": "**Analyzing and Mapping the Old Address to the New Administrative Unit**\n\nOkay, so I've been tasked with identifying the new administrative unit for the old address \"Thị trấn Ninh Cường, Huyện Trực Ninh, Tỉnh Nam Định\".  My initial step is to break down the address into its components. I need the ward (\"Thị trấn Ninh Cường\"), district (\"Huyện Trực Ninh\", which is less critical), and province (\"Tỉnh Nam Định\").\n\nNow, the game plan. First, I have to consider province changes as they are often prerequisites for ward modifications.\n\nI'll start with the province changes indicated in the resolutions like \"60-NQ/TW\". I checked if \"Tỉnh Nam Định\" was in the \"not merged\" or \"merged\" lists. And it turns out Nam Định is in a merge, specifically merging with Hà Nam and Ninh Bình to form Ninh Bình. That's a strong, high-confidence change.\n\nNext, I'll dive into the resolutions, focusing on any that might mention \"Thị trấn Ninh Cường\". Resolution \"1674/NQ-UBTVQH15\" is relevant since we are now dealing with Ninh Bình.  In this resolution, I found that \"Thị trấn Ninh Cường\" is being merged with other units to form a new \"Xã Ninh Cường\". Bingo! That's a high-confidence match.\n\nI'll check the list of new wards, and indeed, I locate \"Xã Ninh Cường\" listed under \"Tỉnh Ninh Bình\".  I've got the ward code (\"14077\") from this list.\n\nHere's my logic for the output: The province changed because of a merger, which is documented in resolution \"60-NQ/TW\". That province change set the stage. The ward name changed because of resolution \"1674/NQ-UBTVQH15\", this resolution stated that the specific components of my old ward are now a new ward, and that provides my final answer.  I can confidently say the new ward is \"Xã Ninh Cường\".\n\nThus, my proposed output will be:\n\n```json\n[\n  {\n    \"ward_name\": \"Xã Ninh Cường\",\n    \"ward_code\": \"14077\",\n    \"province_name\": \"Tỉnh Ninh Bình\",\n    \"confidence\": \"high\",\n    \"citation\": {\n      \"header\": \"1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình; 60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất\",\n      \"line\": \"40. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Ninh Cường, xã Trực Cường và xã Trực Hùng thành xã mới có tên gọi là xã Ninh Cường. Hợp nhất tỉnh Hà Nam, tỉnh Ninh Bình và tỉnh Nam Định; lấy tên là tỉnh Ninh Bình\"\n    }\n  }\n]\n```\n\nWhere the citation is combined because both resolutions contribute to this single result.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "40. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Ninh Cường, xã Trực Cường và xã Trực Hùng thành xã mới có tên gọi là xã Ninh Cường."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "14077",
+      "ward_name": "Xã Ninh Cường"
+    }
+  ]
+}

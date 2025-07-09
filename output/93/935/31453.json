@@ -1,0 +1,28 @@
+{
+  "address": "Xã Vĩnh Thuận Tây, Huyện Vị Thuỷ, Tỉnh Hậu Giang",
+  "ellapsedInMs": 8773,
+  "estimatedCost": 0.0035558,
+  "thought": "**Analysis of Administrative Unit Mapping**\n\nOkay, let's break this down. My goal is to map the old address \"Xã Vĩnh Thuận Tây, Huyện Vị Thuỷ, Tỉnh Hậu Giang\" to the new administrative structure, leveraging provided resolutions and data. First, I identify \"Tỉnh Hậu Giang\" (Hậu Giang Province). The province resolution (60-NQ/TW) states that Hậu Giang was merged into \"Thành phố Cần Thơ\" (Cần Thơ City). This clarifies the new province.\n\nNext, I focus on the ward: \"Xã Vĩnh Thuận Tây\". The key resolution is \"1668/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Cần Thơ\".  Line 46 is crucial: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Vĩnh Thuận Tây, Vị Thủy và Vĩnh Thuận Đông thành xã mới có tên gọi là **xã Vĩnh Thuận Đông**.\"  This clearly indicates the old ward is now part of the new \"Xã Vĩnh Thuận Đông\".\n\nChecking the \"New wards\" data for \"Xã Vĩnh Thuận Đông\" within \"Thành phố Cần Thơ\" confirms the match:  `{\"ward_code\":\"31453\",\"ward_name\":\"Xã Vĩnh Thuận Đông\",\"province_name\":\"Thành phố Cần Thơ\"}`.\n\nTherefore, the output structure is straightforward:\n\n*   `province_name`: \"Thành phố Cần Thơ\" (province merge)\n*   `ward_name`: \"Xã Vĩnh Thuận Đông\" (from resolution 1668/NQ-UBTVQH15)\n*   `ward_code`: \"31453\" (from \"new wards\" data)\n*   `citation`:\n    *   `header`: \"1668/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Cần Thơ\"\n    *   `line`: \"46. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Vĩnh Thuận Tây, Vị Thủy và Vĩnh Thuận Đông thành xã mới có tên gọi là **xã Vĩnh Thuận Đông**.\"\n*   `confidence`: \"high\" (direct match and clear resolution)\n\nThe provided data also contains information about \"Xã Vị Thủy\", specifically in the same resolution. However the prompt states to eliminate the districts, meaning the \"Huyện Vị Thuỷ\" district is irrevelant. The address is only \"Xã Vĩnh Thuận Tây\".  Line 46 makes it clear, we are mapping \"Xã Vĩnh Thuận Tây\" to \"Xã Vĩnh Thuận Đông\". There's no ambiguity, the connection is direct and strong. Therefore, this is the correct mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "19. Hợp nhất thành phố cần Thơ, tỉnh Sóc Trăng và tỉnh Hậu Giang; lấy tên là thành phố Cần Thơ"
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Cần Thơ",
+      "ward_code": "31453",
+      "ward_name": "Xã Vĩnh Thuận Đông"
+    },
+    {
+      "citation": {
+        "header": "1668/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Cần Thơ",
+        "line": "46. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Vĩnh Thuận Tây, Vị Thủy và Vĩnh Thuận Đông thành xã mới có tên gọi là xã Vĩnh Thuận Đông."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Cần Thơ",
+      "ward_code": "31453",
+      "ward_name": "Xã Vĩnh Thuận Đông"
+    }
+  ]
+}

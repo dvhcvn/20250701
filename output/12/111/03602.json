@@ -1,0 +1,18 @@
+{
+  "address": "Xã Phúc Khoa, Huyện Tân Uyên, Tỉnh Lai Châu",
+  "ellapsedInMs": 7121,
+  "estimatedCost": 0.002648,
+  "thought": "**Address Mapping for Phúc Khoa, Tân Uyên, Lai Châu**\n\nOkay, let's break this down. The user's given me an address: \"Xã Phúc Khoa, Huyện Tân Uyên, Tỉnh Lai Châu.\" First, I need to isolate the components: the old ward is \"Xã Phúc Khoa,\" the old district is \"Huyện Tân Uyên\" (though that's mostly context since the prompt's about eliminating districts), and the province is \"Tỉnh Lai Châu.\"\n\nNow, I'll check Resolution 60-NQ/TW to see if Lai Châu was merged. Thankfully, it's not – \"Tỉnh Lai Châu\" is explicitly listed as a province that *was not* merged. So, the province name remains \"Tỉnh Lai Châu.\"\n\nNext, I'll dive into \"Other resolutions.\" I'm looking for mentions of \"Xã Phúc Khoa\" or \"Tỉnh Lai Châu.\" Bingo! Resolution \"1670/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lai Châu\" has what I need. Line 8 is the key: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Phúc Khoa và xã Mường Khoa thành xã mới có tên gọi là **xã Mường Khoa**.\" Perfect, \"Xã Phúc Khoa\" is merging with \"Xã Mường Khoa\" to form the new ward \"Xã Mường Khoa.\"\n\nNow, I look up the new ward in the \"New wards\" list.  I'm searching for \"Xã Mường Khoa\" and \"Tỉnh Lai Châu\".  There it is:  `{\"ward_code\":\"03601\",\"ward_name\":\"Xã Mường Khoa\",\"province_name\":\"Tỉnh Lai Châu\"}`.  It's a perfect match!\n\nFinally, the JSON output is straightforward:\n\n*   `province_name`: \"Tỉnh Lai Châu\"\n*   `ward_name`: \"Xã Mường Khoa\"\n*   `ward_code`: \"03601\"\n*   `citation`: \"1670/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lai Châu\" (Line 8: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Phúc Khoa và xã Mường Khoa thành xã mới có tên gọi là **xã Mường Khoa**.\")\n*   `confidence`: \"high\" - everything lines up precisely. The resolution clearly outlines the merger and new ward name, and the new ward data is present with the correct province. I'm confident in this mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1670/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lai Châu",
+        "line": "8. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Phúc Khoa và xã Mường Khoa thành xã mới có tên gọi là xã Mường Khoa."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lai Châu",
+      "ward_code": "03601",
+      "ward_name": "Xã Mường Khoa"
+    }
+  ]
+}

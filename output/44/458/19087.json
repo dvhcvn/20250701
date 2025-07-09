@@ -1,0 +1,28 @@
+{
+  "address": "Xã Quảng Hải, Thị xã Ba Đồn, Tỉnh Quảng Bình",
+  "ellapsedInMs": 8731,
+  "estimatedCost": 0.0034286,
+  "thought": "**Analysis of Address Restructuring for Xã Quảng Hải**\n\nAlright, let's break this down. The user provided an old address: \"Xã Quảng Hải, Thị xã Ba Đồn, Tỉnh Quảng Bình.\" My task is to identify the new administrative unit(s) based on the provided resolutions and new ward data.\n\nFirst things first, I segmented the old address: \"Xã Quảng Hải\" (ward) and \"Tỉnh Quảng Bình\" (province).  Now, the hunt begins through the resolutions.\n\nThe initial resolution, 60-NQ/TW, regarding province restructuring, immediately caught my attention. It states that \"Tỉnh Quảng Bình\" merges with \"Tỉnh Quảng Trị\" to become just \"Tỉnh Quảng Trị.\" Okay, a province-level change to keep in mind.\n\nI then skimmed the other resolutions.  1677/NQ-UBTVQH15 focused on Quảng Ngãi, which I quickly ruled out.  However, 1680/NQ-UBTVQH15, concerning Quảng Trị, got my attention, given the province merger.  Within this resolution, line 72 specifically mentioned \"Xã Quảng Hải.\" Eureka! It stated that \"Xã Quảng Hải\" would be merged into a new \"phường Ba Đồn,\" effectively becoming a part of it. The new province is \"Tỉnh Quảng Trị.\"\n\nI also scanned the new ward data. One entry, {\"ward_code\":\"19009\",\"ward_name\":\"Phường Ba Đồn\",\"province_name\":\"Tỉnh Quảng Trị\"}, jumped out. It aligns perfectly with the findings from resolution 1680/NQ-UBTVQH15. The \"Phường Ba Đồn\" is the new ward. The associated province is also consistent - \"Tỉnh Quảng Trị\". This data point, combined with the resolution's explicit mention, provides high confidence.\n\nThe other new ward data entries like {\"ward_code\":\"19075\",\"ward_name\":\"Xã Nam Ba Đồn\",\"province_name\":\"Tỉnh Quảng Trị\"} were easily dismissed.  \"Xã Nam Ba Đồn\" does not include \"Xã Quảng Hải,\" as the resolution details different communes forming this unit.  Similarly, the other data points are in the wrong province.\n\n**Final Answer:** My analysis leads me to conclude that \"Xã Quảng Hải\" will be part of the new \"Phường Ba Đồn\" within \"Tỉnh Quảng Trị.\"  The relevant data to use is {\"ward_code\":\"19009\",\"ward_name\":\"Phường Ba Đồn\",\"province_name\":\"Tỉnh Quảng Trị\"}.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Quảng Bình và tỉnh Quảng Trị, lấy tên là tỉnh Quảng Trị"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Trị",
+      "ward_code": "19009",
+      "ward_name": "Phường Ba Đồn"
+    },
+    {
+      "citation": {
+        "header": "1680/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Trị",
+        "line": "72. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Quảng Phong, Quảng Long, Ba Đồn và xã Quảng Hải thành phường mới có tên gọi là phường Ba Đồn."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Trị",
+      "ward_code": "19009",
+      "ward_name": "Phường Ba Đồn"
+    }
+  ]
+}

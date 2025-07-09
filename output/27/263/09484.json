@@ -1,0 +1,18 @@
+{
+  "address": "Xã Xuân Lai, Huyện Gia Bình, Tỉnh Bắc Ninh",
+  "ellapsedInMs": 8602,
+  "estimatedCost": 0.0032976,
+  "thought": "**My Analysis of the Address Change**\n\nOkay, so I'm tasked with figuring out the new administrative unit for \"Xã Xuân Lai, Huyện Gia Bình, Tỉnh Bắc Ninh.\"  My initial approach is straightforward: I need to consult the relevant resolutions and the list of new wards.  Here's how I'm thinking through it:\n\n1.  **Province Identification:** First things first, the province is Bắc Ninh.  That's my starting point.\n\n2.  **Province-Level Resolutions:** I checked for any province-level changes.  The resolution about mergers and consolidations doesn't impact Bắc Ninh directly. It does, however, say that Bắc Ninh absorbed Bắc Giang, which is important for the final output.  So, Bắc Ninh remains Bắc Ninh.\n\n3.  **Ward-Level Search within Bắc Ninh:** Now, I zero in on resolutions affecting Bắc Ninh and look for \"Xã Xuân Lai\" or \"Huyện Gia Bình\".  I found \"1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh.\"  Bingo!  This is the key.  Reading through it, I see:  \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Gia Bình và các xã Xuân Lai, Quỳnh Phú, Đại Bái thành xã mới có tên gọi là **xã Gia Bình**.\"  This is a direct hit!  \"Xã Xuân Lai\" is explicitly mentioned as merging into the new \"Xã Gia Bình.\"\n\n4.  **Confirming the New Ward:** Next, I cross-reference this with the \"New wards\" list.  I'm looking for \"Xã Gia Bình\" within Bắc Ninh.  And there it is:  `{\"ward_code\":\"09454\",\"ward_name\":\"Xã Gia Bình\",\"province_name\":\"Tỉnh Bắc Ninh\"}`.  Perfect match!\n\n5.  **Output Construction:** Now, I'm ready to build the JSON output.  Based on the resolution, I'm highly confident in this result.  I'll use the relevant section from the resolution as the `citation`. The `confidence` is high. The `province_name` will be \"Tỉnh Bắc Ninh.\"  The `ward_code` is \"09454,\" and the `ward_name` is \"Xã Gia Bình.\"\n\nBefore finalizing, I double-check to ensure no other ambiguous wards with the same name.\n\n**Verification Check:**\nI took some time to be thorough, so I reviewed other documents just in case of any duplicate names. It turns out that there are other \"Xuân Lai\" and \"Gia Bình\" in other provinces, but none of them are relevant. I am certain that resolution `1658/NQ-UBTVQH15` is the correct answer for the old address.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh",
+        "line": "13. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Gia Bình và các xã Xuân Lai, Quỳnh Phú, Đại Bái thành xã mới có tên gọi là xã Gia Bình."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "09454",
+      "ward_name": "Xã Gia Bình"
+    }
+  ]
+}

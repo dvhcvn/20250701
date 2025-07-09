@@ -1,0 +1,18 @@
+{
+  "address": "Xã An Viễn, Huyện Trảng Bom, Tỉnh Đồng Nai",
+  "ellapsedInMs": 7343,
+  "estimatedCost": 0.0029050000000000005,
+  "thought": "**Analysis of Administrative Unit Changes for \"Xã An Viễn\"**\n\nOkay, let's break this down. The user provided an old address: \"Xã An Viễn, Huyện Trảng Bom, Tỉnh Đồng Nai\". My task is to find the corresponding new ward. Given the prompt about eliminating districts, I'll focus on ward and province changes.\n\nFirst, I identified the components: Old ward: \"Xã An Viễn\", old province: \"Tỉnh Đồng Nai\", and old district: \"Huyện Trảng Bom\". Province-level restructuring is the primary concern here.\n\nI then consulted the Province Resolutions (60-NQ/TW). Finding \"Tỉnh Đồng Nai\" revealed that Đồng Nai merged with Bình Phước, but the name itself remained. Not a crucial change for this particular address.\n\nNext, I looked at other resolutions specific to \"Tỉnh Đồng Nai\". \"1662/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Nai\" caught my eye.  Reading through it, I honed in on line 9. It explicitly states, \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Đồi 61 và xã An Viễn thành xã mới có tên gọi là **xã An Viễn**.\" This is key! It clearly merges \"Xã An Viễn\" with \"Xã Đồi 61\" to form a *new* \"Xã An Viễn\".  This means the name is the same, but the administrative composition is different.\n\nTo confirm this, I checked the `New Wards` data. Searching for \"Xã An Viễn\" within \"Tỉnh Đồng Nai\" yielded `{\"ward_code\":\"26296\",\"ward_name\":\"Xã An Viễn\",\"province_name\":\"Tỉnh Đồng Nai\"}`. This perfectly matches the resolution's findings.\n\nBased on this analysis, my confidence is very high. The resolution directly addresses \"Xã An Viễn\" and explicitly defines its merging process.  The new ward data aligns perfectly with the resolution's information.  I'll construct the JSON output:\n\n*   `citation.header`: \"1662/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Nai\"\n*   `citation.line`: \"9. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Đồi 61 và xã An Viễn thành xã mới có tên gọi là **xã An Viễn**.\"\n*   `confidence`: \"high\"\n*   `province_name`: \"Tỉnh Đồng Nai\"\n*   `ward_code`: \"26296\"\n*   `ward_name`: \"Xã An Viễn\"\n\nThis should accurately represent the new administrative unit for the old address \"Xã An Viễn, Huyện Trảng Bom, Tỉnh Đồng Nai\".\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1662/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Nai",
+        "line": "9. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Đồi 61 và xã An Viễn thành xã mới có tên gọi là xã An Viễn."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đồng Nai",
+      "ward_code": "26296",
+      "ward_name": "Xã An Viễn"
+    }
+  ]
+}

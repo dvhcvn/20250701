@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tà Xùa, Huyện Bắc Yên, Tỉnh Sơn La",
+  "ellapsedInMs": 7660,
+  "estimatedCost": 0.0021584,
+  "thought": "**Determining the New Ward for an Old Address: A High-Confidence Match**\n\nOkay, so I'm presented with an old address, \"Xã Tà Xùa, Tỉnh Sơn La,\" and need to find its new administrative unit, likely a ward. Here's how I'm approaching this, keeping my deep understanding of administrative changes in mind:\n\nFirst, I need to pinpoint the province and ward from the old address. That's straightforward: \"Tỉnh Sơn La\" and \"Xã Tà Xùa\".  My initial instinct is to verify if \"Tỉnh Sơn La\" underwent any changes. Consulting the relevant provincial resolutions (specifically, 60-NQ/TW), it's immediately clear that \"Tỉnh Sơn La\" is *not* slated for merging or renaming. This is a crucial piece of information.\n\nNext, I'll need to focus on ward-level changes within \"Sơn La.\" Scanning the resolutions, I've identified \"1681/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Sơn La\" as the relevant document. The key is in the details of the restructuring.  I need to meticulously examine the lines of this resolution looking for \"Xã Tà Xùa\". Ah, here we are: Line 26 specifically mentions, and I quote, \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Làng Chếu, Háng Đồng và Tà Xùa thành xã mới có tên gọi là **xã Tà Xùa**.\" This signals a merger, but crucially, the *name* \"Xã Tà Xùa\" remains unchanged, even as its boundaries and constituent population are restructured. This is important: it's not a renaming, it's a *recomposition*.\n\nNow, the \"New wards\" data come into play.  I need to find a match that confirms what I've just deduced. I'll filter for records with \"Tỉnh Sơn La\" as the province and \"Xã Tà Xùa\" as the ward. Bingo! I have a direct match:  `{\"ward_code\":\"03868\",\"ward_name\":\"Xã Tà Xùa\",\"province_name\":\"Tỉnh Sơn La\"}`.\n\nMy confidence in this match is remarkably high. We're directly dealing with a resolution that specifically addresses \"Xã Tà Xùa,\" and the province name remains constant. The resolution line from \"1681/NQ-UBTVQH15\" is my definitive source. The merger is clear, the name is constant, the data is congruent. Therefore, my output JSON should reflect this:\n\n*   `citation`: The header of the resolution and the specific line (Line 26).\n*   `confidence`: \"high\"\n*   `province_name`: \"Tỉnh Sơn La\" (pulled directly from the new ward data)\n*   `ward_code`: \"03868\" (from the new ward data)\n*   `ward_name`: \"Xã Tà Xùa\" (from the new ward data).\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1681/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Sơn La",
+        "line": "26. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Làng Chếu, Háng Đồng và Tà Xùa thành xã mới có tên gọi là xã Tà Xùa."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Sơn La",
+      "ward_code": "03868",
+      "ward_name": "Xã Tà Xùa"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "address": "Xã Lao Chải, Huyện Mù Căng Chải, Tỉnh Yên Bái",
+  "ellapsedInMs": 9125,
+  "estimatedCost": 0.003603,
+  "thought": "**Address Mapping for Old Vietnamese Administrative Units**\n\nOkay, so I'm tasked with figuring out the new administrative unit for an old address. Let's break this down systematically. The user has given me \"Tỉnh Yên Bái\" and \"Xã Lao Chải\" as the original province and ward, respectively.\n\nFirst things first: I need to check those province resolutions, specifically the ones regarding merges. Aha, \"Tỉnh Yên Bái\" is in that merge list! It was merged with \"Tỉnh Lào Cai.\" So, the original address's province is now \"Tỉnh Lào Cai.\"\n\nNow, for the ward, \"Xã Lao Chải\". I have to cross-reference resolutions with this new province. Resolution 1673/NQ-UBTVQH15 (Lào Cai) and 1684/NQ-UBTVQH15 (Tuyên Quang) are what are provided to me. I need to make sure I am focusing on the one referencing \"Lào Cai.\"\n\nLooking at 1673/NQ-UBTVQH15 (Lào Cai), line 92 is crucial. It explicitly states that \"Lao Chải\" is *not* rearranged. Perfect! It's still the \"Xã Lao Chải\" from the past.\n\nThe new ward list is my next check. I need to see if there is a match for \"Xã Lao Chải\" with \"Tỉnh Lào Cai\" as the province. Bingo! {\"ward_code\":\"04474\",\"ward_name\":\"Xã Lao Chải\",\"province_name\":\"Tỉnh Lào Cai\"} - This is exactly what I was looking for.\n\nNow, a bit of confidence validation. The original address includes \"Huyện Mù Căng Chải\" (Mù Căng Chải District) which I know is in \"Tỉnh Yên Bái.\" Because \"Tỉnh Yên Bái\" has merged into \"Tỉnh Lào Cai,\" and resolution 1673/NQ-UBTVQH15 states \"Lao Chải\" (in Lào Cai) was *not* rearranged, this means that the \"Xã Lao Chải\" from \"Huyện Mù Căng Chải\" (Yên Bái) is now the same \"Xã Lao Chải\" explicitly stated in the resolution. That \"Xã Lao Chải\" is now in \"Tỉnh Lào Cai\". The new list also confirms this exact information.\n\nTherefore, with a high degree of confidence, I can conclude that the old address \"Xã Lao Chải, Huyện Mù Căng Chải, Tỉnh Yên Bái\" now maps to the new ward and province \"Xã Lao Chải, Tỉnh Lào Cai\".\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Lào Cai và tỉnh Yên Bái, lấy tên là tỉnh Lào Cai"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "04474",
+      "ward_name": "Xã Lao Chải"
+    },
+    {
+      "citation": {
+        "header": "1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai",
+        "line": "92. Sau khi sắp xếp, tỉnh Lào Cai có 99 đơn vị hành chính cấp xã, gồm 89 xã và 10 phường; trong đó có 81 xã, 10 phường hình thành sau sắp xếp quy định tại Điều này và 08 xã không thực hiện sắp xếp là các xã Nậm Xé, Ngũ Chỉ Sơn, Chế Tạo, Lao Chải, Nậm Có, Tà Xi Láng, Cát Thịnh, Phong Dụ Thượng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "04474",
+      "ward_name": "Xã Lao Chải"
+    }
+  ]
+}

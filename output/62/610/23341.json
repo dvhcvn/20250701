@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Đắk Glei, Huyện Đắk Glei, Tỉnh Kon Tum",
+  "ellapsedInMs": 7535,
+  "estimatedCost": 0.0027180999999999998,
+  "thought": "**Address Mapping Analysis: Đắk Glei, Kon Tum**\n\nOkay, let's break this down. The task is to map this old Vietnamese address to a current administrative unit. It's: \"Thị trấn Đắk Glei, Huyện Đắk Glei, Tỉnh Kon Tum\".\n\nFirst, the key pieces: \"Thị trấn Đắk Glei\" is the old ward, and \"Tỉnh Kon Tum\" is the old province.\n\nNow, checking the Province Resolutions, specifically Resolution 60-NQ/TW, I see that \"Tỉnh Kon Tum\" is merged into \"Tỉnh Quảng Ngãi\". So, \"Tỉnh Kon Tum\" is no longer the correct province.\n\nNext, I need to find something about \"Thị trấn Đắk Glei\".  Looking into other relevant resolutions, Resolution 1677/NQ-UBTVQH15 catches my eye.  Specifically, line 70.  And there it is:  \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Đăk Glei và xã Đăk Pék thành xã mới có tên gọi là **xã Đăk Pék**.\"  Bingo!  That explicitly mentions \"Thị trấn Đắk Glei\". They are merging to form a new ward called \"Xã Đăk Pék\".\n\nNow, I cross-reference this \"Xã Đăk Pék\" against the `new_wards` data.  And there it is: `{\"ward_code\":\"23341\",\"ward_name\":\"Xã Đăk Pék\",\"province_name\":\"Tỉnh Quảng Ngãi\"}`. This confirms the new ward name and the new province.\n\nThis is a pretty straightforward and reliable match. I have the province merger from 60-NQ/TW, the resolution explicitly addressing \"Thị trấn Đắk Glei\" and its merger into \"Xã Đăk Pék\", and the confirmation of \"Xã Đăk Pék\" in the updated ward list under \"Tỉnh Quảng Ngãi\".  Confidence is *high*.\n\nTherefore, here's my interpretation in JSON:\n\n*   **`citation.header`**: \"1677/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ngãi\"\n*   **`citation.line`**: \"70. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Đăk Glei và xã Đăk Pék thành xã mới có tên gọi là xã Đăk Pék.\"\n*   **`confidence`**: \"high\"\n*   **`province_name`**: \"Tỉnh Quảng Ngãi\"\n*   **`ward_code`**: \"23341\"\n*   **`ward_name`**: \"Xã Đăk Pék\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1677/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ngãi",
+        "line": "70. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Đăk Glei và xã Đăk Pék thành xã mới có tên gọi là xã Đăk Pék."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ngãi",
+      "ward_code": "23341",
+      "ward_name": "Xã Đăk Pék"
+    }
+  ]
+}

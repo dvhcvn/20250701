@@ -1,0 +1,18 @@
+{
+  "address": "Xã Đức Liên, Huyện Vũ Quang, Tỉnh Hà Tĩnh",
+  "ellapsedInMs": 8037,
+  "estimatedCost": 0.0029701999999999997,
+  "thought": "**Analysis of \"Xã Đức Liên\" - Finding the New Administrative Unit**\n\nOkay, so I'm tasked with pinpointing the new administrative unit for the old address \"Xã Đức Liên, Huyện Vũ Quang, Tỉnh Hà Tĩnh.\"  My first step is always to break down the information:  I've got \"Xã Đức Liên\" as the old ward and \"Tỉnh Hà Tĩnh\" as the old province. Simple enough.\n\nSince this is related to administrative restructuring, I immediately dive into the resolutions. First, I checked to see if \"Tỉnh Hà Tĩnh\" itself underwent any changes per the provincial restructuring guidelines (60-NQ/TW).  Thankfully, it's listed as not being subject to any mergers or splits, so it remains \"Tỉnh Hà Tĩnh\".\n\nNext, the crucial step: I need to find something concrete about \"Xã Đức Liên.\" I zeroed in on the \"Other resolutions\" section, focusing on \"1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh.\" And bingo! Line 51 of that resolution is the key. It states, and I quote, \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đức Bồng, Đức Hương và Đức Liên thành xã mới có tên gọi là **xã Thượng Đức**.\" This is a direct, explicit mapping of \"Xã Đức Liên\" to \"Xã Thượng Đức\".\n\nTo confirm, I double-checked the \"New wards\" list for \"xã Thượng Đức\", and there it is: `{\"ward_code\":\"18328\",\"ward_name\":\"Xã Thượng Đức\",\"province_name\":\"Tỉnh Hà Tĩnh\"}`.  Perfect match.\n\nNow, considering the old address also includes \"Huyện Vũ Quang,\" I scanned the resolutions for anything related to that *huyện*. Line 49 of \"1665/NQ-UBTVQH15\" mentions \"Huyện Vũ Quang\" and that a new \"xã Vũ Quang\" would be created from merging \"thị trấn Vũ Quang\" and other communes, but importantly, \"Xã Đức Liên\" isn't included in that specific merger. The direct connection is between \"Xã Đức Liên\" and \"Xã Thượng Đức.\"\n\nTherefore, the only logical conclusion is that \"Xã Đức Liên\" now falls under \"Xã Thượng Đức.\" There are no conflicting resolutions or alternative mappings to consider.\n\nMy output will be in JSON format, capturing all this: I'll include \"Tỉnh Hà Tĩnh\" for the unchanged province, \"Xã Thượng Đức\" as the new ward name, the associated ward code, high confidence because of the direct match, and a citation to the relevant line in the resolution. Since the user requests *all possible new ward candidates* I have to keep the confidence high because there is only one candidate from my analysis.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh",
+        "line": "51. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đức Bồng, Đức Hương và Đức Liên thành xã mới có tên gọi là xã Thượng Đức."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hà Tĩnh",
+      "ward_code": "18328",
+      "ward_name": "Xã Thượng Đức"
+    }
+  ]
+}

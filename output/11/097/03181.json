@@ -1,0 +1,18 @@
+{
+  "address": "Xã Mường Tùng, Huyện Mường Chà, Tỉnh Điện Biên",
+  "ellapsedInMs": 7178,
+  "estimatedCost": 0.0028715,
+  "thought": "**Determining the New Administrative Unit for \"Xã Mường Tùng\"**\n\nOkay, so I'm presented with the old address \"Xã Mường Tùng, Huyện Mường Chà, Tỉnh Điện Biên\" and need to find the new equivalent.  First, I'll need to run through my standard protocol for these kinds of queries, starting with the province.\n\n1.  **Province:** \"Tỉnh Điện Biên\" is the starting point. I know to check `60-NQ/TW` for provincial changes, but since Điện Biên isn't listed under \"Các đơn vị hành chính cấp tỉnh thực hiện sáp nhập\", I can confidently conclude that the province name remains \"Tỉnh Điện Biên.\"  That part is straightforward.\n\n2.  **Ward:** Now, the more interesting bit: \"Xã Mường Tùng.\"  I need to dig into the relevant resolutions. My focus immediately lands on the \"Other resolutions\" data, particularly those dealing with Điện Biên province. Resolution `1661/NQ-UBTVQH15` seems like a likely candidate given the scope.  Scanning through the lines, I'm looking for any mention of \"Xã Mường Tùng.\"  Line 7 and 11 detail the merging of various *other* wards. Then, Line 12 jumps out: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Huổi Lèng và xã Mường Tùng thành xã mới có tên gọi là **xã Mường Tùng**.\"  Aha!  This confirms that \"Xã Mường Tùng\" is being reorganized by merging with \"Huổi Lèng,\" but crucially, *retains* the name \"Xã Mường Tùng.\"\n\n3.  **New Wards Data:** Time to confirm that finding against the \"New Wards\" data.  I'll search for `{\"ward_name\":\"Xã Mường Tùng\",\"province_name\":\"Tỉnh Điện Biên\"}`.  And there it is:  `{\"ward_code\":\"03181\",\"ward_name\":\"Xã Mường Tùng\",\"province_name\":\"Tỉnh Điện Biên\"}`. Perfect! The \"New Wards\" data corroborates the resolution, providing the ward code as a bonus.\n\n4.  **Conclusion:** Based on all the evidence, I can conclude with high confidence that:\n\n    *   The province remains \"Tỉnh Điện Biên.\"\n    *   The new ward name is \"Xã Mường Tùng\" (identical to the old).\n    *   The ward code is \"03181.\"\n    *   The key citation is from resolution `1661/NQ-UBTVQH15`, specifically line 12: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Huổi Lèng và xã Mường Tùng thành xã mới có tên gọi là **xã Mường Tùng**.\"\n\nI would rate my confidence level as high because of the explicit statement in the resolution and its perfect match in the \"New Wards\" data.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1661/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Điện Biên",
+        "line": "12. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Huổi Lèng và xã Mường Tùng thành xã mới có tên gọi là **xã Mường Tùng**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Điện Biên",
+      "ward_code": "03181",
+      "ward_name": "Xã Mường Tùng"
+    }
+  ]
+}

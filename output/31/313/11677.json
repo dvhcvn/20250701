@@ -1,0 +1,18 @@
+{
+  "address": "Xã An Thái, Huyện An Lão, Thành phố Hải Phòng",
+  "ellapsedInMs": 5949,
+  "estimatedCost": 0.0029379000000000002,
+  "thought": "**Determining the New Ward for the Given Address**\n\nOkay, so I've got this old address: \"Xã An Thái, Huyện An Lão, Thành phố Hải Phòng.\" My task is to figure out the corresponding new administrative unit, likely a ward.\n\nFirst, I identified the province, \"Thành phố Hải Phòng.\" Then, I needed to confirm if any provincial mergers or name changes had occurred. I checked the relevant resolution, specifically looking at potential mergers. Luckily, that wasn't the case here, Hải Phòng is still Hải Phòng.\n\nNext, I focused on the \"Other resolutions\" to find details about ward-level changes. I searched for \"Thành phố Hải Phòng\" and found Resolution 1669/NQ-UBTVQH15, which deals with rearranging administrative units in the city. Within that document, I meticulously scanned for \"An Thái\". Bingo! I found the critical line: \"46. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã An Thái, An Thọ và Chiến Thắng thành xã mới có tên gọi là **xã An Hưng**.\" This resolution explicitly states that \"Xã An Thái\" was merged into \"Xã An Hưng\". The \"Huyện An Lão\" part also appeared which is consistent.\n\nTherefore, the new ward is \"Xã An Hưng,\" and it's still located in \"Thành phố Hải Phòng.\" Now, I need to pinpoint the `ward_code` for \"Xã An Hưng\" from the \"New wards\" list. Found it! The entry is `{\"ward_code\":\"11674\",\"ward_name\":\"Xã An Hưng\",\"province_name\":\"Thành phố Hải Phòng\"}`.\n\nGiven the explicit merger mentioned in the resolution and the consistent province name, I have a high degree of confidence in this result. I am ready to construct the JSON output reflecting this.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "46. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã An Thái, An Thọ và Chiến Thắng thành xã mới có tên gọi là xã An Hưng."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "11674",
+      "ward_name": "Xã An Hưng"
+    }
+  ]
+}

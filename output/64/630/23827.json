@@ -1,0 +1,18 @@
+{
+  "address": "Xã Chư Krêy, Huyện Kông Chro, Tỉnh Gia Lai",
+  "ellapsedInMs": 7350,
+  "estimatedCost": 0.0024777,
+  "thought": "**My Thought Process: Mapping an Old Vietnamese Address**\n\nOkay, so I've got this Vietnamese address to translate: \"Xã Chư Krêy, Huyện Kông Chro, Tỉnh Gia Lai.\" My task is to map this to the new administrative units. First, I need to identify the old components: **\"Xã Chư Krêy\"** (ward) in **\"Tỉnh Gia Lai\"** (province).\n\nNow, let's consult those resolutions. First, the province. Resolution 60-NQ/TW states that Gia Lai was merged with Bình Định, but the name \"Tỉnh Gia Lai\" remains. So, the province is consistent. Good, easy win.\n\nNext, the ward. I'm focusing on \"Xã Chư Krêy\". Scanning resolution 1664/NQ-UBTVQH15, I didn't see anything at first. But wait... line 70 is the key! It explicitly mentions \"xã Chư Krey\" (slight spelling difference, likely a common variation) being formed from a merge. This looks promising.\n\nThe resolution says \"xã Chư Krey\" is formed from merging \"xã An Trung (huyện Kông Chro) và xã Chư Krey\". Perfect!\n\nTime to cross-reference with the new ward data. Bingo! I find `{\"ward_code\":\"23830\",\"ward_name\":\"Xã Chư Krey\",\"province_name\":\"Tỉnh Gia Lai\"}`. It's a clean match.\n\nTherefore, the province name remains \"Tỉnh Gia Lai\", and the new ward is \"Xã Chư Krey\" with a code of \"23830\". My confidence is high here, given the direct match in the resolution. I'll include the citation from resolution 1664/NQ-UBTVQH15 to be extra clear.\n\nRegarding the slight spelling variation between \"Xã Chư Krêy\" in the input and \"xã Chư Krey\" in the resolution, given the context of \"Huyện Kông Chro\" and the specific merge details, I'm confident it's the same place. It's just a Vietnamese spelling nuance.\n\nMy JSON output is straightforward:\n\n*   `province_name`: \"Tỉnh Gia Lai\"\n*   `ward_name`: \"Xã Chư Krey\"\n*   `ward_code`: \"23830\"\n*   `confidence`: \"high\"\n*   `citation`: \"1664/NQ-UBTVQH15, line 70\"\n\nDone!\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai",
+        "line": "70. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã An Trung (huyện Kông Chro) và xã Chư Krey thành xã mới có tên gọi là xã Chư Krey."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "23830",
+      "ward_name": "Xã Chư Krey"
+    }
+  ]
+}

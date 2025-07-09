@@ -1,0 +1,18 @@
+{
+  "address": "Xã Bảo Thuận, Huyện Di Linh, Tỉnh Lâm Đồng",
+  "ellapsedInMs": 6770,
+  "estimatedCost": 0.0024728000000000003,
+  "thought": "**Address Mapping Analysis: \"Xã Bảo Thuận, Huyện Di Linh, Tỉnh Lâm Đồng\"**\n\nOkay, so I'm tackling this address mapping problem. First things first, the old address is clearly in \"Tỉnh Lâm Đồng\". Now, I need to check for any province mergers using the available resolution.  Ah, here we go, \"60-NQ/TW\" confirms that Lâm Đồng remains \"Tỉnh Lâm Đồng,\" even after including parts of Đắk Nông and Bình Thuận. That part's straightforward.\n\nNext, I need to pinpoint the \"ward\" - \"Xã Bảo Thuận.\"  Let's see, now I have to search for the ward in these resolutions.  I'm scanning through \"1671/NQ-UBTVQH15 (Lâm Đồng).\" Line 25 looks promising!  It explicitly states the natural area and population of \"Bảo Thuận\" is merged to form the new **\"Xã Bảo Thuận\"**. Bingo! That's a direct match!\n\nThere's also another \"Xã Bảo Thuận\" mentioned in \"1687/NQ-UBTVQH15 (Vĩnh Long),\" but that's in a different province. So, I can disregard that.\n\nNow, I cross-reference this with the \"New wards\" data.  I'm looking for \"Xã Bảo Thuận\" within \"Tỉnh Lâm Đồng.\" Yes! Found it: `{\"ward_code\":\"25018\",\"ward_name\":\"Xã Bảo Thuận\",\"province_name\":\"Tỉnh Lâm Đồng\"}`. Excellent. This perfectly aligns with the resolution.\n\nGiven the explicit nature of the resolution, the old \"Xã Bảo Thuận\" transforms into the new \"Xã Bảo Thuận\" within the same province. This is a very high-confidence match.  All that's left is to construct the JSON output reflecting this mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng",
+        "line": "25. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đinh Lạc, Tân Nghĩa và Bảo Thuận thành xã mới có tên gọi là xã Bảo Thuận."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "25018",
+      "ward_name": "Xã Bảo Thuận"
+    }
+  ]
+}

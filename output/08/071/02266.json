@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Lăng Can, Huyện Lâm Bình, Tỉnh Tuyên Quang",
+  "ellapsedInMs": 5505,
+  "estimatedCost": 0.0018576,
+  "thought": "**Mapping an Old Address to New Administrative Units**\n\nOkay, so I'm tackling this address: \"Thị trấn Lăng Can, Huyện Lâm Bình, Tỉnh Tuyên Quang.\"  First things first, I need to break it down.  I've got \"Thị trấn Lăng Can\" as the old ward and \"Tỉnh Tuyên Quang\" as the old province.\n\nNow, I'm going to check those province resolutions – specifically Resolution 60-NQ/TW – to see if there have been any name changes. Good, Tuyên Quang just merged with Ha Giang but kept its name. So, no big changes there.\n\nNext up, I'm digging into other resolutions looking for \"Thị trấn Lăng Can\" within \"Tỉnh Tuyên Quang.\"  Aha! Resolution \"1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang\" is the key. Line 2 explicitly states the merger: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Lăng Can, xã Phúc Yên và xã Xuân Lập thành xã mới có tên gọi là **xã Lâm Bình**.\" Bingo! \"Thị trấn Lăng Can\" is now part of \"xã Lâm Bình.\"\n\nNow, I'll consult the \"New wards\" data to get the details on \"xã Lâm Bình.\"  Looks like I've got: `{\"ward_code\":\"02266\",\"ward_name\":\"Xã Lâm Bình \",\"province_name\":\"Tỉnh Tuyên Quang\"}`.\n\nPutting it all together, I can construct the JSON output.  The *citation* will reference the resolution and the specific line, the *confidence* is high because it's a direct statement, and I can pull the *province_name*, *ward_code*, and *ward_name* directly from the \"New wards\" data.  Easy peasy.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "2. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Lăng Can, xã Phúc Yên và xã Xuân Lập thành xã mới có tên gọi là xã Lâm Bình."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "02266",
+      "ward_name": "Xã Lâm Bình"
+    }
+  ]
+}

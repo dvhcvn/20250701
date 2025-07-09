@@ -1,0 +1,18 @@
+{
+  "address": "Xã Phú Phụng, Huyện Chợ Lách, Tỉnh Bến Tre",
+  "ellapsedInMs": 5876,
+  "estimatedCost": 0.0021677,
+  "thought": "**Determining the New Ward for the Given Address**\n\nOkay, here's my thought process on this. I've got an old address and need to figure out the new administrative unit, the ward, based on these resolutions.\n\nFirst, the old address is in \"Tỉnh Bến Tre,\" which immediately tells me I need to check for province mergers. Looking at the `60-NQ/TW` resolution, it's clear that \"Tỉnh Bến Tre\" is now part of \"Tỉnh Vĩnh Long.\" So, my focus shifts to Vĩnh Long.\n\nNext, I need to pinpoint the specific old ward, which is \"Xã Phú Phụng.\" Now the key is to find how \"Phú Phụng\" has been rearranged or renamed. With the province now Vĩnh Long, I zero in on resolution `1687/NQ-UBTVQH15`.\n\nLine 63 of that resolution is spot on! It explicitly details the merger of \"Sơn Định\", \"Vĩnh Bình\", and, importantly, \"Phú Phụng\" to create a *new* \"Xã Phú Phụng.\" This is the critical piece of information.\n\nTo confirm, I'll check the provided list of `New wards`. There it is: `{\"ward_code\":\"28879\",\"ward_name\":\"Xã Phú Phụng\",\"province_name\":\"Tỉnh Vĩnh Long\"}`. This perfectly matches the new ward name and province I derived.\n\nGiven this, the output is clear. I'll construct the JSON: the citation will come from the line from the resolution, the confidence will be high because the old ward is explicitly transformed into the new. The output will correctly display the new province (\"Tỉnh Vĩnh Long\"), the new ward code (\"28879\"), and, crucially, the new ward name (\"Xã Phú Phụng\"). This should be a pretty straightforward and reliable answer.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long",
+        "line": "63. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Sơn Định, Vĩnh Bình và Phú Phụng thành xã mới có tên gọi là xã Phú Phụng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "28879",
+      "ward_name": "Xã Phú Phụng"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Đăk Đoa, Huyện Đăk Đoa, Tỉnh Gia Lai",
+  "ellapsedInMs": 7948,
+  "estimatedCost": 0.0025423,
+  "thought": "**Analyzing the Address Mapping: \"Thị trấn Đăk Đoa\"**\n\nOkay, let's break this down. My goal is to accurately map the old address, \"Thị trấn Đăk Đoa, Huyện Đăk Đoa, Tỉnh Gia Lai,\" to the new administrative structure, leveraging these resolutions and the new ward data.\n\nFirst, I've clearly identified the components: Province (Gia Lai), District (Đăk Đoa), and the ward, \"Thị trấn Đăk Đoa.\"  I know I need to account for any province mergers, so I quickly check the relevant documentation.  The 60-NQ/TW resolution confirms that Gia Lai remains Gia Lai, although it absorbed Bình Định.  No changes there.\n\nNow, the crucial step: ward resolutions. I'm searching for \"Thị trấn Đăk Đoa\" in these documents. Bingo! Resolution 1664/NQ-UBTVQH15 stands out. Line 86 explicitly mentions \"thị trấn Đak Đoa\" (minor diacritic variation, but clearly the same entity).  It states that \"Thị trấn Đak Đoa\" is merged to form the new ward, \"xã Đak Đoa.\"\n\nNext, I need to validate this against the \"New wards\" data.  I'm looking for \"xã Đak Đoa\" within Gia Lai, and there it is:  `{\"ward_code\":\"23677\",\"ward_name\":\"Xã Đak Đoa\",\"province_name\":\"Tỉnh Gia Lai\"}`. Perfect match.\n\nGiven this, I'm confident in the mapping: the old ward \"Thị trấn Đăk Đoa\" now corresponds to the new ward, \"xã Đak Đoa,\" with code 23677, within the province of Gia Lai.  The district, \"Huyện Đăk Đoa,\" is no longer relevant as this resolution deals with social units below district level.\n\nBefore finalizing, I need to double-check my work.  The resolution is unambiguous: a direct merge with a new name.  There are no conflicting resolutions, and the \"New wards\" list supports this. Therefore, this is a clean, straightforward mapping.\n\nThe output JSON will be straightforward:  `citation` from Resolution 1664, `confidence: High`, `province_name: Tỉnh Gia Lai`, `ward_code: 23677`, and `ward_name: Xã Đak Đoa`.  Done.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai",
+        "line": "86. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Đak Đoa, xã Tân Bình và xã Glar thành xã mới có tên gọi là xã Đak Đoa."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "23677",
+      "ward_name": "Xã Đak Đoa"
+    }
+  ]
+}

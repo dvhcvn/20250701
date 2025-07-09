@@ -1,0 +1,18 @@
+{
+  "address": "Xã Yên Tĩnh, Huyện Tương Dương, Tỉnh Nghệ An",
+  "ellapsedInMs": 7979,
+  "estimatedCost": 0.0030161000000000003,
+  "thought": "**Mapping an Old Vietnamese Address to a New Administrative Unit**\n\nOkay, so I've got an address to map: \"Xã Yên Tĩnh, Huyện Tương Dương, Tỉnh Nghệ An\". My goal is to find the corresponding new ward.\n\nFirst, I need to break down the address. I see \"Xã Yên Tĩnh\" as the old ward, \"Huyện Tương Dương\" as the old district (though I know that districts aren't the focus here, it's just helpful context), and \"Tỉnh Nghệ An\" as the province.\n\nNext, I'll check if the province has changed. I'm looking at Resolution 60-NQ/TW, and it clearly states that \"Tỉnh Nghệ An\" wasn't merged. That's a high-confidence starting point.\n\nNow, I dive into the other resolutions, specifically focusing on \"Xã Yên Tĩnh\". The relevant resolution is \"1678/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Nghệ An\".  After some line-by-line inspection, Line 101 jumps out. It explicitly states that \"Xã Yên Tĩnh\" and \"Xã Yên Na\" are merged to form the new ward, which is named \"Xã Yên Na\". Bingo! This is a direct match.\n\nNow I need the new ward details.  I'll look up \"Xã Yên Na\" in the `new_wards` data, keeping in mind that it's in \"Tỉnh Nghệ An\". I find it:  `{\"ward_code\":\"16912\",\"ward_name\":\"Xã Yên Na\",\"province_name\":\"Tỉnh Nghệ An\"}`.\n\nSo, here's my mapping:  the old address \"Xã Yên Tĩnh, Huyện Tương Dương, Tỉnh Nghệ An\" is now \"Xã Yên Na, Tỉnh Nghệ An\", with a ward code of \"16912\".\n\nThe source resolution, with a direct mapping, gives me high confidence in this result. I'll construct the JSON output: the citation includes the header and the pertinent line from the resolution, the confidence is high, and I have the correct province and new ward data. There's only one resulting ward from the analysis, and it's clear. All systems go.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1678/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Nghệ An",
+        "line": "101. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Yên Tĩnh và xã Yên Na thành xã mới có tên gọi là xã Yên Na."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Nghệ An",
+      "ward_code": "16912",
+      "ward_name": "Xã Yên Na"
+    }
+  ]
+}

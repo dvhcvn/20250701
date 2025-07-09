@@ -1,0 +1,18 @@
+{
+  "address": "Xã Phú Hải, Huyện Phú Vang, Thành phố Huế",
+  "ellapsedInMs": 6755,
+  "estimatedCost": 0.0026117,
+  "thought": "**Identifying the New Administrative Unit for \"Xã Phú Hải\"**\n\nOkay, here's how I'm approaching this. The user wants to know the new administrative unit for the old address \"Xã Phú Hải, Huyện Phú Vang, Thành phố Huế\".  My first step is to break down the information: the old ward is \"Xã Phú Hải\" and the old province is \"Thành phố Huế\".\n\nNow, I'm checking the Province Resolutions (specifically 60-NQ/TW) and it confirms that \"Thành phố Huế\" remains \"Thành phố Huế\" – no changes there at the provincial level.\n\nNext, I need to dig into the `other_resolutions` list. I'm focusing on those mentioning \"Thành phố Huế.\"  Resolution 1675/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Huế looks promising.  Inside that resolution, line 11 immediately catches my eye: it states that \"Xã Phú Hải\" is being merged with other units to form a *new* ward called \"phường Thuận An\". Bingo!\n\nTo confirm, I'll search the `new_wards` data for \"phường Thuận An\" within \"Thành phố Huế\".  And there it is:  `{\"ward_code\":\"19900\",\"ward_name\":\"Phường Thuận An\",\"province_name\":\"Thành phố Huế\"}`.  That's a direct match.\n\nBased on this, I'm confident in my findings. The relevant resolution is \"1675/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Huế\", specifically line \"11. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Thuận An, xã Phú Hải và xã Phú Thuận thành phường mới có tên gọi là phường Thuận An.\" My confidence level is high because there's a clear and direct mapping in the resolution.  The new unit, \"phường Thuận An\" with ward code \"19900\" is now part of \"Thành phố Huế\".\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1675/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Huế",
+        "line": "11. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Thuận An, xã Phú Hải và xã Phú Thuận thành phường mới có tên gọi là phường Thuận An."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Huế",
+      "ward_code": "19900",
+      "ward_name": "Phường Thuận An"
+    }
+  ]
+}

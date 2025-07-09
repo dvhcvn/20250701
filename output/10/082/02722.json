@@ -1,0 +1,18 @@
+{
+  "address": "Xã Dền Thàng, Huyện Bát Xát, Tỉnh Lào Cai",
+  "ellapsedInMs": 6024,
+  "estimatedCost": 0.0021451,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm presented with the address \"Xã Dền Thàng, Huyện Bát Xát, Tỉnh Lào Cai\" and need to find its corresponding new administrative unit. My process is pretty straightforward, leveraging my knowledge of these types of mappings.\n\nFirst, I parsed the address to identify the key components: the old ward (\"Xã Dền Thàng\") and the old province (\"Tỉnh Lào Cai\").\n\nNext, I checked the relevant provincial resolutions.  The key resolution, 60-NQ/TW, didn't provide any changes for \"Tỉnh Lào Cai\" directly, so I moved on.\n\nThen, I focused on other resolutions, specifically looking for any mentions of \"Xã Dền Thàng.\"  Resolution \"1673/NQ-UBTVQH15\" proved to be the golden ticket.  Line 47 explicitly states that \"Xã Dền Thàng\" is being merged with other areas to form the new ward \"Xã Dền Sáng.\"  This is a direct mapping, which is excellent.\n\nTo confirm, I then cross-referenced \"Xã Dền Sáng\" with the list of new wards, ensuring it's actually present with the province \"Tỉnh Lào Cai.\"  It was, and I was able to retrieve the corresponding `ward_code`, which is \"02707\".\n\nFinally, I compiled all this information into a JSON output. I'm reporting \"Tỉnh Lào Cai\" as the province, \"Xã Dền Sáng\" as the new ward, and including the `ward_code`.  I also made sure to include the relevant citation from resolution \"1673/NQ-UBTVQH15,\" line 47.  Given this direct mapping from the resolution, I'm confident in assigning a \"high\" confidence level to this output.  This is a clear-cut case.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai",
+        "line": "47. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Dền Thàng, Sàng Ma Sáo và Dền Sáng thành xã mới có tên gọi là xã Dền Sáng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "02707",
+      "ward_name": "Xã Dền Sáng"
+    }
+  ]
+}

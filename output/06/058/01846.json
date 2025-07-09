@@ -1,0 +1,18 @@
+{
+  "address": "Phường Huyền Tụng, Thành Phố Bắc Kạn, Tỉnh Bắc Kạn",
+  "ellapsedInMs": 6179,
+  "estimatedCost": 0.0020999,
+  "thought": "**Mapping an Old Address to the New Administrative Structure**\n\nOkay, so I've got an old address that needs to be mapped to the new administrative setup.  Let's break this down systematically. First, I see the old ward is \"Phường Huyền Tụng,\" located within \"Thành Phố Bắc Kạn\" (which, I remember, is now at the district level, but that's not the crucial piece here).  The important context is that it's in the province of \"Tỉnh Bắc Kạn.\"\n\nMy initial step is to determine the new province. Based on the resolutions, specifically `60-NQ/TW`, I need to look for \"Tỉnh Bắc Kạn\" within the province data. Ah, here it is: \"Hợp nhất tỉnh Bắc Kạn và tỉnh Thái Nguyên, lấy tên là tỉnh Thái Nguyên\". That means the new province is \"Tỉnh Thái Nguyên.\"\n\nNext, I need to figure out what happened to \"Phường Huyền Tụng.\"  I'll delve into the \"Other resolutions\" and search for it.  Bingo!  Resolution `1683/NQ-UBTVQH15` mentions \"Phường Huyền Tụng\" directly. It states, \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Nguyễn Thị Minh Khai, Huyền Tụng và Đức Xuân thành phường mới có tên gọi là **phường Đức Xuân**.\" This is a direct match, indicating that \"Phường Huyền Tụng\" is now part of \"phường Đức Xuân.\"\n\nNow, I'll identify the `ward_code` for the new ward from the \"New wards\" list.  I find the entry: `{\"ward_code\":\"01840\",\"ward_name\":\"Phường Đức Xuân\",\"province_name\":\"Tỉnh Thái Nguyên\"}`. The `ward_code` is \"01840,\" and the province name confirms that it is indeed within \"Tỉnh Thái Nguyên.\"\n\nFinally, I'll construct the JSON output: the header will be \"1683/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thái Nguyên,\" the specific line will be \"89. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Nguyễn Thị Minh Khai, Huyền Tụng và Đức Xuân thành phường mới có tên gọi là **phường Đức Xuân**.\"  Given the direct match and clear mapping, I'm confident (high confidence).  The `province_name` is \"Tỉnh Thái Nguyên\", `ward_code` is \"01840,\" and `ward_name` is \"Phường Đức Xuân.\"  That should do it.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1683/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thái Nguyên",
+        "line": "89. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Nguyễn Thị Minh Khai, Huyền Tụng và Đức Xuân thành phường mới có tên gọi là phường Đức Xuân."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thái Nguyên",
+      "ward_code": "01840",
+      "ward_name": "Phường Đức Xuân"
+    }
+  ]
+}

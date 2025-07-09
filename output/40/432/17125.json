@@ -1,0 +1,18 @@
+{
+  "address": "Phường Mai Hùng, Thị xã Hoàng Mai, Tỉnh Nghệ An",
+  "ellapsedInMs": 6681,
+  "estimatedCost": 0.0023534000000000003,
+  "thought": "**Identifying the New Administrative Unit for the Old Address**\n\nOkay, let's break this down. Someone gave me an old address: \"Phường Mai Hùng, Thị xã Hoàng Mai, Tỉnh Nghệ An.\" My goal is to determine the current ward for this location, which has apparently changed.\n\nFirst, the province is straightforward: \"Tỉnh Nghệ An.\" I quickly checked province resolutions and confirmed that Nghệ An isn't currently undergoing any merges (resolution 60-NQ/TW is clear on that). So, \"Tỉnh Nghệ An\" it remains.\n\nNext, the old ward: \"Phường Mai Hùng.\" Now, I'm diving into the resolutions for Nghệ An, specifically looking for changes affecting wards. I hit the jackpot with \"1678/NQ-UBTVQH15,\" which deals precisely with rearranging administrative units at the commune level. Scanning through, I quickly found line 112: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Mai Hùng, Quỳnh Phương, Quỳnh Xuân và xã Quỳnh Liên thành phường mới có tên gọi là phường Quỳnh Mai.\" Bingo! \"Phường Mai Hùng\" is being merged into the new \"Phường Quỳnh Mai.\"\n\nTo ensure accuracy, I cross-referenced this with the list of \"New wards\" for Nghệ An. There it is: `{\"ward_code\":\"17125\",\"ward_name\":\"Phường Quỳnh Mai\",\"province_name\":\"Tỉnh Nghệ An\"}` - a direct match. Just to be thorough, I checked for any other mentions of \"Phường Mai Hùng\" or similar names in the resolutions, but there were none to cause any ambiguity.\n\nThis is a clean-cut case. The resolution explicitly states the merger, and the new ward data confirms it. My confidence level is high.\n\nTherefore, the output should be:\n\n*   `citation.header`: \"1678/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Nghệ An\"\n*   `citation.line`: \"112. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Mai Hùng, Quỳnh Phương, Quỳnh Xuân và xã Quỳnh Liên thành phường mới có tên gọi là phường Quỳnh Mai.\"\n*   `confidence`: \"high\"\n*   `province_name`: \"Tỉnh Nghệ An\"\n*   `ward_code`: \"17125\"\n*   `ward_name`: \"Phường Quỳnh Mai\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1678/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Nghệ An",
+        "line": "112. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Mai Hùng, Quỳnh Phương, Quỳnh Xuân và xã Quỳnh Liên thành phường mới có tên gọi là phường Quỳnh Mai."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Nghệ An",
+      "ward_code": "17125",
+      "ward_name": "Phường Quỳnh Mai"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Đản Ván, Huyện Hoàng Su Phì, Tỉnh Hà Giang",
+  "ellapsedInMs": 7424,
+  "estimatedCost": 0.0026665,
+  "thought": "**Deconstructing a Vietnamese Address: Mapping Old to New**\n\nOkay, so I've got this Vietnamese address to translate, specifically Xã Đản Ván in Huyện Hoàng Su Phì, Hà Giang Province. My goal is to map this to the current administrative structure.\n\nFirst, I need to break down the old address: Xã Đản Ván (ward), Huyện Hoàng Su Phì (district), and Tỉnh Hà Giang (province). Now, the resolutions... I recall something about province mergers.\n\nResolution 60-NQ/TW is key. It outlines the merger of Hà Giang with Tuyên Quang, forming Tuyên Quang. That means the `province_name` in my output is definitely \"Tỉnh Tuyên Quang.\" Confirmed.\n\nNext, I dig into resolution 1684/NQ-UBTVQH15. It primarily focuses on Tuyên Quang, and bingo! Line 96 is the golden nugget. It explicitly states that \"Đản Ván\" is merged into the new \"xã Hoàng Su Phì.\" And \"Huyện Hoàng Su Phì\" is mentioned, confirming the geographical context.\n\nNow, let's marry the resolutions with the `New wards` data. I'm looking for \"xã Hoàng Su Phì.\"  And there it is:  `{\"ward_code\":\"01021\",\"ward_name\":\"Xã Hoàng Su Phì\",\"province_name\":\"Tỉnh Tuyên Quang\"}`. Perfect match! The code, name, and province are spot on.\n\nWith the province merger explicitly stated, and the old ward \"Đản Ván\" being explicitly merged into \"xã Hoàng Su Phì,\" and a direct match in the `New wards` data, I have high confidence in this mapping.\n\nTherefore, my JSON output will be:\n\n*   `province_name`: \"Tỉnh Tuyên Quang\"\n*   `ward_name`: \"Xã Hoàng Su Phì\"\n*   `ward_code`: \"01021\"\n*   `citation`:\n    *   `header`: \"1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang\"\n    *   `line`: \"96. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Vinh Quang và cácxã Bản Luốc, Ngàm Đăng Vài, Tụ Nhân, Đản Ván thành xã mới có tên gọi là **xã Hoàng Su Phì**.\"\n*   `confidence`: \"high\"\n\nThat should be accurate, given the information I have at hand. It's a solid, well-supported mapping based on the provided resolutions and the new ward data.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "96. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Vinh Quang và cácxã Bản Luốc, Ngàm Đăng Vài, Tụ Nhân, Đản Ván thành xã mới có tên gọi là xã Hoàng Su Phì."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "01021",
+      "ward_name": "Xã Hoàng Su Phì"
+    }
+  ]
+}

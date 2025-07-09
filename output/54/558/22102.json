@@ -1,0 +1,18 @@
+{
+  "address": "Xã Xuân Quang 2, Huyện Đồng Xuân, Tỉnh Phú Yên",
+  "ellapsedInMs": 5645,
+  "estimatedCost": 0.0025773,
+  "thought": "**Determining the New Administrative Unit for \"Xã Xuân Quang 2, Huyện Đồng Xuân, Tỉnh Phú Yên\"**\n\nOkay, here's how I'm approaching this: The user needs the new administrative unit for \"Xã Xuân Quang 2, Huyện Đồng Xuân, Tỉnh Phú Yên\".  First, I'll pinpoint the province - Phú Yên. Then, I'll consult the province resolution (60-NQ/TW).  Ah, here it is: Phú Yên was merged into Đắk Lắk. So, the new province will be Đắk Lắk.\n\nNext, the focus shifts to the commune itself. I need to find \"Xã Xuân Quang 2\" in the relevant resolutions. A quick search reveals resolution 1660/NQ-UBTVQH15.  Perfect! Line 81 of that resolution explicitly states that \"Xã Xuân Quang 2\" *along* with other locations, *became* \"xã Đồng Xuân\".\n\nNow, I'll cross-reference the `New wards` database with \"xã Đồng Xuân\" and Đắk Lắk. Yes!  I find the entry:  `{\"ward_code\":\"22081\",\"ward_name\":\"Xã Đồng Xuân\",\"province_name\":\"Tỉnh Đắk Lắk\"}`. This confirms the new commune and the province.  The ward code, province name, and new commune name align perfectly.\n\nTherefore, the JSON output is straightforward:\n\n*   `province_name`: \"Tỉnh Đắk Lắk\"\n*   `ward_name`: \"Xã Đồng Xuân\"\n*   `ward_code`: \"22081\"\n*   `citation`: `\"1660/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đắk Lắk\" line 81`\n*   `confidence`: \"high\" (because the resolution clearly outlines the transformation).\n\nThis should give the user the precise information they require, grounded in the official documentation.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1660/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đắk Lắk",
+        "line": "81. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn La Hai và các xã Xuân Sơn Nam, Xuân Sơn Bắc, Xuân Long, Xuân Quang 2 thành xã mới có tên gọi là xã Đồng Xuân."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đắk Lắk",
+      "ward_code": "22081",
+      "ward_name": "Xã Đồng Xuân"
+    }
+  ]
+}

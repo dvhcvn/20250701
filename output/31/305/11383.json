@@ -1,0 +1,28 @@
+{
+  "address": "Phường Trần Nguyên Hãn, Quận Lê Chân, Thành phố Hải Phòng",
+  "ellapsedInMs": 7916,
+  "estimatedCost": 0.0035642,
+  "thought": "**Analysis of Administrative Unit Restructuring for \"Phường Trần Nguyên Hãn, Quận Lê Chân, Thành phố Hải Phòng\"**\n\nOkay, so I've got \"Phường Trần Nguyên Hãn\" in Hải Phòng to map. First, the province is straightforward: \"Thành phố Hải Phòng\". I need to check for any province-level changes, but 60-NQ/TW doesn't apply here. Hmm, the \"Hợp nhất\" document mentions a past merger that led to the *current* name, so \"Thành phố Hải Phòng\" is still correct.\n\nNow, focusing on the ward. \"Phường Trần Nguyên Hãn\" needs to be cross-referenced with the relevant resolutions. I've found \"1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng\". Line 12 explicitly states that *part* of \"Trần Nguyên Hãn\" was merged into \"Phường Lê Chân\", and Line 13 says the *remaining* part was merged into \"Phường An Biên\".  This is crucial!\n\nGiven the clear language of the resolution (\"một phần\" and \"phần còn lại\"), the confidence level for this mapping is \"high\".  I've cross-referenced the new ward data, confirming \"Phường Lê Chân\" has `ward_code`: \"11383\", and \"Phường An Biên\" has `ward_code`: \"11407\", both correctly linked to \"Thành phố Hải Phòng\".\n\nTherefore, I need to create two output entries. The first maps a portion of the old ward to `ward_code`: \"11383\" (\"Phường Lê Chân\") and the second maps the remaining portion to `ward_code`: \"11407\" (\"Phường An Biên\").  The citations will, of course, reference \"1669/NQ-UBTVQH15\", with the specific lines quoted.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "12. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Hàng Kênh, Dư Hàng Kênh, Kênh Dương, một phần diện tích tự nhiên, quy mô dân số của các phường An Biên, Trần Nguyên Hãn, Vĩnh Niệm và phần còn lạicủa phường Cầu Đất, phường Lạch Tray sau khi sắp xếp theo quy định tại khoản 11 Điều này thành phường mới có tên gọi là **phường Lê Chân**."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "11383",
+      "ward_name": "Phường Lê Chân"
+    },
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "13. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường An Dương và phần còn lại của các phường An Biên, Trần Nguyên Hãn, Vĩnh Niệm sau khi sắp xếp theo quy định tại khoản 12 Điều nàythành phường mới có tên gọi là **phường An Biên**."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "11407",
+      "ward_name": "Phường An Biên"
+    }
+  ]
+}

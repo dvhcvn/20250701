@@ -1,0 +1,18 @@
+{
+  "address": "Phường Na Lay, Thị Xã Mường Lay, Tỉnh Điện Biên",
+  "ellapsedInMs": 5050,
+  "estimatedCost": 0.0017291,
+  "thought": "**Navigating the Administrative Unit Restructuring: A Breakdown**\n\nOkay, so I've got a classic mapping task here: an old address in \"Phường Na Lay, Thị Xã Mường Lay, Tỉnh Điện Biên\" needs to be cross-referenced with the new administrative units.  My process starts with a thorough check.\n\nFirst, I isolate the old ward: \"Phường Na Lay\". Then, I need to see if the province, \"Tỉnh Điện Biên\", has undergone any mergers. Quickly, I spot Resolution 60-NQ/TW which states that Điện Biên is not affected. Good, that simplifies things!\n\nNext, I delve into the list of other relevant resolutions. I'm looking for \"Phường Na Lay,\" and bingo! Resolution 1661/NQ-UBTVQH15 jumps out. It's a key piece, explicitly mentioning the merging of \"Phường Na Lay\" into a new ward: \"Phường Mường Lay.\"\n\nNow, with \"Phường Mường Lay\" identified as the target, I go to the `new_wards` data.  I find the entry for \"Phường Mường Lay\" with the ward code \"03151,\" and confirming that it's still in the province of \"Tỉnh Điện Biên.\"\n\nFinally, I'll package this into a JSON-formatted output. The resolution citation, specifically the header and line that mentions \"Phường Na Lay,\" will be included. Because the old ward is clearly and directly mapped to a new ward, the confidence level is easily \"high.\" The new JSON output should contain:  \"Tỉnh Điện Biên\" as the province, ward code \"03151\", ward name \"Phường Mường Lay,\" and all the supporting citations. That's a clean and confident map.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1661/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Điện Biên",
+        "line": "43. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Sông Đà, phường Na Lay, xã Lay Nưa và xã Sá Tổngthành phường mới có tên gọi là phường Mường Lay."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Điện Biên",
+      "ward_code": "03151",
+      "ward_name": "Phường Mường Lay"
+    }
+  ]
+}

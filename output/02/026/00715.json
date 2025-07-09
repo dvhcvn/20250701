@@ -1,0 +1,48 @@
+{
+  "address": "Xã Lũng Cú, Huyện Đồng Văn, Tỉnh Hà Giang",
+  "ellapsedInMs": 9985,
+  "estimatedCost": 0.004056,
+  "thought": "**Mapping Old Vietnamese Address to New Administrative Units: Analysis**\n\nOkay, so I've been tasked with mapping an old Vietnamese address (\"Xã Lũng Cú\", \"Huyện Đồng Văn\", \"Tỉnh Hà Giang\") to its new administrative counterparts, given some resolutions and a list of new wards. Here's how I approached this, based on my understanding of the system:\n\nFirst, I identified the components of the address: the old ward (\"Xã Lũng Cú\"), district (\"Huyện Đồng Văn\"), and province (\"Tỉnh Hà Giang\"). The key now is to trace these elements through the provided resolutions.\n\nThe initial step was to check the province resolutions. Immediately, resolution \"60-NQ/TW\" came into play, explicitly stating the merger of \"Tỉnh Hà Giang\" with \"Tuyên Quang\", resulting in a new province: \"Tỉnh Tuyên Quang\". That's a crucial piece of the puzzle.\n\nNext, I delved into the other resolutions, specifically looking for mentions of \"Lũng Cú\" in its district and province context. Resolution `1684/NQ-UBTVQH15` was a goldmine. It detailed the reorganization of administrative units within \"Tỉnh Tuyên Quang\". I found a clear statement: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Má Lé, Lũng Táo và Lũng Cú thành xã mới có tên gọi là **xã Lũng Cú**.\" This confirms that the old \"Xã Lũng Cú\" is now part of the *new* \"Xã Lũng Cú\" within the reorganized province.\n\nFurthermore, I considered the district \"Huyện Đồng Văn\". Resolution `1684/NQ-UBTVQH15` again provided insight, this time regarding \"Đồng Văn\". It states that the old \"thị trấn Đồng Văn\" and \"xã Tả Lủng (huyện Đồng Văn)\" are reorganized into the new ward \"Xã Đồng Văn\". Considering the original address includes \"Huyện Đồng Văn,\" this resolution directly addresses the district in question and its role in creating a new ward.\n\nThe final step was to cross-reference these findings with the \"New wards\" list.  I searched for both \"Xã Lũng Cú\" and \"Xã Đồng Văn\" in conjunction with \"Tỉnh Tuyên Quang\".  The results were spot-on:  I found entries matching the new ward names and their new provincial affiliation (`{\"ward_code\":\"00715\",\"ward_name\":\"Xã Lũng Cú\",\"province_name\":\"Tỉnh Tuyên Quang\"}` and `{\"ward_code\":\"00721\",\"ward_name\":\"Xã Đồng Văn\",\"province_name\":\"Tỉnh Tuyên Quang\"}`).\n\nPutting it all together, I have a high degree of confidence in this mapping. The province merger is clear, the resolutions explicitly state the creation of new wards, and those new wards align perfectly with the \"New wards\" list. Therefore, the old \"Xã Lũng Cú, Huyện Đồng Văn, Tỉnh Hà Giang\" now corresponds to the new \"Xã Lũng Cú\" (as part of the new reorganization) in \"Tỉnh Tuyên Quang\", and the old \"Huyện Đồng Văn\" is now relevant to the new \"Xã Đồng Văn\" in \"Tỉnh Tuyên Quang\". The mapping is quite direct and well-supported by the provided data.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "1. Hợp nhất tỉnh Tuyên Quang và tỉnh Hà Giang, lấy tên là tỉnh Tuyên Quang"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "00715",
+      "ward_name": "Xã Lũng Cú"
+    },
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "44. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Má Lé, Lũng Táo và Lũng Cú thành xã mới có tên gọi là xã Lũng Cú."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "00715",
+      "ward_name": "Xã Lũng Cú"
+    },
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "1. Hợp nhất tỉnh Tuyên Quang và tỉnh Hà Giang, lấy tên là tỉnh Tuyên Quang"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "00721",
+      "ward_name": "Xã Đồng Văn"
+    },
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "45. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Đồng Văn và các xã Tả Lủng (huyện Đồng Văn), Tả Phìn, Thài Phìn Tủng, Pải Lủng thành xã mới có tên gọi là xã Đồng Văn."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "00721",
+      "ward_name": "Xã Đồng Văn"
+    }
+  ]
+}

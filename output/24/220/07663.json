@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tuấn Đạo, Huyện Sơn Động, Tỉnh Bắc Giang",
+  "ellapsedInMs": 6649,
+  "estimatedCost": 0.002769,
+  "thought": "**Determining the New Ward for an Old Address**\n\nOkay, so I've got this old address: \"Xã Tuấn Đạo, Huyện Sơn Động, Tỉnh Bắc Giang.\" My task is to find the current ward. Here's how I'm approaching this, step-by-step, drawing upon my knowledge of administrative reorganizations.\n\nFirst, I identified \"Tỉnh Bắc Giang\" as the old province. Now, I *immediately* need to check those province resolutions (like 60-NQ/TW) because, well, provinces get merged and renamed all the time.  And sure enough, there's a resolution that says \"Tỉnh Bắc Giang\" was merged into \"Tỉnh Bắc Ninh.\" That's crucial information!\n\nNext, I need to focus on \"Xã Tuấn Đạo.\" That's the specific administrative unit I'm trying to locate. My strategy here is to search through *other* resolutions, specifically looking for any mentions of \"Xã Tuấn Đạo\" in the *new* province, \"Tỉnh Bắc Ninh\" (or even the old name if the resolution came before the merge). I'm looking for clues about merges, splits, or name changes.\n\nAha! There's a resolution – 1658/NQ-UBTVQH15. And line 99 is gold! It explicitly states that \"Xã Tuấn Đạo\" was *not* subject to any rearrangement. That gives me a high degree of confidence that the ward name is unchanged.\n\nFinally, I cross-reference this with the \"New wards\" data, just to confirm. And there it is: `{\"ward_code\":\"07663\",\"ward_name\":\"Xã Tuấn Đạo\",\"province_name\":\"Tỉnh Bắc Ninh\"}`. Perfect! That confirms the ward code, the continued existence of \"Xã Tuấn Đạo,\" and its association with the newly formed \"Tỉnh Bắc Ninh.\"\n\nSo, in conclusion, my JSON output will be constructed with \"Tỉnh Bắc Ninh\" as the province, \"Xã Tuấn Đạo\" as the ward, the ward code, the citation from the resolution, and a \"high\" confidence level because of the explicit statement in the resolution and the confirmation in the new ward data. This is a very robust and well-documented analysis.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh",
+        "line": "99. Sau khi sắp xếp, tỉnh Bắc Ninh có 99 đơn vị hành chính cấp xã, gồm 66 xã và 33 phường; trong đó có 65 xã, 33 phường hình thành sau sắp xếp quy định tại Điều này và 01 xã không thực hiện sắp xếp là xã Tuấn Đạo."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "07663",
+      "ward_name": "Xã Tuấn Đạo"
+    }
+  ]
+}

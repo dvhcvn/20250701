@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tam Dị, Huyện Lục Nam, Tỉnh Bắc Giang",
+  "ellapsedInMs": 7510,
+  "estimatedCost": 0.0031393999999999997,
+  "thought": "**Determining the New Administrative Unit for \"Xã Tam Dị, Huyện Lục Nam, Tỉnh Bắc Giang\"**\n\nOkay, here's how I'm approaching this. The user has given me an old address and I need to figure out its new administrative unit(s).\n\nFirst, I identified that the initial province is \"Tỉnh Bắc Giang\" and the initial ward is \"Xã Tam Dị.\"  I know I need to check the province merger resolutions (like the 60-NQ/TW series) first.  I found that \"Tỉnh Bắc Giang\" was merged with \"Tỉnh Bắc Ninh,\" resulting in the new province name of \"Tỉnh Bắc Ninh.\"\n\nNow, I'll need to look through resolutions specific to the new province, \"Tỉnh Bắc Ninh\", for information on \"Xã Tam Dị.\" Specifically I'm going through the `other resolutions`. Resolution 1658/NQ-UBTVQH15, concerning the restructuring of administrative units within Bắc Ninh, directly addresses my target. Line 45 explicitly states that \"Xã Tam Dị\" is part of the consolidation into a new ward called \"**xã Bảo Đài**.\"\n\nThat's a direct and conclusive mapping!  Next, I searched the \"New wards\" list for \"Xã Bảo Đài.\"  I got a result: `{\"ward_code\":\"07462\",\"ward_name\":\"Xã Bảo Đài\",\"province_name\":\"Tỉnh Bắc Ninh\"}`.  The province name confirms the expected \"Tỉnh Bắc Ninh.\"\n\nSince the mapping is clear, directly referencing a specific resolution, I can confidently assess the confidence level as \"high.\" This leaves me ready to create the JSON output with all the correct information, including the resolution details for citation, the new province and ward information, along with the appropriate code.  The output structure will be an array of objects, one object for this specific case containing: `citation`, `confidence`, `province_name`, `ward_code`, and `ward_name`.  All good.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh",
+        "line": "45. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Bảo Sơn, Thanh Lâm, Tam Dị và Bảo Đài thành xã mới có tên gọi là xã Bảo Đài."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "07462",
+      "ward_name": "Xã Bảo Đài"
+    }
+  ]
+}

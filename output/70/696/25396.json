@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Đức Phong, Huyện Bù Đăng, Tỉnh Bình Phước",
+  "ellapsedInMs": 7600,
+  "estimatedCost": 0.0028462,
+  "thought": "**Analyzing Address Changes: A Confident Match**\n\nOkay, here's how I'm approaching this: The user needs me to map an old address, \"Thị trấn Đức Phong, Huyện Bù Đăng, Tỉnh Bình Phước,\" to its new administrative units.  I've got this.\n\nFirst, I parsed the input: \"Thị trấn Đức Phong\" is the old ward, \"Huyện Bù Đăng\" is the district, and \"Tỉnh Bình Phước\" is the province.  Easy enough.\n\nNow, I'm checking for province mergers. Resolution 60-NQ/TW states that Bình Phước merged into Đồng Nai.  So, the old \"Tỉnh Bình Phước\" is now \"Tỉnh Đồng Nai.\" That's the first key shift.\n\nNext, the crucial step: I'm diving into the resolutions for ward changes, specifically focusing on \"Thị trấn Đức Phong.\"  Bingo! Resolution 1662/NQ-UBTVQH15 provides the answer.  Line 64 of that resolution specifically outlines: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Đức Phong, xã Đoàn Kết và xã Minh Hưng thành xã mới có tên gọi là **xã Bù Đăng**.\"\n\nThe new ward is clearly \"xã Bù Đăng.\" The context confirms that it's in the merged province, \"Tỉnh Đồng Nai,\" and the old district, \"Huyện Bù Đăng,\" is still relevant.\n\nTo further solidify this, I'm cross-referencing this with the `New wards` data, looking for \"xã Bù Đăng\". It's there: `{\"ward_code\":\"25396\",\"ward_name\":\"Xã Bù Đăng\",\"province_name\":\"Tỉnh Đồng Nai\"}`.  Perfect match!  The new ward name and province are consistent.\n\nBefore finalizing, I did a quick sanity check to ensure no other places had a similar name that could cause ambiguity. There was a mention of \"xã Đức Phong\" in Quảng Ngãi, but that's a different area entirely and irrelevant. The mapping for \"Thị trấn Đức Phong\" is clean.\n\nTherefore, this is a high-confidence match. The output JSON will reflect the resolved new province (\"Tỉnh Đồng Nai\"), the new ward (\"Xã Bù Đăng\"), its code, and the citation of the relevant resolution. I am confident in the accuracy of this mapping based on the provided data.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1662/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Nai",
+        "line": "64. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Đức Phong, xã Đoàn Kết và xã Minh Hưng thành xã mới có tên gọi là xã Bù Đăng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đồng Nai",
+      "ward_code": "25396",
+      "ward_name": "Xã Bù Đăng"
+    }
+  ]
+}

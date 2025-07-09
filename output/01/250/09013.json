@@ -1,0 +1,48 @@
+{
+  "address": "Xã Văn Khê, Huyện Mê Linh, Thành phố Hà Nội",
+  "ellapsedInMs": 11289,
+  "estimatedCost": 0.005109799999999999,
+  "thought": "**Identifying the New Administrative Units**\n\nOkay, let's break this down. The user's looking for the new wards that correspond to the old address \"Xã Văn Khê, Huyện Mê Linh, Thành phố Hà Nội.\"  My first step is always to verify the basics.  \"Thành phố Hà Nội\" hasn't undergone any province-level mergers, as per Resolution 60-NQ/TW.  Good, that's straightforward.\n\nNow, the real work begins:  I need to dig into the relevant resolutions.  Specifically, I'm focusing on \"Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội\" – the one that deals with merging and reorganizing *xã* (wards).  I've found the right document, 1656/NQ-UBTVQH15.\n\nScanning through it, I'm looking for \"Xã Văn Khê\".  Bingo!  Lines 107, 118, 119, and 120 clearly outline how \"Xã Văn Khê\" has been restructured.  A portion went into **Xã Ô Diên**, another portion into **Xã Mê Linh**, and yet another into **Xã Yên Lãng**.  The remainder of Văn Khê forms **Xã Tiến Thắng**.\n\nNow I need to cross-reference these new ward names with the list of available wards and their corresponding codes.  Okay, I've got them:\n\n*   Xã Ô Diên:  `{\"ward_code\":\"09817\",\"ward_name\":\"Xã Ô Diên\",\"province_name\":\"Thành phố Hà Nội\"}`\n*   Xã Mê Linh: `{\"ward_code\":\"09022\",\"ward_name\":\"Xã Mê Linh\",\"province_name\":\"Thành phố Hà Nội\"}`\n*   Xã Yên Lãng: `{\"ward_code\":\"08980\",\"ward_name\":\"Xã Yên Lãng\",\"province_name\":\"Thành phố Hà Nội\"}`\n*   Xã Tiến Thắng: `{\"ward_code\":\"08995\",\"ward_name\":\"Xã Tiến Thắng\",\"province_name\":\"Thành phố Hà Nội\"}`\n\nThe confidence level here is high because the resolution is explicit.  It directly mentions \"Xã Văn Khê\" and specifies how its territory was redistributed to these four new wards.\n\nSo, I'll compile this into a clean JSON output, noting the source resolution, the confidence level (which is essentially \"very high\"), and the corresponding ward information:  code, name, and province.  This should give the user exactly what they need.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội",
+        "line": "107. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Hạ Mỗ, xã Tân Hội, một phần diện tích tự nhiên, toàn bộ quy mô dân số của các xã Liên Hà (huyện Đan Phượng), Hồng Hà, Liên Hồng, Liên Trung, một phần diện tích tự nhiên của xã Văn Khê, phần còn lại của phường Tây Tựu sau khi sắp xếp theo quy định tại các khoản 30, 34, 102 Điều này và phần còn lại của xã Tân Lập sau khi sắp xếp theo quy định tại khoản 102 Điều này thành xã mới có tên gọi là xã Ô Diên."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hà Nội",
+      "ward_code": "09817",
+      "ward_name": "Xã Ô Diên"
+    },
+    {
+      "citation": {
+        "header": "1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội",
+        "line": "118. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Tráng Việt, một phần diện tích tự nhiên, quy mô dân số của các xã Tiền Phong (huyện Mê Linh), Văn Khê, Mê Linh, một phần diện tích tự nhiên của xã Đại Thịnh và xã Hồng Hà, phần còn lại của các xã Liên Hà (huyện Đan Phượng), Liên Hồng, Liên Trung sau khi sắp xếp theo quy định tại khoản 107 Điều này, phần còn lại của xã Đại Mạch sau khi sắp xếp theo quy định tại khoản 116 Điều này thành xã mới có tên gọi là xã Mê Linh."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hà Nội",
+      "ward_code": "09022",
+      "ward_name": "Xã Mê Linh"
+    },
+    {
+      "citation": {
+        "header": "1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội",
+        "line": "119. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Chu Phan, Hoàng Kim, Liên Mạc, một phần diện tích tự nhiên, quy mô dân số của xã Thạch Đà, một phần diện tích tự nhiên của xã Văn Khê, phần còn lại của các xã Tiến Thịnh, Trung Châu, Thọ Xuân, Thọ An sau khi sắp xếp theo quy định tại khoản 108 Điều này và phần còn lại của xã Hồng Hà sau khi sắp xếp theo quy định tại các khoản 107, 108, 118 Điều này thành xã mới có tên gọi là xã Yên Lãng."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hà Nội",
+      "ward_code": "08980",
+      "ward_name": "Xã Yên Lãng"
+    },
+    {
+      "citation": {
+        "header": "1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội",
+        "line": "120. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tam Đồng, Tiến Thắng, Tự Lập, một phần diện tích tự nhiên, quy mô dân số của các xã Đại Thịnh, Kim Hoa, Thanh Lâm, phần còn lại của xã Văn Khê sau khi sắp xếp theo quy định tại các khoản 107, 118, 119 Điều này và phần còn lại của xã Thạch Đà sau khi sắp xếp theo quy định tại khoản 119 Điều này thành xã mới có tên gọi là xã Tiến Thắng."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hà Nội",
+      "ward_code": "08995",
+      "ward_name": "Xã Tiến Thắng"
+    }
+  ]
+}

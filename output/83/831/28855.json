@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tường Đa, Huyện Châu Thành, Tỉnh Bến Tre",
+  "ellapsedInMs": 6419,
+  "estimatedCost": 0.0033935,
+  "thought": "**Identifying the New Administrative Unit for the Old Address**\n\nOkay, so I need to figure out the new ward for the given old address: \"Xã Tường Đa, Huyện Châu Thành, Tỉnh Bến Tre.\" Let's break this down. First, I need to check if \"Tỉnh Bến Tre\" has been merged with any other province. I'll refer to `60-NQ/TW`. Ah, here it is: \"Hợp nhất tỉnh Bến Tre, tỉnh Vĩnh Long và tỉnh Trà Vinh; lấy tên là tỉnh Vĩnh Long.\" Right, so Bến Tre is now part of Vĩnh Long.\n\nNext, I'll search for \"Xã Tường Đa\" within the \"Other resolutions.\" I'll need to scan each line of each resolution, looking for mentions of both \"Tường Đa\" and \"Bến Tre.\"\n\nExcellent, I found something relevant! Resolution `1687/NQ-UBTVQH15` contains the key. Specifically, line 59: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Châu Thành(huyện Châu Thành, tỉnh Bến Tre) và các xã Tân Thạch, Tường Đa, Phú Túc thành xã mới có tên gọi là **xã Phú Túc**.\" Bingo!\n\nThis tells me that \"Xã Tường Đa\" has been merged into a new ward called \"Xã Phú Túc.\" And the resolution is for \"tỉnh Vĩnh Long,\" which confirms the province change.\n\nNow, I'll quickly look up the `ward_code` for \"Xã Phú Túc\" within the `New wards` list. I'm searching for `{\"ward_name\":\"Xã Phú Túc\",\"province_name\":\"Tỉnh Vĩnh Long\"}`. Found it: `{\"ward_code\":\"28810\",\"ward_name\":\"Xã Phú Túc\",\"province_name\":\"Tỉnh Vĩnh Long\"}`.\n\nPerfect. My output JSON will be straightforward:\n\n*   `citation`: Includes the resolution header and the line (59).\n*   `confidence`: Very high, this is a clear and direct mapping.\n*   `province_name`: \"Tỉnh Vĩnh Long.\"\n*   `ward_code`: \"28810.\"\n*   `ward_name`: \"Xã Phú Túc.\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long",
+        "line": "59. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Châu Thành(huyện Châu Thành, tỉnh Bến Tre) vàcác xã Tân Thạch, Tường Đa,Phú Túc thành xã mới có tên gọi là xã Phú Túc."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "28810",
+      "ward_name": "Xã Phú Túc"
+    }
+  ]
+}

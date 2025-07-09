@@ -1,0 +1,18 @@
+{
+  "address": "Phường Tây Lộc, Quận Phú Xuân, Thành phố Huế",
+  "ellapsedInMs": 5532,
+  "estimatedCost": 0.001949,
+  "thought": "**Mapping \"Phường Tây Lộc\" to its New Administrative Unit**\n\nOkay, so I'm tackling this address mapping problem, specifically focusing on \"Phường Tây Lộc\" in \"Thành phố Huế\".  My goal is to determine its new administrative unit based on the provided data.  It looks like we can ignore the old district, \"Quận Phú Xuân\", as we're dealing with ward-level changes.\n\nFirst, I identified the original province and ward: \"Thành phố Huế\" and \"Phường Tây Lộc\", respectively.  Then, I started with the province resolution (60-NQ/TW).  Luckily, \"Thành phố Huế\" is listed as a province that *isn't* undergoing any mergers or splits. So, \"Thành phố Huế\" stays \"Thành phố Huế.\" That was easy!\n\nNext, I focused on the relevant resolution, 1675/NQ-UBTVQH15, which specifically addresses ward-level adjustments in Huế.  Line 10 of that resolution is the key.  It explicitly states that \"Phường Tây Lộc\" (along with several others) is being *merged* into a *new* ward called \"**Phường Phú Xuân**\".  That's a pretty clear directive.\n\nI double-checked this with the available new ward data. There's a ward matching that description: `{\"ward_code\":\"19753\",\"ward_name\":\"Phường Phú Xuân\",\"province_name\":\"Thành phố Huế\"}`.  I also saw another ward in Huế, but the resolution clearly didn't mention \"Phường Tây Lộc\" being merged into it.\n\nTherefore, the old \"Phường Tây Lộc\" is unequivocally mapped to the new \"Phường Phú Xuân\".  The province, \"Thành phố Huế\", remains unchanged.  My confidence in this mapping is *high* because the resolution provides explicit and direct instructions for this specific ward. I'll make sure to cite the specific line in the resolution for verification.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1675/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Huế",
+        "line": "10. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Gia Hội, Phú Hậu, Tây Lộc, Thuận Lộc, Thuận Hòa và Đông Ba thành phường mới có tên gọi là phường Phú Xuân."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Huế",
+      "ward_code": "19753",
+      "ward_name": "Phường Phú Xuân"
+    }
+  ]
+}

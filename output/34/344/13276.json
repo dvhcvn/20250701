@@ -1,0 +1,28 @@
+{
+  "address": "Xã Vũ Vân, Huyện Vũ Thư, Tỉnh Thái Bình",
+  "ellapsedInMs": 6102,
+  "estimatedCost": 0.0024056999999999998,
+  "thought": "**My Analysis of the Administrative Address Mapping**\n\nOkay, here's my approach to this address mapping task. The user wants me to translate an old address to new administrative units.  I've got the old address:  \"Xã Vũ Vân\" in \"Huyện Vũ Thư,\" \"Tỉnh Thái Bình.\"\n\nFirst, I need to break down the old address into its components to understand the context. Then, I'll dive into the provided resolutions to identify any changes.\n\nMy initial step is to check the relevant Province Resolutions, specifically 60-NQ/TW. This is where I find a critical shift: \"Tỉnh Thái Bình\" is merged with another province to become \"Tỉnh Hưng Yên.\" This seems like a pretty definitive change, so I'll mark this with high confidence.\n\nNext, I'll examine the other provided resolution (1666/NQ-UBTVQH15), which is specifically about \"tỉnh Hưng Yên.\" I'll need to carefully scan this document. I'll focus on finding \"Xã Vũ Vân\" and \"Huyện Vũ Thư.\" And there it is, line 91!  It's clear as day: \"Xã Vũ Vân\" along with \"Xã Việt Thuận,\" \"Vũ Hội,\" and \"Vũ Vinh\" are merged to form \"Xã Thư Vũ.\" This resolution explicitly connects \"Vũ Vân\" with \"Huyện Vũ Thư,\" so I'm confident about this mapping.\n\nFinally, I'll check the new ward data to confirm. I should find \"Xã Thư Vũ\" listed under \"Tỉnh Hưng Yên.\" And yes, there it is: `{\"ward_code\":\"13264\",\"ward_name\":\"Xã Thư Vũ\",\"province_name\":\"Tỉnh Hưng Yên\"}`. That confirms everything.\n\nIn conclusion, I'll construct the JSON output. The old \"Xã Vũ Vân,\" from the old \"Tỉnh Thái Bình,\" is now part of the new \"Xã Thư Vũ\" in \"Tỉnh Hưng Yên.\"  I feel quite confident about this mapping, given the explicit wording in the resolutions and the direct connection in the new data. I'll make sure to include all the relevant citation details in the output.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Hưng Yên và tỉnh Thái Bình, lấy tên là tỉnh Hưng Yên"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "13264",
+      "ward_name": "Xã Thư Vũ"
+    },
+    {
+      "citation": {
+        "header": "1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên",
+        "line": "91. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Việt Thuận, Vũ Hội, Vũ Vinh và Vũ Vân thành xã mới có tên gọi là xã Thư Vũ."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "13264",
+      "ward_name": "Xã Thư Vũ"
+    }
+  ]
+}

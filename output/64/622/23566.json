@@ -1,0 +1,18 @@
+{
+  "address": "Phường Hội Thương, Thành phố Pleiku, Tỉnh Gia Lai",
+  "ellapsedInMs": 6231,
+  "estimatedCost": 0.002505,
+  "thought": "**Determining the New Ward for the Old Address**\n\nOkay, so I've got this address, \"Phường Hội Thương, Thành phố Pleiku, Tỉnh Gia Lai,\" and I need to figure out the current ward. First things first, I break it down: \"Phường Hội Thương\" is the old ward, and \"Tỉnh Gia Lai\" is the province. Straightforward enough.\n\nNow, I start digging into the resolutions. Province-level changes are covered by 60-NQ/TW, but that just confirms that Gia Lai remains Gia Lai, which is good. That makes things simpler.\n\nThe real meat of the matter lies in other resolutions. Resolution 1664/NQ-UBTVQH15 catches my eye. Scrolling down, line 119 hits the nail on the head: it explicitly states that Hội Thương, along with other wards, is being merged into a *new* ward called \"phường Pleiku.\" Bingo!\n\nNext step is to double-check the \"new wards\" data. Yep, there it is: \"phường Pleiku\" listed for \"Tỉnh Gia Lai,\" complete with a ward code of 23575. Everything aligns perfectly. No ambiguity.\n\nTherefore, the old ward, \"Phường Hội Thương,\" is now part of the new ward, \"Phường Pleiku.\" My confidence is high – the resolution provides a direct mapping. My output will be a JSON object with:\n\n*   `province_name`: \"Tỉnh Gia Lai\"\n*   `ward_name`: \"Phường Pleiku\"\n*   `ward_code`: \"23575\"\n*   `citation`: referencing resolution 1664/NQ-UBTVQH15, line 119.\n\nI'll quickly double check for any other mentions of \"Hội Thương\" just to be sure, but I'm feeling pretty confident this is a done deal. And as expected, the data supports this, making me certain of my findings.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai",
+        "line": "119. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Tây Sơn (thành phố Pleiku), Hội Thương, Hoa Lư, Phù Đổng và xã Trà Đa thành phường mới có tên gọi là phường Pleiku."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "23575",
+      "ward_name": "Phường Pleiku"
+    }
+  ]
+}

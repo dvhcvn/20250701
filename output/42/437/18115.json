@@ -1,0 +1,18 @@
+{
+  "address": "Phường Bắc Hồng, Thị xã Hồng Lĩnh, Tỉnh Hà Tĩnh",
+  "ellapsedInMs": 6075,
+  "estimatedCost": 0.0024321,
+  "thought": "**Identifying the New Administrative Unit**\n\nOkay, so I'm looking at this old address: \"Phường Bắc Hồng, Thị xã Hồng Lĩnh, Tỉnh Hà Tĩnh.\" My goal is to figure out the corresponding new administrative unit(s). First, I need to break down the problem.\n\n1.  **Province Check:**  \"Tỉnh Hà Tĩnh\" is the province.  I immediately glance at `60-NQ/TW` to see if there have been any province mergers. Luckily, line 10 explicitly states \"Tỉnh Hà Tĩnh\" is not affected.  So, the province remains the same. Easy.\n\n2.  **Ward Identification:** Now, the ward: \"Phường Bắc Hồng\". I start searching through the resolutions for mentions of it. I see a couple that I can quickly dismiss because they're not for Hà Tĩnh province. Then, **1665/NQ-UBTVQH15** catches my eye.  This resolution focuses on my target province. Bingo!  Line 66 is the key: it clearly outlines that \"Phường Bắc Hồng\" and some neighboring wards are merging into a new one, specifically named **\"Phường Bắc Hồng Lĩnh\"**. That's a direct match!\n\n3.  **Cross-Validation:**  I always like to double-check. I consult my \"New Wards\" data. I'm looking for \"Phường Bắc Hồng Lĩnh\" *in* \"Tỉnh Hà Tĩnh\". And there it is: `{\"ward_code\":\"18115\",\"ward_name\":\"Phường Bắc Hồng Lĩnh\",\"province_name\":\"Tỉnh Hà Tĩnh\"}`.  Perfect confirmation.\n\n4.  **Confidence Check:**  The province is unchanged, and I have a clear resolution directly mapping \"Phường Bắc Hồng\" to \"Phường Bắc Hồng Lĩnh\".  The \"New Wards\" data confirms this.  It's a very solid match. High confidence.\n\n5.  **Preparing the Output:**  With that analysis complete, I am confident in providing the necessary JSON output.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh",
+        "line": "66. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Bắc Hồng, Đức Thuận, Trung Lương và xã Xuân Lam thành phường mới có tên gọi là phường**Bắc Hồng Lĩnh**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hà Tĩnh",
+      "ward_code": "18115",
+      "ward_name": "Phường Bắc Hồng Lĩnh"
+    }
+  ]
+}

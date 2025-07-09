@@ -1,0 +1,18 @@
+{
+  "address": "Phường Kim Chân, Thành phố Bắc Ninh, Tỉnh Bắc Ninh",
+  "ellapsedInMs": 7949,
+  "estimatedCost": 0.002933,
+  "thought": "**Determining the New Administrative Unit for \"Phường Kim Chân\"**\n\nOkay, so I'm presented with an old address: \"Phường Kim Chân, Thành phố Bắc Ninh, Tỉnh Bắc Ninh.\" My task is to figure out the new administrative unit based on some resolutions and new ward data. Here's my thought process:\n\nFirst, I need to parse the old address. I quickly identify \"Phường Kim Chân\" as the old ward name and \"Tỉnh Bắc Ninh\" as the old province. \"Thành phố Bắc Ninh\" is a district and irrelevant to the provincial-level changes.\n\nNext, I look at the province resolutions. Resolution 60-NQ/TW states that \"Tỉnh Bắc Ninh\" will merge with \"Tỉnh Bắc Giang\" but will *retain* the name \"Tỉnh Bắc Ninh.\" High confidence on that, so the new province name is still \"Tỉnh Bắc Ninh.\"\n\nNow, I shift my focus to the ward-level changes. I search the `other_resolutions` for mentions of \"Phường Kim Chân.\" Bingo! Resolution 1658/NQ-UBTVQH15, specifically clause 68, clearly states that \"Phường Kim Chân\" is being merged with other wards (\"Đáp Cầu,\" \"Thị Cầu,\" and \"Vũ Ninh\") to form a new ward called \"**phường Vũ Ninh**.\" The resolution also supports this restructuring, stating that the province now has a specific number of new units.\n\nTo confirm, I check the `new_wards` data for \"phường Vũ Ninh.\"  I find it!  `{\"ward_code\":\"09169\",\"ward_name\":\"Phường Vũ Ninh\",\"province_name\":\"Tỉnh Bắc Ninh\"}`. The province name matches what I determined earlier.\n\nPutting it all together, I can construct the JSON output. The `province_name` is \"Tỉnh Bắc Ninh\". The new `ward_name` is \"Phường Vũ Ninh,\" with `ward_code` \"09169.\"  The citation will point directly to clause 68 of resolution 1658/NQ-UBTVQH15, specifying the merger.  My confidence level is \"high,\" given the explicit mention in the resolution and the matching data in the new ward list.\n\nI'll double-check to be sure, but the resolution directly provides this mapping: the old \"Phường Kim Chân\" gets rolled into the new \"Phường Vũ Ninh.\" There are no other competing possibilities or ambiguities. The mapping is straightforward and reliable.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh",
+        "line": "68. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Kim Chân, Đáp Cầu, Thị Cầu và Vũ Ninh thành phường mới có tên gọi là phường Vũ Ninh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "09169",
+      "ward_name": "Phường Vũ Ninh"
+    }
+  ]
+}

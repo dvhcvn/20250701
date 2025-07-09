@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Cái Nước, Huyện Cái Nước, Tỉnh Cà Mau",
+  "ellapsedInMs": 8493,
+  "estimatedCost": 0.0030803000000000002,
+  "thought": "**Analyzing the Address and Resolutions**\n\nAlright, let's break this down. First, I see the old address information: \"Thị trấn Cái Nước\" in \"Huyện Cái Nước,\" \"Tỉnh Cà Mau.\"  I know I can ignore the \"Huyện Cái Nước\" since we're eliminating districts in this exercise. My primary focus is on \"Thị trấn Cái Nước\" and \"Tỉnh Cà Mau.\"\n\nMy initial step is to consult the province-level resolutions, specifically Resolution 60-NQ/TW. This tells me that \"Tỉnh Cà Mau\" remains unchanged after a merger with Bạc Liêu, so that confirms the `province_name` for my output.\n\nNow, I'm digging into the other resolutions, specifically looking for mentions of \"Thị trấn Cái Nước.\" Resolution 1655/NQ-UBTVQH15, line 34, jumps out.  It clearly states that the entirety of \"thị trấn Cái Nước,\" along with parts of several other communes, is merging to form the new commune of \"Xã Cái Nước.\" This is my key finding.\n\nNext, I cross-reference this with the list of new wards. I am looking for a ward with a `province_name` of \"Tỉnh Cà Mau\" that corresponds to \"Xã Cái Nước.\" Sure enough, the entry `{\"ward_code\":\"32128\",\"ward_name\":\"Xã Cái Nước\",\"province_name\":\"Tỉnh Cà Mau\"}` perfectly matches the description of the new unit resulting from the merger.\n\nThere's also another entry, `{\"ward_code\":\"32137\",\"ward_name\":\"Xã Tân Hưng\",\"province_name\":\"Tỉnh Cà Mau\"}`. However, the resolution doesn't suggest that \"Thị trấn Cái Nước\" is directly involved in creating that particular ward. The resolution mentions that *part* of Tân Hưng Đông is merged into Xã Cái Nước, but it doesn't state that \"Tân Hưng\" is directly related to \"Thị trấn Cái Nước\".\n\nTherefore, based on my analysis of the resolutions and the new ward list, I'm confident that the new administrative unit for \"Thị trấn Cái Nước\" is \"Xã Cái Nước\" with code \"32128.\" The output will be a JSON object constructed with a \"high\" `confidence`, including the relevant citation and the details of the new ward.  That's my final answer.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1655/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Cà Mau",
+        "line": "34. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Cái Nước, xã Trần Thới, phần còn lại của xã xã Đông Hưng và Đông Thới sau khi sắp xếp theo quy định tại khoản 32 Điều này và phần còn lại của xã Tân Hưng Đông sau khi sắp xếp theo quy định tại khoản 33 Điều này thành xã mới có tên gọi là xã Cái Nước."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Cà Mau",
+      "ward_code": "32128",
+      "ward_name": "Xã Cái Nước"
+    }
+  ]
+}

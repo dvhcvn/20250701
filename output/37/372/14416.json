@@ -1,0 +1,18 @@
+{
+  "address": "Xã Đồng Phong, Huyện Nho Quan, Tỉnh Ninh Bình",
+  "ellapsedInMs": 6344,
+  "estimatedCost": 0.0026257999999999997,
+  "thought": "**Identifying the New Administrative Unit for the Input Address**\n\nOkay, so I've got this address, \"Xã Đồng Phong, Huyện Nho Quan, Tỉnh Ninh Bình,\" and I need to figure out the new ward.  My approach is straightforward: break down the old address, consult my databases of resolutions and new ward data, and connect the dots.\n\nFirst, I identified the components: \"Xã Đồng Phong\" is the old ward, \"Huyện Nho Quan\" is the district, and \"Tỉnh Ninh Bình\" is the province.  I'll start with the province.  Checking the Province Resolutions (specifically 60-NQ/TW), I quickly confirmed that \"Tỉnh Ninh Bình\" remains \"Tỉnh Ninh Bình,\" even after merging with Hà Nam and Nam Định.  That takes care of the provincial aspect.\n\nNext, the real work begins. I scanned the relevant resolutions, zeroing in on those pertaining to \"Tỉnh Ninh Bình\".  Bingo! Resolution 1674/NQ-UBTVQH15, \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình,\" looks promising.  I dug into its contents.  And there it was, line 73: a perfect match!  It states that \"Xã Đồng Phong\" merges with Thị trấn Nho Quan and Yên Quang to become a new ward named \"Xã Nho Quan\".  Perfect!\n\nTo solidify this, I then cross-referenced \"Xã Nho Quan\" against my \"New wards\" database.  I found the corresponding entry:  `{\"ward_code\":\"14428\",\"ward_name\":\"Xã Nho Quan\",\"province_name\":\"Tỉnh Ninh Bình\"}`.  That confirms the new ward name and even gives me its code.\n\nPutting it all together, I am confident I have the answer: the new ward is \"Xã Nho Quan\".  The key is line 73 of resolution 1674/NQ-UBTVQH15.  Therefore, I'd construct the JSON output with high confidence, citing that specific line and the resolution.  Since this is a clear-cut case with a single, definitive match, I'm comfortable presenting this as the solution.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "73. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Nho Quan, xã Đồng Phong và xã Yên Quang thành xã mới có tên gọi là xã Nho Quan."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "14428",
+      "ward_name": "Xã Nho Quan"
+    }
+  ]
+}

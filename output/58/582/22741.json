@@ -1,0 +1,26 @@
+{
+  "address": "Phường Phước Mỹ, Thành phố Phan Rang-Tháp Chàm, Tỉnh Ninh Thuận",
+  "ellapsedInMs": 7860,
+  "estimatedCost": 0.0034647000000000002,
+  "thought": "**My Analysis of the Administrative Reorganization**\n\nOkay, so I'm tasked with figuring out the new administrative unit for \"Phường Phước Mỹ, Thành phố Phan Rang-Tháp Chàm, Tỉnh Ninh Thuận.\" This requires a careful examination of the provided resolutions and new wards data.\n\nFirst, I know that \"Tỉnh Ninh Thuận\" is now part of \"Tỉnh Khánh Hòa\" due to resolution \"60-NQ/TW.\"  That's straightforward.\n\nNow, the trickier part:  I need to see if \"Phường Phước Mỹ\" is mentioned in any of the \"Other resolutions\" concerning administrative changes.  I'm focusing my search on the `lines` of each resolution.\n\nHere's my analysis of each resolution:\n\n1.  **1654/NQ-UBTVQH15 (An Giang):**  Nothing here specifically relates to \"Phường Phước Mỹ.\"  There are mentions of \"Mỹ Phước,\" but it's a *xã* in An Giang, not a *phường*.\n\n2.  **1659/NQ-UBTVQH15 (Đà Nẵng):**  Bingo!  This one mentions \"phường Phước Mỹ.\"  However, this resolution is for Đà Nẵng, not Khánh Hòa. This is a false positive. Still, I noted this as a key finding.\n\n3.  **1662/NQ-UBTVQH15 (Đồng Nai):**  No relevant mentions here. This resolution focuses on *xã* changes, not *phường*.\n\n4.  **1664/NQ-UBTVQH15 (Gia Lai):**  This resolution contains \"xã Phước Mỹ\", not \"phường Phước Mỹ\". Another false positive.\n\n5.  **1667/NQ-UBTVQH15 (Khánh Hòa):** Again no mention of \"phường Phước Mỹ\".\n\nGiven that there is no resolution pertaining to \"Phường Phước Mỹ\" directly, the old address is assumed to remain the same. \"Phường Phước Mỹ, Thành phố Phan Rang-Tháp Chàm, Tỉnh Ninh Thuận\" becomes \"Phường Phước Mỹ, Thành phố Phan Rang-Tháp Chàm, Tỉnh Khánh Hòa\".\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "13. Hợp nhất tỉnh Ninh Thuận và tỉnh Khánh Hoà, lấy tên là tỉnh Khánh Hoà"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Khánh Hòa"
+    },
+    {
+      "citation": {
+        "header": "1667/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Khánh Hòa",
+        "line": "63. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Phước Mỹ, phườngBảo An và xã Thành Hải thành phường mới có tên gọi là **phường Bảo An**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Khánh Hòa",
+      "ward_code": "22741",
+      "ward_name": "Phường Bảo An"
+    }
+  ]
+}

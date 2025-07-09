@@ -1,0 +1,18 @@
+{
+  "address": "Xã Bình Phú, Huyện Chiêm Hóa, Tỉnh Tuyên Quang",
+  "ellapsedInMs": 8504,
+  "estimatedCost": 0.0036316000000000005,
+  "thought": "**Finding the New Administrative Unit for a Given Address**\n\nOkay, so I've got this old address: \"Xã Bình Phú, Huyện Chiêm Hóa, Tỉnh Tuyên Quang.\" My task is to determine the new administrative unit based on the provided resolutions and the list of new wards. I'm going to approach this systematically, keeping in mind my deep understanding of administrative changes.\n\nFirst, I need to pinpoint the old province and ward. That's easy: \"Tỉnh Tuyên Quang\" and \"Xã Bình Phú.\" Now, I'll go straight to the province resolutions, specifically 60-NQ/TW, to see if anything significant happened to Tuyên Quang. Ah, here it is: \"1. Hợp nhất tỉnh Tuyên Quang và tỉnh Hà Giang, lấy tên là tỉnh Tuyên Quang.\" So, Tuyên Quang *remains* Tuyên Quang, even after a merger. No change there.\n\nNext, I need to check the \"Other resolutions\" for anything related to \"Tỉnh Tuyên Quang\" and \"Xã Bình Phú.\" I'm looking for resolution 1684/NQ-UBTVQH15, \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang.\" Bingo! Now, let's dive into the details.\n\nLine 11 is key: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Bình Phú và xã Yên Lậpthành xã mới có tên gọi là **xã Yên Lập**.\" This is exactly what I needed! It directly states that \"Xã Bình Phú\" is being merged with \"Xã Yên Lập\" to create a new ward called... \"Xã Yên Lập.\" The address also mentions \"Huyện Chiêm Hóa\", but I know that this resolution is about merging wards, not districts, so that aspect is not relevant to my task.\n\nJust to be absolutely certain, I'll cross-reference this with the \"New wards\" list. And there it is: {\"ward_code\":\"02317\",\"ward_name\":\"Xã Yên Lập\",\"province_name\":\"Tỉnh Tuyên Quang\"}. This perfectly aligns with my findings. The ward code confirms the specific administrative unit.\n\nTherefore, the new ward for \"Xã Bình Phú, Huyện Chiêm Hóa, Tỉnh Tuyên Quang\" is \"Xã Yên Lập\" in the province \"Tỉnh Tuyên Quang\". My confidence in this is high, given the direct mention of the merge within the relevant resolution. I've successfully traced the administrative changes. Here's how I'd structure the result for the user.\n\n```json\n[\n  {\n    \"citation\": {\n      \"header\": \"1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang\",\n      \"line\": \"11. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Bình Phú và xã Yên Lậpthành xã mới có tên gọi là **xã Yên Lập**.\"\n    },\n    \"confidence\": \"high\",\n    \"province_name\": \"Tỉnh Tuyên Quang\",\n    \"ward_code\": \"02317\",\n    \"ward_name\": \"Xã Yên Lập\"\n  }\n]\n```\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "11. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Bình Phú và xã Yên Lậpthành xã mới có tên gọi là xã Yên Lập."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "02317",
+      "ward_name": "Xã Yên Lập"
+    }
+  ]
+}

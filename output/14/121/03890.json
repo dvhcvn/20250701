@@ -1,0 +1,28 @@
+{
+  "address": "Xã Hua Nhàn, Huyện Bắc Yên, Tỉnh Sơn La",
+  "ellapsedInMs": 6797,
+  "estimatedCost": 0.0026739999999999997,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm tasked with mapping this old Vietnamese address to the new administrative structure. Let's break this down systematically. The user's input gives us \"Xã Hua Nhàn\" (ward), \"Huyện Bắc Yên\" (district), and \"Tỉnh Sơn La\" (province).\n\nFirst, I'm checking the province. The 60-NQ/TW resolution list is key here.  I see \"Tỉnh Sơn La\" listed as a province *not* undergoing any merges or splits.  That's a high-confidence mapping for the province, essentially keeping it as \"Tỉnh Sơn La.\"\n\nNext, I need to investigate the other resolutions.  My focus is on finding how \"Xã Hua Nhàn\" is affected. I quickly rule out `1671/NQ-UBTVQH15` as it pertains to a different province.  `1681/NQ-UBTVQH15` is crucial. Reading through it, line 25 doesn't help. But line 27 explicitly states that \"Xã Hua Nhàn\" is merged into \"Xã Tạ Khoa\". Bingo!  That's the resolution I need to link the old ward to its new equivalent.\n\nNow, I look for \"Xã Tạ Khoa\" in the `New wards` data.  And, sure enough, I find a perfect match:  `{\"ward_code\":\"03880\",\"ward_name\":\"Xã Tạ Khoa\",\"province_name\":\"Tỉnh Sơn La\"}`. That confirms my finding from the resolution.\n\nFor the JSON output, the province is a straightforward \"Tỉnh Sơn La\". The mapping for \"Xã Hua Nhàn\" is solid – the resolution directly merges it into \"Xã Tạ Khoa\", which has a valid new ward code.  The confidence here is high because it's a direct resolution.  Since the request is for *all possible* candidates, this is the only logical and resolvable candidate.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh không thực hiện sáp nhập:",
+        "line": "5. Tỉnh Sơn La"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Sơn La",
+      "ward_code": "03880",
+      "ward_name": "Xã Tạ Khoa"
+    },
+    {
+      "citation": {
+        "header": "1681/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Sơn La",
+        "line": "27. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Mường Khoa, Hua Nhàn và Tạ Khoa thành xã mới có tên gọi là **xã Tạ Khoa**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Sơn La",
+      "ward_code": "03880",
+      "ward_name": "Xã Tạ Khoa"
+    }
+  ]
+}

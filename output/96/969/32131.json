@@ -1,0 +1,28 @@
+{
+  "address": "Xã Lương Thế Trân, Huyện Cái Nước, Tỉnh Cà Mau",
+  "ellapsedInMs": 8733,
+  "estimatedCost": 0.0034046,
+  "thought": "**My Analysis of the New Administrative Unit for the Old Address**\n\nOkay, let's break this down. My goal is to determine the new administrative unit (ward) corresponding to the old address \"Xã Lương Thế Trân, Huyện Cái Nước, Tỉnh Cà Mau.\" I'll use my knowledge of how these boundary changes work to find the answer.\n\nFirst, I need to parse the input. I have the old address, province-level resolutions (specifically 60-NQ/TW), other relevant resolutions (1655/NQ-UBTVQH15), and a list of potential new wards.\n\nAnalyzing province resolution 60-NQ/TW is straightforward. It indicates the merging of Bac Lieu and Ca Mau provinces, *but* the resulting province is still called Ca Mau. The province part of my address remains valid. No immediate change there.\n\nNow, let's delve into resolution 1655/NQ-UBTVQH15.  This is where the real work begins. I'm looking for mentions of \"Xã Lương Thế Trân\" or \"Huyện Cái Nước\" or related areas. Crucially, line 31 jumps out: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Thạnh Phú, Phú Hưng, Lương Thế Trân và một phần diện tích tự nhiên, quy mô dân số của xã Lợi An thành xã mới có tên gọi là **xã Lương Thế Trân**.\"  This clearly states that the old \"Xã Lương Thế Trân\" is *part of* forming a *new* \"Xã Lương Thế Trân\". Bingo! It looks like the ward name is retained, with perhaps a population or area adjustment from nearby wards, but the name stays the same.\n\nLine 34 is also interesting. It deals with the formation of \"Xã Cái Nước\" from a town and other wards. Although the old address mentions the *district* \"Huyện Cái Nước\", that's not the current ward in question (\"Xã Lương Thế Trân\"). So, line 34 doesn't provide any relevant information here.\n\nFinally, I cross-reference this with the list of new wards. I have a matching entry: `{\"ward_code\":\"32134\",\"ward_name\":\"Xã Lương Thế Trân\",\"province_name\":\"Tỉnh Cà Mau\"}`. This perfectly aligns with my findings in resolution 1655/NQ-UBTVQH15. The province name is the same too. I can disregard the others, as they don't seem related.\n\nIn conclusion, based on my expert analysis, the new administrative unit (ward) for the old address \"Xã Lương Thế Trân, Huyện Cái Nước, Tỉnh Cà Mau\" is **\"Xã Lương Thế Trân\"**. It is likely this new ward will carry a similar if not identical geographical and population footprint, as the name persists in the resolution.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "22. Hợp nhất tỉnh Bạc Liêu và tỉnh Cà Mau, lấy tên là tỉnh Cà Mau"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Cà Mau",
+      "ward_code": "32134",
+      "ward_name": "Xã Lương Thế Trân"
+    },
+    {
+      "citation": {
+        "header": "1655/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Cà Mau",
+        "line": "31. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Thạnh Phú, Phú Hưng, Lương Thế Trân và một phần diện tích tự nhiên, quy mô dân số của xã Lợi An thành xã mới có tên gọi là xã Lương Thế Trân."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Cà Mau",
+      "ward_code": "32134",
+      "ward_name": "Xã Lương Thế Trân"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "address": "Xã Giao Hà, Huyện Giao Thủy, Tỉnh Nam Định",
+  "ellapsedInMs": 6562,
+  "estimatedCost": 0.0025316,
+  "thought": "**My Thought Process on Address Mapping**\n\nOkay, here's how I'm approaching this address mapping challenge: the user wants me to translate an old Vietnamese address into its current administrative units. The input is \"Xã Giao Hà, Huyện Giao Thủy, Tỉnh Nam Định\".  My initial goal is to extract the province and ward.  I've got:\n\n*   **Old Ward:** \"Xã Giao Hà\"\n*   **Old Province:** \"Tỉnh Nam Định\"\n\nNow, I need to consult my resolutions, starting with the provincial mergers. I've been provided with \"60-NQ/TW\", and I see that \"Tỉnh Nam Định\" has been absorbed into \"Tỉnh Ninh Bình\" with the name \"Tỉnh Ninh Bình.\"  This seems straightforward and based on a direct rule, so I'll mark that with high confidence.\n\nNext, I need to check for any ward-level changes *within* this new \"Tỉnh Ninh Bình.\"  The crucial bit here is resolution \"1674/NQ-UBTVQH15.\"  Line 56 is the key: it explicitly states that \"Xã Giao Hà\" is being merged with other wards to form a new ward, specifically **\"xã Giao Phúc\"**. This is a direct match, indicating high confidence.\n\nNow, I'll pull the corresponding details for \"xã Giao Phúc\" from the \"New Wards\" section. I have:\n\n*   `ward_code`: \"14203\"\n*   `ward_name`: \"Xã Giao Phúc\"\n*   `province_name`: \"Tỉnh Ninh Bình\"\n\nMy final step is to construct the JSON output: the citation will reference the relevant resolution (1674/NQ-UBTVQH15), the confidence level will be \"high\" due to the direct match in the resolution, the province name will be \"Tỉnh Ninh Bình\", and the ward code and name will be from the new ward details.\n\nLet me double check everything. The information I have from the address, province mapping, and ward mapping are consistent. All data points towards a valid final output.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Hà Nam, tỉnh Ninh Bình và tỉnh Nam Định; lấy tên là tỉnh Ninh Bình"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "14203",
+      "ward_name": "Xã Giao Phúc"
+    },
+    {
+      "citation": {
+        "header": "1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Giao Xuân, Giao Hà và Giao Hải thành xã mới có tên gọi là xã Giao Phúc."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "14203",
+      "ward_name": "Xã Giao Phúc"
+    }
+  ]
+}

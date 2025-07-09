@@ -1,0 +1,18 @@
+{
+  "address": "Xã Bằng Doãn, Huyện Đoan Hùng, Tỉnh Phú Thọ",
+  "ellapsedInMs": 6906,
+  "estimatedCost": 0.0021464,
+  "thought": "**Determining the New Ward for \"Xã Bằng Doãn\"**\n\nOkay, here's my thought process on this administrative unit identification. First, I need to understand what the user is asking, which is to find the new ward for the old address \"Xã Bằng Doãn\" in \"Tỉnh Phú Thọ.\"  Since I'm dealing with administrative restructuring, I'll need to meticulously consult relevant resolutions and the new ward list.\n\nMy initial approach is straightforward: I'll isolate the old ward (\"Xã Bằng Doãn\") and province (\"Tỉnh Phú Thọ\") from the user's input. Now, I have to ensure I'm up-to-date on any provincial-level changes. Resolution 60-NQ/TW is always a good starting point for province consolidations or name adjustments. I'll search through that list to confirm how Phú Thọ is handled. Ah, here it is: \"Hợp nhất tỉnh Vĩnh Phúc, tỉnh Phú Thọ và tỉnh Hoà Bình; lấy tên là tỉnh Phú Thọ.\" Okay, Phú Thọ remains Phú Thọ, even after absorbing Vĩnh Phúc and Hoà Bình. Good to know.\n\nNext, I'll dive into the specific resolutions for changes at the ward level. I'll focus on the \"Other resolutions\" data, looking for mentions of \"Xã Bằng Doãn.\"  Bingo! Resolution 1676/NQ-UBTVQH15 seems promising. Let's see... and there it is:  \"21. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Bằng Doãn, Phúc Lai và Bằng Luân thành xã mới có tên gọi là **xã Bằng Luân**.\" This tells me directly that \"Xã Bằng Doãn\" has been merged into \"Xã Bằng Luân.\"\n\nNow I need to confirm the information in the \"New Wards\" list. I'll search for \"Xã Bằng Luân\" with \"Tỉnh Phú Thọ.\"  Yes! There's an entry: `{\"ward_code\":\"07996\",\"ward_name\":\"Xã Bằng Luân\",\"province_name\":\"Tỉnh Phú Thọ\"}`.  That's a direct match and confirms my findings.\n\nFinally, constructing the JSON output is easy:\n\n*   `province_name`: \"Tỉnh Phú Thọ\" (confirmed from Resolution 60-NQ/TW).\n*   `ward_name`: \"Xã Bằng Luân\" (from Resolution 1676/NQ-UBTVQH15).\n*   `ward_code`: \"07996\" (from the New Wards list).\n*   `citation`:  I'll include the relevant line and header from Resolution 1676/NQ-UBTVQH15.\n*   `confidence`:  \"high\". There's a clear, direct match and explicit instruction in the resolutions, so I'm very confident in this answer.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "21. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Bằng Doãn, Phúc Lai và Bằng Luân thành xã mới có tên gọi là xã Bằng Luân."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "07996",
+      "ward_name": "Xã Bằng Luân"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Lấp Vò, Huyện Lấp Vò, Tỉnh Đồng Tháp",
+  "ellapsedInMs": 7394,
+  "estimatedCost": 0.0026994000000000002,
+  "thought": "**My Analysis of the Address Mapping**\n\nOkay, so I'm tasked with mapping the old Vietnamese address \"Thị trấn Lấp Vò, Huyện Lấp Vò, Tỉnh Đồng Tháp\" to its new administrative unit. My strategy is straightforward: identify the old ward and province, cross-reference with relevant resolutions and the provided new ward data, and then construct the JSON output.\n\nFirst, I need to pinpoint the old ward (\"Thị trấn Lấp Vò\") and province (\"Tỉnh Đồng Tháp\"). The mention of \"Huyện Lấp Vò\" is helpful context, even though the prompt indicates that districts have been eliminated.\n\nNext, I'll dive into the province resolutions (specifically 60-NQ/TW). Finding \"Tỉnh Đồng Tháp\" is crucial. The resolution about the merger with Tiền Giang, keeping the name \"Tỉnh Đồng Tháp,\" is immediately relevant, solidifying \"Tỉnh Đồng Tháp\" as the `province_name` in my output.\n\nNow, the main focus shifts to resolution 1663/NQ-UBTVQH15. I'll meticulously scan its lines for \"Thị trấn Lấp Vò.\" Line 31 jumps out: it explicitly states that \"Thị trấn Lấp Vò\" is combined with other areas to form \"xã Lấp Vò.\" This is the key piece of information for the new ward mapping.\n\nWith the new ward confirmed as \"xã Lấp Vò,\" I'll cross-reference it against the \"New wards\" data.  The match is perfect:  `{\"ward_code\":\"30169\",\"ward_name\":\"Xã Lấp Vò\",\"province_name\":\"Tỉnh Đồng Tháp\"}`.\n\nFinally, I will assemble the JSON output. The specific resolution line containing the merger information will populate the `citation.line` and  provide the `citation.header`. I can confidently set `confidence` to \"high\" due to the direct mention and clear instructions. I will use \"Tỉnh Đồng Tháp\" as the `province_name`.  And, obviously, `ward_code` and `ward_name` come from the \"New wards\" data.\n\nTo make sure everything aligns, let's just go over the key elements again: Province check shows the unchanged province name. Ward check confirms the exact new ward. And, the new wards data provides a perfect match. I'm satisfied.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1663/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Tháp",
+        "line": "31. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Lấp Vò và các xã Bình Thành (huyện Lấp Vò), Vĩnh Thạnh, Bình Thạnh Trung thành xã mới có tên gọi là xã Lấp Vò."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đồng Tháp",
+      "ward_code": "30169",
+      "ward_name": "Xã Lấp Vò"
+    }
+  ]
+}

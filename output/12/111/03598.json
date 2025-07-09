@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Tân Uyên, Huyện Tân Uyên, Tỉnh Lai Châu",
+  "ellapsedInMs": 8873,
+  "estimatedCost": 0.0033521,
+  "thought": "**My Analysis of the Administrative Unit Change**\n\nOkay, so I'm presented with the old address \"Thị trấn Tân Uyên, Huyện Tân Uyên, Tỉnh Lai Châu\" and need to determine its corresponding new administrative unit. My process is as follows:\n\n1.  **Province Identification:** The province is clearly \"Tỉnh Lai Châu\". I immediately check Resolution 60-NQ/TW to see if any provincial-level changes are mandated. Luckily, Lai Châu is listed as unchanged, so it remains \"Tỉnh Lai Châu\". This streamlines the process.\n\n2.  **Old Ward Identification:** The old ward is \"Thị trấn Tân Uyên\". Now, I must search through the \"Other resolutions\" for any mention of this specific ward.\n\n3.  **Resolution Analysis:** I found a crucial resolution, 1670/NQ-UBTVQH15, concerning the reorganization of the Lai Châu province's lower-level units. Line 7 of this resolution provides the key: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số củathị trấn Tân Uyênvàcácxã Trung Đồng, Thân Thuộc, Nậm Cần thành xã mới có tên gọi là **xã Tân Uyên**.\" It's directly stated that \"Thị trấn Tân Uyên\" is being merged into the new \"Xã Tân Uyên.\"  This is a direct mapping, which is excellent.\n\n4.  **Verification and Data Lookup:** I need to confirm the new ward in my \"New wards\" dataset. I'm searching for a ward with `ward_name` \"Xã Tân Uyên\" and `province_name` \"Tỉnh Lai Châu\". I found exactly that: `{\"ward_code\":\"03598\",\"ward_name\":\"Xã Tân Uyên\",\"province_name\":\"Tỉnh Lai Châu\"}`. Perfect!\n\n5.  **Confidence Assessment:** The direct link in the resolution along with the existing new ward data gives me a *high* confidence level. There is no ambiguity.\n\n6.  **Final Output:** My output will be in JSON format, with the following details:\n\n    *   `citation`: Contains the full resolution title and the specific line where the change is described to ensure traceability.\n        *   `header`: \"1670/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lai Châu\"\n        *   `line`: \"7. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số củathị trấn Tân Uyênvàcácxã Trung Đồng, Thân Thuộc, Nậm Cần thành xã mới có tên gọi là **xã Tân Uyên**.\"\n    *   `confidence`: \"high\"\n    *   `province_name`: \"Tỉnh Lai Châu\"\n    *   `ward_code`: \"03598\"\n    *   `ward_name`: \"Xã Tân Uyên\"\n\nThis should provide a clear and authoritative answer to the user's query. The process is thorough, and I have high confidence in the result, supported by direct evidence from the relevant government resolutions and data.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1670/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lai Châu",
+        "line": "7. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số củathị trấn Tân Uyênvàcácxã Trung Đồng, Thân Thuộc, Nậm Cần thành xã mới có tên gọi là xã Tân Uyên."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lai Châu",
+      "ward_code": "03598",
+      "ward_name": "Xã Tân Uyên"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "address": "Xã Thanh Vĩnh Đông, Huyện Châu Thành, Tỉnh Long An",
+  "ellapsedInMs": 6109,
+  "estimatedCost": 0.0034218,
+  "thought": "**My Thought Process for Identifying the New Administrative Unit**\n\nOkay, so I've got this old address: \"Xã Thanh Vĩnh Đông, Huyện Châu Thành, Tỉnh Long An\". My task is to figure out the new ward. Here's how I'm going to approach it:\n\nFirst, I need to check for any province mergers that might impact things. I'll refer to `60-NQ/TW`, specifically looking for \"Tỉnh Long An\". Ah, found it! Turns out \"Hợp nhất tỉnh Tây Ninh và tỉnh Long An, lấy tên là tỉnh Tây Ninh\" which means Long An was merged into Tây Ninh, and the new province is called \"Tỉnh Tây Ninh.\" That's a key piece of the puzzle.\n\nNow, I'll search for the old ward, \"Xã Thanh Vĩnh Đông\", in my `Other resolutions` database. Gotta scan through those resolutions... and bingo! I found something in `1682/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tây Ninh`. It states: \"53. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Thanh Phú Long, Thanh Vĩnh Đông và Thuận Mỹ thành xã mới có tên gọi là **xã Thuận Mỹ**.\"  So, it looks like Thanh Vĩnh Đông is now part of a new ward called \"Xã Thuận Mỹ\".\n\nAlright, the next step is to find the official information for the new ward - the code and name. I'll check my `New wards` database using \"Xã Thuận Mỹ\" and \"Tỉnh Tây Ninh\" as my search terms. Found it! The entry is: `{\"ward_code\":\"28225\",\"ward_name\":\"Xã Thuận Mỹ\",\"province_name\":\"Tỉnh Tây Ninh\"}`. Perfect!\n\nNow, for my confidence level. This is a direct hit! The resolution explicitly states the merger of \"Thanh Vĩnh Đông\" into \"Xã Thuận Mỹ\". This is a clean, unambiguous match. High confidence.\n\nFinally, I'll construct the JSON output with all this information.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "18. Hợp nhất tỉnh Tây Ninh và tỉnh Long An, lấy tên là tỉnh Tây Ninh"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tây Ninh",
+      "ward_code": "28225",
+      "ward_name": "Xã Thuận Mỹ"
+    },
+    {
+      "citation": {
+        "header": "1682/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tây Ninh",
+        "line": "53. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Thanh Phú Long, Thanh Vĩnh Đông và Thuận Mỹ thành xã mới có tên gọi là xã Thuận Mỹ."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tây Ninh",
+      "ward_code": "28225",
+      "ward_name": "Xã Thuận Mỹ"
+    }
+  ]
+}

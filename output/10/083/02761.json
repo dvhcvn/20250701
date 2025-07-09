@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Mường Khương, Huyện Mường Khương, Tỉnh Lào Cai",
+  "ellapsedInMs": 6811,
+  "estimatedCost": 0.0028044,
+  "thought": "**My Analysis of the Administrative Unit Mapping**\n\nOkay, so I'm tackling this address: \"Thị trấn Mường Khương, Huyện Mường Khương, Tỉnh Lào Cai\". My goal is to figure out where it belongs in the *new* administrative structure.\n\nFirst, I parsed out the old units: \"Thị trấn Mường Khương\" (ward), \"Huyện Mường Khương\" (district, not super important since districts are getting eliminated), and \"Tỉnh Lào Cai\" (province).\n\nThen, I jumped into the resolutions. The province stayed the same, \"Tỉnh Lào Cai\", confirmed by resolution 60-NQ/TW. But the key is resolution 1673/NQ-UBTVQH15. Bingo! Line 77 explicitly says \"Thị trấn Mường Khương\" *becomes part of* a new ward named \"Xã Mường Khương\", along with some other old wards like \"Nậm Chảy.\"\n\nNow, I double-checked my \"New Wards\" data. And there it is:  `{\"ward_code\":\"02761\",\"ward_name\":\"Xã Mường Khương\",\"province_name\":\"Tỉnh Lào Cai\"}` - perfect match!\n\nThe only other thing to consider is Nậm Chảy, but the address specifies \"Thị trấn Mường Khương\". So, the key is the merger of \"Thị trấn Mường Khương\" to the new \"Xã Mường Khương\".\n\nTherefore, I'm confident that the old ward \"Thị trấn Mường Khương\" maps directly to the new ward \"Xã Mường Khương\" within the province of \"Tỉnh Lào Cai\". That's a high-confidence match given the explicit resolution details. My output JSON will reflect this clear mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai",
+        "line": "77. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Mường Khương và các xã Thanh Bình (huyện Mường Khương), Nậm Chảy, Tung Chung Phố, Nấm Lư thành xã mới có tên gọi là xã Mường Khương."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "02761",
+      "ward_name": "Xã Mường Khương"
+    }
+  ]
+}

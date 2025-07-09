@@ -1,0 +1,18 @@
+{
+  "address": "Phường Võ Thị Sáu, Quận 3, Thành phố Hồ Chí Minh",
+  "ellapsedInMs": 8511,
+  "estimatedCost": 0.0031019,
+  "thought": "**Identifying the New Administrative Unit**\n\nOkay, here's how I'm approaching this. The user has given me an old address and wants the corresponding new administrative unit, likely a new ward, after recent changes.  The key is to leverage the provided resolutions and the \"New wards\" list.\n\nFirst, I'll parse the old address: \"Phường Võ Thị Sáu, Quận 3, Thành phố Hồ Chí Minh.\"  That's straightforward.  I've got the old ward (\"Phường Võ Thị Sáu\"), district (\"Quận 3\" - but I'll set that aside, focusing on ward and province due to the prompt), and province (\"Thành phố Hồ Chí Minh\").\n\nNow, to the resolutions. I need to figure out if there have been any changes at the province level first. I'll check \"60-NQ/TW\" to see if there have been any province mergers or name changes in \"Thành phố Hồ Chí Minh\".  Looks like the city *is* mentioned, but it remains unchanged.  So, I can proceed knowing the province is still \"Thành phố Hồ Chí Minh.\"\n\nNext, I zero in on \"1685/NQ-UBTVQH15,\" which specifically addresses administrative changes within \"Thành phố Hồ Chí Minh\".  I'll scan the lines of that resolution, looking for any mention of \"Phường Võ Thị Sáu\".  Aha! Line 6 is the key. It clearly states that \"Phường Võ Thị Sáu\" is merged with part of Phường 4 to form the new ward \"Phường Xuân Hòa\".  That's the answer!\n\nNow, the final step: validating this new ward in the \"New wards\" list.  I'll look for \"Phường Xuân Hòa\" in that list to get the specific `ward_code`.  There it is, a perfect match!  The entry `{\"ward_code\":\"27139\",\"ward_name\":\"Phường Xuân Hòa\",\"province_name\":\"Thành phố Hồ Chí Minh\"}` confirms the mapping.\n\nTherefore, the output will be based on the citation from that resolution.  I'll set the `confidence` to \"high\" because the resolution explicitly mentions the old and new wards. The JSON output will be constructed using the citation: the header will be the resolution number, and the line will be the direct quote mapping the old to the new ward. All good.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1685/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của Thành phố Hồ Chí Minh",
+        "line": "6. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Võ Thị Sáu và phần còn lại của Phường 4 (Quận 3) sau khi sắp xếp theo quy định tại khoản 5 Điều này thành phường mới có tên gọi là phường Xuân Hòa."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hồ Chí Minh",
+      "ward_code": "27139",
+      "ward_name": "Phường Xuân Hòa"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tam Hợp, Huyện Quỳ Hợp, Tỉnh Nghệ An",
+  "ellapsedInMs": 8935,
+  "estimatedCost": 0.0033234,
+  "thought": "**Analysis of Vietnamese Administrative Unit Mapping**\n\nOkay, so I'm tasked with figuring out the new location for an old Vietnamese address: \"Xã Tam Hợp, Huyện Quỳ Hợp, Tỉnh Nghệ An.\"  My first thought is to break this down.  I need to start with the province, \"Tỉnh Nghệ An.\"  I've got a resolution, 60-NQ/TW, that tells me that Nghệ An is not being merged.  Great! The province name is staying the same.\n\nNext, I need to focus on \"Xã Tam Hợp, Huyện Quỳ Hợp.\"  I'm going to scan the other resolutions, specifically `1678/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Nghệ An` to see if I can find my match.  I'm looking for mentions of \"Tam Hợp\" and \"Quỳ Hợp\" within the Nghệ An context.\n\nI see line 64: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Quỳ Hợp và các xã Châu Đình, Châu Quang, Thọ Hợp thành xã mới có tên gọi là **xã Quỳ Hợp**.\"  That's about Quỳ Hợp town, so that's not relevant.\n\nThen, line 65: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tam Hợp (huyện Quỳ Hợp), Đồng Hợp, Nghĩa Xuân và Yên Hợp thành xã mới có tên gọi là **xã Tam Hợp**.\"  *Bingo!* This is a direct hit for \"Xã Tam Hợp (huyện Quỳ Hợp).\" It explicitly states that this \"Tam Hợp\" is being merged with other communes *to form a new* \"Xã Tam Hợp\". So, the name is staying, but the composition is different. I'll need to remember that it's a *new* Tam Hợp.\n\nI quickly check the other lines in this resolution to confirm:\n\n*   Line 67 and 69 mention \"Quỳ Hợp\" but not \"Tam Hợp\".\n*   Line 98 mentions \"Tam Hợp\" but says \"huyện Tương Dương\", which is a different district!\n\nSo, the resolution confirms that the old \"Xã Tam Hợp\" of Quỳ Hợp district is merging to become *a new* \"Xã Tam Hợp\".\n\nNow, I'll go to my \"New wards\" data and look for \"Xã Tam Hợp\" in \"Tỉnh Nghệ An.\" I find an entry: `{\"ward_code\":\"17059\",\"ward_name\":\"Xã Tam Hợp\",\"province_name\":\"Tỉnh Nghệ An\"}`. Perfect! This is exactly what I was expecting.\n\nTherefore, the old address is mapped to a *new* \"Xã Tam Hợp\", with the same name, but its composition and code are different. I can confidently say that the new code is \"17059\" and the old unit has been preserved. I'll make sure to cite the resolution line 65 and add a high confidence rating to the mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1678/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Nghệ An",
+        "line": "65. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tam Hợp (huyện Quỳ Hợp), Đồng Hợp, Nghĩa Xuân và Yên Hợp thành xã mới có tên gọi là xã Tam Hợp."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Nghệ An",
+      "ward_code": "17059",
+      "ward_name": "Xã Tam Hợp"
+    }
+  ]
+}

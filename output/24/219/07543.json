@@ -1,0 +1,18 @@
+{
+  "address": "Xã Hộ Đáp, Huyện Lục Ngạn, Tỉnh Bắc Giang",
+  "ellapsedInMs": 6159,
+  "estimatedCost": 0.0020873999999999997,
+  "thought": "**My Analysis of the Address Mapping**\n\nOkay, so I'm tasked with mapping the old address \"Xã Hộ Đáp, Huyện Lục Ngạn, Tỉnh Bắc Giang\" to its new administrative unit. My process is pretty straightforward, leveraging my knowledge of these kinds of situations.\n\nFirst, I identified \"Tỉnh Bắc Giang\" as the province. Then, I quickly recalled that there was a merger. Resolution 60-NQ/TW clearly states that Bắc Giang merged into Bắc Ninh, so the `province_name` in my output will be \"Tỉnh Bắc Ninh\".\n\nNext, I zeroed in on the specific ward: \"Xã Hộ Đáp.\" This is the key piece of information.  I then searched through the relevant resolutions, recognizing that I need to look at documents concerning the merging into Bắc Ninh. I found the crucial bit in \"1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh.\"  Line 32 explicitly states that \"Xã Hộ Đáp\" was merged into \"Xã Sơn Hải.\" Bingo!\n\nWith that direct connection established, I looked up \"Xã Sơn Hải\" in the provided list of new wards, and confirmed the details: `ward_code` \"07543\", `ward_name` \"Xã Sơn Hải\".\n\nThe output construction is easy now. I'll include the relevant citation from the resolution to demonstrate the mapping. My `confidence` is high because this is a direct, clear match. The `province_name` is \"Tỉnh Bắc Ninh\" and the new `ward_code` and `ward_name` are from the \"New Wards\" list.\n\nI quickly scanned other lines, just to be thorough. Line 30 mentions another merger, but it doesn't involve \"Xã Hộ Đáp,\" and I quickly discounted other possibilities. \"Xã Sơn Hải\" is the *only* definitive match in my analysis.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh",
+        "line": "32. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Hộ Đáp và xã Sơn Hải thành xã mới có tên gọi là xã Sơn Hải."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "07543",
+      "ward_name": "Xã Sơn Hải"
+    }
+  ]
+}

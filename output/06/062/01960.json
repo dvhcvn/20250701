@@ -1,0 +1,28 @@
+{
+  "address": "Xã Hiệp Lực, Huyện Ngân Sơn, Tỉnh Bắc Kạn",
+  "ellapsedInMs": 8731,
+  "estimatedCost": 0.0031615,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm tackling this address mapping problem. It's about translating an old Vietnamese address (\"Xã Hiệp Lực\", \"Huyện Ngân Sơn\", \"Tỉnh Bắc Kạn\") into the new administrative structure. First, I broke it down: identifying the components - ward, district, and province. The user specifies that districts are being eliminated, so that's a key factor.\n\nMy initial thought was to dig into those province resolutions (60-NQ/TW). I checked if \"Tỉnh Bắc Kạn\" was marked for non-merger. Nope, it's not. Then, I looked at the \"merged/consolidated\" list. Bingo! \"Bắc Kạn\" is part of the merger with \"Thái Nguyên.\" So, right off the bat, I know the new province is \"Tỉnh Thái Nguyên.\"\n\nNext, I had to sift through other resolutions to find the details. Resolution 1659/NQ-UBTVQH15 (Da Nang) didn't help. 1669/NQ-UBTVQH15 (Hai Phong) had a \"Hiệp Lực,\" but it's in a completely different context (\"Huyện Ninh Giang\", \"Thành phố Hải Phòng\") – not my \"Hiệp Lực.\"\n\nFinally, I hit resolution 1683/NQ-UBTVQH15 (Thái Nguyên). Line 51 mentioned a *new* \"Xã Ngân Sơn,\" formed from other wards. It looked promising, but that wasn't what I needed regarding the *old* district \"Huyện Ngân Sơn\". However, line 53, that's where things got interesting. It clearly states that \"Xã Hiệp Lực\" is merging with \"xã Thuần Mang\" to form a *new* \"Xã Hiệp Lực,\" and crucially, it's happening within \"Tỉnh Thái Nguyên.\" That's the key. This directly addresses the original ward.\n\nI then briefly checked the provided list of new wards. \"Xã Ngân Sơn\" was there, but it wasn't relevant to my specific \"Hiệp Lực\" mapping.\n\nSo, here's my conclusion:\n\n*   **Old Province:** \"Tỉnh Bắc Kạn\" is now part of \"Tỉnh Thái Nguyên.\"\n*   **Old Ward:** \"Xã Hiệp Lực\" (Huyện Ngân Sơn, Tỉnh Bắc Kạn) is now \"Xã Hiệp Lực\" (Tỉnh Thái Nguyên) after merging with \"xã Thuần Mang\" per resolution 1683/NQ-UBTVQH15, line 53. The old \"Huyện Ngân Sơn\" district seems to have been absorbed, but it's not directly stated in the resolution how. Likely, the old district will become part of a larger district in Thái Nguyên.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Bắc Kạn và tỉnh Thái Nguyên, lấy tên là tỉnh Thái Nguyên"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thái Nguyên",
+      "ward_code": "01960",
+      "ward_name": "Xã Hiệp Lực"
+    },
+    {
+      "citation": {
+        "header": "1683/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thái Nguyên",
+        "line": "53. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Thuần Mang và xã Hiệp Lực thành xã mới có tên gọi là xã Hiệp Lực."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thái Nguyên",
+      "ward_code": "01960",
+      "ward_name": "Xã Hiệp Lực"
+    }
+  ]
+}

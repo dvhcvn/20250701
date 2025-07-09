@@ -1,0 +1,18 @@
+{
+  "address": "Xã Thượng Hà, Huyện Bảo Lạc, Tỉnh Cao Bằng",
+  "ellapsedInMs": 7270,
+  "estimatedCost": 0.0032928000000000002,
+  "thought": "**Determining the New Ward for the Given Address**\n\nOkay, let's break this down. The user provided an old address: \"Xã Thượng Hà, Huyện Bảo Lạc, Tỉnh Cao Bằng.\" My task is to figure out the new administrative unit, likely a new ward, after any recent redistricting.\n\nFirst, I parsed the address: \"Xã Thượng Hà\" is the ward, \"Huyện Bảo Lạc\" is the district, and \"Tỉnh Cao Bằng\" is the province.  I need to check for any relevant resolutions.  Since Cao Bằng is listed as unaffected by province-level changes, I'll focus on lower-level changes.\n\nThe critical piece of information here is resolution **1657/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Cao Bằng.**  Line 7, 8 and 11 don't help, but then line 10 jumps out at me: *“Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Thượng Hà và xã Cô Ba thành xã mới có tên gọi là **xã Cô Ba**.”* Bingo! This explicitly states that \"Xã Thượng Hà\" is merged with \"Xã Cô Ba\" to form \"Xã Cô Ba\".  This is exactly what I was looking for.\n\nI then cross-referenced this with the available data on new wards. The \"New Wards\" list contains one relevant entry: `{\"ward_code\":\"01327\",\"ward_name\":\"Xã Cô Ba\",\"province_name\":\"Tỉnh Cao Bằng\"}`.  This perfectly aligns with my findings from resolution 1657/NQ-UBTVQH15.  The other \"Xã Thượng Hà\" entry is irrelevant as it's from Lào Cai.\n\nTherefore, my conclusion is clear: the old ward \"Xã Thượng Hà, Huyện Bảo Lạc, Tỉnh Cao Bằng\" is now part of the new ward \"Xã Cô Ba\", code \"01327\". This is a straightforward match and I have high confidence in this determination because of the direct instructions in the resolution.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1657/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Cao Bằng",
+        "line": "10. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Thượng Hà và xã Cô Ba thành xã mới có tên gọi là **xã Cô Ba**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Cao Bằng",
+      "ward_code": "01327",
+      "ward_name": "Xã Cô Ba"
+    }
+  ]
+}

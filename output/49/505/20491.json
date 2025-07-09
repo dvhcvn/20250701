@@ -1,0 +1,18 @@
+{
+  "address": "Xã Za Hung, Huyện Đông Giang, Tỉnh Quảng Nam",
+  "ellapsedInMs": 7287,
+  "estimatedCost": 0.0027983999999999995,
+  "thought": "**Determining the New Ward for the Given Address**\n\nOkay, let's break this down. The user is asking about the new administrative unit for \"Xã Za Hung, Huyện Đông Giang, Tỉnh Quảng Nam\".  I need to find the equivalent ward after the recent changes, using the resolutions and the new ward data I have.\n\nFirst, I parsed the old address.  It's \"Xã Za Hung\" in \"Huyện Đông Giang\" of \"Tỉnh Quảng Nam\".  Now, I have to go through the relevant resolutions.\n\nMy initial thought is to check if the province has changed. Bingo! Resolution **60-NQ/TW** indicates that \"Tỉnh Quảng Nam\" is now part of \"Thành phố Đà Nẵng\". This is crucial for pinpointing the new ward.\n\nNext, I reviewed the other resolutions:\n\n*   **1659/NQ-UBTVQH15**: This one looked promising. It deals with administrative changes in \"thành phố Đà Nẵng\". Crucially, it lists \"Zà Hung\" (a variant of \"Za Hung\", the old ward) *directly* in a reorganization. This resolution merges several wards, including \"Zà Hung\", into the new ward called \"xã Đông Giang\".  This resolution seems directly applicable.\n\n*   The other resolutions (1671, 1678, 1680) are irrelevant as they concern different provinces.\n\nBased on this, I'm pretty confident that resolution **1659/NQ-UBTVQH15** is the key.  Now, I looked in the \"New wards\" dataset for \"xã Đông Giang\" within \"Thành phố Đà Nẵng\".\n\nAnd there it is: `{\"ward_code\":\"20467\",\"ward_name\":\"Xã Đông Giang\",\"province_name\":\"Thành phố Đà Nẵng\"}`.  It's a perfect match!  The old \"Za Hung\" (or \"Zà Hung\") is now part of \"Xã Đông Giang\", which is now located in \"Thành phố Đà Nẵng\".\n\nThe confidence level here is high because the resolution explicitly addresses \"Zà Hung\" and links it to the creation of \"Xã Đông Giang\".  It looks like the user's old ward \"Xã Za Hung\" is now \"Xã Đông Giang\" with ward code \"20467\" in \"Thành phố Đà Nẵng\".\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng",
+        "line": "79. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Prao và các xã Tà Lu, A Rooi, Zà Hung thành xã mới có tên gọi là xã Đông Giang."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "20467",
+      "ward_name": "Xã Đông Giang"
+    }
+  ]
+}

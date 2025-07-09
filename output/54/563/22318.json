@@ -1,0 +1,18 @@
+{
+  "address": "Xã Hòa Định Đông, Huyện Phú Hoà, Tỉnh Phú Yên",
+  "ellapsedInMs": 7977,
+  "estimatedCost": 0.0037655,
+  "thought": "**Analysis of Administrative Unit Mapping**\n\nOkay, let me walk through this. I've been tasked with mapping the old address \"Xã Hòa Định Đông, Huyện Phú Hoà, Tỉnh Phú Yên\" to its current equivalent, based on the provided resolutions and the list of new wards.  My first step is to establish the current province. I know from Resolution 60-NQ/TW that Phú Yên and Đắk Lắk merged, becoming Đắk Lắk. So, \"Tỉnh Phú Yên\" is now \"Tỉnh Đắk Lắk\".\n\nNow, onto the specific ward and district: \"Xã Hòa Định Đông, Huyện Phú Hoà\".  I need to find this in the relevant resolutions.  A careful scan of the provided \"Other resolutions\" reveals that Resolution 1660/NQ-UBTVQH15 is key. Line 64 of that resolution precisely addresses the matter: it merges various entities including \"Hòa Định Đông\" (from Huyện Phú Hòa) into a new ward.  This is very straightforward. The new ward is \"xã Phú Hòa 1\".\n\nTo confirm, I'll then cross-reference this information with the \"New wards\" list.  I'm looking for \"xã Phú Hòa 1\" within the new province, \"Tỉnh Đắk Lắk\".  And there it is: the entry  `{\"ward_code\":\"22319\",\"ward_name\":\"Xã Phú Hòa 1\",\"province_name\":\"Tỉnh Đắk Lắk\"}` matches perfectly.\n\nThe confidence level here is high because there's a direct reference and clear mapping from an old ward to a new one within a single resolution.\n\nTherefore, the mapping is: Old address is a part of the province Đắk Lắk, and the ward Hòa Định Đông is now the ward Phú Hòa 1. I'll need to construct the JSON output with the new information, the resolution number and line from which I got it. I've got this.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1660/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đắk Lắk",
+        "line": "64. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Phú Hòa, các xã Hòa Thắng (huyện Phú Hòa), Hòa Định Đông, Hòa Định Tây, Hòa Hội và một phần diện tích tự nhiên, quy mô dân số của xã Hòa An (huyện Phú Hòa) thành xã mới có tên gọi là xã Phú Hòa 1."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đắk Lắk",
+      "ward_code": "22319",
+      "ward_name": "Xã Phú Hòa 1"
+    }
+  ]
+}

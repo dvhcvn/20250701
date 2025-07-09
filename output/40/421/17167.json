@@ -1,0 +1,18 @@
+{
+  "address": "Xã Quỳnh Hậu, Huyện Quỳnh Lưu, Tỉnh Nghệ An",
+  "ellapsedInMs": 7683,
+  "estimatedCost": 0.0031019999999999997,
+  "thought": "**Address Mapping Analysis: Xã Quỳnh Hậu to Xã Quỳnh Lưu**\n\nOkay, here's how I'd approach this. The user has given me an old address: \"Xã Quỳnh Hậu, Huyện Quỳnh Lưu, Tỉnh Nghệ An\". My first task is always to dissect this into its constituent parts: old ward, district, and province.  Easy enough: \"Xã Quỳnh Hậu\" is the old ward, \"Huyện Quỳnh Lưu\" the old district, and \"Tỉnh Nghệ An\" the old province.\n\nNext, I need to check the province resolutions, specifically 60-NQ/TW. This is where I find a very useful tidbit: \"Tỉnh Nghệ An\" is listed under those provinces *not* undergoing mergers. So, the province remains unchanged. This helps narrow my focus.\n\nNow, into the real meat of the matter: the \"Other resolutions\" section. I'm looking for \"Xã Quỳnh Hậu\".  Aha!  Resolution 1678/NQ-UBTVQH15, concerning Nghệ An, comes into play. Line 71 is the key: it explicitly states that \"Xã Quỳnh Hậu\" is merged with a few other wards and \"thị trấn Cầu Giát\" to form a *new* \"Xã Quỳnh Lưu\". Excellent. This is exactly what I needed.\n\nMy next step is to cross-reference this new \"Xã Quỳnh Lưu\" against the provided \"New wards\" list. I have to find it in the \"Tỉnh Nghệ An\" list.  I see a \"Xã Quỳnh Lưu\" entry for Ninh Bình, which I immediately discard. Ah! Here it is: `{\"ward_code\":\"17179\",\"ward_name\":\"Xã Quỳnh Lưu\",\"province_name\":\"Tỉnh Nghệ An\"}` - this is the \"Xã Quỳnh Lưu\" I was looking for.\n\nBased on my analysis, I would rate the confidence level as \"high\". I have a clear and direct mapping: the old \"Xã Quỳnh Hậu\" is explicitly mentioned in resolution 1678/NQ-UBTVQH15 as being merged into the new \"Xã Quỳnh Lưu,\" and that new ward is present in the \"New wards\" data. It is a straight forward mapping. There are no ambiguities in this case.",
+  "result": [
+    {
+      "citation": {
+        "header": "1678/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Nghệ An",
+        "line": "71. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Cầu Giát và các xã Bình Sơn (huyện Quỳnh Lưu), Quỳnh Diễn, Quỳnh Giang, Quỳnh Hậu thành xã mới có tên gọi là xã Quỳnh Lưu."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Nghệ An",
+      "ward_code": "17179",
+      "ward_name": "Xã Quỳnh Lưu"
+    }
+  ]
+}

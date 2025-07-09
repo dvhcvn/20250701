@@ -1,0 +1,28 @@
+{
+  "address": "Xã Phước Sơn, Huyện Tuy Phước, Tỉnh Bình Định",
+  "ellapsedInMs": 8288,
+  "estimatedCost": 0.0034123999999999995,
+  "thought": "**My Analysis: Determining the New Administrative Unit**\n\nOkay, so I'm presented with an old address: \"Xã Phước Sơn, Huyện Tuy Phước, Tỉnh Bình Định,\" and the task is to pinpoint its current administrative unit. I'll need to meticulously work through the process, using my knowledge of Vietnamese administrative restructuring.\n\nFirst, I identify the old province: \"Tỉnh Bình Định.\" Then, I consult the resolutions, specifically 60-NQ/TW, to see if Bình Định was affected by any mergers or name changes. Aha! It was merged with Gia Lai, becoming \"Tỉnh Gia Lai.\"\n\nNow, I focus on the old ward, \"Xã Phước Sơn.\" I need to search through resolutions, but crucially, I'm looking *within the context of the new province, Tỉnh Gia Lai*.  I find resolution 1664/NQ-UBTVQH15, which deals specifically with Gia Lai's administrative restructuring. Bingo! It explicitly mentions \"Phước Sơn.\" It states that \"Phước Sơn,\" along with two other wards, are being combined to form a *new* ward called \"Xã Tuy Phước Đông.\"  I can immediately disregard other resolutions mentioning \"Phước Sơn\" that pertain to different provinces, like Đồng Nai or Khánh Hòa, as they are irrelevant in this context.\n\nNow, to solidify this, I cross-reference the \"New wards\" data.  I'm looking for \"Xã Tuy Phước Đông\" *specifically within* \"Tỉnh Gia Lai.\" And there it is: `{\"ward_code\":\"21970\",\"ward_name\":\"Xã Tuy Phước Đông\",\"province_name\":\"Tỉnh Gia Lai\"}`.\n\nThe confidence level here is high. The province merger is definitively stated. The old ward's fate is explicitly outlined in a resolution concerning the new province. The new ward is verified in the data with the correct province.\n\nTo double-check, let's recap the process: The original \"Tỉnh Bình Định\" becomes \"Tỉnh Gia Lai.\"  \"Xã Phước Sơn\" maps directly to \"Xã Tuy Phước Đông\" within Gia Lai, as per the resolutions. This is confirmed by the new ward data.  Therefore, I'm confident in saying that the new administrative unit for \"Xã Phước Sơn, Huyện Tuy Phước, Tỉnh Bình Định\" is **Xã Tuy Phước Đông, Tỉnh Gia Lai**.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Gia Lai và tỉnh Bình Định, lấy tên là tỉnh Gia Lai"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "21970",
+      "ward_name": "Xã Tuy Phước Đông"
+    },
+    {
+      "citation": {
+        "header": "1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai",
+        "line": "17. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Phước Sơn, Phước Hòa và Phước Thắng thành xã mới có tên gọi là xã Tuy Phước Đông."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "21970",
+      "ward_name": "Xã Tuy Phước Đông"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Hàm Giang, Huyện Trà Cú, Tỉnh Trà Vinh",
+  "ellapsedInMs": 7836,
+  "estimatedCost": 0.0027405999999999997,
+  "thought": "**Re-Mapping a Vietnamese Address: A Deep Dive**\n\nOkay, so I'm tackling this old address, \"Xã Hàm Giang, Huyện Trà Cú, Tỉnh Trà Vinh,\" and need to pinpoint its new location using these resolutions and new ward data. It looks like a straightforward administrative restructuring.\n\nFirst, I identified the key components: \"Tỉnh Trà Vinh\" as the old province and \"Xã Hàm Giang\" as the old ward. Now, let's dissect the logic.\n\nI started with the province-level reorganization, specifically the 60-NQ/TW resolutions.  My initial scan didn't find \"Tỉnh Trà Vinh\" in the \"not merging\" list. This immediately pushed me towards the merger possibilities. Bingo! Resolution 20 explicitly mentions \"Hợp nhất tỉnh Bến Tre, tỉnh Vĩnh Long và tỉnh Trà Vinh; lấy tên là tỉnh Vĩnh Long.\" *That's* the key.  \"Tỉnh Trà Vinh\" is absorbed into \"Tỉnh Vĩnh Long.\" This means the old address is now firmly under the umbrella of \"Tỉnh Vĩnh Long.\"\n\nNext, I shifted focus to the ward level. Resolution 1687/NQ-UBTVQH15, a resolution for \"tỉnh Vĩnh Long,\" immediately grabbed my attention. The document confirms the province merger, and importantly, line 53 spells out \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Hàm Tân, Kim Sơn và Hàm Giang thành xã mới có tên gọi là **xã Hàm Giang**.\" Bingo again!  While the composition might have changed, the ward name \"Xã Hàm Giang\" *survives* the reorganization. The \"Huyện Trà Cú\" information in the old address helped anchor the original location, but with the elimination of districts, it became less relevant.\n\nFinally, I cross-referenced this with the new ward data.  I found two matching entries: `{\"ward_code\":\"29461\",\"ward_name\":\"Xã Trà Cú\",\"province_name\":\"Tỉnh Vĩnh Long\"}` and `{\"ward_code\":\"29489\",\"ward_name\":\"Xã Hàm Giang\",\"province_name\":\"Tỉnh Vĩnh Long\"}`. The \"Xã Hàm Giang\" entry, with a matching province name, validates the findings from the resolutions.\n\nTherefore, my resulting mapping is incredibly confident:\n\n*   The new `province_name` is \"Tỉnh Vĩnh Long,\" directly from the province merger.\n*   The `ward_name` is \"Xã Hàm Giang,\" retained and confirmed by both the resolution and new data.\n*   The `ward_code` is \"29489,\" taken from the new ward data.\n*   My citation will be the key line from the cited resolution.\n*   Confidence level? **High.** Everything aligns perfectly: the province merger, the ward-specific resolution, and the new ward data. This is a very clean match.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long",
+        "line": "53. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của cácxã Hàm Tân, Kim Sơn và Hàm Giang thành xã mới có tên gọi là xã Hàm Giang."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "29489",
+      "ward_name": "Xã Hàm Giang"
+    }
+  ]
+}

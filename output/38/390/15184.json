@@ -1,0 +1,18 @@
+{
+  "address": "Xã Cẩm Vân, Huyện Cẩm Thủy, Tỉnh Thanh Hóa",
+  "ellapsedInMs": 6046,
+  "estimatedCost": 0.0022979999999999997,
+  "thought": "**Determining the New Administrative Unit for Xã Cẩm Vân**\n\nOkay, let's break this down. The user gave me the old address \"Xã Cẩm Vân, Huyện Cẩm Thủy, Tỉnh Thanh Hóa.\" My goal is to find the current administrative unit.\n\nFirst, I identified \"Tỉnh Thanh Hóa\" as the province. I *immediately* checked for any province mergers using the established protocol (\"60-NQ/TW\"). Thankfully, \"60-NQ/TW\" explicitly states that Thanh Hóa was *not* merged. That's a relief!\n\nNext, I zeroed in on \"Xã Cẩm Vân.\" Time to search through the resolutions. I started with \"other_resolutions\" and, bingo! I found it in \"1686/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thanh Hóa\". It says that \"Xã Cẩm Vân\" was merged with a few other communes *into a new commune also called \"Xã Cẩm Vân\"*.  Interesting. Name stays the same, but the internal makeup changes.\n\nThis requires further investigation. I then looked at the \"New wards\" database for \"Xã Cẩm Vân\" within \"Tỉnh Thanh Hóa\". I *quickly* found it: `{\"ward_code\":\"15163\",\"ward_name\":\"Xã Cẩm Vân\",\"province_name\":\"Tỉnh Thanh Hóa\"}`.  Perfect. This is exactly what I needed.\n\nMy confidence is high. The resolution directly confirms the name, and the \"New wards\" entry validates the information. It's a clean match.\n\nNow to format the output. Based on this analysis, I'll generate the following JSON:\n*   `citation`: The relevant section from \"1686/NQ-UBTVQH15\".\n*   `confidence`: \"high\"\n*   `province_name`: \"Tỉnh Thanh Hóa\"\n*   `ward_code`: \"15163\"\n*   `ward_name`: \"Xã Cẩm Vân\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1686/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thanh Hóa",
+        "line": "102. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Cẩm Tâm, Cẩm Châu, Cẩm Yên và Cẩm Vân thành xã mới có tên gọi là xã Cẩm Vân."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thanh Hóa",
+      "ward_code": "15163",
+      "ward_name": "Xã Cẩm Vân"
+    }
+  ]
+}

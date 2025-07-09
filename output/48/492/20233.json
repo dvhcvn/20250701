@@ -1,0 +1,18 @@
+{
+  "address": "Phường Thạch Thang, Quận Hải Châu, Thành phố Đà Nẵng",
+  "ellapsedInMs": 5586,
+  "estimatedCost": 0.0016993,
+  "thought": "**My Thought Process for Address Mapping**\n\nOkay, so I'm being asked to figure out the new administrative location for an old address. The user has given me \"Phường Thạch Thang\", \"Thành phố Đà Nẵng\", and a bunch of data to work with.  Here's what I need to do:\n\nFirst, I need to pinpoint the original ward and province from the address: \"Phường Thạch Thang\" and \"Thành phố Đà Nẵng\". That's my starting point.\n\nNext, I have to check the province resolutions. Specifically, the key is resolution 60-NQ/TW. This is where I see how Đà Nẵng has been affected by the changes.  Ah, here it is: \"Hợp nhất tỉnh Quảng Nam và thành phố Đà Nẵng, lấy tên là thành phố Đà Nẵng\" - so, it confirms that Đà Nẵng is the current province name. Excellent.\n\nNow, I'll dive into the other resolutions. My goal is to find information about \"Thạch Thang\".  Bingo! Resolution \"1659/NQ-UBTVQH15\" is a goldmine. It's about rearranging the administrative units of Đà Nẵng. It explicitly states that \"Thạch Thang\" is part of the merge to create a new \"Phường Hải Châu\". Perfect, that's the link I was looking for.\n\nNow, I need to use the \"New wards\" information. I'm looking for the new ward (which is \"Phường Hải Châu\") and matching it with the correct province (\"Thành phố Đà Nẵng\").  Got it!  I found `{\"ward_code\":\"20242\",\"ward_name\":\"Phường Hải Châu\",\"province_name\":\"Thành phố Đà Nẵng\"}`.\n\nFinally, regarding confidence, I'm confident in this because I found a direct mapping and a very clear connection to how the administrative unit has changed. I'm ready to construct the JSON output, following the defined schema.  The direct mention makes this a high confidence situation.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng",
+        "line": "1. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Thanh Bình, Thuận Phước, Thạch Thang, Phước Ninh và Hải Châu thành phường mới có tên gọi là phường Hải Châu."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "20242",
+      "ward_name": "Phường Hải Châu"
+    }
+  ]
+}

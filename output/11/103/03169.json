@@ -1,0 +1,18 @@
+{
+  "address": "Xã Nà Hỳ, Huyện Nậm Pồ, Tỉnh Điện Biên",
+  "ellapsedInMs": 6031,
+  "estimatedCost": 0.0019581,
+  "thought": "**My Analysis of the Address Mapping Request**\n\nOkay, so I'm presented with an address and the goal is to figure out its new administrative unit.  Let's break this down systematically. First, I identify the initial components: the ward is \"Xã Nà Hỳ\", the district is \"Huyện Nậm Pồ\" (though the prompt notes districts are being eliminated, it's useful for context), and the province is \"Tỉnh Điện Biên\".\n\nMy primary task is to map this to a new ward, and that hinges on understanding the relevant resolutions. I start by checking the province resolutions (60-NQ/TW).  Fortunately, \"Tỉnh Điện Biên\" appears, but it's listed as not undergoing any mergers. This means the province itself isn't changing.\n\nNext, I dig into other relevant resolutions. I'm looking specifically for mentions of \"Xã Nà Hỳ\". Bingo! Resolution \"1661/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Điện Biên\" provides the crucial detail. It states that the existing \"Xã Nà Hỳ\" is *merged* with several other communes to form a *new* commune, which *also* goes by the name \"Xã Nà Hỳ.\"\n\nThis merger means I need to find the *new* \"Xã Nà Hỳ\" in the new ward data.  I search for a ward that matches \"Xã Nà Hỳ\" and \"Tỉnh Điện Biên\", and I find a perfect match: `{\"ward_code\":\"03169\",\"ward_name\":\"Xã Nà Hỳ\",\"province_name\":\"Tỉnh Điện Biên\"}`.\n\nPutting it all together, the province stays the same (\"Tỉnh Điện Biên\"), the new ward is \"Xã Nà Hỳ\", with the code \"03169\".  The key citation is resolution \"1661/NQ-UBTVQH15\". The confidence here is high. I have a direct resolution stating the old ward *is* the basis for the new ward with the same name, and a corresponding entry in the new ward data. Therefore, this mapping is very sound.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1661/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Điện Biên",
+        "line": "6. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Nà Khoa, Nậm Nhừ, Nậm Chua và Nà Hỳ thành xã mới có tên gọi là xã Nà Hỳ."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Điện Biên",
+      "ward_code": "03169",
+      "ward_name": "Xã Nà Hỳ"
+    }
+  ]
+}

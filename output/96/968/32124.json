@@ -1,0 +1,28 @@
+{
+  "address": "Xã Phong Điền, Huyện Trần Văn Thời, Tỉnh Cà Mau",
+  "ellapsedInMs": 7237,
+  "estimatedCost": 0.0032185,
+  "thought": "**Determining the New Ward for the Old Address**\n\nOkay, so I've got this old address: \"Xã Phong Điền, Huyện Trần Văn Thời, Tỉnh Cà Mau,\" and the task is to pinpoint the new ward(s). Let's see how we can approach this.\n\nFirst things first, the province is clearly Cà Mau (\"Tỉnh Cà Mau\"). I'll check those resolutions. No merges to be concerned about as the province has remained the same.\n\nNow, I'm going to look specifically for any resolutions concerning \"Cà Mau\" and \"Phong Điền.\" Ah, here we go, \"1655/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Cà Mau.\" This is the one!\n\nWithin this resolution, I'm searching for mentions of \"Phong Điền.\" Bingo! Clause 18 and 19.\n\nClause 18 states \"một phần diện tích tự nhiên, quy mô dân số của xã Phong Điền thành xã mới có tên gọi là **xã Sông Đốc**,\". And then Clause 19 says \"phần còn lại của xã Phong Điền sau khi sắp xếp theo quy định tại khoản 18 Điều này thành xã mới có tên gọi là **xã Trần Văn Thời**.\"\n\nSo, \"Xã Phong Điền\" was actually split between \"Xã Sông Đốc\" and \"Xã Trần Văn Thời.\"\n\nNext, I need to match this to the \"New wards\" data. Scanning the new ward information for \"Tỉnh Cà Mau,\" I find:\n\n*   {\"ward_code\":\"32095\",\"ward_name\":\"Xã Trần Văn Thời\",\"province_name\":\"Tỉnh Cà Mau\"}\n*   {\"ward_code\":\"32098\",\"ward_name\":\"Xã Sông Đốc\",\"province_name\":\"Tỉnh Cà Mau\"}\n\nSince the old ward was split, it's clear I need to include both of these new wards. This is pretty straightforward, and I can be highly confident in this result as the resolution explicitly outlines the split. I need to package this information with the relevant citations of course.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1655/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Cà Mau",
+        "line": "18. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Sông Đốc (bao gồm cụm đảo Hòn Chuối) và một phần diện tích tự nhiên, quyô dân số của xã Phong Điền thành xã mới có tên gọi là xã Sông Đốc."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Cà Mau",
+      "ward_code": "32098",
+      "ward_name": "Xã Sông Đốc"
+    },
+    {
+      "citation": {
+        "header": "1655/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Cà Mau",
+        "line": "19. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Trần Văn Thời, xã Khánh Lộc, xã Phong Lạc, một phần diện tích tự nhiên, quy mô dân số của xã Lợi An, phần còn lại của xã Trần Hợi sau khi sắp xếp theo quy định tại khoản 16 Điều này và phần còn lại của xã Phong Điền sau khi sắp xếp theo quy định tại khoản 18 Điều này thành xã mới có tên gọi là xã Trần Văn Thời."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Cà Mau",
+      "ward_code": "32095",
+      "ward_name": "Xã Trần Văn Thời"
+    }
+  ]
+}

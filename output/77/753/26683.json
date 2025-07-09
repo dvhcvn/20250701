@@ -1,0 +1,18 @@
+{
+  "address": "Xã Phước Long Thọ, Huyện Long Đất, Tỉnh Bà Rịa - Vũng Tàu",
+  "ellapsedInMs": 8578,
+  "estimatedCost": 0.0032415,
+  "thought": "**Address Mapping Analysis and Resultant JSON Generation**\n\nOkay, I've got this. The user wants to map an old address to new administrative units. Let's break it down:\n\nFirst, the input address is \"Xã Phước Long Thọ, Huyện Long Đất, Tỉnh Bà Rịa - Vũng Tàu\".  I'll start by parsing out the components.  We've got the old ward (\"Xã Phước Long Thọ\"), the old district (\"Huyện Long Đất\"), and the old province (\"Tỉnh Bà Rịa - Vũng Tàu\").\n\nNext, I need to check the relevant resolutions.  Specifically, I'll start with Resolution 60-NQ/TW, which covers province-level changes.  Sure enough, it says that \"Tỉnh Bà Rịa - Vũng Tàu\" was merged into \"Thành phố Hồ Chí Minh.\"  So, that's our new province.\n\nNow for the trickier part: the ward level.  I need to find a resolution that specifically mentions \"Xã Phước Long Thọ\" or \"Huyện Long Đất.\"  Bingo! Resolution 1685/NQ-UBTVQH15, specifically line 152, spells it out:  \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Đất Đỏ và các xã Long Tân (huyện Long Đất), Láng Dài, Phước Long Thọ thành xã mới có tên gọi là **xã Đất Đỏ**.\" Perfect!  \"Xã Phước Long Thọ\" is now part of \"xã Đất Đỏ.\"\n\nNow, let's cross-reference this with our \"New wards\" data.  We should find \"Xã Đất Đỏ.\"  Yep, there it is: `{\"ward_code\":\"26680\",\"ward_name\":\"Xã Đất Đỏ\",\"province_name\":\"Thành phố Hồ Chí Minh\"}`.  That confirms everything.  The new province is \"Thành phố Hồ Chí Minh\", and the new ward is \"Xã Đất Đỏ,\" code \"26680.\"\n\nConsidering this direct mapping described in Resolution 1685/NQ-UBTVQH15, I can confidently say this is a high-confidence match. I am also aware that there is another new ward \"Phường Phước Long\" but its relationship is not connected to \"Xã Phước Long Thọ\" based on the provided resolutions.\n\nTherefore, the output will be a JSON object containing this. I will deliver an array of JSON objects if there are multiple matches (although there is only one in this instance).\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1685/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của Thành phố Hồ Chí Minh",
+        "line": "152. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Đất Đỏ và các xã Long Tân (huyện Long Đất), Láng Dài, Phước Long Thọ thành xã mới có tên gọi là xã Đất Đỏ."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hồ Chí Minh",
+      "ward_code": "26680",
+      "ward_name": "Xã Đất Đỏ"
+    }
+  ]
+}

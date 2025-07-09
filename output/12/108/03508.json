@@ -1,0 +1,18 @@
+{
+  "address": "Xã Ma Quai, Huyện Sìn Hồ, Tỉnh Lai Châu",
+  "ellapsedInMs": 5495,
+  "estimatedCost": 0.0022108,
+  "thought": "**My Analysis of the Address Mapping**\n\nOkay, so I'm presented with a Vietnamese address: \"Xã Ma Quai,\" from \"Huyện Sìn Hồ,\" in \"Tỉnh Lai Châu,\" and I need to figure out its new administrative unit.  The user's clearly trying to automate this using resolutions and new ward data, which makes sense.  Let's break down my thought process:\n\nFirst, I identified the old administrative units: \"Xã Ma Quai\" (ward), \"Huyện Sìn Hồ\" (district - *though the prompt specifies eliminating districts, so I'll keep this in mind for matching context*), and \"Tỉnh Lai Châu\" (province).\n\nNext, I checked the province resolutions, specifically 60-NQ/TW.  Finding that \"Tỉnh Lai Châu\" isn't listed for merger (great!), its name will remain the same.\n\nNow, the crucial step: resolution 1670/NQ-UBTVQH15, concerning Lai Châu's ward reorganizations.  I scanned the document, and Bingo! Line 20 perfectly matches my old ward: it states \"Ma Quai\" is merging into the new ward, \"Xã Hồng Thu.\"\n\nSince the new ward is \"Xã Hồng Thu,\" I referenced the provided data on new wards. I found an exact match:  \"Xã Hồng Thu\" with code \"03508\" in \"Tỉnh Lai Châu.\"\n\nTherefore, my final output will be a JSON object containing the new province, new ward name, new ward code, the citation to 1670/NQ-UBTVQH15 (specifically line 20), and a high confidence level because this is a direct, clear match.  The schema is requesting an array of objects, so I'll wrap that single object in square brackets.  That should be it.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1670/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lai Châu",
+        "line": "20. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của cácxãPhìn Hồ, Ma Quai vàHồng Thuthành xã mới có tên gọi là xã Hồng Thu."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lai Châu",
+      "ward_code": "03508",
+      "ward_name": "Xã Hồng Thu"
+    }
+  ]
+}

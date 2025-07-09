@@ -1,0 +1,18 @@
+{
+  "address": "Xã Hải Anh, Huyện Hải Hậu, Tỉnh Nam Định",
+  "ellapsedInMs": 9246,
+  "estimatedCost": 0.0030935,
+  "thought": "**My Thought Process for Mapping the Old Address**\n\nOkay, I'm tackling this address mapping problem. First, I see the old address is \"Xã Hải Anh, Huyện Hải Hậu, Tỉnh Nam Định\".  The goal is to pinpoint the new administrative unit.  Here's how I'm breaking it down:\n\n1.  **Province Identification:** I initially identify \"Tỉnh Nam Định\" as the province.\n2.  **Province Mapping:**  I immediately consult the province resolutions, specifically 60-NQ/TW. This resolution is key, as it clearly outlines administrative changes.  And bingo, it says \"Hợp nhất tỉnh Hà Nam, tỉnh Ninh Bình và tỉnh Nam Định; lấy tên là tỉnh Ninh Bình.\"  Therefore, the old \"Tỉnh Nam Định\" becomes \"Tỉnh Ninh Bình.\" That's the first critical piece of the puzzle.\n3.  **Ward Identification:**  I've got the old ward: \"Xã Hải Anh.\"\n4.  **Ward Resolution Analysis:** Now, I dive into the ward-specific resolutions, looking for \"Xã Hải Anh.\" The resolution 1674/NQ-UBTVQH15, \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình,\" is where the action is. Line 46 is the golden nugget: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Hải Minh, Hải Đường và Hải Anh thành xã mới có tên gọi là **xã Hải Anh**.\"  Crucially, it says \"Xã Hải Anh\" is formed by merging with two other wards. The name stays the same, but the composition changes.\n5.  **New Ward Data Check:**  I confirm this in the \"New Wards\" data. A search for \"Xã Hải Anh\" within \"Tỉnh Ninh Bình\" brings up the perfect match: `{\"ward_code\":\"14236\",\"ward_name\":\"Xã Hải Anh\",\"province_name\":\"Tỉnh Ninh Bình\"}`.\n6.  **Confidence Assessment:** The confidence level is high. The province mapping is a straightforward application of the merger resolution.  The ward \"Xã Hải Anh\" is directly addressed in the key resolution. The fact that the new ward data corroborates everything solidifies the match.\n7.  **JSON Output Construction:** Finally, I'll package this up into the JSON output.\n\nMy initial thought was to include citations for both the province and ward resolutions, but with the schema constraints (single header and line), I'll prioritize the ward-specific resolution as the primary justification for the mapping because it is more direct. While the province change is important, it is implicitly referenced by the existence of the new ward.  \nBased on these findings, I believe the appropriate output will be constructed with \"Tỉnh Ninh Bình,\" \"Xã Hải Anh,\" and `ward_code: 14236`. The citation will primarily focus on the crucial line of the ward resolution, but the province merge is a prerequisite for finding the correct new ward.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "46. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Hải Minh, Hải Đường và Hải Anh thành xã mới có tên gọi là xã Hải Anh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "14236",
+      "ward_name": "Xã Hải Anh"
+    }
+  ]
+}

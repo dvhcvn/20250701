@@ -1,0 +1,18 @@
+{
+  "address": "Xã Lay Nưa, Thị Xã Mường Lay, Tỉnh Điện Biên",
+  "ellapsedInMs": 5738,
+  "estimatedCost": 0.0018619,
+  "thought": "**Identifying the New Administrative Unit**\n\nOkay, here's how I'm thinking through this. The user gave me an old address: \"Xã Lay Nưa, Thị Xã Mường Lay, Tỉnh Điện Biên,\" and wants to know the new ward.  First, I need to break it down. \"Xã Lay Nưa\" is the old ward, and \"Tỉnh Điện Biên\" is the old province.\n\nNow, I'm checking the Province Resolutions (specifically, the 60-NQ/TW resolutions).  Good, \"Tỉnh Điện Biên\" is listed as a province *not* undergoing mergers. So, the province name remains \"Tỉnh Điện Biên.\" That's easy.\n\nNext, I need to dig into the other resolutions. I'm searching for \"Xã Lay Nưa\" in those lines. Ah, here it is in resolution \"1661/NQ-UBTVQH15.\"  It says that \"Xã Lay Nưa\" is being merged with other units to form a new ward called \"**phường Mường Lay**.\" Perfect!\n\nNow I'll cross-reference this with the list of New Wards. I need to make sure \"Phường Mường Lay\" is actually there. Yup, and here it is: `{\"ward_code\":\"03151\",\"ward_name\":\"Phường Mường Lay\",\"province_name\":\"Tỉnh Điện Biên\"}`. Matches perfectly.\n\nFinally, I'll construct the JSON output:\n\n*   `province_name`: \"Tỉnh Điện Biên\" (as confirmed by the resolutions)\n*   `ward_name`: \"Phường Mường Lay\" (the newly identified ward)\n*   `ward_code`: \"03151\" (from the New Wards list)\n*   `citation`: The relevant resolution.\n*   `confidence`: \"high\" - This is straightforward. The old ward is explicitly named in the resolution, and it maps clearly to the new ward.  The evidence is strong.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1661/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Điện Biên",
+        "line": "43. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Sông Đà, phường Na Lay, xã Lay Nưa và xã Sá Tổngthành phường mới có tên gọi là phường Mường Lay."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Điện Biên",
+      "ward_code": "03151",
+      "ward_name": "Phường Mường Lay"
+    }
+  ]
+}

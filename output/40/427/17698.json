@@ -1,0 +1,18 @@
+{
+  "address": "Xã Nhân Sơn, Huyện Đô Lương, Tỉnh Nghệ An",
+  "ellapsedInMs": 6164,
+  "estimatedCost": 0.002287,
+  "thought": "**My Thought Process for Address Mapping**\n\nOkay, so I'm presented with an old Vietnamese address and need to determine its corresponding new administrative unit.  Here's how I'm approaching this, step-by-step:\n\nFirst, I dissect the input address.  I've identified the key components: \"Xã Nhân Sơn\" (old ward), \"Huyện Đô Lương\" (old district), and \"Tỉnh Nghệ An\" (old province).\n\nNow, the core of the challenge is cross-referencing this old information with the provided resolutions.  The province name, \"Tỉnh Nghệ An\", is checked against province resolutions.  Luckily, those resolutions state that the province itself *doesn't* change. That simplifies things a bit.\n\nNext, I need to delve into the other resolutions, specifically looking for mentions of \"Xã Nhân Sơn\" and \"Huyện Đô Lương.\"  Line 24 of the `lines` list jumps out at me: it explicitly details the merger of \"Xã Nhân Sơn\" (huyện Đô Lương), along with other wards, into a *new* ward called \"xã Thuần Trung\".  Perfect!  This is the key to the puzzle.\n\nArmed with the new ward name, I then cross-reference it against the `New wards` list.  Sure enough, I find an entry for \"Xã Thuần Trung,\" complete with its ward code and the matching province name \"Tỉnh Nghệ An\". The presence of the province name match here gives me extra confidence in the result.\n\nWith all the pieces in place, I can construct the JSON output.  I'll include the relevant citation information – `1678/NQ-UBTVQH15` and the exact line from that resolution. Given that this is a direct match and explicit in the resolutions, I'll flag it as \"high\" confidence. I'll make sure to include the correct `province_name` and `ward_code`, as well as the new `ward_name`. Finally, I'll double-check that the output adheres to the required schema, ensuring all fields are present and well-formatted before submitting it.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1678/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Nghệ An",
+        "line": "24. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Minh Sơn (huyện Đô Lương), Lạc Sơn, Nhân Sơn, Thuận Sơn, Trung Sơn và Xuân Sơn thành xã mới có tên gọi là xã Thuần Trung."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Nghệ An",
+      "ward_code": "17689",
+      "ward_name": "Xã Thuần Trung"
+    }
+  ]
+}

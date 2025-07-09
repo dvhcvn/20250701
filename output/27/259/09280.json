@@ -1,0 +1,18 @@
+{
+  "address": "Phường Phượng Mao, Thị xã Quế Võ, Tỉnh Bắc Ninh",
+  "ellapsedInMs": 8592,
+  "estimatedCost": 0.0027207000000000004,
+  "thought": "**Analyzing Administrative Changes: Phường Phượng Mao, Tỉnh Bắc Ninh**\n\nOkay, so I'm presented with an old address: \"Phường Phượng Mao, Tỉnh Bắc Ninh,\" and I need to figure out its new administrative unit. My initial step is to break down the problem. First, I have the old ward, \"Phường Phượng Mao,\" and the province, \"Tỉnh Bắc Ninh.\" \n\nMy approach is systematic:\n\n1.  **Province Check:** I immediately jump to the \"không thực hiện sáp nhập\" (no mergers) and \"mới sau sáp nhập, hợp nhất\" (new after mergers and consolidations) lists. Thankfully, Bắc Ninh isn't on the \"no merger\" list.  It *is* on the other list, but only in the context of a potential province merger - which, thankfully, doesn't change the province name. So, \"Tỉnh Bắc Ninh\" remains valid.\n\n2.  **Resolution Mining:** Time to delve into the resolutions. I'll need to meticulously check each resolution concerning Bắc Ninh for mentions of \"Phường Phượng Mao.\"\n\n    *   I start with Resolution 1658/NQ-UBTVQH15, focusing on lines concerning Bắc Ninh. I scan through it, looking for the crucial line about Phường Phượng Mao. Aha! Line 82 is what I need: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Phượng Mao và phường Phương Liễu thành phường mới có tên gọi là **phường Phương Liễu**.\" This is it! A direct merge.\n\n    *   Resolution 2, I can ignore it because its resolution relates to a different province.\n\n3.  **New Ward Validation:** Now I have \"Phường Phương Liễu\" as the new ward.  I need to make sure this aligns with my existing `new_wards` data.  I search that list for \"Phường Phương Liễu\" within \"Tỉnh Bắc Ninh.\"  Perfect! I get a match: `{\"ward_code\":\"09265\",\"ward_name\":\"Phường Phương Liễu\",\"province_name\":\"Tỉnh Bắc Ninh\"}`.\n\n4.  **JSON Construction:** I'm now ready to generate the JSON output:\n\n    *   `province_name`: \"Tỉnh Bắc Ninh\" (confirmed in step 1).\n    *   `ward_name`: \"Phường Phương Liễu\" (from steps 2 and 3).\n    *   `ward_code`: \"09265\" (from step 3).\n    *   `citation`:  This will reference the critical resolution and line:\n        *   `header`: \"1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh\"\n        *   `line`: \"82. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Phượng Mao và phường Phương Liễu thành phường mới có tên gọi là **phường Phương Liễu**.\"\n    *   `confidence`: \"high\" - given the direct and explicit nature of the merge within the resolution.\n\nTherefore, \"Phường Phượng Mao, Tỉnh Bắc Ninh\" is now part of \"Phường Phương Liễu\" in \"Tỉnh Bắc Ninh,\" and I have high confidence in this determination.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh",
+        "line": "82. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Phượng Mao và phường Phương Liễu thành phường mới có tên gọi là phường Phương Liễu."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "09265",
+      "ward_name": "Phường Phương Liễu"
+    }
+  ]
+}

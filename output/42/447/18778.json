@@ -1,0 +1,18 @@
+{
+  "address": "Xã Kỳ Khang, Huyện Kỳ Anh, Tỉnh Hà Tĩnh",
+  "ellapsedInMs": 8520,
+  "estimatedCost": 0.0029847000000000003,
+  "thought": "**My Analysis of Address Mapping: Xã Kỳ Khang, Huyện Kỳ Anh, Tỉnh Hà Tĩnh**\n\nOkay, here's my breakdown of this address mapping problem. First, I need to understand the initial setup. The user is essentially asking to translate an old address, \"Xã Kỳ Khang, Huyện Kỳ Anh, Tỉnh Hà Tĩnh,\" to the new administrative structure, given some resolutions and new ward data.\n\nMy initial thought is to identify the relevant old administrative units: \"Xã Kỳ Khang\" (the ward), \"Huyện Kỳ Anh\" (the district), and \"Tỉnh Hà Tĩnh\" (the province).  While the prompt mentions we are eliminating districts, I keep them in mind for context.\n\nNow, I dive into the resolutions. My primary focus is on how \"Tỉnh Hà Tĩnh\" is handled.  Looking at resolution 60-NQ/TW, it explicitly states that \"Tỉnh Hà Tĩnh\" is not to be merged. Great, so the province is straightforward.\n\nNext, I need to see what's changed with \"Xã Kỳ Khang.\" I scan the \"Other resolutions,\" paying close attention to \"1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh.\" This one looks promising.  Skimming the text, I quickly find Line 9, which specifically mentions \"Xã Kỳ Khang.\"  It states that \"Xã Kỳ Thọ, Kỳ Thư và Kỳ Khang\" are merged to form a *new* \"Xã Kỳ Khang.\"  This is significant.\n\nNow, I cross-reference this information with the \"New wards\" data. I'm looking for a \"Xã Kỳ Khang\" within \"Tỉnh Hà Tĩnh.\"  And there it is: a new ward entry with the code \"18790,\" the name \"Xã Kỳ Khang,\" and the province \"Tỉnh Hà Tĩnh.\"  Perfect.\n\nMy confidence level is quite high at this point. The province has been confirmed stable. The specific old ward is tied to a merger that forms a new ward with the *same* name, and I have found that new ward in the provided data.  Everything aligns nicely.\n\nFinally, the JSON output:  My `citation.header` will be \"1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh.\" The `citation.line` is  \"9. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Kỳ Thọ, Kỳ Thư và Kỳ Khangthành xã mới có tên gọi là **xã Kỳ Khang**.\"  My confidence is \"high.\"  The output province name is \"Tỉnh Hà Tĩnh.\" The  `ward_code` is \"18790,\" and the `ward_name` is \"Xã Kỳ Khang.\" This is the best mapping I can provide given the provided data.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh",
+        "line": "9. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Kỳ Thọ, Kỳ Thư và Kỳ Khangthành xã mới có tên gọi là xã Kỳ Khang."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hà Tĩnh",
+      "ward_code": "18790",
+      "ward_name": "Xã Kỳ Khang"
+    }
+  ]
+}

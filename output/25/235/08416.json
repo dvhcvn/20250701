@@ -1,0 +1,18 @@
+{
+  "address": "Xã Hùng Việt, Huyện Cẩm Khê, Tỉnh Phú Thọ",
+  "ellapsedInMs": 7706,
+  "estimatedCost": 0.0030524,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm tackling this Vietnamese address mapping task. I've got an old address from \"Tỉnh Phú Thọ\" with \"Xã Hùng Việt\" in \"Huyện Cẩm Khê\" and I need to figure out its new administrative unit. My initial thought is to dive into the data and see what resolutions are relevant.\n\nFirst, I confirmed the province remains \"Tỉnh Phú Thọ,\" based on Resolution 60-NQ/TW.  No changes there. Now, the key is understanding how \"Xã Hùng Việt\" and \"Huyện Cẩm Khê\" have been reshaped.\n\nI zeroed in on Resolution 1676/NQ-UBTVQH15, a clear candidate for dealing with the ward-level reorganizations in Phú Thọ.  Line 28 of that resolution caught my eye: \"thị trấn Cẩm Khê\", \"xã Minh Tân\", and \"xã Phong Thịnh\" are being combined to form \"Xã Cẩm Khê.\" Interesting, but not directly related to my ward of interest.\n\nThen, line 30 became the gold mine:  it explicitly mentions \"Xã Hùng Việt\" is merged with \"xã Nhật Tiến\" to create a *new* \"Xã Hùng Việt.\" Bingo! This means the *name* stays the same, but the underlying population and area have changed.\n\nChecking against the \"New Wards\" data, I see a perfect match:  `{\"ward_code\":\"08416\",\"ward_name\":\"Xã Hùng Việt\",\"province_name\":\"Tỉnh Phú Thọ\"}`.  This confirms the new \"Xã Hùng Việt\" in Phú Thọ.\n\nMy conclusion is straightforward: the old \"Xã Hùng Việt\" is now part of the *new* \"Xã Hùng Việt,\" as outlined in Resolution 1676.  The \"Huyện Cẩm Khê\" district is eliminated in the new structure, and the resolution gives me a very high degree of confidence. No need to look any further. The new ward, \"Xã Hùng Việt\" matches perfectly. I’ll make sure to cite Resolution 1676/NQ-UBTVQH15 and point to line 30 for the final output. The mapping is complete, and it's a \"high\" confidence match.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "30. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Nhật Tiến và xã Hùng Việt thành xã mới có tên gọi là xã Hùng Việt."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "08416",
+      "ward_name": "Xã Hùng Việt"
+    }
+  ]
+}

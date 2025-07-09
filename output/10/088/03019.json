@@ -1,0 +1,18 @@
+{
+  "address": "Xã Hoàng Liên, Thị xã Sa Pa, Tỉnh Lào Cai",
+  "ellapsedInMs": 5830,
+  "estimatedCost": 0.0017455,
+  "thought": "**My Reasoning for Mapping the Old Address**\n\nOkay, here's how I'm thinking about this mapping problem. The user wants to translate an old address, specifically involving \"Xã Hoàng Liên\" in \"Tỉnh Lào Cai\", to the new administrative structure. My strategy is straightforward:\n\n1.  **Pinpointing the Old Units:** First, I've got to find and confirm \"Xã Hoàng Liên\" and \"Tỉnh Lào Cai\" as the key components of the old address. These are my starting points.\n\n2.  **Province Verification:** Then, I need to check the province-level changes. The initial province \"Tỉnh Lào Cai\" is present in the dataset. While the resolution talks about a merger, the new name remains the same, so no adjustment is needed at this level.\n\n3.  **Ward-Specific Analysis:** The crucial part is figuring out what happened to \"Xã Hoàng Liên.\" I'm diving into the resolution documents to find the definitive answer.\n\n4.  **The Decisive Resolution:** Specifically, I'm looking at Resolution \"1673/NQ-UBTVQH15\". Line 68 is the key. It details the merging of \"Xã Hoàng Liên\", \"Xã Mường Hoa\", and \"Xã Tả Van\" into the new \"Xã Tả Van\". Bingo! This is the definitive change I was seeking.\n\n5.  **New Ward Verification:** Now that I know the old ward now exists within the \"Xã Tả Van\", I need to locate this new entity in the \"New Wards\" data. And yes, it's there.\n\n6.  **Constructing the Output:** Now I can construct a JSON object to report my finding. I'll make sure it clearly reflects my process and provides high confidence since I have direct evidence:\n\n    *   `citation`: Will point to the specific resolution and line (1673/NQ-UBTVQH15, Line 68) that supports the mapping.\n    *   `confidence`: Should definitely be \"high\" because the resolution explicitly mentions the old ward and states the new ward.\n    *   `province_name`: \"Tỉnh Lào Cai\" stays the same due to the first resolution analysis.\n    *   `ward_code`: Will be \"03037\" corresponding to the \"Xã Tả Van\".\n    *   `ward_name`: \"Xã Tả Van\" confirms the data.\n\nThat should do it. A clear, accurate, and confidently mapped address!\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai",
+        "line": "68. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Hoàng Liên, Mường Hoa và Tả Van thành xã mới có tên gọi là xã Tả Van."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "03037",
+      "ward_name": "Xã Tả Van"
+    }
+  ]
+}

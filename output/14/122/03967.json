@@ -1,0 +1,18 @@
+{
+  "address": "Xã Đá Đỏ, Huyện Phù Yên, Tỉnh Sơn La",
+  "ellapsedInMs": 6467,
+  "estimatedCost": 0.0033407999999999997,
+  "thought": "**Finding the New Administrative Unit for \"Xã Đá Đỏ\"**\n\nOkay, so the user wants to know the current administrative location for the old address \"Xã Đá Đỏ, Huyện Phù Yên, Tỉnh Sơn La\".  My initial thought is to tackle this methodically, relying on the available legal documents. First, I need to confirm the province hasn't been merged, and fortunately, Resolution 60-NQ/TW tells me \"Tỉnh Sơn La\" is *not* undergoing any province-level restructuring.  That simplifies things.\n\nNext, the real work begins. I've got to scan through these resolutions, specifically looking for mentions of \"Xã Đá Đỏ\" and its associated district, \"Huyện Phù Yên\".  This is where things get interesting.  I quickly zero in on Resolution \"1681/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Sơn La\".  Aha! Line 37 of that resolution explicitly states that \"Xã Đá Đỏ\" is being merged *with* \"Xã Kim Bon\" to create a *new* administrative unit, *also* named \"Xã Kim Bon\".  That's my answer!\n\nTo ensure accuracy, I then need to locate the new \"Xã Kim Bon\" in my \"New Wards\" list. I search using the name and province and it returns a clear match: `{\"ward_code\":\"03961\",\"ward_name\":\"Xã Kim Bon\",\"province_name\":\"Tỉnh Sơn La\"}`. That's confirmation.\n\nFinally, I need to construct the JSON output: the province name remains \"Tỉnh Sơn La\", the new ward is \"Xã Kim Bon\" with code \"03961\". The citation is from the very resolution that mentioned the merger and should highlight exactly what I found:  \"37. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Đá Đỏ và xã Kim Bon thành xã mới có tên gọi là **xã Kim Bon**.\"  Given this direct evidence, my confidence in this result is \"high\".  This should provide the user with the information they need in a clear and documented way.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1681/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Sơn La",
+        "line": "37. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Đá Đỏ và xã Kim Bon thành xã mới có tên gọi là **xã Kim Bon**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Sơn La",
+      "ward_code": "03961",
+      "ward_name": "Xã Kim Bon"
+    }
+  ]
+}

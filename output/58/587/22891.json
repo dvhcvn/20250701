@@ -1,0 +1,28 @@
+{
+  "address": "Xã Phước Hữu, Huyện Ninh Phước, Tỉnh Ninh Thuận",
+  "ellapsedInMs": 6591,
+  "estimatedCost": 0.0029241,
+  "thought": "**Mapping Old Address to New Administrative Units**\n\nOkay, so I'm presented with the task of translating an old address into its modern equivalent, specifically \"Xã Phước Hữu, Huyện Ninh Phước, Tỉnh Ninh Thuận.\" My process begins by dissecting the address: I know the old ward is \"Xã Phước Hữu\" and the old province is \"Tỉnh Ninh Thuận.\"\n\nNext, I need to account for any provincial mergers. I recall Resolution 60-NQ/TW indicating that \"Tỉnh Ninh Thuận\" was merged with \"Tỉnh Khánh Hoà,\" becoming \"Tỉnh Khánh Hoà.\" This means \"Tỉnh Ninh Thuận\" no longer exists as a standalone administrative unit.\n\nNow, the real work starts. I delve into resolutions, looking for information about \"Xã Phước Hữu\" in relation to the new province, \"Tỉnh Khánh Hoà.\" Resolution 1667/NQ-UBTVQH15, concerning Khánh Hoà, catches my attention. Line 31 in this resolution is crucial: it clearly states that \"Xã Phước Hữu\" was merged with \"Xã Phước Thái,\" resulting in the *new* \"Xã Phước Hữu.\" This is a strong lead.\n\nTo solidify this, I cross-reference with the provided \"New wards\" list. Bingo! I find an entry: `{\"ward_code\":\"22891\",\"ward_name\":\"Xã Phước Hữu\",\"province_name\":\"Tỉnh Khánh Hòa\"}`. This directly confirms that the new ward is indeed \"Xã Phước Hữu\" and that it's located within the correct \"Tỉnh Khánh Hòa.\"\n\nThe confidence level is high: the provincial merger is clear-cut, and the ward merger/renaming is explicitly documented in a resolution. The matching entry in the \"New wards\" list with the correct province leaves no room for doubt. Therefore, \"Xã Phước Hữu, Huyện Ninh Phước, Tỉnh Ninh Thuận\" maps to \"Xã Phước Hữu\" in the province of \"Tỉnh Khánh Hòa.\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "13. Hợp nhất tỉnh Ninh Thuận và tỉnh Khánh Hoà, lấy tên là tỉnh Khánh Hoà"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Khánh Hòa",
+      "ward_code": "22891",
+      "ward_name": "Xã Phước Hữu"
+    },
+    {
+      "citation": {
+        "header": "1667/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Khánh Hòa",
+        "line": "31. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Phước Thái và xã Phước Hữu thành xã mới có tên gọi là **xã Phước Hữu**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Khánh Hòa",
+      "ward_code": "22891",
+      "ward_name": "Xã Phước Hữu"
+    }
+  ]
+}

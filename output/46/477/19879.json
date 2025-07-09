@@ -1,0 +1,18 @@
+{
+  "address": "Xã Quảng Công, Huyện Quảng Điền, Thành phố Huế",
+  "ellapsedInMs": 8547,
+  "estimatedCost": 0.0032938000000000004,
+  "thought": "**Address Mapping for \"Xã Quảng Công\": Confirmed and High Confidence**\n\nAlright, let's break this down. The user's input asks me to map the old Vietnamese address \"Xã Quảng Công, Huyện Quảng Điền, Thành phố Huế\" to the new administrative units, which is a common task. My initial assessment is:\n\n1.  **Identify the old components**: The old ward is \"Xã Quảng Công,\" the old district is \"Huyện Quảng Điền,\" and the province is \"Thành phố Huế\".  The prompt explicitly says to eliminate districts, so I won't focus on that part for the final answer.\n\n2.  **Province Resolutions (60-NQ/TW)**:  I checked the provincial-level resolutions to see if \"Thành phố Huế\" had been merged. Luckily, it's listed under those that \"do not undergo merger,\" so \"Thành phố Huế\" remains unchanged. This is crucial for filtering the new ward data later.\n\n3.  **Other Resolutions**: Now for the real meat of the matter.  I'm scanning the `other_resolutions` for mentions of \"Xã Quảng Công.\"  Resolution \"1675/NQ-UBTVQH15\" is the key.  Line 5 of that resolution *explicitly* addresses \"Xã Quảng Công.\" It states, \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Phong Hải, xã Quảng Công và xã Quảng Ngạn thành phường mới có tên gọi là **phường Phong Quảng**.\" Boom. That's a direct connection.\n\n4.  **New Wards Data**:  I filtered the `new_wards` data by the province \"Thành phố Huế.\"  Lo and behold, \"phường Phong Quảng\" is there, with the code \"19873.\"  The data confirms it: `{\"ward_code\":\"19873\",\"ward_name\":\"Phường Phong Quảng\",\"province_name\":\"Thành phố Huế\"}`.  I also checked for \"Xã Quảng Điền\" since the old district was \"Huyện Quảng Điền\" and the same resolution mentions the creation of a new \"Xã Quảng Điền\", but after careful analysis, \"Xã Quảng Công\" has been merged into \"Phường Phong Quảng\", and that's the primary mapping.\n\n5.  **Constructing the Output**:  The old ward \"Xã Quảng Công\" maps directly to the new ward \"Phường Phong Quảng\" (code \"19873\") in \"Thành phố Huế.\" The Province is unchanged.  The mapping is explicit and unambiguous.  I'm confident in this because of the direct mention in the resolution, and it lines up perfectly with the new ward data.\n\nLet's double-check the resolution again:\nLine 5: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Phong Hải, xã Quảng Công và xã Quảng Ngạn thành phường mới có tên gọi là **phường Phong Quảng**.\"\nThat's the smoking gun!\n\nThis is a clean and solid mapping. High confidence.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1675/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Huế",
+        "line": "5. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Phong Hải, xã Quảng Công và xã Quảng Ngạn thành phường mới có tên gọi là phường Phong Quảng."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Huế",
+      "ward_code": "19873",
+      "ward_name": "Phường Phong Quảng"
+    }
+  ]
+}

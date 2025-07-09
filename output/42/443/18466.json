@@ -1,0 +1,18 @@
+{
+  "address": "Xã Khánh Vĩnh Yên, Huyện Can Lộc, Tỉnh Hà Tĩnh",
+  "ellapsedInMs": 5382,
+  "estimatedCost": 0.0019333,
+  "thought": "**Identifying the New Administrative Unit**\n\nOkay, so I'm dealing with an address, \"Xã Khánh Vĩnh Yên, Tỉnh Hà Tĩnh,\" and the task is to determine its new administrative ward.  My approach will be methodical and resolution-driven. First, I need to pinpoint the old ward (\"Xã Khánh Vĩnh Yên\") and province (\"Tỉnh Hà Tĩnh\"). Then, the fun begins.\n\nI'll consult the Province Resolutions (specifically, 60-NQ/TW) to see if \"Tỉnh Hà Tĩnh\" has been merged or altered in any way.  Fortunately, it's listed under \"Các đơn vị hành chính cấp tỉnh không thực hiện sáp nhập,\" so its name remains unchanged. Excellent, that simplifies things.\n\nNow, on to the granular level. I'll meticulously scan other relevant resolutions, hunting for mentions of \"Xã Khánh Vĩnh Yên.\" Resolution \"1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh\" appears to be the key. Bingo! Line 29 is crucial: it explicitly states that \"Xã Khánh Vĩnh Yên, Thanh Lộc và Gia Hanh\" are being merged to form a new ward, called \"**xã Gia Hanh**.\"\n\nWith this information, I'll cross-reference it against the `New wards` list.  I'm looking for \"Xã Gia Hanh\" and making sure it's in \"Tỉnh Hà Tĩnh.\"  And there it is: `{\"ward_code\":\"18466\",\"ward_name\":\"Xã Gia Hanh\",\"province_name\":\"Tỉnh Hà Tĩnh\"}`. Perfect match.\n\nThe confidence level is high here. The old ward is clearly mentioned in the merging resolution, the province is confirmed, and the new ward name is explicitly given. It's a clean, logical progression. Therefore, I can confidently construct the JSON output, following the given schema.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh",
+        "line": "29. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Khánh Vĩnh Yên, Thanh Lộc và Gia Hanh thành xã mới có tên gọi là xã Gia Hanh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hà Tĩnh",
+      "ward_code": "18466",
+      "ward_name": "Xã Gia Hanh"
+    }
+  ]
+}

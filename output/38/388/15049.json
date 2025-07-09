@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tam Văn, Huyện Lang Chánh, Tỉnh Thanh Hóa",
+  "ellapsedInMs": 5963,
+  "estimatedCost": 0.0026184,
+  "thought": "**Here's how I'm approaching this address change investigation:**\n\nOkay, so the user wants me to figure out the new ward for \"Xã Tam Văn, Huyện Lang Chánh, Tỉnh Thanh Hóa\". First, I need to confirm the province, and luckily, Thanh Hóa is on the \"no merger\" list, so that's easy. It's staying \"Tỉnh Thanh Hóa\".\n\nNow, I'm digging into the ward resolutions specific to Thanh Hóa. I'm focusing on \"1686/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thanh Hóa\" to see what happened to \"Xã Tam Văn\". I'm methodically going through the lines, looking for any mention of it.\n\nAha! Line 83:  It's clear \"Xã Tam Văn\" is being merged with \"xã Lâm Phú\" to form the new ward, \"xã Văn Phú\". Perfect!\n\nTo be extra sure, I'm checking the \"New wards\" data. Yep, there it is:  `{\"ward_code\":\"15049\",\"ward_name\":\"Xã Văn Phú\",\"province_name\":\"Tỉnh Thanh Hóa\"}`.  It's a clean match.\n\nBased on this, I'm confident in my output. \"Tỉnh Thanh Hóa\" remains the province. \"Xã Tam Văn\" is now part of \"Xã Văn Phú\", and the code is \"15049\". The cited information, the actual line within the resolution, is the supporting evidence. I'll set the confidence to \"high\", given the clear language of the resolution and the exact match to the new ward data. This is a pretty straightforward case.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1686/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thanh Hóa",
+        "line": "83. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Tam Văn và xã Lâm Phú thành xã mới có tên gọi là xã Văn Phú."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thanh Hóa",
+      "ward_code": "15049",
+      "ward_name": "Xã Văn Phú"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Cốc Pài, Huyện Xín Mần, Tỉnh Hà Giang",
+  "ellapsedInMs": 8321,
+  "estimatedCost": 0.0028829999999999997,
+  "thought": "**My Mapping Strategy: An Old Address to New Administrative Units**\n\nOkay, so I've been given an old address: \"Thị trấn Cốc Pài\", \"Huyện Xín Mần\", \"Tỉnh Hà Giang\". My task is to figure out the corresponding new administrative units based on these resolutions and ward data. Let's see how I'd approach this.\n\nFirst, I identified the components: the ward is \"Thị trấn Cốc Pài\", the district is \"Huyện Xín Mần\", and the province is \"Tỉnh Hà Giang\". Now, I'll dive into the resolutions.\n\nThe key here is province-level changes. Resolution 60-NQ/TW tells me that \"Tỉnh Hà Giang\" has been merged into \"Tỉnh Tuyên Quang\". So, right away, my new province is \"Tỉnh Tuyên Quang\". This is important!\n\nNext, I checked Resolution 1684/NQ-UBTVQH15, because it mentions \"Tỉnh Tuyên Quang\".  Bingo! Within this resolution, I need to find something relevant to \"Thị trấn Cốc Pài\".  And there it is, line 101, which is key. It states that \"Thị trấn Cốc Pài\" is being merged with other communes (\"xã Nàn Ma, Bản Ngò, Pà Vầy Sủ\") to form a new commune: \"xã Pà Vầy Sủ\". This is a direct match!\n\nNow, I cross-referenced this with the \"New Wards\" data.  Sure enough, I found an entry: `{\"ward_code\":\"01096\",\"ward_name\":\"Xã Pà Vầy Sủ\",\"province_name\":\"Tỉnh Tuyên Quang\"}`.  It's a clean match - the new ward name and the new province perfectly align.\n\nGiven the directness of this match, I can say with high confidence that \"Thị trấn Cốc Pài\" now corresponds to \"Xã Pà Vầy Sủ\" in \"Tỉnh Tuyên Quang\". I'll pull the citation details (the resolution header and line 101) from the resolution to include in my output.\n\nRegarding the district: while the old address specifies \"Huyện Xín Mần\", the focus is on mapping the *ward*. The resolution mentions \"Xã Xín Mần\" as a new commune, but that's formed from different existing wards.  It's clear from the provided information that \"Thị trấn Cốc Pài\" is *specifically* mentioned as merging into \"Xã Pà Vầy Sủ\". Since the question is about finding the new ward corresponding to the address, and my analysis gave a clear match, I consider \"Xã Pà Vầy Sủ\" to be the most relevant. The district isn't directly relevant in this case.  I need to go with what the resolution explicitly says.\n\nThus, my conclusion is that the old address maps to \"Xã Pà Vầy Sủ\" in \"Tỉnh Tuyên Quang\", with high confidence, and the supporting citation details.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "101. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Cốc Pài và cácxã Nàn Ma, Bản Ngò, Pà Vầy Sủ thành xã mới có tên gọi là xã Pà Vầy Sủ."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "01096",
+      "ward_name": "Xã Pà Vầy Sủ"
+    }
+  ]
+}

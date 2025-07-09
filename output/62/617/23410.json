@@ -1,0 +1,28 @@
+{
+  "address": "Xã Măng Ri, Huyện Tu Mơ Rông, Tỉnh Kon Tum",
+  "ellapsedInMs": 7581,
+  "estimatedCost": 0.0030677999999999994,
+  "thought": "**My Analysis of the Administrative Address Mapping**\n\nOkay, here's my breakdown of this address mapping task. I'm starting with \"Xã Măng Ri, Huyện Tu Mơ Rông, Tỉnh Kon Tum,\" and I need to figure out its current equivalent based on the provided resolutions and new ward data.\n\nFirst, the province is straightforward. Resolution 60-NQ/TW tells me that \"Tỉnh Kon Tum\" has become \"Tỉnh Quảng Ngãi.\"  That's a direct replacement.\n\nNow, for the tricky part, the ward \"Xã Măng Ri.\"  I've checked the resolutions for \"Tỉnh Quảng Ngãi,\" specifically 1677/NQ-UBTVQH15. And Bingo! Line 63 explicitly states that \"Xã Măng Ri\" *itself* is being formed from a merger of other smaller wards.  Crucially, the result *is* still called \"Xã Măng Ri.\"  That's a very strong indicator.\n\nThe new ward data confirms this. I've found an entry: `{\"ward_code\":\"23446\",\"ward_name\":\"Xã Măng Ri\",\"province_name\":\"Tỉnh Quảng Ngãi\"}`. This perfectly aligns with the resolution and the new province.\n\nI'm also considering the mention of \"Xã Đăk Hà\" and \"Xã Tu Mơ Rông\" in the resolution. They're being merged into the new \"Xã Tu Mơ Rông.\" While the original address specifies \"Huyện Tu Mơ Rông\", the district itself has been eliminated. The crucial connection is the continued use of \"Xã Măng Ri\".\n\nSo, the key takeaway is the direct match: old \"Xã Măng Ri\" is being transformed into a *new* \"Xã Măng Ri\" within \"Tỉnh Quảng Ngãi.\" The new ward data confirms this.\n\nConfidence is high here. The province change is clear, and the ward mapping is based on an explicit resolution statement and corroborated by the new ward data.  I can confidently proceed with the JSON output, this mapping is very sound.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Kon Tum và tỉnh Quảng Ngãi, lấy tên là tỉnh Quảng Ngãi"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ngãi",
+      "ward_code": "23446",
+      "ward_name": "Xã Măng Ri"
+    },
+    {
+      "citation": {
+        "header": "1677/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ngãi",
+        "line": "Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Ngọk Yêu, Văn Xuôi, Tê Xăng, Ngọk Lây và Măng Ri thành xã mới có tên gọi là xã Măng Ri."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ngãi",
+      "ward_code": "23446",
+      "ward_name": "Xã Măng Ri"
+    }
+  ]
+}

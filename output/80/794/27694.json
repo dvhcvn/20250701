@@ -1,0 +1,18 @@
+{
+  "address": "Phường 1, Thành phố Tân An, Tỉnh Long An",
+  "ellapsedInMs": 8121,
+  "estimatedCost": 0.0352811,
+  "thought": "**Analyzing Administrative Changes in Long An Province**\n\nOkay, so I'm presented with an address: \"Phường 1, Thành phố Tân An, Tỉnh Long An.\" My task is to figure out the new administrative unit based on the provided data. First, I spot \"Tỉnh Long An\" in the address – that's my starting point. Now, I need to check the relevant province resolutions, and I remember something about Long An being merged. Looking at resolution 60-NQ/TW, I see it confirmed: \"18. Hợp nhất tỉnh Tây Ninh và tỉnh Long An, lấy tên là tỉnh Tây Ninh.\" Ah, right, Long An is now part of Tây Ninh.\n\nNext, I need to find the specific resolution outlining ward restructuring. I locate 1682/NQ-UBTVQH15, which concerns the \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tây Ninh.\" Perfect. Now, I zero in on \"Phường 1, Thành phố Tân An\" within this resolution. Scanning through, I find it in item 84: \"84. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của Phường 1, Phường 3 (thành phố Tân An), Phường 4, Phường 5, Phường 6, xã Hướng Thọ Phú, phần còn lại của xã Bình Thạnh (huyện Thủ Thừa) sau khi sắp xếp theo quy định tại khoản 20 Điều này thành phường mới có tên gọi là **phường Long An**.\" Bingo! \"Phường 1\" is explicitly mentioned as merging into a new ward: \"phường Long An.\"\n\nSo, \"phường Long An\" is the new name, and the province is \"Tỉnh Tây Ninh.\" Now I just need the `ward_code` for \"phường Long An\" in \"Tỉnh Tây Ninh\" from the `New wards` list. I quickly search and find: `{\"ward_code\":\"27694\",\"ward_name\":\"Phường Long An\",\"province_name\":\"Tỉnh Tây Ninh\"}`. Confident! The resolution leaves no room for ambiguity.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1682/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tây Ninh",
+        "line": "84. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của Phường 1, Phường 3 (thành phố Tân An), Phường 4, Phường 5, Phường 6, xã Hướng Thọ Phú, phần còn lại của xã Bình Thạnh (huyện Thủ Thừa) sau khi sắp xếp theo quy định tại khoản 20 Điều này thành phường mới có tên gọi là phường Long An."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tây Ninh",
+      "ward_code": "27694",
+      "ward_name": "Phường Long An"
+    }
+  ]
+}

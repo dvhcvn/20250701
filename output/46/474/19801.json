@@ -1,0 +1,18 @@
+{
+  "address": "Phường An Cựu, Quận Thuận Hóa, Thành phố Huế",
+  "ellapsedInMs": 6429,
+  "estimatedCost": 0.0023614,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm tasked with mapping this old address, which seems pretty straightforward. The input address is in \"Phường An Cựu\" within \"Quận Thuận Hóa\" and \"Thành phố Huế\". Let's break this down.\n\nFirst, I identified the components: the ward, district, and province.  \"Phường An Cựu\", \"Quận Thuận Hóa\", and \"Thành phố Huế\". I remember the prompt said districts are being eliminated, so the Thuận Hóa part is mostly for context. I always start with the province resolution (60-NQ/TW), but it looks like Huế is listed as not being merged, so that part is easy. The province name stays \"Thành phố Huế.\"\n\nNow, the interesting part is the ward. I had to look through the \"Other resolutions\" for \"Phường An Cựu.\"  I found Resolution 1675/NQ-UBTVQH15. Bingo! Line 16 explicitly states that \"Phường An Cựu\" is part of a reorganization, merging with other wards *into* a new \"Phường An Cựu.\" This means there *was* a change, even if the name is the same.  This is a common issue with these administrative restructurings; it's the underlying data that's changing.\n\nNext, I cross-referenced this with the list of new wards. I looked for a \"Phường An Cựu\" in \"Thành phố Huế\". There's a perfect match! Ward code \"19815\". That's our guy.\n\nFinally, putting it all together for the output. The province is unchanged (\"Thành phố Huế\").  The ward is the new \"Phường An Cựu\", with the ward code \"19815\". The citation is from the resolution I found, 1675/NQ-UBTVQH15, line 16.  And I'm pretty confident in this mapping, so I'll set the confidence level to \"high\". This is a solid result.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1675/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Huế",
+        "line": "16. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường An Đông, An TâyvàAn Cựu thành phường mới có tên gọi là xã Phường An Cựu."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Huế",
+      "ward_code": "19815",
+      "ward_name": "Phường An Cựu"
+    }
+  ]
+}

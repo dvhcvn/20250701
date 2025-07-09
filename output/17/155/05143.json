@@ -1,0 +1,18 @@
+{
+  "address": "Xã Mỹ Hòa, Huyện Tân Lạc, Tỉnh Hoà Bình",
+  "ellapsedInMs": 9204,
+  "estimatedCost": 0.0042445,
+  "thought": "**Analyzing the Administrative Unit Change: Xã Mỹ Hòa, Huyện Tân Lạc**\n\nOkay, so I've got \"Xã Mỹ Hòa, Huyện Tân Lạc, Tỉnh Hoà Bình\" as the old address. My first step is to identify the province and ward: \"Tỉnh Hoà Bình\" and \"Xã Mỹ Hòa\". The user is asking about the *new* address.\n\nImmediately, I need to check those province resolutions, particularly 60-NQ/TW. Ah, there it is: \"Hợp nhất tỉnh Vĩnh Phúc, tỉnh Phú Thọ và tỉnh Hoà Bình; lấy tên là tỉnh Phú Thọ\". This clearly states Hoà Bình merged into Phú Thọ. So, the new province will definitely be \"Tỉnh Phú Thọ\".\n\nNow, the focus shifts to ward-level changes. I need to scan those resolutions, keeping an eye out for \"Xã Mỹ Hòa\" within the context of either Hoà Bình *or* Phú Thọ. Let's see... Ah, resolution 1676/NQ-UBTVQH15, \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ,\" looks promising, since Hoà Bình is now part of Phú Thọ.\n\nLine 125 of that resolution: *\"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Mỹ Hòa, Phong Phú và Phú Cường thành xã mới có tên gọi là **xã Mường Bi**.\"* Bingo! That's exactly what I'm looking for. It explicitly mentions \"Xã Mỹ Hòa\" and creates \"Xã Mường Bi.\" The header *also* states it's related to \"tỉnh Phú Thọ,\" which makes perfect sense.\n\nNow, a crucial point: Is this the \"Mỹ Hòa\" from \"Huyện Tân Lạc?\" Let's check. Line 124, in the same resolution, mentions \"Ngọc Mỹ (huyện Tân Lạc).\" It tells me that \"huyện Tân Lạc\" is *now* part of \"Tỉnh Phú Thọ.\" Although line 125 doesn't *explicitly* state \"Huyện Tân Lạc\" in relation to \"Mỹ Hòa\", the proximity and the clear application to \"Tỉnh Phú Thọ\" make it highly probable that this is indeed the \"Mỹ Hòa\" from the address.\n\nNext step: Cross-referencing `New wards`. I search for \"xã Mường Bi,\" and there it is: `{\"ward_code\":\"05158\",\"ward_name\":\"Xã Mường Bi\",\"province_name\":\"Tỉnh Phú Thọ\"}`. Perfect.\n\nPutting it all together, I construct the JSON output.\n\n*   `province_name`: \"Tỉnh Phú Thọ\" (from the province merger).\n*   `ward_name`: \"Xã Mường Bi\" (from resolution 1676/NQ-UBTVQH15, line 125).\n*   `ward_code`: \"05158\" (from `New wards`).\n*   `citation`: The relevant resolution and line.\n*   `confidence`: High. The logic is sound, the resolution clearly addresses both the province and ward changes, and the `New wards` list confirms the new ward's details. The mention of \"Huyện Tân Lạc\" in the same context further boosts the confidence in the match.\n\nLet me just double-check, though, for any other \"Mỹ Hòa\" in these resolutions. Ah, 1654/NQ-UBTVQH15 from An Giang mentions \"phường Mỹ Hòa,\" which is a \"phường,\" not \"xã,\" and it doesn't apply to Hoà Bình. Good, nothing conflicting there. This all looks solid.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "125. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Mỹ Hòa, Phong Phú và Phú Cường thành xã mới có tên gọi là xã Mường Bi."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "05158",
+      "ward_name": "Xã Mường Bi"
+    }
+  ]
+}

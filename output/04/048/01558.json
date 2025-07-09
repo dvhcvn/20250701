@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Thanh Nhật, Huyện Hạ Lang, Tỉnh Cao Bằng",
+  "ellapsedInMs": 6240,
+  "estimatedCost": 0.0023016,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm tackling this Vietnamese address mapping task. I need to figure out the new administrative unit corresponding to \"Thị trấn Thanh Nhật, Huyện Hạ Lang, Tỉnh Cao Bằng.\"  My approach is straightforward:\n\nFirst, I identified the old ward and province: \"Thị trấn Thanh Nhật\" and \"Tỉnh Cao Bằng.\" Now, I need to consult the resolutions. I know from my experience that province mergers are key, so I check \"60-NQ/TW.\" Thankfully, Cao Bằng isn't merged, which simplifies things.\n\nNext, the real work begins: I need to search the other relevant resolutions for \"Thị trấn Thanh Nhật.\"  And bingo! Resolution \"1657/NQ-UBTVQH15\" is exactly what I need. It specifically states that \"Thị trấn Thanh Nhật\" is being merged with other units to form \"xã Hạ Lang.\"  This is a direct mapping!\n\nNow I need to cross-reference this information with the \"New wards\" data. I searched for \"xã Hạ Lang\" within \"Tỉnh Cao Bằng,\" and, of course, there's a match: `{\"ward_code\":\"01558\",\"ward_name\":\"Xã Hạ Lang\",\"province_name\":\"Tỉnh Cao Bằng\"}`.\n\nBuilding the JSON output is easy: I'll use the resolution text as the citation, and since it's a direct, unambiguous match, I'll assign a high confidence level. The province name is straight from the new ward data, and the ward code and name are also populated from the \"xã Hạ Lang\" record.\n\nI double-checked to ensure there's no ambiguity, and everything looks clean. The province wasn't merged. The resolution provides a clear mapping.  The new ward exists, and the information lines up perfectly.  This is a high-confidence mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1657/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Cao Bằng",
+        "line": "50. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Thanh Nhật, xã Thống Nhất và xã Thị Hoa thành xã mới có tên gọi là xã Hạ Lang."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Cao Bằng",
+      "ward_code": "01558",
+      "ward_name": "Xã Hạ Lang"
+    }
+  ]
+}

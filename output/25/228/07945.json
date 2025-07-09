@@ -1,0 +1,18 @@
+{
+  "address": "Phường Phong Châu, Thị xã Phú Thọ, Tỉnh Phú Thọ",
+  "ellapsedInMs": 8185,
+  "estimatedCost": 0.0034159999999999998,
+  "thought": "**Analysis of Administrative Unit Changes for \"Phường Phong Châu, Thị xã Phú Thọ, Tỉnh Phú Thọ\"**\n\nOkay, here's my thought process on this. I'm starting with the provided old address: \"Phường Phong Châu, Thị xã Phú Thọ, Tỉnh Phú Thọ.\"  My goal is to find the corresponding *new* administrative unit(s).\n\nFirst, I parsed the old address.  I've got \"Tỉnh Phú Thọ\" (province) and \"Phường Phong Châu\" (ward).  I know I need to look at the resolutions and the new ward data.\n\nI started by examining the province resolutions, specifically checking resolution 60-NQ/TW related to \"Tỉnh Phú Thọ\".  This tells me that although Phú Thọ merged with Vĩnh Phúc and Hòa Bình at some point in the past, the province name \"Tỉnh Phú Thọ\" remains the same. This is relevant to my `province_name` output.\n\nNext, I looked at the \"Other resolutions\" focusing on \"Phường Phong Châu\" within \"Tỉnh Phú Thọ\". I found resolution 1676/NQ-UBTVQH15, \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ.\"  This one looks promising.\n\n*   I noticed a clause that relates to \"thị trấn Phong Châu,\" but that's a different type of unit (township) from the \"Phường Phong Châu\" I'm searching for. I need to keep that in mind, just in case \"thị trấn Phong Châu\" and \"Phường Phong Châu\" were related within \"Thị xã Phú Thọ,\" the old municipality.\n*   Another clause talks about \"phường Hùng Vương (thị xã Phú Thọ),\" but that's not what I'm looking for.\n*   Then, boom! Clause 137 of that resolution: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Phong Châu, xã Phú Hộ và xã Hà Thạch thành phường mới có tên gọi là **phường Phong Châu**.\"  That's a direct hit!  My old \"Phường Phong Châu\" is being merged with \"xã Phú Hộ\" and \"xã Hà Thạch\" to form a *new* \"phường Phong Châu.\"  The name stays the same, but the composition changes. That means I have high confidence in this match.\n\nSo, the new ward name is definitively \"phường Phong Châu.\"  And the province name remains \"Tỉnh Phú Thọ.\"  The citation is \"1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ,\" specifically line 137.\n\nFinally, I checked the \"New wards\" data.  I was looking for \"Phường Phong Châu\" in \"Tỉnh Phú Thọ.\"  And there it is:  `{\"ward_code\":\"07954\",\"ward_name\":\"Phường Phong Châu\",\"province_name\":\"Tỉnh Phú Thọ\"}`. Perfect! That confirms everything.  I've found the correct administrative unit mapping. I'm satisfied that this is a definitive answer. I've reviewed all the relevant resolutions and this is the only one that applies to the old ward.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "137. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Phong Châu, xã Phú Hộ và xã Hà Thạch thành phường mới có tên gọi là **phường Phong Châu**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "07954",
+      "ward_name": "Phường Phong Châu"
+    }
+  ]
+}

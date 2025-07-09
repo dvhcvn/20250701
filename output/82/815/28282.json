@@ -1,0 +1,18 @@
+{
+  "address": "Xã Đạo Thạnh, Thành phố Mỹ Tho, Tỉnh Tiền Giang",
+  "ellapsedInMs": 8075,
+  "estimatedCost": 0.0038291,
+  "thought": "**Determining the New Administrative Unit for \"Xã Đạo Thạnh\"**\n\nOkay, here's how I'd approach this. First, the old address is \"Xã Đạo Thạnh, Thành phố Mỹ Tho, Tỉnh Tiền Giang\". I need to find the new unit.  I'll start by pinpointing the old province, which is \"Tỉnh Tiền Giang\". The first thing I have to do is check for any province mergers. Ah, yes, \"Hợp nhất tỉnh Tiền Giang và tỉnh Đồng Tháp, lấy tên là tỉnh Đồng Tháp\" - it looks like \"Tỉnh Tiền Giang\" was merged with something and is now \"Tỉnh Đồng Tháp.\"\n\nNow, the old ward is \"Xã Đạo Thạnh.\" I need to find this in the relevant resolutions. Let's see...  Ah, there it is! In `1663/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Tháp`: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của Phường 4 và Phường 5 (thành phố Mỹ Tho), xã Đạo Thạnh thành phường mới có tên gọi là **phường Đạo Thạnh**.\" Excellent, the new ward is \"Phường Đạo Thạnh.\"\n\nThe resolution `1663/NQ-UBTVQH15` is specifically about \"tỉnh Đồng Tháp\", which corroborates the province merger information I found earlier. Now, I need to look up \"Phường Đạo Thạnh\" in the \"New wards\" list, specifically within the context of \"Tỉnh Đồng Tháp.\" Perfect: I find `{\"ward_code\":\"28249\",\"ward_name\":\"Phường Đạo Thạnh\",\"province_name\":\"Tỉnh Đồng Tháp\"}`.\n\nSo, for the output, I'll use the resolution's `header` and the specific line as the `citation`. Because this is a clear match, with the province change accounted for, the `confidence` level should be \"high.\"  The `province_name` is \"Tỉnh Đồng Tháp\", the `ward_code` is \"28249\", and the `ward_name` is \"Phường Đạo Thạnh.\"\n\nJust to make sure, let's re-check the old address: \"Xã Đạo Thạnh, Thành phố Mỹ Tho, Tỉnh Tiền Giang.\"  The resolution definitely mentions \"xã Đạo Thạnh\" and \"thành phố Mỹ Tho\", and it's from the \"tỉnh Đồng Tháp\" context after the merger. The \"Thành phố Mỹ Tho\" is logically part of \"Tỉnh Đồng Tháp\" now. The old \"Tỉnh Tiền Giang\" became \"Tỉnh Đồng Tháp\". This all checks out.  The new unit is indeed \"Phường Đạo Thạnh\" in \"Tỉnh Đồng Tháp\" with a code of \"28249.\" My confidence is high because of the explicit match and clear context provided by the resolution and province merger.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1663/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Tháp",
+        "line": "84. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của Phường 4 và Phường 5 (thành phố Mỹ Tho), xã Đạo Thạnh thành phường mới có tên gọi là phường Đạo Thạnh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đồng Tháp",
+      "ward_code": "28249",
+      "ward_name": "Phường Đạo Thạnh"
+    }
+  ]
+}

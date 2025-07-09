@@ -1,0 +1,18 @@
+{
+  "address": "Phường Pom Hán, Thành phố Lào Cai, Tỉnh Lào Cai",
+  "ellapsedInMs": 8442,
+  "estimatedCost": 0.0032440999999999998,
+  "thought": "**Analysis of Administrative Unit Change for \"Phường Pom Hán, Thành phố Lào Cai, Tỉnh Lào Cai\"**\n\nOkay, here's how I'm thinking about this. The user has given me an old address and wants to know the new administrative unit. First, I need to understand the context. The address contains \"Tỉnh Lào Cai\", so I know I'm dealing with Lào Cai Province.\n\nInitially, I looked at provincial resolutions, specifically 60-NQ/TW. This confirmed that Lào Cai Province still exists, although it merged with Yên Bái. The name remains \"Tỉnh Lào Cai\", which helps me fill in the `province_name` field.\n\nNext, I focused on Resolution 1673/NQ-UBTVQH15, which is directly relevant to administrative changes in Lào Cai. Line 89 explicitly states that \"Phường Pom Hán\" was merged into a new ward called \"Phường Cam Đường\". Line 90 describes a different merger to form \"Phường Lào Cai\", but \"Phường Pom Hán\" is not mentioned, which confirms it was part of the \"Cam Đường\" merger. Further confirmation comes from line 92, which lists wards *not* affected by the rearrangement. \"Phường Pom Hán\" is not in that list, solidifying its inclusion in the merger.\n\nI then checked the \"New wards\" data. I found that  `{\"ward_code\":\"02671\",\"ward_name\":\"Phường Cam Đường\",\"province_name\":\"Tỉnh Lào Cai\"}` matches the new ward identified in the resolution, while `{\"ward_code\":\"02647\",\"ward_name\":\"Phường Lào Cai\",\"province_name\":\"Tỉnh Lào Cai\"}` is another new ward. The \"New wards\" list contains a mix of wards, some new and some old.  However, for this task, I need to focus on the wards *resulting* from the rearrangement.\n\nTherefore, my conclusion, based on Resolution 1673/NQ-UBTVQH15 line 89, is clear: \"Phường Pom Hán\" is now part of \"Phường Cam Đường\". The `province_name` will be \"Tỉnh Lào Cai\". I'm confident about this answer, given the explicit wording in the resolution. My `confidence` level would be high. The `ward_code` for \"Phường Cam Đường\" is \"02671\".\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai",
+        "line": "89. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Nam Cường (thành phố Lào Cai), Xuân Tăng, Pom Hán, Bắc Cường, Bắc Lệnh, Bình Minh và xã Cam Đường thành phường mới có tên gọi là phường Cam Đường."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "02671",
+      "ward_name": "Phường Cam Đường"
+    }
+  ]
+}

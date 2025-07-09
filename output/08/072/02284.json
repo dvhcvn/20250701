@@ -1,0 +1,18 @@
+{
+  "address": "Xã Thanh Tương, Huyện Na Hang, Tỉnh Tuyên Quang",
+  "ellapsedInMs": 6794,
+  "estimatedCost": 0.0022816,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm presented with a Vietnamese address and I need to figure out its new administrative unit.  Here's how I'm approaching this, step-by-step:\n\nFirst, I need to break down the address. From the input, I can clearly identify: the ward as \"Xã Thanh Tương,\" the district as \"Huyện Na Hang,\" and the province as \"Tỉnh Tuyên Quang.\"\n\nNow, I'm diving into the resolutions and lists provided. The goal is to see if any mergers or changes have occurred. Starting with Province Resolutions (60-NQ/TW), I check if \"Tỉnh Tuyên Quang\" is flagged for non-merger or new merged units.  It's not in the \"no-merger\" list, but it *is* listed under \"New Merged Units.\"  The note reads that Tuyên Quang merges with Hà Giang, but the name remains \"Tỉnh Tuyên Quang.\" So, the province name stays the same.\n\nNext, I need to examine other relevant resolutions for ward-level changes. I search within the `other_resolutions` list for either \"Xã Thanh Tương\" or \"Huyện Na Hang\".  Ah, here's the key: Resolution 1684/NQ-UBTVQH15, specific to Tuyên Quang.  Line 9 within this resolution is crucial. It states that \"Xã Thanh Tương\" (my old ward) *along with* \"thị trấn Na Hang\" and \"xã Năng Khả\" will merge to form a *new* ward called \"xã Nà Hang\"!  Bingo. This is the mapping I was looking for.\n\nTo confirm, I go to the `new_wards` list and search for \"xã Nà Hang.\"  There it is!  A matching entry with the code \"02221\" and the province name \"Tỉnh Tuyên Quang.\" Everything aligns perfectly.\n\nFinally, I'll construct the JSON output:  The old ward is explicitly mentioned in resolution 1684/NQ-UBTVQH15. The new ward is definitively \"Xã Nà Hang,\" with the code \"02221.\"  The province remains \"Tỉnh Tuyên Quang.\"  I'm confident in this mapping - high confidence, because the old ward is explicitly stated in the merge resolution and precisely mapped to its new equivalent.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "9. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số củathị trấn Na Hang, xã Năng Khả và xã Thanh Tương thành xã mới có tên gọi là xã Nà Hang."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "02221",
+      "ward_name": "Xã Nà Hang"
+    }
+  ]
+}

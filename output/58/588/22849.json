@@ -1,0 +1,18 @@
+{
+  "address": "Xã Lợi Hải, Huyện Thuận Bắc, Tỉnh Ninh Thuận",
+  "ellapsedInMs": 8497,
+  "estimatedCost": 0.0027112000000000004,
+  "thought": "**Address Mapping Analysis: Xã Lợi Hải to New Administrative Units**\n\nOkay, so I'm presented with the address \"Xã Lợi Hải, Huyện Thuận Bắc, Tỉnh Ninh Thuận\" and I need to map it to the new administrative structure. My first step is to break down the address.  I've identified the old ward as \"Xã Lợi Hải,\" the old district as \"Huyện Thuận Bắc,\" and the old province as \"Tỉnh Ninh Thuận.\"\n\nNext, I need to check for province mergers or renames, and my source \"60-NQ/TW\" reveals a key change: \"Tỉnh Ninh Thuận\" was merged with \"Tỉnh Khánh Hoà\" to form... well, \"Tỉnh Khánh Hoà.\" Makes sense.\n\nNow for the crucial part: finding the relevant ward resolutions, especially for \"Xã Lợi Hải\" within the *new* province, \"Tỉnh Khánh Hoà\".  I scan the provided resolutions and immediately my eye catches \"1667/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Khánh Hòa\".  And bingo!  This resolution explicitly states that \"Xã Lợi Hải\" is being merged with other wards to form a new ward named \"xã Thuận Bắc\", and crucially, *within* Khánh Hòa.\n\nWith that confirmed, I check against my \"New wards\" data.  There it is: a perfect match!  \"ward_code\": \"22849\", \"ward_name\": \"Xã Thuận Bắc\", \"province_name\": \"Tỉnh Khánh Hòa\".  Absolutely spot on.\n\nNow to construct the JSON output: the citation will be \"1667/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Khánh Hòa,\" pinpointing the relevant section.  The confidence level should be high because the resolution directly addresses the old ward and links it unequivocally to the province merger. I'm going to set \"province_name\" as \"Tỉnh Khánh Hoà\", \"ward_code\" as \"22849\" and \"ward_name\" as \"Xã Thuận Bắc\".\n\nBefore submitting, I'll just quickly double-check everything.  Old address: \"Xã Lợi Hải, Huyện Thuận Bắc, Tỉnh Ninh Thuận\". Province merge: Ninh Thuận + Khánh Hoà = Khánh Hoà. Ward resolution:  \"Lợi Hải\" becomes part of \"xã Thuận Bắc\" *in* Khánh Hoà, according to 1667/NQ-UBTVQH15. New wards data confirms the code and name.\n\nThere is another relevant resolution but this is not applicable here because its a different province.\n\nConfidence: High. Seems solid.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1667/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Khánh Hòa",
+        "line": "40. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Bắc Phong, Phước Kháng và Lợi Hải thành xã mới có tên gọi là xã Thuận Bắc."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Khánh Hoà",
+      "ward_code": "22849",
+      "ward_name": "Xã Thuận Bắc"
+    }
+  ]
+}

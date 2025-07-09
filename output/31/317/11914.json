@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Cát Bà, Huyện Cát Hải, Thành phố Hải Phòng",
+  "ellapsedInMs": 7617,
+  "estimatedCost": 0.003235,
+  "thought": "**Analysis of Address and Administrative Unit Mapping**\n\nOkay, so I'm presented with the task of mapping an old address (\"Thị trấn Cát Bà, Huyện Cát Hải, Thành phố Hải Phòng\") to a new administrative unit based on some provided resolutions and new ward data. This is a pretty straightforward process, albeit requiring careful cross-referencing.\n\nFirst, I need to break down the given address. I've got \"Thị trấn Cát Bà\" as the old ward, \"Huyện Cát Hải\" as the old district (though districts are usually irrelevant in the final output, it's still good for context), and \"Thành phố Hải Phòng\" as the old province.\n\nNext, I need to check the province resolutions, specifically those related to \"Thành phố Hải Phòng\". The resolution 60-NQ/TW doesn't show any major changes to the province name, it confirms that it remains \"Thành phố Hải Phòng\".\n\nNow, I'm diving into \"Other resolutions\" to see if there are any mentions of \"Thị trấn Cát Bà\" or \"Huyện Cát Hải\". Bingo! Resolution 1669/NQ-UBTVQH15, concerning the restructuring of administrative units in Hải Phòng, is relevant. Line 113 specifically mentions that \"Thị trấn Cát Bà\" is being merged into \"**đặc khu Cát Hải**\".\n\nI can now check my \"New wards\" data to confirm. There it is, \"{\"ward_code\":\"11914\",\"ward_name\":\"Đặc khu Cát Hải\",\"province_name\":\"Thành phố Hải Phòng\"}\" - a perfect match!\n\nTherefore, the JSON output is straightforward to construct. The `province_name` remains \"Thành phố Hải Phòng\". The `ward_name` is \"Đặc khu Cát Hải\". The `ward_code` is \"11914\". I'll cite Resolution 1669/NQ-UBTVQH15, line 113 as the source for the new ward information with high confidence, because the old ward is explicitly mentioned as being merged into the new ward.\n\nLet's do a final quick scan to ensure I haven't missed anything. Going through the other resolutions and the new wards data. Confirmed. No other possibilities or mentions of \"Thị trấn Cát Bà\" outside of the one relevant resolution. The data is consistent and the mapping is solid.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "113. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số củathị trấn Cát Hải, thị trấn Cát Bà và các xã Đồng Bài, Hoàng Châu, Nghĩa Lộ, Văn Phong,Gia Luận, Hiền Hào, Phù Long, Trân Châu, Việt Hải, Xuân Đám thành đặc khu có tên gọi là**đặc khu Cát Hải**."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "11914",
+      "ward_name": "Đặc khu Cát Hải"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Phường Cam Phúc Nam, Thành phố Cam Ranh, Tỉnh Khánh Hòa",
+  "ellapsedInMs": 5952,
+  "estimatedCost": 0.001813,
+  "thought": "**Deconstructing a Vietnamese Address: A Step-by-Step Approach**\n\nOkay, so I've been tasked with translating an old Vietnamese address into its contemporary administrative equivalent. This requires a systematic approach, leveraging my expertise in geographical data analysis and Vietnamese administrative structures.\n\nFirst, I need to pinpoint the key components of the old address: \"Phường Cam Phúc Nam\" and \"Tỉnh Khánh Hòa.\" With those identified, I'll dive into the resolutions. My primary focus is to trace how these entities have shifted over time.\n\nI begin with the province. I'll meticulously review the province resolutions (specifically 60-NQ/TW).  Fortunately, \"Tỉnh Khánh Hòa\" remains unchanged after the merging of provinces, so that simplifies things. This confirmed permanence is crucial and will be reflected in my output.\n\nNext, I shift my attention to the other resolutions (1667/NQ-UBTVQH15), zeroing in on any mention of \"Phường Cam Phúc Nam.\" Line 54 is where I hit the jackpot! It clearly outlines the merger: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Cam Phú, Cam Lộc và Cam Phúc Nam thành phường mới có tên gọi là **phường Cam Ranh**.\"  This directly ties the old ward to a new one.\n\nTo solidify my understanding and pinpoint the precise new ward data, I need to check the \"New wards\" dataset. I'm searching for \"Phường Cam Ranh.\" Bingo! The entry `{\"ward_code\":\"22420\",\"ward_name\":\"Phường Cam Ranh\",\"province_name\":\"Tỉnh Khánh Hòa\"}` confirms my findings.\n\nNow, I can confidently assemble my JSON output.  I'll include the relevant citation from the resolution (including the line number) to make the mapping process transparent and verifiable. Since the link is direct, the mapping is very clear, and I will express this as 'high confidence'. \"Tỉnh Khánh Hòa\" will be maintained in the `province_name` field. And finally, I will specify the `ward_code` and `ward_name` based on the new administrative structures.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1667/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Khánh Hòa",
+        "line": "54. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Cam Phú, Cam Lộc và Cam Phúc Nam thành phường mới có tên gọi là phường Cam Ranh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Khánh Hòa",
+      "ward_code": "22420",
+      "ward_name": "Phường Cam Ranh"
+    }
+  ]
+}

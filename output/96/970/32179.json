@@ -1,0 +1,18 @@
+{
+  "address": "Xã Quách Phẩm Bắc, Huyện Đầm Dơi, Tỉnh Cà Mau",
+  "ellapsedInMs": 7050,
+  "estimatedCost": 0.0025673,
+  "thought": "**Mapping Old Vietnamese Addresses: Cà Mau Example**\n\nOkay, here's how I'm thinking about mapping this old address. First, I need to break down the input to identify the key administrative units. It looks like we're starting with \"Xã Quách Phẩm Bắc\" (old ward), \"Huyện Đầm Dơi\" (old district), and \"Tỉnh Cà Mau\" (old province). Since the task emphasizes eliminating districts, that piece of information will primarily be useful for context, but not directly used in the output.\n\nMy next step is to examine the province-level changes outlined in resolution 60-NQ/TW. I'll check if \"Tỉnh Cà Mau\" is mentioned in either the list of provinces *not* undergoing merger or the list of provinces experiencing merger. Fortunately, it's not on the list of non-merged provinces. I find it listed under \"Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất,\" and the resolution states that \"Tỉnh Cà Mau\" merged with \"Tỉnh Bạc Liêu,\" but keeps the name \"Tỉnh Cà Mau.\" So, the province name for the final output will be \"Tỉnh Cà Mau.\"\n\nNow, it's time to dive into resolution 1655/NQ-UBTVQH15, looking specifically for \"Xã Quách Phẩm Bắc.\" Line 7 of the resolution is crucial. It explicitly states that \"Xã Quách Phẩm Bắc\" is *merged* with \"Xã Quách Phẩm\" to create a *new* administrative unit, which is also named \"Xã Quách Phẩm.\" Bingo!\n\nWith the new ward identified, the next step is to reference the \"New wards\" data to confirm the details. I locate \"Xã Quách Phẩm\" and its associated code, which is \"32182,\" along with \"Tỉnh Cà Mau.\" Everything aligns perfectly, reinforcing the direct mapping.\n\nBased on these findings, I'm constructing the JSON output. The `citation.header` will be \"1655/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Cà Mau,\" and the `citation.line` will be the line 7 from resolution 1655. I can confidently assign a `confidence` level of \"high\" because of the clear and direct mapping in the resolution. The `province_name` will be \"Tỉnh Cà Mau,\" the `ward_code` will be \"32182,\" and the `ward_name` will be \"Xã Quách Phẩm.\"\n\nSince the request looks for one or multiple new units, and in this case there is only one, this should suffice. This approach should be applicable to all the addresses presented.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1655/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Cà Mau",
+        "line": "7. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Quách Phẩm Bắc và xã Quách Phẩm thành xã mới có tên gọi là xã Quách Phẩm."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Cà Mau",
+      "ward_code": "32182",
+      "ward_name": "Xã Quách Phẩm"
+    }
+  ]
+}

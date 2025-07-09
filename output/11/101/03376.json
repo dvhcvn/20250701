@@ -1,0 +1,18 @@
+{
+  "address": "Xã Keo Lôm, Huyện Điện Biên Đông, Tỉnh Điện Biên",
+  "ellapsedInMs": 6293,
+  "estimatedCost": 0.0022651,
+  "thought": "**My Analysis of the Administrative Unit Change for \"Xã Keo Lôm\"**\n\nOkay, the user has given me an old address: \"Xã Keo Lôm, Huyện Điện Biên Đông, Tỉnh Điện Biên\".  My immediate thought is to determine the new administrative unit, likely a ward, for that address.\n\nFirst things first, I've got to confirm the province.  The address clearly states \"Tỉnh Điện Biên\", and my initial checks confirm this. I've got to consult resolution 60-NQ/TW, which outlines province-level changes.  The good news is that Điện Biên isn't slated for any merging or restructuring at the province level, so that's simple.\n\nNow, the real work begins. I'm going to delve into \"Other resolutions\" focusing specifically on Điện Biên.  I'm looking for any mention of \"Xã Keo Lôm\" or \"Huyện Điện Biên Đông\" within the relevant resolutions.  Bingo!  Resolution 1661/NQ-UBTVQH15, concerning the restructuring of communes in Điện Biên, is a direct hit. Line 37 of that resolution spells it out:  \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Điện Biên Đông, xã Keo Lôm và xã Na Son thành xã mới có tên gọi là **xã Na Son**.\"\n\nThis is crucial. The resolution explicitly states that Xã Keo Lôm is merging into Xã Na Son!  My next step is to confirm the new ward details.  I'll look at the \"New wards\" data.  I quickly find that  `{\"ward_code\":\"03203\",\"ward_name\":\"Xã Na Son\",\"province_name\":\"Tỉnh Điện Biên\"}`. The province name aligns perfectly with the original address.\n\nBased on this, I'm confident in my findings. My output will be JSON formatted with:\n\n*   `province_name`: \"Tỉnh Điện Biên\"\n*   `ward_name`: \"Xã Na Son\"\n*   `ward_code`: \"03203\"\n*   `citation`:  This will include:\n    *   `header`: \"1661/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Điện Biên\"\n    *   `line`: \"37. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Điện Biên Đông, xã Keo Lôm và xã Na Son thành xã mới có tên gọi là xã Na Son.\"\n*   `confidence`: \"high\" since the resolution directly dictates this specific merger.\n\nThis is a clear-cut case, with strong evidence from the relevant resolution. It should be a straightforward output.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1661/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Điện Biên",
+        "line": "37. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Điện Biên Đông, xã Keo Lôm và xã Na Son thành xã mới có tên gọi là xã Na Son."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Điện Biên",
+      "ward_code": "03203",
+      "ward_name": "Xã Na Son"
+    }
+  ]
+}

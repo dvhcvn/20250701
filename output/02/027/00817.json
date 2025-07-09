@@ -1,0 +1,18 @@
+{
+  "address": "Xã Niêm Sơn, Huyện Mèo Vạc, Tỉnh Hà Giang",
+  "ellapsedInMs": 8199,
+  "estimatedCost": 0.0026557,
+  "thought": "**Address Mapping Analysis: Xã Niêm Sơn, Huyện Mèo Vạc, Tỉnh Hà Giang**\n\nOkay, let's break this down systematically. I'm given an old Vietnamese address: \"Xã Niêm Sơn, Huyện Mèo Vạc, Tỉnh Hà Giang\" and need to map it to the current administrative structure. The key is to leverage the provided resolutions and the new ward data.\n\nFirst, I identify the components: \"Xã Niêm Sơn\" (ward), \"Huyện Mèo Vạc\" (district), and \"Tỉnh Hà Giang\" (province).  Now, I'll consult the province resolutions, specifically 60-NQ/TW. This tells me that \"Tỉnh Hà Giang\" has been merged and renamed. The resolution clearly states that \"Hợp nhất tỉnh Tuyên Quang và tỉnh Hà Giang, lấy tên là tỉnh Tuyên Quang\" – merging Hà Giang into Tuyên Quang. Therefore, the new province is now \"Tỉnh Tuyên Quang.\"\n\nNext, I delve into resolution 1684/NQ-UBTVQH15.  The header is aligned with the new province name, which immediately flags it as relevant. I meticulously scan the text, searching for \"Xã Niêm Sơn.\"  Line 53 immediately grabs my attention: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Niêm Tòng và xã Niêm Sơn thành xã mới có tên gọi là **xã Niêm Sơn**.\" Bingo!  This line explicitly mentions \"Xã Niêm Sơn\" and, importantly, indicates it's being *merged* with another ward to form a *new* \"Xã Niêm Sơn.\" This is a strong indication that this is the relevant entry.\n\nNow, I cross-reference this with the provided new ward data. I search for a ward named \"Xã Niêm Sơn\" within \"Tỉnh Tuyên Quang.\" And there it is: `{\"ward_code\":\"00817\",\"ward_name\":\"Xã Niêm Sơn\",\"province_name\":\"Tỉnh Tuyên Quang\"}`.  Perfect! A direct match.\n\nBuilding the JSON output is straightforward now.  The resolution line (53) and header provide the citation details. My confidence level is high because I have a direct ward name match, a province mapping via a province merger resolution, and confirmation from the new ward data.\n\nIt's worth noting the district aspect. While the old address includes \"Huyện Mèo Vạc,\" resolution 1684/NQ-UBTVQH15, line 51, discusses restructuring in Mèo Vạc, stating that some existing units will be merged to form a new ward, but the output schema specifically requests province and ward. The key is to map the *ward* to its new form and its new *province*.\n\nTherefore, the final output will reflect the transformation of \"Xã Niêm Sơn, Huyện Mèo Vạc, Tỉnh Hà Giang\" to \"Xã Niêm Sơn\" in \"Tỉnh Tuyên Quang\" with ward code \"00817.\"  The district may be implicit within the merged unit structure. This is a solid, confident mapping based on the available data.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "53. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Niêm Tòng và xã Niêm Sơn thành xã mới có tên gọi là xã Niêm Sơn."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "00817",
+      "ward_name": "Xã Niêm Sơn"
+    }
+  ]
+}

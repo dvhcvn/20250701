@@ -1,0 +1,18 @@
+{
+  "address": "Xã Lý Học, Huyện Vĩnh Bảo, Thành phố Hải Phòng",
+  "ellapsedInMs": 5271,
+  "estimatedCost": 0.0021175,
+  "thought": "**Mapping \"Xã Lý Học\" to \"Xã Nguyễn Bỉnh Khiêm\" in Hải Phòng**\n\nOkay, so I'm looking at this old address: \"Xã Lý Học, Huyện Vĩnh Bảo, Thành phố Hải Phòng\". My task is to figure out the new administrative unit, the ward, it now belongs to, using the resolutions and the new ward data.\n\nFirst, I identify the province. The old address clearly states \"Thành phố Hải Phòng\".  I check `60-NQ/TW` for any province mergers, but there's no change related to Hải Phòng. It's the same.\n\nNext, the ward. I need to find \"Xã Lý Học\".  I scan through the relevant resolutions and find `1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng`.  Specifically, line 63 states that \"Xã Lý Học\" *is merged* with others to form \"xã Nguyễn Bỉnh Khiêm\". That's my key!\n\nNow, the `New wards` data. I search for \"xã Nguyễn Bỉnh Khiêm\" and *bam!*  `{\"ward_code\":\"11911\",\"ward_name\":\"Xã Nguyễn Bỉnh Khiêm\",\"province_name\":\"Thành phố Hải Phòng\"}` pops right up.\n\nThis is a clear-cut case. The resolution directly states the merger.  My confidence level is \"high\".  The JSON output will be straightforward: the resolution number and line, the new ward details, the province, and the \"high\" confidence.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "63. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Trấn Dương, Hòa Bình và Lý Học thành xã mới có tên gọi là xã Nguyễn Bỉnh Khiêm."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "11911",
+      "ward_name": "Xã Nguyễn Bỉnh Khiêm"
+    }
+  ]
+}

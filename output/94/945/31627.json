@@ -1,0 +1,28 @@
+{
+  "address": "Xã Đại Ân 1, Huyện Cù Lao Dung, Tỉnh Sóc Trăng",
+  "ellapsedInMs": 7046,
+  "estimatedCost": 0.0028055,
+  "thought": "**Address Mapping Analysis: Xã Đại Ân 1 to Thành phố Cần Thơ**\n\nOkay, so I've got a Vietnamese address I need to map, specifically \"Xã Đại Ân 1\" in \"Tỉnh Sóc Trăng\". My first step is to break down the components. I see \"Xã Đại Ân 1\" (ward), \"Huyện Cù Lao Dung\" (district – though I know I'll be ignoring this based on the prompt's instructions), and \"Tỉnh Sóc Trăng\" (province).\n\nNow, the resolutions come into play. First, I checked Resolution 60-NQ/TW to see if any provinces were merging. Sóc Trăng isn't listed under those *not* merging, so I had to look closer.  Ah-ha! Under \"các đơn vị mới\", I found it: \"Hợp nhất thành phố cần Thơ, tỉnh Sóc Trăng và tỉnh Hậu Giang; lấy tên là thành phố Cần Thơ\".  So, Sóc Trăng is now part of Cần Thơ. This is important context.\n\nNext, I zeroed in on Resolution 1668/NQ-UBTVQH15, specifically because the resolution is about the restructuring of wards in Cần Thơ. This seems very relevant. I scanned through, and sure enough, line 95 is the jackpot! It directly addresses \"Xã Đại Ân 1\". The resolution states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã An Thạnh 2, **Đại Ân 1**, An Thạnh 3 và An Thạnh Nam thành xã mới có tên gọi là **xã Cù Lao Dung**.\" So, Đại Ân 1 is being merged into the new ward, \"Xã Cù Lao Dung.\"\n\nThis confirmed my initial hunch.  Finally, I cross-referenced this against my new ward data.  I saw the entry: `{\"ward_code\":\"31633\",\"ward_name\":\"Xã Cù Lao Dung\",\"province_name\":\"Thành phố Cần Thơ\"}`. Bingo!  It matches perfectly.\n\nThe old \"Tỉnh Sóc Trăng\" is now \"Thành phố Cần Thơ\". And, crucially, \"Xã Đại Ân 1\" is *explicitly* merged into \"Xã Cù Lao Dung\" according to Resolution 1668/NQ-UBTVQH15. The new ward is \"Xã Cù Lao Dung\", code \"31633\", in \"Thành phố Cần Thơ.\"  With this direct mapping, my confidence level is high.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất thành phố cần Thơ, tỉnh Sóc Trăng và tỉnh Hậu Giang; lấy tên là thành phố Cần Thơ"
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Cần Thơ",
+      "ward_code": "31633",
+      "ward_name": "Xã Cù Lao Dung"
+    },
+    {
+      "citation": {
+        "header": "1668/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Cần Thơ",
+        "line": "95. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã An Thạnh 2, Đại Ân 1, An Thạnh 3 và An Thạnh Nam thành xã mới có tên gọi là xã Cù Lao Dung."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Cần Thơ",
+      "ward_code": "31633",
+      "ward_name": "Xã Cù Lao Dung"
+    }
+  ]
+}

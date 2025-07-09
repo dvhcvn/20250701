@@ -1,0 +1,28 @@
+{
+  "address": "Phường Trung Hưng, Thị xã Sơn Tây, Thành phố Hà Nội",
+  "ellapsedInMs": 7312,
+  "estimatedCost": 0.0036383,
+  "thought": "**My Analysis of the Administrative Unit Change for \"Phường Trung Hưng\"**\n\nOkay, so the user wants to know the new administrative unit for \"Phường Trung Hưng, Thị xã Sơn Tây, Thành phố Hà Nội.\"  First, I've got to confirm that Hà Nội isn't merged (which, according to resolution 60-NQ/TW, is the case).  Therefore, the province name will remain \"Thành phố Hà Nội\".\n\nNow, I'm digging into the \"Other resolutions\" specifically for \"Thành phố Hà Nội.\"  The key document is \"1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội.\"  Within that, I've located the pertinent information concerning \"Phường Trung Hưng.\"\n\nLine 50 of this resolution states that a portion of \"Phường Trung Hưng\" is being merged into the new ward, **Phường Sơn Tây**.  Line 51 states that the remaining portion of \"Phường Trung Hưng\" is being merged into **Phường Tùng Thiện**.\n\nSo, \"Phường Trung Hưng\" is being split into two new wards. Now, I have to verify these two new ward names and their associated `ward_code` from the \"New wards\" list for \"Thành phố Hà Nội.\"\n\nFor **Phường Sơn Tây**, I find the following: `{\"ward_code\":\"09574\",\"ward_name\":\"Phường Sơn Tây\",\"province_name\":\"Thành phố Hà Nội\"}`.  This matches perfectly.\n\nSimilarly, for **Phường Tùng Thiện**, I find the entry: `{\"ward_code\":\"09604\",\"ward_name\":\"Phường Tùng Thiện\",\"province_name\":\"Thành phố Hà Nội\"}`.  This also matches.\n\nGiven that \"Phường Trung Hưng\" is split, both \"Phường Sơn Tây\" and \"Phường Tùng Thiện\" are valid candidates.  The confidence in these results is high, since they are directly and explicitly stated in the relevant resolution.\n\nTherefore, the output will include both options, with high confidence, citing the relevant resolution and line number.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội",
+        "line": "50. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Ngô Quyền, Phú Thịnh, Viên Sơn, xã Đường Lâm, một phần diện tích tự nhiên, quy mô dân số của phường Trung Hưng, phường Sơn Lộc và xã Thanh Mỹ thành phường mới có tên gọi là phường Sơn Tây."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hà Nội",
+      "ward_code": "09574",
+      "ward_name": "Phường Sơn Tây"
+    },
+    {
+      "citation": {
+        "header": "1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội",
+        "line": "51. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Xuân Khanh, phường Trung Sơn Trầm, xã Xuân Sơn, phần còn lại của phường Trung Hưng, phường Sơn Lộc và xã Thanh Mỹ sau khi sắp xếp theo quy định tại khoản 50 Điều này thành phường mới có tên gọi là phường Tùng Thiện."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hà Nội",
+      "ward_code": "09604",
+      "ward_name": "Phường Tùng Thiện"
+    }
+  ]
+}

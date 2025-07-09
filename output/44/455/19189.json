@@ -1,0 +1,28 @@
+{
+  "address": "Xã Nhân Trạch, Huyện Bố Trạch, Tỉnh Quảng Bình",
+  "ellapsedInMs": 7111,
+  "estimatedCost": 0.0029587,
+  "thought": "**My Analysis of the Vietnamese Address Transformation**\n\nOkay, here's how I'm approaching this address mapping task. The goal is to accurately translate an old Vietnamese address to its current administrative unit, considering province and ward reorganizations.\n\nFirst, I identified the original address components: Xã Nhân Trạch (ward), Huyện Bố Trạch (district), and Tỉnh Quảng Bình (province).\n\nNow, the plan: I checked the provided resolutions, starting with the provincial ones.  I looked for Quảng Bình in resolution 60-NQ/TW. It wasn't in the list of provinces *not* undergoing changes, which piqued my interest. Then I found it listed as part of a merge. According to item 9, Quảng Bình was merged into Quảng Trị! That's a high-confidence change for the province.\n\nNext, I zeroed in on the ward level. Resolution 1680/NQ-UBTVQH15, which concerns ward changes in Quảng Trị, is directly relevant. I scrutinized its lines, looking for \"Xã Nhân Trạch.\" Aha! Line 24 caught my eye: it stated that Xã Nhân Trạch, along with other wards, would form a new ward named **Xã Nam Trạch**.\n\nTo cement this, I cross-referenced the `New wards` list. I checked for \"xã Nam Trạch\" and its associated province name. The data perfectly aligned: \"Xã Nam Trạch\" is indeed in \"Tỉnh Quảng Trị.\"\n\nTherefore, I'm confident in constructing the output: The `province_name` will be \"Tỉnh Quảng Trị,\" the `ward_name` will be \"Xã Nam Trạch,\" and the `ward_code` will be \"19198,\" taken directly from the confirmed entry in the `New wards` list. The citation will pinpoint the crucial resolution that details this specific ward transformation. Finally, the `confidence` will be marked as \"high,\" given the clear evidence from multiple resolutions and confirmed by the official list. This is a solid result.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Quảng Bình và tỉnh Quảng Trị, lấy tên là tỉnh Quảng Trị"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Trị",
+      "ward_code": "19198",
+      "ward_name": "Xã Nam Trạch"
+    },
+    {
+      "citation": {
+        "header": "1680/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Trị",
+        "line": "Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Nông trường Việt Trung, xã Nhân Trạch và xã Lý Nam thành xã mới có tên gọi là xã Nam Trạch."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Trị",
+      "ward_code": "19198",
+      "ward_name": "Xã Nam Trạch"
+    }
+  ]
+}

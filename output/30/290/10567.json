@@ -1,0 +1,28 @@
+{
+  "address": "Phường Hoàng Tiến, Thành phố Chí Linh, Tỉnh Hải Dương",
+  "ellapsedInMs": 6192,
+  "estimatedCost": 0.0022172,
+  "thought": "**Navigating the Administrative Unit Shift**\n\nOkay, so I've got this old address: \"Phường Hoàng Tiến, Thành phố Chí Linh, Tỉnh Hải Dương.\" My task is to figure out the new ward. Here's how I'm thinking about it:\n\nFirst, I need to identify the province. It's clearly \"Tỉnh Hải Dương,\" but I know I have to check for any administrative changes. I recall the resolutions (specifically 60-NQ/TW), and there it is: \"Hợp nhất tỉnh Hải Dương và thành phố Hải Phòng, lấy tên là thành phố Hải Phòng.\" Ah, so \"Tỉnh Hải Dương\" is now effectively \"Thành phố Hải Phòng.\" That's crucial context.\n\nNext, I look at the specific ward. The old ward is \"Phường Hoàng Tiến,\" and this is where the deeper dive begins. I'm going to scan through \"Other Resolutions,\" specifically looking for references to \"Phường Hoàng Tiến\" within \"Thành phố Hải Phòng.\"  \n\nBingo! Resolution 1669/NQ-UBTVQH15 catches my eye: \"Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng.\"  Scanning through it, line 38 is the key. It details the merging of \"phường Hoàng Tân, phường Hoàng Tiến và một phần diện tích tự nhiên, quy mô dân số của phường Văn Đức thành phường mới có tên gọi là **phường Trần Nhân Tông**.\"  Perfect!  It explicitly mentions \"Phường Hoàng Tiến\" and shows the merge into \"Phường Trần Nhân Tông.\"\n\nTo cement this, I'll double-check \"New Wards\" to confirm \"Phường Trần Nhân Tông\" is registered within \"Thành phố Hải Phòng.\" And there it is: `{\"ward_code\":\"10573\",\"ward_name\":\"Phường Trần Nhân Tông\",\"province_name\":\"Thành phố Hải Phòng\"}`. Matches perfectly.\n\nGiven the explicit nature of the resolution, my confidence in this answer is quite high. Now, I'll just package this all neatly into the requested JSON output. My analysis is complete.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Hải Dương và thành phố Hải Phòng, lấy tên là thành phố Hải Phòng"
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "10573",
+      "ward_name": "Phường Trần Nhân Tông"
+    },
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "38. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Hoàng Tân, phường Hoàng Tiến và một phần diện tích tự nhiên, quy mô dân số của phường Văn Đức thành phường mới có tên gọi là phường Trần Nhân Tông."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "10573",
+      "ward_name": "Phường Trần Nhân Tông"
+    }
+  ]
+}

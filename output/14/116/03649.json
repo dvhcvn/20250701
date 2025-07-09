@@ -1,0 +1,18 @@
+{
+  "address": "Phường Tô Hiệu, Thành phố Sơn La, Tỉnh Sơn La",
+  "ellapsedInMs": 6903,
+  "estimatedCost": 0.0034863999999999997,
+  "thought": "**Identifying the New Administrative Unit for \"Phường Tô Hiệu, Thành phố Sơn La, Tỉnh Sơn La\"**\n\nOkay, let's break this down. The user's query is straightforward: they want the new administrative unit for \"Phường Tô Hiệu, Thành phố Sơn La, Tỉnh Sơn La.\"  My process involves dissecting the data to confirm the answer.\n\nFirst, I established the province: \"Tỉnh Sơn La\". Resolution 60-NQ/TW states that Sơn La remains untouched.  No problem there.\n\nNow, the focus shifts to \"Phường Tô Hiệu.\"  I immediately looked at \"1681/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Sơn La.\"  Line 61 is the key: it clearly states the *reorganization* of wards, including the old \"Phường Tô Hiệu,\" into a *new* \"phường Tô Hiệu\". Same name, different constituent parts. I also verified the wards that *weren't* rearranged: \"Phường Tô Hiệu\" wasn't on that list, solidifying the idea it was involved in the restructuring.\n\nFinally, I cross-referenced this with the \"New wards\" data.  There's a clean match: `{\"ward_code\":\"03646\",\"ward_name\":\"Phường Tô Hiệu\",\"province_name\":\"Tỉnh Sơn La\"}`.\n\nGiven the explicit nature of the resolution and the corroborating data in the \"New wards\" list, I'm confident in the result.\n\nHere's the output I'd generate:\n\n```json\n[\n  {\n    \"citation\": {\n      \"header\": \"1681/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Sơn La\",\n      \"line\": \"61. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Quyết Thắng, Quyết Tâm, Chiềng Lề và Tô Hiệu thành phường mới có tên gọi là **phường Tô Hiệu**.\"\n    },\n    \"confidence\": \"high\",\n    \"province_name\": \"Tỉnh Sơn La\",\n    \"ward_code\": \"03646\",\n    \"ward_name\": \"Phường Tô Hiệu\"\n  }\n]\n```\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1681/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Sơn La",
+        "line": "61. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Quyết Thắng, Quyết Tâm, Chiềng Lề và Tô Hiệu thành phường mới có tên gọi là xã Tô Hiệu."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Sơn La",
+      "ward_code": "03646",
+      "ward_name": "Phường Tô Hiệu"
+    }
+  ]
+}

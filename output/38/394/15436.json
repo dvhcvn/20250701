@@ -1,0 +1,18 @@
+{
+  "address": "Xã Yên Thịnh, Huyện Yên Định, Tỉnh Thanh Hóa",
+  "ellapsedInMs": 7764,
+  "estimatedCost": 0.0032795,
+  "thought": "**Identifying the New Administrative Unit for the Input Address**\n\nOkay, so I've got \"Xã Yên Thịnh, Huyện Yên Định, Tỉnh Thanh Hóa\". My first thought is to systematically approach this, considering provincial mergers first.  Checking `60-NQ/TW`, I quickly see that Thanh Hóa hasn't been merged, so that's easy.\n\nNow, the hard part: finding what happened to \"Xã Yên Thịnh.\" I'm diving into the `other resolutions` specifically looking for activity in Thanh Hóa. I'm starting with `1686/NQ-UBTVQH15`.  I scan for \"Thanh Hóa\" and find it. Bingo!  Line 50 of the resolution clearly states the merger of \"Yên Hùng, Yên Thịnh and Yên Ninh thành xã mới có tên gọi là xã Yên Ninh.\"  Perfect match! Well, almost. It doesn't explicitly state \"huyện Yên Định\" for this particular \"Yên Thịnh\", but it's the only direct match in the Thanh Hóa resolutions about mergers.  And it *does* mention \"Yên Định\" elsewhere, albeit for different communes. Contextually, I'm fairly certain this is the correct resolution.\n\nTo be extra sure, I'm checking the `New wards` list. I search for \"Xã Yên Ninh\" in \"Tỉnh Thanh Hóa\" and, sure enough, I find `{\"ward_code\":\"15442\",\"ward_name\":\"Xã Yên Ninh\",\"province_name\":\"Tỉnh Thanh Hóa\"}`. Excellent!\n\nConsidering everything - the explicit merger details in the resolution and the confirmed entry in the `New wards` list - the confidence level is definitely high. I'm satisfied that \"Xã Yên Thịnh, Huyện Yên Định, Tỉnh Thanh Hóa\" is now part of \"Xã Yên Ninh\". Now I just need to format the JSON output.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1686/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thanh Hóa",
+        "line": "50. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Yên Hùng, Yên Thịnh và Yên Ninh thành xã mới có tên gọi là xã Yên Ninh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thanh Hóa",
+      "ward_code": "15442",
+      "ward_name": "Xã Yên Ninh"
+    }
+  ]
+}

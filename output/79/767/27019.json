@@ -1,0 +1,28 @@
+{
+  "address": "Phường Tân Quý, Quận Tân Phú, Thành phố Hồ Chí Minh",
+  "ellapsedInMs": 8172,
+  "estimatedCost": 0.0032890999999999997,
+  "thought": "**Determining New Administrative Unit(s) for \"Phường Tân Quý\"**\n\nOkay, here's how I'd approach this. First, I need to understand what's changed. The user gave me \"Phường Tân Quý, Quận Tân Phú, Thành phố Hồ Chí Minh\" as the old address. My analysis will focus on identifying the new administrative unit(s) based on provided resolutions and a list of new wards.\n\nI'll start with **identifying the province**: \"Thành phố Hồ Chí Minh.\" Consulting `60-NQ/TW` for any provincial mergers is the logical first step, but the resolution doesn't indicate any changes to \"Thành phố Hồ Chí Minh\", so it remains unchanged.\n\nNext, I need to focus on **identifying the ward**: \"Phường Tân Quý.\" I'll need to meticulously search the provided resolutions for mentions of \"Phường Tân Quý\".\n\nLooking at **Resolution 1685/NQ-UBTVQH15 (Thành phố Hồ Chí Minh)**, I find the answers. Specifically, clauses 63 and 64 are critical.\n\n*   Clause 63 explicitly states that a portion of \"Phường Tân Quý\" is merged into the new ward, **Phường Tân Sơn Nhì**.\n\n*   Clause 64 tells me that the *remaining* portion of \"Phường Tân Quý\" is merged into the new ward, **Phường Phú Thọ Hòa**.\n\nTherefore, \"Phường Tân Quý\" is *partially* absorbed into both \"Phường Tân Sơn Nhì\" and \"Phường Phú Thọ Hòa\".\n\nNow, I'll take the information on these two wards to match them with the list of `New wards` I have. This will let me extract all the relevant details I need for a precise answer.\n\n*   For **Phường Tân Sơn Nhì**, the data clearly matches: `{\"ward_code\":\"27019\",\"ward_name\":\"Phường Tân Sơn Nhì\",\"province_name\":\"Thành phố Hồ Chí Minh\"}`. The confidence here is high because the resolution provides specific details about the merge.\n\n*   Similarly, I find the data for **Phường Phú Thọ Hòa**: `{\"ward_code\":\"27022\",\"ward_name\":\"Phường Phú Thọ Hòa\",\"province_name\":\"Thành phố Hồ Chí Minh\"}`. Again, the confidence is high. The resolution is very clear about the merging.\n\nFinally, I will assemble the output in a JSON format. I will need to be very precise here. Each identified new ward will have its corresponding code, name, and province. Critically, each will have a citation and a confidence level. The citation will include the resolution header and the specific line within the resolution that supports the identified ward, and the confidence will be \"high\". The resolutions clearly define the complete merging of \"Phường Tân Quý\" into the two resulting wards.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1685/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của Thành phố Hồ Chí Minh",
+        "line": "63. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Tân Sơn Nhì, phần còn lại của phường Sơn Kỳ sau khi sắp xếp theo quy định tại khoản 41, khoản 62 Điều này và một phần diện tích tự nhiên, quy mô dân số của phường Tân Quý, phường Tân Thành thành phường mới có tên gọi là **phường Tân Sơn Nhì**."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hồ Chí Minh",
+      "ward_code": "27019",
+      "ward_name": "Phường Tân Sơn Nhì"
+    },
+    {
+      "citation": {
+        "header": "1685/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của Thành phố Hồ Chí Minh",
+        "line": "64. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Phú Thọ Hòa, một phần diện tích tự nhiên, quy mô dân số của phường Tân Thành và phần còn lại của phường Tân Quý sau khi sắp xếp theo quy định tại khoản 63 Điều này thành phường mới có tên gọi là **phường Phú Thọ Hòa**."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hồ Chí Minh",
+      "ward_code": "27022",
+      "ward_name": "Phường Phú Thọ Hòa"
+    }
+  ]
+}

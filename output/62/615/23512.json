@@ -1,0 +1,28 @@
+{
+  "address": "Xã Đắk Mar, Huyện Đắk Hà, Tỉnh Kon Tum",
+  "ellapsedInMs": 9076,
+  "estimatedCost": 0.0034568000000000003,
+  "thought": "**Mapping Old Vietnamese Addresses: My Thought Process**\n\nAlright, let's break this down. The task is to take an old Vietnamese address and map it to the new administrative units. It looks like we have \"Xã Đắk Mar, Huyện Đắk Hà, Tỉnh Kon Tum\" to start with.  My first instinct is to work from the top down: province, then district, then ward.\n\nFirst, the province: \"Tỉnh Kon Tum\".  I immediately reach for the province merger resolutions, specifically 60-NQ/TW.  Bingo! It states that \"Tỉnh Kon Tum\" was merged with \"Tỉnh Quảng Ngãi\" to become... well, \"Tỉnh Quảng Ngãi\". So that's our starting point for the new province.\n\nNow, the ward: \"Xã Đắk Mar\". This is where it gets interesting. I need to find resolutions related to wards within the context of Quảng Ngãi, or perhaps even Kon Tum *if* the resolution pre-dates the merge. After some searching, I find `1677/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ngãi`. This seems promising.\n\nLooking through that resolution, line 53 jumps out: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Đăk Hring và xã Đăk Mar thành xã mới có tên gọi là **xã Đăk Mar**.\"  Perfect!  It explicitly mentions \"xã Đăk Mar\" and says it's being merged with \"xã Đăk Hring\" to create a *new* \"xã Đăk Mar\". So, the name stays the same, but the composition has changed.  Crucially, the resolution is for Quảng Ngãi, which aligns with the province merge.\n\nI quickly check the other lines in the resolution, just to be thorough. Lines 56 and 62 aren't relevant, though I did note the mention of \"Đăk Hà\" and \"Tu Mơ Rông\". Line 52 mentions \"Đăk Long\" and \"Đăk Pxi\". Still, line 53 is the key.\n\nNow I double-check against the \"New wards\" list.  I find an entry: `{\"ward_code\":\"23512\",\"ward_name\":\"Xã Đăk Mar\",\"province_name\":\"Tỉnh Quảng Ngãi\"}`.  It's a perfect match!  The new ward name and the new province name align with the resolution's findings.\n\nThe province merge is a done deal, very clearly defined.  The ward name \"Xã Đăk Mar\" is explicitly mentioned in a resolution *specifically* for the new province, and the \"New wards\" list confirms it.  Confidence is high.\n\nSo, I'm ready to construct the JSON output: a clear and concise representation of the old address mapped to the new administrative unit, complete with the relevant details.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Kon Tum và tỉnh Quảng Ngãi, lấy tên là tỉnh Quảng Ngãi"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ngãi",
+      "ward_code": "23512",
+      "ward_name": "Xã Đăk Mar"
+    },
+    {
+      "citation": {
+        "header": "1677/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ngãi",
+        "line": "53. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Đăk Hring và xã Đăk Mar thành xã mới có tên gọi là xã Đăk Mar."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ngãi",
+      "ward_code": "23512",
+      "ward_name": "Xã Đăk Mar"
+    }
+  ]
+}

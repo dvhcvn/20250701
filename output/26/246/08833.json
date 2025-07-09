@@ -1,0 +1,28 @@
+{
+  "address": "Xã Bàn Giản, Huyện Lập Thạch, Tỉnh Vĩnh Phúc",
+  "ellapsedInMs": 6017,
+  "estimatedCost": 0.0020732000000000003,
+  "thought": "**My Analysis of the Administrative Unit Change**\n\nOkay, so I'm presented with the old address: \"Xã Bàn Giản, Huyện Lập Thạch, Tỉnh Vĩnh Phúc\" and the task is to find its new administrative unit.  Let's break this down.\n\nFirst, I see \"Tỉnh Vĩnh Phúc.\"  I immediately think about the province resolutions, specifically 60-NQ/TW.  Ah, yes! That resolution describes the merger of Vĩnh Phúc, Phú Thọ, and Hòa Bình into a new province called Phú Thọ.  So, right there, I know \"Tỉnh Vĩnh Phúc\" is now part of \"Tỉnh Phú Thọ.\" The province name in my output will definitely be \"Tỉnh Phú Thọ.\"\n\nNext, I need to figure out what happened to \"Xã Bàn Giản.\"  I need to check \"Other resolutions,\" particularly those related to changes within Phú Thọ given the merger.  The most relevant one is Resolution 1676/NQ-UBTVQH15 concerning the arrangement of administrative units in Phú Thọ. And bingo! Line 65 is key:  it explicitly mentions the merging of \"Xã Bàn Giản\" with \"thị trấn Hoa Sơn\" and \"Xã Liên Hòa,\" forming the new unit \"Xã Liên Hòa.\"\n\nNow, I cross-reference this with the \"New wards\" data, specifically for \"Tỉnh Phú Thọ.\" I find `{\"ward_code\":\"08812\",\"ward_name\":\"Xã Liên Hòa\",\"province_name\":\"Tỉnh Phú Thọ\"}`.  Perfect! That's exactly what I'd expect. The province is correct, and I've successfully identified the new ward.\n\nThe confidence here is exceptionally high. The resolution is explicit and provides a direct, unambiguous statement about the fate of \"Xã Bàn Giản.\" Therefore, I'm ready to construct the JSON output, confidently mapping the old address to the new administrative unit.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Vĩnh Phúc, tỉnh Phú Thọ và tỉnh Hoà Bình; lấy tên là tỉnh Phú Thọ"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "08812",
+      "ward_name": "Xã Liên Hòa"
+    },
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "65. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Hoa Sơn, xã Bàn Giản và xã Liên Hòa thành xã mới có tên gọi là xã Liên Hòa."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "08812",
+      "ward_name": "Xã Liên Hòa"
+    }
+  ]
+}

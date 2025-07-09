@@ -1,0 +1,28 @@
+{
+  "address": "Xã Đông Á, Huyện Đông Hưng, Tỉnh Thái Bình",
+  "ellapsedInMs": 6317,
+  "estimatedCost": 0.0032143,
+  "thought": "**Identifying the New Administrative Unit**\n\nOkay, let's break this down. My goal is to determine the new administrative location for \"Xã Đông Á, Huyện Đông Hưng, Tỉnh Thái Bình.\" First things first, I've got to confirm the old province, which is \"Tỉnh Thái Bình.\" Now, I'll need to check the province resolutions, specifically those related to Directive 60-NQ/TW, to see if \"Tỉnh Thái Bình\" underwent any mergers or changes.\n\nAh, here it is: \"Hợp nhất tỉnh Hưng Yên và tỉnh Thái Bình, lấy tên là tỉnh Hưng Yên.\" This means \"Tỉnh Thái Bình\" was absorbed into \"Tỉnh Hưng Yên,\" making that the *new* province.\n\nNext, I need to focus on \"Xã Đông Á.\" Time to dig through \"Other Resolutions\" looking for mentions of \"Xã Đông Á\" within the context of \"Huyện Đông Hưng\" and importantly, the *new* province, \"Tỉnh Hưng Yên.\" I'll be looking for any resolutions that re-organized this area.\n\nBingo! Resolution 1666/NQ-UBTVQH15, \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên,\" is exactly what I need. On line 59, it clearly states, \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đông Á, Đông Tân và Đông Quan thành xã mới có tên gọi là **xã Đông Quan**.\" This is the key. \"Xã Đông Á\" is being merged into \"Xã Đông Quan.\"\n\nNow, I'll cross-reference that with the \"New Wards\" data for \"Tỉnh Hưng Yên\" to confirm. I'm looking for \"Xã Đông Quan.\" Found it! `{\"ward_code\":\"12793\",\"ward_name\":\"Xã Đông Quan\",\"province_name\":\"Tỉnh Hưng Yên\"}`.  Perfect match.\n\nFinally, I can construct the JSON output.\n\n*   `province_name`: \"Tỉnh Hưng Yên\" (The new province, post-merger)\n*   `ward_name`: \"Xã Đông Quan\" (The new name for \"Xã Đông Á\")\n*   `ward_code`: \"12793\" (From the \"New Wards\" data)\n*   `citation`: The header and the specific line from the relevant resolution.\n*   `confidence`: \"high\" (This is a clean, definitive match with clear supporting evidence).\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Hưng Yên và tỉnh Thái Bình, lấy tên là tỉnh Hưng Yên"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "12793",
+      "ward_name": "Xã Đông Quan"
+    },
+    {
+      "citation": {
+        "header": "1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên",
+        "line": "59. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đông Á, Đông Tân và Đông Quan thành xã mới có tên gọi là xã Đông Quan."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "12793",
+      "ward_name": "Xã Đông Quan"
+    }
+  ]
+}

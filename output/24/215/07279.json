@@ -1,0 +1,18 @@
+{
+  "address": "Xã Hương Vĩ, Huyện Yên Thế, Tỉnh Bắc Giang",
+  "ellapsedInMs": 9033,
+  "estimatedCost": 0.0051497,
+  "thought": "**My Reasoning for Determining the New Ward**\n\nOkay, here's how I'd approach this. The user wants the new administrative unit (ward) for the old address \"Xã Hương Vĩ, Huyện Yên Thế, Tỉnh Bắc Giang\". My first step is to establish the new province.\n\n1.  **Province Identification and Mergers:** I know \"Tỉnh Bắc Giang\" is the old province. Resolution 60-NQ/TW is key here. Examining it, I confirm \"Hợp nhất tỉnh Bắc Ninh và tỉnh Bắc Giang, lấy tên là tỉnh Bắc Ninh\". So, \"Tỉnh Bắc Giang\" has become part of \"Tỉnh Bắc Ninh\".\n\n2.  **Ward Identification and Mapping:**  The original ward is \"Xã Hương Vĩ.\" Now, I need to search through the available resolutions looking specifically at \"Hương Vĩ\". I'm looking for any indication of how \"Xã Hương Vĩ\" has been reorganized.\n\n3.  **Detailed Resolution Analysis:** Bingo! \"1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh\" is the relevant resolution. It states, in line 52: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Bố Hạ, xã Đông Sơn và xã Hương Vĩ thành xã mới có tên gọi là **xã Bố Hạ**.\" This directly links \"Xã Hương Vĩ\" to the new ward, \"Xã Bố Hạ\".\n\n4.  **New Ward Code Lookup:** I need the code for \"Xã Bố Hạ\" within \"Tỉnh Bắc Ninh\". I'll cross-reference with the list of new wards, searching for \"Xã Bố Hạ\" and \"Tỉnh Bắc Ninh\".  I found it: `{\"ward_code\":\"07294\",\"ward_name\":\"Xã Bố Hạ\",\"province_name\":\"Tỉnh Bắc Ninh\"}`.\n\n5.  **Confidence and Output Construction:**  Since the exact old ward is explicitly mentioned in the resolution merging it into the new ward, I'm confident in this mapping. Therefore, my confidence level is \"high\".  The final output will be a JSON structure, clearly showing the supporting resolution, the specific line that provides the mapping, and the new ward information:\n\n    *   `citation.header`: \"1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh\"\n    *   `citation.line`: \"52. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Bố Hạ, xã Đông Sơn và xã Hương Vĩ thành xã mới có tên gọi là **xã Bố Hạ**.\"\n    *   `confidence`: \"high\"\n    *   `province_name`: \"Tỉnh Bắc Ninh\"\n    *   `ward_code`: \"07294\"\n    *   `ward_name`: \"Xã Bố Hạ\"\n\nI am now confident with the above process and the generated result.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh",
+        "line": "52. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Bố Hạ, xã Đông Sơn và xã Hương Vĩ thành xã mới có tên gọi là xã Bố Hạ."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "07294",
+      "ward_name": "Xã Bố Hạ"
+    }
+  ]
+}

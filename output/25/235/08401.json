@@ -1,0 +1,18 @@
+{
+  "address": "Xã Hương Lung, Huyện Cẩm Khê, Tỉnh Phú Thọ",
+  "ellapsedInMs": 7050,
+  "estimatedCost": 0.0026925,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm tackling this Vietnamese address: \"Xã Hương Lung, Huyện Cẩm Khê, Tỉnh Phú Thọ.\"  My initial task is straightforward: pinpoint the old ward, district, and province.  I've got it: \"Xã Hương Lung,\" \"Huyện Cẩm Khê,\" and \"Tỉnh Phú Thọ,\" respectively.\n\nNext, I'm diving into the resolutions to see how things have changed. \"Tỉnh Phú Thọ\" itself is confirmed by 60-NQ/TW; it remains \"Tỉnh Phú Thọ,\" even after potential mergers with other provinces.  That part's easy.\n\nNow, I'm focusing on Resolution 1676/NQ-UBTVQH15, which specifically deals with administrative changes within Phú Thọ.  I'm scanning for \"Xã Hương Lung\" and its district, \"Huyện Cẩm Khê.\"  Aha! Line 29 is the key: it clearly states that \"Xã Hương Lung\" and \"Xã Phú Khê\" are being merged to create the new ward \"Xã Phú Khê.\"\n\nWith that resolution in hand, I'm checking the provided \"New wards\" data.  I'm looking for a match with \"Xã Phú Khê\".  There it is: `{\"ward_code\":\"08398\",\"ward_name\":\"Xã Phú Khê\",\"province_name\":\"Tỉnh Phú Thọ\"}`.  The province name aligns perfectly, and the `ward_code` confirms it.\n\nSo, I'm confident in my output.  I'll include the relevant citation (1676/NQ-UBTVQH15, Line 29) to back up my findings.  The confidence is high because of this direct match.  Here's the JSON I'll construct:\n\n```json\n{\n  \"citation\": \"1676/NQ-UBTVQH15, Line 29\",\n  \"confidence\": \"High\",\n  \"province_name\": \"Tỉnh Phú Thọ\",\n  \"ward_code\": \"08398\",\n  \"ward_name\": \"Xã Phú Khê\"\n}\n```\n\nThat should be accurate.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "29. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Hương Lung và xã Phú Khê thành xã mới có tên gọi là xã Phú Khê."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "08398",
+      "ward_name": "Xã Phú Khê"
+    }
+  ]
+}

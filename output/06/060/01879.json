@@ -1,0 +1,28 @@
+{
+  "address": "Xã Cổ Linh, Huyện Pác Nặm, Tỉnh Bắc Kạn",
+  "ellapsedInMs": 5796,
+  "estimatedCost": 0.0022066,
+  "thought": "**Mapping an Old Address to New Administrative Units**\n\nOkay, I'm tasked with figuring out the new administrative unit for the old address \"Xã Cổ Linh, Huyện Pác Nặm, Tỉnh Bắc Kạn\". Let's break this down systematically.\n\nFirst, I need to identify the initial components. \"Xã Cổ Linh\" is the old ward, and \"Tỉnh Bắc Kạn\" is the old province. Now, the key is to understand if any province mergers or ward reorganizations have happened.\n\nThe first thing I check are the province mergers. Looking at \"60-NQ/TW\", it's clear that \"Tỉnh Bắc Kạn\" merged into \"Tỉnh Thái Nguyên.\" Okay, so the province has changed. Now I need to see about the ward itself.\n\nNext, I'll dive into the ward-specific resolutions. I'm looking for any mention of \"Xã Cổ Linh\" or \"Tỉnh Bắc Kạn\" (or now, \"Tỉnh Thái Nguyên\"). Ah-ha! Resolution \"1683/NQ-UBTVQH15\" is critical here. It explicitly states that \"Xã Cổ Linh\" was merged along with other areas to form a new ward, \"Xã Cao Minh.\" That's the breakthrough.\n\nNow that I know the new ward, I just have to verify the details. I'll search the \"New wards\" data for \"Xã Cao Minh\" within \"Tỉnh Thái Nguyên.\"  Perfect, there's a match: `{\"ward_code\":\"01879\",\"ward_name\":\"Xã Cao Minh\",\"province_name\":\"Tỉnh Thái Nguyên\"}`.\n\nGiven the explicit merger details in the resolution and the province merger, I'm very confident in this mapping. Now, I just need to structure the output in JSON format based on the schema and I'm done.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Bắc Kạn và tỉnh Thái Nguyên, lấy tên là tỉnh Thái Nguyên"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thái Nguyên",
+      "ward_code": "01879",
+      "ward_name": "Xã Cao Minh"
+    },
+    {
+      "citation": {
+        "header": "1683/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thái Nguyên",
+        "line": "44. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Công Bằng, Cổ Linh và Cao Tân thành xã mới có tên gọi là xã Cao Minh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thái Nguyên",
+      "ward_code": "01879",
+      "ward_name": "Xã Cao Minh"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Thạnh Bắc, Huyện Tân Biên, Tỉnh Tây Ninh",
+  "ellapsedInMs": 5521,
+  "estimatedCost": 0.0017644,
+  "thought": "**Identifying the New Administrative Unit for the Old Address**\n\nOkay, so I've got this old address: \"Xã Thạnh Bắc, Huyện Tân Biên, Tỉnh Tây Ninh.\" My task is to determine the new administrative unit, the new *ward* so to speak.\n\nFirst, I need to pinpoint the province, which is \"Tỉnh Tây Ninh.\"  Now, I'll go digging through my knowledge base of relevant resolutions, specifically looking at those related to province-level reorganizations (like 60-NQ/TW).  I quickly confirm that Tây Ninh has remained a standalone province.\n\nNext, I need to focus on finding resolutions that deal with *smaller* changes, like merging or renaming *xã* (communes). My search parameters will be \"Tây Ninh\" and \"Thạnh Bắc\". Bingo! I find resolution 1682/NQ-UBTVQH15, concerning the restructuring of administrative units within Tây Ninh.\n\nI'll delve into that document, and boom, line 71 stands out.  It explicitly states the natural area and population of both \"xã Tân Lập\" (also from Tân Biên District) and \"xã Thạnh Bắc\" are being combined to form a *new* commune, which will also be named \"xã Tân Lập.\" That's a direct hit!\n\nTo double-check, I'll now run a quick query in my database of new wards, filtering for \"Tỉnh Tây Ninh\" and look for \"xã Tân Lập\". The results match perfectly!  I see `{\"ward_code\":\"25489\",\"ward_name\":\"Xã Tân Lập\",\"province_name\":\"Tỉnh Tây Ninh\"}`.\n\nGiven the direct, unambiguous language of the resolution, the level of confidence in this match is very high. It seems that \"Xã Thạnh Bắc\" has effectively been absorbed into \"Xã Tân Lập\".\n\nFinally, it's time to build the appropriate JSON response.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1682/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tây Ninh",
+        "line": "71. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Tân Lập (huyện Tân Biên) và xã Thạnh Bắc thành xã mới có tên gọi là xã Tân Lập."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tây Ninh",
+      "ward_code": "25489",
+      "ward_name": "Xã Tân Lập"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Phường Hoà Chung, Thành phố Cao Bằng, Tỉnh Cao Bằng",
+  "ellapsedInMs": 4752,
+  "estimatedCost": 0.0018357,
+  "thought": "**My Mapping Strategy for the Old Address**\n\nOkay, so I'm tackling this address conversion. First, I need to confirm the province hasn't been merged or renamed. Thankfully, after checking the relevant resolutions, particularly \"60-NQ/TW,\" I see Cao Bằng (\"Tỉnh Cao Bằng\") remains unchanged. Good start.\n\nNow, the real work begins. I have to delve into those \"other_resolutions\" for information on \"Phường Hoà Chung.\" Aha! Resolution \"1657/NQ-UBTVQH15\" is the key. Line 56 is crystal clear: \"Phường Hoà Chung\" is merging with several other entities, including \"Duyệt Trung,\" \"Tân Giang,\" \"Chu Trinh,\" and \"Lê Chung,\" to form the new \"Phường Tân Giang.\"\n\nNext step is to validate the existence of \"Phường Tân Giang\" in the provided `new_wards` data. Bingo! I find it right there: {\"ward_code\":\"01288\",\"ward_name\":\"Phường Tân Giang\",\"province_name\":\"Tỉnh Cao Bằng\"}.\n\nThe confidence level here is high. The resolution directly addresses this specific merger. There's no room for ambiguity.\n\nFinally, I'll package this information into a JSON structure, clearly indicating the citation, my confidence, the province, the new ward code, and the new ward name. This JSON will represent the mapping of the old address to the new administrative unit. I'm satisfied with this approach; it's thorough and reliable.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1657/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Cao Bằng",
+        "line": "56. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Tân Giang, Duyệt Trung, Hòa Chung, xã Chu Trinh vàxã Lê Chung thành phường mới có tên gọi là phường Tân Giang."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Cao Bằng",
+      "ward_code": "01288",
+      "ward_name": "Phường Tân Giang"
+    }
+  ]
+}

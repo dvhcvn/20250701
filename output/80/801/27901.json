@@ -1,0 +1,28 @@
+{
+  "address": "Xã Mỹ Quý Đông, Huyện Đức Huệ, Tỉnh Long An",
+  "ellapsedInMs": 7898,
+  "estimatedCost": 0.0031351,
+  "thought": "**Address Mapping Analysis: A High-Confidence Resolution**\n\nOkay, so I've got this Vietnamese address to map: \"Xã Mỹ Quý Đông\" in \"Huyện Đức Huệ\", \"Tỉnh Long An\".  The task is to find the corresponding new administrative unit.  Let's break this down systematically.\n\nFirst, I identified the components: the ward, the district, and the province.  I immediately need to check for any province-level changes.  Looking at the province merger resolutions, I found Resolution 60-NQ/TW states that Long An and Tây Ninh merged into a new province \"Tỉnh Tây Ninh\".  That's a high-confidence start, meaning the new province is definitely Tây Ninh.\n\nNow, focusing on the ward itself, \"Xã Mỹ Quý Đông\", I had to delve into the other resolutions. Bingo!  Resolution 1682/NQ-UBTVQH15, specifically Line 24, directly addresses the issue.  It states that \"Xã Mỹ Quý Đông\" is merged with a few other wards to form a *new* ward called \"**xã Mỹ Quý**\". This is precisely what I needed.  The resolution itself is titled \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tây Ninh\", which aligns perfectly with the province change I've already established.\n\nNow, to confirm, I had to double-check my list of new wards.  And there it is: I found \"Xã Mỹ Quý\" in the `new_wards` list, with the code \"27907\" and, crucially, in the province \"Tỉnh Tây Ninh\" (which is the result of the merger).  It's a perfect match.\n\nRegarding the district \"Huyện Đức Huệ\", the resolutions indicate a general restructuring and the elimination of districts. Consequently, this aspect is irrelevant to the direct mapping of \"Xã Mỹ Quý Đông\" to its new administrative unit. The focus is solely on the ward mapping.\n\nBased on all the evidence, I can confidently construct the JSON output: the new `province_name` will be \"Tỉnh Tây Ninh\", the new `ward_name` is \"Xã Mỹ Quý\", the `ward_code` is \"27907\". The `citation` will point to Resolution 1682/NQ-UBTVQH15.  The `confidence` level here is definitely \"high\" because of that direct, explicit mention in the resolution.  It's a clean, clear mapping. I am happy with the results.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Tây Ninh và tỉnh Long An, lấy tên là tỉnh Tây Ninh"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tây Ninh",
+      "ward_code": "27907",
+      "ward_name": "Xã Mỹ Quý"
+    },
+    {
+      "citation": {
+        "header": "1682/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tây Ninh",
+        "line": "Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Mỹ Thạnh Bắc, Mỹ Quý Đông và Mỹ Quý Tây thành xã mới có tên gọi là xã Mỹ Quý."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tây Ninh",
+      "ward_code": "27907",
+      "ward_name": "Xã Mỹ Quý"
+    }
+  ]
+}

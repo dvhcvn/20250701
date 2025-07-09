@@ -1,0 +1,28 @@
+{
+  "address": "Phường Tân Đồng, Thành phố Đồng Xoài, Tỉnh Bình Phước",
+  "ellapsedInMs": 6925,
+  "estimatedCost": 0.0030343999999999996,
+  "thought": "**Identifying the New Administrative Unit for Phường Tân Đồng**\n\nOkay, so I've got \"Phường Tân Đồng, Thành phố Đồng Xoài, Tỉnh Bình Phước\" and need to find its new administrative location. First, I identify the old province, \"Tỉnh Bình Phước\". Now, I check my sources for any province mergers related to it. Ah, here it is: \"Hợp nhất tỉnh Đồng Nai và tỉnh Bình Phước, lấy tên là tỉnh Đồng Nai\" indicating \"Tỉnh Bình Phước\" has been absorbed into \"Tỉnh Đồng Nai\".\n\nNext, I look at the old ward \"Phường Tân Đồng\".  I start checking resolutions. I focused on \"1662/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Nai\". Scanning this resolution, I see lines 87 and 88. Line 87 is about a merge that *doesn't* include \"Phường Tân Đồng\", but Line 88 is crucial.  It states, \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Tân Phú, Tân Đồng, Tân Thiện, Tân Bình, Tân Xuân và xã Tiến Hưng thành phường mới có tên gọi là **phường Bình Phước**.\" Bingo!  This clearly shows \"Phường Tân Đồng\" is part of the formation of \"Phường Bình Phước\".\n\nNow I need to confirm that this change is occurring within \"Tỉnh Đồng Nai\" and not something else. The resolution itself is about \"Tỉnh Đồng Nai\" and the province merger earlier explicitly states the new province name.\n\nI'm confident about this.  To make it clean and complete, I look up the \"ward_code\" and \"province_name\" for \"Phường Bình Phước\" in \"Tỉnh Đồng Nai\".  My sources give me a direct match, I can check the exact wording from the resolution for the output, and my confidence is high because of the explicit nature of the information. Finally, I'll structure it like this:\n\n```json\n{\n  \"citation\": \"88. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Tân Phú, Tân Đồng, Tân Thiện, Tân Bình, Tân Xuân và xã Tiến Hưng thành phường mới có tên gọi là phường Bình Phước.\",\n  \"confidence\": \"high\",\n  \"province_name\": \"Tỉnh Đồng Nai\",\n  \"ward_code\": \"25195\",\n  \"ward_name\": \"Phường Bình Phước\"\n}\n```\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "17. Hợp nhất tỉnh Đồng Nai và tỉnh Bình Phước, lấy tên là tỉnh Đồng Nai"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đồng Nai",
+      "ward_code": "25195",
+      "ward_name": "Phường Bình Phước"
+    },
+    {
+      "citation": {
+        "header": "1662/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Nai",
+        "line": "88. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Tân Phú, Tân Đồng, Tân Thiện, Tân Bình, Tân Xuân và xã Tiến Hưng thành phường mới có tên gọi là **phường Bình Phước**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đồng Nai",
+      "ward_code": "25195",
+      "ward_name": "Phường Bình Phước"
+    }
+  ]
+}

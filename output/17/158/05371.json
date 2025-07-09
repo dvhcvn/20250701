@@ -1,0 +1,18 @@
+{
+  "address": "Xã Hữu Lợi, Huyện Yên Thủy, Tỉnh Hoà Bình",
+  "ellapsedInMs": 5399,
+  "estimatedCost": 0.0020150999999999997,
+  "thought": "**Mapping an Old Vietnamese Address to New Administrative Units**\n\nOkay, so I've got an old Vietnamese address to decipher: Xã Hữu Lợi in Huyện Yên Thủy, Hòa Bình Province. My goal is to figure out the corresponding new administrative unit. This is pretty straightforward, I think.\n\nFirst, I identified the components: ward, district, and province. Then, I dug into my data to see if there were any province mergers. Bingo!  Resolution 60-NQ/TW states that Hòa Bình Province was merged with Vĩnh Phúc and Phú Thọ Provinces, becoming Phú Thọ Province. This is key, because it changes my frame of reference.\n\nNext, I needed to check other relevant resolutions, specifically looking for mentions of \"Xã Hữu Lợi\" or \"Huyện Yên Thủy.\" And there it was: line 131 in resolution 1676/NQ-UBTVQH15. It explicitly states that Xã Hữu Lợi, along with some other wards, was reorganized into a new ward called **Xã Yên Trị**. Perfect!\n\nNow, I cross-referenced this with my new ward data.  A quick search for \"Xã Yên Trị\" yielded the entry:  `{\"ward_code\":\"05386\",\"ward_name\":\"Xã Yên Trị\",\"province_name\":\"Tỉnh Phú Thọ\"}`. The province name matches the merged province from earlier, solidifying the connection.\n\nGiven the direct match and the confirmation from the province merger, I'm confident about this.  My JSON output will be as follows:\n\n*   `citation`: Will include the header and the specific line 131 from 1676/NQ-UBTVQH15\n*   `confidence`: High\n*   `province_name`: \"Tỉnh Phú Thọ\"\n*   `ward_code`: \"05386\"\n*   `ward_name`: \"Xã Yên Trị\"\n\nThat's a clean and confident match. Moving on!\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "131. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đoàn Kết (huyện Yên Thủy), Hữu Lợi, Ngọc Lương và Yên Trị thành xã mới có tên gọi là xã Yên Trị."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "05386",
+      "ward_name": "Xã Yên Trị"
+    }
+  ]
+}

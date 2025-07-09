@@ -1,0 +1,18 @@
+{
+  "address": "Xã Măng Tố, Huyện Tánh Linh, Tỉnh Bình Thuận",
+  "ellapsedInMs": 5637,
+  "estimatedCost": 0.0017968999999999997,
+  "thought": "**Determining the New Ward for an Old Address**\n\nOkay, so I've got this address: \"Xã Măng Tố\", \"Tỉnh Bình Thuận\". My job is to figure out the new ward for it. First things first, I need to understand what the old ward and province are. I see \"Xã Măng Tố\" is the old ward, and \"Tỉnh Bình Thuận\" is the old province.\n\nNow, because I know things change, I'll check for province mergers. Looking at `60-NQ/TW`, I find that \"Tỉnh Bình Thuận\" was, in fact, merged. It's now part of \"Tỉnh Lâm Đồng.\" That's crucial information.\n\nNext, I'll dive into the ward resolutions. I'm focusing on those related to \"Xã Măng Tố\". Specifically, I'm checking `Other resolutions`. Ah, here's `1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng`. Bingo! This resolution directly addresses my ward, saying that \"Xã Măng Tố\" and another ward were merged to form a new ward called \"**xã Bắc Ruộng**.\"\n\nGreat. So, \"Xã Măng Tố\" has been absorbed into \"Xã Bắc Ruộng.\" Now I just need the details for the new ward. I'll search `New wards` for \"Xã Bắc Ruộng\" in \"Tỉnh Lâm Đồng.\" There it is: `{\"ward_code\":\"23152\",\"ward_name\":\"Xã Bắc Ruộng\",\"province_name\":\"Tỉnh Lâm Đồng\"}`.\n\nFinally, I'll put it all together into a clean JSON output: I'll include the relevant citation from the resolution, mark the confidence as \"High\" since it's a direct reference, the new province name (\"Tỉnh Lâm Đồng\"), the ward code (\"23152\"), and the ward name (\"Xã Bắc Ruộng\"). That should give me a solid, well-supported answer.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng",
+        "line": "69. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Măng Tố và xã Bắc Ruộng thành xã mới có tên gọi là xã Bắc Ruộng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "23152",
+      "ward_name": "Xã Bắc Ruộng"
+    }
+  ]
+}

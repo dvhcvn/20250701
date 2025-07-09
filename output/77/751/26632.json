@@ -1,0 +1,18 @@
+{
+  "address": "Xã Bông Trang, Huyện Xuyên Mộc, Tỉnh Bà Rịa - Vũng Tàu",
+  "ellapsedInMs": 7330,
+  "estimatedCost": 0.0025127,
+  "thought": "**My Analysis of the Administrative Address Re-Mapping**\n\nOkay, so I'm tasked with figuring out the new administrative location for an old address. I've got the old details: \"Xã Bông Trang\" in \"Huyện Xuyên Mộc\" within \"Tỉnh Bà Rịa - Vũng Tàu.\"  Since the prompt emphasizes ignoring districts, I'll take note but focus on the other components.\n\nFirst, I had to look at those provincial resolutions, specifically 60-NQ/TW.  I quickly confirmed that Bà Rịa - Vũng Tàu *isn't* on the \"no-merger\" list, so I moved on. Then, I found the bombshell in Resolution 16: Bà Rịa - Vũng Tàu, along with Bình Dương and Hồ Chí Minh, are merging to form Thành phố Hồ Chí Minh. So, my new province name is definitely \"Thành phố Hồ Chí Minh.\"\n\nNext, I shifted my focus to the other resolutions.  I scoured them for \"Xã Bông Trang\" and, bingo! Resolution 1685/NQ-UBTVQH15, specifically line 160, states that \"Xã Bông Trang\" is being combined with Bưng Riềng and Xuyên Mộc to form a new \"xã Xuyên Mộc.\"  That's my new ward!\n\nNow, for confirmation, I checked the \"New wards\" data.  There it was:  \"Xã Xuyên Mộc\" with a code of \"26632,\" and it's also listed under \"Thành phố Hồ Chí Minh.\" Perfect match!\n\nTherefore, I'm confident in compiling this JSON:\n\n*   `province_name`: \"Thành phố Hồ Chí Minh\" (from provincial merger).\n*   `ward_name`: \"Xã Xuyên Mộc\" (from the resolution).\n*   `ward_code`: \"26632\" (from the new wards data).\n*   `citation`:\n    *   `header`: \"1685/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của Thành phố Hồ Chí Minh.\"\n    *   `line`: \"160. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Bông Trang, Bưng Riềng và Xuyên Mộc thành xã mới có tên gọi là **xã Xuyên Mộc**.\"\n*   `confidence`: \"high\" (because the mapping is unambiguous).\n\nI've got a very solid match here with both province and ward name changes directly specified in the resolutions and data provided.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1685/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của Thành phố Hồ Chí Minh",
+        "line": "160. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Bông Trang, Bưng Riềng và Xuyên Mộc thành xã mới có tên gọi là xã Xuyên Mộc."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hồ Chí Minh",
+      "ward_code": "26632",
+      "ward_name": "Xã Xuyên Mộc"
+    }
+  ]
+}

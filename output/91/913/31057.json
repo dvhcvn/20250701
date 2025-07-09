@@ -1,0 +1,28 @@
+{
+  "address": "Xã Hoà Chánh, Huyện U Minh Thượng, Tỉnh Kiên Giang",
+  "ellapsedInMs": 8180,
+  "estimatedCost": 0.0031620000000000003,
+  "thought": "**My Mapping Strategy for the Old Vietnamese Address**\n\nOkay, here's how I'm thinking about mapping this old address: \"Xã Hoà Chánh, Huyện U Minh Thượng, Tỉnh Kiên Giang\" to its new administrative equivalent.\n\nFirst, I need to break down the old address into its components: Ward (Xã Hoà Chánh), District (Huyện U Minh Thượng), and Province (Tỉnh Kiên Giang).\n\nNext, I'll work through the resolutions provided.  Initially, I check if Kiên Giang is on the \"do not merge\" list. It's not.  Then, I see that Kiên Giang *is* listed as being merged, specifically into An Giang. So, I'm confident the new province is An Giang.\n\nNow, focusing on the resolutions for An Giang, I see that resolution 1654/NQ-UBTVQH15 is relevant.  I'm looking specifically for mentions of \"Xã Hoà Chánh\" in this resolution, and *bingo*, Line 47 mentions it!  This line details the rearrangement of several communes, including Hòa Chánh, and forms a new commune called \"Vĩnh Hòa\".  Crucially, it references \"huyện U Minh Thượng\" alongside Hòa Chánh in the context of the rearrangement, solidifying my confidence. This directly connects the old ward name to a new ward name within the correct district, and I am marking the confidence level as \"high\".\n\nNow, I cross-reference this information with the new ward data. I confirm that \"Xã Vĩnh Hòa\" exists within \"Tỉnh An Giang\".\n\nFinally, I'm constructing the JSON output.  I'll only have one entry, the identified new ward.  The province will be \"Tỉnh An Giang,\" the ward will be \"Xã Vĩnh Hòa,\" and the ward code is \"31012\". I'll flag this with \"high\" confidence and include the resolution and line as the citation.\n\nThe district information is primarily used as context. The instructions mentioned \"eliminating all districts\" and I will be focused on the new province and ward.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh An Giang và tỉnh Kiên Giang, lấy tên là tỉnh An Giang"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh An Giang",
+      "ward_code": "31012",
+      "ward_name": "Xã Vĩnh Hòa"
+    },
+    {
+      "citation": {
+        "header": "1654/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh An Giang",
+        "line": "47. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Vĩnh Hòa (huyện U Minh Thượng), Thạnh Yên A, Hòa Chánh và Thạnh Yên thành xã mới có tên gọi là xã Vĩnh Hòa."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh An Giang",
+      "ward_code": "31012",
+      "ward_name": "Xã Vĩnh Hòa"
+    }
+  ]
+}

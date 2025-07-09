@@ -1,0 +1,18 @@
+{
+  "address": "Xã Vĩnh Phước B, Huyện Gò Quao, Tỉnh Kiên Giang",
+  "ellapsedInMs": 5878,
+  "estimatedCost": 0.0020356,
+  "thought": "**Identifying the New Administrative Unit**\n\nOkay, here's what I've got. The user wants to find the new ward for the old address \"Xã Vĩnh Phước B, Huyện Gò Quao, Tỉnh Kiên Giang\".  I'll break it down step-by-step to be thorough.\n\nFirst, I need to isolate the old province and ward. It's clear: \"Xã Vĩnh Phước B\" is the old ward, and \"Tỉnh Kiên Giang\" is the old province.\n\nNow, let's consider province mergers. The information points to a merger.  Specifically, Resolution 60-NQ/TW states that An Giang and Kiên Giang merged into a single province called An Giang.  This means \"Tỉnh Kiên Giang\" is now part of \"Tỉnh An Giang\".\n\nNext, I have to delve into the ward resolutions. I'll search through the provided \"Other resolutions\" for mentions of \"Xã Vĩnh Phước B\".  Bingo! Resolution 1654/NQ-UBTVQH15 provides the critical information:  it explicitly states that \"Xã Vĩnh Phước B\" is merged into a new ward called \"xã Gò Quao\".  This is the key piece of the puzzle.\n\nTo confirm this, I need to verify that \"xã Gò Quao\" is indeed in the \"New wards\" list.  Looking at the data, I see: `{\"ward_code\":\"30952\",\"ward_name\":\"Xã Gò Quao\",\"province_name\":\"Tỉnh An Giang\"}`.  Perfect!  The \"ward_name\" and \"province_name\" align exactly with what I found in the resolution and the province merger information.\n\nWith all the pieces in place, I can construct the JSON output. I'll use the resolution's header and relevant line as the `citation`.  Given the direct match and clarity, I have high confidence. The `province_name` will be \"Tỉnh An Giang\" due to the merger. The `ward_code` will be \"30952\", and the `ward_name` is, definitively, \"Xã Gò Quao\".  That should cover it.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1654/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh An Giang",
+        "line": "58. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Gò Quao, xã Vĩnh Phước B và xã Định An thành xã mới có tên gọi là xã Gò Quao."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh An Giang",
+      "ward_code": "30952",
+      "ward_name": "Xã Gò Quao"
+    }
+  ]
+}

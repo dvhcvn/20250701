@@ -1,0 +1,18 @@
+{
+  "address": "Xã Bon Phặng, Huyện Thuận Châu, Tỉnh Sơn La",
+  "ellapsedInMs": 6028,
+  "estimatedCost": 0.0020492,
+  "thought": "**Mapping an Old Vietnamese Address to New Administrative Units**\n\nOkay, so I've got this old Vietnamese address, \"Xã Bon Phặng, Huyện Thuận Châu, Tỉnh Sơn La,\" and I need to figure out its new administrative unit. First, I need to identify the components: Xã Bon Phặng is the old ward, Huyện Thuận Châu is the old district, and Tỉnh Sơn La is the old province. Easy enough.\n\nNow, the crucial part. I know I need to check the relevant resolutions. Let's start with province-level changes.  The province, Sơn La, is thankfully listed as \"không thực hiện sáp nhập\" in the key resolution. So, Sơn La remains Sơn La. Great, one thing less to worry about.\n\nNow, I've got this resolution \"1681/NQ-UBTVQH15,\" which specifically deals with the rearrangement of communes in Sơn La. I need to dive into this one.  I'm scanning through the lines, looking for \"Bon Phặng.\"  Aha! Line 15 jumps out: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Bản Lầm, Bon Phặng và Muổi Nọi thành xã mới có tên gọi là **xã Muổi Nọi**.\"  Bingo! \"Bon Phặng\" is explicitly mentioned as merging into the new \"xã Muổi Nọi.\"  That's my key finding.\n\nNow to cross-reference this with the data I have on the new wards.  I have the following:  `{\"ward_code\":\"03799\",\"ward_name\":\"Xã Muổi Nọi\",\"province_name\":\"Tỉnh Sơn La\"}`. It matches perfectly! \n\nI've got everything I need to build the JSON output.  The province is \"Tỉnh Sơn La,\" the new ward is \"Xã Muổi Nọi,\" the ward code is \"03799,\" and I'll mark the confidence as \"high\" because the resolution explicitly states this merger. For the citation, I'll include the resolution's header and the specific line, line 15.\n\nJust to be absolutely certain, let me quickly glance through the rest of the resolution to ensure there isn't any other mention of \"Bon Phặng\" or any other changes that might apply.  Nope, line 12 discusses a different set of communes.  I'm confident in my results.  This one is straightforward.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1681/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Sơn La",
+        "line": "15. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Bản Lầm, Bon Phặng và Muổi Nọi thành xã mới có tên gọi là xã Muổi Nọi."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Sơn La",
+      "ward_code": "03799",
+      "ward_name": "Xã Muổi Nọi"
+    }
+  ]
+}

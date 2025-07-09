@@ -1,0 +1,18 @@
+{
+  "address": "Xã Diên Sơn, Huyện Diên Khánh, Tỉnh Khánh Hòa",
+  "ellapsedInMs": 7374,
+  "estimatedCost": 0.0026912,
+  "thought": "**Address Mapping: \"Xã Diên Sơn, Huyện Diên Khánh, Tỉnh Khánh Hòa\"**\n\nOkay, let's break down this address. I need to figure out how \"Xã Diên Sơn, Huyện Diên Khánh, Tỉnh Khánh Hòa\" translates to the new administrative structure.\n\nFirst, I identify the old components: \"Xã Diên Sơn\" (ward), \"Huyện Diên Khánh\" (district), and \"Tỉnh Khánh Hòa\" (province). The district is useful for context, but it's the ward and province I really need to focus on.\n\nNext, I consult the province resolutions, specifically 60-NQ/TW, to see if anything affected Khánh Hòa. Thankfully, the resolution simply confirms the name is unchanged after a merger, which is great.\n\nNow, the crucial step: I need to delve into other relevant resolutions. \"1667/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Khánh Hòa\" looks promising. Skimming through it, I find the key line: Line 14 states, \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Diên Sơn, Diên Phú và Diên Điền thành xã mới có tên gọi là **xã Diên Điền**.\" Bingo! \"Xã Diên Sơn\" is now part of \"Xã Diên Điền\".\n\nFinally, I cross-reference this with the \"New wards\" data to confirm. The \"New wards\" data confirms the name and its province which are: `{\"ward_code\":\"22657\",\"ward_name\":\"Xã Diên Điền\",\"province_name\":\"Tỉnh Khánh Hòa\"}`. Perfect match.\n\nBased on this analysis, I'll generate the following JSON output:\n\n```json\n[\n  {\n    \"citation\": \"1667/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Khánh Hòa. Line 14: \\\"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Diên Sơn, Diên Phú và Diên Điền thành xã mới có tên gọi là xã Diên Điền.\\\"\",\n    \"confidence\": \"high\",\n    \"province_name\": \"Tỉnh Khánh Hòa\",\n    \"ward_code\": \"22657\",\n    \"ward_name\": \"Xã Diên Điền\"\n  }\n]\n```\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1667/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Khánh Hòa",
+        "line": "14. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Diên Sơn, Diên Phú và Diên Điềnthành xã mới có tên gọi là xã Diên Điền."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Khánh Hòa",
+      "ward_code": "22657",
+      "ward_name": "Xã Diên Điền"
+    }
+  ]
+}

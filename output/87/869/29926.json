@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Sa Rài, Huyện Tân Hồng, Tỉnh Đồng Tháp",
+  "ellapsedInMs": 6837,
+  "estimatedCost": 0.0027239,
+  "thought": "**Determining the New Administrative Unit for \"Thị trấn Sa Rài\"**\n\nAlright, let's break this down. First, I need to pinpoint the old province and ward: Đồng Tháp and Thị trấn Sa Rài. I'll note the district, Tân Hồng, although the prompt says we're eliminating them. Contextually, it's still useful.\n\nI remember needing to check for province mergers, but Đồng Tháp seems to have stayed put. No changes there.\n\nNow, the crucial step: hunting through those resolutions. I'll focus on anything mentioning \"Thị trấn Sa Rài\" or \"Tân Hồng.\" Ah, here's the gold! Resolution 1663/NQ-UBTVQH15. It explicitly states that Thị trấn Sa Rài is merged with two other communes to form **xã Tân Hồng**! Perfect. There's also mention of another merger involving Tân Hồng, but not relevant to our old ward.\n\nNext, I'll confirm this by checking the \"New wards\" section for xã Tân Hồng in Đồng Tháp. And there it is: `{\"ward_code\":\"29926\",\"ward_name\":\"Xã Tân Hồng\",\"province_name\":\"Tỉnh Đồng Tháp\"}`. Success!\n\nFinally, I'll construct the JSON output: province name is Đồng Tháp, the new ward is xã Tân Hồng, with the code 29926. The confidence is high because that resolution directly mentioned our old ward. I'll be sure to include the relevant citation from the resolution, specifically the line that confirms the merger.\n\nBefore submitting, I’ll double-check everything to make sure all the necessary information is in the correct format and data types are aligned. Only one new ward is clearly identified, which works perfectly.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1663/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Tháp",
+        "line": "1. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Sa Rài, xã Bình Phú (huyện Tân Hồng) và xã Tân Công Chí thành xã mới có tên gọi là xã Tân Hồng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đồng Tháp",
+      "ward_code": "29926",
+      "ward_name": "Xã Tân Hồng"
+    }
+  ]
+}

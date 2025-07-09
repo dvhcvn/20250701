@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tiên Nha, Huyện Lục Nam, Tỉnh Bắc Giang",
+  "ellapsedInMs": 6094,
+  "estimatedCost": 0.0025254,
+  "thought": "**Address Mapping for Vietnamese Administrative Units**\n\nOkay, so I'm tasked with taking this old Vietnamese address, \"Xã Tiên Nha, Huyện Lục Nam, Tỉnh Bắc Giang,\" and figuring out its current administrative location.  The user wants the most accurate mapping based on these provided resolutions and the new ward data.\n\nFirst, I parsed the address.  \"Xã Tiên Nha\" is the old ward, and \"Tỉnh Bắc Giang\" is the old province.  Now, I need to check for province mergers.  Based on resolution \"60-NQ/TW,\" I confirmed that \"Tỉnh Bắc Giang\" is now part of \"Tỉnh Bắc Ninh.\"\n\nNext, I zeroed in on the old ward.  I had to search for \"Xã Tiên Nha\" within the provided resolutions, specifically under \"Other Resolutions\".  Bingo!  Resolution \"1658/NQ-UBTVQH15\" states that \"Xã Tiên Nha\" was merged with other entities to create \"Xã Lục Nam\".  This is crucial.\n\nNow, it's time to find the corresponding new ward. I needed to cross-reference \"Xã Lục Nam\" within the provided \"New Wards\" data.  I found it, and the associated province name is indeed \"Tỉnh Bắc Ninh,\" which matches the updated province name.\n\nGiven this direct mapping from the resolution, I'm confident in the output. I'll include the relevant resolution as a citation. The `confidence` will be \"high\" because of the explicit mention of \"Tiên Nha\" being merged into \"Lục Nam.\" The `province_name` will be \"Tỉnh Bắc Ninh,\" and the `ward_code` and `ward_name` will be derived from the \"New Wards\" data for \"Xã Lục Nam.\"\n\nI checked the other new ward data provided, but none of the other entries are relevant to this specific address. The only pertinent new ward is \"Xã Lục Nam\". I am good to go.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh",
+        "line": "43. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Phương Sơn, thị trấn Đồi Ngô và các xã Cương Sơn, Tiên Nha, Chu Điện thành xã mới có tên gọi là xã Lục Nam."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "07444",
+      "ward_name": "Xã Lục Nam"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "address": "Xã Khánh Mậu, Huyện Yên Khánh, Tỉnh Ninh Bình",
+  "ellapsedInMs": 7532,
+  "estimatedCost": 0.0030302000000000003,
+  "thought": "**Mapping an Old Vietnamese Address to New Administrative Units**\n\nOkay, I'm tackling this address conversion: \"Xã Khánh Mậu, Huyện Yên Khánh, Tỉnh Ninh Bình\".  My immediate goal is to figure out the new ward associated with this.\n\nFirst, I need to break down the address.  It's clear that \"Xã Khánh Mậu\" is the ward, \"Huyện Yên Khánh\" is the district (though I know we're eliminating districts), and \"Tỉnh Ninh Bình\" is the province.  Easy enough.\n\nNow, I'm checking the province's resolutions. Resolution 60-NQ/TW shows that Ninh Bình remains Ninh Bình after some merging, so that's a high-confidence confirmation.\n\nNext, I'm diving into the \"Other resolutions,\" particularly looking for mentions of \"Xã Khánh Mậu\" in Ninh Bình.  This is where things get interesting.  I'm reading through Resolution 1674/NQ-UBTVQH15.  Lines 27 and 81 mention some ward reorganizations but don't directly impact Khánh Mậu.\n\nThen, boom! Line 84 says: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Khánh Mậu, Khánh Thủy và Khánh Hội thành xã mới có tên gọi là **xã Khánh Hội**.\"  That's a direct hit!  \"Xã Khánh Mậu\" is explicitly being merged into \"Xã Khánh Hội.\"\n\nMy next step is to cross-reference with the \"New wards\" data.  I find the entry for \"Xã Khánh Hội\" and confirm its code: `{\"ward_code\":\"14614\",\"ward_name\":\"Xã Khánh Hội\",\"province_name\":\"Tỉnh Ninh Bình\"}`.\n\nSo, the new ward is \"Xã Khánh Hội\" with code \"14614\" in \"Tỉnh Ninh Bình.\" The confidence level is high because there's a clear, direct mention in the resolution. This is a very straightforward map.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "8. Hợp nhất tỉnh Hà Nam, tỉnh Ninh Bình và tỉnh Nam Định; lấy tên là tỉnh Ninh Bình"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "14614",
+      "ward_name": "Xã Khánh Hội"
+    },
+    {
+      "citation": {
+        "header": "1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "84. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Khánh Mậu, Khánh Thủy và Khánh Hội thành xã mới có tên gọi là **xã Khánh Hội**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "14614",
+      "ward_name": "Xã Khánh Hội"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Phường Ô Quý Hồ, Thị xã Sa Pa, Tỉnh Lào Cai",
+  "ellapsedInMs": 6310,
+  "estimatedCost": 0.0019474,
+  "thought": "**My Analysis of Address Mapping for \"Phường Ô Quý Hồ\"**\n\nOkay, so I'm tasked with re-mapping an old address, specifically \"Phường Ô Quý Hồ, Thị xã Sa Pa, Tỉnh Lào Cai\", to its new administrative unit.  The process, as I understand it, hinges on carefully cross-referencing resolutions and ward data.\n\nFirst, I need to break down the input address.  \"Phường Ô Quý Hồ\" is the old ward, \"Thị xã Sa Pa\" is the old district, and \"Tỉnh Lào Cai\" is the old province.  Simple enough.\n\nNext, I have to ensure that the province itself hasn't undergone any recent mergers or name changes.  I've got \"60-NQ/TW\" at my disposal for this. Fortunately, a quick scan confirms that while there was a proposed merger involving Lào Cai and Yên Bái, the resulting province kept the name \"Tỉnh Lào Cai.\" So, the province name remains unchanged.\n\nNow comes the crucial part: mapping the old ward to the new one. I'm focusing on resolutions specific to \"Tỉnh Lào Cai.\"  The key document here is \"1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai\".  Line 91 of that resolution is the gold mine! It explicitly states that \"Phường Ô Quý Hồ,\" along with several other wards, is being merged into a new ward called \"**phường Sa Pa**.\"  Bingo!\n\nNow that I have the new ward name, I need its specific details. I'll look in the \"New wards\" section where I find that \"phường Sa Pa\" corresponds to  `{\"ward_code\":\"03006\",\"ward_name\":\"Phường Sa Pa\",\"province_name\":\"Tỉnh Lào Cai\"}`.\n\nFinally, putting it all together for the JSON output.  The citation will definitely be \"1673/NQ-UBTVQH15\", since that resolution explicitly maps the old ward. The `confidence` will be \"high\" because the mapping is unambiguous; the resolution directly links \"Phường Ô Quý Hồ\" to the new \"phường Sa Pa\". The `province_name` will be \"Tỉnh Lào Cai\" and I'll use `ward_code` \"03006\" and `ward_name` \"Phường Sa Pa\" for the new ward details.  My output will be accurate and well-supported by the evidence.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai",
+        "line": "91. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Hàm Rồng, Ô Quý Hồ, Sa Pả, Cầu Mây, Phan Si Păng và Sa Pa thành phường mới có tên gọi là phường Sa Pa."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "03006",
+      "ward_name": "Phường Sa Pa"
+    }
+  ]
+}

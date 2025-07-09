@@ -1,0 +1,18 @@
+{
+  "address": "Phường Thị Cầu, Thành phố Bắc Ninh, Tỉnh Bắc Ninh",
+  "ellapsedInMs": 5502,
+  "estimatedCost": 0.0019005,
+  "thought": "**Navigating the Administrative Shift: Mapping \"Phường Thị Cầu\" to Its New Context**\n\nOkay, so the task is clear: map an old address to the new administrative structure, armed with resolutions and new ward data. My first step is to break down the input address \"Phường Thị Cầu, Thành phố Bắc Ninh, Tỉnh Bắc Ninh\".  I immediately isolate the old ward (\"Phường Thị Cầu\") and old province (\"Tỉnh Bắc Ninh\").\n\nNow, the crucial part: checking for any province-level changes.  I consult \"60-NQ/TW\" to see if \"Tỉnh Bắc Ninh\" has been merged or renamed. Thankfully, the resolution confirms that it remains \"Tỉnh Bắc Ninh,\" so that's one less variable to worry about.\n\nNext, I dive into the \"Other resolutions,\" specifically looking for any mention of \"Phường Thị Cầu\" within the old province. Resolution \"1658/NQ-UBTVQH15\" is key here. Line 68 is a bullseye: it explicitly states that \"Phường Thị Cầu\" is being merged with other wards to form a new ward called \"**phường Vũ Ninh**\". This is precisely what I was looking for!\n\nNow, the final step: cross-referencing this merger information with the \"New wards\" data. I need to find the `ward_code` associated with \"phường Vũ Ninh\" in \"Tỉnh Bắc Ninh.\"  The data confirms it: `{\"ward_code\":\"09169\",\"ward_name\":\"Phường Vũ Ninh\",\"province_name\":\"Tỉnh Bắc Ninh\"}`. Perfect.\n\nThe confidence level on this mapping is incredibly high. The resolution explicitly lays out the transition. With that understanding, I can confidently assemble the appropriate JSON output based on the provided schema, reflecting the now-merged status of \"Phường Thị Cầu\" within the new \"phường Vũ Ninh\".\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh",
+        "line": "68. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Kim Chân, Đáp Cầu, Thị Cầu và Vũ Ninh thành phường mới có tên gọi là phường Vũ Ninh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "09169",
+      "ward_name": "Phường Vũ Ninh"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Phường Nam Bình, Thành phố Hoa Lư, Tỉnh Ninh Bình",
+  "ellapsedInMs": 6210,
+  "estimatedCost": 0.0023068,
+  "thought": "**Mapping Old Address to New Administrative Units**\n\nOkay, so I've been tasked with taking an old address and figuring out its corresponding new administrative unit information. Let's break this down systematically.\n\nFirst, I need to pinpoint the old province and ward from the input address, which is \"Phường Nam Bình, Thành phố Hoa Lư, Tỉnh Ninh Bình\".  I can easily pull \"Phường Nam Bình\" as the old ward and \"Tỉnh Ninh Bình\" as the old province.\n\nNext, I'll check for any province mergers. My go-to document for this is the \"60-NQ/TW\" resolution. Ah, here's what I needed: \"Hợp nhất tỉnh Hà Nam, tỉnh Ninh Bình và tỉnh Nam Định; lấy tên là tỉnh Ninh Bình\".  This means Ninh Bình remains Ninh Bình - no province renaming here, so `province_name` is confirmed.\n\nNow for the tricky part: identifying how the old ward fits into the new structure. I'll need to meticulously scan through the \"Other resolutions\" for any mention of \"Phường Nam Bình\" within \"Tỉnh Ninh Bình.\"  Ah!  Resolution \"1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình\" looks promising.  I'm going to scan this document, specifically looking for lines that include both \"Phường Nam Bình\" and \"Tỉnh Ninh Bình\".  Bingo! Line 123 is the key: it explicitly states that \"Phường Nam Bình\" is *merged* into the new \"phường Hoa Lư\". Perfect.\n\nNow that I have the new ward name, I need its corresponding code and province information.  I'll cross-reference \"phường Hoa Lư\" with my \"New wards\" list.  Got it!  The entry `{\"ward_code\":\"14329\",\"ward_name\":\"Phường Hoa Lư\",\"province_name\":\"Tỉnh Ninh Bình\"}` confirms the ward name, code, and province.\n\nFinally, I can confidently construct the JSON output:\n\n*   `province_name`: \"Tỉnh Ninh Bình\" (confirmed in step 2)\n*   `ward_name`: \"Phường Hoa Lư\" (from step 3)\n*   `ward_code`: \"14329\" (from step 4)\n*   `confidence`: \"high\" (because the mapping is explicitly stated in the resolution)\n*   `citation`:  Resolution \"1674/NQ-UBTVQH15\", specifically line 123.\n\nThis should be a very accurate mapping, given the specific resolution detailing the merger.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "123. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Ninh Mỹ, Ninh Khánh, Đông Thành, Tân Thành, Vân Giang, Nam Thành, Nam Bình, Bích Đào và các xã Ninh Khang, Ninh Nhất, Ninh Tiến thành phường mới có tên gọi là phường Hoa Lư."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "14329",
+      "ward_name": "Phường Hoa Lư"
+    }
+  ]
+}

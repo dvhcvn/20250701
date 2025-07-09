@@ -1,0 +1,18 @@
+{
+  "address": "Xã Ia Vê, Huyện Chư Prông, Tỉnh Gia Lai",
+  "ellapsedInMs": 7258,
+  "estimatedCost": 0.0024923000000000002,
+  "thought": "**Identifying the New Administrative Unit for the Provided Address**\n\nOkay, so I've got this address, \"Xã Ia Vê, Huyện Chư Prông, Tỉnh Gia Lai,\" and I need to figure out the new ward it belongs to. My first thought is to meticulously go through the relevant resolutions and data. I'll need to confirm that \"Tỉnh Gia Lai\" hasn't been merged or renamed, and then I'll look specifically for \"Ia Vê.\"\n\nFirst, I need to check Resolution 60-NQ/TW to make sure the province name is still accurate. After a quick scan, it looks like Gia Lai remains Gia Lai, so that part's straightforward.\n\nNext, I'll dive into Resolution 1664/NQ-UBTVQH15, the one related to administrative rearrangements in Gia Lai. I'll meticulously search within the `lines` of that resolution for \"Ia Vê.\" Bingo! Line 51 jumps out: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Ia Ga, Ia Vê và Ia Pia thành xã mới có tên gọi là **xã Ia Pia**.\" That's a direct hit! It explicitly states that \"Ia Vê\" is being merged into \"Ia Pia.\"\n\nNow, I'll cross-reference this information with the `New wards` data to validate the new \"Xã Ia Pia\" entity. Lo and behold, there it is: `{\"ward_code\":\"23926\",\"ward_name\":\"Xã Ia Pia\",\"province_name\":\"Tỉnh Gia Lai\"}`. Perfect match.\n\nWith these confirmations, I'm ready to construct the JSON output. I've got \"Tỉnh Gia Lai\" from the province resolution and \"Xã Ia Pia\" along with its code (\"23926\") from the ward rearrangement resolution. The citation will, of course, reference Resolution 1664/NQ-UBTVQH15, specifically line 51, because that’s the smoking gun!\n\nBefore finalizing, I'll quickly check if \"Xã Ia Vê\" is mentioned anywhere else in the resolution or if there's any ambiguity. I want to be absolutely sure. After a swift review, it seems line 51 is the *only* place it's mentioned. No conflicting information.\n\nTherefore, I'm confident in my findings. The \"Xã Ia Vê, Huyện Chư Prông, Tỉnh Gia Lai\" address now falls under \"Xã Ia Pia\" with a high degree of certainty. I can now proceed to finalize the output with confidence, confident knowing that my approach to matching has been rigorous and meticulous.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai",
+        "line": "51. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Ia Ga, Ia Vê và Ia Pia thành xã mới có tên gọi là xã Ia Pia."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "23926",
+      "ward_name": "Xã Ia Pia"
+    }
+  ]
+}

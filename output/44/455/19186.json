@@ -1,0 +1,28 @@
+{
+  "address": "Xã Đại Trạch, Huyện Bố Trạch, Tỉnh Quảng Bình",
+  "ellapsedInMs": 6672,
+  "estimatedCost": 0.0020338,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, here's how I'm thinking about this address mapping problem. First, I need to understand that the user wants to take an old Vietnamese address and figure out the corresponding new administrative units.  I'm dealing with historical administrative changes, which requires careful cross-referencing of government resolutions.\n\nMy process will be:\n\n1.  **Province Identification:**  I see the old province is \"Tỉnh Quảng Bình.\"  I immediately know I need to check for any province mergers. The key is to find the relevant resolution, which in this case will be related to resolution 60-NQ/TW.\n\n2.  **Province Resolution Check:**  Scanning through resolution 60-NQ/TW, I find that \"Tỉnh Quảng Bình\" is mentioned in a merger with Quảng Trị. Based on the resolution details, the new province is \"Tỉnh Quảng Trị.\"\n\n3.  **Ward Identification:** The old ward in the address is \"Xã Đại Trạch.\" Now the hunt begins for the appropriate resolution for this ward.\n\n4.  **Ward Resolution Check:**  I need to search other key resolutions, specifically 1680/NQ-UBTVQH15, to identify any changes to \"Xã Đại Trạch.\" After careful review, I find that line 22 of this resolution details the merger of \"Xã Đại Trạch\" with several other wards to create \"Xã Hoàn Lão.\"  Bingo!\n\n5.  **New Wards Cross-Reference:**  Now that I have a new ward name, \"Xã Hoàn Lão,\" I need to find its corresponding details in the provided \"New wards\" list.  I'll compare the \"New wards\" list for a match on \"Xã Hoàn Lão.\" The line with this information confirms that it is now associated with the province of \"Tỉnh Quảng Trị\" and provides a ward code.\n\n6.  **JSON Output Construction:** Finally, I'll compile my findings into a JSON output format.  My `province_name` will be \"Tỉnh Quảng Trị,\" which I derived from the province merger.  My `ward_name` is \"Xã Hoàn Lão,\" based on resolution 1680/NQ-UBTVQH15.  The ward code, `ward_code`, is pulled from the \"New Wards\" data. I'm very confident in this mapping, so I set the `confidence` to \"high\" and will include a specific `citation` to refer to the specific resolution and line for easy verification.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Quảng Bình và tỉnh Quảng Trị, lấy tên là tỉnh Quảng Trị"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Trị",
+      "ward_code": "19111",
+      "ward_name": "Xã Hoàn Lão"
+    },
+    {
+      "citation": {
+        "header": "1680/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Trị",
+        "line": "22. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Hoàn Lão và các xã Trung Trạch, Đại Trạch, Tây Trạch, Hòa Trạch thành xã mới có tên gọi là xã Hoàn Lão."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Trị",
+      "ward_code": "19111",
+      "ward_name": "Xã Hoàn Lão"
+    }
+  ]
+}

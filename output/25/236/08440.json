@@ -1,0 +1,28 @@
+{
+  "address": "Xã Hiền Quan, Huyện Tam Nông, Tỉnh Phú Thọ",
+  "ellapsedInMs": 7450,
+  "estimatedCost": 0.0029112,
+  "thought": "**Determining the New Ward for the Given Address**\n\nOkay, so I've been given an old address, \"Xã Hiền Quan, Huyện Tam Nông, Tỉnh Phú Thọ,\" and I need to figure out its new administrative unit.  Here's the approach I'm taking:\n\nFirst, I parsed the input to identify the components: \"Xã Hiền Quan\" (the old ward), \"Huyện Tam Nông\" (the old district, although I understand this information is being disregarded), and \"Tỉnh Phú Thọ\" (the old province).\n\nNext, I jumped into the province resolutions. I checked resolution 60-NQ/TW to see if \"Tỉnh Phú Thọ\" was mentioned. I found it wasn't listed under \"no mergers\". However, looking at the merged list showed that while some units will be merged into Phú Thọ, Phú Thọ itself will still have that name.\n\nThen, I focused on the resolutions specific to \"Tỉnh Phú Thọ.\" I quickly discarded irrelevant resolutions (e.g., those for Đồng Tháp). I landed on `1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ` and zeroed in on the lines that mentioned \"Xã Hiền Quan.\" I immediately found what I needed.  Line 37 explicitly states that \"Xã Hiền Quan\" is involved in the formation of the *new* \"Xã Hiền Quan\". Eureka!\n\nFinally, I checked the new ward list against the name and province, searching for `{\"ward_name\":\"Xã Hiền Quan\",\"province_name\":\"Tỉnh Phú Thọ\"}`.  I found a match: `{\"ward_code\":\"08443\",\"ward_name\":\"Xã Hiền Quan\",\"province_name\":\"Tỉnh Phú Thọ\"}`.\n\nGiven that the original province is confirmed to still be named that, and the resolution clearly confirms that the old \"Xã Hiền Quan\" is a part of the new \"Xã Hiền Quan\" (as well as finding that match in the new ward list), I am highly confident that the new ward for the old address is \"Xã Hiền Quan,\" with code \"08443\", in the province of \"Tỉnh Phú Thọ\".\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Vĩnh Phúc, tỉnh Phú Thọ và tỉnh Hoà Bình; lấy tên là tỉnh Phú Thọ"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "08443",
+      "ward_name": "Xã Hiền Quan"
+    },
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "37. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Thanh Uyên, Bắc Sơn và Hiền Quan thành xã mới có tên gọi là xã Hiền Quan."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "08443",
+      "ward_name": "Xã Hiền Quan"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "address": "Xã Long Toàn, Thị xã Duyên Hải, Tỉnh Trà Vinh",
+  "ellapsedInMs": 7511,
+  "estimatedCost": 0.0030098,
+  "thought": "**Determining the New Administrative Unit for an Old Address**\n\nOkay, so I've got an old address to work with: \"Xã Long Toàn, Thị xã Duyên Hải, Tỉnh Trà Vinh.\"  My goal is to figure out the new ward.  Here's how I'm thinking through this process.\n\nFirst, I need to pinpoint the province. That's easy, it's \"Tỉnh Trà Vinh.\" Now, I'll check if there have been any province mergers or renamings, specifically looking at any resolutions (like 60-NQ/TW) that would indicate a change. Ah, here's a relevant one: the merger of \"Tỉnh Bến Tre,\" \"Tỉnh Vĩnh Long,\" and \"Tỉnh Trà Vinh\" into the new province of \"Tỉnh Vĩnh Long.\" This means I need to keep that in mind.\n\nNext up, I need to focus on \"Xã Long Toàn.\"  I'll start searching through other resolutions, looking for any mentions of \"Xã Long Toàn\" within the context of \"Tỉnh Trà Vinh\" or, since we have the merger, \"Tỉnh Vĩnh Long.\" I have to be careful here – there are a lot of \"Long Toàn\" entities, but I need to make sure I'm dealing with the right one.\n\nI've scanned through several resolutions and found a few that don't apply. But, finally, Resolution 1687/NQ-UBTVQH15 (Vĩnh Long) pops up, and it looks promising. Line 114 specifically mentions \"xã Long Toàn\" in the context of \"thị xã Duyên Hải\" and says that it is combined to a new ward named \"phường Duyên Hải\"! This is very likely our match, and the new province is also correct, \"Tỉnh Vĩnh Long\". Great! \n\nTo double-check, I'll cross-reference this with the \"New wards\" data. And indeed, \"phường Duyên Hải\" shows up with the correct ward code and province: `{\"ward_code\":\"29512\",\"ward_name\":\"Phường Duyên Hải\",\"province_name\":\"Tỉnh Vĩnh Long\"}`. Confirmed!\n\nSince everything aligns perfectly – the old address, the new province, and the resolution – I'm confident in the result. The new administrative unit for \"Xã Long Toàn, Thị xã Duyên Hải, Tỉnh Trà Vinh\" is \"phường Duyên Hải\" with the associated code. The resolution 1687/NQ-UBTVQH15 (Vĩnh Long), line 114, is the correct reference. I'm going to set the confidence to \"high\" and build the output accordingly.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Bến Tre, tỉnh Vĩnh Long và tỉnh Trà Vinh; lấy tên là tỉnh Vĩnh Long"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "29512",
+      "ward_name": "Phường Duyên Hải"
+    },
+    {
+      "citation": {
+        "header": "1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long",
+        "line": "114. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của Phường 1(thị xã Duyên Hải), xã Long Toàn và xã Dân Thànhthànhphường mới có tên gọilà**phường Duyên Hải**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "29512",
+      "ward_name": "Phường Duyên Hải"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Măng Đen, Huyện Kon Plông, Tỉnh Kon Tum",
+  "ellapsedInMs": 9837,
+  "estimatedCost": 0.0031102,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I've been tasked with mapping an old Vietnamese address to its new administrative unit.  Here's how I'm approaching this, step-by-step:\n\nFirst, I identified the components of the old address:  \"Thị trấn Măng Đen\" (ward), \"Huyện Kon Plông\" (district - which I know the prompt is eliminating), and \"Tỉnh Kon Tum\" (province).\n\nNow, the interesting part:  I need to process the available resolutions to find the changes. I started with Resolution 60-NQ/TW, checking if \"Tỉnh Kon Tum\" was listed under \"không thực hiện sáp nhập\" (no mergers). It wasn't. Then, I looked at \"mới sau sáp nhập, hợp nhất\" (new after mergers or consolidations).  Bingo!  \"Tỉnh Kon Tum\" is listed as merging with \"Tỉnh Quảng Ngãi\" to form a new \"Tỉnh Quảng Ngãi\".  That's a high-confidence change right there.\n\nNext, I moved on to the other resolutions, specifically 1677/NQ-UBTVQH15.  Since \"Tỉnh Kon Tum\" has become \"Tỉnh Quảng Ngãi\", I'm looking for any resolutions related to the new province name.  The header of this resolution matches perfectly: \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ngãi\" (Reorganization of commune-level administrative units of Quảng Ngãi province).\n\nWithin this resolution, I'm specifically looking for \"Thị trấn Măng Đen\".  And there it is!  Line 79 states:  \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Măng Đen, xã Măng Cành và xã Đăk Tăng thành xã mới có tên gọi là **xã Măng Đen**.\"  This clearly states that \"Thị trấn Măng Đen\" has been merged into a new \"xã Măng Đen.\"  Perfect match!\n\nNow, to solidify this mapping, I need to check the \"New wards\" data.  I search for \"xã Măng Đen\" within the context of \"Tỉnh Quảng Ngãi\". And there it is:  `{\"ward_code\":\"23473\",\"ward_name\":\"Xã Măng Đen\",\"province_name\":\"Tỉnh Quảng Ngãi\"}`.  This confirms the new ward code and name, and the new province.\n\nAs a quick cross-reference, I glanced at another line (81) in the \"other resolutions\" to find \"xã Kon Plông\". This has the district name, even though \"district\" is eliminated. This confirms the new district, but it is not directly related to my ward of interest.\n\nThe final output is a JSON structure containing: a clear reference to the resolution, a specific line from that resolution, and the new administrative unit data.\n*   **Confidence is rated high** because the province change is explicitly in the first resolution and the ward change with its name is in the second resolution.\n*   The new ward name aligns perfectly with both the resolution and the provided new ward data.\n*   It's a clean, direct match.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1677/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ngãi",
+        "line": "79. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Măng Đen, xã Măng Cành và xã Đăk Tăng thành xã mới có tên gọi là xã Măng Đen."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ngãi",
+      "ward_code": "23473",
+      "ward_name": "Xã Măng Đen"
+    }
+  ]
+}

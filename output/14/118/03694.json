@@ -1,0 +1,18 @@
+{
+  "address": "Xã Mường Giôn, Huyện Quỳnh Nhai, Tỉnh Sơn La",
+  "ellapsedInMs": 7244,
+  "estimatedCost": 0.0024561,
+  "thought": "**Determining the New Ward for the Given Address**\n\nOkay, so I've got an old address and need to figure out the new administrative unit. My initial thought is to break this down methodically. First, I need to pinpoint the \"old\" ward and province from the input. Got it: \"Xã Mường Giôn\", \"Tỉnh Sơn La\".\n\nNext, I'll consult the Province Resolutions (specifically 60-NQ/TW). I'm checking if \"Tỉnh Sơn La\" has been merged or remains the same.  A quick scan of the resolution confirms that Sơn La has not been merged.\n\nNow, let's move on to other relevant resolutions (1681/NQ-UBTVQH15).  I'll be looking for any mention of \"Xã Mường Giôn\" or \"Huyện Quỳnh Nhai\" within the context of \"Tỉnh Sơn La.\" Line 8 mentions a merger that creates \"xã Quỳnh Nhai,\" but it doesn't directly involve my ward, \"Xã Mường Giôn.\" However, line 10 is the key! It clearly states that \"Xã Mường Giôn\" is merged with \"xã Pá Ma Pha Khinh\" to form a *new* \"xã Mường Giôn\"! Bingo!\n\nAlright, now to cross-reference with the \"New wards\" list. The resolution indicates a new ward named \"xã Mường Giôn.\" And sure enough, the \"New wards\" list includes:  `{\"ward_code\":\"03694\",\"ward_name\":\"Xã Mường Giôn\",\"province_name\":\"Tỉnh Sơn La\"}`. It's a perfect match!  There's also a \"Xã Quỳnh Nhai\" in that list, but that's from a different merge that doesn't apply to my target address.\n\nThe old ward \"Xã Mường Giôn\" is explicitly stated in the resolution to merge and still bears the same name in the result. I found it in the new wards with the correct province. I'm feeling very confident about this one. My confidence level is high.\n\nFinally, I'll construct the appropriate JSON output based on this information.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1681/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Sơn La",
+        "line": "10. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Pá Ma Pha Khinh và xã Mường Giôn thành xã mới có tên gọi là xã Mường Giôn."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Sơn La",
+      "ward_code": "03694",
+      "ward_name": "Xã Mường Giôn"
+    }
+  ]
+}

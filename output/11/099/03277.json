@@ -1,0 +1,18 @@
+{
+  "address": "Xã Mường Thín, Huyện Tuần Giáo, Tỉnh Điện Biên",
+  "ellapsedInMs": 6102,
+  "estimatedCost": 0.0022183,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm tasked with taking this old Vietnamese address and figuring out its current equivalent. The input points to \"Xã Mường Thín\" (ward), \"Huyện Tuần Giáo\" (district), and \"Tỉnh Điện Biên\" (province).  My strategy is pretty straightforward: break down the address, consult the relevant resolutions and the new ward data, and then build the output.\n\nFirst things first, I've confirmed that \"Tỉnh Điện Biên\" remains unchanged, as per Resolution 60-NQ/TW. That's a solid start – the province mapping is simple and reliable.\n\nNext, I zero in on \"Xã Mường Thín.\"  I'm scanning through the resolutions, specifically looking for any mentions of this ward, and bingo! Resolution 1661/NQ-UBTVQH15, line 25, is key. It explicitly states that \"Xã Mường Thín\" is being merged with other wards to form the new ward called \"Xã Chiềng Sinh.\"  Perfect!\n\nNow, I cross-reference this newly identified \"Xã Chiềng Sinh\" with the `New wards` data, and there it is: a direct match, including a ward code of \"03283.\"\n\nPutting it all together, I can confidently construct the JSON output.  The province is \"Tỉnh Điện Biên,\" confirmed by Resolution 60. The new ward is \"Xã Chiềng Sinh,\" with code \"03283,\" as per the explicit merger documented in Resolution 1661.  I'm also including the relevant citation and am confident in this mapping, due to the clear and explicit evidence in the resolutions and the direct match in the new ward data.  This is a 'high' confidence assessment.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1661/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Điện Biên",
+        "line": "25. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Nà Sáy, Mường Thín, Mường Khong và Chiềng Sinh thành xã mới có tên gọi là xã Chiềng Sinh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Điện Biên",
+      "ward_code": "03283",
+      "ward_name": "Xã Chiềng Sinh"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Triệu Trạch, Huyện Triệu Phong, Tỉnh Quảng Trị",
+  "ellapsedInMs": 9598,
+  "estimatedCost": 0.0035086999999999996,
+  "thought": "**Address Mapping for Quảng Trị Province: A Deep Dive**\n\nOkay, let's break this down. The user's providing a Vietnamese address - specifically, \"Xã Triệu Trạch\" in \"Tỉnh Quảng Trị\" - and wants to map it to the new administrative structure. My expertise kicks in immediately; I need to meticulously parse resolutions and new data to find the precise new ward.\n\nFirst, I identified \"Tỉnh Quảng Trị.\" Thankfully, \"60-NQ/TW\" confirms the province name remains unchanged - it's still \"Tỉnh Quảng Trị.\" That's the easy part!\n\nThe real challenge lies in mapping the old ward, \"Xã Triệu Trạch,\" to its new equivalent. My focus immediately shifts to \"1680/NQ-UBTVQH15,\" the key resolution for Quảng Trị's district and ward adjustments.\n\nI systematically combed through the resolution lines, honing in on \"Xã Triệu Trạch.\" Eureka! Line 63 is the golden ticket: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Triệu Trạch, Triệu Phước và Triệu Tân thành xã mới có tên gọi là **xã Nam Cửa Việt**.\" This is a direct, undeniable mapping! \"Xã Triệu Trạch\" *becomes* part of \"Xã Nam Cửa Việt.\"\n\nNow, I cross-reference this with the \"new_wards\" data. Sure enough, there it is: `{\"ward_code\":\"19639\",\"ward_name\":\"Xã Nam Cửa Việt\",\"province_name\":\"Tỉnh Quảng Trị\"}`. Perfect alignment! My confidence level is high; the resolution explicitly states the merge.\n\nI carefully craft the JSON output. We're talking: \"Tỉnh Quảng Trị\" for the province, \"Xã Nam Cửa Việt\" for the ward, \"19639\" as the code, and a citation from the relevant resolution, line 63. Everything is linked, backed up, and clear.\n\nI did, however, do a quick double-check for any other sneaky mentions of \"Xã Triệu Trạch\" or \"Huyện Triệu Phong\" just to be absolutely certain. The resolutions made it clear that \"Huyện Triệu Phong\" is dissolved in this new structure, so that's a dead end.\n\nI also noticed some confusing information surrounding \"thị trấn Ái Tử\" and \"Xã Triệu Phong\". Line 59 states that \"thị trấn Ái Tử\" merges *into* the new ward \"Xã Triệu Phong\". However, a \"Xã Ái Tử\" (19669) is still listed as a new ward! Very peculiar. This might be a slightly confusing name for a place that no longer exists as a separate administrative unit. The prompt also asks to find *one or multiple* new wards that could be a match. It's a contradiction; however, this doesn't impact my primary finding: \"Xã Triệu Trạch\" *unquestionably* becomes part of \"Xã Nam Cửa Việt,\" making that my primary and direct mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1680/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Trị",
+        "line": "63. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Triệu Trạch, Triệu Phước và Triệu Tân thành xã mới có tên gọi là xã Nam Cửa Việt."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Trị",
+      "ward_code": "19639",
+      "ward_name": "Xã Nam Cửa Việt"
+    }
+  ]
+}

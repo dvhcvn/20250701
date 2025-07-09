@@ -1,0 +1,28 @@
+{
+  "address": "Xã Hoả Tiến, Thành phố Vị Thanh, Tỉnh Hậu Giang",
+  "ellapsedInMs": 8946,
+  "estimatedCost": 0.0039747,
+  "thought": "**Identifying the New Administrative Unit**\n\nOkay, here's how I'm approaching this. The user is asking about \"Xã Hoả Tiến, Thành phố Vị Thanh, Tỉnh Hậu Giang.\" First things first, I need to understand that the old province, \"Tỉnh Hậu Giang\", is now part of \"Thành phố Cần Thơ\" due to the 60-NQ/TW resolution.  This is a critical first step.\n\nNow, focusing on \"Hoả Tiến\", I need to find its current equivalent. I'm searching through resolutions pertaining to \"Thành phố Cần Thơ\".  I'm focusing specifically on \"1668/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Cần Thơ.\"  Line 44 of that resolution is the key. It clearly states that \"Hoả Tiến\" (spelled slightly differently, but the same place) is merged with \"Tân Tiến\" and \"Hỏa Lựu\" to form a new *xã* named \"Hỏa Lựu\".\n\nLooking at the \"New wards\" data, I can find the details for \"Xã Hỏa Lựu\":  `{\"ward_code\":\"31338\",\"ward_name\":\"Xã Hỏa Lựu\",\"province_name\":\"Thành phố Cần Thơ\"}`. So, the new province is \"Thành phố Cần Thơ\" and the new ward name is \"Xã Hỏa Lựu,\" which gives me the correct code.\n\nI'm confident in this match because the resolution directly addresses \"Hỏa Tiến\" and details its transformation. The \"confidence\" should be set to \"high.\"\n\nRegarding the \"Thành phố Vị Thanh\" part of the original address, while the resolution doesn't explicitly link \"Vị Thanh\" directly, it's safe to assume that \"Thành phố Vị Thanh\" is now integrated into \"Thành phố Cần Thơ\" after the province merge, as \"Vị Thanh\" was the old capital of \"Hậu Giang\".\n\nTherefore, I'll construct the JSON output reflecting this: \"Thành phố Cần Thơ\" and \"Xã Hỏa Lựu\" with the correct ward code. I'll make sure the citation points to the relevant resolution and line.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất thành phố cần Thơ, tỉnh Sóc Trăng và tỉnh Hậu Giang; lấy tên là thành phố Cần Thơ"
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Cần Thơ",
+      "ward_code": "31338",
+      "ward_name": "Xã Hỏa Lựu"
+    },
+    {
+      "citation": {
+        "header": "1668/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Cần Thơ",
+        "line": "44. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tân Tiến, Hỏa Tiến và Hỏa Lựu thành xã mới có tên gọi là xã Hỏa Lựu."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Cần Thơ",
+      "ward_code": "31338",
+      "ward_name": "Xã Hỏa Lựu"
+    }
+  ]
+}

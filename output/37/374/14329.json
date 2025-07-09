@@ -1,0 +1,18 @@
+{
+  "address": "Phường Vân Giang, Thành phố Hoa Lư, Tỉnh Ninh Bình",
+  "ellapsedInMs": 7854,
+  "estimatedCost": 0.0030321,
+  "thought": "**Determining the New Administrative Unit for \"Phường Vân Giang\"**\n\nOkay, so the user wants me to find the new administrative unit for the old address \"Phường Vân Giang, Thành phố Hoa Lư, Tỉnh Ninh Bình\".  My first step, as always, is to break down the request. I need to figure out the ward and province involved and then cross-reference those against the available resolutions and lists of new wards.  I'm focusing primarily on \"Phường Vân Giang\" and \"Tỉnh Ninh Bình\" since the \"Thành phố Hoa Lư\" part is a district-level designation and, according to the prompt, needs to be eliminated from consideration.\n\nFirst, I identified the key components. Old ward: \"Phường Vân Giang\", Old province: \"Tỉnh Ninh Bình.\" I then started by checking the province resolutions, specifically \"60-NQ/TW\". I quickly saw that while there were changes in other areas, \"Tỉnh Ninh Bình\" remains \"Tỉnh Ninh Bình\" even after any mergers.  However, I'm aware that it now encompasses Hà Nam and Nam Định too, which might be relevant later when I assemble the complete picture.\n\nNext, I needed to dig into the relevant resolutions concerning \"Phường Vân Giang\" within \"Tỉnh Ninh Bình\". I quickly honed in on \"1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình\". Scanning this resolution line by line, I hit paydirt on line 123.  It explicitly states the fate of \"Vân Giang\": it, along with several other wards and communes, has been merged into a new ward called \"**phường Hoa Lư**.\" Boom! That's my primary candidate.\n\nTo solidify this, I then cross-referenced that finding with the list of new wards. And there it was: `{\"ward_code\":\"14329\",\"ward_name\":\"Phường Hoa Lư\",\"province_name\":\"Tỉnh Ninh Bình\"}`. This perfectly aligns with my findings from the resolution.  The citation will definitely include that specific line from the resolution, highlighting the explicit mention of \"Vân Giang.\"\n\nFinally, constructing the JSON output is straightforward. My confidence level here is \"high\" because of the explicit merge detail. The `province_name` is \"Tỉnh Ninh Bình,\" confirmed by both the province resolution and the new ward entry.  `ward_code` is \"14329\" and `ward_name` is \"Phường Hoa Lư.\" Given the explicit wording of the prompt regarding *all* candidates, and the clear single merger, I am confident that \"Phường Hoa Lư\" is the appropriate and only answer.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "123. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Ninh Mỹ, Ninh Khánh, Đông Thành, Tân Thành, Vân Giang, Nam Thành, Nam Bình, Bích Đào và các xã Ninh Khang, Ninh Nhất, Ninh Tiến thành phường mới có tên gọi là phường Hoa Lư."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "14329",
+      "ward_name": "Phường Hoa Lư"
+    }
+  ]
+}

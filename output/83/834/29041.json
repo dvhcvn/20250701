@@ -1,0 +1,28 @@
+{
+  "address": "Xã Thạnh Phú Đông, Huyện Giồng Trôm, Tỉnh Bến Tre",
+  "ellapsedInMs": 8331,
+  "estimatedCost": 0.0034965,
+  "thought": "**Address Mapping for Old Vietnamese Administrative Units**\n\nOkay, so I'm tasked with mapping this old Vietnamese address to the new administrative structure. Let's break this down systematically. First, I see \"Tỉnh Bến Tre.\" My initial step is to check the relevant resolutions to see if that province has been affected by any mergers or reorganizations. Ah, here it is: 60-NQ/TW states that Bến Tre was merged with Vĩnh Long and Trà Vinh, forming \"Tỉnh Vĩnh Long.\"  So, in terms of the province, the new address will be in \"Tỉnh Vĩnh Long\".\n\nNow, onto the ward: \"Xã Thạnh Phú Đông.\"  I need to scour the resolutions, particularly the \"other resolutions\" section, for any mentions of this ward. I see some results, let me review them.\n\nThe first resolution, 1663/NQ-UBTVQH15, mentions a \"Phú Đông\" in Đồng Tháp, but it's not a match for our target \"Thạnh Phú Đông\". It renames Phú Thạnh, Phú Đông, and Phú Tân to form a new ward named \"Tân Phú Đông\", in Đồng Tháp.\n\nHowever, the second resolution, 1687/NQ-UBTVQH15, is more promising. It describes the reorganization in Vĩnh Long, the *new* province for Bến Tre. It states that \"Thạnh Phú Đông\" is included in the new ward \"Tân Hào\". This is exactly what I'm looking for!  So, \"Thạnh Phú Đông\" is now part of \"Xã Tân Hào.\"\n\nTo confirm, I'll quickly check the `New wards` data to make sure \"Xã Tân Hào\" is correctly associated with \"Tỉnh Vĩnh Long.\" Yep, it is.\n\nJust to be thorough, I quickly check for any alternative matches for names similar to \"Thạnh Phú Đông\". There are few options such as \"Tân Phú Đông\", \"Thạnh Phú\" and \"Tân Phú\", but none of the resolutions directly link them to \"Thạnh Phú Đông\". Considering the provided resolutions and new ward data, these are not relevant matches for this specific old address.\n\nTherefore, my final JSON output is straightforward: the new province is \"Tỉnh Vĩnh Long,\" and the new ward is \"Xã Tân Hào.\"  It's a clean and decisive mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Bến Tre, tỉnh Vĩnh Long và tỉnh Trà Vinh; lấy tên là tỉnh Vĩnh Long"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "29029",
+      "ward_name": "Xã Tân Hào"
+    },
+    {
+      "citation": {
+        "header": "1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long",
+        "line": "90. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tân Lợi Thạnh, Thạnh Phú Đông và Tân Hàothành xã mới có tên gọi là xã Tân Hào."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "29029",
+      "ward_name": "Xã Tân Hào"
+    }
+  ]
+}

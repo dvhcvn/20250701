@@ -1,0 +1,28 @@
+{
+  "address": "Xã Thọ Nghiệp, Huyện Xuân Trường, Tỉnh Nam Định",
+  "ellapsedInMs": 8395,
+  "estimatedCost": 0.0032317,
+  "thought": "**My Analysis of the Administrative Unit Mapping**\n\nOkay, here's how I'm thinking through this. I need to figure out where \"Xã Thọ Nghiệp, Huyện Xuân Trường, Tỉnh Nam Định\" ended up in the new administrative landscape. This is a pretty straightforward process, assuming I have good data.\n\nFirst, I identified the old province, \"Tỉnh Nam Định.\" Then, I looked at those province-level resolutions (specifically 60-NQ/TW). Bingo! I see that Nam Định was merged with Hà Nam and Ninh Bình to form Ninh Bình. So, now I'm working with Ninh Bình.\n\nNext, I need to pinpoint where \"Xã Thọ Nghiệp\" ended up. This is where those \"Other resolutions\" come in. I'm searching for mentions of \"Xã Thọ Nghiệp\" or \"Huyện Xuân Trường\". These resolutions are the key to finding out if the old wards were merged or redrawn.  I'm quickly scanning each resolution, and it looks like many of them aren't relevant to Nam Định. One for Cao Bằng, one for Đồng Nai, and another for Lâm Đồng.\n\nFinally, I hit resolution 1674/NQ-UBTVQH15, which is for Ninh Bình. Perfect. This is where I'll find my answer. I'm carefully reading through the text. It describes the merging of the town of Xuân Trường and some communes within that district into a new \"Xã Xuân Trường\", but that's not what I'm looking for. Then, there it is! Line 42 is my key. It states that \"Xã Xuân Vinh, Trà Lũ and Thọ Nghiệp\" are being merged to form a new \"Xã Xuân Hưng.\"  Yes! That's it, \"Thọ Nghiệp\" is becoming part of \"Xã Xuân Hưng.\"\n\nNow I need to confirm this with the \"New wards\" data. I check for \"Xã Xuân Hưng\" in \"Tỉnh Ninh Bình\" and, there it is, a perfect match: `{\"ward_code\":\"14122\",\"ward_name\":\"Xã Xuân Hưng\",\"province_name\":\"Tỉnh Ninh Bình\"}`.\n\nI feel confident in this mapping. The resolution explicitly states the merge. The province transformation from Nam Định to Ninh Bình is unambiguous. The \"New wards\" data backs up my findings. I'm ready to output the JSON and move on.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Hà Nam, tỉnh Ninh Bình và tỉnh Nam Định; lấy tên là tỉnh Ninh Bình"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "14122",
+      "ward_name": "Xã Xuân Hưng"
+    },
+    {
+      "citation": {
+        "header": "1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "42. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Xuân Vinh, Trà Lũ và Thọ Nghiệp thành xã mới có tên gọi là xã Xuân Hưng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "14122",
+      "ward_name": "Xã Xuân Hưng"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Đăk Sơmei, Huyện Đăk Đoa, Tỉnh Gia Lai",
+  "ellapsedInMs": 6928,
+  "estimatedCost": 0.0024593999999999996,
+  "thought": "**My Analysis of the Vietnamese Address Mapping Request**\n\nOkay, here's how I'm approaching this address mapping. The user wants to translate an old Vietnamese address into the new administrative unit system. The old address is in Gia Lai province and mentions \"Xã Đăk Sơmei, Huyện Đăk Đoa.\"\n\nFirst, the province. \"Tỉnh Gia Lai\" is straightforward. I checked the resolutions related to provincial changes (60-NQ/TW), but Gia Lai isn't merging with another province. It remains \"Tỉnh Gia Lai\" after a hypothetical merge with Bình Định (which isn't implemented).\n\nNext, the district and ward. \"Huyện Đăk Đoa\" is likely eliminated under the usual restructuring. The crucial part is \"Xã Đăk Sơmei.\" I found resolution 1664/NQ-UBTVQH15, which is key for Gia Lai's ward changes. Line 90 explicitly states that the old \"Xã Đak Sơmei\" *and* \"Xã Hà Đông\" will be combined to form a *new* \"Xã Đak Sơmei.\" Even though the name is maintained, there's obviously a change here.\n\nI then consulted the new ward data. There's a matching entry: `{\"ward_code\":\"23683\",\"ward_name\":\"Xã Đak Sơmei\",\"province_name\":\"Tỉnh Gia Lai\"}`. This perfectly aligns with the resolution.\n\nGiven the direct match between the resolution and the new ward data, and the explicit mention in the resolution, I'm highly confident in this mapping.\n\nFinally, I'll construct the JSON output. The `citation` will be resolution 1664/NQ-UBTVQH15, with line 90. Confidence is high. The province name is \"Tỉnh Gia Lai,\" confirmed by both the old address and the new data. The `ward_code` is \"23683,\" and the `ward_name` is \"Xã Đak Sơmei,\" according to the data and the resolution.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai",
+        "line": "90. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Hà Đông và xã Đak Sơmei thành xã mới có tên gọi là xã Đak Sơmei."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "23683",
+      "ward_name": "Xã Đak Sơmei"
+    }
+  ]
+}

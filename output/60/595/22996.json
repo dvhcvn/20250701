@@ -1,0 +1,18 @@
+{
+  "address": "Xã Chí Công, Huyện Tuy Phong, Tỉnh Bình Thuận",
+  "ellapsedInMs": 6233,
+  "estimatedCost": 0.0021804,
+  "thought": "**Address Mapping Analysis: Xã Chí Công, Bình Thuận**\n\nOkay, let's break this down. The user's input gives us \"Xã Chí Công, Huyện Tuy Phong, Tỉnh Bình Thuận\". My goal is to map this old address to its new equivalent. First, I identify the initial units: \"Tỉnh Bình Thuận\" (province) and \"Xã Chí Công\" (ward). Now, I need to check for any province mergers. My go-to is to analyze the provided resolutions.\n\n*   **Province Merger Check:** I start with \"60-NQ/TW\" regarding non-merged provinces. \"Tỉnh Bình Thuận\" isn't listed, which is good. Then I look at the list of mergers in the same resolution. Bingo! \"Hợp nhất tỉnh Lâm Đồng, tỉnh Đắk Nông và tỉnh Bình Thuận; lấy tên là tỉnh Lâm Đồng\" - Bình Thuận is absorbed into Lâm Đồng. Thus, the new province is \"Tỉnh Lâm Đồng\".\n\n*   **Ward Reorganization:** The crucial resolution here is \"1671/NQ-UBTVQH15\", specifically for Lâm Đồng. I need to find \"Xã Chí Công\" within it. After scanning, I find line 44: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Phan Rí Cửa, xã Chí Công, xã Hòa Minh và phần còn lại của xã Phong Phú sau khi sắp xếp theo quy định tại khoản 43 Điều này thành xã mới có tên gọi là **xã Phan Rí Cửa**.\" Excellent! The resolution explicitly states that \"Xã Chí Công\" is incorporated into the new \"Xã Phan Rí Cửa\".\n\n*   **New Ward Verification:** Now, I match \"Xã Phan Rí Cửa\" to the provided `New wards` list.  The matching entry: `{\"ward_code\":\"22972\",\"ward_name\":\"Xã Phan Rí Cửa\",\"province_name\":\"Tỉnh Lâm Đồng\"}` confirms this. It has the same name and also the province!\n\n*   **Output Construction:** Given this analysis, I'm confident in the mapping. The new province is \"Tỉnh Lâm Đồng,\" the new ward is \"Xã Phan Rí Cửa\" with code \"22972.\"  The `confidence` should be \"high\" due to the direct citation from the resolution. I'll include the relevant `header` and the specific `line` (44) from the resolution as citations. The JSON output will cleanly represent this new mapped address.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng",
+        "line": "44. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Phan Rí Cửa, xã Chí Công, xã Hòa Minh và phần còn lại của xã Phong Phú sau khi sắp xếp theo quy định tại khoản 43 Điều này thành xã mới có tên gọi là xã Phan Rí Cửa."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "22972",
+      "ward_name": "Xã Phan Rí Cửa"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Kỳ Văn, Huyện Kỳ Anh, Tỉnh Hà Tĩnh",
+  "ellapsedInMs": 5024,
+  "estimatedCost": 0.001655,
+  "thought": "**My Mapping Strategy for the Old Address**\n\nOkay, so I'm presented with \"Xã Kỳ Văn, Huyện Kỳ Anh, Tỉnh Hà Tĩnh\" and I need to figure out its current administrative unit.  My process is straightforward, given the expert knowledge I have in this area.\n\nFirst, I see \"Tỉnh Hà Tĩnh\" – that's the province. Now, I have to check the province-level resolutions, specifically the 60-NQ/TW.  I quickly see that Hà Tĩnh isn't slated for any province-level mergers, so \"Tỉnh Hà Tĩnh\" is staying put. Easy.\n\nNext, I zero in on \"Xã Kỳ Văn\". I know to check for any relevant \"Other resolutions\" that impact Hà Tĩnh, and bingo!  Resolution 1665/NQ-UBTVQH15 catches my eye.  Scrolling down, Line 8 jumps out: it clearly states that the old \"Xã Kỳ Văn\" has been *merged* with \"Kỳ Tây\" and \"Kỳ Trung\" to create a *new* \"Xã Kỳ Văn\".  This is the key.\n\nNow, I go to my database of \"New wards\" and search for the updated information.  I quickly find a match:  `{\"ward_code\":\"18787\",\"ward_name\":\"Xã Kỳ Văn\",\"province_name\":\"Tỉnh Hà Tĩnh\"}`.  Perfect! It's the new \"Xã Kỳ Văn\" and in the correct province.\n\nThe confidence here is sky-high.  The resolution is explicit; the old \"Xã Kỳ Văn\" is now incorporated into the new.  It's a clean, direct mapping.  All that's left is to format this information into the correct JSON output.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh",
+        "line": "8. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Kỳ Tây, Kỳ Trung và Kỳ Văn thành xã mới có tên gọi là xã Kỳ Văn."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hà Tĩnh",
+      "ward_code": "18787",
+      "ward_name": "Xã Kỳ Văn"
+    }
+  ]
+}

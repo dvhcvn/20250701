@@ -1,0 +1,18 @@
+{
+  "address": "Xã Nhân Đạo, Huyện Đắk R'Lấp, Tỉnh Đắk Nông",
+  "ellapsedInMs": 7183,
+  "estimatedCost": 0.0023155,
+  "thought": "**My Process for Mapping the Old Address**\n\nOkay, so I've been given this old address: \"Xã Nhân Đạo, Huyện Đắk R'Lấp, Tỉnh Đắk Nông.\" My task is to figure out the new administrative units for this.  Here's my thought process:\n\nFirst, I identified the old province, \"Tỉnh Đắk Nông.\"  Now, I need to see what happened to it based on the \"Province resolutions.\"  Ah, here it is: Resolution \"14\" clearly states that \"Tỉnh Đắk Nông\" was merged into \"Tỉnh Lâm Đồng.\" So, my new province is now \"Tỉnh Lâm Đồng.\"\n\nNext, I need to figure out what happened to \"Xã Nhân Đạo.\" I need to search the \"Other resolutions\" for mentions of this specific ward.  I quickly zeroed in on Resolution \"1671/NQ-UBTVQH15.\"  Bingo! This resolution focuses on rearranging units within \"Tỉnh Lâm Đồng,\" which is exactly what I need. And there it is, line 97: It *explicitly* mentions \"Xã Nhân Đạo\" as being merged with two other wards to create \"Xã Nhân Cơ.\"\n\nI had to be careful here because I also saw a \"Xã Nhân Đạo\" mentioned in a resolution for \"Tỉnh Phú Thọ,\" but that's irrelevant. It's a different place.\n\nNow, I've got my new ward: \"Xã Nhân Cơ.\"  I just need to find the details. I searched the \"New wards\" data, and I found the entry for \"Xã Nhân Cơ\" with the ward code \"24751.\"\n\nFinally, I compiled my findings into a JSON output. It looks something like this:\n\n```json\n{\n  \"province_name\": \"Tỉnh Lâm Đồng\",\n  \"ward_name\": \"Xã Nhân Cơ\",\n  \"ward_code\": \"24751\",\n  \"citation\": {\n    \"header\": \"1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng\",\n    \"line\": \"97. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Nhân Đạo, Đắk Wer và Nhân Cơ thành xã mới có tên gọi là **xã Nhân Cơ**.\"\n  },\n  \"confidence\": \"high\"\n}\n```\n\nMy confidence is high because the old ward is specifically named in the resolution, and it's being mapped to a new ward within the correct new province.  It's a clean and direct mapping based on the available data.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng",
+        "line": "97. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Nhân Đạo, Đắk Wer và Nhân Cơ thành xã mới có tên gọi là xã Nhân Cơ."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "24751",
+      "ward_name": "Xã Nhân Cơ"
+    }
+  ]
+}

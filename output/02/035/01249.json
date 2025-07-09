@@ -1,0 +1,28 @@
+{
+  "address": "Xã Yên Hà, Huyện Quang Bình, Tỉnh Hà Giang",
+  "ellapsedInMs": 9102,
+  "estimatedCost": 0.0042286,
+  "thought": "**Identifying the New Administrative Unit**\n\nOkay, let's break this down. The user has given me the old address: \"Xã Yên Hà, Huyện Quang Bình, Tỉnh Hà Giang,\" and wants to know the new ward. My first thought is, this is a classic address restructuring problem, so I need to go through the relevant documents with a fine-tooth comb.\n\nFirst things first, I immediately jump to the province merger resolutions, particularly 60-NQ/TW. This tells me that \"Tỉnh Hà Giang\" is now part of \"Tỉnh Tuyên Quang.\"  So right there, the province name for the new ward has to be \"Tỉnh Tuyên Quang.\"\n\nNext, the key is finding \"Xã Yên Hà\" in the list of changes. Given the province merger, I'll need to look under both \"Tỉnh Tuyên Quang\" and \"Tỉnh Hà Giang,\" since the relevant resolution might be before the merger.\n\nI start by looking at \"1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang.\" I see several reorganizations, but nothing immediately jumps out about Yên Hà. However, line 88 is the winner:  \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Yên Hà và xã Bằng Lang thành xã mới có tên gọi là **xã Bằng Lang**.\" Bingo!  It explicitly mentions \"Xã Yên Hà\" and details its merger with \"Bằng Lang\" to form the new ward, which is also named \"Bằng Lang.\"\n\nThe prompt states, \"eliminating all districts,\" meaning that the \"Huyện Quang Bình\" part of the old address is likely outdated in the new system. Only the ward name and the new province name, Tuyên Quang, are relevant.\n\nTo solidify my analysis, I checked the \"New wards\" list for \"Xã Bằng Lang\" under \"Tỉnh Tuyên Quang.\" And indeed, there it is:  `{\"ward_code\":\"01246\",\"ward_name\":\"Xã Bằng Lang\",\"province_name\":\"Tỉnh Tuyên Quang\"}`.  Perfect match!\n\nMy confidence is high. The resolution 1684/NQ-UBTVQH15 clearly and specifically addresses the merger of \"Xã Yên Hà\" into \"Xã Bằng Lang.\" And the province merger is a slam dunk as well. So, the new administrative unit is undoubtedly **Xã Bằng Lang, Tỉnh Tuyên Quang**.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "1. Hợp nhất tỉnh Tuyên Quang và tỉnh Hà Giang, lấy tên là tỉnh Tuyên Quang"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "01246",
+      "ward_name": "Xã Bằng Lang"
+    },
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "88. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Yên Hà và xã Bằng Lang thành xã mới có tên gọi là xã Bằng Lang."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "01246",
+      "ward_name": "Xã Bằng Lang"
+    }
+  ]
+}

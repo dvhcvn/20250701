@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Đầm Dơi, Huyện Đầm Dơi, Tỉnh Cà Mau",
+  "ellapsedInMs": 8185,
+  "estimatedCost": 0.0028026999999999995,
+  "thought": "**Address Mapping for Cà Mau Province**\n\nOkay, so I'm presented with an old address: \"Thị trấn Đầm Dơi, Huyện Đầm Dơi, Tỉnh Cà Mau\" and need to find its new administrative unit. First, I have to break down the address. The old ward is \"Thị trấn Đầm Dơi,\" the old district is \"Huyện Đầm Dơi,\" and the old province is \"Tỉnh Cà Mau.\"  I know that districts aren't really relevant in the final output, but it helps to have the context.\n\nMy initial focus is on the province.  I'll immediately check relevant province resolutions, specifically Resolution 60-NQ/TW, to see if there have been any changes. I quickly find the line, \"22. Hợp nhất tỉnh Bạc Liêu và tỉnh Cà Mau, lấy tên là tỉnh Cà Mau,\" which confirms that \"Tỉnh Cà Mau\" is still \"Tỉnh Cà Mau\" after a merger with Bạc Liêu.  So, no change there.\n\nNow, I dive into the more specific ward-level changes.  Resolution 1655/NQ-UBTVQH15 seems promising as it deals with the rearrangement of administrative units at the commune level in Cà Mau.  Line 6 is crucial: \"6. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Đầm Dơi, xã Tân Duyệt, xã Tân Dân và phần còn lại của xã Tạ An Khương sau khi sắp xếp theo quy định tại khoản 3 Điều này thành xã mới có tên gọi là xã Đầm Dơi.\"  Bingo! It explicitly states that \"Thị trấn Đầm Dơi\" is entirely absorbed into the newly created \"xã Đầm Dơi.\"\n\nNext, I need to confirm the details of \"xã Đầm Dơi\" in the \"New wards\" data.  I find a match:  `{\"ward_code\":\"32152\",\"ward_name\":\"Xã Đầm Dơi\",\"province_name\":\"Tỉnh Cà Mau\"}`.  That confirms the new name and province are correct.\n\nA quick side thought. Given the context of the resolution, there's a reference to \"phần còn lại của xã Tạ An Khương,\" suggesting a portion of that commune might have been incorporated into the new Xã Đầm Dơi. I check the data to confirm if \"Xã Tạ An Khương\" still exists, and yes, it does, albeit likely with a reduced size given the language of the resolution. The remaining part still exists in a smaller size than the original.\n\nBut, back to the problem at hand.  Since the input address is specifically \"Thị trấn Đầm Dơi,\" the resolution is crystal clear:  \"Thị trấn Đầm Dơi\" *fully* becomes \"Xã Đầm Dơi\".  There's no ambiguity, no splitting, and no further analysis needed. I can confidently say that the old \"Thị trấn Đầm Dơi\" now maps to the new ward, \"Xã Đầm Dơi,\" within Cà Mau province.  Done.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1655/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Cà Mau",
+        "line": "6. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Đầm Dơi, xã Tân Duyệt, xã Tân Dân và phần còn lại của xã Tạ An Khương sau khi sắp xếp theo quy định tại khoản 3 Điều này thành xã mới có tên gọi là xã Đầm Dơi."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Cà Mau",
+      "ward_code": "32152",
+      "ward_name": "Xã Đầm Dơi"
+    }
+  ]
+}

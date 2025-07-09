@@ -1,0 +1,28 @@
+{
+  "address": "Xã Quang Trung, Huyện Hưng Hà, Tỉnh Thái Bình",
+  "ellapsedInMs": 6096,
+  "estimatedCost": 0.0037659,
+  "thought": "**Identifying the New Administrative Unit**\n\nOkay, so I'm presented with an old address: \"Xã Quang Trung, Huyện Hưng Hà, Tỉnh Thái Bình\". My job is to figure out the corresponding *new* administrative unit, right? Here's my thought process:\n\nFirst, I know I need to start with the province, \"Tỉnh Thái Bình\". I immediately think, \"Okay, let's see if there have been any province mergers or renamings using resolution 60-NQ/TW.\" Sure enough, there's a merger with Hưng Yên, resulting in \"Tỉnh Hưng Yên\". So, \"Tỉnh Thái Bình\" is now \"Tỉnh Hưng Yên\" for our purposes.\n\nNext, I identify the old ward: \"Xã Quang Trung.\" Now comes the real detective work. I need to comb through other resolutions, specifically looking for \"Xã Quang Trung\" *within the context* of \"Huyện Hưng Hà\" and, crucially, the *new* province, \"Tỉnh Hưng Yên\". I scan resolution 1666/NQ-UBTVQH15, the one related to administrative reorganizations within Hưng Yên.\n\nBingo! Line 76: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Quang Trung (huyện Hưng Hà), Văn Cẩm và Duyên Hải thành xã mới có tên gọi là **xã Diên Hà**.\"  Perfect! \"Quang Trung\" (from Hưng Hà) is now part of \"Diên Hà.\"\n\nJust to confirm, I check the list of \"New wards\" and there it is: `{\"ward_code\":\"12619\",\"ward_name\":\"Xã Diên Hà\",\"province_name\":\"Tỉnh Hưng Yên\"}`. That's a perfect match!\n\nSo, I'm confident in my final output:  \"Tỉnh Hưng Yên\" as the new province, \"Xã Diên Hà\" as the new ward (with code \"12619\"), and I'll cite that specific line and header from resolution 1666/NQ-UBTVQH15. My confidence level is *high* because it's a clear, direct match.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Hưng Yên và tỉnh Thái Bình, lấy tên là tỉnh Hưng Yên"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "12619",
+      "ward_name": "Xã Diên Hà"
+    },
+    {
+      "citation": {
+        "header": "1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên",
+        "line": "76. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Quang Trung (huyện Hưng Hà), Văn Cẩm và Duyên Hải thành xã mới có tên gọi là xã Diên Hà."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "12619",
+      "ward_name": "Xã Diên Hà"
+    }
+  ]
+}

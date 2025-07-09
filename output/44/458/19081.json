@@ -1,0 +1,18 @@
+{
+  "address": "Phường Quảng Thuận, Thị xã Ba Đồn, Tỉnh Quảng Bình",
+  "ellapsedInMs": 8290,
+  "estimatedCost": 0.0032529000000000004,
+  "thought": "**Deconstructing the Address and Mapping to New Administrative Units**\n\nOkay, so I've got this old address to work with: \"Phường Quảng Thuận, Thị xã Ba Đồn, Tỉnh Quảng Bình\".  My task is to pinpoint where this locality is *now*, based on the changes outlined in various resolutions.\n\nFirst, I need to break down the address. I've got \"Phường Quảng Thuận\" as the old ward, and \"Tỉnh Quảng Bình\" as the old province.\n\nNext, I immediately think about province mergers. I remember \"60-NQ/TW\" talks about province name changes.  Bingo! It states: \"Hợp nhất tỉnh Quảng Bình và tỉnh Quảng Trị, lấy tên là tỉnh Quảng Trị\". So, \"Tỉnh Quảng Bình\" is now \"Tỉnh Quảng Trị\".\n\nNow, I'm onto the ward. I need to search the resolutions, specifically looking for \"Phường Quảng Thuận\" within the *new* province, \"Tỉnh Quảng Trị\". The \"Other resolutions\" section is my playground. I'm looking for any resolution related to the province changes. Ah, here it is: \"1680/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Trị\".\n\nScanning that resolution, line 73 jumps out: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Quảng Phúc, Quảng Thọ và Quảng Thuận thành phường mới có tên gọi là **phường Bắc Gianh**.\"  Perfect! It explicitly mentions \"Quảng Thuận\" and how it's been merged into \"Phường Bắc Gianh.\" This is a direct hit!\n\nNow, to solidify this match, I need the details for the new ward.  I'll consult the \"New wards\" list, using the new ward's name and province. And there it is: `{\"ward_code\":\"19066\",\"ward_name\":\"Phường Bắc Gianh\",\"province_name\":\"Tỉnh Quảng Trị\"}`.\n\nBuilding the JSON output is the last step.  Since I have a direct resolution line, I have high confidence in this match.\n\nFor the output, the citation details are the resolution header and line 73.  The province name will be the newly assigned one: \"Tỉnh Quảng Trị\".  The new ward code and name are from my \"New wards\" lookup.\n\nSo, in the end, it's a straightforward process, once the appropriate resolutions are identified and cross-referenced.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1680/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Trị",
+        "line": "73. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Quảng Phúc, Quảng Thọ và Quảng Thuận thành phường mới có tên gọi là phường Bắc Gianh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Trị",
+      "ward_code": "19066",
+      "ward_name": "Phường Bắc Gianh"
+    }
+  ]
+}

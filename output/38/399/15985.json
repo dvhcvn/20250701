@@ -1,0 +1,18 @@
+{
+  "address": "Xã Hoằng Yến, Huyện Hoằng Hóa, Tỉnh Thanh Hóa",
+  "ellapsedInMs": 6445,
+  "estimatedCost": 0.0024230000000000002,
+  "thought": "**Determining the New Ward for an Old Address**\n\nOkay, so I've got this old address: \"Xã Hoằng Yến, Huyện Hoằng Hóa, Tỉnh Thanh Hóa.\" My goal is to figure out the current administrative unit (ward) for this location.\n\nFirst things first, the province is \"Tỉnh Thanh Hóa.\" I need to check the relevant province resolutions, specifically the \"60-NQ/TW.\" Thankfully, Thanh Hóa isn't on the list of provinces that were merged. So, \"Tỉnh Thanh Hóa\" remains the same. Easy.\n\nNext, I zero in on \"Xã Hoằng Yến.\" Time to consult \"Other resolutions.\" I specifically look for \"1686/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thanh Hóa.\" I'm looking for any mention of \"Xã Hoằng Yến.\"\n\nScanning through, I find line 19 which doesn't include \"Xã Hoằng Yến,\" so I move on. Then, bingo! Line 20 mentions it: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Hoằng Yến, Hoằng Hải, Hoằng Trường và Hoằng Tiến thành xã mới có tên gọi là xã Hoằng Tiến.\" Ah-ha! \"Xã Hoằng Yến\" is merged into \"Xã Hoằng Tiến.\"\n\nTo confirm, I quickly check the \"New wards\" list for \"Xã Hoằng Tiến\" in \"Tỉnh Thanh Hóa\". It's a perfect match: I find a ward with the matching data: `{\"ward_code\":\"15991\",\"ward_name\":\"Xã Hoằng Tiến\",\"province_name\":\"Tỉnh Thanh Hóa\"}`. Excellent.\n\nNow, I can construct the JSON output.\n\nBased on the evidence, I'm highly confident in my findings. The final output will be:\n\n*   `province_name`: \"Tỉnh Thanh Hóa\"\n*   `ward_name`: \"Xã Hoằng Tiến\"\n*   `ward_code`: \"15991\"\n*   `citation`:\n    *   `header`: \"1686/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thanh Hóa\"\n    *   `line`: \"20. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Hoằng Yến, Hoằng Hải, Hoằng Trường và Hoằng Tiến thành xã mới có tên gọi là xã Hoằng Tiến.\"\n*   `confidence`: \"high\"\n\nThat should be accurate, given the clarity of the resolution.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1686/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thanh Hóa",
+        "line": "20. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Hoằng Yến, Hoằng Hải, Hoằng Trường và Hoằng Tiến thành xã mới có tên gọi là xã Hoằng Tiến."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thanh Hóa",
+      "ward_code": "15991",
+      "ward_name": "Xã Hoằng Tiến"
+    }
+  ]
+}

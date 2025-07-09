@@ -1,0 +1,18 @@
+{
+  "address": "Phường Tân Phước Khánh, Thành phố Tân Uyên, Tỉnh Bình Dương",
+  "ellapsedInMs": 6830,
+  "estimatedCost": 0.0028022,
+  "thought": "**My Mapping Process: Breaking Down the Address**\n\nOkay, so I'm presented with an old address: \"Phường Tân Phước Khánh, Thành phố Tân Uyên, Tỉnh Bình Dương.\" My task is to map this to the new administrative structure, leveraging my expertise and the provided data. Let's break this down systematically.\n\nFirst, I identify the province: \"Tỉnh Bình Dương.\" Based on the \"Hợp nhất tỉnh Bà Rịa - Vũng Tàu, tỉnh Bình Dương và Thành phố Hồ Chí Minh; lấy tên là Thành phố Hồ Chí Minh\" resolution (60-NQ/TW), I know Bình Dương is now part of \"Thành phố Hồ Chí Minh\". This is our primary target.\n\nNext, I zero in on the specific ward: \"Phường Tân Phước Khánh.\" My instinct tells me this is where the real work lies. I need to consult the resolutions and the \"New Wards\" data. Specifically, I turn to resolution 1685/NQ-UBTVQH15, the one dealing with ward-level administrative changes within Ho Chi Minh City.\n\nBingo! Line 101 of that resolution is the key. It states, explicitly and unequivocally, that \"Phường Tân Phước Khánh\" is merged into the new ward, \"Phường Tân Khánh.\" This is a direct, clean mapping.\n\nThe \"New Wards\" data confirms this, with the entry: `{\"ward_code\":\"25891\",\"ward_name\":\"Phường Tân Khánh\",\"province_name\":\"Thành phố Hồ Chí Minh\"}`.  The match is perfect.\n\nI don't need to overthink the district level (\"Thành phố Tân Uyên\") – the prompt directed me to consider changes only at the ward and province levels. I am confident in this direct mapping: \"Phường Tân Phước Khánh\" becomes \"Phường Tân Khánh\" within the new province, \"Thành phố Hồ Chí Minh.\"\n\nTherefore, my resulting mapping will be, with a high degree of confidence:\n\n*   `province_name`: \"Thành phố Hồ Chí Minh\"\n*   `ward_name`: \"Phường Tân Khánh\"\n*   `ward_code`: \"25891\"\n*   `citation`: \"1685/NQ-UBTVQH15, line 101\"\n*   `confidence`: \"high\"\n\nThe matter is settled. A solid, definitive mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1685/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của Thành phố Hồ Chí Minh",
+        "line": "101. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Thạnh Phước, Tân Phước Khánh, Tân Vĩnh Hiệp, xã Thạnh Hội và phần còn lại của phường Thái Hòa sau khi sắp xếp theo quy định tại khoản 81 Điều này thành phường mới có tên gọi là phường Tân Khánh."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hồ Chí Minh",
+      "ward_code": "25891",
+      "ward_name": "Phường Tân Khánh"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Ka Đơn, Huyện Đơn Dương, Tỉnh Lâm Đồng",
+  "ellapsedInMs": 7663,
+  "estimatedCost": 0.0027897000000000004,
+  "thought": "**My Analysis of the Address Mapping**\n\nOkay, so I'm tasked with figuring out the new administrative location for the old address \"Xã Ka Đơn, Huyện Đơn Dương, Tỉnh Lâm Đồng.\"  Here's my breakdown:\n\nFirst, I need to identify the *old* ward and province.  Easy enough: \"Xã Ka Đơn\" is the ward, and \"Tỉnh Lâm Đồng\" is the province.\n\nNext, I'll check for any province mergers using \"60-NQ/TW.\"  Luckily, \"Tỉnh Lâm Đồng\" is still \"Tỉnh Lâm Đồng\" according to that document. No issues there.\n\nNow comes the tricky part: ward-level changes.  I need to dig into the relevant resolutions. I'm focusing on \"1671/NQ-UBTVQH15,\" the one about rearranging wards in Lâm Đồng province.  Line 4 is key: it states that \"Xã Ka Đơn\" merges with \"Xã Quảng Lập\" to form a new ward called \"Xã Quảng Lập.\"  Perfect!\n\nFollowing that, I need to confirm the new ward data.  I've found a match for \"Xã Quảng Lập\" in the \"New wards\" list for \"Tỉnh Lâm Đồng\" (`{\"ward_code\":\"24955\",\"ward_name\":\"Xã Quảng Lập\",\"province_name\":\"Tỉnh Lâm Đồng\"}`). This seems accurate.\n\nI also need to consider other new wards that might be relevant, like \"Xã Đơn Dương\" and \"Xã Ka Đô\". However, the resolution clearly states \"Xã Ka Đơn\" becomes part of \"Xã Quảng Lập.\" It does *not* link it to \"Xã Đơn Dương\" formed from other wards, nor to \"Xã Ka Đô\". So, while other wards might exist, the direct resolution only mentions \"Xã Quảng Lập.\"\n\nTherefore, my final JSON output will reflect the direct mapping of \"Xã Ka Đơn\" to \"Xã Quảng Lập,\" with a \"high\" confidence level because the resolution is very clear.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng",
+        "line": "4. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Ka Đơn và xã Quảng Lập thành xã mới có tên gọi là xã Quảng Lập."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "24955",
+      "ward_name": "Xã Quảng Lập"
+    }
+  ]
+}

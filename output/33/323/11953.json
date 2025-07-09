@@ -1,0 +1,18 @@
+{
+  "address": "Phường Hiến Nam, Thành phố Hưng Yên, Tỉnh Hưng Yên",
+  "ellapsedInMs": 8712,
+  "estimatedCost": 0.0032518,
+  "thought": "**Analysis of Administrative Unit Changes for \"Phường Hiến Nam\"**\n\nOkay, so the user wants to find the new administrative unit for \"Phường Hiến Nam, Thành phố Hưng Yên, Tỉnh Hưng Yên\". My first step is to break down the provided address. \"Phường Hiến Nam\" is the old ward, and \"Tỉnh Hưng Yên\" is the old province. Now, I need to consult the resolutions and the new wards data.\n\nFirst, let's look at \"Tỉnh Hưng Yên\". Resolution 60-NQ/TW doesn't mention a province name change for \"Tỉnh Hưng Yên\" after the merger, so that part is straightforward.\n\nNext, I need to focus on \"Phường Hiến Nam\". Resolution 1666/NQ-UBTVQH15 is the key here. It explicitly states that \"Phường Hiến Nam,\" along with other wards and communes, will be merged to form a *new* ward called **\"Phường Phố Hiến.\"** Bingo!\n\nNow, I check the \"New Wards\" list to confirm. There it is: `{\"ward_code\":\"11953\",\"ward_name\":\"Phường Phố Hiến\",\"province_name\":\"Tỉnh Hưng Yên\"}`. That looks like a match.\n\nHowever, things get a bit more complex when I see the entry for \"Xã Lê Lợi\": `{\"ward_code\":\"13120\",\"ward_name\":\"Xã Lê Lợi\",\"province_name\":\"Tỉnh Hưng Yên\"}`.  The resolution indicates that \"Lê Lợi\" was also merged into \"Phường Phố Hiến\" *alongside* \"Hiến Nam.\"\n\nThe discrepancy between the explicit merge direction in the resolution and the independent listing of a new \"Xã Lê Lợi\" is concerning. It suggests that while the original \"Lê Lợi\" was part of the merger into \"Phố Hiến,\" there might have been a subsequent reorganization, a split, or perhaps a different \"Xã Lê Lợi\" was created elsewhere or the resolution had a partial merge. Maybe only *part* of \"Lê Lợi\" was merged, or perhaps the \"Xã\" entry is unrelated to the old \"Phường\". This is where I start to see an ambiguity.\n\nGiven the instructions to include all potential candidates and note uncertainties, I must conclude that while \"Phường Hiến Nam\" is definitely part of \"Phường Phố Hiến\", the new \"Xã Lê Lợi\" *could* also be related, but there is not enough direct information to confirm. Therefore, I must include both \"Phường Phố Hiến\" as the likely outcome, and the \"Xã Lê Lợi\" as a potential, albeit ambiguous, option. I would need to investigate the other resolutions and records further to confirm. The presence of the \"Xã Lê Lợi\" entry necessitates a low confidence level on that aspect.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên",
+        "line": "94. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường An Tảo, Lê Lợi, Hiến Nam, Minh Khai, xã Trung Nghĩa và xã Liên Phương thành phường mới có tên gọi là phường Phố Hiến."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "11953",
+      "ward_name": "Phường Phố Hiến"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "address": "Phường Trần Hưng Đạo, Thành phố Thái Bình, Tỉnh Thái Bình",
+  "ellapsedInMs": 8996,
+  "estimatedCost": 0.0041141,
+  "thought": "**My Analysis of the Administrative Unit Change**\n\nOkay, so I'm presented with the old address \"Phường Trần Hưng Đạo, Thành phố Thái Bình, Tỉnh Thái Bình,\" and my task is to determine its current equivalent. Here's my thought process:\n\n1.  **Province Merger First:** The initial step is always to check for any province mergers. My analysis of document \"60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất\" clearly reveals that \"Tỉnh Thái Bình\" was merged with \"Tỉnh Hưng Yên\" to form the new \"Tỉnh Hưng Yên.\"  Therefore, the province is now definitively \"Tỉnh Hưng Yên\".\n\n2.  **Focusing on the Ward:** Now, I need to find the new equivalent of \"Phường Trần Hưng Đạo\" within the context of \"Tỉnh Hưng Yên.\"  I quickly turn to resolution \"1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên\".  Line 102 of this resolution is crucial: it explicitly states that the old wards of \"Trần Hưng Đạo,\" \"Đề Thám,\" \"Quang Trung,\" and \"Phú Xuân\" have been merged into a *new* \"phường Trần Hưng Đạo.\"  Importantly, the ward name itself persists, but its administrative configuration has changed.\n\n3.  **Confirming the New Ward:**  I then searched the available data for `ward_name: \"Phường Trần Hưng Đạo\"` and `province_name: \"Tỉnh Hưng Yên\"`.  This yielded a match: `{\"ward_code\":\"12452\",\"ward_name\":\"Phường Trần Hưng Đạo\",\"province_name\":\"Tỉnh Hưng Yên\"}`.  This confirms the new ward's code and name.\n\n4.  **Assessing Confidence:** Because the resolution explicitly mentions the specific old ward's name and its role in the formation of the new ward, and because the province merger is straightforward, my confidence in this finding is \"high\".\n\n5.  **Important Note and Cross-Check:** After finding a high confidence mapping, it's prudent to confirm the finding, and cross check for other relevant cases. Specifically, for any other \"Phường Trần Hưng Đạo\"s that might be formed as a new ward, I checked the following:\n    *   \"1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội\": This document mentions an *old* \"Trần Hưng Đạo\" merging into \"phường Cửa Nam,\" not a new formation. This is irrelevant.\n    *   \"1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng\": I found two old wards \"Trần Hưng Đạo\" that were merged to different new wards. However, there is a new \"phường Trần Hưng Đạo\" that was formed from \"xã Hưng Đạo\" (old ward) in \"Thành phố Chí Linh\".\n\nTherefore, the new ward is \"Phường Trần Hưng Đạo\" in \"Tỉnh Hưng Yên,\" with code \"12452\", and the relevant information is within \"1666/NQ-UBTVQH15\".\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "6. Hợp nhất tỉnh Hưng Yên và tỉnh Thái Bình, lấy tên là tỉnh Hưng Yên"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "12452",
+      "ward_name": "Phường Trần Hưng Đạo"
+    },
+    {
+      "citation": {
+        "header": "1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên",
+        "line": "102. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Trần Hưng Đạo, Đề Thám, Quang Trung và xã Phú Xuân thành phường mới có tên gọi là phường Trần Hưng Đạo."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "12452",
+      "ward_name": "Phường Trần Hưng Đạo"
+    }
+  ]
+}

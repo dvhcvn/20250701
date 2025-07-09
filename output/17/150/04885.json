@@ -1,0 +1,28 @@
+{
+  "address": "Xã Hiền Lương, Huyện Đà Bắc, Tỉnh Hoà Bình",
+  "ellapsedInMs": 7545,
+  "estimatedCost": 0.0032969,
+  "thought": "**My Mapping Strategy for the Old Address**\n\nOkay, so I'm tackling this address conversion. First, I need to understand that the old address is \"Xã Hiền Lương, Huyện Đà Bắc, Tỉnh Hoà Bình\".  My immediate thought is to break this down. The core is the old \"Tỉnh Hoà Bình,\" which is the province.\n\nI need to confirm if that province has been merged or changed in some way. I'll check the resolution \"60-NQ/TW\" specifically for province mergers. Aha! The resolution states that Hòa Bình was merged into Phú Thọ, forming the new province, \"Tỉnh Phú Thọ.\"  Great, that's step one.\n\nNext, I need to focus on the ward and district: \"Xã Hiền Lương, Huyện Đà Bắc\".  Now, I'll dive into the other resolutions, specifically looking for any mentions of \"Hiền Lương\" in \"Đà Bắc.\"\n\nLet's see, resolution 1655 isn't it. 1676 is relevant as it relates to Phú Thọ, but I need to be careful here. I find two instances of \"Hiền Lương,\" one within Hạ Hòa (that's not what I'm looking for) and another that merges \"Hiền Lương (huyện Đà Bắc)\" into a new unit. YES! Line 94 in the 1676 resolution is spot on: It clearly specifies the merger of \"Xã Hiền Lương (huyện Đà Bắc)\" into \"xã Đà Bắc.\" That's exactly what I wanted.\n\nThen I check the \"New wards\" list to verify. I should see \"Xã Đà Bắc\" with \"Tỉnh Phú Thọ\" as province. Yes! The entry `{\"ward_code\":\"04831\",\"ward_name\":\"Xã Đà Bắc\",\"province_name\":\"Tỉnh Phú Thọ\"}` is a perfect match.\n\nNow that I have a clear match, I construct the JSON output. Because the mapping is direct and unambiguous, I'll set the confidence to \"high.\" The citation will point to 1676/NQ-UBTVQH15, line 94. The province is now \"Tỉnh Phú Thọ\", with the matched ward and code.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Vĩnh Phúc, tỉnh Phú Thọ và tỉnh Hoà Bình; lấy tên là tỉnh Phú Thọ"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "04831",
+      "ward_name": "Xã Đà Bắc"
+    },
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "94. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Đà Bắc và các xã Hiền Lương (huyện Đà Bắc), Toàn Sơn, Tú Lý thành xã mới có tên gọi là xã Đà Bắc."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "04831",
+      "ward_name": "Xã Đà Bắc"
+    }
+  ]
+}

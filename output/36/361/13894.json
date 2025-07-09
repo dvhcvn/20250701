@@ -1,0 +1,28 @@
+{
+  "address": "Thị trấn Rạng Đông, Huyện Nghĩa Hưng, Tỉnh Nam Định",
+  "ellapsedInMs": 7948,
+  "estimatedCost": 0.0030626,
+  "thought": "**My Analysis of the Address Mapping**\n\nOkay, so I'm presented with the task of mapping an old address (\"Thị trấn Rạng Đông, Huyện Nghĩa Hưng, Tỉnh Nam Định\") to its new administrative unit. My process is pretty methodical:\n\n1.  **Identify the old units:** First, I had to parse the address. I easily identified the old ward as \"Thị trấn Rạng Đông\" and the old province as \"Tỉnh Nam Định\".\n\n2.  **Province Mergers (60-NQ/TW):** I immediately checked for any province name changes. Based on 60-NQ/TW, I found that \"Tỉnh Nam Định\" was merged and renamed to \"Tỉnh Ninh Bình.\"  This is a significant, high-confidence change.\n\n3.  **Ward Resolution Analysis:** Now, I delved into the resolutions, focusing on \"Thị trấn Rạng Đông\" within the context of \"Tỉnh Ninh Bình\".  I found it! Resolution 1674/NQ-UBTVQH15 clearly states that \"Thị trấn Rạng Đông\" was merged, along with other units, to form a new ward named \"xã Rạng Đông.\"  This is key!\n\n4.  **Matching with New Wards:** I then cross-referenced the found new ward, \"xã Rạng Đông,\" with the provided \"New wards\" list.  Bingo! I found a perfect match:  `{\"ward_code\":\"13894\",\"ward_name\":\"Xã Rạng Đông\",\"province_name\":\"Tỉnh Ninh Bình\"}`.\n\n5.  **Confidence Assessment:**  The confidence level on this mapping needs to be high. I've got strong evidence supporting this: the province merger from 60-NQ/TW is definitive. The ward merger from 1674/NQ-UBTVQH15 is explicit.  The name \"Rạng Đông\" is preserved in the new ward which adds to the clarity of the mapping.\n\n6.  **Double Check: Ruling out ambiguity**: It is important to rule out that any existing ward is also called \"Rạng Đông\", so I examined other resolutions with the term \"Rạng Đông\". It turned out one related to \"Tỉnh Điện Biên\", which does not affect the input address.\n\nTherefore, I have a high degree of certainty about the mapping. It's a clear, direct correspondence. My final output will reflect this high confidence.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Hà Nam, tỉnh Ninh Bình và tỉnh Nam Định; lấy tên là tỉnh Ninh Bình"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "13894",
+      "ward_name": "Xã Rạng Đông"
+    },
+    {
+      "citation": {
+        "header": "1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "66. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Nam Điền (huyện Nghĩa Hưng), xã Phúc Thắng và thị trấn Rạng Đông thành xã mới có tên gọi là xã Rạng Đông."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "13894",
+      "ward_name": "Xã Rạng Đông"
+    }
+  ]
+}

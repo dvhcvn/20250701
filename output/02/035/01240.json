@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tân Trịnh, Huyện Quang Bình, Tỉnh Hà Giang",
+  "ellapsedInMs": 8997,
+  "estimatedCost": 0.0030464000000000003,
+  "thought": "**My Reasoning for Mapping the Old Address**\n\nOkay, so I'm tackling this address: \"Xã Tân Trịnh, Huyện Quang Bình, Tỉnh Hà Giang.\" My first step, as always, is to pinpoint the old province, which is \"Tỉnh Hà Giang.\" I immediately need to check those province-level resolutions, specifically \"60-NQ/TW\" to see how this province has been restructured.  Bingo! That resolution clearly states a merger:  \"Hợp nhất tỉnh Tuyên Quang và tỉnh Hà Giang, lấy tên là tỉnh Tuyên Quang.\" So, I now know Hà Giang is part of Tuyên Quang.\n\nNext, I need to figure out what happened to \"Xã Tân Trịnh.\"  I'll scan the resolutions, this time focusing on Tuyên Quang's resolutions, starting with \"1684/NQ-UBTVQH15,\" which deals with the restructuring of *wards* in Tuyên Quang.  And there it is! Resolution point 91 perfectly describes the situation: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Tân Bắc và xã Tân Trịnh thành xã mới có tên gọi là **xã Tân Trịnh**.\" That's the key! This resolution explicitly states that the old \"Xã Tân Trịnh\" merged with another ward, but the *new* resulting ward is also named \"Xã Tân Trịnh.\"\n\nNow, I'll cross-reference this with the provided list of new wards. I check for \"Xã Tân Trịnh\" within \"Tỉnh Tuyên Quang\" and I find a match:  `{\"ward_code\":\"01243\",\"ward_name\":\"Xã Tân Trịnh\",\"province_name\":\"Tỉnh Tuyên Quang\"}`.\n\nPutting it all together, I'm confident about my mapping.  The province has changed due to a merger, and the ward's restructuring is clearly laid out in the resolution.\n\n**For the output, I'll construct a JSON object as follows:**\n\n*   `province_name`: \"Tỉnh Tuyên Quang\"\n*   `ward_name`: \"Xã Tân Trịnh\"\n*   `ward_code`: \"01243\"\n*   `citation`:\n    *   `header`: \"1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang\"\n    *   `line`: \"91. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Tân Bắc và xã Tân Trịnh thành xã mới có tên gọi là **xã Tân Trịnh**.\"\n\nAnd the confidence level should be marked as \"high\", because the resolutions directly match the name of the ward.  The province-level change is crucial context for why the ward is even *in* this particular resolution. I could have included the province resolution as the primary citation. But given I need to choose one `citation` object, I decided to focus on the ward-level change, as it is directly relevant to what happened to the old ward.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "91. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Tân Bắc và xã Tân Trịnh thành xã mới có tên gọi là xã Tân Trịnh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "01243",
+      "ward_name": "Xã Tân Trịnh"
+    }
+  ]
+}

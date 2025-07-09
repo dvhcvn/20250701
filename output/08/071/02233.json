@@ -1,0 +1,18 @@
+{
+  "address": "Xã Phúc Yên, Huyện Lâm Bình, Tỉnh Tuyên Quang",
+  "ellapsedInMs": 7340,
+  "estimatedCost": 0.0028408,
+  "thought": "**Determining the New Ward for the Given Address**\n\nOkay, so I've got to figure out the new administrative ward for \"Xã Phúc Yên, Huyện Lâm Bình, Tỉnh Tuyên Quang.\" Let's break this down systematically. First, I need to isolate the old ward (\"Xã Phúc Yên\"), district (\"Huyện Lâm Bình\"), and province (\"Tỉnh Tuyên Quang\").  No problem there.\n\nNow, I'll check those Province Resolutions.  A quick scan of the \"no-merger\" list is always a good start.  Nope, Tuyên Quang isn't there. Then I move onto the \"newly-merged\" list. Ah! Tuyên Quang did combine with Hà Giang, but the province name stayed the same. Good to know, but nothing that directly impacts my primary task.\n\nNext, it's time to sift through those other resolutions, looking for mentions of both \"Xã Phúc Yên\" *and* \"Tỉnh Tuyên Quang.\" I see \"1676/NQ-UBTVQH15,\" but that's talking about Phú Thọ, not Tuyên Quang. Ignore that.  Ah, here it is:  \"1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang.\"  Bingo!  This is for Tuyên Quang. And look at this line: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Lăng Can, xã Phúc Yên và xã Xuân Lập thành xã mới có tên gọi là **xã Lâm Bình**.\"  That's my key!  It explicitly merges \"Xã Phúc Yên\" into \"Xã Lâm Bình\".  This resolution nails it.\n\nTime to verify.  I'll quickly check my `new_wards` list for \"xã Lâm Bình.\"  Yup, there it is:  {\"ward_code\":\"02266\",\"ward_name\":\"Xã Lâm Bình \",\"province_name\":\"Tỉnh Tuyên Quang\"}.  Perfect. The province, ward name, and the code all align.\n\nSo, I'm confident in my conclusion.  The new ward is \"Xã Lâm Bình,\" with code \"02266,\" and the province is \"Tỉnh Tuyên Quang.\"  I'll set the confidence to \"high\" because I have a direct resolution linking the old ward to the new one, and it's confirmed in the provided new wards list. My JSON output is going to look clean.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "2. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Lăng Can, xã Phúc Yên và xã Xuân Lập thành xã mới có tên gọi là xã Lâm Bình."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "02266",
+      "ward_name": "Xã Lâm Bình"
+    }
+  ]
+}

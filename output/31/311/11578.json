@@ -1,0 +1,18 @@
+{
+  "address": "Phường Dương Quan, Thành phố Thuỷ Nguyên, Thành phố Hải Phòng",
+  "ellapsedInMs": 7040,
+  "estimatedCost": 0.0027789,
+  "thought": "**Determining the New Ward for the Given Address**\n\nOkay, so I've got this old address: \"Phường Dương Quan, Thành phố Thuỷ Nguyên, Thành phố Hải Phòng\", and I need to figure out the corresponding new ward.  First, I'll clarify the province. The input says \"Thành phố Hải Phòng\".  I'll consult `60-NQ/TW` to check for province changes.  Ah, perfect, it explicitly states \"Hợp nhất tỉnh Hải Dương và thành phố Hải Phòng, lấy tên là thành phố Hải Phòng\" meaning Hải Phòng is the new name, which is consistent.\n\nNow, on to the ward. I need to comb through relevant resolutions for \"Phường Dương Quan.\" I'll start with `Other resolutions`.\n\n*   Resolution `1656/NQ-UBTVQH15` (Hà Nội) - Nope, that's not it.\n*   Resolution `1666/NQ-UBTVQH15` (Hưng Yên) - Another dead end.\n*   Resolution `1669/NQ-UBTVQH15`! This one's promising - it's for Thành phố Hải Phòng!  Let's see what it says... Bingo! Line 1 states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Dương Quan... thành phường mới có tên gọi là **phường Thủy Nguyên**\". It explicitly mentions the merger of \"Phường Dương Quan\" into \"Phường Thủy Nguyên\". That's a strong indicator.\n*   Resolution `1683/NQ-UBTVQH15` (Thái Nguyên) -  Again, not relevant.\n\nSo, I'm leaning heavily towards \"Phường Thủy Nguyên\" being the new ward.  But I need to confirm this. I will cross-reference that against my `New wards` list.  I'm looking for \"Phường Thủy Nguyên\" in \"Thành phố Hải Phòng\". Let's check...There it is! `{\"ward_code\":\"11560\",\"ward_name\":\"Phường Thủy Nguyên\",\"province_name\":\"Thành phố Hải Phòng\"}`. This perfectly matches the resolution's findings!\n\nGiven the explicit merger mentioned in the resolution and the exact match in my `New wards` list, I'm highly confident in my conclusion.  I'll generate the JSON output now, including the relevant citation, and mark the confidence level as \"high\". I'll be sure to include the province and ward details as confirmed.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "1. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Dương Quan, phường Thủy Đường và một phần diện tích tự nhiên, quy mô dân số của các phường Hoa Động, An Lư,Thủy Hà thành phường mới có tên gọi là phường Thủy Nguyên."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "11560",
+      "ward_name": "Phường Thủy Nguyên"
+    }
+  ]
+}

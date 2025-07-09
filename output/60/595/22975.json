@@ -1,0 +1,28 @@
+{
+  "address": "Xã Phan Dũng, Huyện Tuy Phong, Tỉnh Bình Thuận",
+  "ellapsedInMs": 7943,
+  "estimatedCost": 0.0026033,
+  "thought": "**My Analysis of Address Mapping for Xã Phan Dũng**\n\nAlright, let's break this down. The user's asking me to map an old Vietnamese address, specifically \"Xã Phan Dũng\" in \"Huyện Tuy Phong,\" \"Tỉnh Bình Thuận,\" to the new administrative structure, using the provided resolutions and ward data. My approach is pretty straightforward:\n\nFirst, I identified the key components of the old address. I've got \"Xã Phan Dũng\" as the ward, \"Huyện Tuy Phong\" as the district, and \"Tỉnh Bình Thuận\" as the province.\n\nNow, the crucial step: I dove into the Province Resolutions (60-NQ/TW).  I quickly found that \"Tỉnh Bình Thuận\" is no longer a standalone province. The resolution explicitly merges it with Tỉnh Lâm Đồng and Đắk Nông, with the name being \"Tỉnh Lâm Đồng.\" That's a high-confidence change, no ambiguity there.\n\nNext, I examined the other resolutions, particularly 1671/NQ-UBTVQH15, looking for any mention of \"Xã Phan Dũng\" and \"Huyện Tuy Phong\". Bingo! Resolution 1671, line 43, directly addresses \"Xã Phan Dũng,\" stating that it, along with part of \"Phong Phú\", will be merged into a new ward: \"xã Tuy Phong.\"  The resolution header itself mentions \"tỉnh Lâm Đồng,\" which aligns perfectly with the province merger I'd already identified.\n\nThen, I cross-referenced this new ward (\"xã Tuy Phong\") against the `new_wards` list. Sure enough, there's a match: `{\"ward_code\":\"22978\",\"ward_name\":\"Xã Tuy Phong\",\"province_name\":\"Tỉnh Lâm Đồng\"}`. Everything checks out! The province is correct, and the ward name and code are consistent.\n\nTherefore, the old \"Xã Phan Dũng\" is directly mapped to the new \"Xã Tuy Phong,\" ward code 22978, in the new province, \"Tỉnh Lâm Đồng.\" The confidence level for this mapping should be high. I have direct confirmation from the resolution mapping the old ward to the new one, and the province merger is clear as day.\n\nI need to confirm no other mappings exist, so I quickly double-checked line 42 of resolution 1671/NQ-UBTVQH15. It refers to \"Huyện Tuy Phong\", but involves different wards, not \"Xã Phan Dũng.\"\n\nSo, that’s it. My analysis confirms the direct mapping of \"Xã Phan Dũng\" to \"Xã Tuy Phong,\" with the new province being \"Tỉnh Lâm Đồng\". The JSON output will reflect this precise mapping with a confidence level of \"high,\" given the clarity of the source resolution and the clear province merger.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "14. Hợp nhất tỉnh Lâm Đồng, tỉnh Đắk Nông và tỉnh Bình Thuận; lấy tên là tỉnh Lâm Đồng"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "22978",
+      "ward_name": "Xã Tuy Phong"
+    },
+    {
+      "citation": {
+        "header": "1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng",
+        "line": "43. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Phan Dũng và một phần diện tích tự nhiên, quy mô dân số của xã Phong Phú thành xã mới có tên gọi là xã Tuy Phong."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "22978",
+      "ward_name": "Xã Tuy Phong"
+    }
+  ]
+}

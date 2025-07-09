@@ -1,0 +1,18 @@
+{
+  "address": "Xã Ea Pil, Huyện M'Đrắk, Tỉnh Đắk Lắk",
+  "ellapsedInMs": 7831,
+  "estimatedCost": 0.002536,
+  "thought": "**Mapping an Old Vietnamese Address to New Administrative Units: My Reasoning**\n\nOkay, so I'm presented with a Vietnamese address: \"Xã Ea Pil, Huyện M'Đrắk, Tỉnh Đắk Lắk.\" My task is to map this to the new administrative structure, based on resolutions and ward data. Let's break it down.\n\nFirst, I identified the components: \"Xã Ea Pil\" (ward), \"Huyện M'Đrắk\" (district), and \"Tỉnh Đắk Lắk\" (province).  Easy enough. Now, the real work begins. I'll need to meticulously analyze the provided resolutions.\n\nI started with the province-level resolutions (specifically, 60-NQ/TW).  I quickly found \"Tỉnh Đắk Lắk.\" The resolution indicates a merger with Phú Yên, but importantly, *Đắk Lắk itself* didn't change its name. This implies the province is still \"Tỉnh Đắk Lắk\" in the new structure.\n\nNext, the deeper dive. Resolution 1660/NQ-UBTVQH15. I scanned for \"Xã Ea Pil\" and bingo! Line 39 caught my eye: it states that \"Xã Ea Pil\" and \"Xã Cư Prao\" will be combined into a *new* \"Xã Cư Prao.\" This is key!\n\nI moved on to the new ward data, cross-referencing it with my findings. Sure enough, \"Xã Cư Prao\" exists with the code \"24415\" and is still under \"Tỉnh Đắk Lắk.\"\n\nGiven the explicit nature of the resolution's statement and the corresponding ward data, the confidence level is definitely *high*. The direct merge of \"Ea Pil\" into \"Cư Prao\" is decisive.\n\nI need to confirm the district element is still valid. The resolution mentions \"eliminating all districts,\" meaning \"Huyện M'Đrắk\" is no longer applicable. The mapping now focuses solely on the ward and the province. The new ward, \"Xã Cư Prao,\" neatly sits under \"Tỉnh Đắk Lắk\" in the updated data, further solidifying this interpretation.\n\nThe output should clearly reflect this. I should provide an array of objects for the user, with each containing the resolution citation, a confidence rating, the province name, the new ward code, and the new ward name.\n\nSpecifically, for the original address \"Xã Ea Pil, Huyện M'Đrắk, Tỉnh Đắk Lắk\":\n\n*   The pertinent resolution is \"1660/NQ-UBTVQH15.\"\n*   The relevant line is \"39. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Ea Pil và xã Cư Prao thành xã mới có tên gọi là **xã Cư Prao**.\"\n*   The new ward is \"Xã Cư Prao,\" code \"24415.\"\n*   The province remains \"Tỉnh Đắk Lắk.\"\n*   The confidence level should be marked as \"high.\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1660/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đắk Lắk",
+        "line": "39. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Ea Pil và xã Cư Prao thành xã mới có tên gọi là xã Cư Prao."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đắk Lắk",
+      "ward_code": "24415",
+      "ward_name": "Xã Cư Prao"
+    }
+  ]
+}

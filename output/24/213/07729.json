@@ -1,0 +1,28 @@
+{
+  "address": "Xã Tiến Dũng, Thành phố Bắc Giang, Tỉnh Bắc Giang",
+  "ellapsedInMs": 8228,
+  "estimatedCost": 0.0030072999999999996,
+  "thought": "**My Mapping Strategy for \"Xã Tiến Dũng\"**\n\nOkay, so I've been tasked with mapping the old address \"Xã Tiến Dũng, Thành phố Bắc Giang, Tỉnh Bắc Giang\" to its new administrative unit. This means I need to sift through these resolutions and ward data carefully. Here's how I'm approaching this:\n\nFirst, I need to identify the old province and ward, which are \"Tỉnh Bắc Giang\" and \"Xã Tiến Dũng\", respectively. That's the starting point.\n\nNext, I'll dive into the province resolutions, specifically checking resolution 60-NQ/TW. This leads me to \"Hợp nhất tỉnh Bắc Ninh và tỉnh Bắc Giang, lấy tên là tỉnh Bắc Ninh.\" Bingo! \"Tỉnh Bắc Giang\" is now part of \"Tỉnh Bắc Ninh\". So, I know the new province for \"Xã Tiến Dũng\" will definitely be \"Tỉnh Bắc Ninh\".\n\nNow, I need to focus on the ward-level changes. I'll thoroughly examine `1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh`.  I'm reading line 92, and that's not what I need. But, hang on... line 98... *\"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Cảnh Thụy, **xã Tiến Dũng** và xã Tư Mại thành phường mới có tên gọi là **phường Cảnh Thụy**.\"* Excellent! There it is! The old \"Xã Tiến Dũng\" is being merged into the new \"Phường Cảnh Thụy\".\n\nTo verify this, I'll quickly check the \"New wards\" data, looking for \"Phường Cảnh Thụy.\"  Perfect match:  `{\"ward_code\":\"07738\",\"ward_name\":\"Phường Cảnh Thụy\",\"province_name\":\"Tỉnh Bắc Ninh\"}`. Everything lines up.\n\nThis all points to a clear and concise mapping. Because the resolution explicitly states the merge of \"Xã Tiến Dũng\" into \"Phường Cảnh Thụy\" and confirms the province as \"Tỉnh Bắc Ninh\", I am confident in this result. I will set the confidence to \"high\". The new `ward_code` for \"Phường Cảnh Thụy\" is \"07738.\"\n\nJust to double-check, the \"Thành phố Bắc Giang\" portion of the original address doesn't change anything. The province-level resolution I found earlier, specifically, `Hợp nhất tỉnh Bắc Ninh và tỉnh Bắc Giang, lấy tên là tỉnh Bắc Ninh`, supports this and confirms the outcome.  All the information is consistent, easily verifiable, and directly stated in the relevant documents.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "5. Hợp nhất tỉnh Bắc Ninh và tỉnh Bắc Giang, lấy tên là tỉnh Bắc Ninh"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "07738",
+      "ward_name": "Phường Cảnh Thụy"
+    },
+    {
+      "citation": {
+        "header": "1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh",
+        "line": "98. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Cảnh Thụy, xã Tiến Dũng và xã Tư Mại thành phường mới có tên gọi là phường Cảnh Thụy."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "07738",
+      "ward_name": "Phường Cảnh Thụy"
+    }
+  ]
+}

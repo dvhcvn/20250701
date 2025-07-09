@@ -1,0 +1,18 @@
+{
+  "address": "Xã Trường Xuân B, Huyện Thới Lai, Thành phố Cần Thơ",
+  "ellapsedInMs": 8004,
+  "estimatedCost": 0.0028716,
+  "thought": "**Finding the New Administrative Unit for the Provided Address**\n\nOkay, I've got this. The user is asking about an old address: \"Xã Trường Xuân B, Huyện Thới Lai, Thành phố Cần Thơ.\" My job is to find the corresponding new ward based on administrative changes. I need to be precise, so I'll go through this methodically.\n\nFirst, the province is clearly \"Thành phố Cần Thơ.\"  I always double-check the major resolutions, like \"60-NQ/TW,\" to confirm if there were any province-level changes.  Thankfully, Cần Thơ remained Cần Thơ, even though it absorbed parts of Sóc Trăng and Hậu Giang. So, \"Thành phố Cần Thơ\" is correct for the province.\n\nNext, I identify \"Xã Trường Xuân B\" as the old ward. This is where it gets interesting. I'm going to look for any relevant resolutions. I'll focus on anything related to Cần Thơ's ward re-organization.\n\nI found resolution \"1668/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Cần Thơ\".  Line 35 of this resolution is the key. It specifically states that \"Trường Xuân A,\" \"Trường Xuân B,\" and \"Trường Xuân\" are all merged into a new ward called \"Xã Trường Xuân.\" Bingo! This is precisely what I need.\n\nTo be extra certain, I then check my database of \"New wards\" to see if there's a match for \"Xã Trường Xuân\" within \"Thành phố Cần Thơ.\" And there it is:  `{\"ward_code\":\"31294\",\"ward_name\":\"Xã Trường Xuân\",\"province_name\":\"Thành phố Cần Thơ\"}`. Perfect!\n\nTherefore, the old ward \"Xã Trường Xuân B\" is now part of the new ward \"Xã Trường Xuân.\"  The province remains \"Thành phố Cần Thơ,\" and I have the ward code.\n\nI can confidently construct the JSON output:\n\n```json\n{\n  \"province_name\": \"Thành phố Cần Thơ\",\n  \"ward_name\": \"Xã Trường Xuân\",\n  \"ward_code\": \"31294\",\n  \"citation\": {\n    \"header\": \"1668/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Cần Thơ\",\n    \"line\": \"35. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Trường Xuân A, Trường Xuân B và Trường Xuân thành xã mới có tên gọi là **xã Trường Xuân**.\"\n  },\n  \"confidence\": \"high\"\n}\n```\n\nMy confidence is high because of the direct mention of \"Xã Trường Xuân B\" in the resolution defining the new ward.  This should be a solid and accurate response.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1668/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Cần Thơ",
+        "line": "35. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Trường Xuân A, Trường Xuân B và Trường Xuân thành xã mới có tên gọi là xã Trường Xuân."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Cần Thơ",
+      "ward_code": "31294",
+      "ward_name": "Xã Trường Xuân"
+    }
+  ]
+}

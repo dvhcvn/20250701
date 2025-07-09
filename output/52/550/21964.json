@@ -1,0 +1,18 @@
+{
+  "address": "Xã Phước Quang, Huyện Tuy Phước, Tỉnh Bình Định",
+  "ellapsedInMs": 8764,
+  "estimatedCost": 0.0030479,
+  "thought": "**Analyzing and Mapping a Vietnamese Address**\n\nOkay, so I'm presented with an old Vietnamese address and the task of translating it to the new administrative structure, given some resolutions and a list of new wards. Let's break this down systematically.\n\nFirst, I need to identify the components of the old address: province, district (huyện), and ward (xã). The address \"Xã Phước Quang, Huyện Tuy Phước, Tỉnh Bình Định\" clearly indicates \"Tỉnh Bình Định\" as the province, \"Xã Phước Quang\" as the ward, and \"Huyện Tuy Phước\" as the district (though the district itself isn't directly needed for this mapping).\n\nNext, I have to check for any province-level mergers. Looking through the province resolutions, I find Resolution 60-NQ/TW, specifically point 12. It explicitly states that \"Tỉnh Bình Định\" was merged with \"Tỉnh Gia Lai\" to become \"Tỉnh Gia Lai.\"  So, \"Tỉnh Bình Định\" is now \"Tỉnh Gia Lai.\" That's the first critical piece.\n\nNow, I focus on the ward itself, \"Xã Phước Quang.\"  I need to scour the ward-related resolutions to see if it's been affected.  And there it is! In Resolution 1664/NQ-UBTVQH15, under \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai,\" point 19 states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Phước Hiệp, Phước Hưng và Phước Quang thành xã mới có tên gọi là **xã Tuy Phước Bắc**.\" This is gold! It directly tells me that \"Xã Phước Quang\" is now part of a new ward called \"Xã Tuy Phước Bắc.\"\n\nNow, I just need to verify this new ward's information in the provided \"New wards\" list.  I search for \"Xã Tuy Phước Bắc\" within \"Tỉnh Gia Lai.\"  And there it is: `{\"ward_code\":\"21964\",\"ward_name\":\"Xã Tuy Phước Bắc\",\"province_name\":\"Tỉnh Gia Lai\"}`.  Perfect match! This confirms the new ward code and name, and the province aligns with the province merger I found earlier.\n\nFinally, I can confidently construct the JSON output:\n\n*   `province_name`: \"Tỉnh Gia Lai\" (from the province merger)\n*   `ward_name`: \"Xã Tuy Phước Bắc\" (from the ward resolution)\n*   `ward_code`: \"21964\" (from the \"New wards\" list)\n*   `citation`:  This will include the relevant resolution information:\n    *   `header`: \"1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai\"\n    *   `line`: \"19. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Phước Hiệp, Phước Hưng và Phước Quang thành xã mới có tên gọi là **xã Tuy Phước Bắc**.\"\n*   `confidence`: \"high\". This is a high-confidence mapping because the resolution explicitly mentions \"Xã Phước Quang\" and the new ward name.\n\nI've also given consideration to potential ambiguities but, given the clear resolution for \"Xã Phước Quang\" directly merging into \"Xã Tuy Phước Bắc,\" there are no competing mappings or alternative interpretations here. The surrounding \"Tuy Phước\" wards, based on their makeup, have no bearing on this particular address. \"Phường An Phú,\" though in Gia Lai, is also unrelated. Thus, only one high confidence result is needed.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai",
+        "line": "19. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Phước Hiệp, Phước Hưng và Phước Quang thành xã mới có tên gọi là xã Tuy Phước Bắc."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "21964",
+      "ward_name": "Xã Tuy Phước Bắc"
+    }
+  ]
+}

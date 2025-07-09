@@ -1,0 +1,18 @@
+{
+  "address": "Xã Hồng Nam, Huyện Hoà An, Tỉnh Cao Bằng",
+  "ellapsedInMs": 6159,
+  "estimatedCost": 0.0033718999999999997,
+  "thought": "**Determining the New Administrative Unit for \"Xã Hồng Nam, Huyện Hoà An, Tỉnh Cao Bằng\"**\n\nOkay, so I've got this address to work with: \"Xã Hồng Nam, Huyện Hoà An, Tỉnh Cao Bằng\". First thing I need to do is parse it: \"Xã Hồng Nam\" is the old ward, and \"Tỉnh Cao Bằng\" is the old province. Now, the goal is to find the *new* ward.\n\nI'll start by checking the provided resolutions, specifically the \"Other resolutions\" section. I'm looking for anything related to \"Tỉnh Cao Bằng\" and, more importantly, \"Xã Hồng Nam.\" Bingo! \"1657/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Cao Bằng\" looks promising. I scan the lines and, there it is: line 34. This is the key: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của cácxã Hồng Nam, Thái Cường và Kim Đồngthành xã mới có tên gọi là **xã Kim Đồng**.\" Perfect! \"Xã Hồng Nam\" is mentioned and it's being merged into \"xã Kim Đồng.\"\n\nNow I know the new ward name is \"xã Kim Đồng\" and the province is still \"Tỉnh Cao Bằng,\" since the resolution is specific to that province. Time to look in the \"New wards\" list for \"xã Kim Đồng\" in \"Tỉnh Cao Bằng\" to get the `ward_code`. And there it is: \"ward_code\":\"01792\",\"ward_name\":\"Xã Kim Đồng\",\"province_name\":\"Tỉnh Cao Bằng\".\n\nMy output will include the citation information: \"1657/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Cao Bằng\" in the `citation.header`, the relevant line \"34. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của cácxã Hồng Nam, Thái Cường và Kim Đồngthành xã mới có tên gọi là **xã Kim Đồng**.\" in the `citation.line`, \"high\" confidence, the province name \"Tỉnh Cao Bằng\", the ward code \"01792\", and the ward name \"Xã Kim Đồng\". This looks like a solid match.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1657/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Cao Bằng",
+        "line": "34. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của cácxã Hồng Nam, Thái Cường và Kim Đồngthành xã mới có tên gọi là **xã Kim Đồng**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Cao Bằng",
+      "ward_code": "01792",
+      "ward_name": "Xã Kim Đồng"
+    }
+  ]
+}

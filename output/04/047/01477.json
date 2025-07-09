@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Trùng Khánh, Huyện Trùng Khánh, Tỉnh Cao Bằng",
+  "ellapsedInMs": 6736,
+  "estimatedCost": 0.0026842000000000003,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm presented with a Vietnamese address: \"Thị trấn Trùng Khánh, Huyện Trùng Khánh, Tỉnh Cao Bằng,\" and the task is to translate it to the new administrative structure. Let's break this down.\n\nFirst, I identified the key components of the old address: \"Thị trấn Trùng Khánh\" (the old ward), \"Huyện Trùng Khánh\" (the old district), and \"Tỉnh Cao Bằng\" (the old province). Straightforward enough.\n\nNext, I checked the province resolutions, specifically 60-NQ/TW, to see if anything had changed at the provincial level. Luckily, \"Tỉnh Cao Bằng\" isn't listed for any amalgamation, so that part is settled; the province name remains the same.\n\nNow, the crucial step. I needed to investigate the resolutions for any changes affecting \"Thị trấn Trùng Khánh\" or \"Huyện Trùng Khánh\" within Cao Bằng. This led me to Resolution 1657/NQ-UBTVQH15. Bingo! Line 47 of that resolution explicitly outlines the reorganization. It states that \"Thị trấn Trùng Khánh\" and surrounding communes are merged into a new ward called \"Xã Trùng Khánh.\" This is exactly what I was looking for.\n\nWith the new ward identified, the next step was to cross-reference with the \"New wards\" data to find the corresponding `ward_code` and confirm the new `ward_name`. I found a perfect match: \"Xã Trùng Khánh,\" with a `ward_code` of \"01477,\" all within \"Tỉnh Cao Bằng.\"\n\nNow for the JSON output. I'm confident in the mapping due to the direct citation from Resolution 1657/NQ-UBTVQH15, so the `confidence` level is \"high.\" I'll structure the `citation` object with the resolution header and the relevant line. Finally, I'll include the `province_name`, `ward_code`, and `ward_name`, ensuring everything conforms to the specified schema. My final check ensures all necessary fields are present and correctly typed. The output will be an array of objects for potential future expansion.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1657/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Cao Bằng",
+        "line": "47. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Trùng Khánh và các xã Đức Hồng, Lăng Hiếu, Khâm Thành thành xã mới có tên gọi là xã Trùng Khánh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Cao Bằng",
+      "ward_code": "01477",
+      "ward_name": "Xã Trùng Khánh"
+    }
+  ]
+}

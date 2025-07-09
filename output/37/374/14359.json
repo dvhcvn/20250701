@@ -1,0 +1,18 @@
+{
+  "address": "Phường Ninh Phong, Thành phố Hoa Lư, Tỉnh Ninh Bình",
+  "ellapsedInMs": 7859,
+  "estimatedCost": 0.0032501,
+  "thought": "**My Analysis of the Administrative Unit Change**\n\nOkay, so I'm presented with an old address: \"Phường Ninh Phong, Thành phố Hoa Lư, Tỉnh Ninh Bình.\" My task is to determine the current administrative ward for this address.  As an expert in this field, I'll approach this methodically.\n\nFirst, I identified the province as \"Tỉnh Ninh Bình,\" which appears straightforward.  Then, I checked for province mergers, but based on \"60-NQ/TW,\" Ninh Bình remains Ninh Bình, so no changes there.\n\nNext, the critical step:  locating \"Phường Ninh Phong.\"  I need to consult the resolutions concerning administrative changes.  I quickly filtered through the irrelevant resolutions for Gia Lai, Cần Thơ, and Tây Ninh. Finally, I landed on `1674/NQ-UBTVQH15`, the resolution for Ninh Bình, which I knew was the key.\n\nCarefully examining the relevant lines, I discovered that \"Phường Ninh Phong\" is mentioned in line 124, which states its merger with \"phường Ninh Sơn\" and other surrounding communes into the new ward, \"phường Nam Hoa Lư.\" This is it!\n\nI confirmed this finding by cross-referencing this information with the \"New wards\" list. Here I was able to verify the existence of  \"Phường Nam Hoa Lư\" with the corresponding `ward_code` of \"14359.\"\n\nBased on this, I confidently constructed the following JSON output:\n\n```json\n{\n  \"province_name\": \"Tỉnh Ninh Bình\",\n  \"ward_name\": \"Phường Nam Hoa Lư\",\n  \"ward_code\": \"14359\",\n  \"citation\": {\n    \"header\": \"1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình\",\n    \"line\": \"124. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Ninh Phong, phường Ninh Sơn và các xã Ninh Vân, Ninh An, Ninh Hải thành phường mới có tên gọi là phường Nam Hoa Lư.\"\n  },\n  \"confidence\": \"high\"\n}\n```\n\nMy confidence is high because \"Phường Ninh Phong\" is explicitly referenced in the resolution and directly mapped to the new ward, and it's backed by verifying data.  I can confidently declare that the new administrative unit for \"Phường Ninh Phong\" is now \"Phường Nam Hoa Lư.\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "124. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Ninh Phong, phường Ninh Sơn và các xã Ninh Vân, Ninh An, Ninh Hải thành phường mới có tên gọi là phường Nam Hoa Lư."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "14359",
+      "ward_name": "Phường Nam Hoa Lư"
+    }
+  ]
+}

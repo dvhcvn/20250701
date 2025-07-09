@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tân Tuyến, Huyện Tri Tôn, Tỉnh An Giang",
+  "ellapsedInMs": 5146,
+  "estimatedCost": 0.0018822,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm tasked with taking this old Vietnamese address, \"Xã Tân Tuyến\" in \"Huyện Tri Tôn\" of \"Tỉnh An Giang,\" and figuring out its new equivalent. The user wants me to map it based on these resolutions and a list of new wards, and to ignore the district level. I see the starting point is to identify the old administrative units, which are easy enough to pull out: \"Xã Tân Tuyến,\" \"Huyện Tri Tôn\" (which, remember, I'll disregard ultimately), and \"Tỉnh An Giang\".\n\nThe first thing I did was look at the province resolutions (60-NQ/TW). Finding \"Tỉnh An Giang\" confirmed it was still valid after merging with Kiên Giang, so that part is settled.\n\nThe key then became digging through other resolutions, specifically 1654/NQ-UBTVQH15. I needed to see what happened to \"Xã Tân Tuyến.\" Bingo! Line 25 of the resolution explicitly stated that \"Xã Tân Tuyến\" was merged, along with other areas, into a new ward called \"Xã Cô Tô\".\n\nNext, I cross-referenced this new ward, \"Xã Cô Tô,\" against the list of `New wards` the user provided. There it was: `{\"ward_code\":\"30580\",\"ward_name\":\"Xã Cô Tô\",\"province_name\":\"Tỉnh An Giang\"}`. It's a perfect match!\n\nSo, the old \"Xã Tân Tuyến\" is directly mentioned in the resolution as being incorporated into \"Xã Cô Tô.\" This new ward exists in the list provided, and importantly, it's still within \"Tỉnh An Giang\". Because of this direct and explicit mapping from the resolution, I'm confident in the output. The confidence level should definitely be \"high.\" I've found a clear and definitive connection.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1654/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh An Giang",
+        "line": "25. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Cô Tô, xã Tà Đảnh và xã Tân Tuyến thành xã mới có tên gọi là xã Cô Tô."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh An Giang",
+      "ward_code": "30580",
+      "ward_name": "Xã Cô Tô"
+    }
+  ]
+}

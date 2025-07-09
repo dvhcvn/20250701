@@ -1,0 +1,28 @@
+{
+  "address": "Phường 9, Thành phố Tuy Hoà, Tỉnh Phú Yên",
+  "ellapsedInMs": 9531,
+  "estimatedCost": 0.021144499999999997,
+  "thought": "**Finding the New Administrative Unit for Phường 9, Thành phố Tuy Hoà**\n\nOkay, so I've got \"Phường 9, Thành phố Tuy Hoà, Tỉnh Phú Yên\" and need to find its new administrative unit based on the provided data. First thing's first, I need to recognize that \"Tỉnh Phú Yên\" is the province.  But there's that pesky merger... *Resolution 60-NQ/TW* tells me Phú Yên merged with Đắk Lắk, becoming \"Tỉnh Đắk Lắk.\"  So, that's what I'll be searching for.\n\nNow, I'm digging through these resolutions, specifically looking at the \"Tỉnh Đắk Lắk\" context, knowing it was formerly Phú Yên.  *Resolution 1660/NQ-UBTVQH15* looks promising. Aha! Line 90 explicitly states that a \"một phần diện tích tự nhiên, quy mô dân số của Phường 9\" will go towards a new ward called \"phường Tuy Hòa\"! Line 91 then clarifies the 'remaining part' of Phường 9 along with other areas would become \"phường Bình Kiến.\"\n\nSo, this means Phường 9 was effectively split between \"phường Tuy Hòa\" and \"phường Bình Kiến.\" I now need to cross-check this with my \"New wards\" data to get the ward codes and confirm the province.\n\nLooking at the data, I see:  `{\"ward_code\":\"22015\",\"ward_name\":\" Phường Tuy Hòa\",\"province_name\":\"Tỉnh Đắk Lắk\"}` and `{\"ward_code\":\"22045\",\"ward_name\":\" Phường Bình Kiến\",\"province_name\":\"Tỉnh Đắk Lắk\"}`.  Perfect! This confirms my findings.\n\nTherefore, the output should reflect both new wards and the correct province. The confidence is definitely high here, as the resolution directly addresses this specific rearrangement.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1660/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đắk Lắk",
+        "line": "90. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của Phường 1, Phường 2, Phường 4, Phường 5, Phường 7, một phần diện tích tự nhiên, quy mô dân số của Phường 9, phần còn lại của xã Hòa An (huyện Phú Hòa) sau khi sắp xếp theo quy định tại khoản 64 Điều này và phần còn lại của xã Hòa Trị sau khi sắp xếp theo quy định tại khoản 65 Điều này thành phường mới có tên gọi là **phường Tuy Hòa**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đắk Lắk",
+      "ward_code": "22015",
+      "ward_name": "Phường Tuy Hòa"
+    },
+    {
+      "citation": {
+        "header": "1660/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đắk Lắk",
+        "line": "91. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã An Phú, Hòa Kiến, Bình Kiến và phần còn lại của Phường 9 sau khi sắp xếp theo quy định tại khoản 90 Điều này thành phường mới có tên gọi là **phường Bình Kiến**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đắk Lắk",
+      "ward_code": "22045",
+      "ward_name": "Phường Bình Kiến"
+    }
+  ]
+}

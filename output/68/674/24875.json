@@ -1,0 +1,18 @@
+{
+  "address": "Xã Đạ Rsal, Huyện Đam Rông, Tỉnh Lâm Đồng",
+  "ellapsedInMs": 6482,
+  "estimatedCost": 0.002108,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, here's how I'm thinking about this address mapping problem. The user's given me an old Vietnamese address, \"Xã Đạ Rsal, Tỉnh Lâm Đồng,\" and I need to figure out its new administrative unit.\n\nFirst, I'll break down the address. I've got \"Xã Đạ Rsal\" which is the old ward, and \"Tỉnh Lâm Đồng\" which is the old province.\n\nNow, let's start with province-level changes. I immediately jump to the \"Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất\" section of the provided Province Resolutions (60-NQ/TW).  I quickly scan for \"Tỉnh Lâm Đồng.\" Thankfully, it's there. The resolution clearly states that Lâm Đồng province remains, even with the proposed mergers, so the province mapping is straightforward - it's still \"Tỉnh Lâm Đồng.\"\n\nNext, I need to figure out what happened to \"Xã Đạ Rsal.\"  I'll dive into the provided Other Resolutions (1671/NQ-UBTVQH15). I need to meticulously search through those lines, paying close attention to any mention of \"Xã Đạ Rsal.\" And bingo, on line 19, I hit the jackpot! It directly states that \"Xã Đạ Rsal\" is being merged with another ward, \"Đạ M'Rông,\" to form the new ward: \"xã Đam Rông 3.\"\n\nNow it's time to cross-reference with the New Wards data. I need to find \"Xã Đam Rông 3\" in the \"New wards\" list.  I find a perfect match:  `{\"ward_code\":\"24875\",\"ward_name\":\"Xã Đam Rông 3\",\"province_name\":\"Tỉnh Lâm Đồng\"}`. This confirms the new ward's name, code, and province.\n\nFinally, I'll construct the JSON output:\n\n*   The `province_name` is \"Tỉnh Lâm Đồng\" (from the province resolutions and confirmed by the new ward data).\n*   The `ward_name` is \"Xã Đam Rông 3\" (from the resolution and new ward data).\n*   The `ward_code` is \"24875\" (directly from the new ward data).\n*   For citation, I'll include the relevant resolution, which is 1671/NQ-UBTVQH15, citing line 19 for the mapping justification.\n*   Because the mapping is derived directly from a clear and unambiguous line in the resolution, I'm confident in the output, assigning a \"high\" confidence level.\n\nThis approach ensures accuracy and traceability based on the provided data.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng",
+        "line": "19. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số xã Đạ Rsal và xã Đạ M'Rông thành xã mới có tên gọi là xã Đam Rông 3."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "24875",
+      "ward_name": "Xã Đam Rông 3"
+    }
+  ]
+}

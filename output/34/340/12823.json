@@ -1,0 +1,28 @@
+{
+  "address": "Xã Minh Phú, Huyện Đông Hưng, Tỉnh Thái Bình",
+  "ellapsedInMs": 8516,
+  "estimatedCost": 0.0040143,
+  "thought": "**My Analysis: Determining the New Administrative Unit**\n\nOkay, here's how I'd approach this. First, the user wants the updated administrative unit for \"Xã Minh Phú, Huyện Đông Hưng, Tỉnh Thái Bình.\" This means I need to account for any province and ward mergers.\n\nI begin by noting the old province, \"Tỉnh Thái Bình.\" The critical step is remembering that according to document 60-NQ/TW, \"Tỉnh Thái Bình\" merged with \"Tỉnh Hưng Yên,\" becoming \"Tỉnh Hưng Yên.\"\n\nNext, I need to identify the specific ward and district: \"Xã Minh Phú\" and \"Huyện Đông Hưng,\" respectively.\n\nNow, I'll systematically search through the provided resolutions, looking for relevant information.  I'm going to pay close attention to the Hưng Yên-related resolution, 1666/NQ-UBTVQH15, since Thái Bình is now part of Hưng Yên.\n\n*   1654/NQ-UBTVQH15 (An Giang), 1655/NQ-UBTVQH15 (Cà Mau), 1656/NQ-UBTVQH15 (Hà Nội), and 1658/NQ-UBTVQH15 (Bắc Ninh) are all irrelevant since they are not in the area I am looking at.\n*   However, 1666/NQ-UBTVQH15 (Hưng Yên) is key!  I see a few potential matches but I need to be careful to look for *both* \"Minh Phú\" *and* \"Đông Hưng.\"\n    *   Line 53, 56, and 58, reference \"Đông Hưng\" but not \"Minh Phú\" so I can rule these out.\n    *   Line 60, however, is the winning one. It states that \"các xã Liên Hoa, Hồng Giang, Trọng Quan và Minh Phú\" are merged into a new ward called \"xã Nam Tiên Hưng.\" Bingo! This is the right answer.\n    *   Line 61 is not relevant since it involves \"Minh Tân\".\n\nFinally, to verify, I need to check the \"New wards\" list. And indeed, the entry for `{\"ward_code\":\"12763\",\"ward_name\":\"Xã Nam Tiên Hưng\",\"province_name\":\"Tỉnh Hưng Yên\"}` confirms that \"xã Nam Tiên Hưng\" exists within \"Tỉnh Hưng Yên\".\n\nTherefore, the updated administrative unit for \"Xã Minh Phú, Huyện Đông Hưng, Tỉnh Thái Bình\" is **\"Xã Nam Tiên Hưng, Tỉnh Hưng Yên\"**.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "6. Hợp nhất tỉnh Hưng Yên và tỉnh Thái Bình, lấy tên là tỉnh Hưng Yên"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "12763",
+      "ward_name": "Xã Nam Tiên Hưng"
+    },
+    {
+      "citation": {
+        "header": "1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên",
+        "line": "60. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Liên Hoa, Hồng Giang, Trọng Quan và Minh Phú thành xã mới có tên gọi là xã Nam Tiên Hưng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "12763",
+      "ward_name": "Xã Nam Tiên Hưng"
+    }
+  ]
+}

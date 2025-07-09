@@ -1,0 +1,28 @@
+{
+  "address": "Xã Lục Hồn, Huyện Bình Liêu, Tỉnh Quảng Ninh",
+  "ellapsedInMs": 9529,
+  "estimatedCost": 0.0032907,
+  "thought": "**Analysis of Vietnamese Address Mapping**\n\nOkay, here's how I'm approaching this address mapping, as I understand the nuances of Vietnamese administrative changes.  First, the old address is: Xã Lục Hồn, Huyện Bình Liêu, Tỉnh Quảng Ninh.  I'm starting by breaking down its components:  ward, district, and province.  My initial thought is that the district (\"Huyện Bình Liêu\") might be dropped per the prompt.\n\nMy initial approach is to check the relevant province-level resolutions (specifically Resolution 60-NQ/TW) to see if the province \"Tỉnh Quảng Ninh\" has undergone any changes.  Fortunately, \"Tỉnh Quảng Ninh\" is explicitly listed as unchanged in the \"Các đơn vị hành chính cấp tỉnh không thực hiện sáp nhập\" (Units not subject to merger) section.  So, I can confidently say that \"Tỉnh Quảng Ninh\" remains \"Tỉnh Quảng Ninh.\"\n\nNext, I need to delve into other resolutions, specifically 1679/NQ-UBTVQH15, to see if the ward (\"Xã Lục Hồn\") has been affected.  Scanning the lines, I immediately find a key detail in line 17: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Đồng Tâm và xã Lục Hồn thành xã mới có tên gọi là **xã Lục Hồn**.\"  This clearly states that \"Xã Lục Hồn\" (the *old* ward) is combined with another ward to form a *new* \"Xã Lục Hồn\". This is a direct match, and I can store this.\n\nI'll also keep the district \"Huyện Bình Liêu\" in mind, even though I'll be dropping it. Line 18 mentions \"thị trấn Bình Liêu\" (a potential unit within the district of \"Huyện Bình Liêu\", that sometimes turns into a new ward).  However, the old address is \"Xã Lục Hồn\". The resolution states \"thị trấn Bình Liêu\" becomes \"xã Bình Liêu\".\n\nNow, I'll cross-reference this resolution with the provided new ward data.  I see a new ward: `{\"ward_code\":\"06856\",\"ward_name\":\"Xã Lục Hồn\",\"province_name\":\"Tỉnh Quảng Ninh\"}`.  The ward and province match perfectly!  This strongly aligns with the resolution 1679/NQ-UBTVQH15, line 17, and the old address.  I also see: `{\"ward_code\":\"06838\",\"ward_name\":\"Xã Bình Liêu\",\"province_name\":\"Tỉnh Quảng Ninh\"}`. However, the address is \"Xã Lục Hồn\", and line 17 of the resolution makes it clear the merger is still with \"Xã Lục Hồn.\"\n\nTherefore, my conclusion is that the old address \"Xã Lục Hồn, Huyện Bình Liêu, Tỉnh Quảng Ninh\" is now mapped to the new ward with the code `06856`:  **Xã Lục Hồn, Tỉnh Quảng Ninh**. The other ward, \"Xã Bình Liêu\", is a different location, a result of another change involving \"thị trấn Bình Liêu\" that was not \"Xã Lục Hồn\" as indicated in line 17 of resolution 1679/NQ-UBTVQH15.  My confidence is high due to the direct matching of the ward name and the province's confirmed status.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh không thực hiện sáp nhập",
+        "line": "7. Tỉnh Quảng Ninh"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ninh",
+      "ward_code": "06856",
+      "ward_name": "Xã Lục Hồn"
+    },
+    {
+      "citation": {
+        "header": "1679/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ninh",
+        "line": "17. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Đồng Tâm và xã Lục Hồn thành xã mới có tên gọi là xã Lục Hồn."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ninh",
+      "ward_code": "06856",
+      "ward_name": "Xã Lục Hồn"
+    }
+  ]
+}

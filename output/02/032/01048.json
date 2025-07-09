@@ -1,0 +1,28 @@
+{
+  "address": "Xã Tụ Nhân, Huyện Hoàng Su Phì, Tỉnh Hà Giang",
+  "ellapsedInMs": 8705,
+  "estimatedCost": 0.0029887,
+  "thought": "**Address Mapping Analysis: Xã Tụ Nhân to New Administrative Units**\n\nOkay, so I'm presented with a tricky mapping problem.  The task is to translate an old Vietnamese address (\"Xã Tụ Nhân,\" \"Huyện Hoàng Su Phì,\" \"Tỉnh Hà Giang\") to its current administrative equivalents, given resolutions and ward data.  I can break this down logically.\n\nFirst, I need to identify the components of the old address:  \"Xã Tụ Nhân\" (the ward), \"Huyện Hoàng Su Phì\" (the district - even though all districts are eliminated, it's still part of the original context), and \"Tỉnh Hà Giang\" (the province).\n\nNow for the processing.  I start with Province Resolutions (specifically, 60-NQ/TW).  I need to see what happened to \"Tỉnh Hà Giang.\"  It's not in the \"no merger\" list, which is good.  Moving on to the merger list, I see that \"Tỉnh Hà Giang\" and \"Tỉnh Tuyên Quang\" have been merged, with the new name being \"Tỉnh Tuyên Quang.\"  So, \"Tỉnh Hà Giang\" is now essentially \"Tỉnh Tuyên Quang\".\n\nNext, I tackle the other resolutions, focusing on 1684/NQ-UBTVQH15.  This resolution *is* relevant to \"Tỉnh Tuyên Quang,\" matching the new province I just identified.  Now it's time to dig into the lines to see what happened to \"Xã Tụ Nhân\".  I find two key lines.  Line 95 is irrelevant, but Line 96 is golden!  It clearly states that \"Xã Tụ Nhân\" along with other wards has been merged into a new \"Xã Hoàng Su Phì\". The old district, \"Huyện Hoàng Su Phì,\" is also mentioned in the resolution.\n\nNow, I cross-reference this with the \"New wards\" data.  I'm looking for \"Xã Hoàng Su Phì,\" which I found in the resolution. And there it is:  code \"01021,\" province \"Tỉnh Tuyên Quang.\"  I double-check other new wards, just to be thorough and to confirm there isn't some odd ambiguity. Everything checks out.\n\nFinally, I piece it all together.  \"Xã Tụ Nhân\" (from the old \"Tỉnh Hà Giang\") is now part of \"Tỉnh Tuyên Quang\" and specifically merged into \"Xã Hoàng Su Phì\" according to the relevant resolution. The new code for this is \"01021\". I have high confidence in this mapping because the resolution directly addresses the merge, and the new ward data confirms it.  This should give me a solid output.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "1. Hợp nhất tỉnh Tuyên Quang và tỉnh Hà Giang, lấy tên là tỉnh Tuyên Quang"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "01021",
+      "ward_name": "Xã Hoàng Su Phì"
+    },
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "96. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Vinh Quang và cácxã Bản Luốc, Ngàm Đăng Vài, Tụ Nhân, Đản Ván thành xã mới có tên gọi là xã Hoàng Su Phì."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "01021",
+      "ward_name": "Xã Hoàng Su Phì"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "address": "Xã Phú Túc, Huyện Châu Thành, Tỉnh Bến Tre",
+  "ellapsedInMs": 8958,
+  "estimatedCost": 0.0051994,
+  "thought": "**Identifying the New Administrative Unit**\n\nOkay, let's break this down. The user gave me \"Xã Phú Túc, Huyện Châu Thành, Tỉnh Bến Tre\" and wants the updated administrative unit. First, I need to check for any province mergers. Right, I remember resolution 60-NQ/TW states that Bến Tre was merged with Vĩnh Long and Trà Vinh, becoming \"Tỉnh Vĩnh Long.\" That's the new province. High confidence on that change.\n\nNext, I'll need to dig into the \"Other resolutions\" focusing on Vĩnh Long since that's the new province. Specifically, I'm looking at resolution 1687/NQ-UBTVQH15. I'll scan through it, zeroing in on \"Phú Túc\" and \"Châu Thành\" from the old Bến Tre. Bingo! Line 59 in that resolution directly addresses this. It says the old \"Xã Phú Túc\" from \"Huyện Châu Thành, Tỉnh Bến Tre\" is merged with a few other entities to form the new \"Xã Phú Túc.\" Perfect!\n\nSo, the new ward name is definitively \"Xã Phú Túc,\" and the new province is \"Tỉnh Vĩnh Long.\" Now I need to confirm this with the `New wards` list. Ah, there it is: `{\"ward_code\":\"28810\",\"ward_name\":\"Xã Phú Túc\",\"province_name\":\"Tỉnh Vĩnh Long\"}`. This is a perfect match. I'm highly confident.\n\nTo solidify my analysis, I'll double-check for any ambiguities, but there aren't any. The resolution clearly maps the old to the new.\n\nIn summary, the key steps were:\n1.  Identifying the old province: Tỉnh Bến Tre.\n2.  Checking for province mergers: Confirmed the new province is Tỉnh Vĩnh Long.\n3.  Identifying the old ward and district: Xã Phú Túc, Huyện Châu Thành.\n4.  Searching relevant resolutions: Resolution 1687/NQ-UBTVQH15 contained the information I needed. Line 59 specifically mentioned the merger of the old Xã Phú Túc.\n5.  Determining new ward name: Xã Phú Túc.\n6.  Determining new province name: Tỉnh Vĩnh Long.\n7.  Confirming with the `New wards` list: Confirmed the new ward.\n8.  Constructing the JSON with high confidence based on the clear direct citation.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "20. Hợp nhất tỉnh Bến Tre, tỉnh Vĩnh Long và tỉnh Trà Vinh; lấy tên là tỉnh Vĩnh Long"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "28810",
+      "ward_name": "Xã Phú Túc"
+    },
+    {
+      "citation": {
+        "header": "1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long",
+        "line": "59. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Châu Thành(huyện Châu Thành, tỉnh Bến Tre) vàcác xã Tân Thạch, Tường Đa,Phú Túc thành xã mới có tên gọi là xã Phú Túc."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "28810",
+      "ward_name": "Xã Phú Túc"
+    }
+  ]
+}

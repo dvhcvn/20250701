@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Đạ M'ri, Huyện Đạ Huoai, Tỉnh Lâm Đồng",
+  "ellapsedInMs": 6697,
+  "estimatedCost": 0.002141,
+  "thought": "**My Analysis of the Vietnamese Address Mapping Request**\n\nOkay, here's how I'm approaching this address mapping task. The user wants me to translate an old Vietnamese address to its new administrative unit equivalent, and they've given me some resolutions and new ward data to work with.\n\nFirst, I need to break down the old address: \"Thị trấn Đạ M'ri\" (ward), \"Huyện Đạ Huoai\" (district - which, as per the user's instructions, I'll essentially ignore), and \"Tỉnh Lâm Đồng\" (province).\n\nNow, let's dive into those resolutions. I'll start with the province resolutions (specifically 60-NQ/TW) to see if \"Tỉnh Lâm Đồng\" has been affected by any mergers.  The good news is that while there was a merger involving Lâm Đồng, it still retains its original name.\n\nNext, I'll need to scrutinize the resolutions for specifics on \"Thị trấn Đạ M'ri.\"  And bingo! In resolution 1671/NQ-UBTVQH15, line 34 clearly states that \"Thị trấn Đạ M'ri\" and another xã are merged to form \"xã Đạ Huoai 2.\"\n\nThat's my key finding!  The resolution gives me the new ward. Now I just need to verify it against the \"New wards\" data.  Sure enough, I find \"xã Đạ Huoai 2\" with the correct ward code (\"25105\") and province (\"Tỉnh Lâm Đồng\").\n\nSince this is a straightforward, direct match, I'll confidently construct the JSON output. The `citation.header` and `citation.line` come straight from the resolution where I found the mapping.  The `confidence` level will be \"high\" because this is a direct, undeniable match.  My output will include the province name, the ward code, and the ward name.  \n\nFinally, given the user specified that only possible new ward candidates should be returned, and that I've only identified a single clear result, I know I'm ready to submit my JSON response.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng",
+        "line": "34. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Đạ M'ri và xã Hà Lâm thành xã mới có tên gọi là xã Đạ Huoai 2."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "25105",
+      "ward_name": "Xã Đạ Huoai 2"
+    }
+  ]
+}

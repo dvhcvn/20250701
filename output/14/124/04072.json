@@ -1,0 +1,18 @@
+{
+  "address": "Xã Chiềng Pằn, Huyện Yên Châu, Tỉnh Sơn La",
+  "ellapsedInMs": 5912,
+  "estimatedCost": 0.0027930999999999997,
+  "thought": "**Determining the New Ward for \"Xã Chiềng Pằn\"**\n\nOkay, so I've got \"Xã Chiềng Pằn, Huyện Yên Châu, Tỉnh Sơn La\".  First things first, I need to identify the old ward, province, and district. That's \"Xã Chiềng Pằn\", \"Tỉnh Sơn La\", and \"Huyện Yên Châu\".  Even though districts are being eliminated in the process, knowing the district can help in the search.\n\nThen, I'm checking the province resolutions (60-NQ/TW).  Fortunately, \"Tỉnh Sơn La\" is listed under those not undergoing merging, so that's easy.  I can move on to other resolutions and scan for mentions of \"Sơn La.\"\n\nBingo! I've found `1681/NQ-UBTVQH15`. Line 38 jumps out: it explicitly states that \"Xã Chiềng Pằn\" is *merged* into a new \"xã Yên Châu\". That's my key piece of evidence.\n\nNow, it's a quick check of the new wards data.  I search for \"xã Yên Châu\" within \"Tỉnh Sơn La\". There it is! {\"ward_code\":\"04075\",\"ward_name\":\"Xã Yên Châu\",\"province_name\":\"Tỉnh Sơn La\"}.\n\nBuilding the output is simple: the citation is the relevant line and header from that resolution. The confidence is definitely high; it's a direct match with clear merging language.  The province name remains \"Tỉnh Sơn La\".  The ward code is \"04075\", and the new ward name is \"Xã Yên Châu\", all confirmed by the resolution and data.  This is a clean one.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1681/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Sơn La",
+        "line": "38. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Yên Châu và các xã Chiềng Đông, Chiềng Sàng, Chiềng Pằn, Chiềng Khoi, Sặp Vạt thành xã mới có tên gọi là xã Yên Châu."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Sơn La",
+      "ward_code": "04075",
+      "ward_name": "Xã Yên Châu"
+    }
+  ]
+}

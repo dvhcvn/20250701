@@ -1,0 +1,28 @@
+{
+  "address": "Xã Tơ Tung, Huyện KBang, Tỉnh Gia Lai",
+  "ellapsedInMs": 7024,
+  "estimatedCost": 0.0025211,
+  "thought": "**Address Mapping Logic for an Expert**\n\nOkay, so I'm tackling this Vietnamese address mapping task. I've got \"Xã Tơ Tung, Tỉnh Gia Lai\" as my starting point. The goal is to figure out the new administrative unit.\n\nFirst, I need to break down the address. Easy enough, \"Xã Tơ Tung\" is the old ward, and \"Tỉnh Gia Lai\" is the province. Now, I'm diving into the resolutions. My primary resource is Province Resolutions (60-NQ/TW). I'll check if Gia Lai is mentioned in the \"không thực hiện sáp nhập\" (no merger) or \"mới sau sáp nhập, hợp nhất\" (new after merger, consolidation) lists. Looks like Gia Lai's in the latter, specifically \"Hợp nhất tỉnh Gia Lai và tỉnh Bình Định, lấy tên là tỉnh Gia Lai\". So, Gia Lai *did* merge with Bình Định, but it kept its name. The province name is solid - \"Tỉnh Gia Lai.\"\n\nNext, I need to pinpoint the specific change to \"Xã Tơ Tung.\" I'll scrutinize other relevant resolutions for Gia Lai. I can skip `1660/NQ-UBTVQH15` (Đắk Lắk) - irrelevant. Looking at `1664/NQ-UBTVQH15` (Gia Lai) now. Scanning the text, Line 63 focuses on Kbang. But there it is, line 65: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Kông Lơng Khơng và xã Tơ Tung thành xã mới có tên gọi là **xã Tơ Tung**.\" Bingo! \"Xã Tơ Tung\" is explicitly mentioned, and it’s been combined with \"xã Kông Lơng Khơng,\" with the name *retained*. So, the new ward is also \"Xã Tơ Tung.\"\n\nTime to cross-reference with the `New wards` list for \"Tỉnh Gia Lai.\" And there it is: `{\"ward_code\":\"23668\",\"ward_name\":\"Xã Tơ Tung\",\"province_name\":\"Tỉnh Gia Lai\"}`.\n\nSo, I can now construct my JSON output. The province is \"Tỉnh Gia Lai.\" The new ward is \"Xã Tơ Tung,\" with a code of \"23668\". The key here is the citation – that specific resolution where the merging is detailed. And finally, the confidence level is very high - the old and the new ward have the same name. We found an explicit confirmation in the resolution, and it matches the list. This should be a clean, confident mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Gia Lai và tỉnh Bình Định, lấy tên là tỉnh Gia Lai"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "23668",
+      "ward_name": "Xã Tơ Tung"
+    },
+    {
+      "citation": {
+        "header": "1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai",
+        "line": "65. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Kông Lơng Khơng và xã Tơ Tung thành xã mới có tên gọi là xã Tơ Tung."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "23668",
+      "ward_name": "Xã Tơ Tung"
+    }
+  ]
+}

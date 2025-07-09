@@ -1,0 +1,28 @@
+{
+  "address": "Xã Đoàn Kết, Huyện Thanh Miện, Tỉnh Hải Dương",
+  "ellapsedInMs": 6605,
+  "estimatedCost": 0.0028291999999999996,
+  "thought": "**Analyzing the Address Transformation**\n\nOkay, so the user needs to find the new administrative unit for \"Xã Đoàn Kết, Huyện Thanh Miện, Tỉnh Hải Dương.\"  My thought process starts by dissecting this. First, I need to isolate the old province and ward: \"Tỉnh Hải Dương\" and \"Xã Đoàn Kết.\"  Then, I need to address the likely province mergers that have happened.\n\nI know I need to consult the document covering province mergers, specifically \"60-NQ/TW\".  Bingo!  This confirms that \"Tỉnh Hải Dương\" was merged into \"Thành phố Hải Phòng.\"\n\nNow, I need to look for \"Xã Đoàn Kết\" within the resolutions related to the new province, Hải Phòng.  The document to consult is \"1669/NQ-UBTVQH15,\" which is about the rearrangement of ward-level units in Hải Phòng. I'll meticulously go through that resolution.\n\nI find a key line! It says, \"106. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tân Trào (huyện Thanh Miện), Ngô Quyền và Đoàn Kết thành xã mới có tên gọi là **xã Hải Hưng**.\"  This is fantastic! \"Đoàn Kết\" is specifically mentioned, and crucially, it's associated with \"huyện Thanh Miện\" - the district in the original address. This is a very strong match.\n\nTherefore, the new ward is \"xã Hải Hưng\". Now, I must find its unique identifier and the name of the new province in the list of \"New wards.\"  I have the following data: `{\"ward_code\":\"11257\",\"ward_name\":\"Xã Hải Hưng\",\"province_name\":\"Thành phố Hải Phòng\"}`.\n\nI feel very confident in this answer, given the direct match and the specificity to the original district. I will now assemble this data into the correct JSON output for the user.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Hải Dương và thành phố Hải Phòng, lấy tên là thành phố Hải Phòng"
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "11257",
+      "ward_name": "Xã Hải Hưng"
+    },
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "106. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tân Trào (huyện Thanh Miện), Ngô Quyền và Đoàn Kết thành xã mới có tên gọi là xã Hải Hưng."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "11257",
+      "ward_name": "Xã Hải Hưng"
+    }
+  ]
+}

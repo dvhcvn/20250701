@@ -1,0 +1,28 @@
+{
+  "address": "Phường Điện Minh, Thị xã Điện Bàn, Tỉnh Quảng Nam",
+  "ellapsedInMs": 5906,
+  "estimatedCost": 0.0023217,
+  "thought": "**My Analysis of the Address Mapping Request**\n\nOkay, so I'm presented with a task: to map an old address (\"Tỉnh Quảng Nam\", \"Phường Điện Minh\") to a new administrative structure. My approach is pretty straightforward, leveraging my knowledge of the relevant administrative reorganizations in Vietnam.\n\nFirst, I identified the key elements: the old province and ward. Then, I dug into my data to see if \"Tỉnh Quảng Nam\" had undergone any name changes or mergers. And sure enough, Resolution 60-NQ/TW revealed the merger with Đà Nẵng, resulting in \"Thành phố Đà Nẵng\". That's my first key piece of information.\n\nNext, I looked specifically at \"Phường Điện Minh\". My focus was on the \"Other resolutions\" data, as that's where ward-level changes are documented. And bingo! Resolution 1659/NQ-UBTVQH15, concerning Đà Nẵng's administrative adjustments, clearly spells it out: \"Phường Điện Minh\" is being *merged* with others to form \"Phường Điện Bàn\". Specifically, this is line 17 of that document.\n\nTo be extra certain, I then cross-referenced this with my \"New wards\" list, verifying the existence of \"Phường Điện Bàn\" and its province. The data confirms the province is indeed \"Thành phố Đà Nẵng\" and that \"Phường Điện Bàn\" has a code of \"20551\". Perfect match!\n\nBased on this, I'm confident in constructing the output: \"Thành phố Đà Nẵng\" as the new province, \"Phường Điện Bàn\" with code \"20551\" as the new ward. The `citation` will accurately reflect the resolution and line I used. Given the direct and clear nature of the resolution, the `confidence` level will be high. This analysis is straightforward and definitive.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Quảng Nam và thành phố Đà Nẵng, lấy tên là thành phố Đà Nẵng"
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "20551",
+      "ward_name": "Phường Điện Bàn"
+    },
+    {
+      "citation": {
+        "header": "1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng",
+        "line": "17. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Điện Phương, Điện Minh và Vĩnh Điện thành phường mới có tên gọi là phường Điện Bàn."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "20551",
+      "ward_name": "Phường Điện Bàn"
+    }
+  ]
+}

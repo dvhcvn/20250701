@@ -1,0 +1,18 @@
+{
+  "address": "Xã Hàm Minh, Huyện Hàm Thuận Nam, Tỉnh Bình Thuận",
+  "ellapsedInMs": 7116,
+  "estimatedCost": 0.0025470999999999996,
+  "thought": "**My Approach to Mapping an Old Vietnamese Address**\n\nOkay, I'm tackling this Vietnamese address mapping task. I've got an old address with the ward \"Xã Hàm Minh,\" district \"Huyện Hàm Thuận Nam\" (although I understand we're eliminating districts for the output), and province \"Tỉnh Bình Thuận.\" My goal is to find the corresponding new administrative units.\n\nFirst, I need to understand the historical context. I know there have been province-level changes, so I immediately head to the province resolutions. Specifically, I'm interested in resolutions like 60-NQ/TW. Bingo! I find point 14, which says that \"Tỉnh Bình Thuận\" merged with other provinces to form \"Tỉnh Lâm Đồng.\" This is key information.\n\nNext, I look for resolutions that deal with reorganizing the wards within \"Tỉnh Lâm Đồng,\" such as resolution 1671/NQ-UBTVQH15. I carefully scan this resolution for mentions of \"Xã Hàm Minh.\" And there it is! Line 62 explicitly states that \"Xã Hàm Minh\" is merged with a few others to form a new ward called \"Xã Hàm Thuận Nam.\" Perfect!\n\nNow, I cross-reference this finding with my \"New wards\" data. I check for \"Xã Hàm Thuận Nam\" and, sure enough, it exists with the code \"23110\" and province \"Tỉnh Lâm Đồng.\" The province name confirms the merger mentioned in the resolution.\n\nBased on this, I'm confident about the mapping. I'll construct my JSON output with the appropriate citation from the resolution, mark the confidence as \"high,\" and output \"Tỉnh Lâm Đồng\" as the new province name, and \"23110\" and \"Xã Hàm Thuận Nam\" as the ward code and name respectively.\n\nI also considered potential ambiguities. I checked other parts of the resolution where \"Huyện Hàm Thuận Nam\" was mentioned, but they were not connected to \"Xã Hàm Minh\". I also found another new ward called \"Xã Hàm Thuận\", but there was no direct mapping from \"Xã Hàm Minh\" to that ward in the resolutions.\n\nTherefore, \"Xã Hàm Thuận Nam\" is the only and correct mapping with a high degree of confidence.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng",
+        "line": "62. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Thuận Nam và xã Hàm Minh thành xã mới có tên gọi là xã Hàm Thuận Nam."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "23110",
+      "ward_name": "Xã Hàm Thuận Nam"
+    }
+  ]
+}

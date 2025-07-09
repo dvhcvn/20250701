@@ -1,0 +1,28 @@
+{
+  "address": "Xã Yến Dương, Huyện Ba Bể, Tỉnh Bắc Kạn",
+  "ellapsedInMs": 8107,
+  "estimatedCost": 0.0032002999999999997,
+  "thought": "**Identifying the New Administrative Unit**\n\nOkay, so I'm presented with an old address: \"Xã Yến Dương, Huyện Ba Bể, Tỉnh Bắc Kạn\".  My goal is to figure out the current administrative unit. First, I need to focus on the province: \"Tỉnh Bắc Kạn\". Based on my knowledge of the region and recent administrative changes, I recall that Bắc Kạn was *not* kept as an independent province. A quick check of province resolutions (specifically, 60-NQ/TW) confirms my suspicion – it merged with Thái Nguyên, becoming \"Tỉnh Thái Nguyên\".\n\nNow, I zero in on \"Xã Yến Dương\".  I'll scour \"Other resolutions\" for mentions of this specific xã, within the context of either the old Bắc Kạn or the current Thái Nguyên. And bingo!  Resolution 1683/NQ-UBTVQH15, concerning administrative adjustments in Thái Nguyên, contains the key. Line 48 is crucial: it explicitly states that \"Xã Yến Dương\", along with Chu Hương and Mỹ Phương, *merged* into a new ward called \"**xã Thượng Minh**\".\n\nNext, I need to confirm the details of this new ward.  A quick look at the \"New wards\" data confirms the following: `\"ward_code\":\"01921\",\"ward_name\":\"Xã Thượng Minh\",\"province_name\":\"Tỉnh Thái Nguyên\"`.  Perfect.\n\nTherefore, the updated output is clear: the new ward is \"Xã Thượng Minh\" in \"Tỉnh Thái Nguyên\". The code associated is \"01921\". The relevant source is the resolution 1683/NQ-UBTVQH15. I'd confidently assign this a \"high\" confidence level because the resolution provides a direct and explicit merge.\n\nI'll double-check to be sure, of course. I can quickly scan for \"Xã Yến Dương\" mentions in other resolutions to avoid any confusion. I see references in Ninh Bình, Phú Thọ, and Thanh Hóa - but those are distinct and irrelevant. All signs point to the same conclusion: Xã Thượng Minh.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Bắc Kạn và tỉnh Thái Nguyên, lấy tên là tỉnh Thái Nguyên"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thái Nguyên",
+      "ward_code": "01921",
+      "ward_name": "Xã Thượng Minh"
+    },
+    {
+      "citation": {
+        "header": "1683/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thái Nguyên",
+        "line": "48. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Yến Dương, Chu Hương và Mỹ Phương thành xã mới có tên gọi là xã Thượng Minh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thái Nguyên",
+      "ward_code": "01921",
+      "ward_name": "Xã Thượng Minh"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Đăng Hưng Phước, Huyện Chợ Gạo, Tỉnh Tiền Giang",
+  "ellapsedInMs": 7317,
+  "estimatedCost": 0.0026027,
+  "thought": "**Mapping Old Vietnamese Addresses: My Approach**\n\nOkay, so I'm presented with an address: \"Xã Đăng Hưng Phước, Huyện Chợ Gạo, Tỉnh Tiền Giang\" and I need to map it to the *new* administrative units. I'm focusing on the \"Xã\" (ward) and \"Tỉnh\" (province) as requested, ignoring the district.\n\nFirst things first, I note the old province and ward: \"Tỉnh Tiền Giang\" and \"Xã Đăng Hưng Phước,\" respectively.\n\nNow, the province merger is the key here. I consult those province resolutions and immediately find that \"Tỉnh Tiền Giang\" merged into \"Tỉnh Đồng Tháp\" according to resolution 60-NQ/TW. This establishes my new province.\n\nNext, the ward. I need to find the fate of \"Xã Đăng Hưng Phước\". I turn to resolution 1663/NQ-UBTVQH15, a resolution specific to the reorganization of Đồng Tháp, which now incorporates Tiền Giang.  I pore over the lines of the resolution, and there it is: line 67. It explicitly states that \"Xã Đăng Hưng Phước\" has been merged with other wards to form the new \"Xã Tân Thuận Bình\". Perfect! This directly links the old ward to a new ward.\n\nThe final step is to validate this new ward within the updated data. I search for \"Xã Tân Thuận Bình\" with the correct province, \"Tỉnh Đồng Tháp\", in my \"New Wards\" dataset. And yes, there it is: a clean match. This data provides the specific ward code, confirming the mapping.\n\nFrom all of this, I can confidently assemble the output.  My \"confidence\" will be high since the mapping is based on a clear direct mention of the old ward in a valid resolution. I am ready to construct the JSON array, providing all the relevant details. The district is not relevant for this, and will not be present in the output. This approach allows me to accurately map an old ward to its new corresponding administrative unit.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1663/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Tháp",
+        "line": "67. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đăng Hưng Phước, Quơn Long và Tân Thuận Bình thành xã mới có tên gọi là xã Tân Thuận Bình."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đồng Tháp",
+      "ward_code": "28627",
+      "ward_name": "Xã Tân Thuận Bình"
+    }
+  ]
+}

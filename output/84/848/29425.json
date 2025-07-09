@@ -1,0 +1,28 @@
+{
+  "address": "Xã Mỹ Long Nam, Huyện Cầu Ngang, Tỉnh Trà Vinh",
+  "ellapsedInMs": 5608,
+  "estimatedCost": 0.0021360999999999997,
+  "thought": "**Mapping an Old Vietnamese Address to New Units**\n\nOkay, so I'm presented with an old Vietnamese address: Xã Mỹ Long Nam, Huyện Cầu Ngang, Tỉnh Trà Vinh. My task is to figure out the corresponding new administrative units. Let's break this down.\n\nFirst, I identify the components of the old address. I've got the ward, district, and province. Then, I need to start digging through resolutions and datasets.\n\nThe initial step is to understand if there's been any province-level re-organization. I checked Resolution 60-NQ/TW and, sure enough, it mentions the merger of Trà Vinh into Vĩnh Long. So, immediately, I know \"Tỉnh Trà Vinh\" is now part of \"Tỉnh Vĩnh Long\". That's key.\n\nNext, I need to look into whether the ward itself has been affected. I turn to Resolution 1687/NQ-UBTVQH15, a resolution focused on the \"tỉnh Vĩnh Long\" region.  This is highly relevant given the province merger. I carefully search through it, and bingo! Line 46 explicitly states that \"Xã Mỹ Long Nam\" is being merged with other units to form the new ward, \"Xã Mỹ Long.\" Perfect.\n\nNow, I verify this new ward in the new ward data. I search for \"Xã Mỹ Long\" within \"Tỉnh Vĩnh Long,\" and I quickly find a match. The entry {\"ward_code\":\"29419\",\"ward_name\":\"Xã Mỹ Long\",\"province_name\":\"Tỉnh Vĩnh Long\"} confirms this.\n\nGiven these findings, I can confidently construct the JSON output: the old \"Xã Mỹ Long Nam\" is definitively merged into \"Xã Mỹ Long,\" the province transformation is from Trà Vinh to Vĩnh Long, and the new ward code and name are confirmed. The confidence level here is high, because the resolutions provide very clear and explicit information.  Everything aligns perfectly.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Bến Tre, tỉnh Vĩnh Long và tỉnh Trà Vinh; lấy tên là tỉnh Vĩnh Long"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "29419",
+      "ward_name": "Xã Mỹ Long"
+    },
+    {
+      "citation": {
+        "header": "1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long",
+        "line": "Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Mỹ Long, xã Mỹ Long Bắc và xã Mỹ Long Nam thành xã mới có tên gọi là xã Mỹ Long."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "29419",
+      "ward_name": "Xã Mỹ Long"
+    }
+  ]
+}

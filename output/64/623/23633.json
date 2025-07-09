@@ -1,0 +1,18 @@
+{
+  "address": "Phường Ngô Mây, Thị xã An Khê, Tỉnh Gia Lai",
+  "ellapsedInMs": 8401,
+  "estimatedCost": 0.0037198,
+  "thought": "**Analysis of Administrative Unit Change for \"Phường Ngô Mây, Thị xã An Khê, Tỉnh Gia Lai\"**\n\nOkay, here's how I'm approaching this. The user wants the new administrative unit for the old address \"Phường Ngô Mây, Thị xã An Khê, Tỉnh Gia Lai\".  Given my expertise in these matters, the first step, as always, is to identify the province; it's clear from the input, \"Tỉnh Gia Lai\".\n\nNext, I'll consult the relevant province resolutions, specifically 60-NQ/TW. This establishes that Gia Lai remains Gia Lai, although it merged with Bình Định, which doesn't directly influence this particular case. The `province_name` in the output will simply be \"Tỉnh Gia Lai\".\n\nNow comes the crucial part: searching for \"Phường Ngô Mây\" within \"Tỉnh Gia Lai\". I'm focusing on \"Other resolutions,\" particularly 1664/NQ-UBTVQH15, concerning the restructuring of administrative units.  I scanned the relevant lines.\n\nLine 105 mentions \"phường Ngô Mây,\" but immediately specifies \"(thành phố Quy Nhơn)\". Since the input address is in \"Thị xã An Khê,\" I quickly dismiss this as irrelevant.\n\nHowever, line 124 is the jackpot! It states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân của phường Ngô Mây và phường Tây Sơn (thị xã An Khê), các phường An Phú, An Phước, An Tân và xã Thành An thành phường mới có tên gọi là **phường An Khê**.\"  This *exactly* matches the input address \"Phường Ngô Mây, Thị xã An Khê\". This means \"Phường Ngô Mây\" is *now* part of the new ward, \"Phường An Khê\".\n\nTo confirm this, I cross-reference with the \"New wards\" data. Searching for \"phường An Khê\" within \"Tỉnh Gia Lai\", I get a perfect match: `{\"ward_code\":\"23617\",\"ward_name\":\"Phường An Khê\",\"province_name\":\"Tỉnh Gia Lai\"}`.\n\nTherefore, the final output is straightforward:\n\n*   `province_name`: \"Tỉnh Gia Lai\"\n*   `ward_name`: \"Phường An Khê\"\n*   `ward_code`: \"23617\"\n*   `citation`:\n    *   `header`: \"1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai\"\n    *   `line`: \"124. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân của phường Ngô Mây và phường Tây Sơn (thị xã An Khê), các phường An Phú, An Phước, An Tân và xã Thành An thành phường mới có tên gọi là **phường An Khê**.\"\n*   `confidence`: \"high\". The match is precise and unambiguous.\n\nI double-checked for any other instances of \"Phường Ngô Mây\" in Gia Lai in the resolution, and it confirmed my findings: Line 124 is the *only* relevant entry. This should be a reliable answer.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai",
+        "line": "124. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân của phường Ngô Mây và phường Tây Sơn (thị xã An Khê), các phường An Phú, An Phước, An Tân và xã Thành An thành phường mới có tên gọi là **phường An Khê**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "23617",
+      "ward_name": "Phường An Khê"
+    }
+  ]
+}

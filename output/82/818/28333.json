@@ -1,0 +1,18 @@
+{
+  "address": "Xã Thạnh Hoà, Huyện Tân Phước, Tỉnh Tiền Giang",
+  "ellapsedInMs": 8492,
+  "estimatedCost": 0.004291499999999999,
+  "thought": "**Determining the New Administrative Unit for \"Xã Thạnh Hoà, Huyện Tân Phước, Tỉnh Tiền Giang\"**\n\nOkay, let's break this down. First, I see the old address: \"Xã Thạnh Hoà, Huyện Tân Phước, Tỉnh Tiền Giang\". My initial task is to identify the new administrative unit(s) for this.\n\nI start by identifying the province, \"Tỉnh Tiền Giang.\" Then, a quick check of the relevant resolutions reveals that \"Tỉnh Tiền Giang\" was merged with another province, becoming \"Tỉnh Đồng Tháp\" according to `60-NQ/TW`.\n\nNow, the focus shifts to \"Tỉnh Đồng Tháp,\" and I need to find \"Xã Thạnh Hoà\" and \"Huyện Tân Phước\" within the context of the new province. Examining the provided resolutions, I hone in on `1663/NQ-UBTVQH15`, which seems to be the key for rearranging administrative units in Đồng Tháp.\n\nI carefully scan the lines of that resolution. Line 54, I note, doesn't match, mentioning \"Thạnh Mỹ\" instead. Then, bingo! Line 55 pops up:  \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Thạnh Tân, **Thạnh Hòa** và Tân Hòa Tây thành xã mới có tên gọi là **xã Tân Phước 2**.\" This is a direct hit! The old ward \"Thạnh Hoà\" is explicitly mentioned, along with the district, and mapped to the new \"Xã Tân Phước 2\". The context of the other lines (56, 57) in the resolution, and their reference to \"Tân Phước\" further supports this match. Line 57 mentioning \"Hưng Thạnh (huyện Tân Phước)\", confirms that \"Huyện Tân Phước\" exists in the context, and by association, the new Xã Tân Phước 2 is likely formed from the former district.\n\nSo, the next step is straightforward: find the `ward_code` for \"Xã Tân Phước 2\" within the `New wards` data, which should be pretty easy. I know the general structure of these datasets.  The lookup returns: `{\"ward_code\":\"28327\",\"ward_name\":\"Xã Tân Phước 2\",\"province_name\":\"Tỉnh Đồng Tháp\"}`.\n\nFinally, I'll package this information into a JSON. The `province_name` will be \"Tỉnh Đồng Tháp.\" The `ward_name` is \"Xã Tân Phước 2,\" and the `ward_code` is \"28327.\"  The `citation` will be from `1663/NQ-UBTVQH15`, specifically line 55. Considering the direct match and the context of the district, my `confidence` in this result is \"high.\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1663/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Tháp",
+        "line": "55. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Thạnh Tân, Thạnh Hòa và Tân Hòa Tây thành xã mới có tên gọi là xã Tân Phước 2."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đồng Tháp",
+      "ward_code": "28327",
+      "ward_name": "Xã Tân Phước 2"
+    }
+  ]
+}

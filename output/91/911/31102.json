@@ -1,0 +1,18 @@
+{
+  "address": "Xã Bãi Thơm, Thành phố Phú Quốc, Tỉnh Kiên Giang",
+  "ellapsedInMs": 6725,
+  "estimatedCost": 0.0024473000000000003,
+  "thought": "**Address Mapping Analysis: Xã Bãi Thơm, Phú Quốc, Kiên Giang**\n\nOkay, let's break this down. My task is to map this old address (\"Xã Bãi Thơm, Phú Quốc, Kiên Giang\") to its new administrative unit, considering the resolutions and the provided new ward data. This seems straightforward, but attention to detail is crucial.\n\nFirst, I need to identify the components: \"Xã Bãi Thơm\" (the ward), \"Thành phố Phú Quốc\" (the district - even though the prompt mentions eliminating districts, it's still part of the original address and contextually relevant), and \"Tỉnh Kiên Giang\" (the province).\n\nNow, let's analyze the resolutions. Resolution 60-NQ/TW is my starting point for provincial changes.  I'll look specifically in the section detailing \"Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất\".  Aha!  I see it: \"Hợp nhất tỉnh An Giang và tỉnh Kiên Giang, lấy tên là tỉnh An Giang.\" So, \"Tỉnh Kiên Giang\" is now \"Tỉnh An Giang.\" That's the first key piece of information.\n\nNext, I turn to Resolution 1654/NQ-UBTVQH15.  My focus is \"Xã Bãi Thơm\".  Scanning the resolution, I'm looking for direct mentions.  Bingo!  The resolution states that \"Xã Bãi Thơm\", along with several other wards, is being combined to form \"đặc khu Phú Quốc\".  This is crucial.\n\nNow, I cross-reference this with the new ward data.  I have `{\"ward_code\":\"31078\",\"ward_name\":\"Đặc khu Phú Quốc\",\"province_name\":\"Tỉnh An Giang\"}`.  The `ward_name` \"Đặc khu Phú Quốc\" perfectly matches what was defined in the resolution. And the `province_name` \"Tỉnh An Giang\" also aligns with what I established earlier from Resolution 60-NQ/TW.\n\nTherefore, this mapping is remarkably clear. The old \"Xã Bãi Thơm\" is directly transformed into the new \"Đặc khu Phú Quốc\", now part of the province \"Tỉnh An Giang\". The resolution provides the necessary evidence, and the new data confirms the structure. I can confidently construct my JSON output.  The citation will include the relevant resolution information, the `confidence` will be \"high\" due to the explicit nature of the mapping, and the output will reflect the new ward code, name, and the new province, all based on the resolutions' clear directives.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1654/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh An Giang",
+        "line": "95. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Dương Đông, phường An Thới và các xã Dương Tơ, Hàm Ninh, Cửa Dương, Bãi Thơm, Gành Dầu, Cửa Cạn thành đặc khu có tên gọi là đặc khu Phú Quốc."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh An Giang",
+      "ward_code": "31078",
+      "ward_name": "Đặc khu Phú Quốc"
+    }
+  ]
+}

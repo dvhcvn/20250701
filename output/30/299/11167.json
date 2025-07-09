@@ -1,0 +1,18 @@
+{
+  "address": "Xã Đức Phúc, Huyện Ninh Giang, Tỉnh Hải Dương",
+  "ellapsedInMs": 7750,
+  "estimatedCost": 0.0028125999999999997,
+  "thought": "**Analyzing the Address Mapping Request**\n\nOkay, so I'm presented with a request to map an old Vietnamese address to its new equivalent. My first task is always to dissect the components. I see \"Tỉnh Hải Dương\" (Hai Duong Province) and \"Xã Đức Phúc\" (Duc Phuc Commune), and I need to figure out how these have transformed.\n\nI know the first key is understanding province mergers. I immediately recall Resolution 60-NQ/TW, which specifically states that Hai Duong Province merged with Hai Phong City to form Hai Phong City. So, \"Tỉnh Hải Dương\" is now definitively \"Thành phố Hải Phòng\" (Hai Phong City). That's a solid start.\n\nNext, I need to pinpoint \"Xã Đức Phúc\" within the new administrative structure. Since the prompt implies district-level units are being eliminated, the old district (\"Huyện Ninh Giang\") is primarily contextual to help me navigate the resolutions.\n\nI'll start by focusing on resolutions related to Hai Phong City. I'm going through the provided list of \"Other resolutions\" and immediately my attention is drawn to `1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng`. This seems like a perfect match!\n\nScanning through this resolution, I get to line 102. Bingo! It explicitly states the merger of \"Xã Tân Phong (huyện Ninh Giang), An Đức and Đức Phúc thành xã mới có tên gọi là **xã Tân An**.\" This resolution is the key to the solution. It confirms that \"Xã Đức Phúc\" is now part of the new ward, \"Xã Tân An,\" along with other communes.\n\nNow, I cross-reference this information with the \"New wards\" list to confirm. There it is: `{\"ward_code\":\"11167\",\"ward_name\":\"Xã Tân An\",\"province_name\":\"Thành phố Hải Phòng\"}`. The province matches, the ward name matches, and I have the ward code.\n\nTo be absolutely certain, I will quickly scan the rest of resolution 1669/NQ-UBTVQH15, looking for other instances of \"Đức Phúc\" or \"Ninh Giang\". I find other merging wards and communes, but nothing conflicts with my understanding of where Đức Phúc fits.\n\nTherefore, my final output will be a JSON structure containing:\n\n*   `province_name`: \"Thành phố Hải Phòng\" (Hai Phong City)\n*   `ward_name`: \"Xã Tân An\"\n*   `ward_code`: \"11167\"\n*   A `citation` section referencing line 102 of resolution 1669/NQ-UBTVQH15.\n*   A `confidence` level of \"high\" because of the direct and unambiguous mapping confirmed by the resolution.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "102. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tân Phong (huyện Ninh Giang), An Đức và Đức Phúc thành xã mới có tên gọi là xã Tân An."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "11167",
+      "ward_name": "Xã Tân An"
+    }
+  ]
+}

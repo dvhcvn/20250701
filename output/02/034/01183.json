@@ -1,0 +1,28 @@
+{
+  "address": "Xã Việt Vinh, Huyện Bắc Quang, Tỉnh Hà Giang",
+  "ellapsedInMs": 5913,
+  "estimatedCost": 0.0020375999999999997,
+  "thought": "**My Reasoning for Mapping the Old Address**\n\nOkay, so I'm being asked to figure out where \"Xã Việt Vinh, Huyện Bắc Quang, Tỉnh Hà Giang\" is now, given some administrative restructuring. My approach is pretty straightforward, leveraging my knowledge of these kinds of changes.\n\nFirst, I identified \"Tỉnh Hà Giang\" as the old province. Then, I dug into those province resolutions – particularly, that crucial 60-NQ/TW document. Bingo! It mentions the merger of \"Tỉnh Tuyên Quang\" and \"Tỉnh Hà Giang\" into \"Tỉnh Tuyên Quang\". This tells me my new province is now \"Tuyên Quang\".\n\nNext up, I had to pin down \"Xã Việt Vinh\". Time to search through those \"Other resolutions\". And there it was, right in \"1684/NQ-UBTVQH15\"! Line 82 explicitly states that \"Xã Việt Vinh\" was merged, along with \"thị trấn Việt Quang\" and \"xã Quang Minh\", to form a new \"xã Bắc Quang\". That's a direct hit!\n\nFinally, I just double-checked the \"New wards\" data for \"xã Bắc Quang\" in \"Tỉnh Tuyên Quang\".  The JSON entry confirmed it:  `{\"ward_code\":\"01153\",\"ward_name\":\"Xã Bắc Quang\",\"province_name\":\"Tỉnh Tuyên Quang\"}`. Everything aligns perfectly.\n\nSo, bottom line: \"Xã Việt Vinh\" in the old \"Tỉnh Hà Giang\" is now \"Xã Bắc Quang\" in \"Tỉnh Tuyên Quang\".  I'm very confident in this answer; the resolution was definitive about the merger.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "1. Hợp nhất tỉnh Tuyên Quang và tỉnh Hà Giang, lấy tên là tỉnh Tuyên Quang"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "01153",
+      "ward_name": "Xã Bắc Quang"
+    },
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "82. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấnViệt Quang, xã Quang Minh và xã Việt Vinh thành xã mới có tên gọi là xã Bắc Quang."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "01153",
+      "ward_name": "Xã Bắc Quang"
+    }
+  ]
+}

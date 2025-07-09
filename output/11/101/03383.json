@@ -1,0 +1,18 @@
+{
+  "address": "Xã Pú Hồng, Huyện Điện Biên Đông, Tỉnh Điện Biên",
+  "ellapsedInMs": 6228,
+  "estimatedCost": 0.0024735,
+  "thought": "**Finding the New Administrative Unit for \"Xã Pú Hồng\"**\n\nOkay, here's what I've got. The user wants to find the new ward for the old address \"Xã Pú Hồng, Huyện Điện Biên Đông, Tỉnh Điện Biên\".  My first step is to establish the current context.  \"Tỉnh Điện Biên\" is the province, and I need to see if any province mergers are relevant.  Checking resolution `60-NQ/TW`, it's clear that \"Tỉnh Điện Biên\" isn't merging with anything, so that's simple enough.\n\nNext, I need to pinpoint what happened to \"Xã Pú Hồng\".  I've reviewed the \"Other resolutions\" focusing on anything about \"Xã Pú Hồng\". Resolution `1661/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Điện Biên` holds the key.  Specifically, item 42 of that resolution states it: *merges \"Xã Pú Hồng\" with \"Xã Phình Giàng\" to form the new unit with the same name.*  That's pretty conclusive, which gives me high confidence in this determination.\n\nNow, I look for \"Xã Phình Giàng\" in my \"New wards\" data.  I found the corresponding entry: `{\"ward_code\":\"03382\",\"ward_name\":\"Xã Phình Giàng\",\"province_name\":\"Tỉnh Điện Biên\"}`.  That gives me the `ward_code`, `ward_name`, and the confirming province.\n\nFinally, I can construct the JSON output.  The citation comes from resolution `1661/NQ-UBTVQH15`, specifically line 42. I'm setting the `confidence` to \"high\" based on the explicit language in the resolution.  The `province_name`, `ward_code`, and `ward_name` all come directly from the new ward data.  This is a very clean match.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1661/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Điện Biên",
+        "line": "42. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Pú Hồng và xã Phình Giàng thành xã mới có tên gọi là xã Phình Giàng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Điện Biên",
+      "ward_code": "03382",
+      "ward_name": "Xã Phình Giàng"
+    }
+  ]
+}

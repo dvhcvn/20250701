@@ -1,0 +1,18 @@
+{
+  "address": "Xã Trường Hà, Huyện Hà Quảng, Tỉnh Cao Bằng",
+  "ellapsedInMs": 8798,
+  "estimatedCost": 0.0027874,
+  "thought": "**Analyzing the Address Transformation: Xã Trường Hà, Cao Bằng**\n\nOkay, so I'm presented with an old Vietnamese address, \"Xã Trường Hà, Huyện Hà Quảng, Tỉnh Cao Bằng,\" and need to map it to a new administrative unit. My initial thought process is to break down the problem step-by-step. First, I identify the address components: the ward (Xã Trường Hà), the district (Huyện Hà Quảng – although I know all districts are being eliminated, so this is mainly for contextual information from the old address), and the province (Tỉnh Cao Bằng).\n\nMy next step involves consulting the relevant resolutions. I know I need to check for province-level changes first, so I scan Resolution 60-NQ/TW. Finding \"Tỉnh Cao Bằng\" listed under those provinces *not* undergoing mergers confirms that the province remains unchanged.\n\nThen, I move onto Resolution 1657/NQ-UBTVQH15, the key resolution for \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Cao Bằng.\"  I methodically read through the lines, specifically looking for mentions of \"Xã Trường Hà\" or \"Huyện Hà Quảng.\" And bingo! Line 24 jumps out at me: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Xuân Hòa và các xã Quý Quân, Sóc Hà, Trường Hà thành xã mới có tên gọi là **xã Trường Hà**.\" This is gold! It explicitly states that Xã Trường Hà is *becoming* a *new* Xã Trường Hà, implying a direct continuation.\n\nThe context of the resolution clearly states that it's concerning Cao Bằng province. While the old district is mentioned in other lines of the resolution, the line defining the new ward explicitly links the old ward with the new one. This strongly suggests a high probability of a direct match.\n\nTo further solidify my conclusion, I consult the new ward data. There it is: `{\"ward_code\":\"01392\",\"ward_name\":\"Xã Trường Hà\",\"province_name\":\"Tỉnh Cao Bằng\"}`. It's a perfect match!  The new data confirms the existence of a ward with the identical name and within the same province as the address.\n\nTherefore, combining the information from the resolution and the new data, I can confidently state that the old Xã Trường Hà maps directly to the new \"Xã Trường Hà,\" ward code \"01392\" in Tỉnh Cao Bằng. The confidence level is high because the resolution explicitly links the *old* ward to the *new* ward by name. My final JSON output will reflect this high confidence mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1657/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Cao Bằng",
+        "line": "24. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Xuân Hòa và các xãQuý Quân, Sóc Hà,Trường Hàthành xã mới có tên gọi là **xã Trường Hà**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Cao Bằng",
+      "ward_code": "01392",
+      "ward_name": "Xã Trường Hà"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Liêm Túc, Huyện Thanh Liêm, Tỉnh Hà Nam",
+  "ellapsedInMs": 5813,
+  "estimatedCost": 0.0019657,
+  "thought": "**My Analysis of the Administrative Address Mapping Request**\n\nOkay, so I'm presented with a task: map an old address, specifically \"Tỉnh Hà Nam\" and \"Xã Liêm Túc,\" to the current administrative structure. My first thought is to break this down logically. I need to trace this address through the changes, using the provided resolutions and new ward data.\n\nFirst, the province. I see \"Tỉnh Hà Nam\" and immediately consult the province resolutions. Resolution 60-NQ/TW states a merger: \"Hợp nhất tỉnh Hà Nam, tỉnh Ninh Bình và tỉnh Nam Định; lấy tên là tỉnh Ninh Bình.\"  Easy enough, \"Tỉnh Hà Nam\" becomes \"Tỉnh Ninh Bình.\"\n\nNext, the ward \"Xã Liêm Túc.\"  I then go to the specific resolutions concerning ward-level changes. Resolution 1674/NQ-UBTVQH15 catches my eye. Looking deeper, I see a key line: \"8. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Liêm Sơn, Liêm Thuận và Liêm Túc thành xã mới có tên gọi là **xã Thanh Bình**.\"  Bingo! \"Xã Liêm Túc\" is explicitly merged into \"Xã Thanh Bình.\"\n\nNow, I check the new ward data to solidify the association. I see the entry: `{\"ward_code\":\"13483\",\"ward_name\":\"Xã Thanh Bình\",\"province_name\":\"Tỉnh Ninh Bình\"}`. This perfectly aligns with my findings: the new ward name and the new province name match my deductions.  There's also another ward, \"Xã Thanh Liêm\", but there's no evidence of \"Xã Liêm Túc\" being included.\n\nWith the analysis complete, the resulting JSON output will be straightforward:\n*   `province_name`: \"Tỉnh Ninh Bình\"\n*   `ward_name`: \"Xã Thanh Bình\"\n*   `ward_code`: \"13483\"\n\nThe output will include a citation directly referencing resolution 1674/NQ-UBTVQH15, specifically the line \"8. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Liêm Sơn, Liêm Thuận và Liêm Túc thành xã mới có tên gọi là **xã Thanh Bình**.\" And finally, with such direct evidence, I'd assign a \"high\" confidence level to the mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "8. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Liêm Sơn, Liêm Thuận và Liêm Túc thành xã mới có tên gọi là xã Thanh Bình."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "13483",
+      "ward_name": "Xã Thanh Bình"
+    }
+  ]
+}

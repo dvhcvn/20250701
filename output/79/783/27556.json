@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tân Thông Hội, Huyện Củ Chi, Thành phố Hồ Chí Minh",
+  "ellapsedInMs": 6131,
+  "estimatedCost": 0.0023252,
+  "thought": "**Determining the New Ward for the Given Address**\n\nOkay, so I've been tasked with figuring out the new ward for \"Xã Tân Thông Hội, Huyện Củ Chi, Thành phố Hồ Chí Minh.\"  My first step, as always, is to dive into the official resolutions and the list of new administrative units.\n\nI immediately checked the province-level resolutions (60-NQ/TW).  These confirm that Ho Chi Minh City (\"Thành phố Hồ Chí Minh\") isn't subject to any mergers or name changes, which aligns perfectly with the input address.  That's a good starting point.\n\nNext, I zeroed in on the critical document: 1685/NQ-UBTVQH15. I scanned this resolution line-by-line, and there it was, on line 123! It's crystal clear: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tân Phú Trung, **Tân Thông Hội** và Phước Vĩnh An thành xã mới có tên gọi là **xã Củ Chi**.\" Boom! That's a direct hit.  \"Tân Thông Hội\" is being absorbed into the new ward, \"xã Củ Chi.\"\n\nTo solidify this, I cross-referenced this information with the list of new wards. Sure enough, there's an entry: `{\"ward_code\":\"27553\",\"ward_name\":\"Xã Củ Chi\",\"province_name\":\"Thành phố Hồ Chí Minh\"}`.  It's a perfect match.\n\nBased on this clear and concise evidence, I'm supremely confident in my findings. The resolution explicitly merges \"Xã Tân Thông Hội\" into \"xã Củ Chi.\" Therefore, the output structure I'll use is:\n\n```json\n{\n  \"province_name\": \"Thành phố Hồ Chí Minh\",\n  \"ward_name\": \"Xã Củ Chi\",\n  \"ward_code\": \"27553\",\n  \"confidence\": \"high\",\n  \"citation\": {\n    \"header\": \"1685/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của Thành phố Hồ Chí Minh\",\n    \"line\": \"123. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tân Phú Trung, Tân Thông Hội và Phước Vĩnh An thành xã mới có tên gọi là xã Củ Chi.\"\n  }\n}\n```\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1685/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của Thành phố Hồ Chí Minh",
+        "line": "123. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tân Phú Trung, Tân Thông Hội và Phước Vĩnh An thành xã mới có tên gọi là xã Củ Chi."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hồ Chí Minh",
+      "ward_code": "27553",
+      "ward_name": "Xã Củ Chi"
+    }
+  ]
+}

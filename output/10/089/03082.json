@@ -1,0 +1,18 @@
+{
+  "address": "Xã Khánh Yên Thượng, Huyện Văn Bàn, Tỉnh Lào Cai",
+  "ellapsedInMs": 7456,
+  "estimatedCost": 0.0030938,
+  "thought": "**Address Mapping Analysis for Vietnamese Administrative Units**\n\nOkay, so I'm tackling this address mapping problem. First, I need to break down the old address: \"Xã Khánh Yên Thượng,\" \"Huyện Văn Bàn,\" \"Tỉnh Lào Cai.\"  The directive is to ignore districts, but the old district, \"Huyện Văn Bàn,\" is useful for context.\n\nNow, the core of this is the resolutions and the new ward data.  I'm starting with the provincial resolutions. Checking the \"không thực hiện sáp nhập\" list, Lào Cai isn't there. Then, looking at the \"mới sau sáp nhập, hợp nhất\" list,  I see \"Hợp nhất tỉnh Lào Cai và tỉnh Yên Bái, lấy tên là tỉnh Lào Cai.\" So, the province remains \"Tỉnh Lào Cai.\"\n\nNext, I delve into the specific resolutions.  Resolution 1673/NQ-UBTVQH15, concerning \"Tỉnh Lào Cai,\" is the key.  Line 55 is the jackpot!  It explicitly states the merger of \"Xã Khánh Yên Thượng,\" along with other wards, into a new ward:  \"xã Văn Bàn.\" Bingo!\n\nI quickly dismiss Resolution 1676/NQ-UBTVQH15 because it's about Phú Thọ, not Lào Cai, even though it mentions a place called \"Văn Bán.\" That's irrelevant here.\n\nBased on Resolution 1673, the new ward *should* be \"Xã Văn Bàn\" in \"Tỉnh Lào Cai.\"  I cross-reference this with the \"New wards\" data.  The first entry, `{\"ward_code\":\"03082\",\"ward_name\":\"Xã Văn Bàn\",\"province_name\":\"Tỉnh Lào Cai\"}`, is a perfect match. I can also dismiss the other options, as they are either an old ward name mentioned in the resolution as being merged or they are located in Phú Thọ, not Lào Cai.\n\nTherefore, my confidence is high. The \"Xã Khánh Yên Thượng\" in \"Tỉnh Lào Cai\" is definitively mapped to the new ward \"Xã Văn Bàn\" in \"Tỉnh Lào Cai,\" as per the relevant resolution and the provided new ward data.  I'll construct the JSON output accordingly.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai",
+        "line": "55. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Khánh Yên và các xã Khánh Yên Thượng, Sơn Thuỷ, Làng Giàng, Hòa Mạc thành xã mới có tên gọi là xã Văn Bàn."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "03082",
+      "ward_name": "Xã Văn Bàn"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Plei Kần, Huyện Ngọc Hồi, Tỉnh Kon Tum",
+  "ellapsedInMs": 6831,
+  "estimatedCost": 0.0025729,
+  "thought": "**My Thought Process: Mapping an Old Address to a New Administrative Unit**\n\nOkay, so the user wants to know the new equivalent of \"Thị trấn Plei Kần, Huyện Ngọc Hồi, Tỉnh Kon Tum.\"  I need to figure this out systematically. First, I identify the old province, \"Tỉnh Kon Tum.\"  Then, I check my province resolutions.  Aha! Resolution 60-NQ/TW states that \"Tỉnh Kon Tum\" was merged with \"Tỉnh Quảng Ngãi.\" So, my new province is \"Tỉnh Quảng Ngãi.\"\n\nNext, I zero in on \"Thị trấn Plei Kần.\" I need to find its new administrative unit. I search the \"Other resolutions\" data, looking for any mention of it.  Bingo! Resolution 1677/NQ-UBTVQH15 jumps out at me.  It says \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Plei Kần, xã Đăk Xú và xã Pờ Y thành xã mới có tên gọi là **xã Bờ Y**.\"  Excellent, \"Thị trấn Plei Kần\" is now part of \"xã Bờ Y.\"\n\nTo confirm, I cross-reference this with my \"New wards\" data.  I search for \"xã Bờ Y\" and find a perfect match:  `{\"ward_code\":\"23377\",\"ward_name\":\"Xã Bờ Y\",\"province_name\":\"Tỉnh Quảng Ngãi\"}`. The province name \"Tỉnh Quảng Ngãi\" aligns perfectly with what I determined earlier.  That's a strong confirmation.\n\nSince I have a direct match and the province also checks out, my confidence is very high. I'll construct the JSON output using the relevant citation from the resolution (1677/NQ-UBTVQH15).\n\nLet me just double-check for any other related resolutions. I see mentions of \"Huyện Ngọc Hồi\" and other wards, but they aren't relevant to \"Thị trấn Plei Kần,\" which is my focus. The resolution 1677/NQ-UBTVQH15 gives me the answer: \"xã Bờ Y\". My JSON output will be straightforward, containing the citation, confidence level, the new province (\"Tỉnh Quảng Ngãi\"), ward code, and ward name. There is only one candidate found with high confidence.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1677/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ngãi",
+        "line": "64. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Plei Kần, xã Đăk Xú và xã Pờ Y thành xã mới có tên gọi là xã Bờ Y."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ngãi",
+      "ward_code": "23377",
+      "ward_name": "Xã Bờ Y"
+    }
+  ]
+}

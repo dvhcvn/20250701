@@ -1,0 +1,18 @@
+{
+  "address": "Xã Thái Đô, Huyện Thái Thụy, Tỉnh Thái Bình",
+  "ellapsedInMs": 6448,
+  "estimatedCost": 0.002193,
+  "thought": "**Navigating the Administrative Unit Shift**\n\nOkay, so I'm being asked to figure out the new ward for the old address \"Xã Thái Đô, Huyện Thái Thụy, Tỉnh Thái Bình.\" My initial thought is to break this down systematically. First, I need to pinpoint the original province, which is \"Tỉnh Thái Bình.\"  Then, I'll dive into province resolutions, specifically those related to potential mergers or boundary adjustments.  I know that resolution 60-NQ/TW might be key here.  Aha, it looks like \"Tỉnh Thái Bình\" has been merged and now falls under \"Tỉnh Hưng Yên.\" This changes things slightly, but it's a critical first step.\n\nNext, I'll focus on the specific ward \"Xã Thái Đô.\" I'll need to search other relevant resolutions that detail any potential restructuring.  I'll be looking for something that covers the period around the merger and reorganization.  I immediately find Resolution \"1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên,\" which seems promising.  Looking closer, line 41 of the resolution is what I'm interested in.  Bingo! It explicitly states that \"Xã Thái Đô\" has been merged into a new ward: \"xã Đông Thái Ninh.\"\n\nNow, I'll cross-reference this information with a list of \"New wards\" for \"Tỉnh Hưng Yên.\"  This confirmation is important.  A quick check shows a match:  `{\"ward_code\":\"12943\",\"ward_name\":\"Xã Đông Thái Ninh\",\"province_name\":\"Tỉnh Hưng Yên\"}`. That's precisely what I was hoping to find.  With all the pieces in place, I can confidently construct the JSON output:\n\n```json\n{\n  \"province_name\": \"Tỉnh Hưng Yên\",\n  \"ward_name\": \"Xã Đông Thái Ninh\",\n  \"ward_code\": \"12943\",\n  \"citation\": {\n    \"header\": \"1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên\",\n    \"line\": \"41. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Mỹ Lộc, Tân Học, Thái Đô và Thái Xuyên thành xã mới có tên gọi là xã Đông Thái Ninh.\"\n  },\n  \"confidence\": \"high\"\n}\n```\n\nThe \"high\" confidence level is justified because the mapping is direct and clear, supported by the specific resolution and line that details the exact ward merger. I'm quite sure this is the correct new ward for the given old address.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên",
+        "line": "41. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Mỹ Lộc, Tân Học, Thái Đô và Thái Xuyên thành xã mới có tên gọi là xã Đông Thái Ninh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "12943",
+      "ward_name": "Xã Đông Thái Ninh"
+    }
+  ]
+}

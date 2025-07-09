@@ -1,0 +1,18 @@
+{
+  "address": "Xã Hồng An, Huyện Bảo Lạc, Tỉnh Cao Bằng",
+  "ellapsedInMs": 9426,
+  "estimatedCost": 0.0034132999999999998,
+  "thought": "**Analyzing the Address and Determining the New Administrative Unit**\n\nOkay, so I've got this old address: \"Xã Hồng An, Huyện Bảo Lạc, Tỉnh Cao Bằng.\" My task is to figure out the new administrative unit. First, I identify the province: \"Tỉnh Cao Bằng.\" Thankfully, resolution 60-NQ/TW states that Cao Bằng isn't undergoing any province-level mergers, so that's straightforward.\n\nNext, I zero in on the ward: \"Xã Hồng An.\" The key here is to scour the relevant resolutions for any changes affecting wards within \"Tỉnh Cao Bằng\" or specifically \"Huyện Bảo Lạc.\" I started with 1657/NQ-UBTVQH15, which deals with ward rearrangements in Cao Bằng.\n\nI went line-by-line through that resolution, meticulously checking. Lines 7, 8, 11, and 12, each dealt with specific combinations of wards merging. Bingo! Line 12 explicitly states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Hồng An và xã Xuân Trường thành xã mới có tên gọi là **xã Xuân Trường**.\" *That's* the one!\n\nNow, just to be absolutely certain, I checked the \"New wards\" data. Yep, there it is: `{\"ward_code\":\"01339\",\"ward_name\":\"Xã Xuân Trường\",\"province_name\":\"Tỉnh Cao Bằng\"}`. Perfect match. The province remains the same, but \"Xã Hồng An\" is now part of \"Xã Xuân Trường.\"\n\nI then double-checked the other resolutions to ensure that \"Xã Hồng An\" isn't present, elsewhere, but as it turned out, the other appearances of that ward are in other provinces, thus irrelevant.\n\nSo, in conclusion, my findings are: \"Xã Hồng An\" from the original address is now part of \"Xã Xuân Trường\" (with code 01339). The province remains \"Tỉnh Cao Bằng.\"  I'll build the JSON output based on this information, with the citation referencing resolution 1657/NQ-UBTVQH15, line 12, as the source and a high confidence level due to the clear and explicit statement in the resolution.  That should be the most accurate answer!\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1657/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Cao Bằng",
+        "line": "12. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Hồng An vàxã Xuân Trường thành xã mới có tên gọi là **xã Xuân Trường**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Cao Bằng",
+      "ward_code": "01339",
+      "ward_name": "Xã Xuân Trường"
+    }
+  ]
+}

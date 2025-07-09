@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Phong Sơn, Huyện Cẩm Thủy, Tỉnh Thanh Hóa",
+  "ellapsedInMs": 5356,
+  "estimatedCost": 0.001928,
+  "thought": "**Determining the New Ward for an Old Address**\n\nOkay, so I've got an old address: \"Thị trấn Phong Sơn, Huyện Cẩm Thủy, Tỉnh Thanh Hóa.\" My task is to figure out the new administrative unit, the ward. My first step is to break down the address. I see \"Thị trấn Phong Sơn\" as the old ward and \"Tỉnh Thanh Hóa\" as the province.\n\nNow, a crucial check: province mergers. I need to make sure \"Tỉnh Thanh Hóa\" hasn't been absorbed into something else. Luckily, I have the list from \"60-NQ/TW\" at hand. And there it is: \"8. Tỉnh Thanh Hoá\" is listed as *not* being merged. So, the province remains the same. That simplifies things.\n\nNext, I dig into the \"Other resolutions\" to find any mention of \"Thị trấn Phong Sơn.\" Bingo! I find it in \"1686/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thanh Hóa.\" The key line is: \"100. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Phong Sơn và xã Cẩm Ngọc thành xã mới có tên gọi là **xã Cẩm Thủy**.\" This is excellent news! It *explicitly* states that \"Thị trấn Phong Sơn\" is combined with \"xã Cẩm Ngọc\" to form \"xã Cẩm Thủy.\"\n\nNow, I cross-reference this information with the \"New wards\" list. I need to see if \"xã Cẩm Thủy\" *with* \"Tỉnh Thanh Hóa\" exists there, and if so, grab the ward code. Perfect match: `{\"ward_code\":\"15127\",\"ward_name\":\"Xã Cẩm Thủy\",\"province_name\":\"Tỉnh Thanh Hóa\"}`.\n\nGiven the explicit resolution outlining the merger and the confirmed presence of the new ward in the \"New wards\" list with the correct province, I'm confident in my findings. Time to format the output according to the specified JSON schema!\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1686/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thanh Hóa",
+        "line": "100. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Phong Sơn và xã Cẩm Ngọc thành xã mới có tên gọi là xã Cẩm Thủy."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thanh Hóa",
+      "ward_code": "15127",
+      "ward_name": "Xã Cẩm Thủy"
+    }
+  ]
+}

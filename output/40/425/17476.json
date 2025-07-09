@@ -1,0 +1,18 @@
+{
+  "address": "Xã Diễn Cát, Huyện Diễn Châu, Tỉnh Nghệ An",
+  "ellapsedInMs": 7033,
+  "estimatedCost": 0.002553,
+  "thought": "**Here's how I'm approaching this address mapping:**\n\nOkay, so the user wants to map an old Vietnamese address (\"Xã Diễn Cát\" in \"Huyện Diễn Châu\", Nghệ An province) to a new administrative unit.  I'll start by breaking down the address components: \"Xã Diễn Cát\" is the old ward, \"Huyện Diễn Châu\" is the old district (which, as I understand the prompt, we're ultimately disregarding), and \"Tỉnh Nghệ An\" is the province.\n\nFirst, I'm checking the province's status by examining the province resolutions.  It looks like \"Tỉnh Nghệ An\" is listed in the \"no merger\" list within Resolution 60-NQ/TW. This tells me that Nghệ An province's name remains the same, which will be the `province_name` in my final output.\n\nNext, I'm diving into the \"Other Resolutions\" section, focusing on finding mentions of \"Xã Diễn Cát\".  Here, I've found a key resolution: \"1678/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Nghệ An\".  Line 18 of this resolution is the key: it explicitly states that \"Xã Diễn Cát\", along with some other wards, is being merged to form a new ward called \"Xã Minh Châu\".  Bingo! This is the core mapping information.\n\nTo ensure this is accurate, I'm cross-referencing with the \"New wards\" data.  I'm looking for \"Xã Minh Châu\" in that list. Sure enough, there's an entry confirming \"Xã Minh Châu\" exists, and it is linked with \"Tỉnh Nghệ An\", which perfectly aligns with my earlier province name confirmation.\n\nNow, it's time to build the output.  The `citation` will be the resolution and the specific line where the merge is described. The `confidence` will be \"high\" because the resolution provides a clear and direct merge for \"Xã Diễn Cát\".  Based on everything, the output will include: the unchanged `province_name` \"Tỉnh Nghệ An\",  the new `ward_code` and `ward_name` \"17476\" and \"Xã Minh Châu\", respectively, as well as the complete citation. The prompt asked for all possible candidates, but since there's a single, unambiguous merge specified for this old ward, the output will only contain a single candidate. I am now confident in presenting this as the mapped address.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1678/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Nghệ An",
+        "line": "18. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Diễn Cát, Diễn Nguyên, Hạnh Quảng và Minh Châu thành xã mới có tên gọi là xã Minh Châu."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Nghệ An",
+      "ward_code": "17476",
+      "ward_name": "Xã Minh Châu"
+    }
+  ]
+}

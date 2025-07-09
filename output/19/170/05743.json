@@ -1,0 +1,18 @@
+{
+  "address": "Xã Lâu Thượng, Huyện Võ Nhai, Tỉnh Thái Nguyên",
+  "ellapsedInMs": 5903,
+  "estimatedCost": 0.0021087999999999997,
+  "thought": "**My Analysis of the Address Mapping**\n\nOkay, so I'm tasked with figuring out the new administrative unit for an old address. I'm focusing on \"Xã Lâu Thượng\" in \"Huyện Võ Nhai,\" \"Tỉnh Thái Nguyên.\" The first step is to confirm the province, district, and ward from the input. I know I need to be aware of the instruction to consider all districts being \"eliminated\", but for now, the district is valuable context.\n\nNext, I'm checking the relevant resolutions. Since the prompt mentioned \"60-NQ/TW\", I quickly scanned for \"Tỉnh Thái Nguyên\" in those documents. No direct mergers or changes for the province itself. I then switched to the other resolutions and immediately spotted what I was looking for.\n\nResolution \"1683/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thái Nguyên\" has the critical information: \"Xã Lâu Thượng\" will merge with others to become \"Xã Võ Nhai\". This is clear, direct, and exactly what I needed.\n\nNow, checking the \"New wards\" data confirms \"Xã Võ Nhai\" exists, with the correct province, and crucially, has the code \"05716\". Bingo.\n\nBased on the explicit merging instruction from the resolution, the unchanged province, and the existing new ward data, I can construct my JSON output. The old ward is now part of the new ward, the province remains the same, and I have the ward code. The confidence level is certainly \"high\" in this case because there's such a direct correlation between the old and new data.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1683/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thái Nguyên",
+        "line": "12. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Đình Cả, xã Phú Thượng và xã Lâu Thượng thành xã mới có tên gọi là xã Võ Nhai."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thái Nguyên",
+      "ward_code": "05716",
+      "ward_name": "Xã Võ Nhai"
+    }
+  ]
+}

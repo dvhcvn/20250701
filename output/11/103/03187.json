@@ -1,0 +1,18 @@
+{
+  "address": "Xã Chà Nưa, Huyện Nậm Pồ, Tỉnh Điện Biên",
+  "ellapsedInMs": 4847,
+  "estimatedCost": 0.001745,
+  "thought": "**Navigating the Address Transformation**\n\nOkay, so I'm presented with a task: to translate an old address to its current administrative unit. I've got the pieces, let's see how they fit. First, I need to pinpoint the *old* ward and province: \"Xã Chà Nưa,\" in \"Tỉnh Điện Biên.\"\n\nNow, I'll dive into the resolutions. My instinct tells me to check the overarching province adjustments first. Resolution \"60-NQ/TW\" confirms that Điện Biên's boundaries and name are staying put. Good, that's one less variable.\n\nNext, I zero in on \"Xã Chà Nưa\" within the other resolutions. Bingo! Resolution \"1661/NQ-UBTVQH15\" is where the magic happens. It explicitly states that \"Xã Chà Nưa\" is *merged* into a new ward called \"Xã Mường Chà.\"\n\nWith the new ward identified, I need the final details. A quick check in the `new_wards` data reveals the specifics for \"Xã Mường Chà.\" I can grab the `ward_code`, `ward_name`, and confirm the province.\n\nFinally, assembling the output.  The relevant resolution provides the `citation`. My confidence is *high* because the mapping is direct and explicit. We'll include the unchanged `province_name` and the new ward details from the `new_wards` data. Job done.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1661/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Điện Biên",
+        "line": "7. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Chà Cang, Chà Nưa, Nậm Tin và Pa Tần thành xã mới có tên gọi là xã Mường Chà."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Điện Biên",
+      "ward_code": "03166",
+      "ward_name": "Xã Mường Chà"
+    }
+  ]
+}

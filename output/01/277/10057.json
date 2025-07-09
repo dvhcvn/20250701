@@ -1,0 +1,18 @@
+{
+  "address": "Xã Thụy Hương, Huyện Chương Mỹ, Thành phố Hà Nội",
+  "ellapsedInMs": 7091,
+  "estimatedCost": 0.0028109,
+  "thought": "**Analyzing the Administrative Restructuring of Thụy Hương**\n\nOkay, so I've got to figure out the new administrative ward for the old address \"Xã Thụy Hương, Huyện Chương Mỹ, Thành phố Hà Nội.\"  This is a classic administrative boundary change problem, and thankfully, the information provided seems pretty straightforward.\n\nFirst, the province is \"Thành phố Hà Nội,\" and according to `60-NQ/TW`, there haven't been any province mergers here. That part's easy.\n\nNow, the real work begins: digging into the resolutions. I immediately zeroed in on `1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội`.  After a careful review, line 49 is the key: it explicitly lists \"Thuỵ Hương\" (with the expected spelling variation) as being combined with several other areas to form the new \"phường Chương Mỹ.\"  That's a strong indicator, a very strong match.  I can safely disregard other resolutions since the given input is from Ha Noi.\n\nJust to be absolutely certain, I cross-referenced this against the list of new wards.  And there it is:  `{\"ward_code\":\"10015\",\"ward_name\":\"Phường Chương Mỹ\",\"province_name\":\"Thành phố Hà Nội\"}`.  Perfect alignment.\n\nTherefore, the old \"Xã Thụy Hương\" is now part of \"Phường Chương Mỹ,\" with a ward code of \"10015.\"  My confidence is high. The resolution is clear.\n\nThe final output is: `{\"province_name\": \"Thành phố Hà Nội\", \"ward_name\": \"Phường Chương Mỹ\", \"ward_code\": \"10015\", \"citation\": {\"header\": \"1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội\", \"line\": \"49. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Biên Giang, thị trấn Chúc Sơn, các xã Đại Yên, Ngọc Hòa, Phụng Châu, Tiên Phương, Thuỵ Hương và phần còn lại của phường Đồng Mai sau khi sắp xếp theo quy định tại khoản 45 Điều này thành phường mới có tên gọi là phường Chương Mỹ.\"}, \"confidence\": \"high\"}`.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội",
+        "line": "49. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Biên Giang, thị trấn Chúc Sơn, các xã Đại Yên, Ngọc Hòa, Phụng Châu, Tiên Phương, Thuỵ Hương và phần còn lại của phường Đồng Mai sau khi sắp xếp theo quy định tại khoản 45 Điều này thành phường mới có tên gọi là phường Chương Mỹ."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hà Nội",
+      "ward_code": "10015",
+      "ward_name": "Phường Chương Mỹ"
+    }
+  ]
+}

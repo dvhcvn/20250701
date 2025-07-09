@@ -1,0 +1,18 @@
+{
+  "address": "Xã Điềm He, Huyện Văn Quan, Tỉnh Lạng Sơn",
+  "ellapsedInMs": 5694,
+  "estimatedCost": 0.0022757999999999997,
+  "thought": "**Identifying the New Administrative Unit for the Old Address: Xã Điềm He, Huyện Văn Quan, Tỉnh Lạng Sơn**\n\nOkay, here's how I'd approach this. First, I see \"Tỉnh Lạng Sơn\" in the old address. I know I need to check the `60-NQ/TW` resolution to see if Lạng Sơn was affected by any mergers.  According to that resolution, Lạng Sơn is listed under \"Các đơn vị hành chính cấp tỉnh không thực hiện sáp nhập\" - so the province remains unchanged.\n\nNext, I need to focus on \"Xã Điềm He\". I'll search for it in other relevant resolutions. I immediately spot `1672/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lạng Sơn`, which seems promising. Specifically, line 23 jumps out at me: it says \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Trấn Ninh, Liên Hội và Điềm He thành xã mới có tên gọi là **xã Điềm He**.\"\n\nInteresting.  It appears they've merged Trấn Ninh, Liên Hội, and Điềm He *into* a new \"Xã Điềm He\".  The name has been retained. So, the old \"Xã Điềm He\" has become part of this new \"Xã Điềm He\".\n\nNow, I need to track down the `ward_code` for *this* \"Xã Điềm He\".  I'll look in the `New wards` list.  Ah, there it is:  `{\"ward_code\":\"06280\",\"ward_name\":\"Xã Điềm He\",\"province_name\":\"Tỉnh Lạng Sơn\"}`. Perfect.\n\nThe confidence here is exceptionally high.  The resolution is unambiguous and directly addresses the merger, explicitly stating the new name. The direct correlation in these resolutions confirms a definitive answer.\n\nFinally, I'll build the JSON output based on this information.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1672/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lạng Sơn",
+        "line": "23. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Trấn Ninh, Liên Hội và Điềm He thành xã mới có tên gọi là**xã Điềm He**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lạng Sơn",
+      "ward_code": "06280",
+      "ward_name": "Xã Điềm He"
+    }
+  ]
+}

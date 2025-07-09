@@ -1,0 +1,28 @@
+{
+  "address": "Thị trấn Hai Riêng, Huyện Sông Hinh, Tỉnh Phú Yên",
+  "ellapsedInMs": 6495,
+  "estimatedCost": 0.0021062,
+  "thought": "**Address Mapping Analysis: From Phú Yên to Đắk Lắk**\n\nOkay, let's break this down systematically. The user wants to map an old address, specifically from \"Tỉnh Phú Yên\", to its current administrative structure using provided resolutions and new ward data. This is a classic geo-referencing problem, and I'm ready to tackle it.\n\nFirst, I need to pinpoint the relevant old province, which is \"Tỉnh Phú Yên.\" Then, I'll dive into the province resolutions. I need to figure out if Phú Yên has been merged or renamed. Bingo! Resolution 60-NQ/TW, specifically item 15, details the merger of Phú Yên with Đắk Lắk, creating the province of \"Tỉnh Đắk Lắk\". This is a crucial first step.\n\nNext up, the old ward: \"Thị trấn Hai Riêng\".  Now, the real detective work begins.  I need to scour through the other resolutions provided, specifically looking for mentions of \"Thị trấn Hai Riêng.\"  And there it is! Resolution 1660/NQ-UBTVQH15 lays it all out. It explicitly states that \"Thị trấn Hai Riêng\" (along with other areas) was reorganized to create a new administrative unit called \"**Xã Sông Hinh**\".\n\nNow for the final verification step. I'll need to check the `New wards` data to confirm that \"Xã Sông Hinh\" exists and, critically, that its associated `province_name` aligns with the previously determined province of \"Tỉnh Đắk Lắk\".  A quick glance confirms the match:  `{\"ward_code\":\"22207\",\"ward_name\":\"Xã Sông Hinh\",\"province_name\":\"Tỉnh Đắk Lắk\"}`.\n\nTherefore, with high confidence, \"Thị trấn Hai Riêng\" from the former \"Tỉnh Phú Yên\" now corresponds to \"Xã Sông Hinh\" within the \"Tỉnh Đắk Lắk\" province. The resolutions are clear and unambiguous. We have a robust mapping here.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "15. Hợp nhất tỉnh Đắk Lắk và tỉnh Phú Yên, lấy tên là tỉnh Đắk Lắk"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đắk Lắk",
+      "ward_code": "22207",
+      "ward_name": "Xã Sông Hinh"
+    },
+    {
+      "citation": {
+        "header": "1660/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đắk Lắk",
+        "line": "77. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Hai Riêng, xã Ea Trol, xã Sông Hinh và phần còn lại của xã Ea Bia sau khi sắp xếp theo quy định tại khoản 76 Điều này thành xã mới có tên gọi là xã Sông Hinh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đắk Lắk",
+      "ward_code": "22207",
+      "ward_name": "Xã Sông Hinh"
+    }
+  ]
+}

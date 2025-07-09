@@ -1,0 +1,18 @@
+{
+  "address": "Xã Cam Thành Bắc, Huyện Cam Lâm, Tỉnh Khánh Hòa",
+  "ellapsedInMs": 5461,
+  "estimatedCost": 0.0021041,
+  "thought": "**My Thought Process for Mapping the Old Address**\n\nOkay, so I'm being asked to figure out the new administrative location for \"Xã Cam Thành Bắc\" in \"Tỉnh Khánh Hòa.\" My plan is pretty straightforward: I'll start by identifying the old ward, then look at the relevant resolutions and new ward data to pinpoint the updated location.\n\nFirst, I identified the old ward and province: \"Xã Cam Thành Bắc\" and \"Tỉnh Khánh Hòa\". Next, I immediately checked for any province name changes, but it looks like \"Tỉnh Khánh Hòa\" remains the same.\n\nNow for the interesting part. I delved into the `other_resolutions` data and immediately struck gold. Resolution 1667/NQ-UBTVQH15, specifically addresses the administrative rearrangements in Khánh Hòa. It clearly states that \"Xã Cam Thành Bắc\" is *merged* into the new \"Xã Cam Lâm\". I need to be careful, though, as \"Cam Lâm\" is also mentioned in the Nghệ An resolution (1678/NQ-UBTVQH15), but it forms a different ward entirely.\n\nTo make sure everything aligns, I checked the `new_wards` data, and sure enough, \"Xã Cam Lâm\" in \"Tỉnh Khánh Hòa\" is present. My confidence here is quite high because the resolution is very explicit about the merge.\n\nFinally, I'll package this all up into a JSON structure, according to the predefined schema. Easy peasy!\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1667/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Khánh Hòa",
+        "line": "18. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Cam Đức, các xã Cam Hải Đông, Cam Hải Tây, Cam Thành Bắc và một phần diện tích, quy mô dân số của các xã Cam Hiệp Bắc, Cam Hiệp Nam, Cam Hòa, Cam Tân, Cam An Bắc, Cam An Nam, Suối Tân thành xã mới có tên gọi là xã Cam Lâm."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Khánh Hoà",
+      "ward_code": "22453",
+      "ward_name": "Xã Cam Lâm"
+    }
+  ]
+}

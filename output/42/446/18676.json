@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Thiên Cầm, Huyện Cẩm Xuyên, Tỉnh Hà Tĩnh",
+  "ellapsedInMs": 5582,
+  "estimatedCost": 0.0017504999999999999,
+  "thought": "**Processing Address Mapping Request: \"Thị trấn Thiên Cầm\" in Hà Tĩnh Province**\n\nOkay, so the user wants me to map an old address, \"Thị trấn Thiên Cầm,\" to the new administrative structure, right? My process needs to be methodical. First, I have to establish the province. It's \"Tỉnh Hà Tĩnh\". Now, looking at my resolutions, specifically 60-NQ/TW, under \"Các đơn vị hành chính cấp tỉnh không thực hiện sáp nhập,\" \"Tỉnh Hà Tĩnh\" is listed. This tells me the province name remains unchanged.\n\nNext, I zero in on the specific ward, \"Thị trấn Thiên Cầm.\"  I'll start searching through my \"Other resolutions\" for relevant details. Bingo! Resolution 1665/NQ-UBTVQH15 on \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh\" appears pertinent. Scrolling through, line 13 is the key. It details the merging of \"thị trấn Thiên Cầm\" with \"xã Nam Phúc Thăng\" and \"xã Cẩm Nhượng\" to form a *new* xã called **xã Thiên Cầm**.\n\nNow, time to cross-reference my \"New wards\" data.  I'm looking for \"Xã Thiên Cầm.\" And there it is!  I've found it, with a `ward_code` of \"18676\" and, importantly, the `province_name` confirms \"Tỉnh Hà Tĩnh\".\n\nBased on this, I'm highly confident in my results. My JSON output will be structured as follows: `citation.header` will be \"1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh\", and `citation.line` will be \"13. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Thiên Cầm xã Nam Phúc Thăng và xã Cẩm Nhượng thành xã mới có tên gọi là xã Thiên Cầm.\" I'll set the `confidence` to \"high\" since the resolution is clear and direct. For the output, I can confidently state that `province_name` is \"Tỉnh Hà Tĩnh\",  `ward_code` is \"18676\", and  `ward_name` is \"Xã Thiên Cầm\". I've got this.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh",
+        "line": "13. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Thiên Cầm xã Nam Phúc Thăng và xã Cẩm Nhượng thành xã mới có tên gọi là xã Thiên Cầm."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hà Tĩnh",
+      "ward_code": "18676",
+      "ward_name": "Xã Thiên Cầm"
+    }
+  ]
+}

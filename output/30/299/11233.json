@@ -1,0 +1,18 @@
+{
+  "address": "Xã Hưng Long, Huyện Ninh Giang, Tỉnh Hải Dương",
+  "ellapsedInMs": 5844,
+  "estimatedCost": 0.0025954,
+  "thought": "**Finding the New Administrative Unit for \"Xã Hưng Long\"**\n\nOkay, so the user wants to know the current administrative location for \"Xã Hưng Long, Huyện Ninh Giang, Tỉnh Hải Dương.\" My approach is straightforward: I need to trace this address through the recent administrative changes.\n\nFirst, the province: \"Tỉnh Hải Dương.\" I know the first step is always to check the province-level changes, specifically Resolution 60-NQ/TW. Ah, and sure enough, \"Tỉnh Hải Dương\" was merged with \"Thành phố Hải Phòng\" (Hai Phong City). So now I'm thinking, I need to keep in mind I am looking in \"Thành phố Hải Phòng\" (Hai Phong City).\n\nNext, I need to dig into the details. I know I'm looking for \"Xã Hưng Long.\" Now, I need to check other resolutions related to \"Thành phố Hải Phòng\" (Hai Phong City) and see what's changed there. A little digging and I quickly found Resolution 1669/NQ-UBTVQH15, the one that deals with reorganizing the wards in Hai Phong City. Bingo! Line 103 caught my eye: it mentions \"Hưng Long\" and states that \"Xã Tân Quang, Văn Hội, and Hưng Long are rearranged to form a new ward, named **Xã Hồng Châu**.\" Exactly what I needed!\n\nNow, the final step is to find the corresponding ward code for \"Xã Hồng Châu\" in Hai Phong.  I have my \"New wards\" database which quickly returns  `{\"ward_code\":\"11218\",\"ward_name\":\"Xã Hồng Châu\",\"province_name\":\"Thành phố Hải Phòng\"}`. Great!\n\nSo, the information I will return to the user is:\n\n*   **Province Name**: \"Thành phố Hải Phòng\"\n*   **Ward Name**: \"Xã Hồng Châu\"\n*   **Ward Code**: \"11218\"\n*   **Citation**: from Resolution 1669/NQ-UBTVQH15, line 103.\n*   **Confidence**: High, because I have a direct match and the province merger is clear.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "103. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tân Quang, Văn Hội và Hưng Long thành xã mới có tên gọi là xã Hồng Châu."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "11218",
+      "ward_name": "Xã Hồng Châu"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "address": "Xã Gia Mô, Huyện Tân Lạc, Tỉnh Hoà Bình",
+  "ellapsedInMs": 7811,
+  "estimatedCost": 0.0031370999999999994,
+  "thought": "**Mapping the Old Address: Xã Gia Mô, Huyện Tân Lạc, Tỉnh Hoà Bình**\n\nOkay, here's how I'm going to approach this.  My goal is to map this old Vietnamese address to the new administrative units. First, I've got to break it down. We're starting with:  \"Xã Gia Mô\" (Ward), \"Huyện Tân Lạc\" (District), and \"Tỉnh Hoà Bình\" (Province).\n\nThe plan is to use the provided resolutions and the list of new wards to figure out the new location.  I'll start with the province changes. Resolution 60-NQ/TW states that \"Tỉnh Hoà Bình\" was merged with other provinces to form \"Tỉnh Phú Thọ.\" So, we can safely say the province has changed.\n\nNow, I need to focus on the ward and district. I'll scour the other resolutions looking for mentions of \"Xã Gia Mô\" or \"Huyện Tân Lạc.\"  Resolution 1676/NQ-UBTVQH15 catches my eye. Line 124 mentions \"Huyện Tân Lạc\" but it's not directly related to \"Xã Gia Mô\". However, line 127 is a *direct* hit. It explicitly says \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Gia Mô, Lỗ Sơn và Nhân Mỹ thành xã mới có tên gọi là **xã Toàn Thắng**.\"  Bingo! \"Xã Gia Mô\" is merging into \"Xã Toàn Thắng.\"\n\nNow, I need to cross-reference this information with the new wards list.  For \"xã Toàn Thắng,\" I see  `{\"ward_code\":\"05191\",\"ward_name\":\"Xã Toàn Thắng\",\"province_name\":\"Tỉnh Phú Thọ\"}`.  The province name matches what I deduced earlier, further solidifying the match.\n\nJust to be thorough, I checked the new ward list for \"xã Tân Lạc\" since it was mentioned in the resolution. Although it does match the province change, line 124 specifically merges different wards into \"xã Tân Lạc.\" It does *not* mention \"Xã Gia Mô,\" so this isn't a valid mapping for this specific address.\n\nTherefore, the final mapping should be: \"Xã Gia Mô\" maps to \"Xã Toàn Thắng\" in \"Tỉnh Phú Thọ.\"  Given the direct mention of \"Xã Gia Mô\" in the resolution, I'd say this is a high-confidence match.  The old province name of \"Tỉnh Hoà Bình\" has been changed to \"Tỉnh Phú Thọ.\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Vĩnh Phúc, tỉnh Phú Thọ và tỉnh Hoà Bình; lấy tên là tỉnh Phú Thọ"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "05191",
+      "ward_name": "Xã Toàn Thắng"
+    },
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "127. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Gia Mô, Lỗ Sơn và Nhân Mỹ thành xã mới có tên gọi là xã Toàn Thắng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "05191",
+      "ward_name": "Xã Toàn Thắng"
+    }
+  ]
+}

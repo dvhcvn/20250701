@@ -1,0 +1,18 @@
+{
+  "address": "Xã Mỹ Cát, Huyện Phù Mỹ, Tỉnh Bình Định",
+  "ellapsedInMs": 7544,
+  "estimatedCost": 0.0040733,
+  "thought": "**Identifying the New Administrative Unit**\n\nOkay, so I'm presented with the old address \"Xã Mỹ Cát, Huyện Phù Mỹ, Tỉnh Bình Định\" and I need to figure out its new form. My first step is to recognize the province, \"Tỉnh Bình Định\". Now, I know the drill: check those province resolutions, specifically 60-NQ/TW, to see if anything significant happened. Ah, here we go: \"Hợp nhất tỉnh Gia Lai và tỉnh Bình Định, lấy tên là tỉnh Gia Lai\". Bingo! Bình Định got merged into Gia Lai. So, the new province is \"Tỉnh Gia Lai\".\n\nNext, I zero in on \"Xã Mỹ Cát\", the ward. I need to dive into other resolutions, this time focusing on \"Tỉnh Gia Lai\" since that's the new province. I'm looking for anything that mentions \"Xã Mỹ Cát\". \"1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai\" looks promising. Scrolling down... yes! Line 10: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Mỹ Chánh, Mỹ Thành và Mỹ Cát thành xã mới có tên gọi là **xã An Lương**.\" There it is! \"Mỹ Cát\" is now part of \"Xã An Lương\".\n\nTime for verification. I'll search the \"New wards\" list for \"Xã An Lương\" and \"Tỉnh Gia Lai\".  Perfect! I've found it: `{\"ward_code\":\"21769\",\"ward_name\":\"Xã An Lương\",\"province_name\":\"Tỉnh Gia Lai\"}`.\n\nNow, to construct the JSON output:\n\n*   `province_name`: \"Tỉnh Gia Lai\"\n*   `ward_name`: \"Xã An Lương\"\n*   `ward_code`: \"21769\"\n*   `citation`:\n    *   `header`: \"1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai\"\n    *   `line`: \"10. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Mỹ Chánh, Mỹ Thành và Mỹ Cát thành xã mới có tên gọi là **xã An Lương**.\"\n*   `confidence`: \"high\". The resolution explicitly links \"Mỹ Cát\" to \"An Lương,\" and the province merger is clear.\n\nOne last thought: While \"Huyện Phù Mỹ\" isn't directly used in the mapping process, it does help confirm the context of \"Mỹ Cát.\" The resolutions focused on province and ward levels, not districts.  The resolution for Gia Lai directly mentioned \"Mỹ Cát\" without any need for district-level information.\n\nFinal check confirms: \"Tỉnh Bình Định\" became \"Tỉnh Gia Lai\", and \"Xã Mỹ Cát\" became \"Xã An Lương\".  The new ward details match the resolution, and my confidence is high. Done!\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai",
+        "line": "10. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Mỹ Chánh, Mỹ Thành và Mỹ Cát thành xã mới có tên gọi là **xã An Lương**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "21769",
+      "ward_name": "Xã An Lương"
+    }
+  ]
+}

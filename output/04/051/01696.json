@@ -1,0 +1,18 @@
+{
+  "address": "Xã Hoàng Tung, Huyện Hoà An, Tỉnh Cao Bằng",
+  "ellapsedInMs": 8053,
+  "estimatedCost": 0.0041107,
+  "thought": "**Finding the New Administrative Unit for \"Xã Hoàng Tung\"**\n\nOkay, so the user wants me to find the updated administrative unit for \"Xã Hoàng Tung, Huyện Hoà An, Tỉnh Cao Bằng.\"  I need to go through the provided resolutions and new wards data to identify the changes. My focus is going to be on the ward and province levels since the problem statement indicates all districts have been removed.\n\nFirst, I confirmed that \"Tỉnh Cao Bằng\" remains unchanged based on Resolution 60-NQ/TW, so that's straightforward.\n\nThen, I looked for mentions of \"Xã Hoàng Tung\" in the relevant resolutions. I quickly found Resolution 1657/NQ-UBTVQH15, which specifically addresses the rearrangement of administrative units in Cao Bằng.  Within that resolution, item 54 immediately caught my attention. It states that \"Xã Hoàng Tung,\" along with other wards, is merged into a new ward called \"phường Thục Phán.\"  This is a direct hit!\n\nNext, I needed to verify this new \"phường Thục Phán.\" I checked the \"New wards\" data and found a matching entry with code \"01273\" and the correct province name:  `{\"ward_code\":\"01273\",\"ward_name\":\"Phường Thục Phán\",\"province_name\":\"Tỉnh Cao Bằng\"}`.  Perfect match.\n\nFinally, I went back through Resolution 1657/NQ-UBTVQH15 to double-check for any other mentions of \"Xã Hoàng Tung\" or \"Huyện Hoà An\" that might indicate multiple mappings. However, after carefully reviewing all the relevant passages, item 54, as I mentioned, contained the only direct reference to the old ward. Other mentioned resolutions in `1657/NQ-UBTVQH15` only referenced changes to `Huyện Hoà An` not relating to the ward I was looking for.\n\nTherefore, the old ward \"Xã Hoàng Tung\" is now part of the new ward \"phường Thục Phán,\" and the old address has been updated to `{\"province_name\":\"Tỉnh Cao Bằng\", \"ward_name\": \"Phường Thục Phán\", \"ward_code\": \"01273\"}`.  The confidence in this mapping is very high because it's a direct and unambiguous statement in the provided resolution. I also have the supporting data in the \"New wards\" list to corroborate my conclusion.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1657/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Cao Bằng",
+        "line": "54. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Sông Hiến, Đề Thám, Hợp Giang, xã Hưng Đạo (thành phố Cao Bằng)và xã Hoàng Tungthành phường mới có tên gọi là **phườngThục Phán**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Cao Bằng",
+      "ward_code": "01273",
+      "ward_name": "Phường Thục Phán"
+    }
+  ]
+}

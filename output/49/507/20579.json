@@ -1,0 +1,18 @@
+{
+  "address": "Phường Điện Nam Trung, Thị xã Điện Bàn, Tỉnh Quảng Nam",
+  "ellapsedInMs": 5920,
+  "estimatedCost": 0.002172,
+  "thought": "**Address Mapping Analysis: \"Phường Điện Nam Trung, Thị xã Điện Bàn, Tỉnh Quảng Nam\"**\n\nOkay, let's break this down. The task is clear: map this old Vietnamese address to its current administrative structure, given some resolutions and new ward data.\n\nFirst, I need to pinpoint the essential components. The old province is \"Tỉnh Quảng Nam,\" and the old ward is \"Phường Điện Nam Trung.\"  A quick check of resolution \"60-NQ/TW\" confirms a significant change: \"Tỉnh Quảng Nam\" merged with Đà Nẵng, resulting in \"Thành phố Đà Nẵng\". This is crucial for accurate mapping.\n\nNow, I'll dive into the provided resolutions to see if \"Phường Điện Nam Trung\" is explicitly mentioned. Bingo! Resolution \"1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng\" is the key. Line 18 in particular caught my eye: it states that \"Phường Điện Nam Trung\" was merged, along with other wards, to form the new ward \"phường Điện Bàn Đông.\"\n\nTo ensure everything's in order, I cross-referenced this with the \"New wards\" dataset.  There it is: \"Phường Điện Bàn Đông\" with the ward code \"20579,\" and importantly, the \"province_name\" is \"Thành phố Đà Nẵng\". This confirms the mapping and the merger.\n\nTherefore, the final output is straightforward. My confidence in this mapping is high, as the resolution explicitly outlines the transition. The  `citation` will include the relevant resolution and line number. I will construct the JSON output, ready for use: new province: \"Thành phố Đà Nẵng\", new ward name: \"Phường Điện Bàn Đông\", ward code: \"20579\".\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng",
+        "line": "18. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Điện Nam Đông, Điện Nam Trung, Điện Dương, Điện Ngọc và Điện Nam Bắc thành phường mới có tên gọi là phường Điện Bàn Đông."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "20579",
+      "ward_name": "Phường Điện Bàn Đông"
+    }
+  ]
+}

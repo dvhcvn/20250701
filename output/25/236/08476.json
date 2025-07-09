@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tề Lễ, Huyện Tam Nông, Tỉnh Phú Thọ",
+  "ellapsedInMs": 7562,
+  "estimatedCost": 0.0026299,
+  "thought": "**Mapping Old Vietnamese Address to New Administrative Units**\n\nOkay, here's what I've got. The user wants to map the old address \"Xã Tề Lễ, Huyện Tam Nông, Tỉnh Phú Thọ\" to its new equivalent. My initial thought is to break this down into a step-by-step process.\n\nFirst, I need to isolate the old ward, district, and province from the input. That's straightforward: \"Xã Tề Lễ,\" \"Huyện Tam Nông,\" and \"Tỉnh Phú Thọ.\"\n\nNext, I'll consult the province resolutions, specifically 60-NQ/TW. Checking for \"Tỉnh Phú Thọ\" confirms that the province name remains the same. Easy enough.\n\nNow, the real work begins. I'll need to dig through other resolutions, focusing on any mentions of \"Xã Tề Lễ\" and \"Tỉnh Phú Thọ.\" I quickly find resolution \"1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ.\" Excellent.\n\nScanning the lines, line 35 jumps out: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Dị Nậu, Tề Lễ và Thọ Văn thành xã mới có tên gọi là **xã Thọ Văn**.\" Bingo! \"Xã Tề Lễ\" is specifically mentioned as being merged into the new \"Xã Thọ Văn.\" That's high-confidence evidence.\n\nI'll now cross-reference this with the \"New wards\" data to find \"Xã Thọ Văn\" in \"Tỉnh Phú Thọ.\"  The entry `{\"ward_code\":\"08479\",\"ward_name\":\"Xã Thọ Văn\",\"province_name\":\"Tỉnh Phú Thọ\"}` matches perfectly.\n\nFinally, I'll construct the JSON output:\n\n*   `province_name`: \"Tỉnh Phú Thọ\" (from the province resolution).\n*   `ward_name`: \"Xã Thọ Văn\" (from the resolution and new ward data).\n*   `ward_code`: \"08479\" (from the new ward data).\n*   `confidence`: \"high\" (because of the direct mapping in the resolution).\n*   `citation`:  Include the header and line 35 of resolution \"1676/NQ-UBTVQH15\".\n\nBefore I finalize, I'll give it a quick check for any other mentions of \"Xã Tề Lễ\" or \"Tỉnh Phú Thọ\" in the resolutions, but based on my initial review, I'm confident that \"Xã Thọ Văn\" is the only valid mapping. I am also sure that the resolution \"1676/NQ-UBTVQH15\" is the correct one. The resolution \"1663/NQ-UBTVQH15\" isn't relevant because it's for Đồng Tháp, not Phú Thọ. Looks like a clean and straightforward mapping with a high degree of certainty.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "35. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Dị Nậu, Tề Lễ và Thọ Văn thành xã mới có tên gọi là xã Thọ Văn."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "08479",
+      "ward_name": "Xã Thọ Văn"
+    }
+  ]
+}

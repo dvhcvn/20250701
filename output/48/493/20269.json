@@ -1,0 +1,18 @@
+{
+  "address": "Phường Mân Thái, Quận Sơn Trà, Thành phố Đà Nẵng",
+  "ellapsedInMs": 6772,
+  "estimatedCost": 0.0022275,
+  "thought": "**Mapping the Old Address to the New Administrative Unit**\n\nOkay, so I've got this address, \"Phường Mân Thái, Quận Sơn Trà, Thành phố Đà Nẵng,\" and I need to figure out its new administrative home. My initial thought is to break it down. First, I have to **identify the old components**: *Phường Mân Thái* as the ward, *Quận Sơn Trà* as the district (though the prompt mentioned eliminating districts, so I'll keep this in mind as context), and *Thành phố Đà Nẵng* as the province.\n\nNow, let's dive into the resolutions. First, I checked *60-NQ/TW*. Aha, it confirms that *Thành phố Đà Nẵng* remains *Thành phố Đà Nẵng* even after some mergers. Good, the province name checks out.\n\nNext, I zeroed in on the critical resolution: *1659/NQ-UBTVQH15*. Bingo! Line 6 is where the magic happens. It explicitly states that *Phường Mân Thái* is being absorbed into a new ward called *Phường Sơn Trà*. That's the key.\n\nThen, I double-checked the *New Wards Data* just to solidify things. And there it is: `{\"ward_code\":\"20263\",\"ward_name\":\"Phường Sơn Trà\",\"province_name\":\"Thành phố Đà Nẵng\"}`. It all aligns perfectly.\n\nSo, here's how I see it falling into place:\n\n*   The `province_name` is \"Thành phố Đà Nẵng\" (as verified by *60-NQ/TW*).\n*   The `ward_name` is undoubtedly \"Phường Sơn Trà\" (thanks to *1659/NQ-UBTVQH15* and the new data).\n*   The `ward_code` is \"20263\".\n*   For `citation`, I'll point directly to *1659/NQ-UBTVQH15* because it's the specific resolution outlining this ward change.\n*   My `confidence` level? It's **high**. Everything fits. The old ward is mentioned directly in the resolution, and all the information corroborates seamlessly. I'm confident in this mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng",
+        "line": "6. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Thọ Quang, Nại Hiên Đông và Mân Thái thành phường mới có tên gọi là phường Sơn Trà."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "20263",
+      "ward_name": "Phường Sơn Trà"
+    }
+  ]
+}

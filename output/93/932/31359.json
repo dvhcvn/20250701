@@ -1,0 +1,28 @@
+{
+  "address": "Thị trấn Rạch Gòi, Huyện Châu Thành A, Tỉnh Hậu Giang",
+  "ellapsedInMs": 8059,
+  "estimatedCost": 0.0031139999999999996,
+  "thought": "**My Mapping Strategy for the Old Address**\n\nOkay, so I'm tackling this address: \"Thị trấn Rạch Gòi, Huyện Châu Thành A, Tỉnh Hậu Giang\". My goal is to translate that into its new administrative structure, and I'm confident I can do this with high accuracy. Here's my thought process:\n\nFirst, I need to break down the old address. I've got \"Thị trấn Rạch Gòi\" (the ward), \"Huyện Châu Thành A\" (the district - but remember, districts are being eliminated in some cases), and \"Tỉnh Hậu Giang\" (the province).\n\nThe province, Hậu Giang, immediately triggers my memory of resolution 60-NQ/TW. That was a big one! It merged Hậu Giang into Cần Thơ, so I know the new `province_name` will be \"Thành phố Cần Thơ.\"\n\nNow, for the ward. I remember a specific resolution (1668/NQ-UBTVQH15) that directly addresses \"Thị trấn Rạch Gòi.\" It states that the \"Thị trấn Rạch Gòi,\" along with other areas, became a new \"xã\" (commune) called \"Thạnh Xuân.\" Perfect! That's my answer for the `ward_name`.\n\nI'll quickly cross-reference that with my \"New wards\" data.  A search confirms \"Xã Thạnh Xuân\" exists within \"Thành phố Cần Thơ,\" and I've got the `ward_code`, which is \"31360\". That's a clean match.\n\nTo make sure I'm not missing anything, I did a quick scan of other resolutions. No relevant data there.  And a quick review of my \"New Wards\" list also confirmed no other options.\n\nTherefore, my final JSON output will be straightforward. It will indicate that the old \"Thị trấn Rạch Gòi\" maps to the new administrative unit with the `ward_name` \"Xã Thạnh Xuân,\" `ward_code` \"31360,\" and `province_name` \"Thành phố Cần Thơ.\"  I'll attribute this mapping to resolution 1668/NQ-UBTVQH15, and I'm giving this a \"high\" confidence level because it's a direct mapping. I'm satisfied this addresses the prompt accurately.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất thành phố cần Thơ, tỉnh Sóc Trăng và tỉnh Hậu Giang; lấy tên là thành phố Cần Thơ"
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Cần Thơ",
+      "ward_code": "31360",
+      "ward_name": "Xã Thạnh Xuân"
+    },
+    {
+      "citation": {
+        "header": "1668/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Cần Thơ",
+        "line": "52. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Rạch Gòi, xã Tân Phú Thạnh và xã Thạnh Xuân thành xã mới có tên gọi là xã Thạnh Xuân."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Cần Thơ",
+      "ward_code": "31360",
+      "ward_name": "Xã Thạnh Xuân"
+    }
+  ]
+}

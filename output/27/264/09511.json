@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tân Lãng, Huyện Lương Tài, Tỉnh Bắc Ninh",
+  "ellapsedInMs": 7506,
+  "estimatedCost": 0.0025921,
+  "thought": "**Analyzing and Mapping the Address to New Administrative Units**\n\nOkay, so I've got this address to process: \"Xã Tân Lãng, Huyện Lương Tài, Tỉnh Bắc Ninh.\" My immediate thought is to break it down. I need to identify the old ward, district, and province. It's pretty straightforward here: \"Xã Tân Lãng\" is the old ward, \"Huyện Lương Tài\" is the district (though, as the prompt specifies, districts are being eliminated, so I'll keep that in mind as context) and \"Tỉnh Bắc Ninh\" is the province.\n\nNow, the crucial step: I need to consult the resolutions related to province changes. I'll start with 60-NQ/TW for Bắc Ninh. Ah, yes, \"Hợp nhất tỉnh Bắc Ninh và tỉnh Bắc Giang, lấy tên là tỉnh Bắc Ninh.\" So, Bắc Ninh remains Bắc Ninh, though it merged with Bắc Giang. No major province changes here to worry about.\n\nNext, I'll delve into the \"Other resolutions.\" I'm looking for any mentions of \"Xã Tân Lãng\" or just \"Tân Lãng\" within the context of Bắc Ninh. Bingo! Resolution 1658/NQ-UBTVQH15, \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh,\" is the key. Specifically, point 18: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Thứa, xã Phú Hòa và xã Tân Lãng thành xã mới có tên gọi là **xã Lương Tài**.\" Perfect! A direct match. They're merging \"Xã Tân Lãng\" into a new ward called \"Xã Lương Tài.\"\n\nNow, I'll verify this in the \"New wards\" data. Yep, there it is: `{\"ward_code\":\"09496\",\"ward_name\":\"Xã Lương Tài\",\"province_name\":\"Tỉnh Bắc Ninh\"}`.  Spot on.\n\nTime to construct the JSON output. The `citation` will be 1658/NQ-UBTVQH15.  The `confidence` should be \"high,\" because this is a clear, definitive match. No ambiguity here. The `province_name` is obviously \"Tỉnh Bắc Ninh,\" and the `ward_code` and `ward_name` come directly from the \"New wards\" data.\n\nJust to be thorough, I'll quickly scan through other resolutions, just to ensure that \"Lương Tài\" is not mentioned in any further merges. A quick skim of the other resolutions, Hưng Yên and Sơn La show nothing relevant. It seems that our determination is correct, with no further context relevant to the provided address. So, I am confident in 1658/NQ-UBTVQH15 to support my determination.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh",
+        "line": "18. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Thứa, xã Phú Hòa và xã Tân Lãng thành xã mới có tên gọi là xã Lương Tài."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "09496",
+      "ward_name": "Xã Lương Tài"
+    }
+  ]
+}

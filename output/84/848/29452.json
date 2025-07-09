@@ -1,0 +1,18 @@
+{
+  "address": "Xã Hiệp Mỹ Đông, Huyện Cầu Ngang, Tỉnh Trà Vinh",
+  "ellapsedInMs": 8070,
+  "estimatedCost": 0.0028070000000000005,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm tasked with mapping this old address, and it looks pretty straightforward. The old address is \"Xã Hiệp Mỹ Đông, Huyện Cầu Ngang, Tỉnh Trà Vinh\". I need to find the new equivalent based on the provided resolutions and the new ward data.\n\nFirst, I identified the components: the ward \"Xã Hiệp Mỹ Đông,\" the district \"Huyện Cầu Ngang,\" and the province \"Tỉnh Trà Vinh.\"\n\nThen, I went through the resolutions. I started with the province merger. I easily found that \"Tỉnh Trà Vinh\" was merged into \"Tỉnh Vĩnh Long\" (per 60-NQ/TW). That's a solid start.\n\nNext, I looked at the ward-level resolution (1687/NQ-UBTVQH15) related to \"Tỉnh Vĩnh Long,\" since Trà Vinh is now a part of it. Bingo! Line 49 of the resolution explicitly states that \"Xã Hiệp Mỹ Đông\" is being merged into the new \"Xã Hiệp Mỹ.\" This is key.\n\nThen, I looked at the \"New Wards\" data and found \"Xã Hiệp Mỹ\" with its corresponding code \"29455\" under \"Tỉnh Vĩnh Long,\" which perfectly aligns with the resolution.\n\nSo, I'm confident I can construct the JSON output. I'll have:\n\n*   `province_name`: \"Tỉnh Vĩnh Long\" (from the province merger)\n*   `ward_name`: \"Xã Hiệp Mỹ\" (from the ward resolution)\n*   `ward_code`: \"29455\" (from the new wards data)\n*   `confidence`: \"high\" (because everything is a perfect match)\n*   `citation`:\n    *   `header`: \"1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long\"\n    *   `line`: \"49. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Long Sơn, Hiệp Mỹ Đông và Hiệp Mỹ Tây thành xã mới có tên gọi là **xã Hiệp Mỹ**.\"\n\nRegarding the district \"Huyện Cầu Ngang,\" I noticed the resolution mentions it in another line. However, the line pertaining to \"Hiệp Mỹ Đông\" doesn't specify any new district. The problem statement says the district should be eliminated. Since the schema doesn't require district information, I'll exclude it.\n\nOverall, the confidence level is high because I have explicit matching from the resolutions to the new ward data. This is a clear-cut case, with no ambiguity.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long",
+        "line": "49. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Long Sơn, Hiệp Mỹ Đông và Hiệp Mỹ Tây thành xã mới có tên gọi là xã Hiệp Mỹ."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "29455",
+      "ward_name": "Xã Hiệp Mỹ"
+    }
+  ]
+}

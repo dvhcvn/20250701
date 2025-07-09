@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Trà Xuân, Huyện Trà Bồng, Tỉnh Quảng Ngãi",
+  "ellapsedInMs": 7602,
+  "estimatedCost": 0.0030015,
+  "thought": "**Mapping Old Vietnamese Addresses to New Administrative Units**\n\nOkay, I'm tasked with mapping the old address \"Thị trấn Trà Xuân, Tỉnh Quảng Ngãi\" to its new equivalent. My approach involves a series of logical steps, leveraging my understanding of Vietnamese administrative restructuring.\n\nFirst, I need to isolate the key components of the old address: the old ward (\"Thị trấn Trà Xuân\") and the old province (\"Tỉnh Quảng Ngãi\").\n\nNext, I'll dive into the province resolutions. Specifically, I'm checking if Quảng Ngãi has undergone any mergers or name changes. Resolution 60-NQ/TW states that it merged with Kon Tum, but importantly, the name \"Tỉnh Quảng Ngãi\" remains. This confirms the province name to use in the output.\n\nNow, I'll focus on other relevant resolutions, like 1677/NQ-UBTVQH15, looking for any mention of \"Thị trấn Trà Xuân.\"  Bingo! Line 26 explicitly states that \"Thị trấn Trà Xuân\" is absorbed into a new administrative unit called \"xã Trà Bồng.\" This is a crucial finding.\n\nTo solidify the mapping, I'll consult the \"New wards\" data.  I need to find a match for both \"xã Trà Bồng\" and \"Tỉnh Quảng Ngãi.\" The data confirms the existence of  `{\"ward_code\":\"21115\",\"ward_name\":\"Xã Trà Bồng\",\"province_name\":\"Tỉnh Quảng Ngãi\"}`. Perfect!\n\nGiven the direct, unambiguous statement in the resolution and the clear match in the \"New wards\" data, I'm confident in this mapping. The \"citation\" will point to resolution 1677/NQ-UBTVQH15, line 26, explaining the \"xã Trà Bồng\" change.  The final output structure will follow the specified JSON schema, reflecting the high confidence.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1677/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ngãi",
+        "line": "26. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Trà Xuân, xã Trà Sơn và xã Trà Thủy thành xã mới có tên gọi là xã Trà Bồng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ngãi",
+      "ward_code": "21115",
+      "ward_name": "Xã Trà Bồng"
+    }
+  ]
+}

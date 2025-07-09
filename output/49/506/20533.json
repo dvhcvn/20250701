@@ -1,0 +1,28 @@
+{
+  "address": "Xã Đại Tân, Huyện Đại Lộc, Tỉnh Quảng Nam",
+  "ellapsedInMs": 7869,
+  "estimatedCost": 0.003255,
+  "thought": "**Mapping an Old Vietnamese Address to New Administrative Units**\n\nOkay, so I'm looking at this old Vietnamese address, specifically \"Xã Đại Tân, Huyện Đại Lộc, Tỉnh Quảng Nam,\" and I need to figure out its new location based on these resolutions and new ward data.  It's a straightforward process, really.\n\nFirst, I identified the components: the old ward is \"Xã Đại Tân,\" the district is \"Huyện Đại Lộc,\" and the province is \"Tỉnh Quảng Nam.\"\n\nNext, I checked those Province Resolutions, specifically 60-NQ/TW.  \"Tỉnh Quảng Nam\" wasn't on the \"no change\" list, but it was on the \"merger\" list.  Specifically, it was merging with Đà Nẵng, resulting in the new province: \"Thành phố Đà Nẵng\". That's my first key piece.\n\nThen, I dove into the other resolutions.  I'm scanning the text for \"Xã Đại Tân\" specifically. Bingo! Resolution 1659/NQ-UBTVQH15 for Đà Nẵng has it.  Line 70 clearly states that \"Xã Đại Tân\" is being merged with other communes into a new \"Xã Phú Thuận\".  That's a direct, unambiguous match.  I also see that the old \"Huyện Đại Lộc\" now is part of \"Thành phố Đà Nẵng\". Another resolution states that a new ward named \"Xã Đại Lộc\" is created out of other communes, but \"Đại Tân\" isn't a part of it. The old district is gone, but the mapping is still clear.\n\nTo solidify this, I cross-referenced the new ward data.  I was looking for \"Xã Phú Thuận\" within \"Thành phố Đà Nẵng.\"  And there it is! `{\"ward_code\":\"20542\",\"ward_name\":\"Xã Phú Thuận\",\"province_name\":\"Thành phố Đà Nẵng\"}`. Perfect match.\n\nGiven that direct resolution, and the merger information, I'm confident in the mapping.  The high confidence level is absolutely justified here.  The new equivalent for \"Xã Đại Tân, Huyện Đại Lộc, Tỉnh Quảng Nam\" is \"Xã Phú Thuận\" in \"Thành phố Đà Nẵng\". That's a solid conclusion.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Quảng Nam và thành phố Đà Nẵng, lấy tên là thành phố Đà Nẵng"
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "20542",
+      "ward_name": "Xã Phú Thuận"
+    },
+    {
+      "citation": {
+        "header": "1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng",
+        "line": "70. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đại Tân, Đại Thắng, Đại Chánh và Đại Thạnh thành xã mới có tên gọi là xã Phú Thuận."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "20542",
+      "ward_name": "Xã Phú Thuận"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Phường Hàm Tiến, Thành phố Phan Thiết, Tỉnh Bình Thuận",
+  "ellapsedInMs": 7977,
+  "estimatedCost": 0.0031006000000000002,
+  "thought": "**My Analysis of the Address Mapping**\n\nOkay, so I'm dealing with an address that needs to be mapped to current administrative units. The old address is in \"Phường Hàm Tiến, Thành phố Phan Thiết, Tỉnh Bình Thuận.\"  My process goes like this:\n\nFirst, I need to figure out what happened to \"Tỉnh Bình Thuận.\"  I remember seeing something about province mergers... and sure enough, Resolution 60-NQ/TW states that Bình Thuận was merged with Lâm Đồng and Đắk Nông, with the name being \"Tỉnh Lâm Đồng.\"  So, \"Tỉnh Bình Thuận\" is now \"Tỉnh Lâm Đồng.\"\n\nNext, I look at the ward. \"Phường Hàm Tiến\" is the key. Since the province changed, I need to search within the context of the *new* province, Lâm Đồng. I'm going to scan the relevant resolutions, particularly those related to changes in the Lâm Đồng province. And bingo!  Resolution 1671/NQ-UBTVQH15, \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng,\" has the answer on line 110: \"...sắp xếp... phường Hàm Tiến, phường Mũi Né... thành phường mới có tên gọi là **phường Mũi Né**.\"  Perfect! \"Phường Hàm Tiến\" is now part of \"Phường Mũi Né.\"\n\nNow, I just need to verify that \"Phường Mũi Né\" exists in the data and that it's correctly linked to Lâm Đồng.  I'll check the \"New wards\" list, making sure it reflects the change.  The entry confirms: `{\"ward_code\":\"22918\",\"ward_name\":\"Phường Mũi Né\",\"province_name\":\"Tỉnh Lâm Đồng\"}`.  It's all lined up.\n\nGiven this direct and explicit mapping, I'm confident in the result. I would then structure the output with the new province name, the new ward name and code, and the source resolution with the specific line detailing the change. I can confidently assign a high confidence level to this.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng",
+        "line": "110. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Hàm Tiến, phường Mũi Né và xã Thiện Nghiệp thành phường mới có tên gọi là phường Mũi Né."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "22918",
+      "ward_name": "Phường Mũi Né"
+    }
+  ]
+}

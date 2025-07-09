@@ -1,0 +1,18 @@
+{
+  "address": "Xã Đặng Sơn, Huyện Đô Lương, Tỉnh Nghệ An",
+  "ellapsedInMs": 6161,
+  "estimatedCost": 0.0022873,
+  "thought": "**My Analysis of the Address Mapping**\n\nOkay, so I've got an old Vietnamese address: \"Xã Đặng Sơn, Huyện Đô Lương, Tỉnh Nghệ An\". My goal is to figure out how this old address maps to the new administrative structure.\n\nFirst, I identified the components: \"Xã Đặng Sơn\" is the old ward, \"Huyện Đô Lương\" is the old district, and \"Tỉnh Nghệ An\" is the old province.\n\nNext, I dove into the resolutions.  I checked the provincial resolutions first (60-NQ/TW), but \"Tỉnh Nghệ An\" is listed as a province that *wasn't* subject to mergers, so that's straightforward - \"Tỉnh Nghệ An\" stays \"Tỉnh Nghệ An.\"\n\nThen, I focused on the other relevant resolutions (1678/NQ-UBTVQH15).  I needed to locate \"Xã Đặng Sơn\" within these documents. Bingo! Line 20 of the resolution clearly states that \"Xã Đặng Sơn\" (from Đô Lương district) was merged into a new ward called \"Xã Đô Lương\".\n\nFinally, I cross-referenced the new ward details.  I confirmed that \"Xã Đô Lương\" has the associated details: code \"17662\" and is located in the province \"Tỉnh Nghệ An\".  It's a perfect match.\n\nThe evidence is clear.  The citation from the resolution (specifically line 20 of 1678/NQ-UBTVQH15) directly links the old \"Xã Đặng Sơn\" to the new \"Xã Đô Lương.\"  The province remains the same. The confidence level for this mapping is high due to the explicit wording in the resolution.\n\nTherefore, the output will be a JSON array with a single object containing the relevant citation, a high-confidence indicator, the new province name \"Tỉnh Nghệ An\", the new ward code \"17662\", and the new ward name \"Xã Đô Lương\".\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1678/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Nghệ An",
+        "line": "20. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Bắc Sơn và xã Nam Sơn (huyện Đô Lương), các xã Đà Sơn, Đặng Sơn, Lưu Sơn, Thịnh Sơn, Văn Sơn, Yên Sơn, thị trấn Đô Lương thành xã mới có tên gọi là xã Đô Lương."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Nghệ An",
+      "ward_code": "17662",
+      "ward_name": "Xã Đô Lương"
+    }
+  ]
+}

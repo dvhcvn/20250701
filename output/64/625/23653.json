@@ -1,0 +1,18 @@
+{
+  "address": "Xã Sơ Pai, Huyện KBang, Tỉnh Gia Lai",
+  "ellapsedInMs": 7405,
+  "estimatedCost": 0.0025737,
+  "thought": "**Address Mapping Analysis: Vietnamese Administrative Unit Transformation**\n\nAlright, I've got this Vietnamese address to map: \"Xã Sơ Pai\" in \"Huyện KBang\", Gia Lai province. Time to get to work. First, I need to break down the address. The old ward is \"Xã Sơ Pai,\" the district is \"Huyện KBang,\" and the province is \"Tỉnh Gia Lai.\"\n\nNow, let's dive into these resolutions. The province should be straightforward.  Resolution 60-NQ/TW states that Gia Lai and Bình Định combined, but retain the name \"Tỉnh Gia Lai.\"  High confidence match there.\n\nNext, I need to check the relevant resolutions for \"Xã Sơ Pai.\" I see `1660/NQ-UBTVQH15` but that one's about Đắk Lắk, so I'll skip it. `1664/NQ-UBTVQH15` (Gia Lai) is the one to focus on.  I'm reading through this resolution carefully.  Line 63 mentions Kbang and Dak Smar, but no mention of \"Xã Sơ Pai\".  Ah, here it is in Line 66: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Sơ Pai và xã Sơn Lang thành xã mới có tên gọi là **xã Sơn Lang**.\" Bingo! \"Xã Sơ Pai\" is merging into \"xã Sơn Lang\".\n\nNow, time to look up \"xã Sơn Lang\" in the \"New wards\" list. And there it is: `{\"ward_code\":\"23647\",\"ward_name\":\"Xã Sơn Lang\",\"province_name\":\"Tỉnh Gia Lai\"}`. That's a direct hit.\n\nSo, the new ward is \"Xã Sơn Lang\" with code \"23647,\" and the province remains \"Tỉnh Gia Lai.\" The relevant citation is `1664/NQ-UBTVQH15`, specifically Line 66. I'd give this a high confidence rating, as it's a direct and explicit mapping.\n\nI'll double check the district. The output schema doesn't have a field for the district, and the resolution mentions eliminating all districts. Therefore, I can focus solely on the ward and province.\n\nThe output will be: `province_name`: \"Tỉnh Gia Lai\", `ward_name`: \"Xã Sơn Lang\", `ward_code`: \"23647\", and a citation to `1664/NQ-UBTVQH15`, line 66, to support this mapping. Seems solid.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai",
+        "line": "66. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Sơ Pai và xã Sơn Lang thành xã mới có tên gọi là xã Sơn Lang."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "23647",
+      "ward_name": "Xã Sơn Lang"
+    }
+  ]
+}

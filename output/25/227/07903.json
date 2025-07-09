@@ -1,0 +1,18 @@
+{
+  "address": "Phường Tiên Cát, Thành phố Việt Trì, Tỉnh Phú Thọ",
+  "ellapsedInMs": 8108,
+  "estimatedCost": 0.0030173999999999995,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm tasked with mapping this old Vietnamese address, \"Phường Tiên Cát\", \"Thành phố Việt Trì\", \"Tỉnh Phú Thọ\", to its new administrative unit. My initial thought process is to break this down systematically. First, identify the components: the old ward (\"Phường Tiên Cát\"), district, and province (\"Tỉnh Phú Thọ\").  Now, let's dive into the evidence and work through this.\n\nMy primary resources are the province resolutions (specifically 60-NQ/TW) and other related resolutions like 1676/NQ-UBTVQH15, along with the \"New Wards\" data.  The first step is to confirm the province. The province resolution confirms that \"Tỉnh Phú Thọ\" remains unchanged despite merger efforts, so we're good there.\n\nNext, I need to pinpoint the specific resolution that covers \"Phường Tiên Cát\".  Scanning through resolution 1676, line 134 jumps out. It explicitly states that \"Phường Tiên Cát\" is merged into a new ward called \"Phường Thanh Miếu\". Bingo! That's the key.\n\nNow, I'll cross-reference \"Phường Thanh Miếu\" in the \"New Wards\" data.  I find a perfect match: `{\"ward_code\":\"07909\",\"ward_name\":\"Phường Thanh Miếu\",\"province_name\":\"Tỉnh Phú Thọ\"}`. This aligns perfectly with the resolution.\n\nHowever, a complication arises. The resolution also mentions \"Xã Sông Lô\" being part of the same merge.  Intriguingly, \"Xã Sông Lô\" also exists as a separate entry in the \"New Wards\" data, which is contradictory. It reads `{\"ward_code\":\"08848\",\"ward_name\":\"Xã Sông Lô\",\"province_name\":\"Tỉnh Phú Thọ\"}`. I need to re-examine the resolution carefully: it reads, *\"...sáp xếp...và xã Sông Lô thành phường mới có tên gọi là phường Thanh Miếu.\"* Clearly, \"Xã Sông Lô\" is intended to be merged *into* \"Phường Thanh Miếu\". The separate entry seems to be a data inconsistency.\n\nThis \"Xã Sông Lô\" data point creates some ambiguity, but thankfully, the task at hand is about \"Phường Tiên Cát\". Given the explicit resolution, I'm confident that \"Phường Tiên Cát\" is now part of \"Phường Thanh Miếu\".\n\nTherefore, I'll construct my output with high confidence. The citation comes from the specific resolution.  The province name is \"Tỉnh Phú Thọ\", confirmed by the province-level resolution. The new ward code is \"07909\", and the new ward name is \"Phường Thanh Miếu\". I'll be sure to make a note of the \"Xã Sông Lô\" inconsistency for further clarification, as it is confusing.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "134. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Thọ Sơn, Tiên Cát, Bạch Hạc, Thanh Miếu và xã Sông Lô thành phường mới có tên gọi là phường Thanh Miếu."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "07909",
+      "ward_name": "Phường Thanh Miếu"
+    }
+  ]
+}

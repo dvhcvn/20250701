@@ -1,0 +1,18 @@
+{
+  "address": "Xã Phùng Hưng, Huyện Khoái Châu, Tỉnh Hưng Yên",
+  "ellapsedInMs": 6134,
+  "estimatedCost": 0.0021940999999999996,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm presented with a Vietnamese address: Xã Phùng Hưng, Huyện Khoái Châu, Tỉnh Hưng Yên. My task is to translate this old address to the new administrative structure, leveraging available resolutions and the provided new ward data.\n\nFirst, I break down the address. I've got a ward (\"Xã Phùng Hưng\"), a district (\"Huyện Khoái Châu\") which the prompt says we're eliminating, and a province (\"Tỉnh Hưng Yên\"). The goal is to determine the correct province, ward name, and ward code within the new system.\n\nI begin by examining province-level resolutions (specifically, 60-NQ/TW). Finding \"Tỉnh Hưng Yên,\" I note the resolution that the province remains but absorbs Thái Bình.  This doesn't change anything for me regarding the province name.\n\nNext, I delve into other relevant resolutions (1666/NQ-UBTVQH15), looking for specific mentions of \"Xã Phùng Hưng\". Line 18 immediately catches my eye: it outlines the merging of several entities, including \"Phùng Hưng\", into a new \"Xã Khoái Châu\". This is a crucial piece of information.\n\nTo confirm and complete the picture, I cross-reference this information with the provided \"New wards\" data.  Sure enough, I find \"Xã Khoái Châu\" with the code \"12205\", and it's within the Province of Hưng Yên. This confirms the new ward name and provides the ward code.\n\nWith all the pieces in place, I can construct the final JSON output.  The province name remains \"Tỉnh Hưng Yên\" (from the province resolution). The ward name is \"Xã Khoái Châu\", and the ward code is \"12205\" (both from the new ward data, supported by the specific resolution mention). I'll include the relevant citation from Resolution 1666, specifically line 18, and I can confidently assign a \"high\" confidence level to this mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên",
+        "line": "18. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Khoái Châu và các xã Liên Khê, Phùng Hưng, Đông Kết thành xã mới có tên gọi là xã Khoái Châu."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "12205",
+      "ward_name": "Xã Khoái Châu"
+    }
+  ]
+}

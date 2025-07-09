@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Liên Quan, Huyện Thạch Thất, Thành phố Hà Nội",
+  "ellapsedInMs": 6627,
+  "estimatedCost": 0.0022370999999999997,
+  "thought": "**My Analysis of the Address Mapping**\n\nOkay, so I'm presented with the task of mapping \"Thị trấn Liên Quan\", \"Thành phố Hà Nội\" to the new administrative structure.  My initial focus will be identifying the old ward and province and then applying the relevant resolutions to find its new equivalent.\n\nFirst, I recognized \"Thị trấn Liên Quan\" and \"Thành phố Hà Nội\" as the old ward and province respectively.  I immediately consulted resolution 60-NQ/TW to see if \"Thành phố Hà Nội\" had undergone any changes. Thankfully, it's explicitly listed as a province that wasn't merged. So, the province name will remain \"Thành phố Hà Nội.\"\n\nNext, I delved into the specifics, using the more detailed resolution 1656/NQ-UBTVQH15.  My search for \"Thị trấn Liên Quan\" led me directly to line 93.  Here, the wording is quite explicit: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Liên Quan và các xã Cẩm Yên, Đại Đồng, Kim Quan, Lại Thượng, Phú Kim thành xã mới có tên gọi là **xã Thạch Thất**.\"  This clearly states that \"Thị trấn Liên Quan\" is merged into the new \"Xã Thạch Thất\".\n\nTo solidify my understanding, I cross-referenced this with the \"New wards\" data, locating \"Xã Thạch Thất\" within \"Thành phố Hà Nội\". This confirms the identified mapping.\n\nConsidering the output JSON structure, I've got a solid basis for my response.  The `citation` will be from resolution 1656/NQ-UBTVQH15. The `confidence` level is high because the resolution provides direct and unambiguous mapping.  The `province_name` will be \"Thành phố Hà Nội,\" which remains unchanged. The `ward_code` and `ward_name` will be extracted from the \"New wards\" data, which are \"09955\" and \"Xã Thạch Thất\" respectively.\n\nJust to be absolutely sure, I did a quick additional check of the resolution to ensure there were no splitting or partial merges involving \"Thị trấn Liên Quan.\" Line 93 is very clear about the *entire* area and population being transferred. Additionally, line 95's mention of \"thị trấn Quốc Oai\" confirms a distinct distinction from \"thị trấn Liên Quan\", which reinforces my conviction.\n\nSo, my final conclusion is that \"Thị trấn Liên Quan\", \"Thành phố Hà Nội\" maps completely to the new ward, \"Xã Thạch Thất,\" with confidence.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội",
+        "line": "93. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Liên Quan và các xã Cẩm Yên, Đại Đồng, Kim Quan, Lại Thượng, Phú Kim thành xã mới có tên gọi là xã Thạch Thất."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hà Nội",
+      "ward_code": "09955",
+      "ward_name": "Xã Thạch Thất"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "address": "Xã Mai Hịch, Huyện Mai Châu, Tỉnh Hoà Bình",
+  "ellapsedInMs": 5938,
+  "estimatedCost": 0.0022624,
+  "thought": "**My Mapping Strategy for the Vietnamese Address**\n\nOkay, so I need to translate this old Vietnamese address into the new administrative structure. The key is \"Tỉnh Hoà Bình\" (province) and \"Xã Mai Hịch\" (ward). My process is as follows:\n\n1.  **Province First:** I immediately check for province mergers using \"60-NQ/TW\". Aha! \"Tỉnh Hoà Bình\" was merged into \"Tỉnh Phú Thọ\" along with others. That's a crucial starting point.\n2.  **Ward Details:** Now for the ward, \"Xã Mai Hịch.\" I scrutinize the \"Other resolutions\" for any mention of it. I found a critical resolution, \"1676/NQ-UBTVQH15,\" related to \"Tỉnh Phú Thọ.\" Line 120 of that resolution confirms my suspicions: \"Xã Mai Hịch,\" along with two others, is merged into a new ward called \"**Xã Bao La**.\"\n3.  **Cross-Checking and Confirmation:** I look at \"New wards\" to find details for \"Xã Bao La\" and confirm it's now under \"Tỉnh Phú Thọ.\" I double-checked for any contradictory information regarding \"Mai Hịch\" or \"Hoà Bình\" in other resolutions. Everything aligns perfectly.\n4.  **JSON Construction:** Based on this analysis, I'm confident about the mapping. I will create a JSON output. This will include:\n    *   `province_name`: \"Tỉnh Phú Thọ\" (because of the province merger)\n    *   `ward_name`: \"Xã Bao La\" (from the specific ward resolution)\n    *   `ward_code`: \"05245\" (found in the \"New wards\" data)\n    *   `citation`: The resolution that specifically explains the change (\"1676/NQ-UBTVQH15\").\n    *   `confidence`: High, given the direct and explicit nature of the mapping.\n\nNo conflicting information or ambiguity here. It's a clean and decisive mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Vĩnh Phúc, tỉnh Phú Thọ và tỉnh Hoà Bình; lấy tên là tỉnh Phú Thọ"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "05245",
+      "ward_name": "Xã Bao La"
+    },
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "120. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Mai Hịch, Xăm Khòe và Bao La thành xã mới có tên gọi là xã Bao La."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "05245",
+      "ward_name": "Xã Bao La"
+    }
+  ]
+}

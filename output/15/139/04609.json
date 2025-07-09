@@ -1,0 +1,18 @@
+{
+  "address": "Xã Làng Nhì, Huyện Trạm Tấu, Tỉnh Yên Bái",
+  "ellapsedInMs": 5684,
+  "estimatedCost": 0.0021200999999999998,
+  "thought": "**My Approach to Address Mapping**\n\nOkay, so I'm presented with a Vietnamese address: \"Xã Làng Nhì, Huyện Trạm Tấu, Tỉnh Yên Bái\" and need to map it to the new administrative units, given the provided resolutions and a list of new wards. Here's my strategy:\n\nFirst, I identify the old province, which is \"Tỉnh Yên Bái\". Then, I'll consult the \"60-NQ/TW\" document to see if \"Tỉnh Yên Bái\" was involved in any mergers or consolidations. It's looking like \"Hợp nhất tỉnh Lào Cai và tỉnh Yên Bái, lấy tên là tỉnh Lào Cai\" means it was merged into \"Tỉnh Lào Cai.\"\n\nNext, I pinpoint the old ward, which is \"Xã Làng Nhì.\" Now, I'll scan the resolutions for any mentions of \"Xã Làng Nhì\". \"1673/NQ-UBTVQH15\" pops up as relevant.  Reading line 7 confirms that \"Xã Làng Nhì\" was merged with other wards to form the new ward \"xã Phình Hồ.\" Specifically, it says, \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Làng Nhì, Bản Mù và Phình Hồ thành xã mới có tên gọi là xã Phình Hồ.\"\n\nWith the new ward identified, I'll search the \"New wards\" list for \"xã Phình Hồ\" in \"Tỉnh Lào Cai.\"  Bingo! I find `{\"ward_code\":\"04609\",\"ward_name\":\"Xã Phình Hồ\",\"province_name\":\"Tỉnh Lào Cai\"}`.\n\nFinally, I'll construct the JSON output. My confidence in this mapping is high because the resolution is explicit about the ward merger and the resulting new ward details.  The output will contain the new province \"Tỉnh Lào Cai\", the new ward name \"Xã Phình Hồ\", the ward code \"04609\",  and the citation of resolution  \"1673/NQ-UBTVQH15\" line 7 to justify the mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai",
+        "line": "7. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Làng Nhì, Bản Mù và Phình Hồ thành xã mới có tên gọi là xã Phình Hồ."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "04609",
+      "ward_name": "Xã Phình Hồ"
+    }
+  ]
+}

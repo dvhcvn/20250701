@@ -1,0 +1,28 @@
+{
+  "address": "Thị trấn Quán Hàu, Huyện Quảng Ninh, Tỉnh Quảng Bình",
+  "ellapsedInMs": 8446,
+  "estimatedCost": 0.0033616999999999996,
+  "thought": "**Navigating the Administrative Unit Restructuring for \"Thị trấn Quán Hàu\"**\n\nAlright, let's break this down. My goal is to map the old address \"Thị trấn Quán Hàu, Huyện Quảng Ninh, Tỉnh Quảng Bình\" to the new administrative structure. First, I identify \"Tỉnh Quảng Bình\" as the old province and \"Thị trấn Quán Hàu\" as the old ward.\n\nNow, I dive into the province resolutions (specifically 60-NQ/TW).  I quickly scan the lists, and it's clear that Quảng Bình isn't on the \"no change\" list.  I find it in the merger list, which states: \"Hợp nhất tỉnh Quảng Bình và tỉnh Quảng Trị, lấy tên là tỉnh Quảng Trị.\"  So, that settles the new province: \"Tỉnh Quảng Trị\".\n\nNext, I look for resolutions concerning ward-level changes.  Resolution 1679/NQ-UBTVQH15 doesn't seem relevant, but 1680/NQ-UBTVQH15 catches my attention immediately.  The header is perfect: \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Trị\".  Bingo!  And then the critical line: \"25. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Quán Hàu vàcác xã Vĩnh Ninh, Võ Ninh, Hàm Ninh thành xã mới có tên gọi là **xã Quảng Ninh**.\"  That's a direct hit! \"Thị trấn Quán Hàu\" is being absorbed into a new ward called \"Xã Quảng Ninh\".  The other Thanh Hoa resolution with the same name is irrelevant, I make sure to avoid any cross-contamination.\n\nNow it's time to confirm with the new ward data. I need to find an entry with `province_name: \"Tỉnh Quảng Trị\"` and `ward_name: \"Xã Quảng Ninh\"`. Lo and behold, there it is: `{\"ward_code\":\"19207\",\"ward_name\":\"Xã Quảng Ninh\",\"province_name\":\"Tỉnh Quảng Trị\"}`. Perfect match!\n\nFinally, I'll compile my findings into the JSON output. I'm confident about this one; the province merger and ward-level resolution directly address the old address. I'll include both the province merger statement from 60-NQ/TW and the specific ward-merger line from 1680/NQ-UBTVQH15 as citations for thoroughness and accuracy. The `confidence` will be \"high\" because of the definitive direct matches. This should be a robust and defensible mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW",
+        "line": "Hợp nhất tỉnh Quảng Bình và tỉnh Quảng Trị, lấy tên là tỉnh Quảng Trị"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Trị",
+      "ward_code": "19207",
+      "ward_name": "Xã Quảng Ninh"
+    },
+    {
+      "citation": {
+        "header": "1680/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Trị",
+        "line": "25. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Quán Hàu vàcác xã Vĩnh Ninh, Võ Ninh, Hàm Ninh thành xã mới có tên gọi là xã Quảng Ninh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Trị",
+      "ward_code": "19207",
+      "ward_name": "Xã Quảng Ninh"
+    }
+  ]
+}

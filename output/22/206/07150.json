@@ -1,0 +1,18 @@
+{
+  "address": "Phường Cộng Hòa, Thị xã Quảng Yên, Tỉnh Quảng Ninh",
+  "ellapsedInMs": 7008,
+  "estimatedCost": 0.0031109,
+  "thought": "**Understanding the Address Transformation**\n\nOkay, so the user is looking for the new administrative unit for \"Phường Cộng Hòa, Thị xã Quảng Yên, Tỉnh Quảng Ninh.\"  My first step is always to verify the province, which is \"Tỉnh Quảng Ninh\".  Based on Resolution 60-NQ/TW, it seems this province isn't undergoing any province-level mergers, so \"Tỉnh Quảng Ninh\" stays as is.\n\nNext, I need to look closely at the ward level. I check resolutions specific to \"Tỉnh Quảng Ninh\" looking for \"Cộng Hòa.\"  I found Resolution 1679/NQ-UBTVQH15, and line 31 is the key here.  It explicitly states that \"phường Cộng Hòa,\" along with \"xã Sông Khoai\" and \"xã Hiệp Hòa,\" are merging into a *new* ward called \"**phường Hiệp Hòa**.\" Bingo!\n\nI also verified the new ward information in my `New wards` database, confirming that \"Phường Hiệp Hòa\" (with ward code \"07147\") exists within \"Tỉnh Quảng Ninh.\" That's solid confirmation.\n\nWhile I saw mentions of \"Quảng Yên\" in the same resolution, they related to the creation of a *new* \"phường Quảng Yên\" and weren't relevant to the old \"Phường Cộng Hòa.\" My focus is on the *ward* level, and line 31 of that resolution is the direct answer.\n\nConsidering the clarity and directness of the resolution, I'm very confident in this answer. The mapping is explicit.\n\nTherefore, the output will be:\n\n*   `province_name`: \"Tỉnh Quảng Ninh\"\n*   `ward_name`: \"Phường Hiệp Hòa\"\n*   `ward_code`: \"07147\"\n*   `confidence`: \"high\"\n*   `citation`: \"1679/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ninh, Line: 31. Sắp xếp toàn bộ diện tích tự nhiên và quy mô dân số của phường Cộng Hòa, xã Sông Khoai và xã Hiệp Hòa thành phường mới có tên gọi là **phường Hiệp Hòa**.\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1679/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ninh",
+        "line": "31. Sắp xếp toàn bộ diện tích tự nhiên và quy mô dân số của phường Cộng Hòa, xã Sông Khoai và xã Hiệp Hòa thành phường mới có tên gọi là phường Hiệp Hòa."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ninh",
+      "ward_code": "07147",
+      "ward_name": "Phường Hiệp Hòa"
+    }
+  ]
+}

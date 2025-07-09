@@ -1,0 +1,18 @@
+{
+  "address": "Xã Đại Hợp, Huyện Kiến Thuỵ, Thành phố Hải Phòng",
+  "ellapsedInMs": 8865,
+  "estimatedCost": 0.0032754000000000004,
+  "thought": "**Analyzing the Address Transformation**\n\nOkay, so I'm tackling this address mapping problem: \"Xã Đại Hợp, Huyện Kiến Thuỵ, Thành phố Hải Phòng\". My task is to figure out the new administrative location based on these resolutions and this new wards list.\n\nFirst, I need to check the province. \"Thành phố Hải Phòng\" is the old province, and I need to see if it's been altered. Looking at the province resolutions (like 60-NQ/TW), I see that \"Hợp nhất tỉnh Hải Dương và thành phố Hải Phòng, lấy tên là thành phố Hải Phòng\". So, Hải Phòng *remains* the province name. Good, that's step one.\n\nNext, I need to pinpoint the old ward and district: \"Xã Đại Hợp, Huyện Kiến Thuỵ.\"\n\nNow comes the crucial part: cross-referencing this with the resolutions. I've identified \"1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng\" as the key document. I need to find something relevant to \"Đại Hợp\" and \"Kiến Thuỵ\" within it.\n\nI'm carefully scanning this resolution now. Initially, I saw a line that looked promising: line 52 about \"Minh Tân (huyện Kiến Thụy), Đại Đồng and Đông Phương\". But, on closer inspection, it doesn't mention \"Đại Hợp.\"\n\nBingo! On line 53, I finally found it: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Tân Phong và xã Đại Hợp (huyện Kiến Thụy), xã Tú Sơn và một phần diện tích tự nhiên, quy mô dân số của xã Đoàn Xá thành xã mới có tên gọi là **xã Kiến Hải**.\" This is a perfect match – \"Đại Hợp (huyện Kiến Thuỵ)\" merges into \"Kiến Hải.\" Perfect!\n\nI also spot a line (94) that mentions \"Đại Hợp\", but that relates to a different district – \"Tứ Kỳ\". I need to be careful with these matches. They have to line up exactly.\n\nNow that I have \"xã Kiến Hải,\" I'll verify this in my list of new wards. I see \"Xã Kiến Hải\" with \"Thành phố Hải Phòng\" in the provided data: `{\"ward_code\":\"11749\",\"ward_name\":\"Xã Kiến Hải\",\"province_name\":\"Thành phố Hải Phòng\"}`. Confirmed!\n\nTherefore, the old address maps to \"Xã Kiến Hải\" in \"Thành phố Hải Phòng\". The resolution and line number provide a solid source for this match, so I'll generate the JSON output with a high confidence level:\n\n*   `province_name`: \"Thành phố Hải Phòng\"\n*   `ward_name`: \"Xã Kiến Hải\"\n*   `ward_code`: \"11749\"\n*   `confidence`: \"high\"\n*   `citation`: `\"1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng\", line: \"53. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Tân Phong và xã Đại Hợp (huyện Kiến Thuỵ), xã Tú Sơn và một phần diện tích tự nhiên, quy mô dân số của xã Đoàn Xá thành xã mới có tên gọi là **xã Kiến Hải**.\"`\n\nThat seems complete and accurate. It was a good exercise in precise resolution analysis!\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "53. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Tân Phong và xã Đại Hợp (huyện Kiến Thụy), xã Tú Sơn và một phần diện tích tự nhiên, quy mô dân số của xã Đoàn Xá thành xã mới có tên gọi là xã Kiến Hải."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "11749",
+      "ward_name": "Xã Kiến Hải"
+    }
+  ]
+}

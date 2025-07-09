@@ -1,0 +1,18 @@
+{
+  "address": "Phường Phù Lương, Thị xã Quế Võ, Tỉnh Bắc Ninh",
+  "ellapsedInMs": 7992,
+  "estimatedCost": 0.0033667999999999997,
+  "thought": "**Finding the New Administrative Unit**\n\nOkay, let's break this down. First, the user provided the old address: \"Phường Phù Lương, Thị xã Quế Võ, Tỉnh Bắc Ninh\".  I need to determine the current administrative unit.\n\n1.  **Province Identification:**  \"Tỉnh Bắc Ninh\" is the province.  I quickly checked the provincial merger data (60-NQ/TW), and thankfully, Bắc Ninh isn't listed for any provincial mergers. That means it remains \"Tỉnh Bắc Ninh\" even after any potential reorganizations with Bắc Giang.\n\n2.  **Ward Identification and Search:** The key here is \"Phường Phù Lương\".  I'll start by searching for it within the relevant resolutions.  My initial glance through the resolutions focuses on the ones related to Bắc Ninh.  I found the important one, \"1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh\".\n\n3.  **Resolution Analysis:** Scanning through the \"1658/NQ-UBTVQH15\" resolution, I hit gold at line 84:  \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Phù Lương, xã Ngọc Xá và xã Đào Viên thành phường mới có tên gọi là **phường Đào Viên**.\"  Bingo! \"Phường Phù Lương\" is directly mentioned, and the resolution specifies it's merged into the new \"phường Đào Viên\".\n\n4.  **Verification and Data Extraction:** I double-checked the \"New wards\" data to confirm \"phường Đào Viên\". And there it is, with its ward code and province name: `{\"ward_code\":\"09301\",\"ward_name\":\"Phường Đào Viên\",\"province_name\":\"Tỉnh Bắc Ninh\"}`. Everything aligns.\n\n5.  **Confidence Check:** The fact that the old ward is explicitly named in the resolution, and that the new ward is in my \"New Wards\" dataset, gives me high confidence in this result. I'm ready to craft the JSON output with the correct administrative unit.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh",
+        "line": "84. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Phù Lương, xã Ngọc Xá và xã Đào Viên thành phường mới có tên gọi là **phường Đào Viên**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "09301",
+      "ward_name": "Phường Đào Viên"
+    }
+  ]
+}

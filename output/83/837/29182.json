@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Thạnh Phú, Huyện Thạnh Phú, Tỉnh Bến Tre",
+  "ellapsedInMs": 6505,
+  "estimatedCost": 0.0237042,
+  "thought": "**Navigating the Administrative Unit Restructuring Puzzle**\n\nOkay, so I've got this address to work with: \"Thị trấn Thạnh Phú, Huyện Thạnh Phú, Tỉnh Bến Tre\".  My task is to find its new administrative unit.  Here's how I'm going to break this down:\n\nFirst, I need to check for any province mergers. My go-to is `60-NQ/TW`, and yep, there it is:  \"Tỉnh Bến Tre\" was merged with Vĩnh Long and Trà Vinh, becoming \"Tỉnh Vĩnh Long\".  So, that's step one.\n\nNext, I'm diving into the resolutions to see how \"Thị trấn Thạnh Phú\" was affected. I'm searching the \"Other resolutions\" for that name and immediately see `1687/NQ-UBTVQH15`, which seems promising – it's about re-arranging administrative units in Vĩnh Long (which now includes Bến Tre).  Line 77 spells it out:  \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Thạnh Phú và các xã An Thạnh (huyện Thạnh Phú), Bình Thạnh,Mỹ Anthành xã mới có tên gọi là **xã Thạnh Phú**.\" Bingo!\n\nNow, the final piece: the \"ward_code\". I need to cross-reference \"xã Thạnh Phú\" with the `New wards` list, specifically within the context of \"Tỉnh Vĩnh Long\". Searching, I find `{\"ward_code\":\"29182\",\"ward_name\":\"Xã Thạnh Phú\",\"province_name\":\"Tỉnh Vĩnh Long\"}`.\n\nMy confidence in this result is extremely high. The resolution is explicit: the old \"Thị trấn Thạnh Phú\" is now completely re-organized into the new \"xã Thạnh Phú.\" I'm essentially reading a direct mapping here.\n\nFinally, I'll package all of this up into a clean JSON output, ready to go.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long",
+        "line": "77. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Thạnh Phú và các xã An Thạnh (huyện Thạnh Phú), Bình Thạnh,Mỹ Anthành xã mới có tên gọi là **xã Thạnh Phú**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "29182",
+      "ward_name": "Xã Thạnh Phú"
+    }
+  ]
+}

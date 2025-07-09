@@ -1,0 +1,28 @@
+{
+  "address": "Phường Long Chánh, Thành phố Gò Công, Tỉnh Tiền Giang",
+  "ellapsedInMs": 6718,
+  "estimatedCost": 0.0026187,
+  "thought": "**My Analysis of the Administrative Unit Change**\n\nOkay, here's how I'd approach this. First, the user gave me an old address: \"Phường Long Chánh, Thành phố Gò Công, Tỉnh Tiền Giang\". My task is to determine the new administrative unit.\n\n**Step 1: Province Level** My first thought is to tackle the province. I need to see if \"Tỉnh Tiền Giang\" has undergone any changes. I'll check my \"Province resolutions\" data, specifically focusing on merges or renamings.  Ah, here it is: \"60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất\" states that \"Tỉnh Tiền Giang\" was merged with \"Tỉnh Đồng Tháp\" and the new name is \"Tỉnh Đồng Tháp\".  So \"Tỉnh Tiền Giang\" is now \"Tỉnh Đồng Tháp.\"\n\n**Step 2: Ward Level** Next, the ward itself: \"Phường Long Chánh\". I need to search the \"Other resolutions\" data to see if there have been any changes within \"Thành phố Gò Công.\" I'm looking for \"Phường Long Chánh\" specifically. Scanning through the resolutions, I find \"1663/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Tháp\". Line 90 jumps out at me: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Long Chánh và xã Bình Xuân thành phường mới có tên gọi là **phường Bình Xuân**.\" Bingo! \"Phường Long Chánh\" has been merged with \"xã Bình Xuân\" to form the new ward \"Phường Bình Xuân\".\n\n**Step 3: Verifying the Match** Now I just need to verify that \"Phường Bình Xuân\" exists in the \"New wards\" list for \"Tỉnh Đồng Tháp\". Let's check the \"New wards\" list. Here we go: `{\"ward_code\":\"28315\",\"ward_name\":\"Phường Bình Xuân\",\"province_name\":\"Tỉnh Đồng Tháp\"}`. Perfect match! It's exactly what I expected.\n\n**Step 4: Confidence Assessment** Given the clarity of the province merger, the direct mention of \"Phường Long Chánh\" in the resolution, and the confirmed match in the \"New wards\" list, I'm extremely confident in this result. This is a solid, straightforward resolution.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "21. Hợp nhất tỉnh Tiền Giang và tỉnh Đồng Tháp, lấy tên là tỉnh Đồng Tháp"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đồng Tháp",
+      "ward_code": "28315",
+      "ward_name": "Phường Bình Xuân"
+    },
+    {
+      "citation": {
+        "header": "1663/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Tháp",
+        "line": "90. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Long Chánh và xã Bình Xuân thành phường mới có tên gọi là phường Bình Xuân."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đồng Tháp",
+      "ward_code": "28315",
+      "ward_name": "Phường Bình Xuân"
+    }
+  ]
+}

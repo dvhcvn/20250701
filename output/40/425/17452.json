@@ -1,0 +1,18 @@
+{
+  "address": "Xã Ngọc Bích, Huyện Diễn Châu, Tỉnh Nghệ An",
+  "ellapsedInMs": 7083,
+  "estimatedCost": 0.0024327999999999997,
+  "thought": "**Analysis and Mapping of Old Address to New Administrative Unit**\n\nOkay, so I've been tasked with mapping the old address \"Xã Ngọc Bích, Huyện Diễn Châu, Tỉnh Nghệ An\" to its new administrative unit. My initial steps are clear: first, identify the existing ward, district, and province.  I've parsed out \"Xã Ngọc Bích\" as the old ward, \"Huyện Diễn Châu\" as the old district (though, as the prompt states \"eliminating all districts\", it's mainly context), and \"Tỉnh Nghệ An\" as the old province.\n\nNext, I need to consult the relevant resolutions. I've confirmed that \"Tỉnh Nghệ An\" isn't subject to any provincial mergers based on Resolution 60-NQ/TW. This gives me strong confidence in \"Tỉnh Nghệ An\" remaining \"Tỉnh Nghệ An.\"\n\nDigging deeper, I've found that Resolution 1678/NQ-UBTVQH15 is key. Specifically, line 12 explicitly states, *\"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Diễn Thành và các xã Diễn Hoa, Diễn Phúc, Ngọc Bích thành xã mới có tên gọi là **xã Diễn Châu**\"* (\"The complete natural area, population scale of Diễn Thành town and Diễn Hoa, Diễn Phúc, Ngọc Bích communes are merged into a new commune named **xã Diễn Châu**\"). This is significant because it directly addresses \"Xã Ngọc Bích,\" the old ward.\n\nNow, checking the new ward data, I see `{\"ward_code\":\"17464\",\"ward_name\":\"Xã Diễn Châu\",\"province_name\":\"Tỉnh Nghệ An\"}`.  This data aligns perfectly with the information from the resolution.  The ward name and province match.\n\nGiven the explicit merger mentioned in the resolution and the matching new ward data, I'm confident in the following mapping and construction of the JSON output:  `province_name`: \"Tỉnh Nghệ An\" (high confidence), `ward_name`: \"Xã Diễn Châu\" (high confidence), `ward_code`: \"17464\" (high confidence), `confidence`: \"high\" due to the direct reference in the resolution and matching new data, and a citation to ensure clarity and traceability. I must ensure the output adheres precisely to the specified JSON format requirements.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1678/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Nghệ An",
+        "line": "12. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Diễn Thành và các xã Diễn Hoa, Diễn Phúc, Ngọc Bích thành xã mới có tên gọi là xã Diễn Châu."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Nghệ An",
+      "ward_code": "17464",
+      "ward_name": "Xã Diễn Châu"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Phường Thuận Lộc, Quận Phú Xuân, Thành phố Huế",
+  "ellapsedInMs": 6739,
+  "estimatedCost": 0.0026296,
+  "thought": "**My Analysis of the Administrative Unit Change for \"Phường Thuận Lộc\"**\n\nOkay, so I've got this address to work with: \"Phường Thuận Lộc, Quận Phú Xuân, Thành phố Huế.\" My goal is to figure out the new ward for this old one. Time to delve into those resolutions and the new wards data.\n\nFirst, I need to break down the old address. I've got \"Phường Thuận Lộc\" as the old ward and \"Thành phố Huế\" as the province.  I can safely ignore the district \"Quận Phú Xuân\" since those are being eliminated in these changes.\n\nNow, let's start with province-level resolutions (specifically 60-NQ/TW).  \"Thành phố Huế\" is listed as a province *not* undergoing merges. That's good to know, but doesn't tell me what happened to the ward.\n\nNext, I'll need to focus on ward-specific resolutions within \"Thành phố Huế\". Resolution 1665/NQ-UBTVQH15 about Hà Tĩnh is irrelevant. However, 1675/NQ-UBTVQH15, concerning Huế, looks promising. Line 10 of that resolution seals the deal:  It explicitly states that \"Phường Thuận Lộc\" *and five other wards* are being merged to form a *new* ward called \"Phường Phú Xuân\".\n\nNow, let's confirm this by checking the new wards data.  I find a matching entry: `{\"ward_code\":\"19753\",\"ward_name\":\"Phường Phú Xuân\",\"province_name\":\"Thành phố Huế\"}`.  That’s solid confirmation.\n\nI also checked for \"Phường Thuận Hóa\" just in case, since it's an existing ward, but the resolutions are clear: \"Phường Thuận Lộc\" becomes part of \"Phường Phú Xuân.\"\n\nTherefore, I'm confident about my findings. The new ward for \"Phường Thuận Lộc\" is \"Phường Phú Xuân\". I'll construct the JSON output accordingly. My confidence level is *high* because the resolution specifically addresses this change, and the new ward data confirms it.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1675/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Huế",
+        "line": "10. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Gia Hội, Phú Hậu, Tây Lộc, Thuận Lộc, Thuận Hòa và Đông Ba thành phường mới có tên gọi là phường Phú Xuân."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Huế",
+      "ward_code": "19753",
+      "ward_name": "Phường Phú Xuân"
+    }
+  ]
+}

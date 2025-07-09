@@ -1,0 +1,18 @@
+{
+  "address": "Xã Nhị Long Phú, Huyện Càng Long, Tỉnh Trà Vinh",
+  "ellapsedInMs": 7087,
+  "estimatedCost": 0.0026262,
+  "thought": "**My Analysis of Mapping the Old Vietnamese Address**\n\nAlright, I'm tackling this address mapping problem. The old address is \"Xã Nhị Long Phú, Huyện Càng Long, Tỉnh Trà Vinh.\"  My goal is to find the corresponding new administrative units. First, I identify the components: Ward (Nhị Long Phú), District (Càng Long - this is context, since the prompt is eliminating districts), and Province (Trà Vinh).\n\nThe key here is understanding the administrative changes driven by resolutions. I start with the province changes detailed in Resolution 60-NQ/TW.  I find \"Tỉnh Trà Vinh\" in the merge list, and it clearly states that Trà Vinh is combined with Bến Tre and Vĩnh Long to form \"Tỉnh Vĩnh Long.\" This is critical, because it narrows down my search for new wards.\n\nNext, I delve into Resolution 1687/NQ-UBTVQH15. I search within the resolution's content for \"Xã Nhị Long Phú.\" Bingo! Line 29 is the gem: it details the merging of \"thị trấn Càng Long, xã Mỹ Cẩm, and xã Nhị Long Phú\" into a *new* ward called \"Xã Càng Long.\" Perfect! This is a direct mapping.\n\nWith that confirmed, I check the provided new ward data, filtering for wards within the new province, \"Tỉnh Vĩnh Long.\" Sure enough, there's a match: `{\"ward_code\":\"29266\",\"ward_name\":\"Xã Càng Long\",\"province_name\":\"Tỉnh Vĩnh Long\"}`. This aligns perfectly with the resolution.\n\nNow, I construct the JSON output.  Based on my findings, the output will reflect:\n\n*   `province_name`: \"Tỉnh Vĩnh Long\" (from the province merge)\n*   `ward_name`: \"Xã Càng Long\" (derived directly from Resolution 1687/NQ-UBTVQH15)\n*   `ward_code`: \"29266\" (matching the new ward data)\n*   `citation`: with the header from the resolution and the specific line where the merge is mentioned.\n*   `confidence`: \"high\" – given the explicit and unambiguous mapping within the resolution.\n\nTo ensure there are no other potential interpretations, I carefully scan the surrounding lines in the resolution, looking for other mentions of \"Xã Nhị Long Phú\" or \"Huyện Càng Long.\" Line 30 and 33 were reviewed and they do not mention Nhị Long Phú. My analysis suggests that Xã Càng Long is the most direct and accurate mapping. I'm satisfied that this is the best possible answer and will mark the `confidence` as `high`.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long",
+        "line": "29. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Càng Long, xã Mỹ Cẩm và xã Nhị Long Phú thành xã mới có tên gọi là xã Càng Long."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "29266",
+      "ward_name": "Xã Càng Long"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Chư Băh, Thị xã Ayun Pa, Tỉnh Gia Lai",
+  "ellapsedInMs": 7819,
+  "estimatedCost": 0.0025833,
+  "thought": "**Mapping an Old Vietnamese Address to a New Administrative Unit**\n\nOkay, I've got the task. The user wants me to translate an old Vietnamese address to a new one, given some resolutions and a list of new wards. Let's break this down systematically.\n\nFirst, I need to identify the old address components.  I see \"Xã Chư Băh\" (ward), \"Thị xã Ayun Pa\" (district, even though the instructions mention eliminating districts, this context might be useful later), and \"Tỉnh Gia Lai\" (province).\n\nNow, the plan is to check the relevant resolutions and the new ward data. I'll start with **Province Resolution 60-NQ/TW**. I'll scan that document for \"Tỉnh Gia Lai\".  Ah, here it is: the resolution mentions that Gia Lai remains Gia Lai, even after absorbing Bình Định. No change there.\n\nNext up, **Resolution 1664/NQ-UBTVQH15**. I'll specifically look for \"Xã Chư Băh\" in the lines of this document. Aha! Line 74! It explicitly states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Chư Băh và xã Ia Rbol thành xã mới có tên gọi là **xã Ia Rbol**.\"  Perfect.  \"Chư Băh\" is merged into \"Ia Rbol\".\n\nNow, I'll cross-reference this with the \"New wards\" list. I need to find \"Xã Ia Rbol\" there.  I see it: `{\"ward_code\":\"24065\",\"ward_name\":\"Xã Ia Rbol\",\"province_name\":\"Tỉnh Gia Lai\"}`.  It's a perfect match!\n\nTime to construct the JSON output.  The province name is \"Tỉnh Gia Lai\" (from the province resolution). The new ward is \"Xã Ia Rbol,\" with code \"24065,\" directly from the mapping. The citation will include the resolution header \"1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai\" and line 74 as the relevant excerpt. Given the clarity of this direct mapping, I'll confidently mark this as \"high\" confidence.\n\nJust to be thorough, I'll quickly glance at the other lines in 1664/NQ-UBTVQH15 to ensure there aren't any other references to \"Chư Băh\".  I see a couple of other ward merges, but nothing else that mentions \"Chư Băh\". The \"Ia Rbol\" mapping is definitive.  Excellent! This should be a robust and accurate answer.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai",
+        "line": "74. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Chư Băh và xã Ia Rbol thành xã mới có tên gọi là xã Ia Rbol."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "24065",
+      "ward_name": "Xã Ia Rbol"
+    }
+  ]
+}

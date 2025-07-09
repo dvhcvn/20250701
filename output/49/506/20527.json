@@ -1,0 +1,18 @@
+{
+  "address": "Xã Đại Thạnh, Huyện Đại Lộc, Tỉnh Quảng Nam",
+  "ellapsedInMs": 7368,
+  "estimatedCost": 0.003249,
+  "thought": "**My Analysis of the Administrative Unit Change**\n\nOkay, here's how I'd approach this. The user has given me an old address: \"Xã Đại Thạnh, Huyện Đại Lộc, Tỉnh Quảng Nam\".  My task is to identify the new administrative unit (ward) for that location.\n\nFirst, I parsed the old address into its components: Ward (Xã Đại Thạnh), District (Huyện Đại Lộc), and Province (Tỉnh Quảng Nam). The district is useful for context, but the ward and province are key.\n\nNext, I looked at the province resolutions (specifically, resolution 60-NQ/TW) to see what happened to \"Tỉnh Quảng Nam.\" The resolution stated it was merged with Đà Nẵng, becoming \"Thành phố Đà Nẵng.\"  That's my new province name.\n\nNow, the main task:  finding a matching resolution that mentions \"Xã Đại Thạnh\" within the context of Quảng Nam/Đà Nẵng.  I started scanning the \"Other resolutions\" provided.\n\nI quickly identified `1659/NQ-UBTVQH15`, which pertains to the \"thành phố Đà Nẵng\". This was promising. Upon examination, I found the following:\n\n- Resolution 70 specifically mentions \"Xã Đại Thạnh\" as one of the contributing communes in the formation of \"xã Phú Thuận\".\n\nThis is a direct hit! I then confirmed \"xã Phú Thuận\" in the \"New wards\" list, verifying its code and province association. I believe this is a high-confidence match because \"Xã Đại Thạnh\" is explicitly included in the definition.\n\nI also double-checked other potential scenarios within the resolutions.\n\nTherefore, my final conclusion is: **The new ward for \"Xã Đại Thạnh\" is \"Xã Phú Thuận\" with code \"20542\" in \"Thành phố Đà Nẵng.\"**\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng",
+        "line": "70. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đại Tân, Đại Thắng, Đại Chánh và Đại Thạnh thành xã mới có tên gọi là **xã Phú Thuận**."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "20542",
+      "ward_name": "Xã Phú Thuận"
+    }
+  ]
+}

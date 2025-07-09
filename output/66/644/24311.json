@@ -1,0 +1,18 @@
+{
+  "address": "Phường Thiện An, Thị Xã Buôn Hồ, Tỉnh Đắk Lắk",
+  "ellapsedInMs": 6473,
+  "estimatedCost": 0.0022976,
+  "thought": "**Determining the New Ward for an Old Address: A Deep Dive**\n\nOkay, so I'm tackling this address change.  The user's given me an old address and wants the new equivalent ward.  My first instinct is to break this down methodically.\n\nFirst, I need to understand the old address.  I'll pull out the old ward name, district, and province from \"Phường Thiện An, Thị Xã Buôn Hồ, Tỉnh Đắk Lắk.\"  That's straightforward: \"Thiện An\" (or \"Phường Thiện An\"), \"Thị Xã Buôn Hồ\", and \"Tỉnh Đắk Lắk\".\n\nNow for the real work: the resolutions. I know these are my key to understanding the administrative changes.  I'll start with the province-level changes.  Does Tỉnh Đắk Lắk fall under any of the exceptions? No, it's not on the \"do not merge\" list.  Looking at the merge list shows that it merged with Phú Yên, but kept the Đắk Lắk name. Okay, that helps me understand if the province itself changed, which in this case, it did not.\n\nNext, I need to focus on specific ward changes. The user gave me resolution 1660/NQ-UBTVQH15, and here's where it gets interesting: it explicitly lists \"Thiện An\" as being merged with other wards to form \"phường Buôn Hồ\". Bingo!  That's exactly what I was looking for.\n\nI'll quickly double-check that \"phường Buôn Hồ\" is actually listed in the new ward data, and it is.  With that confirmation, I'm confident in my answer.\n\nFinally, I'll construct the JSON output.  The province stays as \"Tỉnh Đắk Lắk\". The new ward name is \"Phường Buôn Hồ\", and I'll grab its code from the new ward list. The resolution that mentioned \"Thiện An\" will be my citation.  Given the explicit mention and mapping in the resolution, I'd say the *confidence* level is definitely \"high.\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1660/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đắk Lắk",
+        "line": "87. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Đạt Hiếu, An Bình, An Lạc, Thiện An, Thống Nhất và Đoàn Kết thành phường mới có tên gọi là phường Buôn Hồ."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đắk Lắk",
+      "ward_code": "24305",
+      "ward_name": "Phường Buôn Hồ"
+    }
+  ]
+}

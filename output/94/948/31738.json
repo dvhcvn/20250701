@@ -1,0 +1,18 @@
+{
+  "address": "Xã Vĩnh Quới, Thị xã Ngã Năm, Tỉnh Sóc Trăng",
+  "ellapsedInMs": 6818,
+  "estimatedCost": 0.0025777,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm presented with an old Vietnamese address: Xã Vĩnh Quới, Thị xã Ngã Năm, Tỉnh Sóc Trăng. The task is to map this to the new administrative units. Let's break this down.\n\nFirst, I identify the address components. Then, I dive into the resolutions, starting with Resolution 60-NQ/TW. I see Sóc Trăng isn't on any \"no change\" lists, but it *is* in a resolution regarding mergers! It appears Sóc Trăng is now part of Thành phố Cần Thơ.\n\nNext, I turn to Resolution 1668/NQ-UBTVQH15. I'm looking for direct mentions of Xã Vĩnh Quới and Thị xã Ngã Năm. Bingo! Line 29 is the key: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của Phường 1 và Phường 2 (thị xã Ngã Năm), xã Vĩnh Quới thành phường mới có tên gọi là **phường Ngã Năm**.\" This tells me *exactly* how the old units map to the new. Xã Vĩnh Quới is *explicitly* part of the formation of Phường Ngã Năm. And that resolution pertains to Cần Thơ, which aligns with the province merge.\n\nNow, I cross-reference this with the \"New wards\" data. Yep, there's a Phường Ngã Năm entry: {\"ward_code\":\"31732\",\"ward_name\":\"Phường Ngã Năm\",\"province_name\":\"Thành phố Cần Thơ\"}. Perfect confirmation.\n\nBuilding the JSON output is straightforward now: the citation will be from the resolution, the confidence is high (it's a direct mapping!), the province is Cần Thơ, the ward is Phường Ngã Năm, and I have the ward code.\n\nI double-checked for any other relevant mentions. I noticed line 30 talks about other mergers in Thị xã Ngã Năm, but Vĩnh Quới isn't involved there. So, the only valid mapping for Xã Vĩnh Quới is to Phường Ngã Năm. That's a solid, direct mapping with high confidence.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1668/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Cần Thơ",
+        "line": "29. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của Phường 1 và Phường 2 (thị xã Ngã Năm), xã Vĩnh Quới thành phường mới có tên gọi là phường Ngã Năm."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Cần Thơ",
+      "ward_code": "31732",
+      "ward_name": "Phường Ngã Năm"
+    }
+  ]
+}

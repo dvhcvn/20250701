@@ -1,0 +1,18 @@
+{
+  "address": "Xã Định Thủy, Huyện Mỏ Cày Nam, Tỉnh Bến Tre",
+  "ellapsedInMs": 8470,
+  "estimatedCost": 0.0027161999999999998,
+  "thought": "**Address Mapping for Định Thủy**\n\nOkay, let's map \"Xã Định Thủy, Huyện Mỏ Cày Nam, Tỉnh Bến Tre\" to its new administrative unit. My initial thought process involves a multi-step approach:\n\n1.  **Identify the old units:** The input address clearly points to \"Tỉnh Bến Tre\" (old province), \"Xã Định Thủy\" (old ward), and \"Huyện Mỏ Cày Nam\" (old district). I know from the prompt that we're essentially eliminating districts, so the focus will be on province and ward.\n\n2.  **Province Merger Check:** I need to consult the province resolutions, specifically 60-NQ/TW, to see what happened to \"Tỉnh Bến Tre\". Ah, it's merged with Vĩnh Long and Trà Vinh to become \"Tỉnh Vĩnh Long\". So, \"province_name\" will be \"Tỉnh Vĩnh Long\" in the output.\n\n3.  **Ward Mapping:** Now for the critical part: finding the new ward for \"Xã Định Thủy\".  I'll review any relevant resolutions.  Resolution 1687/NQ-UBTVQH15, \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long\", looks promising since it pertains to Vĩnh Long and the ongoing administrative adjustments. Bingo!  Line 70 directly addresses \"Xã Định Thủy\", merging it with Phước Hiệp and Bình Khánh to form the new ward, \"xã Đồng Khởi\". Perfect!\n\n4.  **New Wards Verification:**  Let's double-check the \"New wards\" data. I'm looking for \"xã Đồng Khởi\" within \"Tỉnh Vĩnh Long.\" The data confirms the existence of  `{\"ward_code\":\"28945\",\"ward_name\":\"Xã Đồng Khởi\",\"province_name\":\"Tỉnh Vĩnh Long\"}`. This aligns perfectly with the resolution.\n\n5.  **Output Construction:** I can now confidently construct the JSON output:\n    *   `citation`:  The resolution 1687/NQ-UBTVQH15 provides the necessary context. The specific line will be \"70. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Định Thủy, Phước Hiệp và Bình Khánh thành xã mới có tên gọi là xã Đồng Khởi.\"\n    *   `confidence`: \"high\" -  we have direct mentions and a clear mapping.\n    *   `province_name`: \"Tỉnh Vĩnh Long\" (from the province merger).\n    *   `ward_code`: \"28945\".\n    *   `ward_name`: \"Xã Đồng Khởi\".\n\n6.  **Double-Checking for Other Mappings:** Before finalizing, I'll quickly scan the surrounding lines in the resolution to ensure there aren't any other relevant mappings that might have been missed.  Line 71 mentions \"thị trấn Mỏ Cày\" and \"An Thạnh (huyện Mỏ Cày Nam)\". But since \"Định Thủy\" wasn't mentioned in that mapping, I can safely disregard it.\n\nTherefore, \"Xã Định Thủy\" is now \"Xã Đồng Khởi\" within \"Tỉnh Vĩnh Long,\" with a high confidence mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long",
+        "line": "70. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Định Thủy, Phước Hiệp và Bình Khánh thành xã mới có tên gọi là xã Đồng Khởi."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "28945",
+      "ward_name": "Xã Đồng Khởi"
+    }
+  ]
+}

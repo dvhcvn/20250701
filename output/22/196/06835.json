@@ -1,0 +1,18 @@
+{
+  "address": "Phường Phương Nam, Thành phố Uông Bí, Tỉnh Quảng Ninh",
+  "ellapsedInMs": 6319,
+  "estimatedCost": 0.0052032,
+  "thought": "**My Analysis of the Administrative Unit Change**\n\nOkay, so I'm tasked with figuring out the new administrative unit (ward) for the old address \"Phường Phương Nam\", \"Thành phố Uông Bí\", \"Tỉnh Quảng Ninh\". Here's how I'm going to approach this, leveraging my expertise:\n\nFirst, I need to pinpoint the starting point, the old ward and province: \"Phường Phương Nam\" in \"Thành phố Uông Bí\", within \"Tỉnh Quảng Ninh\".\n\nNow, the important part: province-level mergers. I'll check \"60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất\" and \"60-NQ/TW: Các đơn vị hành chính cấp tỉnh không thực hiện sáp nhập\". Since \"Tỉnh Quảng Ninh\" appears under the \"không thực hiện sáp nhập\" category, the province name will remain the same.\n\nNext, I need to delve into the `other resolutions` to find any that mention \"Phường Phương Nam\" within \"Tỉnh Quảng Ninh\". I've got a hunch, and sure enough, resolution \"1679/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ninh\" seems promising. Specifically, line 27 catches my eye: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Phương Đông, phường Phương Nam và xã Thượng Yên Công thành phường mới có tên gọi là **phường Yên Tử**.\" Perfect! That's the key.\n\nSo, the new ward name is definitively \"phường Yên Tử\".\n\nNow, I'll need to double-check that this new ward exists in the provided `New wards` list. I'll look for \"phường Yên Tử\" within \"Tỉnh Quảng Ninh\".  And there it is:  `{\"ward_code\":\"06832\",\"ward_name\":\"Phường Yên Tử\",\"province_name\":\"Tỉnh Quảng Ninh\"}`. Confirmed!\n\nFinally, I'll structure the output JSON.  I can confidently use the header and the specific line from the resolution as the `citation`. Because this is a direct mapping as stated in the resolution, the `confidence` level is \"high.\"  The `province_name` will be the original, since there was no province merger.  I'll grab the `ward_code` and the `ward_name` directly from the `New wards` list.  Done!\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1679/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ninh",
+        "line": "27. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Phương Đông, phường Phương Nam và xã Thượng Yên Công thành phường mới có tên gọi là phường Yên Tử."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ninh",
+      "ward_code": "06832",
+      "ward_name": "Phường Yên Tử"
+    }
+  ]
+}

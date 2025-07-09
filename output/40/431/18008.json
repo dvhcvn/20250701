@@ -1,0 +1,18 @@
+{
+  "address": "Xã Hưng Yên Bắc, Huyện Hưng Nguyên, Tỉnh Nghệ An",
+  "ellapsedInMs": 7309,
+  "estimatedCost": 0.00298,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm presented with the address \"Xã Hưng Yên Bắc, Huyện Hưng Nguyên, Tỉnh Nghệ An\" and need to map it to a new administrative unit. My initial step is to break down the address: I identify the old ward (\"Xã Hưng Yên Bắc\"), district (\"Huyện Hưng Nguyên\" - though I remember districts are being eliminated, so this is secondary), and province (\"Tỉnh Nghệ An\").\n\nThe province is critical, so I immediately check the relevant province resolutions (specifically 60-NQ/TW). Fortunately, Nghệ An is listed as unchanged, so that simplifies things. Now, I delve into the other resolutions, focusing on those concerning Nghệ An. I scan through resolutions like 1666/NQ-UBTVQH15, and 1676/NQ-UBTVQH15, but find no relevant matches. \n\nFinally, in 1678/NQ-UBTVQH15, I strike gold! Line 27 specifically mentions \"Xã Hưng Yên Bắc,\" along with Hưng Yên Nam and Hưng Trung, all being merged into the new ward \"Xã Yên Trung.\" This is a clear match! Lines 26 and 28 were not relevant to the search.\n\nNow that I have the new ward name, I need to validate it against the `new_wards` list. I find a perfect match: \"Xã Yên Trung\" with the ward code \"18007\" and, crucially, within the \"Tỉnh Nghệ An\" province. This confirms the mapping.\n\nWith the necessary data gathered, it's time to construct the output. I'm confident in this mapping because of the explicit mention of \"Xã Hưng Yên Bắc\" in the resolution. The output will be a JSON object containing the citation (1678/NQ-UBTVQH15), the specific resolution line (\"27. Sắp xếp... xã Yên Trung\"), a high confidence level, and all the relevant details for \"Xã Yên Trung\".\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1678/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Nghệ An",
+        "line": "27. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Hưng Yên Bắc, Hưng Yên Nam và Hưng Trung thành xã mới có tên gọi là xã Yên Trung."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Nghệ An",
+      "ward_code": "18007",
+      "ward_name": "Xã Yên Trung"
+    }
+  ]
+}

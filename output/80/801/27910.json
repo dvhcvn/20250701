@@ -1,0 +1,18 @@
+{
+  "address": "Xã Mỹ Thạnh Tây, Huyện Đức Huệ, Tỉnh Long An",
+  "ellapsedInMs": 7237,
+  "estimatedCost": 0.0029579,
+  "thought": "**Navigating Vietnamese Administrative Changes: A Mapping Exercise**\n\nOkay, here's how I'm approaching this address mapping problem. The request is to translate an old Vietnamese address to its new administrative equivalent, leveraging provided data: province resolutions (specifically 60-NQ/TW), ward data, and other resolutions (like 1682/NQ-UBTVQH15).\n\nFirst, I identified the old province and ward: \"Tỉnh Long An\" and \"Xã Mỹ Thạnh Tây,\" respectively.  The initial step is always to check the province merge resolutions. Resolution 60-NQ/TW is clear: it merges \"Tỉnh Long An\" into \"Tỉnh Tây Ninh.\" This is a high-confidence determination, which sets the stage.\n\nNext, I turned my attention to ward-level changes, specifically resolution 1682/NQ-UBTVQH15. Since Long An is now part of Tây Ninh, this is a likely source.  The key here is to find mentions of \"Xã Mỹ Thạnh Tây\" within the resolution. Line 25 of that resolution is the goldmine! It explicitly states the consolidation of \"Xã Mỹ Thạnh Tây,\" alongside other wards, into a new \"Xã Đông Thành.\"\n\nNow, I cross-reference this information with the \"New wards\" data.  Sure enough, I find \"Xã Đông Thành\" with the code \"27898\" listed under \"Tỉnh Tây Ninh.\"  \n\nThe conclusion is, the old address with \"Xã Mỹ Thạnh Tây\" now falls under \"Xã Đông Thành\" in the province of \"Tỉnh Tây Ninh.\" This is a high-confidence match because the resolutions explicitly state the merge and the new ward data confirms the existence of \"Xã Đông Thành.\"\n\nMy output will be in JSON format, capturing the province name (\"Tỉnh Tây Ninh\"), the new ward name (\"Xã Đông Thành\"), the corresponding ward code (\"27898\"), and a robust citation to justify the mapping.  The citation will point to resolution 1682/NQ-UBTVQH15 as the primary source for the ward change, and indicate resolution 60-NQ/TW for the province change, with specific lines referenced.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1682/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tây Ninh",
+        "line": "25. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Đông Thành và các xã Mỹ Thạnh Tây, Mỹ Thạnh Đông, Mỹ Bình thành xã mới có tên gọi là xã Đông Thành."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tây Ninh",
+      "ward_code": "27898",
+      "ward_name": "Xã Đông Thành"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "address": "Xã Trung Tâm, Huyện Lục Yên, Tỉnh Yên Bái",
+  "ellapsedInMs": 8989,
+  "estimatedCost": 0.0032053,
+  "thought": "**Address Mapping Analysis for Vietnamese Administrative Units**\n\nOkay, so I'm tackling this address conversion: \"Xã Trung Tâm, Huyện Lục Yên, Tỉnh Yên Bái\".  My initial thought is to break it down and see how it was affected by changes. I see \"Xã Trung Tâm\" as the old ward and \"Tỉnh Yên Bái\" as the old province.\n\nFirst, I need to account for any province boundary changes.  Resolutions like 60-NQ/TW are crucial. Aha! \"Tỉnh Yên Bái\" merged with \"Tỉnh Lào Cai,\" becoming simply \"Tỉnh Lào Cai.\"  That's a key piece of the puzzle.\n\nNow, focusing on the ward level and looking through relevant resolutions, particularly 1673/NQ-UBTVQH15 concerning Lào Cai, two lines catch my eye:\n\n*   Line 27 is the most promising. It says: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Trúc Lâu, Trung Tâm và Phúc Lợi thành xã mới có tên gọi là **xã Phúc Lợi**.\"  This *directly* references \"Xã Trung Tâm\" and indicates a merger into the new ward, \"xã Phúc Lợi\".\n*   Line 83 mentions \"phường Trung Tâm,\" which is a different unit type (a \"phường\" instead of a \"xã\") that was merged into a \"phường Trung Tâm.\" I'll need to keep this in mind as a potential alternative, however, the address specified \"Xã Trung Tâm.\"\n\nTo finalize this, I'll need to consult the \"New wards\" data. I'm looking for the ward codes and province names for both potential matches.  Checking, I find:\n\n*   For \"xã Phúc Lợi\": `{\"ward_code\":\"04363\",\"ward_name\":\"Xã Phúc Lợi\",\"province_name\":\"Tỉnh Lào Cai\"}`. Bingo! This is a perfect match and the highest confidence result.\n*   For \"phường Trung Tâm\": `{\"ward_code\":\"04663\",\"ward_name\":\"Phường Trung Tâm\",\"province_name\":\"Tỉnh Lào Cai\"}`. This also matches the province, but the unit type is different, making this a secondary match.\n\nConsidering the prompt is requesting all candidates, I can say with confidence that based on resolution 1673, the old ward \"Xã Trung Tâm\" almost certainly corresponds to the new ward \"Xã Phúc Lợi\".  The possibility of \"Phường Trung Tâm\" does exist, but with a low degree of probability since it is a different unit. I will need to flag this to avoid ambiguity.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "2. Hợp nhất tỉnh Lào Cai và tỉnh Yên Bái, lấy tên là tỉnh Lào Cai"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "04363",
+      "ward_name": "Xã Phúc Lợi"
+    },
+    {
+      "citation": {
+        "header": "1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai",
+        "line": "27. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Trúc Lâu, Trung Tâm và Phúc Lợi thành xã mới có tên gọi là xã Phúc Lợi."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "04363",
+      "ward_name": "Xã Phúc Lợi"
+    }
+  ]
+}

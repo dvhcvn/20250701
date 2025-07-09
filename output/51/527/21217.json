@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tịnh Sơn, Huyện Sơn Tịnh, Tỉnh Quảng Ngãi",
+  "ellapsedInMs": 7234,
+  "estimatedCost": 0.0027505,
+  "thought": "**Address Mapping for Vietnamese Administrative Units**\n\nOkay, so I'm tackling this address conversion. The user's given me an old Vietnamese address, \"Xã Tịnh Sơn, Tỉnh Quảng Ngãi,\" and I need to map it to the new administrative structure. Here's my thought process:\n\nFirst, the province is straightforward. The address specifies \"Tỉnh Quảng Ngãi,\" and Resolution 60-NQ/TW confirms that even though there was a merger, the province name \"Tỉnh Quảng Ngãi\" remains. That's easy.\n\nNow, the trickier part is the ward.  I need to find what happened to \"Xã Tịnh Sơn.\"  I'm going through the resolutions, and bam! Resolution 1677/NQ-UBTVQH15, line 12, explicitly states that \"Xã Tịnh Sơn\" was merged with other entities to form the new \"Xã Sơn Tịnh.\" That's a direct, clear mapping.  No ambiguity there.\n\nNext, I'm verifying the \"New wards\" list.  Sure enough, I find \"Xã Sơn Tịnh\" with the correct `ward_code`, `ward_name`, and `province_name`. Perfect!  Since the resolution makes it absolutely clear that \"Xã Tịnh Sơn\" became part of \"Xã Sơn Tịnh,\" I'm confident there are no other options to consider. This is a one-to-one mapping. The other \"Sơn Tây\" wards don't apply.\n\nSo, I'm ready to construct the JSON output: the citation will be based on Resolution 1677/NQ-UBTVQH15. My confidence is very high because of the direct mention in the resolution. The province name is \"Tỉnh Quảng Ngãi\", and the ward code and name are from the \"Xã Sơn Tịnh\" entry in the \"New wards\" list. That's a straightforward conversion with a high degree of certainty.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1677/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ngãi",
+        "line": "12. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Tịnh Hà, xã Tịnh Bình và xã Tịnh Sơn thành xã mới có tên gọi là xã Sơn Tịnh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ngãi",
+      "ward_code": "21220",
+      "ward_name": "Xã Sơn Tịnh"
+    }
+  ]
+}

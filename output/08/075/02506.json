@@ -1,0 +1,18 @@
+{
+  "address": "Xã Mỹ Bằng, Huyện Yên Sơn, Tỉnh Tuyên Quang",
+  "ellapsedInMs": 7306,
+  "estimatedCost": 0.0034120999999999995,
+  "thought": "**Determining the New Ward for the Old Address**\n\nOkay, here's how I'm thinking about this. The user has given me an old address: \"Xã Mỹ Bằng, Huyện Yên Sơn, Tỉnh Tuyên Quang.\" My goal is to identify the new administrative unit, the new ward, based on the provided resolutions and the \"New wards\" list.\n\nFirst things first, I break down the old address. I can quickly identify that the relevant province is Tỉnh Tuyên Quang, and the old ward is Xã Mỹ Bằng.\n\nNow, I need to check the province resolutions to see if there have been any changes at the provincial level. I start by reviewing the resolutions specifically for \"Tỉnh Tuyên Quang.\" The key resolution, 60-NQ/TW, confirms that Tuyên Quang remains Tuyên Quang, although it merged with Hà Giang in the past. So the province name remains the same.\n\nNext, I delve into the \"Other resolutions,\" looking for anything related to \"Tỉnh Tuyên Quang\" and specifically \"Xã Mỹ Bằng\". Resolution 1684/NQ-UBTVQH15, \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang\", seems most relevant.\n\nWithin this resolution, I carefully examine each line. I notice several mentions of xã within Yên Sơn district, but they don't immediately relate to \"Xã Mỹ Bằng\". Then, line 105 catches my eye: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Mỹ Lâm, xã Mỹ Bằng và một phần diện tích tự nhiên, quy mô dân số của xã Kim Phú thành phường mới có tên gọi là **phường Mỹ Lâm**.\"  Boom! This is it. It directly states that \"Xã Mỹ Bằng\" is being merged into the new ward \"phường Mỹ Lâm\".\n\nNow, the final step is to verify the information against the \"New wards\" list.  I search for \"phường Mỹ Lâm\" and find: {\"ward_code\":\"02509\",\"ward_name\":\"Phường Mỹ Lâm\",\"province_name\":\"Tỉnh Tuyên Quang\"}. Perfect match. The province name aligns perfectly with the initial identification, and the details are complete.\n\nTherefore, my conclusion is that \"Xã Mỹ Bằng\" is now part of \"Phường Mỹ Lâm\" with code \"02509\" in \"Tỉnh Tuyên Quang.\" I have high confidence in this because the resolution explicitly states the merge. I'm ready to provide the user with the structured information following the required JSON schema.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "105. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Mỹ Lâm, xã Mỹ Bằng và một phần diện tích tự nhiên, quy mô dân số của xã Kim Phú thành phường mới có tên gọi là phường Mỹ Lâm."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "02509",
+      "ward_name": "Phường Mỹ Lâm"
+    }
+  ]
+}

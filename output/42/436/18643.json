@@ -1,0 +1,18 @@
+{
+  "address": "Xã Thạch Đài, Thành phố Hà Tĩnh, Tỉnh Hà Tĩnh",
+  "ellapsedInMs": 5664,
+  "estimatedCost": 0.0022161,
+  "thought": "**My Analysis of the Administrative Address Mapping**\n\nOkay, so I'm tackling this address conversion: \"Xã Thạch Đài, Thành phố Hà Tĩnh, Tỉnh Hà Tĩnh.\"  My process is straightforward, focusing on identifying the relevant administrative unit changes and documenting the sources.\n\nFirst, the province is easy - it's \"Tỉnh Hà Tĩnh.\"  Next, I consult the province-level resolutions (specifically 60-NQ/TW).  Fortunately, Hà Tĩnh isn't undergoing any province-level mergers, so \"Tỉnh Hà Tĩnh\" remains unchanged.\n\nNow for the crucial part: the district/ward level.  The resolution 1665/NQ-UBTVQH15, concerning Hà Tĩnh's district-level reorganizations, is where I'll find my answer. I need to find \"Xã Thạch Đài\" within its provisions.\n\nBingo! Line 61 directly addresses \"Xã Thạch Đài\". It states that \"Xã Thạch Đài\" will be *merged* with other areas to form the new ward called \"Phường Hà Huy Tập\". That's my key finding.\n\nTo confirm and complete the output, I check the provided `New wards` data to make sure \"Phường Hà Huy Tập\" exists.  There it is, with the corresponding code \"18652\" and matching province name.  Perfect!\n\nTherefore, the mapping is clear: \"Xã Thạch Đài\" now maps to \"Phường Hà Huy Tập\" in \"Tỉnh Hà Tĩnh\". My final JSON output will contain the province name, the new ward name and code, the specific resolution line (\"61\") as the primary citation, and I'll confidently mark this as a \"high\" confidence mapping given the direct nature of the documented reorganization.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh",
+        "line": "61. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tân Lâm Hương, xãThạch Đài và phần còn lại của phường Đại Nài sau khi sắp xếp theo quy định tại khoản 59 Điều này thành phường mới có tên gọi là phường Hà Huy Tập."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hà Tĩnh",
+      "ward_code": "18652",
+      "ward_name": "Phường Hà Huy Tập"
+    }
+  ]
+}

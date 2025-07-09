@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Lạc Dương, Huyện Lạc Dương, Tỉnh Lâm Đồng",
+  "ellapsedInMs": 7274,
+  "estimatedCost": 0.0025318000000000003,
+  "thought": "**Mapping an Old Vietnamese Address to New Administrative Units**\n\nOkay, so I've got an old Vietnamese address to map: \"Thị trấn Lạc Dương, Huyện Lạc Dương, Tỉnh Lâm Đồng.\"  My initial task is to break this down. From the address, I can identify the old ward as \"Thị trấn Lạc Dương,\" the old district as \"Huyện Lạc Dương\" (though that's less relevant given the prompt), and the old province as \"Tỉnh Lâm Đồng.\"\n\nFirst, I need to check the province resolutions, specifically the ones tied to the \"60-NQ/TW\" decree.  For \"Tỉnh Lâm Đồng,\" the decree essentially states that it remains \"Tỉnh Lâm Đồng\" even after incorporating parts of \"Đắk Nông\" and \"Bình Thuận.\"  So, no change to the province name itself, which is helpful.\n\nNow, the crucial step is to analyze other resolutions, specifically \"1671/NQ-UBTVQH15,\" looking for mentions of \"Thị trấn Lạc Dương.\"  And there it is: resolution 103 explicitly states the merger of \"Thị trấn Lạc Dương\" and other areas into a new ward called \"**phường Lang Biang - Đà Lạt**.\" That's the key.\n\nTo solidify this, I'll cross-reference my findings with the \"New wards\" data, to confirm the `ward_code` and the `province_name`.  It confirms what I suspected:  `{\"ward_code\":\"24846\",\"ward_name\":\"Phường Lang Biang - Đà Lạt\",\"province_name\":\"Tỉnh Lâm Đồng\"}`. This aligns perfectly with resolution 1671.\n\nLet's double check to be extra sure! Scanning through the resolutions again, I notice another line: \"1. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đạ Sar, Đạ Nhim và Đạ Chais thành xã mới có tên gọi là **xã Lạc Dương**.\" This creates \"xã Lạc Dương,\" but my input address is \"Thị trấn Lạc Dương.\" Therefore this line is not relevant, as it refers to communes, not the town in question.\n\nGiven this, constructing the JSON output is straightforward.  The `province_name` remains \"Tỉnh Lâm Đồng.\" The `ward_name` is \"Phường Lang Biang - Đà Lạt,\" and the `ward_code` is \"24846.\"  The `citation` will be \"1671/NQ-UBTVQH15,\" and I can confidently assign a `confidence` level of \"high\" because of the direct mapping specified in the resolution.  That's a clean and definitive mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng",
+        "line": "103. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của Phường 7, thị trấn Lạc Dương và xã Lát thành phường mới có tên gọi là phường Lang Biang - Đà Lạt."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "24846",
+      "ward_name": "Phường Lang Biang - Đà Lạt"
+    }
+  ]
+}

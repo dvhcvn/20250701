@@ -1,0 +1,18 @@
+{
+  "address": "Xã Hồng Thái Đông, Thành phố Đông Triều, Tỉnh Quảng Ninh",
+  "ellapsedInMs": 6102,
+  "estimatedCost": 0.001804,
+  "thought": "**My Process for Mapping the Old Vietnamese Address**\n\nOkay, so I'm presented with an address: \"Xã Hồng Thái Đông\" in \"Tỉnh Quảng Ninh\", and I need to figure out its new administrative location. This is a pretty straightforward process, relying on my knowledge of the relevant resolutions and data structures.\n\nFirst, I identify the key elements: the old ward (\"Xã Hồng Thái Đông\") and province (\"Tỉnh Quảng Ninh\").  Knowing Vietnamese administrative restructuring processes, I immediately jump to the resolutions. I need to see if \"Tỉnh Quảng Ninh\" has undergone any mergers or changes.  I consult Resolution 60-NQ/TW, which lists provinces *not* undergoing mergers, and *bam!* \"Tỉnh Quảng Ninh\" is explicitly listed as staying as is. Good to know.\n\nNow, on to the more granular details. I need to dive into other relevant resolutions, specifically looking for mentions of \"Xã Hồng Thái Đông\". I'll search through the text of these resolutions' lines. Bingo! Resolution 1679/NQ-UBTVQH15, line 26, is the key. It clearly states that \"Xã Hồng Thái Đông\" is being merged into the new ward \"phường Hoàng Quế\". Perfect.\n\nNow it's just a matter of validating the new ward data. I'll cross-reference \"phường Hoàng Quế\" in my \"New wards\" list.  Yup, there it is: `{\"ward_code\":\"07114\",\"ward_name\":\"Phường Hoàng Quế\",\"province_name\":\"Tỉnh Quảng Ninh\"}`.  The match confirms the new ward code and province.\n\nFinally, I'll package this all up into a concise JSON output, containing: the established province name, \"Tỉnh Quảng Ninh\"; the now-mapped ward name, \"Phường Hoàng Quế\"; the corresponding ward code, \"07114\"; the citation of Resolution 1679/NQ-UBTVQH15 and the important line number; and a \"high\" confidence level because this mapping is explicitly stated in the source resolution.  This is a clean, definitive match.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1679/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ninh",
+        "line": "26. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Yên Đức, phường Hoàng Quế, xã Hồng Thái Tâyvà xã Hồng Thái Đông thành phường mới có tên gọi là phường Hoàng Quế."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ninh",
+      "ward_code": "07114",
+      "ward_name": "Phường Hoàng Quế"
+    }
+  ]
+}

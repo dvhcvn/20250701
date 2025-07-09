@@ -1,0 +1,18 @@
+{
+  "address": "Phường Tĩnh Hải, Thị xã Nghi Sơn, Tỉnh Thanh Hóa",
+  "ellapsedInMs": 6801,
+  "estimatedCost": 0.0025736,
+  "thought": "**My Analysis of the Administrative Unit Change**\n\nOkay, here's how I'm approaching this. I've got to determine the new administrative unit (ward) for \"Phường Tĩnh Hải, Thị xã Nghi Sơn, Tỉnh Thanh Hóa\".\n\nFirst, I need to break down the information I have. I know the old ward (\"Phường Tĩnh Hải\"), the old district (\"Thị xã Nghi Sơn\" - though the prompt mentions eliminating districts, I keep it for context), and the province (\"Tỉnh Thanh Hóa\").\n\nNow, to the resolutions. I know the province doesn't get merged according to the province resolutions. So, the output will maintain \"Tỉnh Thanh Hóa\". Then, I dive into the main resolution (1686/NQ-UBTVQH15) specifically. I'm looking for any mention of \"Phường Tĩnh Hải\" within the text.\n\nEureka! Line 143 says \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Mai Lâm, **Tĩnh Hải** và Hải Bình thành phường mới có tên gọi là **phường Hải Bình**.\"  Perfect! \"Phường Tĩnh Hải\" is getting merged into \"Phường Hải Bình.\"\n\nNext, I cross-reference this with the \"New Wards\" data.  And there it is: `{\"ward_code\":\"16645\",\"ward_name\":\"Phường Hải Bình\",\"province_name\":\"Tỉnh Thanh Hóa\"}`.  The match is solid.\n\nBased on this, I'm constructing the JSON output. The header is from the resolution, the line from the specific merger statement. Confidence is HIGH - it's a direct, unambiguous mapping. I'm confidently setting the `province_name` to \"Tỉnh Thanh Hóa\" and the `ward_code` and `ward_name` to those from the \"New Wards\" data. The prompt mentions \"multiple new wards\" but here, only one candidate is clear. Since I have full confidence, and only found one correct answer, that is all.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1686/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thanh Hóa",
+        "line": "143. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Mai Lâm, Tĩnh Hải và Hải Bình thành phường mới có tên gọi là phường Hải Bình."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thanh Hóa",
+      "ward_code": "16645",
+      "ward_name": "Phường Hải Bình"
+    }
+  ]
+}

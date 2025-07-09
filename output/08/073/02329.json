@@ -1,0 +1,18 @@
+{
+  "address": "Xã Ngọc Hội, Huyện Chiêm Hóa, Tỉnh Tuyên Quang",
+  "ellapsedInMs": 8547,
+  "estimatedCost": 0.0030595999999999996,
+  "thought": "**Analyzing the Vietnamese Address Mapping**\n\nOkay, so I'm dealing with mapping an old Vietnamese address to new administrative units. Let's break this down systematically. I have an old address: \"Xã Ngọc Hội\" in \"Huyện Chiêm Hóa\" of \"Tỉnh Tuyên Quang\". My task is to figure out the corresponding new address based on these resolutions and ward data.\n\nFirst, I identified the components: Ward (Xã Ngọc Hội), District (Huyện Chiêm Hóa), and Province (Tỉnh Tuyên Quang). The prompt mentions eliminating districts, which means this level will likely be folded into wards or provinces now.\n\nNext, I looked at the province resolutions, specifically 60-NQ/TW. I checked if \"Tỉnh Tuyên Quang\" was in the \"không thực hiện sáp nhập\" list (no) and if it was in the \"mới sau sáp nhập, hợp nhất\" list (yes). The resolution stated \"Hợp nhất tỉnh Tuyên Quang và tỉnh Hà Giang, lấy tên là tỉnh Tuyên Quang\". This means that while there was a merger, \"Tỉnh Tuyên Quang\" remains \"Tỉnh Tuyên Quang,\" and so that remains unchanged in the old address.\n\nNow, the crucial step. I moved to the other resolutions, focusing on \"Xã Ngọc Hội\" and \"Tỉnh Tuyên Quang.\" Resolution 1684/NQ-UBTVQH15 popped up, which looked promising. Line 13 explicitly states \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Vĩnh Lộc và các xã Xuân Quang, Phúc Thịnh, Ngọc Hội, Trung Hòa thành xã mới có tên gọi là **xã Chiêm Hóa**.\" Bingo! \"Xã Ngọc Hội\" is mentioned explicitly as being *merged into* \"Xã Chiêm Hóa.\"\n\nThen, I double-checked the new ward data (`new_wards`) for \"xã Chiêm Hóa\" within \"Tỉnh Tuyên Quang.\" I found a match: `{\"ward_code\":\"02287\",\"ward_name\":\"Xã Chiêm Hoá\",\"province_name\":\"Tỉnh Tuyên Quang\"}`. Note the slight spelling difference \"Hoá\" vs \"Hóa\" – this is common, so I considered it a match.\n\nI also performed a sanity check regarding \"Xã Ngọc Hồi\" by reviewing resolution \"1656/NQ-UBTVQH15.\" However, that referenced \"Xã Ngọc Hồi\" in \"Thành phố Hà Nội\", which has no relevance to the original address.\n\nBased on the explicit mapping in Resolution 1684/NQ-UBTVQH15, I'm confident that the old \"Xã Ngọc Hội\" is now part of the new \"Xã Chiêm Hoá\" (ward code 02287) in \"Tỉnh Tuyên Quang.\" The confidence level for this mapping is high because of the direct reference in the resolution. I'm ready to construct the output in the required format.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "13. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Vĩnh Lộc vàcác xã Xuân Quang, Phúc Thịnh, Ngọc Hội,Trung Hòathành xã mới có tên gọi là xã Chiêm Hóa."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "02287",
+      "ward_name": "Xã Chiêm Hoá"
+    }
+  ]
+}

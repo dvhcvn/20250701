@@ -1,0 +1,18 @@
+{
+  "address": "Xã Đông Long, Huyện Tiền Hải, Tỉnh Thái Bình",
+  "ellapsedInMs": 6280,
+  "estimatedCost": 0.0023282,
+  "thought": "**My Analysis of the Address Mapping**\n\nOkay, so I'm dealing with the address \"Xã Đông Long, Huyện Tiền Hải, Tỉnh Thái Bình.\" My goal is to figure out its current equivalent based on some administrative changes. I need to start by looking at the old province, \"Tỉnh Thái Bình.\" Right off the bat, I know I need to check the province resolutions, specifically focusing on the 60-NQ/TW resolution.  \n\nAh, here it is: \"Hợp nhất tỉnh Hưng Yên và tỉnh Thái Bình, lấy tên là tỉnh Hưng Yên.\"  So, \"Tỉnh Thái Bình\" is now part of \"Tỉnh Hưng Yên.\" That's the first step.\n\nNext, I need to pinpoint the ward, \"Xã Đông Long.\"  I've been provided with `other_resolutions`, so I'll scan those carefully for any mention of it.  Bingo! Resolution 1666/NQ-UBTVQH15, concerning administrative adjustments in Hưng Yên province, seems promising.\n\nOn line 49, it's explicitly stated: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đông Xuyên, Đông Quang, Đông Long và Đông Trà thành xã mới có tên gọi là **xã Đông Tiền Hải**.\"  Perfect!  \"Xã Đông Long\" is being merged into \"Xã Đông Tiền Hải.\"\n\nNow, I'll need to check the provided `new_wards` list to verify if \"Xã Đông Tiền Hải\" exists and if it's within \"Tỉnh Hưng Yên\" (my new province). And yes, the entry `{\"ward_code\":\"12988\",\"ward_name\":\"Xã Đông Tiền Hải\",\"province_name\":\"Tỉnh Hưng Yên\"}` confirms that.\n\nTherefore, the output structure is straightforward: the new province is \"Tỉnh Hưng Yên,\" the new ward is \"Xã Đông Tiền Hải,\" with a ward code of \"12988.\"  My citation will point to Resolution 1666/NQ-UBTVQH15, specifically to the line that details the merger. Given the clarity of this direct mapping from the resolution, I'm highly confident in this result.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên",
+        "line": "49. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đông Xuyên, Đông Quang, Đông Long và Đông Trà thành xã mới có tên gọi là xã Đông Tiền Hải."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "12988",
+      "ward_name": "Xã Đông Tiền Hải"
+    }
+  ]
+}

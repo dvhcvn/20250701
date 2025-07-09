@@ -1,0 +1,28 @@
+{
+  "address": "Xã Liên Hồng, Huyện Đan Phượng, Thành phố Hà Nội",
+  "ellapsedInMs": 8075,
+  "estimatedCost": 0.0037927,
+  "thought": "**Analysis of Vietnamese Administrative Unit Mapping**\n\nOkay, so I'm tackling this Vietnamese address: \"Xã Liên Hồng, Huyện Đan Phượng, Thành phố Hà Nội.\" I need to figure out how it maps to the new administrative units, given these resolutions and the new ward list.\n\nFirst, I identified the province as \"Thành phố Hà Nội.\" Checking Resolution 60-NQ/TW, it confirms that Hanoi remained unchanged. Excellent. Now for the crucial part: \"Xã Liên Hồng.\"\n\nMy search through the provided resolutions (specifically 1656/NQ-UBTVQH15 for Hanoi) immediately turned up the answer. It's clear that \"Xã Liên Hồng\" has been significantly altered. Line 107 states that \"Xã Liên Hồng\" is part of the new \"Xã Ô Diên\". But then, line 118 further complicates things by mentioning \"phần còn lại của... Liên Hồng sau khi sắp xếp theo quy định tại khoản 107 Điều này\". This suggests a split! Some of \"Xã Liên Hồng\" went to \"Xã Ô Diên\" (as per line 107) and the rest went to \"Xã Mê Linh.\"\n\nTo verify, I searched for the new wards in the \"New wards\" list. \"Xã Ô Diên\" exists, with code \"09817,\" and \"Xã Mê Linh\" also exists, with code \"09022.\" They are both in \"Thành phố Hà Nội.\"\n\nBased on all this, I'm confident that the old \"Xã Liên Hồng\" is now split between these two new units: \"Xã Ô Diên\" and \"Xã Mê Linh.\" The confidence level is high given the explicit details in these resolutions. I'll need to construct the JSON output accordingly, reflecting this split.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội",
+        "line": "107. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Hạ Mỗ, xã Tân Hội, một phần diện tích tự nhiên, toàn bộ quy mô dân số của các xã Liên Hà (huyện Đan Phượng), Hồng Hà, Liên Hồng, Liên Trung, một phần diện tích tự nhiên của xã Văn Khê, phần còn lại của phường Tây Tựu sau khi sắp xếp theo quy định tại các khoản 30, 34, 102 Điều này và phần còn lại của xã Tân Lập sau khi sắp xếp theo quy định tại khoản 102 Điều này thành xã mới có tên gọi là xã Ô Diên."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hà Nội",
+      "ward_code": "09817",
+      "ward_name": "Xã Ô Diên"
+    },
+    {
+      "citation": {
+        "header": "1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội",
+        "line": "118. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Tráng Việt, một phần diện tích tự nhiên, quy mô dân số của các xã Tiền Phong (huyện Mê Linh), Văn Khê, Mê Linh, một phần diện tích tự nhiên của xã Đại Thịnh và xã Hồng Hà, phần còn lại của các xã Liên Hà (huyện Đan Phượng), Liên Hồng, Liên Trung sau khi sắp xếp theo quy định tại khoản 107 Điều này, phần còn lại của xã Đại Mạch sau khi sắp xếp theo quy định tại khoản 116 Điều này thành xã mới có tên gọi là xã Mê Linh."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hà Nội",
+      "ward_code": "09022",
+      "ward_name": "Xã Mê Linh"
+    }
+  ]
+}

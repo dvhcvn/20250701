@@ -1,0 +1,28 @@
+{
+  "address": "Xã Bình Nghị, Huyện Gò Công Đông, Tỉnh Tiền Giang",
+  "ellapsedInMs": 8739,
+  "estimatedCost": 0.0030327,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, here's how I'm thinking about this address mapping. The user wants to translate the old address \"Xã Bình Nghị, Huyện Gò Công Đông, Tỉnh Tiền Giang\" into the new administrative structure.\n\nFirst, I parsed out the old components: \"Xã Bình Nghị\" (ward), \"Huyện Gò Công Đông\" (district), and \"Tỉnh Tiền Giang\" (province).\n\nNow, the crucial step: I need to account for province changes.  My knowledge base tells me about \"60-NQ/TW\" and its information on province mergers.  Ah, right! It states that \"Tỉnh Tiền Giang\" merged into \"Tỉnh Đồng Tháp.\"  High confidence there, that's a straightforward merger.\n\nNext, wards. I dive into the \"Other resolutions\" to find relevant changes for \"Xã Bình Nghị\".  Resolution \"1663/NQ-UBTVQH15\" is a goldmine. It's titled \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Tháp\" and explicitly says that \"Xã Bình Nghị\" is *merged* into the new ward called \"Xã Tân Hòa.\" Bingo! This is the key. The fact that the resolution pertains to \"tỉnh Đồng Tháp\" (and not \"Tỉnh Tiền Giang\" as the original address had it) is perfectly consistent with the province merger I just found. The resolution is the perfect citation for the conversion. \n\nThe fact that the resolution also uses the old district information, \"Huyện Gò Công Đông\" in context confirms its relevance.\n\nI then search for \"Xã Tân Hòa\" within \"Tỉnh Đồng Tháp\" in the \"New wards\" list and get: `{\"ward_code\":\"28702\",\"ward_name\":\"Xã Tân Hòa\",\"province_name\":\"Tỉnh Đồng Tháp\"}`. Perfect match.\n\nThe resolution and its context solidify everything.  \"Xã Bình Nghị\" becomes \"Xã Tân Hòa\", now located in \"Tỉnh Đồng Tháp,\" with the specific ward code \"28702\". The resolution provides the definitive mapping. We have high confidence in this result because the resolution directly addresses the old ward and links it to the new one. The district context within the resolution helped me identify the appropriate documentation and confirm the mapping's applicability.\n\nAs a reminder: while district information helped identify relevant resolutions, the new system doesn't necessarily map to the old district. The provided output schema doesn't require district information. The core mapping hinges on the province and ward level changes I identified using the resolutions. The code and name are primary. The province is now \"Tỉnh Đồng Tháp\" because of the merger.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Tiền Giang và tỉnh Đồng Tháp, lấy tên là tỉnh Đồng Tháp"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đồng Tháp",
+      "ward_code": "28702",
+      "ward_name": "Xã Tân Hòa"
+    },
+    {
+      "citation": {
+        "header": "1663/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Tháp",
+        "line": "78. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Tân Hòa, xã Phước Trung và xã Bình Nghị thành xã mới có tên gọi là xã Tân Hòa."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đồng Tháp",
+      "ward_code": "28702",
+      "ward_name": "Xã Tân Hòa"
+    }
+  ]
+}

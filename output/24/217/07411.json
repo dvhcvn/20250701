@@ -1,0 +1,28 @@
+{
+  "address": "Xã Tân Thanh, Huyện Lạng Giang, Tỉnh Bắc Giang",
+  "ellapsedInMs": 8896,
+  "estimatedCost": 0.0071143,
+  "thought": "**Identifying the New Administrative Unit**\n\nOkay, let's break this down. The user's got an old address: \"Xã Tân Thanh, Huyện Lạng Giang, Tỉnh Bắc Giang,\" and they want the current, post-merger equivalent. My first step is to recognize the obvious: \"Tỉnh Bắc Giang\" (the old province) is now \"Tỉnh Bắc Ninh\" thanks to 60-NQ/TW. Easy enough.\n\nNow, for the specific ward and district: \"Xã Tân Thanh, Huyện Lạng Giang\". The critical piece is the resolution about restructuring administrative units in Bắc Ninh: 1658/NQ-UBTVQH15.  Reading through it, I find that \"Xã Tân Thanh\" is specifically mentioned. Specifically, it states that \"Xã Tân Thanh\" merged with other wards to become \"Xã Mỹ Thái\".  Good. That's the key.  I also see that a new ward called \"Xã Lạng Giang\" was formed from other wards in the same resolution.\n\nLooking at the `new_wards` list, I confirm that both \"Xã Mỹ Thái\" and \"Xã Lạng Giang\" exist under \"Tỉnh Bắc Ninh\". Bingo.\n\nConfidence is high. The province merger is clear, and the resolution explicitly mentions \"Xã Tân Thanh\" as part of the new \"Xã Mỹ Thái\".  The district information, \"Huyện Lạng Giang\", becomes less relevant since we're dealing with the new *wards* and, as the instructions state, eliminating all districts. The most important fact is the specific ward mapping. I'm ready to craft the JSON output now.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "5. Hợp nhất tỉnh Bắc Ninh và tỉnh Bắc Giang, lấy tên là tỉnh Bắc Ninh"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "07420",
+      "ward_name": "Xã Mỹ Thái"
+    },
+    {
+      "citation": {
+        "header": "1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh",
+        "line": "47. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Xuân Hương, Dương Đức, Tân Thanh và Mỹ Thái thành xã mới có tên gọi là xã Mỹ Thái."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "07420",
+      "ward_name": "Xã Mỹ Thái"
+    }
+  ]
+}

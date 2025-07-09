@@ -1,0 +1,28 @@
+{
+  "address": "Xã Chính Lý, Huyện Lý Nhân, Tỉnh Hà Nam",
+  "ellapsedInMs": 5637,
+  "estimatedCost": 0.0019154000000000003,
+  "thought": "**Mapping an Old Address to New Administrative Units**\n\nOkay, I've got this. The user wants to map an old address to its current administrative unit. Let's break this down systematically. First, I need to understand what's changed.\n\n1.  **Province:** The old province was \"Tỉnh Hà Nam.\" My first step is to check if there are any resolutions impacting province boundaries. Bingo! Resolution 60-NQ/TW shows that \"Tỉnh Hà Nam\" merged with two others, forming \"Tỉnh Ninh Bình.\" So, that's my starting point.\n\n2.  **Ward:** Next, I need to address the ward. The old ward is \"Xã Chính Lý.\"  I've got resolution 1674/NQ-UBTVQH15 that deals with changes at the ward level. Excellent! It explicitly states that \"Xã Chính Lý\" will be part of the new ward, **\"Xã Lý Nhân.\"**\n\n3.  **New Data Verification:** Now, I'll cross-reference this with the provided new ward data. I have two options:  `{\"ward_code\":\"13573\",\"ward_name\":\"Xã Lý Nhân\",\"province_name\":\"Tỉnh Ninh Bình\"}` and `{\"ward_code\":\"13627\",\"ward_name\":\"Xã Nam Lý\",\"province_name\":\"Tỉnh Ninh Bình\"}`. The name \"Xã Lý Nhân\" immediately jumps out at me, matching the name in the resolution.\n\n4.  **Province Alignment:** Before confirming, I need to check the province names in the data. \"Xã Lý Nhân\" is indeed in \"Tỉnh Ninh Bình,\" which aligns perfectly with the province merger I found earlier.\n\n5.  **Confidence Check:** Based on the direct mention of \"Xã Chính Lý\" in the resolution and the clear mapping to the new \"Xã Lý Nhân\" within the correct province, I'm highly confident in this mapping. It's a clean and straightforward case. I've got a strong, confident mapping here.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Hà Nam, tỉnh Ninh Bình và tỉnh Nam Định; lấy tên là tỉnh Ninh Bình"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "13573",
+      "ward_name": "Xã Lý Nhân"
+    },
+    {
+      "citation": {
+        "header": "1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "11. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Chính Lý, Hợp Lý và Văn Lý thành xã mới có tên gọi là xã Lý Nhân."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "13573",
+      "ward_name": "Xã Lý Nhân"
+    }
+  ]
+}

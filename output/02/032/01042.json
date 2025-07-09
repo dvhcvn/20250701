@@ -1,0 +1,18 @@
+{
+  "address": "Xã Chiến Phố, Huyện Hoàng Su Phì, Tỉnh Hà Giang",
+  "ellapsedInMs": 7012,
+  "estimatedCost": 0.0023146,
+  "thought": "**My Analysis of the Address Mapping**\n\nOkay, so I'm tasked with translating this old Vietnamese address into its current administrative equivalent. Let's see... the old address points to \"Xã Chiến Phố\" in \"Huyện Hoàng Su Phì,\" \"Tỉnh Hà Giang.\" My first move is always to break down the problem.\n\nStep one is clear: identify the old units. Got it: \"Xã Chiến Phố\" (ward), \"Huyện Hoàng Su Phì\" (district), \"Tỉnh Hà Giang\" (province). Easy.\n\nNow, time to dive into the resolutions. First, the province. I'll search those resolutions for \"Tỉnh Hà Giang.\" Ah, there it is! Resolution 60-NQ/TW states that Hà Giang merged with Tuyên Quang, becoming... Tuyên Quang. Right, so the province is now \"Tỉnh Tuyên Quang.\" Confirmed. That simplifies things a bit.\n\nNext, I need to check other resolutions for the ward. Let's see... \"Xã Chiến Phố\" within the relevant resolutions... Bingo! Line 98 in Resolution 1684/NQ-UBTVQH15. It explicitly states that \"Xã Chiến Phố\" is combined with others into the new \"Xã Bản Máy.\"  Excellent. This resolution specifically deals with Tuyên Quang, aligning with the province merger.\n\nNow, time to double-check against the \"New Wards\" data. I'll look for \"Xã Bản Máy.\" Perfect match! The data confirms the ward name and provides the associated code (\"01024\") and, of course, the province (\"Tỉnh Tuyên Quang\").\n\nPutting it all together, the mapping is crystal clear. I can confidently construct the JSON output:\n\n*   The citation is from Resolution 1684/NQ-UBTVQH15, line 98.\n*   The `confidence` is \"high\" because the resolution explicitly addresses the ward's fate.\n*   The `province_name` is \"Tỉnh Tuyên Quang,\" per the merger.\n*   The `ward_code` is \"01024\" and the `ward_name` is \"Xã Bản Máy.\"\n\nFurthermore, since \"Xã Chiến Phố\" is explicitly and solely merged into \"Xã Bản Máy\" in the resolutions, there's only one valid new ward candidate. This is a straightforward and unambiguous case.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "98. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Bản Phùng, Chiến Phố và Bản Máy thành xã mới có tên gọi là xã Bản Máy."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "01024",
+      "ward_name": "Xã Bản Máy"
+    }
+  ]
+}

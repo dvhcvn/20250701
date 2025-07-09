@@ -1,0 +1,18 @@
+{
+  "address": "Phường Dư Hàng Kênh, Quận Lê Chân, Thành phố Hải Phòng",
+  "ellapsedInMs": 8725,
+  "estimatedCost": 0.0032439,
+  "thought": "**Analysis of Address Transformation: \"Phường Dư Hàng Kênh\" to New Administrative Unit**\n\nOkay, let's break this down. My goal is to map the old address \"Phường Dư Hàng Kênh, Quận Lê Chân, Thành phố Hải Phòng\" to its new administrative unit based on these resolutions and ward data. The key components here are \"Phường Dư Hàng Kênh\" and \"Thành phố Hải Phòng\".\n\nFirst, I examined the provided resolutions focusing on \"Dư Hàng Kênh\". Resolution 1669/NQ-UBTVQH15, concerning the restructuring of administrative units in Hải Phòng, is crucial. Line 12 explicitly states: \"...Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Hàng Kênh, Dư Hàng Kênh, Kênh Dương... thành phường mới có tên gọi là **phường Lê Chân**.\"  This conclusively indicates that \"Phường Dư Hàng Kênh\" has been merged into the new \"Phường Lê Chân\".  This gives me high confidence in this mapping.\n\nNext, I cross-referenced this with the \"New wards\" data.  I found a matching entry: `{\"ward_code\":\"11383\",\"ward_name\":\"Phường Lê Chân\",\"province_name\":\"Thành phố Hải Phòng\"}`. This aligns perfectly with the information from the resolution.  The resolution also confirmed \"Thành phố Hải Phòng\" is still \"Thành phố Hải Phòng\", which is also consistent.\n\nRegarding potential alternative mapping options, I considered \"Phường An Biên\" since the resolution mentions a partial merging of its area. However, it's clear that the input address specifies \"Phường Dư Hàng Kênh\", not \"An Biên\". The resolution is quite clear: *all* of \"Dư Hàng Kênh\" is now part of \"Lê Chân\". There's no scenario where \"Dư Hàng Kênh\" somehow transformed into \"An Biên\".\n\nTherefore, the only correct mapping is from the old \"Phường Dư Hàng Kênh\" to the new \"Phường Lê Chân\" within \"Thành phố Hải Phòng\".\n\nMy analysis results in:\n\n```json\n[\n  {\n    \"citation\": {\n      \"header\": \"1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng\",\n      \"line\": \"12. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Hàng Kênh, Dư Hàng Kênh, Kênh Dương, một phần diện tích tự nhiên, quy mô dân số của các phường An Biên, Trần Nguyên Hãn, Vĩnh Niệm và phần còn lạicủa phường Cầu Đất, phường Lạch Tray sau khi sắp xếp theo quy định tại khoản 11 Điều này thành phường mới có tên gọi là **phường Lê Chân**.\"\n    },\n    \"confidence\": \"high\",\n    \"province_name\": \"Thành phố Hải Phòng\",\n    \"ward_code\": \"11383\",\n    \"ward_name\": \"Phường Lê Chân\"\n  }\n]\n```\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "12. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Hàng Kênh, Dư Hàng Kênh, Kênh Dương, một phần diện tích tự nhiên, quy mô dân số của các phường An Biên, Trần Nguyên Hãn, Vĩnh Niệm và phần còn lạicủa phường Cầu Đất, phường Lạch Tray sau khi sắp xếp theo quy định tại khoản 11 Điều này thành phường mới có tên gọi là phường Lê Chân."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "11383",
+      "ward_name": "Phường Lê Chân"
+    }
+  ]
+}

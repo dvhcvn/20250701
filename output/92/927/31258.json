@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Thới Lai, Huyện Thới Lai, Thành phố Cần Thơ",
+  "ellapsedInMs": 7488,
+  "estimatedCost": 0.0030049,
+  "thought": "**My Analysis of the Administrative Address Mapping**\n\nOkay, here's how I'm approaching this address mapping. The input is \"Thị trấn Thới Lai, Huyện Thới Lai, Thành phố Cần Thơ,\" and I'm treating it as a new administrative unit mapping problem.\n\nFirst, I identified \"Thành phố Cần Thơ\" as the province. My initial thought was to quickly check for any province-level changes, but resolution \"60-NQ/TW\" confirms Cần Thơ remains \"Thành phố Cần Thơ,\" so no issues there.\n\nNow, focusing on the core of the problem, the ward \"Thị trấn Thới Lai.\" I need to find its new designation. My search led me to resolution \"1668/NQ-UBTVQH15,\" specifically line 33. This line is *perfect*: it directly states that \"Thị trấn Thới Lai\" is merged into \"Xã Thới Lai.\" Bingo!\n\nI also glanced at resolution \"1687/NQ-UBTVQH15\" which mentions \"Thới Lai,\" but it's clearly related to Vĩnh Long province, so it's irrelevant to this address. The fact that the relevant part is in the province Cần Thơ makes the Vĩnh Long entry irrelevant.\n\nNext, I cross-referenced this with the \"New wards\" data. I expected to find \"Xã Thới Lai\" in \"Thành phố Cần Thơ,\" and indeed, there's a perfect match: `{\"ward_code\":\"31258\",\"ward_name\":\"Xã Thới Lai\",\"province_name\":\"Thành phố Cần Thơ\"}`.\n\nTherefore, my final output will be a JSON structure indicating the old address \"Thị trấn Thới Lai\" now maps to the new ward, \"Xã Thới Lai\" with the `citation` pointing to Resolution 1668/NQ-UBTVQH15, Line 33. I'm assigning a \"high\" `confidence` level because the match is direct and unambiguous. This also gives me a clear `province_name` (\"Thành phố Cần Thơ\"), `ward_code` (\"31258\"), and `ward_name` (\"Xã Thới Lai\").\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1668/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Cần Thơ",
+        "line": "33. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Thới Lai, xã Thới Tân và xã Trường Thắng thành xã mới có tên gọi là xã Thới Lai."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Cần Thơ",
+      "ward_code": "31258",
+      "ward_name": "Xã Thới Lai"
+    }
+  ]
+}

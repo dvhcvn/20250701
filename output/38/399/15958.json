@@ -1,0 +1,18 @@
+{
+  "address": "Xã Hoằng Thịnh, Huyện Hoằng Hóa, Tỉnh Thanh Hóa",
+  "ellapsedInMs": 7677,
+  "estimatedCost": 0.0031092999999999997,
+  "thought": "**Analyzing the Address and Determining the New Ward**\n\nOkay, let's break this down systematically. The user has given me the old address: \"Xã Hoằng Thịnh, Huyện Hoằng Hóa, Tỉnh Thanh Hóa\". My goal is to find the new ward for this old address.\n\nFirst, I identify the components: \"Tỉnh Thanh Hóa\" (province) and \"Xã Hoằng Thịnh\" (ward).\n\nNow, I check the relevant resolutions. Since \"Tỉnh Thanh Hóa\" is mentioned in resolution 60-NQ/TW (\"Các đơn vị hành chính cấp tỉnh không thực hiện sáp nhập: ... 8. Tỉnh Thanh Hoá\"), it remains unchanged.\n\nNext, I need to focus on \"Xã Hoằng Thịnh\". I scan the provided resolutions, and I immediately spot \"Hoằng Thịnh\" in \"1686/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thanh Hóa\". Line 22 of this resolution is crucial: it explicitly states that \"Xã Hoằng Thịnh\" is *merged* with several other wards to form a new ward called \"**xã Hoằng Lộc**\".\n\nTo ensure this is accurate, I verify the existence of \"Xã Hoằng Lộc\" in the \"New wards\" list. And there it is: `{\"ward_code\":\"15961\",\"ward_name\":\"Xã Hoằng Lộc\",\"province_name\":\"Tỉnh Thanh Hóa\"}`.\n\nI now have all the necessary information to construct the JSON output. I'm certain this is the correct mapping.\n\nJust to be thorough, I quickly check for any other mentions of \"Hoằng Thịnh\" or \"Hoằng Hóa\" that could cause conflicts or different interpretations. Line 19 of resolution 1686/NQ-UBTVQH15 mentions the formation of a new \"Xã Hoằng Hóa\", however, this is related to other wards and is not relevant to our query on \"Xã Hoằng Thịnh\". The old address includes \"Huyện Hoằng Hóa\", but the focus here is the ward restructuring, so the district information is irrelevant.\n\nTherefore, the mapping for \"Xã Hoằng Thịnh\" is definitive. The old ward \"Xã Hoằng Thịnh\" is now part of the new ward \"Xã Hoằng Lộc\", and the province remains unchanged. My confidence in this mapping is very high because the merging of \"Xã Hoằng Thịnh\" into \"Xã Hoằng Lộc\" is directly and unambiguously stated in the referenced resolution.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1686/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thanh Hóa",
+        "line": "22. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Hoằng Thịnh, Hoằng Thái, Hoằng Thành, Hoằng Trạch, Hoằng Tân và Hoằng Lộc thành xã mới có tên gọi là **xã Hoằng Lộc**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thanh Hóa",
+      "ward_code": "15961",
+      "ward_name": "Xã Hoằng Lộc"
+    }
+  ]
+}

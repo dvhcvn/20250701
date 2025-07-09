@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Mèo Vạc, Huyện Mèo Vạc, Tỉnh Hà Giang",
+  "ellapsedInMs": 6153,
+  "estimatedCost": 0.0019576,
+  "thought": "**Determining the New Ward for an Old Hà Giang Address**\n\nOkay, here's how I'm approaching this. The user has given me an old address and wants to know the new administrative unit, likely a \"ward\" in this context. Let's break it down:\n\nFirst, I need to pinpoint that the original province was \"Tỉnh Hà Giang\". Since we're dealing with administrative changes, I need to check relevant resolutions. Scanning those resolutions (like 60-NQ/TW), I see something crucial: \"Hợp nhất tỉnh Tuyên Quang và tỉnh Hà Giang, lấy tên là tỉnh Tuyên Quang\". Ah, right. \"Tỉnh Hà Giang\" is *now* part of \"Tỉnh Tuyên Quang\" due to a merger.\n\nNext, the user specified the old ward, which is \"Thị trấn Mèo Vạc.\" I need to see how that's changed. Checking further resolutions (specifically 1684/NQ-UBTVQH15), which deals with administrative adjustments, I get key information.\n\nLine 51 of that resolution is the money shot: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số củathị trấn Mèo Vạc vàcác xã Tả Lủng (huyệnMèo Vạc), Giàng Chu Phìn, Pả Vi thành xã mới có tên gọi là **xã Mèo Vạc**.\"  Bingo! The old \"Thị trấn Mèo Vạc\" has been *merged* to become part of the new \"xã Mèo Vạc.\"  It's clear, they've been consolidated.\n\nNow, I look at the list of new wards. I find  `{\"ward_code\":\"00769\",\"ward_name\":\"Xã Mèo Vạc\",\"province_name\":\"Tỉnh Tuyên Quang\"}`. Perfect match. The ward name and code correspond to the resolution's findings, and the province correctly reflects the earlier merger.\n\nTherefore, the output should be a JSON object, clearly showing:\n\n*   `province_name`: \"Tỉnh Tuyên Quang\" (due to the merger)\n*   `ward_name`: \"Xã Mèo Vạc\" (from the resolution and new ward data)\n*   `ward_code`: \"00769\" (straight from the new ward list)\n*   `citation`: Include the specific resolution and line for full traceability.\n*   `confidence`: \"high\" since there is a clear and direct resolution. It's an unambiguous match and very solid evidence.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "51. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số củathị trấn Mèo Vạc vàcác xã Tả Lủng (huyệnMèo Vạc), Giàng Chu Phìn, Pả Vi thành xã mới có tên gọi là xã Mèo Vạc."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "00769",
+      "ward_name": "Xã Mèo Vạc"
+    }
+  ]
+}

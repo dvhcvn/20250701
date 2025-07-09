@@ -1,0 +1,28 @@
+{
+  "address": "Thị trấn Phú Lộc, Huyện Phú Lộc, Thành phố Huế",
+  "ellapsedInMs": 5735,
+  "estimatedCost": 0.0024392999999999997,
+  "thought": "**Identifying the New Administrative Unit**\n\nOkay, here's how I'd approach this. First, I need to understand the initial conditions. The user provides an old address: \"Thị trấn Phú Lộc, Huyện Phú Lộc, Thành phố Huế\". My goal is to determine the new administrative unit.\n\nMy initial thought is to analyze this systematically. I'll need to figure out what used to be the province. Based on the address, it looks like \"Thành phố Huế\" is the old province.\n\nNow, I'm going to consult the relevant resolutions, specifically, the province resolutions (60-NQ/TW). Fortunately, \"Thành phố Huế\" is explicitly listed under \"Các đơn vị hành chính cấp tỉnh không thực hiện sáp nhập\". This tells me that the province name remains \"Thành phố Huế,\" which is good news; one less thing to change.\n\nNext, I identify the ward, which is \"Thị trấn Phú Lộc.\" The interesting part is what happened to it during the restructuring. I'll search through other resolutions, keeping an eye out for mentions of \"Thị trấn Phú Lộc\" within \"Thành phố Huế\".\n\nI quickly locate the relevant resolution: `1675/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Huế`. Line 30 of the resolution is key. It directly states that \"thị trấn Phú Lộc\", along with \"xã Lộc Trì\" and \"xã Lộc Bình\" will be merged into a new ward named \"xã Phú Lộc.\" That's the core information.\n\nTo confirm my findings and make sure everything is accurate, I'll cross-reference the information. I'll need to check the \"New wards\" to look for \"xã Phú Lộc\" in \"Thành phố Huế\". And there it is: `{\"ward_code\":\"20107\",\"ward_name\":\"Xã Phú Lộc\",\"province_name\":\"Thành phố Huế\"}`. That's a perfect match.\n\nBased on my analysis of the available data, I'm confident that the new ward is \"Xã Phú Lộc\" with code \"20107\" in \"Thành phố Huế.\" The resolution directly states the merger. It's a high-confidence finding.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh không thực hiện sáp nhập:",
+        "line": "2. Thành phố Huế"
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Huế",
+      "ward_code": "20107",
+      "ward_name": "Xã Phú Lộc"
+    },
+    {
+      "citation": {
+        "header": "1675/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Huế",
+        "line": "30. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số củathị trấn Phú Lộc, xã Lộc Trì và xã Lộc Bình thành xã mới có tên gọi là xã Phú Lộc."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Huế",
+      "ward_code": "20107",
+      "ward_name": "Xã Phú Lộc"
+    }
+  ]
+}

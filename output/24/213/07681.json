@@ -1,0 +1,18 @@
+{
+  "address": "Phường Nham Biền, Thành phố Bắc Giang, Tỉnh Bắc Giang",
+  "ellapsedInMs": 7374,
+  "estimatedCost": 0.0027705,
+  "thought": "**Determining the New Administrative Unit**\n\nOkay, so I've got this address, \"Phường Nham Biền, Thành phố Bắc Giang, Tỉnh Bắc Giang,\" and I need to figure out the new administrative unit.  My first instinct is to break it down. \"Phường Nham Biền\" is the ward, and \"Tỉnh Bắc Giang\" is the province.  \"Thành phố Bắc Giang\" is a district within that province, but I'm focusing on the province and ward level changes first.\n\nI need to dig into the resolutions and the \"new wards\" data.  Let's start with province level changes. I have this list of province mergers. Hmmm, the list doesn't mention \"Tỉnh Bắc Giang\" as a standalone entity after any mergers, but I see a resolution (\"60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất\") that *does* include \"Hợp nhất tỉnh Bắc Ninh và tỉnh Bắc Giang, lấy tên là tỉnh Bắc Ninh.\" Ah, so \"Tỉnh Bắc Giang\" is merging into \"Tỉnh Bắc Ninh\". Okay, got it.\n\nNow, the ward. I need to look for \"Phường Nham Biền\" in the ward level resolutions.  I'm searching for it within the \"other resolutions\". Bingo! Resolution \"1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh\" comes up. Specifically, line 96, where it lists the merging of \"phường Tân Liễu, phường Nham Biền và xã Yên Lư thành phường mới có tên gọi là **phường Yên Dũng**.\"  Perfect! \"Phường Nham Biền\" is definitely part of the new \"Phường Yên Dũng\".\n\nJust to double-check, I'll cross-reference this with the \"new wards\" data. I'm looking for the ward named \"phường Yên Dũng\".  And there it is! `{\"ward_code\":\"07681\",\"ward_name\":\"Phường Yên Dũng\",\"province_name\":\"Tỉnh Bắc Ninh\"}`.  The province name matches what I found from the province merger. It all lines up perfectly.\n\nSo, I'm confident. The new administrative unit for \"Phường Nham Biền, Thành phố Bắc Giang, Tỉnh Bắc Giang\" is \"Phường Yên Dũng\" in \"Tỉnh Bắc Ninh.\"  My source is Resolution \"1658/NQ-UBTVQH15\" line 96.  The confidence is high because of the direct match on both the province and ward changes.  All set!\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh",
+        "line": "96. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Tân Liễu, phường Nham Biền và xã Yên Lư thành phường mới có tên gọi là phường Yên Dũng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "07681",
+      "ward_name": "Phường Yên Dũng"
+    }
+  ]
+}

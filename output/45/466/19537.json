@@ -1,0 +1,18 @@
+{
+  "address": "Xã Gio Sơn, Huyện Gio Linh, Tỉnh Quảng Trị",
+  "ellapsedInMs": 6891,
+  "estimatedCost": 0.0024078,
+  "thought": "**Address Mapping Analysis: Xã Gio Sơn, Quảng Trị**\n\nOkay, let's break this down. The task is to map this old address, \"Xã Gio Sơn, Huyện Gio Linh, Tỉnh Quảng Trị\", to its new administrative unit. My initial steps involve identifying the components: the old ward, district, and province. We have:\n\n*   Old ward: **Xã Gio Sơn**\n*   Old district: Huyện Gio Linh (This is mainly context since we're eliminating districts)\n*   Old province: **Tỉnh Quảng Trị**\n\nNext, I need to check provincial resolutions, specifically 60-NQ/TW. This is a crucial step to understand if any provincial mergers or divisions have occurred. Looking through it, Quảng Trị *isn't* listed in the no-merger section. However, the resolution *does* mention Quảng Trị in the merger/consolidation section: \"Hợp nhất tỉnh Quảng Bình và tỉnh Quảng Trị, lấy tên là tỉnh Quảng Trị\". So, the province name remains \"Tỉnh Quảng Trị\", but we should be mindful that it has absorbed Quảng Bình.\n\nNow, for the key: examining resolution 1680/NQ-UBTVQH15. This is where the old wards are being redefined. Bingo! Line 41 states, \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Hải Thái, Linh Trường, Gio An và Gio Sơn thành xã mới có tên gọi là **xã Cồn Tiên**.\" There it is, *explicitly* mentioning \"Gio Sơn\" and its merger into \"xã Cồn Tiên.\"  Line 43 does NOT mention \"Gio Sơn\", confirming the merge.\n\nFinally, I need to cross-reference this with the provided \"New wards\" data. Checking for \"xã Cồn Tiên,\" I find it: `{\"ward_code\":\"19537\",\"ward_name\":\"Xã Cồn Tiên\",\"province_name\":\"Tỉnh Quảng Trị\"}`. \"Xã Gio Linh\" is also present, but its irrelevant.\n\nThe conclusion is straightforward: \"Xã Gio Sơn\" is now part of the new \"Xã Cồn Tiên\". The province remains \"Tỉnh Quảng Trị\". With a clear, direct resolution match, the confidence level for this mapping is high. The output will reflect this merge to \"xã Cồn Tiên\".\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1680/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Trị",
+        "line": "41. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Hải Thái, Linh Trường, Gio An và Gio Sơn thành xã mới có tên gọi là xã Cồn Tiên."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Trị",
+      "ward_code": "19537",
+      "ward_name": "Xã Cồn Tiên"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Phường Ba Ngòi, Thành phố Cam Ranh, Tỉnh Khánh Hòa",
+  "ellapsedInMs": 5773,
+  "estimatedCost": 0.0019986,
+  "thought": "**My Analysis of the Address Mapping**\n\nOkay, so I'm dealing with an address: \"Phường Ba Ngòi, Thành phố Cam Ranh, Tỉnh Khánh Hòa.\" My primary goal is to map this *old* address to the corresponding *new* administrative units. I've got a systematic approach here, honed from experience in these kinds of spatial data tasks.\n\nFirst, I identified the key components of the old address: \"Phường Ba Ngòi\" as the old ward and \"Tỉnh Khánh Hòa\" as the old province. Now, I need to check the province-level changes. Examining the provided province resolutions, specifically 60-NQ/TW, is crucial. It looks like Khánh Hòa did undergo a merger at one point. However, the resolution states that the resulting province is still called \"Khánh Hòa.\" Excellent, that simplifies things a bit.\n\nNext, I delved into the \"Other Resolutions,\" focusing on those mentioning \"Phường Ba Ngòi\" within \"Tỉnh Khánh Hòa.\" Resolution 1667/NQ-UBTVQH15 stood out. Specifically, line 56. Reading that line, it explicitly states that \"Phường Ba Ngòi\" and \"xã Cam Phước Đông\" were merged to create a *new* \"Phường Ba Ngòi\". Crucial detail: *the name remains the same, but the composition has changed.*\n\nMy next step? Validate this information against the \"New Wards\" data. And there it is: `{\"ward_code\":\"22423\",\"ward_name\":\"Phường Ba Ngòi\",\"province_name\":\"Tỉnh Khánh Hòa\"}`. This perfectly matches the resolution's description of the newly formed ward.\n\nGiven the explicit nature of the resolution and the direct match with the \"New Wards\" data, my confidence in this mapping is high. The resolution clearly defines the new administrative unit, and the data confirms its existence. It's a clean and straightforward case. Now, I'm ready to construct the final JSON output, based on this solid mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1667/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Khánh Hòa",
+        "line": "56. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Ba Ngòi và xã Cam Phước Đông thành phường mới có tên gọi là phường Ba Ngòi."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Khánh Hòa",
+      "ward_code": "22423",
+      "ward_name": "Phường Ba Ngòi"
+    }
+  ]
+}

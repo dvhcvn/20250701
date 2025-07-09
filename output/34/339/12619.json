@@ -1,0 +1,28 @@
+{
+  "address": "Xã Duyên Hải, Huyện Hưng Hà, Tỉnh Thái Bình",
+  "ellapsedInMs": 6969,
+  "estimatedCost": 0.0028331,
+  "thought": "**My Analysis of the Administrative Unit Change**\n\nOkay, so I'm presented with the old address \"Xã Duyên Hải, Huyện Hưng Hà, Tỉnh Thái Bình\" and need to figure out its current administrative location. My process goes something like this:\n\nFirst, I break it down. I know I'm starting with *Tỉnh Thái Bình*, *Xã Duyên Hải*, and *Huyện Hưng Hà*.  This is my starting point.\n\nNext, I have to account for any province changes. I've got to consult the relevant resolutions, particularly 60-NQ/TW. Ah, and here it is: \"Hợp nhất tỉnh Hưng Yên và tỉnh Thái Bình, lấy tên là tỉnh Hưng Yên.\" Meaning, *Tỉnh Thái Bình* is now part of *Tỉnh Hưng Yên*. So, the new province will definitely be *Tỉnh Hưng Yên*. That's a key piece of information.\n\nNow, I zero in on ward changes.  The crucial step is to analyze resolutions, but specifically for the context of the *new* province *Hưng Yên* (or the *old* province *Thái Bình* if an earlier resolution pre-dates the province merger). I sift through the resolutions provided for Hưng Yên. I scan through these, looking for a clear mention of \"*Xã Duyên Hải*\" and \"*Huyện Hưng Hà*\". \n\nBingo! I found it in \"1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên\". Line 76 is the key. It details that \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Quang Trung (huyện Hưng Hà), Văn Cẩm và Duyên Hải thành xã mới có tên gọi là **xã Diên Hà**.\"\n\nSo, *Xã Duyên Hải* and *Huyện Hưng Hà* are now part of a new ward called *Xã Diên Hà*!\n\nTo be absolutely sure, I cross-reference this with my \"New wards\" list. And there it is: `{\"ward_code\":\"12619\",\"ward_name\":\"Xã Diên Hà\",\"province_name\":\"Tỉnh Hưng Yên\"}`. It matches perfectly with my findings: *Xã Diên Hà* is in *Tỉnh Hưng Yên*.\n\nConsidering everything:\n*   The province merger is explicit.\n*   The ward merger explicitly links the old and the new.\n*   The new ward is verified in my new ward database with the correct province.\n\nI'd say my confidence level is high. Now, I'll package this up into the appropriate JSON output.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Hưng Yên và tỉnh Thái Bình, lấy tên là tỉnh Hưng Yên"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "12619",
+      "ward_name": "Xã Diên Hà"
+    },
+    {
+      "citation": {
+        "header": "1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên",
+        "line": "76. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Quang Trung (huyện Hưng Hà), Văn Cẩm và Duyên Hải thành xã mới có tên gọi là xã Diên Hà."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "12619",
+      "ward_name": "Xã Diên Hà"
+    }
+  ]
+}

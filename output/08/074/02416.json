@@ -1,0 +1,18 @@
+{
+  "address": "Xã Bằng Cốc, Huyện Hàm Yên, Tỉnh Tuyên Quang",
+  "ellapsedInMs": 6581,
+  "estimatedCost": 0.0024277,
+  "thought": "**Mapping an Old Vietnamese Address to New Administrative Units**\n\nOkay, here's how I'm thinking about this. The user has given me an old address: \"Xã Bằng Cốc, Huyện Hàm Yên, Tỉnh Tuyên Quang.\" My first step, as always, is to parse this into its component parts: the old ward (\"Xã Bằng Cốc\"), the old district (\"Huyện Hàm Yên\"), and the old province (\"Tỉnh Tuyên Quang\").\n\nNow, the tricky part is figuring out how these old administrative units relate to the new ones, based on the resolutions provided.  I need to check the province resolutions first. The province, \"Tuyên Quang,\" is mentioned in a resolution about merging with Hà Giang, but that doesn't affect the fact that the province name itself remains \"Tuyên Quang\" for this address. So, no changes there.\n\nNext, I need to dive into those \"other\" resolutions, looking for any mention of \"Bằng Cốc\" or \"Hàm Yên.\" Aha! Resolution 1684/NQ-UBTVQH15 is a goldmine. Line 22 specifically states that \"Xã Bằng Cốc,\" along with some other wards, is being *merged* into a *new* ward called \"Xã Hàm Yên\".  That's the key.\n\nNow, let's confirm this by cross-referencing with the `new_wards` list. Yep, there it is: \"Xã Hàm Yên\" with code \"02374\" and the correct province, \"Tỉnh Tuyên Quang\". Excellent. There's also \"Xã Tân Thanh\" in the list, but it's important to remember that the resolution clearly states \"thành xã mới có tên gọi là xã Hàm Yên.\" So, \"Bằng Cốc\" is definitely *part* of \"Hàm Yên.\"\n\nBased on this direct mapping in the resolution and its presence in the new wards list, I have a *very* high confidence level in this solution. The old \"Xã Bằng Cốc\" is now part of the new \"Xã Hàm Yên,\" with code 02374, within the \"Tỉnh Tuyên Quang\" province. I'll construct the appropriate JSON output now to reflect this mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "22. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Tân Yên và cácxã Tân Thành (huyện Hàm Yên), Bằng Cốc, Nhân Mục thành xã mới có tên gọi là xã Hàm Yên."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "02374",
+      "ward_name": "Xã Hàm Yên"
+    }
+  ]
+}

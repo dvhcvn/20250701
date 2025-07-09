@@ -1,0 +1,18 @@
+{
+  "address": "Xã Si Pa Phìn, Huyện Nậm Pồ, Tỉnh Điện Biên",
+  "ellapsedInMs": 5595,
+  "estimatedCost": 0.0020079,
+  "thought": "**Analysis of Address Mapping: Old to New Administrative Unit**\n\nOkay, here's how I'm approaching this address mapping problem. First, I need to understand the structure of the address, specifically breaking it down to its province and ward components. From the provided information, I can see that the old address contains \"Tỉnh Điện Biên\" (province) and \"Xã Si Pa Phìn\" (ward).\n\nNext, I'll consult my database of resolutions to see how \"Tỉnh Điện Biên\" has been handled. It's crucial to determine if there were any changes due to mergers or boundary adjustments. Thankfully, Resolution 60-NQ/TW is clear – \"Tỉnh Điện Biên\" remains unchanged. Good.\n\nNow for the tricky part: the ward. I need to find information about \"Xã Si Pa Phìn.\" Checking the other resolutions, I hit paydirt! Resolution 1661/NQ-UBTVQH15, specifically related to Điện Biên, states that \"Xã Si Pa Phìn\" and \"Xã Phìn Hồ\" were merged to create a *new* \"Xã Si Pa Phìn.\"  The name is the same, but the administrative boundary and population composition are definitely different.\n\nFinally, I need to cross-reference this with the list of new wards (`new_wards`).  And there it is! A new ward is present with the name \"Xã Si Pa Phìn\" and is correctly associated with \"Tỉnh Điện Biên.\"\n\nWith this information, I can construct a JSON output with high confidence. The province hasn't changed, and the old \"Xã Si Pa Phìn\" has a direct lineage to the new ward, albeit through a merger with another ward.  It's a straightforward match despite the administrative changes.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1661/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Điện Biên",
+        "line": "10. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Phìn Hồ và xã Si Pa Phìn thành xã mới có tên gọi là xã Si Pa Phìn."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Điện Biên",
+      "ward_code": "03199",
+      "ward_name": "Xã Si Pa Phìn"
+    }
+  ]
+}

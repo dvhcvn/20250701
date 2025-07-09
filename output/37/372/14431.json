@@ -1,0 +1,18 @@
+{
+  "address": "Xã Văn Phương, Huyện Nho Quan, Tỉnh Ninh Bình",
+  "ellapsedInMs": 7570,
+  "estimatedCost": 0.0028451,
+  "thought": "**Identifying the New Administrative Unit for Xã Văn Phương**\n\nOkay, so I've been given the old address \"Xã Văn Phương, Huyện Nho Quan, Tỉnh Ninh Bình\" and need to find its new administrative unit (ward).  My first step, as always, is to break down the information:  I've got \"Xã Văn Phương\" as the old ward, \"Tỉnh Ninh Bình\" as the old province, and \"Huyện Nho Quan\" as the old district.  The district is useful for context, but the output I need focuses on the ward and province.\n\nThe province is straightforward.  I quickly consult the Province Resolutions (specifically 60-NQ/TW), and confirm that \"Tỉnh Ninh Bình\" remains \"Tỉnh Ninh Bình\" after any mergers or consolidations. So, no changes there.\n\nNext, I dive into the resolutions, focusing on those related to Ninh Bình.  My primary tool is the list of lines within each resolution, and I'm looking for any mention of \"Xã Văn Phương\". Resolution \"1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình\" seems promising.  I scan the lines carefully... Bingo! Line 77 states, \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Văn Phương và xã Cúc Phương thành xã mới có tên gọi là **xã Cúc Phương**.\"  That's it!  \"Xã Văn Phương\" is being merged into \"Xã Cúc Phương.\"\n\nTo be absolutely certain, I double-check the \"New wards\" data.  I look for \"Xã Cúc Phương\" in the list of new wards for \"Tỉnh Ninh Bình.\" And yes, there it is: `{\"ward_code\":\"14404\",\"ward_name\":\"Xã Cúc Phương\",\"province_name\":\"Tỉnh Ninh Bình\"}`.  Perfect! This confirms my finding from the resolution.\n\nNow, I can construct the output.  The relevant citation is \"1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình\", with the specific line being \"77. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Văn Phương và xã Cúc Phương thành xã mới có tên gọi là **xã Cúc Phương**.\"  The confidence level is \"high\" because the resolution provides a direct and clear answer.  The province name remains \"Tỉnh Ninh Bình\", the ward code is \"14404\", and the new ward name is \"Xã Cúc Phương\".  This is a clean and straightforward case.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "77. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Văn Phương và xã Cúc Phương thành xã mới có tên gọi là xã Cúc Phương."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "14404",
+      "ward_name": "Xã Cúc Phương"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Xuân Lĩnh, Huyện Nghi Xuân, Tỉnh Hà Tĩnh",
+  "ellapsedInMs": 8184,
+  "estimatedCost": 0.0026836000000000004,
+  "thought": "**Finding the New Administrative Unit for \"Xã Xuân Lĩnh\"**\n\nOkay, so the goal is to pinpoint the new administrative unit (ward) for the old address \"Xã Xuân Lĩnh, Huyện Nghi Xuân, Tỉnh Hà Tĩnh.\" I need to cross-reference resolutions and a list of new wards. Let's break this down.\n\nFirst, I need to parse the input: the old address, specifically \"Xã Xuân Lĩnh,\" and its province \"Tỉnh Hà Tĩnh.\" I also have resolutions to scrutinize, starting with the provincial ones (specifically 60-NQ/TW), to see if Hà Tĩnh underwent any mergers or changes. Then, I'll dive into the other resolutions, focusing on any mentions of \"Xã Xuân Lĩnh\". And finally, I need to compare the results with the \"New wards\" list.\n\nThe provincial resolution (60-NQ/TW) is straightforward: it confirms that \"Tỉnh Hà Tĩnh\" remains unchanged. So, the output's `province_name` will be \"Tỉnh Hà Tĩnh.\" That's good; it's the first piece of the puzzle.\n\nNext, I have to go through the other resolutions. Bingo! Resolution 1665/NQ-UBTVQH15, concerning Hà Tĩnh's administrative re-organization, immediately caught my eye. Line 34 of this resolution explicitly states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Xuân An và các xã Xuân Giang, Xuân Hồng, Xuân Viên, **Xuân Lĩnh** thành xã mới có tên gọi là **xã Nghi Xuân**.\" This is a direct hit! It clearly states that \"Xã Xuân Lĩnh\" is merging into \"xã Nghi Xuân,\" and the province matches the old address. A strong match indeed.\n\nNow, I'll check the \"New wards\" list. Based on the resolution, I'm expecting to find \"xã Nghi Xuân.\"  Looking at the data,  I found `{\"ward_code\":\"18352\",\"ward_name\":\"Xã Nghi Xuân\",\"province_name\":\"Tỉnh Hà Tĩnh\"}`.  It's a perfect match!  The `ward_name` confirms \"Xã Nghi Xuân,\" and importantly, the `province_name` also matches \"Tỉnh Hà Tĩnh.\" The `ward_code` is 18352.\n\nTo summarize, I'm confident about this.  My final output will include:\n\n*   The resolution: 1665/NQ-UBTVQH15.\n*   The relevant line from the resolution: \"34. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Xuân An và các xã Xuân Giang, Xuân Hồng, Xuân Viên, Xuân Lĩnh thành xã mới có tên gọi là xã Nghi Xuân.\"\n*   High confidence due to the direct mapping.\n*   The `province_name`: \"Tỉnh Hà Tĩnh\".\n*   The `ward_code`: \"18352\".\n*   And finally, the `ward_name`: \"Xã Nghi Xuân\".\n\nOf course, I'll double-check that all required fields in the output schema are present and correctly formatted before concluding. This should be accurate.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh",
+        "line": "34. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Xuân An và các xã Xuân Giang, Xuân Hồng, Xuân Viên, Xuân Lĩnh thành xã mới có tên gọi là xã Nghi Xuân."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hà Tĩnh",
+      "ward_code": "18352",
+      "ward_name": "Xã Nghi Xuân"
+    }
+  ]
+}

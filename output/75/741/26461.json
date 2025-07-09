@@ -1,0 +1,18 @@
+{
+  "address": "Xã Xuân Định, Huyện Xuân Lộc, Tỉnh Đồng Nai",
+  "ellapsedInMs": 7601,
+  "estimatedCost": 0.0032971999999999997,
+  "thought": "**My Analysis of the Administrative Unit Change**\n\nOkay, here's how I'm approaching this. The user has given me an old address and some resolutions, and I need to figure out the corresponding *new* administrative unit (ward) for that old address.  I'm dealing with the old address \"Xã Xuân Định, Huyện Xuân Lộc, Tỉnh Đồng Nai\".\n\nFirst, the province is straightforward: \"Tỉnh Đồng Nai\" stays \"Tỉnh Đồng Nai\" because of the resolution \"Hợp nhất tỉnh Đồng Nai và tỉnh Bình Phước, lấy tên là tỉnh Đồng Nai\". So far, so good.\n\nNow, I'm focusing on finding \"Xã Xuân Định\" and \"Huyện Xuân Lộc\" within Đồng Nai in the \"Other resolutions\" section. Specifically, I'm looking at Resolution 1662/NQ-UBTVQH15.\n\nLine 22 of that resolution is the key: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Xuân Bảo, Bảo Hòa và **Xuân Định** thành xã mới có tên gọi là **xã Xuân Định**.\" Boom! That's it. It explicitly mentions \"Xã Xuân Định\" being reconfigured, but the name stays the same for the new ward:  \"Xã Xuân Định\". The new ward list confirms `{\"ward_code\":\"26461\",\"ward_name\":\"Xã Xuân Định\",\"province_name\":\"Tỉnh Đồng Nai\"}` which is a perfect match.\n\nNow, about \"Huyện Xuân Lộc\". I know that the prompt mentions the elimination of districts. That means \"Huyện Xuân Lộc\" no longer exists as a district. The new administrative level is wards (xã/phường/thị trấn).  I initially thought about the creation of \"Xã Xuân Lộc\" (Line 24 in the resolution). But this specifically mentions communes forming the new \"Xã Xuân Lộc\" and not the old \"Xã Xuân Định.\" The old \"Huyện Xuân Lộc\" isn't directly mentioned in creating the new \"Xã Xuân Lộc\". This *new* \"Xã Xuân Lộc\" likely encompasses parts of the old district, but the question is about *my* address, *Xã Xuân Định*.\n\nTherefore, I'm confident in saying the best match is that the old \"Xã Xuân Định\" is now the *new* \"Xã Xuân Định\" given the resolution, which directly refers to my commune's adjustment.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1662/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Nai",
+        "line": "22. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Xuân Bảo, Bảo Hòa và Xuân Định thành xã mới có tên gọi là xã Xuân Định."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đồng Nai",
+      "ward_code": "26461",
+      "ward_name": "Xã Xuân Định"
+    }
+  ]
+}

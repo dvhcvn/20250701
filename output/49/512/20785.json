@@ -1,0 +1,28 @@
+{
+  "address": "Xã Thăng Phước, Huyện Hiệp Đức, Tỉnh Quảng Nam",
+  "ellapsedInMs": 7187,
+  "estimatedCost": 0.0027985,
+  "thought": "**My Analysis of the Administrative Unit Change**\n\nOkay, so I'm presented with an old address: \"Xã Thăng Phước, Huyện Hiệp Đức, Tỉnh Quảng Nam.\" My task is to determine the current administrative unit (ward) for this address. Here's how I'm approaching this:\n\nFirst, I identified \"Tỉnh Quảng Nam\" as the old province. Now, I need to understand if there have been any changes at the province level.  I quickly checked the key resolutions: 60-NQ/TW. This is where I found the critical information. While Quảng Nam wasn't explicitly mentioned as unaffected, it was *also* *not listed* among the provinces that remained. I then saw in this resolution that \"Tỉnh Quảng Nam\" was merged with \"Thành phố Đà Nẵng\". This fundamentally shifted the geographic context.\n\nWith the province understood, I then moved to focus on the old ward, \"Xã Thăng Phước\". I started searching relevant resolutions for information on what happened to it. Resolution \"1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng\" was the goldmine. Line 85 was *exactly* what I needed.  It explicitly states that \"Xã Thăng Phước\" was merged with other wards (\"Bình Sơn, Quế Thọ and Bình Lâm\") to form a new ward called \"Xã Việt An\". That was clear and precise.\n\nTo double-check my findings, I looked in `New wards` section to confirm \"Xã Việt An\" under \"Thành phố Đà Nẵng\". The entry `{ \"ward_code\": \"20767\", \"ward_name\": \"Xã Việt An\", \"province_name\": \"Thành phố Đà Nẵng\" }` confirmed my findings.\n\nThe confidence level here is high. The transition is clearly documented and explicitly linked in the cited resolutions. I am now confident that \"Xã Thăng Phước\" is now part of \"Xã Việt An\" in \"Thành phố Đà Nẵng\". I can now generate the requested JSON output based on this information.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "10. Hợp nhất tỉnh Quảng Nam và thành phố Đà Nẵng, lấy tên là thành phố Đà Nẵng"
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "20767",
+      "ward_name": "Xã Việt An"
+    },
+    {
+      "citation": {
+        "header": "1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng",
+        "line": "85. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Thăng Phước, Bình Sơn, Quế Thọ và Bình Lâm thành xã mới có tên gọi là xã Việt An."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "20767",
+      "ward_name": "Xã Việt An"
+    }
+  ]
+}

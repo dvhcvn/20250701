@@ -1,0 +1,28 @@
+{
+  "address": "Thị trấn Tam Sơn, Huyện Sông Lô, Tỉnh Vĩnh Phúc",
+  "ellapsedInMs": 8895,
+  "estimatedCost": 0.0035305,
+  "thought": "**Navigating the Administrative Unit Maze**\n\nOkay, so the user wants me to translate an old address into the new administrative structure.  The old address is \"Thị trấn Tam Sơn, Huyện Sông Lô, Tỉnh Vĩnh Phúc.\"  My thought process is fairly straightforward, but requires meticulous cross-referencing of government resolutions.  First, I need to identify the relevant province and see if it's been affected by any re-organizations.\n\n1.  **Province Identification:** The starting point is \"Tỉnh Vĩnh Phúc.\"\n2.  **Province Resolution Check (60-NQ/TW):** I consult the relevant resolutions (60-NQ/TW).  Ah, yes! \"Tỉnh Vĩnh Phúc\" was merged with other provinces to form \"Tỉnh Phú Thọ.\" So, we're now operating under the \"Tỉnh Phú Thọ\" umbrella.\n3.  **Identify Old Ward/District:** I note the old ward (\"Thị trấn Tam Sơn\") and old district (\"Huyện Sông Lô\").  I understand the prompt implies that districts are being eliminated, but this district information is crucial for context as I delve into the resolutions.\n4.  **Resolution Search:** Now the real detective work begins.  I need to search \"Other resolutions\" for mentions of \"Thị trấn Tam Sơn\" and \"Huyện Sông Lô,\" always keeping in mind the new province of \"Phú Thọ.\" This part's critical, making sure I don't confuse similar place names.\n\nI meticulously review each resolution:\n\n*   **1658/NQ-UBTVQH15 (Bắc Ninh):**  This resolution mentions \"phường Tam Sơn,\" but it's clearly in Bắc Ninh, not Vĩnh Phúc, so irrelevant.\n*   **1659/NQ-UBTVQH15 (Đà Nẵng):** This has \"xã Tam Sơn\" in Đà Nẵng, still not a match.\n*   **1676/NQ-UBTVQH15 (Phú Thọ):**  Now we're talking! The crucial merger province!\n    *   One mention says \"xã Tam Sơn,\" but it *doesn't* specify a district, so I treat it with suspicion. It *could* be the right one, but it doesn't have enough information.  I'll keep it in mind with low confidence.\n    *   **Bingo!**  Line 58 is the jackpot!  It explicitly mentions \"thị trấn Tam Sơn\" AND \"huyện Sông Lô!\" It says, \"...thị trấn Tam Sơn thành xã mới có tên gọi là **xã Tam Sơn**\". The match is perfect. The new ward's name is \"xã Tam Sơn\" (which is actually in \"Tỉnh Phú Thọ\" now).\n\nSo, the old address (\"Thị trấn Tam Sơn, Huyện Sông Lô, Tỉnh Vĩnh Phúc\") is now \"xã Tam Sơn\" in \"Tỉnh Phú Thọ\". Now, my next step is to look up the specific `ward_code` for \"xã Tam Sơn\" in \"Tỉnh Phú Thọ\" using the \"New wards\" lookup table to give the complete data the user wants. Confidence in this identification? High!\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "4. Hợp nhất tỉnh Vĩnh Phúc, tỉnh Phú Thọ và tỉnh Hoà Bình; lấy tên là tỉnh Phú Thọ"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "08824",
+      "ward_name": "Xã Tam Sơn"
+    },
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "58. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Tân Lập (huyện Sông Lô), xã Đồng Quế và thị trấn Tam Sơn thành xã mới có tên gọi là **xã Tam Sơn**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "08824",
+      "ward_name": "Xã Tam Sơn"
+    }
+  ]
+}

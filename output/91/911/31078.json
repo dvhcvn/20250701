@@ -1,0 +1,18 @@
+{
+  "address": "Phường Dương Đông, Thành phố Phú Quốc, Tỉnh Kiên Giang",
+  "ellapsedInMs": 8231,
+  "estimatedCost": 0.0030022,
+  "thought": "**Analysis of Administrative Unit Mapping**\n\nOkay, here's how I'm thinking through this address mapping problem:  My primary goal is to determine the *new* administrative units corresponding to the *old* address provided: \"Phường Dương Đông, Thành phố Phú Quốc, Tỉnh Kiên Giang\".  I'll break down my thought process step-by-step.\n\nFirst, I need to deconstruct the old address.  I immediately recognize \"Phường Dương Đông\" as the old ward, \"Thành phố Phú Quốc\" as the old district (or, in this case, a city that functions similarly to a district), and \"Tỉnh Kiên Giang\" as the old province.\n\nNow, the real work begins. I've been given some key resolutions to consult. The first, Resolution 60-NQ/TW, seems critical for the provincial level.  Reading it, I quickly find the sentence: \"Hợp nhất tỉnh An Giang và tỉnh Kiên Giang, lấy tên là tỉnh An Giang.\"  This tells me that \"Tỉnh Kiên Giang\" has been *merged into* \"Tỉnh An Giang\". So, my new province is definitely \"Tỉnh An Giang\".\n\nNext, I need to look beyond just province-level changes.  The other resolutions are where the details of ward-level adjustments will likely reside. I'm searching these resolutions for any mention of either \"Phường Dương Đông\" or \"Phú Quốc\".  Bingo!  Resolution 1654/NQ-UBTVQH15, concerning the administrative re-organization of *An Giang* (confirming my province change), includes a specific line: \"95. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Dương Đông, phường An Thới và các xã Dương Tơ, Hàm Ninh, Cửa Dương, Bãi Thơm, Gành Dầu, Cửa Cạn thành đặc khu có tên gọi là **đặc khu Phú Quốc**.\" This is exactly what I'm looking for! It *explicitly* states that \"Phường Dương Đông\" is now part of \"đặc khu Phú Quốc\".\n\nTo confirm my findings, I check the provided `new_wards` data. I'm specifically looking for any entry that mentions \"đặc khu Phú Quốc\".  The data reveals: `{\"ward_code\":\"31078\",\"ward_name\":\"Đặc khu Phú Quốc\",\"province_name\":\"Tỉnh An Giang\"}`. This perfectly matches the resolution's findings, and the \"Tỉnh An Giang\" province name aligns with my earlier analysis of the province merger.\n\nPutting it all together, I'm confident in the mapping. The old ward \"Phường Dương Đông\" has been integrated into the new ward \"đặc khu Phú Quốc\" within the new province \"Tỉnh An Giang\".  I would assign a \"high\" confidence level because this is a *very* straightforward, explicitly mentioned case. The province change aligned, and the ward mapping was direct and unambiguous. This is a solid result!\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1654/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh An Giang",
+        "line": "95. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Dương Đông, phường An Thới và các xã Dương Tơ, Hàm Ninh, Cửa Dương, Bãi Thơm, Gành Dầu, Cửa Cạn thành đặc khu có tên gọi là đặc khu Phú Quốc."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh An Giang",
+      "ward_code": "31078",
+      "ward_name": "Đặc khu Phú Quốc"
+    }
+  ]
+}

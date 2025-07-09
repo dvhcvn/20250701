@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Phú Thiện, Huyện Phú Thiện, Tỉnh Gia Lai",
+  "ellapsedInMs": 4660,
+  "estimatedCost": 0.0017296,
+  "thought": "**Address Mapping Logic for Expert Analysis**\n\nOkay, so I'm presented with an address: \"Thị trấn Phú Thiện, Huyện Phú Thiện, Tỉnh Gia Lai.\"  My initial task is to dissect this.  I immediately recognize \"Thị trấn Phú Thiện\" as the old ward and \"Tỉnh Gia Lai\" as the old province.\n\nNow, I need to understand if there were any changes at the provincial level.  I'll consult the province resolutions, specifically 60-NQ/TW.  Ah, good, it confirms that Gia Lai remains as Gia Lai, even with a merger. That simplifies things.\n\nNext, I delve into other resolutions, looking specifically for \"Thị trấn Phú Thiện\" within Gia Lai.  Here, Resolution 1664/NQ-UBTVQH15 catches my eye. It details the reorganization, merging \"Thị trấn Phú Thiện\" and surrounding areas to form \"Xã Phú Thiện.\" This is key!\n\nMy next step is to match this newly identified ward (\"Xã Phú Thiện\") with the provided \"New wards\" data. I'm looking for a direct correlation, and I find a match:  `{\"ward_code\":\"24043\",\"ward_name\":\"Xã Phú Thiện\",\"province_name\":\"Tỉnh Gia Lai\"}`. Excellent!\n\nFinally, based on this information, I can confidently construct the JSON output:  a clear citation to the resolution, a \"high\" confidence level because the mapping is direct and unambiguous, and all the necessary new unit information, with my final conclusion, this is a clean map.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai",
+        "line": "76. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Phú Thiện và các xã Ia Sol, Ia Piar, Ia Yeng thành xã mới có tên gọi là xã Phú Thiện."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "24043",
+      "ward_name": "Xã Phú Thiện"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "address": "Phường Lạc Đạo, Thành phố Phan Thiết, Tỉnh Bình Thuận",
+  "ellapsedInMs": 8737,
+  "estimatedCost": 0.0032074,
+  "thought": "**Mapping the Old Address: My Line of Reasoning**\n\nOkay, so I've got an old address to map to a new administrative unit structure.  My initial approach is to break it down. First, I identify the province, district (though I know that districts are being eliminated in this context), and ward from the input address: \"Phường Lạc Đạo, Thành phố Phan Thiết, Tỉnh Bình Thuận.\"\n\nStraight away, I see \"Tỉnh Bình Thuận\" and know that's the province to focus on.  I pull up the provincial resolutions. I'm looking for any mergers or renamings related to Bình Thuận.  I quickly check for its presence in 60-NQ/TW, which lists provinces *not* undergoing any changes.  It's not there. Excellent. That confirms a change is likely.\n\nThen I look at the list of provinces that *are* being merged. Ah, and there it is.  \"14. Hợp nhất tỉnh Lâm Đồng, tỉnh Đắk Nông và tỉnh Bình Thuận; lấy tên là tỉnh Lâm Đồng.\"  Bình Thuận is merging, and its new province is Lâm Đồng. Now, it's Lâm Đồng I need to be mapping to.\n\nNext, I identify the ward from the old address: \"Phường Lạc Đạo\".  I also note the city, \"Thành phố Phan Thiết\", though I know districts are essentially irrelevant in this particular exercise. This will help with the context.\n\nNow I move onto the \"Other resolutions\" to find the correspondence. I search through them.  I'm looking specifically for \"Lạc Đạo\" and \"Phan Thiết\" within the *new* context of \"Lâm Đồng\" and *old* context of \"Bình Thuận\". The first one for Hưng Yên is irrelevant. That has nothing to do with what I'm working with. The second one, for Lâm Đồng, looks promising!\n\n\"1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng\" - This is perfect. Line 112... \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Phú Trinh, Lạc Đạo và Bình Hưng thành phường mới có tên gọi là **phường Phan Thiết**.\" Bingo. \"Phường Lạc Đạo\" is being merged into \"Phường Phan Thiết\" in the *new* province of Lâm Đồng, exactly what I was hoping to find. I discard the third resolution, as it is related to Tuyen Quang.\n\nTo be extra certain, I then consult the \"New wards\" list for \"Phường Phan Thiết\" within \"Tỉnh Lâm Đồng\".  And it matches exactly! {\"ward_code\":\"22945\",\"ward_name\":\"Phường Phan Thiết\",\"province_name\":\"Tỉnh Lâm Đồng\"}. Confirmation is good.\n\nSo, in conclusion, the old \"Phường Lạc Đạo\" from \"Tỉnh Bình Thuận\" is now part of \"Phường Phan Thiết\" within \"Tỉnh Lâm Đồng\". That's my final output.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "14. Hợp nhất tỉnh Lâm Đồng, tỉnh Đắk Nông và tỉnh Bình Thuận; lấy tên là tỉnh Lâm Đồng"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "22945",
+      "ward_name": "Phường Phan Thiết"
+    },
+    {
+      "citation": {
+        "header": "1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng",
+        "line": "112. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Phú Trinh, Lạc Đạo và Bình Hưng thành phường mới có tên gọi là phường Phan Thiết."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "22945",
+      "ward_name": "Phường Phan Thiết"
+    }
+  ]
+}

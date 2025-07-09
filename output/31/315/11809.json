@@ -1,0 +1,18 @@
+{
+  "address": "Xã Hùng Thắng, Huyện Tiên Lãng, Thành phố Hải Phòng",
+  "ellapsedInMs": 7317,
+  "estimatedCost": 0.0031617,
+  "thought": "**Determining the New Administrative Unit**\n\nOkay, so I've got this old address: \"Xã Hùng Thắng, Huyện Tiên Lãng, Thành phố Hải Phòng.\" My task is to figure out the corresponding new administrative unit(s).\n\nFirst, I need to pinpoint the province, which is obviously \"Thành phố Hải Phòng.\" Now, I'm aware of potential province mergers, so I quickly check for any relevant resolutions.  Resolution 60-NQ/TW doesn't change \"Thành phố Hải Phòng\" as a province name, but it does highlight that it now *includes* the former \"Tỉnh Hải Dương,\" which is something I'll need to keep in mind for ward-level resolutions.\n\nNext, I zero in on ward-level resolutions for \"Thành phố Hải Phòng.\"  Resolution 1669/NQ-UBTVQH15 looks promising.  I start scanning it, specifically looking for \"Xã Hùng Thắng\" and \"Huyện Tiên Lãng.\"  Initially, lines 57 and 60 didn't seem relevant. However, Line 61 is the jackpot! It clearly states that \"xã Hùng Thắng (huyện Tiên Lãng)\" merges with \"xã Vinh Quang\" to form a *new* xã also named \"**xã Hùng Thắng**.\"  Crucially, I check line 85 as well, but this is a false match, as it references a different district.\n\nBingo! That's the key.  Line 61 is explicit and definitive.\n\nTo confirm this, I cross-reference this information with my \"New wards\" data.  A search for \"Xã Hùng Thắng\" within \"Thành phố Hải Phòng\" provides a matching entry: `{\"ward_code\":\"11809\",\"ward_name\":\"Xã Hùng Thắng\",\"province_name\":\"Thành phố Hải Phòng\"}`. The confidence is high because the resolution provides direct evidence of the merger and the ward name.\n\nTherefore, the new administrative unit is clearly the new \"**xã Hùng Thắng**.\"  I can now confidently construct the JSON output reflecting this.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "61. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số củaxã Hùng Thắng (huyện Tiên Lãng) và xã Vinh Quangthành xã mới có tên gọi là **xã Hùng Thắng**."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "11809",
+      "ward_name": "Xã Hùng Thắng"
+    }
+  ]
+}

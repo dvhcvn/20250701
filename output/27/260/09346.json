@@ -1,0 +1,18 @@
+{
+  "address": "Xã Việt Đoàn, Huyện Tiên Du, Tỉnh Bắc Ninh",
+  "ellapsedInMs": 7084,
+  "estimatedCost": 0.00285,
+  "thought": "**My Analysis of the Administrative Unit Change**\n\nOkay, here's how I'm thinking about this. The user gave me an old address in Bắc Ninh province, specifically \"Xã Việt Đoàn, Huyện Tiên Du, Tỉnh Bắc Ninh\". My goal is to find the new equivalent administrative unit.\n\nFirst, I identified \"Tỉnh Bắc Ninh\" as the province. Then, I quickly checked the relevant resolutions, particularly 60-NQ/TW, to see if Bắc Ninh was slated for any province-level mergers. It wasn't, which is good.\n\nNext, I went straight to resolution 1658/NQ-UBTVQH15, which deals with restructuring at the *commune* level within Bắc Ninh. This is where I'll find my answer.\n\nI skimmed through 1658, looking for \"Xã Việt Đoàn\". Bingo! Line 9 says that \"Xã Việt Đoàn\" along with Hiên Vân and Liên Bão are merged into the new \"Xã Liên Bão\". Perfect!\n\nTo confirm, I looked for \"Xã Liên Bão\" in my database of new administrative units, which turned up the entry: {\"ward_code\":\"09334\",\"ward_name\":\"Xã Liên Bão\",\"province_name\":\"Tỉnh Bắc Ninh\"}.\n\nTherefore, my conclusion is that the new ward for the given old address \"Xã Việt Đoàn, Huyện Tiên Du, Tỉnh Bắc Ninh\" is \"Xã Liên Bão\". This is a high-confidence determination because it's directly stated in the resolution.\n\nMy JSON output will be:\n\n```json\n{\n  \"province_name\": \"Tỉnh Bắc Ninh\",\n  \"ward_name\": \"Xã Liên Bão\",\n  \"ward_code\": \"09334\",\n  \"confidence\": \"high\",\n  \"citation\": {\n    \"header\": \"1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh\",\n    \"line\": \"9. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Hiên Vân, Việt Đoàn và Liên Bão thành xã mới có tên gọi là **xã Liên Bão**.\"\n  }\n}\n```\n\nThat should be accurate, given the information I have at hand. It's a clean, straightforward case of administrative restructuring.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh",
+        "line": "9. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Hiên Vân, Việt Đoàn và Liên Bão thành xã mới có tên gọi là xã Liên Bão."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "09334",
+      "ward_name": "Xã Liên Bão"
+    }
+  ]
+}

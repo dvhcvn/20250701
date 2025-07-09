@@ -1,0 +1,18 @@
+{
+  "address": "Xã Diễn Phúc, Huyện Diễn Châu, Tỉnh Nghệ An",
+  "ellapsedInMs": 6365,
+  "estimatedCost": 0.0022403,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm tasked with taking this old Vietnamese address and figuring out its new equivalent based on these provided resolutions and ward data. Let's break this down systematically, as I always do.\n\nFirst, I need to understand the initial address. It's Xã Diễn Phúc in Huyện Diễn Châu, Tỉnh Nghệ An.  Diễn Châu is a district, but the instructions implied districts are being eliminated so I'll keep that information in mind for context.\n\nNext, I'll go through the logic. I will first consult the provincial resolutions, specifically 60-NQ/TW.  I quickly see that Nghệ An is *not* listed as a province undergoing a merger. That's straightforward enough - so the province remains \"Tỉnh Nghệ An.\"\n\nNow, to the meaty part: the other resolutions.  Scanning through them, resolution 1678/NQ-UBTVQH15 catches my attention immediately. And Bingo! Line 12 explicitly states that \"Xã Diễn Phúc\" (my input ward) is being merged *into* a new \"xã Diễn Châu.\" It's almost too easy, but I like it!\n\nOkay, new ward time. I cross-reference the `new_wards` dataset for a ward named \"Xã Diễn Châu\" *within* Nghệ An.  And, there it is!  `{\"ward_code\":\"17464\",\"ward_name\":\"Xã Diễn Châu\",\"province_name\":\"Tỉnh Nghệ An\"}` - A perfect match!\n\nTherefore, the output is clear. My confidence is very high here because the resolution provided explicit details and aligns perfectly with the new ward data.\n\nThe final JSON output will be:\n*   `province_name`: \"Tỉnh Nghệ An\"\n*   `ward_name`: \"Xã Diễn Châu\"\n*   `ward_code`: \"17464\"\n*   `citation`: The text will contain citation from the resolution (header and Line 12 as described in the instructions).\n*   `confidence`: \"high\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1678/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Nghệ An",
+        "line": "12. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Diễn Thành và các xã Diễn Hoa, Diễn Phúc, Ngọc Bích thành xã mới có tên gọi là xã Diễn Châu."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Nghệ An",
+      "ward_code": "17464",
+      "ward_name": "Xã Diễn Châu"
+    }
+  ]
+}

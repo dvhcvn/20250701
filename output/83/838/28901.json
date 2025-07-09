@@ -1,0 +1,18 @@
+{
+  "address": "Xã Hưng Khánh Trung A, Huyện Mỏ Cày Bắc, Tỉnh Bến Tre",
+  "ellapsedInMs": 7732,
+  "estimatedCost": 0.0025709,
+  "thought": "**Mapping an Old Vietnamese Address to New Administrative Units**\n\nOkay, so I've got this old Vietnamese address: \"Xã Hưng Khánh Trung A, Huyện Mỏ Cày Bắc, Tỉnh Bến Tre\".  My task is to figure out the corresponding new administrative unit information.  Let's break this down systematically.\n\nFirst, I need to isolate the components: the ward \"Xã Hưng Khánh Trung A\", the district \"Huyện Mỏ Cày Bắc\", and the province \"Tỉnh Bến Tre\".  Easy enough.\n\nNext, I'll go through the relevant resolutions.  Starting with Province Resolutions, specifically 60-NQ/TW. I'm looking for any information on \"Tỉnh Bến Tre\".  Thankfully, it's not listed as \"không thực hiện sáp nhập\" (not to be merged). Instead, it's in the \"sáp nhập, hợp nhất\" list.  Yes, the resolution mentions that Bến Tre is being merged with Vĩnh Long and Trà Vinh to form a new province, which would then be named \"Tỉnh Vĩnh Long.\" Great! That gives me the new province.\n\nNow, on to the \"Other Resolutions\", specifically 1687/NQ-UBTVQH15.  This one is crucial because it deals with ward-level changes. I search the lines for \"Hưng Khánh Trung A\", which is my target ward. Bingo! Line 66 in this resolution is explicit: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Vĩnh Hòa (huyện Chợ Lách), Hưng Khánh Trung A và Hưng Khánh Trung B thành xã mới có tên gọi là **xã Hưng Khánh Trung**.\" This clearly states that \"Xã Hưng Khánh Trung A\" is merging into a new ward called \"Xã Hưng Khánh Trung\". The resolution header, confirming it's regarding Vĩnh Long, aligns perfectly with the province change I discovered earlier.\n\nNow, checking the New Wards data, I look specifically for \"Xã Hưng Khánh Trung\". I find a direct match:  `{\"ward_code\":\"28901\",\"ward_name\":\"Xã Hưng Khánh Trung\",\"province_name\":\"Tỉnh Vĩnh Long\"}`. Perfect! This confirms the new ward name, the associated ward code, and reiterates the new province. The other ward mentioned within that same line, \"Tân Thành Bình\", isn't relevant to my query, although noteworthy in the context.\n\nI see that the old district \"Huyện Mỏ Cày Bắc\" is mentioned in line 68, but not in line 66 with my ward. The other line mentions \"huyện Chợ Lách\". I am mindful of potential discrepancies; however, the resolution primarily focuses on ward-level changes, and the key element is the ward name.\n\nFinally, putting it all together, I can construct the JSON output. The new province is \"Tỉnh Vĩnh Long\". The new ward is \"Xã Hưng Khánh Trung\", with the ward code \"28901\". The citation is \"1687/NQ-UBTVQH15\" from line 66. Because there's a clear, direct match and no ambiguities, the confidence level should be marked as \"high\".  The old address of \"Xã Hưng Khánh Trung A, Huyện Mỏ Cày Bắc, Tỉnh Bến Tre\" has successfully been mapped to the new information:  \"Xã Hưng Khánh Trung, Tỉnh Vĩnh Long\", ward code \"28901\".\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long",
+        "line": "66. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Vĩnh Hòa (huyện Chợ Lách), Hưng Khánh Trung A và Hưng Khánh Trung Bthành xã mới có tên gọi là xã Hưng Khánh Trung."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "28901",
+      "ward_name": "Xã Hưng Khánh Trung"
+    }
+  ]
+}

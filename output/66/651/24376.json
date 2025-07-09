@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Ea Knốp, Huyện Ea Kar, Tỉnh Đắk Lắk",
+  "ellapsedInMs": 6544,
+  "estimatedCost": 0.0025684,
+  "thought": "**My Reasoning for Mapping the Old Vietnamese Address**\n\nOkay, I've got the task. The user wants to map this old Vietnamese address to a new administrative unit. My focus is on the ward specifically, and I understand they're eliminating the district level, so I'll ignore that part for the final output. Here's my thought process:\n\nFirst, I need to break down the old address: \"Thị trấn Ea Knốp,\" \"Huyện Ea Kar,\" and \"Tỉnh Đắk Lắk.\" Got it.\n\nNow, I'm checking the Province Resolutions (60-NQ/TW). Finding \"Tỉnh Đắk Lắk\" confirms that it's still Đắk Lắk, even with the Phú Yên absorption. So, the province remains the same. Easy.\n\nNext, the critical step: I dig into the Other Resolutions (1660/NQ-UBTVQH15). Line 32 immediately jumps out: it explicitly states that \"Thị trấn Ea Knốp\" becomes \"xã Ea Knốp.\" Bingo! That's the key.\n\nThen, I cross-reference this with the \"New wards\" data, searching for \"xã Ea Knốp\" and \"Tỉnh Đắk Lắk.\" And there it is: `{\"ward_code\":\"24376\",\"ward_name\":\"Xã Ea Knốp\",\"province_name\":\"Tỉnh Đắk Lắk\"}`. Perfect match.\n\nTherefore, the output will be a JSON structure. The citation points to the resolution, of course, because that's the source. Confidence is high because this is a direct, unambiguous match. The province is unchanged. And the ward code and name come straight from the new data.\n\nLet me double-check that other line, line 30, which mentions \"Thị trấn Ea Kar.\" Ah, that's the *district*, which is becoming a new ward, but the request focuses on the ward in the original address. So, I need the information in line 32. This solidifies my conclusion. It's a clean and straightforward mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1660/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đắk Lắk",
+        "line": "32. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Ea Knốp và các xã Ea Tih, Ea Sô, Ea Sar thành xã mới có tên gọi là xã Ea Knốp."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đắk Lắk",
+      "ward_code": "24376",
+      "ward_name": "Xã Ea Knốp"
+    }
+  ]
+}

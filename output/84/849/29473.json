@@ -1,0 +1,18 @@
+{
+  "address": "Xã An Quảng Hữu, Huyện Trà Cú, Tỉnh Trà Vinh",
+  "ellapsedInMs": 8008,
+  "estimatedCost": 0.0026671000000000004,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm presented with a Vietnamese address: Xã An Quảng Hữu, Huyện Trà Cú, Tỉnh Trà Vinh. The goal is to map this to the new administrative structure, ignoring districts as per the instructions.\n\nFirst, I identified the key components of the old address: the ward (Xã An Quảng Hữu), district (Huyện Trà Cú), and province (Tỉnh Trà Vinh).\n\nNow, let's trace this through the relevant resolutions. My focus immediately went to Provincial Resolution 60-NQ/TW. This resolution highlights the merger of provinces, and in this case, Tỉnh Trà Vinh is absorbed into Tỉnh Vĩnh Long. So, immediately, I know the province has changed.\n\nNext, I turned my attention to Resolution 1687/NQ-UBTVQH15, a resolution specific to the administrative re-organization of Vĩnh Long.  This is where things get interesting.  I scanned the lines, and bingo! Line 52: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân của xã An Quảng Hữu và xã Lưu Nghiệp Anh thành xã mới có tên gọi là **xã Lưu Nghiệp Anh**.\"  This is a direct mention of Xã An Quảng Hữu, and it clearly states that it's being merged into the new ward, Xã Lưu Nghiệp Anh.\n\nTo confirm my findings, I cross-referenced this new ward with the \"New wards\" data.  The entry {\"ward_code\":\"29476\",\"ward_name\":\"Xã Lưu Nghiệp Anh\",\"province_name\":\"Tỉnh Vĩnh Long\"} perfectly aligned with the resolution. The province name \"Tỉnh Vĩnh Long\" matches the province merger, and the ward name \"Xã Lưu Nghiệp Anh\" confirms the resolution.\n\nA quick double-check of Line 50 of 1687/NQ-UBTVQH15, which references \"Thị trấn Trà Cú,\" confirmed that this is for a different administrative reorganization and not relevant to mapping Xã An Quảng Hữu.\n\nTherefore, my resulting mapping is highly confident:\n\n*   **province_name:** Tỉnh Vĩnh Long\n*   **ward_name:** Xã Lưu Nghiệp Anh\n*   **ward_code:** 29476\n*   **citation:**\n    *   **header:** \"1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long\"\n    *   **line:** \"52. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân của xã An Quảng Hữu và xã Lưu Nghiệp Anh thành xã mới có tên gọi là **xã Lưu Nghiệp Anh**.\"\n*   **confidence:** high.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long",
+        "line": "52. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân của xã An Quảng Hữu và xã Lưu Nghiệp Anh thành xã mới có tên gọi là xã Lưu Nghiệp Anh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "29476",
+      "ward_name": "Xã Lưu Nghiệp Anh"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tô Mậu, Huyện Lục Yên, Tỉnh Yên Bái",
+  "ellapsedInMs": 6083,
+  "estimatedCost": 0.0021425999999999997,
+  "thought": "**My Analysis of the Address Mapping**\n\nOkay, so I'm tasked with translating this old Vietnamese address – \"Xã Tô Mậu\" in \"Tỉnh Yên Bái\" – to its current administrative unit. It looks like a relatively straightforward process, leveraging the provided resolutions and the \"New wards\" data.\n\nFirst, I identified the old province and ward: \"Tỉnh Yên Bái\" and \"Xã Tô Mậu,\" respectively. My initial thought was to check for any province mergers, which is a common occurrence in these cases. The \"60-NQ/TW\" resolution confirmed the merger of Yên Bái with Lào Cai, resulting in the new province name: \"Tỉnh Lào Cai.\"\n\nNext, I delved into the other crucial resolution, \"1673/NQ-UBTVQH15,\" focusing on administrative changes within Lào Cai. I carefully scanned through the lines, specifically looking for \"Xã Tô Mậu.\" Bingo! Line 26 was key. It clearly states that \"Xã Tô Mậu\" was merged with other wards to form the new \"Xã Khánh Hòa.\"\n\nNow, to solidify this, I cross-referenced this finding with the \"New wards\" data, searching for \"Xã Khánh Hòa\" within \"Tỉnh Lào Cai.\" The data confirmed a direct match: `{\"ward_code\":\"04342\",\"ward_name\":\"Xã Khánh Hòa\",\"province_name\":\"Tỉnh Lào Cai\"}`.\n\nWith these confirmations, I can confidently construct the JSON output:\n\n*   `province_name`: \"Tỉnh Lào Cai\" (from province merge)\n*   `ward_name`: \"Xã Khánh Hòa\" (from resolution 1673/NQ-UBTVQH15)\n*   `ward_code`: \"04342\" (from new wards data)\n*   `confidence`: \"high\" (direct match found)\n*   `citation`: \"1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai\", with the relevant line as specified above.\n\nThis is a clean, well-supported mapping. The confidence level is high because of the direct mention and consistent data across multiple sources. I'm ready to proceed with the output.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai",
+        "line": "26. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tô Mậu, An Lạc, Động Quan và Khánh Hòa thành xã mới có tên gọi là xã Khánh Hòa."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "04342",
+      "ward_name": "Xã Khánh Hòa"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Đắk Ruồng, Huyện Kon Rẫy, Tỉnh Kon Tum",
+  "ellapsedInMs": 8358,
+  "estimatedCost": 0.002963,
+  "thought": "**Mapping \"Xã Đắk Ruồng\" to its New Administrative Unit**\n\nOkay, let's break this down. My task is to figure out the current administrative unit for \"Xã Đắk Ruồng, Huyện Kon Rẫy, Tỉnh Kon Tum\" based on the provided resolutions and new ward data.\n\nFirst, I identified the key components: \"Tỉnh Kon Tum\" (province) and \"Xã Đắk Ruồng\" (ward).\n\nThe initial hunch regarding province changes was confirmed by resolution 60-NQ/TW, which merges Kon Tum with Quảng Ngãi to form \"Tỉnh Quảng Ngãi\".\n\nBut the real meat is in finding the corresponding new ward for \"Xã Đắk Ruồng.\" Resolution 1677/NQ-UBTVQH15 is the key here. Scanning through the text, I found line 77:  \"...sáp nhập các xã Đăk Tờ Re, Đăk Ruồng và Tân Lập thành xã mới có tên gọi là **xã Kon Braih**.\"  Ah-ha! The diacritics are slightly different (Đắk vs Đăk), but the name is unmistakably the same. This resolution *explicitly* lists \"Xã Đăk Ruồng\" as merging into the new \"Xã Kon Braih\".\n\nThe new ward data confirms this:  `{\"ward_code\":\"23497\",\"ward_name\":\"Xã Kon Braih\",\"province_name\":\"Tỉnh Quảng Ngãi\"}`. The name and province match perfectly!\n\nConsidering the prompt, and the schema for `citation`, I determined that the most relevant citation is the ward-level resolution (1677/NQ-UBTVQH15), because it explicitly ties the old ward to the new one. The province resolution is a prerequisite, but the ward resolution is the *action* that creates the new ward from the old.\n\nTherefore, my final JSON output, based on a single, definitive mapping, would be:\n\n```json\n{\n  \"province_name\": \"Tỉnh Quảng Ngãi\",\n  \"ward_name\": \"Xã Kon Braih\",\n  \"ward_code\": \"23497\",\n  \"confidence\": \"high\",\n  \"citation\": {\n    \"header\": \"1677/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ngãi\",\n    \"line\": \"77. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đăk Tờ Re, Đăk Ruồng và Tân Lập thành xã mới có tên gọi là xã Kon Braih.\"\n  }\n}\n```\n\nThe high confidence comes from the precise mention of the old ward in the resolution, directly leading to the new ward name and code. I've covered all bases.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1677/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ngãi",
+        "line": "77. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đăk Tờ Re, Đăk Ruồng và Tân Lập thành xã mới có tên gọi là xã Kon Braih."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ngãi",
+      "ward_code": "23497",
+      "ward_name": "Xã Kon Braih"
+    }
+  ]
+}

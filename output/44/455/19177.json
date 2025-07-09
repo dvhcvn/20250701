@@ -1,0 +1,18 @@
+{
+  "address": "Xã Trung Trạch, Huyện Bố Trạch, Tỉnh Quảng Bình",
+  "ellapsedInMs": 8198,
+  "estimatedCost": 0.0030488,
+  "thought": "**Identifying the New Administrative Unit**\n\nOkay, let's break this down. The user gave me \"Xã Trung Trạch, Huyện Bố Trạch, Tỉnh Quảng Bình\" and wants the new administrative details.  My initial thought is to tackle this methodically, looking at province and ward changes separately.\n\nFirst, the province.  I'll start with the standard province merger resolution, `60-NQ/TW`. Aha!  It clearly states that \"Tỉnh Quảng Bình\" and \"Tỉnh Quảng Trị\" merged, *but* the new province name is \"Tỉnh Quảng Trị\".  So, \"Tỉnh Quảng Bình\" becomes \"Tỉnh Quảng Trị\".\n\nNext, I need to find the specific ward change. Knowing that the province is now \"Tỉnh Quảng Trị\", I'll check the relevant resolutions and regulations for this region, specifically `Other resolutions`. I'm searching for information about \"Xã Trung Trạch\" and find `1680/NQ-UBTVQH15`.  Scrolling through, I see line 22, and it’s gold! It explicitly outlines the merger of \"Xã Trung Trạch\" along with other wards into a new ward called \"**Xã Hoàn Lão**\".\n\nNow, I'll cross-check this against the `New wards` list to verify the details of \"Xã Hoàn Lão\". Sure enough, it's there! I can confirm the `ward_code`: \"19111\" and that the `province_name` is indeed \"Tỉnh Quảng Trị\". This aligns perfectly.\n\nFinally, I'll construct the JSON output.  Based on my findings, I am confident that the old ward \"Xã Trung Trạch\" is now part of the new ward \"Xã Hoàn Lão\". This is supported by the explicit mention in the resolution. The citation will include the header \"1680/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Trị\" and the specific line, \"22. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Hoàn Lão và các xã Trung Trạch, Đại Trạch, Tây Trạch, Hòa Trạch thành xã mới có tên gọi là **xã Hoàn Lão**.\"  I can confidently mark the `confidence` level as \"high\" given the direct and explicit nature of the mapping.\n\nLet me double-check the logic once more:  \"Tỉnh Quảng Bình\" became \"Tỉnh Quảng Trị\", and \"Xã Trung Trạch\" is now part of \"Xã Hoàn Lão\". Yes, it is all correct!\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1680/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Trị",
+        "line": "22. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Hoàn Lão và các xã Trung Trạch, Đại Trạch, Tây Trạch, Hòa Trạch thành xã mới có tên gọi là xã Hoàn Lão."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Trị",
+      "ward_code": "19111",
+      "ward_name": "Xã Hoàn Lão"
+    }
+  ]
+}

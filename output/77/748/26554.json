@@ -1,0 +1,18 @@
+{
+  "address": "Phường Phước Nguyên, Thành phố Bà Rịa, Tỉnh Bà Rịa - Vũng Tàu",
+  "ellapsedInMs": 8894,
+  "estimatedCost": 0.0031709,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm tasked with mapping this old address, Phường Phước Nguyên in Bà Rịa - Vũng Tàu, to its new administrative unit. My approach is pretty standard for this type of problem.\n\nFirst, I identified the key components of the old address: Phường Phước Nguyên, Bà Rịa City (inferred), and Bà Rịa - Vũng Tàu Province.  I knew immediately that I'd need to consult resolutions regarding administrative changes.\n\nI started with the province-level changes, specifically resolution 60-NQ/TW.  I checked Bà Rịa - Vũng Tàu against the \"no merger\" list – no luck. Then, I looked at the \"merged\" list. Bam!  Item 16 clearly states Bà Rịa - Vũng Tàu, Bình Dương, and Ho Chi Minh City were combined to become Ho Chi Minh City.  So, the new province is definitely Thành phố Hồ Chí Minh.\n\nNext, I jumped to resolution 1685/NQ-UBTVQH15, the one dealing with local changes. I searched for \"Phường Phước Nguyên\" within its text. Line 107 immediately jumped out: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Phước Trung, Phước Nguyên, Long Toàn và Phước Hưng thành phường mới có tên gọi **là phường Bà Rịa**.\"  Perfect!  The resolution explicitly tells me Phường Phước Nguyên is now part of Phường Bà Rịa. The resolution, furthermore, confirms that the municipality (district/city) is \"thành phố Bà Rịa\", matching my initial assumption.\n\nTo solidify my analysis, I cross-referenced this finding with the \"New Wards\" data. I searched for \"Phường Bà Rịa\" and found the entry:  `{\"ward_code\":\"26560\",\"ward_name\":\"Phường Bà Rịa\",\"province_name\":\"Thành phố Hồ Chí Minh\"}`. The province name aligns perfectly with my earlier finding from the province-level resolution.\n\nTherefore, the output is straightforward: the new ward is Phường Bà Rịa (code 26560) in the province of Thành phố Hồ Chí Minh. My supporting evidence is the resolution 1685/NQ-UBTVQH15, specifically line 107. The confidence level is high because there's a direct, unambiguous mapping from the resolution, and it's backed up by the \"New Wards\" data. I checked for other possibilities, specifically other mentions of Phước Nguyên or potentially relevant formations in the \"New Wards\" data.  The findings related to Phường Long Hương and Phường Tân Hưng are irrelevant as their formation does not involve Phường Phước Nguyên. The analysis is complete.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1685/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của Thành phố Hồ Chí Minh",
+        "line": "107. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Phước Trung, Phước Nguyên, Long Toàn và Phước Hưng thành phường mới có tên gọi là phường Bà Rịa."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hồ Chí Minh",
+      "ward_code": "26560",
+      "ward_name": "Phường Bà Rịa"
+    }
+  ]
+}

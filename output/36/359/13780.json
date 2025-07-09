@@ -1,0 +1,28 @@
+{
+  "address": "Xã Kim Thái, Huyện Vụ Bản, Tỉnh Nam Định",
+  "ellapsedInMs": 6967,
+  "estimatedCost": 0.0026071999999999996,
+  "thought": "**My Analysis of the Address Mapping Request**\n\nOkay, so I'm tasked with figuring out the current administrative location of \"Xã Kim Thái, Huyện Vụ Bản, Tỉnh Nam Định\".  This is straightforward, given the resolutions I have.\n\nFirst, I identified the original province, \"Tỉnh Nam Định.\"  I immediately checked the relevant resolutions regarding administrative changes, and I confirmed that \"Tỉnh Nam Định\" was merged into \"Tỉnh Ninh Bình.\"  Simple enough.\n\nNext, the focus shifts to \"Xã Kim Thái.\"  I meticulously searched the provided resolutions for any mentions of this specific commune.  Bingo! Resolution 1674/NQ-UBTVQH15 clearly states that \"Xã Kim Thái\" was combined with \"thị trấn Gôi\" and \"xã Tam Thanh\" to form the new \"Xã Vụ Bản.\" This is the crux of the mapping.\n\nI cross-referenced this with the \"New wards\" data, and there it was: `{\"ward_code\":\"13741\",\"ward_name\":\"Xã Vụ Bản\",\"province_name\":\"Tỉnh Ninh Bình\"}`. This confirms the new administrative structure.\n\nOf course, I scanned for potential areas of confusion, or less-confident matches. Resolution 1676/NQ-UBTVQH15 mentions \"thị trấn Vụ Bản\" in a different province, but that's a district-level entity and irrelevant to this commune. Another resolution mentions \"Vũ Bản\" in a different context, but it's a *xã* named \"Vũ Bản\", not the *huyện* named \"Vụ Bản\" from the original address. These were dismissed as irrelevant distractions.\n\nGiven the direct correspondence from \"Xã Kim Thái\" to \"Xã Vụ Bản\" in the resolution and the corroborating \"New wards\" data, I'm confident in the mapping.  The province change is well documented, and the commune merger is explicit.\n\nI can now proceed with constructing the JSON output, reflecting the confirmed administrative changes.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Hà Nam, tỉnh Ninh Bình và tỉnh Nam Định; lấy tên là tỉnh Ninh Bình"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "13741",
+      "ward_name": "Xã Vụ Bản"
+    },
+    {
+      "citation": {
+        "header": "1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Gôi, xã Kim Thái và xã Tam Thanh thành xã mới có tên gọi là xã Vụ Bản."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "13741",
+      "ward_name": "Xã Vụ Bản"
+    }
+  ]
+}

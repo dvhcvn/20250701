@@ -1,0 +1,28 @@
+{
+  "address": "Xã Hải Phú, Huyện Bố Trạch, Tỉnh Quảng Bình",
+  "ellapsedInMs": 6375,
+  "estimatedCost": 0.0029515,
+  "thought": "**Analyzing an Address Change: From Xã Hải Phú to New Ward**\n\nOkay, so I'm presented with the old address: \"Xã Hải Phú, Huyện Bố Trạch, Tỉnh Quảng Bình\" and need to find the new administrative unit. My initial thought process involves a methodical approach:\n\nFirst, I have to account for any province mergers. The information clearly states that \"Tỉnh Quảng Bình\" has been merged into \"Tỉnh Quảng Trị.\" Good, that's step one.\n\nNext, the critical step is searching through the relevant resolutions for \"Xã Hải Phú.\"  I meticulously examine the resolutions, understanding that the new province name, \"Tỉnh Quảng Trị,\" will be the key context here.\n\nI come across two mentions of \"Xã Hải Phú.\" One specifically targets \"Xã Hải Phú (huyện Bố Trạch)\"!  It explicitly merges this ward, along with several others, into a new ward called \"xã Đông Trạch.\" This looks promising because \"Huyện Bố Trạch\" matches the input address.\n\nThe second mention is similar, but it concerns \"Xã Hải Phú (huyện Hải Lăng)\". That's not the right match.\n\nBased on the explicit mention and the matching \"Huyện Bố Trạch,\" it's evident that \"Xã Hải Phú (huyện Bố Trạch)\" has been absorbed into \"xã Đông Trạch.\"\n\nNow, I cross-reference this new ward, \"xã Đông Trạch,\" against the list of new wards. And there it is: `{\"ward_code\":\"19159\",\"ward_name\":\"Xã Đông Trạch\",\"province_name\":\"Tỉnh Quảng Trị\"}`.\n\nConsidering the clear province merger and the exact match of the ward's district, my confidence in this result is definitely high. I will construct the appropriate JSON output based on this information.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Quảng Bình và tỉnh Quảng Trị, lấy tên là tỉnh Quảng Trị"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Trị",
+      "ward_code": "19159",
+      "ward_name": "Xã Đông Trạch"
+    },
+    {
+      "citation": {
+        "header": "1680/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Trị",
+        "line": "21. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Hải Phú (huyện Bố Trạch), Sơn Lộc, Đức Trạch và Đồng Trạch thành xã mới có tên gọi là xã Đông Trạch."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Trị",
+      "ward_code": "19159",
+      "ward_name": "Xã Đông Trạch"
+    }
+  ]
+}

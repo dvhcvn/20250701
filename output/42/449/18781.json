@@ -1,0 +1,18 @@
+{
+  "address": "Phường Kỳ Ninh, Thị xã Kỳ Anh, Tỉnh Hà Tĩnh",
+  "ellapsedInMs": 5998,
+  "estimatedCost": 0.0020085,
+  "thought": "**My Analysis of the Address Mapping**\n\nOkay, so I'm tasked with translating this old address into the new administrative structure. Let's see... the input address is \"Phường Kỳ Ninh, Thị xã Kỳ Anh, Tỉnh Hà Tĩnh.\" My first step is to break it down. I need to identify \"Phường Kỳ Ninh\" as the old ward and \"Tỉnh Hà Tĩnh\" as the old province. Easy enough.\n\nNext, I'll need to check those provincial resolutions (like the 60-NQ/TW document) to see if \"Tỉnh Hà Tĩnh\" was affected by any mergers or name changes. Ah, good. It's listed as not being merged, so the province name remains \"Tỉnh Hà Tĩnh.\" This part is straightforward.\n\nNow, the real work begins with those detailed resolutions (like 1665/NQ-UBTVQH15). I'm looking for any mention of \"Phường Kỳ Ninh.\" Bingo! Line 65 is key: it tells me that \"Phường Kỳ Ninh\" was merged with other areas to form the new \"Phường Hải Ninh.\" It's explicit, really - no ambiguity there.\n\nNow, I'll cross-reference this newly found \"Phường Hải Ninh\" against the provided \"New Wards\" data. Yup, there it is! `{\"ward_code\":\"18781\",\"ward_name\":\"Phường Hải Ninh\",\"province_name\":\"Tỉnh Hà Tĩnh\"}`.\n\nPutting it all together, I can construct the JSON output. We've got:\n\n*   `province_name`: \"Tỉnh Hà Tĩnh\" (from the province resolution)\n*   `ward_name`: \"Phường Hải Ninh\" (from the detailed resolution)\n*   `ward_code`: \"18781\" (from the new wards data)\n*   `confidence`: \"high\" (because the resolution provides direct and specific mapping)\n*   `citation`: \"1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh\", specifically \"65. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Kỳ Ninh, xã Kỳ Hà vàxã Kỳ Hải thành phường mới có tên gọi là **phường Hải Ninh**.\"\n\nThat's a pretty clean mapping. With this level of specificity from the resolution, I'd say this is a solid, high-confidence association. The address is now accurately mapped to the new administrative unit.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh",
+        "line": "65. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Kỳ Ninh, xã Kỳ Hà vàxã Kỳ Hải thành phường mới có tên gọi là phường Hải Ninh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hà Tĩnh",
+      "ward_code": "18781",
+      "ward_name": "Phường Hải Ninh"
+    }
+  ]
+}

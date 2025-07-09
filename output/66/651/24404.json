@@ -1,0 +1,18 @@
+{
+  "address": "Xã Cư ELang, Huyện Ea Kar, Tỉnh Đắk Lắk",
+  "ellapsedInMs": 8389,
+  "estimatedCost": 0.0030578999999999997,
+  "thought": "**Analysis of Address Mapping: Xã Cư ELang**\n\nOkay, so I've been given an old Vietnamese address: \"Xã Cư ELang, Huyện Ea Kar, Tỉnh Đắk Lắk\". My task is to map this to a new administrative unit based on these resolutions and the provided new ward data.\n\nFirst, I need to break down the address.  It's pretty straightforward: \"Xã Cư ELang\" is the ward, \"Huyện Ea Kar\" is the district (though I understand districts might be irrelevant in the final output based on the prompt's instructions), and \"Tỉnh Đắk Lắk\" is the province.\n\nNow, the resolutions come into play.  I'll start with 60-NQ/TW.  I'm looking for Đắk Lắk in the sections about province-level changes. Aha! \"Hợp nhất tỉnh Đắk Lắk và tỉnh Phú Yên, lấy tên là tỉnh Đắk Lắk\" - so, Đắk Lắk has merged with Phú Yên, but the province name itself remains \"Tỉnh Đắk Lắk\".  That's good to know.\n\nNext, I need to check the other resolutions, specifically 1660/NQ-UBTVQH15.  I'm searching for \"Xã Cư ELang\" in the resolution text. And there it is, line 31: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Cư Elang và xã Ea Ô thành xã mới có tên gọi là **xã Ea Ô**.\"  Bingo!  This line clearly states that \"Xã Cư ELang\" is being merged into the new ward, \"Xã Ea Ô\".\n\nNow, I cross-reference with the `New wards` data.  I'm looking for \"Xã Ea Ô\".  There it is: `{\"ward_code\":\"24403\",\"ward_name\":\"Xã Ea Ô\",\"province_name\":\"Tỉnh Đắk Lắk\"}`.  The province name matches what I found earlier.\n\nThis mapping is solid.  The resolution directly links \"Xã Cư ELang\" to \"Xã Ea Ô\". Therefore, I'm confident about this.  The province name is confirmed in both the resolution and the new ward data.  I think I've got a definitive answer. Now to formulate the JSON output.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1660/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đắk Lắk",
+        "line": "31. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Cư Elang và xã Ea Ô thành xã mới có tên gọi là xã Ea Ô."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đắk Lắk",
+      "ward_code": "24403",
+      "ward_name": "Xã Ea Ô"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "address": "Phường Long Biên, Quận Long Biên, Thành phố Hà Nội",
+  "ellapsedInMs": 9494,
+  "estimatedCost": 0.0043314,
+  "thought": "**Identifying the New Wards for the Old \"Phường Long Biên\"**\n\nOkay, so I'm tasked with figuring out the new administrative units corresponding to the old \"Phường Long Biên, Quận Long Biên, Thành phố Hà Nội.\"  First, I need to check the relevant resolutions and new ward data.\n\nI see that \"Thành phố Hà Nội\" is listed under provincial-level units that aren't being merged in Resolution 60-NQ/TW. Good, the province name stays the same.\n\nNow, looking at Resolution 1656/NQ-UBTVQH15, I notice that line 39 specifically mentions \"phường Long Biên.\" It states that the existing ward contributes its entire population and a portion of its area to form a *new* \"phường Long Biên.\" That's key. This new ward is a direct successor, at least in name and with a significant part of the old area and population.\n\nLine 40 of that same resolution is also important. It says the remaining area and population from the old \"Phường Long Biên\" (after the part that went to the new \"Phường Long Biên\") is merged into a *new* \"phường Bồ Đề.\"\n\nThen, I check the new ward data. I find a match for the new \"Phường Long Biên\": `{\"ward_code\":\"00145\",\"ward_name\":\"Phường Long Biên\",\"province_name\":\"Thành phố Hà Nội\"}` and another for the new \"Phường Bồ Đề\": `{\"ward_code\":\"00118\",\"ward_name\":\"Phường Bồ Đề\",\"province_name\":\"Thành phố Hà Nội\"}`.\n\nSo, the conclusion is straightforward: the old \"Phường Long Biên\" was split. A major portion, including its entire population, went into the new \"Phường Long Biên\". The rest went to the new \"Phường Bồ Đề\". This means both the new \"Phường Long Biên\" and the new \"Phường Bồ Đề\" are valid new units. I have very high confidence in this.\n\nTherefore, the output will look something like this, with the citation clearly linked to the relevant lines in Resolution 1656:\n*   A JSON entry for the new \"Phường Long Biên,\" referencing line 39.\n*   Another JSON entry for the new \"Phường Bồ Đề,\" referencing line 40.\n\nThe confidence level on both will be \"high\". The citation header will be \"1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội.\" and the line from the resolutions will be clearly indicated.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội",
+        "line": "39. Sắp xếp một phần diện tích tự nhiên, quy mô dân số của các phường Cự Khối, Phúc Đồng, Thạch Bàn, xã Bát Tràng, một phần diện tích tự nhiên, toàn bộ quy mô dân số của phường Long Biên, một phần diện tích tự nhiên của phường Bồ Đề và phường Gia Thụy thành phường mới có tên gọi là phường Long Biên."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hà Nội",
+      "ward_code": "00145",
+      "ward_name": "Phường Long Biên"
+    },
+    {
+      "citation": {
+        "header": "1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội",
+        "line": "40. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Ngọc Lâm, một phần diện tích tự nhiên, quy mô dân số của các phường Đức Giang, Gia Thụy, Thượng Thanh, một phần diện tích tự nhiên của phường Phúc Đồng, phần còn lại của phường Ngọc Thụy sau khi sắp xếp theo quy định tại khoản 14 Điều này, phần còn lại của phường Bồ Đề sau khi sắp xếp theo quy định tại khoản 14, khoản 39 Điều này và phần còn lại của phường Long Biên sau khi sắp xếp theo quy định tại khoản 39 Điều này thành phường mới có tên gọi là phường Bồ Đề."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hà Nội",
+      "ward_code": "00118",
+      "ward_name": "Phường Bồ Đề"
+    }
+  ]
+}

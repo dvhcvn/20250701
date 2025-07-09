@@ -1,0 +1,28 @@
+{
+  "address": "Xã Nhơn Hội, Thành phố Quy Nhơn, Tỉnh Bình Định",
+  "ellapsedInMs": 9285,
+  "estimatedCost": 0.0035809,
+  "thought": "**Address Mapping Analysis: Xã Nhơn Hội, Thành phố Quy Nhơn, Tỉnh Bình Định**\n\nOkay, let's break this down systematically. I need to map this old address to its current administrative structure. The key is to leverage the provided resolutions and the new wards list.\n\nFirst, I recognize \"Tỉnh Bình Định\".  I immediately check for any province mergers. Resolution 60-NQ/TW is the place to start.  Ah, here it is: \"Hợp nhất tỉnh Gia Lai và tỉnh Bình Định, lấy tên là tỉnh Gia Lai.\" So, \"Tỉnh Bình Định\" *is now* \"Tỉnh Gia Lai.\"  That's important.\n\nNext, I identify the old ward, \"Xã Nhơn Hội.\"  Now, the hunt begins: I need to check resolutions like `1654/NQ-UBTVQH15` (An Giang) and `1664/NQ-UBTVQH15` (Gia Lai) to see if \"Xã Nhơn Hội\" appears.\n\nLooking at `1654/NQ-UBTVQH15`, I find a mention of \"xã Nhơn Hội,\" but it's related to An Giang, not Bình Định/Gia Lai.  Irrelevant.\n\nHowever, `1664/NQ-UBTVQH15` is promising! It's specifically about Gia Lai.  And Bingo!  Line 103 reads: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Nhơn Bình và các xã Nhơn Hội, Nhơn Lý, Nhơn Hải thành phường mới có tên gọi là **phường Quy Nhơn Đông**.\"  Perfect!  This is a direct hit.  \"Xã Nhơn Hội\" from the *old* Bình Định (now Gia Lai) is *now* part of \"Phường Quy Nhơn Đông.\"\n\nNow, it's a simple lookup in the \"New wards\" list to find the details for \"Phường Quy Nhơn Đông\" in \"Tỉnh Gia Lai.\" Ah, here:  `{\"ward_code\":\"21601\",\"ward_name\":\"Phường Quy Nhơn Đông\",\"province_name\":\"Tỉnh Gia Lai\"}`.\n\nTherefore, the old address maps definitively to:\n\n*   `province_name`: \"Tỉnh Gia Lai\"\n*   `ward_name`: \"Phường Quy Nhơn Đông\"\n*   `ward_code`: \"21601\"\n*   `confidence`: \"high\" (because the resolution provides direct and explicit confirmation.)\n*   `citation`:  `header`: \"1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai\"; `line`: \"103. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Nhơn Bình và các xã Nhơn Hội, Nhơn Lý, Nhơn Hải thành phường mới có tên gọi là **phường Quy Nhơn Đông**.\"\n\nI re-checked everything to be absolutely certain, focusing on the implications of the province merger, and the direct connection in resolution 1664/NQ-UBTVQH15, line 103.  All clear.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "12. Hợp nhất tỉnh Gia Lai và tỉnh Bình Định, lấy tên là tỉnh Gia Lai"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "21601",
+      "ward_name": "Phường Quy Nhơn Đông"
+    },
+    {
+      "citation": {
+        "header": "1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai",
+        "line": "103. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Nhơn Bình và các xã Nhơn Hội, Nhơn Lý, Nhơn Hải thành phường mới có tên gọi là phường Quy Nhơn Đông."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "21601",
+      "ward_name": "Phường Quy Nhơn Đông"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tả Ngải Chồ, Huyện Mường Khương, Tỉnh Lào Cai",
+  "ellapsedInMs": 8445,
+  "estimatedCost": 0.0031683000000000006,
+  "thought": "**Mapping Old Vietnamese Addresses: My Approach**\n\nOkay, so I'm tasked with figuring out the new location for an old address. My brain immediately breaks this down into steps, because that's just how I work best with this kind of data. First, I need to understand the old address. I'm given \"Xã Tả Ngải Chồ\" in the Mường Khương district of Lào Cai province. Easy enough.\n\nNow, I know I'm dealing with administrative changes, so resolutions are key. The prompt mentions \"eliminating all districts\" and I have to assume the old district will be absorbed somewhere.\n\nI check Resolution 60-NQ/TW regarding province-level mergers and see that Lào Cai remains Lào Cai, which is useful info for my output's `province_name` field.  Then I dive into the more specific Resolution 1673/NQ-UBTVQH15, looking for that specific ward, \"Tả Ngải Chồ\".  I'm looking for *explicit* mentions to build confidence, and lo and behold, I hit the jackpot! Line 76: \"Tả Ngài Chồ\" is explicitly included in the areas merging into a new ward called \"Pha Long.\" I immediately consider this a strong hit. The difference of `Ngài` and `Ngải` is trivial to me; it's a known typo and the context makes it clear.\n\nI read on to make sure, scanning for any other mentions that might change my thinking. I see the merging of \"Mường Khương\" and \"Nậm Chảy\", but no mention of \"Tả Ngải Chồ\", confirming my initial line.\n\nNext, I check the \"New wards\" data.  I search for \"Pha Long\", expecting to confirm my findings. Bingo! There it is, \"Xã Pha Long\", and with it's appropriate code and province data.\n\nBased on all the evidence, I'm feeling confident.  I'm ready to craft the output JSON.  I'll include the relevant citation details, namely line 76 of Resolution 1673/NQ-UBTVQH15 as the key finding, along with a high confidence level due to the explicit mention. The province will be Lào Cai (as confirmed by the province resolution), and the new ward will be \"Pha Long\" with its code, all confirmed from the data.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai",
+        "line": "76. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tả Ngài Chồ, Dìn Chin, Tả Gia Khâu và Pha Long thành xã mới có tên gọi là xã Pha Long."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "02752",
+      "ward_name": "Xã Pha Long"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "address": "Xã An Thới Đông, Huyện Cần Giờ, Thành phố Hồ Chí Minh",
+  "ellapsedInMs": 8243,
+  "estimatedCost": 0.0034712,
+  "thought": "**Analysis of Vietnamese Address Mapping**\n\nOkay, so I'm presented with a tricky address: \"Xã An Thới Đông, Huyện Cần Giờ, Thành phố Hồ Chí Minh.\" My task is to figure out its new administrative unit(s).\n\nFirst, I need to break down the address. The old ward is \"Xã An Thới Đông,\" and the province is \"Thành phố Hồ Chí Minh.\" Got it. Now, time to consult the resolutions.\n\nI checked resolution 60-NQ/TW. This one's important because it concerns province-level changes. Luckily, Thành phố Hồ Chí Minh isn't mentioned in the sections about province mergers. However, it *is* in a section about new provinces formed by merging existing ones. It states that \"Thành phố Hồ Chí Minh\" is merged with a few others but *retains its name*. That's helpful for setting the `province_name`.\n\nNext, I delved into the 1685/NQ-UBTVQH15 resolution. This one's got the specific ward-level changes. I scanned the lines looking for \"An Thới Đông.\" Found it!\n\nLine 120 states that a portion of the old \"Xã An Thới Đông\" merges to form a new ward named \"Xã Bình Khánh.\" Then, line 121 says that the *remaining* part of \"An Thới Đông\" (after that merger) joins with \"Lý Nhơn\" to create a *new* \"An Thới Đông.\" Interesting... so, the old ward is effectively split.\n\nNow, let's see what the \"New wards\" data tells me. I look for those new wards I just found in the resolutions: \"xã Bình Khánh\" and \"xã An Thới Đông.\" There they are, with their corresponding codes and names, both belonging to \"Thành phố Hồ Chí Minh.\"\n\nGiven that the old ward is divided between two new wards (\"xã Bình Khánh\" and the new \"xã An Thới Đông\"), it's not a straightforward 1:1 mapping. Both new wards represent parts of the old one. My confidence level needs to be *high* here because the resolutions are very explicit about this split and redistribution. I can confidently say that the address likely corresponds to *both* of those new wards.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1685/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của Thành phố Hồ Chí Minh",
+        "line": "120. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Tam Thôn Hiệp, xã Bình Khánh và một phần diện tích, quy mô dân số của xã An Thới Đông thành xã mới có tên gọi là xã Bình Khánh."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hồ Chí Minh",
+      "ward_code": "27667",
+      "ward_name": "Xã Bình Khánh"
+    },
+    {
+      "citation": {
+        "header": "1685/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của Thành phố Hồ Chí Minh",
+        "line": "121. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Lý Nhơn và phần còn lại của xã An Thới Đông sau khi sắp xếp theo quy định tại khoản 120 Điều này thành xã mới có tên gọi là xã An Thới Đông."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hồ Chí Minh",
+      "ward_code": "27673",
+      "ward_name": "Xã An Thới Đông"
+    }
+  ]
+}

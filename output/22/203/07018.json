@@ -1,0 +1,18 @@
+{
+  "address": "Xã Bản Sen, Huyện Vân Đồn, Tỉnh Quảng Ninh",
+  "ellapsedInMs": 8553,
+  "estimatedCost": 0.0032056,
+  "thought": "**Analyzing the Administrative Restructuring of \"Xã Bản Sen\"**\n\nOkay, here's how I'm approaching this. The user has given me an old address (\"Xã Bản Sen\", \"Tỉnh Quảng Ninh\") and wants me to figure out the new administrative unit(s). My initial step is to pin down the province and old ward. That's straightforward: \"Xã Bản Sen\" is in \"Tỉnh Quảng Ninh.\"\n\nNext, I look at the Province Resolutions (60-NQ/TW) to see if \"Tỉnh Quảng Ninh\" was affected by any mergers. It's listed as remaining unchanged, so I can keep \"Tỉnh Quảng Ninh\" as it is.\n\nNow comes the tricky part. I need to comb through the other resolutions, focusing on \"Xã Bản Sen\" within \"Tỉnh Quảng Ninh\". I found one resolution that mentions \"Xã Bản Sen\", but it's related to \"tỉnh Lào Cai\" – irrelevant.\n\nThen, bingo! Resolution 1679/NQ-UBTVQH15 catches my eye. It specifically addresses administrative changes within \"Tỉnh Quảng Ninh\". And there it is: \"Xã Bản Sen\" *is* mentioned! The resolution states that \"Xã Bản Sen\" will be merged with other units to form the \"đặc khu Vân Đồn\".\n\nNow I check the `new_wards` list. I immediately find a perfect match: `{\"ward_code\":\"06994\",\"ward_name\":\"Đặc khu Vân Đồn\",\"province_name\":\"Tỉnh Quảng Ninh\"}`. So, that's one definite new ward.\n\nThe `new_wards` list also mentions a \"Phường Hạ Long\". The resolution *also* states \"Hạ Long\" is part of the \"đặc khu Vân Đồn\". This is where it gets a little hazy, and the user's intent needs clarification. Does \"Phường Hạ Long\" remain a separate entity, potentially a sub-unit *within* the \"đặc khu Vân Đồn\"? Or has it been subsumed entirely?  The wording \"thành đặc khu có tên gọi là đặc khu Vân Đồn\" makes me lean towards complete subsumption. However, the schema does explicitly ask for `ward_name`. And the prompt is for \"all possible new ward candidates\". Therefore, given that both are listed as new wards, I'll include both. I will include both \"đặc khu Vân Đồn\" *and* \"Phường Hạ Long\" as potential new administrative units for \"Xã Bản Sen\" based on the resolutions and new ward list, emphasizing the ambiguity.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1679/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ninh",
+        "line": "52. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân sốcủa thị trấn Cái Rồng và các xã Bản Sen, Bình Dân, Đài Xuyên, Đoàn Kết, Đông Xá, Hạ Long, Minh Châu, Ngọc Vừng, Quan Lạn, Thắng Lợi,Vạn Yên thành đặc khu có tên gọi là đặc khu Vân Đồn."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ninh",
+      "ward_code": "06994",
+      "ward_name": "Đặc khu Vân Đồn"
+    }
+  ]
+}

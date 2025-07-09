@@ -1,0 +1,18 @@
+{
+  "address": "Xã Đông Kết, Huyện Khoái Châu, Tỉnh Hưng Yên",
+  "ellapsedInMs": 6328,
+  "estimatedCost": 0.002531,
+  "thought": "**My Analysis of the Address Mapping**\n\nOkay, so I'm presented with a Vietnamese address: Xã Đông Kết, Huyện Khoái Châu, Tỉnh Hưng Yên. My task is to translate this to the *new* administrative units, given the provided resolutions and new ward data.\n\nFirst, I quickly extracted the key components: Xã Đông Kết (ward), Huyện Khoái Châu (district), and Tỉnh Hưng Yên (province).\n\nI then focused on the province resolution (60-NQ/TW).  It confirms that Hưng Yên *remains* Hưng Yên, even after merging with Thái Bình.  No major changes there.\n\nNext, I delved into the more complex 1666/NQ-UBTVQH15 resolution.  I carefully scanned the lines, specifically looking for \"Đông Kết.\"  Line 18 jumped out: it explicitly stated that \"Xã Đông Kết\" was being merged with other units to form the new \"Xã Khoái Châu.\"  The other lines didn't contain any relevance to this.\n\nI then consulted the \"New wards\" dataset and found a perfect match for \"Xã Khoái Châu,\"  including its ward code (12205) and province information.\n\nBased on this direct mapping, my confidence is *high* that this is the correct translation. I constructed the JSON output accordingly, citing the specific resolution line (18) as evidence.  I have ensured that I considered the original request for *all* possible candidates; however, in this case, the resolution provided a clear and singular outcome.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên",
+        "line": "18. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Khoái Châu và các xã Liên Khê, Phùng Hưng, Đông Kết thành xã mới có tên gọi là xã Khoái Châu."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "12205",
+      "ward_name": "Xã Khoái Châu"
+    }
+  ]
+}

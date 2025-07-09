@@ -1,0 +1,18 @@
+{
+  "address": "Xã Lạc Vân, Huyện Nho Quan, Tỉnh Ninh Bình",
+  "ellapsedInMs": 7194,
+  "estimatedCost": 0.0029765,
+  "thought": "**Address Mapping: Xã Lạc Vân, Ninh Bình**\n\nOkay, so I've got this address to map: \"Xã Lạc Vân, Huyện Nho Quan, Tỉnh Ninh Bình.\"  First, I need to break it down.  I've got the old ward (Xã Lạc Vân), the old district (Huyện Nho Quan), and the old province (Tỉnh Ninh Bình).  Even though I know the districts are all being eliminated, that district information is still useful context for cross-referencing against the resolutions.\n\nI'll start with the province. Looking at the province resolution (60-NQ/TW), it confirms \"Tỉnh Ninh Bình\" is staying as the new province name, so that's easy.\n\nNow, I'll dive into the resolutions regarding ward changes within Ninh Bình. I need to find something that specifically mentions \"Xã Lạc Vân.\"  Resolution 1674/NQ-UBTVQH15 is the key here.  Line 76 jumps out:  \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Thạch Bình, Lạc Vân và Phú Sơn thành xã mới có tên gọi là **xã Phú Sơn**.\"  Bingo!  \"Xã Lạc Vân\" is merging into \"Xã Phú Sơn.\"\n\nBased on this direct mention, the mapping is clear. The confidence level is high. Now, I have to grab the `ward_code` from the \"New Wards\" data. It matches up with the new ward name and the new province name: `{\"ward_code\":\"14407\",\"ward_name\":\"Xã Phú Sơn\",\"province_name\":\"Tỉnh Ninh Bình\"}`.\n\nSo, the JSON output is straightforward:\n\n```json\n[\n  {\n    \"citation\": \"1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình - Line 76\",\n    \"confidence\": \"high\",\n    \"province_name\": \"Tỉnh Ninh Bình\",\n    \"ward_code\": \"14407\",\n    \"ward_name\": \"Xã Phú Sơn\"\n  }\n]\n```\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "76. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Thạch Bình, Lạc Vân và Phú Sơn thành xã mới có tên gọi là xã Phú Sơn."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "14407",
+      "ward_name": "Xã Phú Sơn"
+    }
+  ]
+}

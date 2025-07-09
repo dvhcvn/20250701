@@ -1,0 +1,28 @@
+{
+  "address": "Xã Tả Sử Choóng, Huyện Hoàng Su Phì, Tỉnh Hà Giang",
+  "ellapsedInMs": 5773,
+  "estimatedCost": 0.0022051,
+  "thought": "**My Analysis of Address Mapping: A Deep Dive**\n\nOkay, so I've got this address to translate: \"Xã Tả Sử Choóng, Huyện Hoàng Su Phì, Tỉnh Hà Giang.\" My first move is to dissect it. I need to pinpoint the *old* province, which is \"Tỉnh Hà Giang,\" and the *old* ward, \"Xã Tả Sử Choóng.\"\n\nNow, the real work begins. I've got to consult these resolutions, specifically 60-NQ/TW. This is where things get interesting. The resolution tells me that \"Tỉnh Hà Giang\" was merged into \"Tỉnh Tuyên Quang.\" That's the first crucial piece.\n\nNext, I dig into other relevant resolutions, and this is where I hit paydirt. Resolution \"1684/NQ-UBTVQH15\" is key. Line 94 is a goldmine. It states that \"Tả Sử Choóng\" *is merged* with other wards to form the new ward \"Xã Nậm Dịch.\" Bingo! That settles the question of the old ward.\n\nNow, it's time to cross-reference with the \"New wards\" data. I'm looking for a match, and there it is: `{\"ward_code\":\"01075\",\"ward_name\":\"Xã Nậm Dịch\",\"province_name\":\"Tỉnh Tuyên Quang\"}`. The new ward is \"Xã Nậm Dịch\" and now resides in \"Tỉnh Tuyên Quang.\"\n\nGiven the explicit nature of the merger in the resolutions and the direct match with the new ward data, I'd say I have a very high confidence level here. This is a clear-cut case.\n\nFinally, I'll package up all this information into the required JSON output format. It's time to prepare the output according to the schema.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "1. Hợp nhất tỉnh Tuyên Quang và tỉnh Hà Giang, lấy tên là tỉnh Tuyên Quang"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "01075",
+      "ward_name": "Xã Nậm Dịch"
+    },
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "94. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Nậm Ty, Tả Sử Choóng và Nậm Dịch thành xã mới có tên gọi là xã Nậm Dịch."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "01075",
+      "ward_name": "Xã Nậm Dịch"
+    }
+  ]
+}

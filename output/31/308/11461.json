@@ -1,0 +1,28 @@
+{
+  "address": "Phường Vạn Hương, Quận Đồ Sơn, Thành phố Hải Phòng",
+  "ellapsedInMs": 7643,
+  "estimatedCost": 0.0030867000000000004,
+  "thought": "**Analysis of Address Transformation: \"Phường Vạn Hương\" in Hải Phòng**\n\nOkay, so I'm tasked with mapping the old address \"Phường Vạn Hương, Thành phố Hải Phòng\" to its new administrative units based on my analysis of the provided resolutions and new ward data. Here's my thought process:\n\nFirst, I identified the old province and ward: \"Thành phố Hải Phòng\" and \"Phường Vạn Hương\", respectively. Now, I need to check the resolutions to understand how this ward has been affected. I quickly scanned resolution 60-NQ/TW and noticed that while it mentions \"Thành phố Hải Phòng\", it primarily addresses the potential absorption of Hải Dương. It's important to remember that Hải Phòng *did* absorb Hải Dương, but retained its name. This is relevant, and I'll keep that `province_name` in mind for the output.\n\nThe key to this mapping lies in resolution 1669/NQ-UBTVQH15. Lines 18 and 19 are crucial. Line 18 explicitly states that *part* of \"Phường Vạn Hương\" is being reorganized into the new \"Phường Nam Đồ Sơn\". Then, line 19 confirms that the *remaining part* of \"Phường Vạn Hương\" is merging into \"Phường Đồ Sơn\". Bingo!\n\nNow, I cross-reference the newly created wards with the \"New wards\" data. \"Phường Nam Đồ Sơn\" has ward code \"11737\" and the province is still \"Thành phố Hải Phòng\". \"Phường Đồ Sơn\" has ward code \"11455\" and the province remains \"Thành phố Hải Phòng\". Everything is aligning nicely.\n\nFinally, I construct the JSON output. Since \"Phường Vạn Hương\" is split, I'll include both \"Phường Nam Đồ Sơn\" and \"Phường Đồ Sơn\" as potential new administrative units. The `province_name` for both will be \"Thành phố Hải Phòng\" – no surprises there, as per the resolutions.  I'm confident about this mapping, given the explicit wording in the resolution, so the `confidence` level will be \"high\". Lastly, I'll provide a clear `citation` pointing directly to resolution 1669/NQ-UBTVQH15 and the specific lines I used. This mapping should be accurate.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "18. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Minh Đức (quận Đồ Sơn), Bàng La, Hợp Đức, một phần diện tích tự nhiên, quy mô dân số của phường Vạn Hương và phường Ngọc Xuyênthành phường mới có tên gọi là phường Nam Đồ Sơn."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "11737",
+      "ward_name": "Phường Nam Đồ Sơn"
+    },
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "19. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Hải Sơn, một phần diện tích tự nhiên của phường Tân Thành và phần còn lại của phường Vạn Hương, phường Ngọc Xuyên sau khi sắp xếp theo quy định tại khoản 18 Điều này thành phường mới có tên gọi là phường Đồ Sơn."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "11455",
+      "ward_name": "Phường Đồ Sơn"
+    }
+  ]
+}

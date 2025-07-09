@@ -1,0 +1,18 @@
+{
+  "address": "Xã Duy Trung, Huyện Duy Xuyên, Tỉnh Quảng Nam",
+  "ellapsedInMs": 6838,
+  "estimatedCost": 0.0023685,
+  "thought": "**My Mapping Logic for the Old Address**\n\nOkay, so I'm presented with an old address: \"Xã Duy Trung, Huyện Duy Xuyên, Tỉnh Quảng Nam.\" My task is to map this to the new administrative structure. Here's how I'm approaching it:\n\nFirst, I identify the key components: the old ward (\"Xã Duy Trung\"), the old district (\"Huyện Duy Xuyên\"), and the old province (\"Tỉnh Quảng Nam\").\n\nNext, I dive into the province resolutions (specifically resolution 60-NQ/TW).  I need to figure out what happened to \"Tỉnh Quảng Nam\". I scan the \"no merge\" list, and of course it's not there.  Ah, here it is in the \"after merge\" list!  The resolution clearly states that Quảng Nam merged with Đà Nẵng, becoming \"Thành phố Đà Nẵng.\"  So, my new province is now \"Thành phố Đà Nẵng\".\n\nNow, I shift my focus to the ward level. I check the provided `other_resolutions` for specifics on \"Xã Duy Trung\".  Bingo! Resolution 1659/NQ-UBTVQH15, concerning Đà Nẵng, is the key.  Line 62 explicitly states that \"Xã Duy Trung\" (along with Duy Sơn and Duy Trinh) is being merged into a new ward called \"Xã Duy Xuyên\".  This is perfect, and the resolution header's mention of \"thành phố Đà Nẵng\" fits perfectly with my province identification.\n\nTo confirm, I pull in the \"New wards\" data.  I find the entry for \"Xã Duy Xuyên\" with a code \"20623\", and crucially, it's under \"Thành phố Đà Nẵng\". This solidifies my understanding.\n\nTherefore, my final JSON output will be straightforward. I'm highly confident in this mapping!  The `province_name` will be \"Thành phố Đà Nẵng,\" the `ward_name` will be \"Xã Duy Xuyên,\" the `ward_code` will be \"20623,\" and the `citation` will be from resolution 1659. The resolution clearly states the merger of \"Xã Duy Trung\" into the new \"Xã Duy Xuyên.\" The `confidence` is \"high\" because this is a direct, confirmed mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng",
+        "line": "62. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Duy Trung, Duy Sơn và Duy Trinh thành xã mới có tên gọi là xã Duy Xuyên."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "20623",
+      "ward_name": "Xã Duy Xuyên"
+    }
+  ]
+}

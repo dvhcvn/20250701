@@ -1,0 +1,28 @@
+{
+  "address": "Phường Thất Hùng, Thị xã Kinh Môn, Tỉnh Hải Dương",
+  "ellapsedInMs": 7287,
+  "estimatedCost": 0.0032047000000000004,
+  "thought": "**Mapping the Old Address to the New Administrative Unit**\n\nOkay, so I've got an old address: \"Phường Thất Hùng, Thị xã Kinh Môn, Tỉnh Hải Dương.\" My goal is to determine the new ward, based on these resolutions and new ward data. Here's how I'll tackle this.\n\nFirst, I'll break down the old address. I have \"Phường Thất Hùng\" as the old ward and \"Tỉnh Hải Dương\" as the old province.\n\nNow, I'll start digging into the resolutions. The key one is 60-NQ/TW. Ah, and there it is: \"Tỉnh Hải Dương\" is mentioned in a resolution that merges it with Hải Phòng. So, the new province is definitely \"Thành phố Hải Phòng.\" High confidence on that change.\n\nNext, the other resolution, 1669/NQ-UBTVQH15, looks promising, as it deals with administrative changes in Hải Phòng. I'll scan its text, specifically looking for \"Phường Thất Hùng\". Okay, Line 40 is a miss. But, yes! Line 43 nails it: \"Phường Thất Hùng\" is being merged into \"Phường Bắc An Phụ.\"\n\nNow, it is time to check in the \"New wards\" data.  I'll look for \"Phường Bắc An Phụ\" in the data. And there it is!  It's listed with the province \"Thành phố Hải Phòng,\" and its ward code is \"10678.\"\n\nAlright, time to construct the output. The province is definitely \"Thành phố Hải Phòng,\" the new ward is \"Phường Bắc An Phụ,\" and the ward code is \"10678.\" I'll also include the citation for the relevant resolution and line.\n\nThe province and ward changes are both explicit in the resolutions, so I'm very confident in this mapping. My confidence level for this identification is high.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "7. Hợp nhất tỉnh Hải Dương và thành phố Hải Phòng, lấy tên là thành phố Hải Phòng"
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "10678",
+      "ward_name": "Phường Bắc An Phụ"
+    },
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "43. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân sốcủa phường Thất Hùng, xã Bạch Đằng (thị xã Kinh Môn), xã Lê Ninh vàphần còn lạicủa phường Văn Đức sau khi sắp xếp theo quy định tại khoản 34, khoản 38 Điều nàythành phường mới có tên gọi là **phường Bắc An Phụ**."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "10678",
+      "ward_name": "Phường Bắc An Phụ"
+    }
+  ]
+}

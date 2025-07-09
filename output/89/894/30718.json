@@ -1,0 +1,18 @@
+{
+  "address": "Xã Vĩnh Khánh, Huyện Thoại Sơn, Tỉnh An Giang",
+  "ellapsedInMs": 6907,
+  "estimatedCost": 0.002484,
+  "thought": "**My Analysis of the Address Mapping**\n\nOkay, so I'm tackling this Vietnamese address conversion. The user gave me an old address and wants to map it to the new administrative structure. Here's my thought process:\n\nFirst, I need to break down the old address to figure out the original province, district, and ward. I've got: \"Xã Vĩnh Khánh\" as the old ward, \"Huyện Thoại Sơn\" as the district (though I know the system's eliminating districts, so I'll keep that in mind), and \"Tỉnh An Giang\" as the province.\n\nNow, I'm checking the Province Resolutions. My gut says An Giang is likely unchanged, and the first check confirms that: it's not on the list of provinces *not* undergoing changes. Then, I see it *is* in the list of provinces that have consolidated, but it has stayed under the name \"An Giang\". Okay, so that reinforces that the province name \"Tỉnh An Giang\" is valid.\n\nNext, the real meat of the conversion: the other resolutions. I'm searching those for the old ward name, \"Xã Vĩnh Khánh\". Bingo! Line 42 of resolution 1654/NQ-UBTVQH15 states it explicitly: the area of \"Xã Vĩnh Khánh\" is to be *merged* into \"Xã Vĩnh Trạch\". That's a direct connection!\n\nMy last step is to use the \"New wards\" data. I'm looking for \"Xã Vĩnh Trạch\" there, and what do you know? It's there, complete with a code and, importantly, the same province I identified earlier (\"Tỉnh An Giang\").\n\nThis is a pretty straightforward and high-confidence case. I have a direct citation: resolution 1654/NQ-UBTVQH15, line 42, explicitly links \"Xã Vĩnh Khánh\" to \"Xã Vĩnh Trạch\". I've confirmed that the province name is still valid, and I have a clear mapping for the new ward. The confidence is definitely \"high\" because of the direct mention in the resolution, and it matches the known data. I'll construct the JSON output and provide the `citation`. This one's easy!\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1654/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh An Giang",
+        "line": "42. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Vĩnh Khánh và xã Vĩnh Trạch thành xã mới có tên gọi là xã Vĩnh Trạch."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh An Giang",
+      "ward_code": "30697",
+      "ward_name": "Xã Vĩnh Trạch"
+    }
+  ]
+}

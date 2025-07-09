@@ -1,0 +1,18 @@
+{
+  "address": "Xã Trù Sơn, Huyện Đô Lương, Tỉnh Nghệ An",
+  "ellapsedInMs": 5675,
+  "estimatedCost": 0.0019191,
+  "thought": "**Deconstructing an Old Vietnamese Address for Mapping**\n\nOkay, so I've got this old Vietnamese address to decipher: \"Xã Trù Sơn, Huyện Đô Lương, Tỉnh Nghệ An\". My mission? Figure out the equivalent in the new administrative system. I'll use my expertise in these systems to map this out.\n\nFirst, I need to break it down. Easy enough: \"Xã Trù Sơn\" is the old ward, \"Huyện Đô Lương\" is the old district, and \"Tỉnh Nghệ An\" is the old province.\n\nNow, the fun part. I'll start with the province.  I'll immediately consult the province-specific resolutions like 60-NQ/TW. Ah, \"Tỉnh Nghệ An\" is listed under the \"no merger\" list, meaning it remains the same.  Good, that's one down.\n\nNext, I dig into the resolution, 1678/NQ-UBTVQH15. My target is that crucial \"Xã Trù Sơn\" in the `lines`. Bingo! Line 23. It clearly states that \"Xã Trù Sơn\" merges into \"xã Bạch Hà\".  Perfect!  The resolution header matches the province, too.\n\nNow I need to be sure about this \"Xã Bạch Hà\". I check the new wards data.  I'm looking for \"Xã Bạch Hà\" within \"Tỉnh Nghệ An\". The perfect match shows up! I've got the `ward_code`, which I now can pair with the ward name.\n\nFinally, I'll compile my output:\n*   `province_name`:  \"Tỉnh Nghệ An\" (no change)\n*   `ward_name`:  \"Xã Bạch Hà\" (from resolution 1678/NQ-UBTVQH15)\n*   `ward_code`:  \"17707\" (from new wards data)\n*   `confidence`:  \"high\" (this resolution is crystal clear!)\n*   `citation`:  I'll reference the resolution and line directly.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1678/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Nghệ An",
+        "line": "23. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đại Sơn, Hiến Sơn, Mỹ Sơn và Trù Sơn thành xã mới có tên gọi là xã Bạch Hà."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Nghệ An",
+      "ward_code": "17707",
+      "ward_name": "Xã Bạch Hà"
+    }
+  ]
+}

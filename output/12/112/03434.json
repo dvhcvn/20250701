@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Nậm Nhùn, Huyện Nậm Nhùn, Tỉnh Lai Châu",
+  "ellapsedInMs": 6971,
+  "estimatedCost": 0.0027697,
+  "thought": "**Analyzing Address Mapping and Administrative Unit Changes**\n\nOkay, so I'm presented with an old address: \"Thị trấn Nậm Nhùn, Huyện Nậm Nhùn, Tỉnh Lai Châu\".  My initial task is to break this down.  I can quickly identify the province as \"Tỉnh Lai Châu\" and the ward as \"Thị trấn Nậm Nhùn\".  Easy enough.\n\nNow, I'm going to consult the relevant resolutions to see how this area might have changed. First up, I need to check if province boundaries were affected.  The resolution 60-NQ/TW states that Lai Châu remains unchanged.  Great, that simplifies things a bit.\n\nNext, I need to dig into resolutions that specifically cover the ward \"Thị trấn Nậm Nhùn\" within Lai Châu.  I skip any resolutions that aren't relevant (like the one for Điện Biên). The resolution 1670/NQ-UBTVQH15 for Lai Châu looks promising.  Specifically, line 26 details the merger:  it says that \"Thị trấn Nậm Nhùn\" was merged with other areas to form a new ward called \"Xã Nậm Hàng\". Excellent, this is key!\n\nI need to confirm the new ward in the provided \"New wards\" list.  Sure enough, there's an entry: `{\"ward_code\":\"03434\",\"ward_name\":\"Xã Nậm Hàng\",\"province_name\":\"Tỉnh Lai Châu\"}`.  It's a perfect match.\n\nBased on all this, I'm confident in the mapping.  The old ward \"Thị trấn Nậm Nhùn\" now corresponds to the new ward \"Xã Nậm Hàng\".  I'll generate the JSON output, ensuring it's valid, parseable, and adheres to the schema. The confidence is high because the resolution explicitly spells out the merger.  My citation will be the relevant section from the resolution.  Everything checks out; time to output the results.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1670/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lai Châu",
+        "line": "26. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Nậm Nhùn, xãNậm Manh và xã Nậm Hàngthành xã mới có tên gọi là xã Nậm Hàng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lai Châu",
+      "ward_code": "03434",
+      "ward_name": "Xã Nậm Hàng"
+    }
+  ]
+}

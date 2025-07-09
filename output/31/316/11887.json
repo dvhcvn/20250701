@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tam Cường, Huyện Vĩnh Bảo, Thành phố Hải Phòng",
+  "ellapsedInMs": 9142,
+  "estimatedCost": 0.0030805,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm tasked with mapping this old Vietnamese address to the new administrative structure, given the resolutions and ward data. Let's break this down systematically.\n\nFirst, the input address is \"Xã Tam Cường, Huyện Vĩnh Bảo, Thành phố Hải Phòng.\"  My initial focus is on identifying the old ward, district, and province. This is pretty straightforward: \"Xã Tam Cường\" is the ward, \"Huyện Vĩnh Bảo\" is the district, and \"Thành phố Hải Phòng\" is the province.\n\nNow, the resolutions. I need to consult them to see how these units have been affected by any changes. The first resolution I'll check is the province-level, which would be 60-NQ/TW. I'll quickly confirm that \"Thành phố Hải Phòng\" isn't listed in the \"no merger\" list, and then I check the \"new names\" list. Bingo! It states that \"Hải Dương\" and \"Hải Phòng\" were merged into \"Hải Phòng\". The province name is retained, which is \"Thành phố Hải Phòng.\"\n\nNext, the relevant resolution is 1669/NQ-UBTVQH15, which focuses on ward-level changes within Hải Phòng. I'll need to scan this document for references to \"Xã Tam Cường.\" Line 62 doesn't mention it. But line 64 explicitly states that \"Tam Cường,\" along with \"Cao Minh\" and \"Liên Am\", will form the new ward \"Xã Vĩnh Am\". Excellent! That's a strong lead. Line 66 is irrelevant.\n\nTo confirm, I need to consult the \"New wards\" data. I'm searching for \"Xã Vĩnh Am.\" Sure enough, it matches:  `{\"ward_code\":\"11887\",\"ward_name\":\"Xã Vĩnh Am\",\"province_name\":\"Thành phố Hải Phòng\"}`. This confirms the mapping: old \"Xã Tam Cường\" to new \"Xã Vĩnh Am.\"\n\nNow, to assemble the JSON output. My confidence in the province mapping is high because the resolution explicitly addresses \"Hải Phòng\". The ward mapping is also strong, as the resolution directly mentions \"Xã Tam Cường\" as becoming part of \"Xã Vĩnh Am.\" The new ward data confirms this. The citation will need to point to resolution 1669/NQ-UBTVQH15, line 64.\n\nLastly, I need to double-check the district. The resolution indicates that district boundaries were eliminated, and the new structure doesn't include district. Since \"Huyện Vĩnh Bảo\" is clearly mentioned in the input address, and other wards in the resolution are mentioned with the district information, it's safe to assume \"Tam Cường\" was also previously located in \"Huyện Vĩnh Bảo.\" The output schema does not include district.\n\nFinal check: Province, high confidence. Ward, high confidence. It all checks out! I'm ready to generate the JSON output.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "64. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tam Cường, Cao Minh và Liên Am thành xã mới có tên gọi là xã Vĩnh Am."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "11887",
+      "ward_name": "Xã Vĩnh Am"
+    }
+  ]
+}

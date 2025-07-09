@@ -1,0 +1,18 @@
+{
+  "address": "Phường Duyệt Trung, Thành phố Cao Bằng, Tỉnh Cao Bằng",
+  "ellapsedInMs": 5839,
+  "estimatedCost": 0.0021207,
+  "thought": "**Address Mapping Analysis: \"Phường Duyệt Trung, Tỉnh Cao Bằng\"**\n\nOkay, I've got an old Vietnamese address to map: \"Phường Duyệt Trung, Tỉnh Cao Bằng.\"  My first step is to break this down.  I need to identify the old ward (\"Phường Duyệt Trung\") and province (\"Tỉnh Cao Bằng\").\n\nNow, to determine the new administrative unit, I need to consult the resolutions.  First, I'll check the province resolution (60-NQ/TW).  Fortunately, it looks like Cao Bằng is *unchanged* according to this: \"60-NQ/TW: ... 11. Tỉnh Cao Bằng\"  So, the province remains the same.\n\nNext, I have to find the resolution pertaining to the specific ward.  I'll consult 1657/NQ-UBTVQH15.  Bingo! Line 56 is the key: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Tân Giang, Duyệt Trung, Hòa Chung, xã Chu Trinh và xã Lê Chung thành phường mới có tên gọi là **phường Tân Giang**.\"  This clearly states that \"Phường Duyệt Trung\" is now part of the new \"Phường Tân Giang\".\n\nTo confirm, I'll cross-reference this information with my \"New wards\" dataset.  I'm looking for a match within Cao Bằng.  And there it is: `{\"ward_code\":\"01288\",\"ward_name\":\"Phường Tân Giang\",\"province_name\":\"Tỉnh Cao Bằng\"}`.  That confirms it.\n\nTherefore, the old address maps to \"Tỉnh Cao Bằng\" (unchanged) and \"Phường Tân Giang\" with code \"01288.\"  This is a high-confidence match, given the explicit merger in the resolution.  The citation will include the resolution header and line 56 from resolution 1657/NQ-UBTVQH15.  That should be a solid and accurate output.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1657/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Cao Bằng",
+        "line": "56. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Tân Giang, Duyệt Trung, Hòa Chung, xã Chu Trinh vàxã Lê Chung thành phường mới có tên gọi là phường Tân Giang."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Cao Bằng",
+      "ward_code": "01288",
+      "ward_name": "Phường Tân Giang"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Vạn Ninh, Thành phố Móng Cái, Tỉnh Quảng Ninh",
+  "ellapsedInMs": 7682,
+  "estimatedCost": 0.0029141,
+  "thought": "**Navigating the Administrative Landscape: Determining the New Ward for \"Xã Vạn Ninh\"**\n\nAlright, let's break this down. The user's asking about the current administrative status of \"Xã Vạn Ninh\" in \"Thành phố Móng Cái, Tỉnh Quảng Ninh\". My job is to translate that old address to its current form using the provided resolutions and new ward data.\n\nFirst, I need to isolate the key information: the province (\"Tỉnh Quảng Ninh\") and the ward (\"Xã Vạn Ninh\"). I'll also note the district, \"Thành phố Móng Cái,\" for context.\n\nNow, the plan unfolds. I'll start with the \"Province Resolutions\" (60-NQ/TW).  Fortunately, \"Tỉnh Quảng Ninh\" is explicitly listed under \"Các đơn vị hành chính cấp tỉnh không thực hiện sáp nhập,\" meaning the province name remains unchanged.\n\nNext, I'll dive into the `other_resolutions`, specifically focusing on mentions of \"Xã Vạn Ninh\" within \"Tỉnh Quảng Ninh.\"  The key is finding a resolution that explicitly outlines the reorganization of \"Xã Vạn Ninh\".\n\nHere's where the critical piece falls into place. Resolution 1679/NQ-UBTVQH15, concerning the rearrangement of administrative units at the commune level in Quảng Ninh province, is the goldmine. Line 50 of this resolution clearly states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Ninh Dương, phường Ka Long và **xã Vạn Ninh** thành phường mới có tên gọi là **phường Móng Cái 2**.\" Bingo!\n\nI confirmed this information against the `new_wards` data.  Finding \"phường Móng Cái 2\" in the list confirms the match: `{\"ward_code\":\"06709\",\"ward_name\":\"Phường Móng Cái 2\",\"province_name\":\"Tỉnh Quảng Ninh\"}`.\n\nGiven the directness of the resolution and its explicit declaration, I'd say the confidence level here is \"high.\" The resolution is definitive on the merging of \"Xã Vạn Ninh\" into \"phường Móng Cái 2,\" while the province remains unchanged.\n\nFinally, I'll package the information in the required JSON format:\n\n*   `citation`:\n    *   `header`: \"1679/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ninh\"\n    *   `line`: \"50. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Ninh Dương, phường Ka Long và xã Vạn Ninh thành phường mới có tên gọi là phường Móng Cái 2.\"\n*   `confidence`: \"high\"\n*   `province_name`: \"Tỉnh Quảng Ninh\"\n*   `ward_code`: \"06709\"\n*   `ward_name`: \"Phường Móng Cái 2\"\n\nThis should provide the user with a concise and confident answer.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1679/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ninh",
+        "line": "50. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Ninh Dương, phường Ka Long và xã Vạn Ninh thành phường mới có tên gọi là phường Móng Cái 2."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ninh",
+      "ward_code": "06709",
+      "ward_name": "Phường Móng Cái 2"
+    }
+  ]
+}

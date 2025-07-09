@@ -1,0 +1,28 @@
+{
+  "address": "Thị trấn Ea T'Ling, Huyện Cư Jút, Tỉnh Đắk Nông",
+  "ellapsedInMs": 6611,
+  "estimatedCost": 0.0023424,
+  "thought": "**My Thought Process on Mapping the Old Address**\n\nOkay, so I've been tasked with mapping this old address, \"Thị trấn Ea T'Ling, Huyện Cư Jút, Tỉnh Đắk Nông,\" to a new administrative unit.  Here's how I'm approaching this, step-by-step:\n\nFirst, I need to break down the given address. I can see the old ward is \"Thị trấn Ea T'Ling\" and the old province is \"Tỉnh Đắk Nông.\"  Easy enough.\n\nNext, I need to check the relevant province resolutions, starting with 60-NQ/TW.  Ah, here we are: \"14. Hợp nhất tỉnh Lâm Đồng, tỉnh Đắk Nông và tỉnh Bình Thuận; lấy tên là tỉnh Lâm Đồng.\"  So, Đắk Nông has been merged, and the new province is now \"Tỉnh Lâm Đồng.\"\n\nNow, I shift my focus to finding the fate of \"Thị trấn Ea T'Ling.\"  I know there will be other important resolutions to check! A quick search leads me to resolution \"1671/NQ-UBTVQH15.\" Bingo! \"79. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Ea T'ling và các xã Trúc Sơn, Tâm Thắng, Cư K'nia thành xã mới có tên gọi là **xã Cư Jút**.\"  This is a direct hit! It's clear that \"Thị trấn Ea T'ling\" has been absorbed into the new \"Xã Cư Jút.\"\n\nFinally, I need to locate the details for \"Xã Cư Jút\" in the provided list of new wards.  Looking at the relevant portion, I quickly find: `{\"ward_code\":\"24640\",\"ward_name\":\"Xã Cư Jút\",\"province_name\":\"Tỉnh Lâm Đồng\"}`.  Perfect.\n\nNow, to construct the JSON output: the old ward \"Thị trấn Ea T'Ling\" is explicitly mentioned in the resolution. The new province is \"Tỉnh Lâm Đồng\" based on resolution 60-NQ/TW.  And the new ward is clearly \"Xã Cư Jút,\" with code \"24640.\" Given the clear and direct mapping, I would confidently set the confidence level to \"high.\" This should be an accurate representation of the updated administrative structure.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "14. Hợp nhất tỉnh Lâm Đồng, tỉnh Đắk Nông và tỉnh Bình Thuận; lấy tên là tỉnh Lâm Đồng"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "24640",
+      "ward_name": "Xã Cư Jút"
+    },
+    {
+      "citation": {
+        "header": "1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng",
+        "line": "79. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Ea T'ling và các xã Trúc Sơn, Tâm Thắng, Cư K'nia thành xã mới có tên gọi là xã Cư Jút."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "24640",
+      "ward_name": "Xã Cư Jút"
+    }
+  ]
+}

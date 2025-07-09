@@ -1,0 +1,18 @@
+{
+  "address": "Xã Lương An Trà, Huyện Tri Tôn, Tỉnh An Giang",
+  "ellapsedInMs": 7183,
+  "estimatedCost": 0.0025837,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, let's break this down. The user's given me an old Vietnamese address and wants the updated administrative unit. My initial thought is to pull apart the address: \"Xã Lương An Trà\" (ward), \"Huyện Tri Tôn\" (district - which I know we're supposed to ignore, per the prompt), and \"Tỉnh An Giang\" (province).\n\nFirst, I always check the province resolutions. Specifically, I'm looking at Resolution 60-NQ/TW to see if An Giang has merged or changed.  It's *not* in the list of provinces that didn't change, but it *is* in the list of mergers.  An Giang absorbed Kiên Giang but kept its name. So, An Giang remains An Giang for province purposes.\n\nNow, I move on to the more specific resolutions, in this case, 1654/NQ-UBTVQH15, which directly addresses changes in An Giang. I search through that resolution, specifically focusing on \"Xã Lương An Trà.\" Bingo! Line 26: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Vĩnh Phước, Lương An Trà và Vĩnh Gia thành xã mới có tên gọi là **xã Vĩnh Gia**.\" It explicitly states that \"Xã Lương An Trà\" is folded into \"Xã Vĩnh Gia.\"  That's my key!\n\nI then look up \"Xã Vĩnh Gia\" in the new ward data, and it's there: `{\"ward_code\":\"30568\",\"ward_name\":\"Xã Vĩnh Gia\",\"province_name\":\"Tỉnh An Giang\"}`. Perfect match.\n\nI'm confident in this mapping: I have a direct citation, a clear match in the resolution, and a corresponding entry in the new ward data. There's no ambiguity here.\n\nFinally, I'll double-check any other potentially relevant lines in the resolution, but line 23 only references other wards which are not included in the original address. So, I'm sticking with the clear match. My output will be JSON, as the user expects, clearly outlining the old address component and its mapped new equivalent, with appropriate confidence levels and citation to support my analysis.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1654/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh An Giang",
+        "line": "26. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Vĩnh Phước, Lương An Trà và Vĩnh Gia thành xã mới có tên gọi là xã Vĩnh Gia."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh An Giang",
+      "ward_code": "30568",
+      "ward_name": "Xã Vĩnh Gia"
+    }
+  ]
+}

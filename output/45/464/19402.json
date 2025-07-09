@@ -1,0 +1,18 @@
+{
+  "address": "Xã Vĩnh Thủy, Huyện Vĩnh Linh, Tỉnh Quảng Trị",
+  "ellapsedInMs": 6911,
+  "estimatedCost": 0.0022702,
+  "thought": "**Mapping an Old Vietnamese Address to New Administrative Units**\n\nOkay, so I've got this Vietnamese address that needs to be mapped to the new administrative structure. Let's see... the old address is in Xã Vĩnh Thủy, Huyện Vĩnh Linh, Tỉnh Quảng Trị.  First, I need to confirm the province, and then I'll figure out the ward.\n\nI'll start with the province.  I've got Resolution 60-NQ/TW to consult.  \"Tỉnh Quảng Trị\" isn't on any \"don't merge\" lists. Ah, but it *is* in the list of mergers! It looks like \"Hợp nhất tỉnh Quảng Bình và tỉnh Quảng Trị, lấy tên là tỉnh Quảng Trị\" – that means Quảng Trị merged with Quảng Bình, but kept the name \"Tỉnh Quảng Trị\". That's straightforward enough.  The province name remains the same.\n\nNow, for the ward. I need to dig into the details of Resolution 1680/NQ-UBTVQH15. I'm looking for \"Xã Vĩnh Thủy\" specifically. Ah, here it is, Line 39. It states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Vĩnh Lâm, Vĩnh Sơn và Vĩnh Thủythành xã mới có tên gọi là **xã Vĩnh Thủy**.\"  Bingo! It explicitly says that \"Xã Vĩnh Thủy\", along with \"Vĩnh Lâm\" and \"Vĩnh Sơn\"  will merge into a *new* ward also named \"Xã Vĩnh Thủy\". That's a direct match and tells me the ward name didn't change, just the internal structure.\n\nNow, I'll double-check this with the new ward data to be absolutely sure.  I'll look for a ward named \"Xã Vĩnh Thủy\" within \"Tỉnh Quảng Trị\".  Yep, there it is:  `{\"ward_code\":\"19405\",\"ward_name\":\"Xã Vĩnh Thủy\",\"province_name\":\"Tỉnh Quảng Trị\"}`. Perfect.\n\nSo, the old \"Xã Vĩnh Thủy\" in \"Tỉnh Quảng Trị\" now maps to the new \"Xã Vĩnh Thủy\" with code 19405 in the same province. My confidence level on this mapping is high because of the explicit mention in the resolution and the direct match in the new ward data.  I'm good to go with the JSON output.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1680/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Trị",
+        "line": "39. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Vĩnh Lâm, Vĩnh Sơn và Vĩnh Thủythành xã mới có tên gọi là xã Vĩnh Thủy."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Trị",
+      "ward_code": "19405",
+      "ward_name": "Xã Vĩnh Thủy"
+    }
+  ]
+}

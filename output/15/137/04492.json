@@ -1,0 +1,28 @@
+{
+  "address": "Xã Púng Luông, Huyện Mù Căng Chải, Tỉnh Yên Bái",
+  "ellapsedInMs": 8351,
+  "estimatedCost": 0.0029003,
+  "thought": "**Address Mapping Analysis for Vietnamese Administrative Units**\n\nOkay, so I'm tackling this Vietnamese address mapping task. I've got \"Xã Púng Luông, Huyện Mù Căng Chải, Tỉnh Yên Bái\" and the goal is to pinpoint the new administrative location. Given my expertise, I know the crucial steps here.\n\nFirst, the province is straightforward: \"Tỉnh Yên Bái\". Now, let's consult the province-level resolutions (specifically 60-NQ/TW). Scanning the lists, I see \"Tỉnh Yên Bái\" isn't in the \"no mergers\" list, which means it's been changed. Aha! The resolution specifies \"Hợp nhất tỉnh Lào Cai và tỉnh Yên Bái, lấy tên là tỉnh Lào Cai\" - so \"Tỉnh Yên Bái\" is now part of \"Tỉnh Lào Cai\". That's my first key piece of information.\n\nNext, I need to pinpoint the specific ward, \"Xã Púng Luông\".  The relevant resolution for wards in Lào Cai is \"1673/NQ-UBTVQH15\". Looking at the entries, line 2 deals with \"xã Mù Cang Chải\", but that's not our ward. Line 3 is the jackpot!  It outlines the merger of several old communes, including \"Púng Luông\", into a *new* \"xã Púng Luông\".  This gives me the new ward name.\n\nNow, I'll cross-reference this with the \"New wards\" data provided. Checking the entries, I see:\n\n*   `{\"ward_code\":\"04456\",\"ward_name\":\"Xã Mù Cang Chải\",\"province_name\":\"Tỉnh Lào Cai\"}` - Nope, that's not it.\n*   `{\"ward_code\":\"04492\",\"ward_name\":\"Xã Púng Luông\",\"province_name\":\"Tỉnh Lào Cai\"}` - Bingo! This perfectly aligns with the resolution - the new \"xã Púng Luông\" is confirmed, under Lào Cai's jurisdiction.\n\nTherefore, the output will be:\n\n*   `province_name`: \"Tỉnh Lào Cai\" (due to the province merger).\n*   `ward_name`: \"Xã Púng Luông\" (confirmed by the resolution).\n*   `ward_code`: \"04492\" (from the new ward data).\n*   `citation`:\n    *   `header`: \"1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai\"\n    *   `line`: \"3. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Nậm Khắt, La Pán Tẩn, Dế Xu Phình và Púng Luông thành xã mới có tên gọi là **xã Púng Luông**.\"\n*   `confidence`: \"high\" (because the resolution clearly establishes the direct link between the old and new ward names, and the province merger is a straightforward application of the pertinent resolution).\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "2. Hợp nhất tỉnh Lào Cai và tỉnh Yên Bái, lấy tên là tỉnh Lào Cai"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "04492",
+      "ward_name": "Xã Púng Luông"
+    },
+    {
+      "citation": {
+        "header": "1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai",
+        "line": "3. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Nậm Khắt, La Pán Tẩn, Dế Xu Phình và Púng Luông thành xã mới có tên gọi là xã Púng Luông."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "04492",
+      "ward_name": "Xã Púng Luông"
+    }
+  ]
+}

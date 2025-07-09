@@ -1,0 +1,18 @@
+{
+  "address": "Xã Phú Xá, Huyện Cao Lộc, Tỉnh Lạng Sơn",
+  "ellapsedInMs": 5968,
+  "estimatedCost": 0.0027562999999999997,
+  "thought": "**Determining the New Administrative Unit for \"Xã Phú Xá\"**\n\nOkay, let's break this down systematically. The user's query specifies an old address: \"Xã Phú Xá, Huyện Cao Lộc, Tỉnh Lạng Sơn\". My goal is to determine the current administrative unit.\n\nFirst, I identified the province as \"Tỉnh Lạng Sơn\". Next, I cross-referenced the province against the relevant merger resolutions, specifically 60-NQ/TW. It's listed under those *not* undergoing any province-level changes, so \"Tỉnh Lạng Sơn\" remains the same.\n\nNow, I needed to check if \"Xã Phú Xá\" was involved in any ward-level reorganizations. I scoured through the resolutions, focusing on those related to \"Tỉnh Lạng Sơn\". In 1672/NQ-UBTVQH15, I found the critical information: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Đồng Đăng và các xã Thụy Hùng (huyện Cao Lộc), Phú Xá, Hồng Phong, Bảo Lâm thành xã mới có tên gọi là **xã Đồng Đăng**.\"\n\nEssentially, \"Xã Phú Xá\" is now part of a new ward, \"Xã Đồng Đăng\".  I then looked for this new ward in the structured data I had about \"New wards\". Sure enough, there it was: `{\"ward_code\":\"06184\",\"ward_name\":\"Xã Đồng Đăng\",\"province_name\":\"Tỉnh Lạng Sơn\"}`.\n\nGiven the explicit nature of the merger mentioned in the resolution, I'm quite confident in my findings. I'll construct the JSON output accordingly, citing the specific resolution and the relevant line. The confidence level will be \"high\" because this is a direct, explicit merging of the old ward into the new one. The province remains \"Tỉnh Lạng Sơn\", and the new ward details are clearly defined in the data. So, the output will include ward code \"06184\", and the new ward name \"Xã Đồng Đăng\".\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1672/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lạng Sơn",
+        "line": "58. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Đồng Đăng và các xã Thụy Hùng (huyện Cao Lộc), Phú Xá, Hồng Phong, Bảo Lâm thành xã mới có tên gọi là**xã Đồng Đăng**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lạng Sơn",
+      "ward_code": "06184",
+      "ward_name": "Xã Đồng Đăng"
+    }
+  ]
+}

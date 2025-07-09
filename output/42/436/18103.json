@@ -1,0 +1,18 @@
+{
+  "address": "Phường Đồng Môn, Thành phố Hà Tĩnh, Tỉnh Hà Tĩnh",
+  "ellapsedInMs": 6717,
+  "estimatedCost": 0.0023356,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm presented with the task of mapping this old Vietnamese address, \"Phường Đồng Môn, Thành phố Hà Tĩnh, Tỉnh Hà Tĩnh,\" to its new administrative unit. My initial thought process involves a clear breakdown:\n\nFirst, I need to isolate the key components of the address: \"Phường Đồng Môn\" (the old ward) and \"Tỉnh Hà Tĩnh\" (the old province). Straightforward enough.\n\nNext, I immediately consult the province resolutions, specifically the 60-NQ/TW, to see if there's any province boundary changes. Thankfully, \"Tỉnh Hà Tĩnh\" is listed under \"Các đơn vị hành chính cấp tỉnh không thực hiện sáp nhập,\" which means the province remains unchanged – a good start.\n\nThe real work begins with exploring \"Other resolutions.\" I'm looking for mentions of \"Phường Đồng Môn\" within \"Tỉnh Hà Tĩnh,\" and bingo! Resolution 1665/NQ-UBTVQH15 catches my eye. Scanning the lines, line 60 confirms my suspicion: \"Đồng Môn\" along with other wards are merged to form \"Phường Trần Phú.\" This is a crucial finding.\n\nNow, I cross-reference this information with the \"New wards\" data. I'm searching for \"Phường Trần Phú\" within \"Tỉnh Hà Tĩnh\". The data `{\"ward_code\":\"18100\",\"ward_name\":\"Phường Trần Phú\",\"province_name\":\"Tỉnh Hà Tĩnh\"}` gives me my target. There are other entries, but those are not relevant to my specific \"Phường Đồng Môn\" case.\n\nBased on these clear and definitive findings, I'm confident about constructing my JSON output. The old \"Phường Đồng Môn\" directly corresponds to the new \"Phường Trần Phú\" (code \"18100\"), and \"Tỉnh Hà Tĩnh\" remains unchanged. This analysis provides a \"high\" confidence level because of the clear mapping found in the resolution and data.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh",
+        "line": "60. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Thạch Trung, Đồng Môn, Thạch Hạ và xã Hộ Độ thành phường mới có tên gọi là phường Trần Phú."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hà Tĩnh",
+      "ward_code": "18100",
+      "ward_name": "Phường Trần Phú"
+    }
+  ]
+}

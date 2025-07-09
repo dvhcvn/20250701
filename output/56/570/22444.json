@@ -1,0 +1,18 @@
+{
+  "address": "Xã Cam Hải Tây, Huyện Cam Lâm, Tỉnh Khánh Hòa",
+  "ellapsedInMs": 5520,
+  "estimatedCost": 0.0021066,
+  "thought": "**My Analysis of the Administrative Address Mapping**\n\nOkay, so I'm tasked with figuring out the new location for the old address \"Xã Cam Hải Tây, Huyện Cam Lâm, Tỉnh Khánh Hòa.\"  My process will involve a meticulous step-by-step approach.\n\nFirst, I need to break down the address. I have \"Xã Cam Hải Tây\" as the old *ward* and \"Tỉnh Khánh Hòa\" as the *province*. Simple enough.\n\nNext, I'll consult the province's resolutions to understand any recent administrative changes.  Checking Resolution 60-NQ/TW, I confirm that Khánh Hòa remains Khánh Hòa. That part is straightforward.\n\nThen, I'll delve deeper into the *other_resolutions* specifically focusing on \"Xã Cam Hải Tây.\"  Resolution 1667/NQ-UBTVQH15 catches my eye. It deals with Khánh Hòa. Specifically, it states that \"Xã Cam Hải Tây\" is being merged into a new ward called \"**xã Cam Lâm**.\" Bingo! That seems to be the key.\n\nI also see another resolution but that's for Nghệ An, which is irrelevant. So, ignoring that.\n\nNow, I'll double-check this against my *new_wards* list.  I'm looking for \"Xã Cam Lâm\" within \"Tỉnh Khánh Hòa\".  And, there it is!  A perfect match: `{\"ward_code\":\"22453\",\"ward_name\":\"Xã Cam Lâm\",\"province_name\":\"Tỉnh Khánh Hòa\"}`. This confirms the new ward.\n\nThe resolution clearly states the merger, giving me high confidence. Therefore, \"Xã Cam Hải Tây\" is now part of \"Xã Cam Lâm\" in \"Tỉnh Khánh Hòa\".  I can confidently map the old address to this new administrative unit and I'll make sure to output the results in the requested JSON format.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1667/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Khánh Hòa",
+        "line": "18. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Cam Đức, các xã Cam Hải Đông, Cam Hải Tây, Cam Thành Bắc và một phần diện tích, quyô dân số của các xã Cam Hiệp Bắc, Cam Hiệp Nam, Cam Hòa, Cam Tân, Cam An Bắc, Cam An Nam, Suối Tân thành xã mới có tên gọi là xã Cam Lâm."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Khánh Hòa",
+      "ward_code": "22453",
+      "ward_name": "Xã Cam Lâm"
+    }
+  ]
+}

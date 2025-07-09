@@ -1,0 +1,18 @@
+{
+  "address": "Xã Thanh Đa, Huyện Phúc Thọ, Thành phố Hà Nội",
+  "ellapsedInMs": 7220,
+  "estimatedCost": 0.0036818000000000003,
+  "thought": "**My Analysis of the Administrative Unit Restructuring**\n\nAlright, I'm tackling this administrative restructuring query. The user's asking about the new administrative unit for \"Xã Thanh Đa, Huyện Phúc Thọ, Thành phố Hà Nội.\" My first step, as always, is to methodically work through the relevant data.\n\nSince we're dealing with Hanoi, I check the province merger resolutions (60-NQ/TW).  It's pretty straightforward: \"Thành phố Hà Nội\" *remains* \"Thành phố Hà Nội\" as per resolution 60-NQ/TW. So, the `province_name` output will be \"Thành phố Hà Nội\".\n\nNow, onto the meat of the matter: finding the new unit for \"Xã Thanh Đa\". I need to pore over the \"Other resolutions\" and \"New wards\" data, focusing on Hanoi and specifically, Phúc Thọ district.\n\nI start by systematically reviewing the \"Other resolutions\".  Quickly, the irrelevant provinces are filtered out, leaving me with \"1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội.\" This is the key.\n\nWithin this resolution, line 90 discusses Phúc Thọ town and some other communes, *but not* \"Xã Thanh Đa\".  My initial thought was that perhaps it was part of a larger Phúc Thọ-centered merger. But scanning further, line 92 is the jackpot!\n\nLine 92 directly addresses \"Xã Thanh Đa,\" explicitly mentioning it alongside \"Huyện Phúc Thọ.\" This line states that \"Xã Thanh Đa\" *and others* will be merged into a new commune: \"**xã Hát Môn**\". Bingo! I've found my match. To be absolutely thorough, I did quick scan of the other resolutions to ensure that line 92 was the only applicable one.\n\nThe conclusion is clear. The correct output should reflect that \"Xã Thanh Đa, Huyện Phúc Thọ, Thành phố Hà Nội\" has been reorganized into \"**xã Hát Môn**\". My analysis is complete.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội",
+        "line": "92. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tam Hiệp (huyện Phúc Thọ), Hiệp Thuận, Liên Hiệp, Ngọc Tảo, Tam Thuấn, Thanh Đa và Hát Môn thành xã mới có tên gọi là xã Hát Môn."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hà Nội",
+      "ward_code": "09772",
+      "ward_name": "Xã Hát Môn"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "address": "Xã Phước Hậu, Huyện Cần Giuộc, Tỉnh Long An",
+  "ellapsedInMs": 8329,
+  "estimatedCost": 0.0032529,
+  "thought": "**Navigating the Administrative Landscape: Mapping \"Xã Phước Hậu\"**\n\nOkay, so I've got an old address to map: \"Xã Phước Hậu, Huyện Cần Giuộc, Tỉnh Long An.\" My initial step is to break down the elements: \"Tỉnh Long An\" (the old province), \"Xã Phước Hậu\" (the ward), and \"Huyện Cần Giuộc\" (the old district).\n\nFirst, I need to check for any province mergers, specifically focusing on \"Tỉnh Long An.\" Resolution 60-NQ/TW states that Long An merged with Tây Ninh, forming \"Tỉnh Tây Ninh.\"\n\nNext, the critical step: verifying ward reorganizations. I'm searching through the provided resolutions, looking for \"Xã Phước Hậu.\" I found a match in Resolution 1667/NQ-UBTVQH15, but it's referencing \"Khánh Hòa,\" not the Long An I'm working with, so that's a dead end.\n\nThen, Resolution 1682/NQ-UBTVQH15 from Tây Ninh catches my eye. It states \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Long Thượng, Phước Hậu và Phước Lý thành xã mới có tên gọi là **xã Phước Lý**.\" This seems promising, as it mentions \"Phước Hậu\" and is within the new Tây Ninh. Another part of that same resolution details, \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Cần Giuộc, xã Phước Lại và xã Long Hậu thành xã mới có tên gọi là **xã Cần Giuộc**,\" which is less relevant as it does not include \"Phước Hậu.\"\n\nResolution 1687/NQ-UBTVQH15 from Vĩnh Long is also a false positive.\n\nThe most probable scenario is that the old \"Xã Phước Hậu\" from Long An was integrated into the new \"Xã Phước Lý\" within \"Tỉnh Tây Ninh.\"\n\nFinally, I cross-reference the `New wards` data to confirm. Bingo! There's a perfect match: `{\"ward_code\":\"28165\",\"ward_name\":\"Xã Phước Lý\",\"province_name\":\"Tỉnh Tây Ninh\"}`.  The mapping is complete; the old \"Xã Phước Hậu\" now corresponds to the new \"Xã Phước Lý\" in \"Tỉnh Tây Ninh.\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Tây Ninh và tỉnh Long An, lấy tên là tỉnh Tây Ninh"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tây Ninh",
+      "ward_code": "28165",
+      "ward_name": "Xã Phước Lý"
+    },
+    {
+      "citation": {
+        "header": "1682/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tây Ninh",
+        "line": "45. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Long Thượng, Phước Hậu và Phước Lý thành xã mới có tên gọi là xã Phước Lý."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tây Ninh",
+      "ward_code": "28165",
+      "ward_name": "Xã Phước Lý"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Nam Phúc Thăng, Huyện Cẩm Xuyên, Tỉnh Hà Tĩnh",
+  "ellapsedInMs": 6791,
+  "estimatedCost": 0.0022133,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm tasked with taking this old Vietnamese address, \"Xã Nam Phúc Thăng, Huyện Cẩm Xuyên, Tỉnh Hà Tĩnh,\" and figuring out its new equivalent based on the provided data. This is a pretty straightforward process, leveraging my knowledge of administrative reorganizations in Vietnam.\n\nFirst, I need to break down the address.  It's \"Xã Nam Phúc Thăng\" (the old ward), \"Huyện Cẩm Xuyên\" (the old district), and \"Tỉnh Hà Tĩnh\" (the old province).  No surprises there.\n\nNext, I'll dive into the province-level resolutions. I quickly find \"Tỉnh Hà Tĩnh\" listed under the \"no merger\" section in the province resolutions (specifically, 60-NQ/TW). Good, that keeps things simple, meaning the province name remains the same: \"Tỉnh Hà Tĩnh\".\n\nNow, onto the crucial part: the ward.  I'm looking specifically for \"Xã Nam Phúc Thăng\" in other resolutions.  And bingo! Resolution 1665/NQ-UBTVQH15 provides the critical information. Line 13 clearly states that \"Xã Nam Phúc Thăng\" is being merged with other units, forming a new ward named \"Xã Thiên Cầm.\" That's the key!\n\nI cross-reference this information with the `new_wards` data, and sure enough, I find \"Xã Thiên Cầm\" with its corresponding code, \"18676\", and the correct province, \"Tỉnh Hà Tĩnh\".  Perfect match.\n\nFinally, I piece together the output, ensuring all the necessary details are present: the unchanged province name, the new ward name and code. I include the relevant citation from the resolution,  along with the specific line detailing the merger.  Given the explicit nature of the mapping, I'd say the confidence level is \"high.\"\n\nOne quick note on the district.  While \"Huyện Cẩm Xuyên\" is part of the original address, the schemas provided do not require district information.  Further, from my understanding of administrative re-arrangements, districts can be eliminated entirely, so district information would not be part of the final output. The focus here is the province and ward.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh",
+        "line": "13. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Thiên Cầm xã Nam Phúc Thăng và xã Cẩm Nhượng thành xã mới có tên gọi là xã Thiên Cầm."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hà Tĩnh",
+      "ward_code": "18676",
+      "ward_name": "Xã Thiên Cầm"
+    }
+  ]
+}

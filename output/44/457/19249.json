@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Kiến Giang, Huyện Lệ Thủy, Tỉnh Quảng Bình",
+  "ellapsedInMs": 6574,
+  "estimatedCost": 0.0024657999999999998,
+  "thought": "**Mapping an Old Address to New Administrative Units**\n\nOkay, here's how I'm approaching this. The user wants me to map an old address, \"Thị trấn Kiến Giang, Huyện Lệ Thủy, Tỉnh Quảng Bình,\" to the new administrative structure. I need to take it step by step.\n\nFirst, I need to pinpoint the old province and ward from the address. That's straightforward: \"Thị trấn Kiến Giang\" is the old ward, and \"Tỉnh Quảng Bình\" is the old province.\n\nNow comes the crucial part. I have to check the province resolutions, specifically 60-NQ/TW, to see if \"Tỉnh Quảng Bình\" was merged or changed. Bingo! It was merged with Quảng Trị. So, now I need to treat it as \"Tỉnh Quảng Trị.\"\n\nNext, I'll dive into the other resolutions, focusing on anything related to \"Thị trấn Kiến Giang\" or any related old wards *within* the context of \"Tỉnh Quảng Trị.\" Resolution 1680/NQ-UBTVQH15 is the key here. Looking at line 29, it explicitly mentions \"Thị trấn Kiến Giang\" and how it, along with several other wards, becomes the new ward called \"**xã Lệ Thủy**.\" This looks promising. Line 30 is less relevant because it deals with a different set of wards.\n\nNow, I'll cross-reference what I have with the \"New wards\" data to confirm the details. There's a perfect match: I see \"{\"ward_code\":\"19249\",\"ward_name\":\"Xã Lệ Thủy\",\"province_name\":\"Tỉnh Quảng Trị\"}.\" Perfect. And those other options, like \"Xã Cam Hồng\" are not relevant to the address in question.\n\nBased on this, my output will be clear. The old ward \"Thị trấn Kiến Giang\" maps directly to the new ward \"**xã Lệ Thủy**.\" The province has changed from \"Tỉnh Quảng Bình\" to \"Tỉnh Quảng Trị.\" I'm confident in this mapping because there's a direct and explicit reference to the old ward in the resolution, and it gives clear instructions about it's new form. This should be a 'high' confidence level.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1680/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Trị",
+        "line": "29. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Kiến Giang và các xã Liên Thủy, Xuân Thủy, An Thủy, Phong Thủy, Lộc Thủythành xã mới có tên gọi là xã Lệ Thủy."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Trị",
+      "ward_code": "19249",
+      "ward_name": "Xã Lệ Thủy"
+    }
+  ]
+}

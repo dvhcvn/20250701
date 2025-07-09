@@ -1,0 +1,18 @@
+{
+  "address": "Phường Cẩm Đông, Thành phố Cẩm Phả, Tỉnh Quảng Ninh",
+  "ellapsedInMs": 5817,
+  "estimatedCost": 0.0021206,
+  "thought": "**Mapping an Old Address to the New Administrative Unit**\n\nOkay, here's how I'm thinking about this. The user wants to map an old address to the new administrative structure, and I need to figure out where \"Phường Cẩm Đông\" in \"Tỉnh Quảng Ninh\" ended up. This is a pretty straightforward process, given the resolutions and data I have.\n\nFirst, the province. The old address is \"Tỉnh Quảng Ninh\". I quickly check the provincial resolutions, specifically 60-NQ/TW, and see that \"Tỉnh Quảng Ninh\" is explicitly listed as a province *not* undergoing any mergers. Good, that's easy.\n\nNow, the tricky part: the ward, \"Phường Cẩm Đông\". I need to scour the resolutions, especially those related to ward restructuring in Quảng Ninh. A keyword search for \"Cẩm Đông\" will be essential here. Bingo! Resolution 1679/NQ-UBTVQH15, concerning ward restructuring in Quảng Ninh, specifically mentions \"Phường Cẩm Đông.\" It explicitly states that \"Phường Cẩm Đông,\" along with several other wards, was merged to form \"Phường Cẩm Phả.\" This is crucial.\n\nNow that I know the new ward, I'll need to find it in the \"New Wards\" data. A quick search for \"Phường Cẩm Phả\" should do the trick. Yep, there it is! I find the entry `{\"ward_code\":\"06793\",\"ward_name\":\"Phường Cẩm Phả\",\"province_name\":\"Tỉnh Quảng Ninh\"}`.\n\nPutting it all together, I can construct the JSON output. The province name is \"Tỉnh Quảng Ninh\" (which we confirmed). The new ward name is \"Phường Cẩm Phả,\" with ward code \"06793.\" And critically, I'll include the relevant citation from resolution 1679/NQ-UBTVQH15 to justify the mapping, providing the exact line that confirmed the merger. Since the resolution directly and specifically states the merger, I can assign a \"high\" confidence level to this result.  This is a clean and confident mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1679/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ninh",
+        "line": "47. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Cẩm Trung, Cẩm Thành, Cẩm Bình, Cẩm Tây và Cẩm Đông thành phường mới có tên gọi là phường Cẩm Phả."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ninh",
+      "ward_code": "06793",
+      "ward_name": "Phường Cẩm Phả"
+    }
+  ]
+}

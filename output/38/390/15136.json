@@ -1,0 +1,18 @@
+{
+  "address": "Xã Cẩm Quý, Huyện Cẩm Thủy, Tỉnh Thanh Hóa",
+  "ellapsedInMs": 7901,
+  "estimatedCost": 0.0029549999999999997,
+  "thought": "**Analyzing the Address and Determining the New Administrative Unit**\n\nOkay, so I've been given the old address: \"Xã Cẩm Quý, Huyện Cẩm Thủy, Tỉnh Thanh Hóa\". My task is to find the corresponding new administrative unit, likely a ward. Here's my thought process:\n\nFirst, the province is clearly \"Tỉnh Thanh Hóa.\" Thankfully, a quick check confirms that Thanh Hóa hasn't been merged with any other province, so that's straightforward.\n\nNext, I need to pinpoint \"Xã Cẩm Quý.\" This is the key piece of information.  I immediately start searching through the resolutions for any mention of this specific ward.\n\nMy search leads me to Resolution 1686/NQ-UBTVQH15. Bingo!  Line 101 within this resolution explicitly states that \"Xã Cẩm Quý\" *and* three other xã are merged to form \"Xã Cẩm Tú.\" This is a strong indicator, almost a direct answer.\n\nTo solidify this, I then look in the \"New Wards\" list and search for \"Xã Cẩm Tú\" within \"Tỉnh Thanh Hóa\". And there it is:  `{\"ward_code\":\"15148\",\"ward_name\":\"Xã Cẩm Tú\",\"province_name\":\"Tỉnh Thanh Hóa\"}`.  Perfect confirmation.\n\nThe output will be:\n*   `province_name`: \"Tỉnh Thanh Hóa\"\n*   `ward_name`: \"Xã Cẩm Tú\"\n*   `ward_code`: \"15148\"\n*   `confidence`: \"high\" (because the linkage is explicit and direct).\n*   `citation`: with the resolution and the exact line of the document.\n\nBefore finalizing, I quickly double-check for any potential inconsistencies. I consider the district (\"Huyện Cẩm Thủy\"), and recall it's being phased out under the schema. While the information could be helpful, there are no duplicates to disambiguate. I look for any other resolutions or lines within the same document that would provide a different conclusion.  I find the creation of a new \"Xã Cẩm Thủy\", but it isn't relevant to \"Xã Cẩm Quý.\" I am confident that \"Xã Cẩm Tú\" is the correct new ward.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1686/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thanh Hóa",
+        "line": "101. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Cẩm Quý, Cẩm Giang, Cẩm Lương và Cẩm Tú thành xã mới có tên gọi là xã Cẩm Tú."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thanh Hóa",
+      "ward_code": "15148",
+      "ward_name": "Xã Cẩm Tú"
+    }
+  ]
+}

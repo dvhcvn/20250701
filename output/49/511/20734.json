@@ -1,0 +1,28 @@
+{
+  "address": "Xã Phước Năng, Huyện Phước Sơn, Tỉnh Quảng Nam",
+  "ellapsedInMs": 7411,
+  "estimatedCost": 0.0028818999999999997,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm tasked with mapping the old Vietnamese address \"Xã Phước Năng, Huyện Phước Sơn, Tỉnh Quảng Nam\" to its new equivalent. My approach is straightforward, leveraging the provided resolutions and the new ward list.\n\nFirst, I identified \"Tỉnh Quảng Nam\" as the old province. Resolution 60-NQ/TW clearly indicates this province merged with Đà Nẵng, resulting in \"Thành phố Đà Nẵng\". This is a crucial first step.\n\nNext, I focused on \"Xã Phước Năng\".  I diligently searched through the \"Other resolutions\" for references to this ward within the context of the new province, \"Thành phố Đà Nẵng\". Resolution 1659/NQ-UBTVQH15 jumped out at me immediately. It specifically addresses the merging of several wards, *including* \"Xã Phước Năng\", and crucially, the resulting *new* ward is also named \"Xã Phước Năng\". This is a direct hit! The context is perfectly aligned with the target province.\n\nTo be absolutely certain, I then consulted the \"New wards\" list and, sure enough, found a record matching the exact name and province:  `{\"ward_code\":\"20734\",\"ward_name\":\"Xã Phước Năng\",\"province_name\":\"Thành phố Đà Nẵng\"}`. This is a perfect confirmation.\n\nJust to be thorough and eliminate any potential false positives, I also scanned other resolutions, looking for mentions of \"Phước Năng\" or similar-sounding names in other provinces.  However, resolutions regarding Đồng Nai, Gia Lai, and Khánh Hòa did not contain the specific ward name I was looking for.\n\nTherefore, the old \"Xã Phước Năng, Tỉnh Quảng Nam\" maps directly and confidently to the new \"Xã Phước Năng, Thành phố Đà Nẵng.\"  The resolution explicitly names it, and the new ward is confirmed in the list. I'm quite confident in this mapping. Now, I need to construct the JSON output reflecting this conclusion.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "10. Hợp nhất tỉnh Quảng Nam và thành phố Đà Nẵng, lấy tên là thành phố Đà Nẵng"
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "20734",
+      "ward_name": "Xã Phước Năng"
+    },
+    {
+      "citation": {
+        "header": "1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng",
+        "line": "88. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Phước Đức, Phước Mỹ và Phước Năng thành xã mới có tên gọi là xã Phước Năng."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "20734",
+      "ward_name": "Xã Phước Năng"
+    }
+  ]
+}

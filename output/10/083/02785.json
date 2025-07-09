@@ -1,0 +1,28 @@
+{
+  "address": "Xã Lùng Vai, Huyện Mường Khương, Tỉnh Lào Cai",
+  "ellapsedInMs": 7524,
+  "estimatedCost": 0.0027228,
+  "thought": "**My Reasoning for Mapping the Old Vietnamese Address**\n\nOkay, so I'm tasked with mapping this old Vietnamese address to its current administrative structure. My starting point is the address details: Xã Lùng Vai (ward), Huyện Mường Khương (district), and Tỉnh Lào Cai (province). I need to figure out how these units have evolved.\n\nFirst, I need to check the province-level changes. The prompt mentioned resolutions, so I'll start with those. I found Resolution 60-NQ/TW, and it clearly states that the province name remains \"Tỉnh Lào Cai.\" So, the province is straightforward – no change.\n\nNext, I delved into other resolutions, specifically 1673/NQ-UBTVQH15, looking for any mention of \"Xã Lùng Vai.\" Bingo! Line 78 explicitly states that \"Xã Lùng Vai\" is being merged with other wards to form \"Xã Bản Lầu.\" This is a key piece of information.\n\nNow, I needed to confirm the existence of \"Xã Bản Lầu\" in the \"New wards\" data.  And there it is: `\"ward_code\":\"02788\",\"ward_name\":\"Xã Bản Lầu\",\"province_name\":\"Tỉnh Lào Cai\"`. Perfect match!\n\nI also quickly scanned for other potential matches, but none seemed relevant to \"Lùng Vai\". One entry, \"Xã Mường Khương,\" caught my eye, but it didn't include \"Lùng Vai\" in its composition according to the provided data.\n\nThe \"Xã Nậm Chày\" entry looked potentially interesting but the resolution information was not given.  Also, Resolution 1673/NQ-UBTVQH15 mentions \"Nậm Chảy\", not \"Nậm Chày\", being merged into \"Xã Mường Khương\". So, it seems a separate resolution or a typo is involved.  In any case, \"Nậm Chày\" is not directly linked to the old ward of \"Lùng Vai.\"\n\nBased on all this evidence – the unchanged province, the direct link in the resolution, and the confirmation in the new ward data – I'm confident in my mapping. I'll construct the JSON output reflecting that \"Xã Lùng Vai\" is now part of \"Xã Bản Lầu.\"  This seems like a very high-confidence match, given the clarity of the source material.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "2. Hợp nhất tỉnh Lào Cai và tỉnh Yên Bái, lấy tên là tỉnh Lào Cai"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "02788",
+      "ward_name": "Xã Bản Lầu"
+    },
+    {
+      "citation": {
+        "header": "1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai",
+        "line": "78. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Bản Sen, Lùng Vai và Bản Lầu thành xã mới có tên gọi là xã Bản Lầu."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "02788",
+      "ward_name": "Xã Bản Lầu"
+    }
+  ]
+}

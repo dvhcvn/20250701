@@ -1,0 +1,48 @@
+{
+  "address": "Thị trấn Thanh Miện, Huyện Thanh Miện, Tỉnh Hải Dương",
+  "ellapsedInMs": 8002,
+  "estimatedCost": 0.0034612999999999996,
+  "thought": "**My Analysis of the Address Mapping**\n\nOkay, I've got this address: \"Thị trấn Thanh Miện, Huyện Thanh Miện, Tỉnh Hải Dương\" and I need to figure out its new administrative units.  Here's how I'm approaching this, step-by-step:\n\nFirst, the province.  Easy enough: \"Tỉnh Hải Dương\". I immediately check my province resolutions (specifically 60-NQ/TW).  Aha! It's been merged with Hải Phòng and is now \"Thành phố Hải Phòng\".  That's a high-confidence match.\n\nNext, the ward: \"Thị trấn Thanh Miện\". I'm looking for this specific name in the other resolutions (like 1669/NQ-UBTVQH15).  Bingo! Line 92 mentions that part of \"Thị trấn Thanh Miện\" becomes \"xã Trường Tân\". Line 104 then clarifies that the *remaining* part becomes \"xã Thanh Miện\".  Interesting.\n\nNow, I cross-reference this with my list of new wards. I see \"Xã Trường Tân\" and \"Xã Thanh Miện\", both belonging to \"Thành phố Hải Phòng\" and with ward codes.  These perfectly align with the resolutions.  I also see \"Phường Ngô Quyền\", but that's a distraction; it's mentioned in a different context.\n\nMy confidence level is very high here. The province mapping is direct, and the ward mapping for \"Thị trấn Thanh Miện\" is explicitly split, guaranteeing a complete coverage between the original and the new wards.  The \"phần còn lại\" clause strongly supports this idea. There's no room for ambiguity.\n\nFinally, I'll output this as a JSON array, meticulously including the relevant citations, confidence level, the new province name, ward code, and the new ward name for each corresponding unit. That should be a clean, accurate, and easily interpreted result for the user.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "7. Hợp nhất tỉnh Hải Dương và thành phố Hải Phòng, lấy tên là thành phố Hải Phòng"
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "11065",
+      "ward_name": "Xã Trường Tân"
+    },
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "92. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số củaxã Phạm Trấn, xã Nhật Quang,phần còn lại của các xã Thống Kênh, Đoàn Thượng, Quang Đức sau khi sắp xếp theo quy định tại khoản 91 Điều này và một phần diện tích tự nhiên của thị trấn Thanh Miệnthành xã mới có tên gọi là **xã Trường Tân**."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "11065",
+      "ward_name": "Xã Trường Tân"
+    },
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "7. Hợp nhất tỉnh Hải Dương và thành phố Hải Phòng, lấy tên là thành phố Hải Phòng"
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "11239",
+      "ward_name": "Xã Thanh Miện"
+    },
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "104. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Cao Thắng, Ngũ Hùng, Tứ Cường và phần còn lại của thị trấn Thanh Miện sau khi sắp xếp theo quy định tại khoản 92 Điều này thành xã mới có tên gọi là **xã Thanh Miện**."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "11239",
+      "ward_name": "Xã Thanh Miện"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Lưu Kiền, Huyện Tương Dương, Tỉnh Nghệ An",
+  "ellapsedInMs": 6633,
+  "estimatedCost": 0.0022136,
+  "thought": "**Analyzing the Vietnamese Address Reorganization**\n\nOkay, I'm breaking down this address mapping task. The goal is to figure out how an old Vietnamese address translates to the new administrative structure. Let's see... the input address includes \"Xã Lưu Kiền,\" \"Huyện Tương Dương,\" and \"Tỉnh Nghệ An.\" My first step is to confirm these are the correct old units.\n\nFirst, I need to check the provincial level. I'll look at Resolution 60-NQ/TW to see if Nghệ An province has been merged or changed. Ah, right! \"10. Tỉnh Nghệ An\" is listed under \"Các đơn vị hành chính cấp tỉnh không thực hiện sáp nhập\" (provinces *not* being merged). Great, so Nghệ An stays Nghệ An.\n\nNow for the tricky part: wards and districts. I need to focus on Resolution 1678/NQ-UBTVQH15, the one specifically about rearranging wards in Nghệ An. I'll scan the text for \"Xã Lưu Kiền.\" Bingo! Line 99 clearly states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Thạch Giám, xã Lưu Kiền và xã Xá Lượng thành xã mới có tên gọi là xã Tương Dương.\"  It's merging \"Xã Lưu Kiền\" into \"Xã Tương Dương\"! That's key.\n\nNext, I'll confirm \"Xã Tương Dương\" exists in the new ward data. Yes! There it is: `{\"ward_code\":\"16876\",\"ward_name\":\"Xã Tương Dương\",\"province_name\":\"Tỉnh Nghệ An\"}`.  I'll double-check that \"Xã Lưu Kiền\" isn't listed as a *separate* new ward, which would indicate a different outcome. Found: \"Xã Tam Hợp\", which means \"Xã Lưu Kiền\" is indeed fully merged.\n\nPutting it all together, I'm confident. The resolution directly addresses \"Xã Lưu Kiền\" and explicitly maps it to \"Xã Tương Dương\". We know \"Xã Tương Dương\" is valid in the new structure, and the province, Nghệ An, remains the same. I'm ready to provide a \"high\" confidence level for this mapping. This is straightforward!\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1678/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Nghệ An",
+        "line": "99. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Thạch Giám, xã Lưu Kiền và xã Xá Lượng thành xã mới có tên gọi là xã Tương Dương."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Nghệ An",
+      "ward_code": "16876",
+      "ward_name": "Xã Tương Dương"
+    }
+  ]
+}

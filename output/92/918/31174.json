@@ -1,0 +1,18 @@
+{
+  "address": "Phường Thới An Đông, Quận Bình Thuỷ, Thành phố Cần Thơ",
+  "ellapsedInMs": 6777,
+  "estimatedCost": 0.0026786,
+  "thought": "**My Analysis of Address Mapping: Thới An Đông, Cần Thơ**\n\nOkay, here's how I'm approaching this address mapping problem. First, I identify the old administrative units from \"Phường Thới An Đông, Quận Bình Thuỷ, Thành phố Cần Thơ\":  the old ward \"Phường Thới An Đông\", old district \"Quận Bình Thuỷ\" (though I know we are focusing on administrative changes, and district elimination is the context), and the old province \"Thành phố Cần Thơ\".\n\nNow, I start by cross-referencing this information with the relevant resolutions, particularly 60-NQ/TW and 1668/NQ-UBTVQH15. I see that \"Thành phố Cần Thơ\" is stable after the mergers outlined in 60-NQ/TW. Next, 1668/NQ-UBTVQH15 is key. Line 5 clearly states that the old \"Phường Thới An Đông\" is now part of a *new* \"Phường Thới An Đông\", combined with Trà An and Trà Nóc.\n\nLooking at the provided new ward data, I find a matching entry: `{\"ward_code\":\"31174\",\"ward_name\":\"Phường Thới An Đông\",\"province_name\":\"Thành phố Cần Thơ\"}`. This solidifies my understanding.  The old ward's name survives the merger in the new ward, and that new ward is in the new data.\n\nBased on this analysis, the mapping is straightforward. The old \"Phường Thới An Đông\" directly maps to the new \"Phường Thới An Đông\" with ward code `31174` in \"Thành phố Cần Thơ\". The key here is that the old name is directly referenced in the resolution, and it's also present in the new ward data. My confidence in this mapping is high due to this direct correlation. I'm ready to output the relevant details in JSON format.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1668/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Cần Thơ",
+        "line": "5. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Trà An, Trà Nóc và Thới An Đông thành phường mới có tên gọi là phường Thới An Đông."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Cần Thơ",
+      "ward_code": "31174",
+      "ward_name": "Phường Thới An Đông"
+    }
+  ]
+}

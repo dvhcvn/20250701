@@ -1,0 +1,18 @@
+{
+  "address": "Phường Bạch Sam, Thị xã Mỹ Hào, Tỉnh Hưng Yên",
+  "ellapsedInMs": 5466,
+  "estimatedCost": 0.0019676999999999997,
+  "thought": "**Analyzing Address Re-Organization in Hưng Yên**\n\nOkay, so I've got an old address in my hands, specifically from \"Phường Bạch Sam\" in \"Tỉnh Hưng Yên,\" and I need to figure out its new ward designation. My initial thought is to isolate those key details, the ward and the province, because the district level unit is gone.\n\nFirst, I dive into the Province Resolutions (60-NQ/TW).  I quickly find \"Tỉnh Hưng Yên\" and see that it remains \"Hưng Yên,\" even after absorbing Thái Bình.  This solidifies my confidence in the province information.\n\nNext, I shift my attention to the other resolutions (1666/NQ-UBTVQH15), zeroing in on \"Phường Bạch Sam.\" Aha! Line 99 is the key: it explicitly states that \"Phường Bạch Sam\" is merged with others to form a new ward, \"Phường Thượng Hồng.\" This is a direct, undeniable link.\n\nNow, I cross-reference this \"Phường Thượng Hồng\" against the provided list of new wards.  Yep, there it is! Confirmed with its ward code and the correct province name.\n\nBuilding the JSON output is straightforward. My confidence level is high because of that direct mention and mapping. The `citation` will point directly to the resolution header and the relevant line.  The province name is Tỉnh Hưng Yên, the ward code and name are pulled directly from the new ward list.  This should be a clean, accurate answer.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên",
+        "line": "99. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Bạch Sam, phường Minh Đức, xã Dương Quang và xã Hòa Phong thành phường mới có tên gọi là phường Thượng Hồng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "12127",
+      "ward_name": "Phường Thượng Hồng"
+    }
+  ]
+}

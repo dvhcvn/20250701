@@ -1,0 +1,28 @@
+{
+  "address": "Xã Tân Thuận Bình, Huyện Chợ Gạo, Tỉnh Tiền Giang",
+  "ellapsedInMs": 9168,
+  "estimatedCost": 0.0033546,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm tasked with translating this old Vietnamese address to its modern equivalent, and it's a bit of a puzzle. I see the old address is in \"Xã Tân Thuận Bình\", \"Huyện Chợ Gạo\", \"Tỉnh Tiền Giang\". My goal is to use the provided resolutions and new ward data to pinpoint the current, accurate administrative units.\n\nFirst, the province has definitely changed. Resolution 60-NQ/TW states that \"Tỉnh Tiền Giang\" and \"Tỉnh Đồng Tháp\" merged, becoming just \"Tỉnh Đồng Tháp\". So, I know my new province is definitely Đồng Tháp.\n\nNow, the ward level is trickier. I found Resolution 1663/NQ-UBTVQH15, specific to \"Tỉnh Đồng Tháp,\" which aligns perfectly.  I scanned through the lines and, bingo! Line 67 is gold: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đăng Hưng Phước, Quơn Long và Tân Thuận Bình thành xã mới có tên gọi là **xã Tân Thuận Bình**.\" This directly confirms that the old \"Xã Tân Thuận Bình\" is part of the *new* \"Xã Tân Thuận Bình.\"  Excellent! I also noticed in Line 68 the \"thị trấn Chợ Gạo, xã Long Bình Điền và xã Song Bình thành xã mới có tên gọi là **xã Chợ Gạo**.\" The old address included \"Huyện Chợ Gạo\". My initial thought is it could be a different Chợ Gạo (a town/ward), but this merits further inspection.\n\nNow I turned to the \"New wards\" data.  I searched and found a clear match: `{\"ward_code\":\"28627\",\"ward_name\":\"Xã Tân Thuận Bình\",\"province_name\":\"Tỉnh Đồng Tháp\"}`. Perfect! That confirms my finding from the resolution. And also found  `{\"ward_code\":\"28594\",\"ward_name\":\"Xã Chợ Gạo\",\"province_name\":\"Tỉnh Đồng Tháp\"}`. Given the district being eliminated, and the town name \"Chợ Gạo\" appearing in the resolution, it seems plausible that the old \"Huyện Chợ Gạo\" contained the town \"Chợ Gạo\" which is now a new ward, and that both the new \"Xã Tân Thuận Bình\" and the new \"Xã Chợ Gạo\" could be relevant to the old address. I'd need more information to definitively say how the old address mapped to these two new wards.\n\nSo, for now, my preliminary conclusion is that the old address likely maps to the new ward \"Xã Tân Thuận Bình\" in the new province \"Tỉnh Đồng Tháp\", and also *potentially* to the new ward \"Xã Chợ Gạo\" in \"Tỉnh Đồng Tháp.\"  I'd need to cross-reference with more historical data or local knowledge to have a more definitive answer regarding the district-level mapping of the old \"Huyện Chợ Gạo\" to these two new wards.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Tiền Giang và tỉnh Đồng Tháp, lấy tên là tỉnh Đồng Tháp"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đồng Tháp",
+      "ward_code": "28627",
+      "ward_name": "Xã Tân Thuận Bình"
+    },
+    {
+      "citation": {
+        "header": "1663/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Tháp",
+        "line": "67. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đăng Hưng Phước, Quơn Long và Tân Thuận Bình thành xã mới có tên gọi là xã Tân Thuận Bình."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đồng Tháp",
+      "ward_code": "28627",
+      "ward_name": "Xã Tân Thuận Bình"
+    }
+  ]
+}

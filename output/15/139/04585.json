@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Trạm Tấu, Huyện Trạm Tấu, Tỉnh Yên Bái",
+  "ellapsedInMs": 6822,
+  "estimatedCost": 0.0022511,
+  "thought": "**My Analysis of the Administrative Address Re-Mapping**\n\nOkay, so I've got this address to map: \"Thị trấn Trạm Tấu\" in \"Huyện Trạm Tấu\", \"Tỉnh Yên Bái\".  The goal is to determine its new administrative unit based on the provided resolutions and the \"New wards\" data.  Here's how I'm approaching this, step-by-step:\n\nFirst, I need to understand the old context. I have identified the relevant old ward, district, and province from the input. Now, I'll go through the resolutions provided. I'll start with the province-level resolutions, specifically those related to administrative boundary changes.  I found that \"Tỉnh Yên Bái\" has been impacted by Resolution 60-NQ/TW, which dictates the merger of provinces, and in this case, it indicates that \"Tỉnh Yên Bái\" is now part of \"Tỉnh Lào Cai\".\n\nNow, I'll focus on the resolutions regarding specific wards and districts. I'm scanning through the other resolutions (like 1673/NQ-UBTVQH15) looking for any mentions of \"Thị trấn Trạm Tấu.\" And bingo! Line 6 of that resolution directly addresses the merger. It states that \"Thị trấn Trạm Tấu\", along with some other areas, is now part of \"Xã Hạnh Phúc\".  This is crucial.\n\nNext, I need to confirm this with the new ward data.  I'll look up \"Xã Hạnh Phúc\" in my \"New wards\" list, and there it is: `{\"ward_code\":\"04585\",\"ward_name\":\"Xã Hạnh Phúc\",\"province_name\":\"Tỉnh Lào Cai\"}`.  The fact that the province name matches what I deduced from the province-level resolutions confirms this mapping.\n\nPutting it all together, I can construct the JSON output. Because the connection is direct and explicit, my confidence is high. The citation will refer to the header of the resolutions (specifically, 1673/NQ-UBTVQH15) and the particular line (Line 6) that mentions \"Thị trấn Trạm Tấu\". The province name will be \"Tỉnh Lào Cai\", the new ward code \"04585\", and the new ward name \"Xã Hạnh Phúc\".\n\nI've taken a moment to re-evaluate the resolutions. Since the input is \"Thị trấn Trạm Tấu\" and line 5 mentions only \"xã Trạm Tấu\" becoming \"xã Trạm Tấu\", it is not relevant to our analysis. Hence, only \"Xã Hạnh Phúc\" will be the correct new ward.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai",
+        "line": "6. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Trạm Tấu và các xã Bản Công, Hát Lừu, Xà Hồ thành xã mới có tên gọi là xã Hạnh Phúc."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "04585",
+      "ward_name": "Xã Hạnh Phúc"
+    }
+  ]
+}

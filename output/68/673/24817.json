@@ -1,0 +1,18 @@
+{
+  "address": "Phường Lộc Tiến, Thành phố Bảo Lộc, Tỉnh Lâm Đồng",
+  "ellapsedInMs": 5914,
+  "estimatedCost": 0.0023788999999999998,
+  "thought": "**Mapping the Old Address to New Administrative Units**\n\nOkay, so I'm being asked to figure out where \"Phường Lộc Tiến,\" \"Thành phố Bảo Lộc,\" and \"Tỉnh Lâm Đồng\" now fall in the updated administrative landscape.  First, I've got to confirm the old province and ward.  Pretty straightforward, it's Lâm Đồng and Lộc Tiến.\n\nNext, I need to check for any province mergers.  Resolution 60-NQ/TW doesn't show any changes for Lâm Đồng, so we're good there.\n\nNow, the real work begins - finding what happened to Phường Lộc Tiến.  I need to go through all the resolutions, looking for a mention of that ward. \"1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng\" seems promising, so I'm focusing my search there.\n\nAh, here we go!  Lines 104 and 105 don't have it, but line 106 clearly states that \"phường Lộc Tiến\" has been merged with Lộc Châu and Đại Lào into a new ward:  \"Phường 3 Bảo Lộc.\"\n\nTo finalize, I need to double-check that \"Phường 3 Bảo Lộc\" is legit in my list of new wards. Yep, there it is!  {\"ward_code\":\"24841\",\"ward_name\":\"Phường 3 Bảo Lộc\",\"province_name\":\"Tỉnh Lâm Đồng\"}.\n\nSo, the new ward is \"Phường 3 Bảo Lộc\" with code \"24841,\" and it's still in Lâm Đồng. I'm going to set my `confidence` to \"high\" because I found a definitive mapping in the resolutions, and build that JSON output now.  Easy.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng",
+        "line": "106. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Lộc Tiến, xã Lộc Châu và xã Đại Lào thành phường mới có tên gọi là **Phường 3 Bảo Lộc**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "24841",
+      "ward_name": "Phường 3 Bảo Lộc"
+    }
+  ]
+}

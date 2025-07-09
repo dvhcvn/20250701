@@ -1,0 +1,28 @@
+{
+  "address": "Xã Mỹ Tài, Huyện Phù Mỹ, Tỉnh Bình Định",
+  "ellapsedInMs": 6920,
+  "estimatedCost": 0.0034348,
+  "thought": "**Finding the New Administrative Unit**\n\nOkay, so I'm tackling this administrative unit search for \"Xã Mỹ Tài, Huyện Phù Mỹ, Tỉnh Bình Định\". My first thought is to break it down. I'll need to work through this systematically.\n\nFirst, I see \"Tỉnh Bình Định\".  I need to check for any province-level changes, especially any mergers, like with Resolution 60-NQ/TW. Ah, there it is: \"Hợp nhất tỉnh Gia Lai và tỉnh Bình Định, lấy tên là tỉnh Gia Lai\". So, Bình Định is merged into Gia Lai, and the new province is \"Tỉnh Gia Lai\".  Good, that's step one.\n\nNext, I need to focus on the ward and district: \"Xã Mỹ Tài\" and \"Huyện Phù Mỹ\".  Now, I have to hunt for any ward-level changes, specifically for anything related to \"Mỹ Tài\" within the context of Bình Định or now, Gia Lai.  I'm looking for relevant resolutions.\n\nBingo! Resolution \"1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai\" looks promising.  Since Bình Định merged into Gia Lai, this is the right place to look. Line 14 jumps out: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Mỹ Tài và xã Mỹ Hiệp thành xã mới có tên gọi là **xã Phù Mỹ Nam**.\"  Perfect!  My old ward \"Xã Mỹ Tài\" is specifically mentioned, and a new ward, \"Xã Phù Mỹ Nam\", is created.\n\nNow, I cross-reference this \"Xã Phù Mỹ Nam\" with my \"New wards\" list.  I'm looking for its code and province.  Ah, there it is: `{\"ward_code\":\"21775\",\"ward_name\":\"Xã Phù Mỹ Nam\",\"province_name\":\"Tỉnh Gia Lai\"}`.\n\nPutting it all together, I can construct the JSON output. I'm feeling confident about this one.\n\n*   `province_name`: \"Tỉnh Gia Lai\" (from the province merger).\n*   `ward_name`: \"Xã Phù Mỹ Nam\" (from the ward resolution).\n*   `ward_code`: \"21775\" (from the new wards list).\n*   `citation`:  This will be the key part:\n    *   `header`: \"1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai\"\n    *   `line`: \"14. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Mỹ Tài và xã Mỹ Hiệp thành xã mới có tên gọi là **xã Phù Mỹ Nam**.\"\n*   `confidence`: \"high\".  The match is direct and unambiguous. This is a solid solution.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "12. Hợp nhất tỉnh Gia Lai và tỉnh Bình Định, lấy tên là tỉnh Gia Lai"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "21775",
+      "ward_name": "Xã Phù Mỹ Nam"
+    },
+    {
+      "citation": {
+        "header": "1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai",
+        "line": "14. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Mỹ Tài và xã Mỹ Hiệp thành xã mới có tên gọi là xã Phù Mỹ Nam."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "21775",
+      "ward_name": "Xã Phù Mỹ Nam"
+    }
+  ]
+}

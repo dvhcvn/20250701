@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tà Long, Huyện Đa Krông, Tỉnh Quảng Trị",
+  "ellapsedInMs": 7118,
+  "estimatedCost": 0.0023942,
+  "thought": "**Mapping a Vietnamese Address to a New Administrative Unit**\n\nOkay, so I've got an address to map: \"Xã Tà Long, Huyện Đa Krông, Tỉnh Quảng Trị.\" My goal is to figure out the corresponding new ward. First, I need to break down the old address:  \"Xã Tà Long,\" is the old ward, \"Huyện Đa Krông\" is the old district, and \"Tỉnh Quảng Trị\" is the old province. Easy enough.\n\nNow, I'm diving into the resolutions to see if there have been any province changes. The \"60-NQ/TW\" document isn't directly applicable for \"Tỉnh Quảng Trị\", but that doesn't mean it's not relevant.  I need to check for mergers or renames. I found that while not merged, it wasn't listed, so the province name remains the same.\n\nNext, I need to check the resolutions for ward changes. I'll focus on the \"Tỉnh Quảng Trị\" resolutions. Bingo!  \"1680/NQ-UBTVQH15\" is the key. Line 49 says \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Ba Nang, Tà Long và Đakrông thành xã mới có tên gọi là **xã Đakrông**.\"  That's exactly what I'm looking for - \"Xã Tà Long\" is merging into \"xã Đakrông\".\n\nNow, I need to confirm the new ward in the \"New wards\" data.  There's a perfect match: `{\"ward_code\":\"19564\",\"ward_name\":\"Xã Đakrông\",\"province_name\":\"Tỉnh Quảng Trị\"}`.\n\nBuilding the output JSON is straightforward. The citation will be from the resolution and line. The confidence is high because it's a direct mapping. The province remains \"Tỉnh Quảng Trị\", and I have the ward code and name: \"19564\" and \"Xã Đakrông\".\n\nFinally, the context provided is to map \"all possible new ward candidates\". In this case, there's only one. The problem also states that the district is only for context, but to provide clarity it is included here as well. The old district is mentioned in the input, and the resolution gives the exact new ward name.\n\nTherefore the output would look like this: `{\"citation\": \"1680/NQ-UBTVQH15\", \"confidence\": \"high\", \"province_name\": \"Tỉnh Quảng Trị\", \"ward_code\": \"19564\", \"ward_name\": \"Xã Đakrông\"}`\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1680/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Trị",
+        "line": "49. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Ba Nang, Tà Long và Đakrông thành xã mới có tên gọi là xã Đakrông."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Trị",
+      "ward_code": "19564",
+      "ward_name": "Xã Đakrông"
+    }
+  ]
+}

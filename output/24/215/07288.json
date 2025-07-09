@@ -1,0 +1,28 @@
+{
+  "address": "Thị trấn Phồn Xương, Huyện Yên Thế, Tỉnh Bắc Giang",
+  "ellapsedInMs": 5817,
+  "estimatedCost": 0.001951,
+  "thought": "**Identifying the New Administrative Unit**\n\nOkay, so I'm presented with an old address: \"Thị trấn Phồn Xương, Huyện Yên Thế, Tỉnh Bắc Giang\". My task is clear: figure out the current ward. First things first, I need to pinpoint the old province, which is \"Tỉnh Bắc Giang.\" Now, I'll consult my knowledge of province resolutions, specifically checking if \"Tỉnh Bắc Giang\" has been merged or renamed. Ah, yes, resolution 60-NQ/TW states that it was combined with Bắc Ninh, becoming \"Tỉnh Bắc Ninh.\"\n\nWith the new province identified, \"Tỉnh Bắc Ninh,\" I can now focus on the old ward, \"Thị trấn Phồn Xương.\" My strategy is to scour other relevant resolutions for this ward, specifically in connection to the new province name. I'll be looking for any resolutions that specifically mention the re-organization.\n\nAfter a thorough search, I find resolution 1658/NQ-UBTVQH15, concerning the restructuring of administrative units in \"Tỉnh Bắc Ninh.\" Line 51 is the key. It details the merging of \"Thị trấn Phồn Xương\" with several other communes to form a new one named \"xã Yên Thế.\"\n\nThe next step is to corroborate this information. So, I will check the \"New wards\" data. Checking for \"xã Yên Thế\" in \"Tỉnh Bắc Ninh\" confirms my initial findings: `{\"ward_code\":\"07288\",\"ward_name\":\"Xã Yên Thế\",\"province_name\":\"Tỉnh Bắc Ninh\"}`.\n\nTherefore, my conclusion is that the new ward for \"Thị trấn Phồn Xương\" is \"Xã Yên Thế\" in \"Tỉnh Bắc Ninh.\" I have a high degree of confidence in this answer because the resolution provides a clear and direct mapping of the old ward to its new entity.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Bắc Ninh và tỉnh Bắc Giang, lấy tên là tỉnh Bắc Ninh"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "07288",
+      "ward_name": "Xã Yên Thế"
+    },
+    {
+      "citation": {
+        "header": "1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh",
+        "line": "51. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Phồn Xương và các xã Đồng Lạc, Đồng Tâm, Tân Hiệp, Tân Sỏi thành xã mới có tên gọi là xã Yên Thế."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "07288",
+      "ward_name": "Xã Yên Thế"
+    }
+  ]
+}

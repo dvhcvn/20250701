@@ -1,0 +1,18 @@
+{
+  "address": "Xã Làng Mô, Huyện Sìn Hồ, Tỉnh Lai Châu",
+  "ellapsedInMs": 7181,
+  "estimatedCost": 0.0026118,
+  "thought": "**Mapping an Old Vietnamese Address to a New Administrative Unit**\n\nOkay, here's how I'm thinking about this.  The user wants to map an old address, \"Xã Làng Mô, Huyện Sìn Hồ, Tỉnh Lai Châu,\" to its new administrative unit.  My goal is to provide the new ward information with high confidence, based on the provided resolutions and new ward data.\n\nFirst, I need to break down the old address. I can identify \"Xã Làng Mô\" as the old ward and \"Tỉnh Lai Châu\" as the province. The district, \"Huyện Sìn Hồ\", while helpful for context, isn't needed for the final output schema.\n\nNext, I'll check if the province has changed. I'll review any province-level resolutions (specifically 60-NQ/TW).  Fortunately, \"Tỉnh Lai Châu\" is explicitly listed as unchanged.\n\nNow, I'll move on to the ward-level resolutions. I've identified \"1670/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lai Châu\" as the relevant resolution. I'll carefully scan this resolution for mentions of \"Xã Làng Mô\". Bingo!  Line 18 clearly states that \"Xã Làng Mô\" is being merged into the new ward, \"xã Tủa Sín Chải\".  This is a direct and definitive mapping.\n\nBased on that resolution, I know that \"xã Tủa Sín Chải\" is the new ward name. I'll search the \"New wards\" data to find a match with `ward_name`: \"Xã Tủa Sín Chải\" and `province_name`: \"Tỉnh Lai Châu\".  I found the corresponding entry with `ward_code`: \"03529\".\n\nFinally, I'll construct the JSON output. I'm going to set `confidence` to \"high\" because the mapping is explicitly stated in a primary resolution. I'll also add a `citation` field that points directly to the relevant line in the resolution, providing the user with direct evidence for my mapping.  I think this is a solid, accurate, and transparent solution.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1670/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lai Châu",
+        "line": "18. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Làng Mô, Tả Ngảo và Tủa Sín Chải thành xã mới có tên gọi là xã Tủa Sín Chải."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lai Châu",
+      "ward_code": "03529",
+      "ward_name": "Xã Tủa Sín Chải"
+    }
+  ]
+}

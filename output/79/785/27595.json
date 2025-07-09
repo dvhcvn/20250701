@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Tân Túc, Huyện Bình Chánh, Thành phố Hồ Chí Minh",
+  "ellapsedInMs": 7191,
+  "estimatedCost": 0.0031402,
+  "thought": "**Determining the New Administrative Unit for \"Thị trấn Tân Túc\"**\n\nOkay, let's break this down systematically. The user's query specifies \"Thị trấn Tân Túc, Huyện Bình Chánh, Thành phố Hồ Chí Minh.\" My focus is on the ward (\"Thị trấn Tân Túc\") and the province (\"Thành phố Hồ Chí Minh\"). I can disregard the district, Bình Chánh, as we're dealing with ward-level reorganization.\n\nFirst, I need to check the higher-level reorganizations. Checking the resolutions regarding provincial-level mergers, I see that Thành phố Hồ Chí Minh is *not* listed as a unit that would be merging or changing. So the province name remains the same.  This streamlines things.\n\nNext, I zero in on \"Thị trấn Tân Túc.\" I'll need to meticulously scan the available resolutions focused on ward-level changes within Thành phố Hồ Chí Minh. Aha! Resolution 1685/NQ-UBTVQH15, specifically line 116, is the key. It details the reorganization: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Tân Túc... thành xã mới có tên gọi là **xã Tân Nhựt**.\"  Perfect! It explicitly states that \"Thị trấn Tân Túc\" is incorporated into the new \"Xã Tân Nhựt.\"\n\nNow I need to confirm this new ward. Cross-referencing \"xã Tân Nhựt\" against my `new_wards` list, filtering for Thành phố Hồ Chí Minh, I find a direct match:  {\"ward_code\":\"27595\",\"ward_name\":\"Xã Tân Nhựt\",\"province_name\":\"Thành phố Hồ Chí Minh\"}.\n\nGiven the direct and explicit nature of the resolution, the level of confidence in this mapping is \"high.\" The resolution clearly states the old ward and its merger.\n\nMy final output will be a JSON structure containing:\n\n*   The citation: \"1685/NQ-UBTVQH15\" and the relevant line.\n*   \"high\" confidence level.\n*   Province: \"Thành phố Hồ Chí Minh\".\n*   The ward code: \"27595\".\n*   The new ward name: \"Xã Tân Nhựt\".\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1685/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của Thành phố Hồ Chí Minh",
+        "line": "116. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Tân Túc, xã Tân Nhựt, phần còn lại của phường Tân Tạo A, xã Tân Kiên sau khi sắp xếp theo quy định tại khoản 39 Điều này và phần còn lại của Phường 16 (Quận 8) sau khi sắp xếp theo quy định tại khoản 16, khoản 23 Điều này thành xã mới có tên gọi là xã Tân Nhựt."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hồ Chí Minh",
+      "ward_code": "27595",
+      "ward_name": "Xã Tân Nhựt"
+    }
+  ]
+}

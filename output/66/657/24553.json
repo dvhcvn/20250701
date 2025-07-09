@@ -1,0 +1,18 @@
+{
+  "address": "Xã Ea Hu, Huyện Cư Kuin, Tỉnh Đắk Lắk",
+  "ellapsedInMs": 6955,
+  "estimatedCost": 0.002229,
+  "thought": "**Mapping the Old Address: Xã Ea Hu**\n\nOkay, so I've got this Vietnamese address to map, specifically \"Xã Ea Hu\" in Đắk Lắk province. The goal is to figure out its new administrative unit based on the provided resolutions and new ward data.\n\nFirst, I identified the key components of the old address: \"Xã Ea Hu\" is the ward, \"Huyện Cư Kuin\" is the district (although I'm told to ignore districts, it's useful context), and \"Tỉnh Đắk Lắk\" is the province.\n\nNow, I'm diving into the province resolutions (60-NQ/TW).  Đắk Lắk's remained Đắk Lắk, despite briefly absorbing Phú Yên. So, the province name is staying put. No change needed there.\n\nNext, I'm checking the other resolutions (1660/NQ-UBTVQH15), specifically looking for \"Xã Ea Hu\". Bingo! Line 49 says \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Cư Êwi, Ea Hu và Ea Ning thành xã mới có tên gọi là **xã Ea Ning**.\" This is the key. \"Ea Hu\" is being merged into \"Ea Ning.\"\n\nTime to cross-reference with the `New wards` data.  I found \"Xã Ea Ning\" and confirmed the following data: `{\"ward_code\":\"24540\",\"ward_name\":\"Xã Ea Ning\",\"province_name\":\"Tỉnh Đắk Lắk\"}`. Perfect match.\n\nFor the output, I'll use the resolution's header and specific line (49) as the `citation`. The `confidence` is \"high\" because this is a direct, explicit mention. The `province_name` and `ward_code` will come directly from the `New wards` data, matching the resolution. \"Tỉnh Đắk Lắk\" is the new province, and \"24540\" is the ward code for \"Xã Ea Ning\".\n\nJust to be thorough, I quickly checked line 6 of the resolutions, but that one is irrelevant to the \"Ea Hu\" mapping.\n\nThis seems clear-cut. I'm ready to generate the JSON output.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1660/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đắk Lắk",
+        "line": "49. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Cư Êwi, Ea Hu và Ea Ning thành xã mới có tên gọi là xã Ea Ning."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đắk Lắk",
+      "ward_code": "24540",
+      "ward_name": "Xã Ea Ning"
+    }
+  ]
+}

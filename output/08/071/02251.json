@@ -1,0 +1,18 @@
+{
+  "address": "Xã Khuôn Hà, Huyện Lâm Bình, Tỉnh Tuyên Quang",
+  "ellapsedInMs": 7455,
+  "estimatedCost": 0.0028529000000000002,
+  "thought": "**Analyzing the Address and Determining the New Mapping**\n\nOkay, I'm diving into this administrative mapping task. I'm given an old address, \"Xã Khuôn Hà, Huyện Lâm Bình, Tỉnh Tuyên Quang,\" and I need to figure out the new corresponding ward based on provided resolutions and ward data. Let's break it down:\n\nFirst, I need to identify the components.  The old province is clearly \"Tỉnh Tuyên Quang,\" and the old ward is \"Xã Khuôn Hà.\"\n\nNow, I'm checking the relevant resolutions. Resolution 60-NQ/TW doesn't actually impact the province name; it notes that Tuyên Quang and Hà Giang merged, but the province name stayed the same. That's straightforward.\n\nThe crucial document is 1684/NQ-UBTVQH15, specifically focusing on administrative changes within Tuyên Quang.  This is where the magic happens. Line 1 of that resolution is key: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Khuôn Hà và xã Thượng Lâm thành xã mới có tên gọi là **xã Thượng Lâm**.\" Bingo! It explicitly states that \"Xã Khuôn Hà\" is merged into \"Xã Thượng Lâm.\"  Line 2 mentions \"Xã Lâm Bình,\" but that's a different situation.\n\nNext, I cross-reference this with the \"New wards\" data.  I find a perfect match: `{\"ward_code\":\"02269\",\"ward_name\":\"Xã Thượng Lâm\",\"province_name\":\"Tỉnh Tuyên Quang\"}`.  The province name and ward name align, and I have a ward code.\n\nTherefore, my conclusion is that \"Xã Khuôn Hà\" is now part of \"Xã Thượng Lâm\" within the province of \"Tỉnh Tuyên Quang.\"  I'm confident in this mapping because the resolution explicitly addresses this specific ward and its merger.  The confidence is high.\n\nSo, the JSON output I'll construct will be:\n\n*   `province_name`: \"Tỉnh Tuyên Quang\"\n*   `ward_name`: \"Xã Thượng Lâm\"\n*   `ward_code`: \"02269\"\n*   `confidence`: \"high\"\n*   `citation`:\n    *   `header`: \"1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang\"\n    *   `line`: \"1. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Khuôn Hà và xã Thượng Lâm thành xã mới có tên gọi là xã Thượng Lâm.\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "1. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Khuôn Hà và xã Thượng Lâm thành xã mới có tên gọi là xã Thượng Lâm."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "02269",
+      "ward_name": "Xã Thượng Lâm"
+    }
+  ]
+}

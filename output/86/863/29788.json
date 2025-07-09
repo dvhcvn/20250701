@@ -1,0 +1,18 @@
+{
+  "address": "Xã Nguyễn Văn Thảnh, Huyện Bình Tân, Tỉnh Vĩnh Long",
+  "ellapsedInMs": 5649,
+  "estimatedCost": 0.0026235,
+  "thought": "**Finding the New Administrative Unit**\n\nOkay, so I'm presented with the old address \"Xã Nguyễn Văn Thảnh, Huyện Bình Tân, Tỉnh Vĩnh Long\" and need to figure out its current equivalent. Here's my thought process:\n\nFirst, I need to check for any province mergers. Given my knowledge, I'll quickly look up Resolution 60-NQ/TW. Ah, no changes there, Vĩnh Long is still Vĩnh Long. Good.\n\nNext, I need to dive into the other resolutions, focusing on changes at the ward level. Let's scan those documents, specifically looking for any mentions of \"Nguyễn Văn Thảnh.\"  Bingo! I find it in `1687/NQ-UBTVQH15`. The resolution states: \"27. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Thành Trung, Nguyễn Văn Thảnh và Mỹ Thuận thành xã mới có tên gọi là **xã Mỹ Thuận**.\"  Excellent! It looks like Nguyễn Văn Thảnh has been merged into Mỹ Thuận.\n\nNow, I need the precise details for Mỹ Thuận.  I'll consult the `new_wards` list, searching for the correct entry.  Ah, here it is: `{\"ward_code\":\"29788\",\"ward_name\":\"Xã Mỹ Thuận\",\"province_name\":\"Tỉnh Vĩnh Long\"}`.\n\nFinally, I'll construct the JSON output. Since the old ward is explicitly mentioned as being merged into the new one, I have a high degree of confidence. The output will include the citation from the resolution, the relevant line stating the merger, the high confidence level, and the details of the new ward: \"Xã Mỹ Thuận\" with its code and province.  That should be a complete and accurate answer.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long",
+        "line": "27. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Thành Trung, Nguyễn Văn Thảnh và Mỹ Thuận thành xã mới có tên gọi là xã Mỹ Thuận."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "29788",
+      "ward_name": "Xã Mỹ Thuận"
+    }
+  ]
+}

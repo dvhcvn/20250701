@@ -1,0 +1,28 @@
+{
+  "address": "Xã Hiền Lương, Huyện Hạ Hoà, Tỉnh Phú Thọ",
+  "ellapsedInMs": 8921,
+  "estimatedCost": 0.0036751,
+  "thought": "**My Mapping Strategy for the Old Address**\n\nOkay, here's how I'm approaching this address mapping task.  I need to translate \"Xã Hiền Lương, Huyện Hạ Hoà, Tỉnh Phú Thọ\" to its new administrative unit.  Being an expert, I'm going to follow a methodical process.\n\nFirst, I confirmed the province, \"Tỉnh Phú Thọ\", was retained after any potential mergers using resolution 60-NQ/TW.  Fortunately, it wasn't merged.\n\nNext, I zeroed in on the ward \"Xã Hiền Lương\" and the district \"Huyện Hạ Hoà\", knowing that districts are being reorganized.  The district is a key piece of information for the resolution search.\n\nI scanned the \"Other resolutions\" for references to \"Xã Hiền Lương\" and \"Huyện Hạ Hoà\".  I skipped resolutions from provinces other than Phú Thọ.  Resolution 1676/NQ-UBTVQH15, concerning Phú Thọ, caught my attention.  Line 27 was the goldmine:  \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Hiền Lương (huyện Hạ Hòa) và xã Xuân Áng thành xã mới có tên gọi là **xã Hiền Lương**.\" Bingo!  It explicitly mentioned \"Xã Hiền Lương\" and clarified it was merged with \"xã Xuân Áng\" to create *a new* \"Xã Hiền Lương\".  The province remains \"Tỉnh Phú Thọ\".\n\nI also checked other lines in that same resolution but found no other relevant matches.  I looked for matches using the text string \"xã Hiền Lương\", checking it wasn't a false positive with the district name.\n\nAfter confirming the new ward name and province, I cross-referenced this information against the \"New wards\" list.  I was pleased to find a perfect match:  `{\"ward_code\":\"08110\",\"ward_name\":\"Xã Hiền Lương\",\"province_name\":\"Tỉnh Phú Thọ\"}`.  That, along with the direct mention in the resolution, gives me high confidence in this mapping.\n\nBased on that thorough analysis, I'm constructing the final JSON output:  `province_name`: \"Tỉnh Phú Thọ\", `ward_name`: \"Xã Hiền Lương\", `ward_code`: \"08110\", and `confidence`: \"high\".  This should be a reliable mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Vĩnh Phúc, tỉnh Phú Thọ và tỉnh Hoà Bình; lấy tên là tỉnh Phú Thọ"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "08110",
+      "ward_name": "Xã Hiền Lương"
+    },
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "27. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Hiền Lương (huyện Hạ Hòa) và xã Xuân Áng thành xã mới có tên gọi là xã Hiền Lương."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "08110",
+      "ward_name": "Xã Hiền Lương"
+    }
+  ]
+}

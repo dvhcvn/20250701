@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tân Dân, Thành phố Hạ Long, Tỉnh Quảng Ninh",
+  "ellapsedInMs": 6786,
+  "estimatedCost": 0.0028762,
+  "thought": "**My Analysis of the Administrative Unit Change**\n\nOkay, so I'm presented with an old address: \"Xã Tân Dân, Thành phố Hạ Long, Tỉnh Quảng Ninh\". My task is to figure out the new administrative unit for this.  First things first, I need to break down the old address. I've got \"Xã Tân Dân\" as the old ward and \"Tỉnh Quảng Ninh\" as the old province. \"Thành phố Hạ Long\" is a district within \"Tỉnh Quảng Ninh\", but my data schema is looking for province and ward specifically.\n\nNext, I have to check for any province mergers as per the 60-NQ/TW document. Luckily, \"Tỉnh Quảng Ninh\" isn't listed for any mergers. It's in the \"don't change\" list. So, the province name remains the same: \"Tỉnh Quảng Ninh\".\n\nNow, the crucial step. I'm searching for resolutions related to \"Tỉnh Quảng Ninh\" that specifically mention \"Tân Dân\". I dig through the data and find **1679/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ninh**. Bingo! This resolution is the key.\n\nSpecifically, \"1. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Bằng Cả, Dân Chủ, **Tân Dân** và Quảng La thành xã mới có tên gọi là **xã Quảng La**.\" That's the one! It directly addresses \"Xã Tân Dân\" in \"Tỉnh Quảng Ninh\". The new ward is \"Xã Quảng La\".\n\nI'm feeling pretty confident, but I cross-reference this new ward with my \"New Wards\" list and, sure enough, there's an entry that matches perfectly: `{\"ward_code\":\"07054\",\"ward_name\":\"Xã Quảng La\",\"province_name\":\"Tỉnh Quảng Ninh\"}`.  Everything aligns.\n\nNow, to construct the JSON output. My citation is \"1679/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ninh\", the relevant line from that resolution is \"1. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Bằng Cả, Dân Chủ, Tân Dân và Quảng La thành xã mới có tên gọi là xã Quảng La.\" My confidence is high because of the direct match and straightforward resolution.  The province name is still \"Tỉnh Quảng Ninh\".  The ward code is \"07054\", and the new ward name is \"Xã Quảng La\".  Case closed!\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1679/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ninh",
+        "line": "1. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Bằng Cả, Dân Chủ, Tân Dân và Quảng La thành xã mới có tên gọi là xã Quảng La."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ninh",
+      "ward_code": "07054",
+      "ward_name": "Xã Quảng La"
+    }
+  ]
+}

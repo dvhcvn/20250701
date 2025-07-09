@@ -1,0 +1,28 @@
+{
+  "address": "Xã Nhơn Hải, Thành phố Quy Nhơn, Tỉnh Bình Định",
+  "ellapsedInMs": 8593,
+  "estimatedCost": 0.0033588000000000003,
+  "thought": "**Finding the New Administrative Unit for the Old Address**\n\nOkay, so I've got this old address: \"Xã Nhơn Hải, Thành phố Quy Nhơn, Tỉnh Bình Định,\" and the task is to pinpoint its new administrative unit. My initial thought process involves a structured approach. I first break it down: \"Tỉnh Bình Định\" (old province), \"Xã Nhơn Hải\" (old ward), and while not directly outputted, I note \"Thành phố Quy Nhơn\" (old district) for context.\n\nThe next crucial step is to handle potential province mergers. I immediately check the provided province resolutions against the given address. Aha! Resolution 60-NQ/TW states that \"Tỉnh Bình Định\" merged with something else. It turns out \"Tỉnh Bình Định\" became \"Tỉnh Gia Lai.\"  This is key information.\n\nNow for the ward resolutions. I diligently sift through them, specifically looking for \"Xã Nhơn Hải\". Here, Resolution 1664/NQ-UBTVQH15 (Gia Lai) catches my eye. Line 103 is a bingo! It outlines the reorganization of several wards, including \"Xã Nhơn Hải,\" into a new ward called \"Phường Quy Nhơn Đông.\"  The fact that it aligns with Quy Nhơn, which is within the original address, solidifies this match. I need to make sure this isn't a false positive. Resolution 1667/NQ-UBTVQH15 (Khánh Hòa) mentions a \"Xã Nhơn Hải\" as well, but this is immediately discounted; the original address was in Bình Định, now Gia Lai, not Khánh Hòa.\n\nWith a firm match identified, I cross-reference this information with the \"New wards\" list. \"Phường Quy Nhơn Đông\" perfectly lines up with the provided data: {\"ward_code\":\"21601\",\"ward_name\":\"Phường Quy Nhơn Đông\",\"province_name\":\"Tỉnh Gia Lai\"}.\n\nI'm ready to construct the JSON output. The province name will naturally be the new one, \"Tỉnh Gia Lai.\" The ward name is \"Phường Quy Nhơn Đông,\" and its code is \"21601.\" The citation needs to reflect the crucial resolution, in this case, 1664/NQ-UBTVQH15. The confidence level is \"high\" – the mapping is clear-cut after considering province mergers and avoiding any false positives. Double-checking, my logic is sound. We have a clear and definitive answer.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Gia Lai và tỉnh Bình Định, lấy tên là tỉnh Gia Lai"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "21601",
+      "ward_name": "Phường Quy Nhơn Đông"
+    },
+    {
+      "citation": {
+        "header": "1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai",
+        "line": "103. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Nhơn Bình và các xã Nhơn Hội, Nhơn Lý, Nhơn Hải thành phường mới có tên gọi là phường Quy Nhơn Đông."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "21601",
+      "ward_name": "Phường Quy Nhơn Đông"
+    }
+  ]
+}

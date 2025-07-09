@@ -1,0 +1,28 @@
+{
+  "address": "Xã Tân Lập, Huyện Sông Lô, Tỉnh Vĩnh Phúc",
+  "ellapsedInMs": 6373,
+  "estimatedCost": 0.0034013,
+  "thought": "**Finding the New Administrative Unit**\n\nOkay, so I'm presented with an old address: \"Xã Tân Lập, Huyện Sông Lô, Tỉnh Vĩnh Phúc.\" My task is to determine the current administrative unit for this location.  First, I need to pinpoint the old province, which is clearly \"Tỉnh Vĩnh Phúc.\"  Now, I'm going to consult province resolutions, particularly those related to the 60-NQ/TW series, to see if any mergers or changes occurred in Vĩnh Phúc. Ah, here we go: \"Hợp nhất tỉnh Vĩnh Phúc, tỉnh Phú Thọ và tỉnh Hoà Bình; lấy tên là tỉnh Phú Thọ.\"  This tells me Vĩnh Phúc was merged into Phú Thọ. Therefore, the new province is now \"Tỉnh Phú Thọ.\"\n\nNext, I identify the old ward and district: \"Xã Tân Lập\" and \"Huyện Sông Lô.\" Since the prompt notes an \"eliminating all districts\" scenario, I'll keep that in mind as I search for relevant resolutions.  Now, I'll delve into the \"Other resolutions,\" specifically looking for mentions of \"Tân Lập\" within the context of either \"Vĩnh Phúc\" or, more likely, \"Phú Thọ,\" and keeping \"Sông Lô\" as a contextual reminder of where we're starting from.\n\nI found **1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ**.  Perfect! Line 58 is key:  \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Tân Lập (huyện Sông Lô), xã Đồng Quế và thị trấn Tam Sơn thành xã mới có tên gọi là **xã Tam Sơn**.\" This directly addresses \"Xã Tân Lập (Huyện Sông Lô)\" and tells me the new ward name is \"Xã Tam Sơn\" within the province of \"Tỉnh Phú Thọ\" – exactly as I predicted.\n\nNow, just to be absolutely certain, I'll double-check the \"New wards\" list for \"Xã Tam Sơn\" in \"Tỉnh Phú Thọ.\"  And there it is: `{\"ward_code\":\"08824\",\"ward_name\":\"Xã Tam Sơn\",\"province_name\":\"Tỉnh Phú Thọ\"}`.  Bingo!\n\nGiven the direct match and clear resolution path, I can confidently construct the JSON output with a \"high\" confidence level.  This seems a straightforward case.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "4. Hợp nhất tỉnh Vĩnh Phúc, tỉnh Phú Thọ và tỉnh Hoà Bình; lấy tên là tỉnh Phú Thọ"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "08824",
+      "ward_name": "Xã Tam Sơn"
+    },
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "58. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Tân Lập (huyện Sông Lô), xã Đồng Quế và thị trấn Tam Sơn thành xã mới có tên gọi là xã Tam Sơn."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "08824",
+      "ward_name": "Xã Tam Sơn"
+    }
+  ]
+}

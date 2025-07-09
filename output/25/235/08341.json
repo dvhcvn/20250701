@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Cẩm Khê, Huyện Cẩm Khê, Tỉnh Phú Thọ",
+  "ellapsedInMs": 5883,
+  "estimatedCost": 0.0021253,
+  "thought": "**My Analysis of the Address Mapping**\n\nOkay, so I'm tasked with figuring out the new administrative unit for an old address. First, I need to break down the input. It looks like the old address points to \"Thị trấn Cẩm Khê\" in \"Huyện Cẩm Khê\" of \"Tỉnh Phú Thọ\".  The prompt says to ignore the district for now.\n\nNow, I'll dive into the resolutions.  I checked the provincial resolutions (like 60-NQ/TW). \"Phú Thọ\" isn't on any \"no change\" lists, but it *is* listed in a group of merged provinces (Vĩnh Phúc, Phú Thọ, and Hòa Bình).  That confirms \"Tỉnh Phú Thọ\" is still the correct province, though it has absorbed others. Good to know.\n\nNext, I need to understand what happened to \"Thị trấn Cẩm Khê.\" I'm looking for its name in other resolutions, and I found resolution 1676/NQ-UBTVQH15.  Bingo! It explicitly states that \"Thị trấn Cẩm Khê\" is merged with \"xã Minh Tân\" and \"xã Phong Thịnh\" to form a new ward called \"Xã Cẩm Khê\".  Perfect.\n\nI checked the \"New Wards\" data.  I found an entry for \"Xã Cẩm Khê\" with the code \"08341\". The `province_name` also matches \"Tỉnh Phú Thọ\".  This solidifies the mapping.\n\nTherefore, the output will be based on the resolution's header and the line describing the change. The confidence is high because of the direct match and clear resolution in the data. The new province name is still \"Tỉnh Phú Thọ\", the new ward code is \"08341\", and the new ward name is \"Xã Cẩm Khê.\" This is straightforward and consistent with the data.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "28. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Cẩm Khê, xã Minh Tân và xã Phong Thịnh thành xã mới có tên gọi là xã Cẩm Khê."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "08341",
+      "ward_name": "Xã Cẩm Khê"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Nguyên Lý, Huyện Lý Nhân, Tỉnh Hà Nam",
+  "ellapsedInMs": 8111,
+  "estimatedCost": 0.002826,
+  "thought": "**My Mapping Strategy for the Old Vietnamese Address**\n\nOkay, here's how I'm approaching this address mapping problem. First, I'm breaking down the old address: it's Xã Nguyên Lý (ward), Huyện Lý Nhân (district - though I know districts are irrelevant now, it's good context), and Tỉnh Hà Nam (province).\n\nThe key is those provided resolutions and the new ward data. I'm starting with the province-level resolutions, specifically Resolution 60-NQ/TW.  I see that Hà Nam isn't on the list of provinces that *aren't* being merged.  Looking at the list of mergers, it's clear: Hà Nam *is* part of a merger! It's merging with Ninh Bình and Nam Định to form Ninh Bình. So, my initial step is that the new `province_name` will be \"Tỉnh Ninh Bình.\"\n\nNext, I'm focusing on the ward level. The resolution for Ninh Bình's ward changes is 1674/NQ-UBTVQH15. I'm scanning this resolution's lines for \"Nguyên Lý.\"  I found a direct hit! Line 12 explicitly states that Nguyên Lý, along with Công Lý and Đức Lý, are being merged into the new ward called \"Xã Nam Xang.\" This is the key piece of information.\n\nNow, I'm cross-referencing this with the `New wards` data to confirm.  I search for \"Xã Nam Xang,\" and I find it:  `{\"ward_code\":\"13591\",\"ward_name\":\"Xã Nam Xang\",\"province_name\":\"Tỉnh Ninh Bình\"}`. This confirms everything!\n\nBased on this, my output will be a JSON object. The `citation` will pinpoint the relevant part of the resolution (line 12). The `confidence` will be \"high\" because the resolution directly addresses the merger of Nguyên Lý into Nam Xang, and it's consistent with the new ward data. My output will include: the province as \"Tỉnh Ninh Bình,\" the `ward_code` as \"13591,\" and the `ward_name` as \"Xã Nam Xang.\"\n\nI've double-checked for any ambiguities. There's only one relevant resolution line, and it's clear-cut. It's a single, direct mapping. I'm confident in this result. Since only one new ward candidate is available, I will provide just the details of the one ward I've identified.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "12. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Công Lý, Nguyên Lý và Đức Lý thành xã mới có tên gọi là xã Nam Xang."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "13591",
+      "ward_name": "Xã Nam Xang"
+    }
+  ]
+}

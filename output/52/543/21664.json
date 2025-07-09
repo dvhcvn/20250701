@@ -1,0 +1,18 @@
+{
+  "address": "Phường Hoài Thanh Tây, Thị xã Hoài Nhơn, Tỉnh Bình Định",
+  "ellapsedInMs": 5464,
+  "estimatedCost": 0.0020867,
+  "thought": "**Address Mapping: Bình Định to Gia Lai**\n\nOkay, so I'm presented with an old Vietnamese address and need to figure out its new administrative location based on resolutions and new ward data. The input is \"Phường Hoài Thanh Tây\", \"Tỉnh Bình Định\".\n\nFirst, I need to get the old province and ward. Got it: \"Tỉnh Bình Định\" and \"Phường Hoài Thanh Tây\". Now, I'll start with the Province Resolutions (60-NQ/TW). Since \"Tỉnh Bình Định\" isn't listed as unchanged, I'll check if it's been merged. Bingo! The resolution says \"Hợp nhất tỉnh Gia Lai và tỉnh Bình Định, lấy tên là tỉnh Gia Lai\". So, the new province is definitely \"Tỉnh Gia Lai\".\n\nNext up, other resolutions, specifically 1664/NQ-UBTVQH15. I'll search those lines for \"Hoài Thanh Tây.\" Ah, line 113 jumps out: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Hoài Thanh, Tam Quan Nam và Hoài Thanh Tây thành phường mới có tên gọi là **phường Hoài Nhơn**.\" Perfect, it directly states that \"Hoài Thanh Tây\" is being merged into \"Phường Hoài Nhơn.\"\n\nNow, I'll cross-reference that with the New Wards data to get the details. Looking for \"Phường Hoài Nhơn\" in the list, I find: `{\"ward_code\":\"21664\",\"ward_name\":\"Phường Hoài Nhơn\",\"province_name\":\"Tỉnh Gia Lai\"}`. Excellent, that's a match!\n\nPutting it all together, my output JSON will be:\n\n*   `province_name`: \"Tỉnh Gia Lai\" (from the province merger).\n*   `ward_name`: \"Phường Hoài Nhơn\" (from resolution 1664/NQ-UBTVQH15).\n*   `ward_code`: \"21664\" (from the new wards data).\n*   `citation`: with the header and line from the resolution that specifically outlines the merger.\n*   `confidence`: High, because it's a clear, direct mapping with a definitive resolution. This is pretty straightforward.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai",
+        "line": "113. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Hoài Thanh, Tam Quan Nam và Hoài Thanh Tây thành phường mới có tên gọi là phường Hoài Nhơn."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "21664",
+      "ward_name": "Phường Hoài Nhơn"
+    }
+  ]
+}

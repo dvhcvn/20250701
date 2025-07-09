@@ -1,0 +1,18 @@
+{
+  "address": "Xã An Hà, Huyện Lạng Giang, Tỉnh Bắc Giang",
+  "ellapsedInMs": 8185,
+  "estimatedCost": 0.0062247,
+  "thought": "**Determining the New Ward for an Old Address**\n\nOkay, so I've got the old address: \"Xã An Hà, Huyện Lạng Giang, Tỉnh Bắc Giang.\" My task is to find the new administrative unit for this address. Here's how I'm thinking about it:\n\nFirst, I need to check for any province mergers. Right, I know that \"Tỉnh Bắc Giang\" has been merged. Looking at the resolutions on provincial mergers, specifically \"60-NQ/TW,\" it confirms that \"Tỉnh Bắc Giang\" is now part of \"Tỉnh Bắc Ninh.\"\n\nNow, I need to focus on \"Tỉnh Bắc Ninh\" and search within the relevant resolutions for any mention of \"Xã An Hà.\" The \"Other resolutions\" section is my starting point. I've found \"1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh.\" That sounds promising!\n\nI'll scan the lines of this resolution. Ah, here it is: Line 50. It explicitly states that \"An Hà\" is included in the merger. It says, \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đào Mỹ, Nghĩa Hòa, An Hà, Nghĩa Hưng và Tiên Lục thành xã mới có tên gọi là **xã Tiên Lục**.\" Fantastic! This confirms that \"Xã An Hà\" is now part of \"Xã Tiên Lục.\"\n\nNow I need to identify the new ward's code and province. The new ward is \"Xã Tiên Lục\" and it's in \"Tỉnh Bắc Ninh\" (due to the merger). I'll find its `ward_code` from the `New wards` list. Searching for \"Xã Tiên Lục\" and \"Tỉnh Bắc Ninh\" gives me: `{\"ward_code\":\"07381\",\"ward_name\":\"Xã Tiên Lục\",\"province_name\":\"Tỉnh Bắc Ninh\"}`. Perfect!\n\nFinally, the JSON output is straightforward. My `citation.header` is \"1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh,\" and the relevant `citation.line` is line 50. My confidence level is high because \"An Hà\" is directly mentioned.  The `province_name` is \"Tỉnh Bắc Ninh\", the `ward_code` is \"07381\", and the `ward_name` is \"Xã Tiên Lục.\"\n\nDouble-checking... everything seems to align. The merger is clear, and the resolution provides a definitive answer. This should be a straightforward and confident result.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh",
+        "line": "50. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đào Mỹ, Nghĩa Hòa, An Hà, Nghĩa Hưng và Tiên Lục thành xã mới có tên gọi là xã Tiên Lục."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "07381",
+      "ward_name": "Xã Tiên Lục"
+    }
+  ]
+}

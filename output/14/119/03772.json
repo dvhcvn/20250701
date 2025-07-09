@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tông Lạnh, Huyện Thuận Châu, Tỉnh Sơn La",
+  "ellapsedInMs": 5221,
+  "estimatedCost": 0.0018821,
+  "thought": "**My Analysis of the Administrative Unit Mapping**\n\nOkay, so I'm being asked to map an old address to a new administrative unit. The old address is \"Xã Tông Lạnh, Huyện Thuận Châu, Tỉnh Sơn La\". I need to be precise here.\n\nFirst, I need to consult those resolutions. I know the provincial resolutions (like 60-NQ/TW) usually cover the big picture.  I quickly see that \"Tỉnh Sơn La\" (Sơn La Province) isn't being merged. Good, that helps narrow things down.\n\nThen, I focused on the other relevant resolutions, specifically 1681/NQ-UBTVQH15. I zeroed in on the section about administrative changes in Sơn La. There it is: line 12.  It explicitly states that \"Xã Tông Lạnh\" *along with several other units* will be *merged* into a new administrative unit called \"Xã Thuận Châu\".  That's key.\n\nNow, I switched gears to the \"New Wards\" data. I have to find \"Xã Thuận Châu\" in the list to get its details. And there it is:  `{\"ward_code\":\"03721\",\"ward_name\":\"Xã Thuận Châu\",\"province_name\":\"Tỉnh Sơn La\"}`.\n\nPerfect! The `province_name` matches what I found in the provincial resolution - no change for Sơn La. The `ward_name` is exactly what the resolution stated: \"Xã Thuận Châu.\"  And the `ward_code` is present. It's a clean, direct match.\n\nThe mapping is straightforward. I can state with high confidence that the old address \"Xã Tông Lạnh, Huyện Thuận Châu, Tỉnh Sơn La\" should be mapped to the new ward, \"Xã Thuận Châu\", with ward code \"03721\".  This analysis is solid, it's consistent with both the larger provincial changes and the specific reorganization details.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1681/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Sơn La",
+        "line": "12. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Thuận Châu và các xã Phổng Ly, Thôm Mòn, Tông Lạnh, Chiềng Pấc thành xã mới có tên gọi là xã Thuận Châu."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Sơn La",
+      "ward_code": "03721",
+      "ward_name": "Xã Thuận Châu"
+    }
+  ]
+}

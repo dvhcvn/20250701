@@ -1,0 +1,18 @@
+{
+  "address": "Xã Đăk Djrăng, Huyện Mang Yang, Tỉnh Gia Lai",
+  "ellapsedInMs": 7906,
+  "estimatedCost": 0.0028149,
+  "thought": "**Address Mapping Analysis: Đăk Djrăng, Gia Lai Province**\n\nOkay, let's break this down systematically. The user has provided an old Vietnamese address, and my job is to map it to the new administrative structure. First, I need to identify the components: \"Xã Đăk Djrăng\" (the ward), \"Huyện Mang Yang\" (the district - but the request is to eliminate districts so it's an old one), and \"Tỉnh Gia Lai\" (the province).\n\nThe process begins by verifying if any province-level changes happened for Gia Lai. Checking the Province Resolutions (60-NQ/TW), I see \"Tỉnh Gia Lai\" isn't listed for any merger. It's listed in the list of provinces that were affected. However, the resolution shows the result of those changes: that Gia Lai remained itself, but absorbed Bình Định. The province name didn't change, which is important to remember.\n\nNext, I need to consult the detailed resolutions (1664/NQ-UBTVQH15) for any changes at the ward level. Scanning the lines, I'm looking for \"Xã Đăk Djrăng.\" Bingo! Line 91 explicitly states \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Kon Dơng và các xã Đăk Yă, Đak Djrăng, Hải Yang thành xã mới có tên gọi là **xã Mang Yang**.\" So, Đăk Djrăng is *merged* into Mang Yang. This is a clear indicator. I also check other lines just to be sure, and I find no other references to Đăk Djrăng.\n\nNow I need to cross-reference this information with the \"New wards\" data.  I search for \"Xã Mang Yang\" and find a perfect match: `{\"ward_code\":\"23794\",\"ward_name\":\"Xã Mang Yang\",\"province_name\":\"Tỉnh Gia Lai\"}`. The province name matches what I've established, so I have strong confidence in this result.\n\nTherefore, the old ward \"Xã Đăk Djrăng\" is now part of the new ward \"Xã Mang Yang.\" My confidence in this is high, given the explicit mention in the resolution. The JSON output will reflect this mapping, complete with the relevant citation, the province name, and the ward code and name. It's a straightforward transformation based on a clear and direct resolution. I'll double-check all the details to ensure the format and types are correct before finalizing.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai",
+        "line": "91. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Kon Dơng và các xã Đăk Yă, Đak Djrăng, Hải Yang thành xã mới có tên gọi là xã Mang Yang."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "23794",
+      "ward_name": "Xã Mang Yang"
+    }
+  ]
+}

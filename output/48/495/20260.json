@@ -1,0 +1,18 @@
+{
+  "address": "Phường Khuê Trung, Quận Cẩm Lệ, Thành phố Đà Nẵng",
+  "ellapsedInMs": 6375,
+  "estimatedCost": 0.0022961,
+  "thought": "**My Analysis of Address Mapping for \"Phường Khuê Trung, Quận Cẩm Lệ, Thành phố Đà Nẵng\"**\n\nOkay, so the task is to map this old address to its corresponding new administrative unit.  I need to break this down logically and reference the provided resolutions and new ward data.\n\nFirst, I parsed the old address.  I've got \"Phường Khuê Trung\" as the old ward name and \"Thành phố Đà Nẵng\" (a province-level city) as the old province name.\n\nNext, I checked the province resolutions, specifically \"60-NQ/TW,\" focusing on any changes to administrative units.  Luckily, this resolution explicitly mentions Đà Nẵng, stating that it remains \"Thành phố Đà Nẵng\" despite a merger with Quảng Nam. This gives me confidence in setting the new `province_name` to \"Thành phố Đà Nẵng.\"\n\nThen, I looked at other relevant resolutions. \"1659/NQ-UBTVQH15\" is key here. Line 11 is a dead ringer: it states the merger of \"Khuê Trung\" with other wards into a **new ward named \"Cẩm Lệ.\"**  Bingo!  That's a direct match.\n\nNow, I searched the \"New wards\" data, and there it is:  `{\"ward_code\":\"20260\",\"ward_name\":\"Phường Cẩm Lệ\",\"province_name\":\"Thành phố Đà Nẵng\"}`.  Perfect!\n\nPutting it all together, I'm confident in the following JSON output:\n\n```json\n[\n  {\n    \"citation\": \"1659/NQ-UBTVQH15\",\n    \"confidence\": \"High\",\n    \"province_name\": \"Thành phố Đà Nẵng\",\n    \"ward_code\": \"20260\",\n    \"ward_name\": \"Phường Cẩm Lệ\"\n  }\n]\n```\n\nI double-checked for any other possibilities, but the other new ward mentioned, \"Xã Tây Hồ,\" isn't relevant based on the information I have.  So, \"Phường Cẩm Lệ\" is the only valid mapping. The schema requires an array of objects, so I've formatted the output accordingly. This should be a clear and accurate mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng",
+        "line": "11. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Hòa Thọ Tây, Hòa Thọ Đông và Khuê Trung thành phường mới có tên gọi là phường Cẩm Lệ."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "20260",
+      "ward_name": "Phường Cẩm Lệ"
+    }
+  ]
+}

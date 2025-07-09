@@ -1,0 +1,18 @@
+{
+  "address": "Phường Hàng Đào, Quận Hoàn Kiếm, Thành phố Hà Nội",
+  "ellapsedInMs": 9256,
+  "estimatedCost": 0.0034875,
+  "thought": "**Analysis of Old Address and Mapping to New Wards**\n\nAlright, let's break this down. The user's asking me to map an old address, \"Phường Hàng Đào, Quận Hoàn Kiếm, Thành phố Hà Nội,\" to its new administrative equivalent based on the provided resolutions and new ward data. Since the prompt specifies focusing on ward and province changes and ignoring district-level eliminations, I'll direct my analysis accordingly.\n\nFirst, I need to identify the key components: the old ward (\"Phường Hàng Đào\"), the old province (\"Thành phố Hà Nội\"), and by implication, the old district (\"Quận Hoàn Kiếm\"). Then, it's time to sift through the provided documentation.\n\nI know I can start by checking the province resolutions. Per 60-NQ/TW, \"Thành phố Hà Nội\" doesn't undergo any merging. I now know the province will remain unchanged. Then, I need to focus on resolution 1656/NQ-UBTVQH15, concerning changes in Hanoi's communes (wards).\n\nLine 1 of this document is critical: it explicitly states that \"Phường Hàng Đào\" (along with several others) *completely* merges into a new ward called \"Phường Hoàn Kiếm.\" This is a clear indicator. I can already see a high likelihood of mapping \"Phường Hàng Đào\" to \"Phường Hoàn Kiếm.\"\n\nI'll check the new ward data to solidify my findings. I find a record matching my expectations: `\"ward_code\":\"00070\",\"ward_name\":\"\\\"Phường Hoàn Kiếm\\\"\",\"province_name\":\"Thành phố Hà Nội\"`.  I also observe the partial merging of \"Phường Cửa Nam\" into the new \"Phường Hoàn Kiếm,\" but that's irrelevant to my analysis of \"Phường Hàng Đào\".\n\nThis gives me very high confidence. I can confirm the following:\n\n*   The primary resolution clearly states the full merging of \"Phường Hàng Đào.\"\n*   The data contains the matching \"Phường Hoàn Kiếm.\"\n*   The province will remain unchanged.\n\nBased on this, I'll structure my JSON output:\n\n*   `citation.header`: \"1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội\"\n*   `citation.line`: \"1. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Hàng Bạc, Hàng Bồ, Hàng Buồm, Hàng Đào, Hàng Gai, Hàng Mã, Lý Thái Tổ và một phần diện tích tự nhiên, quy mô dân số của các phường Cửa Đông, Cửa Nam, Điện Biên, Đồng Xuân, Hàng Bông, Hàng Trống, Tràng Tiền thành phường mới có tên gọi là **phường Hoàn Kiếm**.\"\n*   `confidence`: \"high\"\n*   `province_name`: \"Thành phố Hà Nội\"\n*   `ward_code`: \"00070\"\n*   `ward_name`: \"Phường Hoàn Kiếm\"\n\nThis should accurately map the old address to the new administrative unit.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội",
+        "line": "1. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Hàng Bạc, Hàng Bồ, Hàng Buồm, Hàng Đào, Hàng Gai, Hàng Mã, Lý Thái Tổ và một phần diện tích tự nhiên, quy mô dân số của các phường Cửa Đông, Cửa Nam, Điện Biên, Đồng Xuân, Hàng Bông, Hàng Trống, Tràng Tiền thành phường mới có tên gọi là phường Hoàn Kiếm."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hà Nội",
+      "ward_code": "00070",
+      "ward_name": "Phường Hoàn Kiếm"
+    }
+  ]
+}

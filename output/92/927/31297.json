@@ -1,0 +1,18 @@
+{
+  "address": "Xã Trường Xuân A, Huyện Thới Lai, Thành phố Cần Thơ",
+  "ellapsedInMs": 5869,
+  "estimatedCost": 0.0019241,
+  "thought": "**Analyzing the Administrative Reorganization**\n\nAlright, let's break this down. The user's given me an old address and wants me to figure out its new ward. My initial plan is pretty straightforward. First, I need to confirm the province.  It's \"Thành phố Cần Thơ,\" so step one's done.\n\nNext, I'll need to check those province resolutions, particularly Resolution 60-NQ/TW, to see if anything happened with \"Thành phố Cần Thơ.\"  A quick scan reveals it's a consolidation – \"Thành phố Cần Thơ\" is the surviving name after merging with Sóc Trăng and Hậu Giang, so that part's easy.\n\nNow, for the old ward, which is \"Xã Trường Xuân A.\" Time to dig into those \"Other Resolutions.\" I'm looking for mentions of \"Xã Trường Xuân A\" or anything related. Bingo! Resolution 1668/NQ-UBTVQH15 catches my eye.  Specifically, line 35 of the resolution: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Trường Xuân A, Trường Xuân B và Trường Xuân thành xã mới có tên gọi là **xã Trường Xuân**.\" Perfect! That directly addresses \"Xã Trường Xuân A,\" confirming its merger into \"Xã Trường Xuân.\"\n\nNow that I know the new ward name, \"Xã Trường Xuân,\" I'll search the \"New Wards\" list, making sure it's in \"Thành phố Cần Thơ.\"  And there it is: `{\"ward_code\":\"31294\",\"ward_name\":\"Xã Trường Xuân\",\"province_name\":\"Thành phố Cần Thơ\"}`.\n\nTime to construct the JSON output. The `citation` will be from that crucial resolution.  The `confidence` level is high because the resolution is explicit. Finally, I've got the new `province_name`, `ward_code`, and `ward_name` ready to go. This should do the trick.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1668/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Cần Thơ",
+        "line": "35. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Trường Xuân A, Trường Xuân B và Trường Xuân thành xã mới có tên gọi là xã Trường Xuân."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Cần Thơ",
+      "ward_code": "31294",
+      "ward_name": "Xã Trường Xuân"
+    }
+  ]
+}

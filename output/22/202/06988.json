@@ -1,0 +1,18 @@
+{
+  "address": "Xã Đồn Đạc, Huyện Ba Chẽ, Tỉnh Quảng Ninh",
+  "ellapsedInMs": 5732,
+  "estimatedCost": 0.0018920999999999999,
+  "thought": "**My Mapping Logic for the Address Transformation**\n\nOkay, so I'm tackling this address conversion. First, I need to break down the original address \"Xã Đồn Đạc, Huyện Ba Chẽ, Tỉnh Quảng Ninh\" into its components.  I quickly identify the old ward as \"Xã Đồn Đạc\" and the old province as \"Tỉnh Quảng Ninh\".\n\nNow, the crucial step is analyzing those resolutions. I know I have to check for any province mergers first.  Looking at those province resolutions (specifically, 60-NQ/TW), it confirms \"Tỉnh Quảng Ninh\" wasn't affected by any mergers.  Good, that makes life a little easier.\n\nNext, I dive into the provided `Other resolutions`. I'm specifically hunting for references to \"Xã Đồn Đạc\". Bingo! Resolution 1679/NQ-UBTVQH15, concerning Quảng Ninh's administrative restructuring, catches my eye. Scanning through it, line 10 jumps out. It explicitly states that \"Xã Đồn Đạc\" will be absorbed into the new \"xã Ba Chẽ.\"  This is key.\n\nWith that confirmed, I need to nail down the new administrative details. I reference the `New wards` data to find the corresponding `ward_code` and `ward_name` for \"xã Ba Chẽ\" within \"Tỉnh Quảng Ninh\". I quickly find the perfect match: `{\"ward_code\":\"06970\",\"ward_name\":\"Xã Ba Chẽ\",\"province_name\":\"Tỉnh Quảng Ninh\"}`.\n\nFinally, regarding confidence, I'm feeling very strong about this.  The resolution is crystal clear about the merger of \"Đồn Đạc\" into \"Ba Chẽ\". This isn't ambiguous or indirect; it's a direct mapping.  So, I'm giving this a \"high\" confidence level.\n\nNow, I'll package all this information according to the JSON schema, and I'll have a clean, accurate address transformation ready to go.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1679/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ninh",
+        "line": "10. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Ba Chẽ, các xã Thanh Sơn, Nam Sơn, Đồn Đạc và phần còn lạicủa xã Hải Lạngsau khi sắp xếp theo quy định tại khoản 3 và khoản 7 Điều nàythành xã mới có tên gọi là xã Ba Chẽ."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ninh",
+      "ward_code": "06970",
+      "ward_name": "Xã Ba Chẽ"
+    }
+  ]
+}

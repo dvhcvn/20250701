@@ -1,0 +1,18 @@
+{
+  "address": "Xã Cự Nẫm, Huyện Bố Trạch, Tỉnh Quảng Bình",
+  "ellapsedInMs": 7324,
+  "estimatedCost": 0.0028465999999999995,
+  "thought": "**Analyzing the Address and Resolutions**\n\nAlright, let's break this down. We've got an old Vietnamese address: Xã Cự Nẫm, Huyện Bố Trạch, Tỉnh Quảng Bình. The goal is to map this to the new administrative units.  I'm focusing on the province and ward primarily, keeping the district in mind for context.\n\nFirst, the province.  I'm checking Resolution 60-NQ/TW. Finding \"Tỉnh Quảng Bình\" in the \"not merged\" list is a good start. However, it's not there, so I check the \"merged\" list. Ah, there it is:  \"Hợp nhất tỉnh Quảng Bình và tỉnh Quảng Trị, lấy tên là tỉnh Quảng Trị\" (Item 9). So, \"Tỉnh Quảng Bình\" is now \"Tỉnh Quảng Trị.\"\n\nNow, Resolution 1680/NQ-UBTVQH15, concerning \"tỉnh Quảng Trị\", should be relevant. I scan this document for \"Xã Cự Nẫm.\"  Line 23 nails it: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Hưng Trạch, Cự Nẫm, Vạn Trạch và Phú Định thành xã mới có tên gọi là **xã Bố Trạch**.\" Perfect! Cự Nẫm is being merged into Bố Trạch.\n\nTime to confirm this with the new ward data. I search for \"Xã Bố Trạch\" and filter for \"Tỉnh Quảng Trị.\" Bingo! {\"ward_code\":\"19141\",\"ward_name\":\"Xã Bố Trạch\",\"province_name\":\"Tỉnh Quảng Trị\"} confirms everything.\n\nGiven the prompt stated that district would not be in the output, I will not include \"Huyện Bố Trạch\" in the output data. \n\nSo, I'm pretty confident in the mapping:\n\n*   Old Province: Tỉnh Quảng Bình -> New Province: Tỉnh Quảng Trị (via 60-NQ/TW)\n*   Old Ward: Xã Cự Nẫm -> New Ward: Xã Bố Trạch (via 1680/NQ-UBTVQH15)\n*   New Ward Code: 19141 (from New Wards data)\n\nThe confidence level here is high.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1680/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Trị",
+        "line": "23. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Hưng Trạch, Cự Nẫm, Vạn Trạch và Phú Định thành xã mới có tên gọi là xã Bố Trạch."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Trị",
+      "ward_code": "19141",
+      "ward_name": "Xã Bố Trạch"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Vĩnh Trạch Đông, Thành phố Bạc Liêu, Tỉnh Bạc Liêu",
+  "ellapsedInMs": 7895,
+  "estimatedCost": 0.0028354,
+  "thought": "**My Mapping Strategy: Old Vietnamese Address to New Units**\n\nOkay, here's how I'm thinking about this. The user wants to map an old address to the new administrative units.  I've got an old address: \"Xã Vĩnh Trạch Đông\" (ward), \"Thành phố Bạc Liêu\" (city/district), and \"Tỉnh Bạc Liêu\" (province).  My goal is to figure out the corresponding new province and ward.\n\nFirst, I identified the components of the old address. Then, I tackled the province-level changes.  The crucial part is the Province Resolutions (specifically 60-NQ/TW). I checked if \"Tỉnh Bạc Liêu\" was in the \"no merger\" list, but it wasn't.  Then, in the \"post-merger\" list, I found the key: \"Hợp nhất tỉnh Bạc Liêu và tỉnh Cà Mau, lấy tên là tỉnh Cà Mau.\"  So, my new province is definitely \"Tỉnh Cà Mau\".\n\nNext, I turned to other relevant resolutions, specifically 1655/NQ-UBTVQH15. This deals with administrative restructuring within Cà Mau, which is now relevant. I carefully scanned the resolution for mentions of \"Xã Vĩnh Trạch Đông\".  After reading through it line by line, I found a direct hit! Line 57 specifically states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Nhà Mát, xã Vĩnh Trạch Đông và xã Hiệp Thành thành phường mới có tên gọi là **phường Hiệp Thành**.\"  Perfect! \"Xã Vĩnh Trạch Đông\" is now part of \"Phường Hiệp Thành\".\n\nTo confirm my findings, I cross-referenced this with the \"New wards\" data.  I looked for \"Phường Hiệp Thành\", and sure enough, there was a match: `{\"ward_code\":\"31840\",\"ward_name\":\"Phường Hiệp Thành\",\"province_name\":\"Tỉnh Cà Mau\"}`.  That solidifies it.\n\nFinally, I built the JSON output.  The citation information from resolution 1655, line 57 is clear. My confidence in the mapping is high because of the direct mention in the resolution and the corroboration from the new ward data.  The province name is \"Tỉnh Cà Mau\" (from the merger), and the new ward code and name are \"31840\" and \"Phường Hiệp Thành\" respectively.  It all lines up neatly!\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1655/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Cà Mau",
+        "line": "57. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Nhà Mát, xã Vĩnh Trạch Đông và xã Hiệp Thành thành phường mới có tên gọi là phường Hiệp Thành."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Cà Mau",
+      "ward_code": "31840",
+      "ward_name": "Phường Hiệp Thành"
+    }
+  ]
+}

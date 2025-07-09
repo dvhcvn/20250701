@@ -1,0 +1,18 @@
+{
+  "address": "Xã Công Hải, Huyện Thuận Bắc, Tỉnh Ninh Thuận",
+  "ellapsedInMs": 7714,
+  "estimatedCost": 0.0030002999999999996,
+  "thought": "**Analysis of Address Mapping: \"Xã Công Hải, Huyện Thuận Bắc, Tỉnh Ninh Thuận\"**\n\nOkay, let's break this down. We've got an old address: \"Xã Công Hải, Huyện Thuận Bắc, Tỉnh Ninh Thuận\" and we need to map it to the new administrative structure. First, I identify the old province and ward: Tỉnh Ninh Thuận and Xã Công Hải.\n\nThe crucial piece here is the province.  I immediately consult the province resolutions (60-NQ/TW). The key resolution clearly states that \"Tỉnh Ninh Thuận\" merged with something else, becoming \"Tỉnh Khánh Hòa.\"  This is the first piece of the puzzle.\n\nNext, the ward \"Xã Công Hải\".  I move to the other resolutions, focusing on any that might mention that specific ward. Resolution 1667/NQ-UBTVQH15, concerning Khánh Hòa, *immediately* catches my eye. It has a section specifically about \"Xã Công Hải\". Specifically, it mentions the merger of Phước Chiến and Công Hải *into* a new \"Xã Công Hải\".  Because Ninh Thuận is now part of Khánh Hòa, this resolution directly applies.  This is a significant find.\n\nNow, I cross-reference this information with the `new_wards` data, specifically searching for \"Xã Công Hải\" within \"Tỉnh Khánh Hòa\".  And bingo!  There's a direct match:  `{\"ward_code\":\"22840\",\"ward_name\":\"Xã Công Hải\",\"province_name\":\"Tỉnh Khánh Hòa\"}`. This confirms the new ward.\n\nThe confidence level here is high.  The province mapping is clear-cut due to the explicit merger resolution.  And the ward change is equally explicit in the Khánh Hòa resolution. The match in the `new_wards` data is the final confirmation.\n\nTherefore, the mapping should produce the following JSON:\n* province_name: Tỉnh Khánh Hòa\n* ward_name: Xã Công Hải\n* ward_code: 22840\n* confidence: high\n* citation:\n    * header: \"1667/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Khánh Hòa\"\n    * line: \"41. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Phước Chiến và xã Công Hải thành xã mới có tên gọi là **xã Công Hải**.\"\n\nEven though the province merge is a necessary antecedent, the ward resolution is the more direct and relevant citation here. It explicitly dictates the name of the new ward, which is the ultimate goal of the mapping.  The province merger forms the basis for this, but the ward resolution is the primary driver of the final outcome.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1667/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Khánh Hòa",
+        "line": "41. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Phước Chiến và xã Công Hải thành xã mới có tên gọi là xã Công Hải."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Khánh Hòa",
+      "ward_code": "22840",
+      "ward_name": "Xã Công Hải"
+    }
+  ]
+}

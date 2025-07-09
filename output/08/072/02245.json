@@ -1,0 +1,18 @@
+{
+  "address": "Xã Côn Lôn, Huyện Na Hang, Tỉnh Tuyên Quang",
+  "ellapsedInMs": 8714,
+  "estimatedCost": 0.0030728,
+  "thought": "**Reconciling Old and New Administrative Units for \"Xã Côn Lôn\"**\n\nOkay, let's break this down. The objective is to map the old address \"Xã Côn Lôn, Huyện Na Hang, Tỉnh Tuyên Quang\" to its new administrative equivalent. As an expert in this field, I'll systematically analyze the available information.\n\nFirst, the province: the input address clearly states \"Tỉnh Tuyên Quang.\" Checking Resolution 60-NQ/TW reveals a merger with Hà Giang, but ultimately the province retains the name \"Tuyên Quang\". Therefore, the `province_name` will remain \"Tỉnh Tuyên Quang.\"\n\nNext, I need to focus on \"Xã Côn Lôn.\" Examining Resolution 1684/NQ-UBTVQH15, I immediately see line 5, which is particularly relevant: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Sinh Long và xã Côn Lôn thành xã mới có tên gọi là **xã Côn Lôn**.\" This explicitly states that the *old* \"Xã Côn Lôn\" is merged with \"Xã Sinh Long\" to form a *new* \"Xã Côn Lôn.\"  The key here is that the new ward retains the old name.\n\nFurthermore, line 9 of the same resolution mentions \"thị trấn Na Hang.\" Since the old address includes \"Huyện Na Hang,\" this suggests a potential shift in administrative levels. However, line 9 relates to \"thị trấn Na Hang\" (a town) while the input address includes \"Xã Côn Lôn\" (a ward), thus it's less critical for the current task.\n\nNow, let's compare this with the new ward data. We have `{\"ward_code\":\"02245\",\"ward_name\":\"Xã Côn Lôn\",\"province_name\":\"Tỉnh Tuyên Quang\"}`. This is a perfect match! The new ward data directly aligns with both the name and province from the original address, and aligns perfectly with resolution 1684/NQ-UBTVQH15, line 5.\n\nTherefore, the final JSON output will reflect this clarity:\n\n*   `province_name`: \"Tỉnh Tuyên Quang\" (confirmed by Resolution 60-NQ/TW)\n*   `ward_name`: \"Xã Côn Lôn\" (direct match from new data and Resolution 1684/NQ-UBTVQH15, line 5)\n*   `ward_code`: \"02245\" (from the new ward data)\n*   `citation`: \"1684/NQ-UBTVQH15: Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Sinh Long và xã Côn Lôn thành xã mới có tên gọi là **xã Côn Lôn**.\" (specifically line 5 from Resolution 1684/NQ-UBTVQH15)\n*   `confidence`: \"high\" (because of the direct name match and the clear language in the resolution).\n\nFinally, I have to re-evaluate the district element: the elimination of districts, or their change in status is mentioned by Resolution 60-NQ/TW. This directly implies the change from 'Huyện Na Hang' to the new 'Xã Côn Lôn' ward that falls directly under the 'Tỉnh Tuyên Quang' province.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "5. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Sinh Long và xã Côn Lôn thành xã mới có tên gọi là xã Côn Lôn."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "02245",
+      "ward_name": "Xã Côn Lôn"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tân Cảnh, Huyện Đắk Tô, Tỉnh Kon Tum",
+  "ellapsedInMs": 7256,
+  "estimatedCost": 0.003084,
+  "thought": "**Mapping an Old Vietnamese Address to a New Administrative Unit**\n\nOkay, here's how I'm approaching this mapping task, step-by-step. First, I've identified the key components of the old address: Xã Tân Cảnh, Huyện Đắk Tô, and Tỉnh Kon Tum. My immediate goal is to figure out the new ward associated with this old address, given the provided resolutions.\n\nThe initial step is about the province. I've recognized that based on Resolution 60-NQ/TW, Kon Tum has been merged into Quảng Ngãi. So, the new `province_name` will definitely be \"Tỉnh Quảng Ngãi\".\n\nNow, the crucial part: finding the new ward. I'm scrutinizing the provided ward resolutions, specifically 1664/NQ-UBTVQH15 and 1677/NQ-UBTVQH15. Resolution 1664 turns out to be irrelevant. However, Resolution 1677 is the golden ticket.  Line 58 explicitly states that \"Xã Tân Cảnh\" is merged into \"xã Đăk Tô\". Excellent! This is a clear indicator that \"Xã Tân Cảnh\" no longer exists as a standalone ward.\n\nWith this crucial piece of information, I check the `New wards` list for \"Xã Đăk Tô\" under the \"Tỉnh Quảng Ngãi\" province. And there it is: `{\"ward_code\":\"23401\",\"ward_name\":\"Xã Đăk Tô\",\"province_name\":\"Tỉnh Quảng Ngãi\"}`. This is a perfect match.\n\nMy JSON output is straightforward.  I'll use the relevant line from Resolution 1677 as my `citation`. The `confidence` level will be \"high\" because this is a direct, unambiguous match. I'll include the new `province_name` (\"Tỉnh Quảng Ngãi\"), the corresponding `ward_code` (\"23401\"), and the `ward_name` (\"Xã Đăk Tô\").\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1677/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ngãi",
+        "line": "58. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Đăk Tô và các xã Tân Cảnh, Pô Kô, Diên Bình thành xã mới có tên gọi là xã Đăk Tô."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ngãi",
+      "ward_code": "23401",
+      "ward_name": "Xã Đăk Tô"
+    }
+  ]
+}

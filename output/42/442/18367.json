@@ -1,0 +1,18 @@
+{
+  "address": "Xã Xuân Hải, Huyện Nghi Xuân, Tỉnh Hà Tĩnh",
+  "ellapsedInMs": 7399,
+  "estimatedCost": 0.0027552999999999996,
+  "thought": "**My Analysis of the Administrative Unit Change**\n\nOkay, here's how I'm thinking about this. The user has given me an old address and wants the new equivalent, specifically, identifying the new *ward* (administrative unit) for \"Xã Xuân Hải, Huyện Nghi Xuân, Tỉnh Hà Tĩnh.\" My field is spatial analysis and I know how to navigate this data.\n\nFirst, I need to make sure the province is still the same. I'll check `60-NQ/TW` for province mergers. The information shows that \"Tỉnh Hà Tĩnh\" remains unchanged. Good, that simplifies things.\n\nNext, I need to pinpoint the specific change for \"Xã Xuân Hải.\" I'll start by looking within the Hà Tĩnh province resolutions. I've got to be careful, as that name is probably common.\n\nI am scanning the provided resolutions, specifically `1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh`. And there it is: line 36. It says that the area and population of \"Xã Xuân Hải,\" along with a few others, are merged to become \"Xã Đan Hải.\" Bingo!\n\nI want to make sure I am not missing anything, so I must double check other potential resolutions mentioning \"Xã Xuân Hải\". I need to be certain there isn't another \"Xã Xuân Hải\" in a different province involved. I scan through resolutions for Đắk Lắk, Khánh Hòa, and Nghệ An. They have \"xã Xuân Hải\", but they aren't relevant. That's a relief!\n\nNow, I'll cross-reference the `New wards` list to confirm this. I look for \"Xã Đan Hải\" within \"Tỉnh Hà Tĩnh\" and find it: `{\"ward_code\":\"18364\",\"ward_name\":\"Xã Đan Hải\",\"province_name\":\"Tỉnh Hà Tĩnh\"}`. Perfect match. The data is consistent.\n\nThe resolution language is direct: it clearly states the merging of \"Xã Xuân Hải\" into \"Xã Đan Hải.\" The confidence level is high. Now, I will put together the required JSON output based on this analysis.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh",
+        "line": "36. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đan Trường, Xuân Hải, Xuân Hội và Xuân Phổ thành xã mới có tên gọi là xã Đan Hải."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hà Tĩnh",
+      "ward_code": "18364",
+      "ward_name": "Xã Đan Hải"
+    }
+  ]
+}

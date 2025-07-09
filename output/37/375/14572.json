@@ -1,0 +1,18 @@
+{
+  "address": "Xã Khánh Lợi, Huyện Yên Khánh, Tỉnh Ninh Bình",
+  "ellapsedInMs": 7996,
+  "estimatedCost": 0.0028511,
+  "thought": "**My Mapping Strategy for Vietnamese Administrative Units**\n\nOkay, so I'm tackling this address: \"Xã Khánh Lợi, Huyện Yên Khánh, Tỉnh Ninh Bình.\" My first step, as always, is breaking it down. I quickly identified the old province (Tỉnh Ninh Bình), the old district (Huyện Yên Khánh, though I note the prompt's focus on elimination, it's context here), and the old ward (Xã Khánh Lợi).\n\nNext, I need to check the province resolutions. I found that resolution 60-NQ/TW doesn't change the name of Tỉnh Ninh Bình. That's a good start.\n\nThen comes the deep dive into the \"Other Resolutions\" specifically looking for mentions of \"Xã Khánh Lợi\" within Tỉnh Ninh Bình. Resolution 1674/NQ-UBTVQH15 stood out. Line 83 within this resolution is gold! It states, \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Khánh Cường, Khánh Lợi và Khánh Thiện thành xã mới có tên gọi là **xã Khánh Thiện**.\" Bingo! \"Xã Khánh Lợi\" is explicitly merged into \"Xã Khánh Thiện\".\n\nNow, I cross-referenced this with the \"New wards\" data.  Sure enough, \"Xã Khánh Thiện\" is there:  `{\"ward_code\":\"14563\",\"ward_name\":\"Xã Khánh Thiện\",\"province_name\":\"Tỉnh Ninh Bình\"}`.\n\nTime to construct the JSON output. The `citation` will point directly to resolution 1674/NQ-UBTVQH15, line 83. The `confidence` level is definitely \"high\" because this is a direct, unambiguous match.  My `province_name` will be \"Tỉnh Ninh Bình\", and the `ward_code` and `ward_name` come straight from that new ward data.\n\nBefore I finalize, I reread the resolution, focusing on other lines that could affect \"Xã Khánh Lợi.\" Line 27 mentions \"xã Yên Khánh\", but that's a *ward* and distinct from the district. Line 81 discusses the creation of a ward named \"Yên Khánh\", and this line is also not relevant to \"Xã Khánh Lợi\". So I'm confident that line 83 is the only relevant piece. All seems clear.  I have my mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "83. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Khánh Cường, Khánh Lợi và Khánh Thiện thành xã mới có tên gọi là xã Khánh Thiện."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "14563",
+      "ward_name": "Xã Khánh Thiện"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Lương Thông, Huyện Hà Quảng, Tỉnh Cao Bằng",
+  "ellapsedInMs": 7026,
+  "estimatedCost": 0.0027646,
+  "thought": "**Address Mapping for Xã Lương Thông**\n\nOkay, let's break this down. The user's providing an old address: \"Xã Lương Thông, Huyện Hà Quảng, Tỉnh Cao Bằng\" and wants to find the corresponding new administrative unit. My initial steps are clear:\n\n1.  **Pinpointing the Old Units:** First, I need to isolate the old ward, district, and province. Easy enough – I've got \"Xã Lương Thông,\" \"Huyện Hà Quảng\" (though, eliminating districts is the goal), and \"Tỉnh Cao Bằng.\"\n\n2.  **Province Stability Check:** Now, I'm checking the province resolutions. Resolution 60-NQ/TW states that Cao Bằng remains unchanged. Confident in that.\n\n3.  **Diving into Specific Resolutions:** Next, I'm focusing on those other resolutions related to \"Xã Lương Thông\" within Cao Bằng. The 1657/NQ-UBTVQH15 resolution looks promising. Scanning through the lines, I'm searching for mentions of \"Lương Thông\". Aha! Line 22 is the key: it details the merger of Lương Thông with Cần Nông and Cần Yên, forming \"Xã Cần Yên.\"\n\n4.  **Confirming the New Ward:** Now, time to verify this \"Xã Cần Yên\" in the provided new ward data. Bingo! It's there:  `{\"ward_code\":\"01366\",\"ward_name\":\"Xã Cần Yên\",\"province_name\":\"Tỉnh Cao Bằng\"}`. Matches perfectly.\n\n5.  **Output Construction:** I can now build the JSON response: \"Tỉnh Cao Bằng\" (unchanged, high confidence); the new \"Xã Cần Yên\" ward using the code \"01366\" (from the new ward data). The citation comes from the resolution I found earlier, specifically line 22.\n\n6.  **Confidence and Output:**  Only one clear match so the confidence is high. That should satisfy the user's request.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1657/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Cao Bằng",
+        "line": "22. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của cácxã Cần Nông, Lương Thông và Cần Yên thành xã mới có tên gọi là xã Cần Yên."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Cao Bằng",
+      "ward_code": "01366",
+      "ward_name": "Xã Cần Yên"
+    }
+  ]
+}

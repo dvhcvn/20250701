@@ -1,0 +1,28 @@
+{
+  "address": "Phường Tân Phước, Thành phố Phú Mỹ, Tỉnh Bà Rịa - Vũng Tàu",
+  "ellapsedInMs": 9008,
+  "estimatedCost": 0.0048891,
+  "thought": "**My Analysis of the Administrative Reorganization**\n\nOkay, so I'm presented with an old address: \"Phường Tân Phước, Thành phố Phú Mỹ, Tỉnh Bà Rịa - Vũng Tàu\". My task is to figure out the new administrative unit(s) based on this old one. This requires a systematic approach, starting with province-level changes.\n\nFirst, I need to check for province mergers. Consulting `60-NQ/TW`, I find that \"Tỉnh Bà Rịa - Vũng Tàu\" was absorbed into \"Thành phố Hồ Chí Minh.\" So, my focus shifts to the latter.\n\nNext, I have to pinpoint the specific ward changes within \"Thành phố Hồ Chí Minh.\" Resolutions are my primary resource here. Resolution `1685/NQ-UBTVQH15`, concerning the reorganization of commune-level administrative units in \"Thành phố Hồ Chí Minh,\" looks promising. Line 110 is crucial: it explicitly states that \"phường Phước Hòa\" and \"phường Tân Phước\" are merged to form a *new* \"phường Tân Phước.\" Bingo!\n\nNow, the old address includes \"Thành phố Phú Mỹ.\" The instruction mentions \"eliminating all districts,\" meaning that \"Thành phố Phú Mỹ\" as a district no longer exists. While the resolution text still *mentions* \"thành phố Phú Mỹ,\" this likely serves as a geographical reference to the *old* location of the wards, as the new wards directly report to the province level.\n\nTo be certain, I cross-reference this information with the `New wards` list. Lo and behold, I find a perfect match: `{\"ward_code\":\"26713\",\"ward_name\":\"Phường Tân Phước\",\"province_name\":\"Thành phố Hồ Chí Minh\"}`. This confirms the new ward is indeed \"Phường Tân Phước,\" and it's now under the jurisdiction of \"Thành phố Hồ Chí Minh.\"\n\nMy confidence is high. The province merger is clear, the specific ward reorganization is explicit, and the `New wards` list corroborates my findings. The old address now refers to a ward directly belonging to the province.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "16. Hợp nhất tỉnh Bà Rịa - Vũng Tàu, tỉnh Bình Dương và Thành phố Hồ Chí Minh; lấy tên là Thành phố Hồ Chí Minh"
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hồ Chí Minh",
+      "ward_code": "26713",
+      "ward_name": "Phường Tân Phước"
+    },
+    {
+      "citation": {
+        "header": "1685/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của Thành phố Hồ Chí Minh",
+        "line": "110. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Phước Hòa và phường Tân Phước thành phường mới có tên gọi là phường Tân Phước."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hồ Chí Minh",
+      "ward_code": "26713",
+      "ward_name": "Phường Tân Phước"
+    }
+  ]
+}

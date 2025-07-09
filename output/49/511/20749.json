@@ -1,0 +1,28 @@
+{
+  "address": "Xã Phước Lộc, Huyện Phước Sơn, Tỉnh Quảng Nam",
+  "ellapsedInMs": 7962,
+  "estimatedCost": 0.0032864,
+  "thought": "**Mapping Old Address to New Administrative Units**\n\nOkay, so I'm tasked with figuring out the new address for \"Xã Phước Lộc, Huyện Phước Sơn, Tỉnh Quảng Nam.\"  My approach is straightforward: I need to trace the changes based on the provided resolutions and the \"New wards\" list.  First things first, I'll tackle the province.  I see \"Tỉnh Quảng Nam\" in the old address, so I immediately check the relevant resolution, 60-NQ/TW, to see if Quảng Nam was merged or kept. The \"không thực hiện sáp nhập\" list doesn't include Quảng Nam, but the \"hợp nhất\" list does, specifically: \"Hợp nhất tỉnh Quảng Nam và thành phố Đà Nẵng, lấy tên là thành phố Đà Nẵng.\"  Alright, so \"Tỉnh Quảng Nam\" becomes \"Thành phố Đà Nẵng.\" Easy enough.\n\nNow, for the ward and district: \"Xã Phước Lộc, Huyện Phước Sơn.\" The resolutions state that all districts are eliminated, which means \"Huyện Phước Sơn\" is no longer relevant. My focus shifts to \"Xã Phước Lộc.\" I need to find its fate in the resolutions related to \"Thành phố Đà Nẵng\".\n\nScanning the \"Other resolutions,\" I find the crucial one: 1659/NQ-UBTVQH15, \"Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng.\" This resolution holds the key: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Phước Lộc, Phước Kim và Phước Thành thành xã mới có tên gọi là **xã Phước Thành**.\" Bingo! \"Xã Phước Lộc\" is explicitly merged into \"xã Phước Thành\" within \"Thành phố Đà Nẵng.\" This seems very straightforward.\n\nI'll quickly scan the other resolutions, just to be sure, but they are clearly related to different provinces: Đồng Nai, Gia Lai, Khánh Hòa, Lâm Đồng, and Hồ Chí Minh. They're irrelevant to my current task.\n\nNow I need to confirm the new ward in the \"New wards\" list. The resolution indicates \"xã Phước Lộc\" becoming \"xã Phước Thành\" in \"Thành phố Đà Nẵng.\" Searching the list for \"Xã Phước Thành\" in \"Thành phố Đà Nẵng\" quickly yields a perfect match: `{\"ward_code\":\"20752\",\"ward_name\":\"Xã Phước Thành\",\"province_name\":\"Thành phố Đà Nẵng\"}`. It's a clean and precise match.\n\nThe mapping is very direct and explicitly stated within the resolutions. The province merger is clear, and the ward merger is also clear and found in the new wards list. So, my confidence level for this mapping is \"high.\"  I'm ready to construct the JSON output reflecting this mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "10. Hợp nhất tỉnh Quảng Nam và thành phố Đà Nẵng, lấy tên là thành phố Đà Nẵng"
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "20752",
+      "ward_name": "Xã Phước Thành"
+    },
+    {
+      "citation": {
+        "header": "1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng",
+        "line": "90. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Phước Lộc, Phước Kim và Phước Thành thành xã mới có tên gọi là xã Phước Thành."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "20752",
+      "ward_name": "Xã Phước Thành"
+    }
+  ]
+}

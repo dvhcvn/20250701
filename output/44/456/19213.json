@@ -1,0 +1,28 @@
+{
+  "address": "Xã Võ Ninh, Huyện Quảng Ninh, Tỉnh Quảng Bình",
+  "ellapsedInMs": 7223,
+  "estimatedCost": 0.0029211,
+  "thought": "**Mapping Old Address to New Administrative Units**\n\nOkay, so I'm tackling this address conversion: \"Xã Võ Ninh, Huyện Quảng Ninh, Tỉnh Quảng Bình\". First things first, I've got to break it down. We're looking at Quảng Bình province, Quảng Ninh district, and Võ Ninh ward.\n\nThe key here is those resolutions. I know there's been some administrative shuffling, and I suspect Quảng Bình might be involved.  I'm scanning for any relevant resolutions.  Bingo! Resolution 60-NQ/TW talks about Quảng Bình merging with Quảng Trị.  So, \"Tỉnh Quảng Bình\" is now \"Tỉnh Quảng Trị.\"\n\nNow, I need to focus on finding a resolution that specifically mentions \"Xã Võ Ninh\" or \"Huyện Quảng Ninh\" within the context of Quảng Bình/Quảng Trị. I'm going through the list meticulously. 1679/NQ-UBTVQH15 and 1686/NQ-UBTVQH15 are irrelevant; they are about Quảng Ninh (in the context of Cái Chiên ward) and Thanh Hóa.\n\nAh! 1680/NQ-UBTVQH15 for Quảng Trị is the one!  Line 25 explicitly states that Võ Ninh, along with other wards, is being merged to form a new ward called **Xã Quảng Ninh**.  That's a strong indicator.\n\nNow I move on to my \"new ward\" data. I'm looking for a match in province and ward name. \"Xã Quảng Ninh\" in \"Tỉnh Thanh Hóa\" is clearly not the right one. However, the entry with the ward code \"19207,\" which is indeed \"Xã Quảng Ninh,\" and in \"Tỉnh Quảng Trị,\" seals the deal.\n\nBased on this, my output will be a JSON structure representing the old address as now being part of the Quảng Ninh ward within Quảng Trị province. I'm confident about this mapping because there's direct evidence in that resolution and a clean data match.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "9. Hợp nhất tỉnh Quảng Bình và tỉnh Quảng Trị, lấy tên là tỉnh Quảng Trị"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Trị",
+      "ward_code": "19207",
+      "ward_name": "Xã Quảng Ninh"
+    },
+    {
+      "citation": {
+        "header": "1680/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Trị",
+        "line": "25. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Quán Hàu vàcác xã Vĩnh Ninh, Võ Ninh, Hàm Ninh thành xã mới có tên gọi là xã Quảng Ninh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Trị",
+      "ward_code": "19207",
+      "ward_name": "Xã Quảng Ninh"
+    }
+  ]
+}

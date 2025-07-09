@@ -1,0 +1,18 @@
+{
+  "address": "Xã Nghĩa Thương, Huyện Tư Nghĩa, Tỉnh Quảng Ngãi",
+  "ellapsedInMs": 6375,
+  "estimatedCost": 0.0021774999999999997,
+  "thought": "**Mapping an Old Address to a New Administrative Unit: A Detailed Analysis**\n\nOkay, so I'm presented with an address and need to map it to its new administrative location. The starting point is \"Xã Nghĩa Thương\" in \"Huyện Tư Nghĩa\", \"Tỉnh Quảng Ngãi\". The user wants this done based on resolutions and new ward data. Here's my process:\n\nFirst, I need to understand the initial state. The address clearly starts in the old ward, district, and province: \"Xã Nghĩa Thương,\" \"Huyện Tư Nghĩa,\" and \"Tỉnh Quảng Ngãi\". Even though the prompt mentions eliminating all districts, I'll keep that information for context.\n\nNow, I'll dive into the resolutions. My primary focus is on Resolution 60-NQ/TW to see what it says about Quảng Ngãi. Checking \"không thực hiện sáp nhập,\" there is nothing. Checking \"mới sau sáp nhập, hợp nhất\", I find that Quảng Ngãi *is* mentioned but it becomes \"Hợp nhất tỉnh Kon Tum và tỉnh Quảng Ngãi, lấy tên là tỉnh Quảng Ngãi\". This means the province's name *remains* \"Tỉnh Quảng Ngãi,\" which will affect the `province_name` field in my output.\n\nNext up, the critical resolution: `1677/NQ-UBTVQH15`. I immediately look for \"Xã Nghĩa Thương\". Bingo! The resolution clearly states that \"Xã Nghĩa Thương\" is merged into \"xã Tư Nghĩa\". This is a direct match and a strong indicator.\n\nNow for the new ward data. I've got `{\"ward_code\":\"21235\",\"ward_name\":\"Xã Tư Nghĩa\",\"province_name\":\"Tỉnh Quảng Ngãi\"}`. This perfectly aligns with the resolution. The `ward_name` matches what I found in the resolution, and the `province_name` confirms the information from the resolutions. It's a clean and strong correlation.\n\nWith this in hand, I can confidently assemble my JSON output.  The `citation` will be the relevant header and line from the resolution. The `confidence` is high because of the direct matching. The `province_name` is \"Tỉnh Quảng Ngãi\", derived from both resolutions and the new data. I'll use the `ward_code` \"21235\" and `ward_name` \"Xã Tư Nghĩa\" from the new ward data, solidifying the mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1677/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ngãi",
+        "line": "14. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn La Hà và các xã Nghĩa Trung, Nghĩa Thương, Nghĩa Hòa thành xã mới có tên gọi là xã Tư Nghĩa."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ngãi",
+      "ward_code": "21235",
+      "ward_name": "Xã Tư Nghĩa"
+    }
+  ]
+}

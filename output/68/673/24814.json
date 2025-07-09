@@ -1,0 +1,18 @@
+{
+  "address": "Phường Lộc Phát, Thành phố Bảo Lộc, Tỉnh Lâm Đồng",
+  "ellapsedInMs": 6048,
+  "estimatedCost": 0.0019123999999999999,
+  "thought": "**Mapping an Old Vietnamese Address to a New Administrative Unit**\n\nOkay, so I've got an old Vietnamese address: \"Phường Lộc Phát\" in \"Tỉnh Lâm Đồng\". The goal is to figure out its new administrative unit. First, I need to break down the problem.\n\n1.  **Identify Old Information:** I see \"Phường Lộc Phát\" and \"Tỉnh Lâm Đồng\". That's my starting point.\n2.  **Province Resolutions (60-NQ/TW):** I checked the Province Resolutions to see if there were any province merges or name changes. Good news! Lâm Đồng isn't on the \"no merge\" list, but it *is* on the list of \"post-merge.\" However, it states \"Hợp nhất tỉnh Lâm Đồng, tỉnh Đắk Nông và tỉnh Bình Thuận; lấy tên là tỉnh Lâm Đồng.\"  This means Lâm Đồng remains Lâm Đồng, which simplifies things.\n3.  **Other Resolutions (1671/NQ-UBTVQH15):**  Now I look for specific ward information.  I'm scanning the document for \"Phường Lộc Phát,\" and bingo! Line 104 jumps out: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của Phường 1 (thành phố Bảo Lộc), phường Lộc Phát và xã Lộc Thanh thành phường mới có tên gọi là **Phường 1 Bảo Lộc**.\" That's a direct connection! It's explicit: \"Phường Lộc Phát\" is being merged into \"Phường 1 Bảo Lộc.\"\n4.  **Cross-Reference New Wards:** Time to check my `New wards` data. I search for \"Phường 1 Bảo Lộc.\"  Yes! `{\"ward_code\":\"24823\",\"ward_name\":\"Phường 1 Bảo Lộc\",\"province_name\":\"Tỉnh Lâm Đồng\"}` is a perfect match.\n5.  **Constructing the Output:** Since the resolution directly states the mapping, I can confidently construct the JSON.\n\n*   `citation`:  I'll use the header and that very specific line from the resolution to properly cite the source.\n*   `confidence`:  It's \"high\" confidence, because the resolution clearly and unambiguously maps \"Phường Lộc Phát\" to \"Phường 1 Bảo Lộc.\" There's no room for doubt.\n*   `province_name`: \"Tỉnh Lâm Đồng\" - the original province is still \"Lâm Đồng\", even after the hypothetical merge (which didn't happen).\n*   `ward_code`: \"24823\"\n*   `ward_name`: \"Phường 1 Bảo Lộc\"\n\nThis should be a solid and accurate mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng",
+        "line": "104. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của Phường 1 (thành phố Bảo Lộc), phường Lộc Phát và xã Lộc Thanh thành phường mới có tên gọi là Phường 1 Bảo Lộc."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "24823",
+      "ward_name": "Phường 1 Bảo Lộc"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Bùi La Nhân, Huyện Đức Thọ, Tỉnh Hà Tĩnh",
+  "ellapsedInMs": 6118,
+  "estimatedCost": 0.0023896,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm presented with the task of mapping an old Vietnamese address, specifically \"Xã Bùi La Nhân, Huyện Đức Thọ, Tỉnh Hà Tĩnh,\" to its new administrative unit. My process is quite straightforward, leveraging the provided resolutions and the `new_wards` list.\n\nFirst, I need to isolate the key components of the old address: \"Xã Bùi La Nhân\" (the old ward), \"Huyện Đức Thọ\" (the old district, mostly for context), and \"Tỉnh Hà Tĩnh\" (the old province).\n\nNext, I immediately jump to the province resolution, specifically Resolution 60-NQ/TW. This is a crucial first step. I need to determine if \"Tỉnh Hà Tĩnh\" has been affected by any mergers or name changes. Fortunately, the resolution clearly states that Hà Tĩnh remains unchanged. This offers me a very high confidence level for the province name in my final output.\n\nWith the province confirmed, I turn my attention to the old ward.  I need to scour the `other_resolutions` for any mentions of \"Bùi La Nhân.\"  My focus quickly lands on Resolution 1665/NQ-UBTVQH15. And there it is, line 39 specifically mentions \"Bùi La Nhân\" and details its integration with other wards to form the new ward, \"xã Đức Quang.\"  Bingo!\n\nNow, I cross-reference this information with the `new_wards` list. I look for \"xã Đức Quang\" to obtain its official ward code.  The entry perfectly matches, providing me with the ward code, \"18262\".\n\nFinally, I construct the JSON output: the unchanged province name, the newly identified ward name and code, a clear citation from the resolution, and a high confidence level based on this direct match and clear mapping established by the resolution. I ensure that all the data types and fields comply with the expected schema, and that I'm providing a robust and well-documented result for the user.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh",
+        "line": "39. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Quang Vĩnh, Bùi La Nhân và Yên Hồ thành xã mới có tên gọi là xã Đức Quang."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hà Tĩnh",
+      "ward_code": "18262",
+      "ward_name": "Xã Đức Quang"
+    }
+  ]
+}

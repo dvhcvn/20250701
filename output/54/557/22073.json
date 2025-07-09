@@ -1,0 +1,18 @@
+{
+  "address": "Phường Xuân Yên, Thị xã Sông Cầu, Tỉnh Phú Yên",
+  "ellapsedInMs": 7448,
+  "estimatedCost": 0.0029519,
+  "thought": "**Analysis of Vietnamese Administrative Unit Mapping**\n\nOkay, so I'm presented with an old address: \"Phường Xuân Yên, Thị xã Sông Cầu, Tỉnh Phú Yên\".  My immediate task is to break this down. First, I identify the old administrative units: \"Phường Xuân Yên\" (the old ward), \"Thị xã Sông Cầu\" (the old district, even though we're told to eliminate districts, this is a special case and contextually relevant), and \"Tỉnh Phú Yên\" (the old province).\n\nNext, I need to check the province resolutions, specifically focusing on resolutions related to province changes.  Scanning the resolutions, I quickly find that \"Tỉnh Phú Yên\" has been merged with \"Tỉnh Đắk Lắk\" to form \"Tỉnh Đắk Lắk\". This is key information.\n\nNow, I shift my attention to finding a resolution that pertains to \"Phường Xuân Yên\". I begin to scan the other resolutions, and I stumble upon Resolution 1660/NQ-UBTVQH15, which specifically addresses the administrative rearrangement of social-level administrative units in \"Tỉnh Đắk Lắk\".  Crucially, line 93 of this resolution explicitly states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Xuân Yên, phường Xuân Phú, xã Xuân Phương và xã Xuân Thịnh thành phường mới có tên gọi là **phường Sông Cầu**.\"  This directly addresses the old ward I'm interested in!\n\nTherefore, the new ward is \"phường Sông Cầu\". To confirm this, I cross-reference this finding with my list of new wards. Sure enough, there's an entry for \"phường Sông Cầu\" in the \"New wards\" list: `{\"ward_code\":\"22051\",\"ward_name\":\" Phường Sông Cầu\",\"province_name\":\"Tỉnh Đắk Lắk\"}`.  The new ward name matches, and it's confirmed within \"Tỉnh Đắk Lắk\", which is consistent with the province merger I identified earlier.\n\nWith that, I can construct the JSON output: the citation header will be \"1660/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đắk Lắk\", the relevant line will be \"93. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Xuân Yên, phường Xuân Phú, xã Xuân Phương và xã Xuân Thịnh thành phường mới có tên gọi là **phường Sông Cầu**.\", and my confidence will be \"high\" because the old ward is explicitly mapped. I'll include the new province \"Tỉnh Đắk Lắk\", the ward code \"22051\", and the ward name \" Phường Sông Cầu\" (noting the leading space in the data). Finally, I'll double-check to ensure everything meets the required JSON format and doesn't contain any extraneous information.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1660/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đắk Lắk",
+        "line": "93. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Xuân Yên, phường Xuân Phú, xã Xuân Phương và xã Xuân Thịnh thành phường mới có tên gọi là phường Sông Cầu."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đắk Lắk",
+      "ward_code": "22051",
+      "ward_name": " Phường Sông Cầu"
+    }
+  ]
+}

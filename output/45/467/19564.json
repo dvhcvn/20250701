@@ -1,0 +1,18 @@
+{
+  "address": "Xã Đa Krông, Huyện Đa Krông, Tỉnh Quảng Trị",
+  "ellapsedInMs": 8469,
+  "estimatedCost": 0.0028645,
+  "thought": "**Address Mapping for Vietnamese Administrative Units**\n\nOkay, so I'm presented with an old Vietnamese address: \"Xã Đa Krông, Huyện Đa Krông, Tỉnh Quảng Trị.\" My task is to translate this to the *new* administrative structure.  Since I'm dealing with address transformation in Vietnam, I'll need to meticulously follow the resolutions and data provided.\n\nFirst, I need to break down the old address.  It's clear that \"Xã Đa Krông\" is the old ward, \"Huyện Đa Krông\" is the old district (though districts are being eliminated, it's relevant for context), and \"Tỉnh Quảng Trị\" is the old province.\n\nNext, I'll check the provincial resolutions, specifically 60-NQ/TW, to see what happened to \"Tỉnh Quảng Trị\". It's not listed for exclusion, but the resolution mentions it in a merger with \"Tỉnh Quảng Bình\", forming \"Tỉnh Quảng Trị\". So the province name remains the same – this is straightforward.\n\nNow, let's dive into the \"Other resolutions,\" looking for any mentions of \"Xã Đa Krông\" or similar within Quảng Trị.  Ah, here we go! Resolution 1680/NQ-UBTVQH15, concerning Quảng Trị's commune-level administrative adjustments, has a key line (49) mentioning the consolidation of several communes, including \"Đakrông,\" into a new commune called \"**xã Đakrông**\".  Crucially, it is \"**Đakrông**\" in the resolution, not \"Đa Krông\" as in the original input. This requires a spelling comparison.  It is safe to assume in a Vietnamese context that both are referring to the same location.\n\nI have to confirm this with the new ward data.  I'm looking for a ward with a matching name and province. And there it is: `{\"ward_code\":\"19564\",\"ward_name\":\"Xã Đakrông\",\"province_name\":\"Tỉnh Quảng Trị\"}`. Perfect. The new ward is indeed \"Xã Đakrông\" within \"Tỉnh Quảng Trị\", and I have a clear match.\n\nTherefore, the final JSON output will be:\n\n*   `province_name`: \"Tỉnh Quảng Trị\"\n*   `ward_name`: \"Xã Đakrông\"\n*   `ward_code`: \"19564\"\n*   `citation`:\n    *   `header`: \"1680/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Trị\"\n    *   `line`: \"49. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Ba Nang, Tà Long và Đakrông thành xã mới có tên gọi là **xã Đakrông**.\"\n*   `confidence`: \"high\"\n\nThe *old* \"Xã Đa Krông\" becomes the *new* \"Xã Đakrông\" in province \"Tỉnh Quảng Trị\", and this process is confirmed to be accurate, especially given that the spelling error in the input is most likely an accidental space.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1680/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Trị",
+        "line": "49. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Ba Nang, Tà Long và Đakrông thành xã mới có tên gọi là xã Đakrông."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Trị",
+      "ward_code": "19564",
+      "ward_name": "Xã Đakrông"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "address": "Xã Mai Sơn, Huyện Lục Yên, Tỉnh Yên Bái",
+  "ellapsedInMs": 8021,
+  "estimatedCost": 0.0030667999999999997,
+  "thought": "**Determining the New Ward for the Given Address**\n\nOkay, so I've got this old address: \"Xã Mai Sơn, Huyện Lục Yên, Tỉnh Yên Bái.\" My task is to find the corresponding new administrative unit, the ward. Here's my thought process:\n\n1.  **Province First:**  The old province is \"Tỉnh Yên Bái.\"  I need to check for any province mergers or renamings based on relevant resolutions (like Resolution 60-NQ/TW).  Ah, yes! \"Tỉnh Yên Bái\" was merged with \"Tỉnh Lào Cai\" to form \"Tỉnh Lào Cai.\"  Got it.\n\n2.  **Focus on the Old Ward:**  Now I'm focusing on \"Xã Mai Sơn.\"  The key is to find this ward *within* the context of its new province, \"Tỉnh Lào Cai.\"\n\n3.  **Resolution Search:**  I'm digging into various resolutions, particularly those related to administrative boundary adjustments (\"Sắp xếp các đơn vị hành chính cấp xã\"). I need to sift through these, keeping \"Xã Mai Sơn\" in mind, but also paying attention to the context of \"Tỉnh Lào Cai.\"\n\n    *   Resolution \"1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai\" immediately catches my eye. It says: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Mai Sơn, Khánh Thiện, Tân Phượng và Lâm Thượng thành xã mới có tên gọi là **xã Lâm Thượng**.\" Bingo! \"Xã Mai Sơn\" is *explicitly* mentioned in the context of \"Tỉnh Lào Cai,\" and it's being merged into \"Xã Lâm Thượng.\" This looks promising.\n    *   I've also checked other resolutions, but they refer to \"Xã Mai Sơn\" in different provinces, like \"Tỉnh Nghệ An\" and \"Tỉnh Sơn La,\" which are clearly irrelevant in this case.\n\n4.  **Confirming the Match:** I'm crossing my findings with the \"New wards\" data, just to be absolutely sure. For \"Tỉnh Lào Cai,\" I'm expecting to find \"Xã Lâm Thượng.\" And there it is:  `{\"ward_code\":\"04309\",\"ward_name\":\"Xã Lâm Thượng\",\"province_name\":\"Tỉnh Lào Cai\"}` - perfect match!\n\n5.  **High Confidence:**  The resolution's clear language (\"...merged into...\") along with the direct match in the \"New wards\" data gives me a very high level of confidence in the answer.\n\n6.  **Constructing the Output:** My final step will be to format this all as JSON.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Lào Cai và tỉnh Yên Bái, lấy tên là tỉnh Lào Cai"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "04309",
+      "ward_name": "Xã Lâm Thượng"
+    },
+    {
+      "citation": {
+        "header": "1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai",
+        "line": "23. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Mai Sơn, Khánh Thiện, Tân Phượng và Lâm Thượng thành xã mới có tên gọi là xã Lâm Thượng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "04309",
+      "ward_name": "Xã Lâm Thượng"
+    }
+  ]
+}

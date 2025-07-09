@@ -1,0 +1,18 @@
+{
+  "address": "Xã Sơn Lâm, Huyện Hương Sơn, Tỉnh Hà Tĩnh",
+  "ellapsedInMs": 7327,
+  "estimatedCost": 0.0044191,
+  "thought": "**Identifying the New Administrative Unit for \"Xã Sơn Lâm\"**\n\nOkay, so I've been given the old address \"Xã Sơn Lâm, Huyện Hương Sơn, Tỉnh Hà Tĩnh\" and need to find its new ward. My approach is methodical, starting with the highest level. First, I quickly checked for any province-level mergers related to \"Tỉnh Hà Tĩnh.\" Thankfully, Resolution 60-NQ/TW clarified that Hà Tĩnh remains unchanged.\n\nNext, I focused on the ward level. I started scanning relevant resolutions, specifically looking for mentions of \"Xã Sơn Lâm\" or \"Hương Sơn.\"  Resolution 1665/NQ-UBTVQH15 seemed promising, focusing on administrative reorganizations within Hà Tĩnh. Line 42 caught my eye, mentioning the merger of several wards to form \"xã Hương Sơn,\" but \"Xã Sơn Lâm\" wasn't involved.\n\nThen, line 45 hit the mark: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Sơn Lâm, Quang Diệm và Sơn Giang thành xã mới có tên gọi là **xã Sơn Giang**.\" This is exactly what I was looking for!  It explicitly states the merger of \"Xã Sơn Lâm\" into \"Xã Sơn Giang.\" There was no need to go further down the resolutions.\n\nConfirming my findings, I double-checked the \"New wards\" list, searching for \"xã Sơn Giang\" in Hà Tĩnh. And there it was: `{\"ward_code\":\"18184\",\"ward_name\":\"Xã Sơn Giang\",\"province_name\":\"Tỉnh Hà Tĩnh\"}`.  Perfect match.\n\nGiven the direct and explicit nature of the resolution's statement –  \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Sơn Lâm, Quang Diệm và Sơn Giang thành xã mới có tên gọi là **xã Sơn Giang**.\" – my confidence level is high.\n\nTherefore, my final JSON output is:\n\n```json\n{\n  \"province_name\": \"Tỉnh Hà Tĩnh\",\n  \"ward_name\": \"Xã Sơn Giang\",\n  \"ward_code\": \"18184\",\n  \"confidence\": \"high\",\n  \"citation\": {\n    \"header\": \"1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh\",\n    \"line\": \"45. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Sơn Lâm, Quang Diệm và Sơn Giang thành xã mới có tên gọi là **xã Sơn Giang**.\"\n  }\n}\n```\n\nThis should be a reliable mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh",
+        "line": "45. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Sơn Lâm, Quang Diệm và Sơn Giang thành xã mới có tên gọi là xã Sơn Giang."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hà Tĩnh",
+      "ward_code": "18184",
+      "ward_name": "Xã Sơn Giang"
+    }
+  ]
+}

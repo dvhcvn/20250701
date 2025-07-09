@@ -1,0 +1,18 @@
+{
+  "address": "Xã Đạ Nhim, Huyện Lạc Dương, Tỉnh Lâm Đồng",
+  "ellapsedInMs": 6858,
+  "estimatedCost": 0.0023421,
+  "thought": "**Mapping an Old Vietnamese Address to New Administrative Units**\n\nOkay, so I've got an old Vietnamese address to map: \"Xã Đạ Nhim, Huyện Lạc Dương, Tỉnh Lâm Đồng.\"  My initial task is straightforward: pinpoint the old ward, district, and province.  I see \"Xã Đạ Nhim\" as the old ward, \"Huyện Lạc Dương\" as the old district, and \"Tỉnh Lâm Đồng\" as the old province. Simple enough.\n\nNext, I need to consult the resolutions, specifically the ones regarding changes in Lâm Đồng province. I quickly find the key resolution, 60-NQ/TW, which clarifies that despite mergers with Đắk Nông and Bình Thuận, \"Tỉnh Lâm Đồng\" remains \"Tỉnh Lâm Đồng\". The province name stays the same, which simplifies things.\n\nNow for the crucial part: checking for mentions of \"Xã Đạ Nhim\" in other resolutions.  Bingo! Resolution 1671/NQ-UBTVQH15, line 1, explicitly states that \"Xã Đạ Nhim\" is being merged to become \"xã Lạc Dương\". Perfect. This is exactly what I was looking for.\n\nI cross-reference this with the \"New wards\" data, and there it is: a data entry for \"Xã Lạc Dương\" with the `ward_code` \"24848\" and `province_name` \"Tỉnh Lâm Đồng\". This confirms the mapping.\n\nWith that I've got everything I need to construct the JSON output. The `province_name` will be \"Tỉnh Lâm Đồng\" because the merger in Resolution 60-NQ/TW didn't change the name. The `ward_name` is definitely \"Xã Lạc Dương\", the `ward_code` is \"24848\", and the `citation` will point to Resolution 1671/NQ-UBTVQH15. The `confidence` I assign will be \"high\" because the resolution explicitly mentions the old ward in relation to the new ward.  This is a clean, definite match.\n\nJust to be thorough, I quickly double-check the other lines in resolution 1671/NQ-UBTVQH15 and confirm that they don't apply to this specific old address. The second line mentions \"thị trấn Lạc Dương\" but I'm looking for \"Xã Đạ Nhim\". So, \"Xã Lạc Dương\" is the only candidate.\n\nTherefore, the mapping for \"Xã Đạ Nhim, Huyện Lạc Dương, Tỉnh Lâm Đồng\" to the new administrative structure is resolved and the output JSON is constructed.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng",
+        "line": "1. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đạ Sar, Đạ Nhim và Đạ Chais thành xã mới có tên gọi là xã Lạc Dương."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "24848",
+      "ward_name": "Xã Lạc Dương"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "address": "Xã Hòa Cuông, Huyện Trấn Yên, Tỉnh Yên Bái",
+  "ellapsedInMs": 5704,
+  "estimatedCost": 0.0028965,
+  "thought": "**Finding the New Administrative Unit**\n\nOkay, so I'm presented with the old address: \"Xã Hòa Cuông, Huyện Trấn Yên, Tỉnh Yên Bái\". My task is clear: find its new administrative unit.\n\nFirst, I need to zero in on the old province, \"Tỉnh Yên Bái.\" A quick scan of the province resolutions (specifically, those related to administrative changes) indicates a significant shift. The resolution explicitly states: \"Hợp nhất tỉnh Lào Cai và tỉnh Yên Bái, lấy tên là tỉnh Lào Cai.\"  This is a slam dunk - Yên Bái is now part of Lào Cai. High confidence on that change.\n\nNext, I look for the old ward: \"Xã Hòa Cuông.\" The trick now is to connect this with the updated province. I start searching \"Other resolutions\" focusing on anything about \"Xã Hòa Cuông\" or \"Huyện Trấn Yên,\" *within the context of* the new province, \"Tỉnh Lào Cai.\"\n\nI find resolution 1673/NQ-UBTVQH15, a key document regarding adjustments in Lào Cai. Bingo! Line 34 provides the golden nugget: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Cổ Phúc và các xã Báo Đáp, Tân Đồng, Thành Thịnh, Hòa Cuông, Minh Quán thành xã mới có tên gọi là **xã Trấn Yên**.\"  This is definitive - \"Xã Hòa Cuông\" is being absorbed into \"Xã Trấn Yên.\" High confidence confirmed.\n\nFinally, I need to make sure \"Xã Trấn Yên\" is properly recorded in the \"New wards\" data, in the context of \"Tỉnh Lào Cai.\"  And there it is: `{\"ward_code\":\"04498\",\"ward_name\":\"Xã Trấn Yên\",\"province_name\":\"Tỉnh Lào Cai\"}`.\n\nTherefore, the updated administrative unit is unquestionably \"Xã Trấn Yên\" in \"Tỉnh Lào Cai.\" My confidence is solid, as both the province merger and the ward adjustments are explicitly supported by official resolutions. Case closed.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Lào Cai và tỉnh Yên Bái, lấy tên là tỉnh Lào Cai"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "04498",
+      "ward_name": "Xã Trấn Yên"
+    },
+    {
+      "citation": {
+        "header": "1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai",
+        "line": "34. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Cổ Phúc và các xã Báo Đáp, Tân Đồng, Thành Thịnh, Hòa Cuông, Minh Quán thành xã mới có tên gọi là xã Trấn Yên."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "04498",
+      "ward_name": "Xã Trấn Yên"
+    }
+  ]
+}

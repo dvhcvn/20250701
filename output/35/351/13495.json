@@ -1,0 +1,18 @@
+{
+  "address": "Xã Thanh Nguyên, Huyện Thanh Liêm, Tỉnh Hà Nam",
+  "ellapsedInMs": 6771,
+  "estimatedCost": 0.0022239,
+  "thought": "**Address Mapping Analysis: Thanh Nguyên to Thanh Liêm**\n\nOkay, so I've got an old address to map: \"Xã Thanh Nguyên, Huyện Thanh Liêm, Tỉnh Hà Nam.\" My primary goal is to find its new administrative location. I'll need to use the provided resolutions and the new ward data to deduce the correct mapping.\n\nFirst, I'll break down the initial address. The old ward is \"Xã Thanh Nguyên,\" district \"Huyện Thanh Liêm,\" and province \"Tỉnh Hà Nam.\" (Even though I know the districts are *not* part of the equation, I'm keeping them in mind for context.)\n\nNow, the resolutions! I start with the Province Resolutions. Quickly, I find that \"Tỉnh Hà Nam\" is *merged* into \"Tỉnh Ninh Bình\" according to Resolution 60-NQ/TW. This is a crucial first step.\n\nNext, I delve into the \"Other resolutions.\" I need to find something relevant to \"Xã Thanh Nguyên.\" Bingo! Resolution 1674/NQ-UBTVQH15 jumps out. It explicitly states that \"Xã Thanh Nguyên\" *merged* with other wards to form \"Xã Thanh Liêm.\"  The header of the resolution is particularly useful, confirming it's about administrative changes in Ninh Bình, which aligns perfectly with my previous finding about the province merger.\n\nWith this crucial piece of information, I check the \"New wards\" data. I'm searching for \"Xã Thanh Liêm.\" Success! There's a match: `{\"ward_code\":\"13495\",\"ward_name\":\"Xã Thanh Liêm\",\"province_name\":\"Tỉnh Ninh Bình\"}`. This perfectly aligns with the ward merger and the new province found in the resolutions.\n\nFinally, I'll compile my findings into a JSON output. The `citation.header` and `citation.line` come directly from Resolution 1674.  My confidence in this mapping is high; I have direct matches for both the province and the ward.  The JSON will clearly state the old and new administrative details, including the new ward code.\n\nIn short, \"Xã Thanh Nguyên, Tỉnh Hà Nam\" is now \"Xã Thanh Liêm, Tỉnh Ninh Bình,\" ward code 13495, thanks to the merger detailed in resolution 1674, and the province of Ha Nam merging into Ninh Binh. The data is consistent and based on direct, verifiable findings. It's a clean and confident mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "10. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Thanh Hương, Thanh Tâm và Thanh Nguyên thành xã mới có tên gọi là xã Thanh Liêm."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "13495",
+      "ward_name": "Xã Thanh Liêm"
+    }
+  ]
+}

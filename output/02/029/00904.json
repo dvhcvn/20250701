@@ -1,0 +1,18 @@
+{
+  "address": "Xã Quyết Tiến, Huyện Quản Bạ, Tỉnh Hà Giang",
+  "ellapsedInMs": 8347,
+  "estimatedCost": 0.0035273,
+  "thought": "**My Analysis of the Administrative Reorganization**\n\nOkay, so I'm presented with an old address: \"Xã Quyết Tiến, Huyện Quản Bạ, Tỉnh Hà Giang,\" and the task is to pinpoint its new administrative unit. My initial step is to understand the context of the province. I immediately recognize \"Tỉnh Hà Giang,\" so I'll check province resolutions to see if there have been any mergers. Based on Resolution 60-NQ/TW, it's clear that Hà Giang has been merged with Tuyên Quang to form \"Tỉnh Tuyên Quang.\" This tells me the `province_name` in the output will be \"Tỉnh Tuyên Quang.\"\n\nNow, I shift my focus to finding \"Xã Quyết Tiến\" within the relevant resolutions, particularly those related to Hà Giang or Tuyên Quang. I start by checking the \"Other resolutions\" section, scanning through the list for any mention of the ward. I quickly eliminate the unrelated ones, focusing on those concerning Tuyên Quang.\n\nAfter examining the relevant resolution, \"1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang,\" I zero in on line 64.  Here, it explicitly states that \"Xã Quyết Tiến\" is being merged with \"thị trấn Tam Sơn\" and \"xã Quản Bạ\" to create a new ward named \"**xã Quản Bạ**.\" This is the key piece of information! It directly addresses the old ward's name and its transformation.\n\nTherefore, the new ward name is definitively \"Xã Quản Bạ.\" Now, all that's left is to cross-reference this information with the \"New wards\" list to obtain the relevant `ward_code`.  I found that \"Xã Quản Bạ\" has a `ward_code` of \"00874,\" confirming the complete administrative reorganization.\n\nIn conclusion, for the address \"Xã Quyết Tiến, Huyện Quản Bạ, Tỉnh Hà Giang,\" the new administrative unit details are:\n\n*   `province_name`: \"Tỉnh Tuyên Quang\"\n*   `ward_name`: \"Xã Quản Bạ\"\n*   `ward_code`: \"00874\"\n*   `citation`: \"1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang, line 64: Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Tam Sơn, xã Quyết Tiến và xã Quản Bạ thành xã mới có tên gọi là **xã Quản Bạ**.\"\n*   `confidence`: \"high\" as the resolution provides a clear and direct mapping of the old ward to the new one, supported by the context of province merger.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "64. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Tam Sơn, xã Quyết Tiến và xã Quản Bạ thành xã mới có tên gọi là xã Quản Bạ."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "00874",
+      "ward_name": "Xã Quản Bạ"
+    }
+  ]
+}

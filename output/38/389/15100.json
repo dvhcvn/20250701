@@ -1,0 +1,18 @@
+{
+  "address": "Xã Cao Thịnh, Huyện Ngọc Lặc, Tỉnh Thanh Hóa",
+  "ellapsedInMs": 7709,
+  "estimatedCost": 0.0025997000000000004,
+  "thought": "**Mapping Old Vietnamese Addresses: Thanh Hóa - Xã Cao Thịnh**\n\nOkay, so I'm tackling this address mapping problem. The goal is to figure out the new administrative unit for \"Xã Cao Thịnh\" in Thanh Hóa, based on the provided resolutions and a \"New wards\" list. Here's how I'm thinking through it:\n\nFirst, I need to break down the old address. I've got: \"Xã Cao Thịnh\" (the ward), \"Huyện Ngọc Lặc\" (district), and \"Tỉnh Thanh Hóa\" (province). The district is important context, even if it's being phased out in the new structure.\n\nNext, I'll go through the relevant resolutions. I know Thanh Hóa isn't merging at the provincial level, according to Resolution 60-NQ/TW.\n\nNow, the crucial step. I'm focusing on Resolution 1686/NQ-UBTVQH15. I'm scanning through the lines for \"Xã Cao Thịnh\". Line 95 is a jackpot: it states explicitly that \"Xã Cao Thịnh\" is *merged into* \"Xã Ngọc Liên\", along with a few other wards. Line 96 mentions \"Cao Ngọc\", which is not related to my input address.\n\nThen, I'll check my \"New wards\" data to confirm. \"Xã Ngọc Liên\" *does* exist in my list!\n\nSo, the JSON output is straightforward: the province remains \"Tỉnh Thanh Hóa\" (it wasn't merged), the new ward is \"Xã Ngọc Liên\", with ward code \"15091\", and a high level of confidence given the direct reference in the resolution.\n\nI'm double-checking the resolution one last time to ensure no other new ward is formed from \"Xã Cao Thịnh\". Line 95 clearly states the wards that are *part of* the formation of \"Xã Ngọc Liên\". This means only one entry is expected in the output. The mapping is clean and straightforward.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1686/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thanh Hóa",
+        "line": "95. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Lộc Thịnh, Cao Thịnh, Ngọc Sơn, Ngọc Trung và Ngọc Liên thành xã mới có tên gọi là xã Ngọc Liên."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thanh Hóa",
+      "ward_code": "15091",
+      "ward_name": "Xã Ngọc Liên"
+    }
+  ]
+}

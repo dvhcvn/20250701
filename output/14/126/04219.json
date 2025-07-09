@@ -1,0 +1,18 @@
+{
+  "address": "Xã Mường Hung, Huyện Sông Mã, Tỉnh Sơn La",
+  "ellapsedInMs": 6185,
+  "estimatedCost": 0.0023531,
+  "thought": "**Finding the New Administrative Unit for \"Xã Mường Hung\"**\n\nOkay, so the user wants to identify the new ward for the old address \"Xã Mường Hung\", \"Tỉnh Sơn La\".  My approach is straightforward.  First, I need to understand what's happened to \"Tỉnh Sơn La.\" Checking the province-level resolutions (specifically 60-NQ/TW), I see that Sơn La wasn't merged.  Therefore, the `province_name` in the output should be \"Tỉnh Sơn La.\"\n\nNext, I need to delve into the other resolutions, focusing on \"Tỉnh Sơn La\" and \"Mường Hung.\"  Resolution 1681/NQ-UBTVQH15 catches my eye. Line 52 states that \"Xã Mường Hung\" was formed by the merger of \"Xã Mường Hung\" and \"Xã Chiềng Cang.\"  Crucially, the *new* ward name is still \"Xã Mường Hung\", which matches the input. This is a direct hit.\n\nNow, it's just a matter of cross-referencing this information with the list of new wards.  I'm looking for an entry with \"Xã Mường Hung\" and \"Tỉnh Sơn La.\"  The entry `{\"ward_code\":\"04219\",\"ward_name\":\"Xã Mường Hung\",\"province_name\":\"Tỉnh Sơn La\"}` is a perfect match.\n\nBecause the old ward name has been reused for the new ward and the province remained unchanged, I'm confident in my output.  I'll set the `confidence` to \"high\" and build the JSON output accordingly. I will also double check to see if there is another \"Mường Hung\" mentioned, which could lead to ambiguity. Scanning through the other resolutions shows no matches, confirming this is the correct resolution.\n\nIn summary, the output will be: a high confidence JSON that specifies the ward code as \"04219\", ward name as \"Xã Mường Hung\", the citation as \"Resolution 1681/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Sơn La, Line 52\" and the province name as \"Tỉnh Sơn La\".\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1681/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Sơn La",
+        "line": "52. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Chiềng Cang và xã Mường Hung thành xã mới có tên gọi là xã Mường Hung."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Sơn La",
+      "ward_code": "04219",
+      "ward_name": "Xã Mường Hung"
+    }
+  ]
+}

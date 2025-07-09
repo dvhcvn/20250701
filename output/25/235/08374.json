@@ -1,0 +1,28 @@
+{
+  "address": "Xã Tùng Khê, Huyện Cẩm Khê, Tỉnh Phú Thọ",
+  "ellapsedInMs": 7975,
+  "estimatedCost": 0.0032364,
+  "thought": "**Address Mapping Analysis for Phú Thọ Province**\n\nOkay, I'm tasked with mapping this old Vietnamese address to its current administrative unit. First, I break down the address. It appears to be located in:\n\n*   **Ward:** Xã Tùng Khê\n*   **District:** Huyện Cẩm Khê (Though the prompt emphasizes disregarding districts, it's still useful context)\n*   **Province:** Tỉnh Phú Thọ\n\nNow, let's dive into the resolutions. Resolution 60-NQ/TW doesn't indicate any changes for Phú Thọ, so we move on. Resolution 1676/NQ-UBTVQH15 is where the key lies. Line 33 states that Xã Tùng Khê, along with Tam Sơn and Văn Bán, is being *merged* into a new ward: **Xã Vân Bán**.\n\nLooking at the \"New wards\" data, I find a match: `{\"ward_code\":\"08377\",\"ward_name\":\"Xã Vân Bán\",\"province_name\":\"Tỉnh Phú Thọ\"}`. This confirms the merger.\n\nThere's another element that needs a closer look, the presence of the old unit, `{\"ward_code\":\"08824\",\"ward_name\":\"Xã Tam Sơn\",\"province_name\":\"Tỉnh Phú Thọ\"}`, in the *New wards* data. This is confusing, because it's listed as a new ward, and the resolution states that Tam Sơn *merged* into Vân Bán. This indicates a contradiction.\n\nMy conclusion is based on the merging:\n\nThe old \"Xã Tùng Khê\" is now part of the new administrative unit **\"Xã Vân Bán\"**, which is the new ward. The old district is irrelevant for the final output as the prompt requested. I will note the confusing element present in the data, concerning the old unit **Xã Tam Sơn** to raise caution.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Vĩnh Phúc, tỉnh Phú Thọ và tỉnh Hoà Bình; lấy tên là tỉnh Phú Thọ"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "08377",
+      "ward_name": "Xã Vân Bán"
+    },
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "33. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tùng Khê, Tam Sơn và Văn Bán thành xã mới có tên gọi là xã Vân Bán."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "08377",
+      "ward_name": "Xã Vân Bán"
+    }
+  ]
+}

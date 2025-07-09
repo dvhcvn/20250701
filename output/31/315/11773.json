@@ -1,0 +1,18 @@
+{
+  "address": "Xã Khởi Nghĩa, Huyện Tiên Lãng, Thành phố Hải Phòng",
+  "ellapsedInMs": 7245,
+  "estimatedCost": 0.0029117,
+  "thought": "**Identifying the New Administrative Unit**\n\nOkay, let's break this down. The user's got an old address: \"Xã Khởi Nghĩa, Huyện Tiên Lãng, Thành phố Hải Phòng\". My task is to figure out the new ward. First things first, the province is \"Thành phố Hải Phòng\". I need to check for any province mergers, which is always the first step. \"60-NQ/TW\" doesn't list any province-level changes for Hải Phòng, so no surprises there.\n\nNext, I'll dive into the resolutions, focusing on ones related to Hải Phòng. I found \"1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng\". Perfect. Line 57 is the money shot: It clearly states that \"Khởi Nghĩa\" is *merged into* \"xã Tiên Lãng\". Bingo! \"Xã Tiên Lãng\" is the new ward. The old address perfectly aligns with this change.\n\nNow, I need the `ward_code` for \"Xã Tiên Lãng\" in \"Thành phố Hải Phòng\". A quick check of the \"New wards\" data gives me the correct code: \"11755\". That's a good match. My confidence level is high because this resolution explicitly addresses the change.\n\nSo, the JSON output is straightforward.  The `province_name` remains \"Thành phố Hải Phòng\", the `ward_name` is \"Xã Tiên Lãng\", the `ward_code` is \"11755\", the citation is \"1669/NQ-UBTVQH15 (line 57)\", and the confidence level is high. That should cover it!\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "57. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Tiên Lãng và các xã Quyết Tiến, Tiên Thanh, Khởi Nghĩa thành xã mới có tên gọi là xã Tiên Lãng."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "11755",
+      "ward_name": "Xã Tiên Lãng"
+    }
+  ]
+}

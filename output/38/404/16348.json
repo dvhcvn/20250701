@@ -1,0 +1,18 @@
+{
+  "address": "Xã Trường Sơn, Huyện Nông Cống, Tỉnh Thanh Hóa",
+  "ellapsedInMs": 9501,
+  "estimatedCost": 0.0036263,
+  "thought": "**My Analysis of the Administrative Reorganization in Thanh Hóa Province**\n\nOkay, here's my breakdown of the address query: \"Xã Trường Sơn, Huyện Nông Cống, Tỉnh Thanh Hóa.\" My goal is to determine the new administrative unit.\n\nFirst, I confirmed the province remains \"Tỉnh Thanh Hóa\" per `60-NQ/TW`. Excellent, that's straightforward.\n\nNext, I zeroed in on \"Xã Trường Sơn.\"  The key is finding the correct resolution concerning Thanh Hóa. I went straight to `1686/NQ-UBTVQH15`, \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thanh Hóa.\"  Within that, line 37 jumped out at me immediately: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Trường Minh, Trường Trung, Trường Sơn và Trường Giang thành xã mới có tên gọi là xã Trường Văn.\"  *That's it!*  That's a direct, unambiguous match. \"Xã Trường Sơn\" is merged into \"Xã Trường Văn.\"  My confidence level is already very high.\n\nI double-checked to ensure there wasn't a conflicting \"Trường Sơn\" in Thanh Hóa, but the other one in `1686/NQ-UBTVQH15` is \"phường Trường Sơn\" in Sầm Sơn, which is *not* what we're looking for, the query has \"xã.\"  I also cross-referenced other resolutions (`1658`, `1665`, `1669`, `1680`) to eliminate any potential ambiguities elsewhere in the country.  Thankfully, the other \"Trường Sơn\" mentions are in different provinces or are of a different administrative type.  The focus here is solely on the Thanh Hóa reference from `1686/NQ-UBTVQH15`.\n\nNow, the \"New wards\" list gives me the `ward_code`: \"16348\" for \"Xã Trường Văn\", which confirms everything. I'm confident.\n\nThe data structure for my output should be an array of objects, with key-value pairs for `citation`, `confidence`, `province_name`, `ward_code`, `ward_name`, and within `citation` is the `header` and the `line` number. The confidence level here is \"high\". The old ward \"Xã Trường Sơn\" has been merged into the new ward, \"Xã Trường Văn\", and the province name, \"Tỉnh Thanh Hóa,\" remains unchanged. The direct citation is line 37 of `1686/NQ-UBTVQH15`:  \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Trường Minh, Trường Trung, Trường Sơn và Trường Giang thành xã mới có tên gọi là xã Trường Văn.\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1686/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thanh Hóa",
+        "line": "37. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Trường Minh, Trường Trung, Trường Sơn và Trường Giang thành xã mới có tên gọi là xã Trường Văn."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thanh Hóa",
+      "ward_code": "16348",
+      "ward_name": "Xã Trường Văn"
+    }
+  ]
+}

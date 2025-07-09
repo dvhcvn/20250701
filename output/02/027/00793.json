@@ -1,0 +1,28 @@
+{
+  "address": "Xã Sơn Vĩ, Huyện Mèo Vạc, Tỉnh Hà Giang",
+  "ellapsedInMs": 9660,
+  "estimatedCost": 0.0033859,
+  "thought": "**Analysis of Old Vietnamese Address for Modern Mapping**\n\nAlright, I'm tasked with deciphering this old Vietnamese address, \"Xã Sơn Vĩ, Huyện Mèo Vạc, Tỉnh Hà Giang,\" and aligning it with the current administrative setup. First, I identify the old components: \"Xã Sơn Vĩ\" (ward), \"Huyện Mèo Vạc\" (district), and \"Tỉnh Hà Giang\" (province).\n\nThe initial hurdle is that \"Tỉnh Hà Giang\" is no longer the correct province. I consulted province-level resolutions (specifically 60-NQ/TW), and they clearly state that Hà Giang merged with Tuyên Quang, forming \"Tỉnh Tuyên Quang\".  So, \"Tỉnh Hà Giang\" effectively becomes \"Tỉnh Tuyên Quang\" in this new context.\n\nNow, with \"Tỉnh Tuyên Quang\" as the relevant province, I move on to district and ward resolutions. Resolution 1684/NQ-UBTVQH15 catches my eye. It focuses on administrative rearrangements within Tuyên Quang.  Line 50 of this resolution is the key. It details the merger of \"Thượng Phùng,\" \"Xín Cái,\" and, crucially, \"Sơn Vĩ\" into a *new* \"Xã Sơn Vĩ\". Bingo!  This directly addresses the old ward name. The resolution aligns perfectly with the province change.\n\nLine 51 of the resolution mentions a merger to form \"Xã Mèo Vạc\". While the old district \"Huyện Mèo Vạc\" is referenced, \"Xã Sơn Vĩ\" isn't included in that merger. The parenthetical \"(huyện Mèo Vạc)\" alongside \"Tả Lủng\" seems to indicate these are wards *within* the Mèo Vạc district, but \"Xã Sơn Vĩ\" isn't mentioned as part of the new \"Xã Mèo Vạc\".\n\nMoving to the \"New Wards\" data, I find a strong confirmation: `{\"ward_code\":\"00778\",\"ward_name\":\"Xã Sơn Vĩ\",\"province_name\":\"Tỉnh Tuyên Quang\"}`. This perfectly matches the new ward name and province. The other listed ward is \"Xã Mèo Vạc\", which isn't a good match for \"Xã Sơn Vĩ\".\n\nTherefore, based on the explicit mention of \"Xã Sơn Vĩ\" being merged and recreated in Resolution 1684, my primary conclusion is the old ward \"Xã Sơn Vĩ\" has become the new ward \"Xã Sơn Vĩ\" within the merged province \"Tỉnh Tuyên Quang.\" The old \"Huyện Mèo Vạc\" district, while no longer existing in its original form, is now part of the administrative adjustments in Tuyên Quang. The \"Xã Mèo Vạc\" match isn't relevant for the specific old \"Xã Sơn Vĩ\". My confidence is high due to the direct correspondence in the resolution and the new ward data.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Tuyên Quang và tỉnh Hà Giang, lấy tên là tỉnh Tuyên Quang"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "00778",
+      "ward_name": "Xã Sơn Vĩ"
+    },
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "50. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Thượng Phùng, Xín Cái và Sơn Vĩ thành xã mới có tên gọi là xã Sơn Vĩ."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "00778",
+      "ward_name": "Xã Sơn Vĩ"
+    }
+  ]
+}

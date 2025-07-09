@@ -1,0 +1,28 @@
+{
+  "address": "Xã Tân Lập 1, Huyện Tân Phước, Tỉnh Tiền Giang",
+  "ellapsedInMs": 8514,
+  "estimatedCost": 0.0039213,
+  "thought": "**Analysis of Address Change: \"Xã Tân Lập 1, Huyện Tân Phước, Tỉnh Tiền Giang\"**\n\nOkay, here's how I'd approach this. The user is asking about the updated administrative unit for the old address \"Xã Tân Lập 1, Huyện Tân Phước, Tỉnh Tiền Giang\". My first step is to break it down. I'll need to identify the new ward given the province and ward.\n\nFirst, I see the old province is \"Tỉnh Tiền Giang.\" Looking into the province resolutions (60-NQ/TW), I quickly find that \"Tỉnh Tiền Giang\" merged with \"Tỉnh Đồng Tháp\" to form the new province: \"Tỉnh Đồng Tháp.\" Good, that's step one.\n\nNext, the old ward: \"Xã Tân Lập 1\". Now, I'll need to scrutinize any resolutions that might have updated this ward. I'll scan through any relevant resolutions. I quickly identify Resolution 1663/NQ-UBTVQH15, concerning administrative changes in \"Tỉnh Đồng Tháp.\"\n\nBingo! Within Resolution 1663, I find line 56. It explicitly states that \"Xã Tân Lập 1\" along with others were merged to create \"Xã Tân Phước 3\". This is the key. The resolution is for \"Tỉnh Đồng Tháp\", confirming the correct scope.\n\nNow, to ensure accuracy, I'll double-check this against the \"New wards\" list for \"Tỉnh Đồng Tháp\". And there it is: `{\"ward_code\":\"28345\",\"ward_name\":\"Xã Tân Phước 3\",\"province_name\":\"Tỉnh Đồng Tháp\"}`. Perfect match.\n\nGiven the direct mention of \"Tân Lập 1\" in the specific resolution and the clear provincial merger, I'm confident about this. I'd then construct the JSON output, setting the `confidence` to \"high\" and citing the specific resolution. This is a pretty straightforward case once you know where to look. I'm satisfied.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Tiền Giang và tỉnh Đồng Tháp, lấy tên là tỉnh Đồng Tháp"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đồng Tháp",
+      "ward_code": "28345",
+      "ward_name": "Xã Tân Phước 3"
+    },
+    {
+      "citation": {
+        "header": "1663/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Tháp",
+        "line": "56. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Phước Lập, Tân Lập 1 và Tân Lập 2 thành xã mới có tên gọi là xã Tân Phước 3."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đồng Tháp",
+      "ward_code": "28345",
+      "ward_name": "Xã Tân Phước 3"
+    }
+  ]
+}

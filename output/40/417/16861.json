@@ -1,0 +1,18 @@
+{
+  "address": "Xã Hữu Kiệm, Huyện Kỳ Sơn, Tỉnh Nghệ An",
+  "ellapsedInMs": 7939,
+  "estimatedCost": 0.0027207999999999998,
+  "thought": "**My Analysis of the Administrative Unit Change**\n\nOkay, so I'm presented with an address: \"Xã Hữu Kiệm, Huyện Kỳ Sơn, Tỉnh Nghệ An\" and I need to determine its new administrative unit (ward) based on some resolutions and a list of new wards. Here's my process:\n\nFirst, I parsed the input address. It breaks down like this: Old Ward Name: \"Xã Hữu Kiệm\" and Old Province Name: \"Tỉnh Nghệ An\". The province is crucial because those things can change.\n\nNext, I checked for any province mergers using the provided information (specifically, 60-NQ/TW). Fortunately, \"Tỉnh Nghệ An\" is listed as a province *not* undergoing mergers. That simplifies things!\n\nNow, the core of my task: I need to scan the \"Other resolutions\" for mentions of \"Xã Hữu Kiệm\" within \"Tỉnh Nghệ An\".  I went through each resolution, checking both the content (the lines) *and* the header to make sure the province matched.\n\n*   **Resolution 1 (1665/NQ-UBTVQH15)**: Not relevant (different province).\n*   **Resolution 2 (1669/NQ-UBTVQH15)**: Not relevant (different province).\n*   **Resolution 3 (1676/NQ-UBTVQH15)**: Not relevant (different province).\n*   **Resolution 4 (1678/NQ-UBTVQH15)**: **Bingo!** This one's in Nghệ An.  On line 31, it *explicitly* lists \"Xã Hữu Kiệm\" as one of the old units being merged to form a *new* unit that's also named \"xã Hữu Kiệm\".  This lines up perfectly, and the resolution header confirms that it is \"tỉnh Nghệ An\".\n\nBased on that resolution, specifically line 31, it seems \"Xã Hữu Kiệm\" (old) becomes \"xã Hữu Kiệm\" (new).  The new name is the same as the old name, so this simplifies things.\n\nNow, the final check: I looked at the \"New wards\" list, searching for a ward with a `ward_name` of \"Xã Hữu Kiệm\" and a `province_name` of \"Tỉnh Nghệ An\". I found it! The matching entry is `{\"ward_code\":\"16849\",\"ward_name\":\"Xã Hữu Kiệm\",\"province_name\":\"Tỉnh Nghệ An\"}`.\n\nPutting it all together, I'm highly confident in my analysis. The evidence is solid. I'd construct the following JSON output:\n\n*   `citation`: \"Resolution 1678/NQ-UBTVQH15, line 31\" (or similar wording to accurately reflect the citation format).\n*   `confidence`: High.\n*   `province_name`: \"Tỉnh Nghệ An\"\n*   `ward_code`: \"16849\"\n*   `ward_name`: \"Xã Hữu Kiệm\"\n\nThis response is based on a clear and direct match within a relevant resolution.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1678/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Nghệ An",
+        "line": "31. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Bảo Nam, Hữu Lập và Hữu Kiệm thành xã mới có tên gọi là xã Hữu Kiệm."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Nghệ An",
+      "ward_code": "16849",
+      "ward_name": "Xã Hữu Kiệm"
+    }
+  ]
+}

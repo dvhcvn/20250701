@@ -1,0 +1,18 @@
+{
+  "address": "Xã Trực Đạo, Huyện Trực Ninh, Tỉnh Nam Định",
+  "ellapsedInMs": 7192,
+  "estimatedCost": 0.0026853,
+  "thought": "**My Mapping Strategy for the Old Vietnamese Address**\n\nOkay, I'm tackling this address mapping problem. First, I extracted the key components: the old ward \"Xã Trực Đạo,\" the district \"Huyện Trực Ninh\" (though I know we're eliminating districts for the ward mapping itself), and the province \"Tỉnh Nam Định.\"\n\nNow, I'm working through the resolutions. I started with Resolution 60-NQ/TW to see if \"Tỉnh Nam Định\" was part of any province mergers. It wasn't in the \"no mergers\" list, but it *was* listed as being merged into \"Tỉnh Ninh Bình.\" So, right there, I've got the new province, \"Tỉnh Ninh Bình.\"\n\nNext, I scrutinized the other resolutions, specifically focusing on \"Xã Trực Đạo.\" I hit paydirt with Resolution 1674/NQ-UBTVQH15. It explicitly states that \"Xã Trực Đạo\" is being merged into \"Xã Cát Thành.\" That's a direct, unambiguous mapping. Another part of the resolution mentions a new \"Xã Trực Ninh,\" however, this is not related to Xã Trực Đạo directly, as the resolution explicitly says Xã Trực Đạo merges into \"Xã Cát Thành\".\n\nCross-referencing this with the `new_wards` list, I found \"Xã Cát Thành\" with the correct province, \"Tỉnh Ninh Bình.\" The confidence in this mapping is high; it's a direct result of the resolution.\n\nWhile I saw \"Xã Trực Ninh\" in the new wards list, it wasn't the correct match for \"Xã Trực Đạo\". \"Xã Trực Ninh\" is a different newly created ward per the resolution.\n\nFinally, I'm confident in the mapping of \"Xã Trực Đạo\" to \"Xã Cát Thành\" in \"Tỉnh Ninh Bình.\" I'll construct the JSON output reflecting this, with high confidence and the appropriate resolution citation.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "36. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Cát Thành, xã Việt Hùng và xã Trực Đạo thành xã mới có tên gọi là xã Cát Thành."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "14056",
+      "ward_name": "Xã Cát Thành"
+    }
+  ]
+}

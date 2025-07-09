@@ -1,0 +1,28 @@
+{
+  "address": "Xã Hải Lựu, Huyện Sông Lô, Tỉnh Vĩnh Phúc",
+  "ellapsedInMs": 8677,
+  "estimatedCost": 0.0033027,
+  "thought": "**Identifying the New Administrative Unit**\n\nOkay, let's break this down. The user's looking for the current administrative unit corresponding to \"Xã Hải Lựu, Huyện Sông Lô, Tỉnh Vĩnh Phúc.\" First, I need to pinpoint the province. \"Tỉnh Vĩnh Phúc\" has undergone some changes. Resolutions, specifically 60-NQ/TW, show that Vĩnh Phúc merged with Phú Thọ and Hòa Bình, ultimately becoming \"Tỉnh Phú Thọ.\" So, the new province is definitely Phú Thọ.\n\nNow for the tricky part: the ward. We have \"Xã Hải Lựu.\"  I need to check how \"Xã Hải Lựu\" fits into the new province structure of Phú Thọ.  Resolution 1676/NQ-UBTVQH15, concerning the administrative restructuring of Phú Thọ, is key. Line 60 specifically mentions \"Xã Hải Lựu,\" merging it with Nhân Đạo, Đôn Nhân, and Phương Khoan to form a *new* \"Xã Hải Lựu.\"  Crucially, the *name* remains the same, albeit with a different composition of the ward.\n\nLooking at the data structure I have, there's a match: `{\"ward_code\":\"08782\",\"ward_name\":\"Xã Hải Lựu\",\"province_name\":\"Tỉnh Phú Thọ\"}`. This perfectly aligns with the new ward name and province.\n\nConfidence is high here. The province mapping is explicit. The ward \"Xã Hải Lựu\" is explicitly mentioned in the Phú Thọ resolution, and its name is retained, confirming the exact ward. While the \"Huyện Sông Lô\" part isn't directly mentioned in connection with this specific merge, the resolution is focused on the *new* province. The key here is that \"Xã Hải Lựu\" is definitively listed as being restructured within Phú Thọ, as part of the merging process.\n\nLet's reconfirm. The original address is \"Xã Hải Lựu, Huyện Sông Lô, Tỉnh Vĩnh Phúc.\"\n\n1. **Province:** \"Tỉnh Vĩnh Phúc\" became \"Tỉnh Phú Thọ\".\n2. **Ward:** Resolution 1676/NQ-UBTVQH15, line 60, explicitly says \"Xã Hải Lựu\" forms a new ward with the same name within Phú Thọ.\n\nTherefore, the new administrative unit is **Xã Hải Lựu, Tỉnh Phú Thọ.**\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Vĩnh Phúc, tỉnh Phú Thọ và tỉnh Hoà Bình; lấy tên là tỉnh Phú Thọ"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "08782",
+      "ward_name": "Xã Hải Lựu"
+    },
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "60. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Nhân Đạo, Đôn Nhân, Phương Khoan và Hải Lựu thành xã mới có tên gọi là xã Hải Lựu."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "08782",
+      "ward_name": "Xã Hải Lựu"
+    }
+  ]
+}

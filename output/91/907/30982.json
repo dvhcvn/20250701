@@ -1,0 +1,28 @@
+{
+  "address": "Xã Vĩnh Thắng, Huyện Gò Quao, Tỉnh Kiên Giang",
+  "ellapsedInMs": 7797,
+  "estimatedCost": 0.0033952,
+  "thought": "**Analysis of Administrative Unit Mapping**\n\nOkay, here's what I've got. The user needs to map an old address, \"Xã Vĩnh Thắng, Huyện Gò Quao, Tỉnh Kiên Giang,\" to new administrative units. I've broken down the process into clear steps.\n\nFirst, I identified the old units: \"Xã Vĩnh Thắng\" is the ward, \"Huyện Gò Quao\" is the district (though the prompt mentioned eliminating districts, it's useful for context), and \"Tỉnh Kiên Giang\" is the province.\n\nNext, I checked province resolutions. Resolution 60-NQ/TW states that \"Tỉnh Kiên Giang\" was merged into \"Tỉnh An Giang\". High confidence here – clear and direct.\n\nThen, I focused on resolutions related to wards, specifically 1654/NQ-UBTVQH15, concerning An Giang.  Bingo! Line 60 explicitly mentions \"Xã Vĩnh Thắng\" being merged with other wards to form \"Xã Vĩnh Tuy.\"  This resolution's header confirms it's relevant to the new province, and the text aligns with the change from the old province and unit.\n\nI cross-referenced this new ward name, \"Xã Vĩnh Tuy,\" with the \"New wards\" data.  The data confirmed \"Xã Vĩnh Tuy\" with the expected province name, \"Tỉnh An Giang,\" and included the code \"30982.\"\n\nThe critical point here is the direct mention of \"Xã Vĩnh Thắng\" in the resolution applying to the new province. The province merger confirms that units from old Kiên Giang are now under An Giang.\n\nGiven the direct mention of \"Xã Vĩnh Thắng\" in resolution 1654/NQ-UBTVQH15 and the merger from Kiên Giang to An Giang, I am confident in the mapping. Therefore, the output array will include the old unit and the matching new one with high confidence.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh An Giang và tỉnh Kiên Giang, lấy tên là tỉnh An Giang"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh An Giang",
+      "ward_code": "30982",
+      "ward_name": "Xã Vĩnh Tuy"
+    },
+    {
+      "citation": {
+        "header": "1654/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh An Giang",
+        "line": "60. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Vĩnh Thắng, Vĩnh Phước A và Vĩnh Tuy thành xã mới có tên gọi là xã Vĩnh Tuy."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh An Giang",
+      "ward_code": "30982",
+      "ward_name": "Xã Vĩnh Tuy"
+    }
+  ]
+}

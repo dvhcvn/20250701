@@ -1,0 +1,18 @@
+{
+  "address": "Xã Nam Thái Sơn, Huyện Hòn Đất, Tỉnh Kiên Giang",
+  "ellapsedInMs": 6611,
+  "estimatedCost": 0.0022161999999999998,
+  "thought": "**My Analysis: Mapping an Old Address to a New Administrative Unit**\n\nOkay, here's how I'm approaching this. The user has given me an old address and wants me to figure out its corresponding new one based on some resolutions and a list of new wards.  My first task is to break down the old address:  \"Xã Nam Thái Sơn\" in \"Huyện Hòn Đất,\" \"Tỉnh Kiên Giang.\"\n\nThe provided information also mentions a resolution about the merge of Kiên Giang and An Giang.  I need to check for province changes first.  I immediately find that Resolution 60-NQ/TW states: \"Hợp nhất tỉnh An Giang và tỉnh Kiên Giang, lấy tên là tỉnh An Giang\" (\"The merger of An Giang province and Kiên Giang province, named An Giang province\"). So, the new province name will be \"Tỉnh An Giang.\" That's good.\n\nNext, I have to check for any changes to the old ward. The user mentioned Resolution 1654/NQ-UBTVQH15, which seems relevant as it addresses administrative organization changes in An Giang. Given that Kiên Giang was incorporated into An Giang, this resolution is crucial.\n\nLooking at line 73 of the resolution, I immediately see what I need: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Hòn Đất và các xã Lình Huỳnh, Thổ Sơn, Nam Thái Sơn thành xã mới có tên gọi là **xã Hòn Đất**.\"  Bingo! \"Xã Nam Thái Sơn\" is explicitly mentioned as being reorganized into the new \"Xã Hòn Đất.\" This is a clear indicator.\n\nI then check the provided list of new wards. I find  `{\"ward_code\":\"30817\",\"ward_name\":\"Xã Hòn Đất\",\"province_name\":\"Tỉnh An Giang\"}`. This perfectly matches the resolution's findings and my province name determined earlier.\n\nTherefore, my final JSON output is going to be very straightforward. I'm going with a \"high\" confidence level because this is a very clear and explicit mapping. The citation will be the relevant resolution and line, and the province and ward information will be taken directly from both the resolution and the provided new ward data. This is a very clean and conclusive mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1654/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh An Giang",
+        "line": "73. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Hòn Đất và các xã Lình Huỳnh, Thổ Sơn, Nam Thái Sơn thành xã mới có tên gọi là xã Hòn Đất."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh An Giang",
+      "ward_code": "30817",
+      "ward_name": "Xã Hòn Đất"
+    }
+  ]
+}

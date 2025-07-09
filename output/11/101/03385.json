@@ -1,0 +1,18 @@
+{
+  "address": "Xã Háng Lìa, Huyện Điện Biên Đông, Tỉnh Điện Biên",
+  "ellapsedInMs": 6807,
+  "estimatedCost": 0.0024056,
+  "thought": "**Identifying the New Administrative Unit for the Old Address**\n\nOkay, so I've got this old address: \"Xã Háng Lìa, Huyện Điện Biên Đông, Tỉnh Điện Biên,\" and the task is to find the new corresponding ward.  First, I need to figure out which province this is, which seems pretty straightforward: \"Tỉnh Điện Biên.\"  Let's quickly check `60-NQ/TW` to confirm there haven't been any province-level mergers.  Ah, good, \"Tỉnh Điện Biên\" is listed as a province that *didn't* merge, so its name is still \"Tỉnh Điện Biên\".\n\nNow, the specific ward is \"Xã Háng Lìa.\"  Time to dig through the relevant resolutions. I'll search for resolutions that pertain to \"Tỉnh Điện Biên\" and see if anything jumps out.  Bingo! `1661/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Điện Biên` looks promising.  I'll scan the lines in this resolution, specifically looking for \"Xã Háng Lìa.\"\n\nAha! Line 41. It explicitly states, *\"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Háng Lìa và xã Tìa Dình thành xã mới có tên gọi là **xã Tìa Dình**.\"* This is a critical clue: \"Xã Háng Lìa\" is merging into \"xã Tìa Dình.\"\n\nJust to be absolutely certain, I'll cross-reference this with the \"New wards\" data.  I'll look for \"xã Tìa Dình\" in that list.  And there it is: `{\"ward_code\":\"03385\",\"ward_name\":\"Xã Tìa Dình\",\"province_name\":\"Tỉnh Điện Biên\"}`.  The province name matches, which is excellent confirmation.\n\nGiven this solid evidence, I'm confident about the answer.  My output will be:\n\n*   The citation: `1661/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Điện Biên`, with line 41 detailing the merger.\n*   A \"high\" confidence level because of the explicit merger statement and confirmation in the new ward data.\n*   The province name is \"Tỉnh Điện Biên.\"\n*   The ward code is \"03385.\"\n*   The new ward name is \"Xã Tìa Dình.\"\n\nThat should be a clean and accurate answer!\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1661/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Điện Biên",
+        "line": "41. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Háng Lìa và xã Tìa Dình thành xã mới có tên gọi là xã Tìa Dình."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Điện Biên",
+      "ward_code": "03385",
+      "ward_name": "Xã Tìa Dình"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Ea Ktur, Huyện Cư Kuin, Tỉnh Đắk Lắk",
+  "ellapsedInMs": 8197,
+  "estimatedCost": 0.0029050000000000005,
+  "thought": "**Determining the New Administrative Unit**\n\nOkay, so I've got an old address: \"Xã Ea Ktur, Huyện Cư Kuin, Tỉnh Đắk Lắk.\" My task is to figure out the new administrative unit, knowing districts are being eliminated and using resolutions and new ward information. Here's how I'm approaching this:\n\nFirst, I parsed the old address. I've got \"Xã Ea Ktur\" as the ward, \"Huyện Cư Kuin\" as the district (which I'll disregard for the final output as per the instructions), and \"Tỉnh Đắk Lắk\" for the province.  I'm focusing on \"Ea Ktur\" and \"Đắk Lắk\" right now.\n\nNext, I checked province-level resolutions, specifically `60-NQ/TW`.  It's quick - \"Đắk Lắk\" isn't being eliminated. Actually,  the resolution mentions a merger with Phú Yên, but the resulting province still carries the \"Đắk Lắk\" name. So, the province name remains the same.\n\nNow, to the key resolution: `1660/NQ-UBTVQH15`.  Line 51 of this resolution is the jackpot. It *explicitly* states that \"xã Ea Ktur\" is part of the amalgamation that forms the *new* \"xã Ea Ktur\" along with portions of \"Ea Tiêu\" and \"Ea Bhốk\".  That's a direct match to my old ward name.\n\nI then cross-referenced this with the new ward data. It states `{\"ward_code\":\"24544\",\"ward_name\":\"Xã Ea Ktur\",\"province_name\":\"Tỉnh Đắk Lắk\"}`.  Bingo! That perfectly matches the resolution and the old information.\n\nTherefore, my conclusion is solid. The old \"Xã Ea Ktur\" is directly implicated in the formation of the *new* \"Xã Ea Ktur\" as described in `1660/NQ-UBTVQH15`.  The new ward data confirms this with the code \"24544\" and the same province name. I'm highly confident about this.  The new \"ward_name\" is \"Xã Ea Ktur\", the new \"ward_code\" is \"24544\", and \"province_name\" is \"Tỉnh Đắk Lắk\". This is a high-confidence match with the source citation being `1660/NQ-UBTVQH15, Line 51`.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1660/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đắk Lắk",
+        "line": "51. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Ea Tiêu, xã Ea Ktur và phần còn lại của xã Ea Bhốk sau khi sắp xếp theo quy định tại khoản 50 Điều này thành xã mới có tên gọi là xã Ea Ktur."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đắk Lắk",
+      "ward_code": "24544",
+      "ward_name": "Xã Ea Ktur"
+    }
+  ]
+}

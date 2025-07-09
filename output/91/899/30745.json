@@ -1,0 +1,18 @@
+{
+  "address": "Phường Vĩnh Lạc, Thành phố Rạch Giá, Tỉnh Kiên Giang",
+  "ellapsedInMs": 7029,
+  "estimatedCost": 0.0024809,
+  "thought": "**Determining the New Administrative Unit**\n\nOkay, so I'm presented with an old address and need to identify its current administrative unit. I've got a plan. First, I need to break down the old address: \"Phường Vĩnh Lạc, Thành phố Rạch Giá, Tỉnh Kiên Giang\".  I quickly identify the old ward (\"Phường Vĩnh Lạc\") and the old province (\"Tỉnh Kiên Giang\").\n\nNow, time to consult the resolutions.  I'll start with province-level resolutions, specifically checking for any concerning \"Tỉnh Kiên Giang\".  Ah, here it is: 60-NQ/TW, regarding the merger of An Giang and Kiên Giang into a single province, now called \"Tỉnh An Giang\". That's a key piece of the puzzle.  So, I can confidently assume any future references to \"Tỉnh Kiên Giang\" will need to be re-mapped to \"Tỉnh An Giang\".\n\nNext, I'll search for resolutions that mention \"Phường Vĩnh Lạc\" in the context of \"Tỉnh An Giang\".  I scan through resolution 1654/NQ-UBTVQH15, and Bingo! Line 91 explicitly states the merging of \"Phường Vĩnh Lạc\" into a new ward called \"**phường Rạch Giá**\" within the *new* province of \"Tỉnh An Giang\".  That's a strong match.  I can safely discard 1673/NQ-UBTVQH15 as it pertains to a different province.\n\nNow that I have the new ward's name and province, I'll cross-reference the \"New wards\" data.  Looking for \"Phường Rạch Giá\" within \"Tỉnh An Giang\" yields a clear result: a corresponding entry with the code \"30742\".\n\nGiven the clear directive in resolution 1654/NQ-UBTVQH15 concerning the old ward, I can confidently construct the JSON output:\n\n*   **Citation:** Based on the information from resolution 1654/NQ-UBTVQH15, line 91.\n*   **Confidence:** \"high\" due to the specific merger directive.\n*   **province_name:** \"Tỉnh An Giang\"\n*   **ward_code:** \"30742\"\n*   **ward_name:** \"Phường Rạch Giá\"\n\nThis seems like a straightforward and well-supported conclusion.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1654/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh An Giang",
+        "line": "91. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Vĩnh Quang, Vĩnh Thanh, Vĩnh Thanh Vân, Vĩnh Lạc, An Hòa, Vĩnh Hiệp, An Bình, Rạch Sỏi và Vĩnh Lợi thành phường mới có tên gọi là phường Rạch Giá."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh An Giang",
+      "ward_code": "30742",
+      "ward_name": "Phường Rạch Giá"
+    }
+  ]
+}

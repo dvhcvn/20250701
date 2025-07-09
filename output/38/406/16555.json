@@ -1,0 +1,18 @@
+{
+  "address": "Xã Quảng Thạch, Huyện Quảng Xương, Tỉnh Thanh Hóa",
+  "ellapsedInMs": 7032,
+  "estimatedCost": 0.0029718,
+  "thought": "**Address Mapping for Vietnamese Administrative Units**\n\nOkay, so I'm tackling this address: \"Xã Quảng Thạch, Huyện Quảng Xương, Tỉnh Thanh Hóa.\" My goal is to figure out the corresponding new administrative unit.\n\nFirst, I need to identify the province and ward. From the address, it's clear: \"Tỉnh Thanh Hóa\" and \"Xã Quảng Thạch.\"\n\nNext, I'll consult the province resolutions, specifically 60-NQ/TW, to see if Thanh Hoa has changed.  Ah, it's listed under \"Các đơn vị hành chính cấp tỉnh không thực hiện sáp nhập,\" so Thanh Hoa remains unchanged. Good.\n\nNow, the crucial step: I need to scour the other resolutions looking for \"Xã Quảng Thạch\" within Thanh Hoa.  Bingo! Resolution 1686/NQ-UBTVQH15, concerning Thanh Hoa, has line 32, which directly states that \"Xã Quảng Thạch\" was merged with other wards and renamed \"Xã Tiên Trang.\"\n\nTo solidify this, I'll quickly check the \"New wards\" data to confirm the existence of \"Xã Tiên Trang\" in Thanh Hoa. Yep, there it is: `{\"ward_code\":\"16549\",\"ward_name\":\"Xã Tiên Trang\",\"province_name\":\"Tỉnh Thanh Hóa\"}`.  That's a match!\n\nI also quickly checked other resolutions to ensure that \"Xã Quảng Thạch\" isn't mentioned in another context that might muddy the waters. There's a mention in the Quảng Trị resolution, but that's irrelevant.\n\nGiven the explicit nature of Resolution 1686, detailing the merger and new ward name, my confidence is high. This is a clear-cut case.\n\nBased on all of this, the final output would be a JSON object, mapping the old address to the new ward.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1686/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thanh Hóa",
+        "line": "32. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Quảng Thạch, Quảng Nham và Tiên Trang thành xã mới có tên gọi là xã Tiên Trang."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thanh Hóa",
+      "ward_code": "16549",
+      "ward_name": "Xã Tiên Trang"
+    }
+  ]
+}

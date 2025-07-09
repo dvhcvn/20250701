@@ -1,0 +1,18 @@
+{
+  "address": "Phường Cẩm Thạch, Thành phố Cẩm Phả, Tỉnh Quảng Ninh",
+  "ellapsedInMs": 7647,
+  "estimatedCost": 0.0030291999999999997,
+  "thought": "**Finding the New Administrative Unit for Phường Cẩm Thạch, Quảng Ninh**\n\nOkay, so I'm presented with the old address \"Phường Cẩm Thạch, Thành phố Cẩm Phả, Tỉnh Quảng Ninh\" and need to figure out its new administrative unit. My initial thought is to cross-reference the provided resolutions and new wards data.\n\nFirst, I quickly identify \"Tỉnh Quảng Ninh\" as the province. Checking `60-NQ/TW`, I confirm the province's name remains unchanged. No surprises there.\n\nNext, I zero in on \"Phường Cẩm Thạch\" - the ward in question. I then begin my search within the \"Other resolutions\" data, specifically focusing on resolutions relevant to \"Phường Cẩm Thạch\" within \"Tỉnh Quảng Ninh.\" The key document here is `1679/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ninh`.\n\nLine 46 is the jackpot: it explicitly states that \"Phường Cẩm Thạch\" is being merged with \"Cẩm Thủy\" and \"Quang Hanh\" to form the new ward \"Phường Quang Hanh.\" Line 47 is about the reorganization of other wards, it mentions \"Thành phố Cẩm Phả\" but the context is about reorganization of wards in Quảng Ninh, it is not related to the input ward.\n\nNow I double-check the \"New wards\" data to confirm. And, indeed, I find the entry: `{\"ward_code\":\"06778\",\"ward_name\":\"Phường Quang Hanh\",\"province_name\":\"Tỉnh Quảng Ninh\"}`. This directly corroborates the information from the resolution.\n\nBefore finalizing, I quickly scan other potentially relevant resolutions to ensure there's no conflicting information or ambiguity, like those related to communes with the same name. I find `1665/NQ-UBTVQH15` and `1686/NQ-UBTVQH15`, but they both relate to wards named 'Cẩm Thạch' but in *different provinces* (Hà Tĩnh and Thanh Hóa respectively), so they aren't relevant.\n\nTherefore, the mapping seems pretty straightforward: \"Phường Cẩm Thạch\" is now part of \"Phường Quang Hanh.\" I'd assign a high confidence level due to the direct mapping provided by the resolution. This gives us the province as \"Tỉnh Quảng Ninh\" (unchanged), the new ward as \"Phường Quang Hanh\" (code \"06778\").  And, I can confidently cite `1679/NQ-UBTVQH15` line 46 as the primary source for this determination.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1679/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ninh",
+        "line": "46. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Cẩm Thạch, Cẩm Thủy và Quang Hanh thành phường mới có tên gọi là phường Quang Hanh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ninh",
+      "ward_code": "06778",
+      "ward_name": "Phường Quang Hanh"
+    }
+  ]
+}

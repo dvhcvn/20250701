@@ -1,0 +1,18 @@
+{
+  "address": "Xã Hương Ngải, Huyện Thạch Thất, Thành phố Hà Nội",
+  "ellapsedInMs": 8077,
+  "estimatedCost": 0.0029674000000000002,
+  "thought": "**Address Mapping for Vietnamese Administrative Units**\n\nOkay, so I'm presented with an old Vietnamese address: \"Xã Hương Ngải, Huyện Thạch Thất, Thành phố Hà Nội\" and need to map it to the new administrative structure based on the provided resolutions and ward data. Let's break this down systematically.\n\nFirst, I identified the old administrative units: \"Xã Hương Ngải\" (the old ward), \"Huyện Thạch Thất\" (the old district, although I know districts are generally eliminated in these changes), and \"Thành phố Hà Nội\" (the old province).\n\nNext, I checked the province resolutions, specifically 60-NQ/TW, to see if Hà Nội was undergoing any changes. Thankfully, it's listed under \"Các đơn vị hành chính cấp tỉnh không thực hiện sáp nhập,\" meaning the province name remains \"Thành phố Hà Nội\". Good, that simplifies things a bit.\n\nThen, I dove into the specific resolution 1656/NQ-UBTVQH15, looking for mentions of \"Xã Hương Ngải\" or \"Huyện Thạch Thất.\" Line 93 initially caught my attention, but it dealt with creating \"xã Thạch Thất\" from other wards, not \"Hương Ngải.\" However, line 95 was the jackpot! It explicitly states that \"Xã Hương Ngải,\" along with some other old wards, will be merged to form the new ward: **\"Xã Tây Phương.\"** This is a direct match and a strong indicator.\n\nNow, I needed to confirm this mapping against the \"New wards\" data. I searched for \"Xã Tây Phương\" and found a corresponding entry: `{\"ward_code\":\"10003\",\"ward_name\":\"Xã Tây Phương\",\"province_name\":\"Thành phố Hà Nội\"}`. The `province_name` aligns with the unchanged \"Thành phố Hà Nội\", which solidifies the mapping.\n\nWith this information, I can confidently construct the JSON output. The `citation` will reference the resolution 1656/NQ-UBTVQH15, line 95. The `confidence` will be \"high\" due to the direct mention and clear mapping. The `province_name` remains \"Thành phố Hà Nội.\" The `ward_code` is \"10003,\" and the `ward_name` is \"Xã Tây Phương.\"\n\nI double-checked the other resolution entries to ensure no other wards could apply, but the \"Xã Tây Phương\" match is the only relevant outcome for this case, as requested. So it looks like \"Xã Hương Ngải\" is now part of \"Xã Tây Phương\" in \"Thành phố Hà Nội\" (Province of Hanoi)\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội",
+        "line": "95. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Phùng Xá (huyện Thạch Thất), Hương Ngải, Lam Sơn, Thạch Xá, một phần diện tích tự nhiên, quy mô dân số của xã Quang Trung, một phần diện tích tự nhiên của thị trấn Quốc Oai, xã Ngọc Liệp và xã Phượng Sơn thành xã mới có tên gọi là xã Tây Phương."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hà Nội",
+      "ward_code": "10003",
+      "ward_name": "Xã Tây Phương"
+    }
+  ]
+}

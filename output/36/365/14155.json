@@ -1,0 +1,28 @@
+{
+  "address": "Xã Giao Hương, Huyện Giao Thủy, Tỉnh Nam Định",
+  "ellapsedInMs": 8018,
+  "estimatedCost": 0.0032344,
+  "thought": "**Address Mapping Analysis: Vietnamese Administrative Unit Changes**\n\nOkay, so I'm tackling this Vietnamese address mapping task. The goal is to figure out the new administrative unit for \"Xã Giao Hương, Huyện Giao Thủy, Tỉnh Nam Định\". I'm starting with a good handle on the basics: province, district, and ward.\n\nFirst, I need to figure out how \"Tỉnh Nam Định\" changed.  I quickly see that Resolution 60-NQ/TW states that Nam Định, Hà Nam, and Ninh Bình *merged* to become Ninh Bình. So, \"Tỉnh Nam Định\" is now \"Tỉnh Ninh Bình\".  That's straightforward enough.\n\nNow, the trickier part is the ward and district. I've got \"Xã Giao Hương\" and \"Huyện Giao Thủy\" to work with. I need to look at specific resolutions about those levels. The crucial resolution seems to be \"1674/NQ-UBTVQH15\", focusing on administrative reorganizations within Ninh Bình.\n\nLine 53 of the resolution is a gold mine.  It explicitly states that \"Xã Giao Hương\" is merged, along with \"Giao Thiện\" and \"Giao Thanh\", to become \"Xã Giao Minh\"!  Score!  I've found my new ward. Line 55 details the creation of \"Xã Giao Thủy\" from \"thị trấn Giao Thủy\" and \"xã Bình Hòa\" but that's not relevant to my old ward.\n\nNow I'm matching this to the \"New Wards Data\". The data gives me ward codes and names. I have:\n\n*   \"Xã Giao Minh\" from the resolution, which maps to `{\"ward_code\":\"14161\",\"ward_name\":\"Xã Giao Minh\",\"province_name\":\"Tỉnh Ninh Bình\"}`. This is a perfect match!\n*   And another `{\"ward_code\":\"14167\",\"ward_name\":\"Xã Giao Thuỷ\",\"province_name\":\"Tỉnh Ninh Bình\"}` from the new data.\n\nSo, I'm confident. The old province is now Ninh Bình. \"Xã Giao Hương\" is merged into the new \"Xã Giao Minh.\" I can confidently map \"Xã Giao Hương, Huyện Giao Thủy, Tỉnh Nam Định\" to \"Xã Giao Minh\" in the new province of Ninh Bình. Although the provided resolutions don't specify the district level, the ward changes clearly show the path.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "8. Hợp nhất tỉnh Hà Nam, tỉnh Ninh Bình và tỉnh Nam Định; lấy tên là tỉnh Ninh Bình"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "14161",
+      "ward_name": "Xã Giao Minh"
+    },
+    {
+      "citation": {
+        "header": "1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "53. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Giao Thiện, Giao Hương và Giao Thanh thành xã mới có tên gọi là xã Giao Minh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "14161",
+      "ward_name": "Xã Giao Minh"
+    }
+  ]
+}

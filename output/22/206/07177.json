@@ -1,0 +1,18 @@
+{
+  "address": "Phường Yên Hải, Thị xã Quảng Yên, Tỉnh Quảng Ninh",
+  "ellapsedInMs": 7665,
+  "estimatedCost": 0.0033414,
+  "thought": "**Analysis of Administrative Unit Changes for \"Phường Yên Hải\"**\n\nOkay, here's the breakdown of my thinking. The user wants to find the new administrative unit for \"Phường Yên Hải, Thị xã Quảng Yên, Tỉnh Quảng Ninh.\"  My first step, as always, is to parse the request. I need to figure out which resolution or data source will help me identify the updated name and code.\n\nThe old address gives me: \"Phường Yên Hải\" (the ward), \"Thị xã Quảng Yên\" (the district - but since districts are being eliminated, it's just location context), and \"Tỉnh Quảng Ninh\" (the province).\n\nI immediately consult the province resolutions (60-NQ/TW), but it confirms what I already know: \"Tỉnh Quảng Ninh\" remains unchanged. Then, the hunt begins through the other resolutions, specifically focusing on those concerning \"Tỉnh Quảng Ninh\" to pinpoint any mention of \"Phường Yên Hải\" or \"Thị xã Quảng Yên.\"\n\nI scanned through several resolutions (1657/NQ-UBTVQH15, 1666/NQ-UBTVQH15, 1673/NQ-UBTVQH15, 1676/NQ-UBTVQH15, 1680/NQ-UBTVQH15, 1686/NQ-UBTVQH15, 1687/NQ-UBTVQH15) until I hit the relevant one: 1679/NQ-UBTVQH15, concerning Quảng Ninh.\n\nWithin this resolution, line 34 is the gold mine.  It explicitly states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Nam Hòa, Yên Hải, Phong Cốc và xã Cẩm La thành phường mới có tên gọi là **phường Phong Cốc**.\" Bingo! \"Phường Yên Hải\" is right there, merging into \"phường Phong Cốc\".\n\nThe next step: confirm the data in the \"New wards\" dataset. I quickly searched for \"phường Phong Cốc\" in \"Tỉnh Quảng Ninh.\" The entry `{\"ward_code\":\"07183\",\"ward_name\":\"Phường Phong Cốc\",\"province_name\":\"Tỉnh Quảng Ninh\"}` perfectly matches my findings.\n\nTherefore, my final conclusion: \"Phường Yên Hải\" has been merged into the new ward **\"Phường Phong Cốc\"**, with ward code **\"07183\"** in **\"Tỉnh Quảng Ninh.\"** I have high confidence in this, given the direct mention of the old ward name in the resolution.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1679/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ninh",
+        "line": "34. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Nam Hòa, Yên Hải, Phong Cốc và xã Cẩm La thành phường mới có tên gọi là **phường Phong Cốc**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ninh",
+      "ward_code": "07183",
+      "ward_name": "Phường Phong Cốc"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Cái Nhum, Huyện Mang Thít, Tỉnh Vĩnh Long",
+  "ellapsedInMs": 7442,
+  "estimatedCost": 0.0026584,
+  "thought": "**Mapping an Old Address: My Reasoning**\n\nOkay, so I've been tasked with taking an old Vietnamese address and mapping it to the new administrative structure. The input address is: Thị trấn Cái Nhum, Huyện Mang Thít, Tỉnh Vĩnh Long. Let's break this down systematically.\n\nFirst, I identified the components: old ward (\"Thị trấn Cái Nhum\"), district (\"Huyện Mang Thít\"), and province (\"Tỉnh Vĩnh Long\").\n\nNext, I turned to the province resolutions (specifically 60-NQ/TW). Finding \"Tỉnh Vĩnh Long\" confirmed that it remains Vĩnh Long, although it merged with Bến Tre and Trà Vinh. The province itself is unchanged.  Good, that one's straightforward.\n\nThen, I focused on the other relevant resolutions, particularly 1687/NQ-UBTVQH15. I zeroed in on lines mentioning \"Thị trấn Cái Nhum.\"  Bingo! Line 1 of resolution 1687 states clearly: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã An Phước (huyện Mang Thít), xã Chánh An và thị trấn Cái Nhum thành xã mới có tên gọi là **xã Cái Nhum**.\"  This directly addresses the old ward, confirming it's now part of the new ward named \"xã Cái Nhum.\" The \"huyện Mang Thít\" component is also present, which strengthens the link.\n\nTo be extra certain, I then checked the \"New wards\" data.  Sure enough, I found the entry for \"xã Cái Nhum\":  `{\"ward_code\":\"29641\",\"ward_name\":\"Xã Cái Nhum\",\"province_name\":\"Tỉnh Vĩnh Long\"}`. This perfectly aligns with the resolution and the province.\n\nNow, to construct the JSON output. I'm going to pull the `citation.header` and the specific `citation.line` from the relevant resolution (1687/NQ-UBTVQH15, line 1). The confidence level is high because of the explicit match and direct mention of the old ward becoming the new one. The `province_name` remains \"Tỉnh Vĩnh Long.\" I'll include the new ward code (`ward_code`) and name (`ward_name`) from the \"New wards\" data.\n\nAs a final check to eliminate any possibility of overlapping jurisdictions, I reviewed the other lines in 1687/NQ-UBTVQH15.  Lines 3 and 4 describe other ward consolidations, but none involve the old \"Thị trấn Cái Nhum.\"\n\nTherefore, my conclusion is that the old address \"Thị trấn Cái Nhum\" now maps to the new ward \"xã Cái Nhum,\" located in the province \"Tỉnh Vĩnh Long.\" The JSON output reflects this precise mapping with high confidence, based on a comprehensive analysis of the available resolutions and data.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long",
+        "line": "1. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã An Phước (huyện Mang Thít), xã Chánh An và thị trấn Cái Nhum thành xã mới có tên gọi là xã Cái Nhum."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "29641",
+      "ward_name": "Xã Cái Nhum"
+    }
+  ]
+}

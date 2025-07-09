@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tường Phong, Huyện Phù Yên, Tỉnh Sơn La",
+  "ellapsedInMs": 6015,
+  "estimatedCost": 0.003166,
+  "thought": "**Finding the New Administrative Unit for the Old Address**\n\nOkay, so the user wants to know the new address for \"Xã Tường Phong, Huyện Phù Yên, Tỉnh Sơn La.\"  My first thought is to break this down. I need to figure out which province we're dealing with, which is straightforward: \"Tỉnh Sơn La\".  Now, I need to check the relevant resolutions to see if there have been any administrative changes.\n\nI'll start with Resolution 60-NQ/TW to see if Sơn La province itself was merged or reorganized.  A quick scan reveals that Sơn La wasn't part of any province mergers, so its name remains the same.  Good. Next, I need to look for changes *within* the province.\n\nThat means digging into the provided list of `other_resolutions`. I'm going to look through each resolution, specifically scanning each `lines` entry for mentions of \"Tường Phong\" *and* \"Sơn La\" to make sure I'm finding the right information.\n\nAha!  I found it. Resolution 1681/NQ-UBTVQH15, specifically this line: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tường Thượng, Tường Phong, Tường Tiến và Tường Hạ thành xã mới có tên gọi là **xã Tường Hạ**.\"  Bingo!  This tells me that \"Tường Phong\" was merged into a new unit called \"Xã Tường Hạ.\"\n\nNow, I need to confirm the details of this new ward. I check the `New wards` list and find the relevant entry:  `{\"ward_code\":\"03958\",\"ward_name\":\"Xã Tường Hạ\",\"province_name\":\"Tỉnh Sơn La\"}`. Perfect. I now have the ward code, the ward name, and the province.\n\nFinally, I can build the JSON output.  The `citation` will be the resolution header and that critical line about the merger.  The `confidence` is going to be high because the resolution is very explicit about the merger.  The `province_name` is \"Tỉnh Sơn La,\" the `ward_code` is \"03958,\" and the `ward_name` is \"Xã Tường Hạ.\"  Done.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1681/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Sơn La",
+        "line": "33. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tường Thượng, Tường Phong, Tường Tiến và Tường Hạ thành xã mới có tên gọi là xã Tường Hạ."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Sơn La",
+      "ward_code": "03958",
+      "ward_name": "Xã Tường Hạ"
+    }
+  ]
+}

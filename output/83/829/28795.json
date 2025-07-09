@@ -1,0 +1,18 @@
+{
+  "address": "Xã Nhơn Thạnh, Thành phố Bến Tre, Tỉnh Bến Tre",
+  "ellapsedInMs": 7832,
+  "estimatedCost": 0.0033445,
+  "thought": "**My Analysis of the Administrative Reorganization**\n\nOkay, so I'm tackling this administrative geography question. The user wants the new unit for \"Xã Nhơn Thạnh, Thành phố Bến Tre, Tỉnh Bến Tre\".  I need to break this down. First, I identify the old province (Bến Tre), ward (Nhơn Thạnh), and district (Bến Tre City, though not explicitly asked, it's good context).\n\nThe first thing I check is province mergers.  Remembering the 60-NQ/TW directive, I know Bến Tre merged into Vĩnh Long. So, immediately \"Tỉnh Bến Tre\" is now \"Tỉnh Vĩnh Long\".\n\nNow for the tricky part: ward-level changes. I have a list of resolutions to check.  I need to scan each line for mentions of \"Nhơn Thạnh\" or \"Bến Tre City\". I systematically went through the list of resolutions, dismissing Đà Nẵng, Gia Lai, Quảng Ngãi, and Tây Ninh as irrelevant.\n\nThen, I focused on 1687/NQ-UBTVQH15 concerning Vĩnh Long. This is likely the key. I carefully analyzed each line within the resolution.  I found that line 117 states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của Phường 8(thành phố Bến Tre), phường Phú Khương, xã Phú Hưng và **xã Nhơn Thạnh**thành phường mới có tên gọi là **phường Phú Khương**.\"  Bingo!  \"Xã Nhơn Thạnh\" is explicitly merged into \"phường Phú Khương\".  That's my answer.\n\nFinally, I need to map this new ward name. I'll search my \"New wards\" data for \"Phường Phú Khương.\" I find a perfect match:  `{\"ward_code\":\"28756\",\"ward_name\":\"Phường Phú Khương\",\"province_name\":\"Tỉnh Vĩnh Long\"}`.\n\nTherefore, the updated administrative structure places the old \"Xã Nhơn Thạnh\" within the new \"phường Phú Khương,\" within the province of Vĩnh Long.  My confidence in this is high, given the explicit mention. The associated resolution and specific line are noted, and I'll construct the appropriate JSON output with the high confidence level.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long",
+        "line": "117. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của Phường 8(thành phố Bến Tre), phường Phú Khương, xã Phú Hưng và xã Nhơn Thạnhthành phường mới có tên gọi là **phường Phú Khương**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "28756",
+      "ward_name": "Phường Phú Khương"
+    }
+  ]
+}

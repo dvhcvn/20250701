@@ -1,0 +1,18 @@
+{
+  "address": "Xã Mỹ Hạnh Nam, Huyện Đức Hòa, Tỉnh Long An",
+  "ellapsedInMs": 8488,
+  "estimatedCost": 0.0035359000000000002,
+  "thought": "**Finding the New Administrative Unit for \"Xã Mỹ Hạnh Nam\"**\n\nOkay, here's my thought process on this. First, I need to break down the input address \"Xã Mỹ Hạnh Nam, Huyện Đức Hòa, Tỉnh Long An.\" I know the province is \"Tỉnh Long An\" and the ward is \"Xã Mỹ Hạnh Nam,\" which is a good starting point. I can ignore the district \"Huyện Đức Hòa\" for now, as the prompt specifies to focus on province and ward for mapping, and I'm aware that some resolution may affect province merging.\n\nNext, I need to check for any province mergers related to \"Tỉnh Long An\". I'll scan the province resolutions (60-NQ/TW, etc.). Ah, there it is! Resolution 60-NQ/TW, point 18 states \"Hợp nhất tỉnh Tây Ninh và tỉnh Long An, lấy tên là tỉnh Tây Ninh.\" So, \"Tỉnh Long An\" has become \"Tỉnh Tây Ninh.\"\n\nNow, I'll move on to the more crucial part: finding the relevant resolutions for \"Xã Mỹ Hạnh Nam\" in the context of the new province, \"Tỉnh Tây Ninh.\" I'll check all the relevant resolutions for any mentions of \"Xã Mỹ Hạnh Nam\" or \"Tỉnh Tây Ninh\".\n\nI'll quickly scan: **1656/NQ-UBTVQH15 (Hà Nội), 1677/NQ-UBTVQH15 (Quảng Ngãi), 1680/NQ-UBTVQH15 (Quảng Trị).** Nothing relevant here. Then I hit **1682/NQ-UBTVQH15 (Tây Ninh).**\n\nLine 28 mentions \"huyện Đức Hòa\" but not \"Xã Mỹ Hạnh Nam\". Line 31 mentions \"Mỹ Hạnh Bắc\", not \"Mỹ Hạnh Nam\". But then, line 32: Eureka! It's there: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Đức Hòa Đông, **xã Mỹ Hạnh Nam** và phần còn lại của xã Đức Hòa Thượng sau khi sắp xếp theo quy định tại khoản 31 Điều này thành xã mới có tên gọi là **xã Mỹ Hạnh**.\" Perfect, it explicitly states that \"Xã Mỹ Hạnh Nam\" is merged into \"xã Mỹ Hạnh.\" Line 33 is also irrelevant.\n\nThe next step is to match this new ward with the \"New wards\" list. \"xã Mỹ Hạnh\" is now the key. Searching \"New wards\" for \"Xã Mỹ Hạnh\" and \"Tỉnh Tây Ninh\" should yield a result. And there it is: `{\"ward_code\":\"27976\",\"ward_name\":\"Xã Mỹ Hạnh\",\"province_name\":\"Tỉnh Tây Ninh\"}`. A perfect match!\n\nTherefore, the final output needs to be constructed. The citation information will come from resolution **1682/NQ-UBTVQH15**, specifically line 32. Since I have a direct and clear merge, the confidence level can be marked as \"high.\" This will be used in a JSON output.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1682/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tây Ninh",
+        "line": "32. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Đức Hòa Đông, xã Mỹ Hạnh Nam và phần còn lại của xã Đức Hòa Thượng sau khi sắp xếp theo quy định tại khoản 31 Điều này thành xã mới có tên gọi là xã Mỹ Hạnh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tây Ninh",
+      "ward_code": "27976",
+      "ward_name": "Xã Mỹ Hạnh"
+    }
+  ]
+}

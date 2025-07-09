@@ -1,0 +1,28 @@
+{
+  "address": "Xã Đất Cuốc, Huyện Bắc Tân Uyên, Tỉnh Bình Dương",
+  "ellapsedInMs": 6375,
+  "estimatedCost": 0.0024390999999999996,
+  "thought": "**My Mapping Strategy for the Old Address**\n\nOkay, so I'm tasked with mapping \"Xã Đất Cuốc, Huyện Bắc Tân Uyên, Tỉnh Bình Dương\" to the new administrative structure.  Given my expertise in this, I'll approach it systematically.\n\nFirst, the province is straightforward. The old address clearly states \"Tỉnh Bình Dương\".  I know I need to check provincial resolutions to see if there's been any re-organization. A quick scan of resolution 60-NQ/TW immediately confirms it. I see that \"Tỉnh Bình Dương\" is now part of \"Thành phố Hồ Chí Minh.\"  That's the province mapped!\n\nNext, I need to focus on the ward and district. The old address is \"Xã Đất Cuốc, Huyện Bắc Tân Uyên.\"  I'll need to check Resolution 1685/NQ-UBTVQH15, the main source for ward and district adjustments. I'll meticulously scan it, looking for explicit mentions of \"Xã Đất Cuốc\" or \"Huyện Bắc Tân Uyên\". Line 98 caught my eye initially, talking about \"Huyện Bắc Tân Uyên\", but it related to \"Xã Bình Mỹ\" which isn't the one I'm after. But line 137 is the jackpot!  It *explicitly* lists \"Xã Đất Cuốc\" and states it's being merged into a new \"Xã Bắc Tân Uyên\". Brilliant!\n\nNow, I'll cross-reference this information with the \"New wards\" data to confirm.  I need to find \"Xã Bắc Tân Uyên\" in that dataset. And there it is, a perfect match:  `{\"ward_code\":\"25906\",\"ward_name\":\"Xã Bắc Tân Uyên\",\"province_name\":\"Thành phố Hồ Chí Minh\"}`. The province confirms the resolution.\n\nThe evidence is overwhelming. The resolution clearly states the change, the dataset confirms the new entity, and the provincial resolution validates it all. My confidence level is extremely high.\n\nTherefore, the final output will be a JSON structure reflecting this clear mapping: \"Xã Đất Cuốc\" to \"Xã Bắc Tân Uyên\" under \"Thành phố Hồ Chí Minh.\"  My analysis is complete.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "16. Hợp nhất tỉnh Bà Rịa - Vũng Tàu, tỉnh Bình Dương và Thành phố Hồ Chí Minh; lấy tên là Thành phố Hồ Chí Minh"
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hồ Chí Minh",
+      "ward_code": "25906",
+      "ward_name": "Xã Bắc Tân Uyên"
+    },
+    {
+      "citation": {
+        "header": "1685/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của Thành phố Hồ Chí Minh",
+        "line": "137. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Tân Thành, xã Đất Cuốc và xã Tân Định thành xã mới có tên gọi là xã Bắc Tân Uyên."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hồ Chí Minh",
+      "ward_code": "25906",
+      "ward_name": "Xã Bắc Tân Uyên"
+    }
+  ]
+}

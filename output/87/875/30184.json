@@ -1,0 +1,18 @@
+{
+  "address": "Xã Long Hưng A, Huyện Lấp Vò, Tỉnh Đồng Tháp",
+  "ellapsedInMs": 7555,
+  "estimatedCost": 0.0028489,
+  "thought": "**Determining the New Ward for the Given Address**\n\nOkay, so I've got an old address and need to figure out its new administrative unit, the ward. My expertise kicks in here - I'm well-versed in these administrative reorganizations. Let's break this down systematically.\n\nFirst, I identified \"Tỉnh Đồng Tháp\" as the province.  I quickly scanned the province resolutions, specifically the \"60-NQ/TW\" resolutions.  I confirmed that Đồng Tháp isn't on the \"no merger\" list. It's mentioned in the \"after merger\" list, but the key takeaway is that the province name *remains* \"Tỉnh Đồng Tháp\" even after absorbing Tiền Giang.\n\nNext, I zeroed in on the specific old ward and district: \"Xã Long Hưng A\" in \"Huyện Lấp Vò.\"  I then shifted focus to \"Other resolutions\" that might cover \"Xã Long Hưng A\" or \"Huyện Lấp Vò\" within \"Tỉnh Đồng Tháp.\" Resolution \"1663/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Tháp\" is the key here.  Line 30 *directly* states that \"Xã Long Hưng A\" (along with Long Hưng B and Tân Khánh Trung) are merging to form a *new* ward called \"Xã Tân Khánh Trung.\" Bingo!\n\nFollowing that, I checked the \"New wards\" list for \"xã Tân Khánh Trung\" within \"Tỉnh Đồng Tháp\" and found a perfect match:  `{\"ward_code\":\"30184\",\"ward_name\":\"Xã Tân Khánh Trung\",\"province_name\":\"Tỉnh Đồng Tháp\"}`.\n\nI did a quick scan of other resolution entries that might involve \"Huyện Lấp Vò\" as a sanity check.  I confirmed that while other units within that district were mentioned in reorganization, none of them affected \"Xã Long Hưng A\" or changed my conclusion. The specific resolution clearly states the merger into \"Xã Tân Khánh Trung.\" The confidence here is high.\n\nTherefore, the output will be: `province_name`: \"Tỉnh Đồng Tháp,\" `ward_name`: \"Xã Tân Khánh Trung,\" `ward_code`: \"30184,\" `confidence`: \"high,\" and a clear citation of the resolution and line number providing the supporting information. It's a clean, direct mapping based on the available data.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1663/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Tháp",
+        "line": "30. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Long Hưng A, Long Hưng B và Tân Khánh Trung thành xã mới có tên gọi là xã Tân Khánh Trung."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đồng Tháp",
+      "ward_code": "30184",
+      "ward_name": "Xã Tân Khánh Trung"
+    }
+  ]
+}

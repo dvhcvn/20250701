@@ -1,0 +1,18 @@
+{
+  "address": "Phường Hoài Hương, Thị xã Hoài Nhơn, Tỉnh Bình Định",
+  "ellapsedInMs": 6478,
+  "estimatedCost": 0.0023489,
+  "thought": "**Mapping \"Phường Hoài Hương\" to New Administrative Units**\n\nOkay, let's break this down. The task is clear: map the old address, \"Phường Hoài Hương, Thị xã Hoài Nhơn, Tỉnh Bình Định,\" to the new administrative structure, leveraging provided resolutions and ward data. My approach will be methodical and thorough.\n\nFirst, I identify the key components: \"Phường Hoài Hương\" is the ward, and \"Tỉnh Bình Định\" is the province. Now, I need to consult the resolutions. My primary focus is on Resolution 60-NQ/TW regarding provincial mergers. Sure enough, it states that \"Tỉnh Bình Định\" is now part of \"Tỉnh Gia Lai,\" indicating a high-confidence province-level change.\n\nNext, I delve into Resolution 1664/NQ-UBTVQH15. I'll meticulously search within its lines, hoping to find a direct reference to \"Phường Hoài Hương.\" Bingo! Line 115 explicitly mentions \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Hoài Hương...thành phường mới có tên gọi là **phường Hoài Nhơn Đông**.\" This is exactly what I was looking for, providing a clear ward-level mapping. The resolution header confirms its applicability to \"Tỉnh Gia Lai,\" solidifying the province change.\n\nTo complete the picture, I'll cross-reference \"Phường Hoài Nhơn Đông\" against the provided \"New wards\" data.  There it is, a perfect match: `{\"ward_code\":\"21670\",\"ward_name\":\"Phường Hoài Nhơn Đông\",\"province_name\":\"Tỉnh Gia Lai\"}`. This confirms the new ward's code and its correct provincial affiliation.\n\nTherefore, my final JSON output will reflect these definitive findings. It will include:\n\n*   `province_name`: \"Tỉnh Gia Lai\" (derived from the province merger)\n*   `ward_name`: \"Phường Hoài Nhơn Đông\" (based on Resolution 1664/NQ-UBTVQH15)\n*   `ward_code`: \"21670\" (confirmed by the new ward data)\n*   A `citation` section referencing the pertinent parts of Resolution 1664/NQ-UBTVQH15 for transparency and verification, including the relevant line.\n*   The overall `confidence` level will be \"high\" due to the explicit nature of the data and direct mapping information.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai",
+        "line": "115. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Hoài Hương, xã Hoài Hải và xã Hoài Mỹ thành phường mới có tên gọi là phường Hoài Nhơn Đông."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "21670",
+      "ward_name": "Phường Hoài Nhơn Đông"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Thuận Hạnh, Huyện Đắk Song, Tỉnh Đắk Nông",
+  "ellapsedInMs": 8945,
+  "estimatedCost": 0.0030046,
+  "thought": "**My Analysis of the Administrative Address Mapping**\n\nOkay, so I'm tackling this address: \"Xã Thuận Hạnh, Huyện Đắk Song, Tỉnh Đắk Nông.\"  The goal is to pinpoint the new administrative location. I'll proceed with high confidence.\n\nFirst, I identified \"Tỉnh Đắk Nông\" as the old province. Looking at the province resolutions, specifically 60-NQ/TW, I found that Đắk Nông was merged with Lâm Đồng and Bình Thuận to form Lâm Đồng. So, my starting point becomes \"Tỉnh Lâm Đồng.\"\n\nNext, I focused on the ward, \"Xã Thuận Hạnh.\"  Given the province change, I checked resolutions related to \"Tỉnh Lâm Đồng.\"  Resolution 1671/NQ-UBTVQH15, \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng,\" proved key.  Line 90 explicitly states that Thuận Hà and Thuận Hạnh were merged, with the *new* resulting ward *also* being named \"Xã Thuận Hạnh\".  Essentially, the name stayed the same, but it's a new administrative entity.\n\nVerifying this, I searched the new ward data for \"Xã Thuận Hạnh\" in \"Tỉnh Lâm Đồng.\"  The entry `{\"ward_code\":\"24722\",\"ward_name\":\"Xã Thuận Hạnh\",\"province_name\":\"Tỉnh Lâm Đồng\"}` confirmed this new ward's existence and location.\n\nTherefore, the mapping is extremely straightforward.  The old ward is now part of a new ward, with the same name, within the province of \"Tỉnh Lâm Đồng\".\n\nThe province's reference is 60-NQ/TW, and the ward's reference is 1671/NQ-UBTVQH15.\n\nThe JSON output will indicate two possible mappings, according to my schema design, in order:\n1.  **Direct Mapping (Best Fit)**\n    *   **Citation:** 1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng, Line 90 explicitly shows the merge and resultant ward name. The province changed from \"Tỉnh Đắk Nông\" to \"Tỉnh Lâm Đồng\".\n    *   **Ward Name:** Xã Thuận Hạnh\n    *   **District Name:** [To be determined using the \"new district data\"]\n    *   **Province Name:** Tỉnh Lâm Đồng\n    *   **Confidence:** High\n2.  **Province Change (Secondary Fit)**\n    *   **Citation:** 60-NQ/TW:  Hợp nhất tỉnh Lâm Đồng, tỉnh Đắk Nông và tỉnh Bình Thuận; lấy tên là tỉnh Lâm Đồng\n    *   **Ward Name:** [Old Ward - still Thuận Hạnh]\n    *   **District Name:** [To be determined using the \"new district data\"]\n    *   **Province Name:** Tỉnh Lâm Đồng\n    *   **Confidence:** High\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng",
+        "line": "90. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Thuận Hà và xã Thuận Hạnh thành xã mới có tên gọi là xã Thuận Hạnh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "24722",
+      "ward_name": "Xã Thuận Hạnh"
+    }
+  ]
+}

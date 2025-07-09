@@ -1,0 +1,18 @@
+{
+  "address": "Xã Khai Trung, Huyện Lục Yên, Tỉnh Yên Bái",
+  "ellapsedInMs": 6692,
+  "estimatedCost": 0.0024501,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm presented with a Vietnamese address, \"Xã Khai Trung, Huyện Lục Yên, Tỉnh Yên Bái,\" and I need to figure out its new administrative unit based on some provided resolutions and new ward data.  Here's my thought process:\n\nFirst, I parsed the address. \"Xã Khai Trung\" is the ward, \"Huyện Lục Yên\" the district (though the prompt mentioned eliminating districts, this information is helpful for context), and \"Tỉnh Yên Bái\" is the province.  My initial focus is on the province and ward.\n\nNext, I examined the province-level resolutions.  The key one is Resolution 60-NQ/TW, which immediately hits a snag: \"Tỉnh Yên Bái\" is *merged* into \"Tỉnh Lào Cai.\" So, right there, I know \"Xã Khai Trung\" is now administratively located in \"Tỉnh Lào Cai.\"\n\nWith the new province established, I moved onto other resolutions. Resolution 1673/NQ-UBTVQH15, concerning Lào Cai, became relevant.  I scanned it specifically for references to \"Xã Khai Trung.\" And bingo! Line 25 of this resolution explicitly states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Minh Chuẩn, Tân Lập, Phan Thanh, Khai Trung và Tân Lĩnh thành xã mới có tên gọi là **xã Tân Lĩnh**.\"  That's the key: \"Xã Khai Trung\" is *merged into* \"Xã Tân Lĩnh.\"\n\nNow, I needed to validate this with the provided \"New wards\" data. I checked for \"Xã Tân Lĩnh\" and confirmed its presence, with a province_name of \"Tỉnh Lào Cai.\" Perfect match!\n\nFinally, I formulated the JSON output:  The new province is \"Tỉnh Lào Cai\" (from the province merger). The new ward name is \"Xã Tân Lĩnh,\" and its ward code I retrieved from \"New wards\" data.  The citation comes from the specific line in resolution 1673/NQ-UBTVQH15 which contained my decisive finding. Because the old ward is explicitly mentioned and the new ward clearly stated, I'm very confident (high confidence) in this mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai",
+        "line": "25. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Minh Chuẩn, Tân Lập, Phan Thanh, Khai Trung và Tân Lĩnh thành xã mới có tên gọi là xã Tân Lĩnh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "04336",
+      "ward_name": "Xã Tân Lĩnh"
+    }
+  ]
+}

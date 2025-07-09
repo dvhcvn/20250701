@@ -1,0 +1,18 @@
+{
+  "address": "Xã Bồ Lý, Huyện Tam Đảo, Tỉnh Vĩnh Phúc",
+  "ellapsedInMs": 8757,
+  "estimatedCost": 0.0032177,
+  "thought": "**Address Mapping: Old to New Administrative Units**\n\nOkay, so I'm tasked with translating an old Vietnamese address (\"Xã Bồ Lý, Huyện Tam Đảo, Tỉnh Vĩnh Phúc\") to its modern counterpart based on these resolutions and new ward data. Here's how I'm approaching this, step-by-step:\n\nFirst, I need to figure out the province. The input says \"Tỉnh Vĩnh Phúc.\"  I check Resolution 60-NQ/TW. Vĩnh Phúc isn't on the \"no changes\" list, but it *is* in the list of mergers. The resolution states that Vĩnh Phúc merges into Phú Thọ. Therefore, the new province will be \"Tỉnh Phú Thọ.\"\n\nNow, for the ward. I focus on Resolution 1676/NQ-UBTVQH15, which concerns ward-level changes in Phú Thọ (relevant, since Vĩnh Phúc is now part of Phú Thọ). I'm looking for \"Xã Bồ Lý.\"  And there it is! Line 69 explicitly states that \"Xã Bồ Lý\" is merged into \"Xã Đại Đình.\"\n\nNext, I need to confirm \"Xã Đại Đình\" in the provided new ward data. And there it is, with ward code \"08923\" and associated with \"Tỉnh Phú Thọ\" (confirming the previous step).\n\nI also keep the old district, \"Huyện Tam Đảo\" in mind. While it is stated in the prompt that we should disregard the districts for the final output, I check the resolution to see if there is any relevance to the previous district name. The resolution mentions \"Tam Đảo\" in a different context, but it explicitly states that \"Xã Bồ Lý\" becomes \"Xã Đại Đình.\" so that's my primary focus.\n\nTherefore, the final output JSON is straightforward: a direct mapping with high confidence based on the clear merge instructions within the resolution.\n\n```json\n{\n  \"province_name\": \"Tỉnh Phú Thọ\",\n  \"ward_name\": \"Xã Đại Đình\",\n  \"ward_code\": \"08923\",\n  \"citation\": {\n    \"header\": \"1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ\",\n    \"line\": \"69. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Đại Đình và xã Bồ Lý thành xã mới có tên gọi là xã Đại Đình.\"\n  },\n  \"confidence\": \"high\"\n}\n```\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "69. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Đại Đình và xã Bồ Lý thành xã mới có tên gọi là xã Đại Đình."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "08923",
+      "ward_name": "Xã Đại Đình"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Quất Động, Huyện Thường Tín, Thành phố Hà Nội",
+  "ellapsedInMs": 7713,
+  "estimatedCost": 0.0026931,
+  "thought": "**Analysis of Address Mapping: Xã Quất Động, Huyện Thường Tín, Thành phố Hà Nội**\n\nOkay, here's the breakdown of my thought process for mapping this old Vietnamese address to the new administrative units.  I'm dealing with \"Xã Quất Động, Huyện Thường Tín, Thành phố Hà Nội.\"\n\nFirst, I need to pinpoint the *old* ward and province.  Pretty straightforward: \"Xã Quất Động\" is the old ward, and \"Thành phố Hà Nội\" is the old province.\n\nNext, I need to consult the provincial resolutions (specifically 60-NQ/TW).  I need to check if Hà Nội province has been merged or if it remains intact.  Thankfully, the resolutions explicitly state that \"Thành phố Hà Nội\" is *not* undergoing any mergers.  Good, one less variable to worry about.\n\nNow, the crucial step: checking the other resolutions, specifically \"1656/NQ-UBTVQH15.\" I'm looking for \"Xã Quất Động\" within the content.  Bingo! Line 56 of the resolution clearly states that \"Quất Động\", along with some other xã, is merged to create a new ward called \"xã Thượng Phúc.\"\n\nI then need to locate the details of this *new* ward. Looking through the `New wards` data, I find a matching entry: `{\"ward_code\":\"10231\",\"ward_name\":\"Xã Thượng Phúc\",\"province_name\":\"Thành phố Hà Nội\"}`. Perfect match!\n\nSo, I'm ready to construct the JSON output:\n\n*   The `citation.header` will be \"1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội\".\n*   `citation.line` is \"56. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tân Minh (huyện Thường Tín), Dũng Tiến, Quất Động, Nghiêm Xuyên và Nguyễn Trãi thành xã mới có tên gọi là xã Thượng Phúc.\"\n*   My `confidence` is \"high\" because the resolution provides a definitive answer.\n*   The `province_name` is confirmed as \"Thành phố Hà Nội.\"\n*   `ward_code` is \"10231\"\n*   `ward_name` is \"Xã Thượng Phúc\".\n\nI double-checked line 57 to see if Quat Dong was mentioned, in case there were other considerations for Quat Dong, but it was not.\n\nSince the instruction asked for possible *multiple* new wards and there's only one here, I'll be clear: \"xã Thượng Phúc\" is the only valid new administrative unit for \"Xã Quất Động\" in this instance. Given the explicit confirmation from the resolution, I'm confident in this mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội",
+        "line": "56. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tân Minh (huyện Thường Tín), Dũng Tiến, Quất Động, Nghiêm Xuyên và Nguyễn Trãi thành xã mới có tên gọi là xã Thượng Phúc."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hà Nội",
+      "ward_code": "10231",
+      "ward_name": "Xã Thượng Phúc"
+    }
+  ]
+}

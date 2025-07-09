@@ -1,0 +1,18 @@
+{
+  "address": "Xã Châu Cường, Huyện Quỳ Hợp, Tỉnh Nghệ An",
+  "ellapsedInMs": 6909,
+  "estimatedCost": 0.0027497,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm presented with the address \"Xã Châu Cường, Huyện Quỳ Hợp, Tỉnh Nghệ An\" and need to map it to the new administrative units.  First, I break it down: \"Xã Châu Cường\" is the old ward, \"Huyện Quỳ Hợp\" is the old district, and \"Tỉnh Nghệ An\" is the old province. Though the prompt says districts are eliminated, the context is useful.\n\nThe provincial resolution (60-NQ/TW) confirms Nghệ An remains unchanged, so the province mapping is straightforward. Now, it's time to dig into the details. I move to the specific resolution 1678/NQ-UBTVQH15, looking for any mention of \"Xã Châu Cường\".\n\nScanning the lines, I check each consolidation - are they in any of them? Lines 64, 65, 67 and 69 mention some wards, but no \"Châu Cường\". And finally, on Line 68, jackpot! It explicitly states that \"Xã Châu Cường\" and \"xã Châu Thái\" are merged to form a new ward called \"Xã Mường Ham\". That's a direct, undeniable match.\n\nTo be thorough, I do a quick check to ensure that is the only mention, and it is.  Knowing this, I check the new wards data. I confirm \"Xã Mường Ham\" exists with a `ward_code` of 17077 and the `province_name` of \"Tỉnh Nghệ An\".\n\nTherefore, the final output is simple and clear: the new `ward_name` is \"Xã Mường Ham\", with the cited resolution 1678/NQ-UBTVQH15, specifically line 68. The `confidence` is high because the resolution provides a very specific merge.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1678/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Nghệ An",
+        "line": "68. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Châu Cường và xã Châu Thái thành xã mới có tên gọi là xã Mường Ham."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Nghệ An",
+      "ward_code": "17077",
+      "ward_name": "Xã Mường Ham"
+    }
+  ]
+}

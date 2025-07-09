@@ -1,0 +1,18 @@
+{
+  "address": "Xã Văn Tố, Huyện Tứ Kỳ, Tỉnh Hải Dương",
+  "ellapsedInMs": 5201,
+  "estimatedCost": 0.0019832,
+  "thought": "**My Mapping Strategy for the Old Address**\n\nOkay, so I'm tackling this address, \"Xã Văn Tố, Huyện Tứ Kỳ, Tỉnh Hải Dương,\" which needs to be remapped to the new administrative structure. My approach is straightforward, leveraging the provided resolutions and the list of new wards.\n\nFirst, I identified the old province, \"Tỉnh Hải Dương,\" then I immediately checked for any province mergers. Resolution 60-NQ/TW revealed the merger with Hải Phòng, resulting in \"Thành phố Hải Phòng.\"\n\nNext, I focused on identifying the old ward and district: \"Xã Văn Tố, Huyện Tứ Kỳ\".  The key here is to find the relevant resolution, which is 1669/NQ-UBTVQH15, to see if I can find my district and my ward. Bingo! Line 96 of that resolution is the gold mine. It explicitly states that \"Xã Văn Tố\" is now part of a new ward called \"Xã Chí Minh\" when combined with \"An Thanh\" and \"Chí Minh.\"  The presence of \"Huyện Tứ Kỳ\" throughout the resolution lines 93-97 confirmed the context.\n\nTo solidify this, I checked the \"New wards\" list. \"Xã Chí Minh\" is listed there with the correct `ward_code` (11131) and, crucially, the `province_name` matching the merged province, \"Thành phố Hải Phòng\".\n\nThe mapping is precise and direct; the resolution explicitly links the old and the new. Therefore, my confidence in this mapping is very high. I'm ready to construct the JSON output reflecting this confirmed transformation.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "96. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã An Thanh, Văn Tố và Chí Minh thành xã mới có tên gọi là xã Chí Minh."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "11131",
+      "ward_name": "Xã Chí Minh"
+    }
+  ]
+}

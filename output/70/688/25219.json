@@ -1,0 +1,28 @@
+{
+  "address": "Phường Phước Bình, Thị xã Phước Long, Tỉnh Bình Phước",
+  "ellapsedInMs": 7901,
+  "estimatedCost": 0.0034549,
+  "thought": "**Identifying the New Administrative Unit**\n\nOkay, so I'm tackling this administrative reorganization query. The user gave me \"Phường Phước Bình, Thị xã Phước Long, Tỉnh Bình Phước\" and wants the new address.  First things first, I've got to break it down. We're talking about a ward (\"Phường Phước Bình\"), a district-level entity (Thị xã Phước Long), and a province (Tỉnh Bình Phước).  The Thị xã Phước Long is interesting because resolutions generally state districts are eliminated, so I need to focus on ward and province primarily.\n\nI know from my prior understanding that there's a province merger at play. I need to consult the resolutions and compare to the inputs. I have the resolution 60-NQ/TW that says Bình Phước merged into Đồng Nai.  So, right off the bat, \"Tỉnh Bình Phước\" becomes \"Tỉnh Đồng Nai.\"\n\nNow, let's dive into the `other resolutions`.  I have to search through them for \"Phường Phước Bình\" and, more broadly, anything related to Bình Phước. I'm going line by line.\n\n*   **1655/NQ-UBTVQH15 (Cà Mau):** Nope. No mention of Phước Bình or Bình Phước.  This resolution focuses on a different province.\n*   **1659/NQ-UBTVQH15 (Đà Nẵng):**  Definitely not.  This resolution is totally unrelated.\n*   **1662/NQ-UBTVQH15 (Đồng Nai):**  Here's where it gets interesting. I see a \"Phước Bình\" mentioned! However, it's listed as a 'xã' not a 'phường', a commune. It is grouped with \"Phước Thái\" as well, which makes me think they're likely in Đồng Nai now due to the merger, and I read this one carefully:  \"Phước Bình và Phước Thái thành xã mới có tên gọi là xã Phước Thái\". The given address is \"Phường Phước Bình, Thị xã Phước Long, Tỉnh Bình Phước\". Since Tỉnh Bình Phước merged with Tỉnh Đồng Nai, this could make sense. I need to be careful; \"xã Phước Bình\" is a different unit from \"phường Phước Bình.\" It's possible the ward of Phường Phước Bình is now part of Đồng Nai. I should examine the context carefully in this resolution.\n\nSo, I need to keep reading through resolution 1662/NQ-UBTVQH15 to confirm or discount this. I have to look for any clues. This is very close but not quite a direct hit yet.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "17. Hợp nhất tỉnh Đồng Nai và tỉnh Bình Phước, lấy tên là tỉnh Đồng Nai"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đồng Nai",
+      "ward_code": "25220",
+      "ward_name": "Phường Phước Bình"
+    },
+    {
+      "citation": {
+        "header": "1662/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Nai",
+        "line": "85. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Long Phước, phường Phước Bình, xã Bình Sơn (huyện Phú Riềng) và xã Long Giang thành phường mới có tên gọi là **phường Phước Bình**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đồng Nai",
+      "ward_code": "25220",
+      "ward_name": "Phường Phước Bình"
+    }
+  ]
+}

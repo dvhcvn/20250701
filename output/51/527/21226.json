@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tịnh Giang, Huyện Sơn Tịnh, Tỉnh Quảng Ngãi",
+  "ellapsedInMs": 6626,
+  "estimatedCost": 0.0021811,
+  "thought": "**Address Mapping Process: Quảng Ngãi Example**\n\nOkay, I'm working with a Vietnamese address: \"Xã Tịnh Giang, Huyện Sơn Tịnh, Tỉnh Quảng Ngãi.\" My goal is to figure out the new administrative unit. First, I need to break down the address. \"Xã Tịnh Giang\" is the old ward, and \"Tỉnh Quảng Ngãi\" is the old province.\n\nNow, I'll consult the province resolutions, specifically 60-NQ/TW, to see if Quảng Ngãi has undergone any changes. It appears there was a consolidation of provinces, but the new province name remains \"Tỉnh Quảng Ngãi\". Good, that simplifies things.\n\nNext, I need to dig into the \"Other resolutions\" to find specific mentions of \"Xã Tịnh Giang\" within Quảng Ngãi. Resolution 1677/NQ-UBTVQH15 seems promising. Bingo! Line 10 in this resolution clearly states that \"Xã Tịnh Giang\" is being combined with other wards to form a new ward called \"xã Trường Giang\". That's my key finding. Lines 12 and 39 are irrelevant.\n\nNow, I cross-reference this information with the \"New wards\" data. I'm looking for the ward details for \"xã Trường Giang\". The data confirms that \"xã Trường Giang\" maps to a specific `ward_code`, and importantly, the `province_name` is indeed \"Tỉnh Quảng Ngãi\". The match is perfect.\n\nGiven the explicit mapping in the resolution, I can confidently say I have a high degree of certainty here. The direct mention and clear new ward assignment are the strongest indicators.\n\nFinally, I'll use all this information to construct the JSON output, following the schema. Essentially, the old address \"Xã Tịnh Giang\" now resolves to \"Xã Trường Giang\" within \"Tỉnh Quảng Ngãi\". I am ready to deliver the structured data to the user.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1677/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ngãi",
+        "line": "10. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tịnh Giang, Tịnh Đông và Tịnh Minh thành xã mới có tên gọi là xã Trường Giang."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ngãi",
+      "ward_code": "21196",
+      "ward_name": "Xã Trường Giang"
+    }
+  ]
+}

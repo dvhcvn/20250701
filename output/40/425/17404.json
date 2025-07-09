@@ -1,0 +1,18 @@
+{
+  "address": "Xã Diễn Hoàng, Huyện Diễn Châu, Tỉnh Nghệ An",
+  "ellapsedInMs": 6219,
+  "estimatedCost": 0.0024184999999999996,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm tasked with translating this old Vietnamese address to its modern counterpart.  The initial address components I've identified are the old ward \"Xã Diễn Hoàng,\" the old district \"Huyện Diễn Châu,\" and the old province \"Tỉnh Nghệ An.\"  My first instinct is to see how these map onto the new administrative structure based on the provided resolutions.\n\nThe province level seems straightforward. Resolution 60-NQ/TW states that Nghệ An remains unchanged, so that's easy.  No mergers here.\n\nNow, focusing on the ward level, I have to carefully examine the \"1678/NQ-UBTVQH15\" resolution. I'm scanning through the lines, specifically looking for any mention of \"Xã Diễn Hoàng.\"  Bingo!  Line 15 jumps out: it clearly states that \"Xã Diễn Hoàng\" is being consolidated with a few other wards to create \"Xã Hải Châu.\"  That's my key finding.\n\nTo solidify this, I need to check the \"New wards\" data.  I'm searching for \"Xã Hải Châu,\" and there it is:  `{\"ward_code\":\"17419\",\"ward_name\":\"Xã Hải Châu\",\"province_name\":\"Tỉnh Nghệ An\"}`.  The province name matches perfectly with my initial finding.\n\nSo, the new ward is definitely \"Xã Hải Châu\" with code \"17419.\"  My confidence is high since the resolution directly spells out the merger.  As a last precaution, I'm quickly scanning the rest of the lines in the resolution to ensure there are no other potential merger scenarios involving \"Xã Diễn Hoàng\" that I might have overlooked. But no, Line 15 is the only mention. Therefore, my proposed mapping is clear and definitive. I'll construct the JSON output accordingly.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1678/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Nghệ An",
+        "line": "15. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Diễn Hoàng, Diễn Kim, Diễn Mỹ và Hùng Hải thành xã mới có tên gọi là xã Hải Châu."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Nghệ An",
+      "ward_code": "17419",
+      "ward_name": "Xã Hải Châu"
+    }
+  ]
+}

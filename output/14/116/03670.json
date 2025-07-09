@@ -1,0 +1,18 @@
+{
+  "address": "Phường Chiềng Cơi, Thành phố Sơn La, Tỉnh Sơn La",
+  "ellapsedInMs": 5746,
+  "estimatedCost": 0.0024551,
+  "thought": "**Finding the New Administrative Unit for \"Phường Chiềng Cơi\"**\n\nOkay, so I'm tasked with pinpointing the updated administrative unit for the old address \"Phường Chiềng Cơi, Thành phố Sơn La, Tỉnh Sơn La\".  First things first, I need to confirm the province, which is \"Tỉnh Sơn La.\"  Now, let's dive into those crucial province resolutions (specifically 60-NQ/TW).  A quick scan shows \"Tỉnh Sơn La\" is explicitly listed as a province *not* undergoing merger. Good, that simplifies things.\n\nNext, I need to dig into the \"Other resolutions\" section, focusing on anything relevant to \"Tỉnh Sơn La.\"  Resolution 1681/NQ-UBTVQH15 is a gold mine! It's all about administrative restructuring in Sơn La. Line 63 jumps out:  \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Chiềng Cơi, xã Hua La và xã Chiềng Cọ thành phường mới có tên gọi là **phường Chiềng Cơi**.\"  Aha!  So, \"Phường Chiềng Cơi\" was indeed part of a restructuring, but the *name* remained the same! This is key.\n\nNow, I'll consult the \"New wards\" list for \"Tỉnh Sơn La\".  And there it is: `{\"ward_code\":\"03670\",\"ward_name\":\"Phường Chiềng Cơi\",\"province_name\":\"Tỉnh Sơn La\"}`. Perfect.\n\nTime to construct the JSON output.  The `citation` will be \"1681/NQ-UBTVQH15\" and I'll include the line number for precision. The `confidence` is definitely \"high\" because the resolution explicitly states that \"Phường Chiềng Cơi\" is the new name, stemming from a merger but the same name is retained.  `province_name` is, of course, \"Tỉnh Sơn La\". The `ward_code` and `ward_name` are straight from the \"New wards\" list.  That's my final answer.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1681/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Sơn La",
+        "line": "63. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Chiềng Cơi, xã Hua La và xã Chiềng Cọ thành phường mới có tên gọi là phường Chiềng Cơi."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Sơn La",
+      "ward_code": "03670",
+      "ward_name": "Phường Chiềng Cơi"
+    }
+  ]
+}

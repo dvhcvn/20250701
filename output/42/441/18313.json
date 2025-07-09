@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Vũ Quang, Huyện Vũ Quang, Tỉnh Hà Tĩnh",
+  "ellapsedInMs": 5887,
+  "estimatedCost": 0.0020488,
+  "thought": "**Mapping the Old Address to the New Administrative Unit**\n\nOkay, so I've got the task of mapping this old address to its new configuration based on these resolutions and ward data. Let's break this down systematically, as I always do.\n\nFirst, I need to identify the components of the old address: \"Thị trấn Vũ Quang\" for the ward, \"Huyện Vũ Quang\" for the district (though I know districts are no longer a factor here), and \"Tỉnh Hà Tĩnh\" for the province.\n\nNow, let's consult the province resolutions, specifically 60-NQ/TW.  A quick search confirms that \"Tỉnh Hà Tĩnh\" is listed under \"Các đơn vị hành chính cấp tỉnh không thực hiện sáp nhập,\" meaning the province name remains unchanged, \"Tỉnh Hà Tĩnh.\" Straightforward.\n\nNext, I'll dive into the other resolutions, like 1665/NQ-UBTVQH15, to see if I can find more specific details about \"Thị trấn Vũ Quang.\"  Bingo! Line 49 jumps out: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Vũ Quang và các xã Hương Minh, Quang Thọ, Thọ Điền thành xã mới có tên gọi là **xã Vũ Quang**.\"  This is key!  It directly addresses \"Thị trấn Vũ Quang\" and clearly indicates its merger into the new \"xã Vũ Quang.\"\n\nNow, to solidify this, I'll cross-reference with the provided `New wards` data.  I'm looking for a ward that aligns with \"xã Vũ Quang\" within \"Tỉnh Hà Tĩnh.\" And there it is: `{\"ward_code\":\"18313\",\"ward_name\":\"Xã Vũ Quang\",\"province_name\":\"Tỉnh Hà Tĩnh\"}`.  Perfect match! This completely confirms the resolution's findings.\n\nTherefore, the JSON output is straightforward.  I'll use the resolution line as the header and the specific line as the citation detail. The confidence level is high because we have direct resolution language and a clear match in the new ward data. The province remains \"Tỉnh Hà Tĩnh,\" and the new ward details are \"ward_code\": \"18313\" and \"ward_name\": \"Xã Vũ Quang.\"  All set!\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh",
+        "line": "49. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Vũ Quang và các xã Hương Minh, Quang Thọ, Thọ Điền thành xã mới có tên gọi là xã Vũ Quang."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hà Tĩnh",
+      "ward_code": "18313",
+      "ward_name": "Xã Vũ Quang"
+    }
+  ]
+}

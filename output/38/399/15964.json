@@ -1,0 +1,18 @@
+{
+  "address": "Xã Hoằng Lộc, Huyện Hoằng Hóa, Tỉnh Thanh Hóa",
+  "ellapsedInMs": 6342,
+  "estimatedCost": 0.0027893,
+  "thought": "**Determining the New Administrative Unit for \"Xã Hoằng Lộc\"**\n\nOkay, let's break this down. The user's looking for the new administrative unit corresponding to \"Xã Hoằng Lộc, Huyện Hoằng Hóa, Tỉnh Thanh Hóa.\"  My first step is always to verify the province.  Thankfully, the analysis is straightforward: \"Tỉnh Thanh Hóa\" remains \"Tỉnh Thanh Hóa\" according to `60-NQ/TW` since there are no province-level mergers.\n\nNow, focusing on \"Xã Hoằng Lộc.\" I need to cross-reference resolutions and the new wards data.  Resolution `1686/NQ-UBTVQH15` from Thanh Hóa looks promising. Reading through it, I find a line (specifically, line 22) that says a merger of several communes, including the *old* \"Xã Hoằng Lộc,\" will create a *new* commune also named \"Xã Hoằng Lộc.\"  Crucially, it is explicitly named.\n\nNext, I confirm this by checking the \"New Wards\" data.  There's a matching entry: `{\"ward_code\":\"15961\",\"ward_name\":\"Xã Hoằng Lộc\",\"province_name\":\"Tỉnh Thanh Hóa\"}`. This aligns perfectly with the resolution.\n\nTherefore, the province name remains the same, and the ward name, \"Xã Hoằng Lộc,\" is retained, but the administrative composition *has* changed significantly.  Since the resolution directly addresses the name and the new wards data confirms it, I'm highly confident in this result. I'll construct the JSON accordingly, citing line 22 of the resolution, the ward code and name from the new data, and marking the confidence as \"high.\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1686/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thanh Hóa",
+        "line": "22. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Hoằng Thịnh, Hoằng Thái, Hoằng Thành, Hoằng Trạch, Hoằng Tân và Hoằng Lộc thành xã mới có tên gọi là xã Hoằng Lộc."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thanh Hóa",
+      "ward_code": "15961",
+      "ward_name": "Xã Hoằng Lộc"
+    }
+  ]
+}

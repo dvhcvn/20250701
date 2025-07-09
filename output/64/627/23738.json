@@ -1,0 +1,18 @@
+{
+  "address": "Xã Ia Kreng, Huyện Chư Păh, Tỉnh Gia Lai",
+  "ellapsedInMs": 8816,
+  "estimatedCost": 0.003057,
+  "thought": "**Finding the New Administrative Unit (Ward) for \"Xã Ia Kreng\"**\n\nOkay, so I'm tasked with pinpointing the new ward for the old address \"Xã Ia Kreng, Huyện Chư Păh, Tỉnh Gia Lai\".  Let's break this down. First, I need to isolate the key components: the old ward (\"Xã Ia Kreng\"), district (\"Huyện Chư Păh\" - although less relevant for the new mapping), and province (\"Tỉnh Gia Lai\").\n\nNext, I'll cross-reference this province with any province-level resolutions (specifically, Resolution 60-NQ/TW) to see if there's been any consolidation or name changes.  Luckily, Gia Lai doesn't appear in the \"merger\" or \"new province\" lists within 60-NQ/TW. So, Gia Lai stays Gia Lai.\n\nNow the real work begins. I'll need to dig into specific resolutions relating to ward rearrangements. I'm focusing on \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai\"  (Resolution 1664/NQ-UBTVQH15).\n\nBingo! Line 43 of that resolution explicitly states that \"Xã Ia Kreng\" is being consolidated into a new unit named \"Xã Ia Ly\"  along with \"Ia Mơ Nông\" and \"Ia Ly\". This is pretty definitive.  Another interesting tidbit, line 44 says, is that \"Thị trấn Phú Hòa, xã Nghĩa Hòa và xã Hòa Phú\" becomes \"Xã Chư Păh\". However, Ia Kreng is explicitly not part of Chư Păh.\n\nNow, I'll need to confirm that \"Xã Ia Ly\" actually exists in my list of \"New wards\" data.  And there it is! `{\"ward_code\":\"23734\",\"ward_name\":\"Xã Ia Ly\",\"province_name\":\"Tỉnh Gia Lai\"}`.\n\nPutting it all together, I can construct my JSON output with high confidence. The resolution clearly states the merger. Here's my rationale:\n\n*   **Citation:** Resolution 1664/NQ-UBTVQH15 with line 43 is the primary source.\n*   **Confidence:** High - the resolution directly addresses the specific ward.\n*   **Province:**  \"Tỉnh Gia Lai\" - consistent with the initial data and confirmed by province resolutions.\n*   **Ward Code:** \"23734\" from the \"New wards\" list.\n*   **Ward Name:** \"Xã Ia Ly\" confirmed by the resolution and new ward data.\n\nConsidering other possibilities, there are other new wards like \"Xã Chư Păh\", \"Phường An Phú\" and \"Xã Ia Mơ\". However, the data doesn't provide any direct link to \"Xã Ia Kreng\" merging into these wards. So, \"Xã Ia Ly\" is the only and correct answer.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai",
+        "line": "43. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Ia Ly, xã Ia Mơ Nông và xã Ia Kreng thành xã mới có tên gọi là xã Ia Ly."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "23734",
+      "ward_name": "Xã Ia Ly"
+    }
+  ]
+}

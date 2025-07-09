@@ -1,0 +1,28 @@
+{
+  "address": "Thị trấn Trà My, Huyện Bắc Trà My, Tỉnh Quảng Nam",
+  "ellapsedInMs": 9636,
+  "estimatedCost": 0.003251,
+  "thought": "**Address Mapping Analysis: Thị trấn Trà My, Huyện Bắc Trà My, Tỉnh Quảng Nam**\n\nOkay, let's break this down. My task is to translate an old Vietnamese address into the new administrative structure, given the provided resolutions and new ward data.\n\nFirst, I need to identify the components of the old address: \"Thị trấn Trà My, Huyện Bắc Trà My, Tỉnh Quảng Nam\".  I've got the old province (\"Tỉnh Quảng Nam\"), district (\"Huyện Bắc Trà My\"), and ward (\"Thị trấn Trà My\").\n\nNow, the resolutions. The prompt specifies eliminating districts, so I expect the district to be absorbed into the province or a new ward.  Resolution 60-NQ/TW is my starting point for provincial changes.  I searched for \"Tỉnh Quảng Nam\" in the \"Các đơn vị hành chính cấp tỉnh không thực hiện sáp nhập\" list but it's not there. This means it has *likely* been merged or changed. The \"Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất\" list shows line 10: \"Hợp nhất tỉnh Quảng Nam và thành phố Đà Nẵng, lấy tên là thành phố Đà Nẵng.\"  Ah, there it is! \"Tỉnh Quảng Nam\" is now part of \"Thành phố Đà Nẵng.\" So, the new province is \"Thành phố Đà Nẵng\".\n\nNext, I need to address the ward. I need to consult other resolutions, and 1659/NQ-UBTVQH15 looks promising: \"Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng\".  This header is good; \"Thành phố Đà Nẵng\" is the new province. Line 43 is key: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Trà My và các xã Trà Sơn, Trà Giang, Trà Dương thành xã mới có tên gọi là **xã Trà My**.\" Bingo!  It explicitly mentions my old ward, \"Thị trấn Trà My\", and its remapping to a new ward, \"**xã Trà My**\". This seems definitive.\n\nNow, a quick cross-reference with the \"New wards\" data. I'll search for \"xã Trà My\" under \"Thành phố Đà Nẵng\". Yup, there it is: `{\"ward_code\":\"20900\",\"ward_name\":\"Xã Trà My\",\"province_name\":\"Thành phố Đà Nẵng\"}`. It's a perfect match!\n\nLet's quickly consider other possibilities, just in case. Line 44 mentions \"xã Trà Mai\" and \"xã Trà Don\" becoming \"xã Nam Trà My\", but that's not related to my initial ward.  Crucially, line 43 is *very* specific about remapping \"Thị trấn Trà My\".\n\nConfidence level?  High. The resolution directly addresses \"Thị trấn Trà My\" and provides a clear new ward name. The data lines up perfectly.  The district is eliminated, as instructed, and absorbed into this new \"Thành phố Đà Nẵng\" ward.\n\nTherefore, here's how I'll construct the JSON output:\n\n*   `citation`: \"1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng - Line 43\"\n*   `confidence`: \"high\"\n*   `province_name`: \"Thành phố Đà Nẵng\"\n*   `ward_code`: \"20900\"\n*   `ward_name`: \"Xã Trà My\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "10. Hợp nhất tỉnh Quảng Nam và thành phố Đà Nẵng, lấy tên là thành phố Đà Nẵng"
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "20900",
+      "ward_name": "Xã Trà My"
+    },
+    {
+      "citation": {
+        "header": "1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng",
+        "line": "43. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Trà My và các xã Trà Sơn, Trà Giang, Trà Dương thành xã mới có tên gọi là xã Trà My."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "20900",
+      "ward_name": "Xã Trà My"
+    }
+  ]
+}

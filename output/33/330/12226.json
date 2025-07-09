@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tứ Dân, Huyện Khoái Châu, Tỉnh Hưng Yên",
+  "ellapsedInMs": 6226,
+  "estimatedCost": 0.0020509,
+  "thought": "**Mapping a Vietnamese Address to a New Administrative Unit**\n\nOkay, so I've got this old Vietnamese address: \"Xã Tứ Dân, Huyện Khoái Châu, Tỉnh Hưng Yên\". My goal is to figure out the corresponding new administrative unit. Let's break this down systematically.\n\nFirst, I need to isolate the key components: the old ward, which is \"Xã Tứ Dân,\" and the old province, \"Tỉnh Hưng Yên.\" Got it.\n\nNext, I have to check for any province-level changes. I immediately consult the resolutions on province restructuring. Looks like \"Hưng Yên\" is mentioned in \"60-NQ/TW: Các đơn vị hành chính cấp tỉnh không thực hiện sáp nhập\" and \"60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất.\" Specifically, \"Hợp nhất tỉnh Hưng Yên và tỉnh Thái Bình, lấy tên là tỉnh Hưng Yên.\"  Okay, so Hưng Yên *remains* Hưng Yên, but with a potential absorption of Thái Bình. The province name is still \"Tỉnh Hưng Yên.\" Good.\n\nNow for the crucial part: the ward restructuring. I'll focus on \"Other resolutions\" and zero in on \"1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên.\" I'll scan the text within this resolution specifically for references to \"Xã Tứ Dân.\"  Aha! Line 22: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đại Tập, Tứ Dân, Tân Châu và Đông Ninh thành xã mới có tên gọi là **xã Châu Ninh**.\" Perfect. It explicitly states that \"Xã Tứ Dân\" is merged into \"xã Châu Ninh.\"\n\nWith the new ward identified, I need the details. Time to consult the \"New wards\" list for \"Xã Châu Ninh\" in \"Tỉnh Hưng Yên.\" The perfect match: `{\"ward_code\":\"12247\",\"ward_name\":\"Xã Châu Ninh\",\"province_name\":\"Tỉnh Hưng Yên\"}`. That's it!\n\nFinally, the JSON output. The `citation` will include the resolution header and Line 22.  The `confidence` is definitely \"high\" - this mapping is direct and unambiguous. The `province_name` is \"Tỉnh Hưng Yên\" (unchanged). The `ward_code` is \"12247,\" and the `ward_name` is \"Xã Châu Ninh.\" All set!\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên",
+        "line": "22. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đại Tập, Tứ Dân, Tân Châu và Đông Ninh thành xã mới có tên gọi là xã Châu Ninh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "12247",
+      "ward_name": "Xã Châu Ninh"
+    }
+  ]
+}

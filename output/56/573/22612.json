@@ -1,0 +1,18 @@
+{
+  "address": "Xã Khánh Hiệp, Huyện Khánh Vĩnh, Tỉnh Khánh Hòa",
+  "ellapsedInMs": 7435,
+  "estimatedCost": 0.0031476,
+  "thought": "**My Analysis of the Administrative Unit Mapping**\n\nOkay, so I'm presented with the old address \"Xã Khánh Hiệp, Huyện Khánh Vĩnh, Tỉnh Khánh Hòa\" and need to find its new administrative unit. My initial step is to identify the old ward and province: \"Xã Khánh Hiệp\" and \"Tỉnh Khánh Hòa,\" respectively.\n\nFirst, I quickly confirmed the province hasn't changed with Resolution 60-NQ/TW.  It simply affirms Khánh Hòa remains Khánh Hòa. Now, the real work begins. I skip the irrelevant Hà Tĩnh resolution and focus on 1667/NQ-UBTVQH15, the one for Khánh Hòa.  I carefully read through this resolution, specifically looking for any mention of \"Xã Khánh Hiệp.\"  Bingo! Line 23 of 1667 explicitly states that \"Xã Khánh Hiệp\" and \"Xã Khánh Trung\" are merging to create \"Xã Trung Khánh Vĩnh.\" This is my critical link.\n\nI need to confirm this. I check the \"New wards\" data.  I search for \"Xã Trung Khánh Vĩnh\" and, lo and behold, I find a matching entry: `{\"ward_code\":\"22612\",\"ward_name\":\"Xã Trung Khánh Vĩnh\",\"province_name\":\"Tỉnh Khánh Hòa\"}`. The province matches, and the ward is precisely what I expect.\n\nBased on this direct mapping, my confidence is high. I'll construct the JSON output:\n\n*   `province_name`: \"Tỉnh Khánh Hòa\" (from the new ward data, consistent with province resolution)\n*   `ward_code`: \"22612\"\n*   `ward_name`: \"Xã Trung Khánh Vĩnh\"\n*   `citation`:\n    *   `header`: \"1667/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Khánh Hòa\"\n    *   `line`: \"23. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Khánh Trung và xã Khánh Hiệp thành xã mới có tên gọi là **xã Trung Khánh Vĩnh**.\"\n*   `confidence`: \"high\"\n\nThat's the final answer. The old address \"Xã Khánh Hiệp\" is now part of the new administrative unit \"Xã Trung Khánh Vĩnh\" in \"Tỉnh Khánh Hòa,\" as per Resolution 1667.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1667/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Khánh Hòa",
+        "line": "23. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Khánh Trung và xã Khánh Hiệp thành xã mới có tên gọi là xã Trung Khánh Vĩnh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Khánh Hòa",
+      "ward_code": "22612",
+      "ward_name": "Xã Trung Khánh Vĩnh"
+    }
+  ]
+}

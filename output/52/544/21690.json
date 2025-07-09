@@ -1,0 +1,28 @@
+{
+  "address": "Xã Ân Hảo Tây, Huyện Hoài Ân, Tỉnh Bình Định",
+  "ellapsedInMs": 6951,
+  "estimatedCost": 0.0027278,
+  "thought": "**Mapping an Old Vietnamese Address to New Administrative Units**\n\nOkay, so I've got an old Vietnamese address to decipher: \"Xã Ân Hảo Tây, Huyện Hoài Ân, Tỉnh Bình Định\". My goal is to figure out the new administrative units corresponding to this old address, considering recent changes. First things first, I need to identify the key components: the old ward, which is \"Xã Ân Hảo Tây,\" and the old province, \"Tỉnh Bình Định.\"\n\nNext, I'll dive into the resolutions concerning province mergers. Aha! Resolution 60-NQ/TW states that \"Tỉnh Bình Định\" was merged into \"Tỉnh Gia Lai.\" So, \"Tỉnh Bình Định\" is out, and we're now dealing with \"Tỉnh Gia Lai.\"\n\nNow, within the context of the *new* province, I need to find the specific resolution impacting \"Xã Ân Hảo Tây.\" The resolution \"1664/NQ-UBTVQH15\" is crucial here. Line 29 clearly states that \"Xã Ân Hảo Tây\" was merged with other wards to form a *new* ward called \"Xã Ân Hảo.\" Perfect! This is a direct match.\n\nTo confirm the details of this new ward, I'll cross-reference with the \"New wards\" data. I found the entry for \"Xã Ân Hảo\" in \"Tỉnh Gia Lai\": `{\"ward_code\":\"21697\",\"ward_name\":\"Xã Ân Hảo\",\"province_name\":\"Tỉnh Gia Lai\"}`.\n\nNow, to construct the JSON output, I'll set:\n\n*   `province_name`: \"Tỉnh Gia Lai\"\n*   `ward_name`: \"Xã Ân Hảo\"\n*   `ward_code`: \"21697\"\n*   `citation`: The resolution is \"1664/NQ-UBTVQH15\"\n*   `confidence`: \"high\" - This is a straightforward mapping with a clear resolution.\n\nLet's quickly check the other resolution line to make sure there are no other relevant changes, it doesn't mention \"Xã Ân Hảo Tây\", so I'm confident.  I've thoroughly checked, and the conclusion is \"Xã Ân Hảo\" in \"Tỉnh Gia Lai\" it is!\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Gia Lai và tỉnh Bình Định, lấy tên là tỉnh Gia Lai"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "21697",
+      "ward_name": "Xã Ân Hảo"
+    },
+    {
+      "citation": {
+        "header": "1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai",
+        "line": "Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Ân Hảo Tây, Ân Hảo Đông và Ân Mỹ thành xã mới có tên gọi là xã Ân Hảo."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "21697",
+      "ward_name": "Xã Ân Hảo"
+    }
+  ]
+}

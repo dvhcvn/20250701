@@ -1,0 +1,18 @@
+{
+  "address": "Phường Mỹ Độ, Thành phố Bắc Giang, Tỉnh Bắc Giang",
+  "ellapsedInMs": 7666,
+  "estimatedCost": 0.004069,
+  "thought": "**Identifying the New Administrative Unit for the Old Address**\n\nOkay, here's how I'm approaching this. The user has given me the old address: \"Phường Mỹ Độ, Thành phố Bắc Giang, Tỉnh Bắc Giang.\" My task is to figure out the new ward.  First, I've got to confirm the province, which is \"Tỉnh Bắc Giang\". Now, the tricky part... I need to check for any administrative changes.\n\nI start by looking at those important resolutions. \"60-NQ/TW\" doesn't list Bắc Giang for non-merger, but it *does* mention that Bắc Giang was merged into Bắc Ninh. So, the old \"Tỉnh Bắc Giang\" is now \"Tỉnh Bắc Ninh.\" This is going to be key when I filter for the new wards.\n\nNext, I dig into resolutions to see how \"Phường Mỹ Độ\" was handled. I need resolutions related to Bắc Giang *or* Bắc Ninh, because of that merger. Resolution \"1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh\" seems promising. I scan it carefully, because it's the most likely source for the relevant information.\n\nLooking at line 92, I see a list of reorganized wards, but \"Phường Mỹ Độ\" isn't there. Then, I hit the jackpot in line 93! It states, clear as day, that \"Phường Mỹ Độ\" was part of the merger to create \"phường Đa Mai\". Bingo!\n\nNow, I'll go to my \"New wards\" list to verify. I search for \"phường Đa Mai\" and, there it is!  `{\"ward_code\":\"07228\",\"ward_name\":\"Phường Đa Mai\",\"province_name\":\"Tỉnh Bắc Ninh\"}`. It matches perfectly.\n\nFinally, putting it all together for the output.\nMy confidence is very high here because the old ward \"Mỹ Độ\" is explicitly part of the reorganization into the new \"phường Đa Mai\".\nHere's the JSON I'll build:\n`{\n\"province_name\": \"Tỉnh Bắc Ninh\",\n\"ward_name\": \"Phường Đa Mai\",\n\"ward_code\": \"07228\",\n\"citation\": {\"header\": \"1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh\", \"line\": \"93. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Tân Mỹ, Mỹ Độ, Song Mai, Đa Mai và xã Quế Nham thành phường mới có tên gọi là **phường Đa Mai**.\"},\n\"confidence\": \"high\"\n}`\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh",
+        "line": "93. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Tân Mỹ, Mỹ Độ, Song Mai, Đa Mai và xã Quế Nham thành phường mới có tên gọi là **phường Đa Mai**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "07228",
+      "ward_name": "Phường Đa Mai"
+    }
+  ]
+}

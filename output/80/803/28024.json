@@ -1,0 +1,28 @@
+{
+  "address": "Xã Long Hiệp, Huyện Bến Lức, Tỉnh Long An",
+  "ellapsedInMs": 7988,
+  "estimatedCost": 0.0033942,
+  "thought": "**Determining the New Ward for the Given Address**\n\nOkay, here's my thought process. The user gave me an old address: \"Xã Long Hiệp, Huyện Bến Lức, Tỉnh Long An.\" My goal is to figure out the new administrative unit for this address.\n\nFirst, I identified the components: Province: Tỉnh Long An, Ward: Xã Long Hiệp, and District: Huyện Bến Lức.\n\nNow, I need to consult the resolutions and merger lists. The first step is to see if any provinces have been merged. Ah, and there it is: \"Hợp nhất tỉnh Tây Ninh và tỉnh Long An, lấy tên là tỉnh Tây Ninh\" (60-NQ/TW). So, \"Tỉnh Long An\" is now \"Tỉnh Tây Ninh.\"\n\nNext, I have to find the new ward for the given old ward name \"Xã Long Hiệp.\" I checked several resolutions. **1677/NQ-UBTVQH15** dealt with Quảng Ngãi, which I immediately dismissed. **1682/NQ-UBTVQH15** was the key, it was the one for \"Tỉnh Tây Ninh,\" the new province.\n\nResolution **1682/NQ-UBTVQH15** had a few lines that weren't related. But then, line 38 caught my eye: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Long Hiệp, Phước Lợi và Mỹ Yên thành xã mới có tên gọi là **xã Mỹ Yên**.\" Bingo! This line specifically mentions \"Xã Long Hiệp\" and merges it into \"Xã Mỹ Yên\" in Tây Ninh, which is exactly what I'm looking for.\n\nI quickly checked the other resolutions to be thorough, but they were irrelevant to this query.\n\nTo confirm my findings, I double-checked the \"New wards\" data.  I was looking for \"Xã Mỹ Yên\" in \"Tỉnh Tây Ninh,\" and the entry `{\"ward_code\":\"28018\",\"ward_name\":\"Xã Mỹ Yên\",\"province_name\":\"Tỉnh Tây Ninh\"}` perfectly matched.\n\nTherefore, the `province_name` is \"Tỉnh Tây Ninh,\" the `ward_name` is \"Xã Mỹ Yên,\" and the `ward_code` is \"28018.\" That's the correct JSON output.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Tây Ninh và tỉnh Long An, lấy tên là tỉnh Tây Ninh"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tây Ninh",
+      "ward_code": "28018",
+      "ward_name": "Xã Mỹ Yên"
+    },
+    {
+      "citation": {
+        "header": "1682/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tây Ninh",
+        "line": "38. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Long Hiệp, Phước Lợi và Mỹ Yên thành xã mới có tên gọi là **xã Mỹ Yên**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tây Ninh",
+      "ward_code": "28018",
+      "ward_name": "Xã Mỹ Yên"
+    }
+  ]
+}

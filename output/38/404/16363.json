@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tượng Lĩnh, Huyện Nông Cống, Tỉnh Thanh Hóa",
+  "ellapsedInMs": 8055,
+  "estimatedCost": 0.0029919,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm presented with a Vietnamese address and I need to figure out its new administrative unit.  Let's break this down systematically. First, I identify the old components: \"Xã Tượng Lĩnh\" (ward), \"Huyện Nông Cống\" (district), and \"Tỉnh Thanh Hóa\" (province).  Easy enough.\n\nNext, I check the \"Province Resolutions\".  Finding \"Tỉnh Thanh Hóa\" is straightforward.  I see that according to this particular resolution set, Thanh Hóa province isn't undergoing any mergers or significant changes at the provincial level.  That's one less variable to worry about.\n\nNow, I move on to the other resolutions. I search through `1674/NQ-UBTVQH15`, but nothing pops up related to \"Tượng Lĩnh\" or \"Nông Cống\" in Ninh Bình. Then, I dive into `1686/NQ-UBTVQH15` which is specifically for Thanh Hóa. I scan it carefully. I see mentions of \"thị trấn Nông Cống\" and some other wards merging within Nông Cống district, but nothing definitive for \"Xã Tượng Lĩnh\" initially. Then, bingo! On line 39, I hit the jackpot. It explicitly mentions \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tượng Sơn, Tượng Văn và Tượng Lĩnh thành xã mới có tên gọi là **xã Tượng Lĩnh**.\"  That's exactly what I needed.  The old ward is being merged, *but* the new ward retains the same name \"Xã Tượng Lĩnh\".\n\nTo solidify this finding, I cross-reference this with the \"New wards\" list.  I search for \"Xã Tượng Lĩnh\" specifically within \"Tỉnh Thanh Hóa\" (to ensure I have the right context) and voila, there it is! I find  `{\"ward_code\":\"16363\",\"ward_name\":\"Xã Tượng Lĩnh\",\"province_name\":\"Tỉnh Thanh Hóa\"}`. This perfectly aligns with the resolution.\n\nThe evidence is overwhelming.  The province is unchanged, the resolution directly addresses \"Xã Tượng Lĩnh\" as being merged into a new \"Xã Tượng Lĩnh,\" and the new wards list confirms its existence with the right province. This is a clear-cut case. Confidence level? High.\n\nTherefore, I'll generate the JSON output using the resolution `1686/NQ-UBTVQH15` as my citation, specifically line 39. My confidence is high because of the direct correlation between the old and new ward names in the resolution, and the presence of the same ward in the \"New Wards\" data.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1686/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thanh Hóa",
+        "line": "39. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tượng Sơn, Tượng Văn và Tượng Lĩnh thành xã mới có tên gọi là xã Tượng Lĩnh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thanh Hóa",
+      "ward_code": "16363",
+      "ward_name": "Xã Tượng Lĩnh"
+    }
+  ]
+}

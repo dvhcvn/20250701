@@ -1,0 +1,18 @@
+{
+  "address": "Xã Sơn Bua, Huyện Sơn Tây, Tỉnh Quảng Ngãi",
+  "ellapsedInMs": 6717,
+  "estimatedCost": 0.0026133,
+  "thought": "**Determining the New Ward for the Old Address**\n\nOkay, so I've got \"Xã Sơn Bua, Huyện Sơn Tây, Tỉnh Quảng Ngãi\" and need to find its current administrative unit. First, I identify the province: \"Tỉnh Quảng Ngãi.\" No major renames or merges for Quang Ngai based on `60-NQ/TW`, so that's straightforward.\n\nNext, I zero in on \"Xã Sơn Bua.\" Time to consult those \"Other resolutions.\" Resolution `1677/NQ-UBTVQH15` from Quảng Ngãi looks promising. Ah, here it is: line 38 explicitly states, *\"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Sơn Mùa, Sơn Liên và Sơn Bua thành xã mới có tên gọi là **xã Sơn Tây Thượng**.\"*\n\nExcellent. I cross-reference this with the \"New wards\" list, and there it is: `{\"ward_code\":\"21334\",\"ward_name\":\"Xã Sơn Tây Thượng\",\"province_name\":\"Tỉnh Quảng Ngãi\"}`. Confirmed!\n\nSince \"Sơn Bua\" is directly mentioned in the resolution and merged into the new ward, the confidence in this match is high. I'll construct the JSON output accordingly, citing `1677/NQ-UBTVQH15` and line 38 as the source. I'll include the ward code \"21334\" and the ward name \"Xã Sơn Tây Thượng,\" and the province name \"Tỉnh Quảng Ngãi.\"\n\nJust to be absolutely sure, I'll quickly scan the other resolutions to confirm there aren't any conflicting mentions of \"Sơn Bua.\" Checking `1656`, `1665`, `1677`, and `1678` confirms: Only `1677` from Quang Ngai mentions it, and it clearly merges into \"Xã Sơn Tây Thượng\". High confidence is justified. The JSON is ready.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1677/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ngãi",
+        "line": "38. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Sơn Mùa, Sơn Liên và Sơn Bua thành xã mới có tên gọi là **xã Sơn Tây Thượng**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ngãi",
+      "ward_code": "21334",
+      "ward_name": "Xã Sơn Tây Thượng"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Hưng Thủy, Huyện Lệ Thủy, Tỉnh Quảng Bình",
+  "ellapsedInMs": 6818,
+  "estimatedCost": 0.0026641,
+  "thought": "**My Reasoning for Mapping the Old Vietnamese Address**\n\nOkay, I've got a Vietnamese address to map, and I need to figure out its new administrative unit.  Here's what I'm thinking, as an expert in this area.\n\nFirst, I need to identify the old province and ward.  The input is \"Xã Hưng Thủy\", \"Tỉnh Quảng Bình.\" Got it.\n\nNext, I'll need to use my existing resolutions and data to map this address. I'm starting with the province.\n\nI'll check the province resolutions, specifically 60-NQ/TW, to see if Quảng Bình has merged with any other province. I see that Quảng Bình isn't listed under \"non-merged\" provinces. Good. Then I find \"Tỉnh Quảng Bình\" under \"merged\" and see it merged with Quảng Trị, with the new name being \"Tỉnh Quảng Trị\". That's settled.\n\nNow for the ward. I need to dive into other resolutions, specifically 1680/NQ-UBTVQH15, to see if there have been any ward reorganizations. Aha! Line 31 directly mentions \"Xã Hưng Thủy\".  It clearly states the new name as \"Xã Sen Ngư\". Perfect!\n\nLet's double-check the \"New wards\" data.  Yep, there it is:  \"Xã Sen Ngư\" with the code \"19288\" and the province listed as \"Tỉnh Quảng Trị\", which perfectly matches the new province name I just found.\n\nI also checked nearby lines in 1680/NQ-UBTVQH15 to be absolutely sure there were no other new wards which might have used \"Hưng Thủy\" in its formation. No problems there; the other lines map different old wards to different new wards. The new ward \"Xã Mỹ Thủy\" is also listed, but no resolution mentions it being formed from \"Xã Hưng Thủy\". It is not a candidate.\n\nTherefore, \"Xã Hưng Thủy\", \"Tỉnh Quảng Bình\" should be mapped to \"Xã Sen Ngư\", province: \"Tỉnh Quảng Trị\". It is a high-confidence mapping given the direct references in the resolutions. I'll build my JSON output with the right ward code, ward name, province name, a high confidence score, and cite the resolution and specific line as I always do.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1680/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Trị",
+        "line": "31. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Hưng Thủy, Sen Thủy và Ngư Thủythành xã mới có tên gọi là xã Sen Ngư."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Trị",
+      "ward_code": "19288",
+      "ward_name": "Xã Sen Ngư"
+    }
+  ]
+}

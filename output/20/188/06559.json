@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tam Gia, Huyện Lộc Bình, Tỉnh Lạng Sơn",
+  "ellapsedInMs": 6584,
+  "estimatedCost": 0.0025383999999999997,
+  "thought": "**Navigating the Administrative Unit Shuffle**\n\nOkay, so I've got \"Xã Tam Gia, Huyện Lộc Bình, Tỉnh Lạng Sơn\" to work with. My job is to figure out its current administrative address, given all the reshuffling.  I've got a solid framework for this: pinpoint the old administrative components, check the resolutions, and then use the `new_wards` data to find the current location.\n\nFirst off, it's \"Xã Tam Gia\" in \"Huyện Lộc Bình\" (even though the prompt says all districts were eliminated, I'm noting this for context) within \"Tỉnh Lạng Sơn.\" Easy enough.\n\nNext, I need to check the province resolutions. Ah, perfect! Resolution 60-NQ/TW states that Lạng Sơn is *not* being merged with any other province, so we're good there.\n\nNow the interesting part: Finding the specific resolution that handles \"Xã Tam Gia.\"  I scan through my list and find `1672/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lạng Sơn`.  Looking through, specifically line 39 jumps out. It explicitly states that \"Xã Tam Gia\" and \"Xã Khuất Xá\" are *merged* to form a new ward named \"Xã Khuất Xá.\"  Bingo!\n\nNow, the final step: confirm that \"Xã Khuất Xá\" is in my `new_wards` data.  A quick search yields the entry: `{\"ward_code\":\"06565\",\"ward_name\":\"Xã Khuất Xá\",\"province_name\":\"Tỉnh Lạng Sơn\"}`.  That's it!\n\nTherefore, based on my analysis, the new address for \"Xã Tam Gia\" is \"Xã Khuất Xá,\" within \"Tỉnh Lạng Sơn,\" and has a code of \"06565.\"  This is a high-confidence determination, as the mapping is explicitly spelled out in the resolution. I can now construct my output JSON with a clear citation to the supporting resolution.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1672/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lạng Sơn",
+        "line": "39. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Tam Gia và xã Khuất Xá thành xã mới có tên gọi là**xã Khuất Xá**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lạng Sơn",
+      "ward_code": "06565",
+      "ward_name": "Xã Khuất Xá"
+    }
+  ]
+}

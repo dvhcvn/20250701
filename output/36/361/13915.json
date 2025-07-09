@@ -1,0 +1,18 @@
+{
+  "address": "Xã Nghĩa Trung, Huyện Nghĩa Hưng, Tỉnh Nam Định",
+  "ellapsedInMs": 7873,
+  "estimatedCost": 0.0033838999999999996,
+  "thought": "**Determining the New Administrative Unit for \"Xã Nghĩa Trung, Huyện Nghĩa Hưng, Tỉnh Nam Định\"**\n\nOkay, so the task at hand is to find the updated administrative location for the address \"Xã Nghĩa Trung, Huyện Nghĩa Hưng, Tỉnh Nam Định\".  My initial approach will be to leverage the provided resolutions and the updated ward lists.\n\nFirst, I need to understand any province-level changes.  I recall the resolution 60-NQ/TW that describes the merger of Hà Nam, Ninh Bình, and Nam Định into Ninh Bình. This means \"Tỉnh Nam Định\" is now part of \"Tỉnh Ninh Bình\".  I'll need to remember this and update the `province_name` accordingly.\n\nNext, I zero in on \"Xã Nghĩa Trung\". My strategy is to scour the available resolutions, particularly those related to \"Tỉnh Ninh Bình\" and, to be thorough, \"Tỉnh Nam Định,\" since that's the *old* province.  I'm looking for direct mentions of \"Xã Nghĩa Trung\" and their subsequent changes.\n\nAha!  Resolution 1674/NQ-UBTVQH15, specifically line 61, is exactly what I need. It clearly states that \"Xã Nghĩa Trung\" is being merged with other wards to form the new ward, \"Xã Nghĩa Hưng\".  This is a direct hit!\n\nTo be absolutely certain, I'll quickly check the list of \"New wards\" to confirm a match. And there it is: `{\"ward_code\":\"13891\",\"ward_name\":\"Xã Nghĩa Hưng\",\"province_name\":\"Tỉnh Ninh Bình\"}`. This perfectly aligns with my findings.\n\nAs a final sanity check, I'll quickly glance over all other resolutions to make sure \"Xã Nghĩa Trung\" isn't mentioned elsewhere in a different context or province that might cause confusion. I don't see any other relevant mentions of \"Xã Nghĩa Trung,\" which confirms that resolution 1674/NQ-UBTVQH15 is the only relevant one.\n\nTherefore, the appropriate JSON output will be:\n\n*   `citation`: \"1674/NQ-UBTVQH15, line 61\"\n*   `confidence`: High. It's a clear, unambiguous mapping.\n*   `province_name`: \"Tỉnh Ninh Bình\"\n*   `ward_code`: \"13891\"\n*   `ward_name`: \"Xã Nghĩa Hưng\"\n\nExcellent. This completes the analysis.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "61. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Liễu Đề và các xã Nghĩa Thái, Nghĩa Châu, Nghĩa Trung thành xã mới có tên gọi là xã Nghĩa Hưng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "13891",
+      "ward_name": "Xã Nghĩa Hưng"
+    }
+  ]
+}

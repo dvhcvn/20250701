@@ -1,0 +1,18 @@
+{
+  "address": "Xã Lạc Nông, Huyện Bắc Mê, Tỉnh Hà Giang",
+  "ellapsedInMs": 8125,
+  "estimatedCost": 0.0029656,
+  "thought": "**Address Mapping Process: Lạc Nông, Bắc Mê, Hà Giang**\n\nOkay, here's the breakdown of how I'm thinking about this address mapping. The user is providing an old address and needs it mapped to current administrative units. I'm focusing on the given address \"Xã Lạc Nông, Huyện Bắc Mê, Tỉnh Hà Giang.\"\n\nFirst, I need to identify the old province and ward.  \"Xã Lạc Nông\" is the old ward and \"Tỉnh Hà Giang\" is the old province.\n\nNext, I'm checking the province resolutions, specifically Resolution 60-NQ/TW, to see if \"Tỉnh Hà Giang\" was changed. And yep, it was!  The resolution states that Hà Giang merged with Tuyên Quang to form \"Tỉnh Tuyên Quang.\"  So, right away, my new province is Tuyên Quang.\n\nNow, for the ward level.  I'm looking for information about \"Xã Lạc Nông\" within the context of the newly formed \"Tỉnh Tuyên Quang.\" I found Resolution \"1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang\" that's explicitly tells me how \"Xã Lạc Nông\" has been changed.  Line 68 clearly states that \"Xã Lạc Nông\" along with \"Thị trấn Yên Phú\" and \"Xã Yên Phong\" became the new ward \"Xã Bắc Mê.\"  That's key!\n\nI need to confirm the new ward details in my dataset.  I've got the new ward data, and it includes the details for \"Xã Bắc Mê\".   It's `{\"ward_code\":\"00991\",\"ward_name\":\"Xã Bắc Mê\",\"province_name\":\"Tỉnh Tuyên Quang\"}`.  Perfect match!  I *also* see the other ward mentioned in the merger, Yên Phú (whose code I do not need), but it is clear what the new *relevant* data is here.\n\nBuilding the output, I'm going to set the `province_name` to \"Tỉnh Tuyên Quang\", the `ward_name` to \"Xã Bắc Mê\", and use the relevant `ward_code`. The `citation` will point to Resolution \"1684/NQ-UBTVQH15\" because that's the authority for this ward's change.  Finally, I'm highly confident about this mapping, so the `confidence` will be set to \"high\".  The final output is one JSON object within an array.  The resolutions leave no room for doubt about the mapping, given the specific language used.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "68. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Yên Phú, xã Yên Phong và xã Lạc Nông thành xã mới có tên gọi là xã Bắc Mê."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "00991",
+      "ward_name": "Xã Bắc Mê"
+    }
+  ]
+}

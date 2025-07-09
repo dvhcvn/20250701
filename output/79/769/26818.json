@@ -1,0 +1,28 @@
+{
+  "address": "Phường Linh Tây, Thành phố Thủ Đức, Thành phố Hồ Chí Minh",
+  "ellapsedInMs": 7083,
+  "estimatedCost": 0.0034165000000000003,
+  "thought": "**Analysis of \"Phường Linh Tây\" Address in Ho Chi Minh City**\n\nOkay, so I'm presented with the old address \"Phường Linh Tây, Thành phố Thủ Đức, Thành phố Hồ Chí Minh\" and need to map it to the new administrative units. First, I identify the province as \"Thành phố Hồ Chí Minh,\" which checks out. I've been through the resolutions enough to know that hasn't changed.\n\nThe challenge is \"Phường Linh Tây.\"  I immediately jump to checking the relevant resolutions, specifically, the ones related to administrative changes.  Ah, here we go, **Resolution 1685/NQ-UBTVQH15**. Line 68 is key: it clearly states that \"một phần diện tích tự nhiên, quy mô dân số của phường Linh Tây\" (a portion of the ward) is merged into the new \"Phường Thủ Đức.\" Confidence: High. It's direct and unambiguous.\n\nThen, line 70. This confirms my suspicion:  \"phần còn lại của phường Linh Tây\" (the remaining part of the ward) is merged into \"Phường Linh Xuân.\" Another clear indication.  Again, confidence is high because it explicitly refers to the \"remaining part\".\n\nThis means \"Phường Linh Tây\" no longer exists as a singular entity. It's been divided. I therefore have two candidate new wards: \"Phường Thủ Đức\" and \"Phường Linh Xuân.\"\n\nTo finalize, I'll cross-reference these with my list of new wards. I'll need their ward codes. I see that  \"Phường Thủ Đức\" maps to `{\"ward_code\":\"26824\",\"ward_name\":\"Phường Thủ Đức\",\"province_name\":\"Thành phố Hồ Chí Minh\"}` and \"Phường Linh Xuân\" maps to `{\"ward_code\":\"26800\",\"ward_name\":\"Phường Linh Xuân\",\"province_name\":\"Thành phố Hồ Chí Minh\"}`. I can confidently construct the JSON output reflecting this split.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1685/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của Thành phố Hồ Chí Minh",
+        "line": "68. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Bình Thọ, Linh Chiểu, Trường Thọ, một phần diện tích tự nhiên, quy mô dân số của phường Linh Tây và phần còn lại của phường Linh Đông sau khi sắp xếp theo quy định tại khoản 67 Điều này thành phường mới có tên gọi là phường Thủ Đức."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hồ Chí Minh",
+      "ward_code": "26824",
+      "ward_name": "Phường Thủ Đức"
+    },
+    {
+      "citation": {
+        "header": "1685/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của Thành phố Hồ Chí Minh",
+        "line": "70. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Linh Trung, phường Linh Xuân và phần còn lại của phường Linh Tây sau khi sắp xếp theo quy định tại khoản 68 Điều này thành phường mới có tên gọi là phường Linh Xuân."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hồ Chí Minh",
+      "ward_code": "26800",
+      "ward_name": "Phường Linh Xuân"
+    }
+  ]
+}

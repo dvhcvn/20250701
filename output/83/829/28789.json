@@ -1,0 +1,18 @@
+{
+  "address": "Xã Bình Phú, Thành phố Bến Tre, Tỉnh Bến Tre",
+  "ellapsedInMs": 7677,
+  "estimatedCost": 0.003814,
+  "thought": "**Analyzing the Address Transformation**\n\nOkay, so the user wants to know the new administrative unit for \"Xã Bình Phú, Thành phố Bến Tre, Tỉnh Bến Tre.\" Let's break this down. First, I need to figure out the new province name. Per the resolutions, \"Tỉnh Bến Tre\" has merged, and its new name is \"Tỉnh Vĩnh Long.\"\n\nNow, I'm focusing on finding the new ward for \"Xã Bình Phú\" *within* what's now \"Tỉnh Vĩnh Long.\" I'll need to meticulously check the resolutions, especially those concerning the areas that used to be \"Tỉnh Bến Tre.\"\n\nLooking through the \"Other resolutions\", I've zoned in on **1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long**. I need to carefully read each entry. Initially, I saw some matches for Bình Phú, but it was from \"huyện Càng Long\" which, while now part of the new province, is a completely different Bình Phú and doesn't match the user's specific address.\n\nAh, here's a crucial one! Resolution **118** states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của Phường 7 và xã Bình Phú(thành phố Bến Tre), xã Thanh Tânthành phường mới có tên gọi là **phường Bến Tre**.\" Bingo! This *explicitly* addresses \"xã Bình Phú(thành phố Bến Tre)\" and states it merges into \"phường Bến Tre.\" This is a high-confidence match.\n\nNow, to solidify this, I'll go to the \"New wards\" list to find \"phường Bến Tre\" and get its corresponding code. Bingo! I've found it: `{\"ward_code\":\"28789\",\"ward_name\":\"Phường Bến Tre\",\"province_name\":\"Tỉnh Vĩnh Long\"}`.\n\nI'm confident in this match. Resolution 118 directly targets the \"Xã Bình Phú\" within the original address, making this a straightforward conversion. The answer is **phường Bến Tre** in **Tỉnh Vĩnh Long**, and its code is `28789`.  I'll double-check to be absolutely sure that no other \"Bình Phú\" is in play; the resolution is clear about the location within Thành phố Bến Tre.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long",
+        "line": "118. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của Phường 7 và xã Bình Phú(thành phố Bến Tre), xã Thanh Tânthành phường mới có tên gọi là **phường Bến Tre**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "28789",
+      "ward_name": "Phường Bến Tre"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Mai Giang, Huyện Thanh Chương, Tỉnh Nghệ An",
+  "ellapsedInMs": 6920,
+  "estimatedCost": 0.0024909,
+  "thought": "**Mapping an Old Address to New Administrative Units**\n\nOkay, so I'm presented with an address: \"Xã Mai Giang, Huyện Thanh Chương, Tỉnh Nghệ An\". My goal is to figure out the corresponding new administrative unit based on these resolutions and ward data. Let's break this down systematically.\n\nFirst, I need to identify the old components: \"Xã Mai Giang\" (the old ward), \"Huyện Thanh Chương\" (old district), and \"Tỉnh Nghệ An\" (old province). The instructions mention something about eliminating districts, but the resolutions themselves still use the term in the context of merging wards, so I should focus on the ward and province for this mapping.\n\nNow, checking the provincial resolutions (60-NQ/TW), I see that \"Tỉnh Nghệ An\" is listed under those not undergoing mergers. This confirms that \"Tỉnh Nghệ An\" will remain \"Tỉnh Nghệ An\". That's a good starting point.\n\nNext, I scan the other resolutions, specifically looking for any mention of \"Xã Mai Giang\" within \"Tỉnh Nghệ An\". And there it is! Resolution 1678/NQ-UBTVQH15, specifically line 86, explicitly states, \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Mai Giang, Thanh Lâm, Thanh Tùng và Thanh Xuân thành xã mới có tên gọi là **xã Bích Hào**.\" Perfect! \"Xã Mai Giang\" is merging into \"xã Bích Hào\".\n\nTo be absolutely certain, I need to check the \"New wards\" data.  And there it is: `{\"ward_code\":\"17818\",\"ward_name\":\"Xã Bích Hào\",\"province_name\":\"Tỉnh Nghệ An\"}`. This perfectly matches the resolution's information.\n\nTherefore, my final output will be:\n\n*   `province_name`: \"Tỉnh Nghệ An\" (unchanged)\n*   `ward_name`: \"Xã Bích Hào\" (from the resolution)\n*   `ward_code`: \"17818\" (from the new wards data)\n*   `citation`:\n    *   `header`: \"1678/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Nghệ An\"\n    *   `line`: \"86. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Mai Giang, Thanh Lâm, Thanh Tùng và Thanh Xuân thành xã mới có tên gọi là xã Bích Hào.\"\n*   `confidence`: \"high\" (because it's a direct and explicit mapping).\n\nI've double-checked for any other mentions of \"Xã Mai Giang\" in the provided resolutions to be extra thorough and I found none. The mapping is consistent and clear. I am confident in this result.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1678/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Nghệ An",
+        "line": "86. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Mai Giang, Thanh Lâm, Thanh Tùng và Thanh Xuân thành xã mới có tên gọi là xã Bích Hào."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Nghệ An",
+      "ward_code": "17818",
+      "ward_name": "Xã Bích Hào"
+    }
+  ]
+}

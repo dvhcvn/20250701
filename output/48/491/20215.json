@@ -1,0 +1,18 @@
+{
+  "address": "Phường Chính Gián, Quận Thanh Khê, Thành phố Đà Nẵng",
+  "ellapsedInMs": 6836,
+  "estimatedCost": 0.0023399000000000002,
+  "thought": "**Mapping an Old Address to New Administrative Units**\n\nOkay, so I've been tasked with mapping an old address, specifically \"Phường Chính Gián\" in \"Quận Thanh Khê,\" Đà Nẵng, to its new administrative unit. My initial thought is to break this down methodically. First, I'll identify the key components of the old address: the old ward (\"Phường Chính Gián\"), the old district (\"Quận Thanh Khê\" - though the prompt mentioned eliminating districts, so it's only for context here), and the old province (\"Thành phố Đà Nẵng\").\n\nNext, I need to consult the provincial resolutions. I'll search for \"Thành phố Đà Nẵng\" in the relevant documents. Aha! Resolution 60-NQ/TW states that the province, even after merging with Quảng Nam, remains \"Thành phố Đà Nẵng.\" Confirmed. The province name is solid.\n\nNow, let's move on to the more granular details. I'll scour the other relevant resolutions, specifically looking for \"Phường Chính Gián.\" And there it is! Resolution 1659/NQ-UBTVQH15, line 3, explicitly states that \"Phường Chính Gián\" is merged into a new ward called \"Phường Thanh Khê.\" Perfect! That's exactly what I was hoping to find.\n\nTo confirm, I'll cross-reference \"Phường Thanh Khê\" with the provided `new_wards` data. Indeed, I find a match: `{\"ward_code\":\"20209\",\"ward_name\":\"Phường Thanh Khê\",\"province_name\":\"Thành phố Đà Nẵng\"}`. It all aligns seamlessly.\n\nFinally, I'll construct the JSON output: the province is confirmed as \"Thành phố Đà Nẵng\". The new ward is \"Phường Thanh Khê\" with code \"20209.\" The most important piece of evidence is the specific resolution: 1659/NQ-UBTVQH15, line 3. With such explicit information, I can confidently rate this mapping as \"high\" confidence; it's a direct and irrefutable match.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng",
+        "line": "3. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Xuân Hà, Chính Gián, Thạc Gián, Thanh Khê Tây và Thanh Khê Đông thành phường mới có tên gọi là phường Thanh Khê."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "20209",
+      "ward_name": "Phường Thanh Khê"
+    }
+  ]
+}

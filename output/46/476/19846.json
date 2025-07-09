@@ -1,0 +1,18 @@
+{
+  "address": "Phường Phong Hòa, Thị xã Phong Điền, Thành phố Huế",
+  "ellapsedInMs": 5845,
+  "estimatedCost": 0.0020707,
+  "thought": "**Analysis of Address Change: Phường Phong Hòa, Thị xã Phong Điền, Thành phố Huế**\n\nOkay, here's how I'm approaching this. The user wants the new administrative unit for \"Phường Phong Hòa, Thị xã Phong Điền, Thành phố Huế.\" First, I need to isolate the key components: \"Phường Phong Hòa\" (the ward) and \"Thành phố Huế\" (the province).\n\nNow, the province first. I quickly check if \"Thành phố Huế\" underwent any mergers using document `60-NQ/TW`. Thankfully, it's listed under \"Các đơn vị hành chính cấp tỉnh không thực hiện sáp nhập,\" meaning it remains \"Thành phố Huế.\"\n\nNext, I need to investigate the ward. The user specified it was \"Phường Phong Hòa\" within \"Thành phố Huế,\" so I'm looking through `Other resolutions` specifically for mentions of that ward within that province. Bingo! Resolution `1675/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Huế` seems promising.\n\nLine 3 jumps out immediately: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Phong Hòa, xã Phong Bình và xã Phong Chương thành phường mới có tên gọi là **phường Phong Dinh**.\" Excellent! This confirms that \"Phường Phong Hòa\" is being merged into the new \"Phường Phong Dinh.\"\n\nNow, to solidify this, I'll cross-reference \"Phường Phong Dinh\" against the `New wards` list. I'm searching for a perfect match, and there it is: `{\"ward_code\":\"19831\",\"ward_name\":\"Phường Phong Dinh\",\"province_name\":\"Thành phố Huế\"}`.  Perfect.\n\nTherefore, the final output will be:\n*   A `citation` pointing to the resolution line where the merger is specified\n*   A `confidence` level that is high, due to the direct match\n*   The `province_name` being \"Thành phố Huế\" (as expected)\n*   The `ward_code` being \"19831\"\n*   And finally, the `ward_name` being \"Phường Phong Dinh.\"\n\nThis should give the user the precise updated administrative unit they are looking for, with a high degree of certainty.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1675/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Huế",
+        "line": "3. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Phong Hòa, xã Phong Bình và xã Phong Chương thành phường mới có tên gọi là phường Phong Dinh."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Huế",
+      "ward_code": "19831",
+      "ward_name": "Phường Phong Dinh"
+    }
+  ]
+}

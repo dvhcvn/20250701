@@ -1,0 +1,18 @@
+{
+  "address": "Xã Đắk Nên, Huyện Kon Plông, Tỉnh Kon Tum",
+  "ellapsedInMs": 7665,
+  "estimatedCost": 0.0027318000000000004,
+  "thought": "**My Analysis of the Address Mapping**\n\nOkay, so I'm presented with the task of mapping an old address (\"Xã Đắk Nên, Huyện Kon Plông, Tỉnh Kon Tum\") to its current administrative unit.  This requires a careful analysis of resolutions and new ward data.\n\nFirst, I identified the original ward (\"Xã Đắk Nên\") and province (\"Tỉnh Kon Tum\").  Then, I immediately checked relevant province resolutions, specifically Resolution 60-NQ/TW. This document clearly states that \"Tỉnh Kon Tum\" was merged into \"Tỉnh Quảng Ngãi\". So, step one, \"Kon Tum\" is now \"Quảng Ngãi.\"\n\nNext, I needed to pin down the fate of \"Xã Đắk Nên.\"  I turned to Resolution 1677/NQ-UBTVQH15.  Bingo! Line 80 of that resolution explicitly addresses the merger of \"Đắk Nên,\" \"Đắk Ring,\" and \"Măng Bút\" into the new ward, **\"Xã Măng Bút.\"**  Crucially, this resolution pertains to \"Tỉnh Quảng Ngãi,\" which aligns perfectly with my previous province transformation.  I noticed the minor variation in diacritics (\"Đắk Nên\" vs. \"Đăk Nên\") but recognized this as a non-issue given the Vietnamese context.\n\nNow, I verified my findings against the \"New Wards\" data. The entry `{\"ward_code\":\"23455\",\"ward_name\":\"Xã Măng Bút\",\"province_name\":\"Tỉnh Quảng Ngãi\"}` precisely confirms my conclusions.  Another entry (`{\"ward_code\":\"23476\",\"ward_name\":\"Xã Kon Plông\",\"province_name\":\"Tỉnh Quảng Ngãi\"}`) exists, but the resolutions do not support mapping \"Xã Đắk Nên\" there.\n\nThe \"Măng Bút\" match is definitive, and this mapping is robust. This is a simple and straightforward re-mapping of a previous ward into a new one. I will use the resolution as the cited support, with a high confidence.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1677/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ngãi",
+        "line": "80. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đăk Nên, Đăk Ring và Măng Bút thành xã mới có tên gọi là xã Măng Bút."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ngãi",
+      "ward_code": "23455",
+      "ward_name": "Xã Măng Bút"
+    }
+  ]
+}

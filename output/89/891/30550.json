@@ -1,0 +1,18 @@
+{
+  "address": "Xã Lạc Quới, Huyện Tri Tôn, Tỉnh An Giang",
+  "ellapsedInMs": 7611,
+  "estimatedCost": 0.0026133999999999997,
+  "thought": "**Address Mapping Analysis: Xã Lạc Quới**\n\nOkay, so I've got this old Vietnamese address, \"Xã Lạc Quới,\" and I need to figure out its current equivalent based on these resolutions and the new ward data.  Let's break this down systematically.\n\nFirst, I identified the components of the old address:  \"Xã Lạc Quới\" (ward), \"Huyện Tri Tôn\" (district - which, as per the instructions, I'm noting but ignoring for the final output), and \"Tỉnh An Giang\" (province).  Now, the real work begins.\n\nMy initial thought was to check for any province-level changes.  I examined the province resolutions (60-NQ/TW), specifically looking for \"Tỉnh An Giang\" in both the \"do not change\" and the \"post-merger/consolidation\" lists.  An Giang wasn't in the \"do not change\" list, but in the \"post-merger\" section, I saw it, along with a note about its merging with Kiên Giang.  Crucially, it mentions that the name *remains* \"Tỉnh An Giang\".\n\nNext, I delved into the \"Other resolutions\", focusing on any mention of \"Xã Lạc Quới.\"  Bingo!  Resolution 1654/NQ-UBTVQH15, specifically line 22, was the key.  It unequivocally states that \"Xã Lạc Quới\" *and* other units will be merged into a new ward called \"Xã Ba Chúc\".  That's my primary candidate.\n\nNow, to confirm, I cross-referenced this with the \"New wards\" data.  Sure enough, I found \"Xã Ba Chúc\" listed, complete with its ward code and province confirmation, solidifying the match.  Excellent.\n\nI then constructed the JSON output.  The province name is straightforward: \"Tỉnh An Giang\" (unchanged).  The new ward is clearly \"Xã Ba Chúc,\" with its corresponding code. The `citation` will accurately point to the relevant resolution and the specific line where the merge is described. The `confidence` level here is \"high\", as the mapping is explicit and well-supported by the data.\n\nI did quickly consider any edge cases: are there other relevant resolutions, or are there other ward candidates. I scanned but came up empty, reinforcing my conclusion. This one seems pretty clear-cut, there is only one clear new ward based on the information provided.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1654/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh An Giang",
+        "line": "22. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Ba Chúc, xã Lạc Quới và xã Lê Trì thành xã mới có tên gọi là xã Ba Chúc."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh An Giang",
+      "ward_code": "30547",
+      "ward_name": "Xã Ba Chúc"
+    }
+  ]
+}

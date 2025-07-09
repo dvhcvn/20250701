@@ -1,0 +1,18 @@
+{
+  "address": "Xã Nậm Manh, Huyện Nậm Nhùn, Tỉnh Lai Châu",
+  "ellapsedInMs": 7200,
+  "estimatedCost": 0.0026694,
+  "thought": "**Determining the New Ward for \"Xã Nậm Manh\"**\n\nOkay, so I'm looking at the old address: \"Xã Nậm Manh, Huyện Nậm Nhùn, Tỉnh Lai Châu\".  My task is to pinpoint the new ward for this old address using the provided data.\n\nFirst, I need to break down the address. The old ward is \"Xã Nậm Manh,\" and the old province is \"Tỉnh Lai Châu.\"\n\nNow, let's consult the resolutions. I know Lai Chau is not being merged so I should look for resolutions specific to Lai Chau.\n\nI'll scan the `other_resolutions` list. I immediately find \"1670/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lai Châu\". Excellent, a relevant resolution! Looking through it, line 26 jumps out at me: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Nậm Nhùn, xãNậm Manh và xã Nậm Hàngthành xã mới có tên gọi là **xã Nậm Hàng**.\"  Bingo! \"Xã Nậm Manh\" is explicitly mentioned as merging into \"Xã Nậm Hàng.\"\n\nNext, I need to confirm this in the `new_wards` list. I search for \"Xã Nậm Hàng\" and find `{\"ward_code\":\"03434\",\"ward_name\":\"Xã Nậm Hàng\",\"province_name\":\"Tỉnh Lai Châu\"}`.  The province confirms that the new ward is in Lai Chau. It's a perfect match!\n\nTherefore, the old ward \"Xã Nậm Manh\" is now part of the new ward \"Xã Nậm Hàng\" with the ward code \"03434\", and the province, \"Tỉnh Lai Châu\", remains unchanged. I have very high confidence in this determination because the resolution explicitly addresses this specific ward and its merging process.  The resolution citation is clear: \"1670/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lai Châu\" and the specific line reference: \"26. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Nậm Nhùn, xãNậm Manh và xã Nậm Hàngthành xã mới có tên gọi là xã Nậm Hàng.\"  I'm confident in the output: The new ward is \"Xã Nậm Hàng,\" code \"03434\", and the province is still \"Tỉnh Lai Châu.\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1670/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lai Châu",
+        "line": "26. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Nậm Nhùn, xãNậm Manh và xã Nậm Hàngthành xã mới có tên gọi là xã Nậm Hàng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lai Châu",
+      "ward_code": "03434",
+      "ward_name": "Xã Nậm Hàng"
+    }
+  ]
+}

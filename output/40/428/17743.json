@@ -1,0 +1,18 @@
+{
+  "address": "Xã Thanh Liên, Huyện Thanh Chương, Tỉnh Nghệ An",
+  "ellapsedInMs": 6281,
+  "estimatedCost": 0.0020613,
+  "thought": "**Identifying the New Administrative Unit**\n\nOkay, so I'm presented with the old address \"Xã Thanh Liên, Huyện Thanh Chương, Tỉnh Nghệ An\" and need to find its corresponding new ward. My first step is always to verify the province, \"Tỉnh Nghệ An\" in this case. Given my knowledge of the relevant regulations, I quickly check if it's slated for any mergers or name changes. Looking at the established directives, specifically \"60-NQ/TW,\" I confirm that Nghệ An is not slated for province-level consolidation, so that's a straightforward check.\n\nNext, I dive into the granular data, specifically the resolutions related to ward adjustments.  \"1678/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Nghệ An\" is the key document here. Reading through it, line 93 immediately jumps out: it explicitly states that \"Xã Thanh Liên,\" along with \"Thanh Mỹ\" and \"Thanh Tiên,\" are being merged into a *new* ward called \"xã Tam Đồng.\" Bingo! That's the core of the answer.\n\nNow, I cross-reference this information with my \"New wards\" dataset. I quickly search for \"xã Tam Đồng\" and find a direct match:  `{\"ward_code\":\"17743\",\"ward_name\":\"Xã Tam Đồng\",\"province_name\":\"Tỉnh Nghệ An\"}`.  Perfect. This confirms everything.\n\nBased on this solid evidence, I can construct the JSON output:\n\n*   The *citation* will point directly to \"1678/NQ-UBTVQH15,\" line 93, giving that crucial confirmation of the transformation.\n*   I assign a *high* confidence level because this is a clear, explicit match with no ambiguity.\n*   The *province_name* is simply \"Tỉnh Nghệ An,\" as previously verified.\n*   The *ward_code* is \"17743\", and *ward_name* is \"Xã Tam Đồng.\"\n\nThis looks like a clean, definitive resolution.  It's a straightforward application of the data and a clear example of how to use these datasets for address standardization.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1678/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Nghệ An",
+        "line": "93. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Thanh Liên, Thanh Mỹ và Thanh Tiên thành xã mới có tên gọi là xã Tam Đồng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Nghệ An",
+      "ward_code": "17743",
+      "ward_name": "Xã Tam Đồng"
+    }
+  ]
+}

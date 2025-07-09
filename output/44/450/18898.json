@@ -1,0 +1,18 @@
+{
+  "address": "Xã Đức Ninh, Thành Phố Đồng Hới, Tỉnh Quảng Bình",
+  "ellapsedInMs": 7337,
+  "estimatedCost": 0.0028483,
+  "thought": "**My Analysis: Identifying the New Ward**\n\nOkay, so I'm presented with an old address and tasked with finding its corresponding new administrative unit.  Here's how I'm approaching this, step-by-step.\n\nFirst, I parsed the input address: \"Xã Đức Ninh\" in \"Thành Phố Đồng Hới,\" Quảng Bình province.  I noted that \"Thành Phố Đồng Hới\" is a city, not a district, which is important given the prompt's request to eliminate districts.\n\nNext, I focused on the province resolutions (specifically, 60-NQ/TW).  I quickly confirmed that Quảng Bình wasn't on the \"no-merger\" list. Then I checked if it was part of any mergers. Bingo!  It's merging with Quảng Trị. High-confidence change right there – Quảng Bình is now part of Quảng Trị.\n\nWith the province settled, I moved on to other resolutions, looking specifically for mentions of \"Xã Đức Ninh\" and \"Thành Phố Đồng Hới.\"  I quickly dismissed irrelevant resolutions (Hà Nội, Tuyên Quang).  Then, resolution 1680 (Quảng Trị) hit paydirt: It explicitly mentioned \"Xã Đức Ninh\" and stated the creation of a new \"phường Đồng Hới.\" The title of this resolution also aligned with the province name change. This is a very strong match.\n\nTo solidify my findings, I cross-referenced this new ward (\"Phường Đồng Hới\") with the \"New wards\" list. And there it was: \"Phường Đồng Hới\" in \"Tỉnh Quảng Trị,\" with the ward code \"18880.\" Perfect match.\n\nGiven the explicit province merger statement and the precise ward renaming in a relevant resolution, coupled with the confirmation in the new wards list, I'm highly confident in my results. My output will reflect this, citing resolution 1680, with \"high\" confidence, and the confirmed new province name, ward code, and ward name.  It's a textbook example of how to tackle this kind of analysis.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1680/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Trị",
+        "line": "69. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Đức Ninh Đông, Đồng Hải, Đồng Phú, Phú Hải, Hải Thành, Nam Lý, xã Bảo Ninh và xã Đức Ninh thành phường mới có tên gọi là phường Đồng Hới."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Trị",
+      "ward_code": "18880",
+      "ward_name": "Phường Đồng Hới"
+    }
+  ]
+}

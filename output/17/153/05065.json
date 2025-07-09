@@ -1,0 +1,28 @@
+{
+  "address": "Xã Kim Bôi, Huyện Kim Bôi, Tỉnh Hoà Bình",
+  "ellapsedInMs": 7992,
+  "estimatedCost": 0.0027014,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm presented with a Vietnamese address and need to figure out its current location based on these resolutions. It seems straightforward, but I need to be meticulous.  First, I'll break down the address: *Xã Kim Bôi* (ward), *Huyện Kim Bôi* (district), and *Tỉnh Hoà Bình* (province).\n\nNow, the resolutions. I know these administrative changes can be tricky.  I'll start with the province. Resolution 60-NQ/TW states that *Tỉnh Hoà Bình* is *merged* into *Tỉnh Phú Thọ*. Okay, so *Tỉnh Hoà Bình* is essentially out of the picture now, and we're dealing with *Tỉnh Phú Thọ* for this address.\n\nNext, the ward and district. I need to find something relevant in resolution 1676/NQ-UBTVQH15. Bingo! Line 100 mentions \"Xã Kim Bôi\". It's talking about reorganizing wards in *Tỉnh Phú Thọ*, which, after the province merger, should include the old *Xã Kim Bôi*. The resolution specifies that the existing wards \"thị trấn Bo\", \"xã Vĩnh Đồng\" and \"xã Kim Bôi\" will be combined to a new \"xã Kim Bôi\". This is critical.\n\nHere's where the critical thinking comes in. Resolution 1676 is specifically about *Tỉnh Phú Thọ*. The original *Xã Kim Bôi* was in *Tỉnh Hoà Bình*. But because of the province merger, the *Xã Kim Bôi* from *Hoà Bình* is *now* part of *Phú Thọ* before we do any ward re-organizations.  Thus, the \"Xã Kim Bôi\" created by this resolution is highly likely the original Kim Bôi after merger. This suggests that the old *Xã Kim Bôi* is now part of the new *Xã Kim Bôi* in *Tỉnh Phú Thọ*.\n\nFinally, I'll double-check the \"New wards\" data.  I'm looking for \"Xã Kim Bôi\" within *Tỉnh Phú Thọ*.  Ah, there it is: `{\"ward_code\":\"04978\",\"ward_name\":\"Xã Kim Bôi\",\"province_name\":\"Tỉnh Phú Thọ\"}`. Perfect match. The *ward_name* and *province_name* are an exact fit.\n\nGiven that the province merger is explicit and the ward restructuring directly mentions the ward I am looking for within the *new* province, my confidence in this mapping is very high. I'll output the data accordingly.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Vĩnh Phúc, tỉnh Phú Thọ và tỉnh Hoà Bình; lấy tên là tỉnh Phú Thọ"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "04978",
+      "ward_name": "Xã Kim Bôi"
+    },
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "100. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Bo, xã Vĩnh Đồng và xã Kim Bôi thành xã mới có tên gọi là xã Kim Bôi."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "04978",
+      "ward_name": "Xã Kim Bôi"
+    }
+  ]
+}

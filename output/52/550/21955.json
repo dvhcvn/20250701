@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Diêu Trì, Huyện Tuy Phước, Tỉnh Bình Định",
+  "ellapsedInMs": 7631,
+  "estimatedCost": 0.0027152,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm presented with a Vietnamese address and need to map it to the new administrative units.  I've got this. First, I need to break down the old address:  it's \"Thị trấn Diêu Trì\" in \"Huyện Tuy Phước,\" Bình Định province.  The \"eliminating all districts\" bit is a bit of a red herring, I'll keep the district in mind for now, but my focus is on the province and ward.\n\nNow, let's look at the provincial changes. The provided resolutions are key.  I'll start with Resolution 60-NQ/TW, checking for any mergers or dissolutions affecting Bình Định.  Good, it's not on the \"do not merge\" list. Ah ha!  It *is* part of a merger! \"Hợp nhất tỉnh Gia Lai và tỉnh Bình Định, lấy tên là tỉnh Gia Lai.\" So, my old \"Bình Định\" is now \"Gia Lai.\"  That's my new province.\n\nNext, I'll go through Resolution 1664/NQ-UBTVQH15, as it deals specifically with administrative reorganizations within Gia Lai.  And here it is: I look for Diêu Trì in the lines. Bingo! Line 16 explicitly spells it out: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Tuy Phước, thị trấn Diêu Trì và các xã Phước Thuận, Phước Nghĩa, Phước Lộc thành xã mới có tên gọi là **xã Tuy Phước**.\"  Perfect. Diêu Trì is merged into Xã Tuy Phước.\n\nNow for a quick check with the \"New Wards\" data. I'm looking for \"Xã Tuy Phước\" in that list. Yes, there it is!  {\"ward_code\":\"21952\",\"ward_name\":\"Xã Tuy Phước\",\"province_name\":\"Tỉnh Gia Lai\"}  The province matches the output I got from the provincial merger, and that's solid.\n\nThe confidence level on this mapping is incredibly high. The old ward is clearly mentioned in the resolution that directly outlines its new administrative configuration. Furthermore, the newly assigned province is clearly defined in the other resolution. And finally, the new ward is confirmed to exist within the newly assigned province in the provided data.\n\nTherefore, I'll build the output JSON as follows: I have the appropriate citation header and line, the new province name, the ward code, and the ward name. I know the citation is 1664/NQ-UBTVQH15. I'm absolutely confident in my findings.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai",
+        "line": "16. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Tuy Phước, thị trấn Diêu Trì và các xã Phước Thuận, Phước Nghĩa, Phước Lộc thành xã mới có tên gọi là xã Tuy Phước."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "21952",
+      "ward_name": "Xã Tuy Phước"
+    }
+  ]
+}

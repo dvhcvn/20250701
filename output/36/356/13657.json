@@ -1,0 +1,18 @@
+{
+  "address": "Phường Trường Thi, Thành phố Nam Định, Tỉnh Nam Định",
+  "ellapsedInMs": 7511,
+  "estimatedCost": 0.0028840999999999997,
+  "thought": "**Analysis of Old Address: \"Phường Trường Thi, Thành phố Nam Định, Tỉnh Nam Định\"**\n\nOkay, here's how I'd approach this. The user is asking to map an old address to the latest administrative units. First, I need to figure out the province. \"Tỉnh Nam Định\" is the old province. Looking at the province resolutions, 60-NQ/TW clearly states \"Hợp nhất tỉnh Hà Nam, tỉnh Ninh Bình và tỉnh Nam Định; lấy tên là tỉnh Ninh Bình.\" So, \"Tỉnh Nam Định\" is now part of \"Tỉnh Ninh Bình\". That takes care of the `province_name`.\n\nNext, the ward: \"Phường Trường Thi.\" Now, I go to the \"Other resolutions\" section, and immediately, resolution 1674/NQ-UBTVQH15 catches my eye.  I need to go through it carefully. Line 119 is the crucial one. It says \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Trường Thi và xã Thành Lợi thành phường mới có tên gọi là **phường Trường Thi**.\" Ah!  So, the *name* stays the same, \"Phường Trường Thi,\" but it now includes \"xã Thành Lợi.\"  This means it's a *new* entity, even if it has the same name.\n\nNow, I look for \"Phường Trường Thi\" in the provided `New wards` list, specifically looking for it within \"Tỉnh Ninh Bình\", since the province has changed. Bingo! The entry `{\"ward_code\":\"13777\",\"ward_name\":\"Phường Trường Thi\",\"province_name\":\"Tỉnh Ninh Bình\"}` is a perfect match.\n\nConfidence?  Definitely high. The province mapping is straightforward from resolution 60-NQ/TW. The ward mapping is explicit in 1674/NQ-UBTVQH15, line 119. And we found the updated ward in the provided list.\n\nTherefore, the final output would be:\n\n*   `citation.header`: \"1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình\"\n*   `citation.line`: \"119. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Trường Thi và xã Thành Lợi thành phường mới có tên gọi là **phường Trường Thi**.\"\n*   `confidence`: \"high\"\n*   `province_name`: \"Tỉnh Ninh Bình\"\n*   `ward_code`: \"13777\"\n*   `ward_name`: \"Phường Trường Thi\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "119. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Trường Thi và xã Thành Lợi thành phường mới có tên gọi là **phường Trường Thi**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "13777",
+      "ward_name": "Phường Trường Thi"
+    }
+  ]
+}

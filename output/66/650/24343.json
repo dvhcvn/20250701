@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Krông Năng, Huyện Krông Năng, Tỉnh Đắk Lắk",
+  "ellapsedInMs": 7042,
+  "estimatedCost": 0.0025676,
+  "thought": "**Analysis of Administrative Unit Mapping: A Confident Resolution**\n\nOkay, so I'm tackling this old address: \"Thị trấn Krông Năng, Huyện Krông Năng, Tỉnh Đắk Lắk\". My goal is to map this to the new administrative structure using the provided resolutions and ward data. Let's break this down.\n\nFirst, I need to pinpoint the province, which is \"Tỉnh Đắk Lắk.\" Checking the province resolutions, I see that while Đắk Lắk wasn't slated for elimination, resolution \"60-NQ/TW\" does state a merger of Đắk Lắk and Phú Yên. However, this is more of a renaming than a true merging in our context, so the resulting `province_name` will be \"Tỉnh Đắk Lắk.\"\n\nNow, the crucial part: identifying the ward. The address mentions \"Thị trấn Krông Năng.\" I need to cross-reference this with the \"Other resolutions\" that mention both \"Thị trấn Krông Năng\" and \"Đắk Lắk\". Bingo! Resolution \"1660/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đắk Lắk\" directly addresses this. Line 21 clearly states that \"Thị trấn Krông Năng,\" along with \"xã Phú Lộc\" and \"xã Ea Hồ,\" will become the new \"xã Krông Năng.\" Perfect.\n\nNext, I'll search the \"New wards\" data for \"xã Krông Năng\" within \"Tỉnh Đắk Lắk\". And there it is: `{\"ward_code\":\"24343\",\"ward_name\":\"Xã Krông Năng\",\"province_name\":\"Tỉnh Đắk Lắk\"}`. It's a perfect match!\n\nTherefore, I'm extremely confident about this mapping. My JSON output will be constructed with a high confidence level, citing the relevant resolution. The `province_name` will be \"Tỉnh Đắk Lắk,\" and the `ward_code` will be \"24343\" with a `ward_name` of \"Xã Krông Năng\".\n\nI did a quick cross-check to make sure no other resolutions or ward names could be mistakenly considered, but they are all in unrelated provinces (Gia Lai). So, this mapping looks solid.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1660/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đắk Lắk",
+        "line": "21. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Krông Năng, xã Phú Lộc và xã Ea Hồ thành xã mới có tên gọi là xã Krông Năng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đắk Lắk",
+      "ward_code": "24343",
+      "ward_name": "Xã Krông Năng"
+    }
+  ]
+}

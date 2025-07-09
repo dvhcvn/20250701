@@ -1,0 +1,28 @@
+{
+  "address": "Phường Tăng Tiến, Thị Xã Việt Yên, Tỉnh Bắc Giang",
+  "ellapsedInMs": 6305,
+  "estimatedCost": 0.0019374,
+  "thought": "**My Analysis of the Administrative Address Mapping**\n\nOkay, so I'm presented with the old address \"Phường Tăng Tiến, Thị Xã Việt Yên, Tỉnh Bắc Giang,\" and my task is to map it to the new administrative structure.  Given my expertise in these types of transformations, I know the process pretty well.\n\nFirst, I quickly identify \"Tỉnh Bắc Giang\" as the old province.  I'll immediately consult my database of relevant resolutions, specifically looking for those related to province-level changes, like 60-NQ/TW.  Ah, here it is: \"Hợp nhất tỉnh Bắc Ninh và tỉnh Bắc Giang, lấy tên là tỉnh Bắc Ninh.\" This confirms the old \"Bắc Giang\" is now part of \"Bắc Ninh\". That's step one.\n\nNext, I zero in on \"Phường Tăng Tiến.\"  Now it's time to leverage those \"Other resolutions,\" focusing on both \"Phường Tăng Tiến\" and, critically, the *new* province.  I run the search and find the key document: Resolution 1658/NQ-UBTVQH15, specifically regarding administrative rearrangements in Bắc Ninh. Line 90 jumps out: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Quang Châu, Vân Trung, Tăng Tiến và Nếnh thành phường mới có tên gọi là **phường Nếnh**.\" Bingo!  It explicitly states the merger of \"Phường Tăng Tiến\" *into* \"Phường Nếnh,\" and importantly, confirms that the action is within \"Tỉnh Bắc Ninh.\"\n\nNow, to solidify this, I'll go through the \"New wards\" database, looking for \"phường Nếnh\" within \"Tỉnh Bắc Ninh.\"  And there it is: `{\"ward_code\":\"07795\",\"ward_name\":\"Phường Nếnh\",\"province_name\":\"Tỉnh Bắc Ninh\"}`. A perfect match!\n\nThe confidence level here is exceptionally high. The resolution directly addresses the merger of the specific ward, within the correct updated province. This is a very clear and unambiguous case.  Now it's just a matter of constructing the JSON output, and I'll be good to go.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Bắc Ninh và tỉnh Bắc Giang, lấy tên là tỉnh Bắc Ninh"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "07795",
+      "ward_name": "Phường Nếnh"
+    },
+    {
+      "citation": {
+        "header": "1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh",
+        "line": "90. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Quang Châu, Vân Trung, Tăng Tiến và Nếnh thành phường mới có tên gọi là phường Nếnh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "07795",
+      "ward_name": "Phường Nếnh"
+    }
+  ]
+}

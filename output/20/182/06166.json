@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tân Thanh, Huyện Văn Lãng, Tỉnh Lạng Sơn",
+  "ellapsedInMs": 8592,
+  "estimatedCost": 0.0072102,
+  "thought": "**Finding the New Administrative Unit**\n\nOkay, so I need to figure out the new administrative unit for \"Xã Tân Thanh, Huyện Văn Lãng, Tỉnh Lạng Sơn\". First, I'll check if the province, \"Tỉnh Lạng Sơn\", has been merged or changed in \"60-NQ/TW\". It's listed under those *not* being merged, so the province remains \"Tỉnh Lạng Sơn.\"\n\nNow, the real work begins. I'll search through the `other resolutions` provided, specifically looking for \"Xã Tân Thanh\" within \"Huyện Văn Lãng\". I'll examine each resolution and its lines to find a direct reference to it.\n\nEureka! I found it in \"1672/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lạng Sơn\". Line 29 is the key: it explicitly states that \"Xã Tân Thanh\" along with a few others *became* \"xã Hoàng Văn Thụ\".  This resolution header and line now serve as my citation. I can confidently say the new ward is \"xã Hoàng Văn Thụ.\"\n\nNext, I'll check my `New wards` list, making sure \"xã Hoàng Văn Thụ\" belongs to \"Tỉnh Lạng Sơn.\" It does! I find a matching entry: `{\"ward_code\":\"06172\",\"ward_name\":\"Xã Hoàng Văn Thụ\",\"province_name\":\"Tỉnh Lạng Sơn\"}`. This gives me the crucial `ward_code` and validates my findings.\n\nSince the old ward name and the district are precisely matched to a line in a resolution directly mapping it to its new name, my confidence is high. I'll put together the final JSON output, including the citation, high confidence, the province, ward code, and ward name.\n\n```json\n[\n  {\n    \"citation\": {\n      \"header\": \"1672/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lạng Sơn\",\n      \"line\": \"29. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Hồng Tháivà xã Hoàng Văn Thụ (huyện Văn Lãng), cácxã Tân Mỹ, Nhạc Kỳ, Tân Thanhthành xã mới có tên gọi là**xã Hoàng Văn Thụ**.\"\n    },\n    \"confidence\": \"high\",\n    \"province_name\": \"Tỉnh Lạng Sơn\",\n    \"ward_code\": \"06172\",\n    \"ward_name\": \"Xã Hoàng Văn Thụ\"\n  }\n]\n```\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1672/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lạng Sơn",
+        "line": "29. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Hồng Tháivà xã Hoàng Văn Thụ (huyện Văn Lãng), cácxã Tân Mỹ, Nhạc Kỳ, Tân Thanhthành xã mới có tên gọi là**xã Hoàng Văn Thụ**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lạng Sơn",
+      "ward_code": "06172",
+      "ward_name": "Xã Hoàng Văn Thụ"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "address": "Xã Long Hòa, Huyện Châu Thành, Tỉnh Trà Vinh",
+  "ellapsedInMs": 8525,
+  "estimatedCost": 0.0047436,
+  "thought": "**Determining the New Administrative Unit for Xã Long Hòa**\n\nOkay, so the user wants the new administrative unit for \"Xã Long Hòa, Huyện Châu Thành, Tỉnh Trà Vinh.\"  My initial thought is to break this down systematically. First, I need to pinpoint the relevant documents and look for any changes.\n\n1.  **Province Identification:**  \"Tỉnh Trà Vinh\" is the starting point. I know I have to check for province mergers, so I'll refer to \"60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất.\"\n\n2.  **Province Merger Check:**  A quick glance confirms it. \"Hợp nhất tỉnh Bến Tre, tỉnh Vĩnh Long và tỉnh Trà Vinh; lấy tên là tỉnh Vĩnh Long.\" Trà Vinh *was* merged into Vĩnh Long.  Therefore, the new province will be \"Tỉnh Vĩnh Long.\"\n\n3.  **Ward Lookup in Resolutions:** Now, the tricky part – finding the specific ward. I need to search through resolutions, focusing on those related to Vĩnh Long. Since Trà Vinh is now part of Vĩnh Long, I'll prioritize resolutions concerning Vĩnh Long administrative adjustments. \"1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long\" seems the most relevant. I need to carefully scan the lines for \"Xã Long Hòa\" within \"Huyện Châu Thành\" (since I know the old district).\n\n    *   Line 34 mentions \"thị trấn Châu Thành (huyện Châu Thành, tỉnh Trà Vinh)\" – not the correct match.\n    *   Line 100 refers to \"Long Hòa (huyện Bình Đại)\" – definitely the wrong district.\n    *   **Bingo!** Line 121 explicitly states \"và 04 xã không thực hiện sắp xếp là các xã Long Hòa (huyện Châu Thành), Đông Hải, Long Vĩnh, Hòa Minh.\"  It *clearly* says that \"Xã Long Hòa (huyện Châu Thành)\" is *not* rearranged. This is a crucial piece of information.\n\n4.  **Determining the New Name and Code:**  Since the resolution says \"không thực hiện sắp xếp,\" the ward name should remain \"Xã Long Hòa.\" And since the province is now \"Tỉnh Vĩnh Long\", the administrative change is at the province level. To finish this up, I need the `ward_code`.  I'll look for `{\"ward_name\":\"Xã Long Hòa\",\"province_name\":\"Tỉnh Vĩnh Long\"}` in my `New wards` data.  Ah, here it is: `{\"ward_code\":\"29413\",\"ward_name\":\"Xã Long Hòa\",\"province_name\":\"Tỉnh Vĩnh Long\"}`.\n\n5.  **Confidence Assessment:** The resolution explicitly states no rearrangement. This is a *very* high-confidence match. I'm satisfied.\n\n6.  **JSON Output Construction:** Time to put it all together and construct the final JSON output, based on what I have found.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Bến Tre, tỉnh Vĩnh Long và tỉnh Trà Vinh; lấy tên là tỉnh Vĩnh Long"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "29413",
+      "ward_name": "Xã Long Hòa"
+    },
+    {
+      "citation": {
+        "header": "1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long",
+        "line": "121. Sau khi sắp xếp, tỉnh Vĩnh Long có 124 đơn vị hành chính cấp xã, gồm 105 xã và 19 phường; trong đó có 101 xã, 19 phường hình thành sau sắp xếp quy định tại Điều này và 04 xã không thực hiện sắp xếp là các xã Long Hòa (huyện Châu Thành), Đông Hải, Long Vĩnh, Hòa Minh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "29413",
+      "ward_name": "Xã Long Hòa"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Vượng Lộc, Huyện Can Lộc, Tỉnh Hà Tĩnh",
+  "ellapsedInMs": 5296,
+  "estimatedCost": 0.0018312,
+  "thought": "**Mapping an Old Vietnamese Address to a New Administrative Unit**\n\nOkay, here's how I'm going to approach this.  The task is to take an old address, specifically \"Xã Vượng Lộc\", \"Tỉnh Hà Tĩnh\", and map it to its new administrative unit. I'll need to use the provided resolutions and the list of new wards to do this accurately and with high confidence.\n\nFirst, I identify the province and ward from the input address - \"Tỉnh Hà Tĩnh\" and \"Xã Vượng Lộc\".\n\nNext, I'll go through the Province Resolutions, looking for any information on the status of \"Tỉnh Hà Tĩnh\". Luckily, I see that Hà Tĩnh isn't listed as merging. This is great, because I know \"Tỉnh Hà Tĩnh\" will remain \"Tỉnh Hà Tĩnh\".\n\nNow, I'll scan the other resolutions to see if I can find any direct matches for \"Xã Vượng Lộc\" *within* Hà Tĩnh. Aha! Resolution 1665/NQ-UBTVQH15, specifically line 27, is exactly what I need. It states that \"Xã Vượng Lộc\" is being merged with something else, and will be renamed as \"**Xã Can Lộc**\". That's a direct link!\n\nWith the new ward name in hand, I can now cross-reference it with the `new_wards` list. I will look for \"Xã Can Lộc\" within \"Tỉnh Hà Tĩnh\". And there it is! I find the matching entry: `{\"ward_code\":\"18406\",\"ward_name\":\"Xã Can Lộc\",\"province_name\":\"Tỉnh Hà Tĩnh\"}`.\n\nFinally, I will assemble the output.  The `citation` will be the resolution and line number that had the direct match. The `confidence` is \"high\" because I had a clear, direct match within the resolutions. The `province_name` is simply \"Tỉnh Hà Tĩnh\". And the `ward_code` and `ward_name` are pulled directly from the new ward entry - \"18406\" and \"Xã Can Lộc\", respectively.  Done!\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh",
+        "line": "27. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Nghènxã Thiên Lộc và xã Vượng Lộc thành xã mới có tên gọi là xã Can Lộc."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hà Tĩnh",
+      "ward_code": "18406",
+      "ward_name": "Xã Can Lộc"
+    }
+  ]
+}

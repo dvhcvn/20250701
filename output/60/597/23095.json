@@ -1,0 +1,28 @@
+{
+  "address": "Xã Hàm Liêm, Huyện Hàm Thuận Bắc, Tỉnh Bình Thuận",
+  "ellapsedInMs": 7128,
+  "estimatedCost": 0.0025278,
+  "thought": "**Analyzing Address Changes: A Detailed Breakdown**\n\nOkay, so I'm presented with an old address: \"Xã Hàm Liêm, Huyện Hàm Thuận Bắc, Tỉnh Bình Thuận.\" My goal is to map this to its current administrative unit. Here's my thought process:\n\nFirst, I need to break down the old address. I quickly identify \"Xã Hàm Liêm\" as the old ward and \"Tỉnh Bình Thuận\" as the old province.\n\nNow, I'm armed with some key documents. I immediately check for any province mergers, specifically using \"60-NQ/TW.\" Bingo! That document indicates \"Tỉnh Bình Thuận\" was merged with other provinces, eventually forming \"Tỉnh Lâm Đồng.\" This is a critical first step.\n\nNext, I need to focus on \"Xã Hàm Liêm\" within the *new* administrative context of \"Tỉnh Lâm Đồng.\" I consult the resolutions, and \"1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng\" immediately jumps out as relevant. Specifically, line 57 is gold: it explicitly details the merger of \"xã Hàm Chính\" and \"xã Hàm Liêm\" to create a *new* \"xã Hàm Liêm\". Crucial information.\n\nNow, I cross-reference this with my \"New wards\" data. I have an entry: `{\"ward_code\":\"23095\",\"ward_name\":\"Xã Hàm Liêm\",\"province_name\":\"Tỉnh Lâm Đồng\"}`. This perfectly aligns with the resolution and the updated province. I also quickly review the other data but see they are unrelated.\n\nFinally, I'm ready to construct my JSON output. The old \"Xã Hàm Liêm\" from \"Tỉnh Bình Thuận\" is now \"Xã Hàm Liêm\" in \"Tỉnh Lâm Đồng.\" The resolution 1671/NQ-UBTVQH15 line 57 provides the smoking gun. Based on this direct correlation, my confidence level for this mapping will be \"high.\" It's a clear and concise case, bolstered by a direct reference in the relevant resolution.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Lâm Đồng, tỉnh Đắk Nông và tỉnh Bình Thuận; lấy tên là tỉnh Lâm Đồng"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "23095",
+      "ward_name": "Xã Hàm Liêm"
+    },
+    {
+      "citation": {
+        "header": "1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng",
+        "line": "57. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Hàm Chính và xã Hàm Liêm thành xã mới có tên gọi là xã Hàm Liêm."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "23095",
+      "ward_name": "Xã Hàm Liêm"
+    }
+  ]
+}

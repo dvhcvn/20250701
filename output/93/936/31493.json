@@ -1,0 +1,18 @@
+{
+  "address": "Xã Lương Nghĩa, Huyện Long Mỹ, Tỉnh Hậu Giang",
+  "ellapsedInMs": 9195,
+  "estimatedCost": 0.0033323,
+  "thought": "**Identifying the New Administrative Unit**\n\nOkay, let's break this down. The user's asking for the current administrative unit corresponding to \"Xã Lương Nghĩa, Huyện Long Mỹ, Tỉnh Hậu Giang.\" My initial thought is to tackle this systematically.\n\nFirst, I need to identify the old province: \"Tỉnh Hậu Giang.\" Then, I check province resolutions, specifically \"60-NQ/TW,\" which details changes in administrative divisions. I quickly find the key: \"Hợp nhất thành phố cần Thơ, tỉnh Sóc Trăng và tỉnh Hậu Giang; lấy tên là thành phố Cần Thơ.\" Bingo! Hậu Giang is now part of Thành phố Cần Thơ.\n\nNext, I identify the old ward: \"Xã Lương Nghĩa.\" Now, the trick is to cross-reference this with the relevant resolutions, looking for any mention of \"Xã Lương Nghĩa.\" I find it in \"1668/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Cần Thơ.\"  This resolution states: \"51. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Lương Nghĩa và xã Lương Tâm thành xã mới có tên gọi là **xã Lương Tâm**.\" So, \"Xã Lương Nghĩa\" is now \"Xã Lương Tâm.\"\n\nTo finalize this, I consult the \"New wards\" list, looking for \"Xã Lương Tâm.\"  I find it: `{\"ward_code\":\"31492\",\"ward_name\":\"Xã Lương Tâm\",\"province_name\":\"Thành phố Cần Thơ\"}`. The province lines up perfectly with the merger info I found earlier.\n\nThe output will be: `{\"province_name\": \"Thành phố Cần Thơ\", \"ward_name\": \"Xã Lương Tâm\", \"ward_code\": \"31492\", \"citation\": \"1668/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Cần Thơ, Line: 51.\"}`, and I have high confidence in this result because the province and the ward transformations are explicit and directly linked.\n\nLet me double-check. Start from the beginning with the old address.\n\n*   **Province:**\n    *   Hậu Giang: \"60-NQ/TW\" states \"Hợp nhất thành phố cần Thơ, tỉnh Sóc Trăng và tỉnh Hậu Giang; lấy tên là thành phố Cần Thơ.\" Therefore, Hậu Giang => Thành phố Cần Thơ.\n*   **Ward:**\n    *   \"Xã Lương Nghĩa\" is mentioned in \"1668/NQ-UBTVQH15\". \"51. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Lương Nghĩa và xã Lương Tâm thành xã mới có tên gọi là **xã Lương Tâm**.\" Therefore, \"Xã Lương Nghĩa\" => \"Xã Lương Tâm\".\n*   **\"New Wards\" List:**\n    *   \"Xã Lương Tâm\":  `{\"ward_code\":\"31492\",\"ward_name\":\"Xã Lương Tâm\",\"province_name\":\"Thành phố Cần Thơ\"}` matches perfectly.\n*   **Confidence:** High. The transformations are explicit and interconnected.\n*   **Citation:** \"1668/NQ-UBTVQH15, Line: 51.\"\nThis confirms my approach. I'm ready to proceed with the requested information.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1668/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Cần Thơ",
+        "line": "51. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Lương Nghĩa và xã Lương Tâm thành xã mới có tên gọi là xã Lương Tâm."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Cần Thơ",
+      "ward_code": "31492",
+      "ward_name": "Xã Lương Tâm"
+    }
+  ]
+}

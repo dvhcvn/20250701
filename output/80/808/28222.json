@@ -1,0 +1,28 @@
+{
+  "address": "Xã Vĩnh Công, Huyện Châu Thành, Tỉnh Long An",
+  "ellapsedInMs": 6130,
+  "estimatedCost": 0.0034116,
+  "thought": "**Determining the New Administrative Unit for \"Xã Vĩnh Công, Huyện Châu Thành, Tỉnh Long An\"**\n\nOkay, so I've got this old address: \"Xã Vĩnh Công, Huyện Châu Thành, Tỉnh Long An.\" My task is to figure out the corresponding new administrative unit. Here's my thought process:\n\nFirst, I need to account for any province mergers. Checking `60-NQ/TW`, I see that Long An was actually merged with Tây Ninh, forming a new province called Tây Ninh.  This is a crucial first step.\n\nNext, I'll focus on the specific ward, \"Xã Vĩnh Công.\" I'll search through the relevant resolutions for any mentions of this ward, specifically within the context of Tây Ninh. Bingo! Resolution `1682/NQ-UBTVQH15` catches my eye. It deals with the reorganization of administrative units in Tây Ninh.  Within this resolution, I find: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Hòa Phú, Bình Quới và Vĩnh Công thành xã mới có tên gọi là **xã Vĩnh Công**.\" This directly addresses the old \"Xã Vĩnh Công.\"\n\nNow, I'll need to confirm this. I'll search the `New wards` list for a match using the new ward name and province, effectively searching for `{\"ward_name\":\"Xã Vĩnh Công\",\"province_name\":\"Tỉnh Tây Ninh\"}`.  And there it is! I find  `{\"ward_code\":\"28222\",\"ward_name\":\"Xã Vĩnh Công\",\"province_name\":\"Tỉnh Tây Ninh\"}`.\n\nThe confidence here is exceptionally high.  We have the province merger confirmed. We have a resolution specifically for Tây Ninh that clearly states the old \"Xã Vĩnh Công\" is being used to form a new \"Xã Vĩnh Công\" within the new province.  It's a straightforward transformation.\n\nFinally, I'll construct the appropriate JSON output based on this analysis.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Tây Ninh và tỉnh Long An, lấy tên là tỉnh Tây Ninh"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tây Ninh",
+      "ward_code": "28222",
+      "ward_name": "Xã Vĩnh Công"
+    },
+    {
+      "citation": {
+        "header": "1682/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tây Ninh",
+        "line": "56. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Hòa Phú, Bình Quới và Vĩnh Công thành xã mới có tên gọi là xã Vĩnh Công."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tây Ninh",
+      "ward_code": "28222",
+      "ward_name": "Xã Vĩnh Công"
+    }
+  ]
+}

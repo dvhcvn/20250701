@@ -1,0 +1,28 @@
+{
+  "address": "Xã Thủ Sỹ, Huyện Tiên Lữ, Tỉnh Hưng Yên",
+  "ellapsedInMs": 8819,
+  "estimatedCost": 0.0035966,
+  "thought": "**My Analysis of the Administrative Unit Change**\n\nOkay, so I'm presented with an old address: \"Xã Thủ Sỹ, Huyện Tiên Lữ, Tỉnh Hưng Yên\" and need to pinpoint the corresponding new ward. My expert understanding of administrative changes tells me to meticulously dissect this.\n\nFirst, the province – \"Tỉnh Hưng Yên\" – is straightforward. After checking for any province-level mergers (specifically Resolution `60-NQ/TW`), it's clear the province remains \"Tỉnh Hưng Yên.\" No changes there.\n\nNext, I need to focus on the ward and district. The \"Huyện Tiên Lữ\" (district) is now eliminated, so the relevant information is in the ward, \"Xã Thủ Sỹ.\" I zero in on resolutions concerning administrative restructuring in Hưng Yên.\n\nImmediately, I discover Resolution `1666/NQ-UBTVQH15` which is key. It directly addresses the merger and formation of new wards in the area. Line 1 of that resolution is crystal clear: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Thủ Sỹ, Phương Nam và Tân Hưng thành xã mới có tên gọi là **xã Tân Hưng**.\" It explicitly states that \"Xã Thủ Sỹ\" merges into the new \"Xã Tân Hưng.\" Excellent. A high-confidence match!\n\nTo verify, I quickly consult the \"New wards\" data. Searching for \"Xã Tân Hưng\" in \"Tỉnh Hưng Yên\" immediately returns `{\"ward_code\":\"11977\",\"ward_name\":\"Xã Tân Hưng\",\"province_name\":\"Tỉnh Hưng Yên\"}`, confirming the resolution's findings. This is a solid match with high confidence.\n\nHowever, I'm an expert, and I need to consider all angles. The old district was \"Huyện Tiên Lữ,\" so I investigate if a new ward by that name could be relevant. Line 3 of `1666/NQ-UBTVQH15` details the creation of \"Xã Tiên Lữ\" from other old wards, notably not including \"Thủ Sỹ\". It's possible the prompt wants all potential outcomes considered. Looking at the \"New wards\" dataset, I find a ward named \"Xã Tiên Lữ\" in \"Tỉnh Hưng Yên\": `{\"ward_code\":\"12364\",\"ward_name\":\"Xã Tiên Lữ\",\"province_name\":\"Tỉnh Hưng Yên\"}`. It exists!\n\nMy expert instinct is to treat this \"Xã Tiên Lữ\" as a potential, even if slim. Given the district's name and the context, some users may infer that the \"Tiên Lữ\" (district) is relevant to the \"Tiên Lữ\" ward.\n\nTherefore, my final analysis is that, the most appropriate new ward is \"Xã Tân Hưng\" with high confidence. While \"Xã Tiên Lữ\" is also available in the system, it is not the result of the merger of \"Xã Thủ Sỹ\".\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Hưng Yên và tỉnh Thái Bình, lấy tên là tỉnh Hưng Yên"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "11977",
+      "ward_name": "Xã Tân Hưng"
+    },
+    {
+      "citation": {
+        "header": "1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên",
+        "line": "1. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Thủ Sỹ, Phương Nam và Tân Hưng thành xã mới có tên gọi là xã Tân Hưng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "11977",
+      "ward_name": "Xã Tân Hưng"
+    }
+  ]
+}

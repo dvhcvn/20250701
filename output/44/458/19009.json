@@ -1,0 +1,28 @@
+{
+  "address": "Phường Ba Đồn, Thị xã Ba Đồn, Tỉnh Quảng Bình",
+  "ellapsedInMs": 5452,
+  "estimatedCost": 0.0018836,
+  "thought": "**My Mapping Strategy for the Old Address**\n\nOkay, so I'm presented with an old address that needs to be mapped to the current administrative units. Here's my thought process:\n\nFirst, I need to isolate the key components of the old address: the ward and province. In this case, it's \"Phường Ba Đồn\" and \"Tỉnh Quảng Bình.\"\n\nNow, I understand that provinces can merge or change names over time. So, I need to check for any such changes involving \"Tỉnh Quảng Bình.\" And sure enough, the text mentions a merger with \"Tỉnh Quảng Trị\" to form \"tỉnh Quảng Trị.\"\n\nNext, the critical step is to find any resolutions that deal with the old ward, \"Phường Ba Đồn,\" within the *new* province, \"Tỉnh Quảng Trị.\" I have to carefully examine the provided resolutions, looking for any mention of the old ward name.\n\nSpecifically, I'm focusing on the resolution `1680/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Trị`. Scanning that, I hit paydirt on line 72. It says they're consolidating several wards, *including* \"Ba Đồn,\" to form a *new* \"phường Ba Đồn.\" Bingo! That's a direct match.\n\nNow, I look for the corresponding new ward in the \"New wards\" list. The entry `{\"ward_code\":\"19009\",\"ward_name\":\"Phường Ba Đồn\",\"province_name\":\"Tỉnh Quảng Trị\"}` looks perfect.\n\nFinally, I assess the confidence level. This is a very strong match because the resolution directly links the *old* \"Phường Ba Đồn\" with its *new* incarnation within \"Tỉnh Quảng Trị.\" It's a high-confidence mapping.\n\nWith that, I'm ready to construct the JSON output reflecting this mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Quảng Bình và tỉnh Quảng Trị, lấy tên là tỉnh Quảng Trị"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Trị",
+      "ward_code": "19009",
+      "ward_name": "Phường Ba Đồn"
+    },
+    {
+      "citation": {
+        "header": "1680/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Trị",
+        "line": "72. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Quảng Phong, Quảng Long, Ba Đồn và xã Quảng Hải thành phường mới có tên gọi là phường Ba Đồn."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Trị",
+      "ward_code": "19009",
+      "ward_name": "Phường Ba Đồn"
+    }
+  ]
+}

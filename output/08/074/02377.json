@@ -1,0 +1,18 @@
+{
+  "address": "Xã Yên Thuận, Huyện Hàm Yên, Tỉnh Tuyên Quang",
+  "ellapsedInMs": 8955,
+  "estimatedCost": 0.0028841999999999995,
+  "thought": "**Address Mapping Analysis: Xã Yên Thuận to New Wards**\n\nOkay, so I'm tackling this address mapping problem for an old Vietnamese address, specifically Xã Yên Thuận in Huyện Hàm Yên, Tỉnh Tuyên Quang. My approach will be methodical, starting with identifying the old administrative units.\n\nFirst, I've got to confirm that the province \"Tỉnh Tuyên Quang\" hasn't been subject to any consolidations. Consulting Resolution 60-NQ/TW, I see that Tuyên Quang isn't listed as a province slated for elimination or merger. This is a crucial starting point because it suggests the province itself will retain its original name, thus making my filtering and matching within that province more straightforward.\n\nNext, I'm diving into Resolution 1684/NQ-UBTVQH15, the one dealing with local-level rearrangements within Tuyên Quang. Right off the bat, I spot Line 20, which is key. It directly addresses Xã Yên Thuận! It explicitly states that Xã Yên Thuận, along with two other communes (Minh Khương and Bạch Xa), are being merged to form a new commune called **xã Bạch Xa**. That's the primary resolution I need to note.\n\nThen I double-check the resolution to confirm that \"Xã Yên Thuận\" is *not* listed as being incorporated into any other new wards.\n\nNow, I'm checking the provided list of `New wards` for a match. Sure enough, I find `{\"ward_code\":\"02380\",\"ward_name\":\"Xã Bạch Xa\",\"province_name\":\"Tỉnh Tuyên Quang\"}`. Bingo! That's a perfect match, based on the resolution.\n\nFinally, I'm considering edge cases. Are there any ambiguous situations, where parts of \"Xã Yên Thuận\" might be incorporated into other new wards? Based on the given information, Resolution 1684/NQ-UBTVQH15 gives a single explicit mapping: Xã Yên Thuận is directly incorporated into Xã Bạch Xa.\n\nThere are also new wards called \"Xã Hàm Yên\" and \"Xã Tân Thanh.\" \"Xã Hàm Yên\" is formed from the merging of \"thị trấn Tân Yên\", \"xã Tân Thành (huyện Hàm Yên)\", \"Bằng Cốc\", \"Nhân Mục\". \"Xã Yên Thuận\" is *not* incorporated into \"Xã Hàm Yên\". Likewise \"Xã Tân Thanh\" is a new ward, and is referenced in the resolution, however, the resolution clarifies that the specific part of \"Xã Tân Thanh\" in question, which is \"xã Tân Thành (huyện Hàm Yên)\" is incorporated into \"Xã Hàm Yên\". I'll flag this as a potential discrepancy or clarification that needs further investigation.\n\nSo, my final conclusion: Based on the provided data, the mapping is straightforward. Xã Yên Thuận (Huyện Hàm Yên, Tỉnh Tuyên Quang) is mapped to the new ward **Xã Bạch Xa** (Tỉnh Tuyên Quang). The mapping is derived directly from Resolution 1684/NQ-UBTVQH15. I'll note the potential need for checking clarification for the formation of the other new wards.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "20. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Yên Thuận, Minh Khương và Bạch Xa thành xã mới có tên gọi là xã Bạch Xa."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "02380",
+      "ward_name": "Xã Bạch Xa"
+    }
+  ]
+}

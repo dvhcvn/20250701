@@ -1,0 +1,28 @@
+{
+  "address": "Thị trấn Kiên Lương, Huyện Kiên Lương, Tỉnh Kiên Giang",
+  "ellapsedInMs": 9252,
+  "estimatedCost": 0.0032535999999999997,
+  "thought": "**Mapping Old Address to New Administrative Units: A Detailed Analysis**\n\nOkay, so I've got this address to work with: \"Thị trấn Kiên Lương, Huyện Kiên Lương, Tỉnh Kiên Giang\".  My goal is to map this to the new administrative structure, given the resolutions and ward data.  Let's break it down:\n\nFirst, I identified the components of the old address.  \"Thị trấn Kiên Lương\" is the old ward, \"Huyện Kiên Lương\" is the old district, and \"Tỉnh Kiên Giang\" is the old province.\n\nNext, I jumped into the province mergers. Resolution 60-NQ/TW states that Kiên Giang merged with An Giang, becoming \"Tỉnh An Giang\". So, right away, my new province is An Giang.\n\nNow, the crucial part: I looked at resolution 1654/NQ-UBTVQH15. This is the key resolution for restructuring An Giang's administrative units. I found a critical line, number 77, that states \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Kiên Lương, xã Bình An (huyện Kiên Lương) và xã Bình Trị thành xã mới có tên gọi là **xã Kiên Lương**.\" Bingo!  This resolution explicitly spells out that \"Thị trấn Kiên Lương\" is now part of the new ward named \"Xã Kiên Lương.\"  It also confirms \"Huyện Kiên Lương\" is the old district.\n\nNow I need to check the \"New wards\" data to confirm the mapping. I found the entry `{\"ward_code\":\"30787\",\"ward_name\":\"Xã Kiên Lương\",\"province_name\":\"Tỉnh An Giang\"}`.  Perfect! This aligns with the resolution, matching the new ward name and province.\n\nHowever, things get a little tricky with \"Xã Bình An\". The resolution clearly states that the old \"xã Bình An (huyện Kiên Lương)\" is *merged* into \"xã Kiên Lương\". Yet, the data lists `{\"ward_code\":\"30898\",\"ward_name\":\"Xã Bình An\",\"province_name\":\"Tỉnh An Giang\"}` as well. This is confusing.  The resolution implies the old Bình An *no longer* exists in its former state, as the area and population were moved to the new Kiên Lương. The existence of a *separate* \"Xã Bình An\" in the new ward data needs further investigation. It could represent a new entity of that name, or it's a remnant of a partial merger, or perhaps it's an error in the \"New Wards\" data.\n\nBut, back to the primary task at hand: Given that the resolution explicitly states that \"Thị trấn Kiên Lương\" is now \"Xã Kiên Lương,\" I'm confident in mapping the old address to the new administrative unit.  For the primary mapping, \"Thị trấn Kiên Lương\" is clearly now \"Xã Kiên Lương\" within the province of \"Tỉnh An Giang\". The implications of the other ward data need further clarification.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh An Giang và tỉnh Kiên Giang, lấy tên là tỉnh An Giang"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh An Giang",
+      "ward_code": "30787",
+      "ward_name": "Xã Kiên Lương"
+    },
+    {
+      "citation": {
+        "header": "1654/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh An Giang",
+        "line": "77. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Kiên Lương, xã Bình An (huyện Kiên Lương) và xã Bình Trị thành xã mới có tên gọi là xã Kiên Lương."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh An Giang",
+      "ward_code": "30787",
+      "ward_name": "Xã Kiên Lương"
+    }
+  ]
+}

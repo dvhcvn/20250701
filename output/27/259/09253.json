@@ -1,0 +1,18 @@
+{
+  "address": "Phường Đại Xuân, Thị xã Quế Võ, Tỉnh Bắc Ninh",
+  "ellapsedInMs": 5576,
+  "estimatedCost": 0.0016968999999999999,
+  "thought": "**Mapping an Old Address to New Administrative Units**\n\nOkay, so I'm tasked with figuring out how to map this old address to a new administrative structure. Let's break it down step-by-step. First, I need to identify the old ward, which is \"Phường Đại Xuân,\" and the old province, \"Tỉnh Bắc Ninh.\"\n\nNow, I'll dive into the resolutions. It's crucial to understand how provinces have changed. Ah, here it is: \"Hợp nhất tỉnh Bắc Ninh và tỉnh Bắc Giang, lấy tên là tỉnh Bắc Ninh.\" So, \"Tỉnh Bắc Ninh\" was merged, but interestingly, the name remained the same. That's good to know.\n\nNext, I need to pinpoint what happened to \"Phường Đại Xuân\" in these resolutions. Here's the key resolution: \"83. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Đại Xuân, phường Nhân Hòa và xã Việt Thống thành phường mới có tên gọi là **phường Nhân Hòa**.\"  There it is, a direct instruction to merge \"Phường Đại Xuân\" into a new ward called \"Phường Nhân Hòa.\"\n\nGreat, I've got the new ward. Now, I need to look up the details for \"Phường Nhân Hòa\" in the `New wards` section. Aha! Here it is: `{\"ward_code\":\"09253\",\"ward_name\":\"Phường Nhân Hòa\",\"province_name\":\"Tỉnh Bắc Ninh\"}`.\n\nFinally, I'll construct the JSON output. Since the mapping is straightforward and explicitly stated in the resolution, I'll set the `confidence` to \"high\". I'll grab the `header` and `line` from the resolution for the `citation`, the province name will be \"Tỉnh Bắc Ninh\", and I'll use the `ward_code` and `ward_name` for the new ward.  That should do it.  This should be a clean, accurate mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh",
+        "line": "83. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Đại Xuân, phường Nhân Hòa và xã Việt Thống thành phường mới có tên gọi là phường Nhân Hòa."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "09253",
+      "ward_name": "Phường Nhân Hòa"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Bản Lang, Huyện Phong Thổ, Tỉnh Lai Châu",
+  "ellapsedInMs": 6713,
+  "estimatedCost": 0.0022376,
+  "thought": "**Determining the New Ward for an Old Address**\n\nOkay, so I've got an old address: \"Xã Bản Lang, Huyện Phong Thổ, Tỉnh Lai Châu\".  My task is to figure out the new ward for it.  First, I'll break down the address into its components. It's in \"Xã Bản Lang\" and the province is \"Tỉnh Lai Châu\".\n\nNow, I'm checking the Province Resolutions, specifically Resolution 60-NQ/TW.  This helps me determine if \"Tỉnh Lai Châu\" has been merged or remains unchanged.  Good news, it's listed under \"Các đơn vị hành chính cấp tỉnh không thực hiện sáp nhập,\" so Lai Châu remains Lai Châu.\n\nNext, I need to dig into the other resolutions. I'm focusing on those that mention \"Xã Bản Lang\" within \"Tỉnh Lai Châu.\"  Bingo! Resolution 1670/NQ-UBTVQH15 looks promising.  Line 17 is crucial: it explicitly states that \"Xã Bản Lang\" *and* a couple of other wards are merged to form a new ward named \"Xã Khổng Lào\".  Line 14 discusses merging other wards, but doesn't mention \"Bản Lang.\"\n\nNow I need to match the new ward with the provided list.  The resolution says \"Bản Lang\" becomes \"Khổng Lào.\" So, I search the `new_wards` list for \"Xã Khổng Lào\" in \"Tỉnh Lai Châu\".  Success! I find a match: `{\"ward_code\":\"03583\",\"ward_name\":\"Xã Khổng Lào\",\"province_name\":\"Tỉnh Lai Châu\"}`.  That's exactly what I'm looking for.\n\nFinally, the output. I'm confident about this one:\n\n*   `province_name`: \"Tỉnh Lai Châu\"\n*   `ward_name`: \"Xã Khổng Lào\"\n*   `ward_code`: \"03583\"\n*   `confidence`: \"high\" (because I have a direct resolution with an explicit merger)\n*   `citation`: Include the header and line 17 from resolution 1670/NQ-UBTVQH15.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1670/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lai Châu",
+        "line": "17. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Hoang Thèn,Bản Lang vàKhổng Làothành xã mới có tên gọi là **xã Khổng Lào**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lai Châu",
+      "ward_code": "03583",
+      "ward_name": "Xã Khổng Lào"
+    }
+  ]
+}

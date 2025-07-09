@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tăng Hoà, Huyện Gò Công Đông, Tỉnh Tiền Giang",
+  "ellapsedInMs": 7999,
+  "estimatedCost": 0.0028782,
+  "thought": "**Mapping an Old Vietnamese Address to New Administrative Units**\n\nOkay, I'm tackling this address mapping problem. First, I need to identify the old province and ward: \"Tỉnh Tiền Giang\" and \"Xã Tăng Hoà\" within \"Huyện Gò Công Đông\".  This is my starting point.\n\nThe strategy is clear: I'll use the provided resolutions and new ward data to connect the old address to the new administrative structure.\n\nFirst, I examined the Province Resolutions, specifically Resolution 60-NQ/TW. Bingo! Item 21 explicitly states the merger of \"Tỉnh Tiền Giang\" with \"tỉnh Đồng Tháp\" to form \"tỉnh Đồng Tháp\". That's a high-confidence province mapping right there.\n\nNext, I delved into the \"Other resolutions,\" focusing on anything related to \"Xã Tăng Hoà\".  Resolution 1663/NQ-UBTVQH15, \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Tháp,\" caught my eye.  Line 76 is the key: it details the merger of \"xã Tân Thành\" and \"xã Tăng Hòa\" into a new ward named \"xã Gò Công Đông\". This is a direct match, and the resolution header confirming it’s in “tỉnh Đồng Tháp” just cements the connection. The mention of “Huyện Gò Công Đông” further contextualizes the match.\n\nNow I need to cross-reference this information with the \"New wards\" list.  Sure enough, there's an entry for \"xã Gò Công Đông\" with the ward code \"28747\" under \"Tỉnh Đồng Tháp\". Perfect alignment!\n\nBased on the explicit statements in the resolutions, both the province and ward mappings have high confidence. The province mapping is direct, and the ward mapping relies on a clear merger statement. The citation for the ward mapping is clear and direct.\n\nFinally, I'll structure the output as JSON, with all the necessary details, including the confidence level and citation for transparency and verification.  I'll generate an entry with the new province, ward code, ward name, and a high-confidence rating.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1663/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Tháp",
+        "line": "76. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Tân Thành (huyện Gò Công Đông) và xã Tăng Hòa thành xã mới có tên gọi là xã Gò Công Đông."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đồng Tháp",
+      "ward_code": "28747",
+      "ward_name": "Xã Gò Công Đông"
+    }
+  ]
+}

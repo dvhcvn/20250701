@@ -1,0 +1,18 @@
+{
+  "address": "Phường Cầu Kho, Quận 1, Thành phố Hồ Chí Minh",
+  "ellapsedInMs": 6008,
+  "estimatedCost": 0.0026582,
+  "thought": "**Determining the New Ward for \"Phường Cầu Kho\"**\n\nOkay, so the user wants to know the current administrative ward for an old address: \"Phường Cầu Kho, Quận 1, Thành phố Hồ Chí Minh.\"  My process is pretty standard for this type of query.\n\nFirst, I identified the province: \"Thành phố Hồ Chí Minh.\" No worries there; I checked for any province mergers using `60-NQ/TW`, but it's still \"Thành phố Hồ Chí Minh.\"\n\nThe real work is in the ward-level resolutions. I zeroed in on `1685/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của Thành phố Hồ Chí Minh`.  Line 4 of that document *clearly* states the deal: \"Phường Cầu Kho\" *and* others are *merged* into a new ward called \"**phường Cầu Ông Lãnh**.\"  Bingo.\n\nNow, I cross-referenced that with my `New wards` data to confirm the details. I found \"Phường Cầu Ông Lãnh\" with the code \"26758.\"\n\nFinally, I'll package this up into a clean JSON output. The `province_name` will be \"Thành phố Hồ Chí Minh,\" the `ward_code` is \"26758,\" and the `ward_name` is \"Phường Cầu Ông Lãnh.\"  Since the resolution is so explicit, I'm confident in this result, so I'll assign a `confidence` level of \"high.\"  The `citation` will include the resolution header and the relevant line, just for full transparency.  This should be a solid and reliable response.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1685/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của Thành phố Hồ Chí Minh",
+        "line": "4. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Nguyễn Cư Trinh, Cầu Kho, Cô Giang và phần còn lại của phường Cầu Ông Lãnh sau khi sắp xếp theo quy định tại khoản 3 Điều này thành phường mới có tên gọi là phường Cầu Ông Lãnh."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hồ Chí Minh",
+      "ward_code": "26758",
+      "ward_name": "Phường Cầu Ông Lãnh"
+    }
+  ]
+}

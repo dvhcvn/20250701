@@ -1,0 +1,18 @@
+{
+  "address": "Xã Cẩm Lộc, Huyện Cẩm Xuyên, Tỉnh Hà Tĩnh",
+  "ellapsedInMs": 7980,
+  "estimatedCost": 0.0028876,
+  "thought": "**My Analysis of the Administrative Reorganization**\n\nOkay, so I'm tasked with figuring out the new administrative unit (ward) for the old address \"Xã Cẩm Lộc, Huyện Cẩm Xuyên, Tỉnh Hà Tĩnh.\"  My first step, as always, is to break down the input: \"Xã Cẩm Lộc\" is the old ward name, and \"Tỉnh Hà Tĩnh\" is the old province.\n\nNow, I'm going to consult the Provincial Resolutions, specifically 60-NQ/TW, to see if anything has changed for \"Tỉnh Hà Tĩnh.\" Thankfully, Hà Tĩnh is listed as *not* undergoing any province-level mergers, so \"Tỉnh Hà Tĩnh\" remains unchanged. Good to know.\n\nNext, I need to delve into the other resolutions to see if \"Xã Cẩm Lộc\" is mentioned. I'll meticulously go through each one, checking the header and lines, looking for \"Xã Cẩm Lộc.\"\n\n*   **Resolution 1 (1665/NQ-UBTVQH15):**  Line 12 talks about merging some wards, but \"Xã Cẩm Lộc\" isn't involved.  Line 17, however, is crucial: it states that \"Xã Cẩm Lĩnh, **Cẩm Lộc**, and Cẩm Trung\" are merged to form a new ward called \"**xã Cẩm Trung**\". Aha!\n\n*   **Resolution 2 (1667/NQ-UBTVQH15):**  Irrelevant; it concerns Khánh Hòa, not Hà Tĩnh.\n\n*   **Resolution 3 (1680/NQ-UBTVQH15):**  This resolution concerns Quảng Trị.\n\nFrom these resolutions, it's clear: \"Xã Cẩm Lộc\" is now part of \"Xã Cẩm Trung.\"  My next step is to cross-reference this information with the \"New wards\" data. I'll search for \"Xã Cẩm Trung\" and confirm that it exists *and* that its province is indeed \"Tỉnh Hà Tĩnh\". And there it is:  `{\"ward_code\":\"18742\",\"ward_name\":\"Xã Cẩm Trung\",\"province_name\":\"Tỉnh Hà Tĩnh\"}`.  Perfect match!\n\nBased on the evidence, the new ward is clearly \"Xã Cẩm Trung\" in \"Tỉnh Hà Tĩnh\".  I'll generate the JSON output, including the new ward's code, name, province, a citation to the relevant resolution line (17 in 1665/NQ-UBTVQH15), and set the confidence level to \"high\" because of the direct match found. I am confident in my analysis!\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh",
+        "line": "17. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Cẩm Lĩnh, Cẩm Lộc và Cẩm Trung thành xã mới có tên gọi là xã Cẩm Trung."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hà Tĩnh",
+      "ward_code": "18742",
+      "ward_name": "Xã Cẩm Trung"
+    }
+  ]
+}

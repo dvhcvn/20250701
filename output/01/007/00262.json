@@ -1,0 +1,18 @@
+{
+  "address": "Phường Phố Huế, Quận Hai Bà Trưng, Thành phố Hà Nội",
+  "ellapsedInMs": 7641,
+  "estimatedCost": 0.003224,
+  "thought": "**Determining the New Ward for the Given Address**\n\nOkay, so I've got this address to work with: \"Phường Phố Huế, Quận Hai Bà Trưng, Thành phố Hà Nội.\"  My goal is to figure out the new administrative unit, likely a ward, that corresponds to \"Phường Phố Huế.\"  Since the prompt emphasizes \"eliminating all districts,\" I'm focusing specifically on the ward and province level.\n\nFirst, let's break down the address. I've got \"Phường Phố Huế\" as the old ward, \"Quận Hai Bà Trưng\" (which, again, I'm noting for context, but not using directly), and \"Thành phố Hà Nội\" as the province.\n\nNow, I'm checking the relevant resolutions and data.  I started with the province, and Resolution 60-NQ/TW states that \"Thành phố Hà Nội\" *isn't* undergoing any mergers or changes at the provincial level.  Good, that simplifies things.\n\nNext up, I'm diving into Resolution 1656/NQ-UBTVQH15, which focuses on administrative changes in Hanoi.  Line 6 of this resolution is a direct hit! It says \"phường Phố Huế\" *along with other wards, is merged into \"phường Hai Bà Trưng.\"*  Bingo. This seems very promising. I'm noting that the other lines in this resolution don't mention \"Phố Huế.\"\n\nI also checked Resolution 1675/NQ-UBTVQH15, but it's for Hue, so that's irrelevant.\n\nFinally, I checked my \"New Wards\" data.  There's an entry that perfectly matches what I found in the resolution:  `{\"ward_code\":\"00256\",\"ward_name\":\"Phường Hai Bà Trưng\",\"province_name\":\"Thành phố Hà Nội\"}`.\n\nTherefore, my conclusion is clear: the old ward \"Phường Phố Huế\" is now part of the new ward \"Phường Hai Bà Trưng,\" and the province remains \"Thành phố Hà Nội.\" This is a high-confidence answer because the resolution provides a direct and explicit mapping. I can deliver this with assurance.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội",
+        "line": "6. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Đồng Nhân, phường Phố Huế, một phần diện tích tự nhiên, quy mô dân số của các phường Bạch Đằng, Lê Đại Hành, Nguyễn Du, Thanh Nhàn và phần còn lại của phường Phạm Đình Hổ sau khi sắp xếp theo quy định tại khoản 2 Điều này thành phường mới có tên gọi là phường Hai Bà Trưng."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hà Nội",
+      "ward_code": "00256",
+      "ward_name": "Phường Hai Bà Trưng"
+    }
+  ]
+}

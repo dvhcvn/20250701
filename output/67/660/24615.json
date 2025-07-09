@@ -1,0 +1,28 @@
+{
+  "address": "Phường Nghĩa Tân, Thành phố Gia Nghĩa, Tỉnh Đắk Nông",
+  "ellapsedInMs": 8084,
+  "estimatedCost": 0.0032876000000000003,
+  "thought": "**Analysis of Address Restructuring**\n\nOkay, let's break this down. The user's asking for the new administrative unit corresponding to \"Phường Nghĩa Tân, Thành phố Gia Nghĩa, Tỉnh Đắk Nông.\"  Right off the bat, I know I need to consult the resolutions and the \"New wards\" data to find the answer.\n\nFirst, I parsed the old address.  \"Phường Nghĩa Tân\" is the ward, \"Thành phố Gia Nghĩa\" is the city (or potentially district-level unit – I'll keep that in mind), and \"Tỉnh Đắk Nông\" is the province.  The prompt mentions district elimination, but the given data focuses on province and ward-level changes.  So I'll focus on those.\n\nThe province is the key here. I'll need to check the resolutions specific to \"Tỉnh Đắk Nông.\"  According to Resolution 60-NQ/TW, \"Tỉnh Đắk Nông\" has merged into \"Tỉnh Lâm Đồng\".  So, \"Tỉnh Đắk Nông\" is no longer relevant; it's now \"Tỉnh Lâm Đồng.\"\n\nNow, the search begins. I need to look for resolutions impacting both \"Phường Nghĩa Tân\" and, critically, \"Tỉnh Lâm Đồng.\"  Resolution 1656/NQ-UBTVQH15 mentions \"phường Nghĩa Tân\", but it's in Hà Nội. Not applicable.  Then I find Resolution 1671/NQ-UBTVQH15, concerning \"Tỉnh Lâm Đồng.\"  Bingo!\n\nThis resolution is the right one, and in Line 117, it explicitly states that \"phường Nghĩa Tân\" will be merged with \"Phường Nghĩa Phú\" and \"Xã Đắk R'Moan\" into a new ward called \"**phường Nam Gia Nghĩa**\".  The other new ward, \"Bắc Gia Nghĩa\", strongly suggests a relationship to \"Thành phố Gia Nghĩa,\" confirming the match. Resolution 1676 is for Phú Thọ and is irrelevant.\n\nSo, it's clear: \"Phường Nghĩa Tân\" is absorbed into the new \"Phường Nam Gia Nghĩa\" within \"Tỉnh Lâm Đồng\".  Now, I'll consult the \"New wards\" data to locate the correct ward code for \"Phường Nam Gia Nghĩa\" and make absolutely sure its province is, in fact, \"Tỉnh Lâm Đồng.\" That confirms the answer and I'll deliver the results.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "14. Hợp nhất tỉnh Lâm Đồng, tỉnh Đắk Nông và tỉnh Bình Thuận; lấy tên là tỉnh Lâm Đồng"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "24615",
+      "ward_name": "Phường Nam Gia Nghĩa"
+    },
+    {
+      "citation": {
+        "header": "1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng",
+        "line": "117. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Nghĩa Phú, phường Nghĩa Tân và xã Đắk R'Moan thành phường mới có tên gọi là phường Nam Gia Nghĩa."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "24615",
+      "ward_name": "Phường Nam Gia Nghĩa"
+    }
+  ]
+}

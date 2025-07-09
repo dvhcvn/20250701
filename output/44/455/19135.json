@@ -1,0 +1,28 @@
+{
+  "address": "Xã Liên Trạch, Huyện Bố Trạch, Tỉnh Quảng Bình",
+  "ellapsedInMs": 5220,
+  "estimatedCost": 0.0018012000000000002,
+  "thought": "**Mapping an Old Vietnamese Address to New Units**\n\nOkay, so I'm tasked with figuring out the new address for an old one, specifically \"Tỉnh Quảng Bình, Xã Liên Trạch,\" using some resolutions and new data.  Here's my thought process:\n\nFirst, I need to get the old province and ward. Got it: \"Tỉnh Quảng Bình\" and \"Xã Liên Trạch\".\n\nNow, I'm checking the province resolutions. The 60-NQ/TW document mentions the merger of Quảng Bình and Quảng Trị, with the resulting province being \"Tỉnh Quảng Trị\". That's straightforward.\n\nNext, I need to find the fate of \"Xã Liên Trạch\" in the resolutions. Resolution 1680/NQ-UBTVQH15 for Quảng Trị is the key.  Line 20 of that document explicitly states that \"Xã Liên Trạch\" will be merged into a new ward called \"Xã Bắc Trạch,\" along with some other wards. Perfect!\n\nNow, I'll cross-reference the new ward information. My \"New Wards\" data has `{\"ward_code\":\"19126\",\"ward_name\":\"Xã Bắc Trạch\",\"province_name\":\"Tỉnh Quảng Trị\"}`. Bingo! It matches the new ward name and the new province.\n\nThe confidence level here is pretty high. I have a direct reference to \"Xã Liên Trạch\" being merged into \"Xã Bắc Trạch\" in the resolution, and the province mapping is clear. There's no ambiguity here.\n\nFinally, I'll format the output in the requested JSON structure.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Quảng Bình và tỉnh Quảng Trị, lấy tên là tỉnh Quảng Trị"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Trị",
+      "ward_code": "19126",
+      "ward_name": "Xã Bắc Trạch"
+    },
+    {
+      "citation": {
+        "header": "1680/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Trị",
+        "line": "20. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Thanh Trạch, Hạ Mỹ, Liên Trạch và Bắc Trạch thành xã mới có tên gọi là xã Bắc Trạch."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Trị",
+      "ward_code": "19126",
+      "ward_name": "Xã Bắc Trạch"
+    }
+  ]
+}

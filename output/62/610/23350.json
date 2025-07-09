@@ -1,0 +1,28 @@
+{
+  "address": "Xã Đắk Nhoong, Huyện Đắk Glei, Tỉnh Kon Tum",
+  "ellapsedInMs": 9652,
+  "estimatedCost": 0.0036507,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm tasked with mapping this old address, \"Xã Đắk Nhoong, Huyện Đắk Glei, Tỉnh Kon Tum,\" to its new administrative unit.  Given my expertise in these historical administrative changes, I'll walk through my thought process.\n\nFirst, I identified the components: the old ward is \"Xã Đắk Nhoong,\" the old district is \"Huyện Đắk Glei,\" and the old province is \"Tỉnh Kon Tum.\"\n\nMy initial step is to reference the province merger information (Resolution 60-NQ/TW) to see if Kon Tum has been affected by a consolidation.  I find that it has: \"Tỉnh Kon Tum\" merged with \"Tỉnh Quảng Ngãi\" to become just \"Tỉnh Quảng Ngãi.\" This tells me the new province is definitely Quảng Ngãi.\n\nNext, I delve into the key resolution, 1677/NQ-UBTVQH15. Crucially, this resolution pertains to \"Tỉnh Quảng Ngãi,\" which aligns with my previous finding. Now, I scrutinize the text for mentions of \"Đắk Nhoong.\"  Line 69 hits the jackpot:  \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đăk Nhoong, Đăk Man và Đăk Plô thành xã mới có tên gọi là **xã Đăk Plô**.\" Boom! This directly states that \"Xã Đắk Nhoong\" has been merged into, and is now part of, \"Xã Đăk Plô.\"  While the resolution doesn't *explicitly* name the district for the merger in that line, the context is clear: we're talking about wards in the former Kon Tum that are now part of Quảng Ngãi.\n\nI have my new ward! From my list of new wards, I find \"Xã Đăk Plô\" and confirm the match:  `{\"ward_code\":\"23344\",\"ward_name\":\"Xã Đăk Plô\",\"province_name\":\"Tỉnh Quảng Ngãi\"}`. This solidifies my understanding.\n\nI'm confident in constructing the output: the new `province_name` will be \"Tỉnh Quảng Ngãi.\" The new `ward_name` will be \"Xã Đăk Plô,\" and the corresponding `ward_code` will be \"23344.\" The `citation` will be \"1677/NQ-UBTVQH15, Line 69.\" Given the *direct* mention of the old ward's incorporation into the new, I'm setting the `confidence` level to \"high.\"\n\nI take a moment for a final check: the old ward merged, so the district likely changes in this process. Line 70 is about Dak Pek which is an entirely different process. Line 92 lists the exception for wards which *were not* merged and confirms \"Xã Đắk Nhoong\" is not on that exclusion list. All in all, everything aligns perfectly, and this address is successfully mapped.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Kon Tum và tỉnh Quảng Ngãi, lấy tên là tỉnh Quảng Ngãi"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ngãi",
+      "ward_code": "23344",
+      "ward_name": "Xã Đăk Plô"
+    },
+    {
+      "citation": {
+        "header": "1677/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ngãi",
+        "line": "69. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đăk Nhoong, Đăk Man và Đăk Plô thành xã mới có tên gọi là xã Đăk Plô."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ngãi",
+      "ward_code": "23344",
+      "ward_name": "Xã Đăk Plô"
+    }
+  ]
+}

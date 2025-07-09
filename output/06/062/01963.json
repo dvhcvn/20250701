@@ -1,0 +1,18 @@
+{
+  "address": "Xã Thuần Mang, Huyện Ngân Sơn, Tỉnh Bắc Kạn",
+  "ellapsedInMs": 7325,
+  "estimatedCost": 0.0028196,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm presented with a Vietnamese address: \"Xã Thuần Mang, Huyện Ngân Sơn, Tỉnh Bắc Kạn,\" and I need to translate it to the new administrative structure. Given my expertise, I know the crucial first step is to break this down. It's clear that districts are being eliminated in this particular scenario.\n\nInitially, I've identified the old units: \"Xã Thuần Mang\" (ward), \"Huyện Ngân Sơn\" (district, to be ignored), and \"Tỉnh Bắc Kạn\" (province). The province is my first port of call. I can see from the available data that \"Tỉnh Bắc Kạn\" isn't on the list of provinces *not* undergoing changes. Instead, it's slated for a merger with \"Tỉnh Thái Nguyên,\" creating the new province: \"Tỉnh Thái Nguyên.\" That's the first critical piece.\n\nNow, I'm focusing on the ward level. Scanning the \"other_resolutions,\" I locate the crucial document: \"1683/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thái Nguyên.\" Bingo! Line 53 directly addresses \"Xã Thuần Mang,\" revealing that its area and population are merging with \"Xã Hiệp Lực\" to form the new ward: \"Xã Hiệp Lực.\" This is my link.\n\nCross-referencing this with the `new_wards` data, I find \"Xã Hiệp Lực\" listed with a `ward_code` of \"01960\" and confirmation that it's now under \"Tỉnh Thái Nguyên.\" That confirms my hypothesis that the mapping is to the new province, and new ward.\n\nThe citation for this mapping will be the resolution and line I found. The confidence is very high, given the explicit reference to \"Xã Thuần Mang\" in the resolution and the straightforward province merger. I'm going to double check for any other documents that may influence this before final confirmation, but I believe the information available leads to the correct answer.\n\nUltimately, the output will be a JSON object detailing the new province, new ward name and code, the specific citation, and a high confidence level due to the clear and direct linking of these items. No ambiguities exist, and this mapping is accurate.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1683/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thái Nguyên",
+        "line": "53. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Thuần Mang và xã Hiệp Lực thành xã mới có tên gọi là xã Hiệp Lực."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thái Nguyên",
+      "ward_code": "01960",
+      "ward_name": "Xã Hiệp Lực"
+    }
+  ]
+}

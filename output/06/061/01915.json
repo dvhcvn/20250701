@@ -1,0 +1,18 @@
+{
+  "address": "Xã Địa Linh, Huyện Ba Bể, Tỉnh Bắc Kạn",
+  "ellapsedInMs": 6957,
+  "estimatedCost": 0.0025053,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm being asked to figure out the new administrative location of \"Xã Địa Linh\" based on some resolutions and updated ward data. The old address is simple: Xã Địa Linh in Huyện Ba Bể, Tỉnh Bắc Kạn. The prompt wants me to ignore districts, so Ba Bể is just for context.\n\nFirst, I looked at the province level.  I checked if Bắc Kạn was in any lists related to mergers. The province **is** in the \"mới sau sáp nhập, hợp nhất\" list, specifically in the context of merging with Thái Nguyên. So, the new province is definitely **Tỉnh Thái Nguyên**.\n\nThen, I focused on resolutions, specifically the ones that deal with restructuring at the commune level. I found resolution 1683/NQ-UBTVQH15, which concerns Thái Nguyên, the new province.  Bingo! That's the key.  I scanned the lines of that resolution and found exactly what I needed. Line 46 explicitly states that \"Xã Địa Linh\" is merged into \"Xã Chợ Rã\" along with a couple of other areas.  Perfect.\n\nNext, I cross-referenced this with the new ward data. I searched for \"Xã Chợ Rã\" within Thái Nguyên, and found a match! This gives me the specific ward code (\"01912\") and name (\"Xã Chợ Rã\").\n\nSo, the JSON output is straightforward. My 'citation' will point back to resolution 1683/NQ-UBTVQH15, line 46. The confidence is *high* because it is very explicit in what it's telling me. It provides the province name as *Tỉnh Thái Nguyên*. Finally, the `ward_code` and `ward_name` come directly from the new ward data.\n\nSince the resolution is clear about the merging, there aren't any other possible new wards for Địa Linh. It is **definitely** now \"Xã Chợ Rã\" based on this data. That seems like a solid solution to the question.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1683/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thái Nguyên",
+        "line": "46. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Chợ Rã, xã Thượng Giáo và xã Địa Linh thành xã mới có tên gọi là xã Chợ Rã."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thái Nguyên",
+      "ward_code": "01912",
+      "ward_name": "Xã Chợ Rã"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Phú Cường, Huyện Đại Từ, Tỉnh Thái Nguyên",
+  "ellapsedInMs": 8015,
+  "estimatedCost": 0.0034365,
+  "thought": "**Identifying the New Administrative Unit**\n\nOkay, let's break this down. The user gave me the old address \"Xã Phú Cường, Huyện Đại Từ, Tỉnh Thái Nguyên,\" and I need to figure out the new administrative unit.\n\nFirst, I looked at the province, \"Tỉnh Thái Nguyên.\"  I checked the provincial resolutions. Since \"Tỉnh Thái Nguyên\" wasn't listed for any mergers in Resolution 60-NQ/TW, I confirmed it remained the same. That's straightforward.\n\nNext, I zeroed in on the ward and district: \"Xã Phú Cường, Huyện Đại Từ.\"  I needed to find \"Phú Cường\" within \"Tỉnh Thái Nguyên\" in the `other_resolutions` data. A quick scan of `other_resolutions` for both terms revealed the key: Resolution `1683/NQ-UBTVQH15`.\n\nThis resolution, specifically point 30, was a direct hit: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Bản Ngoại, Phú Cường và Phú Thịnh thành xã mới có tên gọi là **xã Phú Thịnh**.\" Boom! That confirms \"Phú Cường\" becomes \"Phú Thịnh\" in Thái Nguyên.\n\nTo be extra sure, I cross-checked \"Phú Cường\" across resolutions for other provinces to avoid any false positives.  I systematically checked Hà Nội, Đồng Nai, Đồng Tháp, Hưng Yên, Phú Thọ, and Ho Chi Minh City, but found no matches relevant to Thái Nguyên. This strengthens the validity of Resolution `1683/NQ-UBTVQH15`.\n\nThe resolution directly maps the old ward to a new one, so the confidence is high. Finally, checking `New Wards` list for \"Xã Phú Thịnh, Tỉnh Thái Nguyên\" returns the correct code: \"05800\".\n\nTherefore, I'm confident in the JSON:\n\n*   `citation.header`: \"1683/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thái Nguyên\"\n*   `citation.line`: \"30. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Bản Ngoại, Phú Cường và Phú Thịnh thành xã mới có tên gọi là **xã Phú Thịnh**.\"\n*   `confidence`: \"high\"\n*   `province_name`: \"Tỉnh Thái Nguyên\"\n*   `ward_code`: \"05800\"\n*   `ward_name`: \"Xã Phú Thịnh\"\n\nThis is a clean and easily verifiable match.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1683/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thái Nguyên",
+        "line": "30. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Bản Ngoại, Phú Cường và Phú Thịnh thành xã mới có tên gọi là xã Phú Thịnh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thái Nguyên",
+      "ward_code": "05800",
+      "ward_name": "Xã Phú Thịnh"
+    }
+  ]
+}

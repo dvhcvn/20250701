@@ -1,0 +1,18 @@
+{
+  "address": "Xã Trác Văn, Thị xã Duy Tiên, Tỉnh Hà Nam",
+  "ellapsedInMs": 5130,
+  "estimatedCost": 0.0019776999999999998,
+  "thought": "**Mapping an Old Address to its New Administrative Unit**\n\nOkay, so I've got an address to map: \"Xã Trác Văn, Thị xã Duy Tiên, Tỉnh Hà Nam.\"  First, I need to break it down. \"Xã Trác Văn\" is the old ward, and \"Tỉnh Hà Nam\" is the old province.\n\nNow, I'm thinking, did Hà Nam get merged? I quickly checked those provincial resolutions, specifically 60-NQ/TW. Ah, there it is! Hà Nam was merged with Ninh Bình and Nam Định, and the new province is Ninh Bình.  Okay, that's crucial.\n\nNext, I need to see if there are any specific mentions of \"Xã Trác Văn\" in the other resolutions. Bingo! Resolution 1674/NQ-UBTVQH15 lays it all out. It explicitly states that \"Xã Trác Văn\" is being merged into the new \"phường Duy Tiên.\" Perfect.\n\nThen, I need to make sure I have the new ward data, specifically for \"Phường Duy Tiên\".  I found it: `{\"ward_code\":\"13324\",\"ward_name\":\"Phường Duy Tiên\",\"province_name\":\"Tỉnh Ninh Bình\"}`. \n\nExcellent! The province in the new ward data, \"Tỉnh Ninh Bình,\" matches the new province name from the merger resolution. This confirms my path.\n\nSo now I can construct the output.  The citation will be the resolution mentioning \"Xã Trác Văn.\" The confidence is high because it's a direct, explicit mapping with consistent province information.  The province name will be \"Tỉnh Ninh Bình.\"  The ward code will be \"13324,\" and the ward name will be \"Phường Duy Tiên.\"  I'm ready to move on.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "98. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Chuyên Ngoại, Trác Văn, Yên Nam và một phần diện tích tự nhiên, quy mô dân số của phường Hòa Mạc thành phường mới có tên gọi là phường Duy Tiên."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "13324",
+      "ward_name": "Phường Duy Tiên"
+    }
+  ]
+}

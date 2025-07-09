@@ -1,0 +1,18 @@
+{
+  "address": "Xã Hồ Thị Kỷ, Huyện Thới Bình, Tỉnh Cà Mau",
+  "ellapsedInMs": 7514,
+  "estimatedCost": 0.0031428,
+  "thought": "**Analysis of Vietnamese Address Mapping**\n\nOkay, here's how I'm approaching this address mapping task. First, I'm identifying the key components of the input address: \"Xã Hồ Thị Kỷ\" (ward), \"Huyện Thới Bình\" (district, though I'm instructed to ignore this), and \"Tỉnh Cà Mau\" (province).\n\nNext, I'm diving into the province resolutions (60-NQ/TW).  I quickly find that Cà Mau was formed through a merger. Thankfully, the *new* province name remains \"Tỉnh Cà Mau\". That's straightforward.\n\nThen, I meticulously check the other resolutions, zeroing in on Resolution 1655/NQ-UBTVQH15, specific to Cà Mau.  I'm reading line by line, and bingo!  Line 64 is the key: \"Xã Hồ Thị Kỷ\" is explicitly stated as \"không thực hiện sắp xếp\" – it's *not* being rearranged. This is huge!\n\nTo solidify this finding, I also cross-reference the `new_wards` data.  And there it is: \"Xã Hồ Thị Kỷ\" is listed with the same name and province, with a ward code of \"32092.\"\n\nBased on these findings, I'm confident in the mapping.  The province name remains \"Tỉnh Cà Mau\" due to the merger, and \"Xã Hồ Thị Kỷ\" is confirmed to be unchanged by Resolution 1655. The new ward data corroborates this.\n\nTherefore, the output will be:\n\n*   `province_name`: \"Tỉnh Cà Mau\"\n*   `ward_name`: \"Xã Hồ Thị Kỷ\"\n*   `ward_code`: \"32092\"\n*   `confidence`: \"high\" (This is a clear-cut case.)\n*   `citation`:\n    *   `header`: \"1655/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Cà Mau\"\n    *   `line`: \"64. Sau khi sắp xếp, tỉnh Cà Mau có 64 đơn vị hành chính cấp xã, gồm 55 xã và 09 phường; trong đó có 54 xã, 09 phường hình thành sau sắp xếp quy định tại Điều này và 01 xã không thực hiện sắp xếp là xã Hồ Thị Kỷ.\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1655/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Cà Mau",
+        "line": "64. Sau khi sắp xếp, tỉnh Cà Mau có 64 đơn vị hành chính cấp xã, gồm 55 xã và 09 phường; trong đó có 54 xã, 09 phường hình thành sau sắp xếp quy định tại Điều này và 01 xã không thực hiện sắp xếp là xã Hồ Thị Kỷ."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Cà Mau",
+      "ward_code": "32092",
+      "ward_name": "Xã Hồ Thị Kỷ"
+    }
+  ]
+}

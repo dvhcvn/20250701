@@ -1,0 +1,18 @@
+{
+  "address": "Xã Yang Trung, Huyện Kông Chro, Tỉnh Gia Lai",
+  "ellapsedInMs": 6253,
+  "estimatedCost": 0.0022193,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm tasked with mapping this old Vietnamese address to its current administrative unit. The input address gives me: Ward: Xã Yang Trung, District: Huyện Kông Chro, Province: Tỉnh Gia Lai. My process is pretty straightforward:\n\nFirst, I identified the key components of the address. Then, I needed to leverage the resolutions provided and the new ward data.\n\nI started by examining the province resolutions, specifically 60-NQ/TW. This confirmed that Gia Lai's status remained stable, albeit with a merger with Bình Định. No changes there in terms of the province name.\n\nNext, I turned my attention to the more granular details. I looked through the other resolutions, focusing on 1664/NQ-UBTVQH15, to see if I could locate \"Xã Yang Trung\". Line 68 was a direct hit: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Kông Chro, xã Yang Trung và xã Yang Nam thành xã mới có tên gọi là **xã Kông Chro**.\" Bingo! This clearly states that \"Xã Yang Trung\" is being merged into \"Xã Kông Chro\". Line 70 discusses other mergers, but is not relevant to this address.\n\nWith that confirmed, I checked the `New wards` data to find \"Xã Kông Chro\" within \"Tỉnh Gia Lai.\" The data matched perfectly: `{\"ward_code\":\"23824\",\"ward_name\":\"Xã Kông Chro\",\"province_name\":\"Tỉnh Gia Lai\"}`.\n\nBuilding the output JSON is now simple. I'll use the resolution header and line 68 as the `citation`. The confidence level is high because there is a direct reference and the resolution is specifically about administrative rearrangements in Gia Lai. I'll include \"Tỉnh Gia Lai\" from the new ward data and the province resolution. Finally, I'll include the ward information from the data.\n\nSince the request is to include *all* candidates, and in this case, only one candidate emerges, I'll present this as the only valid mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai",
+        "line": "68. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Kông Chro, xã Yang Trung và xã Yang Nam thành xã mới có tên gọi là xã Kông Chro."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "23824",
+      "ward_name": "Xã Kông Chro"
+    }
+  ]
+}

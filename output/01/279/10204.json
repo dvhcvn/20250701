@@ -1,0 +1,18 @@
+{
+  "address": "Xã Hiền Giang, Huyện Thường Tín, Thành phố Hà Nội",
+  "ellapsedInMs": 6475,
+  "estimatedCost": 0.0022653,
+  "thought": "**Mapping \"Xã Hiền Giang\" to New Administrative Units**\n\nOkay, here's how I'm approaching this. The user wants to map the old address \"Xã Hiền Giang, Huyện Thường Tín, Thành phố Hà Nội\" to the new administrative units. Let's break it down:\n\nFirst, I need to identify the initial components: \"Thành phố Hà Nội\" (Province), \"Xã Hiền Giang\" (Ward), and \"Huyện Thường Tín\" (District). Even though the request mentions eliminating districts, I'll use the district information from the original address to help locate \"Xã Hiền Giang\" in the relevant resolutions, as it might provide useful context.\n\nNow, I'm checking the Province Resolution (60-NQ/TW). Good, it confirms that \"Thành phố Hà Nội\" remains unchanged. No surprises there.\n\nThe crucial resolution here is 1656/NQ-UBTVQH15 concerning the rearrangement of administrative units in Hà Nội. Time to delve into the details. I'm carefully scanning the lines for \"Xã Hiền Giang.\" Aha! Line 57 is the key: it explicitly states that \"Xã Hiền Giang\" *is merged* into a new ward called \"Xã Thường Tín.\" Excellent!\n\nNext, I need to find \"Xã Thường Tín\" in the new ward data. I'll search for it under \"Thành phố Hà Nội.\" Found it! {\"ward_code\":\"10183\",\"ward_name\":\"Xã Thường Tín\",\"province_name\":\"Thành phố Hà Nội\"}. Perfect.\n\nNow it's just a matter of constructing the output JSON. The `citation` will include the relevant header and Line 57 from the resolution, solidifying the mapping. The `confidence` will be high, as the merging is explicitly stated. The `province_name` is \"Thành phố Hà Nội,\" confirmed by the province resolution. And, the `ward_code` and `ward_name` are taken directly from the \"New Wards\" data. Finally, a quick check to ensure all fields are correctly formatted, and we should be good to go. This should be a robust and accurate mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội",
+        "line": "57. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Thường Tín, các xã Tiền Phong (huyện Thường Tín), Hiền Giang, Hòa Bình, Nhị Khê, Văn Bình, Văn Phú, phần còn lại của xã Đại Áng và xã Khánh Hà sau khi sắp xếp theo quy định tại khoản 55 Điều này thành xã mới có tên gọi là xã Thường Tín."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hà Nội",
+      "ward_code": "10183",
+      "ward_name": "Xã Thường Tín"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Phường Phú Hội, Quận Thuận Hóa, Thành phố Huế",
+  "ellapsedInMs": 8235,
+  "estimatedCost": 0.0032642,
+  "thought": "**My Analysis: Determining the New Administrative Unit for \"Phường Phú Hội, Quận Thuận Hóa, Thành phố Huế\"**\n\nAlright, let's break this down. The user has provided an old address: \"Phường Phú Hội, Quận Thuận Hóa, Thành phố Huế,\" and my job is to find the corresponding new administrative unit.\n\nFirst, I parsed the input: \"Phường Phú Hội\" is the ward, \"Quận Thuận Hóa\" is the district (though, given the \"eliminating all districts\" instruction, its relevance is secondary), and \"Thành phố Huế\" is the province.\n\nI started by checking the provincial resolutions, specifically 60-NQ/TW. This confirmed that \"Thành phố Huế\" itself wasn't being merged or restructured, so that was straightforward.\n\nThen, I meticulously went through the other relevant resolutions. I quickly dismissed the An Giang, Đồng Nai, and Lâm Đồng entries because they didn't match the location.\n\nFinally, I hit the jackpot with **1675/NQ-UBTVQH15** – the Huế-specific resolution. Line 15 jumped out at me: it explicitly mentions \"phường Phú Hội\" *and* the formation of \"phường Thuận Hóa\" through a merger. Bingo! This is the direct match I was looking for.\n\nTo confirm, I double-checked the \"New Wards\" data. And there it was: `{\"ward_code\":\"19789\",\"ward_name\":\"Phường Thuận Hóa\",\"province_name\":\"Thành phố Huế\"}`. Perfect alignment.\n\nThis is a clear-cut case. I have a direct citation, and the new ward data confirms the resolution's findings. My confidence level is definitely \"high.\"\n\nTherefore, my final output will be:\n\n*   `province_name`: \"Thành phố Huế\"\n*   `ward_name`: \"Phường Thuận Hóa\"\n*   `ward_code`: \"19789\"\n*   `confidence`: \"high\"\n*   `citation`:\n    *   `header`: \"1675/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Huế\"\n    *   `line`: \"15. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Phú Hội, Phú Nhuận, Phường Đúc, Vĩnh Ninh, Phước Vĩnh và Trường An thành phường mới có tên gọi là **phường Thuận Hóa**.\"\n\nThis addresses the user's query precisely and accurately, with the strong foundation provided by the relevant resolution.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1675/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Huế",
+        "line": "15. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Phú Hội, Phú Nhuận, Phường Đúc, Vĩnh Ninh, Phước Vĩnh và Trường An thành phường mới có tên gọi là phường Thuận Hóa."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Huế",
+      "ward_code": "19789",
+      "ward_name": "Phường Thuận Hóa"
+    }
+  ]
+}

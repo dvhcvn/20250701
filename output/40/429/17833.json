@@ -1,0 +1,18 @@
+{
+  "address": "Xã Nghi Yên, Huyện Nghi Lộc, Tỉnh Nghệ An",
+  "ellapsedInMs": 7724,
+  "estimatedCost": 0.0025724,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm tackling this address mapping problem, and here's my breakdown of the process.  The user wants to translate an old Vietnamese address to its new equivalent. First, I'll extract the core administrative components from the old address:  \"Xã Nghi Yên\" (ward), \"Huyện Nghi Lộc\" (district - which I'll ignore for the final output, as instructed), and \"Tỉnh Nghệ An\" (province).\n\nNext, I'll dig into those provided resolutions.  The province, \"Tỉnh Nghệ An,\" is a piece of cake. Resolution 60-NQ/TW states that it's *not* subject to any mergers or changes.  So, I can confidently keep \"Tỉnh Nghệ An\" as is.\n\nNow for the tricky part:  the ward.  I'll scour the other resolutions looking for mentions of \"Xã Nghi Yên\".  Bingo! Line 54 of 1678/NQ-UBTVQH15 provides the critical information. It explicitly states that \"Xã Nghi Yên\" *is* being merged, along with two other wards, to form the new ward called \"**xã Hải Lộc**.\" That's the key.\n\nI then check my `New wards` data to find the details for \"xã Hải Lộc.\"  I locate the entry: `{\"ward_code\":\"17833\",\"ward_name\":\"Xã Hải Lộc\",\"province_name\":\"Tỉnh Nghệ An\"}`.  I also double-check the database to verify that \"xã Nghi Lộc\" and \"xã Yên Thành\" don't present any overlapping mentions with the old ward.\n\nWith that, I have everything I need to construct a high-confidence JSON output.  The old ward, \"Xã Nghi Yên,\" is now part of \"xã Hải Lộc\" based on the resolution details. The province, \"Tỉnh Nghệ An\", is unchanged.  I can state my confidence is 'high' because the relationship is clearly stated in the legislation.\n\nHere's the planned output:\n*   `citation.header`: \"1678/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Nghệ An\"\n*   `citation.line`: \"54. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Nghi Thiết, Nghi Tiến và Nghi Yên thành xã mới có tên gọi là **xã Hải Lộc**.\"\n*   `confidence`: \"high\"\n*   `province_name`: \"Tỉnh Nghệ An\"\n*   `ward_code`: \"17833\"\n*   `ward_name`: \"Xã Hải Lộc\"",
+  "result": [
+    {
+      "citation": {
+        "header": "1678/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Nghệ An",
+        "line": "54. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Nghi Thiết, Nghi Tiến và Nghi Yên thành xã mới có tên gọi là xã Hải Lộc."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Nghệ An",
+      "ward_code": "17833",
+      "ward_name": "Xã Hải Lộc"
+    }
+  ]
+}

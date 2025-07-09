@@ -1,0 +1,18 @@
+{
+  "address": "Xã Đồng Yên, Huyện Bắc Quang, Tỉnh Hà Giang",
+  "ellapsedInMs": 9378,
+  "estimatedCost": 0.0036195999999999997,
+  "thought": "**My Analysis of the Administrative Unit Change**\n\nOkay, let's break this down. The user gave me an old address: \"Xã Đồng Yên, Huyện Bắc Quang, Tỉnh Hà Giang.\" My task is to find the new equivalent.\n\nFirst, I need to check for any province mergers. Right away, I see in Resolution 60-NQ/TW that \"Tỉnh Hà Giang\" is now part of \"Tỉnh Tuyên Quang.\" High confidence on that one – it's a direct merger.\n\nNext, I zero in on \"Xã Đồng Yên.\" Checking the \"Other resolutions,\" I find Resolution 1684/NQ-UBTVQH15, which specifically deals with the province \"Tuyên Quang,\" which is what Hà Giang became. This resolution clearly states that \"Xã Đồng Yên\" merged with \"xã Vĩnh Phúc\" to form a *new* \"Xã Đồng Yên.\" The name's the same, but it's a fresh administrative entity.\n\nWhile I'm here, I scanned for any changes related to \"Huyện Bắc Quang,\" just to be thorough. I found some reorganizations, but nothing that directly affected \"Xã Đồng Yên.\"\n\nNow, it's time to match everything up. The province is now \"Tỉnh Tuyên Quang.\" The resolution says the *old* \"Xã Đồng Yên\" became a *new* \"Xã Đồng Yên.\"  So, I search the \"New wards\" data for \"Xã Đồng Yên\" under \"Tỉnh Tuyên Quang.\" Bingo! I find it:  `{\"ward_code\":\"01216\",\"ward_name\":\"Xã Đồng Yên\",\"province_name\":\"Tỉnh Tuyên Quang\"}`.\n\nConfidence is high. The province change is clear-cut from 60-NQ/TW. The ward change is explicitly defined in 1684/NQ-UBTVQH15.\n\nTherefore, my output will be:\n\n*   `province_name`: \"Tỉnh Tuyên Quang\"\n*   `ward_name`: \"Xã Đồng Yên\"\n*   `ward_code`: \"01216\"\n*   `confidence`: \"high\"\n*   `citation`:\n        *   `header`: \"1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang\" (for ward change)\n        *   `line`: \"85. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Vĩnh Phúc và xã Đồng Yên thành xã mới có tên gọi là xã Đồng Yên.\"\n\nThe province merger provides crucial context and supports the ward change, but the core change is the ward merging into a new entity.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "85. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Vĩnh Phúc và xã Đồng Yên thành xã mới có tên gọi là xã Đồng Yên."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "01216",
+      "ward_name": "Xã Đồng Yên"
+    }
+  ]
+}

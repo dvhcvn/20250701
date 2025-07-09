@@ -1,0 +1,18 @@
+{
+  "address": "Xã Đắk Tơ Lung, Huyện Kon Rẫy, Tỉnh Kon Tum",
+  "ellapsedInMs": 6351,
+  "estimatedCost": 0.0020082999999999998,
+  "thought": "**Mapping an Old Vietnamese Address to New Administrative Units**\n\nOkay, so I've got this old Vietnamese address to decipher: \"Xã Đắk Tơ Lung, Huyện Kon Rẫy, Tỉnh Kon Tum.\" My goal is to figure out the corresponding new administrative unit information. Let's break this down systematically.\n\nFirst, I need to pinpoint the old province and ward.  Easy enough: the old ward is \"Xã Đắk Tơ Lung,\" and the old province is \"Tỉnh Kon Tum.\" Now, the fun part begins – checking the resolutions.\n\nI'll start with the province resolutions, specifically checking resolution 60-NQ/TW. Ah, there it is: \"Hợp nhất tỉnh Kon Tum và tỉnh Quảng Ngãi, lấy tên là tỉnh Quảng Ngãi.\"  This tells me \"Tỉnh Kon Tum\" was merged into \"Tỉnh Quảng Ngãi.\" So, that's my new province.\n\nNext, I need to dig into resolutions that might mention \"Xã Đắk Tơ Lung.\"  Bingo!  Resolution \"1677/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ngãi\" directly addresses this ward.  It states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Đăk Tơ Lung và xã Đăk Kôi thành xã mới có tên gọi là **xã Đăk Kôi**.\"  This is key information.  \"Xã Đắk Tơ Lung\" is *merged* with \"Xã Đăk Kôi\" to form the new ward, \"Xã Đăk Kôi\"!\n\nNow, the final step: assembling the JSON output.  Based on the clear resolution information, I'm confident in this mapping.  My output will look something like this:\n\n*   `citation`:  Use the heading and specific line from the relevant resolution.\n*   `confidence`: \"high\" (because the mapping is explicitly stated).\n*   `province_name`: \"Tỉnh Quảng Ngãi\"\n*   `ward_code`:  I need to find the specific code for \"Xã Đăk Kôi\" in \"Tỉnh Quảng Ngãi.\" Let's check the database. Ah, there it is! `23485` is the code for \"Xã Đăk Kôi\".\n*   `ward_name`: \"Xã Đăk Kôi\"\n\nPerfect.  Another successful address mapping!\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1677/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ngãi",
+        "line": "76. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Đăk Tơ Lung và xã Đăk Kôi thành xã mới có tên gọi là xã Đăk Kôi."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ngãi",
+      "ward_code": "23485",
+      "ward_name": "Xã Đăk Kôi"
+    }
+  ]
+}

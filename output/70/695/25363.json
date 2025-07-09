@@ -1,0 +1,28 @@
+{
+  "address": "Thị trấn Tân Phú, Huyện Đồng Phú, Tỉnh Bình Phước",
+  "ellapsedInMs": 6172,
+  "estimatedCost": 0.0052203,
+  "thought": "**Determining the New Ward for the Provided Address**\n\nOkay, so the user wants me to find the new ward for the old address \"Thị trấn Tân Phú, Huyện Đồng Phú, Tỉnh Bình Phước\". My initial thought process is pretty straightforward. I need to break this down into a few steps.\n\nFirst, I have to check for any province mergers. Right, the user didn't specify a time frame, so I'll need to account for possible changes. I recall something about \"Tỉnh Bình Phước\" being merged. Let me confirm that. Ah yes, Resolution 60-NQ/TW states that it was merged with Đồng Nai to form \"Tỉnh Đồng Nai\". So \"Tỉnh Bình Phước\" is now \"Tỉnh Đồng Nai\". This is crucial to my search.\n\nNext, I'll dive into the resolutions, specifically looking for \"Thị trấn Tân Phú\" and \"Huyện Đồng Phú\", but now, under the umbrella of \"Tỉnh Đồng Nai\". I'll scan through any relevant resolutions, especially those focusing on administrative unit restructuring.\n\nI've got Resolution 1662/NQ-UBTVQH15 open. Okay, I see a few entries. The resolution is about restructuring administrative units in Đồng Nai. I need to be careful here because there is a \"Thị trấn Tân Phú\" from Huyện Tân Phú, but that's not the one I want. Ah, here it is, line 61. It explicitly states that \"Thị trấn Tân Phú\" and \"Huyện Đồng Phú\" are being merged into \"Xã Đồng Phú\". Bingo! That's the key.\n\nNow, a quick verification. I'll double-check this in the \"New Wards\" list. I'm searching for \"Xã Đồng Phú\" under \"Tỉnh Đồng Nai\". Yup, there it is! `{\"ward_code\":\"25363\",\"ward_name\":\"Xã Đồng Phú\",\"province_name\":\"Tỉnh Đồng Nai\"}`. Confirmed.\n\nConfidence is high here. The resolution directly addresses this scenario, so it's a solid match. It's a clear-cut case of an administrative unit merger.\n\nFinally, I'll generate the JSON output, representing my findings. I have the new ward code and name, and the province name, all properly structured. Good to go.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "17. Hợp nhất tỉnh Đồng Nai và tỉnh Bình Phước, lấy tên là tỉnh Đồng Nai"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đồng Nai",
+      "ward_code": "25363",
+      "ward_name": "Xã Đồng Phú"
+    },
+    {
+      "citation": {
+        "header": "1662/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Nai",
+        "line": "61. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Tân Phú và xã Tân Tiến (huyện Đồng Phú), xã Tân Lập thành xã mới có tên gọi là xã Đồng Phú."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đồng Nai",
+      "ward_code": "25363",
+      "ward_name": "Xã Đồng Phú"
+    }
+  ]
+}

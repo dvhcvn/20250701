@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tam Hòa, Huyện Núi Thành, Tỉnh Quảng Nam",
+  "ellapsedInMs": 6495,
+  "estimatedCost": 0.0027232000000000003,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm tackling this Vietnamese address mapping task. I've got an old address with \"Xã Tam Hòa\" in \"Huyện Núi Thành\" within \"Tỉnh Quảng Nam\", and the goal is to find its new administrative location. I'll need to use the provided resolutions and the new ward data to achieve this.\n\nFirst, I identified the old address components. Next, I checked Resolution 60-NQ/TW to see what the changes were. I found that \"Tỉnh Quảng Nam\" is not in the \"no merger\" list, but is mentioned as being merged with Đà Nẵng, resulting in \"Thành phố Đà Nẵng\". So, the old province, Quảng Nam, becomes Đà Nẵng.\n\nThen, I looked through other relevant resolutions for more granular information. Resolution 1659/NQ-UBTVQH15, specifically line 29, caught my attention. It states the merging of Tam Hòa, Tam Anh Bắc, and Tam Anh Nam into a new ward called \"Xã Tam Anh\". Bingo! The resolution aligns with the new province, Đà Nẵng. Resolution 1660/NQ-UBTVQH15 doesn't mention Tam Hòa.\n\nI then cross-referenced this new ward name, \"Xã Tam Anh,\" with the `New wards` data, to verify the new province name. The data perfectly matches, associating \"Xã Tam Anh\" with \"Thành phố Đà Nẵng\".\n\nThis provides a very high degree of confidence. The province change is clear, and the explicit mapping of Tam Hòa to Tam Anh is a key. The `New wards` data fully confirms that mapping.\n\nFinally, I'll structure the output as JSON, including the resolution details, my high confidence level, and the new province and ward information.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng",
+        "line": "29. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tam Hòa, Tam Anh Bắc và Tam Anh Nam thành xã mới có tên gọi là xã Tam Anh."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "20984",
+      "ward_name": "Xã Tam Anh"
+    }
+  ]
+}

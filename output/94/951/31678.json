@@ -1,0 +1,28 @@
+{
+  "address": "Xã Lịch Hội Thượng, Huyện Trần Đề, Tỉnh Sóc Trăng",
+  "ellapsedInMs": 8557,
+  "estimatedCost": 0.0033079,
+  "thought": "**Address Mapping for Xã Lịch Hội Thượng, Trần Đề, Sóc Trăng**\n\nAlright, let's break this down. We're dealing with an old Vietnamese address: Xã Lịch Hội Thượng in Huyện Trần Đề, Tỉnh Sóc Trăng.  The task is to find its new equivalent based on the recent administrative changes.\n\nFirst, the province.  I've checked the relevant resolutions, particularly 60-NQ/TW.  Sóc Trăng isn't listed as \"not merged,\" but interestingly, it *is* listed under those that *were* merged. Entry 19 states: \"Hợp nhất thành phố cần Thơ, tỉnh Sóc Trăng và tỉnh Hậu Giang; lấy tên là thành phố Cần Thơ\".  So, Sóc Trăng is now part of Thành phố Cần Thơ.\n\nNext, the ward itself, Xã Lịch Hội Thượng.  We're looking at resolution 1668/NQ-UBTVQH15, specifically related to the restructuring of communes in Cần Thơ. Line 92 is crucial: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Lịch Hội Thượng và xã Lịch Hội Thượng thành xã mới có tên gọi là **xã Lịch Hội Thượng**.\"  Boom!  This explicitly mentions the old ward name in the creation of a *new* ward also named Xã Lịch Hội Thượng.\n\nNow, let's verify with the new ward data. I'm looking for \"Xã Lịch Hội Thượng\" in \"Thành phố Cần Thơ\".  Sure enough, I find `{\"ward_code\":\"31679\",\"ward_name\":\"Xã Lịch Hội Thượng\",\"province_name\":\"Thành phố Cần Thơ\"}`.  Perfect match!\n\nSynthesizing all of this, the old province \"Tỉnh Sóc Trăng\" is now \"Thành phố Cần Thơ\".  The old ward \"Xã Lịch Hội Thượng\" is explicitly referenced in the resolution, showing that it's part of a restructuring to the new ward with the same name.  The new data corroborates this with code 31679. The district is obsolete given this restructuring.\n\nTherefore, I'm highly confident in this mapping. My JSON output will be constructed with the citation information from both the province merger (60-NQ/TW) and the ward restructuring (1668/NQ-UBTVQH15), a \"high\" confidence level, and the new province and ward details. And, being a single clear mapping, one object is warranted.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW",
+        "line": "Hợp nhất thành phố cần Thơ, tỉnh Sóc Trăng và tỉnh Hậu Giang; lấy tên là thành phố Cần Thơ"
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Cần Thơ",
+      "ward_code": "31679",
+      "ward_name": "Xã Lịch Hội Thượng"
+    },
+    {
+      "citation": {
+        "header": "1668/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Cần Thơ",
+        "line": "92. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Lịch Hội Thượng và xã Lịch Hội Thượng thành xã mới có tên gọi là xã Lịch Hội Thượng."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Cần Thơ",
+      "ward_code": "31679",
+      "ward_name": "Xã Lịch Hội Thượng"
+    }
+  ]
+}

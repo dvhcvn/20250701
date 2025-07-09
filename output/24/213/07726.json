@@ -1,0 +1,18 @@
+{
+  "address": "Xã Yên Lư, Thành phố Bắc Giang, Tỉnh Bắc Giang",
+  "ellapsedInMs": 7758,
+  "estimatedCost": 0.0034251999999999998,
+  "thought": "**My Analysis of the Administrative Unit Change**\n\nOkay, so I'm presented with an old address: \"Xã Yên Lư, Thành phố Bắc Giang, Tỉnh Bắc Giang\". My task is to figure out its new administrative unit.  Here's how I'm approaching this, step-by-step:\n\nFirst, I need to identify the old province and ward: Tỉnh Bắc Giang and Xã Yên Lư, respectively. That's easy enough.\n\nNext, I have to account for any province mergers. Checking my resources, I find Resolution 60-NQ/TW states that Tỉnh Bắc Giang merged with Tỉnh Bắc Ninh, becoming simply Tỉnh Bắc Ninh. This means the province has changed.\n\nNow, the crucial part: I need to investigate ward-level changes. I'll search through \"Other resolutions\" for mentions of \"Xã Yên Lư\", either in the context of Bắc Giang or Bắc Ninh (since the province changed).  I spot Resolution 1658/NQ-UBTVQH15, a key document regarding administrative adjustments within Bắc Ninh.\n\nLine 96 of that resolution is the goldmine: it clearly states, *\"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Tân Liễu, phường Nham Biền và xã Yên Lư thành phường mới có tên gọi là **phường Yên Dũng**.\"* This definitively tells me that the old \"Xã Yên Lư\" is now part of the new \"Phường Yên Dũng\".\n\nTo confirm, I'll cross-reference the `New wards` list to verify the details for \"Phường Yên Dũng\".  Bingo!  I find: `{\"ward_code\":\"07681\",\"ward_name\":\"Phường Yên Dũng\",\"province_name\":\"Tỉnh Bắc Ninh\"}`.  The province name matches what I deduced from the province merger.\n\nI'm confident in this conclusion. There's a direct connection and clear evidence. My output will be a JSON structure adhering to the specified schema, reflecting:\n\n*   **province_name:** Tỉnh Bắc Ninh\n*   **ward_name:** Phường Yên Dũng\n*   **ward_code:** 07681\n*   **confidence:** high\n*   **citation:**  A properly formatted reference to Resolution 1658/NQ-UBTVQH15, line 96.\n\nThis is a clean-cut case. I've considered both provincial and ward-level changes and constructed a precise, well-documented answer.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh",
+        "line": "96. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Tân Liễu, phường Nham Biền và xã Yên Lư thành phường mới có tên gọi là phường Yên Dũng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "07681",
+      "ward_name": "Phường Yên Dũng"
+    }
+  ]
+}

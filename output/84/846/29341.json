@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Tiểu Cần, Huyện Tiểu Cần, Tỉnh Trà Vinh",
+  "ellapsedInMs": 7233,
+  "estimatedCost": 0.002427,
+  "thought": "**My Analysis of Address Mapping for \"Thị trấn Tiểu Cần, Huyện Tiểu Cần, Tỉnh Trà Vinh\"**\n\nAlright, let's break this down systematically. My objective is to pinpoint the current administrative location for this old address, leveraging the provided resolutions and new ward data.\n\nFirst, I identified the original province: \"Tỉnh Trà Vinh\".  A quick glance at the province resolutions (specifically the \"sáp nhập, hợp nhất\" section of 60-NQ/TW) reveals the crucial detail: \"Hợp nhất tỉnh Bến Tre, tỉnh Vĩnh Long và tỉnh Trà Vinh; lấy tên là tỉnh Vĩnh Long.\"  Therefore, \"Tỉnh Trà Vinh\" has now become \"Tỉnh Vĩnh Long\".\n\nNext, I zeroed in on the ward level: \"Thị trấn Tiểu Cần\".  I cross-referenced this with other relevant resolutions, and resolution 1687/NQ-UBTVQH15 became key.  Scanning through the lines, I found line 41 to be the crucial piece: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Tiểu Cần, xã Phú Cần và xã Hiếu Trung thành xã mới có tên gọi là **xã Tiểu Cần**.\"  This directly addresses \"Thị trấn Tiểu Cần\" and explicitly states its conversion to \"Xã Tiểu Cần\".\n\nTo solidify this, I then consulted the new wards data. I looked for \"Xã Tiểu Cần\" within \"Tỉnh Vĩnh Long\".  The data entry `{\"ward_code\":\"29341\",\"ward_name\":\"Xã Tiểu Cần\",\"province_name\":\"Tỉnh Vĩnh Long\"}`  confirms the new ward and its associated province, perfectly aligning with my findings.  I also took a brief detour to check \"Xã Tân Hòa\" and \"Xã Trung Thành,\" but these didn't provide any conflicting information.\n\nPutting it all together, I'm confident in constructing the following JSON output:\n\n*   `province_name`: \"Tỉnh Vĩnh Long\" (as per province merger).\n*   `ward_name`: \"Xã Tiểu Cần\" (from resolution 1687/NQ-UBTVQH15).\n*   `ward_code`: \"29341\" (from the new wards data).\n*   `citation`:  The key resolution is 1687/NQ-UBTVQH15. Specifically, line 41:  \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Tiểu Cần, xã Phú Cần và xã Hiếu Trung thành xã mới có tên gọi là xã Tiểu Cần.\"\n*   `confidence`: \"high\" -  The mapping is direct and supported by clear evidence within the resolutions. There is no ambiguity.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long",
+        "line": "41. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Tiểu Cần, xã Phú Cần và xã Hiếu Trung thành xã mới có tên gọi là xã Tiểu Cần."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "29341",
+      "ward_name": "Xã Tiểu Cần"
+    }
+  ]
+}

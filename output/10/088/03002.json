@@ -1,0 +1,18 @@
+{
+  "address": "Phường Sa Pả, Thị xã Sa Pa, Tỉnh Lào Cai",
+  "ellapsedInMs": 5619,
+  "estimatedCost": 0.0017971,
+  "thought": "**Processing Address Mapping Request: \"Phường Sa Pả, Tỉnh Lào Cai\"**\n\nOkay, I've got this. The user wants to map \"Phường Sa Pả, Tỉnh Lào Cai\" to a new administrative unit, and I'm on it. First, I need to identify the old province and ward, which is straightforward: \"Tỉnh Lào Cai\" and \"Phường Sa Pả\". Now, let's see if there have been any province mergers. The information says Resolution 60-NQ/TW doesn't change \"Tỉnh Lào Cai\", so that's good.\n\nNext, I need to dig into the resolutions to find out what happened to \"Phường Sa Pả\". Ah, here we go! Resolution 1673/NQ-UBTVQH15, specifically line 91, mentions the exact ward I'm looking for: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Hàm Rồng, Ô Quý Hồ, Sa Pả, Cầu Mây, Phan Si Păng và Sa Pa thành phường mới có tên gọi là **phường Sa Pa**.\"  Bingo! \"Phường Sa Pả\" is being merged into \"Phường Sa Pa\".\n\nNow, time to find the details for \"Phường Sa Pa\" in the \"New wards\" data. Perfect, I found it! `{\"ward_code\":\"03006\",\"ward_name\":\"Phường Sa Pa\",\"province_name\":\"Tỉnh Lào Cai\"}`.\n\nFinally, let's construct the output. Since this is a direct mapping, I'll set the confidence to \"high.\" The new province is, of course, \"Tỉnh Lào Cai\". The ward details are all there: ward code is \"03006\", and ward name is \"Phường Sa Pa\". For the citation, I'll use the header of Resolution 1673/NQ-UBTVQH15 and the specific line where \"Phường Sa Pả\" is mentioned (line 91). Done!\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai",
+        "line": "91. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Hàm Rồng, Ô Quý Hồ, Sa Pả, Cầu Mây, Phan Si Păng và Sa Pa thành phường mới có tên gọi là phường Sa Pa."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "03006",
+      "ward_name": "Phường Sa Pa"
+    }
+  ]
+}

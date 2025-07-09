@@ -1,0 +1,18 @@
+{
+  "address": "Phường Vĩnh Ngươn, Thành phố Châu Đốc, Tỉnh An Giang",
+  "ellapsedInMs": 7599,
+  "estimatedCost": 0.0025805999999999997,
+  "thought": "**Analyzing the Address and Mapping to New Administrative Units**\n\nOkay, so I've got this Vietnamese address – \"Phường Vĩnh Ngươn, Tỉnh An Giang\" – and I need to figure out its corresponding new administrative unit. This means diving into the resolutions and new ward data.\n\nFirst, I identified \"Phường Vĩnh Ngươn\" as the old ward and \"Tỉnh An Giang\" as the old province. Now the plan unfolds: I'm checking the Province Resolutions, specifically 60-NQ/TW, to see if An Giang has undergone any changes. It seems it didn't fully merge, it stayed the same but absorbed Kiên Giang. The name remains \"Tỉnh An Giang\".\n\nThen, I focused on other resolutions, specifically 1654/NQ-UBTVQH15, looking for any mentions of \"Phường Vĩnh Ngươn.\" Bingo! It explicitly states in the resolution \"1654/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh An Giang\" that \"Phường Vĩnh Nguơn\" (noting the slight spelling variation) *and* other wards were merged to form \"Phường Châu Đốc.\" I'm confident they refer to the same place, given the context.\n\nMy next step was to cross-reference this with the \"New wards\" data.  \"Phường Châu Đốc\" is there, matching the correct province: `{\"ward_code\":\"30316\",\"ward_name\":\"Phường Châu Đốc\",\"province_name\":\"Tỉnh An Giang\"}`.\n\nGiven the explicit mention in the resolution, and the direct match in the new data, I'm confident in this mapping.\n\nThis leads me to the JSON output. I'll include the relevant line from the resolution in the `citation`. The `confidence` will be \"high\". The `province_name` is \"Tỉnh An Giang\", matching the new ward data, and the `ward_code` is \"30316,\"  and `ward_name` will be \"Phường Châu Đốc\".\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1654/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh An Giang",
+        "line": "83. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Vĩnh Nguơn, Châu Phú A, Châu Phú B, Vĩnh Mỹ và một phần diện tích tự nhiên, quy mô dân số của xã Vĩnh Châu thành phường mới có tên gọi là phường Châu Đốc."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh An Giang",
+      "ward_code": "30316",
+      "ward_name": "Phường Châu Đốc"
+    }
+  ]
+}

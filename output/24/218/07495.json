@@ -1,0 +1,18 @@
+{
+  "address": "Xã Lan Mẫu, Huyện Lục Nam, Tỉnh Bắc Giang",
+  "ellapsedInMs": 7979,
+  "estimatedCost": 0.0028669,
+  "thought": "**Address Mapping Analysis: Xã Lan Mẫu to New Administrative Units**\n\nOkay, let's break this down. The user wants to map an old Vietnamese address, specifically \"Xã Lan Mẫu, Huyện Lục Nam, Tỉnh Bắc Giang,\" to its new administrative units based on provided resolutions and ward data. My approach is pretty straightforward, but I need to be meticulous.\n\nFirst, I identified the components: Ward: \"Xã Lan Mẫu,\" District: \"Huyện Lục Nam,\" Province: \"Tỉnh Bắc Giang.\" Now, I'm digging into the resolutions.\n\nThe key here is resolution 60-NQ/TW regarding provincial-level changes.  Since \"Tỉnh Bắc Giang\" wasn't listed under non-merging units, I checked for mergers. Bingo!  It shows \"Hợp nhất tỉnh Bắc Ninh và tỉnh Bắc Giang, lấy tên là tỉnh Bắc Ninh,\" meaning Bắc Giang is now part of Bắc Ninh.  So the province is now \"Tỉnh Bắc Ninh.\" Simple enough.\n\nNext up, resolution 1658/NQ-UBTVQH15, specific to \"tỉnh Bắc Ninh.\"  This is relevant since Bắc Giang became part of Bắc Ninh.  I'm scanning for \"Xã Lan Mẫu\" within the resolution text. And there it is, line 44:  \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Yên Sơn, Lan Mẫu, Khám Lạng và Bắc Lũng thành xã mới có tên gọi là **xã Bắc Lũng**.\"  \"Xã Lan Mẫu\" is *definitely* being merged into \"Xã Bắc Lũng.\"  That's a direct mapping.\n\nI cross-referenced that with the new ward data. I found \"Xã Bắc Lũng\" listed under \"Tỉnh Bắc Ninh\" with the code \"07498.\"  I checked for other relevant new wards mentioned in the resolution, just to make sure I wasn't missing any indirect connections. \"Xã Lục Nam\" seems unrelated. Neither are \"Phường Chũ\" and \"Phường Phượng Sơn.\"\n\nBuilding the JSON output is straightforward now.  I've got a direct citation from 1658/NQ-UBTVQH15 (line 44), confirming the merger. My confidence level is \"high\" because this is a direct, explicitly mentioned mapping.  \n\n*   My `citation.header` is: \"1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh\"\n*   My `citation.line`: \"44. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Yên Sơn, Lan Mẫu, Khám Lạng và Bắc Lũng thành xã mới có tên gọi là **xã Bắc Lũng**.\"\n*   `confidence` is \"high\"\n*   `province_name`: \"Tỉnh Bắc Ninh\" (from the province merger)\n*   `ward_code`: \"07498\" (from the new wards data)\n*   `ward_name`: \"Xã Bắc Lũng\" (from the resolution and new ward data)\n\nDone. That should be a clean and accurate mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh",
+        "line": "44. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Yên Sơn, Lan Mẫu, Khám Lạng và Bắc Lũng thành xã mới có tên gọi là xã Bắc Lũng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "07498",
+      "ward_name": "Xã Bắc Lũng"
+    }
+  ]
+}

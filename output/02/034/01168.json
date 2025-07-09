@@ -1,0 +1,28 @@
+{
+  "address": "Xã Đồng Tâm, Huyện Bắc Quang, Tỉnh Hà Giang",
+  "ellapsedInMs": 9619,
+  "estimatedCost": 0.0038053999999999996,
+  "thought": "**Identifying the New Administrative Unit**\n\nOkay, let's break this down. The user gave me \"Xã Đồng Tâm, Huyện Bắc Quang, Tỉnh Hà Giang,\" and they want the updated administrative unit. First, I need to pinpoint the *old* province: \"Tỉnh Hà Giang.\" Now, I'll consult those crucial province resolutions (60-NQ/TW). Ah, there it is: \"Hợp nhất tỉnh Tuyên Quang và tỉnh Hà Giang, lấy tên là tỉnh Tuyên Quang.\" So, Hà Giang is now part of Tuyên Quang. New province: \"Tỉnh Tuyên Quang.\"\n\nNext up, \"Xã Đồng Tâm.\" Time to search within the context of the *new* province. I'll scour the \"Other resolutions\" for anything related to \"Tỉnh Tuyên Quang.\" Bingo! Resolution \"1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang\" looks promising. I'll scan that resolution. Line 79 catches my eye: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đồng Tiến, Thượng Bình và Đồng Tâm thành xã mới có tên gọi là **xã Đồng Tâm**.\"  It explicitly mentions \"Xã Đồng Tâm\"!  So, the name \"Đồng Tâm\" is kept, even though it's now part of a larger unit.\n\nNow, I'll verify this in the \"New wards\" list, searching for the key: `{\"ward_name\":\"Xã Đồng Tâm\",\"province_name\":\"Tỉnh Tuyên Quang\"}`. Found it: `{\"ward_code\":\"01165\",\"ward_name\":\"Xã Đồng Tâm\",\"province_name\":\"Tỉnh Tuyên Quang\"}`. Perfect!\n\nBased on this, my output will be:\n\n*   `province_name`: \"Tỉnh Tuyên Quang\" (from the province merger).\n*   `ward_name`: \"Xã Đồng Tâm\" (from resolution 1684/NQ-UBTVQH15).\n*   `ward_code`: \"01165\" (from the new wards list).\n*   `citation`:\n    *   `header`: \"1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang\"\n    *   `line`: \"79. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đồng Tiến, Thượng Bình và Đồng Tâm thành xã mới có tên gọi là **xã Đồng Tâm**.\"\n*   `confidence`: \"high\" (because \"Đồng Tâm\" is directly mentioned in the resolution).\n\nI should double-check to avoid any confusion. I'll quickly look for \"Đồng Tâm\" in *other* provinces or in older resolutions. Since the *original* province was Hà Giang (now Tuyên Quang), I need to focus on Tuyên Quang or resolutions that affect Hà Giang before the merger.\n\nChecking...\n*   Hà Nội: *Phường* Đồng Tâm, not relevant.\n*   Bắc Ninh: *Xã* Đồng Tâm, but in Bắc Ninh.\n*   Đồng Nai: *Xã* Đồng Tâm, also not relevant to Hà Giang/Tuyên Quang.\n*   Lào Cai: *Phường* Đồng Tâm, again, not relevant here.\n\nGreat. No confusion. I'm confident in my findings.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "1. Hợp nhất tỉnh Tuyên Quang và tỉnh Hà Giang, lấy tên là tỉnh Tuyên Quang"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "01165",
+      "ward_name": "Xã Đồng Tâm"
+    },
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "79. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đồng Tiến, Thượng Bình và Đồng Tâm thành xã mới có tên gọi là xã Đồng Tâm."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "01165",
+      "ward_name": "Xã Đồng Tâm"
+    }
+  ]
+}

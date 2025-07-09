@@ -1,0 +1,18 @@
+{
+  "address": "Xã Nam Yang, Huyện Đăk Đoa, Tỉnh Gia Lai",
+  "ellapsedInMs": 7206,
+  "estimatedCost": 0.0026371999999999997,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm presented with a Vietnamese address and a task: to translate this old address to its current administrative unit equivalent. The input is \"Xã Nam Yang, Huyện Đăk Đoa, Tỉnh Gia Lai\". My goal is to map this to the new wards based on provided resolutions.\n\nFirst, I need to break down the address.  I've got \"Xã Nam Yang\" (the ward), \"Huyện Đăk Đoa\" (the district), and \"Tỉnh Gia Lai\" (the province). The prompt implies that districts are being eliminated, so I need to focus on province and ward for the output.\n\nMy approach is as follows: I need to consult the resolutions and the provided list of new wards.\n\n*   **Province Check (Resolution 60-NQ/TW):** I searched for \"Tỉnh Gia Lai\" in the resolutions. While it wasn't listed for elimination, it *was* mentioned in a merger scenario with Bình Định. However, the resolution specifically states that the province name remains \"Tỉnh Gia Lai\" even after this merger. So, the province remains the same. This is good to know.\n\n*   **Ward Check (Resolution 1664/NQ-UBTVQH15):**  I scanned Resolution 1664/NQ-UBTVQH15, the \"line\" I'm most interested in is line 87. There, it explicitly states that \"Xã Nam Yang\" is merged with other wards to form \"Xã Kon Gang.\" Bingo! This is the key piece of information.\n\n*   **New Ward Verification:** Now, to validate my findings, I need to consult the list of \"New wards.\" I searched for \"Xã Kon Gang.\"  And there it is! Confirmed with code \"23701\" under \"Tỉnh Gia Lai.\"\n\nThe district is to be disregarded, due to the note about eliminating all districts.\n\nTherefore, the old address of \"Xã Nam Yang, Huyện Đăk Đoa, Tỉnh Gia Lai\" is transformed to \"Xã Kon Gang\", code \"23701\", in \"Tỉnh Gia Lai\".  I'll attribute this mapping to Resolution 1664/NQ-UBTVQH15, specifically line 87.  The confidence in this mapping is very high because the resolution provides a direct and explicit transformation, and the new wards list validates it.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai",
+        "line": "87. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đak Krong, Hneng, Nam Yang và Kon Gang thành xã mới có tên gọi là xã Kon Gang."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "23701",
+      "ward_name": "Xã Kon Gang"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "address": "Xã Hàm Chính, Huyện Hàm Thuận Bắc, Tỉnh Bình Thuận",
+  "ellapsedInMs": 7111,
+  "estimatedCost": 0.0025725,
+  "thought": "**Mapping an Old Address to New Administrative Units**\n\nOkay, I've got this. The user wants to map an old address, \"Xã Hàm Chính, Huyện Hàm Thuận Bắc, Tỉnh Bình Thuận,\" to the new administrative structure. Let's break this down systematically.\n\nFirst, I need to isolate the key components of the old address. I've identified \"Xã Hàm Chính\" as the old ward and \"Tỉnh Bình Thuận\" as the old province.\n\nNow, I'm going to check for any province mergers, focusing on \"Tỉnh Bình Thuận.\"  A quick search reveals that \"Tỉnh Bình Thuận\" has been merged with other provinces, specifically \"Hợp nhất tỉnh Lâm Đồng, tỉnh Đắk Nông và tỉnh Bình Thuận; lấy tên là tỉnh Lâm Đồng\" using resolution \"60-NQ/TW.\"  So, \"Tỉnh Bình Thuận\" is now part of \"Tỉnh Lâm Đồng.\"\n\nNext, I have to pinpoint the relevant ward resolutions within this *new* province. The key here is resolution \"1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng.\"  This looks promising. I need to scan for mentions of \"Xã Hàm Chính\" within this context. Bingo! Line \"57. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Hàm Chính và xã Hàm Liêm thành xã mới có tên gọi là **xã Hàm Liêm**.\"  This directly states that \"Xã Hàm Chính\" is merged into \"Xã Hàm Liêm.\"\n\nNow, I'll cross-reference the \"New wards\" list for the details of \"Xã Hàm Liêm.\" I find a perfect match: `{\"ward_code\":\"23095\",\"ward_name\":\"Xã Hàm Liêm\",\"province_name\":\"Tỉnh Lâm Đồng\"}`.\n\nI also need to check for any potential ambiguities. There are other lines in the resolution regarding \"Hàm Thuận Bắc,\" but the old ward is specifically \"Xã Hàm Chính,\" and that's the one I'm focused on. There's also \"Xã Hàm Thuận\" listed as a new ward, but no resolution indicates that it was formed from \"Xã Hàm Chính.\"  So, that seems irrelevant.\n\nConsidering the explicit mention in the resolution of \"Xã Hàm Chính\" merging into \"Xã Hàm Liêm,\" and the clear province merger, I'd say this is a high-confidence match.  The solution is pretty straightforward.  Now I just need to construct the JSON output.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Lâm Đồng, tỉnh Đắk Nông và tỉnh Bình Thuận; lấy tên là tỉnh Lâm Đồng"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "23095",
+      "ward_name": "Xã Hàm Liêm"
+    },
+    {
+      "citation": {
+        "header": "1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng",
+        "line": "57. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Hàm Chính và xã Hàm Liêm thành xã mới có tên gọi là xã Hàm Liêm."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "23095",
+      "ward_name": "Xã Hàm Liêm"
+    }
+  ]
+}

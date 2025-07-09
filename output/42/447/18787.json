@@ -1,0 +1,18 @@
+{
+  "address": "Xã Kỳ Trung, Huyện Kỳ Anh, Tỉnh Hà Tĩnh",
+  "ellapsedInMs": 5180,
+  "estimatedCost": 0.0017275999999999997,
+  "thought": "**Mapping an Old Address to New Administrative Units**\n\nOkay, I've got this. The user wants to map \"Xã Kỳ Trung\", \"Tỉnh Hà Tĩnh\" to the new administrative structure. First, I need to pinpoint the old ward and province. Got it: \"Xã Kỳ Trung\" and \"Tỉnh Hà Tĩnh\".\n\nNow, time to check those province resolutions, particularly Resolution 60-NQ/TW. Ah, \"Tỉnh Hà Tĩnh\" is listed under \"Các đơn vị hành chính cấp tỉnh không thực hiện sáp nhập\". So the province name remains \"Tỉnh Hà Tĩnh\" - good.\n\nNext, I need to dig into the other resolutions. Let's see... yes, \"1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh\" looks promising.  Perfect! Line 8 clearly states, \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Kỳ Tây, Kỳ Trung và Kỳ Văn thành xã mới có tên gọi là **xã Kỳ Văn**.\"  So, \"Xã Kỳ Trung\" is merging into \"xã Kỳ Văn\".\n\nNow, I'll cross-reference that with the new ward data.  Aha!  `{\"ward_code\":\"18787\",\"ward_name\":\"Xã Kỳ Văn\",\"province_name\":\"Tỉnh Hà Tĩnh\"}`... exactly what I needed.\n\nFinally, let's assemble the output.  The citation will be based on the header of the resolution and the exact line from it. The confidence should be \"high\" because this mapping is very direct and clear. The province name will be \"Tỉnh Hà Tĩnh\", unchanged. The new ward code is \"18787\", and the ward name is \"Xã Kỳ Văn\". Done!\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh",
+        "line": "8. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Kỳ Tây, Kỳ Trung và Kỳ Văn thành xã mới có tên gọi là xã Kỳ Văn."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hà Tĩnh",
+      "ward_code": "18787",
+      "ward_name": "Xã Kỳ Văn"
+    }
+  ]
+}

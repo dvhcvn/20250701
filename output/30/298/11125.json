@@ -1,0 +1,28 @@
+{
+  "address": "Xã An Thanh, Huyện Tứ Kỳ, Tỉnh Hải Dương",
+  "ellapsedInMs": 7187,
+  "estimatedCost": 0.013963099999999997,
+  "thought": "**Determining the New Administrative Unit for \"Xã An Thanh\"**\n\nOkay, so the user wants to know the current administrative location for \"Xã An Thanh, Huyện Tứ Kỳ, Tỉnh Hải Dương.\" My thought process is pretty straightforward here. First, I need to account for any province mergers. Checking `60-NQ/TW`, I see that Hải Dương merged with Hải Phòng to become \"Thành phố Hải Phòng.\"\n\nNext, I'll need to dig into the relevant resolutions concerning the new province. `1669/NQ-UBTVQH15` seems like the place to start. I'll scan through it, looking for mentions of \"An Thanh\" and \"Tứ Kỳ\".\n\nAh, here we go! Line 96 in that resolution is key. It clearly states that \"An Thanh\" is being merged with \"Văn Tố\" and \"Chí Minh\" to form the new \"xã Chí Minh.\" Bingo! The resolution itself focuses on changes within \"Thành phố Hải Phòng,\" so it fits perfectly. Other lines further confirm this context, mentioning \"Huyện Tứ Kỳ\" as well.\n\nSo, the new ward is \"xã Chí Minh,\" and the province is indeed \"Thành phố Hải Phòng.\" Now, let's just make absolutely sure it exists in my `New wards` list and grab the `ward_code`. Yep, there it is: `{\"ward_code\":\"11131\",\"ward_name\":\"Xã Chí Minh\",\"province_name\":\"Thành phố Hải Phòng\"}`.\n\nGiven the explicit merger mentioned in the resolution, I'm feeling very confident about this.  The new ward is definitely \"xã Chí Minh\" in \"Thành phố Hải Phòng.\" Now I'll prepare that JSON output.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Hải Dương và thành phố Hải Phòng, lấy tên là thành phố Hải Phòng"
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "11131",
+      "ward_name": "Xã Chí Minh"
+    },
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "96. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã An Thanh, Văn Tố và Chí Minh thành xã mới có tên gọi là **xã Chí Minh**."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "11131",
+      "ward_name": "Xã Chí Minh"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "address": "Xã Trà Đốc, Huyện Bắc Trà My, Tỉnh Quảng Nam",
+  "ellapsedInMs": 6199,
+  "estimatedCost": 0.0020672,
+  "thought": "**Determining the New Ward for the Given Address**\n\nOkay, so I've got an old address to work with: \"Xã Trà Đốc, Huyện Bắc Trà My, Tỉnh Quảng Nam.\" My task is to figure out the new administrative unit, the ward, based on resolutions and a list of new wards.\n\nFirst, I need to break down the old address. \"Tỉnh Quảng Nam\" is the old province, and \"Xã Trà Đốc\" is the old ward. Simple enough.\n\nNow, let's dive into the resolutions. The one I'm looking at first is about province-level changes. Ah, here it is: 60-NQ/TW. This mentions \"Tỉnh Quảng Nam\" being merged with Đà Nẵng, resulting in the new province: \"Thành phố Đà Nẵng.\" Okay, that's the first piece of the puzzle.\n\nNext, I need to look at specific ward-level adjustments. Resolution 1659/NQ-UBTVQH15 is relevant here. Let's see... Line 42 is key: it states that \"Xã Trà Bui\" and \"Xã Trà Đốc\" are being merged to form a *new* \"Xã Trà Đốc.\" This seems pretty straightforward!\n\nNow, let's compare this to the new ward list I have. The list includes: `{\"ward_code\":\"20920\",\"ward_name\":\"Xã Trà Đốc\",\"province_name\":\"Thành phố Đà Nẵng\"}`. This perfectly aligns with my findings! The new ward is \"Xã Trà Đốc,\" and it's located in the new province of \"Thành phố Đà Nẵng.\"\n\nMy confidence level is extremely high here. The province merger is clearly defined, and the ward resolution directly addresses the merger of \"Xã Trà Đốc\" to *create* a new \"Xã Trà Đốc.\" The new ward entry also mirrors this perfectly.\n\nTherefore, the JSON output is a simple matter of compilation.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Quảng Nam và thành phố Đà Nẵng, lấy tên là thành phố Đà Nẵng"
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "20920",
+      "ward_name": "Xã Trà Đốc"
+    },
+    {
+      "citation": {
+        "header": "1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng",
+        "line": "42. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Trà Bui và xã Trà Đốc thành xã mới có tên gọi là xã Trà Đốc."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "20920",
+      "ward_name": "Xã Trà Đốc"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "address": "Xã Long Bình Điền, Huyện Chợ Gạo, Tỉnh Tiền Giang",
+  "ellapsedInMs": 6914,
+  "estimatedCost": 0.0023742,
+  "thought": "**My Thought Process for Mapping the Old Address**\n\nOkay, I've got this Vietnamese address to map to new administrative units. Here's how I'm thinking through it.\n\nFirst, I need to pinpoint the old province and ward. From the address, I've identified \"Xã Long Bình Điền\" as the old ward and \"Tỉnh Tiền Giang\" as the old province.\n\nNow, I'm going to consult the resolutions and new ward data. My initial focus is on province resolutions, specifically 60-NQ/TW. I'm searching for \"Tỉnh Tiền Giang\" in the province merger list. Bingo! It looks like there was a merger: \"Hợp nhất tỉnh Tiền Giang và tỉnh Đồng Tháp, lấy tên là tỉnh Đồng Tháp.\" So the new province is definitely \"Tỉnh Đồng Tháp.\"\n\nNext, I'm diving into other resolutions, specifically 1663/NQ-UBTVQH15, to figure out the fate of \"Xã Long Bình Điền.\" I'm looking for any mention of it in the `lines` of the resolution text. And there it is: \"68. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Chợ Gạo, xã Long Bình Điền và xã Song Bình thành xã mới có tên gọi là **xã Chợ Gạo**.\" This explicitly states that \"Xã Long Bình Điền\" is merged into a new ward called \"Xã Chợ Gạo.\" This is crucial.\n\nNow, I'm cross-referencing this with the \"New wards\" data. I'm searching for \"Xã Chợ Gạo,\" and there it is: `{\"ward_code\":\"28594\",\"ward_name\":\"Xã Chợ Gạo\",\"province_name\":\"Tỉnh Đồng Tháp\"}`. Perfect! This matches the new province name that I deduced earlier.\n\nI quickly check other new wards in \"Tỉnh Đồng Tháp,\" like \"Xã Long Bình\" and \"Xã Bình Thành,\" but given the explicit resolution, those are irrelevant. \"Xã Long Bình\" is similar, but doesn't make a good match based on the available information.\n\nConsidering all this, my confidence level is high. The province change is clear, and the explicit resolution about \"Xã Long Bình Điền\" merging into \"Xã Chợ Gạo,\" along with the correct new ward data, makes it a pretty straightforward mapping.\n\nTherefore, I'll construct the appropriate JSON output based on this analysis.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Tiền Giang và tỉnh Đồng Tháp, lấy tên là tỉnh Đồng Tháp"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đồng Tháp",
+      "ward_code": "28594",
+      "ward_name": "Xã Chợ Gạo"
+    },
+    {
+      "citation": {
+        "header": "1663/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Tháp",
+        "line": "68. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Chợ Gạo, xã Long Bình Điền và xã Song Bình thành xã mới có tên gọi là xã Chợ Gạo."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đồng Tháp",
+      "ward_code": "28594",
+      "ward_name": "Xã Chợ Gạo"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Trường Long Hòa, Thị xã Duyên Hải, Tỉnh Trà Vinh",
+  "ellapsedInMs": 8033,
+  "estimatedCost": 0.0027334,
+  "thought": "**Determining the New Administrative Unit for \"Xã Trường Long Hòa\"**\n\nOkay, let's break this down systematically. The user has given me an old address: \"Xã Trường Long Hòa, Thị xã Duyên Hải, Tỉnh Trà Vinh\". My goal is to figure out what that translates to now, considering potential administrative changes.\n\nFirst, I need to address the province level. I have a document that details province mergers, specifically \"60-NQ/TW\". Scanning that, I see that \"Tỉnh Trà Vinh\" (the old province) is now part of a merged province. The resolution states: \"Hợp nhất tỉnh Bến Tre, tỉnh Vĩnh Long và tỉnh Trà Vinh; lấy tên là tỉnh Vĩnh Long\". So, \"Tỉnh Trà Vinh\" is now \"Tỉnh Vĩnh Long.\"\n\nWith the new province name in mind, I turn to the resolutions about administrative changes. I need to sift through these, specifically looking for mentions of \"Xã Trường Long Hòa\" and \"Thị xã Duyên Hải\" (the old district).\n\nI examined several resolutions, but only \"1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long\" seems relevant. This aligns with the new province name.\n\nWithin this resolution, there are two important points:\n\n1.  One section discusses the formation of \"phường Duyên Hải\", merging several units. However, \"Xã Trường Long Hòa\" isn't mentioned there. So, this isn't the key.\n\n2.  However, the second section is the key! It clearly states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của Phường 2 (thị xã Duyên Hải) và xã Trường Long Hòa thành phường mới có tên gọi là phường Trường Long Hoà.\" In other words, \"Phường 2 (thị xã Duyên Hải)\" and the \"Xã Trường Long Hòa\" have been merged into a new ward called \"phường Trường Long Hoà\". Bingo! This confirms what I need.\n\nFinally, I checked my \"New wards\" dataset for further verification of \"phường Trường Long Hoà\" in \"Tỉnh Vĩnh Long\". The entry perfectly matches: `{\"ward_code\":\"29516\",\"ward_name\":\"Phường Trường Long Hòa\",\"province_name\":\"Tỉnh Vĩnh Long\"}`.\n\nTherefore, my conclusion, with high confidence, is: \"Xã Trường Long Hòa\" from the old province \"Tỉnh Trà Vinh\" (now \"Tỉnh Vĩnh Long\") has become \"**phường Trường Long Hoà**\" within \"Tỉnh Vĩnh Long\".\n\n```json\n[\n  {\n    \"citation\": {\n      \"header\": \"60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất\",\n      \"line\": \"Hợp nhất tỉnh Bến Tre, tỉnh Vĩnh Long và tỉnh Trà Vinh; lấy tên là tỉnh Vĩnh Long\"\n    },\n    \"confidence\": \"high\",\n    \"province_name\": \"Tỉnh Vĩnh Long\",\n    \"ward_code\": \"29516\",\n    \"ward_name\": \"Phường Trường Long Hòa\"\n  },\n  {\n    \"citation\": {\n      \"header\": \"1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long\",\n      \"line\": \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của Phường 2 (thị xã Duyên Hải) và xã Trường Long Hòa thành phường mới có tên gọi là phường Trường Long Hoà.\"\n    },\n    \"confidence\": \"high\",\n    \"province_name\": \"Tỉnh Vĩnh Long\",\n    \"ward_code\": \"29516\",\n    \"ward_name\": \"Phường Trường Long Hòa\"\n  }\n]\n```\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long",
+        "line": "115. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của Phường 2 (thị xã Duyên Hải) và xã Trường Long Hòa thành phường mới có tên gọilà**phường Trường Long Hoà**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "29516",
+      "ward_name": "Phường Trường Long Hòa"
+    }
+  ]
+}

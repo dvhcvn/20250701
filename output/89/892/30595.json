@@ -1,0 +1,18 @@
+{
+  "address": "Xã Cần Đăng, Huyện Châu Thành, Tỉnh An Giang",
+  "ellapsedInMs": 5879,
+  "estimatedCost": 0.0035822,
+  "thought": "**My Analysis of the Administrative Unit Change**\n\nOkay, so I'm presented with an address: \"Xã Cần Đăng, Huyện Châu Thành, Tỉnh An Giang\" and need to figure out its current administrative ward. My first instinct is to check for any province mergers, but thankfully, An Giang remains An Giang based on document 60-NQ/TW.\n\nNow, I'm digging into resolutions concerning ward changes in An Giang. I've got my eye on \"1654/NQ-UBTVQH15,\" and I'm scanning through, specifically looking for \"Xã Cần Đăng.\" Bingo! Line 29 explicitly states that \"Xã Cần Đăng\" and \"Xã Vĩnh Lợi\" have merged to create a *new* \"Xã Cần Đăng.\" This suggests a name retention but a boundary/composition shift.\n\nMy next step is to locate the official ward code for this new \"Xã Cần Đăng\" in the \"New wards\" list.  After searching for `{\"ward_name\":\"Xã Cần Đăng\",\"province_name\":\"Tỉnh An Giang\"}`, I successfully identified the entry: `{\"ward_code\":\"30595\",\"ward_name\":\"Xã Cần Đăng\",\"province_name\":\"Tỉnh An Giang\"}`.\n\nGiven the explicit merger details and the unchanged province, I'm confident in my findings. I'll construct the JSON output accordingly, with a \"high\" confidence level. I'll include the relevant citation details, namely  \"1654/NQ-UBTVQH15\" and the specific line, to provide the most transparent and accurate information. The final JSON output will contain the province name, the ward code, and the ward name.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1654/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh An Giang",
+        "line": "29. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Vĩnh Lợi và xã Cần Đăng thành xã mới có tên gọi là xã Cần Đăng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh An Giang",
+      "ward_code": "30595",
+      "ward_name": "Xã Cần Đăng"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "address": "Xã Hồng Giang, Huyện Đông Hưng, Tỉnh Thái Bình",
+  "ellapsedInMs": 7386,
+  "estimatedCost": 0.0029695999999999998,
+  "thought": "**Analyzing the Administrative Reorganization of \"Xã Hồng Giang\"**\n\nOkay, so the user wants to know the new administrative unit for \"Xã Hồng Giang, Huyện Đông Hưng, Tỉnh Thái Bình.\" My initial thought is to break this down systematically. First, I identify the old province and district: \"Tỉnh Thái Bình\" and \"Huyện Đông Hưng.\" Then, I know I need to check for any province mergers, so I quickly consult the relevant resolutions (60-NQ/TW). The merger of Thái Bình and Hưng Yên into \"Tỉnh Hưng Yên\" is immediately apparent. This simplifies things.\n\nNext, I understand the instruction to eliminate all districts. Therefore, \"Huyện Đông Hưng\" no longer exists as a standalone administrative unit. Now, the key is to pinpoint the new ward for the old \"Xã Hồng Giang.\" I turn my attention to the \"Other resolutions\" section, focusing on resolutions affecting the *new* province, \"Tỉnh Hưng Yên.\"\n\nSpecifically, I search for the resolution concerning the restructuring of communes in Hưng Yên. I quickly find \"1666/NQ-UBTVQH15,\" which seems promising. Sure enough, line 60 of this resolution clearly states the merger of \"Xã Hồng Giang\" with several other communes to form the new commune: \"Xã Nam Tiên Hưng.\" Bingo! This also confirms \"Huyện Đông Hưng\" is addressed in lines 53 and 56.\n\nTo be extra certain, I cross-reference this with the \"New wards\" data. Searching for \"Xã Nam Tiên Hưng\" confirms its name, code, and province (\"Tỉnh Hưng Yên\"), further solidifying the match. I see the code, which is \"12763.\"\n\nFinally, I'll construct the JSON output. I'm going to set `province_name` to \"Tỉnh Hưng Yên,\" `ward_name` to \"Xã Nam Tiên Hưng,\" and `ward_code` to \"12763.\" The `citation` will be \"1666/NQ-UBTVQH15, Line 60\" to maintain clear traceability. The `confidence` level is definitely \"high,\" because the match is direct, and the restructuring is explicitly stated.\n\nBefore finalizing, it's always prudent to double-check. I'll search through other resolutions just in case \"Hồng Giang\" appears elsewhere. I see \"1658/NQ-UBTVQH15\" from Bắc Ninh, but that references a *phường* Hồng Giang, not a *xã*, and it's in a different province. So, there's no ambiguity. The conclusion is clear and well-supported by the evidence.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "6. Hợp nhất tỉnh Hưng Yên và tỉnh Thái Bình, lấy tên là tỉnh Hưng Yên"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "12763",
+      "ward_name": "Xã Nam Tiên Hưng"
+    },
+    {
+      "citation": {
+        "header": "1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên",
+        "line": "60. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Liên Hoa, Hồng Giang, Trọng Quan và Minh Phú thành xã mới có tên gọi là xã Nam Tiên Hưng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "12763",
+      "ward_name": "Xã Nam Tiên Hưng"
+    }
+  ]
+}

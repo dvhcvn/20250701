@@ -1,0 +1,18 @@
+{
+  "address": "Xã Trung Sơn, Huyện Yên Sơn, Tỉnh Tuyên Quang",
+  "ellapsedInMs": 6127,
+  "estimatedCost": 0.0035148999999999996,
+  "thought": "**Determining the New Ward for the Given Address**\n\nOkay, so I've got \"Xã Trung Sơn, Huyện Yên Sơn, Tỉnh Tuyên Quang\" as the old address, and I need to find the corresponding new ward. My approach is pretty standard for this type of problem: systematically check the relevant resolutions and cross-reference them with the list of new wards.\n\nFirst things first, the province: \"Tỉnh Tuyên Quang\".  Easy enough.  Now, I'm thinking, are there any province-level mergers to deal with?  I checked \"60-NQ/TW,\" both the merger and no-merger versions.  Turns out, Tuyên Quang is still Tuyên Quang, no changes there. Good.\n\nNext, I zeroed in on the \"Other resolutions\" concerning Tuyên Quang, specifically looking for the relevant resolution for \"Xã Trung Sơn.\"  Bingo!  Resolution 1684/NQ-UBTVQH15, line 27, it clearly states that the old \"Trung Sơn\" (along with others) is being incorporated into a *new* \"xã Trung Sơn\".  Crucially, the *name* stays the same, even if the composition changes. This is a very good sign.\n\nThen, to be thorough, I cross-referenced this finding with the \"New wards\" list.  I searched for \"Xã Trung Sơn\" within \"Tỉnh Tuyên Quang,\" and boom! There it is: ward code `02458`. The fact that it's in the list gives me another layer of confidence.\n\nFinally, putting it all together: The resolution directly links the old \"Trung Sơn\" to the *new* \"Trung Sơn\", and the ward code is present in the database.  This is a very high-confidence match. I'm going to construct the JSON output reflecting that:  The new ward is Xã Trung Sơn, with ward code 02458, in Tỉnh Tuyên Quang.  This old \"Xã Trung Sơn\" *is* part of the new one.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "27. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đạo Viện, Công Đa và Trung Sơn thành xã mới có tên gọi là xã Trung Sơn."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "02458",
+      "ward_name": "Xã Trung Sơn"
+    }
+  ]
+}

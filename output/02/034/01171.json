@@ -1,0 +1,28 @@
+{
+  "address": "Xã Tân Quang, Huyện Bắc Quang, Tỉnh Hà Giang",
+  "ellapsedInMs": 8368,
+  "estimatedCost": 0.0037427000000000003,
+  "thought": "**Identifying the New Administrative Unit for \"Xã Tân Quang, Huyện Bắc Quang, Tỉnh Hà Giang\"**\n\nOkay, here's what I've figured out.  The user needs the current administrative unit for an old address.  It's clear the old address, \"Xã Tân Quang, Huyện Bắc Quang, Tỉnh Hà Giang\", is affected by some administrative changes. I need to pinpoint the *new* ward.\n\nFirst, I noticed the province changed. Resolution `60-NQ/TW` indicates that \"Tỉnh Hà Giang\" merged with another province, becoming \"Tỉnh Tuyên Quang.\" So, the key is now within Tuyên Quang.\n\nNow, I'll focus on the \"Other resolutions\" data, looking for clues related to \"Tân Quang\" and \"Bắc Quang\" within the context of the newly formed province. Resolution 1684/NQ-UBTVQH15 catches my attention: specifically, line 78. This one explicitly mentions \"Xã Tân Quang\" and \"Huyện Bắc Quang\" in Tuyên Quang.  It states that the old \"Xã Tân Quang\" is merged with \"Tân Thành\" and \"Tân Lập\" into a *new* \"Xã Tân Quang\". This strongly suggests this is the new administrative unit for the old address.  The fact that \"Huyện Bắc Quang\" is also explicitly mentioned solidifies this.\n\nWhile there are other mentions of \"Tân Quang,\" like in Resolution 106, that's related to the formation of \"Phường Minh Xuân\", which seems to be a different type of unit and likely in a different locale. That's a distraction.  It doesn't directly address the old \"Xã Tân Quang\".\n\nFinally, I checked the \"New wards\" data.  There's a perfect match: `{\"ward_code\":\"01171\",\"ward_name\":\"Xã Tân Quang\",\"province_name\":\"Tỉnh Tuyên Quang\"}`.  This confirms my analysis.\n\nTherefore, my conclusion, with a high degree of confidence, is that the new administrative unit for the old address is \"Xã Tân Quang\" in \"Tỉnh Tuyên Quang.\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "1. Hợp nhất tỉnh Tuyên Quang và tỉnh Hà Giang, lấy tên là tỉnh Tuyên Quang"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "01171",
+      "ward_name": "Xã Tân Quang"
+    },
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "78. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tân Thành (huyện Bắc Quang), Tân Lập và Tân Quang thành xã mới có tên gọi là xã Tân Quang."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "01171",
+      "ward_name": "Xã Tân Quang"
+    }
+  ]
+}

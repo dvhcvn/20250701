@@ -1,0 +1,18 @@
+{
+  "address": "Xã Hải Trường, Huyện Hải Lăng, Tỉnh Quảng Trị",
+  "ellapsedInMs": 7303,
+  "estimatedCost": 0.0027801,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, here's my approach to this address mapping problem. First, I break down the provided address: \"Xã Hải Trường, Huyện Hải Lăng, Tỉnh Quảng Trị\". I need to identify the province, district, and ward. That's straightforward: Quảng Trị is the province, Hải Lăng is the district, and Hải Trường is the ward.  The prompt mentions we're \"eliminating all districts,\" meaning we're looking at direct mappings to new wards.\n\nNow, I'll dive into the resolutions. First stop: checking if the province name itself changed. The resolution \"60-NQ/TW\" doesn't list Quảng Trị for any merger. However, I noticed that the resolutions reference merging with Quảng Bình, leading me to confirm that the *new* name is still \"Tỉnh Quảng Trị\". So, no change there.\n\nNext, I'll focus on the \"Other Resolutions\" specifically targeting Quảng Trị, looking for mention of \"Xã Hải Trường\". I zero in on \"1680/NQ-UBTVQH15\". Bingo! Line 64 clearly states that \"Xã Hải Trường\" is being merged into a new ward called \"Xã Diên Sanh\" along with Diên Sanh town and Hải Định. This is the crucial piece of information.\n\nFinally, I cross-reference this new ward name, \"Xã Diên Sanh,\" with the \"New wards\" list, confirming its corresponding ward code (19681) and association with Quảng Trị.\n\nTherefore, my final output will be a JSON structure containing:\n\n*   `province_name`: \"Tỉnh Quảng Trị\"\n*   `ward_name`: \"Xã Diên Sanh\"\n*   `ward_code`: \"19681\"\n*   `confidence`: \"high\" (because the resolution directly addresses the restructuring of \"Xã Hải Trường\").\n*   `citation`: referencing \"1680/NQ-UBTVQH15\", specifically line 64, which is the definitive source for the mapping.\n\nThis seems like a pretty definitive and confident mapping given the clear statements in the resolutions.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1680/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Trị",
+        "line": "64. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Diên Sanh, xã Hải Trường và xã Hải Định thành xã mới có tên gọi là xã Diên Sanh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Trị",
+      "ward_code": "19681",
+      "ward_name": "Xã Diên Sanh"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Võ Xu, Huyện Đức Linh, Tỉnh Bình Thuận",
+  "ellapsedInMs": 7409,
+  "estimatedCost": 0.0026887000000000005,
+  "thought": "**Analyzing the Administrative Shift of \"Thị trấn Võ Xu\"**\n\nOkay, so I'm tasked with identifying the new administrative unit for \"Thị trấn Võ Xu, Huyện Đức Linh, Tỉnh Bình Thuận.\"  This means I need to sift through resolutions and the new ward list.  My approach is straightforward: break it down step-by-step.\n\nFirst, I parsed the input address.  \"Thị trấn Võ Xu\" is the old ward, and \"Tỉnh Bình Thuận\" is the old province, although the district \"Huyện Đức Linh\" is mentioned.  Since I'm only concerned with ward and province, I'll focus on those.\n\nNext, I need to account for any province-level changes.  I reviewed the province resolutions (specifically 60-NQ/TW). Bingo! I found the merger of Bình Thuận into Lâm Đồng.  This confirms \"Tỉnh Bình Thuận\" now becomes \"Tỉnh Lâm Đồng.\"\n\nWith the new province identified, I dug into the \"other_resolutions\" list.  \"1671/NQ-UBTVQH15\" caught my eye, and for good reason! It explicitly mentions \"Thị trấn Võ Xu\" and states that its area and population, along with those of xã Nam Chính and xã Vũ Hòa, will form the new \"xã Đức Linh.\"  Crucially, this resolution is associated with the province of Lâm Đồng, which lines up perfectly with the earlier province merge.\n\nNow, to confirm the new ward.  I checked the `new_wards` list, looking for \"Xã Đức Linh\" within \"Tỉnh Lâm Đồng.\"  And there it is! A perfect match: `{\"ward_code\":\"23191\",\"ward_name\":\"Xã Đức Linh\",\"province_name\":\"Tỉnh Lâm Đồng\"}`.  The ward name and code are there, confirmed.\n\nFinally, I'll structure the output JSON.  The citation will point directly to \"1671/NQ-UBTVQH15\" because that's where the old ward's transformation is explicitly defined.  The confidence level is \"high\" because this is a direct, unambiguous mapping. I'll populate the  `province_name` with \"Tỉnh Lâm Đồng\" and the  `ward_code` and `ward_name` from the new ward entry.\n\nLet's double-check. The address is clear. The province changes are confirmed.  The resolution directly states the ward transformation. And, the new ward is in the new province and listed in the provided data. Therefore, I can confidently construct the answer. Everything checks out.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng",
+        "line": "74. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Võ Xu, xã Nam Chính và xã Vũ Hòa thành xã mới có tên gọi là xã Đức Linh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "23191",
+      "ward_name": "Xã Đức Linh"
+    }
+  ]
+}

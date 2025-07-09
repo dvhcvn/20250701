@@ -1,0 +1,28 @@
+{
+  "address": "Phường Phùng Chí Kiên, Thành Phố Bắc Kạn, Tỉnh Bắc Kạn",
+  "ellapsedInMs": 7940,
+  "estimatedCost": 0.0030762,
+  "thought": "**Address Mapping Analysis: Phường Phùng Chí Kiên, Bắc Kạn**\n\nOkay, so I'm tasked with deciphering where \"Phường Phùng Chí Kiên, Thành Phố Bắc Kạn, Tỉnh Bắc Kạn\" now belongs administratively. First things first, I need to break down the input. I see \"Phường Phùng Chí Kiên\" as the old ward and \"Tỉnh Bắc Kạn\" as the old province. Though \"Thành Phố Bắc Kạn\" is present, I know I'm primarily dealing with province and ward-level changes as defined in these resolutions.\n\nMy initial step is to determine if any province mergers or renames affect \"Tỉnh Bắc Kạn.\" I'll check my references for something like \"60-NQ/TW.\" Bingo! I find that \"Tỉnh Bắc Kạn\" merged with \"Tỉnh Thái Nguyên\" to form a single entity: \"Tỉnh Thái Nguyên.\" This is crucial, as the fate of \"Phường Phùng Chí Kiên\" is inherently tied to the province it's in.\n\nNow, I'm going to scan the \"Other resolutions\" section specifically looking for \"Phường Phùng Chí Kiên.\" I find two relevant resolutions. One concerns \"Tỉnh Hưng Yên,\" but that's a red herring. The other, \"1683/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thái Nguyên,\" is promising. This one states that \"Phường Phùng Chí Kiên\" (along with other wards) in \"Tỉnh Thái Nguyên\" is merged to form \"phường Bắc Kạn.\" Perfect! This is the key. Since the input address is now in the province of \"Tỉnh Thái Nguyên\", it aligns perfectly with the relevant resolution.\n\nHaving established the correct resolution, I'll retrieve the details of the new ward, \"phường Bắc Kạn,\" from the \"New wards\" list. Based on the mapping data, I know the `ward_code`, `ward_name`, and new province name. I am very confident about this mapping.\n\nFinally, I'll construct the JSON output. I'll include the citation for resolution \"1683/NQ-UBTVQH15.\" The `confidence` will be \"high\" because this mapping is quite clear-cut. The `province_name` will be \"Tỉnh Thái Nguyên,\" while `ward_code` and `ward_name` will be derived from the \"phường Bắc Kạn\" new ward data.\n\nI'm feeling confident about this result. Just to be absolutely thorough, though, I'll mentally double-check the potential confusion with the \"Phường Phùng Chí Kiên\" in Hưng Yên. That looks like a distinct and different ward. This is definitely a clear-cut mapping from old address to new.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Bắc Kạn và tỉnh Thái Nguyên, lấy tên là tỉnh Thái Nguyên"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thái Nguyên",
+      "ward_code": "01843",
+      "ward_name": "Phường Bắc Kạn"
+    },
+    {
+      "citation": {
+        "header": "1683/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thái Nguyên",
+        "line": "90. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Sông Cầu, Phùng Chí Kiên, Xuất Hóa và xã Nông Thượng thành phường mới có tên gọi là phường Bắc Kạn."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thái Nguyên",
+      "ward_code": "01843",
+      "ward_name": "Phường Bắc Kạn"
+    }
+  ]
+}

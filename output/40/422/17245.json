@@ -1,0 +1,18 @@
+{
+  "address": "Xã Mậu Đức, Huyện Con Cuông, Tỉnh Nghệ An",
+  "ellapsedInMs": 8860,
+  "estimatedCost": 0.0031203,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, here's what I've got. The user's given me an old address: \"Xã Mậu Đức, Huyện Con Cuông, Tỉnh Nghệ An\" and wants me to map it to a new administrative unit. My initial thought is to break this down.\n\nFirst, I parsed the old address. I have \"Xã Mậu Đức\" as the old ward, \"Huyện Con Cuông\" (the old district, which I'll keep in mind since the prompt is about eliminating them), and \"Tỉnh Nghệ An\" as the province.\n\nNext, I checked the province resolutions, specifically 60-NQ/TW. Good news, Nghệ An is not being merged.\n\nThen, I looked at other resolutions, particularly 1678/NQ-UBTVQH15, which seems relevant.  And bingo! Line 9 clearly states \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Mậu Đức và xã Thạch Ngàn thành xã mới có tên gọi là xã Mậu Thạch.\" This is a direct hit!  \"Xã Mậu Đức\" from the old address is being merged to form \"Xã Mậu Thạch\".\n\nI also checked the new ward data to confirm, and yes, I found `{\"ward_code\":\"17239\",\"ward_name\":\"Xã Mậu Thạch\",\"province_name\":\"Tỉnh Nghệ An\"}`, which matches perfectly.\n\nNow, about \"Huyện Con Cuông\".  The prompt says to eliminate the old districts, but I need to consider that line 7 of the resolution creates \"xã Con Cuông\" from \"thị trấn Trà Lân, xã Chi Khê và xã Yên Khê.\" However, the old ward \"Xã Mậu Đức\" isn't mentioned in that line. It's in line 9, which indicates a *direct* mapping of \"Xã Mậu Đức\" to \"Xã Mậu Thạch\".\n\nTherefore, after careful analysis of the provided resolutions and data, my conclusion is that the most likely and correct new administrative unit for \"Xã Mậu Đức\" is \"Xã Mậu Thạch\". My confidence is high because of the direct mention and mapping in the relevant resolution.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1678/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Nghệ An",
+        "line": "9. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Mậu Đức và xã Thạch Ngàn thành xã mới có tên gọi là xã Mậu Thạch."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Nghệ An",
+      "ward_code": "17239",
+      "ward_name": "Xã Mậu Thạch"
+    }
+  ]
+}

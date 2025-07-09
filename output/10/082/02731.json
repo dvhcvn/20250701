@@ -1,0 +1,18 @@
+{
+  "address": "Xã Trung Lèng Hồ, Huyện Bát Xát, Tỉnh Lào Cai",
+  "ellapsedInMs": 7441,
+  "estimatedCost": 0.0028913999999999997,
+  "thought": "**Address Mapping Analysis: Vietnamese Administrative Units**\n\nOkay, so I'm tackling this address mapping problem. First, I break down the input address and identify the old administrative units: \"Xã Trung Lèng Hồ\" (ward), \"Huyện Bát Xát\" (district), and \"Tỉnh Lào Cai\" (province).  Now, the key here is to leverage the province resolutions (specifically 60-NQ/TW) and resolution 1673/NQ-UBTVQH15, along with the new ward data.\n\nInitially, I check the province resolution for \"Tỉnh Lào Cai\". Thankfully, it's straightforward: the province name remains the same after some mergers. High-confidence match there.  Then, I dive into resolution 1673/NQ-UBTVQH15, focusing on lines that mention \"Trung Lèng Hồ\". Bingo! Line 46 explicitly states that \"Xã Trung Lèng Hồ\" is merged into \"Xã Mường Hum\". Perfect.  I search for \"Xã Mường Hum\" in my new ward data and confirm the match: `{\"ward_code\":\"02728\",\"ward_name\":\"Xã Mường Hum\",\"province_name\":\"Tỉnh Lào Cai\"}`.  High confidence mapping established.\n\nNow, I look at line 52. It does discuss \"thị trấn Bát Xát\" which has become \"Xã Bát Xát\" in the new structure.  However, this doesn't directly address \"Trung Lèng Hồ\". Given the explicit merge into \"Mường Hum\", I'm fairly certain \"Xã Bát Xát\" is not the correct destination in this instance, although it is a new ward within the old district.\n\nThe main output is clear: one high-confidence match for the new ward \"Xã Mường Hum\". This approach is logical, tracing the administrative changes through the explicit resolution text. The province also mapped straightforwardly. Should I include \"Xã Bát Xát\" in the output since it's the district's name and part of the district's old capital? It is a *possible* new ward given the prompt's request for *all* candidates, but with low confidence.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai",
+        "line": "46. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Nậm Pung, Trung Lèng Hồ và Mường Hum thành xã mới có tên gọi là xã Mường Hum."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "02728",
+      "ward_name": "Xã Mường Hum"
+    }
+  ]
+}

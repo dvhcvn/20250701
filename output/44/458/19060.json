@@ -1,0 +1,18 @@
+{
+  "address": "Phường Quảng Long, Thị xã Ba Đồn, Tỉnh Quảng Bình",
+  "ellapsedInMs": 8380,
+  "estimatedCost": 0.0033651999999999996,
+  "thought": "**My Analysis of the Address Mapping**\n\nOkay, so I'm presented with an old Vietnamese address and I need to translate it to the current administrative structure, focusing on province, district (even though districts are being phased out in this context), and ward. The input address is \"Phường Quảng Long, Thị xã Ba Đồn, Tỉnh Quảng Bình.\"\n\nMy first step is to identify the components: \"Phường Quảng Long\" is the old ward, and \"Tỉnh Quảng Bình\" is the old province.  I'll start with the province resolutions to see if \"Tỉnh Quảng Bình\" has been renamed. Looking at the resolutions, I quickly find Resolution 60-NQ/TW, which merges \"Tỉnh Quảng Bình\" with \"Tỉnh Quảng Trị\" to form \"Tỉnh Quảng Trị.\"\n\nNow, I shift my focus to the \"Other resolutions\" to find what happened to \"Phường Quảng Long\" within the context of the merged province, \"Tỉnh Quảng Trị\".  I'm scanning the resolutions for mentions of \"Quảng Long\" and making sure the resolution applies to the relevant province.\n\n*   `1657/NQ-UBTVQH15`:  Mentions \"xã Quang Long\" in Cao Bằng, clearly irrelevant.\n*   `1677/NQ-UBTVQH15`:  Concerns Quảng Ngãi, not relevant.\n*   `1679/NQ-UBTVQH15`:  Mentions \"xã Quảng Long\" in Quảng Ninh, also irrelevant.\n*   `1680/NQ-UBTVQH15`:  This is the key.  It's about Quảng Trị (the new name), so I'm zeroing in. I'm focusing on line 72:  \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Quảng Phong, Quảng Long, Ba Đồn và xã Quảng Hải thành phường mới có tên gọi là **phường Ba Đồn**.\" Bingo! \"Phường Quảng Long\" is explicitly mentioned as merging into \"phường Ba Đồn.\"  This is exactly what I needed.\n*   `1686/NQ-UBTVQH15`:  Mentions \"Quảng Long\" in Thanh Hóa, which is again, irrelevant.\n\nSo, the definitive resolution is `1680/NQ-UBTVQH15`, line 72. \"Phường Quảng Long\" is now part of \"phường Ba Đồn.\"  I now know that the `province_name` is \"Tỉnh Quảng Trị\", and I have a high `confidence` in this match. I can also confidently map \"Phường Quảng Long\" to \"phường Ba Đồn\".\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1680/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Trị",
+        "line": "72. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Quảng Phong, Quảng Long, Ba Đồn và xã Quảng Hải thành phường mới có tên gọi là **phường Ba Đồn**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Trị",
+      "ward_code": "19009",
+      "ward_name": "Phường Ba Đồn"
+    }
+  ]
+}

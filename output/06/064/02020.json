@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Bằng Lũng, Huyện Chợ Đồn, Tỉnh Bắc Kạn",
+  "ellapsedInMs": 7026,
+  "estimatedCost": 0.0025087,
+  "thought": "**Analysis of Administrative Unit Reorganization**\n\nOkay, so I'm tasked with figuring out the new administrative unit for an old address.  I've got the old address: \"Thị trấn Bằng Lũng\" in \"Huyện Chợ Đồn,\" \"Tỉnh Bắc Kạn.\"  The goal is to eliminate districts entirely in the output, so I'll keep that information for context but won't use it directly.\n\nFirst, I looked at the province.  Resolutions like 60-NQ/TW are key here.  Bắc Kạn isn't explicitly excluded from reorganization.  Aha! It's *included* in a merger: \"Hợp nhất tỉnh Bắc Kạn và tỉnh Thái Nguyên, lấy tên là tỉnh Thái Nguyên.\"  So, my new province is now \"Tỉnh Thái Nguyên.\"\n\nNext, I zeroed in on the ward.  I scanned the \"Other resolutions\" for mentions of \"Thị trấn Bằng Lũng.\"  Success! Resolution 1683/NQ-UBTVQH15 directly addresses it.  The resolution line clearly states that \"Thị trấn Bằng Lũng\" and surrounding areas are being reorganized into a new unit called \"**xã Chợ Đồn**.\"\n\nNow, I checked my \"New Wards Data.\"  I was looking for \"Xã Chợ Đồn\" in \"Tỉnh Thái Nguyên.\"  Bingo!  I found it, with a specific ward code: `{\"ward_code\":\"02020\",\"ward_name\":\"Xã Chợ Đồn\",\"province_name\":\"Tỉnh Thái Nguyên\"}`.\n\nPutting it all together, I have a clear and confident mapping. The resolution provides the necessary citation information.  I've got the new province, the correct ward code and name, and the high confidence level because the resolution explicitly addresses the change. I need to make sure the province mapping, as described in 60-NQ/TW matches the new ward data.\n\nSo, Old province: \"Tỉnh Bắc Kạn\".  60-NQ/TW: Merger into \"Tỉnh Thái Nguyên\". The new ward data has \"Tỉnh Thái Nguyên\". This is consistent.\n\nThe resolution and new ward data align perfectly. I am ready to construct the final output.  Confidence is very high, given the explicit connection between the old ward and the new, confirmed by the relevant resolution.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1683/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thái Nguyên",
+        "line": "57. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Bằng Lũng và các xã Ngọc Phái, Phương Viên,Bằng Lãng thành xã mới có tên gọi là xã Chợ Đồn."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thái Nguyên",
+      "ward_code": "02020",
+      "ward_name": "Xã Chợ Đồn"
+    }
+  ]
+}

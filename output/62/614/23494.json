@@ -1,0 +1,18 @@
+{
+  "address": "Xã Đắk Tờ Re, Huyện Kon Rẫy, Tỉnh Kon Tum",
+  "ellapsedInMs": 7751,
+  "estimatedCost": 0.0025508,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm being asked to figure out the new administrative location of a place given an old Vietnamese address. It seems like a classic spatial transformation problem, and I'm ready to dive in.\n\nFirst, I need to figure out what the original address components are. I can easily identify the old ward as \"Xã Đắk Tờ Re,\" the district as \"Huyện Kon Rẫy\" (although that's just contextually important since we're told districts are being eliminated), and the province as \"Tỉnh Kon Tum.\"\n\nNow, I'm going to look at the resolutions to determine the changes.  I begin by checking the province for any merger or name changes based on Resolution 60-NQ/TW. Ah, \"Tỉnh Kon Tum\" is part of a merger with Quảng Ngãi! Now I know that the new province is \"Tỉnh Quảng Ngãi.\"\n\nWith the province settled, I'll switch gears and analyze the other resolutions, specifically focusing on the one for \"Tỉnh Quảng Ngãi\" and how it impacts the ward.  Line 77 of resolution 1677/NQ-UBTVQH15 gives me the key. It specifically states that \"Xã Đăk Tờ Re\" (note the spelling variation) is being combined with two other wards to form a new ward named \"xã Kon Braih.\"  That's a bingo!\n\nNext, I'll look at the new ward data. I search for \"xã Kon Braih\" under \"Tỉnh Quảng Ngãi,\" and boom, I find a match with the code \"23497\"! The data confirms the resolution's findings. I can check for any related entities from the list to be thorough. I don't see any other connection to the original ward, so this seems pretty straightforward.\n\nPutting it all together, I'm confident in my mapping: The original address now belongs to the province of \"Tỉnh Quảng Ngãi,\" and its ward is \"Xã Kon Braih,\" which has a code of \"23497.\" This mapping is directly supported by the relevant resolution (1677/NQ-UBTVQH15) and should have a high confidence rating. The minor spelling variant \"Đắk\" vs \"Đăk\" is negligible in this context since it's a very common occurrence in Vietnamese.\n\nI'm ready to construct the output!\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1677/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ngãi",
+        "line": "77. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đăk Tờ Re, Đăk Ruồng và Tân Lập thành xã mới có tên gọi là xã Kon Braih."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ngãi",
+      "ward_code": "23497",
+      "ward_name": "Xã Kon Braih"
+    }
+  ]
+}

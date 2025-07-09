@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tiến Lợi, Thành phố Phan Thiết, Tỉnh Bình Thuận",
+  "ellapsedInMs": 8107,
+  "estimatedCost": 0.0028432999999999996,
+  "thought": "**Address Mapping Analysis: Xã Tiến Lợi, Thành phố Phan Thiết, Tỉnh Bình Thuận**\n\nAlright, let's break this down systematically. The user wants to map an old address to the new administrative units, which is a common task.\n\nFirst, I see the old province is \"Tỉnh Bình Thuận\". My immediate thought is to check if there are any resolutions regarding province mergers. Sure enough, resolution 60-NQ/TW shows that \"Tỉnh Bình Thuận\" was merged into \"Tỉnh Lâm Đồng\". That's our starting point.\n\nNext, I need to pinpoint the old ward, which is \"Xã Tiến Lợi\". Now, I must focus on finding any resolutions that address \"Xã Tiến Lợi\" within the new province, \"Tỉnh Lâm Đồng\". Resolution 1671/NQ-UBTVQH15 catches my eye. It specifically mentions that \"Xã Tiến Lợi\" and \"Xã Hàm Mỹ\" have been merged to form a new ward called \"Xã Tuyên Quang\". This is a direct hit!\n\nLooking at the provided \"New wards\" list, I can confirm that \"Xã Tuyên Quang\" in \"Tỉnh Lâm Đồng\" has a `ward_code` of \"22963\".\n\nNow, let's construct the output. We have a high degree of confidence since this is a direct match based on the resolution's information.  I'll ensure the JSON output includes:\n\n*   `province_name`: \"Tỉnh Lâm Đồng\" (from the province merger).\n*   `ward_name`: \"Xã Tuyên Quang\" (from resolution 1671/NQ-UBTVQH15).\n*   `ward_code`: \"22963\".\n*   `confidence`: \"high\".\n*   `citation`: The specific line from resolution 1671/NQ-UBTVQH15.\n\nI quickly checked the additional provided information, especially regarding \"Thành phố Phan Thiết\". While relevant in the context of the initial address, the prompt specifies to remove district information, so the resolution's mention of \"Phường Phan Thiết\" isn't what we are looking for because \"Xã Tiến Lợi\" doesn't map to a ward of Phan Thiết in Lâm Đồng. Resolutions 1684/NQ-UBTVQH15 (for Tuyên Quang), \"Xã Tân Quang\", and \"Phường Minh Xuân\" (both in Tỉnh Tuyên Quang) are irrelevant since the province here is \"Tỉnh Lâm Đồng\".\n\nTherefore, after a thorough review, my conclusion is clear: the address should map to \"Xã Tuyên Quang\" in \"Tỉnh Lâm Đồng\". The mapping is very precise and clear.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng",
+        "line": "58. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Tiến Lợi và xã Hàm Mỹ thành xã mới có tên gọi là xã Tuyên Quang."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "22963",
+      "ward_name": "Xã Tuyên Quang"
+    }
+  ]
+}

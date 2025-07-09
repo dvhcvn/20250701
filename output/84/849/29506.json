@@ -1,0 +1,28 @@
+{
+  "address": "Xã Long Hiệp, Huyện Trà Cú, Tỉnh Trà Vinh",
+  "ellapsedInMs": 8017,
+  "estimatedCost": 0.0033479000000000004,
+  "thought": "**Navigating Vietnamese Administrative Changes: A Mapping Exercise**\n\nOkay, so I've got this old Vietnamese address, \"Xã Long Hiệp, Huyện Trà Cú, Tỉnh Trà Vinh,\" and the task is to map it to the new administrative structure. Let's break it down:\n\nFirst, I identified the key components: \"Xã Long Hiệp\" (the ward) and \"Tỉnh Trà Vinh\" (the province) within the old system. The initial step is always to check those crucial province-level resolutions, the ones that often reshuffle things drastically. Sure enough, Resolution 60-NQ/TW shows that \"Tỉnh Trà Vinh\" merged with other provinces to form \"Tỉnh Vĩnh Long.\" Okay, so the *new* province is Vĩnh Long.\n\nNext, I needed to check if \"Xã Long Hiệp\" underwent any changes. I scanned through various resolutions, but most were irrelevant – they mentioned \"Long Hiệp\" in the context of other provinces like Quảng Ngãi and Tây Ninh. But then, Bingo! Resolution 1687/NQ-UBTVQH15 for Vĩnh Long held the key: line 54 explicitly states that \"Xã Long Hiệp,\" along with two others, formed a *new* \"Xã Long Hiệp\". The name remains, but the composition likely changed.\n\nThis is where the new ward data comes in. I'm looking for a ward with `province_name: \"Tỉnh Vĩnh Long\"` and `ward_name: \"Xã Long Hiệp\"`. And there it is: `{\"ward_code\":\"29506\",\"ward_name\":\"Xã Long Hiệp\",\"province_name\":\"Tỉnh Vĩnh Long\"}`. This is a direct match, confirming that the old \"Xã Long Hiệp\" corresponds to this new ward within Vĩnh Long.\n\nIt's worth noting the potential ambiguity with \"Huyện Trà Cú\" mentioned in the old address. Resolution 1687 also mentioned \"thị trấn Trà Cú\" being incorporated into \"Xã Trà Cú\". This isn't directly relevant to *this* address, as it's about the town, not the entire district, but it does show how the changes were structured.\n\nSo, in essence, I've successfully mapped the old \"Xã Long Hiệp\" in \"Tỉnh Trà Vinh\" to the new \"Xã Long Hiệp\" within \"Tỉnh Vĩnh Long\" using the relevant resolutions and data. It's a clear illustration of how these administrative shifts work. I feel confident about that.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "20. Hợp nhất tỉnh Bến Tre, tỉnh Vĩnh Long và tỉnh Trà Vinh; lấy tên là tỉnh Vĩnh Long"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "29506",
+      "ward_name": "Xã Long Hiệp"
+    },
+    {
+      "citation": {
+        "header": "1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long",
+        "line": "54. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Ngọc Biên, Tân Hiệp và Long Hiệp thành xã mới có tên gọi là **xã Long Hiệp**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "29506",
+      "ward_name": "Xã Long Hiệp"
+    }
+  ]
+}

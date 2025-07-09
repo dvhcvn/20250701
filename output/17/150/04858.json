@@ -1,0 +1,28 @@
+{
+  "address": "Xã Đoàn Kết, Huyện Đà Bắc, Tỉnh Hoà Bình",
+  "ellapsedInMs": 8237,
+  "estimatedCost": 0.0039929,
+  "thought": "**Analysis of Address Change: Xã Đoàn Kết, Huyện Đà Bắc, Tỉnh Hoà Bình**\n\nMy initial task is to determine the new administrative unit for the provided address. I begin by identifying \"Tỉnh Hoà Bình\" as the old province.  My first step is to check for any province mergers or name changes documented in relevant resolutions (specifically, 60-NQ/TW).  I quickly find that \"Tỉnh Hoà Bình\" was merged with \"tỉnh Vĩnh Phúc\" and \"tỉnh Phú Thọ\" to form \"Tỉnh Phú Thọ\". This confirms the new province.\n\nNext, I focus on the old ward, \"Xã Đoàn Kết,\" and the old district \"Huyện Đà Bắc\".  Since Đà Bắc is being reorganized, I know that simply translating the old ward name may not be sufficient. I need to thoroughly search for any mentions of \"Đoàn Kết\" and \"Đà Bắc\" within resolutions concerning administrative changes. My strategy is to check all resolutions, particularly looking for lines that might describe mergers or name changes for the old ward.\n\nI found resolution \"1676/NQ-UBTVQH15,\" which specifically addresses the rearrangement of wards in \"Tỉnh Phú Thọ.\"  This resolution contains several entries, but line 97 is the crucial one: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đoàn Kết (huyện Đà Bắc), Đồng Ruộng, Trung Thành và Yên Hoà thành xã mới có tên gọi là xã Quy Đức.\"  **This is a direct hit!** The old ward \"Xã Đoàn Kết (huyện Đà Bắc)\" is being merged into the new ward, \"Xã Quy Đức.\"  This means my initial assumptions are correct, and I've found a definitive match.\n\nConfirming this, I then search for the \"ward_code\" associated with \"Xã Quy Đức\" in \"Tỉnh Phú Thọ,\" which gives me `{\"ward_code\":\"04873\",\"ward_name\":\"Xã Quy Đức\",\"province_name\":\"Tỉnh Phú Thọ\"}`.\n\nI feel confident in my conclusions because of the direct correlation between the old ward and district information from the original address to the resolution, and because it is an explicit merge.\n\nI double-checked other potential \"Đoàn Kết\" references to ensure there were no conflicting changes or other possible outcomes, but my conclusion is solid. Therefore, my final output is a JSON structure linking the information directly from the resolution and indicating a high level of confidence in the final answer:\n```json\n{\n  \"citation\": {\n    \"header\": \"1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ\",\n    \"line\": \"97. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đoàn Kết (huyện Đà Bắc), Đồng Ruộng, Trung Thành và Yên Hoà thành xã mới có tên gọi là xã Quy Đức.\"\n  },\n  \"confidence\": \"high\",\n  \"province_name\": \"Tỉnh Phú Thọ\",\n  \"ward_code\": \"04873\",\n  \"ward_name\": \"Xã Quy Đức\"\n}\n```\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "4. Hợp nhất tỉnh Vĩnh Phúc, tỉnh Phú Thọ và tỉnh Hoà Bình; lấy tên là tỉnh Phú Thọ"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "",
+      "ward_name": ""
+    },
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "97. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đoàn Kết (huyện Đà Bắc), Đồng Ruộng, Trung Thành và Yên Hoà thành xã mới có tên gọi là xã Quy Đức."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "04873",
+      "ward_name": "Xã Quy Đức"
+    }
+  ]
+}

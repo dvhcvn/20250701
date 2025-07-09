@@ -1,0 +1,18 @@
+{
+  "address": "Xã Minh Hải, Huyện Văn Lâm, Tỉnh Hưng Yên",
+  "ellapsedInMs": 5490,
+  "estimatedCost": 0.0021409,
+  "thought": "**Determining the New Ward for \"Xã Minh Hải\"**\n\nOkay, so I've been given an old address: \"Xã Minh Hải, Huyện Văn Lâm, Tỉnh Hưng Yên,\" and my task is to figure out its new administrative unit, the ward.  I'll start by breaking this down logically.\n\nFirst, I need to pinpoint the province. It's clearly \"Tỉnh Hưng Yên.\"  Now, I'll consult the province resolutions, specifically \"60-NQ/TW.\" Thankfully, Hưng Yên is mentioned. It discusses a merger with Thái Bình, but ultimately the province name *remains* \"Tỉnh Hưng Yên.\" Good to know.\n\nNext, I need to focus on the ward itself, \"Xã Minh Hải.\" Time to scour the \"Other Resolutions.\" I'm looking for anything about Hưng Yên and Minh Hải.  Bingo! \"1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên\" looks promising.  Scrolling down, Line 28 pops out: it mentions the merger of Minh Hải, Chỉ Đạo, and part of Lạc Đạo, *forming a new ward called \"Xã Lạc Đạo.\"* That's the key.\n\nNow, I'll cross-reference this information with the \"New Wards\" data. I'm searching for \"Xã Lạc Đạo\" within \"Tỉnh Hưng Yên.\"  There it is, a perfect match: `{\"ward_code\":\"11992\",\"ward_name\":\"Xã Lạc Đạo\",\"province_name\":\"Tỉnh Hưng Yên\"}`.  That's my new ward!\n\nWith high confidence, I'll construct my JSON output. The cited resolution that guided my process is `1666/NQ-UBTVQH15`. The new province is \"Tỉnh Hưng Yên,\" the ward code is \"11992,\" and the new ward name is \"Xã Lạc Đạo.\"  Done.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên",
+        "line": "28. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Chỉ Đạo, xã Minh Hải và một phần diện tích tự nhiên, quy mô dân số của xã Lạc Đạo thành xã mới có tên gọi là xã Lạc Đạo."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "11992",
+      "ward_name": "Xã Lạc Đạo"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Xuân Lũng, Huyện Lâm Thao, Tỉnh Phú Thọ",
+  "ellapsedInMs": 8304,
+  "estimatedCost": 0.0033537,
+  "thought": "**My Analysis of the Administrative Unit Change**\n\nOkay, let's break this down. The user provided an old address: \"Xã Xuân Lũng, Huyện Lâm Thao, Tỉnh Phú Thọ.\"  My task is to pinpoint the *new* administrative unit based on provided resolutions and a list of new wards.\n\nFirst, I parsed the old address. I'm focusing on \"Xã Xuân Lũng\" (the old ward) and \"Tỉnh Phú Thọ\" (the old province) because the district level (\"Huyện Lâm Thao\") is irrelevant, according to the prompt.\n\nNext, I looked at the province-level changes outlined in Resolution 60-NQ/TW. I checked if \"Tỉnh Phú Thọ\" was flagged for any mergers. It wasn't in the \"not merged\" list, but it *was* in the merger list.  The resolution stated that \"Tỉnh Phú Thọ\" merged with Vĩnh Phúc and Hòa Bình, and the new province retained the name \"Phú Thọ.\" So, the province name remains unchanged.\n\nNow, I delved into the specific ward-level resolutions. I had two resolutions to check: 1658/NQ-UBTVQH15 (Bắc Ninh) and 1676/NQ-UBTVQH15 (Phú Thọ). The Bắc Ninh resolution was a dead end. However, 1676/NQ-UBTVQH15 (Phú Thọ) was key.  Line 3 of the resolution explicitly stated a merger involving \"Xã Xuân Lũng\":  \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tiên Kiên, Xuân Huy và Xuân Lũng thành xã mới có tên gọi là **xã Xuân Lũng**.\"  This clearly states \"Xã Xuân Lũng\" was part of a consolidation, but the resulting new ward retained the name \"Xã Xuân Lũng.\" This is crucial.\n\nFinally, I checked the provided list of new wards. I was searching for a ward with the name \"Xã Xuân Lũng\" in the province \"Tỉnh Phú Thọ.\"  Several options were not relevant, but eventually, I found a matching entry: a ward named \"Xã Xuân Lũng\" within \"Tỉnh Phú Thọ,\" with the code \"08500.\"\n\nTherefore, my conclusion is clear: the new administrative unit is \"Xã Xuân Lũng\" in \"Tỉnh Phú Thọ,\" with ward code \"08500.\" This is a very high-confidence match, supported by Resolution 1676/NQ-UBTVQH15, specifically line 3. I've prepared the following JSON output that accurately reflects the findings.  The confidence in this result is high given the explicit resolution.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "3. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tiên Kiên, Xuân Huy và Xuân Lũng thành xã mới có tên gọi là xã Xuân Lũng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "08500",
+      "ward_name": "Xã Xuân Lũng"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Chi Nê, Huyện Lạc Thủy, Tỉnh Hoà Bình",
+  "ellapsedInMs": 7061,
+  "estimatedCost": 0.0025364999999999997,
+  "thought": "**Analysis of Administrative Unit Changes**\n\nOkay, let's break this down. My goal here is to accurately map the old address \"Thị trấn Chi Nê, Huyện Lạc Thủy, Tỉnh Hoà Bình\" to its new administrative unit.  The key is understanding the province and ward changes based on the provided resolutions.\n\nFirst, I need to identify the initial components of the address: \"Thị trấn Chi Nê\" (ward), \"Huyện Lạc Thủy\" (district - which I'm instructed to ignore for the final output, but it helps for context), and \"Tỉnh Hoà Bình\" (province).\n\nNext, I need to consider provincial changes. Checking the province resolutions (60-NQ/TW), I see that \"Tỉnh Hoà Bình\" is not on the \"not merged\" list, but it *is* listed under \"merged units\".  Specifically, it details a merger with \"Vĩnh Phúc\" and \"Phú Thọ\", becoming \"Phú Thọ.\" So, \"Hoà Bình\" is now \"Phú Thọ\".\n\nNow, onto the ward level. Resolution 1676/NQ-UBTVQH15 seems crucial.  I'm looking for \"Thị trấn Chi Nê\" within the resolution text. And bingo!  Line 113 states clearly that the \"Thị trấn Chi Nê\" is being absorbed into a new \"Xã Lạc Thủy\". The header also specifies \"Tỉnh Phú Thọ\", which aligns perfectly with my province analysis.\n\nFinally, I need to confirm the new ward details.  Checking the \"new wards\" list for \"Xã Lạc Thủy\" under \"Tỉnh Phú Thọ\" gives me a code of \"05392\".\n\nTherefore, my final JSON output will be:\n\n*   `province_name`: \"Tỉnh Phú Thọ\"\n*   `ward_name`: \"Xã Lạc Thủy\"\n*   `ward_code`: \"05392\"\n*   `citation`: `\"header\": \"1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ\", \"line\": \"113. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Chi Nê và các xã Đồng Tâm, Khoan Dụ, Yên Bồng thành xã mới có tên gọi là xã Lạc Thủy.\"`\n*   `confidence`: \"high\" (because it's a clear and direct mapping.)\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "113. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Chi Nê và các xã Đồng Tâm, Khoan Dụ, Yên Bồng thành xã mới có tên gọi là xã Lạc Thủy."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "05392",
+      "ward_name": "Xã Lạc Thủy"
+    }
+  ]
+}

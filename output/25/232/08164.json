@@ -1,0 +1,18 @@
+{
+  "address": "Xã Hanh Cù, Huyện Thanh Ba, Tỉnh Phú Thọ",
+  "ellapsedInMs": 7953,
+  "estimatedCost": 0.0029454999999999998,
+  "thought": "**Determining the New Ward for the Given Address**\n\nOkay, so I'm presented with the task of finding the new administrative unit for \"Xã Hanh Cù, Huyện Thanh Ba, Tỉnh Phú Thọ.\"  My initial focus is on the province and ward: \"Tỉnh Phú Thọ\" and \"Xã Hanh Cù.\"\n\nFirst, I need to check the province resolutions related to 60-NQ/TW to see if \"Tỉnh Phú Thọ\" was involved in any mergers.  My initial glance at 60-NQ/TW proved inaccurate, so I re-read the resolutions. This revealed \"4. Hợp nhất tỉnh Vĩnh Phúc, tỉnh Phú Thọ và tỉnh Hoà Bình; lấy tên là tỉnh Phú Thọ\".  This tells me that \"Tỉnh Phú Thọ\" is, in fact, the name *after* a merger of several provinces, including Phú Thọ itself.  Therefore, it's correct to use \"Tỉnh Phú Thọ\" as the province name.\n\nNext, I need to investigate any resolutions related to ward-level changes.  I begin scanning the list of `other resolutions`, focusing on those concerning \"Tỉnh Phú Thọ\".  I identified \"1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ\".  Line 11 of this resolution is crucial: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Thanh Ba và các xã Đồng Xuân, Hanh Cù, Vân Lĩnh thành xã mới có tên gọi là **xã Thanh Ba**.\"\n\nThis is a direct match!  \"Xã Hanh Cù\" is specifically listed as being merged into the new ward, \"xã Thanh Ba.\"\n\nNow I need to cross-reference this information with the `New wards` list to confirm the details.  The entry I found: `{\"ward_code\":\"08152\",\"ward_name\":\"Xã Thanh Ba\",\"province_name\":\"Tỉnh Phú Thọ\"}`. It's a perfect match!  The ward name, code, and province align with the resolution's findings.\n\nBased on this analysis, I can confidently construct the JSON output: the `citation.header` will be \"1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ\", with `citation.line` as \"11. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Thanh Ba và các xã Đồng Xuân, Hanh Cù, Vân Lĩnh thành xã mới có tên gọi là **xã Thanh Ba**.\" The `confidence` level will be \"high\" due to the explicit mapping in the resolution.  The `province_name` will be \"Tỉnh Phú Thọ\",  the `ward_code` will be \"08152\", and the `ward_name` will be \"Xã Thanh Ba\".\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "11. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Thanh Ba và các xã Đồng Xuân, Hanh Cù, Vân Lĩnh thành xã mới có tên gọi là xã Thanh Ba."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "08152",
+      "ward_name": "Xã Thanh Ba"
+    }
+  ]
+}

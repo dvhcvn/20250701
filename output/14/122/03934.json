@@ -1,0 +1,28 @@
+{
+  "address": "Xã Mường Lang, Huyện Phù Yên, Tỉnh Sơn La",
+  "ellapsedInMs": 6091,
+  "estimatedCost": 0.0027909000000000002,
+  "thought": "**Finding the New Administrative Unit**\n\nOkay, so I'm presented with the old address \"Xã Mường Lang, Huyện Phù Yên, Tỉnh Sơn La\" and the task of figuring out its new administrative unit. My initial thought process is to break this down methodically. First, I need to pinpoint the province – \"Tỉnh Sơn La\".  Then, the best approach is to cross-reference this information with any relevant resolutions regarding administrative boundary adjustments.\n\nI'll start with the most comprehensive set of resolutions, such as 60-NQ/TW, to see if Sơn La is involved in any large-scale mergers or reorganizations. Good, it's listed under \"Các đơn vị hành chính cấp tỉnh không thực hiện sáp nhập\", so it seems that at the provincial level, things are stable. That makes things easier to manage.\n\nNext, I'll drill down into resolutions concerning ward changes within Sơn La. I'll search for \"Xã Mường Lang\" specifically. Aha! Resolution \"1681/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Sơn La\" looks promising. Looking further in the text reveals the smoking gun: line 35 confirms \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Mường Do, Mường Lang và Mường Bang thành xã mới có tên gọi là **xã Mường Bang**.\" This explicitly states that \"Xã Mường Lang\" has been merged into a new ward called \"Xã Mường Bang\". Excellent!\n\nNow, I'll cross-reference my \"New Wards\" list with this finding. I'll search for \"Xã Mường Bang\" within \"Tỉnh Sơn La\". There it is: `{\"ward_code\":\"03943\",\"ward_name\":\"Xã Mường Bang\",\"province_name\":\"Tỉnh Sơn La\"}`. That's our match.\n\nGiven the explicit nature of the resolution, I can have a high degree of confidence in this result. Now, I need to format this information into the required JSON output.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh không thực hiện sáp nhập",
+        "line": "5. Tỉnh Sơn La"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Sơn La",
+      "ward_code": "03943",
+      "ward_name": "Xã Mường Bang"
+    },
+    {
+      "citation": {
+        "header": "1681/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Sơn La",
+        "line": "35. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Mường Do, Mường Lang và Mường Bang thành xã mới có tên gọi là xã Mường Bang."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Sơn La",
+      "ward_code": "03943",
+      "ward_name": "Xã Mường Bang"
+    }
+  ]
+}

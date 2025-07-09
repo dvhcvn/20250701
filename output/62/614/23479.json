@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Đắk Rve, Huyện Kon Rẫy, Tỉnh Kon Tum",
+  "ellapsedInMs": 6875,
+  "estimatedCost": 0.0023631,
+  "thought": "**Address Mapping Analysis: Đắk Rve - Quảng Ngãi**\n\nOkay, so I'm presented with an old address: Thị trấn Đắk Rve, Huyện Kon Rẫy, Tỉnh Kon Tum. My task is to figure out the corresponding new administrative unit. My initial thought process is to break this down systematically.\n\nFirst, I identify the key elements: the ward (Thị trấn Đắk Rve), the district (Huyện Kon Rẫy), and the province (Tỉnh Kon Tum).\n\nNext, I need to start digging through the relevant data. The provided \"Province Resolutions (60-NQ/TW)\" are my first stop.  I immediately search for \"Tỉnh Kon Tum.\" Aha!  The resolution states that Kon Tum merged with Quảng Ngãi to become \"Tỉnh Quảng Ngãi.\" This is crucial information - the old province no longer exists as a separate entity.\n\nNow, I move on to other resolutions. Specifically, I'm looking at \"1677/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ngãi.\" Considering the merger, it's highly plausible that this resolution might contain information relevant to units that were formerly part of Kon Tum. I scan for \"Thị trấn Đắk Rve.\" Bingo! Line 78 explicitly states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Đăk Rve và xã Đăk Pne thành xã mới có tên gọi là **xã Đăk Rve**.\"  The diacritic difference is minor and common in Vietnamese text processing, so this is a clear hit. The old \"Thị trấn Đắk Rve\" is now \"Xã Đắk Rve.\"\n\nFinally, I consult the \"New Wards Data.\" I search for \"xã Đắk Rve\" within \"Tỉnh Quảng Ngãi.\" The entry  `{\"ward_code\":\"23479\",\"ward_name\":\"Xã Đăk Rve\",\"province_name\":\"Tỉnh Quảng Ngãi\"}` matches perfectly! This confirms the transformation.\n\nPutting it all together, I can confidently construct the JSON output:  the new province is \"Tỉnh Quảng Ngãi,\" the new ward is \"Xã Đắk Rve\" (with the code \"23479\"). The citation will include the relevant resolution, line 78, and I can assign a \"high\" confidence level because of the direct and unambiguous mapping established by the resolution. It's a clean and decisive result.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1677/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ngãi",
+        "line": "78. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Đăk Rve và xã Đăk Pne thành xã mới có tên gọi là xã Đăk Rve."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ngãi",
+      "ward_code": "23479",
+      "ward_name": "Xã Đăk Rve"
+    }
+  ]
+}

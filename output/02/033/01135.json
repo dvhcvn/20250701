@@ -1,0 +1,18 @@
+{
+  "address": "Xã Bản Ngò, Huyện Xín Mần, Tỉnh Hà Giang",
+  "ellapsedInMs": 8360,
+  "estimatedCost": 0.0029614000000000003,
+  "thought": "**My Thought Process: Mapping an Old Vietnamese Address**\n\nOkay, so I need to translate this old address to its current administrative unit. The input is \"Tỉnh Hà Giang, Xã Bản Ngò,\" and I have some resolutions and a list of new wards to work with. Let's break this down systematically.\n\nFirst, I identified the original province and ward: \"Tỉnh Hà Giang\" and \"Xã Bản Ngò.\" I also noted the district, \"Huyện Xín Mần,\" although it's less critical given the task focuses on ward-level changes and the prompt states all districts were eliminated. I'll still keep an eye on it for potential clues, though.\n\nNext, I tackled the province-level changes. Resolution `60-NQ/TW` holds the key. Scanning through it, I found the line \"Hợp nhất tỉnh Tuyên Quang và tỉnh Hà Giang, lấy tên là tỉnh Tuyên Quang.\" Ah, that confirms \"Tỉnh Hà Giang\" is now part of \"Tỉnh Tuyên Quang.\" Excellent.\n\nMoving on to the ward level, I had to examine resolutions. I scanned `1683/NQ-UBTVQH15` (Thái Nguyên) first, but quickly realized it wasn't relevant. Then, I turned to `1684/NQ-UBTVQH15` (Tuyên Quang), which seemed more promising. This one had to be where the magic happened, given the province merger.\n\nBingo! I found the critical line, \"101. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Cốc Pài và cácxã Nàn Ma, Bản Ngò, Pà Vầy Sủ thành xã mới có tên gọi là **xã Pà Vầy Sủ**.\" This clearly indicates \"Xã Bản Ngò\" is merged into a new ward called \"Xã Pà Vầy Sủ.\" Perfect!\n\nTo solidify this mapping, I quickly searched the \"New wards\" list for \"Xã Pà Vầy Sủ.\" I found it! Specifically, `{\"ward_code\":\"01096\",\"ward_name\":\"Xã Pà Vầy Sủ\",\"province_name\":\"Tỉnh Tuyên Quang\"}`. Everything aligns beautifully.\n\nFinally, I need to construct the JSON output. The `province_name` is \"Tỉnh Tuyên Quang\" (from the province merger). The `ward_name` is \"Xã Pà Vầy Sủ\" (from resolution 101). The `ward_code` is \"01096\" (from the new wards list). My `confidence` is \"high\" – this is a clean, straightforward mapping.\n\nThe only challenge is how to structure the citations. Since the schema only allows for a single `header` and `line`, I'll need to combine the province and ward citations. I will construct a JSON that clearly shows both citing resolution details in the `citation` object using `header` and `line`.\n\nTherefore, the final output will be complete with high confidence and two crucial citations: a resolution on provincial merger and a resolution on the ward's rearrangement.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "101. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Cốc Pài và cácxã Nàn Ma, Bản Ngò, Pà Vầy Sủ thành xã mới có tên gọi là xã Pà Vầy Sủ."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "01096",
+      "ward_name": "Xã Pà Vầy Sủ"
+    }
+  ]
+}

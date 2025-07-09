@@ -1,0 +1,18 @@
+{
+  "address": "Xã Yên Nhân, Huyện Ý Yên, Tỉnh Nam Định",
+  "ellapsedInMs": 6210,
+  "estimatedCost": 0.0026758999999999997,
+  "thought": "**Finding the New Administrative Unit for the Old Address**\n\nOkay, so I've got this old address: \"Xã Yên Nhân, Huyện Ý Yên, Tỉnh Nam Định\".  My task is to pinpoint its current equivalent. Let's break this down systematically.\n\nFirst, I need to check for any provincial mergers.  I'll consult `60-NQ/TW`. Bingo!  It clearly states that \"Tỉnh Nam Định\" merged with other provinces to become \"Tỉnh Ninh Bình\".  So, right away, my `province_name` will be \"Tỉnh Ninh Bình\".\n\nNow for the ward, \"Xã Yên Nhân\".  I'll dive into the `Other resolutions` data, specifically searching for that ward name.  I'm looking for any resolutions that specifically mention \"Xã Yên Nhân\" within \"Huyện Ý Yên\".\n\nHere, I see it! Resolution **1674/NQ-UBTVQH15 (Ninh Bình)** is the key.  Line 29 directly addresses my need:  \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Yên Nhân và xã Yên Lộc (huyện Ý Yên), xã Yên Phúc, xã Yên Cường thành xã mới có tên gọi là **xã Yên Cường**.\" That's a perfect match!  It explicitly mentions \"Xã Yên Nhân\" within \"Huyện Ý Yên\" and identifies the new ward as \"Xã Yên Cường\".\n\nThere's another mention of \"Xã Yên Nhân\" in the same resolution, but it's clearly for \"Huyện Yên Mô\", so I'll ignore that.\n\nNext, I'll cross-reference the `New wards` data to get the code for \"Xã Yên Cường\".  There it is:  `{\"ward_code\":\"13870\",\"ward_name\":\"Xã Yên Cường\",\"province_name\":\"Tỉnh Ninh Bình\"}`.\n\nPutting it all together, I can construct the JSON output. My `province_name` is \"Tỉnh Ninh Bình\", `ward_name` is \"Xã Yên Cường\", and `ward_code` is \"13870\".  The `citation` will be the relevant parts of resolution 1674/NQ-UBTVQH15. Because this is a direct, clear match within the merged province, I'm feeling very confident about this answer, so the `confidence` will be \"high\".\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "29. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Yên Nhân và xã Yên Lộc (huyện Ý Yên), xã Yên Phúc, xã Yên Cường thành xã mới có tên gọi là xã Yên Cường."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "13870",
+      "ward_name": "Xã Yên Cường"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Đào Hữu Cảnh, Huyện Châu Phú, Tỉnh An Giang",
+  "ellapsedInMs": 7653,
+  "estimatedCost": 0.0031212999999999996,
+  "thought": "**Finding the New Administrative Unit for \"Xã Đào Hữu Cảnh\"**\n\nOkay, let's break this down systematically. The user's query is pretty straightforward: they've got an old address (\"Xã Đào Hữu Cảnh, Huyện Châu Phú, Tỉnh An Giang\") and need the corresponding new administrative unit (ward).  My approach is to leverage my knowledge of administrative reorganizations and spatial data.\n\nFirst, I identified the key elements: \"Xã Đào Hữu Cảnh\" as the old ward and \"Tỉnh An Giang\" as the province.  I *know* these things change, so I need to check the relevant resolutions.\n\nThe first step was confirming the province name. The province resolution, *60-NQ/TW*, merely affirms that \"Tỉnh An Giang\" remains \"Tỉnh An Giang\" despite the merger with Kiên Giang. That was easy.\n\nNow, the heavy lifting: I started scanning the relevant resolutions, particularly *1654/NQ-UBTVQH15* which focuses on An Giang.  I went line by line, looking for mentions of \"Xã Đào Hữu Cảnh\". Bingo! Line 19: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đào Hữu Cảnh, Ô Long Vĩ và Thạnh Mỹ Tây thành xã mới có tên gọi là **xã Thạnh Mỹ Tây**.\"  That's the key.  \"Xã Đào Hữu Cảnh\" is now part of \"Xã Thạnh Mỹ Tây\".\n\nTo confirm, I double-checked the \"New wards\" data.  I was looking for \"xã Thạnh Mỹ Tây\" within \"Tỉnh An Giang\". And there it was: `{\"ward_code\":\"30481\",\"ward_name\":\"Xã Thạnh Mỹ Tây\",\"province_name\":\"Tỉnh An Giang\"}`.  Perfect! The resolution and the data align.\n\nSo, the new administrative unit is \"Xã Thạnh Mỹ Tây\" with the ward code \"30481\", in \"Tỉnh An Giang\". The resolution *1654/NQ-UBTVQH15*, specifically line 19, confirms this.  I'm very confident about this answer, so I'd rate the confidence level as \"high\". I'll format the response with the citation for complete transparency.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1654/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh An Giang",
+        "line": "19. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đào Hữu Cảnh, Ô Long Vĩ và Thạnh Mỹ Tây thành xã mới có tên gọi là xã Thạnh Mỹ Tây."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh An Giang",
+      "ward_code": "30481",
+      "ward_name": "Xã Thạnh Mỹ Tây"
+    }
+  ]
+}

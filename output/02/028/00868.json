@@ -1,0 +1,18 @@
+{
+  "address": "Xã Du Tiến, Huyện Yên Minh, Tỉnh Hà Giang",
+  "ellapsedInMs": 8543,
+  "estimatedCost": 0.0031473,
+  "thought": "**Analysis of Vietnamese Administrative Unit Mapping**\n\nOkay, here's the breakdown of how I'm handling this Vietnamese address mapping.  The user's asking me to translate an old address, specifically \"Xã Du Tiến, Huyện Yên Minh, Tỉnh Hà Giang,\" to a new one, given the administrative changes.  My approach is methodical, focusing on established resolutions and data.\n\nFirst, I identified the old province, \"Tỉnh Hà Giang.\" I immediately looked at province-level resolutions, and specifically, the key resolution cited (60-NQ/TW). That resolution clearly states that \"Tỉnh Hà Giang\" was merged with \"Tỉnh Tuyên Quang,\" and the combined entity is now \"Tỉnh Tuyên Quang.\"  So, my starting point for the new address is already \"Tỉnh Tuyên Quang.\"\n\nNext, the ward. The user specified \"Xã Du Tiến.\" My task became finding how \"Xã Du Tiến\" was affected by changes within \"Tỉnh Tuyên Quang.\" I focused on other resolutions, specifically those concerning the reorganization of administrative units within the now-named province. I paid close attention to resolution \"1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang.\"  Line 59 of this document was the key. It explicitly states that \"Xã Du Tiến\" was merged with \"Xã Du Già\" to form a new ward, also named \"Xã Du Già\".\n\nNow that I know the new ward name is \"Xã Du Già\", I moved on to the \"New wards\" data.  I cross-referenced this with the known province (\"Tỉnh Tuyên Quang\") and found a perfect match: `{\"ward_code\":\"00871\",\"ward_name\":\"Xã Du Già\",\"province_name\":\"Tỉnh Tuyên Quang\"}`.  This gave me the ward code, confirming the name and province.\n\nFinally, the confidence level.  I assessed the mapping process based on the directness of the evidence.  I have a *very* high degree of confidence in this result because the resolution explicitly addresses the merger of \"Xã Du Tiến\" into \"Xã Du Già\".  The citation will include the specific line from the resolution, adding transparency and traceability to the conclusion.\n\nTherefore, my final output will be a JSON object, structured as required.\n\n```json\n[\n  {\n    \"province_name\": \"Tỉnh Tuyên Quang\",\n    \"ward_name\": \"Xã Du Già\",\n    \"ward_code\": \"00871\",\n    \"citation\": {\n      \"header\": \"1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang\",\n      \"line\": \"59. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Du Tiến và xã Du Già thành xã mới có tên gọi là **xã Du Già**.\"\n    },\n    \"confidence\": \"high\"\n  }\n]\n```\nI'm satisfied that this accurately reflects the current administrative structure based on the available information.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "59. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Du Tiến và xã Du Già thành xã mới có tên gọi là xã Du Già."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "00871",
+      "ward_name": "Xã Du Già"
+    }
+  ]
+}

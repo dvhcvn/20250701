@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tân Quy Tây, Thành phố Sa Đéc, Tỉnh Đồng Tháp",
+  "ellapsedInMs": 8100,
+  "estimatedCost": 0.0028278,
+  "thought": "**My Analysis of the Administrative Reorganization**\n\nOkay, so I'm presented with an old address: \"Xã Tân Quy Tây, Thành phố Sa Đéc, Tỉnh Đồng Tháp\" and need to find its new administrative unit (ward).  My initial approach is to break this down. First, I'll extract the old ward and province: \"Xã Tân Quy Tây\" and \"Tỉnh Đồng Tháp\", respectively.\n\nMy strategy involves meticulously checking relevant resolutions.  The first step is verifying if the province name has changed based on Province Resolutions (60-NQ/TW).  Fortunately, the province remains \"Tỉnh Đồng Tháp\" after the merger consideration.\n\nNow, I dive into the core of the problem: finding a resolution that explicitly addresses the reorganization of \"Xã Tân Quy Tây.\" I'm looking for a direct reference within the correct city/province context (\"Thành phố Sa Đéc\", \"Tỉnh Đồng Tháp\"). The key here is the resolutions. I carefully examined \"Other resolutions.\" I quickly realized that \"1663/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Tháp\" is the one. I honed in on line 98, which perfectly matches my input, confirming that \"Xã Tân Quy Tây\" is indeed being reorganized within \"thành phố Sa Đéc,\" which is within \"Tỉnh Đồng Tháp.\"  This resolution clearly states that \"Xã Tân Quy Tây\" is part of the new ward called \"**phường Sa Đéc**\" after the reorganization, alongside other wards like \"Phường 1, 2, 3, 4\" and \"phường An Hòa.\" I can confidently conclude \"phường Sa Đéc\" is the new ward for my input address based on this resolution.\n\nTo be extra certain, I need to dismiss any possible confusion from similar names and localities. There's another resolution I scrutinized \"1685/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của Thành phố Hồ Chí Minh.\" However, after checking line 117, \"xã Tân Quý Tây\" is for Ho Chi Minh city, not my \"Xã Tân Quy Tây\" in Dong Thap. This confirms \"Phường Sa Đéc\" is the correct new ward.\n\nNow, it's time to confirm my findings against the list of \"New wards.\" I cross-referenced the identified new ward (\"phường Sa Đéc\") with the available data. And bingo!  I found a perfect match:  `{\"ward_code\":\"29905\",\"ward_name\":\"Phường Sa Đéc\",\"province_name\":\"Tỉnh Đồng Tháp\"}`.\n\nI now have a very strong confidence in this result. I will construct my JSON output:\n\n*   `citation`: \"1663/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Tháp\"\n*   `confidence`: High\n*   `province_name`: \"Tỉnh Đồng Tháp\"\n*   `ward_code`: \"29905\"\n*   `ward_name`: \"Phường Sa Đéc\"\n\nBefore finalizing, I quickly double checked other entries in the \"New wards\" list to be certain. Other listed new wards, such as those related to Ho Chi Minh City, are clearly irrelevant to my input and further strengthen my confidence.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1663/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Tháp",
+        "line": "98. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của Phường 1, Phường 2, Phường 3 và Phường 4 (thành phố Sa Đéc), phường An Hòa, phường Tân Quy Đông, xã Tân Khánh Đông, xã Tân Quy Tây thành phường mới có tên gọi là phường Sa Đéc."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đồng Tháp",
+      "ward_code": "29905",
+      "ward_name": "Phường Sa Đéc"
+    }
+  ]
+}

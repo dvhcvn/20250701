@@ -1,0 +1,28 @@
+{
+  "address": "Phường Long Thuận, Thành phố Gò Công, Tỉnh Tiền Giang",
+  "ellapsedInMs": 8166,
+  "estimatedCost": 0.0031845999999999997,
+  "thought": "**Determining the New Administrative Unit**\n\nOkay, here's how I'd approach this. First, I see the old address: \"Phường Long Thuận, Thành phố Gò Công, Tỉnh Tiền Giang\". My goal is to determine the new administrative unit.\n\n1.  **Identify the Province:** I started by recognizing \"Tỉnh Tiền Giang\". I know I need to check for any province mergers or re-distributions based on those important resolution documents.\n\n2.  **Province Resolutions:** Then, I checked the province resolutions, specifically 60-NQ/TW. Ah, there it is! \"Hợp nhất tỉnh Tiền Giang và tỉnh Đồng Tháp, lấy tên là tỉnh Đồng Tháp.\" So, \"Tỉnh Tiền Giang\" merged into \"Tỉnh Đồng Tháp.\" That's the new province, and it's key.\n\n3.  **Identify the Old Ward:** Next, I pinpointed the ward in question: \"Phường Long Thuận.\"\n\n4.  **Ward Resolutions:** Now, I needed to delve into the resolutions to find details about \"Phường Long Thuận\".  I scanned the provided resolutions. I saw two that looked promising.\n    *   Resolution 1663/NQ-UBTVQH15 stood out. It discussed administrative changes in \"Tỉnh Đồng Tháp\". Line 89 explicitly stated: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của Phường 2 (thành phố Gò Công) và phường Long Thuận thành phường mới có tên gọi là **phường Long Thuận**.\" Perfect! This is a direct match, and it links \"Phường Long Thuận\" to the new \"Tỉnh Đồng Tháp.\"\n    *   The other resolution, 1682/NQ-UBTVQH15, from Tây Ninh, mentioned \"Long Thuận,\" but it was about *xã* (communes), not *phường* (wards), and in the wrong province and district, so I dismissed those.\n\n5.  **New Wards List Verification:** I then consulted the \"New Wards\" list. I was looking for \"Phường Long Thuận\" *within* \"Tỉnh Đồng Tháp.\" Bingo! The entry: \"{\"ward_code\":\"28297\",\"ward_name\":\"Phường Long Thuận\",\"province_name\":\"Tỉnh Đồng Tháp\"}\" confirms the new ward name and its province.\n\n6.  **Constructing the Output:** Given all this, I'm confident in the findings:\n    *   \"Tỉnh Tiền Giang\" became part of \"Tỉnh Đồng Tháp.\"\n    *   \"Phường Long Thuận\" from \"Thành phố Gò Công\" *remained* \"Phường Long Thuận,\" now within \"Tỉnh Đồng Tháp.\"\n    *   The confidence level is \"high\" because of the explicit match in the resolutions and the clear confirmation in the new ward list. I'm ready to output this information in a JSON format.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Tiền Giang và tỉnh Đồng Tháp, lấy tên là tỉnh Đồng Tháp"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đồng Tháp",
+      "ward_code": "28297",
+      "ward_name": "Phường Long Thuận"
+    },
+    {
+      "citation": {
+        "header": "1663/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Tháp",
+        "line": "89. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của Phường 2 (thành phố Gò Công) và phường Long Thuận thành phường mới có tên gọi là phường Long Thuận."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đồng Tháp",
+      "ward_code": "28297",
+      "ward_name": "Phường Long Thuận"
+    }
+  ]
+}

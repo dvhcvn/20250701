@@ -1,0 +1,18 @@
+{
+  "address": "Phường Hoàng Lâm, Thành phố Thuỷ Nguyên, Thành phố Hải Phòng",
+  "ellapsedInMs": 5735,
+  "estimatedCost": 0.0020222,
+  "thought": "**Navigating the Administrative Unit Reorganization**\n\nOkay, here's how I'm approaching this address mapping task. The user has given me the address \"Phường Hoàng Lâm, Thành phố Thuỷ Nguyên, Thành phố Hải Phòng\" and needs it mapped to a new administrative unit. My initial step is to *understand the old context.* I immediately identify \"Phường Hoàng Lâm\" as the old ward and \"Thành phố Hải Phòng\" as the old province.\n\nNext, I have to ensure the province hasn't been significantly altered. Checking the province resolutions (specifically 60-NQ/TW), I see the situation is a merger or reorganization with the old province name remaining the same: \"Thành phố Hải Phòng\" persists as the new province.\n\nNow comes the crucial part: I have to determine how \"Phường Hoàng Lâm\" changed. I've to scrutinize other resolutions for mentions of this specific ward. And bingo! Resolution 1669/NQ-UBTVQH15 gives me the answer. It explicitly states the merging of \"Phường Hoàng Lâm\" into a new ward: \"Phường Thiên Hương\".\n\nWith the new ward identified, my next move is to verify its details from the provided \"New wards\" data. In this data, \"Phường Thiên Hương\" is associated with code \"11557\" and remains in \"Thành phố Hải Phòng\".\n\nFinally, I'll compile all this information into a JSON output. The `province_name` will be \"Thành phố Hải Phòng\" (confirmed from the resolutions). The `ward_name` will be \"Phường Thiên Hương\" (from the resolution). The `ward_code` will be \"11557\" (from the \"New wards\" data). I'll also add a `citation` to Resolution 1669/NQ-UBTVQH15 to support the mapping, and I'm confident (high confidence) about this match because the resolution explicitly specifies the merging process.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "2. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Thiên Hương, phường Hoàng Lâm, một phần diện tích tự nhiên, quy mô dân số của phường Lê Hồng Phong và phần còn lại của phường Hoa Động sau khi sắp xếp theo quy định tại khoản 1 Điều nàythành phường mới có tên gọi là phường Thiên Hương."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "11557",
+      "ward_name": "Phường Thiên Hương"
+    }
+  ]
+}

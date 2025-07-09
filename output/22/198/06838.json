@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Bình Liêu, Huyện Bình Liêu, Tỉnh Quảng Ninh",
+  "ellapsedInMs": 5801,
+  "estimatedCost": 0.0018395,
+  "thought": "**Navigating the Administrative Landscape: A Spatial Reasoning Exercise**\n\nOkay, so I've got an old address: \"Thị trấn Bình Liêu, Huyện Bình Liêu, Tỉnh Quảng Ninh.\" My task is to figure out its new administrative home. Let's break this down systematically.\n\nFirst, I identify the old ward: \"Thị trấn Bình Liêu\" is clearly the key.  Then, I need to check for province-level changes. I know mergers are a common area of change, and I see \"Tỉnh Quảng Ninh\" (Quang Ninh Province) in the address. A quick glance at the province-level resolutions confirms my suspicion:  \"60-NQ/TW\" explicitly states that Quang Ninh isn't undergoing any mergers. That's a relief!\n\nNext, I dive into the provided `other_resolutions`. My attention is immediately drawn to resolution \"1679/NQ-UBTVQH15.\"  Bingo! It explicitly addresses \"Thị trấn Bình Liêu.\" The resolution states that the entire area and population of \"Thị trấn Bình Liêu\" *and* parts of other communes are being merged to form a *new* commune called \"**xã Bình Liêu**.\"  This is a significant clue!\n\nNow, armed with this knowledge, I turn to the `new_wards` data. I'm looking for \"xã Bình Liêu\" in Quang Ninh Province.  And there it is:  `{\"ward_code\":\"06838\",\"ward_name\":\"Xã Bình Liêu\",\"province_name\":\"Tỉnh Quảng Ninh\"}`.  The match is perfect.\n\nTherefore, my final output will be:\n\n*   `province_name`: \"Tỉnh Quảng Ninh\" (unchanged)\n*   `ward_name`: \"Xã Bình Liêu\" (confirmed by the resolution)\n*   `ward_code`: \"06838\" (from the new ward data)\n*   `confidence`: \"high\" (a clear and direct match)\n*   `citation`:  I'll cite the relevant resolution, \"1679/NQ-UBTVQH15.\"\n\nIt was a straightforward process, thanks to the clearly defined resolutions. I can confidently assign the old address to this new administrative unit.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1679/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ninh",
+        "line": "18. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Bình Liêu, xã Húc Động và phần còn lại của xã Vô Ngạisau khi sắp xếp theo quy định tại khoản 4 Điều nàythành xã mới có tên gọi là xã Bình Liêu."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ninh",
+      "ward_code": "06838",
+      "ward_name": "Xã Bình Liêu"
+    }
+  ]
+}

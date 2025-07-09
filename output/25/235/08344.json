@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tiên Lương, Huyện Cẩm Khê, Tỉnh Phú Thọ",
+  "ellapsedInMs": 7634,
+  "estimatedCost": 0.0025882,
+  "thought": "**Analyzing the Vietnamese Address Reorganization**\n\nAlright, I'm diving into this Vietnamese address mapping task. The goal is clear: link an old address, specifically \"Xã Tiên Lương, Tỉnh Phú Thọ\", to its new administrative equivalent, leveraging the provided resolutions and the updated wards list.\n\nMy initial step is always to break down the input. I quickly identified \"Xã Tiên Lương\" as the old ward and \"Tỉnh Phú Thọ\" as the province. Now, I need to check the resolutions to understand how these units have evolved.\n\nFirst stop is the Provincial Resolutions (60-NQ/TW). I'm searching for \"Tỉnh Phú Thọ\" in the lists, and my initial scan confirms that Phú Thọ isn't on the exclusion list, but it does appear in the merger list as part of a unification: the new province is still named \"Tỉnh Phú Thọ\" after merging with other provinces.\n\nNext, I need to consult the detailed restructuring information in Resolution 1676/NQ-UBTVQH15. I'm focusing on \"Xã Tiên Lương\" within this resolution. Line 32 immediately catches my attention: it explicitly states that \"Xã Tiên Lương\" is part of a merger to create a *new* \"Xã Tiên Lương\". Perfect! That's a direct connection. While line 28 is also relevant, it concerns \"Huyện Cẩm Khê\", which isn't the primary focus. The ward \"Xã Tiên Lương\" is directly addressed in line 32.\n\nWith the resolutions clarifying the structure, I'm now cross-referencing this with the \"New wards\" list.  I'm searching for \"Xã Tiên Lương\" paired with \"Tỉnh Phú Thọ.\" The perfect match is immediately evident: `{\"ward_code\":\"08344\",\"ward_name\":\"Xã Tiên Lương\",\"province_name\":\"Tỉnh Phú Thọ\"}`. This looks rock-solid, especially as the provided list doesn't have multiple entries with similar names.\n\nThe confidence level here is high. \"Tỉnh Phú Thọ\" retains its name after restructuring.  Moreover, the resolution explicitly places the old \"Xã Tiên Lương\" in a merger that produces a *new* ward also named \"Xã Tiên Lương.\" Finally, the new wards list provides an unambiguous match.\n\nBased on all of this, the JSON output will be constructed using the data from the 'New wards' list. I'm ready to proceed with confidence.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "32. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Phượng Vĩ, Minh Thắng và Tiên Lương thành xã mới có tên gọi là xã Tiên Lương."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "08344",
+      "ward_name": "Xã Tiên Lương"
+    }
+  ]
+}

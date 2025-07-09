@@ -1,0 +1,18 @@
+{
+  "address": "Xã Ngọk Bay, Thành phố Kon Tum, Tỉnh Kon Tum",
+  "ellapsedInMs": 7812,
+  "estimatedCost": 0.0029775,
+  "thought": "**Analysis of Address Mapping: \"Xã Ngọk Bay\"**\n\nOkay, let's break this down. I've been given an old address, \"Xã Ngọk Bay, Thành phố Kon Tum, Tỉnh Kon Tum,\" and the task is to map it to a new administrative unit. First things first, I need to identify the components of the old address: the old ward (\"Xã Ngọk Bay\"), the old district (\"Thành phố Kon Tum\"), and the old province (\"Tỉnh Kon Tum\").  \n\nNow, the instructions mention eliminating districts, which is key. That \"Thành phố Kon Tum\" within \"Tỉnh Kon Tum\" is, in this context, a district-level unit, even though it has \"thành phố\" (city) in its name.\n\nNext, I have to consider province mergers. The information clearly indicates that \"Tỉnh Kon Tum\" was part of a merger. Specifically, the list mentions \"Hợp nhất tỉnh Kon Tum và tỉnh Quảng Ngãi, lấy tên là tỉnh Quảng Ngãi\" – meaning it's now part of \"Tỉnh Quảng Ngãi\". So that's the new province sorted.\n\nThe crucial piece of the puzzle lies in finding resolutions that detail ward changes.  The relevant resolution, \"1677/NQ-UBTVQH15,\" seems promising. Line 49 of this resolution states, \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Kroong, Vinh Quang và Ngọk Bay thành xã mới có tên gọi là **xã Ngọk Bay**.\" This is gold! It explicitly mentions \"Xã Ngọk Bay.\"  It also states these wards are rearranged into a *new* \"Xã Ngọk Bay,\". Because the title says this involves Quảng Ngãi, I know that aligns with the province merger I found.\n\nThe next step is to cross-reference with the \"New wards\" data. I need to find a new ward named \"Xã Ngọk Bay\" within \"Tỉnh Quảng Ngãi.\" The data entry `{\"ward_code\":\"23317\",\"ward_name\":\"Xã Ngọk Bay\",\"province_name\":\"Tỉnh Quảng Ngãi\"}` matches perfectly.\n\nGiven all this, I'm ready to construct the JSON output. The `citation` will be resolution 1677/NQ-UBTVQH15, because that's where the old ward is explicitly mentioned in the context of the new structure. The `confidence` will be \"high\" because this is a direct, clear match. The `province_name` will, of course, be \"Tỉnh Quảng Ngãi\". Finally, the `ward_code` and `ward_name` will be retrieved from the matching entry in the \"New wards\" data: \"23317\" and \"Xã Ngọk Bay.\" The elimination of districts aligns with the resolution changing the structure.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1677/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ngãi",
+        "line": "49. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Kroong, Vinh Quang và Ngọk Bay thành xã mới có tên gọi là xã Ngọk Bay."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ngãi",
+      "ward_code": "23317",
+      "ward_name": "Xã Ngọk Bay"
+    }
+  ]
+}

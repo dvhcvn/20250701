@@ -1,0 +1,28 @@
+{
+  "address": "Thị trấn Quất Lâm, Huyện Giao Thủy, Tỉnh Nam Định",
+  "ellapsedInMs": 7132,
+  "estimatedCost": 0.0021850000000000003,
+  "thought": "**Mapping an Old Vietnamese Address to New Administrative Units: A Detailed Analysis**\n\nOkay, so the user wants to map an old Vietnamese address to the new system. Let's break this down systematically. The input address is \"Thị trấn Quất Lâm\", \"Huyện Giao Thủy\", \"Tỉnh Nam Định\".  My goal is to figure out the corresponding new administrative units.\n\nFirst, I'll identify the key components: the ward (\"Thị trấn Quất Lâm\"), the district (\"Huyện Giao Thủy\"), and the province (\"Tỉnh Nam Định\").\n\nNext, I need to consult the resolutions.  I'll start with province-level changes. The first place I'll look is resolution 60-NQ/TW.  Ah, here it is: the user is right, \"Tỉnh Nam Định\" is listed as a merged province. It states that \"Hợp nhất tỉnh Hà Nam, tỉnh Ninh Bình và tỉnh Nam Định; lấy tên là tỉnh Ninh Bình.\" (Literally: \"Merges the provinces of Ha Nam, Ninh Binh, and Nam Dinh; takes the name Ninh Binh province\").  So \"Tỉnh Nam Định\" is now \"Tỉnh Ninh Bình.\" That's a high-confidence change, very clear.\n\nNow, let's move on to the more granular details. I'll check other relevant resolutions, specifically 1674/NQ-UBTVQH15, the resolution covering \"tỉnh Ninh Bình\".  Bingo! The first thing I see is that it matches the new province name. Perfect.\n\nNow, I'll need to scan the lines of the resolution for \"Thị trấn Quất Lâm\". Scanning… scanning… Here we go! Line 59: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Quất Lâm, xã Giao Phong và xã Giao Thịnh thành xã mới có tên gọi là **xã Giao Ninh**.\" This clearly states that \"Thị trấn Quất Lâm\" is merged into the new ward \"xã Giao Ninh\" along with other entities.\n\nFinally, I have to verify the \"new wards data\". I will look for \"Xã Giao Ninh\" and… yes!  The data shows `{\"ward_code\":\"14212\",\"ward_name\":\"Xã Giao Ninh\",\"province_name\":\"Tỉnh Ninh Bình\"}`. This aligns perfectly with what I've found in the resolution.\n\nSo, the province is definitively \"Tỉnh Ninh Bình\". The old ward, \"Thị trấn Quất Lâm,\" now maps to \"Xã Giao Ninh\". I can set the confidence to \"high,\" because I have direct evidence from the resolution, coupled with a clear mapping to the new ward. The citation will be the specific resolution and line. This looks like a solid answer.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Hà Nam, tỉnh Ninh Bình và tỉnh Nam Định; lấy tên là tỉnh Ninh Bình"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "14212",
+      "ward_name": "Xã Giao Ninh"
+    },
+    {
+      "citation": {
+        "header": "1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "59. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Quất Lâm, xã Giao Phong và xã Giao Thịnh thành xã mới có tên gọi là xã Giao Ninh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "14212",
+      "ward_name": "Xã Giao Ninh"
+    }
+  ]
+}

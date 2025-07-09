@@ -1,0 +1,18 @@
+{
+  "address": "Xã Bình Hợp, Huyện Tân Kỳ, Tỉnh Nghệ An",
+  "ellapsedInMs": 7091,
+  "estimatedCost": 0.0029754,
+  "thought": "**My Analysis of the Administrative Reorganization for \"Xã Bình Hợp, Huyện Tân Kỳ, Tỉnh Nghệ An\"**\n\nOkay, let's break this down systematically. The user wants the new administrative details for \"Xã Bình Hợp, Huyện Tân Kỳ, Tỉnh Nghệ An\". My approach is as follows:\n\nFirst, I need to check for province mergers. Resolution 60-NQ/TW tells me that \"Tỉnh Nghệ An\" *wasn't* merged, so that part is straightforward.\n\nNext, I'll dive into the relevant resolutions regarding ward reorganizations. I quickly rule out `1669/NQ-UBTVQH15` (Hai Phong) and `1683/NQ-UBTVQH15` (Thai Nguyen) as they are irrelevant. The key is `1678/NQ-UBTVQH15`, concerning Nghệ An itself.\n\nI carefully scanned through this resolution, specifically looking for \"Bình Hợp.\" And there it is! In line 81, it clearly states that \"Xã Bình Hợp\" is being merged with \"Xã Nghĩa Đồng\" to form the new ward, \"Xã Nghĩa Đồng.\" The province remains \"Tỉnh Nghệ An,\" as anticipated.\n\nNow, to solidify this, I'll cross-reference my findings with the \"New wards\" dataset. I'll search for  `{\"ward_name\":\"Xã Nghĩa Đồng\",\"province_name\":\"Tỉnh Nghệ An\"}`. Lo and behold, I find the matching entry, which includes the `ward_code`: \"17284.\"\n\nPutting it all together, I can confidently construct the JSON output:\n\n*   The source is `1678/NQ-UBTVQH15`, specifically line 81.\n*   The new ward is `Xã Nghĩa Đồng` with a `ward_code` of \"17284.\"\n*   The `province_name` is \"Tỉnh Nghệ An.\"\n*   My `confidence` level is \"high\" because the resolution explicitly addresses \"Xã Bình Hợp\" and its merger. This is a clear-cut case.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1678/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Nghệ An",
+        "line": "81. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Bình Hợp và xã Nghĩa Đồng thành xã mới có tên gọi là xã Nghĩa Đồng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Nghệ An",
+      "ward_code": "17284",
+      "ward_name": "Xã Nghĩa Đồng"
+    }
+  ]
+}

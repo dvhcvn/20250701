@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Krông Kmar, Huyện Krông Bông, Tỉnh Đắk Lắk",
+  "ellapsedInMs": 6440,
+  "estimatedCost": 0.0023123,
+  "thought": "**Determining the New Ward for \"Thị trấn Krông Kmar\"**\n\nOkay, so I've been tasked with figuring out the new ward for the old address \"Thị trấn Krông Kmar\" in \"Tỉnh Đắk Lắk\". This is a straightforward task, but it requires careful cross-referencing of resolutions and the provided new ward data.\n\nFirst, I identified the key information: \"Thị trấn Krông Kmar\" is the old ward, and \"Tỉnh Đắk Lắk\" is the province.  I immediately thought of the relevant Provincial Resolution, 60-NQ/TW, which should contain information on provincial-level changes.  Sure enough, it mentions Đắk Lắk.  I was relieved to see that while Đắk Lắk did absorb Phú Yên, the name itself remained unchanged. Good, that simplifies things at the provincial level.\n\nNext, I zeroed in on the specifics: I needed to check Resolution 1660/NQ-UBTVQH15, the one dealing with ward-level changes. I methodically scanned through the `lines` of that resolution, looking for any mention of \"Thị trấn Krông Kmar\". Bingo!  Line 42 was the key. It clearly states that \"Thị trấn Krông Kmar\" is being merged with other areas to form a *new* ward called \"Xã Krông Bông\".\n\nWith that critical piece of information, I then cross-referenced the provided list of \"New wards\" to find a match. I searched for \"Xã Krông Bông\" within \"Tỉnh Đắk Lắk\", and found a perfect entry: `{\"ward_code\":\"24448\",\"ward_name\":\"Xã Krông Bông\",\"province_name\":\"Tỉnh Đắk Lắk\"}`.  That confirms the new ward.\n\nFinally, I compiled my findings into the required JSON output: I used \"Tỉnh Đắk Lắk\" from the new ward list for consistency, \"Xã Krông Bông\" from both the resolution and the new ward list, and the corresponding code \"24448\".  The citation correctly references Resolution 1660/NQ-UBTVQH15, line 42, and I'm confident in my conclusion, so I marked the confidence as \"high.\" This is a clean, reliable, and well-documented result.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1660/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đắk Lắk",
+        "line": "42. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Krông Kmar, xã Hòa Lễ và xã Khuê Ngọc Điền thành xã mới có tên gọi là xã Krông Bông."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đắk Lắk",
+      "ward_code": "24448",
+      "ward_name": "Xã Krông Bông"
+    }
+  ]
+}

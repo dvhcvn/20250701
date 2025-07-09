@@ -1,0 +1,18 @@
+{
+  "address": "Xã Đồn Xá, Huyện Bình Lục, Tỉnh Hà Nam",
+  "ellapsedInMs": 6022,
+  "estimatedCost": 0.0019748,
+  "thought": "**My Analysis of \"Xã Đồn Xá\" Mapping**\n\nOkay, here's how I'm thinking through this address mapping problem:  My primary goal is to accurately translate \"Xã Đồn Xá, Huyện Bình Lục, Tỉnh Hà Nam\" to its modern administrative equivalent.  As an expert, I need to be precise, so I'm relying on established resolutions and data.\n\nFirst, I identified the old province, \"Tỉnh Hà Nam.\" The key here is to determine which new province it's now a part of.  A quick check of the province merger resolutions, specifically 60-NQ/TW, confirms that \"Tỉnh Hà Nam\" was merged into \"Tỉnh Ninh Bình.\" So, I've got that initial piece: the province has changed.\n\nNow, focusing on \"Xã Đồn Xá,\" the old ward.  I need to figure out its current equivalent.  I searched through the relevant resolutions for any mention of \"Xã Đồn Xá.\" Resolution 1674/NQ-UBTVQH15, concerning the restructuring of administrative units in Ninh Bình, is where the magic happens. Line 2 explicitly states that \"Xã Đồn Xá\" was combined with other areas to form the new \"Xã Bình Mỹ.\"  This is my critical clue!\n\nNow, to solidify this, I cross-referenced the \"New Wards\" data.  I was looking for \"Xã Bình Mỹ\" within \"Tỉnh Ninh Bình,\" and the JSON entry `{\"ward_code\":\"13501\",\"ward_name\":\"Xã Bình Mỹ\",\"province_name\":\"Tỉnh Ninh Bình\"}` confirms the mapping and provides the associated code.\n\nBased on this comprehensive analysis, I'm confident in the following JSON output:\n\n*   `province_name`: \"Tỉnh Ninh Bình\" (derived from the province merger resolution).\n*   `ward_name`: \"Xã Bình Mỹ\" (as per resolution 1674/NQ-UBTVQH15).\n*   `ward_code`: \"13501\" (gleaned from the new ward data).\n*   `citation`:  This crucial piece will back up my conclusions, including the specific line from resolution 1674/NQ-UBTVQH15.\n*   `confidence`: \"high\" (because I have a direct and unambiguous citation).\n\nEssentially, I've traced the changes through the formal documentation and ensured accuracy based on the available information.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "2. Sắp xếp toàn bộ diện tích tự nhiên quy mô dân số của thị trấn Bình Mỹ, xã Đồn Xá và xã La Sơn thành xã mới có tên gọi là xã Bình Mỹ."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "13501",
+      "ward_name": "Xã Bình Mỹ"
+    }
+  ]
+}

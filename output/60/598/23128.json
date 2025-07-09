@@ -1,0 +1,18 @@
+{
+  "address": "Xã Hàm Cường, Huyện Hàm Thuận Nam, Tỉnh Bình Thuận",
+  "ellapsedInMs": 7883,
+  "estimatedCost": 0.0027566999999999995,
+  "thought": "**My Mapping Strategy for the Old Vietnamese Address**\n\nAlright, let's break this down. The user is asking me to translate an old address, \"Xã Hàm Cường, Huyện Hàm Thuận Nam, Tỉnh Bình Thuận,\" into the new administrative structure, armed with some resolutions and a list of new wards.  My process will be methodical, focusing on these key steps:\n\nFirst, I need to identify the components:  \"Xã Hàm Cường,\" \"Huyện Hàm Thuận Nam,\" and \"Tỉnh Bình Thuận.\" Got it.\n\nNext, I need to process those resolutions.  Resolution 60-NQ/TW is the first stop, focusing on province-level mergers. Bingo!  It clearly states that Bình Thuận was merged, but not as an individual entity. Instead, it was integrated into Lâm Đồng.  Specifically item 14 indicates \"Hợp nhất tỉnh Lâm Đồng, tỉnh Đắk Nông và tỉnh Bình Thuận; lấy tên là tỉnh Lâm Đồng\". Okay, the new province becomes \"Tỉnh Lâm Đồng.\"\n\nNow, Resolution 1671/NQ-UBTVQH15, concerning lower-level restructuring, is where things get interesting. I need to specifically look for \"Xã Hàm Cường\" in its lines. Line 60 is a direct hit! It tells me, \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Mương Mán, Hàm Cường và Hàm Kiệm thành xã mới có tên gọi là **xã Hàm Kiệm**.\" Boom! \"Xã Hàm Cường\" is now \"Xã Hàm Kiệm.\"\n\nSince the province is now \"Tỉnh Lâm Đồng\" and the ward is \"Xã Hàm Kiệm,\" it's time to check the new wards list.  I'll scan the `New wards` data to find \"Xã Hàm Kiệm\" within \"Tỉnh Lâm Đồng.\"  There it is: `{\"ward_code\":\"23128\",\"ward_name\":\"Xã Hàm Kiệm\",\"province_name\":\"Tỉnh Lâm Đồng\"}`. Perfect match.\n\nFinally, I'll build the JSON output.  I'll note \"Tỉnh Lâm Đồng\" as the new province, \"Xã Hàm Kiệm\" as the new ward, and include the ward code \"23128.\" The citation is crucial: I'll reference Resolution 1671/NQ-UBTVQH15 and specifically quote line 60. Given the clarity of the mapping, I'm confident, so I'll set the `confidence` to \"high\".\n\nI need to make sure there are no other possibilities. Line 61 mentions \"Tân Thành (huyện Hàm Thuận Nam)\", and line 62 mentions \"Hàm Thuận Nam\" but both do not include \"Xã Hàm Cường\". So, I'm confident the match is indeed direct. I'm all set!\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng",
+        "line": "60. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Mương Mán, Hàm Cường và Hàm Kiệm thành xã mới có tên gọi là xã Hàm Kiệm."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "23128",
+      "ward_name": "Xã Hàm Kiệm"
+    }
+  ]
+}

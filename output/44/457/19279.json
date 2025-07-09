@@ -1,0 +1,28 @@
+{
+  "address": "Xã Lộc Thủy, Huyện Lệ Thủy, Tỉnh Quảng Bình",
+  "ellapsedInMs": 7487,
+  "estimatedCost": 0.0031454,
+  "thought": "**Address Mapping for Vietnamese Administrative Units**\n\nOkay, so I'm presented with an old Vietnamese address: \"Xã Lộc Thủy, Huyện Lệ Thủy, Tỉnh Quảng Bình\" and need to find its corresponding new administrative unit, considering the provided resolutions and new ward data.\n\nFirst, I parsed the address to identify its components. \"Xã Lộc Thủy\" is the old ward, \"Huyện Lệ Thủy\" is the district, and \"Tỉnh Quảng Bình\" is the province. The prompt also states that districts will be eliminated in this mapping.\n\nLooking at the province resolutions, specifically 60-NQ/TW, I found that \"Tỉnh Quảng Bình\" has been merged with \"Tỉnh Quảng Trị.\" This is a definitive change. This provides a high confidence match.\n\nNext, I turned to other resolutions for detailed changes related to the specific ward and district within the *new* province of \"Tỉnh Quảng Trị\". Resolution 1680/NQ-UBTVQH15, concerning the arrangement of administrative units in Quảng Trị province, is directly relevant. Line 29 of this resolution explicitly states that \"Xã Lộc Thủy\" (along with other wards and thị trấn Kiến Giang) will be merged to form the new ward \"Xã Lệ Thủy\". This directly addresses my input. The old district is implicitly accounted for in this mapping.\n\nConfirming this with the \"New wards\" data, I find a record for \"Xã Lệ Thủy\" within \"Tỉnh Quảng Trị\", with the ward code \"19249\".\n\nTherefore, I'm confident in mapping \"Xã Lộc Thủy, Huyện Lệ Thủy, Tỉnh Quảng Bình\" to the new unit: \"Xã Lệ Thủy, Tỉnh Quảng Trị\". This mapping will have a high confidence level, and the relevant citation will be from resolution 1680/NQ-UBTVQH15, line 29. I haven't found any ambiguities or conflicting information; the direct mention in the resolution seals the deal. The provided JSON output is the expected form.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "9. Hợp nhất tỉnh Quảng Bình và tỉnh Quảng Trị, lấy tên là tỉnh Quảng Trị"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Trị",
+      "ward_code": "19249",
+      "ward_name": "Xã Lệ Thủy"
+    },
+    {
+      "citation": {
+        "header": "1680/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Trị",
+        "line": "29. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Kiến Giang và các xã Liên Thủy, Xuân Thủy, An Thủy, Phong Thủy, Lộc Thủythành xã mới có tên gọi là xã Lệ Thủy."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Trị",
+      "ward_code": "19249",
+      "ward_name": "Xã Lệ Thủy"
+    }
+  ]
+}

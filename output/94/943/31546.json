@@ -1,0 +1,18 @@
+{
+  "address": "Xã Ba Trinh, Huyện Kế Sách, Tỉnh Sóc Trăng",
+  "ellapsedInMs": 7325,
+  "estimatedCost": 0.0024121,
+  "thought": "**Address Mapping Analysis: Vietnamese Administrative Unit Transformation**\n\nAlright, I'm diving into this. The user wants to map an old Vietnamese address to its current administrative unit. Here's what I've got: the old address is in \"Xã Ba Trinh\", \"Huyện Kế Sách\", \"Tỉnh Sóc Trăng\". My task is to find the modern equivalent.\n\nFirst, I need to check the relevant resolutions and data. I'll start with province-level changes. I know from my experience that 60-NQ/TW is a key document for province mergers. Looking at it, \"Tỉnh Sóc Trăng\" is now part of \"Thành phố Cần Thơ\". That’s a significant piece of the puzzle.\n\nNext, I'll need to look at specific ward adjustments within Thành phố Cần Thơ, and that leads me to 1668/NQ-UBTVQH15. This is where the magic happens. I quickly scan the lines for \"Xã Ba Trinh\" and bingo! Line 77 states explicitly: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Ba Trinh và xã Đại Hải thành xã mới có tên gọi là **xã Đại Hải**.\" Perfect! My gut tells me this is it, and now I just need to verify it with the new ward data.\n\nI'll search for \"Xã Đại Hải\" within Thành phố Cần Thơ and confirm the `ward_code`, which is \"31561\". The data also notes the ward name, province name, and ward code.\n\nNow to formulate the JSON output. I'm confident about this.  The new `province_name` is \"Thành phố Cần Thơ\" due to the province merger. The updated `ward_name` is \"Xã Đại Hải\" directly from the resolution. I'll include the relevant citation, specifically the header \"1668/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Cần Thơ\" and the crucial line \"77. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Ba Trinh và xã Đại Hải thành xã mới có tên gọi là **xã Đại Hải**.\" I'll set the `confidence` to \"high\" because of the precise mention of \"Xã Ba Trinh\" in the resolution.\n\nThe final output will be:\n*   province_name: \"Thành phố Cần Thơ\"\n*   ward_name: \"Xã Đại Hải\"\n*   ward_code: \"31561\"\n*   citation:\n    *   header: \"1668/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Cần Thơ\"\n    *   line: \"77. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Ba Trinh và xã Đại Hải thành xã mới có tên gọi là **xã Đại Hải**.\"\n*   confidence: \"high\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1668/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Cần Thơ",
+        "line": "77. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Ba Trinh và xã Đại Hải thành xã mới có tên gọi là xã Đại Hải."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Cần Thơ",
+      "ward_code": "31561",
+      "ward_name": "Xã Đại Hải"
+    }
+  ]
+}

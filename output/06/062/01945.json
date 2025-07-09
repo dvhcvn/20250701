@@ -1,0 +1,18 @@
+{
+  "address": "Xã Cốc Đán, Huyện Ngân Sơn, Tỉnh Bắc Kạn",
+  "ellapsedInMs": 6124,
+  "estimatedCost": 0.0022937,
+  "thought": "**Mapping an Old Address to a New Administrative Unit**\n\nOkay, so I've got an old address to map, specifically \"Xã Cốc Đán\" in \"Huyện Ngân Sơn,\" \"Tỉnh Bắc Kạn.\"  The goal, as I understand it, is to get a new ward/administrative unit, given some resolutions and new ward data.\n\nFirst, I need to understand what's changed. I identified the old administrative units: \"Xã Cốc Đán,\" \"Huyện Ngân Sơn,\" and \"Tỉnh Bắc Kạn.\" I know from experience that province mergers and administrative restructuring are common.\n\nMy strategy? Look at the province resolutions first. Lo and behold, I find Resolution 60-NQ/TW, which tells me that \"Tỉnh Bắc Kạn\" merged with something else. It resulted in a new province, \"Tỉnh Thái Nguyên.\" That's the first key piece of information.\n\nNext, I need to see what happened at the ward level. I combed through the resolutions, looking for any mention of \"Xã Cốc Đán.\" Resolution 1683/NQ-UBTVQH15 popped out. Bingo! It explicitly mentions \"Xã Cốc Đán.\"  This resolution describes how \"Xã Cốc Đán\" merged with others to form a new ward named \"Xã Ngân Sơn.\"  Crucially, the resolution is for \"tỉnh Thái Nguyên,\" which aligns perfectly with the province merger I found earlier.\n\nNow, with this information, I check the new wards data. I'm looking for a matching entry: \"Xã Ngân Sơn\" and \"Tỉnh Thái Nguyên.\" Sure enough, there's a perfect match: `{\"ward_code\":\"01954\",\"ward_name\":\"Xã Ngân Sơn\",\"province_name\":\"Tỉnh Thái Nguyên\"}`.\n\nPutting it all together, I can construct the output with high confidence. The mapping is directly based on a resolution that explicitly mentions the old ward and links it to a new ward within the new province.\nSo, the final JSON I'd generate would be based on the information I collected.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1683/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thái Nguyên",
+        "line": "51. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Vân Tùng, xã Cốc Đán và xã Đức Vân thành xã mới có tên gọi là xã Ngân Sơn."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thái Nguyên",
+      "ward_code": "01954",
+      "ward_name": "Xã Ngân Sơn"
+    }
+  ]
+}

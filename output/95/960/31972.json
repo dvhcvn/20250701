@@ -1,0 +1,28 @@
+{
+  "address": "Thị trấn Gành Hào, Huyện Đông Hải, Tỉnh Bạc Liêu",
+  "ellapsedInMs": 6048,
+  "estimatedCost": 0.0029454999999999998,
+  "thought": "**Identifying the New Administrative Unit**\n\nOkay, let's break this down. The user provided the old address \"Thị trấn Gành Hào, Huyện Đông Hải, Tỉnh Bạc Liêu\" and needs the updated administrative unit. My initial step is to consult the provided resolutions and data on new wards.\n\nFirst, the province needs to be clarified. I recall \"Tỉnh Bạc Liêu\" has been merged. Looking into \"60-NQ/TW,\" I confirmed the merger with \"Tỉnh Cà Mau,\" resulting in the new province name.\n\nNext, I needed to pin down \"Thị trấn Gành Hào.\" Searching the \"Other resolutions,\" I hit upon \"1655/NQ-UBTVQH15.\" This resolution indicates that \"Thị trấn Gành Hào\" and \"xã Long Điền Tây\" are combined into a new ward called \"**xã Gành Hào**\". The resolution also concerns \"tỉnh Cà Mau\", which aligns perfectly with the new province.\n\nNow, checking the \"New wards\" list, I've found a match: `{\"ward_code\":\"31972\",\"ward_name\":\"Xã Gành Hào\",\"province_name\":\"Tỉnh Cà Mau\"}`. That's a clean hit!\n\nTo ensure accuracy, I performed a thorough scan of all resolutions for any potential ambiguity with \"Gành Hào\" and found none. Everything points back to the 1655/NQ-UBTVQH15 resolution.\n\nIt's also worth noting that the old address included \"Huyện Đông Hải\". The resolutions indicate that these districts are being eliminated, so the specific district information isn't relevant for the new administrative structure.\n\nSince the prompt specifies providing *all possible* new candidates, in this case, there's a single, very clear candidate.\n\nFinal check of the schema: everything's in order, all the required data is present and the match is clear, so the confidence level should be high.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "22. Hợp nhất tỉnh Bạc Liêu và tỉnh Cà Mau, lấy tên là tỉnh Cà Mau"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Cà Mau",
+      "ward_code": "31972",
+      "ward_name": "Xã Gành Hào"
+    },
+    {
+      "citation": {
+        "header": "1655/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Cà Mau",
+        "line": "40. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Gành Hào và xã Long Điền Tây thành xã mới có tên gọi là xã Gành Hào."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Cà Mau",
+      "ward_code": "31972",
+      "ward_name": "Xã Gành Hào"
+    }
+  ]
+}

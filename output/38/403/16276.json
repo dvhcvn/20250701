@@ -1,0 +1,18 @@
+{
+  "address": "Xã Thanh Kỳ, Huyện Như Thanh, Tỉnh Thanh Hóa",
+  "ellapsedInMs": 5883,
+  "estimatedCost": 0.0018195,
+  "thought": "**Mapping an Old Address to New Administrative Units**\n\nOkay, so I'm being asked to figure out the new administrative location for the old address \"Xã Thanh Kỳ, Huyện Như Thanh, Tỉnh Thanh Hóa\".  This is a straightforward geo-mapping problem, and I'm ready to dive in.\n\nFirst, I always start with the province.  I've got \"Tỉnh Thanh Hóa\" right there, so that's easy.  Next, I need to check the relevant resolutions to see if the province has undergone any changes.  I'll look at the provided resolution \"60-NQ/TW\" and see that Thanh Hóa isn't on the list for merging. Great, the province name remains the same.\n\nNow, the crucial part is understanding what happened to \"Xã Thanh Kỳ.\" I'll scrutinize the other resolutions, focusing on anything relevant to that specific ward. The `1686/NQ-UBTVQH15` resolution is what I need. Line 120 is the key. It specifically says that \"Xã Thanh Kỳ\" is being combined with part of \"Xã Thanh Tân\" to create a *new* \"Xã Thanh Kỳ.\"  Essentially, the old \"Xã Thanh Kỳ\" is now part of the new one.  This is a direct and explicit mapping.\n\nNext, I'll confirm this by checking the `New wards` data. I'm looking for a ward named \"Xã Thanh Kỳ\" within \"Tỉnh Thanh Hóa.\"  There's a perfect match!  `{\"ward_code\":\"16273\",\"ward_name\":\"Xã Thanh Kỳ\",\"province_name\":\"Tỉnh Thanh Hóa\"}` confirms the existence of the new ward.\n\nThe confidence level here is exceptionally high. The resolution directly states the merging process and the creation of the new \"Xã Thanh Kỳ.\"  There's no ambiguity.  Now I just need to construct the JSON output according to the schema. I've got all the information I need, and this is a clear case of a successful address remapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1686/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thanh Hóa",
+        "line": "120. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Thanh Kỳ và phần còn lại của xã Thanh Tân sau khi sắp xếp theo quy định tại khoản 40 Điều này thành xã mới có tên gọi là xã Thanh Kỳ."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thanh Hóa",
+      "ward_code": "16273",
+      "ward_name": "Xã Thanh Kỳ"
+    }
+  ]
+}

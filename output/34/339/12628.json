@@ -1,0 +1,18 @@
+{
+  "address": "Xã Bắc Sơn, Huyện Hưng Hà, Tỉnh Thái Bình",
+  "ellapsedInMs": 6164,
+  "estimatedCost": 0.0028988,
+  "thought": "**Navigating Administrative Boundaries: A Thought Process**\n\nAlright, I've got a query asking for the new administrative unit corresponding to \"Xã Bắc Sơn, Huyện Hưng Hà, Tỉnh Thái Bình.\" My approach is systematic:\n\nFirst, I need to address the province level.  The old address specifies \"Tỉnh Thái Bình.\"  I'll immediately check `60-NQ/TW` to confirm if there have been any mergers or changes. Bingo!  It clearly states the merger of \"Tỉnh Hưng Yên\" and \"Tỉnh Thái Bình\" into \"Tỉnh Hưng Yên.\"\n\nNow, let's drill down to the ward level. I'll focus on \"Huyện Hưng Hà\" and \"Bắc Sơn.\" I'll scrutinize the provided `Other resolutions` for any mention of these entities.  Specifically, I'm looking for a resolution that explicitly addresses the re-organization of wards within \"Huyện Hưng Hà.\"\n\nI found a promising lead: resolution `1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên`.  Let's see what's inside. Scanning through, line 75 is the key!  It states a consolidation of \"Bắc Sơn (huyện Hưng Hà)\", \"Đông Đô\", \"Tây Đô\", and \"Chi Lăng\" into a new ward called \"**xã Thần Khê**.\" Excellent!\n\nNext, I need to verify this new ward.  I'll consult the `New wards` list to confirm and obtain the official code.  A quick search for \"xã Thần Khê\" in \"Tỉnh Hưng Yên\" yields a perfect match: `{\"ward_code\":\"12631\",\"ward_name\":\"Xã Thần Khê\",\"province_name\":\"Tỉnh Hưng Yên\"}`.\n\nFinally, I'll compile the results into a JSON format:\n\n*   `province_name`: \"Tỉnh Hưng Yên\" (derived from the province merger).\n*   `ward_name`: \"Xã Thần Khê\" (as per the resolution).\n*   `ward_code`: \"12631\" (retrieved from the `New wards` list).\n*   `citation`: The resolution header and the relevant line (75) from it, as documentation.\n*   `confidence`: \"high\". I'm confident because the resolution directly addresses the specific old ward (\"Bắc Sơn\") and district (\"Huyện Hưng Hà\") and clearly maps it to the new ward.  This is a very specific and unambiguous mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên",
+        "line": "75. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Bắc Sơn (huyện Hưng Hà), Đông Đô, Tây Đô và Chi Lăng thành xã mới có tên gọi là xã Thần Khê."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "12631",
+      "ward_name": "Xã Thần Khê"
+    }
+  ]
+}

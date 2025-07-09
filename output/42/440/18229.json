@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Đức Thọ, Huyện Đức Thọ, Tỉnh Hà Tĩnh",
+  "ellapsedInMs": 6052,
+  "estimatedCost": 0.0020156,
+  "thought": "**Deconstructing the Vietnamese Address**\n\nOkay, so I'm presented with a tricky Vietnamese address and need to map it to the new administrative structure. Let's break this down systematically. First, I need to understand the old address: \"Thị trấn Đức Thọ\", \"Huyện Đức Thọ\", \"Tỉnh Hà Tĩnh\". That gives me the old ward, district, and province, respectively.\n\nMy initial thought is to cross-reference this information against the relevant government resolutions and the new ward data I have. I know the first check has to be the province's status. Does the resolution 60-NQ/TW say anything about \"Tỉnh Hà Tĩnh\"? Bingo! It falls under \"Các đơn vị hành chính cấp tỉnh không thực hiện sáp nhập,\" meaning it remains \"Tỉnh Hà Tĩnh.\" That simplifies things a bit.\n\nNext, I'll need to dig deeper into the other resolutions. Let's see if there's any mention of \"Thị trấn Đức Thọ\" or \"Hà Tĩnh.\" Aha! Resolution \"1665/NQ-UBTVQH15\" appears to be the key. It specifically addresses the \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh.\" And right there, line 37, it states that \"Thị trấn Đức Thọ\" along with some other villages will be reorganized into a new village called \"Xã Đức Thọ.\" Perfect match!\n\nThis is where the new ward data comes into play. I'll need to search for a new ward with `province_name` \"Tỉnh Hà Tĩnh\" and `ward_name` \"Xã Đức Thọ.\" Yep, there it is! `{\"ward_code\":\"18229\",\"ward_name\":\"Xã Đức Thọ\",\"province_name\":\"Tỉnh Hà Tĩnh\"}`.\n\nNow, all that's left is to construct the JSON output. Based on my analysis, the output will look something like this:\n\n*   `province_name`: \"Tỉnh Hà Tĩnh\"\n*   `ward_name`: \"Xã Đức Thọ\"\n*   `ward_code`: \"18229\"\n*   `confidence`: \"high\" - given the direct match in the resolution and the available data.\n*   `citation`:  I'll need to include the relevant resolution details (the header and the specific line:  \"1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh: 37. ... **xã Đức Thọ**.\").\n\nThat should be the final output – a well-documented and confident mapping of the old address to the new administrative unit!\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh",
+        "line": "37. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Đức Thọ và các xã Tùng Ảnh, Hòa Lạc, Tân Dân thành xã mới có tên gọi là xã Đức Thọ."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hà Tĩnh",
+      "ward_code": "18229",
+      "ward_name": "Xã Đức Thọ"
+    }
+  ]
+}

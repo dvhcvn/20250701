@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Cây Dương, Huyện Phụng Hiệp, Tỉnh Hậu Giang",
+  "ellapsedInMs": 6643,
+  "estimatedCost": 0.0021868,
+  "thought": "**Mapping an Old Address to a New Administrative Unit**\n\nOkay, so I've got an address to map: \"Thị trấn Cây Dương,\" which falls under \"Huyện Phụng Hiệp\" in \"Tỉnh Hậu Giang.\"  My initial thought is, this is a straightforward case, based on the provided resolutions and new ward data.\n\nFirst, I need to get the old context. From the input, I understand this old address was in a district and province. Specifically: \"Thị trấn Cây Dương\" (ward), \"Huyện Phụng Hiệp\" (district - which, I know, can be less crucial for the final output, but it helps my understanding), and \"Tỉnh Hậu Giang\" (province).\n\nNow, let's dive into the resolutions.  I'm going to start with the province-level changes. Resolution 60-NQ/TW states that \"Tỉnh Hậu Giang\" merged into \"Thành phố Cần Thơ.\"  So, my new province name will be \"Thành phố Cần Thơ.\" Easy enough.\n\nNext, I'll need to dig into the details. I see that resolution 1668/NQ-UBTVQH15 directly addresses \"Thị trấn Cây Dương.\" Line 62 explicitly states that \"Thị trấn Cây Dương\" and \"xã Hiệp Hưng\" are combined to form \"xã Hiệp Hưng.\" And, I can see the resolution is talking about administrative reorganization in \"Thành phố Cần Thơ,\" which fits perfectly with my province information.\n\nFinally, I'll cross-reference this with the \"New Wards\" data.  I'm looking for \"xã Hiệp Hưng.\" Bingo!  The data shows:  `{\"ward_code\":\"31396\",\"ward_name\":\"Xã Hiệp Hưng\",\"province_name\":\"Thành phố Cần Thơ\"}`. This perfectly aligns with my findings.  So, I can confidently construct the JSON output:\n\n*   The citation will be the resolution header and the specific line, 62, from the resolution 1668/NQ-UBTVQH15.\n*   I have high confidence in this mapping because of the direct references and clear connections between the old ward and the new unit.\n*   The `province_name` is \"Thành phố Cần Thơ.\"\n*   The `ward_code` is \"31396.\"\n*   And the `ward_name` is \"Xã Hiệp Hưng.\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1668/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Cần Thơ",
+        "line": "62. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Cây Dương và xã Hiệp Hưng thành xã mới có tên gọi là xã Hiệp Hưng."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Cần Thơ",
+      "ward_code": "31396",
+      "ward_name": "Xã Hiệp Hưng"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Phường Điện Nam Đông, Thị xã Điện Bàn, Tỉnh Quảng Nam",
+  "ellapsedInMs": 6026,
+  "estimatedCost": 0.0022395,
+  "thought": "**Analyzing and Mapping Vietnamese Administrative Units**\n\nOkay, so I've been tasked with mapping this old Vietnamese address to its current administrative structure. My first thought is to break this down methodically. Let's see... the old address is in \"Phường Điện Nam Đông\" of \"Tỉnh Quảng Nam\", specifically in \"Thị xã Điện Bàn\" (though that's less relevant now).\n\nThe immediate concern is the province.  I'll consult resolution \"60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất\" –  Ah, yes, Quảng Nam has been merged with Đà Nẵng, becoming \"Thành phố Đà Nẵng\". Got it.\n\nNext, I need to pinpoint the new ward for \"Phường Điện Nam Đông.\" I'll move on to the \"Other resolutions\", focusing on \"1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng\". I'll scan that document specifically for \"Phường Điện Nam Đông\". Line 18 immediately jumps out at me: it clearly states that \"Phường Điện Nam Đông\" and several other wards are *being combined* into a new ward: \"phường Điện Bàn Đông\". This is promising.\n\nNow, I'll confirm this mapping. I need to cross-reference this information with the \"New wards\" list. Searching for \"Phường Điện Bàn Đông\" within \"Thành phố Đà Nẵng\" quickly yields the appropriate entry: `{\"ward_code\":\"20579\",\"ward_name\":\"Phường Điện Bàn Đông\",\"province_name\":\"Thành phố Đà Nẵng\"}`. Excellent! The data appears consistent.\n\nNow, it’s a matter of constructing the JSON output. I'm going to set `citation.header` to \"1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng\" and `citation.line` to the relevant excerpt. Given this clear and direct match from the resolution, the confidence level is definitely \"high.\" Finally, the province will be \"Thành phố Đà Nẵng,\" the ward code will be \"20579,\" and the ward name will be \"Phường Điện Bàn Đông.\" Looks like a solid and accurate mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng",
+        "line": "18. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Điện Nam Đông, Điện Nam Trung, Điện Dương, Điện Ngọc và Điện Nam Bắc thành phường mới có tên gọi là phường Điện Bàn Đông."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "20579",
+      "ward_name": "Phường Điện Bàn Đông"
+    }
+  ]
+}

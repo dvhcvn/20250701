@@ -1,0 +1,18 @@
+{
+  "address": "Xã Cẩm Lĩnh, Huyện Cẩm Xuyên, Tỉnh Hà Tĩnh",
+  "ellapsedInMs": 8047,
+  "estimatedCost": 0.003021,
+  "thought": "**Analysis of \"Xã Cẩm Lĩnh, Huyện Cẩm Xuyên, Tỉnh Hà Tĩnh\" - Identifying the New Administrative Unit**\n\nOkay, here's my thought process on this. First, the user wants me to find the new unit for \"Xã Cẩm Lĩnh, Huyện Cẩm Xuyên, Tỉnh Hà Tĩnh.\" I need to analyze the provided resolutions and the \"New wards\" data.\n\n1.  **Province Check:**  \"Tỉnh Hà Tĩnh\" is the province.  `60-NQ/TW` indicates no province mergers are happening here. So, \"Tỉnh Hà Tĩnh\" remains the province. Simple enough.\n\n2.  **Ward-Level Analysis in Hà Tĩnh:** Now, let's zero in on \"Xã Cẩm Lĩnh.\" I'm diving into `1665/NQ-UBTVQH15`, the resolution for Hà Tĩnh's ward changes.  The crucial lines here are lines 12 and 17. Line 12 mentions mergers, but not \"Cẩm Lĩnh\". However, Line 17 is the key: it explicitly states that \"Xã Cẩm Lĩnh\", along with \"Cẩm Lộc\" and \"Cẩm Trung\", are being merged into a new unit named \"**Xã Cẩm Trung**\". Bingo!\n\n3.  **Cross-Checking Other Resolutions:**  I need to be thorough. I check other resolutions (`1656/NQ-UBTVQH15` for Hà Nội, and `1667/NQ-UBTVQH15` for Khánh Hòa). I see some \"Cẩm Lĩnh\" mentions, but they're in different provinces (Hà Nội), so those aren't relevant to my current analysis.\n\n4.  **Confirmation from Resolutions:** Based on the Hà Tĩnh resolution, it's clear: \"Xã Cẩm Lĩnh\" *is* merged into \"Xã Cẩm Trung\".\n\n5.  **Data Verification:** Now, I'll cross-reference with the \"New wards\" data.  I find the entry: `{\"ward_code\":\"18742\",\"ward_name\":\"Xã Cẩm Trung\",\"province_name\":\"Tỉnh Hà Tĩnh\"}`.  Perfect match! This reinforces my findings.\n\n6.  **JSON Output Construction:** Based on my analysis, I'll generate the JSON output:\n\n    *   `province_name`: \"Tỉnh Hà Tĩnh\" (unchanged)\n    *   `ward_name`: \"Xã Cẩm Trung\"\n    *   `ward_code`: \"18742\"\n    *   `citation`:  This is important for documentation. I'll include:\n        *   `header`: \"1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh\"\n        *   `line`: \"17. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Cẩm Lĩnh, Cẩm Lộc và Cẩm Trung thành xã mới có tên gọi là xã Cẩm Trung.\"\n    *   `confidence`: \"high\" (because the resolution is explicit and the data aligns perfectly). The resolution used *all* the land/population of the original unit.\n\nIn summary, \"Xã Cẩm Lĩnh, Huyện Cẩm Xuyên, Tỉnh Hà Tĩnh\" is now part of the new administrative unit \"Xã Cẩm Trung\", within the unchanged province of \"Tỉnh Hà Tĩnh\". The data confirms this change.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh",
+        "line": "17. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Cẩm Lĩnh, Cẩm Lộc và Cẩm Trung thành xã mới có tên gọi là xã Cẩm Trung."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hà Tĩnh",
+      "ward_code": "18742",
+      "ward_name": "Xã Cẩm Trung"
+    }
+  ]
+}

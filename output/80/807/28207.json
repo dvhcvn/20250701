@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tân Tập, Huyện Cần Giuộc, Tỉnh Long An",
+  "ellapsedInMs": 8117,
+  "estimatedCost": 0.0027368,
+  "thought": "**Mapping an Old Vietnamese Address to New Administrative Units**\n\nOkay, so I've got this old Vietnamese address: Xã Tân Tập, Huyện Cần Giuộc, Tỉnh Long An. My task is to figure out the corresponding new administrative units based on these resolutions and new ward data. This is a common task given the ongoing administrative restructuring in Vietnam.\n\nFirst, I need to break down the old address into its components: ward, district, and province. Easy enough: Xã Tân Tập is the ward, Huyện Cần Giuộc is the district, and Tỉnh Long An is the province.\n\nNow, let's dive into the resolutions. Resolution 60-NQ/TW is my starting point for the province. I'll search for \"Tỉnh Long An\" in the \"Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất\" section. Ah, here it is! It seems like \"Tỉnh Long An\" has merged with another province to become \"Tỉnh Tây Ninh\". So, \"Tỉnh Tây Ninh\" is the new province.\n\nNext, I'll need to confirm the ward. I'll scour other resolutions, specifically 1682/NQ-UBTVQH15, looking for \"Xã Tân Tập\" in the context of Tây Ninh. Bingo! Line 49 of the resolution states that \"Xã Tân Tập\" (along with two other wards) has been reorganized into a new \"Xã Tân Tập\". This indicates the *name* is preserved, but it's now a different administrative entity. The resolution title, \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tây Ninh,\" further confirms this.\n\nNow, let's verify everything with the new ward data. I'll look for \"Xã Tân Tập\" within \"Tỉnh Tây Ninh\". There's a perfect match: `{\"ward_code\":\"28207\",\"ward_name\":\"Xã Tân Tập\",\"province_name\":\"Tỉnh Tây Ninh\"}`. This perfectly confirms my findings.\n\nBased on this analysis, here's how I'll construct the JSON output:\n\n*   **province_name**: \"Tỉnh Tây Ninh\" (from the province merger)\n*   **ward_name**: \"Xã Tân Tập\" (from the new wards data, validated by the resolution)\n*   **ward_code**: \"28207\" (from the new wards data)\n*   **citation**:\n    *   **header**: \"1682/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tây Ninh\"\n    *   **line**: \"49. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đông Thạnh, Phước Vĩnh Đông và Tân Tập thành xã mới có tên gọi là **xã Tân Tập**.\"\n*   **confidence**: \"high\" (because there's a clear match in the new data and a detailed resolution explaining the creation of the new ward).\n\nAs a side note, the district information is not directly relevant here, given that districts are being eliminated, and the focus is on the ward within the new province.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1682/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tây Ninh",
+        "line": "49. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đông Thạnh, Phước Vĩnh Đông và Tân Tập thành xã mới có tên gọi là xã Tân Tập."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tây Ninh",
+      "ward_code": "28207",
+      "ward_name": "Xã Tân Tập"
+    }
+  ]
+}

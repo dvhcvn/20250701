@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tiên Thuận, Huyện Bến Cầu, Tỉnh Tây Ninh",
+  "ellapsedInMs": 6310,
+  "estimatedCost": 0.0024866,
+  "thought": "**Mapping an Old Address to a New Administrative Unit**\n\nOkay, I'm tackling this address mapping problem. First, I need to break down the old address: \"Xã Tiên Thuận,\" \"Huyện Bến Cầu,\" and \"Tỉnh Tây Ninh.\"  That's my starting point.\n\nNow, let's dive into the resolutions.  I'm looking at how Tây Ninh has changed. The crucial point here is that the province *name* remains \"Tỉnh Tây Ninh,\" even though there was a merger with Long An (60-NQ/TW). That's key for the final output.\n\nNext, I zero in on \"Xã Tiên Thuận\" in the other resolutions.  Bingo! Resolution 1682/NQ-UBTVQH15, specifically line 82, is the money shot. It clearly states that \"Tiên Thuận\" is being absorbed into a new ward called \"Xã Bến Cầu.\"  This solidifies the mapping.\n\nWith that confirmed, I check the new ward data.  Sure enough, there's an entry for \"Xã Bến Cầu\" with the province name matching what I expect: \"Tỉnh Tây Ninh.\" The `ward_code` is also there.\n\nPutting it all together, I can construct the JSON output.  The province is \"Tỉnh Tây Ninh.\" The new ward is \"Xã Bến Cầu,\" and the `ward_code` is \"25681.\" The `citation` will be \"1682/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tây Ninh\" (line 82). And the `confidence` level is definitely high; it's a direct mapping.\n\nJust to be thorough, I'm remembering that the district (\"Huyện Bến Cầu\") no longer exists in this new structure. Since the output schema doesn't include the district information, this change is not relevant in the response. I'm satisfied that everything checks out. Time to assemble that JSON payload.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1682/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tây Ninh",
+        "line": "82. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Bến Cầu và các xã An Thạnh (huyện Bến Cầu), Tiên Thuận, Lợi Thuận thành xã mới có tên gọi là xã Bến Cầu."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tây Ninh",
+      "ward_code": "25681",
+      "ward_name": "Xã Bến Cầu"
+    }
+  ]
+}

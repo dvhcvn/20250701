@@ -1,0 +1,18 @@
+{
+  "address": "Xã Xuất Hóa, Huyện Lạc Sơn, Tỉnh Hoà Bình",
+  "ellapsedInMs": 7597,
+  "estimatedCost": 0.003046,
+  "thought": "**Analysis of Address Change: Xã Xuất Hóa, Huyện Lạc Sơn, Tỉnh Hoà Bình**\n\nOkay, here's my thought process. The user's asking about the current administrative unit for \"Xã Xuất Hóa, Huyện Lạc Sơn, Tỉnh Hoà Bình\". First, I'll break it down. \"Tỉnh Hoà Bình\" is the key here. Checking my resolutions, I quickly see the province merging into \"Tỉnh Phú Thọ\" due to the 60-NQ/TW resolution. So, that part is easy. The output's `province_name` will be \"Tỉnh Phú Thọ\".\n\nNow for the tricky part: \"Xã Xuất Hóa\" and \"Huyện Lạc Sơn\". I'm specifically looking for any mentions in relevant province resolutions, primarily focusing on Phú Thọ since Hòa Bình is now part of it. The 1676/NQ-UBTVQH15 resolution immediately catches my eye. It details the administrative rearrangement of *Phú Thọ*'s wards. I scan through it, and bingo! Line 112 *explicitly* states that \"Xã Xuất Hóa\" is merged into \"xã Yên Phú\" along with \"Bình Hẻm\" and \"Yên Phú\". That's a strong match, a direct correlation! This confirms the `ward_name` is \"Xã Yên Phú\".\n\nFrom the \"new wards\" data, I confirm \"Xã Yên Phú\" has the code \"05305\", matching my earlier findings. I'm now certain. The direct merge outlined in the resolution leaves little room for doubt.\n\nConcerning other possibilities, while resolutions mentioning \"Lạc Sơn\" exist, \"Xã Xuất Hóa\" isn't included in those mergers, so they're irrelevant. My confidence is high. The `citation` will be the relevant line from 1676/NQ-UBTVQH15, line 112. And so, the JSON output is:\n\n*   `province_name`: \"Tỉnh Phú Thọ\"\n*   `ward_name`: \"Xã Yên Phú\"\n*   `ward_code`: \"05305\"\n*   `citation`: \"1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ, line 112\"\n*   `confidence`: \"high\"",
+  "result": [
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "112. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Bình Hẻm, Xuất Hóa và Yên Phú thành xã mới có tên gọi là xã Yên Phú."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "05305",
+      "ward_name": "Xã Yên Phú"
+    }
+  ]
+}

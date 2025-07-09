@@ -1,0 +1,18 @@
+{
+  "address": "Xã Vĩnh Trung, Thị xã Tịnh Biên, Tỉnh An Giang",
+  "ellapsedInMs": 8396,
+  "estimatedCost": 0.0033077000000000002,
+  "thought": "**Finding the New Administrative Unit for \"Xã Vĩnh Trung, Thị xã Tịnh Biên, Tỉnh An Giang\"**\n\nOkay, so I've got this address to work with: \"Xã Vĩnh Trung, Thị xã Tịnh Biên, Tỉnh An Giang\". The user needs to know the new administrative unit. My initial thought process is to dive into the resolutions and the updated ward data I have on hand. First things first, the province: \"Tỉnh An Giang\". Seems simple enough, and after a quick check, resolution 23 confirms that \"Tỉnh An Giang\" remains \"Tỉnh An Giang\" – no province-level changes here.\n\nNow, the crucial part: \"Xã Vĩnh Trung\". I start scanning the \"Other resolutions\" for An Giang, specifically looking at `1654/NQ-UBTVQH15`, the resolution regarding local administrative changes. Bingo! Line 20 jumps out: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Văn Giáo, Vĩnh Trung và An Cư thành xã mới có tên gọi là **xã An Cư**.\" It's explicit. \"Xã Vĩnh Trung\" is being merged into \"Xã An Cư\".\n\nNext, a quick check of the `new_wards` data for \"Xã An Cư\" within \"Tỉnh An Giang\" to validate the find. And there it is: `{\"ward_code\":\"30526\",\"ward_name\":\"Xã An Cư\",\"province_name\":\"Tỉnh An Giang\"}` – a perfect match! That confirms it. The district/town name, \"Thị xã Tịnh Biên,\" won't change as this is about ward restructuring.\n\nI then did a quick sweep of other resolutions just to be absolutely sure there wasn't a duplicate reference or some ambiguity. I saw mentions of \"Xã Vĩnh Trung\" in resolutions for Cần Thơ and Quảng Ninh, but those were clearly about other provinces and, therefore, irrelevant.\n\nGiven the clear and direct wording in `1654/NQ-UBTVQH15`, and the confirmation in the `new_wards` data, I'm confident in saying that the new administrative unit for \"Xã Vĩnh Trung, Thị xã Tịnh Biên, Tỉnh An Giang\" is **Xã An Cư**. The confidence level here is quite high – the resolution is unambiguous.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1654/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh An Giang",
+        "line": "20. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Văn Giáo, Vĩnh Trung và An Cư thành xã mới có tên gọi là xã An Cư."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh An Giang",
+      "ward_code": "30526",
+      "ward_name": "Xã An Cư"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Vĩnh Điều, Huyện Giang Thành, Tỉnh Kiên Giang",
+  "ellapsedInMs": 6393,
+  "estimatedCost": 0.0031105,
+  "thought": "**Finding the New Administrative Unit**\n\nOkay, so I'm presented with an old address: \"Xã Vĩnh Điều, Huyện Giang Thành, Tỉnh Kiên Giang.\" My task is to figure out the current administrative equivalent.  As an expert, I know precisely how to approach this.\n\nFirst, I'll check for any provincial re-organizations.  I immediately consult `60-NQ/TW` and quickly find that Kiên Giang was merged with An Giang, becoming \"Tỉnh An Giang.\"  That's my new province.\n\nNext, I need to see what happened to \"Xã Vĩnh Điều.\"  I'll start by looking through `Other resolutions` and then at the `New wards` data, focusing on relevant resolutions and their effect on \"Xã Vĩnh Điều.\"\n\nAh, here it is: Resolution `1654/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh An Giang`.  Line 79 is key. It explicitly states that \"Xã Vĩnh Điều\" (of \"Huyện Giang Thành\") *and* \"Xã Vĩnh Phú\" are merged to form a *new* \"Xã Vĩnh Điều.\" The name is retained, but the composition changed. Perfect.\n\nThen, confirming this information, I check the `New wards` list, and I find a matching entry: `{\"ward_code\":\"30793\",\"ward_name\":\"Xã Vĩnh Điều\",\"province_name\":\"Tỉnh An Giang\"}`.  The province and ward names are spot on, and the ward code is there. This seals the deal.\n\nBased on this, my JSON output will be straightforward:\n\n*   `province_name`: \"Tỉnh An Giang\" (from province merger).\n*   `ward_name`: \"Xã Vĩnh Điều\" (from the resolution and the new wards list).\n*   `ward_code`: \"30793\" (from the new wards list).\n*   `citation`:  I'll clearly cite `1654/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh An Giang` and specifically, Line 79, quoting the relevant section.\n*   `confidence`: High. The resolution's specificity regarding the merger of \"Xã Vĩnh Điều\" and \"Xã Vĩnh Phú,\" directly tying to the old \"Huyện Giang Thành\", and the match in the `New wards` list leaves no doubt.  This is a solid finding.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1654/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh An Giang",
+        "line": "79. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Vĩnh Phú (huyện Giang Thành) và xã Vĩnh Điều thành xã mới có tên gọi là **xã Vĩnh Điều**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh An Giang",
+      "ward_code": "30793",
+      "ward_name": "Xã Vĩnh Điều"
+    }
+  ]
+}

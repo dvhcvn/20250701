@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Thủ Thừa, Huyện Thủ Thừa, Tỉnh Long An",
+  "ellapsedInMs": 7430,
+  "estimatedCost": 0.0025498,
+  "thought": "**Identifying the New Administrative Unit for the Given Address**\n\nOkay, so I'm tasked with figuring out the new administrative structure for \"Thị trấn Thủ Thừa, Huyện Thủ Thừa, Tỉnh Long An.\"  First, I'll tackle the province.  The address indicates \"Tỉnh Long An.\" I need to check the resolutions, specifically 60-NQ/TW. Ah, here it is: \"Hợp nhất tỉnh Tây Ninh và tỉnh Long An, lấy tên là tỉnh Tây Ninh.\"  So, Long An is merged into Tây Ninh, and the new province name is \"Tỉnh Tây Ninh.\" Clear enough.\n\nNow, for the ward. The address includes \"Thị trấn Thủ Thừa.\" I need to cross-reference this with other resolutions, particularly 1682/NQ-UBTVQH15. Let's see...  Line 20 jumps out: \"20. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Thủ Thừa, một phần diện tích tự nhiên, quy mô dân số của xã Bình Thạnh và xã Tân Thành (huyện Thủ Thừa), xã Nhị Thành thành xã mới có tên gọi là **xã Thủ Thừa**.\"  Perfect!  The resolution explicitly states that \"Thị trấn Thủ Thừa\" is merging into a new unit, \"Xã Thủ Thừa.\"\n\nNext, I'll consult the list of new wards.  I'm looking for \"Xã Thủ Thừa.\" And there it is: `{\"ward_code\":\"28036\",\"ward_name\":\"Xã Thủ Thừa\",\"province_name\":\"Tỉnh Tây Ninh\"}`.  The match is complete.\n\nThe output will be straightforward:  The *citation* will refer to the relevant lines of the resolutions. My *confidence* is high because the resolution provides an explicit mapping. The new *province_name* is \"Tỉnh Tây Ninh,\" the *ward_code* is \"28036,\" and the *ward_name* is \"Xã Thủ Thừa.\"\n\nI should double-check for any potential ambiguities or alternative interpretations. The province merger (Long An -> Tây Ninh) is definitive. The ward merger of \"Thị trấn Thủ Thừa\" into \"Xã Thủ Thừa\" is explicitly mentioned in the resolution.  Line 84 mentions a new *phường Long An* is formed using part of *Bình Thạnh*, but that does not involve *Thủ Thừa*, so it is irrelevant. The new ward, \"Xã Thủ Thừa,\" is correctly associated with \"Tỉnh Tây Ninh,\" which confirms the province merger is complete.\n\nTherefore, the mapping is unequivocally clear.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1682/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tây Ninh",
+        "line": "20. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Thủ Thừa, một phần diện tích tự nhiên, quy mô dân số của xã Bình Thạnh và xã Tân Thành (huyện Thủ Thừa), xã Nhị Thành thành xã mới có tên gọi là xã Thủ Thừa."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tây Ninh",
+      "ward_code": "28036",
+      "ward_name": "Xã Thủ Thừa"
+    }
+  ]
+}

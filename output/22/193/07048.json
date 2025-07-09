@@ -1,0 +1,18 @@
+{
+  "address": "Xã Vũ Oai, Thành phố Hạ Long, Tỉnh Quảng Ninh",
+  "ellapsedInMs": 8132,
+  "estimatedCost": 0.0030089,
+  "thought": "**Analysis of Administrative Unit Change: Xã Vũ Oai, Quảng Ninh**\n\nOkay, so I'm presented with the old address \"Xã Vũ Oai, Thành phố Hạ Long, Tỉnh Quảng Ninh\" and tasked with identifying the corresponding new administrative unit.  My process starts with a straightforward analysis of the provided data.\n\nFirst, I quickly recognize \"Tỉnh Quảng Ninh\" as the province.  I immediately cross-reference this with the \"Các đơn vị hành chính cấp tỉnh không thực hiện sáp nhập\" resolutions (60-NQ/TW), confirming that the province name itself remains unchanged. Good.\n\nNext, I zero in on \"Xã Vũ Oai.\" My approach is to meticulously search through the relevant resolutions for any mention of it.  I scan the data, focusing on the \"lines\" within each resolution.  And, bingo!  Resolution 1679/NQ-UBTVQH15, concerning the administrative reorganization of Quảng Ninh's communes (\"xã\"), holds the key.  Specifically, line \"2\" states unequivocally that \"Xã Vũ Oai\" is merged into, or rather forms part of, a new commune called \"Xã Thống Nhất.\"  This is a direct and definitive link.\n\nNow, to ensure accuracy, I cross-validate this finding. I check the provided list of \"New wards\" for \"Xã Thống Nhất\" within \"Tỉnh Quảng Ninh.\"  The data confirms a matching entry: `{\"ward_code\":\"07060\",\"ward_name\":\"Xã Thống Nhất\",\"province_name\":\"Tỉnh Quảng Ninh\"}`.  The match is perfect.\n\nWhile the primary concern is the ward-level change, I also make a quick note of the \"Thành phố Hạ Long\" element. Though not directly relevant to the core task of ward identification, I take a moment to see if the city itself is affected by any of the resolutions. Resolution 1679/NQ-UBTVQH15 also deals with *phường* (wards) within Hạ Long, mentioning merging of \"phường Hồng Hà\" and \"phường Hồng Hải\" into a new *phường* \"Hạ Long\". However, \"Thành phố Hạ Long\" itself remains as a city-level unit. The user is focusing on ward-level changes as requested.\n\nGiven the direct link in the resolution and the perfect match in the \"New wards\" data, my confidence in this answer is exceptionally high.  There's no room for ambiguity here.\n\nTherefore, the final output I would construct will contain the following:\n\n*   `province_name`: \"Tỉnh Quảng Ninh\"\n*   `ward_code`: \"07060\"\n*   `ward_name`: \"Xã Thống Nhất\"\n*   `confidence`: \"high\"\n*   `citation`:  With a header of  \"1679/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ninh\", and the line: \"2. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Vũ Oai,Hòa Bình, Thống Nhất và một phần diện tích tự nhiên, quy mô dân số của xã Đồng Lâm thành xã mới có tên gọi là xã Thống Nhất.\"  This should be a complete and accurate representation of the necessary information.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1679/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ninh",
+        "line": "2. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Vũ Oai,Hòa Bình, Thống Nhất và một phần diện tích tự nhiên, quy mô dân số của xã Đồng Lâm thành xã mới có tên gọi là xã Thống Nhất."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ninh",
+      "ward_code": "07060",
+      "ward_name": "Xã Thống Nhất"
+    }
+  ]
+}

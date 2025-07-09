@@ -1,0 +1,18 @@
+{
+  "address": "Xã Cẩm Duệ, Huyện Cẩm Xuyên, Tỉnh Hà Tĩnh",
+  "ellapsedInMs": 7956,
+  "estimatedCost": 0.0030486,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, here's what I've determined. The user presented an old address and wants me to map it to the current administrative structure. Let's break it down:\n\nFirst, I need to identify the old province and ward from the address, which is \"Xã Cẩm Duệ\" in \"Tỉnh Hà Tĩnh\". Now, let's see if that province has undergone any changes by checking Resolution 60-NQ/TW. It confirms \"Tỉnh Hà Tĩnh\" hasn't merged or changed, so that stays the same.\n\nNext, I need to consult Resolution 1665/NQ-UBTVQH15, the one that deals with adjustments to the provincial administrative units. I'm looking for mentions of \"Xã Cẩm Duệ\" within its lines. Bingo! Line 14 nails it: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Cẩm Mỹ, Cẩm Thạch và Cẩm Duệ thành xã mới có tên gọi là **xã Cẩm Duệ**.\"\n\nThis tells me that \"Xã Cẩm Duệ\" was *merged* with others, but the resulting entity *retains* the name \"Xã Cẩm Duệ\". It's a new ward, though, even with the familiar name.\n\nTo confirm and pinpoint the new data, I'm consulting the \"New Wards\" data. And yes, there's a match! \"Xã Cẩm Duệ\" with the code \"18739\" in \"Tỉnh Hà Tĩnh.\"\n\nBased on this, I'm confident in constructing the JSON output:\n\n*   `province_name`: \"Tỉnh Hà Tĩnh\" (because it's unchanged).\n*   `ward_name`: \"Xã Cẩm Duệ\" (because it's the result of a merger).\n*   `ward_code`: \"18739\" (from the new data).\n*   `citation`: The resolution header and line specifying this information.\n*   `confidence`: High, given the direct match and confirmation from different sources.\n\nI double-checked line 12 from the resolution just to be thorough, but it addresses a separate administrative area. Line 14 confirms exactly what I'm looking for regarding this ward. This means that based on the evidence presented, I can confirm the current administrative structure of \"Xã Cẩm Duệ\" is that found in the new data. I can now be confident in my answer.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh",
+        "line": "14. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Cẩm Mỹ, Cẩm Thạch và Cẩm Duệ thành xã mới có tên gọi là xã Cẩm Duệ."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hà Tĩnh",
+      "ward_code": "18739",
+      "ward_name": "Xã Cẩm Duệ"
+    }
+  ]
+}

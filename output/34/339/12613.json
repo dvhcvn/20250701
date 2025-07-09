@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Hưng Nhân, Huyện Hưng Hà, Tỉnh Thái Bình",
+  "ellapsedInMs": 6220,
+  "estimatedCost": 0.0023593,
+  "thought": "**Finding the New Administrative Unit for the Old Address**\n\nOkay, so I've got \"Thị trấn Hưng Nhân, Huyện Hưng Hà, Tỉnh Thái Bình.\" This is a straightforward address transformation.  My thinking goes like this: first, I need to pinpoint the *old* province, which is clearly \"Tỉnh Thái Bình.\" Now, the key is the administrative boundary changes.  I know these resolutions (like 60-NQ/TW) often dictate these shifts.\n\nThe first step is checking if \"Tỉnh Thái Bình\" was subject to any provincial merges or splits. Sure enough, there was a merger! \"Hợp nhất tỉnh Hưng Yên và tỉnh Thái Bình, lấy tên là tỉnh Hưng Yên\". So, \"Tỉnh Thái Bình\" is now \"Tỉnh Hưng Yên\". This is crucial.\n\nNext, I need the *old* ward and district. That's \"Thị trấn Hưng Nhân\" and \"Huyện Hưng Hà.\"  Even though the prompt mentioned eliminating districts, I'll keep the districts in mind for context.  Now comes the crucial part: I'll hunt through other relevant resolutions, specifically looking for mentions of \"Thị trấn Hưng Nhân\" and \"Huyện Hưng Hà\" within the *new* provincial context of \"Tỉnh Hưng Yên\".\n\nBingo! Resolution \"1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên\" looks promising. Line 78 is the key. It specifically addresses the changes to this area: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Hưng Nhân và các xã Thái Hưng (huyện Hưng Hà), Tân Lễ, Tiến Đức, Liên Hiệp thành xã mới có tên gọi là **xã Long Hưng**.\" Fantastic! It's a direct mapping of the old location to the new \"Xã Long Hưng\".\n\nNow, I'll double-check this in my \"New wards\" list. And there it is: `{\"ward_code\":\"12613\",\"ward_name\":\"Xã Long Hưng\",\"province_name\":\"Tỉnh Hưng Yên\"}`. It's a perfect match.\n\nFinally, I'll assemble the JSON output.  The `province_name` is \"Tỉnh Hưng Yên,\" the `ward_name` is \"Xã Long Hưng,\" and the `ward_code` is the code for \"Xã Long Hưng.\"  The `citation` will be to Resolution 1666, line 78. And, given this direct, explicit match, the `confidence` level is definitely \"high.\" Case closed.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên",
+        "line": "78. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Hưng Nhân và các xã Thái Hưng (huyện Hưng Hà), Tân Lễ, Tiến Đức, Liên Hiệp thành xã mới có tên gọi là xã Long Hưng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "12613",
+      "ward_name": "Xã Long Hưng"
+    }
+  ]
+}

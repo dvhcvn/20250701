@@ -1,0 +1,18 @@
+{
+  "address": "Xã Đồng Tuyển, Thành phố Lào Cai, Tỉnh Lào Cai",
+  "ellapsedInMs": 4984,
+  "estimatedCost": 0.0019284,
+  "thought": "**Analysis of Address Change: Xã Đồng Tuyển, Lào Cai**\n\nOkay, so the user wants to know the new administrative unit for \"Xã Đồng Tuyển, Thành phố Lào Cai, Tỉnh Lào Cai\".  Let's break this down. First, I need to confirm the province and ward.  Easy: \"Tỉnh Lào Cai\" and \"Xã Đồng Tuyển.\"\n\nNext, I'll check the relevant resolutions.  Resolution 60/NQ-TW doesn't change anything at the provincial level - Lào Cai remains Lào Cai.  Good. Now, I'll meticulously search for \"Xã Đồng Tuyển\" in the other resolution (1673/NQ-UBTVQH15).\n\nAha! Line 39 is key. It states that \"Xã Đồng Tuyển\" *is merged* with other wards to form \"Xã Cốc San.\"  Bingo. To verify, I'll cross-reference this with the \"New wards\" data.  Looking for \"Xã Cốc San\" in the list, I find the entry: `{\"ward_code\":\"02746\",\"ward_name\":\"Xã Cốc San\",\"province_name\":\"Tỉnh Lào Cai\"}`.  Perfect match.\n\nGiven the explicit merger statement in the resolution, I'm highly confident in this result.  This allows me to construct the JSON output:\n\n*   `citation`: The header and the specific line 39 from the resolution.\n*   `confidence`: \"high\"\n*   `province_name`: \"Tỉnh Lào Cai\" (confirmed by the new ward data and the province resolution)\n*   `ward_code`: \"02746\"\n*   `ward_name`: \"Xã Cốc San\"\n\nThat should be the correct answer. The user will be able to confirm the findings as per their expertise.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai",
+        "line": "39. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đồng Tuyển, Tòng Sành và Cốc San thành xã mới có tên gọi là xã Cốc San."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "02746",
+      "ward_name": "Xã Cốc San"
+    }
+  ]
+}

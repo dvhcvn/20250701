@@ -1,0 +1,18 @@
+{
+  "address": "Xã Yên Trạch, Huyện Cao Lộc, Tỉnh Lạng Sơn",
+  "ellapsedInMs": 6027,
+  "estimatedCost": 0.0023177999999999996,
+  "thought": "**Determining the New Ward for an Old Address**\n\nOkay, so I've got this old address: \"Xã Yên Trạch, Huyện Cao Lộc, Tỉnh Lạng Sơn.\"  My task is to pinpoint the new administrative unit, the ward, that corresponds to it.  This is straightforward enough; I just need to cross-reference the resolutions with the new ward data.\n\nFirst things first, I've extracted the key information from the old address:  \"Tỉnh Lạng Sơn\" (the province) and \"Xã Yên Trạch\" (the ward).  Now, the fun begins – the deep dive into the relevant resolutions.\n\nThe province-level resolutions, specifically \"60-NQ/TW,\" tell me that Lạng Sơn, fortunately, isn't undergoing any province-level mergers. That streamlines things considerably.\n\nMy focus then shifts to resolutions related to Lạng Sơn and Yên Trạch.  I came across \"1672/NQ-UBTVQH15,\" which specifically deals with the rearrangement of communes in Lạng Sơn.  Bingo! Line 65 is the key. It details the merger of \"Xã Yên Trạch\" *and* several other units into a new ward: \"Phường Đông Kinh.\" This is a solid lead.\n\nJust to be sure, I briefly scanned other resolutions, and I found one (\"1683/NQ-UBTVQH15\") mentioning \"xã Yên Trạch.\" But, a quick glance and I noticed it pertained to \"Tỉnh Thái Nguyên,\" which isn't our province.\n\nNow, with \"Phường Đông Kinh\" as my strong candidate, I moved to the \"New Wards\" data. I was looking for a matching entry for \"Phường Đông Kinh\" within \"Tỉnh Lạng Sơn.\" And there it was! The data confirmed: `{\"ward_code\":\"05977\",\"ward_name\":\"Phường Đông Kinh\",\"province_name\":\"Tỉnh Lạng Sơn\"}`.\n\nSo, the new ward is definitively \"Phường Đông Kinh\" (code \"05977\") in \"Tỉnh Lạng Sơn.\" I'm highly confident in this answer because the resolution clearly and explicitly outlined the merger. It's a textbook example of how to tackle this type of administrative geography problem.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1672/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lạng Sơn",
+        "line": "65. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Vĩnh Trại, phường Đông Kinh, xã Yên Trạch và xã Mai Pha thành phường mới có tên gọi là**phường Đông Kinh**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lạng Sơn",
+      "ward_code": "05977",
+      "ward_name": "Phường Đông Kinh"
+    }
+  ]
+}

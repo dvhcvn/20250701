@@ -1,0 +1,18 @@
+{
+  "address": "Xã Ga Ri, Huyện Tây Giang, Tỉnh Quảng Nam",
+  "ellapsedInMs": 9066,
+  "estimatedCost": 0.0032562,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, let's break this down systematically. The user wants to map an old address, specifically \"Xã Ga Ri\" in \"Tỉnh Quảng Nam,\" to its current administrative location. My approach will be to first identify the changes to both the province and the ward and then articulate my confidence.\n\n1.  **Province Mapping:** The initial province is \"Tỉnh Quảng Nam.\" I need to see if there have been any province-level mergers. Resolution \"60-NQ/TW\" confirms that \"Tỉnh Quảng Nam\" merged with \"Thành phố Đà Nẵng,\" becoming simply \"Thành phố Đà Nẵng.\"\n\n2.  **Ward Mapping:** Now, for the ward \"Xã Ga Ri.\" I'll check the ward-level resolutions. The key document here seems to be \"1659/NQ-UBTVQH15,\" specifically for administrative changes in \"Thành phố Đà Nẵng\" (the new name of the province).\n\n    *   Resolution 1659 explicitly states that \"Xã Ga Ri\" (allowing for common minor spelling variations) is merged with other wards (Ch'ơm, Tr'hy, and Axan) to form the new ward \"Xã Hùng Sơn.\"\n    *   This is a crucial and direct piece of evidence, linking the old ward to a specific new entity.\n\n3.  **New Ward Verification:**  I should verify the details of \"Xã Hùng Sơn.\"  I'll look in the new ward data.  A match exists: `{\"ward_code\":\"20443\",\"ward_name\":\"Xã Hùng Sơn\",\"province_name\":\"Thành phố Đà Nẵng\"}`\n\n4.  **Confidence:** Given the direct mapping in the resolution and the straightforward province merger, the confidence level is \"high.\"\n\n5.  **Addressing the Prompt's Scope:** The request mentions eliminating districts.  The old address included \"Huyện Tây Giang.\" Since this focuses on the ward transformation, and districts are eliminated, this old district detail will be dropped. I'm focusing on the ward \"Xã Ga Ri\". I also need to make sure there are no other resolutions that mention \"Xã Ga Ri\" or \"Tây Giang\" in a way that might impact the mapping.\n\n    I checked other resolutions (1664, 1666) that include names similar to \"Tây Giang\", but these are irrelevant. The key here is Resolution 1659, which directly addresses the \"Ga Ri\" to \"Hùng Sơn\" change.\n\n    The final output will be:\n\n    *   `province_name`: \"Thành phố Đà Nẵng\"\n    *   `ward_name`: \"Xã Hùng Sơn\"\n    *   `ward_code`: \"20443\"\n    *   `citation`:\n        *   `header`: \"1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng\"\n        *   `line`: \"83. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Ch'ơm, Gari, Tr'hy và Axan thành xã mới có tên gọi là **xã Hùng Sơn**.\"\n    *   `confidence`: \"high\"",
+  "result": [
+    {
+      "citation": {
+        "header": "1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng",
+        "line": "83. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Ch'ơm, Gari, Tr'hy và Axan thành xã mới có tên gọi là xã Hùng Sơn."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "20443",
+      "ward_name": "Xã Hùng Sơn"
+    }
+  ]
+}

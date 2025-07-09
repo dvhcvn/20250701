@@ -1,0 +1,18 @@
+{
+  "address": "Xã Ia RBol, Thị xã Ayun Pa, Tỉnh Gia Lai",
+  "ellapsedInMs": 8306,
+  "estimatedCost": 0.0031755,
+  "thought": "**Analyzing the Address Mapping for Ia RBol, Gia Lai**\n\nOkay, so I'm looking at this Vietnamese address and need to figure out how it maps to a new administrative unit. First, I've got \"Xã Ia RBol\" as the old ward, \"Thị xã Ayun Pa\" as the old district (even though districts are apparently gone, it's relevant context), and \"Tỉnh Gia Lai\" as the province.\n\nThe initial step is to cross-check province resolutions, which is a formality since Gia Lai remains Gia Lai, although it absorbed Binh Dinh. That part is straightforward.\n\nThe crucial work is in 1664/NQ-UBTVQH15. I'm focusing on lines referencing Ia RBol or Ayun Pa. Line 74 immediately jumps out: it clearly states that the old \"Xã Ia Rbol\" and \"Xã Chư Băh\" are merged into a *new* \"Xã Ia Rbol\". That's a direct match to the old ward! Line 75 doesn't help with Ia RBol, focusing on Ia Sao. Line 126 is interesting, creating a new \"Phường Ayun Pa\", but it's *not* the result of merging Ia RBol.\n\nNext, the \"New wards\" list. Line 74 of the resolution points me directly to \"Xã Ia Rbol\". I check the list, and there it is: `{\"ward_code\":\"24065\",\"ward_name\":\"Xã Ia Rbol\",\"province_name\":\"Tỉnh Gia Lai\"}`. Perfect match.\n\nThe \"Phường Ayun Pa\" mentioned in line 126? While relevant to the old district, the resolution *specifically* details what happens to \"Xã Ia Rbol\".  The new \"Phường Ayun Pa\" is formed from other wards and not from a merge with \"Xã Ia RBol\".\n\nSo, in conclusion, the old \"Xã Ia RBol\" is mapped directly to the new \"Xã Ia Rbol\" (ward code 24065) in Tỉnh Gia Lai, as per resolution 1664/NQ-UBTVQH15, line 74. It's a clean and straightforward case!\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai",
+        "line": "74. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Chư Băh và xã Ia Rbol thành xã mới có tên gọi là xã Ia Rbol."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "24065",
+      "ward_name": "Xã Ia Rbol"
+    }
+  ]
+}

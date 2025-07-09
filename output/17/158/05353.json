@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Hàng Trạm, Huyện Yên Thủy, Tỉnh Hoà Bình",
+  "ellapsedInMs": 6337,
+  "estimatedCost": 0.0021776,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm tackling this Vietnamese address mapping task. The goal is to figure out the new administrative unit for \"Thị trấn Hàng Trạm\" in \"Huyện Yên Thủy\", \"Tỉnh Hoà Bình\" based on the provided resolutions and new ward data. Here's my thought process:\n\nFirst, I need to break down the old address. I've got the ward (\"Thị trấn Hàng Trạm\"), the district (\"Huyện Yên Thủy\" - useful for province context here, even though districts are being eliminated), and the province (\"Tỉnh Hoà Bình\").\n\nNow, the province is key. I'm checking for mergers and I see \"60-NQ/TW: Các đơn vị hành chính cấp tỉnh không thực hiện sáp nhập\" which doesn't list \"Tỉnh Hoà Bình\". Then, I look at the merger resolutions and find \"60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất\" which clearly states that \"Tỉnh Hoà Bình\" is merging with \"Vĩnh Phúc\" and \"Phú Thọ\", becoming \"Tỉnh Phú Thọ\". So, I now know the new province.\n\nNext, I need to find what happened to \"Thị trấn Hàng Trạm.\" I'm diving into \"Other resolutions,\" specifically \"1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ.\" I find the key sentence: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Hàng Trạm, xã Lạc Thịnh và xã Phú Lai thành xã mới có tên gọi là **xã Yên Thủy**.\" Boom! There's my match. It explicitly mentions \"Thị trấn Hàng Trạm\" and links it to the new ward, \"Xã Yên Thủy\".\n\nThis is great because I can directly map the old ward to the new one. Now, to make sure everything lines up, I'm cross-referencing this with the \"New wards\" data.  I find `{\"ward_code\":\"05353\",\"ward_name\":\"Xã Yên Thủy\",\"province_name\":\"Tỉnh Phú Thọ\"}`, which confirms the new ward name and the new province.\n\nFinally, I'm putting together the JSON output. My `citation` will be the header and the specific line from the resolution: \"1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ, Line 129\". The `confidence` is high because of the explicit mapping. The `province_name` is \"Tỉnh Phú Thọ,\"  the `ward_code` is \"05353,\" and the `ward_name` is \"Xã Yên Thủy\". And of course, I'm double-checking the schema to make sure everything's correct and that I'm outputting a JSON array.  I'm confident this will produce a valid and accurate mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "129. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Hàng Trạm, xã Lạc Thịnh và xã Phú Lai thành xã mới có tên gọi là xã Yên Thủy."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "05353",
+      "ward_name": "Xã Yên Thủy"
+    }
+  ]
+}

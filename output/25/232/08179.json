@@ -1,0 +1,18 @@
+{
+  "address": "Xã Ninh Dân, Huyện Thanh Ba, Tỉnh Phú Thọ",
+  "ellapsedInMs": 6929,
+  "estimatedCost": 0.0028737,
+  "thought": "**Finding the New Administrative Unit for the Old Address**\n\nOkay, here's the breakdown of how I'm approaching this. The user has given me an old address: \"Xã Ninh Dân, Huyện Thanh Ba, Tỉnh Phú Thọ\".  My goal is to find the new equivalent.\n\nFirst, I identified the province, which is \"Tỉnh Phú Thọ.\"  A quick check of the relevant province-level resolutions (like 60-NQ/TW) confirms that the province name remains the same.  This step is fairly basic but necessary.\n\nNext, I zeroed in on the ward and district: \"Xã Ninh Dân\" and \"Huyện Thanh Ba\" respectively. This is where the real work begins. I'll need to pore over any resolutions related to \"Tỉnh Phú Thọ\" that specifically mention either \"Xã Ninh Dân\" or \"Huyện Thanh Ba.\"\n\nI found a very relevant resolution, 1676/NQ-UBTVQH15, that covers administrative rearrangements within Phú Thọ.  After a quick scan, Line 13 of the resolution is crucial. It explicitly states that \"Xã Ninh Dân\" is being merged with other communes to form a new commune: \"Xã Hoàng Cương\". This is a direct hit!\n\nNow, I just need to verify and consolidate the information.  I quickly searched my database of \"New wards\" for \"Xã Hoàng Cương\" within \"Tỉnh Phú Thọ\". And there it is: `{\"ward_code\":\"08203\",\"ward_name\":\"Xã Hoàng Cương\",\"province_name\":\"Tỉnh Phú Thọ\"}`.\n\nPutting it all together, I can construct the final JSON output:  the province remains the same, but the ward has changed. \"Xã Ninh Dân\" is now \"Xã Hoàng Cương\". The ward code is 08203, and the citation is clear: 1676/NQ-UBTVQH15, line 13. My confidence is high here; the resolution directly addresses the old ward's fate.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "13. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Ninh Dân, Mạn Lạn và Hoàng Cương thành xã mới có tên gọi là xã Hoàng Cương."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "08203",
+      "ward_name": "Xã Hoàng Cương"
+    }
+  ]
+}

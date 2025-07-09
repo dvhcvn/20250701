@@ -1,0 +1,18 @@
+{
+  "address": "Xã Phương Tú, Huyện Ứng Hòa, Thành phố Hà Nội",
+  "ellapsedInMs": 5686,
+  "estimatedCost": 0.0036610999999999996,
+  "thought": "**Finding the New Administrative Unit for a Given Address**\n\nOkay, so I've got this address: \"Xã Phương Tú, Huyện Ứng Hòa, Thành phố Hà Nội.\" My task is to figure out the current ward. First, I need to confirm the province, which is clearly \"Thành phố Hà Nội.\" Now, I'll need to check for any administrative changes affecting Hà Nội. Luckily, resolution \"60-NQ/TW\" confirms that Hà Nội remains unchanged.\n\nNext, I need to delve into specific resolutions within \"Thành phố Hà Nội\" to find the fate of \"Xã Phương Tú\" and \"Huyện Ứng Hòa.\" Resolution \"1656/NQ-UBTVQH15\" looks promising.  Scanning through it, I found line 68. Bingo! It explicitly states the merger:  \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Vân Đình và các xã Cao Sơn Tiến, Phương Tú, Tảo Dương Văn thành xã mới có tên gọi là **xã Vân Đình**.\"\n\nThis is great! It's explicit. So, \"Xã Phương Tú\" is now part of \"Xã Vân Đình.\"  Now, I just need to locate \"Xã Vân Đình\" within the relevant data structure, knowing it's located under \"Thành phố Hà Nội.\"  I can quickly find the entry: `{\"ward_code\":\"10354\",\"ward_name\":\"Xã Vân Đình\",\"province_name\":\"Thành phố Hà Nội\"}`.\n\nI'm confident I have a solid answer. I'll construct the JSON output, indicating the relevant resolution and line number:  the citation is \"1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội,\" line 68 explicitly states the merger, and my confidence is high because of the specificity of the source. The new information is:  province \"Thành phố Hà Nội\", ward code \"10354\", and ward name \"Xã Vân Đình\". This should be accurate.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội",
+        "line": "68. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Vân Đình và các xã Cao Sơn Tiến, Phương Tú, Tảo Dương Văn thành xã mới có tên gọi là xã Vân Đình."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hà Nội",
+      "ward_code": "10354",
+      "ward_name": "Xã Vân Đình"
+    }
+  ]
+}

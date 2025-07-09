@@ -1,0 +1,18 @@
+{
+  "address": "Xã Nghĩa Xuân, Huyện Quỳ Hợp, Tỉnh Nghệ An",
+  "ellapsedInMs": 6960,
+  "estimatedCost": 0.0032443000000000003,
+  "thought": "**Finding the New Administrative Unit for \"Xã Nghĩa Xuân, Huyện Quỳ Hợp, Tỉnh Nghệ An\"**\n\nOkay, so the user wants the new administrative unit for \"Xã Nghĩa Xuân.\" My first step is always to break down the information: the old ward is \"Xã Nghĩa Xuân\", the old province is \"Tỉnh Nghệ An,\" and we know it was previously in \"Huyện Quỳ Hợp.\" Even though the task is about eliminating districts, they're still relevant for context in the resolutions, but the output schema thankfully only cares about province and ward.\n\nI'll start with the provincial resolutions (60-NQ/TW). Good, Nghệ An is listed as a province *not* undergoing merger, so \"Tỉnh Nghệ An\" is stable.  Now for the specific resolutions. I'll skip the Đồng Nai one (1662/NQ-UBTVQH15) since it's irrelevant.\n\nNow to the critical one: 1678/NQ-UBTVQH15 (Nghệ An). Scanning through, line 65 jumps out. It clearly states that \"Xã Nghĩa Xuân\" is being merged into the new \"Xã Tam Hợp.\" I confirmed this by checking other lines.\n\nChecking the new wards data to be certain, I found a perfect match. I can safely construct the JSON output: the province is the unchanged \"Tỉnh Nghệ An\", the new ward is \"Xã Tam Hợp,\" code is \"17059\"  and the confidence is high. The citation will be pulled from line 65 of 1678/NQ-UBTVQH15. Simple, clear, and accurate.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1678/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Nghệ An",
+        "line": "65. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tam Hợp (huyện Quỳ Hợp), Đồng Hợp, Nghĩa Xuân và Yên Hợp thành xã mới có tên gọi là xã Tam Hợp."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Nghệ An",
+      "ward_code": "17059",
+      "ward_name": "Xã Tam Hợp"
+    }
+  ]
+}

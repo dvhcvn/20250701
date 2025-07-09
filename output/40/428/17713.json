@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Dùng, Huyện Thanh Chương, Tỉnh Nghệ An",
+  "ellapsedInMs": 5594,
+  "estimatedCost": 0.0030364,
+  "thought": "**Finding the New Administrative Unit**\n\nOkay, here's what I'm thinking. The user gave me an old address: \"Thị trấn Dùng, Huyện Thanh Chương, Tỉnh Nghệ An\". My goal is to find the *new* ward for that address.\n\nFirst, I need to break down the old address. I quickly identify \"Thị trấn Dùng\" as the old ward name and \"Tỉnh Nghệ An\" as the province.\n\nNow, the province is important. I need to make sure \"Tỉnh Nghệ An\" hasn't undergone any changes. I'll check those 60-NQ/TW resolutions. Aha! It's listed as not merging. That's a relief. \"Tỉnh Nghệ An\" remains \"Tỉnh Nghệ An\".\n\nNext, I'll search through other resolutions, specifically focusing on any mentioning \"Thị trấn Dùng\" within \"Tỉnh Nghệ An\". I'm looking for resolution 1678/NQ-UBTVQH15, the one about the rearrangement of administrative units at the commune level. Bingo! Line 88 catches my eye. \"Thị trấn Dùng\" is being merged *into* a new commune. That's what I need! It states the new commune is called \"xã Đại Đồng\".\n\nMy next step? Validate that new name and get some essential details. I'll search my \"New wards\" data. Yep, there it is: \"Xã Đại Đồng\", with a code of \"17713\". It's in the province of \"Tỉnh Nghệ An\". Perfect match!\n\nFinally, I'll structure the data as requested. I've got my citation (the resolution and the specific line). The confidence is high because it's a direct, unambiguous match. I'll include the province name from the new ward data to ensure consistency. I've got the ward code and, of course, the new ward name. Now it's ready to be sent back as a clean JSON response.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1678/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Nghệ An",
+        "line": "88. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Dùng và các xã Đồng Văn (huyện Thanh Chương), Thanh Ngọc, Thanh Phong, Đại Đồng thành xã mới có tên gọi là xã Đại Đồng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Nghệ An",
+      "ward_code": "17713",
+      "ward_name": "Xã Đại Đồng"
+    }
+  ]
+}

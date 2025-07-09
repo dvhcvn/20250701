@@ -1,0 +1,18 @@
+{
+  "address": "Phường Hải Sơn, Quận Đồ Sơn, Thành phố Hải Phòng",
+  "ellapsedInMs": 7495,
+  "estimatedCost": 0.0029054,
+  "thought": "**Identifying the New Administrative Unit for Phường Hải Sơn, Quận Đồ Sơn, Thành phố Hải Phòng**\n\nOkay, here's how I'm approaching this. The user wants to find the new administrative unit for \"Phường Hải Sơn, Quận Đồ Sơn, Thành phố Hải Phòng\". First, I recognize \"Thành phố Hải Phòng\" as the province.  I'm familiar with the recent administrative changes in Vietnam, so I quickly recall that there haven't been any province mergers relevant to Hai Phong, due to the 60-NQ/TW document, the name remains \"Thành phố Hải Phòng\".\n\nNext, and this is crucial, I need to check the relevant resolutions for any mention of \"Phường Hải Sơn\" within \"Thành phố Hải Phòng\".  I'm digging into `Other resolutions`, specifically looking for changes affecting that specific ward.  I've found it: `1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng`.  Line 19 is the key: it explicitly states that \"phường Hải Sơn\" is being merged with other areas to form a new ward named **\"phường Đồ Sơn\"**. Bingo!\n\nI also need to validate this with the `New wards` data, to ensure consistency. `{\"ward_code\":\"11455\",\"ward_name\":\"Phường Đồ Sơn\",\"province_name\":\"Thành phố Hải Phòng\"}` exactly matches the new ward that I've identified, and matches the province context.\n\nGiven this, I'm confident in constructing the JSON output.  The relevant citation is the resolution line I found: `1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng` and its relevant line. The confidence level is high because there's a direct reference to the merging of \"Phường Hải Sơn\" into \"Phường Đồ Sơn\". The new province name remains the same as the old - \"Thành phố Hải Phòng\".  The ward code, according to the `New wards` data, is \"11455\", and the new ward name is definitively \"Phường Đồ Sơn\".\n\nFurthermore, the resolution clearly indicates a complete merger.  \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Hải Sơn... thành phường mới có tên gọi là phường Đồ Sơn.\" This eliminates any ambiguity and confirms my finding of one single new ward. I also notice the inclusion of \"phường Minh Đức (quận Đồ Sơn)\" within the resolution, reinforcing the correct district and province context.  So, no district information is needed in the schema, as it only asks for the province and ward information.\n\nTherefore, my final check confirms: Old Ward: Phường Hải Sơn, Old Province: Thành phố Hải Phòng, Resolution: 1669/NQ-UBTVQH15, line 19. New Ward: Phường Đồ Sơn, New Province: Thành phố Hải Phòng, New Ward Code: 11455, Confidence: High.  I'm ready to output the results.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "19. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Hải Sơn, một phần diện tích tự nhiên của phường Tân Thành và phần còn lại của phường Vạn Hương, phường Ngọc Xuyên sau khi sắp xếp theo quy định tại khoản 18 Điều này thành phường mới có tên gọi là phường Đồ Sơn."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "11455",
+      "ward_name": "Phường Đồ Sơn"
+    }
+  ]
+}

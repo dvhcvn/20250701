@@ -1,0 +1,18 @@
+{
+  "address": "Phường Thạch Trung, Thành phố Hà Tĩnh, Tỉnh Hà Tĩnh",
+  "ellapsedInMs": 4988,
+  "estimatedCost": 0.0019706000000000003,
+  "thought": "**Determining the New Administrative Unit for \"Phường Thạch Trung\"**\n\nOkay, so I'm given an old address, \"Phường Thạch Trung\" in \"Tỉnh Hà Tĩnh,\" and I need to figure out its new administrative unit. First, I identify the province and ward from the input. I know I need to check the relevant resolutions and the provided list of new wards.\n\nMy initial approach is to start with the province resolution (60-NQ/TW). Since \"Tỉnh Hà Tĩnh\" is explicitly listed as unchanged, that's straightforward. Then, I need to dig into the `other_resolutions` for any mentions of \"Phường Thạch Trung.\" I quickly find resolution 1665/NQ-UBTVQH15, which is promising.\n\nLine 60 of that resolution is the key. It details the merging of \"Phường Thạch Trung,\" along with a few others, into the new \"Phường Trần Phú.\" Bingo!\n\nNow, I cross-reference this information with the `new_wards` list. I need to make sure that \"Phường Trần Phú\" exists and that its province matches \"Tỉnh Hà Tĩnh.\" And, there it is: a perfect match!\n\nThe resolution provides a high degree of confidence since it explicitly names \"Phường Thạch Trung\" in the context of the new \"Phường Trần Phú.\" I'll extract the relevant citation details from the resolution and build the output JSON. The province name and ward information come directly from the `new_wards` data. So, the new ward is \"Phường Trần Phú\" with a high confidence.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh",
+        "line": "60. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Thạch Trung, Đồng Môn, Thạch Hạ và xã Hộ Độ thành phường mới có tên gọi là phường Trần Phú."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hà Tĩnh",
+      "ward_code": "18100",
+      "ward_name": "Phường Trần Phú"
+    }
+  ]
+}

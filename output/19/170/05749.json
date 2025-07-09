@@ -1,0 +1,18 @@
+{
+  "address": "Xã Phương Giao, Huyện Võ Nhai, Tỉnh Thái Nguyên",
+  "ellapsedInMs": 6911,
+  "estimatedCost": 0.0024347,
+  "thought": "**My Analysis of Address Mapping**\n\nOkay, so I'm tasked with mapping an old address to its new administrative unit based on these resolutions and ward data. Let's see...\n\nFirst, I need to figure out the original components: the old ward, district, and province. The input says \"Xã Phương Giao\" (the old ward), \"Huyện Võ Nhai\" (the district - but it's noted to be ignored in the output), and \"Tỉnh Thái Nguyên\" (the province). Easy enough.\n\nNext, I'll apply the resolutions. I checked the \"Province Resolutions\" (specifically 60-NQ/TW) and it looks like \"Tỉnh Thái Nguyên\" *isn't* on the \"do not merge\" list. Good. It *is* on the \"after merge\" list though, but the name remains the same. Excellent.\n\nNow, on to the meat of it: the \"Other Resolutions\" (1683/NQ-UBTVQH15). I need to find something referencing \"Xã Phương Giao.\" Scanning the lines, I see that lines 12 and 13 are the relevant ones. Line 12 mentions Đình Cả, Phú Thượng, and Lâu Thượng being merged into \"xã Võ Nhai,\" but that's not our target. Line 13, however, looks promising: it says that \"Bình Long, Phương Giao, and Dân Tiến\" will become \"xã Dân Tiến.\" Bingo! \"Xã Phương Giao\" is directly included.\n\nFrom that line, I can see the new ward is \"xã Dân Tiến.\" Now, let's cross-reference this with the \"New wards\" data. Yep, there it is:  `{\"ward_code\":\"05755\",\"ward_name\":\"Xã Dân Tiến\",\"province_name\":\"Tỉnh Thái Nguyên\"}`. The province matches, which is what I expect.\n\nSo, constructing the output:\n\nThe citation will be 1683/NQ-UBTVQH15, specifically line 13.\nThe confidence is \"high\" because this is a direct match, very clear.\n\nThe final result will be:\n*   `province_name`: \"Tỉnh Thái Nguyên\"\n*   `ward_code`: \"05755\"\n*   `ward_name`: \"Xã Dân Tiến\"\n\nThis is a clean, straightforward mapping, and I'm confident in the result. I think it is an adequate map of the address.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1683/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thái Nguyên",
+        "line": "13. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Bình Long, Phương Giao và Dân Tiến thành xã mới có tên gọi là xã Dân Tiến."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thái Nguyên",
+      "ward_code": "05755",
+      "ward_name": "Xã Dân Tiến"
+    }
+  ]
+}

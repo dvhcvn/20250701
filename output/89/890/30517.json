@@ -1,0 +1,18 @@
+{
+  "address": "Phường Thới Sơn, Thị xã Tịnh Biên, Tỉnh An Giang",
+  "ellapsedInMs": 6592,
+  "estimatedCost": 0.0029214999999999996,
+  "thought": "**Navigating the Administrative Unit Restructuring in An Giang**\n\nOkay, so I've got an old address to sort out: \"Phường Thới Sơn, Thị xã Tịnh Biên, Tỉnh An Giang.\"  My goal is to determine the new administrative unit.  Let's break this down.\n\nFirst, I identified the components: \"Phường Thới Sơn\" (the old ward), \"Thị xã Tịnh Biên\" (the old district, which helps with context, though districts are being eliminated), and \"Tỉnh An Giang\" (the province).\n\nNow, I'm diving into the resolutions and data. The first thing I checked was \"60-NQ/TW\", the province-level changes. It mentioned An Giang, but also the merger with Kiên Giang. This means An Giang *is* still An Giang, even with the merger, which I'll keep in mind for the province field in my output.\n\nNext, I looked at \"1654/NQ-UBTVQH15\", focusing on An Giang's district restructuring.  This is where things got interesting.  Resolution \"87\" mentioned \"phường Tịnh Biên\" *and* the creation of a new \"phường Tịnh Biên\" - that's definitely a clue. Resolution \"88\" directly addresses \"Thới Sơn\". It states that the existing phường Nhơn Hưng, Nhà Bàng and Thới Sơn are merged into a new \"phường Thới Sơn\". This directly matches the old ward I'm looking for - \"Phường Thới Sơn\", in the correct province, so this is a strong candidate.\n\nI also checked other relevant resolutions, but the focus remains on Tinh An Giang.\n\nFinally, I checked my New Wards data for candidates from these resolutions. Bingo! From \"1654/NQ-UBTVQH15\", I confirmed a new entry for \"Phường Tịnh Biên\" with the correct `province_name`.\n\nGiven all this, I'm confident that the old address now falls under that new ward. My next step would be to fill in the correct ward and province in my output.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1654/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh An Giang",
+        "line": "88. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Nhơn Hưng, Nhà Bàng và Thới Sơn thành phường mới có tên gọi là phường Thới Sơn."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh An Giang",
+      "ward_code": "30502",
+      "ward_name": "Phường Thới Sơn"
+    }
+  ]
+}

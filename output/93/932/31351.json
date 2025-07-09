@@ -1,0 +1,18 @@
+{
+  "address": "Xã Trường Long A, Huyện Châu Thành A, Tỉnh Hậu Giang",
+  "ellapsedInMs": 8435,
+  "estimatedCost": 0.0030584999999999996,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, let's break this down systematically. The user wants to map an old address to the new administrative structure, and I've got a framework to do it.  First, the input: \"Xã Trường Long A, Huyện Châu Thành A, Tỉnh Hậu Giang\".  My initial task is to identify the components: \"Xã Trường Long A\" is the old ward, \"Huyện Châu Thành A\" is the old district (though we are told to ignore the district), and \"Tỉnh Hậu Giang\" is the old province.\n\nNow, the crucial part: province-level changes. Resolution 60-NQ/TW tells me that \"Tỉnh Hậu Giang\" has been merged into \"Thành phố Cần Thơ\". That’s our starting point for the province name.\n\nNext, I need to investigate any resolutions related to \"Xã Trường Long A\". Resolution 1668/NQ-UBTVQH15 is a goldmine. It specifically addresses the \"sắp xếp\" (reorganization) of wards in \"thành phố Cần Thơ\" which matches the outcome of the province merger.  Specifically, line 54 of that resolution states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Trường Long A và xã Trường Long Tây thành xã mới có tên gọi là **xã Trường Long Tây**.\"  This directly tells me that \"Xã Trường Long A\" is *now* \"Xã Trường Long Tây\". This is a definitive result.\n\nTo confirm this, I cross-reference this with the provided list of new wards. I find the ward: `{\"ward_code\":\"31348\",\"ward_name\":\"Xã Trường Long Tây\",\"province_name\":\"Thành phố Cần Thơ\"}`. This perfectly aligns with the resolution and the new province name. I also see an entry `{\"ward_code\":\"31309\",\"ward_name\":\"Xã Trường Long\",\"province_name\":\"Thành phố Cần Thơ\"}`, however this is *not* what the resolution states. This further strengthens my conclusion because the resolution's language is very explicit about the merge and the new ward name.\n\nTherefore, the final output will be: \"Thành phố Cần Thơ\" as the new province, \"Xã Trường Long Tây\" as the new ward, ward code \"31348\", the resolution header \"1668/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Cần Thơ\",  and line \"54. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Trường Long A và xã Trường Long Tây thành xã mới có tên gọi là xã Trường Long Tây.\" as the citation and confidence of `high`.\n\nIt's crucial to be meticulous. In the context of \"all possible candidates,\" I've confirmed that the resolution is very specific, and there's a unique and unambiguous outcome here. Given the nature of this project, I must verify that no information has been missed. The user will be provided with this information to proceed further with their task.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1668/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Cần Thơ",
+        "line": "54. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Trường Long A và xã Trường Long Tây thành xã mới có tên gọi là xã Trường Long Tây."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Cần Thơ",
+      "ward_code": "31348",
+      "ward_name": "Xã Trường Long Tây"
+    }
+  ]
+}

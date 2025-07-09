@@ -1,0 +1,28 @@
+{
+  "address": "Phường Duy Tân, Thành phố Kon Tum, Tỉnh Kon Tum",
+  "ellapsedInMs": 8490,
+  "estimatedCost": 0.0033607,
+  "thought": "**Analysis of Administrative Unit Changes for Kon Tum Address**\n\nOkay, so I've got this old address: \"Phường Duy Tân, Thành phố Kon Tum, Tỉnh Kon Tum\".  My task is to figure out where that's located now, given the recent administrative changes. Here's how I'm thinking through this:\n\nFirst, I need to identify the *old* province.  Easy, it's \"Tỉnh Kon Tum\". Now, I'm checking the relevant resolutions (specifically, 60-NQ/TW) to see if there have been any mergers or changes related to Kon Tum. I immediately see that Kon Tum is *not* on the \"do not merge\" list.  I see a crucial detail:  Kon Tum has been merged with Quảng Ngãi to form \"Tỉnh Quảng Ngãi\".  So, \"Tỉnh Kon Tum\" is now part of \"Tỉnh Quảng Ngãi\".\n\nNext, I need to figure out what happened to \"Phường Duy Tân\". I'm searching through other relevant resolutions. I'm seeing resolutions for Đà Nẵng, Hải Phòng, and Ninh Bình.  Nothing there about \"Phường Duy Tân\" *until* I get to Ninh Bình.  Ah, I see a \"phường Duy Tân,\" but it's mentioned as *a new ward* being created *in Ninh Bình*, not the Kon Tum's \"Phường Duy Tân\". Not a match.\n\nFinally, I reach resolution `1677/NQ-UBTVQH15`, which is for Quảng Ngãi - the new province.  Bingo!  This resolution explicitly states that the old \"Phường Duy Tân\" is merged with Ngô Mây and Đăk Cấm to form a new ward called \"Phường Đăk Cấm.\" This is the key. The *old* \"Phường Duy Tân\" is now part of \"Phường Đăk Cấm\" in \"Tỉnh Quảng Ngãi\".\n\nTo confirm, I'll quickly check the \"New Wards\" data.  I'm looking for \"Phường Đăk Cấm\" in \"Tỉnh Quảng Ngãi.\"  And yes, there's a match: `{\"ward_code\":\"23284\",\"ward_name\":\"Phường Đăk Cấm\",\"province_name\":\"Tỉnh Quảng Ngãi\"}`. That's it.  The old \"Phường Duy Tân\" is now part of the new \"Phường Đăk Cấm\" in \"Tỉnh Quảng Ngãi\".\n\nJust as a side note, while I'm here, I'll take a look at the other new wards in this same resolution for Quảng Ngãi.  I see that Quang Trung, Quyết Thắng, Thắng Lợi, Trường Chinh and Thống Nhất will be merged to become \"Phường Kon Tum\". This gives me a fuller picture of the changes in Kon Tum, but doesn't change the main analysis.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "11. Hợp nhất tỉnh Kon Tum và tỉnh Quảng Ngãi, lấy tên là tỉnh Quảng Ngãi"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ngãi",
+      "ward_code": "23284",
+      "ward_name": "Phường Đăk Cấm"
+    },
+    {
+      "citation": {
+        "header": "1677/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ngãi",
+        "line": "89. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Ngô Mây, phường Duy Tân và xã Đăk Cấm thành phường mới có tên gọi là phường Đăk Cấm."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ngãi",
+      "ward_code": "23284",
+      "ward_name": "Phường Đăk Cấm"
+    }
+  ]
+}

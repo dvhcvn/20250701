@@ -1,0 +1,28 @@
+{
+  "address": "Xã Xuân Phú, Thành phố Bắc Giang, Tỉnh Bắc Giang",
+  "ellapsedInMs": 7721,
+  "estimatedCost": 0.0038342000000000003,
+  "thought": "**The Address Transformation: A Deep Dive**\n\nOkay, so I'm presented with the task of finding the new administrative unit for \"Xã Xuân Phú, Thành phố Bắc Giang, Tỉnh Bắc Giang.\" My first thought is to dive into the data – the provided resolutions and new wards information. Let's break this down systematically.\n\nFirst, I need to understand the provincial reorganization. I know that the old province is \"Tỉnh Bắc Giang.\" A quick check of Resolution 60-NQ/TW clarifies that \"Tỉnh Bắc Giang\" has been merged with \"Tỉnh Bắc Ninh\" to form a new \"Tỉnh Bắc Ninh.\" This is crucial.\n\nNow, I'll need to go through each of the resolutions to find the answer. It's a matter of meticulous review to see if \"Xã Xuân Phú\" is mentioned, and where it has been changed.\n*   **Resolution 1656/NQ-UBTVQH15:**  I immediately know this one is irrelevant. It concerns Hà Nội, not Bắc Ninh.\n*   **Resolution 1657/NQ-UBTVQH15:**  This is for Cao Bằng. This can be dismissed.\n*   **Resolution 1658/NQ-UBTVQH15:**  This is for \"Tỉnh Bắc Ninh,\" the new province name! This is looking promising. I read through the lines carefully.  Line 1 and 2 don't mention \"Xã Xuân Phú\" at all. But, line 3 is the one! It states that \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Hương Gián, phường Tân Tiến và xã Xuân Phú thành phường mới có tên gọi là **phường Tân Tiến**.\" **Bingo!** \"Xã Xuân Phú\" is being merged into \"phường Tân Tiến.\" This is exactly what I'm looking for!\n\nSo, the key takeaway is that \"Xã Xuân Phú, Thành phố Bắc Giang, Tỉnh Bắc Giang\" has been transformed into \"phường Tân Tiến\" in the new \"Tỉnh Bắc Ninh.\"\nI verify this in the `New wards` section, and find `{\"ward_code\":\"07699\",\"ward_name\":\"Phường Tân Tiến\",\"province_name\":\"Tỉnh Bắc Ninh\"}` - confirmation!\n\n*   **Resolution 1659/NQ-UBTVQH15:** This is about Da Nang. I can skip this resolution.\n\nTherefore, the old address has become **Phường Tân Tiến, Thành phố Bắc Ninh, Tỉnh Bắc Ninh**. That should wrap it up.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Bắc Ninh và tỉnh Bắc Giang, lấy tên là tỉnh Bắc Ninh"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "07699",
+      "ward_name": "Phường Tân Tiến"
+    },
+    {
+      "citation": {
+        "header": "1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh",
+        "line": "97. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Hương Gián, phường Tân Tiến và xã Xuân Phú thành phường mới có tên gọi là phường Tân Tiến."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "07699",
+      "ward_name": "Phường Tân Tiến"
+    }
+  ]
+}

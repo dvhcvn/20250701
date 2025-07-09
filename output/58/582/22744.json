@@ -1,0 +1,28 @@
+{
+  "address": "Phường Bảo An, Thành phố Phan Rang-Tháp Chàm, Tỉnh Ninh Thuận",
+  "ellapsedInMs": 6298,
+  "estimatedCost": 0.0021907,
+  "thought": "**Mapping an Old Address to a New Administrative Unit: A Confident Resolution**\n\nOkay, so I'm tackling this address mapping scenario.  The user's asking me to take an old address, \"Phường Bảo An, Tỉnh Ninh Thuận,\" and figure out its new administrative location.  Let's break down my thought process:\n\nFirst, I need to extract the key pieces from the old address: \"Phường Bảo An\" (the old ward) and \"Tỉnh Ninh Thuận\" (the old province).  Then, it's all about checking the relevant resolutions and data.\n\nI'll start with the provincial level.  I know these *Province Resolutions (60-NQ/TW)* are crucial.  I immediately look for \"Tỉnh Ninh Thuận.\"  It's *not* on the list of provinces *not* undergoing any changes.  This triggers my next check – the list of merged or consolidated provinces.  And there it is: item 13 clearly states that \"Tỉnh Ninh Thuận\" is merging with \"Tỉnh Khánh Hoà\" to become \"Tỉnh Khánh Hòa.\"  So, that's the first critical piece: \"Tỉnh Ninh Thuận\" is now part of \"Tỉnh Khánh Hòa\".\n\nNow, onto the ward level. I examine the resolution provided, \"1667/NQ-UBTVQH15,\" which deals with the *reorganization* of administrative units in \"Tỉnh Khánh Hòa.\"  Crucially, this resolution *mentions* \"phường Bảo An.\" This is key! Since \"Tỉnh Ninh Thuận\" is now part of \"Tỉnh Khánh Hòa,\" this resolution *directly* applies. It explicitly states that parts of \"phường Bảo An,\" among others, will become the new \"phường Bảo An\" in Khánh Hòa.\n\nNext, I cross-reference this with the new ward data, which states: `{\"ward_code\":\"22741\",\"ward_name\":\"Phường Bảo An\",\"province_name\":\"Tỉnh Khánh Hòa\"}`. This perfectly aligns with everything the resolution dictates and the merged provinces. \"Phường Bảo An\" is indeed now in \"Tỉnh Khánh Hòa.\"\n\nConsidering all this, my confidence level is incredibly high. The province mapping is clear-cut. The resolution is explicit about \"Phường Bảo An\" and its new location within \"Tỉnh Khánh Hòa,\" and the new data perfectly complements these conclusions.  I'm ready to construct the JSON output, confidently mapping the old address to its updated administrative unit.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Ninh Thuận và tỉnh Khánh Hoà, lấy tên là tỉnh Khánh Hoà"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Khánh Hòa",
+      "ward_code": "22741",
+      "ward_name": "Phường Bảo An"
+    },
+    {
+      "citation": {
+        "header": "1667/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Khánh Hòa",
+        "line": "63. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Phước Mỹ, phườngBảo An và xã Thành Hải thành phường mới có tên gọi là phường Bảo An."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Khánh Hòa",
+      "ward_code": "22741",
+      "ward_name": "Phường Bảo An"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Nhị Long, Huyện Càng Long, Tỉnh Trà Vinh",
+  "ellapsedInMs": 7339,
+  "estimatedCost": 0.0025746,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, here's my breakdown of this address mapping task. I'm focusing on providing the most accurate and justifiable results, as expected from my expertise.\n\nFirstly, the old address is \"Xã Nhị Long, Huyện Càng Long, Tỉnh Trà Vinh\".  My immediate step is to identify the relevant resolutions and data. I begin by finding \"Tỉnh Trà Vinh\" within the available merger data. That leads me directly to Resolution 60-NQ/TW, which outlines the merger of Trà Vinh into Vĩnh Long.  The resolution explicitly states that Trà Vinh has become part of Vĩnh Long. Thus, the `province_name` in the output will definitely be \"Tỉnh Vĩnh Long.\"\n\nNext, I delve into Resolution 1687/NQ-UBTVQH15, a key resolution for Vĩnh Long's administrative restructuring. Since Trà Vinh merged with Vĩnh Long, this resolution governs the area I'm interested in. I scan the lines looking for \"Xã Nhị Long.\" Line 32 immediately jumps out: it clearly states that the old wards of Đại Phước, Đức Mỹ, and Nhị Long are being reorganized into a *new* ward also named \"Xã Nhị Long.\" This is a perfect match!  The resolution's mention of \"huyện Càng Long\" in other lines solidifies the context.\n\nTo solidify my findings, I consult the new wards data. I search for \"Xã Nhị Long\" under \"Tỉnh Vĩnh Long.\" And there it is:  `{\"ward_code\":\"29302\",\"ward_name\":\"Xã Nhị Long\",\"province_name\":\"Tỉnh Vĩnh Long\"}`. This perfectly aligns with the resolution and the province merger.\n\nWith this solid evidence, I'm constructing the JSON output. My `citation.header` will be \"1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long.\"  The relevant `citation.line` is line 32, the one mentioning the creation of the new \"Xã Nhị Long.\"  My `confidence` level is \"high\" because I have a direct match between the old and the new wards, corroborated by both a specific resolution line and the new wards data.  The final `province_name` is \"Tỉnh Vĩnh Long\" (from the merger), and the new `ward_code` and `ward_name` are derived directly from the new wards dataset: \"29302\" and \"Xã Nhị Long,\" respectively.\n\nFinally, while the request is for *all* candidates, this is straightforward. Given the clarity of the resolution and the perfect match in the new data, I'm confident there's only one correct interpretation.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long",
+        "line": "32. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đại Phước, Đức Mỹ và Nhị Long thành xã mới có tên gọi là xã Nhị Long."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "29302",
+      "ward_name": "Xã Nhị Long"
+    }
+  ]
+}

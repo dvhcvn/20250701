@@ -1,0 +1,18 @@
+{
+  "address": "Xã Phước Vĩnh An, Huyện Củ Chi, Thành phố Hồ Chí Minh",
+  "ellapsedInMs": 6635,
+  "estimatedCost": 0.0026157999999999997,
+  "thought": "**Mapping an Old Vietnamese Address to New Administrative Units**\n\nOkay, so I've got this Vietnamese address to translate: \"Xã Phước Vĩnh An, Huyện Củ Chi, Thành phố Hồ Chí Minh.\"  My first step is to break it down.  The old ward is \"Xã Phước Vĩnh An,\" and the province is \"Thành phố Hồ Chí Minh.\"\n\nNow, I need to check the relevant resolutions. I immediately look at whether Thành phố Hồ Chí Minh has undergone any changes, specifically relating to merging or being absorbed.  I see it's mentioned in a resolution that addresses merging, but nothing directly about its fate.  So, Thành phố Hồ Chí Minh is, in this context, still \"Thành phố Hồ Chí Minh,\" but possibly altered.\n\nThe real work is to scan the resolutions concerning ward-level changes within Thành phố Hồ Chí Minh, specifically \"1685/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của Thành phố Hồ Chí Minh.\"  I'm looking for \"Phước Vĩnh An.\" Bingo! Line 123 is the key: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tân Phú Trung, Tân Thông Hội và Phước Vĩnh An thành xã mới có tên gọi là **xã Củ Chi**.\"  That's my match.  \"Phước Vĩnh An\" is now part of \"Xã Củ Chi.\"\n\nNext, I need to confirm this new ward in the \"New wards\" data.  I search for \"Xã Củ Chi\" and, of course, find a match: `{\"ward_code\":\"27553\",\"ward_name\":\"Xã Củ Chi\",\"province_name\":\"Thành phố Hồ Chí Minh\"}`. This is perfect.\n\nMy output will be in JSON format:\n\n*   The *citation* will include the resolution header and the relevant line (123).\n*   The *confidence* is high because the resolution provides a definitive answer.\n*   The *province_name* is simply \"Thành phố Hồ Chí Minh\".\n*   The *ward_code* is \"27553.\"\n*   The *ward_name* is \"Xã Củ Chi.\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1685/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của Thành phố Hồ Chí Minh",
+        "line": "123. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tân Phú Trung, Tân Thông Hội và Phước Vĩnh An thành xã mới có tên gọi là xã Củ Chi."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hồ Chí Minh",
+      "ward_code": "27553",
+      "ward_name": "Xã Củ Chi"
+    }
+  ]
+}

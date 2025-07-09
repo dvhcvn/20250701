@@ -1,0 +1,28 @@
+{
+  "address": "Thị trấn Xuân Trường, Huyện Xuân Trường, Tỉnh Nam Định",
+  "ellapsedInMs": 7824,
+  "estimatedCost": 0.0030893,
+  "thought": "**Identifying the New Administrative Unit**\n\nOkay, here's what I'm thinking. The user has provided an old address: \"Thị trấn Xuân Trường, Huyện Xuân Trường, Tỉnh Nam Định\", and wants to know the new ward.  My approach is clear:\n\n1.  **Identify the Old Context:** I'll begin by dissecting the provided address. \"Tỉnh Nam Định\" is the old province, and \"Thị trấn Xuân Trường\" is the old ward name.\n\n2.  **Province Merger Check:** Since administrative divisions often change, I'll first check if \"Tỉnh Nam Định\" has undergone any mergers. I'll scour the province resolutions (60-NQ/TW) and find that indeed, \"Tỉnh Nam Định\" was merged into \"Tỉnh Ninh Bình.\" The new province is now \"Tỉnh Ninh Bình\".\n\n3.  **Cross-Referencing the Old Ward:** Now, the real detective work begins.  I need to find a resolution that mentions \"Thị trấn Xuân Trường\" (my old ward) within the *new* province, \"Tỉnh Ninh Bình.\" I'll systematically review the relevant resolutions. Several seem promising initially, but quickly become irrelevant as they refer to different provinces.\n\n4.  **The Key Resolution:** Eureka! Resolution 1674/NQ-UBTVQH15 (Ninh Bình) hits the jackpot.  It explicitly states the merger of \"Thị trấn Xuân Trường\" (and other surrounding areas) to create the new \"Xã Xuân Trường\" in \"Tỉnh Ninh Bình.\"  Perfect match!\n\n5.  **Final Verification:** I'll then cross-check this new ward information against my \"New Wards\" list. I'm looking for \"Xã Xuân Trường\" in \"Tỉnh Ninh Bình.\" And there it is: a perfect match `{\"ward_code\":\"14089\",\"ward_name\":\"Xã Xuân Trường\",\"province_name\":\"Tỉnh Ninh Bình\"}`.\n\n6.  **Confidence Assessment:**  The evidence is solid. The province merger is definitive, and the old ward is explicitly addressed within the new province's resolution. My confidence is high.\n\n7.  **Generate Output:** Based on all this analysis, I am ready to construct the JSON output reflecting my findings.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Hà Nam, tỉnh Ninh Bình và tỉnh Nam Định; lấy tên là tỉnh Ninh Bình"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "14089",
+      "ward_name": "Xã Xuân Trường"
+    },
+    {
+      "citation": {
+        "header": "1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "41. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Xuân Trường và các xã Xuân Phúc, Xuân Ninh, Xuân Ngọc thành xã mới có tên gọi là xã Xuân Trường."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "14089",
+      "ward_name": "Xã Xuân Trường"
+    }
+  ]
+}

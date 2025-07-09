@@ -1,0 +1,18 @@
+{
+  "address": "Phường Sông Đà, Thị Xã Mường Lay, Tỉnh Điện Biên",
+  "ellapsedInMs": 7807,
+  "estimatedCost": 0.0023844,
+  "thought": "**Analyzing the Administrative Shift in Điện Biên Province**\n\nOkay, I've got the task. The user is asking me to map an old address to a new administrative ward, and I need to do it meticulously, referencing provided resolutions. Let's see...\n\nFirst, I need to understand the data. The old address is \"Phường Sông Đà, Thị Xã Mường Lay, Tỉnh Điện Biên\". I can extract \"Phường Sông Đà\" as the old ward name and \"Tỉnh Điện Biên\" as the province. The \"Thị Xã Mường Lay\" part is a district, which is explicitly irrelevant for this mapping exercise because the problem states \"eliminating all districts\".\n\nNext, the resolutions are critical. I have `60-NQ/TW` and `1661/NQ-UBTVQH15`, along with a list of new wards. I need to understand the intent of each resolution.\n\nStarting with the provincial resolution `60-NQ/TW`. I'll immediately check if Điện Biên province is slated for merging. I'm looking for \"Tỉnh Điện Biên\" in its relevant sections. Ah, perfect. It's listed in the \"no merge\" section. This means the province name remains \"Tỉnh Điện Biên.\"\n\nNow, to `1661/NQ-UBTVQH15`, this is where the real work happens. I'm focusing on \"Phường Sông Đà\". I'll scan the resolution's lines, looking for any mention of my old ward name. Bingo! Line 43 of this resolution explicitly states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Sông Đà... thành phường mới có tên gọi là **phường Mường Lay**.\" That's a direct connection! It looks like \"Phường Sông Đà\" is merging into the new ward, \"Phường Mường Lay\".\n\nAt this point, I will cross reference the existing ward data with my new findings. I'm checking the list of `New wards` for \"Phường Mường Lay\" and confirming that it's located in the \"Tỉnh Điện Biên\" region. Looks like it checks out: `{\"ward_code\":\"03151\",\"ward_name\":\"Phường Mường Lay\",\"province_name\":\"Tỉnh Điện Biên\"}`. The data is consistent!\n\nFinally, the JSON output:\n\nMy `citation` is, unequivocally, `1661/NQ-UBTVQH15`. The `confidence` is going to be \"high\" because I have a direct, explicit mention in the resolution, and it aligns perfectly with the provided list of new wards. The `province_name` is \"Tỉnh Điện Biên\" - confirmed by the \"no merge\" list in `60-NQ/TW`. The `ward_code` will be \"03151\", and the `ward_name` is \"Phường Mường Lay\" -  straight from the new ward data.\n\nThat's it. It's all consistent, and the analysis is sound. Now to implement this logic programatically.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1661/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Điện Biên",
+        "line": "43. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Sông Đà, phường Na Lay, xã Lay Nưa và xã Sá Tổngthành phường mới có tên gọi là phường Mường Lay."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Điện Biên",
+      "ward_code": "03151",
+      "ward_name": "Phường Mường Lay"
+    }
+  ]
+}

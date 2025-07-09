@@ -1,0 +1,18 @@
+{
+  "address": "Xã Gia Luận, Huyện Cát Hải, Thành phố Hải Phòng",
+  "ellapsedInMs": 6717,
+  "estimatedCost": 0.0024821999999999995,
+  "thought": "**Analyzing the Vietnamese Address Mapping**\n\nOkay, so I'm tasked with mapping this old Vietnamese address to the new administrative structure. Let's break this down systematically. The address is: Xã Gia Luận (Ward), Huyện Cát Hải (District), Thành phố Hải Phòng (Province).\n\nFirst, I need to understand what happened to Hải Phòng. I'll start with the province resolutions (specifically 60-NQ/TW).  Checking the lists, I see that \"Thành phố Hải Phòng\" isn't listed in the units *not* undergoing merger.  Excellent.  Then, looking in the list of new units, I find that \"Thành phố Hải Phòng\" is still \"Thành phố Hải Phòng,\" though it did merge with Tỉnh Hải Dương.  The province name itself remains unchanged. Good to confirm that.\n\nNext, I need to zoom in on the specific ward and district. I'll search through the resolutions for mentions of \"Xã Gia Luận\" or \"Huyện Cát Hải\". Bingo! Resolution 1669/NQ-UBTVQH15 catches my eye. And there it is, line 113: \"Xã Gia Luận\" is specifically mentioned as being merged into \"**đặc khu Cát Hải**.\"  That's a direct connection! The province, \"thành phố Hải Phòng,\" also matches perfectly with the old address.\n\nNow, I'll cross-reference \"đặc khu Cát Hải\" with the list of new wards. And... success! There's a perfect match:  `{\"ward_code\":\"11914\",\"ward_name\":\"Đặc khu Cát Hải\",\"province_name\":\"Thành phố Hải Phòng\"}`. This confirms the new ward code and name.\n\nGiven the explicit nature of this match, I can confidently construct the JSON output:  The resolution and line provide the `citation`. I'm going with a `high` `confidence` because this is a direct, undeniable link. The `province_name` is clearly \"Thành phố Hải Phòng,\" the `ward_code` is \"11914,\" and the `ward_name` is \"Đặc khu Cát Hải.\" It all lines up perfectly.  This should be a clean, accurate mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "113. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số củathị trấn Cát Hải, thị trấn Cát Bà và các xã Đồng Bài, Hoàng Châu, Nghĩa Lộ, Văn Phong,Gia Luận, Hiền Hào, Phù Long, Trân Châu, Việt Hải, Xuân Đám thành đặc khu có tên gọi là**đặc khu Cát Hải**."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "11914",
+      "ward_name": "Đặc khu Cát Hải"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "address": "Xã Phước Kháng, Huyện Thuận Bắc, Tỉnh Ninh Thuận",
+  "ellapsedInMs": 7121,
+  "estimatedCost": 0.0026365,
+  "thought": "**My Analysis of the Administrative Address Mapping**\n\nOkay, so I'm tackling this address conversion: \"Xã Phước Kháng, Huyện Thuận Bắc, Tỉnh Ninh Thuận\" to the new administrative structure. My first step is to break it down. I need to map \"Tỉnh Ninh Thuận,\" then \"Xã Phước Kháng,\" and keep in mind the old district \"Huyện Thuận Bắc\".\n\nFirst, I identified \"Tỉnh Ninh Thuận.\" Easy enough; the merging resolution 60-NQ/TW clearly states that Ninh Thuận merged with Khánh Hoà. Now, that's \"Tỉnh Khánh Hoà\" for the province.\n\nNext, I need to figure out what happened to \"Xã Phước Kháng.\" I dug into the resolutions, focusing on those concerning Khánh Hòa, now that I know that's where Ninh Thuận ended up. Resolution 1667/NQ-UBTVQH15 is the key here. It explicitly states that \"Xã Phước Kháng,\" along with others, is merged to become the new \"Xã Thuận Bắc\". Perfect!\n\nI then cross-referenced that with the new ward data. I found a matching entry: `{\"ward_code\":\"22849\",\"ward_name\":\"Xã Thuận Bắc\",\"province_name\":\"Tỉnh Khánh Hòa\"}`. It's a clean match.\n\nTo be thorough, I checked for any ambiguities. I did come across another resolution, 1671/NQ-UBTVQH15, that mentioned \"Xã Hàm Thuận Bắc\" in the context of Lâm Đồng province. But since Ninh Thuận merged into Khánh Hòa, that resolution isn't relevant here. The old address's district name is \"Huyện Thuận Bắc\", and the new ward name is also \"Thuận Bắc\". This consistency strengthens my confidence.\n\nSo, I'm confident. The mapping is direct: \"Xã Phước Kháng, Huyện Thuận Bắc, Tỉnh Ninh Thuận\" now becomes \"Xã Thuận Bắc\" in \"Tỉnh Khánh Hòa\". The resolutions are clear and provide the necessary support. I can now proceed to construct the JSON output.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Ninh Thuận và tỉnh Khánh Hoà, lấy tên là tỉnh Khánh Hoà"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Khánh Hoà",
+      "ward_code": "22849",
+      "ward_name": "Xã Thuận Bắc"
+    },
+    {
+      "citation": {
+        "header": "1667/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Khánh Hòa",
+        "line": "40. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Bắc Phong, Phước Kháng và Lợi Hải thành xã mới có tên gọi là xã Thuận Bắc."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Khánh Hoà",
+      "ward_code": "22849",
+      "ward_name": "Xã Thuận Bắc"
+    }
+  ]
+}

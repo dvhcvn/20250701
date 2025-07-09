@@ -1,0 +1,28 @@
+{
+  "address": "Thị trấn Nông Trường Việt Lâm, Huyện Vị Xuyên, Tỉnh Hà Giang",
+  "ellapsedInMs": 8712,
+  "estimatedCost": 0.0032133,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm tasked with mapping this old Vietnamese address to its current administrative unit. The initial address is: \"Thị trấn Nông Trường Việt Lâm\", \"Huyện Vị Xuyên\", \"Tỉnh Hà Giang\". The user explicitly wants me to ignore the districts, so I'll keep that in mind.\n\nFirst, I identified the key components: the old ward, district, and province.  I immediately knew I needed to start with the province changes. I consulted the provided resolution (60-NQ/TW) and found that \"Tỉnh Hà Giang\" is *not* in the \"không thực hiện sáp nhập\" (no merger) list, but it *is* listed under \"mới sau sáp nhập, hợp nhất\" (new after merger or consolidation). The resolution clearly states that Hà Giang merged with Tuyên Quang, becoming \"Tỉnh Tuyên Quang\". This is a crucial first step.\n\nNext, I delved into the other resolutions. Since the focus is now Tuyên Quang, I concentrated on resolutions related to that province.  I quickly dismissed the Ninh Bình resolution (1674/NQ-UBTVQH15) as irrelevant. Then, I found the key resolution: 1684/NQ-UBTVQH15 concerning Tuyên Quang. Bingo! Line 76 explicitly mentions \"Thị trấn Nông trường Việt Lâm,\" stating that it's merged into a *new* ward called \"Xã Vị Xuyên\".  The resolution also mentions \"Xã Việt Lâm\" being partially merged, but this is distinct.\n\nI then cross-referenced this resolution's findings with the \"New Wards\" data.  I was looking for \"Xã Vị Xuyên\" within \"Tỉnh Tuyên Quang,\" and there it was: `{\"ward_code\":\"00913\",\"ward_name\":\"Xã Vị Xuyên\",\"province_name\":\"Tỉnh Tuyên Quang\"}`.  I also noticed \"Xã Việt Lâm\" still existing as a ward, but the key is that \"Thị trấn Nông trường Việt Lâm\" *merged into* \"Xã Vị Xuyên,\" not that it became \"Xã Việt Lâm.\" The resolution's wording is quite specific.\n\nBased on this analysis, I'm highly confident in my conclusion. The old ward \"Thị trấn Nông Trường Việt Lâm\", is now part of the new ward, \"Xã Vị Xuyên\", within the province of \"Tỉnh Tuyên Quang\". The district information is irrelevant per the user's instructions.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Tuyên Quang và tỉnh Hà Giang, lấy tên là tỉnh Tuyên Quang"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "00913",
+      "ward_name": "Xã Vị Xuyên"
+    },
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "76. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Vị Xuyên, thị trấn Nông trường Việt Lâm, xã Đạo Đức và một phần diện tích tự nhiên, quy mô dân số của xã Việt Lâmthành xã mới có tên gọi là xã Vị Xuyên."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "00913",
+      "ward_name": "Xã Vị Xuyên"
+    }
+  ]
+}

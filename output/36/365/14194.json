@@ -1,0 +1,18 @@
+{
+  "address": "Xã Giao Yến, Huyện Giao Thủy, Tỉnh Nam Định",
+  "ellapsedInMs": 7999,
+  "estimatedCost": 0.0029084000000000002,
+  "thought": "**Mapping an Old Vietnamese Address to New Administrative Units: My Reasoning**\n\nOkay, so I'm presented with a Vietnamese address: \"Xã Giao Yến, Huyện Giao Thủy, Tỉnh Nam Định\". The goal is to figure out the corresponding new administrative unit. My initial plan is to systematically break this down.\n\nFirst, I identified the components: the old ward (\"Xã Giao Yến\"), the old district (\"Huyện Giao Thủy\") and the old province (\"Tỉnh Nam Định\").\n\nNext, I turned my attention to the province. Examining the provided resolutions, specifically those related to administrative changes, I found that \"Tỉnh Nam Định\" was consolidated. According to resolution `60-NQ/TW`, it was merged with other provinces to form \"Tỉnh Ninh Bình\".  So, \"Tỉnh Nam Định\" is now \"Tỉnh Ninh Bình\".\n\nWith the new province identified, I focused on the ward.  I looked at the \"Other resolutions\" data, *specifically* within the context of the *new* province, Ninh Bình.  Resolution `1674/NQ-UBTVQH15` for \"tỉnh Ninh Bình\" jumped out. And Bingo! Line 58 explicitly states that \"Xã Giao Yến\" is being merged into a new ward called \"**xã Giao Bình**.\"\n\nTo validate this, I cross-referenced this new ward (\"Xã Giao Bình\") with the \"New wards\" data.  There it was:  `{\"ward_code\":\"14194\",\"ward_name\":\"Xã Giao Bình\",\"province_name\":\"Tỉnh Ninh Bình\"}`. A perfect match!\n\nNow, I was a little careful. Another section of the resolution mentions \"thị trấn Giao Thủy\" being merged into \"**xã Giao Thủy**\". Since the original address has \"Huyện Giao Thủy\", it briefly seemed like a potential conflict. However, after careful review, the resolution explicitly states \"Xã Giao Yến\" goes to \"Xã Giao Bình\", and \"Thị trấn Giao Thủy\" goes to \"Xã Giao Thủy\". So, no confusion there.\n\nTherefore, the mapping is clear, the confidence level is high. The final output will be:\n\n*   `province_name`: \"Tỉnh Ninh Bình\"\n*   `ward_name`: \"Xã Giao Bình\"\n*   `ward_code`: \"14194\"\n*   `confidence`: \"high\"\n*   `citation`: `1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình`, line: \"58. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Giao Yến, Bạch Long và Giao Tân thành xã mới có tên gọi là xã Giao Bình.\"\n\nThis is a clean and confident mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "58. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Giao Yến, Bạch Long và Giao Tân thành xã mới có tên gọi là xã Giao Bình."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "14194",
+      "ward_name": "Xã Giao Bình"
+    }
+  ]
+}

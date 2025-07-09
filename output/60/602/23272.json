@@ -1,0 +1,18 @@
+{
+  "address": "Xã Ngũ Phụng, Huyện Phú Quí, Tỉnh Bình Thuận",
+  "ellapsedInMs": 8182,
+  "estimatedCost": 0.0026353,
+  "thought": "**My Analysis of Address Mapping**\n\nOkay, so I'm presented with a scenario where I need to map an old address to a new administrative unit, drawing on resolutions and the updated ward data provided.  My initial focus is to pinpoint the old ward, district, and province from the original address: Xã Ngũ Phụng, Huyện Phú Quí, Tỉnh Bình Thuận.  While the prompt mentions \"eliminating all districts,\" the district information (Huyện Phú Quí) provides valuable context for the matching process, even if I won't output it.\n\nMy first step is to delve into the provincial resolutions (specifically 60-NQ/TW).  I quickly check \"Tỉnh Bình Thuận\" against the \"không thực hiện sáp nhập\" (no mergers) list, but it's not there. Then, I cross-reference it with the \"mới sau sáp nhập, hợp nhất\" (new after merger) list.  Aha! Resolution 60-NQ/TW, item 14, states a merger: \"Hợp nhất tỉnh Lâm Đồng, tỉnh Đắk Nông và tỉnh Bình Thuận; lấy tên là tỉnh Lâm Đồng.\"  This means \"Tỉnh Bình Thuận\" is now part of \"Tỉnh Lâm Đồng\".  Therefore, the `province_name` in my final output will be \"Tỉnh Lâm Đồng\".\n\nNext, I move on to other relevant resolutions. The key one here is `1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng`.  Line 119 of this resolution is the key. It specifies that \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Long Hải, Ngũ Phụng và Tam Thanh thành đặc khu có tên gọi là **đặc khu Phú Quý**.\" This line is crucial because it *explicitly* mentions the old ward, Xã Ngũ Phụng, and connects it to the newly created \"đặc khu Phú Quý\". This is a perfect match.\n\nNow I integrate the provided new wards data. I'm looking for a match with \"đặc khu Phú Quý,\" and the data includes: `{\"ward_code\":\"23065\",\"ward_name\":\"Xã La Dạ\",\"province_name\":\"Tỉnh Lâm Đồng\"}` and `{\"ward_code\":\"23272\",\"ward_name\":\"Đặc khu Phú Quý\",\"province_name\":\"Tỉnh Lâm Đồng\"}`.  The match is crystal clear: \"Đặc khu Phú Quý\" with its corresponding `ward_code` \"23272\" and `province_name` \"Tỉnh Lâm Đồng\". This confirms what the resolution indicated.\n\nWith these confirmations, I am ready to construct the final JSON output.  The `citation` will be based on the resolution 1671/NQ-UBTVQH15, line 119, that explicitly mentions the mapping.  My `confidence` is high because I have a direct reference in the resolution to the old ward and its new, confirmed mapping in the ward data.  The final output will therefore be `{ \"citation\": { \"header\": \"1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng\", \"line\": \"119. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Long Hải, Ngũ Phụng và Tam Thanh thành đặc khu có tên gọi là đặc khu Phú Quý.\" }, \"confidence\": \"High\", \"province_name\": \"Tỉnh Lâm Đồng\", \"ward_code\": \"23272\", \"ward_name\": \"Đặc khu Phú Quý\" }`. This will be returned as a single array as per the instructions.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng",
+        "line": "119. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Long Hải, Ngũ Phụng và Tam Thanh thành đặc khu có tên gọi là đặc khu Phú Quý."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "23272",
+      "ward_name": "Đặc khu Phú Quý"
+    }
+  ]
+}

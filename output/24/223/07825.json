@@ -1,0 +1,28 @@
+{
+  "address": "Xã Toàn Thắng, Huyện Hiệp Hòa, Tỉnh Bắc Giang",
+  "ellapsedInMs": 8799,
+  "estimatedCost": 0.0038357,
+  "thought": "**Analyzing the Address and Determining the New Administrative Unit**\n\nOkay, so I've got this old address: \"Xã Toàn Thắng, Huyện Hiệp Hòa, Tỉnh Bắc Giang.\" My task is to figure out the new administrative unit based on this information. Let's break it down:\n\nFirst things first, I need to identify the old province. That's easy, it's \"Tỉnh Bắc Giang.\" Now, I have a suspicion that there might have been some province-level mergers or reorganizations, so I'll check my resolutions (specifically 60-NQ/TW) to confirm. Ah, and sure enough, \"Tỉnh Bắc Giang\" isn't in the \"didn't merge\" list. It did merge with \"Tỉnh Bắc Ninh\" to form \"Tỉnh Bắc Ninh.\" Okay, so \"Tỉnh Bắc Ninh\" is the new province.\n\nNow the fun begins, I need to delve into the other resolutions, specifically those related to \"Tỉnh Bắc Ninh\", the new province, to see if I can find what happened to \"Xã Toàn Thắng.\"\n\nI'll start by systematically scanning through these resolutions.\n\n*   **1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh:** This one mentions \"thị trấn Thắng\" and \"Huyện Hiệp Hòa,\" but, unfortunately, no mention of \"Xã Toàn Thắng\" here.\n\n*   **1662/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Nai:** Nothing here, so moving on.\n\n*   **1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên:**  This one mentions \"Toàn Thắng,\" but it's in a different province (\"Hưng Yên\"). Not the one I'm looking for.\n\n*   **1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng:** Here, I see \"Toàn Thắng\" mentioned in the context of \"Hải Phòng\". Definitely not the right one.\n\n*   **1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh:** **Bingo!** Finally, resolution **1658**! Line 63 explicitly mentions \"Xã Toàn Thắng\" and \"huyện Hiệp Hòa\"! It describes how \"Xã Toàn Thắng\" and some other wards have merged to become a new ward named **\"Xã Hoàng Vân\"**.\n\nOkay, so the new ward is \"Xã Hoàng Vân,\" in the new province of \"Tỉnh Bắc Ninh.\" That's the answer! I just need to verify that \"Xã Hoàng Vân\" exists in my `New wards` list. And there it is: `{\"ward_code\":\"07822\",\"ward_name\":\"Xã Hoàng Vân\",\"province_name\":\"Tỉnh Bắc Ninh\"}`.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Bắc Ninh và tỉnh Bắc Giang, lấy tên là tỉnh Bắc Ninh"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "07822",
+      "ward_name": "Xã Hoàng Vân"
+    },
+    {
+      "citation": {
+        "header": "1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh",
+        "line": "63. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đồng Tiến (huyện Hiệp Hòa), Toàn Thắng, Ngọc Sơn và Hoàng Vân thành xã mới có tên gọi là xã Hoàng Vân."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "07822",
+      "ward_name": "Xã Hoàng Vân"
+    }
+  ]
+}

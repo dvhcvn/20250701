@@ -1,0 +1,28 @@
+{
+  "address": "Xã Tân Hưng Đông, Huyện Cái Nước, Tỉnh Cà Mau",
+  "ellapsedInMs": 9088,
+  "estimatedCost": 0.0040282,
+  "thought": "**My Analysis of the Vietnamese Address Mapping Request**\n\nOkay, here's how I'm approaching this: The user needs me to map an old Vietnamese address to new administrative units.  I'll be using provided resolutions and the new ward data to do this.\n\nFirst, I identified the old administrative unit details from \"Xã Tân Hưng Đông,\" \"Huyện Cái Nước,\" and \"Tỉnh Cà Mau.\"  Although \"eliminating all districts\" was mentioned, I'm keeping the district information for context during the analysis.\n\nNext, I checked the province resolutions, specifically 60-NQ/TW, to see if there were any changes to \"Tỉnh Cà Mau.\"  It remained \"Tỉnh Cà Mau\" after the merge with Bạc Liêu, so no change there.\n\nThe crucial part is the 1655/NQ-UBTVQH15 resolution.  Scanning this resolution, I see that the old \"Xã Tân Hưng Đông\" is *partially* integrated into two new wards. Specifically, it's mentioned in lines 33 and 34: Line 33 describes how part of \"Xã Tân Hưng Đông\" is combined with others to form \"Xã Hưng Mỹ,\" and Line 34 states that the remainder of \"Xã Tân Hưng Đông\" after the Line 33 process contributes to the creation of \"Xã Cái Nước.\"\n\nBased on these findings, I reviewed the \"New wards\" data.  \"Xã Hưng Mỹ\" (code 32140) and \"Xã Cái Nước\" (code 32128), both within the province of \"Tỉnh Cà Mau,\" are the clear candidates.  I'm *not* including \"Xã Tân Hưng\" because the provided text doesn't explicitly state that \"Xã Tân Hưng Đông\" merges into \"Xã Tân Hưng.\"\n\nThe confidence level is high because the resolution provides a clear and direct mapping: The old ward is split between two new ones.  The cited lines provide strong textual evidence.\n\nTherefore, my final JSON output will contain two entries: one for \"Xã Hưng Mỹ\" and one for \"Xã Cái Nước,\" both with a \"high\" confidence level and the relevant citations from resolution 1655/NQ-UBTVQH15.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1655/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Cà Mau",
+        "line": "33. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Hưng Mỹ, một phần diện tích tự nhiên, quy mô dân số của xã Tân Hưng Đông và phần còn lại của xã Hòa Mỹ sau khi sắp xếp theo quy định tại khoản 30, khoản 32 Điều này thành xã mới có tên gọi là xã Hưng Mỹ."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Cà Mau",
+      "ward_code": "32140",
+      "ward_name": "Xã Hưng Mỹ"
+    },
+    {
+      "citation": {
+        "header": "1655/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Cà Mau",
+        "line": "34. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Cái Nước, xã Trần Thới, phần còn lại của xã xã Đông Hưng và Đông Thới sau khi sắp xếp theo quy định tại khoản 32 Điều này và phần còn lại của xã Tân Hưng Đông sau khi sắp xếp theo quy định tại khoản 33 Điều này thành xã mới có tên gọi là xã Cái Nước."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Cà Mau",
+      "ward_code": "32128",
+      "ward_name": "Xã Cái Nước"
+    }
+  ]
+}

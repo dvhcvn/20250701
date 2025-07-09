@@ -1,0 +1,18 @@
+{
+  "address": "Xã Sông Nhạn, Huyện Cẩm Mỹ, Tỉnh Đồng Nai",
+  "ellapsedInMs": 7975,
+  "estimatedCost": 0.0027129,
+  "thought": "**Identifying the New Administrative Unit for \"Xã Sông Nhạn\"**\n\nOkay, let's break this down systematically. The user's provided address is \"Xã Sông Nhạn, Huyện Cẩm Mỹ, Tỉnh Đồng Nai,\" and I need to pinpoint the new ward for \"Xã Sông Nhạn.\"  First, I identify the old ward and province: \"Xã Sông Nhạn\" and \"Tỉnh Đồng Nai,\" respectively.  The district, \"Huyện Cẩm Mỹ,\" is noted, but the prompt emphasizes ward and province mapping, so I'll set that aside for now.\n\nNow, I'll go through the standard procedure. I check the province resolutions related to mergers and changes.  For \"Tỉnh Đồng Nai,\" the key finding is that the province remains unchanged, which simplifies things.  Next, I meticulously review \"Other resolutions\" for mentions of \"Xã Sông Nhạn\" within \"Tỉnh Đồng Nai.\"  Ah, here it is: Resolution 1662/NQ-UBTVQH15, concerning the administrative re-organization of Đồng Nai.\n\nSpecifically, line 17 of that resolution is crucial. It states that \"Xã Sông Nhạn\" and \"Xã Xuân Quế\" are being combined to form a *new* ward also named \"Xã Xuân Quế\".  This is my critical piece of information.\n\nNext, I cross-reference this finding with the \"New wards\" data.  I'm looking for \"xã Xuân Quế\" in \"Tỉnh Đồng Nai,\" and sure enough, there's a match: `{\"ward_code\":\"26332\",\"ward_name\":\"Xã Xuân Quế\",\"province_name\":\"Tỉnh Đồng Nai\"}`. Confirmed!\n\nTherefore, the output will be as follows:\n\n*   `province_name`: \"Tỉnh Đồng Nai\"\n*   `ward_name`: \"Xã Xuân Quế\"\n*   `ward_code`: \"26332\"\n*   `citation`: `\"header\": \"1662/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Nai\", \"line\": \"17. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Sông Nhạn và xã Xuân Quế thành xã mới có tên gọi là **xã Xuân Quế**.\"`\n*   `confidence`: \"high\" (because it's a direct, unambiguous mapping).\n\nI'll double-check for other relevant resolutions, but it looks like 1662/NQ-UBTVQH15 is the only one applicable. The information regarding \"Huyện Cẩm Mỹ\" in the old address is likely a distractor. The resolution even mentions \"thị trấn Long Giao và các xã Nhân Nghĩa, Xuân Mỹ, Bảo Bình thành xã mới có tên gọi là xã Cẩm Mỹ.\" This doesn't change anything for \"Xã Sông Nhạn,\" which is definitively merging into \"Xã Xuân Quế.\" This is straightforward and robust.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1662/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Nai",
+        "line": "17. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Sông Nhạn và xã Xuân Quế thành xã mới có tên gọi là xã Xuân Quế."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đồng Nai",
+      "ward_code": "26332",
+      "ward_name": "Xã Xuân Quế"
+    }
+  ]
+}

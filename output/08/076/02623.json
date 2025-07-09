@@ -1,0 +1,18 @@
+{
+  "address": "Xã Hào Phú, Huyện Sơn Dương, Tỉnh Tuyên Quang",
+  "ellapsedInMs": 7109,
+  "estimatedCost": 0.0025972,
+  "thought": "**Analyzing the Address and Determining the New Administrative Unit**\n\nOkay, so I've been tasked with finding the new administrative unit (ward) for the old address \"Xã Hào Phú, Huyện Sơn Dương, Tỉnh Tuyên Quang\". My process will be as follows:\n\nFirst, I identified the province: \"Tỉnh Tuyên Quang\".  Then, I double-checked for any provincial mergers using \"60-NQ/TW\".  Thankfully, Tuyên Quang remained unchanged.\n\nNext, I looked at the specific ward: \"Xã Hào Phú\".  The crucial step involved scanning various resolutions to find any mentions of this ward in a merger or realignment. Resolution \"1684/NQ-UBTVQH15\" proved fruitful. I examined the lines within it, specifically looking for \"Xã Hào Phú\".\n\nI found two relevant lines.  The first didn't involve Hào Phú. However, the second line, \"41. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Hào Phú, Đông Lợi và Trường Sinh thành xã mới có tên gọi là **xã Trường Sinh**.\" clearly indicated that \"Xã Hào Phú\" was being reorganized into a new ward called \"Xã Trường Sinh\".\n\nFrom this resolution, I can confirm that the new ward is \"xã Trường Sinh\" and it is still located within \"tỉnh Tuyên Quang\". Now, I cross-referenced this new information with my data on \"New wards\".  I quickly found a match: \"Xã Trường Sinh\" associated with \"Tỉnh Tuyên Quang\", with the ward code \"02623\". The data confirms this match: `{\"ward_code\":\"02623\",\"ward_name\":\"Xã Trường Sinh\",\"province_name\":\"Tỉnh Tuyên Quang\"}`.\n\nTo be absolutely sure, I re-examined all the resolutions again, to verify that there were no other possible new wards for \"Xã Hào Phú\". My scan confirmed that \"1684/NQ-UBTVQH15\" line 41 is the *only* relevant one.\n\nTherefore, my final output will be a JSON structure containing: a \"high\" `confidence`, citation from the resolution (the `header` and `line`), the province name \"Tỉnh Tuyên Quang\", and the ward code \"02623\" with the ward name \"Xã Trường Sinh\".\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "41. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Hào Phú, Đông Lợi và Trường Sinh thành xã mới có tên gọi là xã Trường Sinh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "02623",
+      "ward_name": "Xã Trường Sinh"
+    }
+  ]
+}

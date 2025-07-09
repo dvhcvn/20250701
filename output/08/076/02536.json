@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Sơn Dương, Huyện Sơn Dương, Tỉnh Tuyên Quang",
+  "ellapsedInMs": 7406,
+  "estimatedCost": 0.0029492000000000003,
+  "thought": "**Address Mapping Analysis: Thị trấn Sơn Dương, Tỉnh Tuyên Quang**\n\nAlright, let's break down this address mapping. My initial goal is to understand how \"Thị trấn Sơn Dương, Huyện Sơn Dương, Tỉnh Tuyên Quang\" corresponds to the new administrative units, keeping in mind the need to disregard districts per the prompt.\n\nFirst, I identified the key components of the old address: \"Thị trấn Sơn Dương\" as the ward, \"Huyện Sơn Dương\" as the district (which will be disregarded in the final output, but it's crucial context), and \"Tỉnh Tuyên Quang\" as the province.\n\nNext, I delved into the province-level resolutions, specifically checking 60-NQ/TW.  I first looked to see if Tuyên Quang was listed as *not* undergoing merger.  It wasn't. Then, I checked the \"new\" provinces. I confirmed that \"Tỉnh Tuyên Quang\" remains the name, despite a potential merger. This confirms my initial province name is accurate.\n\nThe key to the ward mapping lies in examining the other resolutions provided.  Resolution `1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang` immediately grabbed my attention.  Line 36 of this resolution is the key. It details the merging of \"Thị trấn Sơn Dương\" into a new *xã* named \"Xã Sơn Dương,\" along with several other old wards. This provides a direct connection to the old \"Thị trấn Sơn Dương\".\n\nThe final step involves cross-referencing this newly identified ward with the `new_wards` list.  Sure enough, \"Xã Sơn Dương\" exists in the list for \"Tỉnh Tuyên Quang\" with a code \"02536\". This solidifies the direct one-to-one mapping.\n\nIn terms of confidence, this mapping is high. The resolution directly addresses the old ward, providing a clean transition to the new ward. The new ward is also clearly listed in the provided new ward list. My final JSON output will contain a citation from the relevant resolution, a high confidence score, the validated province name \"Tỉnh Tuyên Quang\", the identified ward code \"02536\", and the new ward name \"Xã Sơn Dương\".\n\nJust to be thorough, I went through the process again, making sure all the pieces fit together logically and completely. The initial inputs and subsequent findings remain consistent. The district information, though present in the input, remains irrelevant to the final mapping as per the problem instructions.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "36. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Sơn Dương và cácxã Hợp Thành, Phúc Ứng, Tú Thịnh thành xã mới có tên gọi là xã Sơn Dương."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "02536",
+      "ward_name": "Xã Sơn Dương"
+    }
+  ]
+}

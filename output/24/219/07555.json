@@ -1,0 +1,28 @@
+{
+  "address": "Xã Biên Sơn, Huyện Lục Ngạn, Tỉnh Bắc Giang",
+  "ellapsedInMs": 5738,
+  "estimatedCost": 0.0021329,
+  "thought": "**Mapping an Old Address to New Units: A Thought Process**\n\nOkay, so I've got this old address: \"Xã Biên Sơn, Huyện Lục Ngạn, Tỉnh Bắc Giang.\" The goal is to figure out its new location based on these administrative changes.  Let's break it down:\n\nFirst, the obvious: the old province is \"Tỉnh Bắc Giang\". Now, I remember seeing something about province mergers... Ah, here it is: Resolution 60-NQ/TW states that Bắc Giang and Bắc Ninh merged to form Bắc Ninh. So, \"Tỉnh Bắc Giang\" is now part of \"Tỉnh Bắc Ninh\". That's step one.\n\nNext, I need to pinpoint the old ward, which is \"Xã Biên Sơn\".  Time to delve into the provided resolutions, looking for any mention of this ward. And bingo!  Resolution 1658/NQ-UBTVQH15, concerning Bắc Ninh's administrative changes, is key.  Line 34 is the money shot: It clearly states that the old \"Xã Biên Sơn\" is being merged with \"Xã Phong Vân\" and \"Trường bắn TB1\" to form a *new* \"Xã Biên Sơn\".  Fantastic!\n\nNow, the final check: \"New wards.\" I need to see if there's a matching entry.  And there it is:  `{\"ward_code\":\"07537\",\"ward_name\":\"Xã Biên Sơn\",\"province_name\":\"Tỉnh Bắc Ninh\"}`.  Perfect!  The name and province match.\n\nThe confidence level here is definitely high. The resolution explicitly links the *old* \"Xã Biên Sơn\" (from the now-defunct Bắc Giang) to the *new* \"Xã Biên Sơn\" in Bắc Ninh. It's a clear, direct mapping. Now I'm ready to format the output as JSON and declare this mission accomplished!\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất:",
+        "line": "5. Hợp nhất tỉnh Bắc Ninh và tỉnh Bắc Giang, lấy tên là tỉnh Bắc Ninh"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "07537",
+      "ward_name": "Xã Biên Sơn"
+    },
+    {
+      "citation": {
+        "header": "1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh",
+        "line": "34. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Phong Vân, xã Biên Sơn và toàn bộ diện tích tự nhiên của Trường bắn TB1 thành xã mới có tên gọi là xã Biên Sơn."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "07537",
+      "ward_name": "Xã Biên Sơn"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Bản Rịa, Huyện Quang Bình, Tỉnh Hà Giang",
+  "ellapsedInMs": 7863,
+  "estimatedCost": 0.0027633,
+  "thought": "**Mapping an Old Address to a New Administrative Unit**\n\nOkay, so I've got an old address: \"Xã Bản Rịa, Huyện Quang Bình, Tỉnh Hà Giang.\" My task is to figure out the corresponding new administrative unit based on the provided resolutions and new ward data.\n\nFirst, I identified \"Tỉnh Hà Giang\" as the old province. Resolution 60-NQ/TW clearly states that Hà Giang merged with Tuyên Quang to become \"Tỉnh Tuyên Quang.\" So, I'm working with the new province, Tuyên Quang.\n\nNext, I looked at the specific ward, \"Xã Bản Rịa.\" I dug through the other resolutions, focusing on anything related to both \"Xã Bản Rịa\" and \"Tỉnh Hà Giang\" (or now, Tuyên Quang). Resolution 1684/NQ-UBTVQH15 was the key here. It explicitly mentions \"Xã Bản Rịa\" and states that it's merged with \"Xã Yên Thành\" to form a new ward also named \"Xã Yên Thành.\"\n\nThis is a direct match, so I confirmed it with the \"New wards\" data.  I found `{\"ward_code\":\"01234\",\"ward_name\":\"Xã Yên Thành\",\"province_name\":\"Tỉnh Tuyên Quang\"}` which perfectly aligns with my findings. The \"ward_name\" matches, and the province is now \"Tỉnh Tuyên Quang.\"\n\nNow, regarding \"Huyện Quang Bình\" in the old address. The resolutions indicate that districts are being eliminated.  The focus is on mapping from the *old ward* (\"Xã Bản Rịa\") to the *new ward* (\"Xã Yên Thành\").  The district information is irrelevant in this mapping context. I'll make note of a ward with a similar name, \"Xã Quang Bình\", but that's a new ward formed from different old wards, and doesn't affect \"Xã Bản Rịa's\" mapping.\n\nTherefore, my final output will be:\n\n*   `province_name`: \"Tỉnh Tuyên Quang\"\n*   `ward_name`: \"Xã Yên Thành\"\n*   `ward_code`: \"01234\"\n*   `citation`: Specific line from the relevant resolution (1684/NQ-UBTVQH15)\n*   `confidence`: \"high\" (because I found a direct match).\n\nI double-checked for any other connections and am confident in this mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "89. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Bản Rịa và xã Yên Thành thành xã mới có tên gọi là xã Yên Thành."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "01234",
+      "ward_name": "Xã Yên Thành"
+    }
+  ]
+}

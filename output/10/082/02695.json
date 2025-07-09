@@ -1,0 +1,18 @@
+{
+  "address": "Xã Trịnh Tường, Huyện Bát Xát, Tỉnh Lào Cai",
+  "ellapsedInMs": 7269,
+  "estimatedCost": 0.0027957999999999998,
+  "thought": "**Address Mapping for Vietnamese Administrative Units**\n\nOkay, so I'm dealing with an old Vietnamese address: \"Xã Trịnh Tường, Huyện Bát Xát, Tỉnh Lào Cai.\" My goal is to map this to the new administrative structure.\n\nFirst, I need to parse the input address. I've got \"Xã Trịnh Tường\" as the ward, \"Huyện Bát Xát\" as the district, and \"Tỉnh Lào Cai\" as the province.\n\nNow, I'm going to consult the relevant resolutions. Starting with province-level resolutions (like 60-NQ/TW), I quickly confirm that \"Tỉnh Lào Cai\" remains \"Tỉnh Lào Cai,\" so that's straightforward. High confidence there.\n\nNext, I dig into the resolution 1673/NQ-UBTVQH15. I'm focusing on \"Xã Trịnh Tường.\"  Line 50 is a goldmine! It explicitly states a merger that results in a *new* \"Xã Trịnh Tường.\" Bingo! This is a direct match, confirming the \"Xã Trịnh Tường\" from the old address will map to the new \"Xã Trịnh Tường.\"\n\nI also see that line 52 talks about creating \"Xã Bát Xát.\" However, it describes a merger *not* including the old \"Xã Trịnh Tường.\" Therefore, although the address had \"Huyện Bát Xát,\" I won't map the old \"Xã Trịnh Tường\" to the new \"Xã Bát Xát.\"\n\nTo solidify this, I'm cross-referencing with the new ward data. The resolution explicitly created a new \"Xã Trịnh Tường,\" and the new ward information perfectly aligns:  `{\"ward_code\":\"02695\",\"ward_name\":\"Xã Trịnh Tường\",\"province_name\":\"Tỉnh Lào Cai\"}`.  The high confidence stems from the direct mapping and the resolution's explicit language.\n\nSo, the province remains the same. The old \"Xã Trịnh Tường\" maps to the new \"Xã Trịnh Tường.\" Done.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai",
+        "line": "50. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Cốc Mỳ và xã Trịnh Tường thành xã mới có tên gọi là xã Trịnh Tường."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "02695",
+      "ward_name": "Xã Trịnh Tường"
+    }
+  ]
+}

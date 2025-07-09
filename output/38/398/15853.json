@@ -1,0 +1,18 @@
+{
+  "address": "Xã Thiệu Giao, Huyện Thiệu Hóa, Tỉnh Thanh Hóa",
+  "ellapsedInMs": 5390,
+  "estimatedCost": 0.0022342,
+  "thought": "**Navigating the Address Change**\n\nOkay, so I'm presented with an old address: \"Xã Thiệu Giao, Huyện Thiệu Hóa, Tỉnh Thanh Hóa.\" My task is to determine the corresponding new administrative unit, likely a ward. Here's my thought process:\n\nFirst, the province: \"Tỉnh Thanh Hóa.\" I quickly scan \"60-NQ/TW\" for any province name changes. Thankfully, \"8. Tỉnh Thanh Hoá\" is listed, indicating no change. Good, that simplifies things.\n\nNext, the tricky part: finding \"Xã Thiệu Giao\" in the \"Other resolutions\" section. Ah, there it is! Line 131 states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của... Thiệu Giao... thành phường mới có tên gọi là **phường Đông Tiến**.\"  So, \"Xã Thiệu Giao\" is being absorbed into the newly created \"phường Đông Tiến.\"\n\nNow, let's cross-reference this new ward name with the \"New wards\" list. Bingo! There's a perfect match: `{\"ward_code\":\"15853\",\"ward_name\":\"Phường Đông Tiến\",\"province_name\":\"Tỉnh Thanh Hóa\"}`.  The `ward_code`, the new ward name, and the correct province all align.\n\nRegarding confidence, this is rock solid. The old ward is directly referenced in the resolution, and the new ward information is cleanly present in the list.  My confidence level is extremely high.  The new ward for \"Xã Thiệu Giao\" is definitively \"phường Đông Tiến,\" with code \"15853\" in \"Tỉnh Thanh Hóa\".\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1686/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thanh Hóa",
+        "line": "131. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Đông Lĩnh, phường Thiệu Khánh và các xã Đông Thanh, Thiệu Vân, Tân Châu, Thiệu Giao, Đông Tiến thành phường mới có tên gọi là **phường Đông Tiến**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thanh Hóa",
+      "ward_code": "15853",
+      "ward_name": "Phường Đông Tiến"
+    }
+  ]
+}

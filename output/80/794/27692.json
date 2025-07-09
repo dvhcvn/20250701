@@ -1,0 +1,28 @@
+{
+  "address": "Phường Tân Khánh, Thành phố Tân An, Tỉnh Long An",
+  "ellapsedInMs": 9267,
+  "estimatedCost": 0.0049478000000000005,
+  "thought": "**Determining the New Administrative Unit for \"Phường Tân Khánh, Thành phố Tân An, Tỉnh Long An\"**\n\nOkay, so I've got to figure out the current administrative unit for this old address: \"Phường Tân Khánh, Thành phố Tân An, Tỉnh Long An\".  First thing's first, I'm going to consult the relevant resolutions and the new ward listings. This involves a couple of steps, but it should be straightforward enough.\n\nSince the input includes \"Tỉnh Long An\", I need to begin with any province-level changes. I immediately checked for the province merger resolution (60-NQ/TW) and, as expected, it indicates Long An was merged into Tây Ninh, becoming \"Tỉnh Tây Ninh\". Makes sense, I remember that one.\n\nNext, I need to look at specific ward-level changes. So, I checked the \"Other resolutions\" for anything concerning \"Phường Tân Khánh\" within the context of \"Tỉnh Tây Ninh\". And there it is: Resolution 1682/NQ-UBTVQH15.  This one explicitly addresses the rearrangement of administrative units within Tây Ninh.  Clause 86 of this resolution is the key. It states that \"Phường Tân Khánh\" along with \"phường Khánh Hậu\" and \"xã Lợi Bình Nhơn\" are being merged into a new ward called \"phường Khánh Hậu\". Perfect.\n\nNow, I cross-referenced this with the \"New wards\" list, looking for \"phường Khánh Hậu\" within \"Tỉnh Tây Ninh\".  Found it, and the data matches up neatly: `{\"ward_code\":\"27715\",\"ward_name\":\"Phường Khánh Hậu \",\"province_name\":\"Tỉnh Tây Ninh\"}`. Confidence here is pretty high given this clear connection.\n\nJust to be thorough, I went back and re-read the resolution.  It also mentions \"Thành phố Tân An\" in clauses 84 and 85, which further reinforces that this resolution is relevant to my request.  Although it doesn't *explicitly* say \"Phường Tân Khánh\" is part of \"Thành phố Tân An\" within the resolution, the resolution's overall focus on Tây Ninh, which now *includes* what used to be Long An, combined with the precise mention of the merger of \"Phường Tân Khánh\", makes it practically certain that this is the correct mapping.\n\nTherefore, the new administrative unit is **Phường Khánh Hậu** in Tỉnh Tây Ninh.\n\nMy findings will be presented in the required schema:\n\n*   `province_name`: \"Tỉnh Tây Ninh\" (established by 60-NQ/TW)\n*   `ward_name`: \"Phường Khánh Hậu\" (from 1682/NQ-UBTVQH15, clause 86)\n*   `ward_code`: \"27715\" (from \"New wards\" list)\n*   `citation`:\n    *   `header`: \"1682/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tây Ninh\"\n    *   `line`: \"86. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Tân Khánh, phường Khánh Hậu và xã Lợi Bình Nhơn thành phường mới có tên gọi là **phường Khánh Hậu**.\"\n*   `confidence`: \"high\" (direct reference to the relevant ward being merged)\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "18. Hợp nhất tỉnh Tây Ninh và tỉnh Long An, lấy tên là tỉnh Tây Ninh"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tây Ninh",
+      "ward_code": "27715",
+      "ward_name": "Phường Khánh Hậu"
+    },
+    {
+      "citation": {
+        "header": "1682/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tây Ninh",
+        "line": "86. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Tân Khánh, phường Khánh Hậu và xã Lợi Bình Nhơn thành phường mới có tên gọi là phường Khánh Hậu"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tây Ninh",
+      "ward_code": "27715",
+      "ward_name": "Phường Khánh Hậu"
+    }
+  ]
+}

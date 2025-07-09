@@ -1,0 +1,18 @@
+{
+  "address": "Phường Đằng Giang, Quận Ngô Quyền, Thành phố Hải Phòng",
+  "ellapsedInMs": 8222,
+  "estimatedCost": 0.0026971,
+  "thought": "**My Analysis of the Administrative Address Mapping**\n\nOkay, so I'm presented with an address: \"Phường Đằng Giang, Quận Ngô Quyền, Thành phố Hải Phòng\". My task is to map this *old* address to a *new* administrative unit. As an expert in this field, I know the key is to meticulously follow the relevant resolutions and data.\n\nFirst, I need to break down the old address. I've got: Old Ward: Phường Đằng Giang; Old District: Quận Ngô Quyền; and Old Province: Thành phố Hải Phòng. The prompt specifically mentions \"eliminating all districts,\" which means I need to be particularly attentive to how districts are handled in the new structure.\n\nNext, I'll dive into the resolutions. Resolution 60-NQ/TW doesn't offer any surprises; it confirms that the province name remains \"Thành phố Hải Phòng\".  The *real* action is in resolution 1669/NQ-UBTVQH15, \"Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng,\" because it directly pertains to my target province.\n\nAnd here's the crucial detail: line 11 of that resolution *explicitly* states that \"phường Đằng Giang\" is being consolidated into a new ward called \"phường Gia Viên.\" Bingo!  This is a direct mapping.\n\nTo solidify this, I then cross-reference with the provided New Wards Data. It confirms that \"Phường Gia Viên\" has a ward code of \"11359\" and that it's within the province \"Thành phố Hải Phòng\". Perfect alignment!\n\nTherefore, I'm confident in constructing the following JSON output:\n\n```json\n{\n  \"province_name\": \"Thành phố Hải Phòng\",\n  \"ward_name\": \"Phường Gia Viên\",\n  \"ward_code\": \"11359\",\n  \"citation\": \"1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng, dòng 11\",\n  \"confidence\": \"high\"\n}\n```\n\nThe confidence level is \"high\" because the resolution provides a clear and unambiguous connection between the old ward (\"Phường Đằng Giang\") and the new ward (\"Phường Gia Viên\"). This isn't just an inference; it's a direct statement of the administrative change. This is the level of precision I'd expect in my analysis.  I have also ensured that the citation is accurate to the resolution and the precise line referenced.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "11. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Đằng Giang,một phần diện tích tự nhiên, quy mô dân số của phường Cầu Đất, phường Lạch Tray, phần còn lại củaphường Gia Viên sau khi sắp xếp theo quy định tại khoản 8, khoản 10 Điều này và phần còn lại của phường Đông Khê sau khi sắp xếp theo quy định tại khoản 10 Điều này thành phường mới có tên gọi là phường Gia Viên."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "11359",
+      "ward_name": "Phường Gia Viên"
+    }
+  ]
+}

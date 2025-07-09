@@ -1,0 +1,18 @@
+{
+  "address": "Phường Trà An, Quận Bình Thuỷ, Thành phố Cần Thơ",
+  "ellapsedInMs": 7090,
+  "estimatedCost": 0.0024283,
+  "thought": "**Analysis of Administrative Unit Mapping: \"Phường Trà An, Quận Bình Thuỷ, Thành phố Cần Thơ\"**\n\nOkay, so I've been tasked with mapping the old address \"Phường Trà An, Quận Bình Thuỷ, Thành phố Cần Thơ\" to a new administrative unit. My initial thought is to break this down into a few clear steps.\n\nFirst, I identified the province, which is \"Thành phố Cần Thơ.\"  Now, I need to consult the relevant resolutions. My focus here is to understand any potential mergers or name changes at the province and ward levels.  Specifically, I looked at \"60-NQ/TW,\" focusing on whether \"Thành phố Cần Thơ\" was directly affected. Interestingly, while the resolution indicates potential mergers, the name \"Thành phố Cần Thơ\" remains.  This influences how I'll handle the `province_name` in the final output.\n\nNext, I delved into resolutions concerning \"Phường Trà An.\"  Resolution \"1668/NQ-UBTVQH15\" is crucial here. Line 5 explicitly states that \"Phường Trà An\" is being merged into a new ward called \"Phường Thới An Đông\". Bingo! This is the core of the mapping.\n\nNow, I cross-referenced this with the provided \"New wards\" data. I searched for \"Phường Thới An Đông\" and found a perfect match: `{\"ward_code\":\"31174\",\"ward_name\":\"Phường Thới An Đông\",\"province_name\":\"Thành phố Cần Thơ\"}`.\n\nWith this solid connection, I'm confident about my mapping. The citation will include the specific line from the resolution, and my `confidence` level is \"high\" due to this direct confirmation.\n\nFinally, assembling the output.  The `province_name` is \"Thành phố Cần Thơ,\" `ward_code` is \"31174,\" and `ward_name` is \"Phường Thới An Đông.\"  Regarding the districts, the prompt states that all districts are being eliminated. Therefore, I won't be mapping \"Quận Bình Thuỷ\" to any new district, as the system design is only concerned with the province and ward levels. The schema doesn't even require district information, so I'm done.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1668/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Cần Thơ",
+        "line": "5. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Trà An, Trà Nóc và Thới An Đông thành phường mới có tên gọi là phường Thới An Đông."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Cần Thơ",
+      "ward_code": "31174",
+      "ward_name": "Phường Thới An Đông"
+    }
+  ]
+}

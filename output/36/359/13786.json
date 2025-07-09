@@ -1,0 +1,28 @@
+{
+  "address": "Xã Đại Thắng, Huyện Vụ Bản, Tỉnh Nam Định",
+  "ellapsedInMs": 9777,
+  "estimatedCost": 0.0034452999999999997,
+  "thought": "**Address Mapping: Old to New Administrative Units**\n\nOkay, I'm tasked with translating an old Vietnamese address to its current form, and it's a bit of a challenge due to recent administrative changes. The provided input is \"Xã Đại Thắng, Huyện Vụ Bản, Tỉnh Nam Định.\" Let's break this down.\n\nFirst, I need to isolate the key components: the ward, district, and province.  From the input, it's clear we're dealing with \"Xã Đại Thắng\" as the ward, \"Huyện Vụ Bản\" as the district (though the prompt suggests districts are being eliminated, so this is important to note), and \"Tỉnh Nam Định\" as the province.\n\nNow, the real work begins with the resolutions. I know these resolutions are the key to understanding the changes.  I'll start with the province changes detailed in Resolution 60-NQ/TW. I quickly check if \"Tỉnh Nam Định\" is flagged in the \"không thực hiện sáp nhập\" list (no, it isn't). Next, I examine the \"mới sau sáp nhập, hợp nhất\" list. Aha! \"Hợp nhất tỉnh Hà Nam, tỉnh Ninh Bình và tỉnh Nam Định; lấy tên là tỉnh Ninh Bình\" - this confirms that \"Tỉnh Nam Định\" has been merged into \"Tỉnh Ninh Bình.\"  So, the province is now \"Tỉnh Ninh Bình.\"\n\nNext, I meticulously go through the \"Other resolutions,\" focusing on whether \"Xã Đại Thắng\" appears in any of the relevant lines. I'm looking for any mention of the old ward.  I quickly see that the following are irrelevant, since they refer to other provinces:\n\n*   Resolution 1659/NQ-UBTVQH15 (Đà Nẵng), although it mentions \"Đại Thắng\", it's in a different province.\n*   Resolution 1669/NQ-UBTVQH15 (Hải Phòng), also mentions \"Đại Thắng\", but again, the province doesn't match.\n\nThen I get to Resolution 1674/NQ-UBTVQH15 (Ninh Bình). This is promising because the target province is now \"Tỉnh Ninh Bình.\" Within this resolution, I find:\n\n*   \"26. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Vĩnh Hào, Đại Thắng và Liên Minh thành xã mới có tên gọi là **xã Liên Minh**.\"\n\nThis is a direct hit! It explicitly mentions \"Đại Thắng\" and, critically, links it to a new ward, \"xã Liên Minh\", within \"Tỉnh Ninh Bình.\" The previous province, \"Tỉnh Nam Định,\" merged into the new \"Tỉnh Ninh Bình\". This matches the address.\n\nFor good measure, I briefly review Resolution 1676/NQ-UBTVQH15 (Phú Thọ) but it doesn't mention \"Đại Thắng\".\n\nFinally, I cross-reference my findings with the \"New wards\" data to confirm the details. I search for \"xã Liên Minh\" in \"Tỉnh Ninh Bình.\"  And there it is: `{\"ward_code\":\"13786\",\"ward_name\":\"Xã Liên Minh\",\"province_name\":\"Tỉnh Ninh Bình\"}`. This perfectly aligns with my analysis.\n\nTherefore, the old address \"Xã Đại Thắng, Huyện Vụ Bản, Tỉnh Nam Định\" maps to the new administrative unit \"Xã Liên Minh\" in \"Tỉnh Ninh Bình.\" The district \"Huyện Vụ Bản\" has likely been absorbed by \"Xã Liên Minh\".\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Hà Nam, tỉnh Ninh Bình và tỉnh Nam Định; lấy tên là tỉnh Ninh Bình"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "13786",
+      "ward_name": "Xã Liên Minh"
+    },
+    {
+      "citation": {
+        "header": "1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "26. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Vĩnh Hào, Đại Thắng và Liên Minh thành xã mới có tên gọi là xã Liên Minh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "13786",
+      "ward_name": "Xã Liên Minh"
+    }
+  ]
+}

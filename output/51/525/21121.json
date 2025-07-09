@@ -1,0 +1,18 @@
+{
+  "address": "Xã Trà Thủy, Huyện Trà Bồng, Tỉnh Quảng Ngãi",
+  "ellapsedInMs": 8562,
+  "estimatedCost": 0.0033743,
+  "thought": "**Address Mapping Analysis: Xã Trà Thủy, Tỉnh Quảng Ngãi**\n\nOkay, let's break this down. The user's requesting a mapping from the old \"Xã Trà Thủy, Tỉnh Quảng Ngãi\" to a new administrative unit. My initial assessment is: I need to determine the new ward and province based on the provided resolutions and the new ward data.\n\nFirst, I need to *identify* \"Xã Trà Thủy\" and \"Tỉnh Quảng Ngãi\" in the input address. That's straightforward.\n\nThen, I need to check Province resolution 60-NQ/TW to see if \"Tỉnh Quảng Ngãi\" has changed. Looking into it, I see: \"Hợp nhất tỉnh Kon Tum và tỉnh Quảng Ngãi, lấy tên là tỉnh Quảng Ngãi.\" Ah, it confirms that Quảng Ngãi *remains* \"Tỉnh Quảng Ngãi\" even after the merge with Kon Tum. Good to know - it sets the `province_name` in my output.\n\nNow, let's consult the more crucial resolution, 1677/NQ-UBTVQH15. I'll search for \"Xã Trà Thủy\". Bingo! Line 26: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Trà Xuân, xã Trà Sơn và xã Trà Thủy thành xã mới có tên gọi là **xã Trà Bồng**.\" That's the key.  \"Xã Trà Thủy\" is explicitly merged into \"xã Trà Bồng\".\n\nNext step: I need to cross-reference that with the \"New wards\" data to pinpoint the new ward.  Looking through the options, I find: `{\"ward_code\":\"21115\",\"ward_name\":\"Xã Trà Bồng\",\"province_name\":\"Tỉnh Quảng Ngãi\"}`. Perfect match! This confirms \"xã Trà Bồng\" as the correct target.  I quickly scan the other entries, but none of them directly concern the absorption of Trà Thủy.\n\nTo be extra certain, I double-checked the resolution again for any possible ambiguities or further mentions. Lines 27 and 31 don't refer to Trà Thủy directly so the first finding of Trà Bồng as the target stands.\n\nNow, I'll construct the JSON output.  For the `citation`, I'll use the resolution title and specific line 26 as my source. My `confidence` is \"high\" since the resolution *clearly* states the merge.  The `province_name` is \"Tỉnh Quảng Ngãi\", confirmed by the province-level resolution.  The `ward_code` and `ward_name` come directly from the \"New wards\" data entry for \"Xã Trà Bồng.\"\n\nFinal check: Everything aligns. The old \"Xã Trà Thủy, Tỉnh Quảng Ngãi\" now maps to \"Xã Trà Bồng\" within the same \"Tỉnh Quảng Ngãi\" province, as per the resolution.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1677/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ngãi",
+        "line": "26. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Trà Xuân, xã Trà Sơn và xã Trà Thủy thành xã mới có tên gọi là xã Trà Bồng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ngãi",
+      "ward_code": "21115",
+      "ward_name": "Xã Trà Bồng"
+    }
+  ]
+}

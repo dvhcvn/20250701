@@ -1,0 +1,18 @@
+{
+  "address": "Xã Lâm Hợp, Huyện Kỳ Anh, Tỉnh Hà Tĩnh",
+  "ellapsedInMs": 7169,
+  "estimatedCost": 0.0028034999999999996,
+  "thought": "**My Analysis of the Administrative Address Mapping**\n\nOkay, so I'm tasked with mapping the old address \"Xã Lâm Hợp, Huyện Kỳ Anh, Tỉnh Hà Tĩnh\" to its current administrative unit, using provided resolutions and new ward data. This is a pretty straightforward process, especially given my experience.\n\nFirst, I need to confirm the province hasn't changed. Based on resolution 60-NQ/TW, \"Tỉnh Hà Tĩnh\" remains unchanged, so the `province_name` will be \"Tỉnh Hà Tĩnh\". Now, let's look at the ward-level changes. I know I'm looking for \"Xã Lâm Hợp,\" and the most relevant resolutions will be the ones dealing with administrative reorganizations within Hà Tĩnh.\n\nScanning through the \"other resolutions,\" I immediately identified \"1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh\". This is the key.  Line 10 explicitly states that \"Xã Lâm Hợp\" and \"Xã Kỳ Lạc\" were merged to form the new ward \"Xã Kỳ Lạc.\"  That's it!  Direct hit.\n\nNow, to solidify the mapping, I cross-reference this information with the `New wards` data.  Sure enough, I find `{\"ward_code\":\"18838\",\"ward_name\":\"Xã Kỳ Lạc\",\"province_name\":\"Tỉnh Hà Tĩnh\"}`.  Perfect match.  The `ward_code` is 18838.\n\nThis is a high-confidence mapping. The resolution explicitly details the merger. The citation will be \"1665/NQ-UBTVQH15,\" line 10. The output JSON will reflect this clear association. I can now proceed to formulate the output.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh",
+        "line": "10. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Lâm Hợp và xã Kỳ Lạc thành xã mới có tên gọi là xã Kỳ Lạc."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hà Tĩnh",
+      "ward_code": "18838",
+      "ward_name": "Xã Kỳ Lạc"
+    }
+  ]
+}

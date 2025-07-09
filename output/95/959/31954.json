@@ -1,0 +1,18 @@
+{
+  "address": "Xã Phong Tân, Thị xã Giá Rai, Tỉnh Bạc Liêu",
+  "ellapsedInMs": 8044,
+  "estimatedCost": 0.0026491,
+  "thought": "**Determining the New Ward for the Old Address**\n\nOkay, so I've got this old address: \"Xã Phong Tân, Thị xã Giá Rai, Tỉnh Bạc Liêu.\" My task is to figure out the new administrative unit, the ward, for this address.  First things first, I need to understand the historical changes and cross-reference that with the new ward data.\n\nI start by zeroing in on the old province: \"Tỉnh Bạc Liêu.\"  I remember there was a province merger, so I immediately check the relevant resolutions (like 60-NQ/TW) to see if Bạc Liêu got renamed.  And sure enough, it did!  Bạc Liêu merged with Cà Mau, so now it's \"Tỉnh Cà Mau.\"  This is key.\n\nNext, I identify the specific old ward: \"Xã Phong Tân.\" Now, the hunting begins. I start scanning through all the resolutions and look for direct mentions of \"Xã Phong Tân.\"  I find it! Resolution 1655/NQ-UBTVQH15, a resolution concerning the administrative rearrangements in Cà Mau province, explicitly states:\n\n\"59. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Láng Tròn, xã Phong Tân và xã Phong Thạnh Đông thành phường mới có tên gọi là **phường Láng Tròn**.\"\n\nThis is gold!  It directly states that \"Xã Phong Tân\" is merged into \"phường Láng Tròn.\"  I've got a very strong lead.  This is basically the answer.\n\nNow, I cross-check this information against my new wards data.  I look for \"phường Láng Tròn\" within \"Tỉnh Cà Mau.\"  And there it is:  `{\"ward_code\":\"31951\",\"ward_name\":\"Phường Láng Tròn\",\"province_name\":\"Tỉnh Cà Mau\"}`. Bingo!  That matches perfectly.\n\nTo be extra thorough (because, you know, it's about accuracy), I'm quickly reviewing the remaining resolutions to make sure \"Xã Phong Tân\" isn't mentioned in any other context, just in case there's another conflicting merge.  I'm also paying close attention to \"Thị xã Giá Rai\" to see if that triggers any relevant information.   I see mentions of Giá Rai, but not in conjunction with Phong Tân.\n\nOkay, everything checks out. The direct mention in the resolution coupled with the matching new ward data gives me high confidence in this conclusion. So, I'll structure my output like this:  The source for this information is 1655/NQ-UBTVQH15.  The ward code is 31951. The new ward is \"Phường Láng Tròn,\" within the new province \"Tỉnh Cà Mau.\"  And that's that.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1655/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Cà Mau",
+        "line": "59. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Láng Tròn, xã Phong Tân và xã Phong Thạnh Đông thành phường mới có tên gọi là phường Láng Tròn."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Cà Mau",
+      "ward_code": "31951",
+      "ward_name": "Phường Láng Tròn"
+    }
+  ]
+}

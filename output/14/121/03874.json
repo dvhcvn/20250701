@@ -1,0 +1,18 @@
+{
+  "address": "Xã Làng Chếu, Huyện Bắc Yên, Tỉnh Sơn La",
+  "ellapsedInMs": 6107,
+  "estimatedCost": 0.0020834,
+  "thought": "**Navigating Vietnamese Administrative Restructuring**\n\nOkay, so I'm tasked with mapping this old Vietnamese address to a new administrative unit. The input address gives me \"Xã Làng Chếu\" (ward), \"Huyện Bắc Yên\" (district), and \"Tỉnh Sơn La\" (province). Let's break this down systematically.\n\nFirst, I need to confirm the province.  I'll check the relevant province resolution, which is 60-NQ/TW. Ah, \"Tỉnh Sơn La\" is listed under \"Các đơn vị hành chính cấp tỉnh không thực hiện sáp nhập,\" meaning the province name remains the same. Easy enough.\n\nNow, for the ward. The key resolution here is 1681/NQ-UBTVQH15, concerning Sơn La province's local administrative restructuring. Scanning this resolution, I see on line 25 a merger of some wards to form \"xã Bắc Yên\". But on line 26, *that's it!* My old ward, \"Xã Làng Chếu\", is explicitly mentioned as merging with \"Háng Đồng\" and \"Tà Xùa\" to form the new \"xã Tà Xùa\". Perfect.\n\nNow, I check the provided \"New wards\" data. I'm looking for a match for \"xã Tà Xùa.\" Bingo!  I have a corresponding entry: `{\"ward_code\":\"03868\",\"ward_name\":\"Xã Tà Xùa\",\"province_name\":\"Tỉnh Sơn La\"}`. That's a direct match, and I can move with confidence.\n\nSo, here's my plan for the JSON output: the citation will reference the specific line from the resolution (1681/NQ-UBTVQH15, line 26). My confidence level is high because this resolution is explicit. The province name is \"Tỉnh Sơn La\", which I've confirmed. And the ward code is \"03868,\" and the ward name is \"Xã Tà Xùa\".  That should cover it.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1681/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Sơn La",
+        "line": "26. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Làng Chếu, Háng Đồng và Tà Xùa thành xã mới có tên gọi là xã Tà Xùa."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Sơn La",
+      "ward_code": "03868",
+      "ward_name": "Xã Tà Xùa"
+    }
+  ]
+}

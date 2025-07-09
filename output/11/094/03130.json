@@ -1,0 +1,18 @@
+{
+  "address": "Phường Thanh Bình, Thành phố Điện Biên Phủ, Tỉnh Điện Biên",
+  "ellapsedInMs": 5433,
+  "estimatedCost": 0.0028985,
+  "thought": "**Determining the New Administrative Unit for \"Phường Thanh Bình\"**\n\nOkay, so the user needs to find the new administrative unit for \"Phường Thanh Bình, Thành phố Điện Biên Phủ, Tỉnh Điện Biên\".  Let's break this down. First, I need to confirm the province.  I'll check `60-NQ/TW` for any provincial mergers, but it looks like \"Tỉnh Điện Biên\" is listed as a province that isn't undergoing any changes - so that's easy.\n\nNow, for the ward, \"Phường Thanh Bình\". I need to scour the relevant resolutions, specifically the \"Other resolutions\" for \"Tỉnh Điện Biên\" and search for it.  The key resolution to check will be `1661/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Điện Biên`.  Ah, there it is, line 44.  It clearly states that \"Phường Thanh Bình,\" along with other wards, is being merged to form a new ward called \"**phường Điện Biên Phủ**.\"\n\nNext, a quick check of the \"New wards\" list for \"Tỉnh Điện Biên.\"  Yep, there's a match for \"phường Điện Biên Phủ\" with the province.\n\nFinally, I'll construct the JSON output. The `citation` will be `1661/NQ-UBTVQH15`, the `confidence` level is high because the resolution is very specific, the `province_name` is \"Tỉnh Điện Biên\" (the same as the old), and the `ward_code` and `ward_name` will be derived from the \"New wards\" information. I'm confident in this response.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1661/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Điện Biên",
+        "line": "44. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Him Lam, Tân Thanh, Mường Thanh, Thanh Bình, Thanh Trường và xã Thanh Minh thành phường mới có tên gọi là phường Điện Biên Phủ."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Điện Biên",
+      "ward_code": "03127",
+      "ward_name": "Phường Điện Biên Phủ"
+    }
+  ]
+}

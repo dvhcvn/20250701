@@ -1,0 +1,18 @@
+{
+  "address": "Xã Kim Định, Huyện Kim Sơn, Tỉnh Ninh Bình",
+  "ellapsedInMs": 7562,
+  "estimatedCost": 0.0032407,
+  "thought": "**Analyzing the Administrative Restructuring of Kim Định**\n\nOkay, so I'm presented with an old address: \"Xã Kim Định, Huyện Kim Sơn, Tỉnh Ninh Bình.\" My task is to find its current administrative equivalent.  As a seasoned expert, I'll approach this systematically.\n\nFirst, I quickly identify \"Tỉnh Ninh Bình\" as the target province.  I'll immediately check for any provincial mergers or name changes via Resolutions (specifically 60-NQ/TW) in my database.  Ah, here we go: \"Hợp nhất tỉnh Hà Nam, tỉnh Ninh Bình và tỉnh Nam Định; lấy tên là tỉnh Ninh Bình.\"  Excellent, Ninh Bình remains unchanged.\n\nNow, I'll delve into the \"Other Resolutions\" relevant to Tỉnh Ninh Bình.  Resolution 1674/NQ-UBTVQH15, concerning administrative re-organization, seems promising.  Scanning through, I find line 91: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Kim Định, Ân Hòa và Hùng Tiến thành xã mới có tên gọi là **xã Kim Sơn**.\" Bingo! This directly addresses the address in question, explicitly stating the merger of \"Xã Kim Định\" into \"Xã Kim Sơn\".\n\nFurther down, I see other mentions of \"Huyện Kim Sơn\" in the same resolution (lines 94 and 97), but they're about the restructuring of different wards *within* the district. Those don't directly affect \"Kim Định\".\n\nWith this critical information, I can confidently conclude that \"Xã Kim Định\" is now part of \"Xã Kim Sơn.\" Now I need the specific code.\n\nI'll query the \"New Wards\" list in my database, searching for \"Xã Kim Sơn\" within \"Tỉnh Ninh Bình.\"  Yes!  There's a match: `{\"ward_code\":\"14638\",\"ward_name\":\"Xã Kim Sơn\",\"province_name\":\"Tỉnh Ninh Bình\"}`.\n\nBuilding the output is now a breeze. Based on the evidence:\n\n*   `province_name`: \"Tỉnh Ninh Bình\" (from the province's confirmed status).\n*   `ward_name`: \"Xã Kim Sơn\" (derived directly from the resolution's explicit statement).\n*   `ward_code`: \"14638\" (matching the entry in the new wards data).\n*   `confidence`: \"high\" (given the direct and unambiguous language of the resolution).\n*   `citation`: \"1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình\", line \"91. Sắp xếp toàn bộ diện tích tự nhiên, quyô dân số của các xã Kim Định, Ân Hòa và Hùng Tiến thành xã mới có tên gọi là xã Kim Sơn.\"\n\nThis seems quite robust; a high-confidence answer backed by a clear and definitive citation.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "91. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Kim Định, Ân Hòa và Hùng Tiến thành xã mới có tên gọi là xã Kim Sơn."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "14638",
+      "ward_name": "Xã Kim Sơn"
+    }
+  ]
+}

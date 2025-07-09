@@ -1,0 +1,18 @@
+{
+  "address": "Xã Bờ Ngoong, Huyện Chư Sê, Tỉnh Gia Lai",
+  "ellapsedInMs": 7749,
+  "estimatedCost": 0.0025989000000000003,
+  "thought": "**Determining the New Ward for the Given Address**\n\nOkay, I've got the address: \"Xã Bờ Ngoong, Huyện Chư Sê, Tỉnh Gia Lai,\" and I need to figure out the new ward for it.  My first step is to delve into the data provided: the resolutions and the \"New wards\" list.\n\nFirst, I double-check the province resolution for \"Tỉnh Gia Lai.\"  Resolution 60-NQ/TW doesn't change anything in terms of the province name; it just mentions a merger with Bình Định, but the province keeps the name \"Tỉnh Gia Lai.\"  So, that's straightforward.\n\nNow, I'm focusing on \"Other resolutions\" for ward changes, specifically those that mention \"Bờ Ngoong.\"  Bingo! Resolution 1664/NQ-UBTVQH15 catches my attention: \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai.\"\n\nLine 54 is the key: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Bar Măih, Ia Tiêm, Chư Pơng và Bờ Ngoong thành xã mới có tên gọi là **xã Bờ Ngoong**.\"  This clearly states that the *existing* \"Xã Bờ Ngoong\" is being merged with other communes, but the name is *retained* for the new, reorganized commune.\n\nNext, I cross-reference this information with the \"New wards\" list.  I find a perfect match: {\"ward_code\":\"23947\",\"ward_name\":\"Xã Bờ Ngoong\",\"province_name\":\"Tỉnh Gia Lai\"}. This confirms that a new \"Xã Bờ Ngoong\" *does* exist, and its code is \"23947.\" The confidence is high because the resolution explicitly supports the continuity of the name.\n\nTo be absolutely certain, I scan through the remaining lines of the resolution to ensure no other new wards were formed *from* or *include* the original \"Xã Bờ Ngoong.\" I confirm this with a check: lines 53 and 56 do not mention any merges related to the original Bờ Ngoong commune. The old \"Xã Bờ Ngoong\" *is* the new \"Xã Bờ Ngoong.\"\n\nTherefore, based on the information and my analysis, the old ward of \"Xã Bờ Ngoong\" now corresponds to the new ward with the same name \"Xã Bờ Ngoong\" and a ward code of \"23947.\"\n\nHere's the output I would generate:\n\n```json\n[\n  {\n    \"citation\": {\n      \"header\": \"Resolution 1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai\",\n      \"line\": \"54. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Bar Măih, Ia Tiêm, Chư Pơng và Bờ Ngoong thành xã mới có tên gọi là **xã Bờ Ngoong**.\"\n    },\n    \"confidence\": \"high\",\n    \"province_name\": \"Tỉnh Gia Lai\",\n    \"ward_code\": \"23947\",\n    \"ward_name\": \"Xã Bờ Ngoong\"\n  }\n]\n```\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai",
+        "line": "54. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Bar Măih, Ia Tiêm, Chư Pơng và Bờ Ngoong thành xã mới có tên gọi là xã Bờ Ngoong."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "23947",
+      "ward_name": "Xã Bờ Ngoong"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Thạch Xá, Huyện Thạch Thất, Thành phố Hà Nội",
+  "ellapsedInMs": 5834,
+  "estimatedCost": 0.0019927,
+  "thought": "**My Analytical Breakdown: Mapping \"Xã Thạch Xá\" to New Administrative Units**\n\nOkay, I've got the task. The user wants me to map the old address, \"Xã Thạch Xá,\" in \"Thành phố Hà Nội,\" to its new administrative unit. My process involves a methodical approach, leveraging the available resolutions and data.\n\nFirst, I need to pinpoint the relevant old ward and province. Easy enough: \"Xã Thạch Xá\" and \"Thành phố Hà Nội\" are my starting points. Now, the key is the resolutions. I know I'll be referencing \"60-NQ/TW\" to determine if \"Thành phố Hà Nội\" has been impacted by any province-level restructuring.  Thankfully, the resolution clearly states: \"Các đơn vị hành chính cấp tỉnh không thực hiện sáp nhập: 1. Thành phố Hà Nội.\" So, no change here; \"Thành phố Hà Nội\" remains as is.\n\nNext, I have to zero in on the relevant resolution, which seems to be \"1656/NQ-UBTVQH15.\" This is where the real work begins. I'll meticulously search through its lines, looking specifically for \"Xã Thạch Xá.\"  Aha! Line 95 is the golden ticket.  It clearly outlines the merger: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Phùng Xá (huyện Thạch Thất), Hương Ngải, Lam Sơn, **Thạch Xá**,...\" and so on, resulting in the new \"xã Tây Phương.\"\n\nNow I have to cross-reference with the new ward data. I need to confirm that \"Xã Tây Phương\" exists in the `New wards` list and extract its `ward_code` and `province_name`. The data confirms: `{\"ward_code\":\"10003\",\"ward_name\":\"Xã Tây Phương\",\"province_name\":\"Thành phố Hà Nội\"}`. Perfect!\n\nMy confidence level is very high here. The resolution directly and explicitly links \"Thạch Xá\" to \"Xã Tây Phương.\"  My JSON output will be a single object array representing this mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội",
+        "line": "95. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Phùng Xá (huyện Thạch Thất), Hương Ngải, Lam Sơn, Thạch Xá, một phần diện tích tự nhiên, quy mô dân số của xã Quang Trung, một phần diện tích tự nhiên của thị trấn Quốc Oai, xã Ngọc Liệp và xã Phượng Sơn thành xã mới có tên gọi là xã Tây Phương."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hà Nội",
+      "ward_code": "10003",
+      "ward_name": "Xã Tây Phương"
+    }
+  ]
+}

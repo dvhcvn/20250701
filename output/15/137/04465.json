@@ -1,0 +1,18 @@
+{
+  "address": "Xã Khao Mang, Huyện Mù Căng Chải, Tỉnh Yên Bái",
+  "ellapsedInMs": 7950,
+  "estimatedCost": 0.0026290000000000003,
+  "thought": "**My Reasoning for Mapping the Old Address**\n\nOkay, so I'm presented with an old address: \"Xã Khao Mang, Huyện Mù Căng Chải, Tỉnh Yên Bái,\" and I need to figure out its current equivalent. My field experience tells me that this kind of administrative change is very common, so I immediately start by breaking it down.\n\nFirst, I identified the key components: the old province, \"Tỉnh Yên Bái,\" and the old ward, \"Xã Khao Mang.\" That's my starting point.\n\nNext, I jumped into my usual procedure of checking province resolutions. I found Resolution 60-NQ/TW, and sure enough, \"Tỉnh Yên Bái\" was there. Ah, yes, the merger! It's now part of \"Tỉnh Lào Cai.\" That tells me the province has shifted, but the ward is where the real work begins.\n\nI then move on to other relevant resolutions. Resolution 1673/NQ-UBTVQH15 catches my eye, particularly because of its context \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai,\" which is the very topic I'm focusing on. Bingo! In this resolution, there it is: \"Xã Khao Mang.\"\n\nThe resolution says, \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Hồ Bốn và xã Khao Mang thành xã mới có tên gọi là **xã Khao Mang**.\" This is gold! This line explicitly confirms that \"Xã Khao Mang\" is being restructured by merging with \"Xã Hồ Bốn\" to form a *new* \"Xã Khao Mang.\" It's clear that my old \"Xã Khao Mang\" is now this newly reorganized entity.\n\nTo solidify my analysis, I check my database of current wards. I filter for \"Tỉnh Lào Cai\" (the new province) and then for the ward name \"Xã Khao Mang.\" Boom! I get a perfect match: `{\"ward_code\":\"04465\",\"ward_name\":\"Xã Khao Mang\",\"province_name\":\"Tỉnh Lào Cai\"}`.\n\nSo, I'm confident in constructing my JSON output:\n\n*   `province_name`: \"Tỉnh Lào Cai\" (from the province merger)\n*   `ward_name`: \"Xã Khao Mang\" (from the resolution and new ward data)\n*   `ward_code`: \"04465\" (from the new ward data)\n*   `citation`: with the relevant information from Resolution 1673.\n*   My `confidence` level is \"high,\" because all the evidence aligns perfectly.\n\nEven though I recognized other lines in the resolution, for example, the second line about the merging to form \"xã Mù Cang Chải\", I quickly deduced it was not relevant because I am looking specifically at \"Xã Khao Mang.\" I also made note of how that new \"xã Mù Cang Chải\" shows up in the new ward list. This is just a bonus for my dataset - a good thing to file away, in case of future cross-referencing.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai",
+        "line": "1. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Hồ Bốn và xã Khao Mang thành xã mới có tên gọi là xã Khao Mang."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "04465",
+      "ward_name": "Xã Khao Mang"
+    }
+  ]
+}

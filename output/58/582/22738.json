@@ -1,0 +1,18 @@
+{
+  "address": "Phường Đô Vinh, Thành phố Phan Rang-Tháp Chàm, Tỉnh Ninh Thuận",
+  "ellapsedInMs": 7017,
+  "estimatedCost": 0.0024229,
+  "thought": "**Re-mapping \"Phường Đô Vinh\" - A Deep Dive into Administrative Changes**\n\nOkay, I'm tackling this address mapping problem. The goal is to figure out where \"Phường Đô Vinh\" in \"Tỉnh Ninh Thuận\" is now. I'm going to leverage my expertise in administrative geography and these resolutions.\n\nFirst, I identified the key components: \"Phường Đô Vinh\" and \"Tỉnh Ninh Thuận\".  Now, I'll dive into the resolutions.  The province resolutions, specifically 60-NQ/TW, immediately caught my attention. It clearly states the merger of \"Tỉnh Ninh Thuận\" into \"Tỉnh Khánh Hòa\".  That's the first major piece of the puzzle.\n\nNext, I combed through the `other_resolutions` looking for mentions of \"Phường Đô Vinh\".  And there it was: Resolution 1667/NQ-UBTVQH15, a key document regarding administrative reorganization within \"Tỉnh Khánh Hòa\".  Crucially, it mentions \"Phường Đô Vinh\".  It states a *new* \"phường Đô Vinh\" is being formed by merging \"Phường Đô Vinh\" (the old one from Ninh Thuận) with \"xã Nhơn Sơn\". Bingo!\n\nThen, I cross-referenced this with the `new_wards` data.  And there it is again:  `{\"ward_code\":\"22738\",\"ward_name\":\"Phường Đô Vinh\",\"province_name\":\"Tỉnh Khánh Hòa\"}`. This confirms the existence of the new ward in the new province, and the code matches!\n\nBased on all this evidence, I'm confident in the mapping. The old \"Phường Đô Vinh\" *is* now part of \"Tỉnh Khánh Hòa\". The resolution clearly establishes the new \"Phường Đô Vinh\" and the new ward data validates its existence in Khánh Hòa.  The province merger is also perfectly clear.\n\nSo, here's the final JSON output I'd generate:  The citation is \"1667/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Khánh Hòa\" with the relevant line being \"64. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Đô Vinh và xã Nhơn Sơn thành phường mới có tên gọi là **phường Đô Vinh**.\"  The confidence level is \"high\". I'll be mapping it to: province_name: \"Tỉnh Khánh Hòa\", ward_code: \"22738\", and ward_name: \"Phường Đô Vinh\".  A solid piece of administrative detective work, if I do say so myself.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1667/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Khánh Hòa",
+        "line": "64. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Đô Vinh và xã Nhơn Sơn thành phường mới có tên gọi là phường Đô Vinh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Khánh Hòa",
+      "ward_code": "22738",
+      "ward_name": "Phường Đô Vinh"
+    }
+  ]
+}

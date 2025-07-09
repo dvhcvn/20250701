@@ -1,0 +1,18 @@
+{
+  "address": "Phường Cầu Mây, Thị xã Sa Pa, Tỉnh Lào Cai",
+  "ellapsedInMs": 6607,
+  "estimatedCost": 0.0022974000000000002,
+  "thought": "**Mapping \"Phường Cầu Mây\" to its New Administrative Unit**\n\nOkay, so I'm tackling this address mapping task. The goal is to figure out where \"Phường Cầu Mây\" from the old system now resides, given the provided resolutions and the new ward data.\n\nFirst, I need the context.  I know it's \"Phường Cầu Mây,\" within \"Tỉnh Lào Cai,\" and specifically in \"Thị xã Sa Pa\" (though that latter part is only relevant for establishing the location within the *old* administrative structure).\n\nMy strategy is to leverage these resolutions and data to definitively link the old ward to the new one. I'll start with those province-level resolutions (60-NQ/TW). Confirmed! \"Tỉnh Lào Cai\" is still \"Tỉnh Lào Cai\" after some merging. Now for the key resolution: 1673/NQ-UBTVQH15 which is about reorganization of the specific area I am dealing with.\n\nI scan 1673/NQ-UBTVQH15 for mentions of \"Phường Cầu Mây.\" Bingo! Line 91 is golden: it *explicitly* lists \"Phường Cầu Mây\" along with other wards in a merger to create \"phường Sa Pa.\" This is a clear indicator. Now, armed with this, I turn to the \"New wards\" data, searching for \"phường Sa Pa.\"\n\nA perfect match: `{\"ward_code\":\"03006\",\"ward_name\":\"Phường Sa Pa\",\"province_name\":\"Tỉnh Lào Cai\"}`.  The province name and ward name align perfectly.\n\nPutting it all together, I can construct the JSON output. I'm going to set `confidence` to \"high\" because of that direct mention of \"Phường Cầu Mây\" being absorbed into \"phường Sa Pa\" in the resolution.  This should provide the user a comprehensive picture of the mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai",
+        "line": "91. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Hàm Rồng, Ô Quý Hồ, Sa Pả, Cầu Mây, Phan Si Păng và Sa Pa thành phường mới có tên gọi là phường Sa Pa."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "03006",
+      "ward_name": "Phường Sa Pa"
+    }
+  ]
+}

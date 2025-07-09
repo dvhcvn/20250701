@@ -1,0 +1,18 @@
+{
+  "address": "Xã Phúc Khánh, Huyện Bảo Yên, Tỉnh Lào Cai",
+  "ellapsedInMs": 8723,
+  "estimatedCost": 0.003221,
+  "thought": "**Identifying the New Administrative Unit**\n\nOkay, let's break this down. The user's given a specific old address: \"Xã Phúc Khánh, Huyện Bảo Yên, Tỉnh Lào Cai\". My primary goal here is to determine the *new* ward for this address.  I'll start by systematically working through the provided information.\n\nFirst, I need to pinpoint the province. It's \"Tỉnh Lào Cai.\" Now, I'll consult the `60-NQ/TW` resolution to confirm if this province has been altered. Thankfully, it states, \"Hợp nhất tỉnh Lào Cai và tỉnh Yên Bái, lấy tên là tỉnh Lào Cai,\" confirming the province remains \"Tỉnh Lào Cai.\"\n\nNext, I identify the old ward: \"Xã Phúc Khánh\".  Now, I'll delve into the various resolutions, specifically searching for how \"Xã Phúc Khánh\" might have been restructured.\n\nMy search turned up several possibilities:\n\n*   I noticed \"Xã Phúc Khánh\" is mentioned in resolution 1666/NQ-UBTVQH15, but this concerns Hưng Yên province, so it's irrelevant.\n*   I shifted my focus to 1673/NQ-UBTVQH15, which directly addresses Lào Cai. I examined line 60, but it didn't mention my target ward. However, Line 64 was the key: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Việt Tiến và xã Phúc Khánh thành xã mới có tên gọi là **xã Phúc Khánh**.\" This suggests that \"Xã Phúc Khánh\" merged with \"Xã Việt Tiến\", but the *new* ward's name remains \"Xã Phúc Khánh.\" That's a strong lead!\n*   I checked 1676/NQ-UBTVQH15 for Phú Thọ, but it's unrelated to my target province.\n\nBased on 1673/NQ-UBTVQH15, the merging of \"Xã Phúc Khánh\" and \"Xã Việt Tiến\" yields a new \"Xã Phúc Khánh\", belonging to \"Tỉnh Lào Cai\".\n\nNow, I'll cross-reference the known information with the list of \"New wards\" to confirm. I quickly found a matching entry: `{\"ward_code\":\"02998\",\"ward_name\":\"Xã Phúc Khánh\",\"province_name\":\"Tỉnh Lào Cai\"}`. This is a perfect match!\n\nTherefore, my final JSON structure will be:\n\n*   `province_name`: \"Tỉnh Lào Cai\"\n*   `ward_name`: \"Xã Phúc Khánh\"\n*   `ward_code`: \"02998\"\n*   `citation`: `\"header\": \"1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai\", \"line\": \"64. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Việt Tiến và xã Phúc Khánh thành xã mới có tên gọi là **xã Phúc Khánh**.\"`\n*   `confidence`: \"high\"\n\nThe high confidence comes from the direct match in the relevant resolution and the new ward list. I'm satisfied with this conclusion.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai",
+        "line": "64. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Việt Tiến và xã Phúc Khánh thành xã mới có tên gọi là xã Phúc Khánh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "02998",
+      "ward_name": "Xã Phúc Khánh"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Lạng Khê, Huyện Con Cuông, Tỉnh Nghệ An",
+  "ellapsedInMs": 8768,
+  "estimatedCost": 0.0029203000000000002,
+  "thought": "**Identifying the New Administrative Unit for the Old Address**\n\nOkay, here's how I'm thinking about this. I've been given an old address: \"Xã Lạng Khê, Huyện Con Cuông, Tỉnh Nghệ An.\" My goal is to determine the new ward, based on these resolutions and this new wards list.\n\nFirst, I parsed the address. \"Xã Lạng Khê\" is the old ward, \"Huyện Con Cuông\" is the old district, and \"Tỉnh Nghệ An\" is the old province. I noted the district information as context, but since the prompt mentions eliminating all districts, the province is the important focus here.\n\nNext, I checked the province resolutions, specifically 60-NQ/TW.  Bingo! \"Tỉnh Nghệ An\" is listed as a province *not* undergoing merger. That gives me a high degree of certainty for retaining \"Tỉnh Nghệ An\" as the province.\n\nNow, on to the key resolution: 1678/NQ-UBTVQH15. This is where the real work begins. I scanned the lines and found a couple of interesting nuggets. Line 7 mentioned \"xã Con Cuông\" being formed from other wards, which is useful information, though it doesn't directly relate to \"Xã Lạng Khê.\" But then, I hit paydirt! Line 11 states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Lạng Khê và xã Châu Khê thành xã mới có tên gọi là **xã Châu Khê**.\" That's a *direct* match! \"Xã Lạng Khê,\" my target old ward, is being merged into the new ward \"Xã Châu Khê\". This is looking very promising.\n\nI moved on to the \"New Wards\" list. I found these entries:\n\n*   `{\"ward_code\":\"17248\",\"ward_name\":\"Xã Châu Khê\",\"province_name\":\"Tỉnh Nghệ An\"}`\n*   `{\"ward_code\":\"17254\",\"ward_name\":\"Xã Con Cuông\",\"province_name\":\"Tỉnh Nghệ An\"}`\n\nThe first entry, \"Xã Châu Khê,\" matches *perfectly* with the new ward identified in resolution line 11. The second entry is interesting for the sake of completion, since it matches the previous point of discussion, but \"Xã Châu Khê\" is the correct and necessary data.\n\nI'm feeling confident now. The resolution explicitly states the merger, and the new ward appears in the provided list. Therefore:\n\n*   My **citation** will be \"1678/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Nghệ An\".\n*   The **line** of focus is line 11: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Lạng Khê và xã Châu Khê thành xã mới có tên gọi là **xã Châu Khê**.\"\n*   My **confidence** is \"high\" given the direct citation.\n*   The **province** remains \"Tỉnh Nghệ An.\"\n*   The **ward_code** is \"17248.\"\n*   The **ward_name** is \"Xã Châu Khê.\"\n\nAnd there you have it, the identified output based on a thorough analysis of the provided information.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1678/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Nghệ An",
+        "line": "11. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Lạng Khê và xã Châu Khê thành xã mới có tên gọi là xã Châu Khê."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Nghệ An",
+      "ward_code": "17248",
+      "ward_name": "Xã Châu Khê"
+    }
+  ]
+}

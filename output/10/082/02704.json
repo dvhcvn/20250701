@@ -1,0 +1,18 @@
+{
+  "address": "Xã Cốc Mỳ, Huyện Bát Xát, Tỉnh Lào Cai",
+  "ellapsedInMs": 7710,
+  "estimatedCost": 0.0030107999999999997,
+  "thought": "**My Reasoning for Address Mapping**\n\nOkay, here's what I've figured out. I'm dealing with an old address, specifically \"Xã Cốc Mỳ, Huyện Bát Xát, Tỉnh Lào Cai\", and my task is to map it to a new administrative unit. I've got resolutions and new ward data to work with.\n\nFirst, I identified the components of the old address: \"Xã Cốc Mỳ\" is the ward, \"Huyện Bát Xát\" is the district (though the instructions mention eliminating districts, so I'll keep that in mind), and \"Tỉnh Lào Cai\" is the province.\n\nNext, I delved into the province resolutions (60-NQ/TW). I found \"Tỉnh Lào Cai\" and the resolution indicates that while there was a merger, \"Tỉnh Lào Cai\" remains \"Tỉnh Lào Cai\". No change there.\n\nThen, I shifted my focus to the other resolutions (1673/NQ-UBTVQH15). I zeroed in on lines that mentioned \"Xã Cốc Mỳ\". Line 50 was crucial: it explicitly states that \"Xã Cốc Mỳ\" is being merged into \"Xã Trịnh Tường\".  Line 52 is useful for context and doesn't mention Xã Cốc Mỳ.\n\nBased on that key piece of information, I went hunting in the \"New wards\" data. I searched for \"Xã Trịnh Tường\" within \"Tỉnh Lào Cai\" and bingo! I found a perfect match. I now have the new ward name and code.\n\nThis is a pretty straightforward process. Because there's a direct and explicit mention in the resolutions, I'm confident about my mapping.  I can confidently construct the JSON output: the `citation` will point to the relevant line in the resolution, the `confidence` will be \"high,\" the `province_name` is confirmed as \"Tỉnh Lào Cai,\" and the new `ward_code` and `ward_name` are derived from the direct match, indicating Xã Cốc Mỳ's integration into Xã Trịnh Tường.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai",
+        "line": "50. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Cốc Mỳ và xã Trịnh Tường thành xã mới có tên gọi là xã Trịnh Tường."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "02695",
+      "ward_name": "Xã Trịnh Tường"
+    }
+  ]
+}

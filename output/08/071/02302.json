@@ -1,0 +1,18 @@
+{
+  "address": "Xã Minh Quang, Huyện Lâm Bình, Tỉnh Tuyên Quang",
+  "ellapsedInMs": 8181,
+  "estimatedCost": 0.0034731000000000002,
+  "thought": "**Finding the New Administrative Unit for \"Xã Minh Quang\"**\n\nOkay, let's break this down. The user's looking for the updated administrative unit for \"Xã Minh Quang, Huyện Lâm Bình, Tỉnh Tuyên Quang.\"  First, the province is straightforward: \"Tỉnh Tuyên Quang.\"  Checking provincial resolutions (specifically 60-NQ/TW), the merger with Hà Giang doesn't affect the name.  So far, so good.\n\nNow, we dive into the relevant resolution for Tuyên Quang, 1684/NQ-UBTVQH15.  This is where it gets interesting.  Line 2 creates a new *xã* named \"Lâm Bình\" from other wards.  This initially seems relevant because the old address includes \"Huyện Lâm Bình,\" implying a *district*. However, we're ultimately focused on the *ward* Minh Quang. The problem statement indicated that all districts are to be eliminated, with only province and ward units remaining.\n\nLine 3 is the key.  It explicitly states that \"Xã Minh Quang\" (our original ward) is merged with Phúc Sơn and Hồng Quang to form a *new* \"Xã Minh Quang.\"  That's a direct match!  The schema should consider a mapping of the old ward to the new ward, eliminating the district level.\n\nLooking at the \"New wards\" data confirms this. We have:\n*   `{\"ward_code\":\"02266\",\"ward_name\":\"Xã Lâm Bình \",\"province_name\":\"Tỉnh Tuyên Quang\"}`  - The *new* \"Lâm Bình\" ward\n*   `{\"ward_code\":\"02302\",\"ward_name\":\"Xã Minh Quang\",\"province_name\":\"Tỉnh Tuyên Quang\"}` - The *new* \"Minh Quang\" ward.\n\nTherefore, the old ward \"Xã Minh Quang\" is now the new ward \"Xã Minh Quang\" (code 02302) in Tuyên Quang province. The \"Huyện Lâm Bình\" designation from the original address is superseded, as the problem statement explicitly stated that all districts are being eliminated.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "3. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của cácxãPhúc Sơn, Hồng Quang và Minh Quangthành xã mới có tên gọi là xã Minh Quang."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "02302",
+      "ward_name": "Xã Minh Quang"
+    }
+  ]
+}

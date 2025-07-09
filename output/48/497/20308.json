@@ -1,0 +1,18 @@
+{
+  "address": "Xã Hòa Nhơn, Huyện Hòa Vang, Thành phố Đà Nẵng",
+  "ellapsedInMs": 7706,
+  "estimatedCost": 0.0028941,
+  "thought": "**Address Mapping for Vietnamese Administrative Units**\n\nOkay, so I'm presented with a Vietnamese address: \"Xã Hòa Nhơn, Huyện Hòa Vang, Thành phố Đà Nẵng\" and tasked with mapping it to the new administrative structure.  My first step is always to break down the address into its components.  I have:\n\n*   Old Ward: Xã Hòa Nhơn\n*   Old District: Huyện Hòa Vang\n*   Old Province: Thành phố Đà Nẵng\n\nI need to use the provided resolutions and the \"New wards\" data to determine the new corresponding administrative unit.  Let's start by checking the province resolutions.\n\nLooking at resolution 60-NQ/TW, I confirm that Đà Nẵng *was* involved in a merger, but ultimately retained its name. This informs my understanding of how to handle the province in the output.\n\nNow, the crucial step: checking for \"Xã Hòa Nhơn\" in the other provided resolutions.  The key is resolution 1659/NQ-UBTVQH15. Bingo! Line 26 specifically outlines the exact scenario:  \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Hòa Ninh và xã Hòa Nhơn thành xã mới có tên gọi là **xã Bà Nà**.\"  This is a direct hit!\n\nWith this confirmed, I cross-reference with the \"New wards\" data, and there it is: \"Xã Bà Nà\" with ward code \"20308\" and province \"Thành phố Đà Nẵng\".  This confirms my analysis.\n\nBased on this, I'm confident in my output.  I'll generate a JSON with:\n\n*   `citation`:  The relevant resolution header and the line that pertains to the ward change (1659/NQ-UBTVQH15: \"26. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Hòa Ninh và xã Hòa Nhơn thành xã mới có tên gọi là **xã Bà Nà**.\")\n*   `confidence`: High. The match is direct and unambiguous.\n*   `province_name`: \"Thành phố Đà Nẵng.\"  This is confirmed by the new data and the resolution's handling of province name.\n*   `ward_code`: \"20308\".\n*   `ward_name`: \"Xã Bà Nà\".\n\nThat should be a robust and accurate mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng",
+        "line": "26. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Hòa Ninh và xã Hòa Nhơn thành xã mới có tên gọi là xã Bà Nà."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "20308",
+      "ward_name": "Xã Bà Nà"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "address": "Xã Hồ Tùng Mậu, Huyện Ân Thi, Tỉnh Hưng Yên",
+  "ellapsedInMs": 6126,
+  "estimatedCost": 0.0031276999999999998,
+  "thought": "**Determining the New Administrative Unit for a Given Address**\n\nOkay, so I've got this old address: \"Xã Hồ Tùng Mậu, Huyện Ân Thi, Tỉnh Hưng Yên,\" and the task is to find its new administrative unit. My initial step is to break down the address.  I immediately recognize \"Tỉnh Hưng Yên\" as the province and \"Xã Hồ Tùng Mậu\" as the ward.  Easy enough.\n\nNext, I need to check provincial resolutions to see if \"Tỉnh Hưng Yên\" has been affected by any changes. I dig into the relevant documentation and find Resolution 60-NQ/TW. Ah, there it is!  It states \"Hợp nhất tỉnh Hưng Yên và tỉnh Thái Bình, lấy tên là tỉnh Hưng Yên,\" meaning Hưng Yên remains, so the province hasn't merged or split, only changed names in the resolution.\n\nNow, the focus shifts to the ward itself. I go through \"Other resolutions\" specifically looking for any mentions of \"Xã Hồ Tùng Mậu\" within \"Tỉnh Hưng Yên.\"  I quickly identify the key resolution: \"1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên.\"  And there it is, line 17: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Hồ Tùng Mậu, Tiền Phong, Hạ Lễ và Hồng Quang thành xã mới có tên gọi là **xã Hồng Quang**.\" That's the key.  \"Xã Hồ Tùng Mậu\" has been merged into \"xã Hồng Quang.\"  This resolution is crystal clear.\n\nNow, I shift gears and need to find the specific details for \"xã Hồng Quang\" in my \"New wards\" list.  I locate it and pull the data: `{\"ward_code\":\"12196\",\"ward_name\":\"Xã Hồng Quang\",\"province_name\":\"Tỉnh Hưng Yên\"}`.  The `province_name` \"Tỉnh Hưng Yên\" aligns perfectly with the province name from the resolution.\n\nMy confidence in this is very high. The resolution is explicit about the merger of \"Xã Hồ Tùng Mậu\" into the new \"Xã Hồng Quang\". All the pieces fit.  I have my answer.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Hưng Yên và tỉnh Thái Bình, lấy tên là tỉnh Hưng Yên"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "12196",
+      "ward_name": "Xã Hồng Quang"
+    },
+    {
+      "citation": {
+        "header": "1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên",
+        "line": "17. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Hồ Tùng Mậu, Tiền Phong, Hạ Lễ và Hồng Quang thành xã mới có tên gọi là xã Hồng Quang."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "12196",
+      "ward_name": "Xã Hồng Quang"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Huổi Só, Huyện Tủa Chùa, Tỉnh Điện Biên",
+  "ellapsedInMs": 8093,
+  "estimatedCost": 0.0032311999999999996,
+  "thought": "**Address Mapping Logic for Vietnamese Administrative Units**\n\nOkay, so I'm tasked with mapping an old Vietnamese address to its current equivalent. Here's how I'm approaching this, keeping my expert eye sharp:\n\nFirst, I need to break down the old address: \"Xã Huổi Só, Huyện Tủa Chùa, Tỉnh Điện Biên\".  This gives me the province (Điện Biên), district (Tủa Chùa - which I'll keep in mind for context, even though the task specifies eliminating districts), and the ward (Huổi Só).\n\nMy plan is to cross-reference this information with relevant resolutions.  The first stop is the province-level resolutions (60-NQ/TW).  Fortunately, Điện Biên isn't listed for any significant changes, meaning its province name remains the same. Easy start!\n\nNext, I dive into the more specific resolutions, specifically 1661/NQ-UBTVQH15.  This is where the real work begins. I'm searching for \"Huổi Só\" in the text, and there it is, clear as day, on line 19: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Huổi Só và xã Tủa Thàng thành xã mới có tên gọi là **xã Tủa Thàng**.\"  Bingo! This tells me that Huổi Só has been merged into Tủa Thàng.\n\nNow, to solidify this, I check my data for the 'New Wards' and specifically \"Tủa Thàng\".  The entry: `{\"ward_code\":\"03220\",\"ward_name\":\"Xã Tủa Thàng\",\"province_name\":\"Tỉnh Điện Biên\"}` confirms the match, including the correct province name.\n\nConsidering other resolutions where \"Tủa Chùa\" is mentioned, I can confirm that the mapping to \"Tủa Thàng\" is correct and is *not* a result of those other consolidations.\n\nFinally, the JSON output is a straightforward construction. My `province_name` is confirmed, the new `ward_name` and `ward_code` are directly from the 'New Wards' data and the direct line from the resolution.  Confidence? High. This is a clear-cut case with a direct match in the resolution! The `citation` will point precisely to that critical line in resolution 1661/NQ-UBTVQH15.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1661/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Điện Biên",
+        "line": "19. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Huổi Só và xã Tủa Thàng thành xã mới có tên gọi là xã Tủa Thàng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Điện Biên",
+      "ward_code": "03220",
+      "ward_name": "Xã Tủa Thàng"
+    }
+  ]
+}

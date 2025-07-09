@@ -1,0 +1,18 @@
+{
+  "address": "Phường Phú Chánh, Thành phố Tân Uyên, Tỉnh Bình Dương",
+  "ellapsedInMs": 7670,
+  "estimatedCost": 0.0032261,
+  "thought": "**Analyzing the Address Transformation**\n\nOkay, so the user wants to identify the new administrative unit for \"Phường Phú Chánh, Thành phố Tân Uyên, Tỉnh Bình Dương.\" I need to break this down systematically.\n\nFirst, I see \"Tỉnh Bình Dương\" and I know I need to check for province mergers. Looking at `60-NQ/TW`, I find that Bình Dương has been merged into \"Thành phố Hồ Chí Minh.\"\n\nNext, I focus on the ward, \"Phường Phú Chánh.\"  I'll need to dig into the `Other resolutions` to see what happened to it. Searching those resolutions, I find `1685/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của Thành phố Hồ Chí Minh`. In that document, specifically line 90, it explicitly states that \"Phường Phú Chánh\" is being merged with other wards to form \"Phường Bình Dương.\"\n\nNow, I need to verify this new ward.  I'll check the `New wards` list for \"Phường Bình Dương\" within \"Thành phố Hồ Chí Minh.\"  And there it is:  `{\"ward_code\":\"25760\",\"ward_name\":\"Phường Bình Dương\",\"province_name\":\"Thành phố Hồ Chí Minh\"}`.  It's a perfect match.\n\nTherefore, the new administrative unit is \"Phường Bình Dương,\" and the province is \"Thành phố Hồ Chí Minh.\" My confidence here is high because there's a direct resolution explicitly stating this ward merger. I'll need to remember to eliminate any district level information as per the problem description. All in all, this should be a straightforward analysis.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1685/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của Thành phố Hồ Chí Minh",
+        "line": "90. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Phú Mỹ (thành phố Thủ Dầu Một), Hòa Phú, Phú Tân và Phú Chánh thành phường mới có tên gọi là phường Bình Dương."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hồ Chí Minh",
+      "ward_code": "25760",
+      "ward_name": "Phường Bình Dương"
+    }
+  ]
+}

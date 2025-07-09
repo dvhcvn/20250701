@@ -1,0 +1,28 @@
+{
+  "address": "Xã Hòn Nghệ, Huyện Kiên Lương, Tỉnh Kiên Giang",
+  "ellapsedInMs": 7417,
+  "estimatedCost": 0.003168,
+  "thought": "**Mapping Vietnamese Addresses to New Administrative Units**\n\nOkay, so I'm tasked with mapping this old Vietnamese address to its current equivalent, considering recent administrative changes. The old address is \"Xã Hòn Nghệ, Huyện Kiên Lương, Tỉnh Kiên Giang.\"  First, I've got to break it down: \"Xã Hòn Nghệ\" is the old ward, and \"Tỉnh Kiên Giang\" is the old province.\n\nNow, let's dive into the resolutions.  The key one seems to be the one dealing with province-level changes, 60-NQ/TW. I quickly check if \"Tỉnh Kiên Giang\" is listed as a province that *wasn't* merged. No luck there.  So, I look at the \"merged\" list and, sure enough, item 23 states that Kiên Giang was combined with An Giang. This gives me my new province: \"Tỉnh An Giang.\"\n\nNext, I need to see what happened to \"Xã Hòn Nghệ.\"  I'll look at the relevant resolution for An Giang, 1654/NQ-UBTVQH15, the one about the restructuring of An Giang's administrative units. I'm scanning through the lines, specifically looking for \"Xã Hòn Nghệ.\"  Bingo! Line 97 explicitly states that \"Hòn Nghệ\" is *one of the six communes that didn't undergo any changes*. The words \"không thực hiện sắp xếp\" mean \"not rearranged\" – so, its status quo. \n\nTo solidify things, I will make sure the details of this new ward are in the `New wards` list. I search the data and find: `{\"ward_code\":\"30814\",\"ward_name\":\"Xã Hòn Nghệ\",\"province_name\":\"Tỉnh An Giang\"}`. That's a perfect match! It's now listed under \"Tỉnh An Giang,\" and the ward code is confirmed.\n\nBased on all this, I'm quite confident. I'll construct the JSON output: the province is now \"Tỉnh An Giang,\" and the ward is still \"Xã Hòn Nghệ.\" I can now map the old address, with a high degree of certainty, based on the specific evidence from the resolutions. The key was the explicit mention of \"Xã Hòn Nghệ\" remaining unchanged.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "23. Hợp nhất tỉnh An Giang và tỉnh Kiên Giang, lấy tên là tỉnh An Giang"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh An Giang",
+      "ward_code": "30814",
+      "ward_name": "Xã Hòn Nghệ"
+    },
+    {
+      "citation": {
+        "header": "1654/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh An Giang",
+        "line": "97. Sau khi sắp xếp, tỉnh An Giang có 102 đơn vị hành chính cấp xã, gồm 85 xã, 14 phường và 03 đặc khu; trong đó có 79 xã, 14 phường, 03 đặc khu hình thành sau sắp xếp quy định tại Điều này và 06 xã không thực hiện sắp xếp là các xã Mỹ Hòa Hưng, Bình Giang, Bình Sơn, Hòn Nghệ, Sơn Hải, Tiên Hải."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh An Giang",
+      "ward_code": "30814",
+      "ward_name": "Xã Hòn Nghệ"
+    }
+  ]
+}

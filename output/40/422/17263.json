@@ -1,0 +1,18 @@
+{
+  "address": "Xã Môn Sơn, Huyện Con Cuông, Tỉnh Nghệ An",
+  "ellapsedInMs": 8151,
+  "estimatedCost": 0.0025419,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, here's how I'm approaching this address mapping task. The goal is to translate an old Vietnamese address to its new administrative units.  I'm starting with \"Xã Môn Sơn, Huyện Con Cuông, Tỉnh Nghệ An.\"  My initial focus is on the ward level and province level, as the prompt specifies eliminating districts.\n\nFirst, I identified the components: old ward \"Xã Môn Sơn,\" old district \"Huyện Con Cuông,\" and old province \"Tỉnh Nghệ An.\"  I'm primarily using the ward and province for the mapping, but the district helps with context and validation.\n\nMy plan is to leverage the province resolutions (specifically 60-NQ/TW) and other related resolutions (like 1678/NQ-UBTVQH15). I checked the province resolutions for Nghệ An, and it shows that this province has no mergers.  That said, I did find a resolution (1678/NQ-UBTVQH15) that addresses ward-level changes within Nghệ An.\n\nI dug into that resolution and found a crucial line that directly addressed \"Xã Môn Sơn.\" Line 8 states that \"Xã Môn Sơn\" is being merged with \"Xã Lục Dạ\" to form a *new* \"Xã Môn Sơn.\"  This is a direct match, and a key piece of information.\n\nNext, I cross-referenced this with the new ward data. I searched for wards in \"Tỉnh Nghệ An\" with the name \"Xã Môn Sơn.\"  I found a perfect match: a ward with the name \"Xã Môn Sơn,\" ward code \"17263,\" and province \"Tỉnh Nghệ An\".\n\nBased on this, I'm confident in constructing the JSON output. The province name remains \"Tỉnh Nghệ An.\" The new ward name is \"Xã Môn Sơn\" (confirming the merge).  The new ward code is \"17263.\" The confidence level will be \"high\" because I have a direct resolution explicitly merging the old ward into the new ward, and a perfect match in the new ward data. The citation will, of course, reference the specific resolution (1678/NQ-UBTVQH15) and line number.\n\nI've also re-evaluated the district component, \"Huyện Con Cuông.\" While it's not directly used for the new address determination due to the prompt, it helps to confirm the context.  Since the resolution pertains to ward-level changes within Nghệ An, the inclusion of \"Xã Môn Sơn\" in that province is validating.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1678/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Nghệ An",
+        "line": "8. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Lục Dạ và xã Môn Sơn thành xã mới có tên gọi là xã Môn Sơn."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Nghệ An",
+      "ward_code": "17263",
+      "ward_name": "Xã Môn Sơn"
+    }
+  ]
+}

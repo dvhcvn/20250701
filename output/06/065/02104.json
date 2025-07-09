@@ -1,0 +1,28 @@
+{
+  "address": "Xã Cao Kỳ, Huyện Chợ Mới, Tỉnh Bắc Kạn",
+  "ellapsedInMs": 7023,
+  "estimatedCost": 0.001947,
+  "thought": "**Identifying the New Administrative Unit for \"Xã Cao Kỳ, Huyện Chợ Mới, Tỉnh Bắc Kạn\"**\n\nOkay, so the user wants to know the current administrative unit for \"Xã Cao Kỳ, Huyện Chợ Mới, Tỉnh Bắc Kạn.\" My first step is to recognize that we're dealing with \"Tỉnh Bắc Kạn,\" which is the province. Now, I need to check provincial resolutions, specifically those related to Resolution 60-NQ/TW, to see if \"Tỉnh Bắc Kạn\" has undergone any changes.  A quick check reveals the merger of Bắc Kạn and Thái Nguyên, resulting in \"Tỉnh Thái Nguyên.\" So, \"Tỉnh Bắc Kạn\" is now part of \"Tỉnh Thái Nguyên.\"\n\nNext, I need to pinpoint \"Xã Cao Kỳ.\"  Given the new province, I'll search through resolutions related to \"Tỉnh Thái Nguyên\" for mentions of \"Xã Cao Kỳ.\" I find resolution 1683/NQ-UBTVQH15, which deals with rearranging administrative units in Thái Nguyên.  Scanning through this, line 71 catches my eye: it states that \"Xã Cao Kỳ\" (along with Tân Sơn and Hòa Mục) is being merged into a new \"Xã Tân Kỳ\".\n\nSo, \"Xã Cao Kỳ\" is now part of \"Xã Tân Kỳ\".  To confirm this and get the specific details, I'll search for \"Xã Tân Kỳ\" within the context of \"Tỉnh Thái Nguyên\" in the list of new wards.  I quickly find the match: `{\"ward_code\":\"02104\",\"ward_name\":\"Xã Tân Kỳ\",\"province_name\":\"Tỉnh Thái Nguyên\"}`.  The match is clean and conclusive.\n\nThe resolution explicitly merges those three xã into the new unit, so the confidence level is quite high. I'll construct the JSON output reflecting this, giving a definitive answer to the user.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Bắc Kạn và tỉnh Thái Nguyên, lấy tên là tỉnh Thái Nguyên"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thái Nguyên",
+      "ward_code": "02104",
+      "ward_name": "Xã Tân Kỳ"
+    },
+    {
+      "citation": {
+        "header": "1683/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thái Nguyên",
+        "line": "71. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tân Sơn, Cao Kỳ và Hòa Mục thành xã mới có tên gọi là xã Tân Kỳ."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thái Nguyên",
+      "ward_code": "02104",
+      "ward_name": "Xã Tân Kỳ"
+    }
+  ]
+}

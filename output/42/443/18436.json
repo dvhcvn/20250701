@@ -1,0 +1,18 @@
+{
+  "address": "Xã Kim Song Trường, Huyện Can Lộc, Tỉnh Hà Tĩnh",
+  "ellapsedInMs": 4851,
+  "estimatedCost": 0.0017220999999999998,
+  "thought": "**Identifying the New Administrative Unit**\n\nOkay, here's how I'm approaching this. The user gave me an old address: \"Xã Kim Song Trường\", \"Tỉnh Hà Tĩnh\". My goal is to figure out the new administrative unit.\n\nFirst, I need to break down the old address. I have \"Xã Kim Song Trường\" which is the old ward, and \"Tỉnh Hà Tĩnh\" which is the old province.\n\nNow, I'll start with the province. I've got a file of \"Province Resolutions (60-NQ/TW)\". I need to see if \"Tỉnh Hà Tĩnh\" is merging with anything.  Ah, perfect!  It's listed as \"Các đơn vị hành chính cấp tỉnh không thực hiện sáp nhập\" which means \"Tỉnh Hà Tĩnh\" stays \"Tỉnh Hà Tĩnh\". That's straightforward.\n\nNext, I'll dive into the resolutions looking for \"Xã Kim Song Trường\". I've got a specific resolution for Hà Tĩnh: \"1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh\". Let's see... ah, Line 30 is the key! It clearly states that \"Xã Kim Song Trường\", along with two other wards, is being merged into a new ward called \"**xã Trường Lưu**\".\n\nNow, I need to confirm that \"Xã Trường Lưu\" exists in my \"New wards\" list. Bingo! There's a match: `{\"ward_code\":\"18436\",\"ward_name\":\"Xã Trường Lưu\",\"province_name\":\"Tỉnh Hà Tĩnh\"}`.  That's exactly what I expected.\n\nThis is a direct hit! The resolution explicitly names \"Xã Kim Song Trường\" and the new name it's being merged into is \"Xã Trường Lưu\". And, my \"New wards\" list confirms the existence of \"Xã Trường Lưu\" in Hà Tĩnh. The province also remains the same.  This is a very high-confidence match. I'm feeling good about this.  Now, I'll just structure the output JSON according to the given schema.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh",
+        "line": "30. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Kim Song Trường, Thường Nga và Phú Lộc thành xã mới có tên gọi là xã Trường Lưu."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hà Tĩnh",
+      "ward_code": "18436",
+      "ward_name": "Xã Trường Lưu"
+    }
+  ]
+}

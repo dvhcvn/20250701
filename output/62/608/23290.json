@@ -1,0 +1,18 @@
+{
+  "address": "Phường Trường Chinh, Thành phố Kon Tum, Tỉnh Kon Tum",
+  "ellapsedInMs": 7819,
+  "estimatedCost": 0.0029801,
+  "thought": "**Address Mapping Analysis: Phường Trường Chinh, Kon Tum**\n\nOkay, here's how I'm approaching this address mapping task. The input is \"Phường Trường Chinh, Thành phố Kon Tum, Tỉnh Kon Tum\". First, I need to break down the address. My analysis begins with recognizing \"Phường Trường Chinh\" as the old ward and \"Tỉnh Kon Tum\" as the old province.\n\nNow, the crucial step is understanding how these administrative units have evolved. I'll need to consult province resolutions, particularly Resolution 60-NQ/TW, to see if Kon Tum has been subject to any structural changes. This resolution reveals a merger: \"Hợp nhất tỉnh Kon Tum và tỉnh Quảng Ngãi, lấy tên là tỉnh Quảng Ngãi.\" Ah, so Kon Tum is now part of Quảng Ngãi. This means any subsequent analyses involving Kon Tum will need to be cross-referenced with Quảng Ngãi.\n\nNext, I need to pinpoint the specific change relevant to \"Phường Trường Chinh\".  I'll scour other resolutions, specifically 1677/NQ-UBTVQH15, paying close attention to any mentions of the old ward, while keeping the new province context in mind. Bingo! Line 88 of 1677/NQ-UBTVQH15 is a direct hit: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Quang Trung, Quyết Thắng, Thắng Lợi, Trường Chinh và Thống Nhất thành phường mới có tên gọi là **phường Kon Tum**.\" This confirms that \"Phường Trường Chinh\" has been merged into a new ward, named \"phường Kon Tum\".\n\nNow, I'll need to check the \"New wards\" data to get the code. I find that \"phường Kon Tum\" maps to `ward_code`: \"23293\" with `ward_name`: \"Phường Kon Tum\" in the province of \"Tỉnh Quảng Ngãi\". So I can confidently say that the new information for \"Phường Trường Chinh\" should be in Quảng Ngãi and the new ward name is \"Phường Kon Tum\".\n\nMy confidence level is high because there's a direct reference to \"Trường Chinh\" in the specific resolution that outlines these changes, and the province merger aligns perfectly.\n\nTherefore, the JSON output will include the citation for resolution 1677/NQ-UBTVQH15, specifically line 88, along with `ward_code`: \"23293\" and the province is \"Tỉnh Quảng Ngãi\".\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1677/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ngãi",
+        "line": "88. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Quang Trung, Quyết Thắng, Thắng Lợi, Trường Chinh và Thống Nhất thành phường mới có tên gọi là phường Kon Tum."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ngãi",
+      "ward_code": "23293",
+      "ward_name": "Phường Kon Tum"
+    }
+  ]
+}

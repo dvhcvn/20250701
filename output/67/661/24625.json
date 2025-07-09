@@ -1,0 +1,18 @@
+{
+  "address": "Xã Đắk R'Măng, Huyện Đăk Glong, Tỉnh Đắk Nông",
+  "ellapsedInMs": 8152,
+  "estimatedCost": 0.0030486999999999997,
+  "thought": "**Address Mapping Analysis: Đắk R'Măng to Tà Đùng**\n\nOkay, so I need to translate this old address, Đắk R'Măng in Đắk Nông, to its current administrative unit. The input tells me the old ward is Đắk R'Măng, in Đăk Glong district, Đắk Nông province.  My first thought is to check the province resolutions to see if there have been any changes at that level.\n\nLooking at the province resolutions, specifically 60-NQ/TW, I quickly find that Đắk Nông was merged into Lâm Đồng.  This resolves the province name change. Now the question is the ward.\n\nNext, I look for references to Đắk R'Măng in other resolutions.  Bingo! Resolution 1671/NQ-UBTVQH15 directly addresses the reorganization of wards in Lâm Đồng province.  It clearly states that Đắk R'Măng, along with Đắk Som, has been merged to form a new ward called Tà Đùng.  This is key.\n\nNow, I cross-reference this with the \"new_wards\" data.  I'm looking for \"Tà Đùng\".  Sure enough, there it is!  It confirms the ward name and provides the associated code and province - \"Tỉnh Lâm Đồng\".  This matches what I deduced from the other resolutions.\n\nWith the province and ward confirmed, the JSON structure should be:\n```json\n[\n  {\n    \"province_name\": \"Tỉnh Lâm Đồng\",\n    \"ward_name\": \"Xã Tà Đùng\",\n    \"ward_code\": \"24637\",\n    \"citation\": {\n      \"header\": \"60-NQ/TW\",\n      \"line\": \"Hợp nhất tỉnh Lâm Đồng, tỉnh Đắk Nông và tỉnh Bình Thuận; lấy tên là tỉnh Lâm Đồng\"\n    },\n    \"confidence\": \"high\"\n  },\n  {\n    \"province_name\": \"Tỉnh Lâm Đồng\",\n    \"ward_name\": \"Xã Tà Đùng\",\n    \"ward_code\": \"24637\",\n    \"citation\": {\n      \"header\": \"1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng\",\n      \"line\": \"92. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Đắk Som và xã Đắk R'Măng thành xã mới có tên gọi là xã Tà Đùng.\"\n    },\n    \"confidence\": \"high\"\n  }\n]\n```\n\nSince the schema only allows a single citation per object, I'll return the two objects. One object has the province-merger citation and the other object has the ward-merger citation. I'm very confident in this mapping, both changes are explicitly stated and easily cross-referenced.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng",
+        "line": "92. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Đắk Som và xã Đắk R'Măng thành xã mới có tên gọi là xã Tà Đùng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "24637",
+      "ward_name": "Xã Tà Đùng"
+    }
+  ]
+}

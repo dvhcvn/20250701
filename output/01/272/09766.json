@@ -1,0 +1,18 @@
+{
+  "address": "Xã Ngọc Tảo, Huyện Phúc Thọ, Thành phố Hà Nội",
+  "ellapsedInMs": 7392,
+  "estimatedCost": 0.0027773,
+  "thought": "**Identifying the New Administrative Unit**\n\nOkay, let's break this down. The user's looking for the new administrative unit for \"Xã Ngọc Tảo, Huyện Phúc Thọ, Thành phố Hà Nội.\"  My initial thought is to cross-reference the old address with relevant resolutions and any new wards data I have.\n\nFirst, I parsed the old address:  \"Xã Ngọc Tảo\" (Ward), \"Huyện Phúc Thọ\" (District), and \"Thành phố Hà Nội\" (Province).  Makes sense.  Now, the resolutions. I know those are key.\n\nI checked the province resolutions first. Specifically, Resolution 60-NQ/TW shows that Hà Nội remains Hà Nội, which is consistent with our understanding. Fine.\n\nThen, I went through the specific resolutions related to administrative changes. Resolution 1656/NQ-UBTVQH15 jumped out. It detailed changes for Hà Nội. Specifically, Point 90 seemed promising, detailing a new ward called \"Phúc Thọ\". But, nope, \"Ngọc Tảo\" wasn't mentioned.\n\nThen I hit point 92. Bingo! This resolution specifically stated that \"Xã Ngọc Tảo\" was being merged into \"Xã Hát Môn\". The wording strongly implied that both wards were in \"Huyện Phúc Thọ\" like the original address. Confident!\n\nI skimmed through resolutions 1671 and 1678, but they were about Lâm Đồng and Nghệ An, respectively. Irrelevant.\n\nBased on 1656/NQ-UBTVQH15, it's clear: \"Xã Ngọc Tảo\" merges into \"Xã Hát Môn\". That seems the most logical answer.\n\nI checked my \"New wards\" data to confirm. And there it was: `{\"ward_code\":\"09772\",\"ward_name\":\"Xã Hát Môn\",\"province_name\":\"Thành phố Hà Nội\"}`.  Perfect match!\n\nSo, the new ward is \"Xã Hát Môn,\" with the code \"09772\" in \"Thành phố Hà Nội\".  High confidence in this answer. Now, to format it into the correct JSON structure for the user.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội",
+        "line": "92. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tam Hiệp (huyện Phúc Thọ), Hiệp Thuận, Liên Hiệp, Ngọc Tảo, Tam Thuấn, Thanh Đa và Hát Môn thành xã mới có tên gọi là **xã Hát Môn**."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hà Nội",
+      "ward_code": "09772",
+      "ward_name": "Xã Hát Môn"
+    }
+  ]
+}

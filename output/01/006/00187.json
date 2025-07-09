@@ -1,0 +1,18 @@
+{
+  "address": "Phường Láng Thượng, Quận Đống Đa, Thành phố Hà Nội",
+  "ellapsedInMs": 5856,
+  "estimatedCost": 0.0023782,
+  "thought": "**My Analysis of the Administrative Address Mapping**\n\nOkay, so I'm tackling this address: \"Phường Láng Thượng, Quận Đống Đa, Thành phố Hà Nội\" and figuring out its new administrative unit. First, I need to confirm the province. I quickly checked Resolution 60-NQ/TW, and \"Thành phố Hà Nội\" isn't slated for any mergers. Excellent, so the province remains unchanged.\n\nNext, the critical part is identifying the new ward for \"Phường Láng Thượng\".  I went straight to the \"Other resolutions\" section and specifically looked at 1656/NQ-UBTVQH15, the one about Hanoi's administrative rearrangements. Bingo! Line 12 of that resolution spells it out:  \"toàn bộ diện tích tự nhiên, quy mô dân số của phường Láng Thượng\" *becomes* part of a *new* \"phường Láng.\"\n\nThat's a pretty definitive statement.  I then cross-referenced the \"New wards\" list, and sure enough, there's a match: `{\"ward_code\":\"00199\",\"ward_name\":\"Phường Láng\",\"province_name\":\"Thành phố Hà Nội\"}`.  The match is clear, the citation is direct.\n\nSo, I'm going with a high confidence level here.  The old \"Phường Láng Thượng\" maps to the new \"Phường Láng,\" code 00199, and the province \"Thành phố Hà Nội\" remains as is.  The evidence is clear and precise.  My JSON output will reflect this with a strong citation from the resolution.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội",
+        "line": "12. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Láng Thượng, phần còn lại của phường Láng Hạ sau khi sắp xếp theo quy định tại khoản 5, khoản 9 Điều này và phần còn lại của phường Ngọc Khánh sau khi sắp xếp theo quy định tại khoản 4, khoản 5 Điều này thành phường mới có tên gọi là phường Láng."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hà Nội",
+      "ward_code": "00199",
+      "ward_name": "Phường Láng"
+    }
+  ]
+}

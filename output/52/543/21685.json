@@ -1,0 +1,28 @@
+{
+  "address": "Phường Hoài Đức, Thị xã Hoài Nhơn, Tỉnh Bình Định",
+  "ellapsedInMs": 7480,
+  "estimatedCost": 0.0035577,
+  "thought": "**Analysis of Address Change: Phường Hoài Đức, Bình Định**\n\nOkay, let's break this down. The user's input asks about \"Phường Hoài Đức, Thị xã Hoài Nhơn, Tỉnh Bình Định\". First, I need to understand any provincial changes. Looking at the province resolutions (60-NQ/TW), it's clear that Bình Định and Gia Lai merged, becoming \"Tỉnh Gia Lai.\" So, that's my starting point for the `province_name`.\n\nNow, the crucial part: identifying the fate of \"Phường Hoài Đức.\"  I need to scour those resolutions for any mention of this ward. Resolution 1656/NQ-UBTVQH15 (Hà Nội) doesn't seem relevant. While it mentions \"phường Tây Tựu\" and \"xã Hoài Đức\", they are new entities based on *different* prior units, and in a different province.  1671/NQ-UBTVQH15 (Lâm Đồng) mentions \"Hoài Đức\" but it's a *xã* (commune) in Lâm Đồng, not Bình Định/Gia Lai.\n\nBut then, 1664/NQ-UBTVQH15 (Gia Lai) hits paydirt. Section 112 states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Hoài Đức và phường Bồng Sơn thành phường mới có tên gọi là **phường Bồng Sơn**.\" *Perfect!*  This means \"Phường Hoài Đức\" merged with \"Phường Bồng Sơn\" to form the *new* \"Phường Bồng Sơn.\" This strongly suggests the updated administrative unit is \"Phường Bồng Sơn\", which fits, and the province is now called Gia Lai. The other entries in 1664/NQ-UBTVQH15 do not refer to \"Phường Hoài Đức\".\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "12. Hợp nhất tỉnh Gia Lai và tỉnh Bình Định, lấy tên là tỉnh Gia Lai"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "21640",
+      "ward_name": "Phường Bồng Sơn"
+    },
+    {
+      "citation": {
+        "header": "1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai",
+        "line": "112. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Hoài Đức và phường Bồng Sơn thành phường mới có tên gọi là **phường Bồng Sơn**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "21640",
+      "ward_name": "Phường Bồng Sơn"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Phường Hai Bà Trưng, Thành phố Phúc Yên, Tỉnh Vĩnh Phúc",
+  "ellapsedInMs": 7365,
+  "estimatedCost": 0.0029983999999999996,
+  "thought": "**Analysis of Administrative Unit Changes for the Address \"Phường Hai Bà Trưng, Thành phố Phúc Yên, Tỉnh Vĩnh Phúc\"**\n\nOkay, let's break this down. My goal is to map this old address to its new equivalent based on the provided resolutions and the new ward data.\n\nFirst, I need to account for any province mergers. Checking Resolution 60-NQ/TW, it's clear that \"Tỉnh Vĩnh Phúc\" has been merged and is now \"Tỉnh Phú Thọ\".  That's straightforward.\n\nNow, the trickier part is the ward. I need to find out what happened to \"Phường Hai Bà Trưng\" in Phúc Yên. I started by looking for it in the \"Other resolutions,\" specifically in \"1656/NQ-UBTVQH15,\" but that's about Hà Nội, and this is Phúc Yên, so it's a no-go.\n\nNext, I turned to \"1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ.\"  Bingo! Line 141 explicitly mentions \"Phường Hai Bà Trưng\" *within* \"thành phố Phúc Yên.\"  It says they're all merged into the *new* \"phường Phúc Yên.\" This confirms that's the correct mapping for this old ward.\n\nNext, I need to check the \"New wards\" list for \"Phường Phúc Yên.\" Yep, there it is! I find the following: `{\"ward_code\":\"08740\",\"ward_name\":\"Phường Phúc Yên\",\"province_name\":\"Tỉnh Phú Thọ\"}`. This is perfect.\n\nSo, constructing the JSON output is simple:\n\n*   The province is \"Tỉnh Phú Thọ.\"\n*   The new ward is \"Phường Phúc Yên\" with code \"08740.\"\n*   The crucial citation comes from the line \"141. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Hùng Vương (thành phố Phúc Yên), Hai Bà Trưng, Phúc Thắng, Tiền Châu và Nam Viêm thành phường mới có tên gọi là **phường Phúc Yên**.\" in resolution 1676/NQ-UBTVQH15.\n*   This is a high-confidence match because it's a direct, unambiguous statement regarding this specific ward within the correct city and province.\n\nI've double-checked, and there are no other possibilities or ambiguities. The Hà Nội \"Phường Hai Bà Trưng\" is clearly irrelevant due to the context of the location. And the province and ward changes are explicitly stated in the resolutions.  This is a very clear-cut case.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "141. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Hùng Vương (thành phố Phúc Yên), Hai Bà Trưng, Phúc Thắng, Tiền Châu và Nam Viêm thành phường mới có tên gọi là phường Phúc Yên."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "08740",
+      "ward_name": "Phường Phúc Yên"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Vũ Ninh, Huyện Kiến Xương, Tỉnh Thái Bình",
+  "ellapsedInMs": 6384,
+  "estimatedCost": 0.0023047,
+  "thought": "**My Analysis of the Administrative Unit Change**\n\nOkay, here's how I'm approaching this. The user gave me an old address: \"Xã Vũ Ninh, Huyện Kiến Xương, Tỉnh Thái Bình\". My job is to figure out the new administrative unit(s).\n\nFirst, I identified the old province, \"Tỉnh Thái Bình.\" Then, I needed to check if there were any province-level reorganizations based on province resolutions (like 60-NQ/TW).  I discovered that \"Tỉnh Thái Bình\" was merged and renamed to \"Tỉnh Hưng Yên\".\n\nNext, I zeroed in on the old ward, \"Xã Vũ Ninh\". Now, I had to delve into resolutions related to the new province, \"Tỉnh Hưng Yên\", to see if \"Xã Vũ Ninh\" was mentioned, or impacted. I found a resolution (1658/NQ-UBTVQH15) that mentioned \"phường Vũ Ninh\", but this was in \"Tỉnh Bắc Ninh,\" which is irrelevant. Then, I found the critical resolution: \"1666/NQ-UBTVQH15\". Line 82 within this resolution stated that \"Xã Vũ Ninh\" was merged with other \"xã\" to form \"Xã Vũ Quý\". This was the key.\n\nNow, I needed to confirm this new ward. I cross-referenced the \"New wards\" data.  And there it was: \"Xã Vũ Quý\" with a `ward_code` of \"13141\" and listed under \"Tỉnh Hưng Yên\" – precisely what I needed.\n\nMy reasoning is straightforward:\n*   I confirmed that the original province was merged to become a new province\n*   Then I identified the affected ward\n*   I found the specific resolution that dealt with the merging of the ward.\n*   The data matched up perfectly.\n\nTherefore, the final output will be: the new province is \"Tỉnh Hưng Yên\", the new ward is \"Xã Vũ Quý\", the `ward_code` is \"13141\", and the citation will be the relevant resolution and line. My confidence in this answer is high because the resolution directly addresses the merger, and I have clear data to cross-reference.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên",
+        "line": "82. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Vũ An, Vũ Ninh, Vũ Trung và Vũ Quý thành xã mới có tên gọi là xã Vũ Quý."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "13141",
+      "ward_name": "Xã Vũ Quý"
+    }
+  ]
+}

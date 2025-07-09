@@ -1,0 +1,18 @@
+{
+  "address": "Xã Leng Su Sìn, Huyện Mường Nhé, Tỉnh Điện Biên",
+  "ellapsedInMs": 7580,
+  "estimatedCost": 0.0023937,
+  "thought": "**My Analysis of the Administrative Unit Change**\n\nOkay, here's my breakdown of how I'm going to determine the new administrative unit for the old address \"Xã Leng Su Sìn, Huyện Mường Nhé, Tỉnh Điện Biên\". I'm an expert in this, so my thinking is sharp and efficient.\n\nFirst, I'll *carefully* parse the old address. I'm focusing on \"Xã Leng Su Sìn\" (the old ward), \"Huyện Mường Nhé\" (the old district, although I know districts aren't relevant here, it gives context), and \"Tỉnh Điện Biên\" (the old province).\n\nNext, I'll go straight to the province-level resolutions, especially \"60-NQ/TW\". I need to check if \"Tỉnh Điện Biên\" is merged. Bingo! The resolution clearly states that Điện Biên remains unchanged. So, my confidence level for \"Tỉnh Điện Biên\" remains is very high.\n\nThen comes the *crucial* part: analyzing the other resolutions. I'm looking for \"Xã Leng Su Sìn\" specifically. I found resolution \"1661/NQ-UBTVQH15\", and line 2 is the key: it explicitly states that \"Xã Leng Su Sìn\" is merged into the new ward called \"xã Sín Thầu\".\n\nWith that information, I'll swiftly check the `new_wards` list. Lo and behold, there's an entry for \"Xã Sín Thầu\" with its ward code. Perfect.\n\nNow, I'm constructing my JSON output. Since the province is confirmed, the new ward is clear from the merging resolution, and the new ward name is also present in the list of new wards, it will be:\n\n```json\n{\n  \"province_name\": \"Tỉnh Điện Biên\",\n  \"ward_name\": \"Xã Sín Thầu\",\n  \"ward_code\": \"03158\",\n  \"confidence\": \"high\",\n  \"citation\": {\n    \"title\": \"1661/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Điện Biên\",\n    \"line\": \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Sen Thượng, Leng Su Sìn và Sín Thầu thành xã mới có tên gọi là **xã Sín Thầu**.\"\n  }\n}\n```\n\nMy reasoning is solid: the province remains the same, and the merging is specifically described in a resolution. Furthermore, I will *double-check* if there are any other possible new wards in the text to fulfill the prompt's request. And... nope, \"Xã Leng Su Sìn\" only appears once in the provided resolution with a clear outcome. No other ward seems a valid candidate. Hence, the JSON output represents the optimal solution. I have high confidence.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1661/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Điện Biên",
+        "line": "2. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Sen Thượng, Leng Su Sìn và Sín Thầu thành xã mới có tên gọi là xã Sín Thầu."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Điện Biên",
+      "ward_code": "03158",
+      "ward_name": "Xã Sín Thầu"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "address": "Phường Cửa Đông, Quận Hoàn Kiếm, Thành phố Hà Nội",
+  "ellapsedInMs": 7812,
+  "estimatedCost": 0.0038047,
+  "thought": "**Address Mapping Analysis: \"Phường Cửa Đông, Quận Hoàn Kiếm, Thành phố Hà Nội\"**\n\nAlright, let's break this down. The user's input points to an old address in Hanoi, and the task is to map it to the new administrative units.  I'm focusing on \"Phường Cửa Đông\" specifically.\n\nFirst, I need to confirm the province. \"Thành phố Hà Nội\" hasn't been merged according to Resolution 60-NQ/TW, so that part's straightforward.\n\nNow, the crucial part: \"Phường Cửa Đông.\"  The key lies in Resolution 1656/NQ-UBTVQH15, \"Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội.\"  This resolution clearly indicates \"Phường Cửa Đông\" was *split*.\n\nLine 1 of the resolution states a portion went into forming a new \"Phường Hoàn Kiếm.\" Line 3 then confirms the *remaining* portion, combined with other areas, became \"Phường Ba Đình\".\n\nLooking at the new ward data, I can confirm these new wards exist: \"Phường Hoàn Kiếm\" (code 00070) and \"Phường Ba Đình\" (code 00004).  Both fall under \"Thành phố Hà Nội\" – everything checks out.\n\nGiven the explicit nature of the resolution and the matching data, my confidence is *high*.  I'll construct the JSON output reflecting this mapping, with separate entries for \"Phường Hoàn Kiếm\" and \"Phường Ba Đình\", each referencing the relevant lines and header from Resolution 1656. The citation and relevant details from the 'new wards' data, including the correct ward code, will be included in the JSON.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội",
+        "line": "1. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Hàng Bạc, Hàng Bồ, Hàng Buồm, Hàng Đào, Hàng Gai, Hàng Mã, Lý Thái Tổ và một phần diện tích tự nhiên, quy mô dân số của các phường Cửa Đông, Cửa Nam, Điện Biên, Đồng Xuân, Hàng Bông, Hàng Trống, Tràng Tiền thành phường mới có tên gọi là phường Hoàn Kiếm."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hà Nội",
+      "ward_code": "00070",
+      "ward_name": "Phường Hoàn Kiếm"
+    },
+    {
+      "citation": {
+        "header": "1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội",
+        "line": "3. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Quán Thánh, phường Trúc Bạch, một phần diện tích tự nhiên, quy mô dân số của các phường Cửa Nam, Điện Biên, Đội Cấn, Kim Mã, Ngọc Hà, một phần diện tích tự nhiên của phường Thụy Khuê, phần còn lại của phường Cửa Đông và phường Đồng Xuân sau khi sắp xếp theo quy định tại khoản 1 Điều này thành phường mới có tên gọi là phường Ba Đình."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hà Nội",
+      "ward_code": "00004",
+      "ward_name": "Phường Ba Đình"
+    }
+  ]
+}

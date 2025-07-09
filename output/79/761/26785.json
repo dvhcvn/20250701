@@ -1,0 +1,18 @@
+{
+  "address": "Phường Trung Mỹ Tây, Quận 12, Thành phố Hồ Chí Minh",
+  "ellapsedInMs": 8040,
+  "estimatedCost": 0.0030031,
+  "thought": "**Analysis of Administrative Unit Mapping: \"Phường Trung Mỹ Tây, Quận 12, Thành phố Hồ Chí Minh\"**\n\nOkay, let's break this down systematically. The user has given me an old address and wants it mapped to the new administrative units.  The address is \"Phường Trung Mỹ Tây, Quận 12, Thành phố Hồ Chí Minh\".  My first task is to identify the province.\n\nSince the address contains \"Thành phố Hồ Chí Minh,\" that's my starting point. I need to verify if there were any province-level changes.  Initial checks of \"60-NQ/TW\" regarding province-level mergers didn't seem promising initially, but I need to be thorough.  Re-examining \"60-NQ/TW\", I see a section about \"Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất.\" Aha!  Line 16 states, \"Hợp nhất tỉnh Bà Rịa - Vũng Tàu, tỉnh Bình Dương và Thành phố Hồ Chí Minh; lấy tên là Thành phố Hồ Chí Minh\".  Crucially, it notes that the resulting *province name is still \"Thành phố Hồ Chí Minh\"*!  Excellent. So, no change at the province level.\n\nNext, I need to focus on the ward, \"Phường Trung Mỹ Tây\". I need to find specific resolutions regarding ward-level reorganizations within Ho Chi Minh City.  Resolution \"1685/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của Thành phố Hồ Chí Minh\" is the key.  Line 33 is the goldmine here: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Tân Chánh Hiệp và phường Trung Mỹ Tây thành phường mới có tên gọi là **phường Trung Mỹ Tây**.\"  There it is, a direct mention of \"phường Trung Mỹ Tây\"!  It explicitly states that the *old* \"Phường Trung Mỹ Tây\" merges with \"Phường Tân Chánh Hiệp\" to form a *new* ward, also named \"Phường Trung Mỹ Tây\".  Fantastic!  Line 34 is not relevant to this address.\n\nNow, I look at the \"New wards\" data provided. I see a matching entry: `{\"ward_code\":\"26785\",\"ward_name\":\"Phường Trung Mỹ Tây\",\"province_name\":\"Thành phố Hồ Chí Minh\"}`. This perfectly aligns: the ward name, the province, and the resolution confirm the mapping.\n\nThe province name remains \"Thành phố Hồ Chí Minh.\"\n\nI'm confident in this mapping.  The `citation` should be \"1685/NQ-UBTVQH15, line 33\".  The `confidence` level is definitely \"high\" because of the direct mention and clear mapping in the resolution and the new data. I can now proceed to construct the correct JSON output.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1685/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của Thành phố Hồ Chí Minh",
+        "line": "33. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Tân Chánh Hiệp và phường Trung Mỹ Tây thành phường mới có tên gọi là phường Trung Mỹ Tây."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hồ Chí Minh",
+      "ward_code": "26785",
+      "ward_name": "Phường Trung Mỹ Tây"
+    }
+  ]
+}

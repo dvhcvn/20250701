@@ -1,0 +1,18 @@
+{
+  "address": "Xã Minh Hoàng, Huyện Phù Cừ, Tỉnh Hưng Yên",
+  "ellapsedInMs": 5845,
+  "estimatedCost": 0.0023618,
+  "thought": "**Processing the Administrative Unit Update**\n\nOkay, so I'm presented with the old address \"Xã Minh Hoàng, Huyện Phù Cừ, Tỉnh Hưng Yên\" and tasked with finding its new administrative equivalent.  My first step, as always, is to break down the components.  I need to zero in on the old province, \"Tỉnh Hưng Yên,\" and the old ward, \"Xã Minh Hoàng.\"\n\nNext, I have to check for any province-level restructuring. I remember that there have been a few of these recently, so I consult my knowledge of the relevant resolutions.  A quick check against **60-NQ/TW** confirms that while there was a proposed merger with Thái Bình, it wasn't implemented. So, \"Tỉnh Hưng Yên\" remains unchanged. Good.\n\nNow for the crucial part: finding out what happened to \"Xã Minh Hoàng.\" I dive into my database of other relevant resolutions, specifically looking for any mentions of \"Minh Hoàng\" within \"Hưng Yên.\"  Bingo!  Resolution **1666/NQ-UBTVQH15** appears.  It explicitly states that \"Xã Phan Sào Nam, Minh Hoàng và Đoàn Đào\" have been consolidated into a new \"Xã Đoàn Đào.\" This is a key piece of information.\n\nWith the new ward name identified as \"Xã Đoàn Đào,\" I then turn to my `new_wards` dataset, searching for \"Xã Đoàn Đào\" within \"Tỉnh Hưng Yên.\"  The dataset confirms the existence of \"Xã Đoàn Đào,\" code `12406`, within \"Tỉnh Hưng Yên.\"\n\nThe final step is assessing the confidence level.  Given that resolution **1666/NQ-UBTVQH15** provides a very clear and explicit instruction, stating that \"Minh Hoàng\" is merged into \"Đoàn Đào,\" I can confidently assign a \"high\" confidence level to this determination.  The mapping is direct and well-defined.\n\nI'm now ready to construct the JSON output, reflecting my findings and including the identified new ward information and confidence level.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên",
+        "line": "6. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Phan Sào Nam, Minh Hoàng và Đoàn Đào thành xã mới có tên gọi là xã Đoàn Đào."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "12406",
+      "ward_name": "Xã Đoàn Đào"
+    }
+  ]
+}

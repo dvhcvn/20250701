@@ -1,0 +1,28 @@
+{
+  "address": "Xã Đông Tân, Huyện Đông Hưng, Tỉnh Thái Bình",
+  "ellapsedInMs": 9519,
+  "estimatedCost": 0.0042907,
+  "thought": "**Identifying the New Administrative Unit**\n\nOkay, let's break this down. The user gave me an old address: \"Xã Đông Tân, Huyện Đông Hưng, Tỉnh Thái Bình.\" My task is to figure out the current administrative unit. I'll need to follow a precise process, based on my knowledge of Vietnam's administrative restructuring.\n\nFirst, I need to pinpoint that the original province is \"Tỉnh Thái Bình.\"  Now, given my experience, I know the next step is to check for any province mergers.  I'll consult document \"60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất.\" Scanning that document, the first thing I spot is: \"Hợp nhất tỉnh Hưng Yên và tỉnh Thái Bình, lấy tên là tỉnh Hưng Yên.\" Aha!  \"Tỉnh Thái Bình\" is now part of \"Tỉnh Hưng Yên.\"\n\nNext, I have to pinpoint the original ward, which is \"Xã Đông Tân.\"  Now, I have to search for this in the administrative changes within the *new* province, \"Tỉnh Hưng Yên.\" I'll scrutinize the resolutions for information. That should provide the updated administrative unit.\n\nI'm focusing my attention on the resolutions that deal with Hưng Yên.  Specifically, I'm now looking at \"1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên.\"  This seems promising.  I have to search through the specific details.\n\nLine 59 jumps out at me: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đông Á, Đông Tân và Đông Quan thành xã mới có tên gọi là **xã Đông Quan**.\" There it is! \"Xã Đông Tân\" has been merged into \"Xã Đông Quan.\"\n\nNow, it's crucial to verify this information. I'll check the list of \"New wards\" to confirm that \"Xã Đông Quan\" is a valid administrative unit. I search the provided list and, sure enough, I find `{\"ward_code\":\"12793\",\"ward_name\":\"Xã Đông Quan\",\"province_name\":\"Tỉnh Hưng Yên\"}`. That confirms my findings.\n\nSo, here's my understanding: The old \"Xã Đông Tân\" is now part of \"Xã Đông Quan\" within the province of \"Tỉnh Hưng Yên.\" I can construct the JSON output.\n\nI can provide the following data:\n\n*   `province_name`: \"Tỉnh Hưng Yên\"\n*   `ward_name`: \"Xã Đông Quan\"\n*   `ward_code`: \"12793\"\n*   `citation`:\n    *   `header`: \"60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất\"\n    *   `line`: \"Hợp nhất tỉnh Hưng Yên và tỉnh Thái Bình, lấy tên là tỉnh Hưng Yên\"\n    *   `header`: \"1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên\"\n    *   `line`: \"59. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đông Á, Đông Tân và Đông Quan thành xã mới có tên gọi là **xã Đông Quan**.\"\n*   `confidence`: \"high\" (because the mapping is clear and direct)\n\nNow, before sending the data, I will double-check to make sure there are no other resolutions that mention \"Xã Đông Tân.\"  That is, I will scan all resolutions that were provided to see if the mapping is ambiguous. After my thorough scanning, the mapping is still clean.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Hưng Yên và tỉnh Thái Bình, lấy tên là tỉnh Hưng Yên"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "12793",
+      "ward_name": "Xã Đông Quan"
+    },
+    {
+      "citation": {
+        "header": "1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên",
+        "line": "59. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đông Á, Đông Tân và Đông Quan thành xã mới có tên gọi là xã Đông Quan."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "12793",
+      "ward_name": "Xã Đông Quan"
+    }
+  ]
+}

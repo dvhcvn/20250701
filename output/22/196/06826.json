@@ -1,0 +1,18 @@
+{
+  "address": "Phường Yên Thanh, Thành phố Uông Bí, Tỉnh Quảng Ninh",
+  "ellapsedInMs": 6628,
+  "estimatedCost": 0.0066246000000000005,
+  "thought": "**Identifying the New Administrative Unit**\n\nOkay, so I'm looking at the old address: \"Phường Yên Thanh, Thành phố Uông Bí, Tỉnh Quảng Ninh\". My job is to figure out the new administrative unit, right? First things first, I see \"Tỉnh Quảng Ninh\", so I isolate that as the province.  I know I need to check the province status, specifically if there were any mergers. Checking the relevant resolution (60-NQ/TW), Quảng Ninh is listed as not undergoing any province-level mergers, so \"Tỉnh Quảng Ninh\" stays the same.\n\nNow, the real work begins. I need to find \"Phường Yên Thanh\" within the context of Quảng Ninh's \"Other resolutions\" concerning administrative adjustments. I'm focusing on  `1679/NQ-UBTVQH15`.  After going through the resolutions related to Quảng Ninh, I immediately zeroed in on Line 29. Bingo! It clearly states that \"Phường Yên Thanh\" (along with other existing wards) is merged into a *new* ward, named \"**phường Uông Bí**.\"\n\nTo double-check and solidify my findings, I need to consult the \"New wards\" list. I'm searching for \"phường Uông Bí\" within the context of  \"Tỉnh Quảng Ninh\". And there it is!  I find the entry: `{\"ward_code\":\"06811\",\"ward_name\":\"Phường Uông Bí\",\"province_name\":\"Tỉnh Quảng Ninh\"}`. So,  `ward_code` \"06811\" and `province_name` \"Tỉnh Quảng Ninh\" are confirmed.\n\nGiven that the resolution explicitly names \"Yên Thanh\" as part of the new \"phường Uông Bí\", and I have verified this via the \"New wards\" list, I'm extremely confident. The answer is clear and the process is complete.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1679/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ninh",
+        "line": "29. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Quang Trung, Thanh Sơn, Yên Thanh và phần còn lại của phường Trưng Vươngsau khi sắp xếp theo quy định tại khoản 28 Điều nàythành phường mới có tên gọi là phường Uông Bí."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ninh",
+      "ward_code": "06811",
+      "ward_name": "Phường Uông Bí"
+    }
+  ]
+}

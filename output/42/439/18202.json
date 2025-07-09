@@ -1,0 +1,18 @@
+{
+  "address": "Xã Mỹ Long, Huyện Hương Sơn, Tỉnh Hà Tĩnh",
+  "ellapsedInMs": 8562,
+  "estimatedCost": 0.0047255000000000005,
+  "thought": "**Determining the New Ward for the Old Address**\n\nOkay, so I've got to figure out the new administrative ward for \"Xã Mỹ Long, Huyện Hương Sơn, Tỉnh Hà Tĩnh.\" This means I need to sift through those resolutions and the list of new wards. Let's break it down:\n\nFirst, I need to make sure \"Tỉnh Hà Tĩnh\" hasn't been merged into something bigger. I checked `60-NQ/TW`, but no luck. It clearly states that \"Tỉnh Hà Tĩnh\" isn't merging with any other provinces. Good, that's straightforward.\n\nNow, I'm diving into the \"Other resolutions\" section, focusing on \"Tỉnh Hà Tĩnh.\" Specifically, I'm scanning `1665/NQ-UBTVQH15` for any mention of \"Xã Mỹ Long.\" I'm looking at lines closely. Line 42 mentions \"Sơn Trung\" and other wards that are merging into a new \"Xã Hương Sơn\" so it's not the match. Hold on... Line 44! Bingo! It says \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Châu Bình, Tân Mỹ Hà và Mỹ Long thành xã mới có tên gọi là **xã Tứ Mỹ**.\" That's the one! \"Xã Mỹ Long\" is merging into \"xã Tứ Mỹ.\" Excellent. I'm noting that the resolution also says \"Huyện Hương Sơn\".\n\nNow I need to verify \"xã Tứ Mỹ\" in the \"New wards\" list, extract its code, and confirm its province. A quick search confirms \"xã Tứ Mỹ\" is in the list, with the code \"18202\" and indeed, the province is still \"Tỉnh Hà Tĩnh.\" Perfect.\n\nWith all that information in hand, I can construct the JSON output:\n\n*   `province_name`: \"Tỉnh Hà Tĩnh\" (confirmed from the resolution and the \"New wards\" list).\n*   `ward_name`: \"Xã Tứ Mỹ\" (from resolution `1665/NQ-UBTVQH15`, line 44, and the \"New wards\" list).\n*   `ward_code`: \"18202\" (from the \"New wards\" list).\n*   `confidence`: \"high\" (direct match found in a specific resolution).\n*   `citation`: \"1665/NQ-UBTVQH15, line 44\" (for that definitive merge).\n\nI am also considering the districts. The original address specifies \"Huyện Hương Sơn\". Though the mapping is found in a resolution for \"Tỉnh Hà Tĩnh\", given the context of the user request, it is highly likely that the mapping is correct.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh",
+        "line": "44. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Châu Bình, Tân Mỹ Hà và Mỹ Long thành xã mới có tên gọi là **xã Tứ Mỹ**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hà Tĩnh",
+      "ward_code": "18202",
+      "ward_name": "Xã Tứ Mỹ"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "address": "Phường Minh Hưng, Thị xã Chơn Thành, Tỉnh Bình Phước",
+  "ellapsedInMs": 6263,
+  "estimatedCost": 0.002144,
+  "thought": "**My Mapping Methodology for the Vietnamese Address**\n\nOkay, so I'm tasked with mapping this old Vietnamese address to its current administrative location. The starting point is \"Tỉnh Bình Phước\" and \"Phường Minh Hưng.\" Here's how I'm approaching this:\n\n1.  **Province Identification:** First, I confirmed that the original province is indeed \"Tỉnh Bình Phước.\"\n\n2.  **Province Transformation:** Next, I dove into the resolutions, specifically focusing on the relevant merging resolutions like the 60-NQ/TW series. Ah, there it is! \"Tỉnh Bình Phước\" *was* merged with \"Tỉnh Đồng Nai\" to form, well, \"Tỉnh Đồng Nai\" now. So, my old province has been absorbed into a new one.\n\n3.  **Ward Identification (Old):** I confirmed the ward I'm working with is \"Phường Minh Hưng.\"\n\n4.  **Ward Transformation:** Now, for the real work: figuring out what happened to \"Phường Minh Hưng.\" I'm carefully reviewing resolutions related to administrative changes within \"Tỉnh Đồng Nai.\" Bingo! Resolution \"1662/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Nai\" is the key. Line 81 is crucial here. It explicitly states that \"phường Minh Long\" and \"phường Minh Hưng\" were merged to create a *new* \"phường Minh Hưng\".\n\n5.  **New Ward Validation:** Let's cross-reference this with the \"New Wards\" list. Searching for \"Phường Minh Hưng\" within \"Tỉnh Đồng Nai,\" I got a match: `{\"ward_code\":\"25441\",\"ward_name\":\"Phường Minh Hưng\",\"province_name\":\"Tỉnh Đồng Nai\"}`. Perfect!\n\n6.  **Confidence Check:** Given the directness of the language in the resolution stating \"phường Minh Hưng\" is part of the merge to create a *new* ward, this is a clean and solid transformation. The new \"Phường Minh Hưng\" indeed exists in \"Tỉnh Đồng Nai\". I'd rate my confidence in this mapping as extremely high. I can generate the JSON output knowing the address has been successfully translated.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "17. Hợp nhất tỉnh Đồng Nai và tỉnh Bình Phước, lấy tên là tỉnh Đồng Nai"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đồng Nai",
+      "ward_code": "25441",
+      "ward_name": "Phường Minh Hưng"
+    },
+    {
+      "citation": {
+        "header": "1662/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Nai",
+        "line": "81. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Minh Long và phường Minh Hưng thành phường mới có tên gọi là **phường Minh Hưng**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đồng Nai",
+      "ward_code": "25441",
+      "ward_name": "Phường Minh Hưng"
+    }
+  ]
+}

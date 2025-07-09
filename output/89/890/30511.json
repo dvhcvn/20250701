@@ -1,0 +1,18 @@
+{
+  "address": "Phường Nhơn Hưng, Thị xã Tịnh Biên, Tỉnh An Giang",
+  "ellapsedInMs": 7094,
+  "estimatedCost": 0.0026842,
+  "thought": "**Analysis of \"Phường Nhơn Hưng\" Administrative Unit**\n\nOkay, here's how I'm approaching this. The user wants to know the new administrative unit for \"Phường Nhơn Hưng, Thị xã Tịnh Biên, Tỉnh An Giang.\" My first thought is to verify the province, so I check Resolution 60-NQ/TW. It confirms An Giang remains An Giang after any potential mergers, which is relevant for the `province_name`.\n\nNext, I dive into the `other_resolutions` section, specifically looking for mentions of \"Phường Nhơn Hưng.\" Resolution 1654/NQ-UBTVQH15 catches my eye. Skimming through it, I find the key: line 88 clearly states that \"Phường Nhơn Hưng, Nhà Bàng and Thới Sơn\" are merged to form a new ward called \"**phường Thới Sơn**.\" Bingo!\n\nI quickly cross-reference this with the \"new_wards\" data to confirm the existence of \"Phường Thới Sơn\" in An Giang. Sure enough, there it is: `{\"ward_code\":\"30502\",\"ward_name\":\"Phường Thới Sơn\",\"province_name\":\"Tỉnh An Giang\"}`. This perfectly aligns with my findings.\n\nBased on this, I'm confident in constructing the JSON output. The `province_name` is \"Tỉnh An Giang\" (confirmed). The `ward_name` is \"Phường Thới Sơn,\" and I've got the `ward_code` as \"30502\". The `citation` will be \"1654/NQ-UBTVQH15,\" line 88, explicitly detailing the merger. Lastly, I'll set the `confidence` to \"high\" because the resolution provides a clear and unambiguous mapping. This should give the user a reliable answer.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1654/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh An Giang",
+        "line": "88. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Nhơn Hưng, Nhà Bàng và Thới Sơn thành phường mới có tên gọi là phường Thới Sơn."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh An Giang",
+      "ward_code": "30502",
+      "ward_name": "Phường Thới Sơn"
+    }
+  ]
+}

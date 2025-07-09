@@ -1,0 +1,18 @@
+{
+  "address": "Xã Đăk Trôi, Huyện Mang Yang, Tỉnh Gia Lai",
+  "ellapsedInMs": 7217,
+  "estimatedCost": 0.0024452000000000002,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm being asked to figure out the new administrative location for an old Vietnamese address. It looks like it's in the Gia Lai province and involves ward changes. My approach is pretty straightforward:\n\n1.  **Identify the Base:** First, I'll extract the core administrative units from the input address: \"Xã Đăk Trôi\" (ward), \"Huyện Mang Yang\" (district - even though districts are being eliminated, it's helpful context), and \"Tỉnh Gia Lai\" (province).\n\n2.  **Province Verification:** Now, I'll check the province resolutions. I expect to find \"Tỉnh Gia Lai,\" and I do. Resolution 60-NQ/TW states that Gia Lai remains Gia Lai, even after a merger. Great, the province name is consistent.\n\n3.  **Ward Mapping via Resolutions:** The crucial step is the other resolutions. I need to find \"Xã Đăk Trôi\" within the resolution text. Aha! Line 93 of 1664/NQ-UBTVQH15 is the key. It explicitly states that \"Xã Đak Trôi\" (a close variant of the input) is merged with \"Xã Kon Chiêng\" to create the *new* \"Xã Kon Chiêng\". Bingo!\n\n4.  **Confirmation in New Ward Data:** I'll cross-reference \"Xã Kon Chiêng\" with my new ward data, making sure it's in Gia Lai. And there it is: a matching entry! The province name is correct, and I've got a ward code.\n\n5.  **Assemble the Answer:** Based on all this, here's my confident output: I'll map the old ward \"Xã Đăk Trôi\" to the new \"Xã Kon Chiêng\" in Gia Lai (ward code 23818). My confidence is high, since there's direct evidence and explicit mentions in the resolution. I'll include the relevant citation from the resolution, detailing the ward merger. The spelling of the original ward in the input and the resolution is close enough for a correct match. It should be one simple object in an array. Done.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai",
+        "line": "93. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Đak Trôi và xã Kon Chiêng thành xã mới có tên gọi là xã Kon Chiêng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "23818",
+      "ward_name": "Xã Kon Chiêng"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Phan Rí Cửa, Huyện Tuy Phong, Tỉnh Bình Thuận",
+  "ellapsedInMs": 6763,
+  "estimatedCost": 0.0024713,
+  "thought": "**Analyzing and Mapping the Vietnamese Address**\n\nOkay, here's how I'm approaching this address mapping task. The input address is \"Thị trấn Phan Rí Cửa, Huyện Tuy Phong, Tỉnh Bình Thuận.\" My first step is to break down this address into its components: the old ward (\"Thị trấn Phan Rí Cửa\"), district (\"Huyện Tuy Phong\"), and province (\"Tỉnh Bình Thuận\").\n\nNow, to understand how this address translates to the new administrative structure, I need to consult the provided resolutions. I'll start by looking at the province resolutions (specifically 60-NQ/TW) to identify any changes to the province name. Ah, here it is: \"Hợp nhất tỉnh Lâm Đồng, tỉnh Đắk Nông và tỉnh Bình Thuận; lấy tên là tỉnh Lâm Đồng.\" That settles it; \"Tỉnh Bình Thuận\" is now part of \"Tỉnh Lâm Đồng.\" So, the new province will be \"Tỉnh Lâm Đồng\".\n\nNext, I'll dive into the other resolutions (1671/NQ-UBTVQH15) looking specifically for \"Thị trấn Phan Rí Cửa\". Line 44 jumps out at me: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Phan Rí Cửa, xã Chí Công, xã Hòa Minh và phần còn lại của xã Phong Phú sau khi sắp xếp theo quy định tại khoản 43 Điều này thành xã mới có tên gọi là **xã Phan Rí Cửa**.\" Bingo! This clearly states that \"Thị trấn Phan Rí Cửa\" is being merged into \"xã Phan Rí Cửa\". And the header of the resolution confirms this is happening within the context of Lâm Đồng province.\n\nNow, I'll cross-reference this with the \"New wards\" list.  I'm looking for \"xã Phan Rí Cửa,\" and there it is: `{\"ward_code\":\"22972\",\"ward_name\":\"Xã Phan Rí Cửa\",\"province_name\":\"Tỉnh Lâm Đồng\"}`. Perfect! The `province_name` confirms the province merger I identified earlier.\n\nWith all this information, I can confidently construct the JSON output: the relevant citation from the resolution, the relevant line, a \"high\" confidence level because of the direct mapping, the new province name (\"Tỉnh Lâm Đồng\"), and the ward code and name (\"22972,\" \"Xã Phan Rí Cửa\").  This mapping is straightforward and well-supported by the evidence.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng",
+        "line": "44. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Phan Rí Cửa, xã Chí Công, xã Hòa Minh và phần còn lại của xã Phong Phú sau khi sắp xếp theo quy định tại khoản 43 Điều này thành xã mới có tên gọi là xã Phan Rí Cửa."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "22972",
+      "ward_name": "Xã Phan Rí Cửa"
+    }
+  ]
+}

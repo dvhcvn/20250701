@@ -1,0 +1,28 @@
+{
+  "address": "Thị trấn Đồng Lê, Huyện Tuyên Hóa, Tỉnh Quảng Bình",
+  "ellapsedInMs": 7375,
+  "estimatedCost": 0.0029895,
+  "thought": "**My Analysis of Address Mapping**\n\nOkay, so I'm tackling this address conversion: \"Thị trấn Đồng Lê, Huyện Tuyên Hóa, Tỉnh Quảng Bình\" to the new administrative structure. My approach is pretty straightforward, based on my understanding of these types of transformations.\n\nFirst, I identified the original components: \"Thị trấn Đồng Lê\" (ward), \"Huyện Tuyên Hóa\" (district), and \"Tỉnh Quảng Bình\" (province).\n\nThen, I dove into the resolutions. Resolution 60-NQ/TW immediately caught my eye, mentioning the merger of Quảng Bình and Quảng Trị. So, \"Tỉnh Quảng Bình\" clearly becomes \"Tỉnh Quảng Trị.\" High confidence on that one.\n\nNext, I looked for something specific to \"Thị trấn Đồng Lê\" and hit gold with resolution 1680/NQ-UBTVQH15. Line 9 explicitly states \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Đồng Lê vàcác xã Kim Hóa, Lê Hóa, Thuận Hóa, Sơn Hóathành xã mới có tên gọi là **xã Đồng Lê**.\" It's a perfect match!  \"Thị trấn Đồng Lê\" morphs into \"xã Đồng Lê.\"  And the resolution header confirms this pertains to the provincial changes, perfectly aligning with the previous finding.\n\nChecking the new ward data, I found `{\"ward_code\":\"18949\",\"ward_name\":\"Xã Đồng Lê\",\"province_name\":\"Tỉnh Quảng Trị\"}`. Bingo! Everything lines up: the new name, the new province.\n\nThe JSON output should be simple: high confidence, with the clear resolution leading to this mapping. The \"Huyện Tuyên Hóa\" part is essentially irrelevant now, the district itself is being restructured.\n\nJust for thoroughness, I scanned the resolution again for any possible ambiguities or alternative matches. Lines mentioning \"xã Tuyên Hóa\" or \"phường Nam Đông Hà\" are unrelated. The new \"Phường Đông Hà\" also appears in new data, but no links to \"Thị trấn Đồng Lê\". So,  \"Xã Đồng Lê\" in \"Tỉnh Quảng Trị\" remains the cleanest and most direct match based on the resolution's explicit instructions. My output will reflect that, with a high confidence rating.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Quảng Bình và tỉnh Quảng Trị, lấy tên là tỉnh Quảng Trị"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Trị",
+      "ward_code": "18949",
+      "ward_name": "Xã Đồng Lê"
+    },
+    {
+      "citation": {
+        "header": "1680/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Trị",
+        "line": "9. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Đồng Lê vàcác xã Kim Hóa, Lê Hóa, Thuận Hóa, Sơn Hóathành xã mới có tên gọi là xã Đồng Lê."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Trị",
+      "ward_code": "18949",
+      "ward_name": "Xã Đồng Lê"
+    }
+  ]
+}

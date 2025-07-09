@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Sa Thầy, Huyện Sa Thầy, Tỉnh Kon Tum",
+  "ellapsedInMs": 8602,
+  "estimatedCost": 0.0031085,
+  "thought": "**Address Mapping Logic: A Detailed Walkthrough**\n\nOkay, so I'm presented with an old address: Thị trấn Sa Thầy, Huyện Sa Thầy, Tỉnh Kon Tum. My task is to map this to the new administrative unit based on the provided resolutions and new ward data. This is a fairly straightforward process, given the clarity of the information.\n\nFirst, I quickly identify the components: old ward (\"Thị trấn Sa Thầy\"), district (\"Huyện Sa Thầy\"), and province (\"Tỉnh Kon Tum\").  The critical part is navigating the administrative changes documented in the resolutions.\n\nI start with the province. Resolution 60-NQ/TW is the key here.  It explicitly states the merging of \"Tỉnh Kon Tum\" and another province, resulting in a new province named \"Tỉnh Quảng Ngãi.\"  This is my initial province transformation.\n\nNext, I delve into ward-level adjustments, focusing on \"Thị trấn Sa Thầy.\" I search through the \"Other resolutions\" for mentions of this specific ward. Resolution 1677/NQ-UBTVQH15 catches my eye. It details the reorganization of administrative units within Quảng Ngãi, precisely where \"Thị trấn Sa Thầy\" is concerned, indicating a merger. I note that this is in Quảng Ngãi (which aligns with my earlier province mapping). According to this resolution, \"Thị trấn Sa Thầy\" now forms the basis of \"Xã Sa Thầy\".\n\nNow, I cross-reference this finding with the \"New wards\" data.  I confirm that \"Xã Sa Thầy\" exists within the jurisdiction of \"Tỉnh Quảng Ngãi,\" and I obtain its ward code: \"23527\".  This solidifies my understanding of the new administrative configuration.\n\nThe creation of the JSON output is quite simple at this point. The province name is \"Tỉnh Quảng Ngãi\" per the province resolution (60-NQ/TW). The ward is \"Xã Sa Thầy\" with the code \"23527,\" as derived from Resolution 1677/NQ-UBTVQH15 and the \"New wards\" data.\n\nRegarding the `citation`, I am confident in the information. While both resolutions are pertinent, 1677/NQ-UBTVQH15 is the most *direct* document. The province change is a prerequisite for the ward resolution to be accurate. Therefore I will only use the ward-specific resolution in the citation object, setting the `confidence` to \"high\" because all the information perfectly aligns.\n\nThus, the final mapping, as a well-defined JSON object, should reflect these findings.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1677/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ngãi",
+        "line": "72. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Sa Thầy, xã Sa Sơn và xã Sa Nhơn thành xã mới có tên gọi là xã Sa Thầy."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ngãi",
+      "ward_code": "23527",
+      "ward_name": "Xã Sa Thầy"
+    }
+  ]
+}

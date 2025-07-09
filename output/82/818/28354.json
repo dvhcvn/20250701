@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tân Lập 2, Huyện Tân Phước, Tỉnh Tiền Giang",
+  "ellapsedInMs": 7685,
+  "estimatedCost": 0.0033737999999999997,
+  "thought": "**My Thought Process: Determining the New Administrative Unit**\n\nOkay, so I've got this old address: \"Xã Tân Lập 2, Huyện Tân Phước, Tỉnh Tiền Giang\". The task is to figure out the corresponding new ward. Let's see how I'd approach this...\n\nFirst, I need to pinpoint the province. It's \"Tỉnh Tiền Giang\" in the old address. But wait, I have to check for any province mergers. Right, the 60-NQ/TW document! Aha, here it is: \"Hợp nhất tỉnh Tiền Giang và tỉnh Đồng Tháp, lấy tên là tỉnh Đồng Tháp\". Got it! So, \"Tiền Giang\" is now part of \"Đồng Tháp\". My new province name is \"Tỉnh Đồng Tháp.\"\n\nNow, I'll focus on ward resolutions related to \"Tỉnh Đồng Tháp\". Specifically, I'm looking for \"1663/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Tháp\". This should contain the necessary information. Let's see... the old ward is \"Xã Tân Lập 2\", so I'll scan the text in this resolution for any mentions.\n\nBingo! Line \"56. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Phước Lập, Tân Lập 1 và Tân Lập 2 thành xã mới có tên gọi là **xã Tân Phước 3**.\"  That's exactly what I needed! \"Tân Lập 2\" is merged into \"Tân Phước 3\".\n\nNext step is to make sure this new ward exists in the \"New wards\" list. So I'll search for \"xã Tân Phước 3\" with \"Tỉnh Đồng Tháp\" and there it is: `{\"ward_code\":\"28345\",\"ward_name\":\"Xã Tân Phước 3\",\"province_name\":\"Tỉnh Đồng Tháp\"}`. Perfect match!\n\nBased on the province merger and the resolution, I'm confident in this. Now, let's assemble the output:\n\n*   `province_name`: \"Tỉnh Đồng Tháp\" (from province merger).\n*   `ward_name`: \"Xã Tân Phước 3\" (from resolution).\n*   `ward_code`: \"28345\" (from new wards list).\n*   `citation`: Header and line from the resolution.\n*   `confidence`: \"high\" (direct match and explicit mention in the resolution).\n\nI'm checking the province merger one more time just to be absolutely certain... yes, \"Tỉnh Tiền Giang\" became \"Tỉnh Đồng Tháp\" due to the merger. And the ward resolution clearly states the merger of \"Tân Lập 2\" into \"Tân Phước 3\", plus the exact code is verified in the new wards list. My confidence is high.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1663/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Tháp",
+        "line": "56. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Phước Lập, Tân Lập 1 và Tân Lập 2 thành xã mới có tên gọi là xã Tân Phước 3."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đồng Tháp",
+      "ward_code": "28345",
+      "ward_name": "Xã Tân Phước 3"
+    }
+  ]
+}

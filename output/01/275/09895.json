@@ -1,0 +1,28 @@
+{
+  "address": "Thị trấn Quốc Oai, Huyện Quốc Oai, Thành phố Hà Nội",
+  "ellapsedInMs": 7680,
+  "estimatedCost": 0.0033512,
+  "thought": "**Identifying the New Administrative Units for \"Thị trấn Quốc Oai\"**\n\nAlright, let's break this down. My goal is to pinpoint the updated administrative units corresponding to the old address \"Thị trấn Quốc Oai, Huyện Quốc Oai, Thành phố Hà Nội.\" I need to cross-reference resolutions and ward data to get this right.\n\nFirst, I analyze the given address: \"Thị trấn Quốc Oai\" is the key ward name, \"Huyện Quốc Oai\" is just the district context (which has been eliminated), and the province is \"Thành phố Hà Nội.\"\n\nNow, checking the province-level resolutions, I see that \"Thành phố Hà Nội\" is explicitly listed as a province that *doesn't* undergo mergers. So, the province name remains the same. That's straightforward.\n\nNext, I need to focus on finding resolutions that specifically mention \"Thị trấn Quốc Oai.\" Bingo! Resolution 1656/NQ-UBTVQH15 (Hà Nội) is the key. Line 95 states that *part* of \"Thị trấn Quốc Oai\" is merged into a new \"Xã Tây Phương,\" and line 98 says the *remaining* part of \"Thị trấn Quốc Oai\" is merged into \"Xã Quốc Oai.\" This is important because it tells me the old \"Thị trấn Quốc Oai\" has been split into these two new entities.\n\nI also see another resolution, 1671/NQ-UBTVQH15 (Lâm Đồng), which mentions \"xã Quốc Oai,\" but that's in a completely different province, Lâm Đồng. This one is irrelevant to the question.\n\nBased on 1656/NQ-UBTVQH15, my potential new wards are \"Xã Tây Phương\" and \"Xã Quốc Oai.\"\n\nTime to cross-reference those with my \"New wards\" data. I found two exact matches:\n\n*   {\"ward_code\":\"10003\",\"ward_name\":\"Xã Tây Phương\",\"province_name\":\"Thành phố Hà Nội\"}\n*   {\"ward_code\":\"09895\",\"ward_name\":\"Xã Quốc Oai\",\"province_name\":\"Thành phố Hà Nội\"}\n\nThe province names match, and the ward names are perfect, based on the resolution's findings. This is a very strong confirmation.\n\nThe resolutions clearly show that the old unit has been reorganized into two new units, and the \"New wards\" data fully supports this. My confidence is very high in this mapping.\n\nFinally, I need to structure the output as an array of objects.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội",
+        "line": "95. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Phùng Xá (huyện Thạch Thất), Hương Ngải, Lam Sơn, Thạch Xá, một phần diện tích tự nhiên, quy mô dân số của xã Quang Trung, một phần diện tích tự nhiên của thị trấn Quốc Oai, xã Ngọc Liệp và xã Phượng Sơn thành xã mới có tên gọi là xã Tây Phương."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hà Nội",
+      "ward_code": "10003",
+      "ward_name": "Xã Tây Phương"
+    },
+    {
+      "citation": {
+        "header": "1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội",
+        "line": "98. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Thạch Thán, xã Sài Sơn, một phần diện tích tự nhiên của xã Ngọc Mỹ, phần còn lại của thị trấn Quốc Oai và xã Phượng Sơn sau khi sắp xếp theo quy định tại khoản 95 Điều này thành xã mới có tên gọi là xã Quốc Oai."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hà Nội",
+      "ward_code": "09895",
+      "ward_name": "Xã Quốc Oai"
+    }
+  ]
+}

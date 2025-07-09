@@ -1,0 +1,18 @@
+{
+  "address": "Xã Glar, Huyện Đăk Đoa, Tỉnh Gia Lai",
+  "ellapsedInMs": 7210,
+  "estimatedCost": 0.0025039,
+  "thought": "**Address Mapping: Old to New Administrative Units**\n\nOkay, here's how I'm thinking about this mapping problem. The user's given me an old address and some resolutions to work with, specifically to map \"Xã Glar, Huyện Đăk Đoa, Tỉnh Gia Lai\" to its new administrative unit.\n\nFirst, I need to figure out what province this is. Easy enough, \"Tỉnh Gia Lai\".  Then, I'll check for any province mergers using \"60-NQ/TW\". Aha! It looks like Gia Lai remains Gia Lai, no changes there.\n\nNext, I zero in on the specific ward and district: \"Xã Glar, Huyện Đăk Đoa\".  Now, the crucial step: hunting through those resolutions for the specific mapping of Glar. \"1664/NQ-UBTVQH15\" is the key one.  Bingo! Line 86 explicitly mentions \"xã Glar\" and tells me it's merged into a new unit: \"xã Đak Đoa\". Excellent! That's the critical piece of the puzzle.  Line 88 talks about Ia Băng, Adơk, and Ia Pết, but those are irrelevant to Glar.\n\nNow, I check the \"New wards\" list to verify and get the official code.  The list confirms \"Xã Đak Đoa\" and provides the code \"23677\". Perfect match!\n\nSo, the JSON output is straightforward:\n\n*   `province_name`: \"Tỉnh Gia Lai\"\n*   `ward_name`: \"Xã Đak Đoa\"\n*   `ward_code`: \"23677\"\n*   `citation`: \"1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai\", line 86.\n*   `confidence`: \"high\" – this is a rock-solid match, the resolution states it explicitly.\n\nI'm double-checking just to be absolutely certain there isn't another possible unit for Glar, but it's clear: based on the information provided, \"xã Đak Đoa\" is the only and correct answer. I feel confident about this one.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai",
+        "line": "86. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Đak Đoa, xã Tân Bình và xã Glar thành xã mới có tên gọi là xã Đak Đoa."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "23677",
+      "ward_name": "Xã Đak Đoa"
+    }
+  ]
+}

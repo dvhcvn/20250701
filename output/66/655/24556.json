@@ -1,0 +1,18 @@
+{
+  "address": "Xã Dray Sáp, Huyện Krông A Na, Tỉnh Đắk Lắk",
+  "ellapsedInMs": 6061,
+  "estimatedCost": 0.0020244,
+  "thought": "**Mapping Old Addresses to New Administrative Units: A Focused Analysis**\n\nOkay, so I'm tasked with taking this old address, \"Xã Dray Sáp, Huyện Krông A Na, Tỉnh Đắk Lắk,\" and figuring out its new administrative unit based on these resolutions and the new ward data.  First things first, the province is pretty straightforward: \"Tỉnh Đắk Lắk\".\n\nNow, I need to check those province resolutions, especially \"60-NQ/TW\" regarding province-level changes.  Thankfully, Đắk Lắk is explicitly mentioned. The resolution states \"Hợp nhất tỉnh Đắk Lắk và tỉnh Phú Yên, lấy tên là tỉnh Đắk Lắk,\" essentially saying Đắk Lắk swallowed Phú Yên, but kept the Đắk Lắk name. So, province-wise, it's still \"Tỉnh Đắk Lắk\".\n\nNext, I need to dig into the ward-level changes.  The key resolution here is \"1660/NQ-UBTVQH15,\" the one on rearranging wards within Đắk Lắk. I'll search for \"Xã Dray Sáp\" within that.  Bingo! Line 54 is the golden nugget: it states, \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Ea Bông, Dray Sáp và Ea Na thành xã mới có tên gọi là **xã Ea Na**.\"  It clearly indicates that Dray Sáp was merged into this new ward called \"Ea Na.\"\n\nNow, I need to find \"Ea Na\" in the new ward data. I ran a quick search and found `{\"ward_code\":\"24559\",\"ward_name\":\"Xã Ea Na\",\"province_name\":\"Tỉnh Đắk Lắk\"}`. Perfect! That confirms the new ward and its code.\n\nPutting it all together, I can construct the JSON output.  The `citation` will pull from the resolution header and the line number I found the information in.  The `confidence` is high because I have a direct match. The `province_name` is \"Tỉnh Đắk Lắk\" (from the new ward data), the `ward_code` is \"24559\", and the `ward_name` is \"Xã Ea Na\". This should be a clean and accurate mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1660/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đắk Lắk",
+        "line": "54. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Ea Bông, Dray Sáp và Ea Na thành xã mới có tên gọi là xã Ea Na."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đắk Lắk",
+      "ward_code": "24559",
+      "ward_name": "Xã Ea Na"
+    }
+  ]
+}

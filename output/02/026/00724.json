@@ -1,0 +1,18 @@
+{
+  "address": "Xã Lũng Táo, Huyện Đồng Văn, Tỉnh Hà Giang",
+  "ellapsedInMs": 8520,
+  "estimatedCost": 0.0032185,
+  "thought": "**Finding the New Administrative Unit**\n\nOkay, let's break this down. My goal is to determine the new administrative unit for \"Xã Lũng Táo, Huyện Đồng Văn, Tỉnh Hà Giang.\"  First, I need to zero in on the old province: \"Tỉnh Hà Giang.\" Then, the important part: I need to check the province resolutions to see if \"Tỉnh Hà Giang\" has been restructured.  Bingo! Resolution 60-NQ/TW states that Hà Giang was merged into Tuyên Quang. That changes things; the new province is now \"Tỉnh Tuyên Quang.\"\n\nNext, I identify the original ward, \"Xã Lũng Táo.\"  Now, the key is to dive into the resolutions, looking for any mentions of \"Xã Lũng Táo\" or its old district \"Huyện Đồng Văn\". Resolutions often group wards by district or province, so it's a smart strategy. I'm focusing on \"Tỉnh Tuyên Quang\" resolutions now because of the province merger.\n\nI find resolution \"1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang.\"  Perfect! Line 44 of that resolution explicitly states:  \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Má Lé, Lũng Táo và Lũng Cú thành xã mới có tên gọi là **xã Lũng Cú**.\"  There it is! \"Lũng Táo\" is being merged into \"Xã Lũng Cú.\" This confirms the new ward name.\n\nNow, all that's left is to find the corresponding `ward_code` for \"Xã Lũng Cú\" in \"Tỉnh Tuyên Quang\" from the \"New wards\" list, which gives me \"00715\".\n\nThe final output is easily constructed:\n\n*   `province_name`: \"Tỉnh Tuyên Quang\" (from the province merger)\n*   `ward_name`: \"Xã Lũng Cú\" (as per resolution 1684/NQ-UBTVQH15)\n*   `ward_code`: \"00715\" (from the new wards list)\n*   `citation`:\n    *   `header`: \"1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang\"\n    *   `line`: \"44. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Má Lé, Lũng Táo và Lũng Cú thành xã mới có tên gọi là **xã Lũng Cú**.\"\n*   `confidence`: \"high\"  because the mapping is direct and clear.\n\nI have to be thorough, so I'll quickly double-check other resolutions for any mention of the old district or ward. Resolution 1684/NQ-UBTVQH15 also mentions a \"Thị trấn Đồng Văn\" in line 45, but since the original ward was \"Xã Lũng Táo,\" and there's a specific mention of that in line 44, I'm completely confident that the correct new administrative unit is \"Xã Lũng Cú\" in \"Tỉnh Tuyên Quang\".\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "44. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Má Lé, Lũng Táo và Lũng Cú thành xã mới có tên gọi là xã Lũng Cú."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "00715",
+      "ward_name": "Xã Lũng Cú"
+    }
+  ]
+}

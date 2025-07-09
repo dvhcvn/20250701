@@ -1,0 +1,28 @@
+{
+  "address": "Thị trấn Phì Điền, Huyện Lục Ngạn, Tỉnh Bắc Giang",
+  "ellapsedInMs": 5844,
+  "estimatedCost": 0.0020508,
+  "thought": "**My Analysis of the Address Mapping**\n\nOkay, so I'm tasked with mapping the old address \"Thị trấn Phì Điền, Huyện Lục Ngạn, Tỉnh Bắc Giang\" to its new administrative unit. My initial steps are clear: I need to pinpoint the original province and ward (\"Tỉnh Bắc Giang\" and \"Thị trấn Phì Điền,\" respectively).  Then, the real work begins.\n\nFirst, the province merger check.  A quick look at \"60-NQ/TW\" confirms what I suspected: Bắc Giang *was* merged, and now forms part of Bắc Ninh.  Important.  This means I need to adjust my perspective immediately and start looking at Bắc Ninh data.\n\nNext, I dive into the ward-specific resolutions.  My focus is on finding any mentions of \"Thị trấn Phì Điền.\"  Bingo! Resolution \"1658/NQ-UBTVQH15\" is the key.  It explicitly states the formation of \"xã Lục Ngạn\" *from* \"Thị trấn Phì Điền,\" along with several other areas. This is a crucial piece of information.\n\nNow, I cross-reference this newly found \"xã Lục Ngạn\" with my \"New wards\" dataset, focusing on \"Tỉnh Bắc Ninh.\" And there it is:  `{\"ward_code\":\"07582\",\"ward_name\":\"Xã Lục Ngạn\",\"province_name\":\"Tỉnh Bắc Ninh\"}`.  Perfect! A direct match.\n\nGiven the explicit merger details in the resolution and the direct match in the new ward data, I'm confident about this mapping.  My final step will be constructing the JSON output, following the defined schema, to accurately represent this conversion.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "5. Hợp nhất tỉnh Bắc Ninh và tỉnh Bắc Giang, lấy tên là tỉnh Bắc Ninh"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "07582",
+      "ward_name": "Xã Lục Ngạn"
+    },
+    {
+      "citation": {
+        "header": "1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh",
+        "line": "30. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Phì Điền và các xã Giáp Sơn, Đồng Cốc, Tân Hoa, Tân Quang thành xã mới có tên gọi là xã Lục Ngạn."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "07582",
+      "ward_name": "Xã Lục Ngạn"
+    }
+  ]
+}

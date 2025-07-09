@@ -1,0 +1,18 @@
+{
+  "address": "Xã Cẩm Xá, Thị xã Mỹ Hào, Tỉnh Hưng Yên",
+  "ellapsedInMs": 7713,
+  "estimatedCost": 0.0028686000000000002,
+  "thought": "**Determining the New Ward for the Given Address**\n\nOkay, here's my thought process on this. I've been given an old address, \"Xã Cẩm Xá, Thị xã Mỹ Hào, Tỉnh Hưng Yên,\" and my task is to identify the corresponding new ward. Let's break this down systematically.\n\nFirst, I need to parse the input address to identify the key components: the old ward, district, and province.  In this case, it's pretty straightforward.  \"Xã Cẩm Xá\" is the old ward, \"Thị xã Mỹ Hào\" is the old district (even though we're eliminating them), and \"Tỉnh Hưng Yên\" is the old province.\n\nNext, I'll consult the relevant province resolutions (specifically, 60-NQ/TW) to see if \"Tỉnh Hưng Yên\" has undergone any changes. Checking the document, I see that the province wasn't specifically listed as being *not* merged. After further reading, I saw that it was merged with \"Tỉnh Thái Bình\", but the resulting province was still called \"Tỉnh Hưng Yên\". So, the province name remains consistent.\n\nNow, I'll move on to the `other_resolutions` to find a specific mention of \"Xã Cẩm Xá\" or \"Thị xã Mỹ Hào\" within the context of \"Tỉnh Hưng Yên\".  I quickly scan through the resolutions. I immediately saw the resolution 1666/NQ-UBTVQH15, which concerns the administrative changes in \"Tỉnh Hưng Yên.\" Perfect!  And line 97 of this resolution states that \"Xã Cẩm Xá\" is being merged into the new ward called \"phường Mỹ Hào.\" Bingo! This is the key.\n\nSince I have the new ward name (\"Phường Mỹ Hào\"), I'll now check the provided `new_wards` list to confirm and find further details. The matching entry is exactly as I expected: `{\"ward_code\":\"12103\",\"ward_name\":\"Phường Mỹ Hào\",\"province_name\":\"Tỉnh Hưng Yên\"}`.\n\nWith all the pieces in place, I can confidently construct the JSON output. I'm going with \"high\" confidence because I have a direct match from the resolution that explicitly states the old ward and the new ward name.\n\nThe final JSON output includes the province name, the ward name and code, the relevant citation (including the resolution header and the crucial line), and the level of confidence. This should effectively answer the user's question.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên",
+        "line": "97. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Bần Yên Nhân, Nhân Hòa, Phan Đình Phùng và xã Cẩm Xá thành phường mới có tên gọi là phường Mỹ Hào."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "12103",
+      "ward_name": "Phường Mỹ Hào"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Phú Mỹ, Huyện Tân Phước, Tỉnh Tiền Giang",
+  "ellapsedInMs": 7239,
+  "estimatedCost": 0.0039976000000000005,
+  "thought": "**Identifying the New Administrative Unit for \"Xã Phú Mỹ, Huyện Tân Phước, Tỉnh Tiền Giang\"**\n\nOkay, so I've been asked to figure out the current administrative location of \"Xã Phú Mỹ, Huyện Tân Phước, Tỉnh Tiền Giang\".  My first thought is to break this down methodically.  First, I need to check for any province mergers. Given the old address includes \"Tiền Giang\", I'll consult `60-NQ/TW`. Bingo! That resolution tells me \"Tỉnh Tiền Giang\" was merged into \"Tỉnh Đồng Tháp\".\n\nNow, I'm looking for \"Xã Phú Mỹ\" within the new province, \"Tỉnh Đồng Tháp\".  I'll start with resolutions from Đồng Tháp.  Resolution `1663/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Tháp` looks promising.  I scan the lines, and there it is: line 57 mentions \"Phú Mỹ\" along with \"Huyện Tân Phước\"! The line describes merging \"Hưng Thạnh (huyện Tân Phước), Phú Mỹ và Tân Hòa Thành\" into a new ward called \"**xã Hưng Thạnh**\". This is a perfect fit. The old ward and district are explicitly mentioned, solidifying the connection.\n\nNext, I need the `ward_code` for the new ward.  I'll check the `New wards` list for \"xã Hưng Thạnh\" in \"Tỉnh Đồng Tháp\". Found it: `{\"ward_code\":\"28336\",\"ward_name\":\"Xã Hưng Thạnh\",\"province_name\":\"Tỉnh Đồng Tháp\"}`.\n\nBefore I finalize the output, I want to be absolutely sure. Let's double-check if any other resolutions for \"Tỉnh Đồng Tháp\" have other relevant mentions of \"Phú Mỹ.\"  Looking at resolution `1663/NQ-UBTVQH15`, line 57 is the only one mentioning \"Phú Mỹ\" and the old district of \"Huyện Tân Phước.\" Therefore, there is no ambiguity.\n\nMy output will have a high confidence level because of that direct mention and the complete match of the old ward and district within the relevant resolution. I will craft a JSON response with the following information: the relevant citation from the resolution, a high confidence score, the new province (\"Tỉnh Đồng Tháp\"), the ward code (\"28336\"), and the new ward name (\"Xã Hưng Thạnh\"). This should be a robust and accurate answer.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1663/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Tháp",
+        "line": "57. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Hưng Thạnh (huyện Tân Phước), Phú Mỹ và Tân Hòa Thành thành xã mới có tên gọi là xã Hưng Thạnh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đồng Tháp",
+      "ward_code": "28336",
+      "ward_name": "Xã Hưng Thạnh"
+    }
+  ]
+}

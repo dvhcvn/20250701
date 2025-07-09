@@ -1,0 +1,18 @@
+{
+  "address": "Xã Phìn Ngan, Huyện Bát Xát, Tỉnh Lào Cai",
+  "ellapsedInMs": 7156,
+  "estimatedCost": 0.0024093000000000005,
+  "thought": "**Mapping Old Address to New Administrative Unit**\n\nOkay, so I'm tasked with figuring out the new administrative unit for the old address \"Xã Phìn Ngan, Huyện Bát Xát, Tỉnh Lào Cai.\" First, I need to break down the address. The old ward is \"Xã Phìn Ngan,\" the old district is \"Huyện Bát Xát,\" and the old province is \"Tỉnh Lào Cai.\"\n\nNow, let's consult the resolutions. I know \"Tỉnh Lào Cai\" is mentioned in resolution 60-NQ/TW, which confirms it remains \"Tỉnh Lào Cai.\" That's easy.\n\nThen, the key is resolution 1673/NQ-UBTVQH15. Specifically, line 52. It explicitly states that \"Xã Phìn Ngan\" is merged into a new ward called \"Xã Bát Xát,\" along with several other wards. Bingo!\n\nI'll double-check this against the new ward data. There's an entry: `{\"ward_code\":\"02683\",\"ward_name\":\"Xã Bát Xát\",\"province_name\":\"Tỉnh Lào Cai\"}`. Yep, it matches perfectly.\n\nNow, to assemble the JSON output. The `province_name` is \"Tỉnh Lào Cai\" (confirmed). The `ward_name` is \"Xã Bát Xát\" (from the resolution and the new data). The `ward_code` is \"02683\" (from the new data).  I'll set the `confidence` to \"high\" because the resolution directly mentions \"Xã Phìn Ngan\" being absorbed into \"Xã Bát Xát.\" And finally, the `citation` will point directly to resolution 1673/NQ-UBTVQH15, line 52.\n\nLooks good. Everything aligns, and it satisfies all the requirements: a single parseable JSON object, no comments, no extra text, and it's all based on solid evidence.\n\n```json\n[\n  {\n    \"citation\": {\n      \"header\": \"1673/NQ-UBTVQH15\",\n      \"line\": \"52\"\n    },\n    \"confidence\": \"high\",\n    \"province_name\": \"Tỉnh Lào Cai\",\n    \"ward_code\": \"02683\",\n    \"ward_name\": \"Xã Bát Xát\"\n  }\n]\n```\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai",
+        "line": "52. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Bát Xát và các xã Bản Vược, Bản Qua, Phìn Ngan, Quang Kim thành xã mới có tên gọi là xã Bát Xát."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "02683",
+      "ward_name": "Xã Bát Xát"
+    }
+  ]
+}

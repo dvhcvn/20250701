@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Lạc Tánh, Huyện Tánh Linh, Tỉnh Bình Thuận",
+  "ellapsedInMs": 6210,
+  "estimatedCost": 0.0021915,
+  "thought": "**My Reasoning for Address Mapping**\n\nOkay, here's how I'm thinking through this. The user wants me to map an old address to a new administrative unit. I'm starting with the input address: \"Thị trấn Lạc Tánh\" in \"Huyện Tánh Linh\", \"Tỉnh Bình Thuận\". My first step is to break this down.\n\nInitially, the goal is to eliminate all districts. Thus, the district name is ignored.\n\nNext, I need to check the province resolutions. I found \"Tỉnh Bình Thuận\" listed in those resolutions. Specifically, I found Resolution 60-NQ/TW, which states that \"Tỉnh Bình Thuận\" has been merged and is now part of \"Tỉnh Lâm Đồng\". So, \"Tỉnh Lâm Đồng\" is now the relevant province.\n\nThen, I'm checking other resolutions for mentions of \"Thị trấn Lạc Tánh.\" Sure enough, in the \"Other resolutions,\" I found it in `1671/NQ-UBTVQH15`. This resolution states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Lạc Tánh, xã Gia An và xã Đức Thuận thành xã mới có tên gọi là **xã Tánh Linh**.\" This is a direct hit! It tells me \"Thị trấn Lạc Tánh\" is now part of \"Xã Tánh Linh\".\n\nThe final piece of the puzzle is to check the \"New wards\" data.  I was looking for \"xã Tánh Linh\", and there it is: `{\"ward_code\":\"23149\",\"ward_name\":\"Xã Tánh Linh\",\"province_name\":\"Tỉnh Lâm Đồng\"}`. And the province name matches the new province name I already determined.\n\nBased on all this, I'm confident in my output.  I'm going to construct the JSON with a very high confidence level because I have direct matching for the old ward and the new province aligns with the resolution. My output will include the citation from `1671/NQ-UBTVQH15`, the province name \"Tỉnh Lâm Đồng\", the ward code \"23149\", and the ward name \"Xã Tánh Linh\". This accurately maps the old address to the current administrative unit.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng",
+        "line": "71. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Lạc Tánh, xã Gia An và xã Đức Thuận thành xã mới có tên gọi là xã Tánh Linh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "23149",
+      "ward_name": "Xã Tánh Linh"
+    }
+  ]
+}

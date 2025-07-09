@@ -1,0 +1,18 @@
+{
+  "address": "Xã Khánh Thủy, Huyện Yên Khánh, Tỉnh Ninh Bình",
+  "ellapsedInMs": 8673,
+  "estimatedCost": 0.0028227000000000005,
+  "thought": "**Mapping an Old Vietnamese Address to a New Administrative Unit**\n\nOkay, so I've been tasked with mapping an old Vietnamese address to its current equivalent, given the provided resolutions and the new ward data. It's pretty straightforward, but requires a systematic approach.\n\nFirst, I need to break down the old address: \"Xã Khánh Thủy,\" \"Huyện Yên Khánh,\" and \"Tỉnh Ninh Bình.\" The prompt emphasizes we're \"eliminating all districts,\" so that will likely be absorbed into something else.\n\nNow, let's go through the process:\n\n1.  **Province Level (Resolutions 60-NQ/TW):** I'll check if \"Tỉnh Ninh Bình\" is affected by any merges or changes in the province list. Luckily, it's not in the \"not merged\" list. Looking at the \"merged\" list, I see that the province has expanded (\"Hợp nhất tỉnh Hà Nam, tỉnh Ninh Bình và tỉnh Nam Định; lấy tên là tỉnh Ninh Bình\"). This confirms that \"Tỉnh Ninh Bình\" remains \"Tỉnh Ninh Bình,\" which gives me a \"high confidence\" level for this mapping.\n\n2.  **Ward Level (Resolutions 1674/NQ-UBTVQH15):** The key here is to find the specific mention of \"Khánh Thủy\" within the relevant resolutions. I'll scan the text and I see a direct match in line 84: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Khánh Mậu, Khánh Thủy và Khánh Hội thành xã mới có tên gọi là **xã Khánh Hội**.\" Boom! That's a perfect hit. \"Xã Khánh Thủy\" is explicitly merged into \"xã Khánh Hội.\"\n\n3.  **Cross-referencing with New Ward Data:** I'll confirm that the new ward data aligns with my finding. I find \"xã Khánh Hội\" in the list, along with its code \"14614\" and the associated province \"Tỉnh Ninh Bình,\" which matches my previous high-confidence province mapping.\n\n4.  **Schema and Output:**  I need to construct the JSON output:\n\n    *   `province_name`: \"Tỉnh Ninh Bình\" (High confidence based on the resolution 60-NQ/TW).\n    *   `ward_name`: \"Xã Khánh Hội\" (Direct match).\n    *   `ward_code`: \"14614\" (From the new ward data).\n    *   `confidence`: \"high\" (Due to the clear, direct match in the resolutions).\n    *   `citation`:  I'll include the relevant resolution and the specific line where \"Khánh Thủy\" is mentioned.\n\nI will double-check for any other mentions of relevant terms in the provided text. I see mentions of \"Yên Khánh\", but these don't lead to another ward to merge \"Xã Khánh Thủy\" to.\n\nSo, the final and most confident mapping is \"Xã Khánh Thủy\" to \"Xã Khánh Hội.\" The schema looks right; everything fits.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "84. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Khánh Mậu, Khánh Thủy và Khánh Hội thành xã mới có tên gọi là **xã Khánh Hội**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "14614",
+      "ward_name": "Xã Khánh Hội"
+    }
+  ]
+}

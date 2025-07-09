@@ -1,0 +1,18 @@
+{
+  "address": "Xã Long Hựu Đông, Huyện Cần Đước, Tỉnh Long An",
+  "ellapsedInMs": 8932,
+  "estimatedCost": 0.0027275,
+  "thought": "**My Thought Process: Mapping a Vietnamese Address**\n\nOkay, so I'm tackling this Vietnamese address mapping, and here's how I'm thinking it through. My goal is to translate this old address into the current administrative system using these resolutions and the new ward data.\n\nFirst, I need to identify the key components of the old address: \"Tỉnh Long An\" (province), \"Xã Long Hựu Đông\" (ward), and \"Huyện Cần Đước\" (district).\n\nNext, I'll dive into the resolutions. Resolution 60-NQ/TW is the first stop. I scan it for \"Tỉnh Long An\" and quickly find the key merger: \"Hợp nhất tỉnh Tây Ninh và tỉnh Long An, lấy tên là tỉnh Tây Ninh.\" Bingo! The old province, Long An, is now part of Tây Ninh.\n\nNow, Resolution 1682/NQ-UBTVQH15 is the real meat of the matter, dealing with the re-organization of *Tỉnh Tây Ninh*. Since Long An merged into Tây Ninh, this is the document I need to drill into. I'm zeroing in on \"Xã Long Hựu Đông\". And there it is, line 44: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Long Hựu Đông và xã Long Hựu Tây thành xã mới có tên gọi là **xã Long Hựu**.\"  This is a direct hit! It explicitly states that \"Long Hựu Đông\" is now merged into a new ward called \"Long Hựu\".\n\nNow, I'll cross-reference this information with the `New wards` data. I'm searching for \"Xã Long Hựu,\" and there it is:  `{\"ward_code\":\"28144\",\"ward_name\":\"Xã Long Hựu\",\"province_name\":\"Tỉnh Tây Ninh\"}`. Perfect match.\n\nSo, here's my mapping:\n*   `province_name`: \"Tỉnh Tây Ninh\" (from the province merger)\n*   `ward_name`: \"Xã Long Hựu\" (from Resolution 1682/NQ-UBTVQH15, line 44)\n*   `ward_code`: \"28144\" (from the `New wards` data)\n*   My citation will include:\n    *   `header`: \"1682/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tây Ninh\"\n    *   `line`: \"44. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Long Hựu Đông và xã Long Hựu Tây thành xã mới có tên gọi là xã Long Hựu.\"\n*   And I'm extremely confident about this mapping – a \"high\" confidence level – because of the direct match in the resolution.\n\nWait, I need to double-check the district, \"Huyện Cần Đước.\" The resolution is about \"tỉnh Tây Ninh,\" and the problem states to eliminate districts. The resolution mentions \"huyện Cần Đước\" in lines 42 and 43 but these refer to other communes (\"xã Phước Đông\") and the township (\"thị trấn Cần Đước\"). Line 44 doesn't mention the district explicitly. Since this resolution is for the province Tây Ninh (with a new commune, \"Long Hựu\") and the new structure only defines province and ward, I will eliminate this district info for the output.\n\nSo, all in all, this is a clean and solid mapping. The information aligns perfectly, and the resolution provides a clear path from the old address to the new administrative units.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1682/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tây Ninh",
+        "line": "44. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Long Hựu Đông và xã Long Hựu Tây thành xã mới có tên gọi là xã Long Hựu."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tây Ninh",
+      "ward_code": "28144",
+      "ward_name": "Xã Long Hựu"
+    }
+  ]
+}

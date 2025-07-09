@@ -1,0 +1,18 @@
+{
+  "address": "Xã Nhân Thịnh, Huyện Lý Nhân, Tỉnh Hà Nam",
+  "ellapsedInMs": 8283,
+  "estimatedCost": 0.0035123999999999997,
+  "thought": "**Address Mapping Logic: Hà Nam to Ninh Bình - Nhân Thịnh to Nhân Hà**\n\nOkay, so I'm tasked with mapping an old address to its new administrative unit. The user is starting me with: \"Xã Nhân Thịnh, Huyện Lý Nhân, Tỉnh Hà Nam\".\n\nMy first step is to recognize that \"Tỉnh Hà Nam\" no longer exists; it's been merged.  I've cross-referenced this with the province resolutions (specifically 60-NQ/TW), confirming that \"Tỉnh Hà Nam\" is now part of \"Tỉnh Ninh Bình\".  This is crucial context.\n\nNext, I need to address \"Xã Nhân Thịnh.\"  My instinct is to search for this ward within the *new* province. The key lies in resolution 1674/NQ-UBTVQH15, concerning the restructuring of communes in \"Tỉnh Ninh Bình.\"  This resolution directly addresses \"Xã Nhân Thịnh,\" and importantly, it states that \"Xã Nhân Thịnh\" (along with two others) will merge into a new ward: \"Xã Nhân Hà.\"\n\nExcellent! Now that I know the target ward should be \"Xã Nhân Hà\", I've checked my \"New Wards\" data for \"Tỉnh Ninh Bình.\"  It perfectly matches:  `{\"ward_code\":\"13609\",\"ward_name\":\"Xã Nhân Hà\",\"province_name\":\"Tỉnh Ninh Bình\"}`. This confirms the new code.\n\nFinally, the citation.  Since the core objective is to find the *new* ward, and the province change is foundational, the most direct citation is for the *ward* resolution. While the province merger is a key piece of information, I should highlight the specific resolution that outlines the change from \"Xã Nhân Thịnh\" to \"Xã Nhân Hà\" – which is 1674/NQ-UBTVQH15. I'll construct a citation object to point the user to this resolution. The province transformation context is implied.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "16. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Nhân Thịnh, Nhân Mỹ và Xuân Khê thành xã mới có tên gọi là xã Nhân Hà."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "13609",
+      "ward_name": "Xã Nhân Hà"
+    }
+  ]
+}

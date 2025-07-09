@@ -1,0 +1,18 @@
+{
+  "address": "Xã Đại Tập, Huyện Khoái Châu, Tỉnh Hưng Yên",
+  "ellapsedInMs": 5968,
+  "estimatedCost": 0.0020653,
+  "thought": "**Determining the New Ward for the Given Address**\n\nOkay, so I've got this old address: \"Xã Đại Tập, Huyện Khoái Châu, Tỉnh Hưng Yên,\" and I need to figure out the new administrative unit, the ward. My thinking goes like this: first, I recognize \"Tỉnh Hưng Yên\" as the province. Then, I need to check relevant province resolutions, specifically 60-NQ/TW, to see if there have been any changes. I know the province name remains \"Tỉnh Hưng Yên.\" Next, I identify \"Xã Đại Tập\" as the old ward.\n\nNow, I'll need to dig through \"Other resolutions\" for \"Xã Đại Tập\" specifically. Ah, here it is: 1666/NQ-UBTVQH15. And on line 22, it clearly states that \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đại Tập, Tứ Dân, Tân Châu và Đông Ninh thành xã mới có tên gọi là **xã Châu Ninh**.\" That's the key - \"Xã Đại Tập\" is being merged into \"Xã Châu Ninh\"!\n\nNext, a quick check of \"New wards\" for \"Xã Châu Ninh\" in \"Tỉnh Hưng Yên\" confirms the match: I find `{\"ward_code\":\"12247\",\"ward_name\":\"Xã Châu Ninh\",\"province_name\":\"Tỉnh Hưng Yên\"}`. That seals it.\n\nFinally, I'll structure the JSON output:\n\n*   `province_name`: \"Tỉnh Hưng Yên\" (from the province check).\n*   `ward_name`: \"Xã Châu Ninh\" (from the resolution).\n*   `ward_code`: \"12247\" (from the \"New wards\" check).\n*   `confidence`: \"high\" – it's a direct, clear mapping.\n*   `citation`: The resolution I used:\n    *   `header`: \"1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên\"\n    *   `line`: \"22. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đại Tập, Tứ Dân, Tân Châu và Đông Ninh thành xã mới có tên gọi là **xã Châu Ninh**.\"\n\nSeems pretty solid.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên",
+        "line": "22. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đại Tập, Tứ Dân, Tân Châu và Đông Ninh thành xã mới có tên gọi là xã Châu Ninh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "12247",
+      "ward_name": "Xã Châu Ninh"
+    }
+  ]
+}

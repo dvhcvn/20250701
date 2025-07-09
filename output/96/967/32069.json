@@ -1,0 +1,28 @@
+{
+  "address": "Xã Tân Bằng, Huyện Thới Bình, Tỉnh Cà Mau",
+  "ellapsedInMs": 9866,
+  "estimatedCost": 0.0034319,
+  "thought": "**Analysis of Vietnamese Address Mapping**\n\nOkay, here's what I've got. The user wants me to map the old address \"Xã Tân Bằng, Huyện Thới Bình, Tỉnh Cà Mau\" to its new administrative unit. My initial thought process is to break this down.\n\nFirst, the key components of the old address:\n\n*   **Old Ward:** \"Xã Tân Bằng\"\n*   **Old District:** \"Huyện Thới Bình\"\n*   **Old Province:** \"Tỉnh Cà Mau\"\n\nGiven the prompt's instruction to eliminate districts, the main focus will be ward and province changes.\n\nI start by checking province resolutions. Resolution 60-NQ/TW doesn't show any province boundary changes for \"Tỉnh Cà Mau\", so that's straightforward. The province name stays the same.\n\nNext, I dig into the \"Other Resolutions\". Specifically, I am examining resolutions that might mention either \"Xã Tân Bằng\" or \"Huyện Thới Bình\" within the context of \"Tỉnh Cà Mau\". Resolution 1655/NQ-UBTVQH15 is key.\n\nIn this resolution, I see:\n\n*   Line 20 discusses the merger of \"thị trấn Thới Bình\" and \"xã Thới Bình\" to form \"xã Thới Bình\". That is within the old district of \"Huyện Thới Bình\", so is relevant, even if not a direct match to \"Xã Tân Bằng\".\n*   Line 23: Bingo! \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tân Bằng, Biển Bạch Đông và Biển Bạch thành xã mới có tên gọi là **xã Biển Bạch**.\" This explicitly states that \"Xã Tân Bằng\" merges into the new ward called \"Xã Biển Bạch\". High confidence here.\n\nNow, I validate this \"Xã Biển Bạch\" against the \"New Wards\" list. It matches: `{\"ward_code\":\"32069\",\"ward_name\":\"Xã Biển Bạch\",\"province_name\":\"Tỉnh Cà Mau\"}`.  I see a matching listing for the other cited new ward name, \"Xã Thới Bình\" with  `{\"ward_code\":\"32065\",\"ward_name\":\"Xã Thới Bình\",\"province_name\":\"Tỉnh Cà Mau\"}`.\n\nSo, I have very high confidence in this mapping. \"Xã Tân Bằng\" is explicitly merged into \"Xã Biển Bạch\". The instruction here is to provide all possible matches for the input address. It is important to note the proximity of the \"Huyện Thới Bình\" portion of the old address to \"Xã Tân Bằng\" on the mapping resolutions.\n\nThe old address is:  \"Xã Tân Bằng, Huyện Thới Bình, Tỉnh Cà Mau\".\nThe map: \"Xã Biển Bạch, Tỉnh Cà Mau\".\nAdditional considerations: \"Xã Thới Bình, Tỉnh Cà Mau\" is in the map resolutions for \"Huyện Thới Bình\", but it doesn't represent the explicit mapping of \"Xã Tân Bằng\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "22. Hợp nhất tỉnh Bạc Liêu và tỉnh Cà Mau, lấy tên là tỉnh Cà Mau"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Cà Mau",
+      "ward_code": "32069",
+      "ward_name": "Xã Biển Bạch"
+    },
+    {
+      "citation": {
+        "header": "1655/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Cà Mau",
+        "line": "23. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tân Bằng, Biển Bạch Đông và Biển Bạch thành xã mới có tên gọi là xã Biển Bạch."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Cà Mau",
+      "ward_code": "32069",
+      "ward_name": "Xã Biển Bạch"
+    }
+  ]
+}

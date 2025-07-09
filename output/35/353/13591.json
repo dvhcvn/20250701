@@ -1,0 +1,28 @@
+{
+  "address": "Xã Đức Lý, Huyện Lý Nhân, Tỉnh Hà Nam",
+  "ellapsedInMs": 9218,
+  "estimatedCost": 0.003196,
+  "thought": "**Analyzing and Mapping a Vietnamese Address**\n\nOkay, so I'm presented with an old Vietnamese address and the task of translating it to the new administrative structure. Let's break this down systematically. I see the old address: Xã Đức Lý in Huyện Lý Nhân, Tỉnh Hà Nam. My primary goal is to determine the corresponding *current* ward, district, and province, or at least the relevant ward and province, given the information.\n\nFirst, I'll identify the components of the old address: Xã Đức Lý is the ward, Huyện Lý Nhân is the district, and Tỉnh Hà Nam is the province. Now, the heavy lifting starts.\n\nI have resolutions to work with, specifically regarding province and ward reorganizations.  I'll start by examining the province change based on Resolution 60-NQ/TW. I check if \"Tỉnh Hà Nam\" is exempt from changes. Nope, it's not.  Then, I see that it's listed under \"sáp nhập, hợp nhất\" – it states that Hà Nam, Ninh Bình, and Nam Định merged to form Ninh Bình. The new province is definitely Ninh Bình. High confidence there; it's a direct statement.\n\nNext, I shift focus to the ward level and consider the \"Other Resolutions\", specifically 1674/NQ-UBTVQH15. I'm looking for mentions of \"Xã Đức Lý\".  Line 12 is the key: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Công Lý, Nguyên Lý và Đức Lý thành xã mới có tên gọi là **xã Nam Xang**.\" Bingo!  Directly addresses my query. It clearly states Đức Lý is now Nam Xang. I have a district mentioned in Line 17, Tiến Thắng's resolution, so I will ignore it.\n\nWith this in mind, I need to validate this against the \"New Wards\" data. My province is Ninh Bình, as determined before.  I look for \"Xã Nam Xang\" *within* Ninh Bình in my New Wards list. And there it is: `{\"ward_code\":\"13591\",\"ward_name\":\"Xã Nam Xang\",\"province_name\":\"Tỉnh Ninh Bình\"}`. This perfectly aligns! This confirms my findings.\n\nSo, for the output JSON, I'll generate the following structure: the new `province_name` is \"Tỉnh Ninh Bình\", the `ward_name` is \"Xã Nam Xang\", and the `ward_code` is \"13591\". The citation is crucial for documentation. The province change comes from 60-NQ/TW, with a specific line about merging Hà Nam, Ninh Bình, and Nam Định into Ninh Bình. The ward change is explicitly from 1674/NQ-UBTVQH15, specifying that Đức Lý merges into Nam Xang.\n\nThe confidence is very high. Both the province and ward mappings are explicitly stated and confirmed by the available data. I am confident in this translation, given the supporting documentation. It's important to provide accurate citations to enable verification, so I'll make sure to use the properly structured `citation` field with header and line.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Hà Nam, tỉnh Ninh Bình và tỉnh Nam Định; lấy tên là tỉnh Ninh Bình"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "13591",
+      "ward_name": "Xã Nam Xang"
+    },
+    {
+      "citation": {
+        "header": "1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "12. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Công Lý, Nguyên Lý và Đức Lý thành xã mới có tên gọi là xã Nam Xang."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "13591",
+      "ward_name": "Xã Nam Xang"
+    }
+  ]
+}

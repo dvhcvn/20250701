@@ -1,0 +1,28 @@
+{
+  "address": "Xã Thới Lai, Huyện Bình Đại, Tỉnh Bến Tre",
+  "ellapsedInMs": 9544,
+  "estimatedCost": 0.0032018999999999997,
+  "thought": "**Deconstructing the Vietnamese Address: A Cartographic Exercise**\n\nOkay, so I've got this old Vietnamese address to decipher: \"Xã Thới Lai, Huyện Bình Đại, Tỉnh Bến Tre\".  My task is to map this to the current administrative structure based on the available resolutions and a list of updated wards. This should be straightforward, but Vietnamese administrative changes can be tricky!\n\nFirst, I need to pinpoint the *province*.  The address clearly states \"Tỉnh Bến Tre\". Now, I'm already aware that province names change, so I'll check the relevant resolutions – specifically, the ones related to provincial mergers (60-NQ/TW). Bingo! The resolution indicates that Bến Tre was absorbed into a larger entity: \"Hợp nhất tỉnh Bến Tre, tỉnh Vĩnh Long và tỉnh Trà Vinh; lấy tên là tỉnh Vĩnh Long.\"  So, the *new province* is now \"Tỉnh Vĩnh Long.\"\n\nNext, I need to zero in on the *ward* - the \"Xã Thới Lai\" part. Time to consult those crucial \"Other resolutions\". Let's see... the first one, 1668/NQ-UBTVQH15, mentions a \"Thới Lai\", but it's in the context of Cần Thơ, a completely different region. It describes the formation of a *new* \"Xã Thới Lai\" from other wards.  Since my starting point is Bến Tre, this one is a red herring for now.\n\nMoving on, I hit 1687/NQ-UBTVQH15. This is where things get interesting.  There's mention of \"thị trấn Bình Đại\" from the original district (Huyện Bình Đại) which is a strong hint that Bình Đại remains in Vĩnh Long. Furthermore, the very next statement, \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Long Hòa (huyện Bình Đại), Thới Laivà Châu Hưngthành xã mới có tên gọi là **xã Châu Hưng**,\" is a real clue! It *explicitly* lists \"Thới Lai\" as one of the constituent wards that make up the *new* \"Xã Châu Hưng\" within the Vĩnh Long province. This is my prime candidate.\n\nNow, to solidify this, I'll cross-reference the *new wards list*. I'm expecting to find both \"Xã Bình Đại\" and \"Xã Châu Hưng\" under \"Tỉnh Vĩnh Long\". And, as expected, they're both there, with their respective ward codes: `{\"ward_code\":\"29050\",\"ward_name\":\"Xã Bình Đại\",\"province_name\":\"Tỉnh Vĩnh Long\"}` and `{\"ward_code\":\"29083\",\"ward_name\":\"Xã Châu Hưng\",\"province_name\":\"Tỉnh Vĩnh Long\"}`. The presence of \"Long Hòa\" within the \"Xã Châu Hưng\" merger is just further corroborating data.\n\nTherefore, my expert conclusion is that \"Xã Thới Lai, Huyện Bình Đại, Tỉnh Bến Tre\" *most likely* maps to \"Xã Châu Hưng, Tỉnh Vĩnh Long\". I can be reasonably confident of that mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Bến Tre, tỉnh Vĩnh Long và tỉnh Trà Vinh; lấy tên là tỉnh Vĩnh Long"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "29083",
+      "ward_name": "Xã Châu Hưng"
+    },
+    {
+      "citation": {
+        "header": "1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long",
+        "line": "100. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Long Hòa (huyện Bình Đại), Thới Laivà Châu Hưngthành xã mới có tên gọi là xã Châu Hưng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "29083",
+      "ward_name": "Xã Châu Hưng"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "address": "Xã Đắk Môn, Huyện Đắk Glei, Tỉnh Kon Tum",
+  "ellapsedInMs": 9355,
+  "estimatedCost": 0.0036785999999999998,
+  "thought": "**Analyzing the Administrative Shift of \"Xã Đắk Môn\"**\n\nAlright, let's break this down. The user has given me an old address \"Xã Đắk Môn, Huyện Đắk Glei, Tỉnh Kon Tum,\" and wants to find the new corresponding ward. My approach is pretty standard for this type of problem, but I want to be extra careful, especially given the merging of provinces and communes here.\n\nFirst, I identified \"Tỉnh Kon Tum\" in the old address. I immediately went to look at the provincial merger resolutions, specifically the 60-NQ/TW. Sure enough, it states that \"Tỉnh Kon Tum\" merged with \"Tỉnh Quảng Ngãi\" to form \"Tỉnh Quảng Ngãi\". That's a key first step.\n\nNext, the focus shifted to the ward itself, \"Xã Đắk Môn\".  I've got a comprehensive list of resolutions and new wards, so I dived into those. The crucial resolution here is 1677/NQ-UBTVQH15.  Reading through it, I found Line 71: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Đăk Kroong và xã Đăk Môn thành xã mới có tên gọi là xã Đăk Môn.\" Bingo! This line explicitly tells me \"Xã Đắk Môn\" was merged, along with \"Xã Đăk Kroong\", into a *new* \"Xã Đăk Môn\". This confirms that the old \"Xã Đắk Môn\" is now part of this new entity. Furthermore, Line 92 mentions wards *not* part of any merge; the absence of \"Xã Đăk Môn\" from that list strengthens the case.\n\nNow I checked the list of new wards.  I'm looking for \"Xã Đắk Môn\" listed under \"Tỉnh Quảng Ngãi,\" the new province. And there it is: `{\"ward_code\":\"23374\",\"ward_name\":\"Xã Đắk Môn\",\"province_name\":\"Tỉnh Quảng Ngãi\"}`. Perfect.\n\nThe confidence level here is very high. The province change is clear. The ward's merger process is explicitly spelled out in the resolution, and it's present in the new ward list. The fact that the old address includes \"Huyện Đắk Glei\" doesn't create any conflict.\n\nTo present this concisely, I'll output:\n\n*   `province_name`: \"Tỉnh Quảng Ngãi\"\n*   `ward_name`: \"Xã Đắk Môn\"\n*   `ward_code`: \"23374\"\n*   `confidence`: \"high\"\n*   `citation`:\n    *   `header`: \"60-NQ/TW\"\n    *   `line`: \"Hợp nhất tỉnh Kon Tum và tỉnh Quảng Ngãi, lấy tên là tỉnh Quảng Ngãi\"\n    *   `header`: \"1677/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ngãi\"\n    *   `line`: \"71. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Đăk Kroong và xã Đăk Môn thành xã mới có tên gọi là xã Đăk Môn.\"\n\nI'm confident this is the correct information.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW",
+        "line": "Hợp nhất tỉnh Kon Tum và tỉnh Quảng Ngãi, lấy tên là tỉnh Quảng Ngãi"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ngãi",
+      "ward_code": "23374",
+      "ward_name": "Xã Đăk Môn"
+    },
+    {
+      "citation": {
+        "header": "1677/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ngãi",
+        "line": "71. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Đăk Kroong và xã Đăk Môn thành xã mới có tên gọi là xã Đăk Môn."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ngãi",
+      "ward_code": "23374",
+      "ward_name": "Xã Đăk Môn"
+    }
+  ]
+}

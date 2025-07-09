@@ -1,0 +1,18 @@
+{
+  "address": "Xã Bình Kiến, Thành phố Tuy Hoà, Tỉnh Phú Yên",
+  "ellapsedInMs": 7359,
+  "estimatedCost": 0.0020509,
+  "thought": "**Address Mapping Analysis: \"Xã Bình Kiến, Thành phố Tuy Hoà, Tỉnh Phú Yên\"**\n\nOkay, so I've been tasked with mapping this old address, \"Xã Bình Kiến, Thành phố Tuy Hoà, Tỉnh Phú Yên,\" to its new administrative units. First, I need to break down the components.  \"Xã Bình Kiến\" is the old ward, and \"Tỉnh Phú Yên\" is the old province.\n\nNow, I have to consult the resolutions, starting with Resolution 60-NQ/TW to see what happened to \"Tỉnh Phú Yên.\" Ah, here it is:  \"Hợp nhất tỉnh Đắk Lắk và tỉnh Phú Yên, lấy tên là tỉnh Đắk Lắk.\"  So, Phú Yên was merged into Đắk Lắk. The new province is \"Tỉnh Đắk Lắk\". This is key information.\n\nNext, I'll need to look at Resolution 1660/NQ-UBTVQH15. This should provide details on the ward level changes, particularly since Phú Yên merged.  Yes!  Line 91 of 1660 is directly relevant: it describes the restructuring of wards in Đắk Lắk, as expected.  It clearly mentions the merging of \"Xã Bình Kiến\" (the original ward) with others to create \"phường Bình Kiến.\"  This is exactly what I was looking for.\n\nNow I have to compare that to my \"New wards\" data. Perfect! The resolution states \"phường Bình Kiến\" is the new ward. Checking the \"New wards\" data reveals:  `{\"ward_code\":\"22045\",\"ward_name\":\" Phường Bình Kiến\",\"province_name\":\"Tỉnh Đắk Lắk\"}`.  The match is clean. This is exactly what I was hoping to see. The province name \"Tỉnh Đắk Lắk\" matches the previous merger too.\n\nThe mapping is very direct and explicitly stated in the resolutions and data I have. I'd assign a \"high\" confidence level to this map.  It's a straightforward transformation.\nNow, it's just a matter of structuring the output in JSON based on the schema, and I'm done.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1660/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đắk Lắk",
+        "line": "91. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã An Phú, Hòa Kiến, Bình Kiến và phần còn lại của Phường 9 sau khi sắp xếp theo quy định tại khoản 90 Điều này thành phường mới có tên gọi là phường Bình Kiến."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đắk Lắk",
+      "ward_code": "22045",
+      "ward_name": "Phường Bình Kiến"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Cư KTy, Huyện Krông Bông, Tỉnh Đắk Lắk",
+  "ellapsedInMs": 5998,
+  "estimatedCost": 0.0022048000000000002,
+  "thought": "**Deconstructing the Vietnamese Address Mapping Problem**\n\nOkay, so I'm tackling this address mapping task. The user's given me an old Vietnamese address, and I need to figure out its modern equivalent, leveraging these resolutions and the new ward data they've provided.\n\nFirst, I need to break down the old address: it's \"Xã Cư KTy\" in \"Huyện Krông Bông\" district, within \"Tỉnh Đắk Lắk\" province. Simple enough.\n\nNext, I'll dive into the province resolutions (60-NQ/TW). Scanning them, I spot \"Tỉnh Đắk Lắk\". The wording clarifies that while Đắk Lắk merged with Phú Yên, the province name itself didn't change, which is important for the final output.\n\nNow comes the crucial part: other resolutions, specifically 1660/NQ-UBTVQH15. I'm scanning through the `lines` and *bingo!* Line 41 hits the jackpot. It explicitly mentions \"Xã Cư KTy\" and states it's merging into a new ward called \"**xã Dang Kang**.\" That's the key. The resolution header confirms this is about the same province and district, solidifying the match. \"Huyện Krông Bông\" is right there in the context of Hòa Thành as well.\n\nMoving forward, I'll check my `New wards` data to validate \"xã Dang Kang.\" There it is! {\"ward_code\":\"24454\",\"ward_name\":\"Xã Dang Kang\",\"province_name\":\"Tỉnh Đắk Lắk\"}. That's a perfect match.\n\nFinally, constructing the JSON output is a breeze. I'll use the resolution header and Line 41 as my `citation`. The match is direct, so the `confidence` level is high. The `province_name`, `ward_code`, and `ward_name` all come directly from the confirmed `New wards` entry. Job done. The problem's mapped.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1660/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đắk Lắk",
+        "line": "41. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Hòa Thành (huyện Krông Bông), Cư Kty và Dang Kang thành xã mới có tên gọi là xã Dang Kang."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đắk Lắk",
+      "ward_code": "24454",
+      "ward_name": "Xã Dang Kang"
+    }
+  ]
+}

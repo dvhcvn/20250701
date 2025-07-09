@@ -1,0 +1,18 @@
+{
+  "address": "Xã Đắk Ngo, Huyện Tuy Đức, Tỉnh Đắk Nông",
+  "ellapsedInMs": 8092,
+  "estimatedCost": 0.0029439,
+  "thought": "**Analyzing the Address Transformation: Xã Đắk Ngo**\n\nOkay, so I'm presented with a tricky mapping problem: translate an old address, \"Xã Đắk Ngo, Huyện Tuy Đức, Tỉnh Đắk Nông,\" to the new administrative structure. Let's break this down systematically, leveraging my understanding of how these resolutions work.\n\nFirst things first, the province is Tỉnh Đắk Nông, and the ward is Xã Đắk Ngo. Now, the key is to understand how the administrative boundaries have shifted. My immediate instinct is to look for province-level changes first. The resolutions, specifically the \"60-NQ/TW,\" should shed light on this. Sure enough, there's a reference to \"Tỉnh Đắk Nông\" in these resolutions. It states that Đắk Nông was *merged* into Tỉnh Lâm Đồng, effectively becoming a part of it.  The \"Hợp nhất\" language solidifies this. So, \"Tỉnh Đắk Nông\" is now \"Tỉnh Lâm Đồng.\" That's the first piece of the puzzle.\n\nNow, focusing on the ward \"Xã Đắk Ngo,\" I need to dive deeper into other relevant resolutions. I'll search for \"Xã Đắk Ngo\" in the given list of `other_resolutions`. And bingo! Resolution \"1671/NQ-UBTVQH15\" provides the definitive answer. Line 94 is crucial: it explicitly states that \"Xã Đắk Ngo\" *and* \"Xã Quảng Tân\" are combined to form a *new* ward also called \"Xã Quảng Tân\". The merging is clear-cut. Looking at other lines in the resolution regarding the formation of Tuy Đức ward, I can safely ignore them as they pertain to distinct merges, not involving Xã Đắk Ngo.\n\nTo ensure consistency, I then cross-reference these findings with the \"New wards\" data.  I'm looking to confirm the existence and details of \"Xã Quảng Tân.\"  There it is: `{\"ward_code\":\"24748\",\"ward_name\":\"Xã Quảng Tân\",\"province_name\":\"Tỉnh Lâm Đồng\"}`. This perfectly aligns with the resolution.\n\nBased on this methodical analysis, my confidence in this mapping is high. I'm satisfied with the results.\n\nThe final output will be:\n\n*   `province_name`: \"Tỉnh Lâm Đồng\" (from province merge)\n*   `ward_name`: \"Xã Quảng Tân\" (from resolution 1671/NQ-UBTVQH15, line 94)\n*   `ward_code`: \"24748\" (from new wards list)\n*   `citation`:\n    *   `header`: \"1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng\"\n    *   `line`: \"94. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Đắk Ngo và xã Quảng Tân thành xã mới có tên gọi là xã Quảng Tân.\"\n*   `confidence`: \"high\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng",
+        "line": "94. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Đắk Ngo và xã Quảng Tân thành xã mới có tên gọi là xã Quảng Tân."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "24748",
+      "ward_name": "Xã Quảng Tân"
+    }
+  ]
+}

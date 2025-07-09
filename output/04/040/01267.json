@@ -1,0 +1,18 @@
+{
+  "address": "Phường Sông Hiến, Thành phố Cao Bằng, Tỉnh Cao Bằng",
+  "ellapsedInMs": 9382,
+  "estimatedCost": 0.0032749000000000003,
+  "thought": "**Analysis of Administrative Unit Changes for \"Phường Sông Hiến\"**\n\nOkay, here's what I've got. I'm tasked with mapping the old address \"Phường Sông Hiến, Thành phố Cao Bằng, Tỉnh Cao Bằng\" to the new administrative units, given some resolutions and new ward data.\n\nFirst, I checked if \"Tỉnh Cao Bằng\" had been merged or changed based on Resolution 60-NQ/TW. Fortunately, it's explicitly stated that it remains unchanged.  So, the output `province_name` will be \"Tỉnh Cao Bằng\".\n\nNext, I looked at the provided resolutions for changes affecting wards. Resolution 1657/NQ-UBTVQH15, specifically line 54, is crucial.  It details the consolidation of several units, including \"Phường Sông Hiến,\" into a new ward called \"**phường Thục Phán**.\" This is a definitive piece of information.\n\nCross-referencing the \"New wards\" data, I confirmed the existence of \"Phường Thục Phán\" with the code \"01273\" and the correct province.\n\nLine 54 is very clear: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Sông Hiến...thành phường mới có tên gọi là phườngThục Phán.\" This translates to a direct mapping from \"Phường Sông Hiến\" to \"Phường Thục Phán\". This is about as clear-cut as it gets, so my confidence in this mapping is \"high\".\n\nHowever, there's a slight wrinkle. Line 54 also mentions \"xã Hưng Đạo\" being *merged into* \"Phường Thục Phán\". And, \"Xã Hưng Đạo\" is also listed as a *new* ward in the data. This needs further investigation.\n\nUpon re-reading line 54 carefully, it *clearly* states that \"xã Hưng Đạo\" is *merged*. It's likely that the \"New Wards\" list includes *all* units in the area, or is organized by population area. My understanding remains as before, mapping old \"Phường Sông Hiến\" directly to \"Phường Thục Phán.\"\n\nTherefore, my final JSON output will be:\n\n*   `province_name`: \"Tỉnh Cao Bằng\"\n*   `ward_name`: \"Phường Thục Phán\"\n*   `ward_code`: \"01273\"\n*   `confidence`: \"high\"\n*   `citation`:\n    *   `header`: \"1657/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Cao Bằng\"\n    *   `line`: \"54. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Sông Hiến, Đề Thám, Hợp Giang, xã Hưng Đạo (thành phố Cao Bằng)và xã Hoàng Tungthành phường mới có tên gọi là phườngThục Phán.\"\n\nThe potential conflict with \"Xã Hưng Đạo\" requires noting, though. I'll need to remember that for later verification, if further clarifications become available.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1657/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Cao Bằng",
+        "line": "54. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Sông Hiến, Đề Thám, Hợp Giang, xã Hưng Đạo (thành phố Cao Bằng)và xã Hoàng Tungthành phường mới có tên gọi là phườngThục Phán."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Cao Bằng",
+      "ward_code": "01273",
+      "ward_name": "Phường Thục Phán"
+    }
+  ]
+}

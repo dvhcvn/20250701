@@ -1,0 +1,18 @@
+{
+  "address": "Xã Lâm Trung Thủy, Huyện Đức Thọ, Tỉnh Hà Tĩnh",
+  "ellapsedInMs": 6623,
+  "estimatedCost": 0.0026833000000000004,
+  "thought": "**Mapping the Old to the New**\n\nOkay, so I'm presented with an old address and need to figure out its current equivalent. The input is \"Xã Lâm Trung Thủy, Huyện Đức Thọ, Tỉnh Hà Tĩnh.\" Straight away, I pull out the key pieces: \"Xã Lâm Trung Thủy\" is the old ward, and \"Tỉnh Hà Tĩnh\" is the old province.  Now, the real work begins with the resolutions.\n\nI'm systematically scanning those \"Other resolutions,\" specifically looking for mentions of \"Xã Lâm Trung Thủy\" within the context of \"Tỉnh Hà Tĩnh.\"  I initially skip `1657/NQ-UBTVQH15` because it's about Cao Bằng, not Hà Tĩnh.  However, `1665/NQ-UBTVQH15` looks promising.  I carefully read through the lines of this resolution, which details the administrative changes for Hà Tĩnh.\n\nBingo! Line 40 specifically mentions \"Xã Lâm Trung Thủy.\"  It states that \"Xã Lâm Trung Thủy\" was merged with other wards to form a new ward called \"Xã Đức Thịnh.\"  The resolution header itself confirms it's relevant to Hà Tĩnh. That's a solid lead.\n\nNow, I cross-reference this \"Xã Đức Thịnh\" against the \"New wards\" data.  I find the entry: `{\"ward_code\":\"18277\",\"ward_name\":\"Xã Đức Thịnh\",\"province_name\":\"Tỉnh Hà Tĩnh\"}`.  The province name matches the original, bolstering my confidence.  This is a clean, direct mapping.\n\nGiven the direct statement in the resolution, I'm comfortable assigning a \"high\" confidence level to this mapping. The output structure will be a JSON array, documenting the citation, the confidence, the province name, the ward code, and the new ward name – \"Xã Đức Thịnh.\"  This should provide a clear and reliable answer.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh",
+        "line": "40. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Thanh Bình Thịnh, Lâm Trung Thủy và An Dũng thành xã mới có tên gọi là xã Đức Thịnh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hà Tĩnh",
+      "ward_code": "18277",
+      "ward_name": "Xã Đức Thịnh"
+    }
+  ]
+}

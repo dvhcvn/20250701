@@ -1,0 +1,18 @@
+{
+  "address": "Xã Xuân Phúc, Huyện Như Thanh, Tỉnh Thanh Hóa",
+  "ellapsedInMs": 6524,
+  "estimatedCost": 0.0026965,
+  "thought": "**Identifying the New Administrative Unit for Xã Xuân Phúc**\n\nOkay, so I've got \"Xã Xuân Phúc, Huyện Như Thanh, Tỉnh Thanh Hóa.\"  The user wants the updated ward. My first instinct is to check my existing data.\n\n*   **Province Stability:**  First, I confirm Thanh Hóa isn't being merged or split based on Resolution 60-NQ/TW. Looks like it's staying put. Good.\n\n*   **Hunting for the Merge:**  Now, I'm going through the \"other resolutions\" specifically for \"Xã Xuân Phúc\" in \"Thanh Hóa.\"  Bingo!  Resolution 1686/NQ-UBTVQH15 pops up. Line 119 seals the deal. It clearly states \"Xã Xuân Phúc\" *plus* some other units are being merged to create the new \"Xã Yên Thọ\".  This looks like a direct match.\n\n*   **Validating the New Ward:** Next, I cross-reference this with the \"new wards\" data. Yep, there it is:  `{\"ward_code\":\"16264\",\"ward_name\":\"Xã Yên Thọ\",\"province_name\":\"Tỉnh Thanh Hóa\"}`.  The pieces fit perfectly.\n\n*   **Constructing the Output:**  Based on this, I'll build the JSON output. I'll make sure to include: the province name (unchanged), the new ward name (\"Xã Yên Thọ\"), its code (16264), and the citation from Resolution 1686 (line 119) for full transparency.  And since it's a direct match and a clear merge, I'm feeling pretty confident.\n\n*   **Double-Checking for Edge Cases:** Before I finalize, I'll quickly scan for any other resolutions or new ward possibilities, just to be thorough. But based on the data I have, there's only one logical and high-confidence result.  It's \"Xã Yên Thọ\".\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1686/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thanh Hóa",
+        "line": "119. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Xuân Phúc, xã Yên Lạc và phần còn lại của xã Yên Thọ (huyện Như Thanh) sau khi sắp xếp theo quy định tại khoản 118 Điều này thành xã mới có tên gọi là xã Yên Thọ."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thanh Hóa",
+      "ward_code": "16264",
+      "ward_name": "Xã Yên Thọ"
+    }
+  ]
+}

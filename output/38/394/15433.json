@@ -1,0 +1,18 @@
+{
+  "address": "Xã Yên Hùng, Huyện Yên Định, Tỉnh Thanh Hóa",
+  "ellapsedInMs": 7860,
+  "estimatedCost": 0.0034862,
+  "thought": "**Determining the New Administrative Unit for \"Xã Yên Hùng\"**\n\nOkay, here's what I've determined. The user provided the old address \"Xã Yên Hùng, Huyện Yên Định, Tỉnh Thanh Hóa.\" My task is to find the new equivalent administrative unit.  I've got resolutions and new wards data at my disposal.\n\nFirst, I parsed the old address to identify the province (\"Tỉnh Thanh Hóa\") and the ward (\"Xã Yên Hùng\"). Then, I started sifting through the relevant resolutions, specifically those pertaining to \"Tỉnh Thanh Hóa\" and, of course, \"Xã Yên Hùng.\"\n\nI quickly confirmed that the province name itself remains unchanged, as indicated in the resolutions concerning administrative units not undergoing merger.  However, the crucial piece of information lies within resolution \"1686/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thanh Hóa\".\n\nDiving into that resolution, I found the key line: \"50. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Yên Hùng, Yên Thịnh và Yên Ninh thành xã mới có tên gọi là **xã Yên Ninh**.\"  Boom! This explicitly states that \"Xã Yên Hùng\" is being merged into the new ward, \"**xã Yên Ninh**.\"\n\nThat's the core.  To be thorough, I verified this result against the \"New wards\" data.  I was looking for \"Xã Yên Ninh\" in \"Tỉnh Thanh Hóa,\" and the data matched perfectly: {\"ward_code\":\"15442\",\"ward_name\":\"Xã Yên Ninh\",\"province_name\":\"Tỉnh Thanh Hóa\"}.\n\nTherefore, the final result is the new ward is \"Xã Yên Ninh,\" with the code \"15442,\" located in \"Tỉnh Thanh Hóa.\" The confidence level for this conclusion is *high* because the resolution explicitly and unambiguously details the merger of \"Xã Yên Hùng.\"\n\nHere's how I would structure the output:\n\n```json\n[\n  {\n    \"citation\": {\n      \"header\": \"1686/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thanh Hóa\",\n      \"line\": \"50\"\n    },\n    \"confidence\": \"high\",\n    \"province_name\": \"Tỉnh Thanh Hóa\",\n    \"ward_code\": \"15442\",\n    \"ward_name\": \"Xã Yên Ninh\"\n  }\n]\n```\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1686/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thanh Hóa",
+        "line": "50. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Yên Hùng, Yên Thịnh và Yên Ninh thành xã mới có tên gọi là xã Yên Ninh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thanh Hóa",
+      "ward_code": "15442",
+      "ward_name": "Xã Yên Ninh"
+    }
+  ]
+}

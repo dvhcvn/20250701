@@ -1,0 +1,18 @@
+{
+  "address": "Xã Nậm Khắt, Huyện Mù Căng Chải, Tỉnh Yên Bái",
+  "ellapsedInMs": 5826,
+  "estimatedCost": 0.0023653,
+  "thought": "**Address Mapping Analysis: Yên Bái to Lào Cai**\n\nOkay, so I've got an old Vietnamese address to map to its new administrative unit. Let's break this down. First, I see the old address is \"Xã Nậm Khắt, Huyện Mù Căng Chải, Tỉnh Yên Bái.\"  My initial task is to identify the old province (\"Tỉnh Yên Bái\") and ward (\"Xã Nậm Khắt\").\n\nNext, I need to consult the resolutions. I know there was a province merger, so I'll check province resolutions like 60-NQ/TW for \"Tỉnh Yên Bái.\"  Bingo! It confirms that \"Tỉnh Yên Bái\" merged with \"Lào Cai\" to become \"Tỉnh Lào Cai.\"\n\nNow for the tricky part: the ward.  I'm looking for \"Xã Nậm Khắt\" within the resolutions, specifically lines. Resolution 1673/NQ-UBTVQH15, line 3, clearly states that \"Xã Nậm Khắt\" is merged with other wards to form \"Xã Púng Luông.\"  Excellent, a direct mapping.\n\nTime to look at the new ward data to solidify the new address.  I'll find \"Xã Púng Luông\" in my \"New wards\" data. Yep, there it is: `{\"ward_code\":\"04492\",\"ward_name\":\"Xã Púng Luông\",\"province_name\":\"Tỉnh Lào Cai\"}`.  The province name matches the merged province from the first resolution, confirming everything.\n\nFinally, I'll construct my JSON output. The `citation` will reference Resolution 1673/NQ-UBTVQH15 and the relevant line. The `confidence` will be \"high\" because this mapping is very direct and clear. The `province_name` will be \"Tỉnh Lào Cai\", the `ward_code` is \"04492\", and the `ward_name` is \"Xã Púng Luông.\" This looks good to go. It's a clean, efficient mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai",
+        "line": "3. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Nậm Khắt, La Pán Tẩn, Dế Xu Phình và Púng Luông thành xã mới có tên gọi là xã Púng Luông."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "04492",
+      "ward_name": "Xã Púng Luông"
+    }
+  ]
+}

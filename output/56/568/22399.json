@@ -1,0 +1,18 @@
+{
+  "address": "Xã Vĩnh Hiệp, Thành phố Nha Trang, Tỉnh Khánh Hòa",
+  "ellapsedInMs": 7150,
+  "estimatedCost": 0.0033714,
+  "thought": "**Analysis of Administrative Unit Restructuring**\n\nOkay, here's how I'm thinking through this.  The user's given me the address \"Xã Vĩnh Hiệp, Thành phố Nha Trang, Tỉnh Khánh Hòa\".  My primary task is to find the new ward for \"Xã Vĩnh Hiệp\".\n\nFirst, I identified the old ward (\"Xã Vĩnh Hiệp\") and the old province (\"Tỉnh Khánh Hòa\").  Nha Trang, being a city, is a district-level entity and irrelevant in this context.  I then checked for province mergers, but Khánh Hòa remains Khánh Hòa, so that simplifies things.\n\nNext, I need to look for \"Xã Vĩnh Hiệp\" within \"Tỉnh Khánh Hòa\" in the resolution data. I went through the relevant resolutions and found a direct hit in 1667/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Khánh Hòa.  Specifically, line 51 stated that \"Xã Vĩnh Hiệp\" was merged into the new \"Phường Tây Nha Trang\". Bingo!\n\nWith that match, I moved on to confirm the details.  Based on my findings, \"Phường Tây Nha Trang\" is the new ward and is still within \"Tỉnh Khánh Hòa.\"  I consulted the \"New Wards\" data and found a perfect match: a record with a `ward_code` of \"22390\" and `ward_name` of \"Phường Tây Nha Trang\" in \"Tỉnh Khánh Hòa.\"\n\nTherefore, I'm confident in constructing the output: the citation from resolution 1667/NQ-UBTVQH15, the new ward name \"Phường Tây Nha Trang,\" ward code 22390, and a confidence level of \"high\" because the matches were direct and clear.  The province remains \"Tỉnh Khánh Hòa.\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1667/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Khánh Hòa",
+        "line": "51. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Ngọc Hiệp, phường Phương Sài và các xã Vĩnh Ngọc, Vĩnh Thạnh, Vĩnh Hiệp, Vĩnh Trung thành phường mới có tên gọi là phường Tây Nha Trang."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Khánh Hòa",
+      "ward_code": "22390",
+      "ward_name": "Phường Tây Nha Trang"
+    }
+  ]
+}

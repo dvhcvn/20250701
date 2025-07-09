@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Tân Khai, Huyện Hớn Quản, Tỉnh Bình Phước",
+  "ellapsedInMs": 7396,
+  "estimatedCost": 0.0026394,
+  "thought": "**Determining the New Ward for the Given Address**\n\nOkay, let's break this down systematically. I need to figure out the new administrative unit (ward) for the old address \"Thị trấn Tân Khai, Huyện Hớn Quản, Tỉnh Bình Phước.\"\n\nFirst things first, the old province is \"Tỉnh Bình Phước.\" But, I remember that there were some province mergers. Let me quickly check resolution 60-NQ/TW. Ah, there it is: \"Hợp nhất tỉnh Đồng Nai và tỉnh Bình Phước, lấy tên là tỉnh Đồng Nai\". So, \"Tỉnh Bình Phước\" is now \"Tỉnh Đồng Nai.\" That's crucial for looking up the new ward later.\n\nNow, the old ward is \"Thị trấn Tân Khai.\" Time to consult the other relevant resolutions. I'll focus on the \"Other resolutions\" section. Ah, perfect! Resolution 1662/NQ-UBTVQH15, the one about restructuring administrative units in Đồng Nai, seems promising.\n\nBingo! Line 41 states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Tân Khai, xã Tân Hiệp (huyện Hớn Quản) và xã Đồng Nơ thành xã mới có tên gọi là **xã Tân Khai**.\" That's a direct connection! \"Thị trấn Tân Khai\" is now part of the new \"xã Tân Khai.\"\n\nNow, let's verify this in the \"New wards\" list. Searching for \"xã Tân Khai\"... and there it is: `{\"ward_code\":\"25357\",\"ward_name\":\"Xã Tân Khai\",\"province_name\":\"Tỉnh Đồng Nai\"}`. The province name aligns perfectly with the merged province, \"Tỉnh Đồng Nai.\"\n\nTherefore, the output should be:\n\n*   `province_name`: \"Tỉnh Đồng Nai\" (from the province merger)\n*   `ward_name`: \"Xã Tân Khai\" (from resolution 1662/NQ-UBTVQH15)\n*   `ward_code`: \"25357\" (from the \"New wards\" list)\n*   `confidence`: \"high\" (because this is a clear and direct mapping)\n*   `citation`:\n    *   `header`: \"1662/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Nai\"\n    *   `line`: \"41. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Tân Khai, xã Tân Hiệp (huyện Hớn Quản) và xã Đồng Nơ thành xã mới có tên gọi là **xã Tân Khai**.\"\n\nI don't see any other ambiguities or possibilities here. The resolution is quite explicit, and the province merger is clear. This looks like a solid answer with high confidence.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1662/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Nai",
+        "line": "41. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Tân Khai, xã Tân Hiệp (huyện Hớn Quản) và xã Đồng Nơ thành xã mới có tên gọi là xã Tân Khai."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đồng Nai",
+      "ward_code": "25357",
+      "ward_name": "Xã Tân Khai"
+    }
+  ]
+}

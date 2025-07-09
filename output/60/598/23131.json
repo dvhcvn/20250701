@@ -1,0 +1,28 @@
+{
+  "address": "Xã Hàm Mỹ, Huyện Hàm Thuận Nam, Tỉnh Bình Thuận",
+  "ellapsedInMs": 7576,
+  "estimatedCost": 0.0027095999999999995,
+  "thought": "**My Mapping Process for the Address Transformation**\n\nOkay, so I'm tasked with translating an old address into a new one, given the administrative changes.  Let's break this down systematically. The initial task involves mapping \"Tỉnh Bình Thuận\" and \"Xã Hàm Mỹ\" to their updated counterparts.\n\nFirst, the province.  I immediately recognize \"Tỉnh Bình Thuận\". I need to check for any mergers.  I consult the document \"60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất\".  Bingo!  Resolution 14 states, and I quote, \"Hợp nhất tỉnh Lâm Đồng, tỉnh Đắk Nông và tỉnh Bình Thuận; lấy tên là tỉnh Lâm Đồng.\"  Therefore, \"Tỉnh Bình Thuận\" is now part of \"Tỉnh Lâm Đồng.\"\n\nNext, the ward: \"Xã Hàm Mỹ\". I need to find its current equivalent.  I check \"Other resolutions\" for mentions of \"Xã Hàm Mỹ\". \"1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng\" holds the key.  Resolution 58 clearly states, \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Tiến Lợi và xã Hàm Mỹ thành xã mới có tên gọi là **xã Tuyên Quang**.\"  Excellent!\n\nNow, I need to confirm and enrich this. I have data for \"New wards\".  I search there, and I find `{\"ward_code\":\"22963\",\"ward_name\":\"Xã Tuyên Quang\",\"province_name\":\"Tỉnh Lâm Đồng\"}`.  Perfect match!  This aligns with both the province merger and the ward resolution.\n\nGiven these findings, I will construct the JSON output.  The  `province_name` will be \"Tỉnh Lâm Đồng\" (from the province merger).  The `ward_name` will be \"Xã Tuyên Quang\" (from the ward resolution).  The corresponding `ward_code` is \"22963\" (from the \"New wards\" data).\n\nFor citations, I must provide clear attribution.  The province change relies on \"60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất\", specifically \"14. Hợp nhất tỉnh Lâm Đồng, tỉnh Đắk Nông và tỉnh Bình Thuận; lấy tên là tỉnh Lâm Đồng.\"  The ward resolution is \"1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng\", with \"58. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Tiến Lợi và xã Hàm Mỹ thành xã mới có tên gọi là xã Tuyên Quang.\" as the relevant line.\n\nThe confidence level is \"high\" here. The mapping is directly derivable from explicit statements in the resolutions.\n\nI've also verified the context of \"Huyện Hàm Thuận Nam\" to ensure that the resolutions used were the relevant ones. It is important to cross-reference to confirm the context.\n\nFinally, the output will be a JSON array containing a single object, representing this clear mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "14. Hợp nhất tỉnh Lâm Đồng, tỉnh Đắk Nông và tỉnh Bình Thuận; lấy tên là tỉnh Lâm Đồng"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "22963",
+      "ward_name": "Xã Tuyên Quang"
+    },
+    {
+      "citation": {
+        "header": "1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng",
+        "line": "58. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Tiến Lợi và xã Hàm Mỹ thành xã mới có tên gọi là xã Tuyên Quang."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "22963",
+      "ward_name": "Xã Tuyên Quang"
+    }
+  ]
+}

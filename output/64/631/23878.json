@@ -1,0 +1,18 @@
+{
+  "address": "Xã Ia Kriêng, Huyện Đức Cơ, Tỉnh Gia Lai",
+  "ellapsedInMs": 7013,
+  "estimatedCost": 0.0022183,
+  "thought": "**Analyzing and Mapping the Address Data**\n\nOkay, so I'm presented with an address and need to map it to the new administrative structure. First, I identify the initial components: the ward (Xã Ia Kriêng), the district (Huyện Đức Cơ), and the province (Tỉnh Gia Lai). Knowing the prompt is about restructuring, I immediately dive into the resolutions.\n\nI start with the 60-NQ/TW directives to understand the broader provincial context.  Gia Lai is *not* on the \"not affected\" list, which means it *has* undergone changes. I quickly spot the key information: Gia Lai merges with Bình Định, but keeps its original name. That's crucial for my `province_name`.\n\nNext, I delve into resolution 1664/NQ-UBTVQH15, the specific one concerning Gia Lai's local administrative changes.  There it is, line 99: it directly mentions \"Xã Ia Kriêng\" and states that it, along with \"thị trấn Chư Ty\", is absorbed into a new ward called \"Xã Đức Cơ\".  Bingo!\n\nNow, the new ward data confirms my findings: \"Xã Đức Cơ\" has the code \"23857\".  The province name in the new data is also \"Tỉnh Gia Lai\", matching what I understood from the province resolution.\n\nTherefore, with a high degree of confidence, I can construct the JSON: I'll cite 1664/NQ-UBTVQH15 as the source. My output will be: the province as \"Tỉnh Gia Lai\", the ward code as \"23857\", and the ward name as \"Xã Đức Cơ\".  This mapping is straightforward, supported by both the province-level directive and the specific ward restructuring resolution, along with the new ward data.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai",
+        "line": "99. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Chư Ty và xã Ia Kriêng thành xã mới có tên gọi là xã Đức Cơ."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "23857",
+      "ward_name": "Xã Đức Cơ"
+    }
+  ]
+}

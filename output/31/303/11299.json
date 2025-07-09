@@ -1,0 +1,18 @@
+{
+  "address": "Phường Hùng Vương, Quận Hồng Bàng, Thành phố Hải Phòng",
+  "ellapsedInMs": 7812,
+  "estimatedCost": 0.0032071,
+  "thought": "**Deconstructing the Address and Mapping to New Units**\n\nOkay, so I've got this old Vietnamese address to decipher and map to the new administrative structure. Let's break this down systematically. First, I need to extract the key components from the address: the ward, district, and province. Looks like we have \"Phường Hùng Vương\" as the old ward, \"Quận Hồng Bàng\" as the old district (though the instructions specify *eliminating* districts, so this is just the historical context), and \"Thành phố Hải Phòng\" as the province.\n\nNow, the crucial part - the resolutions.  I'll start with Resolution 60-NQ/TW, the foundational document for these changes.  I need to check if Hải Phòng is listed as a province slated for a merger or remaining unchanged. Hmm, it's not listed in the \"no merger\" list, which piqued my curiosity. Then, in the \"new provinces after merger\" list, I found \"Thành phố Hải Phòng\" listed. It looks like the province itself remains \"Thành phố Hải Phòng,\" but it has merged with Tỉnh Hải Dương. This changes things, but the name is consistent.\n\nNext, I have to drill down further to find how this impacts the ward level. Let's look for specific resolutions related to Hải Phòng and \"Phường Hùng Vương.\" Bingo! Resolution 1669/NQ-UBTVQH15 has a direct hit: it *explicitly* states that \"Phường Hùng Vương\" is merged into the new ward, \"Phường Hồng Bàng.\" That's a strong indicator.\n\nI also reviewed other resolutions to confirm my findings. Resolution 1676/NQ-UBTVQH15 does mention a \"Phường Hùng Vương,\" but it's clearly located in Phú Thọ and Vĩnh Phúc provinces. This is not the ward I'm looking for, since the initial address is in Hải Phòng. The focus is on the Hải Phòng resolution.\n\nTherefore, \"Phường Hồng Bàng\" must be the new ward. Checking my \"New wards\" data confirms this: `{\"ward_code\":\"11311\",\"ward_name\":\"Phường Hồng Bàng\",\"province_name\":\"Thành phố Hải Phòng\"}`. This is the new mapping I need.\n\nThere is one further nuance. The same resolution also mentions that a portion of \"Phường Gia Viên\" was also used to create \"Phường Hồng Bàng\". Since the prompt specifies that I provide the new units that \"may be\" the new administrative unit, I have to take this into account. Although all of \"Phường Hùng Vương\" maps to \"Phường Hồng Bàng\", \"Phường Hồng Bàng\" is the new unit I must return.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "8. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Hoàng Văn Thụ, Minh Khai, Phan Bội Châu, Thượng Lý, Sở Dầu, Hùng Vương và một phần diện tích tự nhiên của phường Gia Viên thành phường mới có tên gọi là phường Hồng Bàng."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "11311",
+      "ward_name": "Phường Hồng Bàng"
+    }
+  ]
+}

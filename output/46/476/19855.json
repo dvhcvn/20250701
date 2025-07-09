@@ -1,0 +1,18 @@
+{
+  "address": "Xã Phong Mỹ, Thị xã Phong Điền, Thành phố Huế",
+  "ellapsedInMs": 6084,
+  "estimatedCost": 0.0021145,
+  "thought": "**Determining the New Administrative Unit for \"Xã Phong Mỹ, Thị xã Phong Điền, Thành phố Huế\"**\n\nOkay, so I've got this address: \"Xã Phong Mỹ, Thị xã Phong Điền, Thành phố Huế.\" My goal is to figure out the new administrative unit.\n\nFirst, I quickly pinpoint that we're dealing with \"Thành phố Huế\" (Hue City). I need to check the province resolutions – specifically, resolution 60-NQ/TW.  Ah, good, Huế is listed under \"Các đơn vị hành chính cấp tỉnh không thực hiện sáp nhập\" (Administrative units at provincial level not implementing mergers). So, the province name, \"Thành phố Huế,\" remains unchanged.\n\nNow, let's focus on \"Xã Phong Mỹ.\" I'm going to search through other relevant resolutions, keeping \"Thành phố Huế\" as the context. And here it is! Resolution 1675/NQ-UBTVQH15, \"Sắp xếp các đơn vị hành chính cấp xã của thành phố Huế\" (Arrangement of commune-level administrative units of Huế city), looks promising. I scan the text and boom! Line 1 states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Phong Thu, xã Phong Mỹ và xã Phong Xuân thành phường mới có tên gọi là **phường Phong Điền**.\"  It's clear as day: \"Xã Phong Mỹ\" is being merged into the new \"phường Phong Điền.\"\n\nNext, I'll quickly double-check the \"New wards\" data for \"phường Phong Điền\" within \"Thành phố Huế.\" I spot the entry: `{\"ward_code\":\"19819\",\"ward_name\":\"Phường Phong Điền\",\"province_name\":\"Thành phố Huế\"}`.  Perfect match!\n\nFinally, I'll construct the output:\n\n*   The `citation` will include the resolution header and that critical line: \"Resolution 1675/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Huế\" – Line 1: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Phong Thu, xã Phong Mỹ và xã Phong Xuân thành phường mới có tên gọi là **phường Phong Điền**.\"\n*   `confidence` is going to be high.  We have a direct match and an explicit merger instruction.\n*   `province_name`: \"Thành phố Huế\" (unchanged).\n*   `ward_code`: \"19819\".\n*   `ward_name`: \"Phường Phong Điền\".\n\nDone! I have identified the new administrative unit for \"Xã Phong Mỹ\" as \"Phường Phong Điền.\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1675/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Huế",
+        "line": "1. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Phong Thu, xã Phong Mỹ và xã Phong Xuân thành phường mới có tên gọi là phường Phong Điền."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Huế",
+      "ward_code": "19819",
+      "ward_name": "Phường Phong Điền"
+    }
+  ]
+}

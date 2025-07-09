@@ -1,0 +1,18 @@
+{
+  "address": "Xã Đạ Sar, Huyện Lạc Dương, Tỉnh Lâm Đồng",
+  "ellapsedInMs": 8175,
+  "estimatedCost": 0.0030968000000000002,
+  "thought": "**Address Mapping - Đạ Sar to Lạc Dương**\n\nOkay, here's how I'm thinking about this address mapping problem. First, I see the old address is \"Xã Đạ Sar\" in \"Tỉnh Lâm Đồng\". My goal is to find the equivalent new administrative unit.\n\nThe plan is straightforward: I'll start by checking the province resolutions (60-NQ/TW) to see if \"Tỉnh Lâm Đồng\" has been affected by any mergers or name changes.  It's not listed in the units *not* being merged, but the resolution states that \"Tỉnh Lâm Đồng\" is the *new* name after a merger with Đắk Nông and Bình Thuận. So the province name remains \"Tỉnh Lâm Đồng\". This confirms the province information.\n\nNext, I need to look at specific resolutions regarding ward-level changes, particularly 1671/NQ-UBTVQH15. I'll search its lines for any mention of \"Xã Đạ Sar\". Bingo! Line 1 directly addresses it: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đạ Sar, Đạ Nhim và Đạ Chais thành xã mới có tên gọi là **xã Lạc Dương**.\"  This is a *direct* mapping from \"Xã Đạ Sar\" to \"Xã Lạc Dương\". Line 103 relates to a different area, however, so I discount it.\n\nNow, I'll cross-reference this with the \"New Wards\" list to confirm. The list has the entry `{\"ward_code\":\"24848\",\"ward_name\":\"Xã Lạc Dương\",\"province_name\":\"Tỉnh Lâm Đồng\"}`. Excellent! This *exactly* matches the ward name and even confirms the province is still \"Tỉnh Lâm Đồng\". This is a perfect match and very high confidence.\n\nBased on this analysis, I'll construct the JSON output:\n\n*   `citation`: The relevant resolution line where \"Xã Đạ Sar\" is mentioned.\n*   `confidence`: High, because of the direct mention and mapping.\n*   `province_name`: \"Tỉnh Lâm Đồng\"\n*   `ward_code`: \"24848\"\n*   `ward_name`: \"Xã Lạc Dương\"\n\nI'm confident this is the correct mapping.  The province and the ward names are all consistent with the data I've been given. Let me just quickly re-check the process: \"Xã Đạ Sar, Huyện Lạc Dương, Tỉnh Lâm Đồng\" is the original address, and I believe the correct mapping is now confirmed to be \"Xã Lạc Dương\".\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng",
+        "line": "1. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đạ Sar, Đạ Nhim và Đạ Chais thành xã mới có tên gọi là xã Lạc Dương."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "24848",
+      "ward_name": "Xã Lạc Dương"
+    }
+  ]
+}

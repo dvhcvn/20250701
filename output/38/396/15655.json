@@ -1,0 +1,18 @@
+{
+  "address": "Xã Ngọc Phụng, Huyện Thường Xuân, Tỉnh Thanh Hóa",
+  "ellapsedInMs": 5948,
+  "estimatedCost": 0.0021638,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm tasked with taking an old Vietnamese address and figuring out its corresponding new administrative unit. Let's break this down. First, I extracted the key elements from the provided address: \"Xã Ngọc Phụng\" (the ward), \"Huyện Thường Xuân\" (the district), and \"Tỉnh Thanh Hóa\" (the province).\n\nNow, the crucial part is understanding the impact of administrative changes, which is why I immediately consulted the province resolutions.  I checked for Thanh Hóa, and thankfully, Resolution 60-NQ/TW states that it's not subject to mergers, so I can confirm \"Tỉnh Thanh Hóa\" remains the same. That's good.\n\nNext, I zeroed in on the specifics for \"Xã Ngọc Phụng.\" Looking through the resolutions, I found a direct hit in \"1686/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thanh Hóa\". Line 121 in that resolution is key; it *explicitly* states that \"Xã Ngọc Phụng\" is being merged into a new \"Xã Thường Xuân\". Bingo!\n\nTo double-check and solidify the mapping, I cross-referenced this new ward (\"Xã Thường Xuân\") with the \"New wards\" list. And there it is! I found a match:  `{\"ward_code\":\"15646\",\"ward_name\":\"Xã Thường Xuân\",\"province_name\":\"Tỉnh Thanh Hóa\"}`.  The province name and new ward name align perfectly.\n\nTherefore, the output is straightforward. My confidence level here is \"high\" because the resolution provides a direct, unambiguous mapping. I can construct the output JSON, confirming that the province is unchanged (\"Tỉnh Thanh Hóa\"), the new ward is \"Xã Thường Xuân\" with code \"15646\", and the primary reference is the specific line from resolution 1686/NQ-UBTVQH15. I've got a definitive answer.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1686/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thanh Hóa",
+        "line": "121. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Thường Xuân và các xã Thọ Thanh, Ngọc Phụng, Xuân Dương thành xã mới có tên gọi là xã Thường Xuân."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thanh Hóa",
+      "ward_code": "15646",
+      "ward_name": "Xã Thường Xuân"
+    }
+  ]
+}

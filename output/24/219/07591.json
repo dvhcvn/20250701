@@ -1,0 +1,28 @@
+{
+  "address": "Xã Đồng Cốc, Huyện Lục Ngạn, Tỉnh Bắc Giang",
+  "ellapsedInMs": 6063,
+  "estimatedCost": 0.002153,
+  "thought": "**My Analysis of the Address Mapping Request**\n\nOkay, so I've been presented with an address: \"Xã Đồng Cốc, Huyện Lục Ngạn, Tỉnh Bắc Giang,\" and the task is to map it to the current administrative structure. My expertise allows me to dissect this challenge efficiently.\n\nFirst things first, I need to pinpoint the old province and ward: \"Xã Đồng Cốc\" and \"Tỉnh Bắc Giang,\" respectively. With these key pieces identified, the real work begins.\n\nNext, I'll dive into the historical resolutions. The first checkpoint is province mergers. Resolution 60-NQ/TW states that \"Tỉnh Bắc Giang\" was merged with \"Tỉnh Bắc Ninh.\" This is a straightforward change, now it is \"Tỉnh Bắc Ninh\".\n\nThe more interesting part involves the ward level. I'll meticulously scan the \"Other resolutions\" section, focusing on \"Xã Đồng Cốc.\" And there it is! Resolution 1658/NQ-UBTVQH15 details a reorganization where \"Xã Đồng Cốc\" is merged into a new ward called \"Xã Lục Ngạn.\" Bingo!\n\nWith the new ward name confirmed, the next step is to locate the relevant entry in the \"New wards\" data. I'm looking for \"Xã Lục Ngạn\" within \"Tỉnh Bắc Ninh.\" I found a perfect match: `{\"ward_code\":\"07582\",\"ward_name\":\"Xã Lục Ngạn\",\"province_name\":\"Tỉnh Bắc Ninh\"}`.\n\nGiven that \"Xã Đồng Cốc\" is explicitly mentioned in the resolution that leads to \"Xã Lục Ngạn,\" and the province merger is a direct one, I'm confident in this mapping.\n\nNow, with all the necessary information gathered and validated, I can construct the JSON output, ready to deliver a precise and informed response.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Bắc Ninh và tỉnh Bắc Giang, lấy tên là tỉnh Bắc Ninh"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "07582",
+      "ward_name": "Xã Lục Ngạn"
+    },
+    {
+      "citation": {
+        "header": "1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh",
+        "line": "30. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Phì Điền và các xã Giáp Sơn, Đồng Cốc, Tân Hoa, Tân Quang thành xã mới có tên gọi là xã Lục Ngạn."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "07582",
+      "ward_name": "Xã Lục Ngạn"
+    }
+  ]
+}

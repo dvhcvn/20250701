@@ -1,0 +1,28 @@
+{
+  "address": "Xã Đắk Sao, Huyện Tu Mơ Rông, Tỉnh Kon Tum",
+  "ellapsedInMs": 6926,
+  "estimatedCost": 0.0026417,
+  "thought": "**My Analysis of Address Mapping**\n\nOkay, here's what I've got. The user wants to map an old address, \"Xã Đắk Sao, Huyện Tu Mơ Rông, Tỉnh Kon Tum,\" to a new administrative unit. My initial step is to break down this address: \"Xã Đắk Sao\" is the old ward, and \"Tỉnh Kon Tum\" is the old province.\n\nNow, I need to account for any province mergers. My sources indicate that \"Tỉnh Kon Tum\" merged with another province, becoming \"Tỉnh Quảng Ngãi\" based on Resolution 60-NQ/TW. This is a critical piece of information.\n\nNext, I look for ward-level changes. Resolution 1677/NQ-UBTVQH15, concerning Quảng Ngãi province specifically, is key here. It explicitly mentions \"Xã Đắk Sao\" in the context of a merger with \"Xã Đăk Na.\"  The resolution states that the old wards were merged to form a *new* \"Xã Đăk Sao\". The name is essentially preserved, but the ward's composition changed.\n\nNow, I cross-reference this information with the \"New wards\" data.  I'm looking for a match with \"Tỉnh Quảng Ngãi\" (the new province) and \"Xã Đăk Sao\" (the newly formed ward, post-merger).  And bingo!  The entry `{\"ward_code\":\"23416\",\"ward_name\":\"Xã Đăk Sao\",\"province_name\":\"Tỉnh Quảng Ngãi\"}` is a perfect match.\n\nMy confidence in this mapping is very high. The province merger is clearly documented, and the ward-level change is explicitly described in the resolution. The new ward data aligns perfectly with the resolution's findings.  Therefore, I'm confident I can construct the appropriate JSON output based on this information and follow the specified schema. I can confidently return this mapped data back to the user.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "11. Hợp nhất tỉnh Kon Tum và tỉnh Quảng Ngãi, lấy tên là tỉnh Quảng Ngãi"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ngãi",
+      "ward_code": "23416",
+      "ward_name": "Xã Đăk Sao"
+    },
+    {
+      "citation": {
+        "header": "1677/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ngãi",
+        "line": "60. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Đăk Na và xã Đăk Sao thành xã mới có tên gọi là xã Đăk Sao."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ngãi",
+      "ward_code": "23416",
+      "ward_name": "Xã Đăk Sao"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Đại Thành, Thành phố Ngã Bảy, Tỉnh Hậu Giang",
+  "ellapsedInMs": 7448,
+  "estimatedCost": 0.0035804,
+  "thought": "**Identifying the New Administrative Unit**\n\nOkay, let's break this down. The user's asking about the new administrative unit for \"Xã Đại Thành, Thành phố Ngã Bảy, Tỉnh Hậu Giang.\" My first step is always to analyze the old address: \"Xã Đại Thành\" (the ward) in \"Tỉnh Hậu Giang\" (the province).\n\nThe challenge here is the province has changed. I remember seeing a resolution (60-NQ/TW) that merged \"Tỉnh Hậu Giang\" into \"Thành phố Cần Thơ.\" So, the relevant province is now \"Thành phố Cần Thơ.\"\n\nNext, I need to find \"Xã Đại Thành\" in the relevant resolutions, now considering the new province. I'm focusing on \"Other resolutions\" and the \"New wards\" list.\n\nBingo! I found resolution \"1668/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Cần Thơ\" which directly addresses this.  Line 21 specifically states that \"xã Đại Thành\" is being merged to form a *new* \"phường Đại Thành\" within \"thành phố Cần Thơ.\"  That's a direct match!\n\nDouble-checking, the \"New wards\" list confirms it.  I found an entry: `{\"ward_code\":\"31411\",\"ward_name\":\"Phường Đại Thành\",\"province_name\":\"Thành phố Cần Thơ\"}`. The province name and ward name matches the resolution.\n\nTherefore, \"Xã Đại Thành\" from the old \"Tỉnh Hậu Giang\" is now \"Phường Đại Thành\" in \"Thành phố Cần Thơ.\" I'm very confident in this finding because of the direct reference in the resolution and its match with the ward data.\n\nHere's the JSON output, formatted according to the provided schema:\n\n```json\n[\n  {\n    \"citation\": {\n      \"header\": \"1668/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Cần Thơ\",\n      \"line\": \"21. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Hiệp Lợi, xã Tân Thành và xã Đại Thành thành phường mới có tên gọi là **phường Đại Thành**.\"\n    },\n    \"confidence\": \"high\",\n    \"province_name\": \"Thành phố Cần Thơ\",\n    \"ward_code\": \"31411\",\n    \"ward_name\": \"Phường Đại Thành\"\n  }\n]\n```\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1668/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Cần Thơ",
+        "line": "21. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Hiệp Lợi, xã Tân Thành và xã Đại Thành thành phường mới có tên gọi là phường Đại Thành."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Cần Thơ",
+      "ward_code": "31411",
+      "ward_name": "Phường Đại Thành"
+    }
+  ]
+}

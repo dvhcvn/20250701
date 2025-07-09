@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Cát Khánh, Huyện Phù Cát, Tỉnh Bình Định",
+  "ellapsedInMs": 7006,
+  "estimatedCost": 0.0028832000000000003,
+  "thought": "**Finding the New Administrative Unit**\n\nOkay, here's how I'm approaching this. The user wants to find the new administrative unit for the old address \"Thị trấn Cát Khánh, Huyện Phù Cát, Tỉnh Bình Định\". My first step is to identify the old province, which is \"Tỉnh Bình Định\". Now, I'll consult the relevant provincial resolutions, specifically 60-NQ/TW. Ah, there it is! Resolution 60-NQ/TW states: \"Hợp nhất tỉnh Gia Lai và tỉnh Bình Định, lấy tên là tỉnh Gia Lai\". So, the new province is clearly \"Tỉnh Gia Lai\". High confidence on that one.\n\nNext, the old ward, \"Thị trấn Cát Khánh\". I need to cross-reference this with the relevant resolutions to see where it landed. I'm looking at \"1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai\" specifically. Ah, line 6 is the key! It reads: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Cát Khánh, xã Cát Minh và xã Cát Tài thành xã mới có tên gọi là **xã Đề Gi**.\" Perfect! The resolution explicitly states that \"Thị trấn Cát Khánh\" is now part of \"Xã Đề Gi\".\n\nNow, I need to confirm that \"Xã Đề Gi\" exists. I'll check my list of new wards. Yep, there it is: `{\"ward_code\":\"21859\",\"ward_name\":\"Xã Đề Gi\",\"province_name\":\"Tỉnh Gia Lai\"}`.\n\nPutting it all together, I have a clear path: the province is now \"Tỉnh Gia Lai\", and the ward is \"Xã Đề Gi\". And the resolution provides explicit confirmation. My confidence is high on this one. I'll structure the output as follows:\n\n*   `province_name`: \"Tỉnh Gia Lai\" (from the province merger).\n*   `ward_name`: \"Xã Đề Gi\" (from Resolution 1664/NQ-UBTVQH15).\n*   `ward_code`: \"21859\" (from the new ward list).\n*   `citation`: The relevant resolution header and line.\n*   `confidence`: \"high\" (because the mapping is explicit and well-defined).\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai",
+        "line": "6. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Cát Khánh, xã Cát Minh và xã Cát Tài thành xã mới có tên gọi là xã Đề Gi."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "21859",
+      "ward_name": "Xã Đề Gi"
+    }
+  ]
+}

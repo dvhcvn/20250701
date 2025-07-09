@@ -1,0 +1,28 @@
+{
+  "address": "Xã Phong Hóa, Huyện Tuyên Hóa, Tỉnh Quảng Bình",
+  "ellapsedInMs": 8018,
+  "estimatedCost": 0.0032205999999999997,
+  "thought": "**Determining the New Administrative Unit for \"Xã Phong Hóa\"**\n\nOkay, let's break this down systematically. The user has provided an old address: \"Xã Phong Hóa, Huyện Tuyên Hóa, Tỉnh Quảng Bình\" and needs the new administrative unit(s).\n\nFirst, the province has changed. Resolution 60-NQ/TW merged \"Tỉnh Quảng Bình\" with \"Tỉnh Quảng Trị\", so we're now dealing with \"Tỉnh Quảng Trị\".  That's straightforward.\n\nNow, for the ward level.  I need to check relevant resolutions, and Resolution 1680/NQ-UBTVQH15 catches my eye immediately. It explicitly addresses the restructuring of *wards* in \"Tỉnh Quảng Trị\".  Line 11 is the key: it details the merger of \"Phong Hóa\", \"Ngư Hóa\", and \"Mai Hóa\" into a new ward called \"xã Tuyên Bình\".  Perfect match! This resolution confirms the name change of \"Xã Phong Hóa\" to \"Xã Tuyên Bình\".\n\nThe other line (line 12) talks about combining other *wards* to form a *ward* with the same name as the district (Tuyên Hóa). I need to re-evaluate it given the prompt. The user mentioned \"eliminating all districts\". So that implies the old district \"Huyện Tuyên Hóa\" no longer exists as a district. The focus is definitely on the *ward* and since the request is to find new *wards*, I'll prioritise the direct match for \"Phong Hóa\" from line 11.\n\nWith that confirmed, I'll need the `ward_code` for \"Xã Tuyên Bình\". The \"New wards\" data shows the following: `{\"ward_code\":\"18991\",\"ward_name\":\"Xã Tuyên Bình\",\"province_name\":\"Tỉnh Quảng Trị\"}`.\n\nSo, the new ward for \"Xã Phong Hóa\" is \"Xã Tuyên Bình\", and I have the `ward_code` I need, 18991.  The other resolution regarding Phong Hoa in Dong Thap is irrelevant. This is all pretty clear-cut.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Quảng Bình và tỉnh Quảng Trị, lấy tên là tỉnh Quảng Trị"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Trị",
+      "ward_code": "18991",
+      "ward_name": "Xã Tuyên Bình"
+    },
+    {
+      "citation": {
+        "header": "1680/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Trị",
+        "line": "11. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Phong Hóa, Ngư Hóa và Mai Hóathành xã mới có tên gọi là xã Tuyên Bình."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Trị",
+      "ward_code": "18991",
+      "ward_name": "Xã Tuyên Bình"
+    }
+  ]
+}

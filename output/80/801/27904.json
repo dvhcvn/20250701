@@ -1,0 +1,28 @@
+{
+  "address": "Xã Mỹ Thạnh Bắc, Huyện Đức Huệ, Tỉnh Long An",
+  "ellapsedInMs": 8365,
+  "estimatedCost": 0.0030539999999999994,
+  "thought": "**My Mapping Process for the Old Address**\n\nOkay, so I'm presented with an old address: \"Xã Mỹ Thạnh Bắc, Huyện Đức Huệ, Tỉnh Long An.\" My goal is to determine the corresponding new administrative units based on the provided resolutions and the list of new wards.\n\nFirst, the province is straightforward. The resolution 60-NQ/TW clearly states that \"Tỉnh Long An\" has been merged with \"Tỉnh Tây Ninh.\" Therefore, my new province is definitely \"Tỉnh Tây Ninh.\"\n\nNext, I need to figure out what happened to \"Xã Mỹ Thạnh Bắc.\" I'm carefully reviewing the resolutions, and immediately my attention is drawn to 1682/NQ-UBTVQH15 concerning \"Tỉnh Tây Ninh.\" Bingo! It explicitly mentions \"Mỹ Thạnh Bắc\": \"24. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Mỹ Thạnh Bắc, Mỹ Quý Đông và Mỹ Quý Tây thành xã mới có tên gọi là **xã Mỹ Quý**.\" This confirms the merger of \"Xã Mỹ Thạnh Bắc\" into \"Xã Mỹ Quý.\"\n\nNow, I cross-reference this with the \"New wards\" list.  I search for \"Xã Mỹ Quý\" and, yes, there it is! I find the matching `ward_code`: \"27907\" and the `province_name`: \"Tỉnh Tây Ninh,\" which confirms my previous findings.\n\nFor the output, I'll construct a JSON object:\n*   `province_name`: \"Tỉnh Tây Ninh\" (from province merger).\n*   `ward_name`: \"Xã Mỹ Quý\" (from ward merger resolution).\n*   `ward_code`: \"27907\" (from the New Wards list).\n*   `confidence`: \"high\" (because I have a direct match and clear evidence).\n*   `citation`: The specific resolution (1682/NQ-UBTVQH15) that outlines this ward-level merger.\n\nBefore finalizing, I quickly double-check the other resolutions just to be absolutely certain. The other resolutions, 1663/NQ-UBTVQH15 and 1667/NQ-UBTVQH15, from Đồng Tháp and Khánh Hòa respectively, aren't relevant to my task.  I briefly note that 1682/NQ-UBTVQH15 (the crucial resolution) also mentions a district change, but since the task focused on ward-level changes, and the resolutions indicate districts are being eliminated, the district information is less important than the direct ward-to-ward mapping.\n\nMy analysis confidently concludes that the old \"Xã Mỹ Thạnh Bắc\" has been consolidated into the new \"Xã Mỹ Quý\" within \"Tỉnh Tây Ninh.\" My confidence in this mapping is very high because it is based on a direct and specific resolution.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "18. Hợp nhất tỉnh Tây Ninh và tỉnh Long An, lấy tên là tỉnh Tây Ninh"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tây Ninh",
+      "ward_code": "27907",
+      "ward_name": "Xã Mỹ Quý"
+    },
+    {
+      "citation": {
+        "header": "1682/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tây Ninh",
+        "line": "24. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Mỹ Thạnh Bắc, Mỹ Quý Đông và Mỹ Quý Tây thành xã mới có tên gọi là xã Mỹ Quý."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tây Ninh",
+      "ward_code": "27907",
+      "ward_name": "Xã Mỹ Quý"
+    }
+  ]
+}

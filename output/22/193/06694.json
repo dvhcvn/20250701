@@ -1,0 +1,18 @@
+{
+  "address": "Phường Bạch Đằng, Thành phố Hạ Long, Tỉnh Quảng Ninh",
+  "ellapsedInMs": 7980,
+  "estimatedCost": 0.0034053,
+  "thought": "**Analysis of Administrative Unit Change for \"Phường Bạch Đằng, Thành phố Hạ Long, Tỉnh Quảng Ninh\"**\n\nOkay, let's break this down. The user needs to find the new administrative unit for \"Phường Bạch Đằng\" in Quảng Ninh province. My first step is to confirm the province hasn't been renamed, which I can do by checking `60-NQ/TW`. Looks like \"Tỉnh Quảng Ninh\" remains unchanged; good.\n\nNow, the real work begins: cross-referencing against the various resolutions. I need to find something that specifically mentions \"Phường Bạch Đằng\" *within* Quảng Ninh. I'm going through the `Other resolutions` systematically, keeping an eye out for \"Bạch Đằng\" and \"Quảng Ninh.\"\n\n*   **1656/NQ-UBTVQH15 (Hà Nội):** Nope, Hà Nội. Irrelevant.\n*   **1657/NQ-UBTVQH15 (Cao Bằng):**  A \"Bạch Đằng\" but it's a *xã* in Cao Bằng. No good.\n*   **1669/NQ-UBTVQH15 (Hải Phòng):** Hải Phòng has a \"Bạch Đằng\" (both a *xã* and a *phường*), but still not what I'm looking for.\n*   **1673/NQ-UBTVQH15 (Lào Cai):** Nothing.\n*   **1679/NQ-UBTVQH15 (Quảng Ninh):** Bingo! This is the one. Looking at line 42:  \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Bạch Đằng, Trần Hưng Đạo và Hồng Gai thành phường mới có tên gọi là **phường Hồng Gai**.\" It explicitly states that \"Phường Bạch Đằng\" is being *merged* into \"Phường Hồng Gai\". Perfect.\n*   The following lines discuss other adjustments in Quảng Ninh, but aren't relevant to my query. I've confirmed that this is the correct resolution, and the important line is 42.\n\nI need to quickly double-check the `New wards` data to make sure \"Phường Hồng Gai\" exists within \"Tỉnh Quảng Ninh\". Sure enough, there's a match. I have `{\"ward_code\":\"06685\",\"ward_name\":\"Phường Hồng Gai\",\"province_name\":\"Tỉnh Quảng Ninh\"}`.\n\nConfidence?  High. The resolution directly addresses this specific ward, and I have supporting data from the `New wards` file.  Now it's time to build the JSON output.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1679/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ninh",
+        "line": "42. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Bạch Đằng, Trần Hưng Đạo và Hồng Gai thành phường mới có tên gọi là phường Hồng Gai."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ninh",
+      "ward_code": "06685",
+      "ward_name": "Phường Hồng Gai"
+    }
+  ]
+}

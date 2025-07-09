@@ -1,0 +1,18 @@
+{
+  "address": "Xã Ngọc Xá, Thị xã Quế Võ, Tỉnh Bắc Ninh",
+  "ellapsedInMs": 6019,
+  "estimatedCost": 0.0021207,
+  "thought": "**Address Mapping for Vietnamese Administrative Units**\n\nOkay, so I'm tackling this Vietnamese address mapping problem. The goal is to figure out the new administrative unit corresponding to an old address: \"Xã Ngọc Xá\" in \"Tỉnh Bắc Ninh\". Let's break it down.\n\nFirst, I identified the key components: the old ward, \"Xã Ngọc Xá,\" and the province, \"Tỉnh Bắc Ninh.\" Now, the strategy is to consult the available resolutions. I started with Province Resolutions (60-NQ/TW).  Bắc Ninh isn't listed as undergoing a merger at the provincial level. I then confirmed that Bắc Ninh remains \"Tỉnh Bắc Ninh\" after any reorganization.\n\nNext, I focused on resolutions at the ward level. I searched for \"Xã Ngọc Xá\" within these resolutions. Bingo! Resolution 1658/NQ-UBTVQH15 popped up, specifically addressing administrative adjustments in Bắc Ninh. Line 84 states that \"Xã Ngọc Xá\" is merged with \"phường Phù Lương\" and \"xã Đào Viên\" to form the new \"Phường Đào Viên.\" This is a key piece of information.\n\nNow, I cross-referenced \"Phường Đào Viên\" with the `New wards` list.  Found it!  The entry `{\"ward_code\":\"09301\",\"ward_name\":\"Phường Đào Viên\",\"province_name\":\"Tỉnh Bắc Ninh\"}` aligns perfectly.\n\nFinally, I'll package the information. I'll construct the JSON output:\n\n*   `province_name`: \"Tỉnh Bắc Ninh\" (from my initial check and the resolution).\n*   `ward_name`: \"Phường Đào Viên\" (the clear result of the resolution).\n*   `ward_code`: \"09301\" (matching the ward name in the new ward data).\n*   `citation`: Will include the resolution's header (\"1658/NQ-UBTVQH15\") and the relevant line (\"84. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Phù Lương, xã Ngọc Xá và xã Đào Viên thành phường mới có tên gọi là **phường Đào Viên**.\").\n*   `confidence`: High, given the direct match from the specific resolution.\n\nThis method gives me a strong and confident mapping. It directly addresses the resolution and supports a clear connection.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh",
+        "line": "84. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Phù Lương, xã Ngọc Xá và xã Đào Viên thành phường mới có tên gọi là phường Đào Viên."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "09301",
+      "ward_name": "Phường Đào Viên"
+    }
+  ]
+}

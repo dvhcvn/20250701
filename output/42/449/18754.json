@@ -1,0 +1,18 @@
+{
+  "address": "Phường Hưng Trí, Thị xã Kỳ Anh, Tỉnh Hà Tĩnh",
+  "ellapsedInMs": 6483,
+  "estimatedCost": 0.0023466,
+  "thought": "**Address Mapping Analysis: Phường Hưng Trí, Hà Tĩnh**\n\nOkay, here's what I've got. The user wants to map an old address, \"Phường Hưng Trí, Thị xã Kỳ Anh, Tỉnh Hà Tĩnh,\" to its new administrative unit. My initial thought is to break this down.\n\nFirst, I need to identify the old components: \"Phường Hưng Trí\" (old ward), \"Thị xã Kỳ Anh\" (old district), and \"Tỉnh Hà Tĩnh\" (old province).  While the prompt mentions \"eliminating all districts,\" the old district is helpful for context.\n\nThen, I'll dive into the provided resolutions. I'll start with the province-level, checking resolution 60-NQ/TW. It confirms that \"Tỉnh Hà Tĩnh\" remains the same, which simplifies things.  Next, I'll focus on the primary resolution, 1665/NQ-UBTVQH15, concerning the restructuring of administrative units in Hà Tĩnh.\n\nMy key task is to *directly* find references to \"Phường Hưng Trí\" within this resolution. Scanning the provided lines, I landed on line 63: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Hưng Trí, phường Kỳ Trinh, xã Kỳ Châu và một phần quy mô dân số của xã Kỳ Lợi thành phường mới có tên gọi là **phường Sông Trí**.\"  Boom! This line explicitly maps \"Phường Hưng Trí\" to a new ward, \"Phường Sông Trí.\"\n\nNext, I'll cross-reference \"Phường Sông Trí\" with the list of new wards provided.  And, sure enough, I find a perfect match: `{\"ward_code\":\"18754\",\"ward_name\":\"Phường Sông Trí\",\"province_name\":\"Tỉnh Hà Tĩnh\"}`.  The province name aligns perfectly, solidifying the match.\n\nGiven the direct link in the resolution and the clear match with the new ward data, I can confidently construct the JSON output. I'll note the specific line from the resolution (63) and header as the citation, and the `confidence` level will be high. The resulting JSON object will contain the new `ward_code`, `ward_name`, and `province_name`, as requested.  This is a straightforward mapping with high confidence due to the direct mention in the restructuring resolution.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh",
+        "line": "63. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Hưng Trí, phườngKỳ Trinh, xã Kỳ Châu và một phần quy mô dân số của xã Kỳ Lợi thành phường mới có tên gọi là phường Sông Trí."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hà Tĩnh",
+      "ward_code": "18754",
+      "ward_name": "Phường Sông Trí"
+    }
+  ]
+}

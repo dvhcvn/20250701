@@ -1,0 +1,28 @@
+{
+  "address": "Xã Thượng Long, Huyện Yên Lập, Tỉnh Phú Thọ",
+  "ellapsedInMs": 8742,
+  "estimatedCost": 0.0035032,
+  "thought": "**Analyzing the Administrative Change for \"Xã Thượng Long\"**\n\nOkay, so the user wants me to find the new administrative unit for \"Xã Thượng Long, Huyện Yên Lập, Tỉnh Phú Thọ.\"  My process goes like this:\n\n1.  **Identify the Key Elements:** I see \"Tỉnh Phú Thọ\" (the province) and \"Xã Thượng Long\" (the ward) from the provided address.  Those are my starting points.\n\n2.  **Province Check:** First, I needed to confirm the province name. Checking for province name changes, I confirmed that \"Tỉnh Phú Thọ\" remains the same.  No need to change that.\n\n3.  **Ward Dive:** Now for the critical part, the ward.  I'm looking for resolutions related to \"Xã Thượng Long.\" I found Resolution 1676/NQ-UBTVQH15, which is key.  Line 54 of that resolution explicitly states that \"Thượng Long\" *is* involved in a merger. Specifically, \"Thượng Long\" is combined with \"Phúc Khánh\" and \"Nga Hoàng\" to *form a new \"Xã Thượng Long\"*. Importantly, this means the name is retained, but its scope has changed.\n\n4.  **Verification in \"New Wards\":**  I then cross-referenced this with the \"New wards\" list, looking for \"Xã Thượng Long\" in \"Tỉnh Phú Thọ\". And bam, it's there! I found `{\"ward_code\":\"08323\",\"ward_name\":\"Xã Thượng Long\",\"province_name\":\"Tỉnh Phú Thọ\"}`. This is a direct match, reinforcing the finding from the resolution.\n\n5.  **Confidence Check and Double-Check:**  My confidence is high. The province name is unchanged. The resolution clearly outlines the merger that *creates* the new \"Xã Thượng Long\", and the \"New wards\" list confirms its existence. To be extra sure, I also scanned the other lines in resolution 1676/NQ-UBTVQH15 to see if any other \"Thượng Long\" mentions were relevant - nothing.\n\nTherefore, the old \"Xã Thượng Long\" in \"Tỉnh Phú Thọ\" has been reorganized by the merger but the result is a new ward with the same name.\n\nFinal Answer:\n\n```json\n[\n  {\n    \"old_ward\": \"Xã Thượng Long\",\n    \"old_district\": \"Huyện Yên Lập\",\n    \"old_province\": \"Tỉnh Phú Thọ\",\n    \"new_ward\": \"Xã Thượng Long\",\n    \"new_district\": \"Huyện Yên Lập\",\n    \"new_province\": \"Tỉnh Phú Thọ\"\n  }\n]\n```\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "4. Hợp nhất tỉnh Vĩnh Phúc, tỉnh Phú Thọ và tỉnh Hoà Bình; lấy tên là tỉnh Phú Thọ"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "08323",
+      "ward_name": "Xã Thượng Long"
+    },
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "54. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Phúc Khánh, Nga Hoàng và Thượng Long thành xã mới có tên gọi là xã Thượng Long."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "08323",
+      "ward_name": "Xã Thượng Long"
+    }
+  ]
+}

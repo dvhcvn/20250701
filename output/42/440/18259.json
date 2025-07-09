@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tùng Ảnh, Huyện Đức Thọ, Tỉnh Hà Tĩnh",
+  "ellapsedInMs": 7102,
+  "estimatedCost": 0.0027356000000000004,
+  "thought": "**Analysis of Administrative Unit Changes for \"Xã Tùng Ảnh, Huyện Đức Thọ, Tỉnh Hà Tĩnh\"**\n\nOkay, so I'm presented with the address \"Xã Tùng Ảnh, Huyện Đức Thọ, Tỉnh Hà Tĩnh\" and the task of mapping it to its new administrative unit, considering that we're eliminating the district level for this exercise, and using province resolutions and new ward data.\n\nFirst, I parsed the input to identify the relevant old units: \"Xã Tùng Ảnh\" (ward), \"Huyện Đức Thọ\" (district), and \"Tỉnh Hà Tĩnh\" (province).  I remember that districts are being handled separately, so this is about the ward level.\n\nNext, I checked the province resolutions, specifically \"60-NQ/TW\" for Hà Tĩnh, but that was just confirming that Hà Tĩnh remains unchanged as a province. That's a sanity check.\n\nThen, I looked at other resolutions, and I found \"1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh\". Line 37 of that resolution is key, it specifically states that \"Xã Tùng Ảnh\" will be merged with other areas to form a new ward, \"Xã Đức Thọ.\"\n\nThe \"New Wards\" data contained exactly that: a ward named \"Xã Đức Thọ\" within \"Tỉnh Hà Tĩnh\" with its code. Perfect! The resolution clearly states the merge, and the new ward exists.\n\nTherefore, the mapping is straightforward. The citation points directly to the resolution line specifying the merge. The confidence is high because it's an explicit match confirmed by the data. I'm confident in constructing the output: the province is Hà Tĩnh, the new ward is Đức Thọ, and the code is provided.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh",
+        "line": "37. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Đức Thọ và các xã Tùng Ảnh, Hòa Lạc, Tân Dân thành xã mới có tên gọi là xã Đức Thọ."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hà Tĩnh",
+      "ward_code": "18229",
+      "ward_name": "Xã Đức Thọ"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "address": "Thị trấn An Bài, Huyện Quỳnh Phụ, Tỉnh Thái Bình",
+  "ellapsedInMs": 5839,
+  "estimatedCost": 0.0023376,
+  "thought": "**Navigating Administrative Changes in Thái Bình and Hưng Yên**\n\nOkay, so the user needs the new administrative unit for \"Thị trấn An Bài, Huyện Quỳnh Phụ, Tỉnh Thái Bình.\" My initial thought is to break this down methodically. First, I identify \"Tỉnh Thái Bình\" as the starting province.  I immediately cross-reference province resolutions (specifically, 60-NQ/TW) to check for any mergers or renamings. Bingo!  It shows that Thái Bình has merged with Hưng Yên.\n\nNow, I'm focusing on \"Thị trấn An Bài.\"  I need to search through resolutions that would cover this area, considering the new province name, \"Tỉnh Hưng Yên.\"  I quickly pinpoint Resolution 1666/NQ-UBTVQH15, which concerns administrative restructuring within Hưng Yên.  Line 69 jumps out at me: it explicitly mentions \"Thị trấn An Bài\" and the merging with several other *xãs* to form \"Xã Phụ Dực\".\n\nThis is the key.  My next step is to locate \"Xã Phụ Dực\" in my \"New Wards\" list and confirm that it's correctly associated with \"Tỉnh Hưng Yên.\"  I find the entry:  `{\"ward_code\":\"12523\",\"ward_name\":\"Xã Phụ Dực\",\"province_name\":\"Tỉnh Hưng Yên\"}`. Perfect match.\n\nThe final step is straightforward – I construct the JSON output, with a high confidence level.  The process was direct and the resolution provided a clear mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Hưng Yên và tỉnh Thái Bình, lấy tên là tỉnh Hưng Yên"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "12523",
+      "ward_name": "Xã Phụ Dực"
+    },
+    {
+      "citation": {
+        "header": "1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên",
+        "line": "69. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn An Bài và các xã An Ninh (huyện Quỳnh Phụ), An Vũ, An Mỹ, An Thanh thành xã mới có tên gọi là xã Phụ Dực."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "12523",
+      "ward_name": "Xã Phụ Dực"
+    }
+  ]
+}

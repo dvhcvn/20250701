@@ -1,0 +1,28 @@
+{
+  "address": "Xã Đức Tín, Huyện Đức Linh, Tỉnh Bình Thuận",
+  "ellapsedInMs": 6299,
+  "estimatedCost": 0.0022183000000000003,
+  "thought": "**My Mapping Strategy for the Old Address**\n\nOkay, here's my approach to this address mapping. I need to take \"Xã Đức Tín, Huyện Đức Linh, Tỉnh Bình Thuận\" and figure out its current equivalent.  First, I'll start with the province: \"Tỉnh Bình Thuận.\" I'll check my province resolutions – specifically, the ones referenced like 60-NQ/TW – to see if \"Tỉnh Bình Thuận\" has undergone any changes.  Aha! Resolution 60-NQ/TW indicates a merger: \"Tỉnh Bình Thuận\" is now part of \"Tỉnh Lâm Đồng.\"\n\nNext, I'll focus on the specific ward, \"Xã Đức Tín.\" I need to cross-reference this with the other resolutions, because they contain the crucial details about these administrative re-organizations. My hunch is that I'll find the mapping in this type of document. Resolution \"1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng\" looks promising.  Scanning the relevant lines, I found it: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của ... xã Đức Tín ... thành xã mới có tên gọi là xã Hoài Đức.\" This is exactly what I was hoping for.\n\nNow, to ensure accuracy, I'll cross-reference \"Xã Hoài Đức\" with the `New wards` list and ensure that its `province_name` aligns with the new province name, which is \"Tỉnh Lâm Đồng.\"  I see the entry `{\"ward_code\":\"23194\",\"ward_name\":\"Xã Hoài Đức\",\"province_name\":\"Tỉnh Lâm Đồng\"}`. That's a perfect match!\n\nGiven that the resolution explicitly states that \"Xã Đức Tín\" is now part of \"Xã Hoài Đức\" due to an area and population merge, I have complete confidence in this mapping. Now I just need to construct the JSON output reflecting this confirmed mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "14. Hợp nhất tỉnh Lâm Đồng, tỉnh Đắk Nông và tỉnh Bình Thuận; lấy tên là tỉnh Lâm Đồng"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "23194",
+      "ward_name": "Xã Hoài Đức"
+    },
+    {
+      "citation": {
+        "header": "1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng",
+        "line": "75. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Đức Tài, xã Đức Tín và xã Đức Hạnh thành xã mới có tên gọi là xã Hoài Đức."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "23194",
+      "ward_name": "Xã Hoài Đức"
+    }
+  ]
+}

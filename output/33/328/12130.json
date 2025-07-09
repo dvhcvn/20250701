@@ -1,0 +1,18 @@
+{
+  "address": "Phường Phùng Chí Kiên, Thị xã Mỹ Hào, Tỉnh Hưng Yên",
+  "ellapsedInMs": 8445,
+  "estimatedCost": 0.0029923,
+  "thought": "**Analysis of Administrative Unit Restructuring**\n\nOkay, so I'm tackling the task of mapping this old address to its current form. First, I need to break down the input: \"Phường Phùng Chí Kiên, Thị xã Mỹ Hào, Tỉnh Hưng Yên\". My initial focus is on identifying the key administrative units: the province (Hưng Yên), the ward (Phùng Chí Kiên), and the implicit district (Mỹ Hào). While districts are no longer a primary focus, they're part of the legacy address structure I need to account for.\n\nThe province seems straightforward initially. I check the resolution regarding province restructuring (60-NQ/TW), and it confirms that Hưng Yên's name remains unchanged, even after merging with Thái Bình. So, the province remains \"Tỉnh Hưng Yên.\" Good.\n\nNow, I dive into the more complex ward-level restructuring using relevant resolutions. My crucial find is **1666/NQ-UBTVQH15**, focused on Hưng Yên's administrative changes. Line 97 refers to the creation of \"phường Mỹ Hào\", but it doesn't include \"Phùng Chí Kiên.\" I keep digging.\n\nBingo! Line 98 of that same resolution is where it gets interesting: \"Phường Phùng Chí Kiên\" is explicitly mentioned as being *merged* into the new ward called \"Phường Đường Hào.\" This is the key transformation for the address.\n\nI also see a resolution (1683/NQ-UBTVQH15) mentioning a \"Phùng Chí Kiên\" in the context of Thái Nguyên province. However, given my understanding of these regional structures, I can immediately discard this as a separate and unrelated entity. The geographical context is crucial.\n\nNow I look at the new ward data. There's an entry for \"Phường Mỹ Hào\" with ward code \"12103.\" But based on my prior analysis of the resolutions, I know \"Phường Phùng Chí Kiên\" is *not* part of that new ward. Then I find an entry for \"Phường Đường Hào\" with ward code \"12133,\" which aligns perfectly with resolution 1666/NQ-UBTVQH15, line 98. \"Phường Phùng Chí Kiên\" *is* part of that new structure.\n\nHere's the problem I see now. There is also an entry that still lists \"Xã Ngọc Lâm\" as existing. The resolution 1666/NQ-UBTVQH15 line 98 says \"Xã Ngọc Lâm\" should have been merged into \"Phường Đường Hào.\" This creates a conflict in my analysis.\n\nTherefore, my conclusions are that the province is still \"Tỉnh Hưng Yên\", \"Phường Phùng Chí Kiên\" *is now* \"Phường Đường Hào\", and there's a possible issue with the data related to \"Xã Ngọc Lâm\" if it still exists outside of \"Phường Đường Hào.\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên",
+        "line": "98. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Dị Sử, phường Phùng Chí Kiên và các xã Xuân Dục, Hưng Long, Ngọc Lâm thành phường mới có tên gọi là **phường Đường Hào**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "12133",
+      "ward_name": "Phường Đường Hào"
+    }
+  ]
+}

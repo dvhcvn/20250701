@@ -1,0 +1,18 @@
+{
+  "address": "Xã Hồng Thái Tây, Thành phố Đông Triều, Tỉnh Quảng Ninh",
+  "ellapsedInMs": 5568,
+  "estimatedCost": 0.001879,
+  "thought": "**Address Mapping for Xã Hồng Thái Tây**\n\nOkay, I'm tackling this address mapping task. The user wants me to translate the old address, \"Xã Hồng Thái Tây, Thành phố Đông Triều, Tỉnh Quảng Ninh,\" into the new administrative structure.\n\nFirst, I need to isolate the key components. I see \"Xã Hồng Thái Tây\" as the old ward and \"Tỉnh Quảng Ninh\" as the old province.\n\nNext, I'll consult the province resolutions, specifically 60-NQ/TW, to see if anything changes with \"Tỉnh Quảng Ninh.\" It looks like Quảng Ninh is listed under those not undergoing a merger, so the province name stays as \"Tỉnh Quảng Ninh.\"\n\nNow, I'll dive into the \"Other resolutions\" to find details about \"Xã Hồng Thái Tây.\" Bingo! Resolution 1679/NQ-UBTVQH15 catches my eye. Looking through it, line 26 is crucial: it explicitly states that \"Xã Hồng Thái Tây\" is being combined with other wards to form the new \"phường Hoàng Quế.\"\n\nAlright, with the new ward identified, I need to check the \"New wards\" data to confirm. Perfect! I find an entry with the province and the new ward name: `{\"ward_code\":\"07114\",\"ward_name\":\"Phường Hoàng Quế\",\"province_name\":\"Tỉnh Quảng Ninh\"}`. This is a direct match!\n\nFinally, I'll construct the JSON output. The `province_name` will be \"Tỉnh Quảng Ninh\" since that's unchanged. The `ward_name` will be \"Phường Hoàng Quế,\" and the corresponding `ward_code` will be \"07114.\" I'll also add a `citation` to reference Resolution 1679/NQ-UBTVQH15, line 26, to prove my work. Given the direct and explicit nature of this match, I can confidently assign a `confidence` of \"high.\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1679/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ninh",
+        "line": "26. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Yên Đức, phường Hoàng Quế, xã Hồng Thái Tâyvà xã Hồng Thái Đông thành phường mới có tên gọi là phường Hoàng Quế."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ninh",
+      "ward_code": "07114",
+      "ward_name": "Phường Hoàng Quế"
+    }
+  ]
+}

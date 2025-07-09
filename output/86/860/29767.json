@@ -1,0 +1,18 @@
+{
+  "address": "Xã Bình Ninh, Huyện Tam Bình, Tỉnh Vĩnh Long",
+  "ellapsedInMs": 9143,
+  "estimatedCost": 0.0033144000000000003,
+  "thought": "**My Analysis of the Administrative Restructuring in Vĩnh Long Province**\n\nOkay, so the task is to pinpoint the new administrative unit (ward) for the old address \"Xã Bình Ninh, Huyện Tam Bình, Tỉnh Vĩnh Long\". Straightforward enough. First, I'll zero in on the province: \"Tỉnh Vĩnh Long\".\n\nI know from previous work that resolution 60-NQ/TW might be relevant for province-level changes. Sure enough, it states \"Hợp nhất tỉnh Bến Tre, tỉnh Vĩnh Long và tỉnh Trà Vinh; lấy tên là tỉnh Vĩnh Long\". So, Vĩnh Long remains Vĩnh Long, albeit with some interesting mergers. That's good to keep in mind for the output's `province_name`.\n\nNow, I'm digging into those resolutions and new ward data. I'm especially interested in resolutions related to Vĩnh Long and any mention of \"Bình Ninh\" or \"Huyện Tam Bình\". The key seems to be resolution 1687/NQ-UBTVQH15, \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long\". Bingo!\n\nLine 22 states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Loan Mỹ, xã Bình Ninh, một phần diện tích tự nhiên, quy mô dân số của xã Ngãi Tứ và phần còn lại của thị trấn Trà Ôn sau khi sắp xếp theo quy định tại khoản 16 Điều này thành xã mới có tên gọi là **xã Ngãi Tứ**.\"  This is it! \"Xã Bình Ninh\" is explicitly merged into \"Xã Ngãi Tứ\".  This is a strong match, and the citation is 1687/NQ-UBTVQH15, line 22.\n\nLine 23, \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tân Phú (huyện Tam Bình),Long Phú, Phú Thịnhvà Song Phú thành xã mới có tên gọi là **xã Song Phú**,\" is also interesting. It involves Huyện Tam Bình, but focuses on Tân Phú. It confirms that restructuring is indeed happening within Huyện Tam Bình, which fits the context of \"eliminating all districts\" in the prompt, even though this doesn't directly map to the old \"Xã Bình Ninh\".\n\nI should double-check the \"New wards\" data to confirm the \"Xã Ngãi Tứ\" match.  Perfect, it's there:  `{\"ward_code\":\"29767\",\"ward_name\":\"Xã Ngãi Tứ\",\"province_name\":\"Tỉnh Vĩnh Long\"}`.  The match is confirmed. `{\"ward_code\":\"29740\",\"ward_name\":\"Xã Song Phú\",\"province_name\":\"Tỉnh Vĩnh Long\"}`.\n\nSo, for output, the old \"Xã Bình Ninh\" maps directly to the new \"Xã Ngãi Tứ\". The province name stays \"Tỉnh Vĩnh Long\".  Confidence?  High.  It's a clear, direct, and explicit mapping. I'll quickly scan the other lines in 1687/NQ-UBTVQH15 just to be absolutely sure there's no conflicting information about \"Bình Ninh\" or \"Tam Bình,\" and then I'm good to go.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long",
+        "line": "22. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Loan Mỹ, xã Bình Ninh, một phần diện tích tự nhiên, quy mô dân số của xã Ngãi Tứ và phần còn lại của thị trấn Trà Ôn sau khi sắp xếp theo quy định tại khoản 16 Điều này thành xã mới có tên gọi là xã Ngãi Tứ."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "29767",
+      "ward_name": "Xã Ngãi Tứ"
+    }
+  ]
+}

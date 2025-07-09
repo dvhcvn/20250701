@@ -1,0 +1,18 @@
+{
+  "address": "Xã Hữu Liên, Huyện Hữu Lũng, Tỉnh Lạng Sơn",
+  "ellapsedInMs": 6299,
+  "estimatedCost": 0.0020363000000000004,
+  "thought": "**Address Mapping for Vietnamese Administrative Units**\n\nOkay, so I'm looking at this request to map an old Vietnamese address, specifically in Lạng Sơn province. My process will be to determine the new administrative unit based on available resolutions and data.\n\nFirst, the province is easy: \"Tỉnh Lạng Sơn\".  I need to double-check if there's been any consolidation in that area.  Looks like Resolution 60-NQ/TW doesn't have Lạng Sơn slated for any mergers; it's status quo.\n\nNext, the address specifies the old ward as \"Xã Hữu Liên\". Now, the crucial part is to consult the \"Other resolutions,\" because this is where all the fun is at.  The \"1672/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lạng Sơn\" resolution jumps out at me as potentially relevant, so I dove in. Line 50 tells me exactly what I need to know: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Yên Thịnh và xã Hữu Liên thành xã mới có tên gọi là **xã Hữu Liên**.\" Bingo! \"Xã Hữu Liên\" is being merged *with* \"Xã Yên Thịnh\" to create a new \"Xã Hữu Liên.\"\n\nThis means the old \"Xã Hữu Liên\" is definitely part of the new one, albeit in a restructured form. My next step is to confirm the new ward data.  I'm checking the \"New wards\" data.  The entry with `ward_code:\"06400\", ward_name:\"Xã Hữu Liên\", province_name:\"Tỉnh Lạng Sơn\"` matches perfectly.\n\nFinally, I'll output the data. My confidence here is *high* because the resolution clearly and explicitly describes the merging process for this particular ward.\n\nThe final JSON output looks like this, and it's a solid mapping based on the evidence:\n\n*   `province_name`: \"Tỉnh Lạng Sơn\"\n*   `ward_name`: \"Xã Hữu Liên\"\n*   `ward_code`: \"06400\"\n*   `citation`: `\"header\": \"1672/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lạng Sơn\", \"line\": \"50. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Yên Thịnh và xã Hữu Liên thành xã mới có tên gọi là **xã Hữu Liên**.\"`\n*   `confidence`: \"high\"",
+  "result": [
+    {
+      "citation": {
+        "header": "1672/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lạng Sơn",
+        "line": "50. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Yên Thịnh và xã Hữu Liên thành xã mới có tên gọi là**xã Hữu Liên**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lạng Sơn",
+      "ward_code": "06400",
+      "ward_name": "Xã Hữu Liên"
+    }
+  ]
+}

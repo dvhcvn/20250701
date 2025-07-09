@@ -1,0 +1,18 @@
+{
+  "address": "Xã Liêm Thuận, Huyện Thanh Liêm, Tỉnh Hà Nam",
+  "ellapsedInMs": 6187,
+  "estimatedCost": 0.0020132,
+  "thought": "**Mapping an Old Address to the New Administrative Structure**\n\nOkay, here's how I'm approaching this address mapping problem. The user wants to find the new administrative location for \"Xã Liêm Thuận\" in \"Tỉnh Hà Nam.\" Let's break it down:\n\nFirst, I need to understand that the province itself has changed. I'll start by looking at the provided Province Resolutions, specifically 60-NQ/TW. Aha! I find \"Tỉnh Hà Nam\" in the merger list. It states, \"Hợp nhất tỉnh Hà Nam, tỉnh Ninh Bình và tỉnh Nam Định; lấy tên là tỉnh Ninh Bình.\" So, \"Tỉnh Hà Nam\" is now part of \"Tỉnh Ninh Bình.\" That's the first piece.\n\nNext, I need to check the \"Other Resolutions,\" focusing on 1674/NQ-UBTVQH15. This resolution specifically concerns \"tỉnh Ninh Bình,\" which aligns with my previous finding. Now, I will look through the `lines` of this resolution to find \"Xã Liêm Thuận.\" I see it! Line 8 states, \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Liêm Sơn, Liêm Thuận và Liêm Túc thành xã mới có tên gọi là **xã Thanh Bình**.\" Excellent! \"Xã Liêm Thuận\" is explicitly merged into the new \"Xã Thanh Bình.\"\n\nNow, I need to confirm this new ward. I will search the \"New Wards\" data for \"Xã Thanh Bình\" in \"Tỉnh Ninh Bình.\" The matching entry confirms my findings: `{\"ward_code\":\"13483\",\"ward_name\":\"Xã Thanh Bình\",\"province_name\":\"Tỉnh Ninh Bình\"}`. This perfectly aligns.\n\nTherefore, the final output I'll provide will be a JSON structure containing:\n\n*   `province_name`: \"Tỉnh Ninh Bình\"\n*   `ward_name`: \"Xã Thanh Bình\"\n*   `ward_code`: \"13483\"\n\nAnd, I will include the proper citation for the authoritative source:\n*   `citation`:\n    *   `header`: \"1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình\"\n    *   `line`: \"8. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Liêm Sơn, Liêm Thuận và Liêm Túc thành xã mới có tên gọi là xã Thanh Bình.\"\n\nI'm confident in this mapping. The explicit mention of the old ward and its merger into the new one, along with the clear province merger, earns a high confidence level for this result.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "8. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Liêm Sơn, Liêm Thuận và Liêm Túc thành xã mới có tên gọi là xã Thanh Bình."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "13483",
+      "ward_name": "Xã Thanh Bình"
+    }
+  ]
+}

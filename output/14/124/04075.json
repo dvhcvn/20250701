@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Yên Châu, Huyện Yên Châu, Tỉnh Sơn La",
+  "ellapsedInMs": 6378,
+  "estimatedCost": 0.0028669,
+  "thought": "**Determining the New Administrative Unit for \"Thị trấn Yên Châu\"**\n\nOkay, so I'm presented with the old address \"Thị trấn Yên Châu, Huyện Yên Châu, Tỉnh Sơn La\" and need to find the new corresponding administrative unit.  Let's break this down systematically.\n\nFirst, I confirmed that \"Tỉnh Sơn La\" remains unchanged, as per Resolution `60-NQ/TW` which handles province mergers.  Good, one less variable.\n\nNext, I zeroed in on the ward, \"Thị trấn Yên Châu.\" I scanned the available resolutions, specifically targeting \"Thị trấn Yên Châu\" and \"Tỉnh Sơn La.\" Bingo!  Resolution `1681/NQ-UBTVQH15` clearly outlines the fate of this ward.  It states, specifically in section 38, that \"Thị trấn Yên Châu\" is merged, along with some neighboring xã, to form a new ward called \"**xã Yên Châu**\".  That's my key finding.\n\nTo solidify this, I then checked the \"New Wards\" data, searching for `ward_name: \"Xã Yên Châu\"` within \"Tỉnh Sơn La\".  And there it is: `{\"ward_code\":\"04075\",\"ward_name\":\"Xã Yên Châu\",\"province_name\":\"Tỉnh Sơn La\"}`. Perfect confirmation.\n\nTherefore, the output will be:\n\n*   `province_name`: \"Tỉnh Sơn La\" (unchanged).\n*   `ward_name`: \"Xã Yên Châu\" (from resolution and the new ward data).\n*   `ward_code`: \"04075\" (from the new ward data).\n*   A citation referencing `1681/NQ-UBTVQH15`, specifically section 38, is included for full transparency.\n*   The confidence level is \"high\" because the resolution directly addresses the specific ward and the new ward name and code are verified in the database.\n\nThis should be a clean and accurate response. I'm satisfied with this analysis.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1681/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Sơn La",
+        "line": "38. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Yên Châu và các xã Chiềng Đông, Chiềng Sàng, Chiềng Pằn, Chiềng Khoi, Sặp Vạt thành xã mới có tên gọi là xã Yên Châu."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Sơn La",
+      "ward_code": "04075",
+      "ward_name": "Xã Yên Châu"
+    }
+  ]
+}

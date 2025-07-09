@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Triệu Sơn, Huyện Triệu Sơn, Tỉnh Thanh Hóa",
+  "ellapsedInMs": 6442,
+  "estimatedCost": 0.0021017,
+  "thought": "**My Thought Process: Mapping an Old Address to a New Administrative Unit**\n\nOkay, so I'm tackling this address mapping problem. First, I need to understand the initial address. The user wants to map \"Thị trấn Triệu Sơn\" in \"Huyện Triệu Sơn\" within \"Tỉnh Thanh Hóa\" to its new equivalent.\n\nMy strategy is straightforward:\n1.  **Pinpoint the Old Unit:** I've got the old ward (\"Thị trấn Triệu Sơn\"), district (\"Huyện Triệu Sơn\"), and province (\"Tỉnh Thanh Hóa\") from the input address.\n\n2.  **Province Verification:** My first check is the province resolutions (specifically 60-NQ/TW). Finding \"Tỉnh Thanh Hóa\" there confirms that the province name hasn't changed; it's staying as is.  That's a good starting point.\n\n3.  **Diving into the Resolutions:** Now, I'm focusing on the more detailed resolutions, specifically 1686/NQ-UBTVQH15. I'm carefully searching line by line within these resolutions for references to the old ward. Bingo! Line 64 is the key: it explicitly states that \"Thị trấn Triệu Sơn\" is merged with surrounding areas to create a new ward named \"Xã Triệu Sơn\". That's what I'm looking for!\n\n4.  **Cross-Checking with the New Wards:** With the name of the new ward in hand (\"Xã Triệu Sơn\"), I'm quickly cross-referencing it with the list of new wards provided.  The entry with the matching ward code and province name confirms my findings. Perfect.\n\n5.  **Assessing Confidence:** This whole process is looking strong. The resolution directly mentions the old ward and its new designation. The province name is also corroborated.  I'd say this is a **high-confidence** match.\n\n6.  **Formulating the Output:**  Based on all this, I'm preparing a JSON response. I'll include the relevant citation (the resolution header and line 64 specifically), and the high confidence level. The province name is \"Tỉnh Thanh Hóa\". And then I have the new ward information: `\"ward_code\": \"15664\"` and `\"ward_name\": \"Xã Triệu Sơn\"`.  Done!\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1686/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thanh Hóa",
+        "line": "64. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Triệu Sơn và các xã Minh Sơn (huyện Triệu Sơn), Dân Lực, Dân Lý, Dân Quyền thành xã mới có tên gọi là xã Triệu Sơn."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thanh Hóa",
+      "ward_code": "15664",
+      "ward_name": "Xã Triệu Sơn"
+    }
+  ]
+}

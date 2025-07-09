@@ -1,0 +1,18 @@
+{
+  "address": "Xã Cẩm Đông, Huyện Cẩm Giàng, Tỉnh Hải Dương",
+  "ellapsedInMs": 6824,
+  "estimatedCost": 0.0026812,
+  "thought": "**My Analysis of the Administrative Unit Change**\n\nOkay, here's how I'm approaching this. The user gave me an old address: \"Xã Cẩm Đông, Huyện Cẩm Giàng, Tỉnh Hải Dương.\" My task is to find the *new* ward information.\n\nFirst, I identified \"Tỉnh Hải Dương\" (Hai Duong Province).  I immediately checked the province merging resolutions (60-NQ/TW).  Aha!  I found that \"Tỉnh Hải Dương\" and Hai Phong City merged to become \"Thành phố Hải Phòng\" (Hai Phong City). That's step one.\n\nNext, I looked at \"Xã Cẩm Đông\" (Cam Dong Commune).  Then, I started searching resolutions for mentions of \"Xã Cẩm Đông\" *within* \"Thành phố Hải Phòng.\"\n\nThe crucial one was `1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng` (Resolution on arrangement of communes of Hai Phong City).  Line 81 was the key: it explicitly states that \"Xã Cẩm Đông\" was *combined* with parts of other communes to form a new commune named \"Xã Mao Điền.\"  That's my match!\n\nTo be thorough, I checked other resolutions just to make *absolutely* sure there wasn't another, conflicting piece of information about \"Xã Cẩm Đông\".  No dice. Everything pointed to the Mao Dien combination.\n\nNow, I cross-referenced the \"New wards\" list for \"Xã Mao Điền\" within \"Thành phố Hải Phòng.\"  Found it!  \"Xã Mao Điền\" has the code \"10930.\"\n\nFinally, to construct the JSON output:\n\n*   `province_name`: \"Thành phố Hải Phòng\" (from the province merging).\n*   `ward_name`: \"Xã Mao Điền\" (from Resolution 1669/NQ-UBTVQH15).\n*   `ward_code`: \"10930\" (from the new wards list).\n*   `citation`: Will include the header and specific line of Resolution `1669/NQ-UBTVQH15`.\n*   `confidence`: \"High\" - this is a slam dunk, direct match with a clear explanation.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "81. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Tân Trường, xã Cẩm Đông và một phần diện tích tự nhiên, quy mô dân số của xã Phúc Điền thành xã mới có tên gọi là xã Mao Điền."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "10930",
+      "ward_name": "Xã Mao Điền"
+    }
+  ]
+}

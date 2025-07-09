@@ -1,0 +1,28 @@
+{
+  "address": "Xã Vĩnh Tân, Huyện Tuy Phong, Tỉnh Bình Thuận",
+  "ellapsedInMs": 8085,
+  "estimatedCost": 0.0035016999999999995,
+  "thought": "**Identifying the New Administrative Unit for a Given Address**\n\nOkay, so I've got this address to work with: \"Xã Vĩnh Tân, Huyện Tuy Phong, Tỉnh Bình Thuận\". My goal is to figure out the new ward.  First, I need to break down the old address:  \"Xã Vĩnh Tân\" is the old ward, \"Tỉnh Bình Thuận\" is the old province, and \"Huyện Tuy Phong\" is the old district.  Even though districts are mostly out of the picture with these changes, knowing the district helps narrow things down.\n\nThe first thing I did was check for province changes.  I consulted \"60-NQ/TW\" and found that Bình Thuận is now part of Lâm Đồng.  Excellent.\n\nNext, I need to look at the relevant documents, specifically the \"Other resolutions,\" to determine how \"Xã Vĩnh Tân\" has been re-allocated *within* the context of the new province, Lâm Đồng.\n\nI started scanning the various resolutions, keeping an eye out for \"Xã Vĩnh Tân.\" I quickly ruled out resolutions for Đồng Nai, Cần Thơ, and Nghệ An because they weren't relevant to Lâm Đồng.\n\nThen I hit the jackpot with Resolution `1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng`.  Specifically, I found:\n*   \"41. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Vĩnh Tân và xã Vĩnh Hảo thành xã mới có tên gọi là **xã Vĩnh Hảo**.\"  This looks promising!  This explicitly mentions my original \"Xã Vĩnh Tân\" and merges it to \"Xã Vĩnh Hảo.\"\n*  \"42. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Liên Hương và các xã Bình Thạnh (huyện Tuy Phong), Phước Thể, Phú Lạc thành xã mới có tên gọi là **xã Liên Hương**.\" This also feels important because it mentions \"huyện Tuy Phong\" which is the district of my original address.  This implies this resolution deals with units within Tuy Phong district.\n*  \"43. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Phan Dũng và một phần diện tích tự nhiên, quy mô dân số của xã Phong Phú thành xã mới có tên gọi là **xã Tuy Phong**.\" This also involves Tuy Phong district.\n\nGiven this, I'm fairly certain the correct answer is **Xã Vĩnh Hảo**. The resolution directly merges my original \"Xã Vĩnh Tân\" with \"Xã Vĩnh Hảo\" to create the new administrative unit.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "14. Hợp nhất tỉnh Lâm Đồng, tỉnh Đắk Nông và tỉnh Bình Thuận; lấy tên là tỉnh Lâm Đồng"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "22981",
+      "ward_name": "Xã Vĩnh Hảo"
+    },
+    {
+      "citation": {
+        "header": "1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng",
+        "line": "41. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Vĩnh Tân và xã Vĩnh Hảo thành xã mới có tên gọi là **xã Vĩnh Hảo**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "22981",
+      "ward_name": "Xã Vĩnh Hảo"
+    }
+  ]
+}

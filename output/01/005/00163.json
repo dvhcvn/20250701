@@ -1,0 +1,38 @@
+{
+  "address": "Phường Mai Dịch, Quận Cầu Giấy, Thành phố Hà Nội",
+  "ellapsedInMs": 7881,
+  "estimatedCost": 0.0040769000000000005,
+  "thought": "**Identifying the New Wards for \"Phường Mai Dịch, Quận Cầu Giấy, Thành phố Hà Nội\"**\n\nAlright, let's break this down systematically. My objective is to pinpoint the new administrative wards that \"Phường Mai Dịch\" will belong to, given the provided resolutions and a list of the new wards.\n\nFirst, I need to confirm that \"Thành phố Hà Nội\" (Hanoi City) hasn't been merged or altered at the province level.  Fortunately, Resolution 60-NQ/TW explicitly states that Hanoi remains unchanged.  Therefore, the `province_name` in my output will be \"Thành phố Hà Nội\".\n\nNow, I'm focusing on Resolution 1656/NQ-UBTVQH15, the key resolution for these ward reorganizations in Hanoi.  I see that \"Mai Dịch\" is mentioned multiple times.  The language clearly indicates that \"Mai Dịch\" is being *split* and *merged* into several new wards.\n\nSpecifically, the resolution states:\n\n*   \"Mai Dịch\" *contributes* to \"Phường Nghĩa Đô\".\n*   \"Mai Dịch\" *also contributes* to \"Phường Phú Diễn\".\n*   The *remaining part* of \"Mai Dịch\" contributes to \"Phường Từ Liêm\".\n\nNext, I'll use the \"New wards\" list to find the corresponding `ward_code` for each of these new wards: \"Phường Nghĩa Đô\", \"Phường Phú Diễn\", and \"Phường Từ Liêm\". I have found the corresponding information for each.\n\nThe confidence level here is high because the text directly and unequivocally states how \"Mai Dịch\" is being reorganized.  There's no room for interpretation.\n\nFinally, I will generate a JSON-formatted output with an array of objects. Each object will represent one of the identified new wards and will include the citation from the relevant resolutions, the confidence level (high), the province name (\"Thành phố Hà Nội\"), the `ward_code`, and the `ward_name`.  This will give a clear and comprehensive response to the original query.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội",
+        "line": "26. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Nghĩa Tân, một phần diện tích tự nhiên, quy mô dân số của các phường Cổ Nhuế 1, Mai Dịch, Nghĩa Đô, Xuân La, Xuân Tảo và phần còn lại của các phường Dịch Vọng, Dịch Vọng Hậu, Quan Hoa sau khi sắp xếp theo quy định tại khoản 25 Điều này thành phường mới có tên gọi là phường Nghĩa Đô."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hà Nội",
+      "ward_code": "00160",
+      "ward_name": "Phường Nghĩa Đô"
+    },
+    {
+      "citation": {
+        "header": "1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội",
+        "line": "31. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Phú Diễn và một phần diện tích tự nhiên, quy mô dân số của các phường Cổ Nhuế 1, Mai Dịch, Phúc Diễn thành phường mới có tên gọi là phường Phú Diễn."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hà Nội",
+      "ward_code": "00619",
+      "ward_name": "Phường Phú Diễn"
+    },
+    {
+      "citation": {
+        "header": "1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội",
+        "line": "35. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Cầu Diễn, một phần diện tích tự nhiên, quy mô dân số của phường Mễ Trì và phường Phú Đô, phần còn lại của phường Mai Dịch sau khi sắp xếp theo quy định tại khoản 26, khoản 31 Điều này, phần còn lại của phường Mỹ Đình 1 và phường Mỹ Đình 2 sau khi sắp xếp theo quy định tại khoản 25 Điều này thành phường mới có tên gọi là phường Từ Liêm."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hà Nội",
+      "ward_code": "00592",
+      "ward_name": "Phường Từ Liêm"
+    }
+  ]
+}

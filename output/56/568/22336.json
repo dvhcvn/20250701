@@ -1,0 +1,18 @@
+{
+  "address": "Phường Ngọc Hiệp, Thành phố Nha Trang, Tỉnh Khánh Hòa",
+  "ellapsedInMs": 4693,
+  "estimatedCost": 0.0017579,
+  "thought": "**Navigating the Address Mapping Puzzle**\n\nOkay, so I'm tackling this address mapping request. First, I see the old address is in \"Tỉnh Khánh Hòa.\"  Easy enough, initial province identified.  Now, time to double-check those province mergers. Ah, Resolution 60-NQ/TW clarifies that Khánh Hòa remains, although it absorbed Ninh Thuận. So, for the output, \"Tỉnh Khánh Hòa\" it is.\n\nNext up, the old ward: \"Phường Ngọc Hiệp.\"  Let's see if I can find that in the \"Other resolutions.\" Bingo! Resolution 1667/NQ-UBTVQH15 looks promising.  Line 51... yes! It spells it out: \"Phường Ngọc Hiệp,\" along with a few others, gets merged to create \"**Phường Tây Nha Trang**.\" \n\nNow to confirm this, I'll quickly glance over at the \"New wards\" data.  There it is: a clean match with \"{\"ward_code\":\"22390\",\"ward_name\":\"Phường Tây Nha Trang\",\"province_name\":\"Tỉnh Khánh Hòa\"}\".\n\nFinally, I'm confident. This mapping is as clear as day. The resolution directly states the merger.  This should be a \"high\" confidence score.\n\nNow, let's assemble that JSON output and get this done.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1667/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Khánh Hòa",
+        "line": "51. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Ngọc Hiệp, phường Phương Sài và các xã Vĩnh Ngọc, Vĩnh Thạnh, Vĩnh Hiệp, Vĩnh Trung thành phường mới có tên gọi là phường Tây Nha Trang."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Khánh Hòa",
+      "ward_code": "22390",
+      "ward_name": "Phường Tây Nha Trang"
+    }
+  ]
+}

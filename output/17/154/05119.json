@@ -1,0 +1,28 @@
+{
+  "address": "Xã Nam Phong, Huyện Cao Phong, Tỉnh Hoà Bình",
+  "ellapsedInMs": 9267,
+  "estimatedCost": 0.0032892,
+  "thought": "**Address Mapping Analysis: Vietnamese Administrative Units**\n\nOkay, let's break this down. My goal here is to accurately translate an old Vietnamese address to its modern equivalent, leveraging the provided resolutions and the new ward list. The input gives me an old address: Xã Nam Phong (Ward), Huyện Cao Phong (District), Tỉnh Hoà Bình (Province).\n\nFirst, I need to isolate the components.  The old address specifies \"Xã Nam Phong,\" \"Huyện Cao Phong,\" and \"Tỉnh Hoà Bình.\"  Now, let's dive into the resolutions.\n\nI'll start with Resolution 60-NQ/TW. This is the place to check for province changes.  \"Tỉnh Hoà Bình\" isn't on the \"no merger\" list, but it *is* in the list of provinces that have been reorganized. Specifically, \"Hợp nhất tỉnh Vĩnh Phúc, tỉnh Phú Thọ và tỉnh Hoà Bình; lấy tên là tỉnh Phú Thọ\" – Hoà Bình is merged into Phú Thọ.  So, right away, my new province becomes \"Tỉnh Phú Thọ.\"\n\nNow, I need to investigate the other resolutions to understand changes to the wards and districts.  I'm looking for mentions of \"Nam Phong\" and \"Cao Phong.\" The challenge is to identify the correct \"Nam Phong\" because that's a common name.\n\nI review Resolution 1656/NQ-UBTVQH15 (Hà Nội).  This one mentions \"Nam Phong,\" but the context is clearly Hà Nội, and it's describing the merger of *that* \"Nam Phong.\"  Irrelevant.\n\nResolution 1674/NQ-UBTVQH15 (Ninh Bình) also has a \"Nam Phong,\" which is merging in that province. Not the right one.\n\nNext, I check Resolution 1676/NQ-UBTVQH15 (Phú Thọ) because this province is the target province after Hoà Bình's merge. This one looks promising!  There are a couple of relevant lines in this document:\n\nLine 67 doesn't mention the appropriate names, so I move to line 91. This line is very important: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Cao Phong, xã Hợp Phong và xã Thu Phong thành xã mới có tên gọi là xã Cao Phong.\" This refers to the renaming of the *district* capital and a few communes, but not relevant to \"Nam Phong\".\n\nNext I check line 92:  \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Dũng Phong, Nam Phong, Tây Phong và Thạch Yên thành xã mới có tên gọi là xã Mường Thàng.\"  *This is it!*  This explicitly mentions my \"Xã Nam Phong,\" and it's being reorganized to become part of the new \"Xã Mường Thàng\" within Phú Thọ.\n\nFinally, I glance at Resolution 1681/NQ-UBTVQH15 (Sơn La). It features \"Nam Phong,\" but its description is of a completely different area. So, that's not the correct \"Nam Phong\".\n\nTherefore, based on my analysis of the regulations, \"Xã Nam Phong\" in the old Hoà Bình province, will now become a part of \"Xã Mường Thàng\" in \"Tỉnh Phú Thọ\". The District/Huyện needs more clarification.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Vĩnh Phúc, tỉnh Phú Thọ và tỉnh Hoà Bình; lấy tên là tỉnh Phú Thọ"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "05116",
+      "ward_name": "Xã Mường Thàng"
+    },
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "92. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Dũng Phong, Nam Phong, Tây Phong và Thạch Yên thành xã mới có tên gọi là xã Mường Thàng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "05116",
+      "ward_name": "Xã Mường Thàng"
+    }
+  ]
+}

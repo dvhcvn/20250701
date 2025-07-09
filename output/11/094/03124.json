@@ -1,0 +1,18 @@
+{
+  "address": "Phường Noong Bua, Thành phố Điện Biên Phủ, Tỉnh Điện Biên",
+  "ellapsedInMs": 5333,
+  "estimatedCost": 0.001878,
+  "thought": "**Determining the New Administrative Unit for \"Phường Noong Bua\"**\n\nAlright, let's break this down. The user's given an old address, \"Phường Noong Bua\" in \"Tỉnh Điện Biên\", and needs the new ward. My plan is straightforward: first, I'll grab the initial province and ward. Got it – \"Tỉnh Điện Biên\" and \"Phường Noong Bua.\"\n\nNext, I'll consult the relevant resolutions. Starting with Province Resolutions (60-NQ/TW), specifically for \"Tỉnh Điện Biên\". Thankfully, Resolution 60-NQ/TW is clear:  \"Tỉnh Điện Biên\" isn't merging with anyone. So, \"Tỉnh Điện Biên\" remains unchanged, which simplifies things.\n\nNow, let's move on to the other resolutions, particularly 1661/NQ-UBTVQH15, where the real magic happens. I'm searching for \"Phường Noong Bua\" within the text. Bingo! Line 45 nails it: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Noong Bua, phường Nam Thanh và xã Thanh Xương thành phường mới có tên gọi là **phường Mường Thanh**.\" Perfect! A direct mapping of \"Phường Noong Bua\" to the new \"phường Mường Thanh\".\n\nWith this confirmation, I check my list of new wards for \"Phường Mường Thanh\".  Yep, it's there! I found the match: `{\"ward_code\":\"03334\",\"ward_name\":\"Phường Mường Thanh\",\"province_name\":\"Tỉnh Điện Biên\"}`.\n\nNow, for the output. I'll assemble the JSON data:\n\n*   `province_name`:  \"Tỉnh Điện Biên\" (as confirmed by the Province Resolutions).\n*   `ward_name`: \"Phường Mường Thanh\" (directly from the resolution).\n*   `ward_code`: \"03334\" (from the new wards list).\n*   `confidence`: \"high\" - This is a clear-cut case with direct references.\n*   `citation`:  I'll ensure I cite the exact resolution and line, 1661/NQ-UBTVQH15, Line 45, to be precise.\n\nThat should be a robust, well-supported answer!\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1661/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Điện Biên",
+        "line": "45. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Noong Bua, phường Nam Thanh và xã Thanh Xương thành phường mới có tên gọi là phường Mường Thanh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Điện Biên",
+      "ward_code": "03334",
+      "ward_name": "Phường Mường Thanh"
+    }
+  ]
+}

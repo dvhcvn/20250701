@@ -1,0 +1,18 @@
+{
+  "address": "Xã Đan Hội, Huyện Lục Nam, Tỉnh Bắc Giang",
+  "ellapsedInMs": 9364,
+  "estimatedCost": 0.0034245,
+  "thought": "**Address Mapping: Xã Đan Hội, Huyện Lục Nam, Tỉnh Bắc Giang**\n\nOkay, let's break this down. The task is to remap the address \"Xã Đan Hội, Huyện Lục Nam, Tỉnh Bắc Giang\" to the new administrative units, which requires cross-referencing resolutions and available ward data.\n\nFirst, I need to isolate the components of the address: \"Xã Đan Hội\" (ward), \"Huyện Lục Nam\" (district), and \"Tỉnh Bắc Giang\" (province).\n\nNext, I need to account for any province mergers. Checking for Resolution 60-NQ/TW reveals that \"Tỉnh Bắc Giang\" has merged into \"Tỉnh Bắc Ninh\". Consequently, all future analysis will involve \"Tỉnh Bắc Ninh\".\n\nNow, onto the resolutions. Resolution 1658/NQ-UBTVQH15, specifically for \"Tỉnh Bắc Ninh\", is relevant because of the merger. Within this resolution, line 40 is a direct hit: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Đan Hội và xã Cẩm Lý thành xã mới có tên gọi là xã Cẩm Lý.\" This explicitly states that \"Xã Đan Hội\" is now part of \"Xã Cẩm Lý.\" Excellent.\n\nAnalyzing line 43, however, is a distraction. \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Phương Sơn, thị trấn Đồi Ngô và các xã Cương Sơn, Tiên Nha, Chu Điện thành xã mới có tên gọi là xã Lục Nam\" does not include \"Xã Đan Hội\". It refers to \"Xã Lục Nam\" as a new ward, which is not relevant for this address.\n\nNow, I cross-reference the data for \"New wards\". I see `{\"ward_code\":\"07519\",\"ward_name\":\"Xã Cẩm Lý\",\"province_name\":\"Tỉnh Bắc Ninh\"}`. This perfectly aligns with the resolution 1658/NQ-UBTVQH15, line 40. Furthermore, the province \"Tỉnh Bắc Ninh\" is confirmed, and the code also supports my findings.\n\nThe other provided wards (`{\"ward_code\":\"07444\",\"ward_name\":\"Xã Lục Nam\",\"province_name\":\"Tỉnh Bắc Ninh\"}`, `{\"ward_code\":\"07525\",\"ward_name\":\"Phường Chũ\",\"province_name\":\"Tỉnh Bắc Ninh\"}`, `{\"ward_code\":\"07612\",\"ward_name\":\"Phường Phượng Sơn\",\"province_name\":\"Tỉnh Bắc Ninh\"}`) are clearly not relevant to \"Xã Đan Hội.\"\n\nBased on the direct reference in resolution 1658/NQ-UBTVQH15, I can confidently map \"Xã Đan Hội\" to \"Xã Cẩm Lý\". The confidence is high because this is a direct and explicit mapping within the resolution. Therefore, the JSON output is:\n\n*   `province_name`: \"Tỉnh Bắc Ninh\"\n*   `ward_name`: \"Xã Cẩm Lý\"\n*   `ward_code`: \"07519\"\n*   `confidence`: \"high\"\n*   `citation`: `\"1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh\", line 40`\n\nIt's a straightforward case.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh",
+        "line": "40. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Đan Hội và xã Cẩm Lý thành xã mới có tên gọi là xã Cẩm Lý."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "07519",
+      "ward_name": "Xã Cẩm Lý"
+    }
+  ]
+}

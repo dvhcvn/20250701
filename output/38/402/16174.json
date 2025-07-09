@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Yên Cát, Huyện Như Xuân, Tỉnh Thanh Hóa",
+  "ellapsedInMs": 4574,
+  "estimatedCost": 0.0015833,
+  "thought": "**My Analysis of the Administrative Address Mapping**\n\nOkay, so I'm tackling this address: \"Thị trấn Yên Cát, Huyện Như Xuân, Tỉnh Thanh Hóa.\" My goal is to map this *old* address to the *new* administrative structure. Here's how I'm approaching it.\n\nFirst, the province is straightforward: \"Tỉnh Thanh Hóa.\"  I always double-check against those province resolutions, and luckily, 60-NQ/TW shows that Thanh Hoá isn't slated for any province-level mergers. That confirms it's still \"Tỉnh Thanh Hóa.\"\n\nNow, for the tricky part: \"Thị trấn Yên Cát.\" I immediately jumped to \"Other resolutions\" and found Resolution 1686/NQ-UBTVQH15. Bingo! Line 110 is key: it tells me that \"Thị trấn Yên Cát\" is being merged with \"xã Tân Bình\" to create a *new* \"xã Như Xuân.\"  Perfect.\n\nNext, I cross-referenced \"xã Như Xuân\" against my \"New wards\" data.  And there it is:  `{\"ward_code\":\"16174\",\"ward_name\":\"Xã Như Xuân\",\"province_name\":\"Tỉnh Thanh Hóa\"}`.  It's an exact match!\n\nThe confidence level here is high.  The resolution directly addresses the merger of \"Thị trấn Yên Cát,\" and the resulting \"Xã Như Xuân\" appears in the validated \"New wards\" list.  I'm confident in this mapping. Now I'll generate the JSON output based on this analysis.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1686/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Thanh Hóa",
+        "line": "110. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Yên Cát và xã Tân Bình thành xã mới có tên gọi là xã Như Xuân."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Thanh Hóa",
+      "ward_code": "16174",
+      "ward_name": "Xã Như Xuân"
+    }
+  ]
+}

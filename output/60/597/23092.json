@@ -1,0 +1,18 @@
+{
+  "address": "Xã Hàm Đức, Huyện Hàm Thuận Bắc, Tỉnh Bình Thuận",
+  "ellapsedInMs": 7143,
+  "estimatedCost": 0.0025017999999999998,
+  "thought": "**Address Mapping Analysis for \"Xã Hàm Đức\"**\n\nOkay, let's break this down. The user's goal is to map the old address \"Xã Hàm Đức, Huyện Hàm Thuận Bắc, Tỉnh Bình Thuận\" to its new administrative unit. My initial step is to identify the old province and ward: \"Tỉnh Bình Thuận\" and \"Xã Hàm Đức\", respectively.\n\nThe key lies in understanding province mergers and new ward formations. I immediately checked for any province name changes. Resolution 60-NQ/TW states that \"Tỉnh Bình Thuận\" was merged into \"Tỉnh Lâm Đồng\". That's our first critical piece.\n\nNow, I needed to track down the fate of \"Xã Hàm Đức\". Digging through the provided resolutions, I found a direct hit in 1671/NQ-UBTVQH15. Line 55 explicitly states that \"Xã Hàm Đức\" was merged into a new ward called \"**Xã Hàm Thuận**\". Crucially, this resolution is under the \"tỉnh Lâm Đồng\" umbrella, confirming the province alignment.\n\nTo solidify this, I checked the \"New wards\" data.  There's a clean match: `{\"ward_code\":\"23059\",\"ward_name\":\"Xã Hàm Thuận\",\"province_name\":\"Tỉnh Lâm Đồng\"}`. Bingo! This confirms the new ward name and province.\n\nNow, to assemble the final output: I'll include the relevant resolution as the `citation`. The match is direct and unambiguous, so I'll set the `confidence` to \"High.\" The `province_name` will be \"Tỉnh Lâm Đồng,\" and I'll include the `ward_code` and `ward_name` for \"Xã Hàm Thuận.\"\n\nTo be absolutely sure, I did a quick cross-check of the resolutions.  I found another that mentioned \"Hàm Thuận Bắc\" district. However, this deals with the merger of other wards like \"Thuận Hòa, Hàm Trí and Hàm Phú\" into a new \"Xã Hàm Thuận Bắc\". It's clear that the target, \"Xã Hàm Đức,\" is specifically linked to the \"Xã Hàm Thuận\" merger, and the district of \"Hàm Thuận Bắc\" from the old address is only for information, not a direct factor. The focus is on the *ward* name itself and its specified merger.\n\nTherefore, the mapping is definitive: \"Xã Hàm Đức\" now falls under \"Xã Hàm Thuận\" in \"Tỉnh Lâm Đồng\".\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng",
+        "line": "55. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Ma Lâm, xã Thuận Minh và xã Hàm Đức thành xã mới có tên gọi là xã Hàm Thuận."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "23059",
+      "ward_name": "Xã Hàm Thuận"
+    }
+  ]
+}

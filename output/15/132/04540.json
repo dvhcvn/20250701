@@ -1,0 +1,18 @@
+{
+  "address": "Xã Âu Lâu, Thành phố Yên Bái, Tỉnh Yên Bái",
+  "ellapsedInMs": 5742,
+  "estimatedCost": 0.0020128999999999998,
+  "thought": "**Navigating the Administrative Unit Shuffle**\n\nOkay, so I've got an old address: \"Xã Âu Lâu, Thành phố Yên Bái, Tỉnh Yên Bái\". My task is to figure out its new administrative unit (ward).  Let's see...\n\nFirst, I identify the old province: \"Tỉnh Yên Bái\".  Now, I need to check those province resolutions, specifically the 60-NQ/TW series, to see if anything happened to it. Ah, looks like \"Tỉnh Yên Bái\" got merged with another province to become \"Tỉnh Lào Cai.\"  Got it.\n\nNext, I zero in on \"Xã Âu Lâu\".  I'll start digging through the resolutions looking for it. Bingo! Resolution 1673/NQ-UBTVQH15, \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai\", mentions it directly. It states that \"Xã Âu Lâu\", along with some other entities, has been merged to create a new \"Phường Âu Lâu\".  Excellent! That's a strong lead.\n\nNow, I'll consult my list of new wards. I need to find \"Phường Âu Lâu\" and its corresponding province. There it is:  `{\"ward_code\":\"04543\",\"ward_name\":\"Phường Âu Lâu\",\"province_name\":\"Tỉnh Lào Cai\"}`. Perfect.\n\nPutting it all together, I can construct the output:\n\n*   `province_name`: \"Tỉnh Lào Cai\" (because that's the new province)\n*   `ward_name`: \"Phường Âu Lâu\" (the new ward name)\n*   `ward_code`: \"04543\" (from the new wards list)\n*   `citation`:  Resolution 1673/NQ-UBTVQH15 (the crucial resolution)\n*   `confidence`: High, given the direct match and clear resolution.\n\nThis should be a pretty accurate answer.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai",
+        "line": "88. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Hợp Minh và các xã Giới Phiên, Minh Quân, Âu Lâu thành phường mới có tên gọi là phường Âu Lâu."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "04543",
+      "ward_name": "Phường Âu Lâu"
+    }
+  ]
+}

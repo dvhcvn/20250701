@@ -1,0 +1,18 @@
+{
+  "address": "Xã Mường Báng, Huyện Tủa Chùa, Tỉnh Điện Biên",
+  "ellapsedInMs": 7012,
+  "estimatedCost": 0.0028465,
+  "thought": "**Address Mapping Analysis: Xã Mường Báng, Tủa Chùa, Điện Biên**\n\nOkay, so I've got an old Vietnamese address: \"Xã Mường Báng, Huyện Tủa Chùa, Tỉnh Điện Biên\". My task is to map this to the new administrative units, given some resolutions and a list of new wards.  Let's see...\n\nFirst, the province is easy: **Tỉnh Điện Biên**. Checking my provincial resolutions (60-NQ/TW), it confirms Điện Biên isn't undergoing any mergers or splits. Great, that part's straightforward.\n\nNow, the tricky part: **Xã Mường Báng**. I need to find its corresponding new ward.  Looking in the \"Other resolutions,\" I spot 1661/NQ-UBTVQH15 concerning Điện Biên. Bingo! Line 16 is key: it explicitly states that *all* of Mường Báng (along with Tủa Chùa town and Nà Tòng) is merged into a **new ward named Xã Tủa Chùa**. Perfect.\n\nNext, I need to find the specific **ward code** for \"Xã Tủa Chùa\". My \"New wards\" list for Điện Biên has an entry matching the ward name \"Xã Tủa Chùa\" with a code of \"03217\". That's it!\n\nSo, the new mapping is: Province: **Tỉnh Điện Biên** (unchanged), Ward: **Xã Tủa Chùa**, Ward Code: **03217**. The key resolution for this mapping is 1661/NQ-UBTVQH15, Line 16.  This is a very clear and direct mapping, I have **high** confidence.\n\nAs a final check, just in case, I skimmed other resolutions and the new wards list to make sure there wasn't any conflicting information or any other \"Mường Báng\" or \"Tủa Chùa\" entries that might cause confusion, but I found none. The Sơn La province resolutions and wards could be disregarded as they were in a different province, and were spelled differently.\n\nThe output will be a JSON structure containing all these details, clearly citing the supporting resolution. This should be a robust and accurate mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1661/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Điện Biên",
+        "line": "16. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Tủa Chùa, xã Mường Báng và xã Nà Tòng thành xã mới có tên gọi là xã Tủa Chùa."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Điện Biên",
+      "ward_code": "03217",
+      "ward_name": "Xã Tủa Chùa"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Luân Giới, Huyện Điện Biên Đông, Tỉnh Điện Biên",
+  "ellapsedInMs": 6477,
+  "estimatedCost": 0.0025462,
+  "thought": "**Finding the New Administrative Unit for \"Xã Luân Giới\"**\n\nOkay, so I'm looking at \"Xã Luân Giới, Huyện Điện Biên Đông, Tỉnh Điện Biên\" and I need to figure out its new administrative unit. First things first, I see the province is \"Tỉnh Điện Biên.\" I quickly check `60-NQ/TW` to be sure there haven't been any province mergers, and nope, Điện Biên is good.\n\nNow, \"Xã Luân Giới.\" I start scanning the resolutions. I bypass Hà Nội's `1656/NQ-UBTVQH15`.  Then I hit `1661/NQ-UBTVQH15`, specific to Điện Biên. Bingo! I dig in, and on line 37 I see a mention of a new \"Xã Na Son,\" but \"Luân Giới\" isn't involved.  Then, line 40 catches my eye:  \"...các xã Chiềng Sơ, Luân Giói và Mường Luân thành xã mới có tên gọi là **xã Mường Luân**.\" There it is! \"Luân Giới\" *is* mentioned and it's being merged into \"Mường Luân.\" That's the key.\n\nTo solidify this, I'll double-check the \"New wards\" data. I search for \"Xã Mường Luân\" and sure enough, there it is: `{\"ward_code\":\"03214\",\"ward_name\":\"Xã Mường Luân\",\"province_name\":\"Tỉnh Điện Biên\"}`.  Perfect match.\n\nMy JSON output will include: \"Tỉnh Điện Biên\" for the province, \"Xã Mường Luân\" and ward code \"03214.\" The citation will be from `1661/NQ-UBTVQH15`, specifically line 40, and the confidence will be high because the resolution explicitly states the merger.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1661/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Điện Biên",
+        "line": "40. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Chiềng Sơ, Luân Giói và Mường Luân thành xã mới có tên gọi là xã Mường Luân."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Điện Biên",
+      "ward_code": "03214",
+      "ward_name": "Xã Mường Luân"
+    }
+  ]
+}

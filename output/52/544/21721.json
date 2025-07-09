@@ -1,0 +1,18 @@
+{
+  "address": "Xã Ân Tường Tây, Huyện Hoài Ân, Tỉnh Bình Định",
+  "ellapsedInMs": 6490,
+  "estimatedCost": 0.0022829,
+  "thought": "**Mapping Old Address to New Administrative Units**\n\nOkay, so I'm looking at this address mapping problem. The user wants to translate an old address, specifically \"Xã Ân Tường Tây\" in \"Huyện Hoài Ân,\" \"Tỉnh Bình Định,\" into its new administrative structure.\n\nFirst, I need to understand the historical context. I'll need to reference the provided data, and it looks like I need to use the Resolutions as the sources of truth. I have the old ward, district, and province: \"Xã Ân Tường Tây,\" \"Huyện Hoài Ân,\" and \"Tỉnh Bình Định.\"\n\nThe initial check is Province Resolutions (60-NQ/TW). Bingo, I can see that \"Tỉnh Bình Định\" was merged into \"Tỉnh Gia Lai.\" This means my new province is \"Tỉnh Gia Lai.\" That's the first important piece.\n\nNow, I move on to the more specific resolution data. It is for \"tỉnh Gia Lai,\" which is consistent with the province merger I just determined. I need to scan through this resolution carefully to find any explicit mention of \"Xã Ân Tường Tây.\"  Line 26 pops out: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Ân Tường Tây, Ân Hữu và Đak Mang thành xã mới có tên gọi là **xã Ân Tường**.\"  Perfect! It's right there – \"Xã Ân Tường Tây\" is merged into \"Xã Ân Tường.\"\n\nThis is great. Now I'm quite confident. I'll make sure there's no other candidate from the resolution and then check the new ward data. It's time to check the `New wards` list for \"Xã Ân Tường.\" I find it: `{\"ward_code\":\"21715\",\"ward_name\":\"Xã Ân Tường\",\"province_name\":\"Tỉnh Gia Lai\"}`. The names and province match perfectly! I have my answer.\n\nI can build the JSON output confidently. I'll include the relevant citation from the resolution and the specific line, along with a high confidence level because this is a direct mapping. The new province is \"Tỉnh Gia Lai,\" and the new ward details come from the `New Wards` list. It all fits together.\n\nAnd just to be absolutely sure, I'll quickly check the other line from the resolution (line 25). It deals with \"thị trấn Tăng Bạt Hổ\" and doesn't mention \"Xã Ân Tường Tây,\" so I can safely exclude \"xã Hoài Ân\" as a possibility. I'm satisfied.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai",
+        "line": "26. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Ân Tường Tây, Ân Hữu và Đak Mang thành xã mới có tên gọi là xã Ân Tường."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "21715",
+      "ward_name": "Xã Ân Tường"
+    }
+  ]
+}

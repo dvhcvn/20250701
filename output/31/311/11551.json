@@ -1,0 +1,18 @@
+{
+  "address": "Phường Lập Lễ, Thành phố Thuỷ Nguyên, Thành phố Hải Phòng",
+  "ellapsedInMs": 6672,
+  "estimatedCost": 0.0021963,
+  "thought": "**Analyzing Address Reorganization: A High-Confidence Match**\n\nOkay, so I'm presented with an old address and tasked with figuring out its new administrative ward.  My initial thought is to break this down methodically. First, I need to understand the old address. It looks like it was in \"Phường Lập Lễ,\" which is within \"Thành phố Hải Phòng.\"  Crucially, I immediately recognize that \"Thành phố Thuỷ Nguyên\" is a district, not the province, so my focus is squarely on the ward and the province.\n\nNext, I'll dive into the resolutions. The key is to match the old province. I start with Resolution 60-NQ/TW.  I scan the lists, looking for \"Thành phố Hải Phòng.\" It's not listed as a province *not* undergoing changes. Then, I check the list of provinces experiencing changes. Bingo! There it is, specifically stating \"Thành phố Hải Phòng\" remains the province name, even after potential merging, which gives me a solid starting point.\n\nNow, I shift my attention to the detailed reorganization resolutions. I have a list of `other_resolutions` and I need to find the one that mentions \"Lập Lễ.\" Iterating through them, I strike gold with resolution \"1669/NQ-UBTVQH15.\" The key line explicitly says \"Lập Lễ\" is combined with other wards to form \"phường Nam Triệu.\" And importantly, the province header matches!  \"Thành phố Hải Phòng\" is the province in the header, aligning with my initial province confirmation.\n\nThis seems promising, but I need to be certain. I consult the provided list of `new_wards`. Does \"phường Nam Triệu\" exist?  Yes!  And it perfectly matches the resolution: {\"ward_code\":\"11542\",\"ward_name\":\"Phường Nam Triệu\",\"province_name\":\"Thành phố Hải Phòng\"}.  Everything lines up.\n\nTherefore, my final conclusion is clear.  The new ward is indeed \"Phường Nam Triệu\" with the code \"11542\" within the province \"Thành phố Hải Phòng.\" The resolution \"1669/NQ-UBTVQH15\" provides the citation. I'd give this a \"high\" confidence rating because of the direct mention of \"Lập Lễ\" and the clear mapping provided by both the resolution and the new ward list. This is a solid, well-supported conclusion based on careful analysis.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "4. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Nam Triệu Giang, Lập Lễ và Tam Hưng thành phường mới có tên gọi là phường Nam Triệu."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "11542",
+      "ward_name": "Phường Nam Triệu"
+    }
+  ]
+}

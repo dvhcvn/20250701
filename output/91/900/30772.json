@@ -1,0 +1,18 @@
+{
+  "address": "Phường Bình San, Thành phố Hà Tiên, Tỉnh Kiên Giang",
+  "ellapsedInMs": 8407,
+  "estimatedCost": 0.0028218,
+  "thought": "**Analyzing Address Mapping for Administrative Unit Changes**\n\nOkay, so I'm being asked to figure out the new location for an old address: \"Phường Bình San, Thành phố Hà Tiên, Tỉnh Kiên Giang.\"  My initial task is to break it down. First, I need to pinpoint the old ward (\"Phường Bình San\") and province (\"Tỉnh Kiên Giang\") directly from the address. Simple enough.\n\nNext, I need to consider potential province mergers. Looking at \"60-NQ/TW,\" I quickly see that Kiên Giang merged with An Giang. The official change is clear: \"Hợp nhất tỉnh An Giang và tỉnh Kiên Giang, lấy tên là tỉnh An Giang\" - so, the new province is definitely \"Tỉnh An Giang.\" That's the baseline.\n\nNow comes the crucial part: finding the new equivalent of \"Phường Bình San.\"  I'm searching for it specifically within the \"Other resolutions.\" I found something promising in resolution \"1654/NQ-UBTVQH15.\" This mentions \"Phường Bình San\" directly. The resolution states that \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Pháo Đài, Bình San, Mỹ Đức và Đông Hồ thành phường mới có tên gọi là **phường Hà Tiên**.\" Excellent! This gives me the mapping: \"Phường Bình San\" becomes \"phường Hà Tiên.\"\n\nNow I have to look up \"phường Hà Tiên\" in the provided list of \"New wards\" alongside the new province, \"Tỉnh An Giang.\"  The list gives me: `{\"ward_code\":\"30769\",\"ward_name\":\"Phường Hà Tiên\",\"province_name\":\"Tỉnh An Giang\"}`. It matches perfectly!\n\nMy resulting output will include:\n\n*   `citation`:  The resolution \"1654/NQ-UBTVQH15.\"\n*   `confidence`: High, given the direct match.\n*   `province_name`: \"Tỉnh An Giang.\"\n*   `ward_code`: \"30769.\"\n*   `ward_name`: \"Phường Hà Tiên.\"\n\n**However,** I must do one final check of the \"New wards\" list for ambiguities or conflicts. I see a conflicting entry: `{\"ward_code\":\"30469\",\"ward_name\":\"Xã Mỹ Đức\",\"province_name\":\"Tỉnh An Giang\"}`. It's listed as a new ward, but the resolution states it was merged *into* \"Phường Hà Tiên.\" This discrepancy is concerning. My understanding is that, based on the resolution's wording, \"Mỹ Đức\" should no longer exist as a separate entity and is now a part of \"Phường Hà Tiên\".\n\nSo, I will retain the `{\"ward_code\":\"30769\",\"ward_name\":\"Phường Hà Tiên\",\"province_name\":\"Tỉnh An Giang\"}` output, but I'll add a note that the inclusion of \"Xã Mỹ Đức\" as a new ward contradicts the provided resolution, and that the resolution states \"Phường Bình San\" \"Xã Mỹ Đức\" \"Phường Đông Hồ\" and \"Pháo Đài\" were merged into the new \"Phường Hà Tiên\".\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1654/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh An Giang",
+        "line": "92. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Pháo Đài, Bình San, Mỹ Đức và Đông Hồ thành phường mới có tên gọi là phường Hà Tiên."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh An Giang",
+      "ward_code": "30769",
+      "ward_name": "Phường Hà Tiên"
+    }
+  ]
+}

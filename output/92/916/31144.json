@@ -1,0 +1,18 @@
+{
+  "address": "Phường Xuân Khánh, Quận Ninh Kiều, Thành phố Cần Thơ",
+  "ellapsedInMs": 8426,
+  "estimatedCost": 0.0030464999999999997,
+  "thought": "**Identifying the New Administrative Unit (Ward)**\n\nOkay, let's break this down. We're looking at \"Phường Xuân Khánh, Quận Ninh Kiều, Thành phố Cần Thơ.\" My initial thought is to extract the key components: \"Phường Xuân Khánh\" (the old ward) and \"Thành phố Cần Thơ\" (the province). The district \"Quận Ninh Kiều\" is irrelevant for this particular task; it's within the province context.\n\nFirst, I'll check if any province-level changes apply, using the \"Các đơn vị hành chính cấp tỉnh\" lists. Looking at Resolution 60-NQ/TW, \"Thành phố Cần Thơ\" isn't listed as undergoing any province-level mergers or subdivisions. It's listed as unchanged, meaning we can keep \"Thành phố Cần Thơ\" as the provincial unit.\n\nNext, I'll scrutinize the available resolutions. Specifically, I'm searching for mentions of \"Phường Xuân Khánh\" within them. Resolution 1656/NQ-UBTVQH15 (Hà Nội) is irrelevant. However, Resolution 1668/NQ-UBTVQH15 (Cần Thơ) is promising.\n\nBingo!  Resolution 1668 explicitly states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Tân An, Thới Bình và Xuân Khánh thành phường mới có tên gọi là **phường Ninh Kiều**.\" That's the key.  It perfectly matches \"Thành phố Cần Thơ\" in the header of the resolution, and it indicates a complete merger of \"Phường Xuân Khánh\" into \"Phường Ninh Kiều.\"\n\nNow, let's confirm this using the list of \"New wards.\" I'll search for \"Phường Ninh Kiều\" and \"Thành phố Cần Thơ.\"  There it is: `{\"ward_code\":\"31135\",\"ward_name\":\"Phường Ninh Kiều\",\"province_name\":\"Thành phố Cần Thơ\"}`. A perfect match!\n\nThe final step is to construct the JSON output.  I'm highly confident about this.  The JSON will include the relevant citation (1668/NQ-UBTVQH15), a high confidence score,  \"Thành phố Cần Thơ\" for the province, the matching ward code (\"31135\"), and the new ward name \"Phường Ninh Kiều.\"\n\nRegarding the \"include all possible new ward candidates\" part, the phrasing of Resolution 1668 is very specific: Xuân Khánh *merged* into Ninh Kiều. Any other \"new wards\" are from the *old* wards that *formed* Ninh Kiều, not from Xuân Khánh's independent merger. So, Ninh Kiều is the single new ward here.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1668/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Cần Thơ",
+        "line": "1. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Tân An, Thới Bình và Xuân Khánh thành phường mới có tên gọi là phường Ninh Kiều."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Cần Thơ",
+      "ward_code": "31135",
+      "ward_name": "Phường Ninh Kiều"
+    }
+  ]
+}

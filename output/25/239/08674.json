@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Thanh Thủy, Huyện Thanh Thuỷ, Tỉnh Phú Thọ",
+  "ellapsedInMs": 6971,
+  "estimatedCost": 0.0030938000000000003,
+  "thought": "**My Analysis of the Administrative Unit Change**\n\nOkay, so I'm tasked with finding the new ward for the old address \"Thị trấn Thanh Thủy, Huyện Thanh Thuỷ, Tỉnh Phú Thọ.\"  My approach is clear: use the available resolutions and new ward data to pinpoint the correct match.\n\nFirst, I identified the key elements: \"Thị trấn Thanh Thủy\" (the old ward) and \"Tỉnh Phú Thọ\" (the old province).  Then, I double-checked the province's status, confirming with resolution 60-NQ/TW that \"Tỉnh Phú Thọ\" remains \"Tỉnh Phú Thọ\" even after considering potential mergers. This informs the `province_name` field for my output.\n\nNext, I delved into the other resolutions, and I struck gold with `1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ`.  This resolution explicitly states that \"thị trấn Thanh Thủy\" is merged with other entities to form the new \"xã Thanh Thủy\". This directly links the old and the new.\n\nI then verified this by cross-referencing with the \"New wards\" list, finding the corresponding entry for \"xã Thanh Thủy\" within \"Tỉnh Phú Thọ\" – {\"ward_code\":\"08674\",\"ward_name\":\"Xã Thanh Thủy\",\"province_name\":\"Tỉnh Phú Thọ\"}.  Perfect match!\n\nMy JSON output is now straightforward: the resolution is `1676/NQ-UBTVQH15`, line 38 from that resolution provides the details, I have high confidence, the `province_name` is \"Tỉnh Phú Thọ\", the `ward_code` is \"08674\", and the `ward_name` is \"Xã Thanh Thủy\".\n\nI also double-checked to ensure no other resolutions or \"Thanh Thủy\" wards in different provinces could apply. The specificity of resolution `1676/NQ-UBTVQH15` to \"Tỉnh Phú Thọ\" and the clarity of the direct match to the data solidify my findings. This is a pretty clear-cut case.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "38. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Sơn Thủy (huyện Thanh Thủy), Đoan Hạ, Bảo Yên và thị trấn Thanh Thủy thành xã mới có tên gọi là xã Thanh Thủy."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "08674",
+      "ward_name": "Xã Thanh Thủy"
+    }
+  ]
+}

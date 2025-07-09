@@ -1,0 +1,28 @@
+{
+  "address": "Xã Phong Thạnh A, Thị xã Giá Rai, Tỉnh Bạc Liêu",
+  "ellapsedInMs": 9149,
+  "estimatedCost": 0.0029942,
+  "thought": "**My Analysis of Address Mapping for \"Xã Phong Thạnh A\"**\n\nOkay, so I'm tasked with figuring out the new administrative unit for the old address \"Xã Phong Thạnh A, Thị xã Giá Rai, Tỉnh Bạc Liêu\".  My first step is to break down the address:  \"Tỉnh Bạc Liêu\" (Province), \"Thị xã Giá Rai\" (District, although districts are being phased out in this scenario), and \"Xã Phong Thạnh A\" (Ward).\n\nImmediately, I know I need to consult the resolutions, specifically the ones regarding provincial and ward reorganizations. The first thing I find is resolution 60-NQ/TW, which details the merger of \"Tỉnh Bạc Liêu\" with \"Tỉnh Cà Mau\" to form the new province, \"Tỉnh Cà Mau.\"  This is key, as it dictates the overall province context.\n\nNext, I dig into the resolutions concerning \"Xã Phong Thạnh A\" and \"Thị xã Giá Rai.\" Resolution 1655/NQ-UBTVQH15 catches my attention: \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Cà Mau.\"  Bingo!  Within this resolution, line 58 is crucial: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của Phường 1 (thị xã Giá Rai), phường Hộ Phòng, xã Phong Thạnh và xã Phong Thạnh A thành phường mới có tên gọi là **phường Giá Rai**.\"  This clearly states that \"Xã Phong Thạnh A\" *became* part of the new \"Phường Giá Rai.\"\n\nNow, I cross-reference this with the \"New wards\" data.  I see a direct match: `{\"ward_code\":\"31942\",\"ward_name\":\"Phường Giá Rai\",\"province_name\":\"Tỉnh Cà Mau\"}`.  The province name aligns with the province merger, and the ward name matches the outcome of the resolution.  This is a very high-confidence match for \"Xã Phong Thạnh A.\"\n\nThere's also another ward listed: `{\"ward_code\":\"31957\",\"ward_name\":\"Xã Phong Thạnh\",\"province_name\":\"Tỉnh Cà Mau\"}`.  However, the resolution clearly states that \"Xã Phong Thạnh\" *merged into* \"Phường Giá Rai\". This is a bit confusing because there are separate listings for \"Xã Phong Thạnh\" and the new \"Phường Giá Rai\", even though the resolution implies a full merger of them, along with two other units. The crucial piece is that the resolution stated that \"Xã Phong Thạnh A thành phường mới có tên gọi là phường Giá Rai\", therefore, the data correctly states that the old unit \"Xã Phong Thạnh A\" merged into the new unit \"Phường Giá Rai\".\n\nSo, while the listing of \"Xã Phong Thạnh\" is a bit of a wrinkle in this mapping, the primary and most accurate mapping for the old address \"Xã Phong Thạnh A\" is to **\"Phường Giá Rai\" (ward_code: 31942, province_name: Tỉnh Cà Mau).**  This aligns perfectly with the resolutions regarding the administrative reorganization.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Bạc Liêu và tỉnh Cà Mau, lấy tên là tỉnh Cà Mau"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Cà Mau",
+      "ward_code": "31942",
+      "ward_name": "Phường Giá Rai"
+    },
+    {
+      "citation": {
+        "header": "1655/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Cà Mau",
+        "line": "58. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của Phường 1 (thị xã Giá Rai), phường Hộ Phòng, xã Phong Thạnh và xã Phong Thạnh A thành phường mới có tên gọi là phường Giá Rai."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Cà Mau",
+      "ward_code": "31942",
+      "ward_name": "Phường Giá Rai"
+    }
+  ]
+}

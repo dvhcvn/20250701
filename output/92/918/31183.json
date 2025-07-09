@@ -1,0 +1,28 @@
+{
+  "address": "Phường Long Tuyền, Quận Bình Thuỷ, Thành phố Cần Thơ",
+  "ellapsedInMs": 8851,
+  "estimatedCost": 0.0035529999999999997,
+  "thought": "**Address Mapping for Phường Long Tuyền, Cần Thơ**\n\nOkay, so I'm looking at how to map this old address, \"Phường Long Tuyền\", in \"Thành phố Cần Thơ,\" to the new administrative divisions. The user provided resolutions and a list of new wards, which is perfect.\n\nFirst, I identified the key elements: \"Phường Long Tuyền\" and \"Thành phố Cần Thơ.\" Then, I dove into the provided resolutions. I know the 60-NQ/TW resolution deals with provincial-level changes, which, yes, confirms that Cần Thơ is still Cần Thơ, even after some merging – this is important for my `province_name` output.\n\nNext, the real gold is in the 1668/NQ-UBTVQH15 resolution. This is the juicy bit! It specifically deals with ward-level adjustments in Cần Thơ. I read through it carefully. Line 4 explicitly states that some of \"Phường Long Tuyền\" is going into a *new* \"Phường An Bình.\" Then, line 7 says the *remaining* part of \"Phường Long Tuyền\" combines with \"Phường Long Hòa\" to form a *new* \"Phường Long Tuyền.\" Bam!\n\nThis means the *old* \"Phường Long Tuyền\" is actually splitting into two new entities. That's crucial. Now, I need to match these new wards with the data I have.\n\nLooking at the \"New wards\" list, I quickly spotted a match for \"Phường An Bình\" (code 31150) and one for \"Phường Long Tuyền\" (code 31183), both correctly in \"Thành phố Cần Thơ.\" The other entry, \"Xã Thạnh Phú,\" is irrelevant here.\n\nThe confidence is high here. The resolutions directly address \"Phường Long Tuyền's\" transformation, and the new ward names/province names align perfectly with the \"New wards\" data. It's a clean and clear correlation.\n\nTherefore, my output will be two distinct entries, one for each new ward. Both entries will have \"Thành phố Cần Thơ\" as the `province_name`.\n\nFor the \"Phường An Bình\" entry, the `citation` will be the header and Line 4 of 1668/NQ-UBTVQH15, `ward_code` will be \"31150,\" and `ward_name` will be \"Phường An Bình,\" with \"high\" confidence.\n\nFor \"Phường Long Tuyền,\" I will use the header and Line 7 from 1668/NQ-UBTVQH15 for the `citation`, `ward_code` will be \"31183,\" and `ward_name` will be \"Phường Long Tuyền,\" and again, \"high\" confidence. This should be a robust mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1668/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Cần Thơ",
+        "line": "4. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường An Bình, xã Mỹ Khánh và một phần diện tích tự nhiên, quy mô dân số của phường Long Tuyền thành phường mới có tên gọi là phường An Bình."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Cần Thơ",
+      "ward_code": "31150",
+      "ward_name": "Phường An Bình"
+    },
+    {
+      "citation": {
+        "header": "1668/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Cần Thơ",
+        "line": "7. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Long Hòa và phần còn lại của phường Long Tuyền sau khi sắp xếp theo quy định tại khoản 4 Điều này thành phường mới có tên gọi là phường Long Tuyền."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Cần Thơ",
+      "ward_code": "31183",
+      "ward_name": "Phường Long Tuyền"
+    }
+  ]
+}

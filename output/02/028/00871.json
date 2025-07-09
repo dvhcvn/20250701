@@ -1,0 +1,18 @@
+{
+  "address": "Xã Du Già, Huyện Yên Minh, Tỉnh Hà Giang",
+  "ellapsedInMs": 7210,
+  "estimatedCost": 0.0031201000000000002,
+  "thought": "**Address Mapping Analysis: Xã Du Già, Tỉnh Hà Giang**\n\nOkay, let's break this down systematically. The user's goal is to map an old address to new administrative units.  I need to handle this by first identifying the old province and ward:  \"Tỉnh Hà Giang\" and \"Xã Du Già\".\n\nI'll start with the province. Looking at the province resolutions, specifically 60-NQ/TW, I see the merger of Tuyên Quang and Hà Giang into Tuyên Quang. Therefore, \"Tỉnh Hà Giang\" is now \"Tỉnh Tuyên Quang.\"\n\nNow for the ward. I need to find the fate of \"Xã Du Già\".  I'll scan the resolutions and quickly locate \"1684/NQ-UBTVQH15,\" concerning the administrative restructuring within Tuyên Quang province.  Here, line 59 is critical: it explicitly states that Du Già and Du Tiến are *merged* to form a *new* \"Xã Du Già\".  This means that the old \"Xã Du Già\" is part of the new one, but it's a restructured administrative unit.\n\nNext, I'll consult the new ward data. I search for \"Xã Du Già\" within \"Tỉnh Tuyên Quang,\" and confirm its new code and name:  `{\"ward_code\":\"00871\",\"ward_name\":\"Xã Du Già\",\"province_name\":\"Tỉnh Tuyên Quang\"}`.\n\nMy confidence in this mapping is high. The resolution 1684/NQ-UBTVQH15 provides a clear and direct link between the old \"Xã Du Già\" and the new one. The name is the same, but it's crucial to acknowledge the merger and restructuring.\n\nFinally, the output will look like this:\n\n*   `citation`:  `{\"header\": \"1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang\", \"line\": \"59. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Du Tiến và xã Du Già thành xã mới có tên gọi là xã Du Già.\"}`\n*   `confidence`: \"high\"\n*   `province_name`: \"Tỉnh Tuyên Quang\"\n*   `ward_code`: \"00871\"\n*   `ward_name`: \"Xã Du Già\"\n\nDouble-checking this one more time, and I'm confident in this address mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "59. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Du Tiến và xã Du Già thành xã mới có tên gọi là xã Du Già."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "00871",
+      "ward_name": "Xã Du Già"
+    }
+  ]
+}

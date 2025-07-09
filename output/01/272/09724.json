@@ -1,0 +1,18 @@
+{
+  "address": "Xã Nam Hà, Huyện Phúc Thọ, Thành phố Hà Nội",
+  "ellapsedInMs": 6630,
+  "estimatedCost": 0.0030954999999999997,
+  "thought": "**Analyzing the Administrative Unit Change**\n\nOkay, so I'm presented with an old address: \"Xã Nam Hà, Huyện Phúc Thọ, Thành phố Hà Nội\" and need to find its corresponding new ward. My immediate thought is to check the relevant resolutions and a list of new wards.\n\nFirst, I quickly identify \"Thành phố Hà Nội\" as the province. Thankfully, according to `60-NQ/TW`, there were no province-level mergers, so \"Thành phố Hà Nội\" remains unchanged. Good start.\n\nNow, I dive into the crucial resolution, \"1656/NQ-UBTVQH15,\" which specifically addresses ward rearrangements within Hanoi. I start scanning the lines, zeroing in on \"Xã Nam Hà\".  Line 90 doesn't contain it. However, boom! Line 91 is the key. It clearly states the merging of several old wards, including \"Xã Nam Hà,\" into a new ward called \"Xã Phúc Lộc.\"\n\nTo be absolutely certain, I consult the `New wards` list and confirm that \"Xã Phúc Lộc\" is indeed present with the code \"09739,\" and it's associated with \"Thành phố Hà Nội.\"\n\nBased on this, I'm confident in constructing the JSON output:\n\n*   `province_name`: \"Thành phố Hà Nội\" (unchanged).\n*   `ward_name`: \"Xã Phúc Lộc\" (derived from the resolution).\n*   `ward_code`: \"09739\" (validated from the list).\n*   `confidence`: \"high\" (direct mapping).\n*   `citation`: \"1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội,\" line 91.\n\nThis seems like a solid and straightforward analysis, given the clarity of the resolution.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1656/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hà Nội",
+        "line": "91. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Nam Hà, Sen Phương, Vân Phúc, Võng Xuyên và Xuân Đình thành xã mới có tên gọi là xã Phúc Lộc."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hà Nội",
+      "ward_code": "09739",
+      "ward_name": "Xã Phúc Lộc"
+    }
+  ]
+}

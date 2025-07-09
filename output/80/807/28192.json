@@ -1,0 +1,18 @@
+{
+  "address": "Xã Phước Vĩnh Tây, Huyện Cần Giuộc, Tỉnh Long An",
+  "ellapsedInMs": 7210,
+  "estimatedCost": 0.0027199000000000004,
+  "thought": "**My Analysis of the Address Mapping**\n\nOkay, so I'm tackling this Vietnamese address: \"Xã Phước Vĩnh Tây, Huyện Cần Giuộc, Tỉnh Long An.\" My goal is to map this to the new administrative structure.\n\nFirst, I need to break down the address.  I've got \"Xã Phước Vĩnh Tây\" as the old ward and \"Tỉnh Long An\" as the old province.  Now the fun begins with resolutions.  I'm looking at Resolution 60-NQ/TW and, sure enough, \"Tỉnh Long An\" is mentioned in a merger with Tây Ninh, becoming \"Tỉnh Tây Ninh.\"  That's my new province.\n\nThen, I shifted gears to scrutinize other resolutions for details on \"Xã Phước Vĩnh Tây.\" Resolution 1682/NQ-UBTVQH15 catches my attention, focusing on administrative unit adjustments in Tây Ninh.  Line 48 of that resolution is the money shot: It clearly states that \"Phước Vĩnh Tây\" is *part* of the new \"Xã Phước Vĩnh Tây.\" That's crucial!\n\nNext up, cross-referencing this information with the \"New wards\" data.  Knowing the province change, I'm now looking for \"Xã Phước Vĩnh Tây\" within \"Tỉnh Tây Ninh.\" And there it is!  A perfect match: `{\"ward_code\":\"28201\",\"ward_name\":\"Xã Phước Vĩnh Tây\",\"province_name\":\"Tỉnh Tây Ninh\"}`.  Bingo!\n\nBased on this, I'm confident in the JSON output I'll construct.  The `province_name` will be \"Tỉnh Tây Ninh\", the `ward_name` is \"Xã Phước Vĩnh Tây\", and the `ward_code` is \"28201.\"  For the `citation`, I'll reference Resolution 1682/NQ-UBTVQH15, specifically line 48, which directly addresses the formation of the *new* \"Xã Phước Vĩnh Tây.\" My confidence level is high because I have a clear resolution mentioning the old ward's role in the new one, and a matching entry in my new ward data. This is a pretty straightforward mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1682/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tây Ninh",
+        "line": "48. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Long An, Long Phụng và Phước Vĩnh Tây thành xã mới có tên gọi là xã Phước Vĩnh Tây."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tây Ninh",
+      "ward_code": "28201",
+      "ward_name": "Xã Phước Vĩnh Tây"
+    }
+  ]
+}

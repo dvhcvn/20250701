@@ -1,0 +1,18 @@
+{
+  "address": "Xã Minh Hiệp, Huyện Lộc Bình, Tỉnh Lạng Sơn",
+  "ellapsedInMs": 7953,
+  "estimatedCost": 0.0031793,
+  "thought": "**My Analysis of Address Reorganization**\n\nAlright, let's break this down systematically. My task is to determine the new administrative ward for the given old address: \"Xã Minh Hiệp, Huyện Lộc Bình, Tỉnh Lạng Sơn\".  I'm presented with resolutions and a list of new wards, which is perfect.\n\nFirst, I parsed the old address.  \"Xã Minh Hiệp\" is the old ward, \"Huyện Lộc Bình\" is the old district (though it's ultimately irrelevant per the prompt's instructions), and \"Tỉnh Lạng Sơn\" is the old province.\n\nNow, the province is a crucial first step. I checked the \"60-NQ/TW\" resolutions to see if Lạng Sơn was merged or changed.  Fortunately, \"Tỉnh Lạng Sơn\" is explicitly listed as *not* undergoing any merging.  High confidence in that match!\n\nNext, I dove into the other resolutions, specifically looking for \"Xã Minh Hiệp\".  I found \"1672/NQ-UBTVQH15,\" which deals with province-level changes.  Scanning the lines, I found a pivotal one: line 37, which clearly states that \"Xã Minh Hiệp\" is merged into the new ward, \"Xã Thống Nhất\". Bingo!  \"Xã Minh Hiệp\" is now \"Xã Thống Nhất\". Resolution 2 was quickly dismissed as irrelevant, being about a different province.\n\nWith the new ward identified, I cross-referenced it with the provided `New wards` list.  Sure enough, I found \"Xã Thống Nhất\" in the list, correctly associated with \"Tỉnh Lạng Sơn\".\n\nThe confidence level here is exceptionally high.  I have an unchanged province confirmed by specific province-level resolutions, and a clear resolution specifically merging \"Xã Minh Hiệp\" into \"Xã Thống Nhất\", a ward that I confirmed in the list.  Everything aligns perfectly.\n\nTherefore, the final output is based on the citation \"1672/NQ-UBTVQH15\", specifically line 37 where it explicitly mentions the old ward in the context of it being merged into the new ward.  The ward information will be the matching record from the `New wards` list. I'm confident about my solution.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1672/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lạng Sơn",
+        "line": "37. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Minh Hiệp, Hữu Lân và Thống Nhất thành xã mới có tên gọi là**xã Thống Nhất**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lạng Sơn",
+      "ward_code": "06577",
+      "ward_name": "Xã Thống Nhất"
+    }
+  ]
+}

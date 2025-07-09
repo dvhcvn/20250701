@@ -1,0 +1,18 @@
+{
+  "address": "Xã Cư Drăm, Huyện Krông Bông, Tỉnh Đắk Lắk",
+  "ellapsedInMs": 5957,
+  "estimatedCost": 0.0020932,
+  "thought": "**Determining the New Administrative Unit for \"Xã Cư Drăm\"**\n\nOkay, let's break this down systematically. The user's provided address is \"Xã Cư Drăm, Huyện Krông Bông, Tỉnh Đắk Lắk\". My goal is to identify the new administrative unit, likely a ward or precinct.\n\nFirst, I identified the province, which is straightforward: \"Tỉnh Đắk Lắk\". Now, I needed to check any relevant province resolutions. Specifically, I scanned for resolutions related to Đắk Lắk, particularly resolutions like \"60-NQ/TW\" which deals with provincial mergers.  I saw no changes there.\n\nNext, I delved into the provided `other_resolutions` focusing on \"Xã Cư Drăm.\"  Resolution \"1660/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đắk Lắk\" seemed highly relevant.  Line 43 explicitly states that \"Xã Cư Drăm\" will be merged with \"Xã Yang Mao\" to form a new ward named **\"Xã Yang Mao\"**. Bingo!\n\nNow, I needed to confirm this. I cross-referenced \"Xã Yang Mao\" with the `New wards` list for \"Tỉnh Đắk Lắk\". And there it was: `{\"ward_code\":\"24484\",\"ward_name\":\"Xã Yang Mao\",\"province_name\":\"Tỉnh Đắk Lắk\"}`. Perfect match.\n\nBased on this, I've constructed my output:\n\n*   `province_name`: \"Tỉnh Đắk Lắk\"\n*   `ward_name`: \"Xã Yang Mao\"\n*   `ward_code`: \"24484\"\n*   `citation`: `\"1660/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đắk Lắk\"`, specifically line 43.\n*   The `confidence` level is \"high\" because the resolution directly addresses the reorganization.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1660/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đắk Lắk",
+        "line": "43. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Cư Drăm và xã Yang Mao thành xã mới có tên gọi là xã Yang Mao."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đắk Lắk",
+      "ward_code": "24484",
+      "ward_name": "Xã Yang Mao"
+    }
+  ]
+}

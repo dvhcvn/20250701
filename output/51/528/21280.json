@@ -1,0 +1,18 @@
+{
+  "address": "Xã Nghĩa Hiệp, Huyện Tư Nghĩa, Tỉnh Quảng Ngãi",
+  "ellapsedInMs": 6189,
+  "estimatedCost": 0.0022957999999999998,
+  "thought": "**Address Mapping: Xã Nghĩa Hiệp to Xã Vệ Giang**\n\nOkay, here's my approach to this address mapping. First, I'll break down the input address to pinpoint the old administrative units: \"Xã Nghĩa Hiệp\" (old ward), \"Huyện Tư Nghĩa\" (old district, though the prompt notes all districts will be eliminated), and \"Tỉnh Quảng Ngãi\" (old province).\n\nNext, I need to check the relevant resolutions. Resolution 60-NQ/TW tells me that \"Tỉnh Quảng Ngãi\" remains \"Tỉnh Quảng Ngãi\" even after potential mergers. This is critical for the province information in my final output.\n\nNow for the critical bit: resolution 1677/NQ-UBTVQH15. I'll need to carefully review this resolution, specifically lines related to Quảng Ngãi. Bingo! Line 15 directly addresses \"Xã Nghĩa Hiệp\", merging it with other areas to form the new ward \"Xã Vệ Giang.\"\n\nTo confirm this, I cross-reference the identified new ward \"Xã Vệ Giang\" against the \"New Wards\" data. Thankfully, \"Xã Vệ Giang\" is present in the data, containing its code, name, and the province name, exactly as I anticipated.\n\nFinally, I'll construct the JSON output. The `citation` will reference the specific line from resolution 1677/NQ-UBTVQH15 that I used for the match. Since there's a clear, direct correlation between the old ward and the new ward in the resolution, and it aligns with the \"New Wards\" data, I can confidently set the `confidence` to \"high\". The `province_name` will be \"Tỉnh Quảng Ngãi,\" thanks to resolution 60-NQ/TW. The `ward_code` and `ward_name` will be pulled directly from the \"New Wards\" data for \"Xã Vệ Giang.\" This looks like a solid match.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1677/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ngãi",
+        "line": "15. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Sông Vệ, xã Nghĩa Hiệp và xã Nghĩa Phương thành xã mới có tên gọi là xã Vệ Giang."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ngãi",
+      "ward_code": "21238",
+      "ward_name": "Xã Vệ Giang"
+    }
+  ]
+}

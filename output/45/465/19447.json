@@ -1,0 +1,18 @@
+{
+  "address": "Xã Hướng Linh, Huyện Hướng Hóa, Tỉnh Quảng Trị",
+  "ellapsedInMs": 5843,
+  "estimatedCost": 0.0043799,
+  "thought": "**Determining the New Ward for the Given Address**\n\nOkay, so I've got the old address: \"Xã Hướng Linh, Huyện Hướng Hóa, Tỉnh Quảng Trị.\" My primary goal is to find the new administrative unit, the ward, that it now belongs to.\n\nFirst, the province is \"Tỉnh Quảng Trị.\" I need to verify if any provincial-level changes have occurred. Checking the province resolutions, I quickly see that \"Tỉnh Quảng Trị\" remains unchanged, so that's good.\n\nNow, I'll delve into the \"Other resolutions\" focusing on \"Tỉnh Quảng Trị\" and \"Hướng Linh.\"  Resolution 1680/NQ-UBTVQH15 catches my eye immediately. Looking through it, line 53 is the key: it clearly states that \"Xã Hướng Linh\" is being merged with \"Hướng Sơn\" and \"Hướng Phùng\" to form a new ward, and that new ward is called \"**xã Hướng Phùng**\". Bingo!\n\nNext, I need to confirm that \"xã Hướng Phùng\" exists in the \"New wards\" data for \"Tỉnh Quảng Trị.\"  Sure enough, I find a perfect match:  `{\"ward_code\":\"19441\",\"ward_name\":\"Xã Hướng Phùng\",\"province_name\":\"Tỉnh Quảng Trị\"}`.\n\nThe confidence here is exceptionally high. I have a direct citation from the resolution (1680/NQ-UBTVQH15, line 53) that explicitly merges \"Xã Hướng Linh\" into \"Xã Hướng Phùng\", and my \"New Wards\" data confirms the existence and details of the latter.\n\nTherefore, the JSON output is a simple construct:\n\n*   `citation`: The resolution and specific line.\n*   `confidence`: High.\n*   `province_name`: Tỉnh Quảng Trị.\n*   `ward_code`: 19441.\n*   `ward_name`: Xã Hướng Phùng.\nThis is a clean, straightforward case of administrative restructuring.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1680/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Trị",
+        "line": "53. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Hướng Sơn, Hướng Linh và Hướng Phùng thành xã mới có tên gọi là xã Hướng Phùng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Trị",
+      "ward_code": "19441",
+      "ward_name": "Xã Hướng Phùng"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Phường 3, Thành phố Vũng Tàu, Tỉnh Bà Rịa - Vũng Tàu",
+  "ellapsedInMs": 9030,
+  "estimatedCost": 0.025728799999999996,
+  "thought": "**Determining the New Administrative Unit for \"Phường 3, Thành phố Vũng Tàu\"**\n\nOkay, so the user wants the updated administrative details for the old address. I need to figure out what happened to \"Phường 3, Thành phố Vũng Tàu, Tỉnh Bà Rịa - Vũng Tàu\".  First, I'll check the provincial-level changes, because that's always a good starting point.  The user hasn't specified which resolutions to use, but I know the typical ones to start with.\n\nI found resolution \"60-NQ/TW,\" and it confirms that Bà Rịa - Vũng Tàu has been merged, along with Bình Dương and Ho Chi Minh City, into \"Thành phố Hồ Chí Minh.\" So, \"Tỉnh Bà Rịa - Vũng Tàu\" is now \"Thành phố Hồ Chí Minh.\" That's the easy part.\n\nNow I need to drill down to the ward level. I'll search for \"Phường 3, Thành phố Vũng Tàu\" in the relevant resolutions under \"Thành phố Hồ Chí Minh.\" Let's look at \"1685/NQ-UBTVQH15,\" which I expect to cover ward-level changes.  I'll scan the lines for \"Phường 3\" and \"Thành phố Vũng Tàu,\" which should give me the answer.\n\nAha! Line 102 nails it: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của Phường 1, Phường 2, Phường 3, Phường 4 và Phường 5 (thành phố Vũng Tàu), phường Thắng Nhì, phường Thắng Tam thành phường mới có tên gọi là **phường Vũng Tàu**.\"  Perfect! \"Phường 3\" has been consolidated into \"phường Vũng Tàu\".\n\nNow, to solidify this, I'll cross-reference my findings with the \"New wards\" list, looking for a matching entry.  I can find: `{\"ward_code\":\"26506\",\"ward_name\":\"Phường Vũng Tàu\",\"province_name\":\"Thành phố Hồ Chí Minh\"}`. This confirms everything.\n\nTherefore, the output will be as follows:\n\n*   `province_name`: \"Thành phố Hồ Chí Minh\"\n*   `ward_name`: \"phường Vũng Tàu\"\n*   `ward_code`: \"26506\"\n*   `citation`:\n    *   `header`: \"1685/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của Thành phố Hồ Chí Minh\"\n    *   `line`: \"102. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của Phường 1, Phường 2, Phường 3, Phường 4 và Phường 5 (thành phố Vũng Tàu), phường Thắng Nhì, phường Thắng Tam thành phường mới có tên gọi là **phường Vũng Tàu**.\"\n*   `confidence`: \"high\" (This is a direct and explicit match, so I'm confident in the result).\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1685/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của Thành phố Hồ Chí Minh",
+        "line": "102. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của Phường 1, Phường 2, Phường 3, Phường 4 và Phường 5 (thành phố Vũng Tàu), phường Thắng Nhì, phường Thắng Tam thành phường mới có tên gọi là phường Vũng Tàu."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hồ Chí Minh",
+      "ward_code": "26506",
+      "ward_name": "Phường Vũng Tàu"
+    }
+  ]
+}

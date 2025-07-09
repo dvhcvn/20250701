@@ -1,0 +1,18 @@
+{
+  "address": "Xã Cảnh Dương, Huyện Quảng Trạch, Tỉnh Quảng Bình",
+  "ellapsedInMs": 6622,
+  "estimatedCost": 0.0025156,
+  "thought": "**Address Mapping Analysis: From Old to New Vietnamese Administrative Units**\n\nOkay, here's the breakdown of my thought process for this address mapping task. The user wants to translate an old Vietnamese address (\"Xã Cảnh Dương, Huyện Quảng Trạch, Tỉnh Quảng Bình\") into the new administrative structure. My first step is always to isolate the key components: the old province (\"Tỉnh Quảng Bình\") and the old ward (\"Xã Cảnh Dương\").\n\nThe initial hurdle is that \"Tỉnh Quảng Bình\" is no longer the correct province. I need to consult the provincial consolidation resolutions (specifically, I'd check against 60-NQ/TW if I was using an actual database), and here's where it gets interesting. I immediately identified Resolution 60-NQ/TW which states that \"Tỉnh Quảng Bình\" was *merged* with \"Tỉnh Quảng Trị\" to become, well, \"Tỉnh Quảng Trị.\"\n\nNow, with the new province identified, I focused my search on resolutions pertaining to \"Tỉnh Quảng Trị\" and, specifically, those related to ward-level reorganization. I found resolution \"1680/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Trị\". This resolution became the key to deciphering the ward mapping.\n\nLine 16 within that resolution explicitly mentions \"Xã Cảnh Dương,\" indicating that it was *merged* with \"Quảng Châu\" and \"Quảng Tùng\" to form \"Xã Hòa Trạch.\" I also confirmed that the resolution's header matched the new province name, which added to my confidence.\n\nI then verified my findings by checking the known list of \"New wards\" for \"Tỉnh Quảng Trị\". The entry {\"ward_code\":\"19033\",\"ward_name\":\"Xã Hòa Trạch\",\"province_name\":\"Tỉnh Quảng Trị\"} aligns perfectly.\n\nTherefore, with a *high* degree of confidence (because of the precise resolution line and consistent provincial matching), I've determined that the old ward \"Xã Cảnh Dương\" from \"Tỉnh Quảng Bình\" is now mapped to \"Xã Hòa Trạch\" in \"Tỉnh Quảng Trị\". Here's the final JSON output of my analysis:\n\n```json\n{\n  \"citation\": {\n    \"header\": \"1680/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Trị\",\n    \"line\": \"16. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Quảng Châu, Quảng Tùng và Cảnh Dương thành xã mới có tên gọi là **xã Hòa Trạch**.\"\n  },\n  \"confidence\": \"high\",\n  \"province_name\": \"Tỉnh Quảng Trị\",\n  \"ward_code\": \"19033\",\n  \"ward_name\": \"Xã Hòa Trạch\"\n}\n```\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1680/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Trị",
+        "line": "16. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Quảng Châu, Quảng Tùng và Cảnh Dương thành xã mới có tên gọi là xã Hòa Trạch."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Trị",
+      "ward_code": "19033",
+      "ward_name": "Xã Hòa Trạch"
+    }
+  ]
+}

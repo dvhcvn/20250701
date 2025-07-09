@@ -1,0 +1,18 @@
+{
+  "address": "Xã Khâu Vai, Huyện Mèo Vạc, Tỉnh Hà Giang",
+  "ellapsedInMs": 6116,
+  "estimatedCost": 0.002255,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm tackling this Vietnamese address mapping task. The goal is to figure out the current administrative location for an old address. I'm starting with the information provided: \"Tỉnh Hà Giang\" and \"Xã Khâu Vai\". And let's not forget the client specified that we're eliminating districts, so the information on Huyện Mèo Vạc is purely contextual.\n\nFirst, I identified the old province and ward: Hà Giang and Khâu Vai. Then, I dug into the provincial resolutions. I immediately found the critical change: resolution 60-NQ/TW states that Hà Giang merged with Tuyên Quang. So, Hà Giang is now part of Tuyên Quang. That's key.\n\nNext, I looked at other resolutions, specifically 1684/NQ-UBTVQH15, the one for Tuyên Quang. I scanned through it and found a crucial line, line 52. It explicitly mentions \"Xã Khâu Vai\". Line 52 spells out the merging of Cán Chu Phìn, Lũng Pù, and Khâu Vai to form a *new* Xã Khâu Vai. Perfect. This means \"Xã Khâu Vai\" still exists, but with a new configuration.\n\nFinally, I checked the new ward data. Bingo! I found a match: a new entry for \"Xã Khâu Vai\" located in \"Tỉnh Tuyên Quang\" with code \"00802\". This confirms my findings from the resolution.\n\nTherefore, I'm confident in constructing the JSON output: the new province is Tuyên Quang, the new ward is Khâu Vai with code 00802. I'll provide resolution 1684/NQ-UBTVQH15, line 52 as the citation. This is a solid connection, a direct match of the ward's name from the resolutions to the new data, and the merging into the Tuyên Quang province all checks out. The `confidence` level is definitely \"high\" due to the precision of this analysis.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "52. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Cán Chu Phìn, Lũng Pù và Khâu Vai thành xã mới có tên gọi là xã Khâu Vai."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "00802",
+      "ward_name": "Xã Khâu Vai"
+    }
+  ]
+}

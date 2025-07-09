@@ -1,0 +1,18 @@
+{
+  "address": "Phường Tân Bình, Thành phố Hải Dương, Tỉnh Hải Dương",
+  "ellapsedInMs": 8555,
+  "estimatedCost": 0.004339,
+  "thought": "**Determining the New Administrative Unit for \"Phường Tân Bình, Thành phố Hải Dương\"**\n\nOkay, so the user wants the new address for an old one, specifically \"Phường Tân Bình, Thành phố Hải Dương, Tỉnh Hải Dương.\"  My first thought is, this is a bit of a tricky one due to potential mergers. I need to be methodical.\n\nFirst, I have to check for any province mergers.  I consulted the provided lists. Nothing in the \"no mergers\" list, but the \"new province\" list shows that \"Tỉnh Hải Dương\" *is* merged. It seems that \"Tỉnh Hải Dương\" is now part of \"Thành phố Hải Phòng.\"  That's my first key piece of information. The new province is \"Thành phố Hải Phòng\".\n\nNext, I need to dig into the ward-level changes within the relevant area.  I know I'm looking for \"Phường Tân Bình\" in the resolutions, especially those concerning \"Thành phố Hải Dương\" or \"Tỉnh Hải Dương.\"  I've got a relevant resolution, 1669/NQ-UBTVQH15, concerning administrative adjustments in the new \"Thành phố Hải Phòng\". It's important to keep in mind, even though this is Hải Phòng, the merger means it affects what used to be Hải Dương.\n\nScanning the resolution text, I found it!  Line 26 of resolution 1669/NQ-UBTVQH15 specifically mentions \"Phường Tân Bình.\" It states that \"Phường Tân Bình, Thanh Bình, Lê Thanh Nghị và một phần diện tích tự nhiên, quy mô dân số của phường Trần Phú thành phường mới có tên gọi là phường Lê Thanh Nghị.\"  Bingo! This tells me that \"Phường Tân Bình\" is *now* part of \"Phường Lê Thanh Nghị\".  The context makes it clear that this \"Tân Bình\" is indeed the one from the old \"Thành phố Hải Dương.\"\n\nSo, I have the new ward!  I need to verify that information against the `New wards` data to get the `ward_code` and the confirmed province name. Checking the list, I find the entry: `{\"ward_code\":\"10532\",\"ward_name\":\"Phường Lê Thanh Nghị\",\"province_name\":\"Thành phố Hải Phòng\"}`. This perfectly matches my findings.\n\nBased on this direct mapping, I have very high confidence in this result.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "26. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số củacác phường Tân Bình, Thanh Bình, Lê Thanh Nghịvà một phần diện tích tự nhiên, quy mô dân số của phường Trần Phú thành phường mới có tên gọi là **phường Lê Thanh Nghị**."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "10532",
+      "ward_name": "Phường Lê Thanh Nghị"
+    }
+  ]
+}

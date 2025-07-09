@@ -1,0 +1,18 @@
+{
+  "address": "Phường Nam Khê, Thành phố Uông Bí, Tỉnh Quảng Ninh",
+  "ellapsedInMs": 5717,
+  "estimatedCost": 0.0044819,
+  "thought": "**Identifying the New Administrative Unit for Phường Nam Khê**\n\nOkay, so the user wants to know the new ward for \"Phường Nam Khê, Thành phố Uông Bí, Tỉnh Quảng Ninh\". Straightforward enough. First, I identify the province as \"Tỉnh Quảng Ninh\". Next, I quickly check for any province-level mergers, but \"Tỉnh Quảng Ninh\" is explicitly listed as *not* undergoing any. That's good; keeps things simple.\n\nNow, the real work begins. I need to find \"Phường Nam Khê\" in the relevant resolutions. I'll focus on the data for \"Tỉnh Quảng Ninh,\" particularly the \"Other resolutions\" and \"New wards\" sections. I scan through and quickly spot the key resolution: 1679/NQ-UBTVQH15. Bingo!\n\nLine 28 of this resolution clearly states the merger: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Bắc Sơn, Nam Khê, Vàng Danh và một phần diện tích tự nhiên, quy mô dân số của phường Trưng Vương thành phường mới có tên gọi là **phường Vàng Danh**.\"  It's a complete merger; \"Phường Nam Khê\" is now part of \"Phường Vàng Danh.\" That's the answer.\n\nNow, I grab the ward code for \"Phường Vàng Danh\" from the \"New wards\" list. It's `06820`.\n\nFinally, I construct the JSON output: the citation from the resolution, with a \"high\" confidence level because this is a direct, explicit statement. The province remains \"Tỉnh Quảng Ninh\", and the new ward name is \"Phường Vàng Danh\" with the code `06820`. Done and dusted.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1679/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ninh",
+        "line": "28. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Bắc Sơn, Nam Khê, Vàng Danh và một phần diện tích tự nhiên, quy mô dân số của phường Trưng Vương thành phường mới có tên gọi là phường Vàng Danh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ninh",
+      "ward_code": "06820",
+      "ward_name": "Phường Vàng Danh"
+    }
+  ]
+}

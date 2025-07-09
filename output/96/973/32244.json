@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Rạch Gốc, Huyện Ngọc Hiển, Tỉnh Cà Mau",
+  "ellapsedInMs": 7846,
+  "estimatedCost": 0.0029185,
+  "thought": "**Analysis of Administrative Unit Mapping**\n\nOkay, here's how I'm approaching this mapping task. First, I need to pinpoint the relevant old administrative units from the provided address: \"Thị trấn Rạch Gốc, Huyện Ngọc Hiển, Tỉnh Cà Mau.\"  Specifically, I'm focusing on \"Thị trấn Rạch Gốc\" (the old ward) and \"Tỉnh Cà Mau\" (the old province).\n\nNow, to determine the new units, I'll consult the pertinent resolutions. Starting with province-level changes, I examined resolution 60-NQ/TW. This resolution deals with the merger of Bạc Liêu and Cà Mau, but crucially, the *resulting* province name remains \"Tỉnh Cà Mau.\" So, the province hasn't changed its name, which simplifies things.\n\nNext, I delved into resolutions concerning ward-level adjustments within \"Tỉnh Cà Mau.\"  Resolution 1655/NQ-UBTVQH15 became immediately relevant.  Item 12 of this resolution directly addresses \"Thị trấn Rạch Gốc,\" stating that it, along with other areas, is being combined to form \"xã Phan Ngọc Hiển.\" Bingo!  That's my mapping.\n\nTo solidify this, I'll cross-reference the \"New wards\" data. I'm looking for details on \"xã Phan Ngọc Hiển.\" I found the record: `{\"ward_code\":\"32244\",\"ward_name\":\"Xã Phan Ngọc Hiển\",\"province_name\":\"Tỉnh Cà Mau\"}`. This confirms the new ward's name, code, and province, which aligns perfectly with my resolution analysis.\n\nBecause the mapping is so direct and explicit – with a clear mention of \"Thị trấn Rạch Gốc\" merging into \"xã Phan Ngọc Hiển\" – I'd assign a \"high\" confidence level to this mapping. It's a textbook case.\n\nFinally, the output will be a JSON structure, ensuring clarity and consistency. The key elements will be the citation (resolution number), the confidence level, the province name, the ward code, and the ward name. I will double-check to ensure no detail is missed. I am ready to construct the mapping now!\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1655/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Cà Mau",
+        "line": "12. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Rạch Gốc, xã Viên An Đông và một phần diện tích tự nhiên, quy mô dân số của xã Tân Ân thành xã mới có tên gọi là xã Phan Ngọc Hiển."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Cà Mau",
+      "ward_code": "32244",
+      "ward_name": "Xã Phan Ngọc Hiển"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "address": "Phường Thới Bình, Quận Ninh Kiều, Thành phố Cần Thơ",
+  "ellapsedInMs": 8075,
+  "estimatedCost": 0.0029673000000000004,
+  "thought": "**Mapping the Old Vietnamese Address to the New Administrative Structure**\n\nOkay, here's my breakdown of how to map this old Vietnamese address to the new system. I've got a clear plan, and I'm feeling confident about this one.\n\nFirst, I need to break down the old address: \"Phường Thới Bình\" (Ward), \"Quận Ninh Kiều\" (District), and \"Thành phố Cần Thơ\" (Province). Simple enough.\n\nNow, let's dive into the resolutions. I started with the province resolutions to confirm the province name, which I can assume has stayed the same. And indeed, resolution 60-NQ/TW seems to validate that \"Thành phố Cần Thơ\" is still \"Thành phố Cần Thơ\". That's a good start, high confidence there.\n\nNext, the critical part: I'm looking for \"Phường Thới Bình\" within the other resolutions, because that's where the real mapping happens. Bingo! Resolution 1668/NQ-UBTVQH15 nails it: it clearly states that \"Phường Thới Bình\" is being merged with other wards to form \"phường Ninh Kiều\". Perfect, that's the key.\n\nNow, I'll cross-reference the `new_wards` data. Looking for \"phường Ninh Kiều\", and there it is: `{\"ward_code\":\"31135\",\"ward_name\":\"Phường Ninh Kiều\",\"province_name\":\"Thành phố Cần Thơ\"}`. That's a direct match and confirms everything!\n\nSo, the JSON output is straightforward: the province is \"Thành phố Cần Thơ\" (high confidence), the new ward is \"Phường Ninh Kiều\" with code \"31135\", and the citation should point to that crucial resolution. The confidence level has to be \"high\" because the resolution explicitly merges the old ward into the new one.\n\nJust to be absolutely sure, I did a quick search for any other mentions of \"Thới Bình\", but those turned out to be for a different \"Thới Bình\" in Cà Mau. Not relevant here.\n\nTherefore, I'm comfortable saying that the old address \"Phường Thới Bình, Quận Ninh Kiều, Thành phố Cần Thơ\" now maps to the new ward \"Phường Ninh Kiều\" in \"Thành phố Cần Thơ\". I'm ready to proceed with this mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất thành phố cần Thơ, tỉnh Sóc Trăng và tỉnh Hậu Giang; lấy tên là thành phố Cần Thơ"
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Cần Thơ",
+      "ward_code": "31135",
+      "ward_name": "Phường Ninh Kiều"
+    },
+    {
+      "citation": {
+        "header": "1668/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Cần Thơ",
+        "line": "1. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Tân An, Thới Bình và Xuân Khánh thành phường mới có tên gọi là phường Ninh Kiều."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Cần Thơ",
+      "ward_code": "31135",
+      "ward_name": "Phường Ninh Kiều"
+    }
+  ]
+}

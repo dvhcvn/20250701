@@ -1,0 +1,28 @@
+{
+  "address": "Xã An Thịnh, Huyện Văn Yên, Tỉnh Yên Bái",
+  "ellapsedInMs": 7222,
+  "estimatedCost": 0.0034322,
+  "thought": "**Determining the New Administrative Unit for \"Xã An Thịnh, Huyện Văn Yên, Tỉnh Yên Bái\"**\n\nOkay, so I'm tackling the task of identifying the current administrative location for the provided address. First, I need to break down the information: the old province is Tỉnh Yên Bái, and the old ward is Xã An Thịnh.\n\nMy initial thought is to check for any province mergers. Given my knowledge, I recall Resolution 60-NQ/TW, which indicates the merger of Tỉnh Lào Cai and Tỉnh Yên Bái, resulting in the province now being called Tỉnh Lào Cai.  Thus, the `province_name` in the output will definitely be \"Tỉnh Lào Cai\".\n\nNow, the crucial step: determining the new ward. I'm going to meticulously scan other relevant resolutions, specifically looking for any mentions of \"An Thịnh\" within the context of either Tỉnh Yên Bái or the newly formed Tỉnh Lào Cai. This step is key, as any administrative changes for Xã An Thịnh will be documented here.\n\nMy examination of the available resolutions reveals a vital match within \"1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai\".  Specifically, point 20 states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Mậu A và các xã Yên Thái, An Thịnh, Mậu Đông, Ngòi A thành xã mới có tên gọi là **xã Mậu A**.\" This directly impacts Xã An Thịnh! The merger of Yên Bái into Lào Cai means this resolution is applicable. The new ward name is \"Xã Mậu A.\"  The appropriate `citation` will be \"1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai\" and \"20. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Mậu A và các xã Yên Thái, An Thịnh, Mậu Đông, Ngòi A thành xã mới có tên gọi là **xã Mậu A**.\"\n\nFinally, I locate \"Xã Mậu A\" in the list of new wards and find a perfect match: `{\"ward_code\":\"04375\",\"ward_name\":\"Xã Mậu A\",\"province_name\":\"Tỉnh Lào Cai\"}`.  The match is perfect:  `province_name` is \"Tỉnh Lào Cai\", `ward_name` is \"Xã Mậu A\", and `ward_code` is \"04375\".  My confidence in this solution is high.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Lào Cai và tỉnh Yên Bái, lấy tên là tỉnh Lào Cai"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "04375",
+      "ward_name": "Xã Mậu A"
+    },
+    {
+      "citation": {
+        "header": "1673/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lào Cai",
+        "line": "20. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Mậu A và các xã Yên Thái, An Thịnh, Mậu Đông, Ngòi A thành xã mới có tên gọi là xã Mậu A."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lào Cai",
+      "ward_code": "04375",
+      "ward_name": "Xã Mậu A"
+    }
+  ]
+}

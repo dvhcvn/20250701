@@ -1,0 +1,18 @@
+{
+  "address": "Xã Hải Minh, Huyện Hải Hậu, Tỉnh Nam Định",
+  "ellapsedInMs": 6632,
+  "estimatedCost": 0.0023706,
+  "thought": "**Determining the New Ward for the Old Address**\n\nOkay, so I've got \"Xã Hải Minh, Huyện Hải Hậu, Tỉnh Nam Định\".  My first step is to nail down the old province, which is \"Tỉnh Nam Định.\"  I'll immediately check my province resolutions (specifically, those related to 60-NQ/TW) to see if \"Nam Định\" has been reorganized.  Ah, here we go: \"Hợp nhất tỉnh Hà Nam, tỉnh Ninh Bình và tỉnh Nam Định; lấy tên là tỉnh Ninh Bình.\"  So, \"Nam Định\" is now part of \"Tỉnh Ninh Bình.\"\n\nNext, I need to focus on the old ward: \"Xã Hải Minh.\" I'll cross-reference it with other resolutions, specifically looking for any mentions of \"Xã Hải Minh\" within the relevant `lines`.  Bingo! Resolution \"1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình\" has the key information: \"46. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Hải Minh, Hải Đường và Hải Anh thành xã mới có tên gọi là **xã Hải Anh**.\"  This clearly states the old \"Xã Hải Minh\" is part of the new \"Xã Hải Anh.\"\n\nTo confirm, I'll quickly check the \"New wards\" list for \"Xã Hải Anh\" within \"Tỉnh Ninh Bình.\"  Found it: `{\"ward_code\":\"14236\",\"ward_name\":\"Xã Hải Anh\",\"province_name\":\"Tỉnh Ninh Bình\"}`.  Perfect.\n\nNow, I'll construct the JSON output.  The `province_name` is \"Tỉnh Ninh Bình,\" derived from the province merger.  The `ward_name` is \"Xã Hải Anh,\" directly from resolution 1674/NQ-UBTVQH15.  The `ward_code` is \"14236\".  My `citation` will point back to resolution 1674/NQ-UBTVQH15, specifically the line mentioning \"Xã Hải Minh\" being merged. Finally, the `confidence` level is \"high\" because the direct merging of the old ward into the new is explicitly stated in the resolution, and the province merger is straightforward. This gives the following output:\n```json\n{\n  \"province_name\": \"Tỉnh Ninh Bình\",\n  \"ward_name\": \"Xã Hải Anh\",\n  \"ward_code\": \"14236\",\n  \"citation\": {\n    \"header\": \"1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình\",\n    \"line\": \"46. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Hải Minh, Hải Đường và Hải Anh thành xã mới có tên gọi là **xã Hải Anh**.\"\n  },\n  \"confidence\": \"high\"\n}\n```\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "46. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Hải Minh, Hải Đường và Hải Anh thành xã mới có tên gọi là **xã Hải Anh**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "14236",
+      "ward_name": "Xã Hải Anh"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Lương Phi, Huyện Tri Tôn, Tỉnh An Giang",
+  "ellapsedInMs": 7372,
+  "estimatedCost": 0.0023863,
+  "thought": "**My Thought Process for Mapping the Old Address**\n\nOkay, I've got the address: \"Xã Lương Phi, Huyện Tri Tôn, Tỉnh An Giang.\" My first step, as always, is to break down the elements. I'm focusing on the old ward, district (though I know we're eliminating them), and province. So, \"Xã Lương Phi,\" \"Huyện Tri Tôn,\" and \"Tỉnh An Giang.\"\n\nNow, since I'm dealing with administrative restructuring, I need to check the relevant resolutions. I'll start with the province-level resolutions, specifically the 60-NQ/TW. I scan it for \"Tỉnh An Giang\". Ah, there it is: \"Hợp nhất tỉnh An Giang và tỉnh Kiên Giang, lấy tên là tỉnh An Giang.\" This means An Giang remains An Giang. That's straightforward enough. So, the new province will still be \"Tỉnh An Giang\".\n\nNext up, the \"Other resolutions,\" particularly 1654/NQ-UBTVQH15. I'm looking for \"Xã Lương Phi\" within the `lines`. Bingo! Line 24: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã An Tức, Lương Phi và Ô Lâm thành xã mới có tên gọi là **xã Ô Lâm**.\"  Perfect, it's right there! My old ward, \"Xã Lương Phi,\" is now part of the new \"Xã Ô Lâm.\"\n\nTime to cross-reference with the new ward data. I search the `New wards` for \"Xã Ô Lâm\" and \"Tỉnh An Giang.\" And there it is: `{\"ward_code\":\"30577\",\"ward_name\":\"Xã Ô Lâm\",\"province_name\":\"Tỉnh An Giang\"}`. It matches perfectly!\n\nI'm feeling confident about this.  My output will be a JSON object, based on the provided schema:\n\n*   `province_name`: \"Tỉnh An Giang\"\n*   `ward_name`: \"Xã Ô Lâm\"\n*   `ward_code`: \"30577\"\n*   `confidence`: \"high\" (because I have a direct resolution reference)\n*   `citation`:\n    *   `header`: \"1654/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh An Giang\"\n    *   `line`: \"24. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã An Tức, Lương Phi và Ô Lâm thành xã mới có tên gọi là **xã Ô Lâm**.\"\n\nFinally, I'll double-check that all fields are present, correctly formatted, and that it's an array of objects to meet the requirements of this schema, and it's good to go. This has been a clean mapping, with a high degree of certainty due to the direct resolution citation.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1654/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh An Giang",
+        "line": "24. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã An Tức, Lương Phi và Ô Lâm thành xã mới có tên gọi là xã Ô Lâm."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh An Giang",
+      "ward_code": "30577",
+      "ward_name": "Xã Ô Lâm"
+    }
+  ]
+}

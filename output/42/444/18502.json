@@ -1,0 +1,18 @@
+{
+  "address": "Xã Hà Linh, Huyện Hương Khê, Tỉnh Hà Tĩnh",
+  "ellapsedInMs": 8527,
+  "estimatedCost": 0.0026981,
+  "thought": "**Analysis of Administrative Unit Change for \"Xã Hà Linh, Huyện Hương Khê, Tỉnh Hà Tĩnh\"**\n\nOkay, let's break this down systematically. The user wants me to map an old address to the new administrative setup.  The key is \"Xã Hà Linh, Huyện Hương Khê, Tỉnh Hà Tĩnh.\"\n\nFirst, I quickly identify the province as \"Tỉnh Hà Tĩnh.\"  My preliminary check of the provided list of provinces undergoing reorganization immediately confirms that \"Tỉnh Hà Tĩnh\" is *not* listed under \"Các đơn vị hành chính cấp tỉnh thực hiện sáp nhập\" - meaning no provincial-level changes are happening. Excellent, this means \"Tỉnh Hà Tĩnh\" stays as is.\n\nNow, I dive into the ward-level resolutions, specifically \"1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh.\"  I skim through for mentions of \"Hương Khê\" first, but then I zero in on line 52 and find out it is about Thị trấn Hương Khê and the merger of Hương Long and Phú Gia into the new Xã Hương Khê. That's not what I'm looking for because the old address is Xã Hà Linh, so I continue my search.\n\nAha! Line 55! It explicitly states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Điền Mỹ và **xã Hà Linh** thành xã mới có tên gọi là **xã Hà Linh**.\" Perfect. The resolution *directly* addresses the old \"Xã Hà Linh\" and tells us that it, along with Điền Mỹ, now forms a *new* \"Xã Hà Linh\".\n\nNow I need to cross-reference this with the \"New wards\" list. Checking the available new wards, I find:\n\n*   `{\"ward_code\":\"18496\",\"ward_name\":\"Xã Hương Khê\",\"province_name\":\"Tỉnh Hà Tĩnh\"}`: No, this is the newly formed Hương Khê, unrelated to the old \"Xã Hà Linh\" address.\n*   `{\"ward_code\":\"18502\",\"ward_name\":\"Xã Hà Linh\",\"province_name\":\"Tỉnh Hà Tĩnh\"}`: Bingo!  This perfectly matches the *new* ward name according to the resolution. This must be the correct mapping.\n\nThe confidence level here is high. The resolution is explicit and leaves no room for ambiguity. \"Xã Hà Linh\" (old) becomes \"Xã Hà Linh\" (new) after the merger with Điền Mỹ. It's a clear, direct mapping.\n\nSo, the JSON output will look something like this:\n\n*   `province_name`: \"Tỉnh Hà Tĩnh\" (unchanged)\n*   `ward_name`: \"Xã Hà Linh\" (new)\n*   `ward_code`: \"18502\" (from the new wards list)\n*   `confidence`: \"high\"\n*   `citation`:\n    *   `header`: \"1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh\"\n    *   `line`: \"55. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Điền Mỹ và xã Hà Linh thành xã mới có tên gọi là **xã Hà Linh**.\"\n\nThe analysis is complete.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh",
+        "line": "55. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Điền Mỹ và xã Hà Linh thành xã mới có tên gọi là xã Hà Linh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hà Tĩnh",
+      "ward_code": "18502",
+      "ward_name": "Xã Hà Linh"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tịnh Thọ, Huyện Sơn Tịnh, Tỉnh Quảng Ngãi",
+  "ellapsedInMs": 7287,
+  "estimatedCost": 0.0029398,
+  "thought": "**Identifying the New Administrative Unit for the Old Address**\n\nOkay, here's how I'm approaching this. First, I need to understand the old address. I'll break it down: \"Xã Tịnh Thọ, Huyện Sơn Tịnh, Tỉnh Quảng Ngãi\" gives me the old ward (\"Xã Tịnh Thọ\"), district (\"Huyện Sơn Tịnh\" - though that's irrelevant here), and province (\"Tỉnh Quảng Ngãi\").\n\nNext, I'll check the Province Resolutions (60-NQ/TW). Since this is about provincial changes, I need to see if Quảng Ngãi has been affected. The resolution mentions a few merges, but none that involve Quảng Ngãi. So, the province name remains \"Tỉnh Quảng Ngãi\" after the merge.\n\nNow, I'll dive into the other resolutions. My focus is on finding what happened to \"Xã Tịnh Thọ\". I check resolution 1663/NQ-UBTVQH15, but it's about a different province. Then I move to resolution 1677/NQ-UBTVQH15, which is promising because it's about Quảng Ngãi. Bingo! Line 13 of that resolution states that \"Xã Tịnh Thọ\" is merged to \"Xã Thọ Phong\".\n\nI'll now check the list of `new_wards` to confirm. I'm looking for \"Xã Thọ Phong\" within Quảng Ngãi.  The entry `{\"ward_code\":\"21181\",\"ward_name\":\"Xã Thọ Phong\",\"province_name\":\"Tỉnh Quảng Ngãi\"}` is exactly what I need. It's a perfect match!\n\nWith this information, I can now construct the JSON output. I'll use the resolution line that mentions the merge and set a \"high\" confidence level because the match is direct. The province name will be \"Tỉnh Quảng Ngãi\" (unchanged). Finally, I'll include the new ward code and name: \"21181\" for \"Xã Thọ Phong\".\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1677/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ngãi",
+        "line": "13. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Tịnh Phong và xã Tịnh Thọ thành xã mới có tên gọi là xã Thọ Phong."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ngãi",
+      "ward_code": "21181",
+      "ward_name": "Xã Thọ Phong"
+    }
+  ]
+}

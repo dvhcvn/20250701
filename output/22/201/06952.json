@@ -1,0 +1,18 @@
+{
+  "address": "Xã Quảng Phong, Huyện Hải Hà, Tỉnh Quảng Ninh",
+  "ellapsedInMs": 7582,
+  "estimatedCost": 0.0030212999999999998,
+  "thought": "**Identifying the New Administrative Unit**\n\nOkay, let's break this down. The user's got an old address: \"Xã Quảng Phong, Huyện Hải Hà, Tỉnh Quảng Ninh\", and they need the new equivalent.  First, I've got to confirm the old province and ward:  \"Tỉnh Quảng Ninh\" and \"Xã Quảng Phong\" – simple enough.\n\nNext, I'll consult my usual province resolutions (60-NQ/TW) to make sure there haven't been any changes to the provincial structure. Ah, \"Tỉnh Quảng Ninh\" is explicitly listed under \"Các đơn vị hành chính cấp tỉnh không thực hiện sáp nhập\" which means it's still \"Tỉnh Quảng Ninh\". Excellent.\n\nNow, the real work begins. Time to scan through other relevant resolutions, specifically looking for \"Xã Quảng Phong\". Bingo! Resolution 1679/NQ-UBTVQH15, \"Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ninh\" looks promising.  Scrolling down to line 13, there it is: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Quảng Hà, các xã Quảng Minh, Quảng Chính, **Quảng Phong** và một phần diện tích tự nhiên, quy mô dân số của xã Quảng Long thành xã mới có tên gọi là **xã Quảng Hà**.\"  Clear as day! \"Quảng Phong\" is being merged into the new \"xã Quảng Hà\".\n\nTo be absolutely sure, I'll cross-reference with my \"New wards\" list, searching for \"xã Quảng Hà\".  And there it is: `{\"ward_code\":\"06922\",\"ward_name\":\"Xã Quảng Hà\",\"province_name\":\"Tỉnh Quảng Ninh\"}`.  Perfect.\n\nNow, I'll construct the JSON output:\n\n*   `province_name`: \"Tỉnh Quảng Ninh\" (confirmed)\n*   `ward_name`: \"Xã Quảng Hà\" (confirmed)\n*   `ward_code`: \"06922\" (from the New wards list)\n*   `citation`: with the header and line from resolution 1679.\n*   `confidence`: High – this is a clean merge.\n\nOf course, I should double-check. I always double-check.  Let's make sure there aren't *any* other mentions of \"Quảng Phong\" or similarly spelled names that might cause confusion. I search through the other resolutions, like I always do. The Nghệ An, Quảng Trị, and Thái Nguyên resolutions come up, but they use different spellings (\"Quang Phong\") or refer to other provinces. No confusion there. My confidence is high. The answer is \"Xã Quảng Hà\".\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1679/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ninh",
+        "line": "13. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Quảng Hà, các xã Quảng Minh, Quảng Chính, Quảng Phong và một phần diện tích tự nhiên, quy mô dân số của xã Quảng Long thành xã mới có tên gọi là **xã Quảng Hà**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ninh",
+      "ward_code": "06922",
+      "ward_name": "Xã Quảng Hà"
+    }
+  ]
+}

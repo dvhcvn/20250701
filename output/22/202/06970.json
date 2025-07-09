@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Ba Chẽ, Huyện Ba Chẽ, Tỉnh Quảng Ninh",
+  "ellapsedInMs": 6968,
+  "estimatedCost": 0.0024218,
+  "thought": "**Identifying the New Administrative Unit**\n\nOkay, let's see. I've been tasked with finding the new administrative ward for the old address \"Thị trấn Ba Chẽ, Tỉnh Quảng Ninh.\"  My process will involve carefully analyzing provided resolutions and cross-referencing them with a list of new wards.\n\nFirst, I'll extract the old ward and province from the input, which are \"Thị trấn Ba Chẽ\" and \"Tỉnh Quảng Ninh,\" respectively. Next, I'll consult the province resolutions (specifically 60-NQ/TW) to see if \"Tỉnh Quảng Ninh\" is subject to any mergers or changes.  It seems \"Tỉnh Quảng Ninh\" is explicitly listed as a province that *won't* be merged, so that part is straightforward.\n\nNow, I need to delve into other relevant resolutions, like 1679/NQ-UBTVQH15, to see what they say about \"Thị trấn Ba Chẽ.\"  Aha!  The resolution clearly states that \"Thị trấn Ba Chẽ\" is being merged into the new \"Xã Ba Chẽ.\"  That's the key.\n\nNext, I'll cross-reference \"Xã Ba Chẽ\" with the list of new wards.  And yes, there it is!  {\"ward_code\":\"06970\",\"ward_name\":\"Xã Ba Chẽ\",\"province_name\":\"Tỉnh Quảng Ninh\"}. This confirms the mapping.\n\nA quick side note: I noticed \"Xã Hải Lạng\" mentioned in the resolution. It says that \"part of\" Xã Hải Lạng is merged into Xã Ba Chẽ, but the old address is \"Thị trấn Ba Chẽ\" which is *fully* merged into \"Xã Ba Chẽ.\"  So while Hải Lạng is still around, it doesn't affect the original address directly.\n\nTherefore, the new administrative unit for \"Thị trấn Ba Chẽ\" is \"Xã Ba Chẽ,\" with a code of \"06970.\"  My confidence in this match is high because the resolution provides explicit details.  I'll include the relevant section from the resolution as a citation for complete clarity.  The final output will be a JSON object containing the correct province name, ward name, ward code, the cited resolution details, and \"high\" confidence.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1679/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ninh",
+        "line": "10. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Ba Chẽ, các xã Thanh Sơn, Nam Sơn, Đồn Đạc và phần còn lạicủa xã Hải Lạngsau khi sắp xếp theo quy định tại khoản 3 và khoản 7 Điều nàythành xã mới có tên gọi là xã Ba Chẽ."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ninh",
+      "ward_code": "06970",
+      "ward_name": "Xã Ba Chẽ"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Đắk Ru, Huyện Đắk R'Lấp, Tỉnh Đắk Nông",
+  "ellapsedInMs": 5445,
+  "estimatedCost": 0.0019025000000000001,
+  "thought": "**My Analysis of Address Mapping**\n\nOkay, so I need to translate this old address into a new administrative unit. The input tells me the old province was \"Tỉnh Đắk Nông\" and the old ward was \"Xã Đắk Ru\".  My first task is to confirm that the old province is accurate and then find its associated new administrative unit.\n\nI start by checking the province merge information in the provided resolutions. I zero in on resolution 60-NQ/TW and look for mentions of \"Tỉnh Đắk Nông\". Aha! The resolution specifies a merger of \"Lâm Đồng, Đắk Nông, and Bình Thuận,\" ultimately resulting in the new province name: \"Tỉnh Lâm Đồng.\"\n\nNext, I need to map \"Xã Đắk Ru\". I'll scan the available resolutions for that specific ward.  I quickly find Resolution 1671/NQ-UBTVQH15. It explicitly addresses \"Xã Đắk Ru\"! Crucially, the resolution describes merging Đắk Ru with other xã to create a new one: \"Xã Quảng Tín\".  This is the key piece of information.\n\nNow, I cross-reference this with the \"New wards\" data.  I look for \"Xã Quảng Tín\" and its province name.  I find the entry: `{\"ward_code\":\"24760\",\"ward_name\":\"Xã Quảng Tín\",\"province_name\":\"Tỉnh Lâm Đồng\"}`. This aligns perfectly with the previously determined province name.\n\nGiven this clear and direct mapping, I can confidently construct the JSON output:\n\n*   The citation will be the header and relevant line from Resolution 1671/NQ-UBTVQH15.\n*   The confidence level will be \"High\" because this is a direct, unambiguous mapping.\n*   The new province name is \"Tỉnh Lâm Đồng\".\n*   The new ward code is \"24760\".\n*   The new ward name is \"Xã Quảng Tín\".\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng",
+        "line": "98. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đắk Sin, Hưng Bình, Đắk Ru và Quảng Tín thành xã mới có tên gọi là xã Quảng Tín."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "24760",
+      "ward_name": "Xã Quảng Tín"
+    }
+  ]
+}

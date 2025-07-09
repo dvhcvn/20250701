@@ -1,0 +1,28 @@
+{
+  "address": "Xã Ân Tường Đông, Huyện Hoài Ân, Tỉnh Bình Định",
+  "ellapsedInMs": 6936,
+  "estimatedCost": 0.0023745,
+  "thought": "**My Analysis of Address Mapping for Xã Ân Tường Đông**\n\nOkay, so I'm tackling this address: \"Xã Ân Tường Đông, Huyện Hoài Ân, Tỉnh Bình Định.\" My goal is to determine its new equivalent based on the provided data and resolutions.\n\nFirst, the easy part: I've identified the old units. Province is \"Tỉnh Bình Định,\" District is \"Huyện Hoài Ân,\" and the ward is \"Xã Ân Tường Đông.\"\n\nNow, let's dive into the complexities. The first resolution, 60-NQ/TW, is the key here. It clearly states the merger of Bình Định and Gia Lai provinces into Gia Lai. So, my new province is definitely \"Tỉnh Gia Lai.\"\n\nNext, I need to check for ward-level changes. Resolution 1664/NQ-UBTVQH15 is crucial. Bingo! Line 25 explicitly outlines the merging of \"Xã Ân Tường Đông\" (along with other areas) into a new ward called \"Xã Hoài Ân.\" This is exactly what I was looking for.\n\nNow, to solidify this, I need to match that new ward name with the provided \"New wards\" data.  I find a perfect match:  `{\"ward_code\":\"21688\",\"ward_name\":\"Xã Hoài Ân\",\"province_name\":\"Tỉnh Gia Lai\"}`. Excellent! The \"New wards\" dataset confirms the new ward name and the new province. There's another entry in this list but it doesn't represent the result of the merger I'm interested in, the important part of the resolution specifically mentions the merging of the old \"Xã Ân Tường Đông\" to the new \"Xã Hoài Ân.\"\n\nTherefore, my final output will be crystal clear. The `province_name` is \"Tỉnh Gia Lai.\" The `ward_name` is \"Xã Hoài Ân.\" The `ward_code` is \"21688.\"  My citation will point directly to line 25 of 1664/NQ-UBTVQH15, the resolution that spells this out. And the `confidence` level? It's a rock-solid \"high,\" because this resolution specifically addresses this particular ward's fate, and the new data perfectly aligns with the resolution. It's an unambiguous match.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Gia Lai và tỉnh Bình Định, lấy tên là tỉnh Gia Lai"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "21688",
+      "ward_name": "Xã Hoài Ân"
+    },
+    {
+      "citation": {
+        "header": "1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai",
+        "line": "25. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Tăng Bạt Hổ và các xã Ân Phong, Ân Đức, Ân Tường Đông thành xã mới có tên gọi là xã Hoài Ân."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "21688",
+      "ward_name": "Xã Hoài Ân"
+    }
+  ]
+}

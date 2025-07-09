@@ -1,0 +1,18 @@
+{
+  "address": "Phường Yên Giang, Thị xã Quảng Yên, Tỉnh Quảng Ninh",
+  "ellapsedInMs": 5388,
+  "estimatedCost": 0.001941,
+  "thought": "**Determining the New Ward for the Provided Address**\n\nOkay, so I've got this address, \"Phường Yên Giang, Thị xã Quảng Yên, Tỉnh Quảng Ninh,\" and the task is to find the corresponding new administrative unit. My initial thought process is to break this down systematically. First, I need to isolate the key components: the old ward, which is \"Phường Yên Giang,\" and the old province, \"Tỉnh Quảng Ninh.\" That's the baseline.\n\nNow, I'm checking the provincial-level resolutions to see if Quảng Ninh has any statewide changes.  The good news is, according to the resolutions (specifically 60-NQ/TW), Quảng Ninh is listed as one of the provinces *not* undergoing mergers at the provincial level.  So, I can confidently assume \"Tỉnh Quảng Ninh\" remains \"Tỉnh Quảng Ninh.\"\n\nNext, I dive into the more granular level – the other resolutions.  My eyes are scanning for any mention of \"Phường Yên Giang\" or \"Quảng Ninh,\" and bingo! Resolution 1679/NQ-UBTVQH15 jumps out. Specifically, line 32. This line seals the deal: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Yên Giang, phường Quảng Yên và xã Tiền An thành phường mới có tên gọi là **phường Quảng Yên**.\" This clearly states that \"Phường Yên Giang\" is being merged into \"Phường Quảng Yên.\"  This is exactly the kind of direct reference I need.\n\nTo be absolutely certain, I cross-reference this information with the `new_wards` data. I'm looking for \"phường Quảng Yên\" within \"Tỉnh Quảng Ninh.\"  And there it is: `{\"ward_code\":\"07132\",\"ward_name\":\"Phường Quảng Yên\",\"province_name\":\"Tỉnh Quảng Ninh\"}`.  The match is perfect.\n\nTherefore, the old ward \"Phường Yên Giang\" is now part of the new ward \"Phường Quảng Yên,\" and the province remains \"Tỉnh Quảng Ninh\". The direct language in the resolution gives me a high degree of confidence in this answer. It's a clear-cut case of merging, and the data corroborates the resolution. That's a solid find.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1679/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ninh",
+        "line": "32. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Yên Giang, phường Quảng Yên và xã Tiền An thành phường mới có tên gọi là phường Quảng Yên."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ninh",
+      "ward_code": "07132",
+      "ward_name": "Phường Quảng Yên"
+    }
+  ]
+}

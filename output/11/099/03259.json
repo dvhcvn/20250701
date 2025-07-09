@@ -1,0 +1,18 @@
+{
+  "address": "Xã Phình Sáng, Huyện Tuần Giáo, Tỉnh Điện Biên",
+  "ellapsedInMs": 7176,
+  "estimatedCost": 0.0024243,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm presented with a Vietnamese address, \"Xã Phình Sáng, Huyện Tuần Giáo, Tỉnh Điện Biên,\" and my task is to map it to the new administrative units. I'm going to leverage my expertise in geospatial data and Vietnamese administrative structures to tackle this.\n\nFirst, I need to break down the old address. I've identified:\n\n*   **Old Ward:** Xã Phình Sáng\n*   **Old District:** Huyện Tuần Giáo (though the instructions mention eliminating districts, so it's mainly for contextual understanding here).\n*   **Old Province:** Tỉnh Điện Biên\n\nNow, the resolutions come into play. I've checked the province-level resolution (60-NQ/TW), and thankfully, Tỉnh Điện Biên is explicitly listed as a province *not* undergoing merger or change. This simplifies things at the provincial level.\n\nNext, I delve into resolution 1661/NQ-UBTVQH15. I'm specifically searching for \"Xã Phình Sáng.\" Line 20 is the key here: it states that \"Phình Sáng\" is being merged with \"Xá Nhè\" and \"Mường Đun\" to form the new ward \"Xã Sáng Nhè.\" Line 21, mentioning \"Tuần Giáo,\" is not relevant to \"Phình Sáng.\"\n\nI then cross-reference the identified new ward with the \"New wards\" data.  \"Xã Sáng Nhè\" (ward code 03244) in Tỉnh Điện Biên perfectly matches the resolution's directive. Also, I see \"Xã Tuần Giáo\" and, while it contains the district name, \"Phình Sáng\" is *not* included in that merger.\n\nTherefore, the conclusion is straightforward. Based on the clear merging mentioned in resolution 1661/NQ-UBTVQH15, \"Xã Phình Sáng\" becomes part of the new ward, \"Xã Sáng Nhè.\" The province, Tỉnh Điện Biên, remains unchanged.  The information is direct, well-defined, and unambiguous. I'm confident in this mapping. Now I can format the final JSON output.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1661/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Điện Biên",
+        "line": "20. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Xá Nhè, Mường Đun và Phình Sáng thành xã mới có tên gọi là xã Sáng Nhè."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Điện Biên",
+      "ward_code": "03244",
+      "ward_name": "Xã Sáng Nhè"
+    }
+  ]
+}

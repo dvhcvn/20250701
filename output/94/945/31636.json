@@ -1,0 +1,28 @@
+{
+  "address": "Xã An Thạnh Nam, Huyện Cù Lao Dung, Tỉnh Sóc Trăng",
+  "ellapsedInMs": 7268,
+  "estimatedCost": 0.0027427000000000003,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm tasked with mapping this old Vietnamese address to the new administrative units, which is a fairly straightforward task given the information provided. Let's break down my thought process:\n\nFirst, I need to identify the key components of the old address: \"Xã An Thạnh Nam, Huyện Cù Lao Dung, Tỉnh Sóc Trăng\". That's my old ward and province, which I've got: \"Xã An Thạnh Nam\" and \"Tỉnh Sóc Trăng\" respectively.\n\nNext, I'll hit the resolutions and data to confirm the changes. I've got two key documents to work with.  The first one, 60-NQ/TW, clearly states that \"Tỉnh Sóc Trăng\" is now part of \"Thành phố Cần Thơ\". That's a high-confidence province-level change right there.\n\nThe next resolution, 1668/NQ-UBTVQH15, deals specifically with ward-level changes in Cần Thơ, making it particularly relevant. I need to sift through this resolution. Ah, here it is, Line 95: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã An Thạnh 2, Đại Ân 1, An Thạnh 3 và An Thạnh Nam thành xã mới có tên gọi là **xã Cù Lao Dung**.\" Bingo! \"Xã An Thạnh Nam\" is explicitly merged into \"xã Cù Lao Dung.\" That's another high-confidence match.\n\nNow, I'll check my \"New wards\" data to find the corresponding code. I spot:  `{\"ward_code\":\"31633\",\"ward_name\":\"Xã Cù Lao Dung\",\"province_name\":\"Thành phố Cần Thơ\"}`. Perfect! That confirms the new ward name and province.\n\nWith this, I've got all the pieces. I'm confident about both the province and ward mappings because they are explicitly detailed in these documents.  The output JSON I'm going to construct will need to clearly reflect these citations and confidence levels, formatted according to the schema provided.  Should be pretty clean and accurate.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất thành phố cần Thơ, tỉnh Sóc Trăng và tỉnh Hậu Giang; lấy tên là thành phố Cần Thơ"
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Cần Thơ",
+      "ward_code": "31633",
+      "ward_name": "Xã Cù Lao Dung"
+    },
+    {
+      "citation": {
+        "header": "1668/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Cần Thơ",
+        "line": "95. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã An Thạnh 2, Đại Ân 1, An Thạnh 3 và An Thạnh Nam thành xã mới có tên gọi là xã Cù Lao Dung."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Cần Thơ",
+      "ward_code": "31633",
+      "ward_name": "Xã Cù Lao Dung"
+    }
+  ]
+}

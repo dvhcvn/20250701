@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tịnh Hiệp, Huyện Sơn Tịnh, Tỉnh Quảng Ngãi",
+  "ellapsedInMs": 8208,
+  "estimatedCost": 0.002817,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, so I'm tasked with mapping this old Vietnamese address to the new administrative units, which is a straightforward process given the provided data. First, I need to break down the input address: \"Xã Tịnh Hiệp\" is the ward, \"Huyện Sơn Tịnh\" is the district (though I'm instructed to ignore districts in the output), and \"Tỉnh Quảng Ngãi\" is the province.\n\nNow, let's dive into the resolution documents. The first resolution I examine concerns provincial-level changes (60-NQ/TW). Fortunately, Quảng Ngãi isn't on the \"no-merger\" list, and the \"merged\" list indicates it remains \"Tỉnh Quảng Ngãi\". So, that's simple enough.\n\nNext, I need to scrutinize other resolutions (specifically 1677/NQ-UBTVQH15) for any ward-level changes involving \"Xã Tịnh Hiệp.\" Scanning through the lines, line 11 immediately catches my attention: it explicitly states that \"Xã Tịnh Hiệp,\" along with two others, is being reorganized into \"Xã Ba Gia.\" Bingo! That's my primary mapping.\n\nTo confirm, I cross-reference \"Xã Ba Gia\" with the \"New wards\" data.  And there it is: `{\"ward_code\":\"21205\",\"ward_name\":\"Xã Ba Gia\",\"province_name\":\"Tỉnh Quảng Ngãi\"}`.  The province name also matches perfectly.\n\nI also have to consider potential ambiguities, but after a thorough check, I don't see any other resolutions that could map \"Xã Tịnh Hiệp\" to something else.  The other similar-sounding ward names in resolution 1677 are unrelated. So, the mapping is very clear and direct.\n\nTherefore, the JSON output is constructed as follows: the province is \"Tỉnh Quảng Ngãi,\" the new ward is \"Xã Ba Gia\" (ward code 21205), and the citation will point directly to resolution 1677/NQ-UBTVQH15, line 11.  I can confidently label this mapping with \"high\" confidence due to the explicit nature of the resolution. This is a pretty straightforward and unambiguous result.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1677/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ngãi",
+        "line": "11. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tịnh Bắc, Tịnh Hiệp và Tịnh Trà thành xã mới có tên gọi là xã Ba Gia."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ngãi",
+      "ward_code": "21205",
+      "ward_name": "Xã Ba Gia"
+    }
+  ]
+}

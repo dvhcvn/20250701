@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Cao Phong, Huyện Cao Phong, Tỉnh Hoà Bình",
+  "ellapsedInMs": 6455,
+  "estimatedCost": 0.0022569,
+  "thought": "**Address Mapping Analysis for Thị trấn Cao Phong, Huyện Cao Phong, Tỉnh Hoà Bình**\n\nOkay, so I've been tasked with mapping this old address, \"Thị trấn Cao Phong, Huyện Cao Phong, Tỉnh Hoà Bình\", to its new administrative units. Let's break this down systematically.\n\nFirst, I identified the old province and ward: \"Tỉnh Hoà Bình\" and \"Thị trấn Cao Phong\", respectively. Now, I need to account for any province mergers. Checking \"60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất\", I confirmed that \"Tỉnh Hoà Bình\" was indeed merged into \"Tỉnh Phú Thọ\" as part of the consolidation of Vĩnh Phúc, Phú Thọ, and Hoà Bình. This means my starting point for the new province is now \"Tỉnh Phú Thọ\".\n\nNext, I need to investigate ward-level resolutions. I looked specifically for mentions of \"Thị trấn Cao Phong\" within the context of \"Tỉnh Phú Thọ\". The resolution \"1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ\" is the key here. Scanning through it, line 91 jumps out: it clearly states that \"Thị trấn Cao Phong\" was merged with other entities to form a new ward, and that new ward is named \"**xã Cao Phong**\". Perfect!\n\nWith this confirmed, I can now consult the \"New wards\" data to find the precise details. Sure enough, there's a match: `{\"ward_code\":\"05089\",\"ward_name\":\"Xã Cao Phong\",\"province_name\":\"Tỉnh Phú Thọ\"}`. This perfectly aligns with my findings.\n\nTherefore, my final output will be:\n\n*   `province_name`: \"Tỉnh Phú Thọ\" (derived from the province merger).\n*   `ward_name`: \"Xã Cao Phong\" (from the resolution).\n*   `ward_code`: \"05089\" (from the new wards data).\n*   `citation`: a clear reference to resolution \"1676/NQ-UBTVQH15\", specifically line 91.\n*   `confidence`: High, given the direct mapping and clear resolution.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "91. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Cao Phong, xã Hợp Phong và xã Thu Phong thành xã mới có tên gọi là xã Cao Phong."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "05089",
+      "ward_name": "Xã Cao Phong"
+    }
+  ]
+}

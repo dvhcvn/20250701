@@ -1,0 +1,18 @@
+{
+  "address": "Xã Châu Quang, Huyện Quỳ Hợp, Tỉnh Nghệ An",
+  "ellapsedInMs": 6730,
+  "estimatedCost": 0.0026000999999999997,
+  "thought": "**Identifying the New Administrative Unit**\n\nOkay, let's break this down. The user's given an old address, \"Xã Châu Quang, Huyện Quỳ Hợp, Tỉnh Nghệ An,\" and I need to figure out the new ward.  First, let's identify the province, \"Tỉnh Nghệ An.\"  A quick check of `60-NQ/TW` reveals that Nghệ An isn't slated for any province-level mergers, so \"Tỉnh Nghệ An\" stays as is.  Easy enough.\n\nNow, the trickier part:  \"Xã Châu Quang.\" I'll start by checking the `Other resolutions` for any changes.  I quickly scanned `1669/NQ-UBTVQH15` (Hai Phong) and `1680/NQ-UBTVQH15` (Quang Tri) – no luck. But then, `1678/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Nghệ An` caught my eye, and that's the one we need.\n\nBingo! Line 64 of this resolution is the key: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Quỳ Hợp và các xã Châu Đình, **Châu Quang**, Thọ Hợp thành xã mới có tên gọi là **xã Quỳ Hợp**.\"  It explicitly states that \"Châu Quang\" is merged into the new ward, which is \"xã Quỳ Hợp.\"\n\nTo be sure, I'll cross-reference this with the `New wards` list.  And there it is:  `{\"ward_code\":\"17035\",\"ward_name\":\"Xã Quỳ Hợp\",\"province_name\":\"Tỉnh Nghệ An\"}`.  Perfect match.\n\nSo, I can confidently construct the JSON output:  the province is \"Tỉnh Nghệ An,\" the new ward is \"Xã Quỳ Hợp,\" and the ward code is \"17035.\"  The citation will include the header of the resolution and the specific line confirming the merge of \"Châu Quang\" into \"Quỳ Hợp,\" leading me to give it a high confidence level because of that clear, direct mention in the resolution.  That should be a solid and reliable answer.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1678/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Nghệ An",
+        "line": "64. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Quỳ Hợp và các xã Châu Đình, Châu Quang, Thọ Hợp thành xã mới có tên gọi là xã Quỳ Hợp."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Nghệ An",
+      "ward_code": "17035",
+      "ward_name": "Xã Quỳ Hợp"
+    }
+  ]
+}

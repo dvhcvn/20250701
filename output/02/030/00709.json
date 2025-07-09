@@ -1,0 +1,18 @@
+{
+  "address": "Xã Kim Linh, Huyện Vị Xuyên, Tỉnh Hà Giang",
+  "ellapsedInMs": 7320,
+  "estimatedCost": 0.0026858,
+  "thought": "**Address Mapping for Vietnamese Administrative Units**\n\nOkay, so I'm presented with an old Vietnamese address: \"Xã Kim Linh, Huyện Vị Xuyên, Tỉnh Hà Giang.\" My task is to map this to the current administrative structure. First, I need to break down the address. I've identified \"Xã Kim Linh\" as the old ward and \"Tỉnh Hà Giang\" as the old province.\n\nNow, the crucial step is checking for province mergers.  I have resolution 60-NQ/TW, which specifically states that \"Tỉnh Hà Giang\" and \"Tỉnh Tuyên Quang\" were merged into \"Tỉnh Tuyên Quang.\" So, \"Tỉnh Hà Giang\" is now \"Tỉnh Tuyên Quang.\"\n\nNext, I need to examine the ward resolutions. I'm searching for \"Xã Kim Linh\" in those resolutions. Bingo!  Resolution 1684/NQ-UBTVQH15, in its \"Other resolutions\" section, has exactly what I need. Line 73 states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của cácxã Kim Thạch, Kim Linh và Phú Linh thành xã mới có tên gọi là **xã Phú Linh**.\"  This directly tells me that \"Xã Kim Linh\" was merged into \"Xã Phú Linh.\"\n\nNow, I look up \"Xã Phú Linh\" in the \"New wards\" data.  I find the entry: `{\"ward_code\":\"00706\",\"ward_name\":\"Xã Phú Linh\",\"province_name\":\"Tỉnh Tuyên Quang\"}`.  Perfect! The province name, \"Tỉnh Tuyên Quang\", aligns with the new province name derived from the merger.\n\nTherefore, my final JSON output is constructed as follows:\n\n*   `province_name`: \"Tỉnh Tuyên Quang\" (derived from the province merger)\n*   `ward_name`: \"Xã Phú Linh\" (from the resolution)\n*   `ward_code`: \"00706\" (from the \"New wards\" data)\n*   `confidence`: \"high\" (because the mapping is direct and supported by clear evidence)\n*   `citation`:\n    *   `header`: \"1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang\"\n    *   `line`: \"73. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của cácxã Kim Thạch, Kim Linh và Phú Linh thành xã mới có tên gọi là **xã Phú Linh**.\"\n\nBefore I finalize this, I'm quickly double-checking. The original address is \"Xã Kim Linh, Huyện Vị Xuyên, Tỉnh Hà Giang\".  The province merger to Tuyên Quang is confirmed. The ward mapping is definitive, \"Xã Kim Linh\" goes to \"Xã Phú Linh\" in the same resolution. The data aligns, and I see nothing that contradicts my conclusion. I can confidently submit this mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "73. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của cácxã Kim Thạch, Kim Linh và Phú Linh thành xã mới có tên gọi là **xã Phú Linh**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "00706",
+      "ward_name": "Xã Phú Linh"
+    }
+  ]
+}

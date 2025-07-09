@@ -1,0 +1,18 @@
+{
+  "address": "Xã Chiềng Chung, Thị xã Mộc Châu, Tỉnh Sơn La",
+  "ellapsedInMs": 7872,
+  "estimatedCost": 0.0028281,
+  "thought": "**Address Mapping Analysis for Vietnamese Administrative Units**\n\nOkay, let's break this down. The user's input is an old Vietnamese address, and my task is to pinpoint its corresponding new administrative unit using provided resolutions and data. It's a straightforward process, but accuracy is key.\n\nFirst, I need to dissect the old address: it's \"Xã Chiềng Chung\" in \"Thị xã Mộc Châu\", which is within \"Tỉnh Sơn La\". Got it.\n\nNow, the plan is to systematically work through the information. I'll start with the province resolutions (60-NQ/TW). The goal is to see if any mergers happened that impacted \"Tỉnh Sơn La\". A quick check in the \"no-merge\" list confirms that \"Tỉnh Sơn La\" remains unchanged. So, that part is easy.\n\nNext, the real meat of the matter: I need to scrutinize resolution 1681/NQ-UBTVQH15, the one related to administrative reorganizations within Sơn La province. My focus is on matching \"Xã Chiềng Chung\" with its corresponding new unit.\n\nI'm scanning the lines of this resolution. Eureka! Line 1 immediately grabs my attention: it explicitly mentions \"Xã Chiềng Chung (thị xã Mộc Châu)\" and its fate. It states that the existing \"Xã Chiềng Chung\" and \"Xã Đoàn Kết\" are merged to form a new ward, named \"Xã Đoàn Kết\". The match is solid, considering the district \"Thị xã Mộc Châu\" is in the text, so this is high-confidence.\n\nI also read the rest of the lines. Line 47 also references \"Xã Chiềng Chung\", but mentions the district \"huyện Mai Sơn\", so it's irrelevant to this address. Same with line 65, which doesn't mention the old ward.\n\nWith the new ward (\"Xã Đoàn Kết\") identified, my next step is a quick data verification using the \"New wards\" dataset. I'll search for \"Xã Đoàn Kết\" within \"Tỉnh Sơn La\", and voila, it matches with a ward code of \"04000\".\n\nFinally, time to generate the output. It's a simple JSON structure. My citation will include the specific line from 1681/NQ-UBTVQH15 that confirms the mapping. I’ll assign a \"high\" confidence level because this match is unambiguous. The province name is naturally \"Tỉnh Sơn La\", and the new ward code and name are from my successful lookup.  All checks are done and verified. Looks clean and correct.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1681/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Sơn La",
+        "line": "1. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Chiềng Chung (thị xã Mộc Châu) và xã Đoàn Kết thành xã mới có tên gọi là xã Đoàn Kết."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Sơn La",
+      "ward_code": "04000",
+      "ward_name": "Xã Đoàn Kết"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "address": "Phường Vị Xuyên, Thành phố Nam Định, Tỉnh Nam Định",
+  "ellapsedInMs": 9044,
+  "estimatedCost": 0.0034398999999999996,
+  "thought": "**Address Mapping Analysis: \"Phường Vị Xuyên, Thành phố Nam Định, Tỉnh Nam Định\"**\n\nOkay, let's break this down. The task is to map this old Vietnamese address to new administrative units.  I've got the old address components: \"Phường Vị Xuyên,\" which I'll treat as a ward, \"Thành phố Nam Định\" (which, given the \"eliminating all districts\" constraint, I'm interpreting as a district-level unit within a province), and \"Tỉnh Nam Định,\" the province.\n\nMy first step is to check province resolutions. Specifically, I need to see if \"Tỉnh Nam Định\" is affected by any of the merger or restructuring plans listed in Resolution 60-NQ/TW. Aha! It's not in the \"no changes\" list, but it *is* in the list of areas affected by mergers.  The resolution indicates that \"Tỉnh Nam Định\" has merged with two other provinces to form \"Tỉnh Ninh Bình.\"  That's a key piece of information.\n\nNow, I'll move on to analyzing other relevant resolutions, specifically looking for mentions of \"Phường Vị Xuyên\" and \"Thành phố Nam Định\". The data contains a specific resolution that seems promising: 1674/NQ-UBTVQH15 (covering Ninh Bình).  This resolution explicitly states that \"Phường Vị Xuyên\" (along with other wards) from \"thành phố Nam Định\" will be consolidated into a new ward called \"Phường Nam Định\". The resolution's jurisdiction is \"Tỉnh Ninh Bình,\" which aligns perfectly with the province merger I found earlier.\n\nThere's another resolution (1684/NQ-UBTVQH15) related to \"Vị Xuyên,\" but it pertains to a \"thị trấn Vị Xuyên\" in Tuyên Quang province.  Given that we're dealing with \"Phường Vị Xuyên\" in Nam Định and the province mapping points to Ninh Bình, I'm going to assume this resolution is unrelated to the address in question. The discrepancy in ward type (phường vs. thị trấn) further confirms my suspicion.\n\nNow, I'll cross-reference my findings with the available new ward data.  I find a new ward entry for \"Phường Nam Định\" in \"Tỉnh Ninh Bình\" - perfect match! This aligns with the results from resolution 1674/NQ-UBTVQH15 and the province merger. I can confidently say this is a high-confidence match. The other \"Vị Xuyên\" entry corresponds to the Tuyên Quang resolution, so I can exclude it.\n\nTherefore, my final output will map \"Phường Vị Xuyên, Thành phố Nam Định, Tỉnh Nam Định\" to the new ward: \"Phường Nam Định, Tỉnh Ninh Bình,\" with a high level of confidence.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Hà Nam, tỉnh Ninh Bình và tỉnh Nam Định; lấy tên là tỉnh Ninh Bình"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "13669",
+      "ward_name": "Phường Nam Định"
+    },
+    {
+      "citation": {
+        "header": "1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "114. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Quang Trung (thành phố Nam Định), Vị Xuyên, Lộc Vượng, Cửa Bắc, Trần Hưng Đạo, Năng Tĩnh, Cửa Nam và xã Mỹ Phúc thành phường mới có tên gọi là phường Nam Định."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "13669",
+      "ward_name": "Phường Nam Định"
+    }
+  ]
+}

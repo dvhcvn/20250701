@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Thịnh Vượng, Huyện Gia Viễn, Tỉnh Ninh Bình",
+  "ellapsedInMs": 6872,
+  "estimatedCost": 0.0027708,
+  "thought": "**Mapping \"Thị trấn Thịnh Vượng\" to New Administrative Units**\n\nOkay, so I'm tackling this address: \"Thị trấn Thịnh Vượng, Huyện Gia Viễn, Tỉnh Ninh Bình\".  My first step is to break it down. I know I'm dealing with \"Thị trấn Thịnh Vượng\" (which is an old ward) and the province, \"Tỉnh Ninh Bình\".\n\nNext, I need to check for any province mergers. I immediately pull up Resolution 60-NQ/TW.  Ah, good! It confirms that Ninh Bình remains Ninh Bình, so no complications there.\n\nNow, the real work begins: sifting through the resolutions to find \"Thị trấn Thịnh Vượng\".  I scan the provided \"Other resolutions\" and I hit pay dirt with `1674/NQ-UBTVQH15`! It directly addresses \"Tỉnh Ninh Bình\". I carefully read through the text, and there it is: point 67 clearly states that \"Thị trấn Thịnh Vượng\" is being combined with \"xã Gia Hòa\" to form a new ward called \"xã Gia Viễn\". Bingo!\n\nNow, I cross-reference this with the \"New wards\" list, looking for \"xã Gia Viễn\".  I find it!  It's listed as `{\"ward_code\":\"14464\",\"ward_name\":\"Xã Gia Viễn\",\"province_name\":\"Tỉnh Ninh Bình\"}`. Perfect!\n\nBuilding the output JSON is now a breeze.  I know the province is \"Tỉnh Ninh Bình\" (from earlier). The new ward is \"Xã Gia Viễn\" with the code \"14464\".  The key is the resolution 1674/NQ-UBTVQH15 ( specifically line 67).\n\nBefore I finalize it, I want to be *absolutely* sure.  I quickly scan for any other mentions of \"Thịnh Vượng\" or \"Gia Viễn\" in other resolutions, just to eliminate any chance of ambiguity.  I see a \"Gia Viễn\" and \"Thịnh Vượng\" in other provinces, but those are completely unrelated and don't affect our mapping for Ninh Bình. The direct mapping from the resolution is clear and unambiguous. So, I can confidently mark this mapping as \"high\" confidence.  This is a clean, definitive match.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "67. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Thịnh Vượng và xã Gia Hòa thành xã mới có tên gọi là xã Gia Viễn."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "14464",
+      "ward_name": "Xã Gia Viễn"
+    }
+  ]
+}

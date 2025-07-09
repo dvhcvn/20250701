@@ -1,0 +1,18 @@
+{
+  "address": "Phường Linh Xuân, Thành phố Thủ Đức, Thành phố Hồ Chí Minh",
+  "ellapsedInMs": 7052,
+  "estimatedCost": 0.002689,
+  "thought": "**Identifying the New Administrative Unit for the Old Address**\n\nOkay, so I've got an address: \"Phường Linh Xuân, Thành phố Thủ Đức, Thành phố Hồ Chí Minh.\" My task is to figure out the new ward for this old one, using the provided resolutions and new ward data. Here's my approach:\n\nFirst, I need to check the province. \"Thành phố Hồ Chí Minh\" is the province, so I'll review the province resolutions to see if there have been any mergers. I see a resolution (\"60-NQ/TW: Các đơn vị hành chính cấp tỉnh không thực hiện sáp nhập\") that lists provinces *not* merged. \"Thành phố Hồ Chí Minh\" isn't on that list, so I need to check the merge resolution, if there is one. Ah, here it is (\"60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất:\"). I see that Thành phố Hồ Chí Minh remains after a merger with Bà Rịa - Vũng Tàu and Bình Dương, which means the province hasn't changed its name, just potentially its composition.\n\nNext, the ward: \"Phường Linh Xuân.\" I need to find the relevant resolution. It's in the \"Other resolutions.\" I find it in \"1685/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của Thành phố Hồ Chí Minh.\" Looking through this resolution, I find line 70, which directly addresses \"Phường Linh Xuân.\" It states that \"Phường Linh Xuân\" is being merged with \"Phường Linh Trung\" and a part of \"Phường Linh Tây\" to create a *new* ward also named \"**Phường Linh Xuân**.\" Perfect! That's the key.\n\nNow, I'll cross-reference this with the provided new ward data. I see a matching entry: `{\"ward_code\":\"26800\",\"ward_name\":\"Phường Linh Xuân\",\"province_name\":\"Thành phố Hồ Chí Minh\"}`. This aligns perfectly with what I found in the resolution.\n\nBased on this, I'll construct the JSON output. The province is \"Thành phố Hồ Chí Minh\". The new ward is \"Phường Linh Xuân\" with ward code \"26800\". The citation will be to resolution \"1685/NQ-UBTVQH15: line 70\". And finally, the *confidence* level is **high** because the resolution provides a clear and direct mapping of the old \"Phường Linh Xuân\" to the new \"Phường Linh Xuân.\" The name is the same, but it's important to clarify that it *is* a new unit, built from a merger.\n\nI'll double-check that resolution text again, just to be thorough: \"70. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Linh Trung, phường Linh Xuân và phần còn lại của phường Linh Tây sau khi sắp xếp theo quy định tại khoản 68 Điều này thành phường mới có tên gọi là **phường Linh Xuân**.\" Yes, it's clear.  We have a solid, explicit match. So the confidence in this mapping is justified as \"high.\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1685/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của Thành phố Hồ Chí Minh",
+        "line": "70. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Linh Trung, phường Linh Xuân và phần còn lại của phường Linh Tây sau khi sắp xếp theo quy định tại khoản 68 Điều này thành phường mới có tên gọi là phường Linh Xuân."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hồ Chí Minh",
+      "ward_code": "26800",
+      "ward_name": "Phường Linh Xuân"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "address": "Phường An Sơn, Thành phố Tam Kỳ, Tỉnh Quảng Nam",
+  "ellapsedInMs": 5716,
+  "estimatedCost": 0.0037768,
+  "thought": "**Determining the New Ward for an Old Address**\n\nOkay, so I've got this address: \"Phường An Sơn, Thành phố Tam Kỳ, Tỉnh Quảng Nam.\" Time to figure out its new ward. First, I need to account for any province mergers. Checking `60-NQ/TW`, I see \"Tỉnh Quảng Nam\" has become \"Thành phố Đà Nẵng.\" Now, I'll search through the `Other resolutions` list for any changes impacting \"Thành phố Đà Nẵng.\"\n\nMy focus is on resolutions related to administrative rearrangements, specifically looking for \"Phường An Sơn.\"  I found `1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng`.  Analyzing that resolution is key. Line 13 mentions a new \"phường Tam Kỳ\" but doesn't involve \"Phường An Sơn\". However, line 15 is crucial: it explicitly states that \"Phường An Sơn,\" along with two others, will be merged into a new ward called \"**phường Hương Trà**.\"\n\nBingo! That's my answer. Now I just need to find the `ward_code` for \"phường Hương Trà.\" Looking in the `New wards` list, I find the matching entry: `{\"ward_code\":\"20350\",\"ward_name\":\"Phường Hương Trà\",\"province_name\":\"Thành phố Đà Nẵng\"}`.\n\nGiven the direct and explicit nature of the resolution, the confidence level is definitely high. I'm satisfied with this. I'll construct the JSON output with this information.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "10. Hợp nhất tỉnh Quảng Nam và thành phố Đà Nẵng, lấy tên là thành phố Đà Nẵng"
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng"
+    },
+    {
+      "citation": {
+        "header": "1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng",
+        "line": "15. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường An Sơn, phường Hòa Hương và xã Tam Ngọc thành phường mới có tên gọi là phường Hương Trà."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "20350",
+      "ward_name": "Phường Hương Trà"
+    }
+  ]
+}

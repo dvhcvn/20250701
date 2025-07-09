@@ -1,0 +1,18 @@
+{
+  "address": "Xã An Vĩnh Ngãi, Thành phố Tân An, Tỉnh Long An",
+  "ellapsedInMs": 8406,
+  "estimatedCost": 0.004469,
+  "thought": "**Determining the New Administrative Unit for \"Xã An Vĩnh Ngãi\"**\n\nOkay, let's break this down systematically. The user wants the new administrative unit for \"Xã An Vĩnh Ngãi, Thành phố Tân An, Tỉnh Long An.\" My first step is to identify the old province and ward: Tỉnh Long An and Xã An Vĩnh Ngãi.\n\nNow, I need to check for any province mergers. The information points to a merger where Tỉnh Long An becomes part of Tỉnh Tây Ninh based on Resolution 60-NQ/TW. So, the new province is Tỉnh Tây Ninh.\n\nNext, I need to look for \"Xã An Vĩnh Ngãi\" within the \"Other resolutions\" section. I'll scan through each resolution line-by-line, keeping an eye out for \"An Vĩnh Ngãi.\"\n\nBingo! I found it in `1682/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tây Ninh`. Line 85 specifically mentions \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của Phường 7 và các xã Bình Tâm, Nhơn Thạnh Trung, An Vĩnh Ngãi thành phường mới có tên gọi là **phường Tân An**.\"\n\nBased on this resolution, the new ward is \"phường Tân An,\" and the province is Tỉnh Tây Ninh, which aligns with the province merger I identified earlier.\n\nTo verify, I'll search for \"phường Tân An\" in the \"New wards\" list for Tỉnh Tây Ninh. And yes, it's there: `{\"ward_code\":\"27712\",\"ward_name\":\"Phường Tân An\",\"province_name\":\"Tỉnh Tây Ninh\"}`.\n\nNow, to construct the JSON output. I'll include the citation: `citation.header`: \"1682/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tây Ninh\" and `citation.line`: \"85. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của Phường 7 và các xã Bình Tâm, Nhơn Thạnh Trung, An Vĩnh Ngãi thành phường mới có tên gọi là **phường Tân An**.\"\n\nThe `confidence` will be \"high\" because the old ward is explicitly mentioned in the resolution as part of the merger.\n\nThe rest of the information is straightforward: `province_name`: \"Tỉnh Tây Ninh,\" `ward_code`: \"27712,\" and `ward_name`: \"Phường Tân An.\"\n\nIt's important to remember the context of \"Thành phố Tân An\" in the old address. While it's a district-level unit, the resolutions are focused on ward-level changes. The key piece is the direct mapping from \"Xã An Vĩnh Ngãi\" to \"phường Tân An.\" Also, I've confirmed that the correct \"phường Tân An\" within \"Tỉnh Tây Ninh\" is selected, as there are other Tân An wards in other provinces listed. This resolution is solid and a direct hit.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1682/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tây Ninh",
+        "line": "85. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của Phường 7 và các xã Bình Tâm, Nhơn Thạnh Trung, An Vĩnh Ngãi thành phường mới có tên gọi là **phường Tân An**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tây Ninh",
+      "ward_code": "27712",
+      "ward_name": "Phường Tân An"
+    }
+  ]
+}

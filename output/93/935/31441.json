@@ -1,0 +1,48 @@
+{
+  "address": "Thị trấn Nàng Mau, Huyện Vị Thuỷ, Tỉnh Hậu Giang",
+  "ellapsedInMs": 8153,
+  "estimatedCost": 0.0035277000000000004,
+  "thought": "**My Mapping Analysis for \"Thị trấn Nàng Mau\"**\n\nOkay, so I'm tackling this old address: \"Thị trấn Nàng Mau, Huyện Vị Thuỷ, Tỉnh Hậu Giang\". Time to break it down and map it to the modern administrative structure.\n\nFirst, the province: \"Tỉnh Hậu Giang.\"  Easy enough, I know about Resolution 60-NQ/TW.  That one explicitly states the merger of Hậu Giang into Cần Thơ, so now it's part of \"**Thành phố Cần Thơ**\".  High confidence there, that's straightforward.\n\nNow, the trickier part, the ward: \"Thị trấn Nàng Mau\".  I need to dig into the relevant resolutions. I'm focusing on \"Other Resolutions\" and, bingo, I find what I need: Resolution 1668/NQ-UBTVQH15, specifically related to administrative changes in Cần Thơ.\n\nLine 45 in that resolution is key. It details the merger of \"Thị trấn Nàng Mau\", \"xã Vị Thắng\", and \"xã Vị Trung\" into a new ward called \"**xã Vị Thủy**\". That's a direct connection and pretty clear.\n\nThen, line 46 throws a bit of a curveball. It merges \"xã Vĩnh Thuận Tây\", \"Vị Thủy\", and \"Vĩnh Thuận Đông\" into a new ward: \"**xã Vĩnh Thuận Đông**\". Now, this means \"xã Vị Thủy\" *from line 45*,  which includes \"Thị trấn Nàng Mau,\" gets pulled into this final merge. It's a chained process, but logical given the context.\n\nSo, where does that leave \"Thị trấn Nàng Mau\"?  Well, line 45 shows it's merged into \"xã Vị Thủy,\" and line 46 shows that this resultant \"xã Vị Thủy\" is, in turn, merged into \"xã Vĩnh Thuận Đông.\" Therefore, \"Thị trấn Nàng Mau\" is *ultimately* part of \"xã Vĩnh Thuận Đông\".\n\nNow, time to confirm my new ward data. Based on these resolutions, I have two relevant wards in \"Thành phố Cần Thơ\":\n\n*   For line 45 \"xã Vị Thủy\": `{\"ward_code\":\"31441\",\"ward_name\":\"Xã Vị Thủy\",\"province_name\":\"Thành phố Cần Thơ\"}`\n*   For line 46 \"xã Vĩnh Thuận Đông\": `{\"ward_code\":\"31453\",\"ward_name\":\"Xã Vĩnh Thuận Đông\",\"province_name\":\"Thành phố Cần Thơ\"}`\n\nThe resolution wording is quite clear and specific, so my confidence in this ward mapping is high.  The province mapping is also definitive.\n\nTherefore, the mapping seems sound. I'm ready to construct the JSON output.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất thành phố cần Thơ, tỉnh Sóc Trăng và tỉnh Hậu Giang; lấy tên là thành phố Cần Thơ"
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Cần Thơ",
+      "ward_code": "31441",
+      "ward_name": "Xã Vị Thủy"
+    },
+    {
+      "citation": {
+        "header": "1668/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Cần Thơ",
+        "line": "45. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Nàng Mau, xã Vị Thắng và xã Vị Trung thành xã mới có tên gọi là xã Vị Thủy."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Cần Thơ",
+      "ward_code": "31441",
+      "ward_name": "Xã Vị Thủy"
+    },
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất thành phố cần Thơ, tỉnh Sóc Trăng và tỉnh Hậu Giang; lấy tên là thành phố Cần Thơ"
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Cần Thơ",
+      "ward_code": "31453",
+      "ward_name": "Xã Vĩnh Thuận Đông"
+    },
+    {
+      "citation": {
+        "header": "1668/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Cần Thơ",
+        "line": "46. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Vĩnh Thuận Tây, Vị Thủy và Vĩnh Thuận Đông thành xã mới có tên gọi là xã Vĩnh Thuận Đông."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Cần Thơ",
+      "ward_code": "31453",
+      "ward_name": "Xã Vĩnh Thuận Đông"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "address": "Xã An Sơn, Huyện Kiên Hải, Tỉnh Kiên Giang",
+  "ellapsedInMs": 8973,
+  "estimatedCost": 0.0049002,
+  "thought": "**Analysis of Administrative Unit Transformation**\n\nOkay, so I'm presented with an old address: \"Xã An Sơn, Huyện Kiên Hải, Tỉnh Kiên Giang.\" My task is to figure out the current administrative unit. First, I have to pinpoint the province: \"Tỉnh Kiên Giang.\" I know I need to consult the resolutions, specifically 60-NQ/TW, to see if there's been any consolidation. Bingo! The resolution indicates that Kiên Giang merged with An Giang, becoming \"Tỉnh An Giang.\"\n\nNext, I look at the old ward and district: \"Xã An Sơn\" and \"Huyện Kiên Hải.\" I then start searching for any resolutions that address these specific units. Here, resolution 1654/NQ-UBTVQH15, concerning An Giang, is key. It directly states that \"Huyện Kiên Hải\" is being transformed into \"đặc khu Kiên Hải,\" a special zone. Since this resolution falls under the newly merged province, I can assume it's relevant.\n\nThis transformation of the entire district into a special zone is crucial. While the resolution doesn't explicitly mention \"Xã An Sơn,\" the fact that the entire *district* is becoming this \"đặc khu Kiên Hải\" strongly suggests that all its constituent parts, including \"Xã An Sơn,\" are now part of it. It is acting as a new unit. I then consult the \"New wards\" list, where I find: `{\"ward_code\":\"31108\",\"ward_name\":\"Đặc khu Kiên Hải\",\"province_name\":\"Tỉnh An Giang\"}`.\n\nI have a very high level of confidence in this conclusion. The province merger is clear-cut. The resolution specifically changes the entire district \"Huyện Kiên Hải\" into \"đặc khu Kiên Hải.\" This is the key. Given the phrase \"sắp xếp các đơn vị hành chính cấp xã\" it’s the new commune. The resolution doesn't detail what happens to each individual commune, but the complete transformation of the district implies the previous structure is now replaced. Therefore, while not explicitly mentioned, \"Xã An Sơn\" is likely *within* and is absorbed by this new “đặc khu Kiên Hải.\" Given the schema’s requirements of ward_code, ward_name and province_name, I can assert the answer.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh An Giang và tỉnh Kiên Giang, lấy tên là tỉnh An Giang"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh An Giang",
+      "ward_code": "31108",
+      "ward_name": "Đặc khu Kiên Hải"
+    },
+    {
+      "citation": {
+        "header": "1654/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh An Giang",
+        "line": "94. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của huyện Kiên Hải thành đặc khu có tên gọi là đặc khu Kiên Hải."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh An Giang",
+      "ward_code": "31108",
+      "ward_name": "Đặc khu Kiên Hải"
+    }
+  ]
+}

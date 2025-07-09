@@ -1,0 +1,28 @@
+{
+  "address": "Xã Sủng Máng, Huyện Mèo Vạc, Tỉnh Hà Giang",
+  "ellapsedInMs": 8421,
+  "estimatedCost": 0.0031009,
+  "thought": "**Navigating Vietnamese Administrative Changes: A Mapping Exercise**\n\nOkay, so I've got an old Vietnamese address to decipher: Xã Sủng Máng in Huyện Mèo Vạc, Hà Giang.  The task is to map this to the *new* administrative structure.  Given my expertise, this is straightforward, but it requires careful attention to detail and cross-referencing.\n\nFirst, I identified the components: Ward (Xã Sủng Máng), District (Huyện Mèo Vạc), and Province (Tỉnh Hà Giang). My initial instinct is to dig into the resolutions to see how these units have evolved.\n\nStarting with the province, the \"Hợp nhất tỉnh Tuyên Quang và tỉnh Hà Giang, lấy tên là tỉnh Tuyên Quang\" clause jumps out from Resolution 60-NQ/TW.  Bingo! Hà Giang has become Tuyên Quang. That's a high-confidence update.\n\nNow, for the tricky part.  Resolution 1684/NQ-UBTVQH15, concerning administrative re-organizations in Tuyên Quang, is key. Line 49 is particularly relevant: it explicitly mentions \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Lũng Chinh, Sủng Trà và Sủng Máng thành xã mới có tên gọi là **xã Sủng Máng**.\"  This clearly states that the old \"Xã Sủng Máng\" is *merged* with others to form a *new* \"Xã Sủng Máng.\" This seems direct, and the new ward will be in the updated Tuyên Quang.\n\nLine 51 provides more context. It references \"thị trấn Mèo Vạc vàcác xã Tả Lủng (huyệnMèo Vạc), Giàng Chu Phìn, Pả Vi\" forming the new \"xã Mèo Vạc.\" Although the district \"Huyện Mèo Vạc\" is mentioned, the text specifies that our old \"Xã Sủng Máng\" directly contributes to this new \"xã Sủng Máng\", which is what we are mapping.\n\nNow, checking the new ward data, I find a perfect match: `{\"ward_code\":\"00787\",\"ward_name\":\"Xã Sủng Máng\",\"province_name\":\"Tỉnh Tuyên Quang\"}`.  That confirms the new ward name and province match the resolution. There's also a `{\"ward_code\":\"00769\",\"ward_name\":\"Xã Mèo Vạc\",\"province_name\":\"Tỉnh Tuyên Quang\"}` which also is of note.\n\nSo, while \"Huyện Mèo Vạc\" is implied in the context of the resolution, the focus is definitively on the transformation of \"Xã Sủng Máng\" into the *new* \"Xã Sủng Máng.\" Therefore, the old \"Xã Sủng Máng in Huyện Mèo Vạc, Hà Giang\" is now best mapped to the new ward: \"Xã Sủng Máng\" within \"Tỉnh Tuyên Quang\". This mapping is backed by the merger details in the resolution and supported by the direct matching of the names.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Tuyên Quang và tỉnh Hà Giang, lấy tên là tỉnh Tuyên Quang"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "00787",
+      "ward_name": "Xã Sủng Máng"
+    },
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Lũng Chinh, Sủng Trà và Sủng Máng thành xã mới có tên gọi là xã Sủng Máng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "00787",
+      "ward_name": "Xã Sủng Máng"
+    }
+  ]
+}

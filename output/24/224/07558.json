@@ -1,0 +1,48 @@
+{
+  "address": "Xã Kiên Thành, Thị xã Chũ, Tỉnh Bắc Giang",
+  "ellapsedInMs": 10095,
+  "estimatedCost": 0.009093799999999999,
+  "thought": "**Analysis of Administrative Unit Changes**\n\nOkay, let's break this down. The user's query asks for the updated administrative unit for \"Xã Kiên Thành, Thị xã Chũ, Tỉnh Bắc Giang.\" My approach is to follow these steps:\n\n1.  **Province Check**: First, I need to account for any province mergers. Resolution 60-NQ/TW states that Bắc Giang and Bắc Ninh merged. So, \"Tỉnh Bắc Giang\" is now \"Tỉnh Bắc Ninh.\"\n\n2.  **Resolution Search**: Next, I'll scour relevant resolutions for \"Xã Kiên Thành\" and \"Thị xã Chũ\" within the context of Bắc Ninh. I identified Resolution 1658/NQ-UBTVQH15 as crucial. This document outlines the reorganization of administrative units.\n\n    *   I found line 37, which states, \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Kiên Thành và xã Kiên Lao thành xã mới có tên gọi là **xã Kiên Lao**.\" Bingo! \"Xã Kiên Thành\" is directly addressed and merged into \"xã Kiên Lao.\"\n    *   Line 86 provides, \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Thanh Hải, Hồng Giang, Trù Hựu và Chũ thành phường mới có tên gọi là **phường Chũ**.\" \"Chũ\" here clearly refers to \"Thị xã Chũ\" (the \"Thị xã\" part means it was at the district level, and is now at the *ward* level). This confirms that \"Thị xã Chũ\" has transformed into a ward.\n\n3.  **Unit Mapping**:  From these resolutions, the mapping is clear:\n    *   \"Xã Kiên Thành\" is now \"xã Kiên Lao\", in \"Tỉnh Bắc Ninh.\"\n    *   \"Thị xã Chũ\" is now \"phường Chũ\", in \"Tỉnh Bắc Ninh.\"\n\n4.  **Confirmation and Cross-referencing**:  I will cross-reference with the list of new wards for confirmation, double-checking the names, their provinces and codes.\n\n    *   \"Xã Kiên Lao\",\"province_name\":\"Tỉnh Bắc Ninh\", \"ward_code\":\"07552\"\n    *   \"Phường Chũ\",\"province_name\":\"Tỉnh Bắc Ninh\", \"ward_code\":\"07525\"\n\n5.  **Addressing the nuances**: The initial address \"Xã Kiên Thành, Thị xã Chũ, Tỉnh Bắc Giang\" presents an interesting challenge. It implies that \"Xã Kiên Thành\" was *within* \"Thị xã Chũ\". However, the resolutions reorganize them separately. This implies they are treating *communes* and the *Thị xã* as distinct units that are *both* being restructured. The key here is to realize that \"Thị xã Chũ\" is now a *phường* (ward), with \"Xã Kiên Thành\" no longer existing, and absorbed into \"Xã Kiên Lao\". It seems from the phrasing of the restructuring it's a district-level municipality being re-organized at the *ward* level. This is the correct solution given the specifics of Resolution 1658/NQ-UBTVQH15.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Bắc Ninh và tỉnh Bắc Giang, lấy tên là tỉnh Bắc Ninh"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "07552",
+      "ward_name": "Xã Kiên Lao"
+    },
+    {
+      "citation": {
+        "header": "1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh",
+        "line": "37. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Kiên Thành và xã Kiên Lao thành xã mới có tên gọi là xã Kiên Lao."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "07552",
+      "ward_name": "Xã Kiên Lao"
+    },
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Bắc Ninh và tỉnh Bắc Giang, lấy tên là tỉnh Bắc Ninh"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "07525",
+      "ward_name": "Phường Chũ"
+    },
+    {
+      "citation": {
+        "header": "1658/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Bắc Ninh",
+        "line": "86. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Thanh Hải, Hồng Giang, Trù Hựu và Chũ thành phường mới có tên gọi là phường Chũ."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Bắc Ninh",
+      "ward_code": "07525",
+      "ward_name": "Phường Chũ"
+    }
+  ]
+}

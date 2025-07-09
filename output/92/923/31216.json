@@ -1,0 +1,18 @@
+{
+  "address": "Phường Trung Nhứt, Quận Thốt Nốt, Thành phố Cần Thơ",
+  "ellapsedInMs": 6501,
+  "estimatedCost": 0.0022445,
+  "thought": "**My Analysis of the Administrative Address Mapping**\n\nOkay, so I'm presented with an old address: \"Phường Trung Nhứt, Quận Thốt Nốt, Thành phố Cần Thơ,\" and the task is to pinpoint its equivalent in the current administrative structure. This should be straightforward. I'll need to work systematically.\n\nFirst, the province is easy. \"Thành phố Cần Thơ\" is a place I'm familiar with. Consulting resolution 60-NQ/TW is always a good starting point for province mergers, but in this case, the resolution confirms that Cần Thơ remains Cần Thơ, no changes.\n\nNow for the tricky part: the ward. \"Phường Trung Nhứt\" is the key. I immediately consult any relevant resolutions about administrative changes within Cần Thơ. Resolution 1668/NQ-UBTVQH15 catches my attention, and specifically line 13. It explicitly states that \"phường Trung Nhứt\" is formed from a merger of \"phường Thạnh Hòa, phường Trung Nhứt and xã Trung An\". This is excellent news! It means, while the boundaries of \"Phường Trung Nhứt\" *have* changed, the name remains.\n\nNext, I need to check the \"New wards\" data, which confirms my initial intuition. The matching entry: `{\"ward_code\":\"31217\",\"ward_name\":\"Phường Trung Nhứt\",\"province_name\":\"Thành phố Cần Thơ\"}` seals the deal. This is a perfect match.\n\nMy confidence level is quite high here. The resolution clearly outlines the formation of a *new* \"phường Trung Nhứt\" using the same name, and the \"New wards\" data confirms its existence with the matching details.\n\nBased on this analysis, here's how I'll construct the JSON output.\n\n```json\n{\n  \"citation\": {\n    \"header\": \"1668/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Cần Thơ\",\n    \"line\": \"13. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Thạnh Hòa, phường Trung Nhứt và xã Trung An thành phường mới có tên gọi là phường Trung Nhứt.\"\n  },\n  \"confidence\": \"high\",\n  \"province_name\": \"Thành phố Cần Thơ\",\n  \"ward_code\": \"31217\",\n  \"ward_name\": \"Phường Trung Nhứt\"\n}\n```\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1668/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Cần Thơ",
+        "line": "13. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Thạnh Hòa, phường Trung Nhứt và xã Trung An thành phường mới có tên gọi là phường Trung Nhứt."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Cần Thơ",
+      "ward_code": "31217",
+      "ward_name": "Phường Trung Nhứt"
+    }
+  ]
+}

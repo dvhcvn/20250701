@@ -1,0 +1,18 @@
+{
+  "address": "Xã A Roàng, Huyện A Lưới, Thành phố Huế",
+  "ellapsedInMs": 5126,
+  "estimatedCost": 0.0021872999999999997,
+  "thought": "**Finding the New Administrative Unit**\n\nOkay, so I need to find the new ward for \"Xã A Roàng, Huyện A Lưới, Thành phố Huế.\"  My first step is always to figure out the province. \"Thành phố Huế\" is the province here, and luckily, a quick check of the province merger resolution (`60-NQ/TW`) tells me that \"Thành phố Huế\" isn't involved in any mergers.  So, the province name stays the same.\n\nNext, I'll dive into the ward resolutions. I'm looking for \"Xã A Roàng\" and I find resolution `1675/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Huế`. Line 38 of this resolution is the key. It explicitly states that \"Xã A Roàng\" is being merged with other xãs into a new one called \"xã A Lưới 4\". Bingo!\n\nJust to be absolutely certain, I'll double-check the `New wards` data for \"Thành phố Huế\". And there it is:  `{\"ward_code\":\"20101\",\"ward_name\":\"Xã A Lưới 4\",\"province_name\":\"Thành phố Huế\"}`.  Perfect!\n\nGiven the clear statement in the resolution and the confirmation from the new ward data, I'm feeling very confident about this mapping.  So, I'll put together the JSON output: the citation from the resolution, the relevant line from the resolution, a \"high\" confidence level, the province name \"Thành phố Huế,\" the ward code \"20101,\" and the new ward name \"Xã A Lưới 4.\"  Done.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1675/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Huế",
+        "line": "38. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Hương Phong, A Roàng, Đông Sơn và Lâm Đớt thành xã mới có tên gọi là xã A Lưới 4."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Huế",
+      "ward_code": "20101",
+      "ward_name": "Xã A Lưới 4"
+    }
+  ]
+}

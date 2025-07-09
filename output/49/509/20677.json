@@ -1,0 +1,18 @@
+{
+  "address": "Xã Quế Long, Huyện Quế Sơn, Tỉnh Quảng Nam",
+  "ellapsedInMs": 6424,
+  "estimatedCost": 0.0023569000000000003,
+  "thought": "**Mapping an Old Vietnamese Address to New Administrative Units**\n\nOkay, so I've got this request to map an old address, \"Xã Quế Long\" in \"Tỉnh Quảng Nam,\" to its current administrative location.  Let's break this down systematically.\n\nFirst, I need to identify the old province and ward, which are clearly \"Tỉnh Quảng Nam\" and \"Xã Quế Long.\"  Next, I'll start with the province level changes. I'll search for \"Tỉnh Quảng Nam\" in the province resolutions (specifically, 60-NQ/TW).  Aha!  I see it: \"Hợp nhất tỉnh Quảng Nam và thành phố Đà Nẵng, lấy tên là thành phố Đà Nẵng.\"  So, \"Tỉnh Quảng Nam\" has become \"Thành phố Đà Nẵng.\"  That's my new province.\n\nNow, for the tricky part: the ward.  I need to check for \"Xã Quế Long\" in all relevant resolutions, especially 1659/NQ-UBTVQH15.  Scrolling through the `lines`, I find line 56.  Bingo! \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Đông Phú và các xã Quế Minh, Quế An, Quế Long, Quế Phong thành xã mới có tên gọi là **xã Quế Sơn**.\"  This is definitive. \"Xã Quế Long\" has been merged into \"Xã Quế Sơn.\"\n\nMy next step is to confirm this in the new ward data. I'll look for \"Xã Quế Sơn,\" and there it is: `{\"ward_code\":\"20641\",\"ward_name\":\"Xã Quế Sơn\",\"province_name\":\"Thành phố Đà Nẵng\"}`.  The province name, \"Thành phố Đà Nẵng,\" matches what I determined earlier. Excellent.\n\nNow, I'll construct the JSON output. I'm confident about this one.  The province name is \"Thành phố Đà Nẵng,\" the ward name is \"Xã Quế Sơn,\" with a `ward_code` of \"20641.\" The `citation` will be from resolution 1659/NQ-UBTVQH15, specifically line 56, which clearly states the merge.  My confidence level is \"high\" because this is a direct, explicit mapping.\n\nSince the prompt asks for *all possible* candidates, and this is the only mention of \"Xã Quế Long\" in these contexts that leads to \"Xã Quế Sơn,\"  I know there's only one viable mapping here. This is a clean, straightforward case.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng",
+        "line": "56. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Đông Phú và các xã Quế Minh, Quế An, Quế Long, Quế Phong thành xã mới có tên gọi là xã Quế Sơn."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "20641",
+      "ward_name": "Xã Quế Sơn"
+    }
+  ]
+}

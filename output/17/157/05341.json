@@ -1,0 +1,18 @@
+{
+  "address": "Xã Yên Nghiệp, Huyện Lạc Sơn, Tỉnh Hoà Bình",
+  "ellapsedInMs": 7974,
+  "estimatedCost": 0.0029183,
+  "thought": "**My Analysis of the Address Mapping**\n\nOkay, so I'm tasked with translating this old Vietnamese address to its current form. The input is \"Xã Yên Nghiệp, Huyện Lạc Sơn, Tỉnh Hoà Bình\". My first step is to identify the components: the old ward is \"Xã Yên Nghiệp,\" the district is \"Huyện Lạc Sơn,\" and the province is \"Tỉnh Hoà Bình.\"\n\nThe tricky part is figuring out how these units have changed.  I'm focusing on the provided resolutions and the new ward data.\n\nFirst, I looked at the province mapping based on Resolution 60-NQ/TW.  \"Tỉnh Hoà Bình\" isn't on the \"no change\" list, but it *is* on the \"mergers and consolidations\" list. Specifically, it's been merged into \"Tỉnh Phú Thọ.\"  That's a high-confidence change; the province is now clearly \"Tỉnh Phú Thọ.\"\n\nNext, I dove into the other relevant resolutions. I scanned them for mentions of \"Xã Yên Nghiệp.\"  Resolution `1676/NQ-UBTVQH15`, which pertains to the administrative restructuring in Phú Thọ, caught my attention. Even though it's technically for Phú Thọ, it applies because Hoà Bình has been absorbed.\n\nI carefully went through the lines of this resolution and found a crucial match. Line 107 specifically states that \"Xã Yên Nghiệp\" is merged with two other communes to form the new ward \"Xã Đại Đồng.\"  This is a direct hit!\n\nTo confirm, I double-checked the `new_wards` data.  I was looking for \"Xã Đại Đồng\" with the province \"Tỉnh Phú Thọ.\"  And there it was: `{\"ward_code\":\"05347\",\"ward_name\":\"Xã Đại Đồng\",\"province_name\":\"Tỉnh Phú Thọ\"}`.  Perfect.\n\nTherefore, my final conclusion is: the old address \"Xã Yên Nghiệp, Huyện Lạc Sơn, Tỉnh Hoà Bình\" now maps to the new address in \"Tỉnh Phú Thọ,\" specifically \"Xã Đại Đồng\" with code \"05347\".  The mapping is backed by Resolution `1676/NQ-UBTVQH15`, line 107. The confidence level is high because of the direct mention of \"Xã Yên Nghiệp\" and the clear province mapping. I've also verified that there are no other relevant resolutions or potential new ward matches to cause issues. I'm quite confident in this analysis.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "107. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Ân Nghĩa, Tân Mỹ và Yên Nghiệp thành xã mới có tên gọi là xã Đại Đồng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "05347",
+      "ward_name": "Xã Đại Đồng"
+    }
+  ]
+}

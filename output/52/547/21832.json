@@ -1,0 +1,28 @@
+{
+  "address": "Xã Tây Bình, Huyện Tây Sơn, Tỉnh Bình Định",
+  "ellapsedInMs": 9540,
+  "estimatedCost": 0.0039055999999999995,
+  "thought": "**My Analysis of the Administrative Unit Change**\n\nOkay, so I've been tasked with pinpointing the new administrative unit corresponding to the old address \"Xã Tây Bình, Huyện Tây Sơn, Tỉnh Bình Định.\"  Here's how I'm approaching this, step by step:\n\nFirst, I identified \"Tỉnh Bình Định\" as the starting point.  I know mergers are common in these situations, so I immediately checked for provincial consolidation. Sure enough, \"60-NQ/TW\" reveals that Bình Định merged with Gia Lai, becoming \"Tỉnh Gia Lai.\"\n\nNext, I zeroed in on the specific ward, \"Xã Tây Bình.\" The key is finding a resolution related to Gia Lai, and the relevant one is \"1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai.\"  Line 24 of this document is critical: it explicitly states that \"Xã Tây Bình,\" along with other wards, is being merged into a new ward called \"**xã Bình An**.\"\n\nNow, I need to confirm the existence of this new ward.  A quick check of the \"New wards\" list under \"Tỉnh Gia Lai\" confirms it:  `{\"ward_code\":\"21829\",\"ward_name\":\"Xã Bình An\",\"province_name\":\"Tỉnh Gia Lai\"}`.  Perfect match.\n\nMy next consideration is the district name, \"Huyện Tây Sơn.\" The prompt mentions the district structure is being eliminated. In any case, I need to ensure that the new ward is the direct successor of the old one.  I saw in the resolutions that a new ward named \"Xã Tây Sơn\" is created in Gia Lai. However, based on the resolution, this \"Xã Tây Sơn\" is formed by the merging of different wards. My focus is on where \"Xã Tây Bình\" ends up.\n\nThe address I'm working with is \"Xã Tây Bình,\" and the resolution is clear: this is *merged* into \"Xã Bình An.\" Therefore, my conclusion is unambiguous, it is \"Xã Bình An\" that is the new unit.\n\nTo further solidify this, I scanned other resolutions for any mention of \"Tây Sơn\" that might create confusion. I checked resolutions from Đắk Lắk, Hà Tĩnh, and Hưng Yên, but none of those were pertinent to the Bình Định/Gia Lai context. Therefore, my prior conclusion remains robust.\n\nTherefore, the JSON output I'd construct looks like this:\n\n```json\n{\n  \"province_name\": \"Tỉnh Gia Lai\",\n  \"ward_name\": \"Xã Bình An\",\n  \"ward_code\": \"21829\",\n  \"citation\": \"1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai, Line 24\",\n  \"confidence\": \"high\"\n}\n```\n\nThis reflects my high confidence in this determination because the merge is explicitly stated in the relevant resolution.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Gia Lai và tỉnh Bình Định, lấy tên là tỉnh Gia Lai"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "21829",
+      "ward_name": "Xã Bình An"
+    },
+    {
+      "citation": {
+        "header": "1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai",
+        "line": "24. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tây Vinh, Tây Bình, Bình Hòa và Bình Thành thành xã mới có tên gọi là xã Bình An."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Gia Lai",
+      "ward_code": "21829",
+      "ward_name": "Xã Bình An"
+    }
+  ]
+}

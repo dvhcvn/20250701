@@ -1,0 +1,18 @@
+{
+  "address": "Phường Thạnh Mỹ Lợi, Thành phố Thủ Đức, Thành phố Hồ Chí Minh",
+  "ellapsedInMs": 6151,
+  "estimatedCost": 0.002641,
+  "thought": "**Mapping the Old to New: A Straightforward Case**\n\nOkay, so I've got this address to work with: \"Phường Thạnh Mỹ Lợi, Thành phố Thủ Đức, Thành phố Hồ Chí Minh.\" My goal is to figure out the new administrative unit, the ward, that corresponds to it.\n\nFirst, I need to check the province. \"Thành phố Hồ Chí Minh.\" I scan those province resolutions. I see it wasn't merged. It's still \"Thành phố Hồ Chí Minh.\" Good.\n\nNext, the old ward: \"Phường Thạnh Mỹ Lợi.\" Now I dive into the other resolutions, specifically looking for mentions of \"Thạnh Mỹ Lợi.\" Bingo! Resolution \"1685/NQ-UBTVQH15.\" Line 75. It clearly states that \"Phường Thạnh Mỹ Lợi\" and \"Phường Cát Lái\" have merged. The new ward is \"Phường Cát Lái\"!\n\nNow, let's confirm this by checking the \"New wards\" list. And yes, there it is: \"Phường Cát Lái,\" with the code \"27112.\" Perfect match!\n\nSo, the JSON output is simple:\n\n*   `province_name`: \"Thành phố Hồ Chí Minh\"\n*   `ward_name`: \"Phường Cát Lái\"\n*   `ward_code`: \"27112\"\n*   `confidence`: \"high\" – This is a very clear mapping.\n*   `citation`: \"1685/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của Thành phố Hồ Chí Minh\" (specifically line 75).\n\nSeems like a pretty straightforward and reliable match. Case closed.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1685/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của Thành phố Hồ Chí Minh",
+        "line": "75. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Thạnh Mỹ Lợi và phường Cát Lái thành phường mới có tên gọi là phường Cát Lái."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hồ Chí Minh",
+      "ward_code": "27112",
+      "ward_name": "Phường Cát Lái"
+    }
+  ]
+}

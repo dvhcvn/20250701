@@ -1,0 +1,18 @@
+{
+  "address": "Xã Tiên Kỳ, Huyện Tân Kỳ, Tỉnh Nghệ An",
+  "ellapsedInMs": 8016,
+  "estimatedCost": 0.0035327,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, let's break down this address: \"Xã Tiên Kỳ, Huyện Tân Kỳ, Tỉnh Nghệ An\".  My immediate thought is to start with the province, \"Tỉnh Nghệ An\".  First, I'll consult the master list, `60-NQ/TW`, to see if there were any province-level mergers.  The good news is, Nghệ An isn't listed for any, so \"Tỉnh Nghệ An\" remains unchanged. That's a solid start.\n\nNext, I need to focus on \"Xã Tiên Kỳ\".  I'll start by systematically checking the other relevant resolutions for Nghệ An province.  I've got a specific resolution for restructuring wards, `1678/NQ-UBTVQH15`, that looks promising.\n\nScanning through this resolution, I'm carefully looking for mentions of \"Xã Tiên Kỳ\".  Eureka! Line 84 is the key: it explicitly states that \"xã Tiên Kỳ\" and \"xã Đồng Văn (huyện Tân Kỳ)\" are being merged to form \"xã Tiên Đồng\". Perfect!\n\nNow, I need to confirm this in my list of new wards (`New wards`). I'm looking for \"Xã Tiên Đồng\" within \"Tỉnh Nghệ An\".  There it is!  `{\"ward_code\":\"17287\",\"ward_name\":\"Xã Tiên Đồng\",\"province_name\":\"Tỉnh Nghệ An\"}` - a perfect match.  \n\nI also checked other resolutions to ensure that my answer is correct, but none of them mention Tiên Kỳ.  So, I can confidently construct the output:\n\n*   `province_name`: \"Tỉnh Nghệ An\"\n*   `ward_name`: \"Xã Tiên Đồng\"\n*   `ward_code`: \"17287\"\n*   `citation`:\n    *   `header`: \"1678/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Nghệ An\"\n    *   `line`: \"84. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Đồng Văn (huyện Tân Kỳ) và xã Tiên Kỳ thành xã mới có tên gọi là xã Tiên Đồng.\"\n*   `confidence`: \"high\"\n\nI can say with high confidence that this is the correct mapping based on the explicit mention in the resolution.  This should be a straightforward and accurate translation of the old address to the new administrative structure.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1678/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Nghệ An",
+        "line": "84. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Đồng Văn (huyện Tân Kỳ) và xã Tiên Kỳ thành xã mới có tên gọi là xã Tiên Đồng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Nghệ An",
+      "ward_code": "17287",
+      "ward_name": "Xã Tiên Đồng"
+    }
+  ]
+}

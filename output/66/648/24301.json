@@ -1,0 +1,18 @@
+{
+  "address": "Xã Cuor Đăng, Huyện Cư M'gar, Tỉnh Đắk Lắk",
+  "ellapsedInMs": 7048,
+  "estimatedCost": 0.0027477,
+  "thought": "**My Mapping Strategy for the Old Vietnamese Address**\n\nOkay, so I'm tackling this address mapping problem. The goal is to accurately translate an old Vietnamese address to its current administrative unit. The input is \"Xã Cuor Đăng\", \"Tỉnh Đắk Lắk\".\n\nFirst, I need to pinpoint the relevant information: \"Xã Cuor Đăng\" is the old ward and \"Tỉnh Đắk Lắk\" is the old province.\n\nNow, let's dive into the resolutions. Province Resolution 60-NQ/TW is the first step. \"Tỉnh Đắk Lắk\" is retained, meaning the province name stays the same.\n\nNext, the crucial part: checking the \"Other Resolutions.\" I need to find something relevant to \"Xã Cuor Đăng.\" Resolution 1660/NQ-UBTVQH15 is the key. Line 11 is where the magic happens. It explicitly states that \"Xã Ea Drơng\" and \"Xã Cuôr Đăng\" are merged into a *new* \"Xã Cuôr Đăng\". Bingo! That's the key: the *new* ward name is \"Xã Cuôr Đăng.\"\n\nLine 12 is less relevant, since it describes another merger that doesn't affect \"Xã Cuor Đăng\" directly.\n\nNow, to solidify this, I need to check the \"New Wards\" data. I'm looking for a ward with the province \"Tỉnh Đắk Lắk\" and the *new* ward name \"Xã Cuôr Đăng.\" I find a perfect match: `{\"ward_code\":\"24301\",\"ward_name\":\"Xã Cuôr Đăng\",\"province_name\":\"Tỉnh Đắk Lắk\"}`. It's a precise match. The other wards, \"Ea Drông\" and \"Cư M'gar,\" relate to mergers. But this new \"Xã Cuôr Đăng\" is the one.\n\nSince the resolution explicitly stated the merger and new name, and a new ward with that exact name and province exists, my confidence is very high.\n\nTherefore, the old address \"Xã Cuor Đăng\", \"Tỉnh Đắk Lắk\" maps confidently to the new ward, \"Xã Cuôr Đăng\", code: 24301, in the province of \"Tỉnh Đắk Lắk\". The JSON output will reflect this precise mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1660/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đắk Lắk",
+        "line": "11. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Ea Drơng và xã Cuôr Đăng thành xã mới có tên gọi là xã Cuôr Đăng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đắk Lắk",
+      "ward_code": "24301",
+      "ward_name": "Xã Cuôr Đăng"
+    }
+  ]
+}

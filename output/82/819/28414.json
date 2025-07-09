@@ -1,0 +1,28 @@
+{
+  "address": "Xã An Thái Đông, Huyện Cái Bè, Tỉnh Tiền Giang",
+  "ellapsedInMs": 8382,
+  "estimatedCost": 0.0029506999999999997,
+  "thought": "**My Analysis of the Address Mapping**\n\nOkay, so I'm tasked with mapping \"Xã An Thái Đông, Huyện Cái Bè, Tỉnh Tiền Giang\" to its new administrative equivalent. It seems straightforward, but I need to be meticulous.  My first step is to break down the old address components: ward, district, and province.\n\nThe province, \"Tỉnh Tiền Giang,\" immediately triggers a red flag. I know that as per resolution 60-NQ/TW, some provinces were restructured. Checking the list, \"Tiền Giang\" is slated for amalgamation. Specifically, item 21 indicates the merging of Tiền Giang and Đồng Tháp into a new province, \"Đồng Tháp.\"  This gives me high confidence that the province has changed.\n\nNow, I'm onto the district and ward.  I need to cross-reference with resolution 1663/NQ-UBTVQH15.  This resolution *specifically* addresses the re-organization.  I scan the document and quickly discover line 42.  It's clear as day: \"Xã An Thái Đông\" is *explicitly* merging into a new \"Xã Mỹ Lợi.\" Boom! High confidence there.  Furthermore, the resolution mentions \"Huyện Cái Bè\" (the district) in several other lines, confirming the relevance of this document.\n\nNext, I need to validate this against the \"New wards\" list.  I'm searching for \"Xã Mỹ Lợi\" and I find an entry with the code \"28414,\" correctly associated with \"Tỉnh Đồng Tháp.\"  The province name matches what I derived from the province resolution. Perfect.\n\nNow, I'll construct the output:  The `province_name` is \"Tỉnh Đồng Tháp,\" `ward_name` is \"Xã Mỹ Lợi,\" `ward_code` is \"28414.\" The `confidence` is \"high\" because the resolution explicitly supports both the province and ward mappings. As for the `citation`, I'll include references to both resolution 60-NQ/TW for the province change and 1663/NQ-UBTVQH15 for the ward information.\n\nOne final check. I see that the original address contained a district, \"Huyện Cái Bè\". The resolution 1663/NQ-UBTVQH15 does reference the original district, but I know resolution 60-NQ/TW aims to eventually eliminate districts entirely. Since the schema does not include a district field, I can safely disregard that particular data, focusing solely on the province and ward changes.  The key takeaway:  \"Xã An Thái Đông\" is explicitly merged into \"xã Mỹ Lợi.\" This is the core of the mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Tiền Giang và tỉnh Đồng Tháp, lấy tên là tỉnh Đồng Tháp"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đồng Tháp",
+      "ward_code": "28414",
+      "ward_name": "Xã Mỹ Lợi"
+    },
+    {
+      "citation": {
+        "header": "1663/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Tháp",
+        "line": "Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã An Thái Đông, Mỹ Lợi A và Mỹ Lợi B thành xã mới có tên gọi là xã Mỹ Lợi."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đồng Tháp",
+      "ward_code": "28414",
+      "ward_name": "Xã Mỹ Lợi"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Mậu Long, Huyện Yên Minh, Tỉnh Hà Giang",
+  "ellapsedInMs": 8118,
+  "estimatedCost": 0.0030343,
+  "thought": "**Analyzing and Mapping the Old Vietnamese Address**\n\nOkay, here's how I'm thinking through this address mapping problem. First, I'm starting with the initial address components: \"Tỉnh Hà Giang\" (the old province) and \"Xã Mậu Long\" (the old ward), within the context of \"Huyện Yên Minh\" (the old district).  I know that districts are no longer the primary focus in the final output, but it helps me contextualize the ward.\n\nMy first task is to examine province-level resolutions, specifically checking for any information on \"Tỉnh Hà Giang\". The goal is to determine if any province mergers or boundary changes have occurred.  Based on the resolution (60-NQ/TW), I quickly identify the key change: \"Tỉnh Hà Giang\" is now part of \"Tỉnh Tuyên Quang\" due to a merger.  Therefore, my `province_name` in the final output will be \"Tỉnh Tuyên Quang\".\n\nNext, I need to delve into more specific resolutions to pinpoint how \"Xã Mậu Long\" has been affected. I'll carefully scan each relevant resolution, starting with the Tuyên Quang ones. This will require checking resolutions specifically regarding the re-organization of administrative units.  I will focus on lines that mention the ward of interest.\n\nThe resolution I'm focusing on is 1684/NQ-UBTVQH15, a resolution specific to the reorganization of administrative units within Tuyên Quang province.  I found line 58.  Specifically, it details the merger of \"Xã Mậu Long\" with \"Ngam La\" and \"Mậu Duệ\" to form a new ward called \"Xã Mậu Duệ\".  This is crucial information.\n\nNow that I have the new province name (\"Tỉnh Tuyên Quang\") and the new ward name (\"Xã Mậu Duệ\"), I'm going to cross-reference my findings with the \"New wards\" dataset to confirm the details and gather the ward code.  The data aligns perfectly, with \"Xã Mậu Duệ\" correctly associated with \"Tỉnh Tuyên Quang\" and with the code \"00847\".\n\nTherefore, based on my analysis of the resolutions and the \"New wards\" data, I'm confident in the following JSON output:\n\n```json\n{\n    \"province_name\": \"Tỉnh Tuyên Quang\",\n    \"ward_name\": \"Xã Mậu Duệ\",\n    \"ward_code\": \"00847\",\n    \"citation\": {\n        \"header\": \"1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang\",\n        \"line\": \"58. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Ngam La, Mậu Long và Mậu Duệ thành xã mới có tên gọi là **xã Mậu Duệ**.\"\n    },\n    \"confidence\": \"high\"\n}\n```\n\nThe high confidence comes from the direct mention of \"Xã Mậu Long\" in the resolution as being incorporated into \"Xã Mậu Duệ\". It's a clean and decisive case.  This output provides a correct and well-documented mapping of the old address to its current administrative unit.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "58. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Ngam La, Mậu Long và Mậu Duệ thành xã mới có tên gọi là xã Mậu Duệ."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "00847",
+      "ward_name": "Xã Mậu Duệ"
+    }
+  ]
+}

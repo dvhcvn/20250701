@@ -1,0 +1,28 @@
+{
+  "address": "Xã Thái Sơn, Huyện Hàm Yên, Tỉnh Tuyên Quang",
+  "ellapsedInMs": 7115,
+  "estimatedCost": 0.0032476,
+  "thought": "**Finding the New Administrative Unit for \"Xã Thái Sơn, Huyện Hàm Yên, Tỉnh Tuyên Quang\"**\n\nOkay, let's break this down. First, the old address is \"Xã Thái Sơn, Huyện Hàm Yên, Tỉnh Tuyên Quang.\" I need to figure out what the *new* administrative unit is. I have to consult the resolutions and the list of new wards.\n\nFirst, the province. The old province is Tuyên Quang. I quickly scanned Resolution 60-NQ/TW for any province mergers, but it remains the same. So the province remains \"Tỉnh Tuyên Quang\". Easy.\n\nNext, I need to focus on \"Xã Thái Sơn.\"  I need to search through all those resolutions. I skipped through the An Giang, Cao Bằng, Bắc Ninh, Hải Phòng, and Nghệ An ones because they aren't relevant to Tuyên Quang.  I went straight to 1684/NQ-UBTVQH15, the one for Tuyên Quang. Bingo!\n\nLine 22 mentions \"Huyện Hàm Yên,\" but it lists the merged units forming \"xã Hàm Yên,\" and \"Xã Thái Sơn\" isn't one of them.  Then, I hit line 24.  It *explicitly* says \"Xã Thái Sơn\" is merged with \"xã Thành Long\" to create a *new* \"xã Thái Sơn.\" That's the key! It's a perfect match!\n\nNow, I cross-reference the `New wards` list, and there it is:  `{\"ward_code\":\"02407\",\"ward_name\":\"Xã Thái Sơn\",\"province_name\":\"Tỉnh Tuyên Quang\"}`.\n\nI have a really strong match: the province stays the same, and the resolution specifically details a new \"Xã Thái Sơn.\" So, I'm confident. I've found it. Now I just need to format the JSON output correctly.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "1. Hợp nhất tỉnh Tuyên Quang và tỉnh Hà Giang, lấy tên là tỉnh Tuyên Quang"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "02407",
+      "ward_name": "Xã Thái Sơn"
+    },
+    {
+      "citation": {
+        "header": "1684/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tuyên Quang",
+        "line": "24. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Thành Long và xã Thái Sơnthành xã mới có tên gọi là **xã Thái Sơn**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Tuyên Quang",
+      "ward_code": "02407",
+      "ward_name": "Xã Thái Sơn"
+    }
+  ]
+}

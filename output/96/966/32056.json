@@ -1,0 +1,48 @@
+{
+  "address": "Xã Khánh Lâm, Huyện U Minh, Tỉnh Cà Mau",
+  "ellapsedInMs": 9711,
+  "estimatedCost": 0.0044931,
+  "thought": "**Navigating the Administrative Landscape: Finding the New Home of \"Xã Khánh Lâm\"**\n\nOkay, so I've got an old address: \"Xã Khánh Lâm, Huyện U Minh, Tỉnh Cà Mau,\" and I need to figure out the new ward. The process here is pretty standard for these administrative adjustments, but attention to detail is crucial.\n\nFirst, I identified \"Tỉnh Cà Mau\" as the province.  I immediately checked for any province-level reorganizations, but thankfully, the name has remained unchanged.  Now, the real work begins: analyzing relevant resolutions. I zeroed in on \"1655/NQ-UBTVQH15,\" which specifically deals with the reorganization of *cấp xã* (commune-level) units in Cà Mau.\n\nMy eyes jumped to line 8, where it outlines the merging of several *xã* (communes) including a portion of \"Xã Khánh Lâm\" into the new commune \"Xã U Minh.\"  Then, line 10 caught my attention, detailing the formation of a *new* \"Xã Khánh Lâm,\" incorporating the remaining portion of the original, post-merger of \"Xã Khánh Lâm.\"\n\nThis is the key here. The original \"Xã Khánh Lâm\" is no longer a whole, existing entity. A part of it is now \"Xã U Minh,\" and the remaining part is in a *new* \"Xã Khánh Lâm.\" This means the old \"Xã Khánh Lâm\" address could be attributed to either of these new wards.\n\nI double-checked my data by looking for both \"Xã U Minh\" and \"Xã Khánh Lâm\" in my \"new wards\" dataset to confirm the new codes:\n\n*   `{\"ward_code\":\"32047\",\"ward_name\":\"Xã U Minh\",\"province_name\":\"Tỉnh Cà Mau\"}`\n*   `{\"ward_code\":\"32062\",\"ward_name\":\"Xã Khánh Lâm\",\"province_name\":\"Tỉnh Cà Mau\"}`\n\nThe resolution is quite explicit: the original \"Xã Khánh Lâm\" is split.  Because the input address only refers to the original name without specifying which part of the old commune, both the *new* \"Xã U Minh\" and the *new* \"Xã Khánh Lâm\" are valid possibilities. The level of confidence in this conclusion is high because the administrative change is clearly defined. This means I'm comfortable offering both. This is typical and the expected outcome for these types of analyses.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "22. Hợp nhất tỉnh Bạc Liêu và tỉnh Cà Mau, lấy tên là tỉnh Cà Mau"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Cà Mau",
+      "ward_code": "32047",
+      "ward_name": "Xã U Minh"
+    },
+    {
+      "citation": {
+        "header": "1655/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Cà Mau",
+        "line": "8. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Khánh Tiến, xã Khánh Hòa, một phần diện tích tự nhiên, quy mô dân số của xã Khánh Thuận và xã Khánh Lâm thành xã mới có tên gọi là xã U Minh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Cà Mau",
+      "ward_code": "32047",
+      "ward_name": "Xã U Minh"
+    },
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "22. Hợp nhất tỉnh Bạc Liêu và tỉnh Cà Mau, lấy tên là tỉnh Cà Mau"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Cà Mau",
+      "ward_code": "32062",
+      "ward_name": "Xã Khánh Lâm"
+    },
+    {
+      "citation": {
+        "header": "1655/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Cà Mau",
+        "line": "10. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Khánh Hội, một phần diện tích tự nhiên, quy mô dân số của xã Nguyễn Phích và phần còn lại của xã Khánh Lâm sau khi sắp xếp theo quy định tại khoản 8 Điều này thành xã mới có tên gọi là xã Khánh Lâm."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Cà Mau",
+      "ward_code": "32062",
+      "ward_name": "Xã Khánh Lâm"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Phường Tân Mai, Thành phố Biên Hòa, Tỉnh Đồng Nai",
+  "ellapsedInMs": 7194,
+  "estimatedCost": 0.0032959,
+  "thought": "**Determining the New Administrative Unit for \"Phường Tân Mai\"**\n\nOkay, here's how I'd approach this. The user is asking about the new administrative unit for \"Phường Tân Mai\" in Đồng Nai. My first step, as always, is to pinpoint the location: \"Tỉnh Đồng Nai.\"\n\nKnowing Đồng Nai is the province, I'd immediately consult the key resolutions related to administrative changes. Resolution 60-NQ/TW doesn't show Đồng Nai being dissolved, though it did merge with Bình Phước, so that helps determine the `province_name` in the output.\n\nNext, I'd focus on resolutions that specifically address Đồng Nai's administrative changes. 1662/NQ-UBTVQH15, concerning Đồng Nai's \"Sắp xếp các đơn vị hành chính cấp xã\" is the key. There are mentions of wards like \"Tân Hạnh,\" but the critical line is the \"70\" listing. It clearly states the merging of \"Tân Hiệp, Tân Mai, Bình Đa, and Tam Hiệp\" into the new \"phường Tam Hiệp.\" Bingo! This is the precise information I need.\n\nTo solidify this, I'd cross-reference it with the \"New wards\" data. Searching for \"phường Tam Hiệp\" in \"Tỉnh Đồng Nai\" yielded a match: `{\"ward_code\":\"26017\",\"ward_name\":\"Phường Tam Hiệp\",\"province_name\":\"Tỉnh Đồng Nai\"}`. Confirmed!\n\nTherefore, the old \"Phường Tân Mai\" has been absorbed into the new \"Phường Tam Hiệp\" in Đồng Nai. This is a high-confidence match because the resolution directly addresses the specific wards. The JSON output would be structured to reflect this. The `citation` would point to the exact line in the resolution, and the data would confirm the details of the merge. The `province_name` in the output would be \"Tỉnh Đồng Nai\" given that Đồng Nai has not been dissolved.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1662/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Nai",
+        "line": "70. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Tân Hiệp, Tân Mai, Bình Đa và Tam Hiệp thành phường mới có tên gọi là **phường Tam Hiệp**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đồng Nai",
+      "ward_code": "26017",
+      "ward_name": "Phường Tam Hiệp"
+    }
+  ]
+}

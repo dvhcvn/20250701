@@ -1,0 +1,18 @@
+{
+  "address": "Xã Song Pe, Huyện Bắc Yên, Tỉnh Sơn La",
+  "ellapsedInMs": 6089,
+  "estimatedCost": 0.0020350999999999998,
+  "thought": "**Address Mapping Analysis: From Song Pe to Bắc Yên**\n\nOkay, here's how I'm thinking about this address mapping problem. The user wants me to translate an old address to a new administrative unit based on some provided information. My first step is to parse the original address which I identified as `Xã Song Pe`, `Huyện Bắc Yên`, `Tỉnh Sơn La`.\n\nNow, I'll dive into the resolutions. First, I quickly verified \"Tỉnh Sơn La\" against the province merge list, but it's not on the list. Good. So \"Tỉnh Sơn La\" stays \"Tỉnh Sơn La.\"\n\nNext, I need to see what's changed for \"Sơn La.\" Scanning the headers, I immediately spot `1681/NQ-UBTVQH15`. Bingo! This looks promising. Upon reading the details within this resolution, Line 25 catches my eye. It clearly states that \"Song Pe\" is one of the components being merged to create the new administrative unit, `xã Bắc Yên`.\n\nNow, the final step. I have to confirm the existence of `Xã Bắc Yên` within \"Tỉnh Sơn La\" in the provided ward data. And there it is! `{\"ward_code\":\"03856\",\"ward_name\":\"Xã Bắc Yên\",\"province_name\":\"Tỉnh Sơn La\"}`. Perfect match.\n\nTherefore, the output should be constructed as follows:\n\n*   `province_name`: \"Tỉnh Sơn La\"\n*   `ward_name`: \"Xã Bắc Yên\"\n*   `ward_code`: \"03856\"\n*   `citation`:\n    *   `header`: \"1681/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Sơn La\"\n    *   `line`: \"25. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Bắc Yên và các xã Phiêng Ban, Hồng Ngài, Song Pe thành xã mới có tên gọi là xã Bắc Yên.\"\n*   `confidence`: \"high\" (because the resolution directly addresses the merge and the new ward data confirms the details).\n\nThis analysis provides a high degree of certainty for the address mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1681/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Sơn La",
+        "line": "25. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Bắc Yên và các xã Phiêng Ban, Hồng Ngài, Song Pe thành xã mới có tên gọi là xã Bắc Yên."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Sơn La",
+      "ward_code": "03856",
+      "ward_name": "Xã Bắc Yên"
+    }
+  ]
+}

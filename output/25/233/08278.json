@@ -1,0 +1,18 @@
+{
+  "address": "Xã Phù Ninh, Huyện Phù Ninh, Tỉnh Phú Thọ",
+  "ellapsedInMs": 7782,
+  "estimatedCost": 0.0025667,
+  "thought": "**Determining the New Administrative Unit for \"Xã Phù Ninh, Huyện Phù Ninh, Tỉnh Phú Thọ\"**\n\nOkay, here's how I'd approach this. First, I need to understand that the user is asking about an old address, specifically \"Xã Phù Ninh, Huyện Phù Ninh, Tỉnh Phú Thọ\".  My job is to find the *updated* administrative information, leveraging my knowledge of the relevant resolutions and data.\n\nMy initial thought is to break down the problem step-by-step. First, I need to get the old province (\"Tỉnh Phú Thọ\") verified. I’ll look into the provincial mergers documented in `60-NQ/TW`. That quickly confirms that while the province *did* undergo a merger (with Vĩnh Phúc and Hòa Bình), the *name* \"Tỉnh Phú Thọ\" remains unchanged. This means my output will still use that province name.\n\nNext, I zero in on the specific ward, \"Xã Phù Ninh\". I'll be looking at the `Other resolutions` data, specifically for any that mention \"Xã Phù Ninh\".  Resolution `1676/NQ-UBTVQH15` immediately catches my eye: it directly deals with the administrative rearrangement of wards in Phú Thọ, and it explicitly mentions the creation of a *new* \"xã Phù Ninh\" through the merging of several entities. That's a strong indicator.\n\nNow I move into the `New wards` data to find the precise details of this *new* \"Xã Phù Ninh\". A search within \"Tỉnh Phú Thọ\" produces a single relevant result: `{\"ward_code\":\"08230\",\"ward_name\":\"Xã Phù Ninh\",\"province_name\":\"Tỉnh Phú Thọ\"}`. This perfectly matches the resolution I found earlier.\n\nFinally, I'll construct the output JSON:\n\n*   `province_name`: \"Tỉnh Phú Thọ\" (from the provincial check).\n*   `ward_name`: \"Xã Phù Ninh\" (from the `New wards` data).\n*   `ward_code`: \"08230\" (also from `New wards`).\n*   My `citation` will include details from the key resolution (1676) that created the new ward, specifically the relevant section describing the merger.\n*   My `confidence` level for this match is high.  There's a direct connection between the old ward name and the new information, and the resolution provides specific confirmation.\n\nTo be extra careful, I'll quickly double-check other resolutions just to be sure there aren't *other* \"Xã Phù Ninh\" entities. A quick glance confirms that the other resolutions don't match the criteria.  The match is clear and directly addresses the query.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "6. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Phong Châu và các xã Phú Nham, Phú Lộc, Phù Ninh thành xã mới có tên gọi là xã Phù Ninh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "08230",
+      "ward_name": "Xã Phù Ninh"
+    }
+  ]
+}

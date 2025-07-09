@@ -1,0 +1,18 @@
+{
+  "address": "Phường Đằng Lâm, Quận Hải An, Thành phố Hải Phòng",
+  "ellapsedInMs": 6669,
+  "estimatedCost": 0.0023652,
+  "thought": "**Analyzing the Administrative Restructuring of \"Phường Đằng Lâm\"**\n\nOkay, so I'm presented with the address \"Phường Đằng Lâm, Quận Hải An, Thành phố Hải Phòng\" and asked to find its corresponding new administrative unit. My initial step is to break down the address. From the input, it's clear the old ward is \"Phường Đằng Lâm\" and the old province is \"Thành phố Hải Phòng.\"\n\nNow, I need to check for province mergers. Looking at \"60-NQ/TW,\" I confirm that \"Thành phố Hải Phòng\" remains \"Thành phố Hải Phòng,\" no merger occurred.\n\nNext, I delve into the relevant ward resolutions, specifically focusing on \"Other resolutions\" for \"Phường Đằng Lâm\" within \"Thành phố Hải Phòng.\" Resolution \"1669/NQ-UBTVQH15\" is key here. It explicitly states that \"Phường Đằng Lâm\" is merged into a new ward. The exact phrase is, \"...phường Cát Bi, Đằng Lâm, Thành Tô, Đằng Hải, Tràng Cát, một phần diện tích tự nhiên, quy mô dân số của phường Nam Hải vàmột phần diện tích tự nhiên của phường Đông Hải 2thành phường mới có tên gọi là **phường Hải An**.\" Therefore, \"Phường Đằng Lâm\" is a component of the new \"phường Hải An.\"\n\nMoving on, I need to confirm the existence of this new ward in the \"New wards\" list. Bingo, it's there:  `{\"ward_code\":\"11413\",\"ward_name\":\"Phường Hải An\",\"province_name\":\"Thành phố Hải Phòng\"}`.\n\nGiven the direct, unambiguous wording of the resolution, my confidence in this mapping is high. The resolution clearly designates \"Phường Đằng Lâm\" as integral to \"phường Hải An.\"\n\nFinally, I'll construct the JSON output. The `province_name` will be \"Thành phố Hải Phòng,\" as the province didn't change. The `ward_name` is, naturally, \"Phường Hải An.\" The `ward_code` is \"11413,\" retrieved from the \"New wards\" data.  The `confidence` is \"high\" due to the definitive nature of the resolution.  The `citation` will include the full reference of the resolution, specifically: \"1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng\" and the specific line within that resolution which details the formation of phường Hải An.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "14. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Cát Bi, Đằng Lâm, Thành Tô, Đằng Hải, Tràng Cát, một phần diện tích tự nhiên, quy mô dân số của phường Nam Hải vàmột phần diện tích tự nhiên của phường Đông Hải 2thành phường mới có tên gọi là phường Hải An."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Hải Phòng",
+      "ward_code": "11413",
+      "ward_name": "Phường Hải An"
+    }
+  ]
+}

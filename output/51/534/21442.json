@@ -1,0 +1,18 @@
+{
+  "address": "Xã Phổ An, Thị xã Đức Phổ, Tỉnh Quảng Ngãi",
+  "ellapsedInMs": 6536,
+  "estimatedCost": 0.0024941,
+  "thought": "**Finding the New Administrative Unit for \"Xã Phổ An\"**\n\nOkay, so I'm looking at this address, \"Xã Phổ An\", \"Tỉnh Quảng Ngãi\", and need to find its new administrative unit. First, I pinpoint the old ward and province: \"Xã Phổ An\" and \"Tỉnh Quảng Ngãi\".  Then, I double-checked the Province Resolutions (60-NQ/TW), but it seems Quảng Ngãi's name remains unchanged.\n\nNext, I delved into the `other_resolutions` for specifics. I found Resolution \"1677/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ngãi\" and zeroed in on line 85. Boom! It's clear: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Phổ Văn, phường Phổ Quang, xã Phổ An và xã Phổ Thuận thành phường mới có tên gọi là **phường Trà Câu**.\" That's the key! \"Xã Phổ An\" is explicitly merged into \"phường Trà Câu\".\n\nNow, I cross-referenced this with the `new_wards` list to confirm that \"Phường Trà Câu\" exists and is correctly associated with \"Tỉnh Quảng Ngãi\". And it does: `{\"ward_code\":\"21451\",\"ward_name\":\"Phường Trà Câu\",\"province_name\":\"Tỉnh Quảng Ngãi\"}`. Perfect match!\n\nThe `citation` will be Resolution \"1677/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ngãi\", and more specifically, line 85. The `confidence` is high because the resolution directly addresses this.  The new `province_name` is \"Tỉnh Quảng Ngãi\". The `ward_code` is \"21451\" and the `ward_name` is \"Phường Trà Câu\".\n\nTo be absolutely sure, I scanned for any other relevant mentions of \"Xã Phổ An\" or \"Thị xã Đức Phổ\" that might suggest alternative merges. Lines like 25 and 86 were checked, but only line 85 provided the accurate result for \"Xã Phổ An\".  Therefore, the new administrative unit for \"Xã Phổ An\", \"Tỉnh Quảng Ngãi\" is unequivocally **Phường Trà Câu**.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1677/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Quảng Ngãi",
+        "line": "85. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Phổ Văn, phường Phổ Quang, xã Phổ An và xã Phổ Thuận thành phường mới có tên gọi là **phường Trà Câu**."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Quảng Ngãi",
+      "ward_code": "21451",
+      "ward_name": "Phường Trà Câu"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "address": "Xã Phương Nam, Thành phố Hưng Yên, Tỉnh Hưng Yên",
+  "ellapsedInMs": 5370,
+  "estimatedCost": 0.003384,
+  "thought": "**Determining the New Administrative Unit for \"Xã Phương Nam\"**\n\nOkay, so the user wants me to find the new administrative unit for \"Xã Phương Nam, Thành phố Hưng Yên, Tỉnh Hưng Yên\". My process is pretty straightforward:\n\nFirst, I need to check for any province mergers in `60-NQ/TW`. Thankfully, \"Tỉnh Hưng Yên\" doesn't change – it merges with \"Tỉnh Thái Bình\", but the name remains the same. So, that's easy.\n\nNow, the main task: finding \"Xã Phương Nam\" in the `other resolutions` data.  I need to search through those resolutions. Aha! I found it in `1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên`.  It says that \"Xã Phương Nam\" is merged with \"Thủ Sỹ\" and \"Tân Hưng\" to create a new ward named **\"xã Tân Hưng\"**.\n\nNext, I need to confirm this by looking for \"xã Tân Hưng\" in the `New wards` list, and double-check that the province matches – it *must* be \"Tỉnh Hưng Yên.\"  And there it is:  `{\"ward_code\":\"11977\",\"ward_name\":\"Xã Tân Hưng\",\"province_name\":\"Tỉnh Hưng Yên\"}`.\n\nThat's a perfect match!  The resolution clearly states the merger, and the new ward is confirmed in the list with the correct province. I'm very confident in this finding.  High confidence.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên",
+        "line": "1. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Thủ Sỹ, Phương Nam và Tân Hưng thành xã mới có tên gọi là xã Tân Hưng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hưng Yên",
+      "ward_code": "11977",
+      "ward_name": "Xã Tân Hưng"
+    }
+  ]
+}

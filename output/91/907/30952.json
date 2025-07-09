@@ -1,0 +1,28 @@
+{
+  "address": "Thị trấn Gò Quao, Huyện Gò Quao, Tỉnh Kiên Giang",
+  "ellapsedInMs": 8544,
+  "estimatedCost": 0.0032528,
+  "thought": "**My Analysis of Address Mapping for Gò Quao**\n\nOkay, here's how I'm approaching this address mapping problem. First, I need to break down the input address \"Thị trấn Gò Quao, Huyện Gò Quao, Tỉnh Kiên Giang\" into its constituent parts: ward (\"Thị trấn Gò Quao\"), district (\"Huyện Gò Quao\"), and province (\"Tỉnh Kiên Giang\"). That's straightforward enough.\n\nNow, the interesting part. I've got to consult the resolutions, starting with the provincial ones. I quickly see that Resolution 60-NQ/TW states that Kiên Giang was merged with An Giang. This means the province is now \"Tỉnh An Giang.\" That's the first key piece of information.\n\nNext, I look at the other provided resolution, specifically \"1654/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh An Giang.\" This is where it gets a little more involved.  This resolution clearly says \"thị trấn Gò Quao\" (the *exact* name from the original address) is being merged with two other wards to form a new ward called \"Xã Gò Quao.\" But this is for *An Giang*.  This creates a potential conflict.  Is this *my* \"Thị trấn Gò Quao\" from the *old* Kiên Giang that's now part of An Giang?\n\nI have to think critically here.  Since Kiên Giang was merged into An Giang, it's highly plausible that this resolution pertains to a ward that was *formerly* in Kiên Giang but is now part of An Giang's administrative structure.  The resolution is clearly about restructuring wards *within* An Giang. Considering that, it all falls into place.\n\nFinally, I checked the \"New wards\" data.  The entry confirms a ward named \"Xã Gò Quao\" within \"Tỉnh An Giang\" with a code of \"30952.\" This perfectly aligns with what I've deduced.\n\nTherefore, my conclusion is clear: the original \"Thị trấn Gò Quao\" (from Kiên Giang) is now part of An Giang.  The new province is \"Tỉnh An Giang.\" The new ward is \"Xã Gò Quao\", and its code is \"30952\". This is a clean mapping based on the available information.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "23. Hợp nhất tỉnh An Giang và tỉnh Kiên Giang, lấy tên là tỉnh An Giang"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh An Giang",
+      "ward_code": "30952",
+      "ward_name": "Xã Gò Quao"
+    },
+    {
+      "citation": {
+        "header": "1654/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh An Giang",
+        "line": "58. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Gò Quao, xã Vĩnh Phước B và xã Định An thành xã mới có tên gọi là xã Gò Quao."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh An Giang",
+      "ward_code": "30952",
+      "ward_name": "Xã Gò Quao"
+    }
+  ]
+}

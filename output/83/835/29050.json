@@ -1,0 +1,18 @@
+{
+  "address": "Thị trấn Bình Đại, Huyện Bình Đại, Tỉnh Bến Tre",
+  "ellapsedInMs": 7964,
+  "estimatedCost": 0.0025555,
+  "thought": "**Mapping an Old Vietnamese Address to New Administrative Units**\n\nOkay, so I've got this old Vietnamese address to map: \"Thị trấn Bình Đại, Huyện Bình Đại, Tỉnh Bến Tre\".  My task is to find the corresponding new administrative units based on the given resolutions and new ward data.\n\nFirst, I need to break down the old address:  \"Thị trấn Bình Đại\" is the old ward, \"Huyện Bình Đại\" the old district, and \"Tỉnh Bến Tre\" the old province.\n\nNow, let's dive into these resolutions. The first thing I do is check Province Resolutions (60-NQ/TW).  Bến Tre isn't in the \"no merger\" list, but it *is* in the \"merger/consolidation\" list. It says Bến Tre merges with Vĩnh Long and Trà Vinh, becoming Vĩnh Long. So, immediately, I know \"Tỉnh Bến Tre\" will become \"Tỉnh Vĩnh Long\".\n\nNext, I look at other resolutions.  Resolution 1679 from Quảng Ninh is irrelevant since the original province is Bến Tre. However, 1687/NQ-UBTVQH15 from Vĩnh Long catches my eye. It's *definitely* relevant because Bến Tre merged into Vĩnh Long.\n\nScanning through 1687, line 97 jumps out: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Bình Đại... thành xã mới có tên gọi là xã Bình Đại.\"  Bingo!  The *old* ward \"Thị trấn Bình Đại\" is explicitly mentioned, and the new ward name is also \"xã Bình Đại.\" And this resolution is directly tied to the new province Vĩnh Long that Bến Tre became. This is a very strong match.\n\nI'll cross-reference this information with the \"New wards\" data.  I look for \"xã Bình Đại\" in \"Tỉnh Vĩnh Long,\" and there it is: `{\"ward_code\":\"29050\",\"ward_name\":\"Xã Bình Đại\",\"province_name\":\"Tỉnh Vĩnh Long\"}`. Perfect.\n\nNow, I'll construct the JSON output. The `citation` will be `1687/NQ-UBTVQH15`, specifically mentioning line 97. The `confidence` is \"high\" because this resolution directly addresses the old ward and provides its precise new name. The `province_name` is \"Tỉnh Vĩnh Long.\" The `ward_code` and `ward_name` come directly from the \"New wards\" data.\n\nLet's do a quick double-check. The resolution specifically states the direct mapping from the old ward to the new.  No other possibilities appear based on the information provided. The \"Thị trấn Bình Đại\" to \"xã Bình Đại\" connection is rock solid.  The confidence is definitely high. I think I've got this one locked down.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1687/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Vĩnh Long",
+        "line": "97. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Bình Đại, xã Bình Thới và xã Bình Thắng thành xã mới có tên gọi là xã Bình Đại."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Vĩnh Long",
+      "ward_code": "29050",
+      "ward_name": "Xã Bình Đại"
+    }
+  ]
+}

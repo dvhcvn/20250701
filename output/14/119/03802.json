@@ -1,0 +1,18 @@
+{
+  "address": "Xã Pá Lông, Huyện Thuận Châu, Tỉnh Sơn La",
+  "ellapsedInMs": 8044,
+  "estimatedCost": 0.0027883,
+  "thought": "**Mapping an Old Vietnamese Address to New Administrative Units**\n\nOkay, so I've got this old Vietnamese address to map: \"Xã Pá Lông, Huyện Thuận Châu, Tỉnh Sơn La\".  My initial thought is to break this down into its components: the old ward (\"Xã Pá Lông\"), the old district (\"Huyện Thuận Châu\"), and the old province (\"Tỉnh Sơn La\").  Now, let's see how this translates to the new system based on the provided resolutions and new ward data.\n\nFirst, I need to check the Province Resolutions, specifically \"60-NQ/TW\".  Ah, there it is! \"Tỉnh Sơn La\" is listed under \"Các đơn vị hành chính cấp tỉnh không thực hiện sáp nhập\".  Excellent. That means the province name, \"Tỉnh Sơn La\", remains unchanged.  That's a good starting point.\n\nNext, it's time to dive into the other resolutions, specifically \"1681/NQ-UBTVQH15\". I need to scan the lines of this resolution looking for mentions of either \"Xã Pá Lông\" or \"Huyện Thuận Châu\" within the context of \"Tỉnh Sơn La\".  Let's see...  Line 12 mentions the consolidation of Thuận Châu into \"xã Thuận Châu\", but that doesn't help me with Pá Lông.  Aha! Line 17 is the key: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Co Tòng, Pá Lông và Co Mạ thành xã mới có tên gọi là **xã Co Mạ**.\"  There it is – \"Xã Pá Lông\" is explicitly being merged into \"xã Co Mạ\"!\n\nNow, I'll need to cross-reference this information with the \"New wards\" data.  I'll search for \"xã Co Mạ\".  Found it! `{\"ward_code\":\"03781\",\"ward_name\":\"Xã Co Mạ\",\"province_name\":\"Tỉnh Sơn La\"}`.\n\nPutting it all together, I can construct the JSON output. The `province_name` is \"Tỉnh Sơn La\", confirmed by the province resolution. The `ward_name` is \"Xã Co Mạ\" from the resolution. And the `ward_code` is \"03781\". The `citation` will point directly to resolution \"1681/NQ-UBTVQH15\", line 17, and the `confidence` level should be \"high\" because the mapping is explicitly defined within the resolution. This is pretty straightforward.\n\nJust to be thorough, I'll quickly retrace my steps: Old address: Xã Pá Lông, Huyện Thuận Châu, Tỉnh Sơn La. Province: Confirmed \"Tỉnh Sơn La\" unchanged. Ward: \"Xã Pá Lông\" merged into \"Xã Co Mạ\" (line 17, 1681/NQ-UBTVQH15).  Yep, that seems right.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1681/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Sơn La",
+        "line": "17. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Co Tòng, Pá Lông và Co Mạ thành xã mới có tên gọi là xã Co Mạ."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Sơn La",
+      "ward_code": "03781",
+      "ward_name": "Xã Co Mạ"
+    }
+  ]
+}

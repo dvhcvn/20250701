@@ -1,0 +1,18 @@
+{
+  "address": "Xã Duy Hòa, Huyện Duy Xuyên, Tỉnh Quảng Nam",
+  "ellapsedInMs": 8238,
+  "estimatedCost": 0.0029436999999999996,
+  "thought": "**Address Mapping for Vietnamese Administrative Units**\n\nOkay, so I'm presented with a Vietnamese address and I need to map it to the new administrative unit based on these resolutions and new ward data. Let's break this down systematically.\n\nFirst, I identify the old components: \"Xã Duy Hòa\" (ward), \"Huyện Duy Xuyên\" (district), and \"Tỉnh Quảng Nam\" (province).\n\nNext, I consult the provincial resolutions, specifically 60-NQ/TW. I scan for \"Tỉnh Quảng Nam\" in the lists, and it's not in the \"no merger\" list. But there, in the \"new after merger\" list, is item 10, explicitly stating that \"Tỉnh Quảng Nam\" was merged with \"Thành phố Đà Nẵng\", resulting in the single entity of \"Thành phố Đà Nẵng\". This is crucial for updating the province name.\n\nNow, focusing on resolution 1659/NQ-UBTVQH15, the header \"Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng\" is immediately relevant because the old \"Quảng Nam\" is now part of \"Đà Nẵng\". I scan the lines looking for \"Xã Duy Hòa,\" and there it is: line 63.  It states that \"Xã Duy Hòa\" and others are being merged to form the new ward called \"Xã Thu Bồn\".\n\nWith that resolved, I check the `New wards` data. Looking for \"Xã Thu Bồn,\" I find a match. The associated data gives me the code \"20611\" for this new ward, and it's correctly linked to \"Thành phố Đà Nẵng\".  I also see \"Xã Duy Xuyên\" listed in the new wards data, but since the resolutions didn't merge \"Xã Duy Hoà\" into it, it's not relevant in this instance.\n\nPutting it all together, I have a very strong indication that \"Xã Duy Hòa\" now falls under \"Xã Thu Bồn\" in \"Thành phố Đà Nẵng\". The province mapping is based on resolution 60-NQ/TW, and the ward mapping is directly supported by line 63 of resolution 1659/NQ-UBTVQH15, along with the data on new wards. The `New wards` data confirms everything.  Thus, the confidence level is \"high\", with a clear lineage for the new administrative location.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1659/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Đà Nẵng",
+        "line": "63. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Duy Châu, Duy Hoà, Duy Phú và Duy Tân thành xã mới có tên gọi là xã Thu Bồn."
+      },
+      "confidence": "high",
+      "province_name": "Thành phố Đà Nẵng",
+      "ward_code": "20611",
+      "ward_name": "Xã Thu Bồn"
+    }
+  ]
+}

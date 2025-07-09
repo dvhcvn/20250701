@@ -1,0 +1,28 @@
+{
+  "address": "Xã Giao Châu, Huyện Giao Thủy, Tỉnh Nam Định",
+  "ellapsedInMs": 8591,
+  "estimatedCost": 0.0025547,
+  "thought": "**Mapping an Old Vietnamese Address to New Administrative Units**\n\nOkay, so I've got an old Vietnamese address to translate: \"Xã Giao Châu, Huyện Giao Thủy, Tỉnh Nam Định\".  My task is to map this to the current administrative structure.  Given my expertise, I immediately recognize this will involve several resolutions and datasets.\n\nFirst, I need to break down the old address:  \"Xã Giao Châu\" (Ward), \"Huyện Giao Thủy\" (District), and \"Tỉnh Nam Định\" (Province).  I’ll start with the province, as that often triggers cascading changes.\n\nI've got a province merger list derived from **60-NQ/TW**.  I quickly locate \"Tỉnh Nam Định\" and, as expected, it's merged. The new province is now \"Tỉnh Ninh Bình.\"  That's a high-confidence finding - this type of consolidation is usually very explicit.\n\nNext, I look at **1674/NQ-UBTVQH15**.  Because \"Tỉnh Nam Định\" is part of \"Tỉnh Ninh Bình\" now, this resolution will be relevant. I scan the lines and quickly zero in on line 57.  Bingo! It directly addresses \"Xã Giao Châu\".  It states \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Giao Nhân, Giao Long và Giao Châu thành xã mới có tên gọi là **xã Giao Hưng**.\"  This clearly indicates that \"Xã Giao Châu\" is merged into \"Xã Giao Hưng.\"  Another high-confidence mapping!\n\nI now consult my \"New Wards\" list. I’m looking for \"Xã Giao Hưng\".  And there it is: `{\"ward_code\":\"14179\",\"ward_name\":\"Xã Giao Hưng\",\"province_name\":\"Tỉnh Ninh Bình\"}`.  Perfect!\n\nNow to construct the JSON output.  The `province_name` will be \"Tỉnh Ninh Bình,\" the `ward_name` will be \"Xã Giao Hưng,\" and the `ward_code` will be \"14179.\" I'll add the appropriate citation referencing the relevant resolution and line number. My confidence level for this mapping is \"high\" because the resolutions explicitly state both the province and ward transformations.\n\nFinally, I need to consider \"Huyện Giao Thủy\" (the old district). The resolutions focus on \"eliminating\" districts, rather than directly mapping them. Since my desired output schema doesn't include the district, this works out well. The focus is on re-allocating the ward within the new province.\n\nTherefore, the old address maps to: Province \"Tỉnh Ninh Bình\", Ward \"Xã Giao Hưng\" with code 14179, and a high confidence level based on my analysis of the provided data. This is a solid, defensible mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "8. Hợp nhất tỉnh Hà Nam, tỉnh Ninh Bình và tỉnh Nam Định; lấy tên là tỉnh Ninh Bình"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "14179",
+      "ward_name": "Xã Giao Hưng"
+    },
+    {
+      "citation": {
+        "header": "1674/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Ninh Bình",
+        "line": "57. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Giao Nhân, Giao Long và Giao Châu thành xã mới có tên gọi là xã Giao Hưng."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Ninh Bình",
+      "ward_code": "14179",
+      "ward_name": "Xã Giao Hưng"
+    }
+  ]
+}

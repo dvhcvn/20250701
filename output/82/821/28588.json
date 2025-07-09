@@ -1,0 +1,18 @@
+{
+  "address": "Xã Phú Phong, Huyện Châu Thành, Tỉnh Tiền Giang",
+  "ellapsedInMs": 9575,
+  "estimatedCost": 0.0045176,
+  "thought": "**Identifying the New Administrative Unit**\n\nOkay, let's break this down. First, I need to figure out the current administrative location for \"Xã Phú Phong, Huyện Châu Thành, Tỉnh Tiền Giang.\" My thought process is to follow these steps:\n\n1. **Province Check:** \"Tỉnh Tiền Giang\" might have been merged. I know I should check this first because administrative changes often begin at the province level. I have a reference for this, \"60-NQ/TW,\" which lists provincial mergers. Yep, Tiền Giang and Đồng Tháp combined into \"Tỉnh Đồng Tháp.\" Good to know.\n\n2. **Ward Resolution Check:** Now, the important step. I have to look through the provided resolutions, focusing on ones related to \"Tỉnh Đồng Tháp\" or, in case the resolutions still use the old province names, \"Tỉnh Tiền Giang.\" I'm searching specifically for mentions of \"Xã Phú Phong\" within the context of the district, \"Huyện Châu Thành.\"\n\n3. **Matching New Wards:** Once I find a match in the resolutions, I'll cross-reference it with the `new_wards` list, which will give me the official code and the final province name.\n\n4. **Confidence Level:** Finally, I'll assess my confidence. A direct, clear merger in a relevant resolution gives me high confidence. Any ambiguity or missing information lowers my confidence.\n\n**Let's Dig In:**\n\nFirst, I checked \"60-NQ/TW\" and confirmed that \"Tỉnh Tiền Giang\" became \"Tỉnh Đồng Tháp.\"\n\nNow, the resolutions. I've got to find \"Xã Phú Phong.\"\n\n*   I found **1663/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Tháp** and in line 63, it states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Phú Phong, Bàn Long và Vĩnh Kim thành xã mới có tên gọi là **xã Vĩnh Kim**.\" Bingo! This resolution directly says \"Xã Phú Phong\" is now part of \"Xã Vĩnh Kim\" within \"Tỉnh Đồng Tháp\"! This resolution is perfect.\n\nI checked a couple of other resolutions just to be sure, like 1654/NQ-UBTVQH15 and 1659/NQ-UBTVQH15 but they are not relevant. I found a reference to \"Phú Phong\" in another resolution: 1664/NQ-UBTVQH15 from Gia Lai, but it's not the right \"Phú Phong.\"\n\nNow, I look up \"Xã Vĩnh Kim\" in the `new_wards` list with `province_name` \"Tỉnh Đồng Tháp,\" and I found a perfect match: `{\"ward_code\":\"28576\",\"ward_name\":\"Xã Vĩnh Kim\",\"province_name\":\"Tỉnh Đồng Tháp\"}`.\n\n**Confidence and Final Analysis:**\n\nThe resolution explicitly merges \"Xã Phú Phong\" into \"Xã Vĩnh Kim\" within the relevant \"Tỉnh Đồng Tháp\". No ambiguity here. I have a high level of confidence.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1663/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Đồng Tháp",
+        "line": "63. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Phú Phong, Bàn Long và Vĩnh Kim thành xã mới có tên gọi là xã Vĩnh Kim."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Đồng Tháp",
+      "ward_code": "28576",
+      "ward_name": "Xã Vĩnh Kim"
+    }
+  ]
+}

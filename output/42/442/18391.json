@@ -1,0 +1,28 @@
+{
+  "address": "Xã Cỗ Đạm, Huyện Nghi Xuân, Tỉnh Hà Tĩnh",
+  "ellapsedInMs": 6224,
+  "estimatedCost": 0.0022316,
+  "thought": "**My Analysis of the Vietnamese Address Mapping**\n\nOkay, here's how I'm approaching this address mapping task. The user wants to translate an old Vietnamese address to its new equivalent, given resolutions and a list of new wards.  I've broken it down step-by-step.\n\nFirst, I identified the province: \"Tỉnh Hà Tĩnh.\"  Then, I immediately checked the relevant resolutions to see if Hà Tĩnh had undergone any changes.  Resolution 60-NQ/TW clarified that \"Tỉnh Hà Tĩnh\" remains unchanged, which is excellent news.\n\nNext, I focused on the ward: \"Xã Cỗ Đạm.\" I noticed the slight typo, \"Cỗ\" versus \"Cổ,\" and I'm assuming it should be \"Cổ Đạm.\"  I then went hunting through \"Other resolutions\" to find any mentions of \"Cổ Đạm.\"  Bingo! Resolution 1665/NQ-UBTVQH15 clearly states that \"Cương Gián, Xuân Liên and Cổ Đạm\" were merged into a *new* ward, also named \"Xã Cổ Đạm.\"\n\nNow, the crucial step: I need to verify this new \"Xã Cổ Đạm\" in the \"New wards\" list.  I'm looking for a match in both name and province (\"Tỉnh Hà Tĩnh\"). And there it is: `{\"ward_code\":\"18394\",\"ward_name\":\"Xã Cổ Đạm\",\"province_name\":\"Tỉnh Hà Tĩnh\"}`.  Perfect!\n\nMy confidence level is very high here. The province is explicitly stated as unchanged, and the ward's fate is explicitly explained by a merger. The *new* ward resulting from that merger is a direct name match with the original and is clearly within Hà Tĩnh.  The JSON output should reflect this confident mapping.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh không thực hiện sáp nhập:",
+        "line": "10. Tỉnh Hà Tĩnh"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hà Tĩnh",
+      "ward_code": "18394",
+      "ward_name": "Xã Cổ Đạm"
+    },
+    {
+      "citation": {
+        "header": "1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh",
+        "line": "35. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Cương Gián, Xuân Liên và Cổ Đạm thành xã mới có tên gọi là xã Cổ Đạm."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hà Tĩnh",
+      "ward_code": "18394",
+      "ward_name": "Xã Cổ Đạm"
+    }
+  ]
+}

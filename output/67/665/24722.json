@@ -1,0 +1,28 @@
+{
+  "address": "Xã Thuận Hà, Huyện Đắk Song, Tỉnh Đắk Nông",
+  "ellapsedInMs": 6950,
+  "estimatedCost": 0.0024942999999999996,
+  "thought": "**My Analysis of the Administrative Address Change**\n\nOkay, so I'm presented with the task of updating an old address: \"Xã Thuận Hà, Huyện Đắk Song, Tỉnh Đắk Nông\" to reflect the current administrative structure. My strategy is pretty straightforward, and I'm confident in my approach.\n\nFirst, I need to identify the old province, which is \"Tỉnh Đắk Nông\". Then, I consult `60-NQ/TW` to check for province mergers. Bingo! I find the resolution regarding the merger of Đắk Nông with Lâm Đồng and Bình Thuận, resulting in \"Tỉnh Lâm Đồng.\" That's my new province.\n\nNext, I need to pinpoint the specific ward, \"Xã Thuận Hà.\" I begin my search through relevant resolutions. I quickly dismiss `1664/NQ-UBTVQH15` as it doesn't mention the ward. But, I hit paydirt with `1671/NQ-UBTVQH15`, which directly addresses \"Xã Thuận Hà\"! It states that the entirety of \"Xã Thuận Hà\" and \"Xã Thuận Hạnh\" are consolidated into a *new* ward also called \"Xã Thuận Hạnh.\"\n\nNow, to solidify the information, I cross-reference this with my \"New wards\" data. Specifically, I'm verifying the existence of \"Xã Thuận Hạnh\" within \"Tỉnh Lâm Đồng\". And there it is, a perfect match: `{\"ward_code\":\"24722\",\"ward_name\":\"Xã Thuận Hạnh\",\"province_name\":\"Tỉnh Lâm Đồng\"}`.\n\nSo, the new address is definitively \"Xã Thuận Hạnh, Tỉnh Lâm Đồng.\" My confidence level is high because I have a direct resolution that explicitly details the consolidation. I'll construct my JSON output based on this, citing `1671/NQ-UBTVQH15` as the key source. The ward code will be \"24722,\" and the ward name is \"Xã Thuận Hạnh.\" The new province is confirmed as \"Tỉnh Lâm Đồng.\"\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "14. Hợp nhất tỉnh Lâm Đồng, tỉnh Đắk Nông và tỉnh Bình Thuận; lấy tên là tỉnh Lâm Đồng"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "24722",
+      "ward_name": "Xã Thuận Hạnh"
+    },
+    {
+      "citation": {
+        "header": "1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng",
+        "line": "90. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Thuận Hà và xã Thuận Hạnh thành xã mới có tên gọi là xã Thuận Hạnh."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Lâm Đồng",
+      "ward_code": "24722",
+      "ward_name": "Xã Thuận Hạnh"
+    }
+  ]
+}

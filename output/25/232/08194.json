@@ -1,0 +1,28 @@
+{
+  "address": "Xã Võ Lao, Huyện Thanh Ba, Tỉnh Phú Thọ",
+  "ellapsedInMs": 7386,
+  "estimatedCost": 0.0032403,
+  "thought": "**Analyzing the Administrative Restructuring of \"Xã Võ Lao, Huyện Thanh Ba, Tỉnh Phú Thọ\"**\n\nAlright, let's break this down. The user wants to know the new administrative unit for the old address \"Xã Võ Lao, Huyện Thanh Ba, Tỉnh Phú Thọ\".  My first step, obviously, is to identify the province. It's clearly stated as \"Tỉnh Phú Thọ\", and a quick check of resolution 60-NQ/TW confirms that the province name remains unchanged despite some previous merger considerations.\n\nNext, I need to focus on the ward itself, \"Xã Võ Lao\".  Scanning through the resolutions, I find **1673/NQ-UBTVQH15** which mentions \"Xã Võ Lao\", but it's related to Lào Cai province.  That's a dead end.  Then I land on **1676/NQ-UBTVQH15**, which deals with Phú Thọ.  Line 11 mentions Thanh Ba, the district, but doesn't apply to the old ward. However, *line 14* of that resolution is the key. It specifically states that \"Xã Võ Lao\" is merged with Khải Xuân and Đông Thành to form the new ward \"Xã Đông Thành\". Bingo!\n\nNow, to confirm, I quickly check the \"New wards\" data for \"Xã Đông Thành\" in Phú Thọ. And there it is: `{\"ward_code\":\"08209\",\"ward_name\":\"Xã Đông Thành\",\"province_name\":\"Tỉnh Phú Thọ\"}`. This perfectly aligns with the resolution.\n\nConsidering the explicit language of resolution 1676/NQ-UBTVQH15, and the lack of conflicting information, my confidence in this conclusion is high.  Therefore, the old \"Xã Võ Lao\" is now part of the new \"Xã Đông Thành\" in Phú Thọ.  I'll proceed to construct the JSON output accordingly.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "Hợp nhất tỉnh Vĩnh Phúc, tỉnh Phú Thọ và tỉnh Hoà Bình; lấy tên là tỉnh Phú Thọ"
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "08209",
+      "ward_name": "Xã Đông Thành"
+    },
+    {
+      "citation": {
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "14. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Khải Xuân, Võ Lao và Đông Thành thành xã mới có tên gọi là xã Đông Thành."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Phú Thọ",
+      "ward_code": "08209",
+      "ward_name": "Xã Đông Thành"
+    }
+  ]
+}

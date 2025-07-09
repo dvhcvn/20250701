@@ -1,0 +1,18 @@
+{
+  "address": "Xã Cẩm Lạc, Huyện Cẩm Xuyên, Tỉnh Hà Tĩnh",
+  "ellapsedInMs": 7747,
+  "estimatedCost": 0.0025583,
+  "thought": "**Analysis of Address Mapping for Xã Cẩm Lạc, Hà Tĩnh**\n\nOkay, so I'm presented with an old Vietnamese address and the task of mapping it to the new administrative structure. Let's break this down systematically. I see the old ward is \"Xã Cẩm Lạc\", within the district \"Huyện Cẩm Xuyên\" and province \"Tỉnh Hà Tĩnh\". However, the prompt mentions eliminating districts, so I'll keep that in mind.\n\nFirst, I consult the province resolutions, specifically 60-NQ/TW.  Ah, Hà Tĩnh is listed under \"Các đơn vị hành chính cấp tỉnh không thực hiện sáp nhập\" - meaning the province remains unchanged. This is straightforward.\n\nNext, I delve into other relevant resolutions. The key one here is 1665/NQ-UBTVQH15, focused on rearranging wards within Hà Tĩnh. Filtering for that province, I find a match. Now, I zero in on \"Xã Cẩm Lạc\" within this resolution. Line 16 jumps out:  \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Cẩm Minh, Cẩm Sơn và Cẩm Lạc thành xã mới có tên gọi là **xã Cẩm Lạc**.\"  This is significant. It explicitly states that *the existing* \"Xã Cẩm Lạc\" is merged with two other wards to form a *new* \"Xã Cẩm Lạc.\"  Crucially, the name *remains the same* despite the merger.\n\nNow, I cross-reference this with the \"New Wards\" data.  I look for a new ward named \"Xã Cẩm Lạc\" within Hà Tĩnh.  Bingo! There's a perfect match: `{\"ward_code\":\"18748\",\"ward_name\":\"Xã Cẩm Lạc\",\"province_name\":\"Tỉnh Hà Tĩnh\"}`.\n\nPutting it all together, I have a high-confidence mapping. The old \"Xã Cẩm Lạc\" is *directly* implicated in the creation of a new \"Xã Cẩm Lạc\" according to 1665/NQ-UBTVQH15. The province is unchanged.  The new ward data confirms this new \"Xã Cẩm Lạc\" exists.  Therefore, I'll confidently map the old address to the new ward, citing the relevant resolution and line:\n\n```json\n{\n  \"citation\": {\n    \"header\": \"1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh\",\n    \"line\": \"16. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Cẩm Minh, Cẩm Sơn và Cẩm Lạc thành xã mới có tên gọi là **xã Cẩm Lạc**.\"\n  },\n  \"confidence\": \"high\",\n  \"province_name\": \"Tỉnh Hà Tĩnh\",\n  \"ward_code\": \"18748\",\n  \"ward_name\": \"Xã Cẩm Lạc\"\n}\n```\nThis looks solid. The merger, while a change, actually results in a direct name continuation, making the mapping clear.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "1665/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hà Tĩnh",
+        "line": "16. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Cẩm Minh, Cẩm Sơn và Cẩm Lạc thành xã mới có tên gọi là xã Cẩm Lạc."
+      },
+      "confidence": "high",
+      "province_name": "Tỉnh Hà Tĩnh",
+      "ward_code": "18748",
+      "ward_name": "Xã Cẩm Lạc"
+    }
+  ]
+}
