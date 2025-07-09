@@ -1,13 +1,13 @@
 {
   "address": "Xã Hòa Bình, Huyện Kim Thành, Tỉnh Hải Dương",
-  "ellapsedInMs": 7560,
-  "estimatedCost": 0.004640200000000001,
-  "thought": "**Analysis of Address Transformation: \"Xã Hòa Bình, Huyện Kim Thành, Tỉnh Hải Dương\"**\n\nOkay, so the user wants to know the new administrative unit(s) for \"Xã Hòa Bình, Huyện Kim Thành, Tỉnh Hải Dương\". My process starts with understanding the context. I immediately think: Province and district restructuring, I've got to check for those resolutions.\n\nFirst, I need to account for the province change. Ah, yes, Resolution 60-NQ/TW. That's the one: Hải Dương merged with Hải Phòng. So, \"Tỉnh Hải Dương\" is now \"Thành phố Hải Phòng\". Clear. Next, I shift my focus to finding where \"Xã Hòa Bình\" ended up.\n\nI start by systematically searching resolutions relevant to \"Hòa Bình\", \"Kim Thành\", and the *new* province. Bingo! Resolution 1669/NQ-UBTVQH15, \"Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng\", seems promising. It mentions \"Hòa Bình\" *and* the new province name.\n\nLooking closer, line 79 confirms it. \"một phần diện tích tự nhiên của xã Hòa Bình\" is being used to form \"xã Hà Nam\".  Excellent. But there is more. I also see line 112: \"phần còn lại của xã Hòa Bình\" goes to form \"xã Kim Thành\". Okay, so it seems \"Xã Hòa Bình\" didn't *just* become \"Xã Hà Nam.\" It was split.\n\nTherefore, my final conclusion is: The old \"Xã Hòa Bình\" is now divided between two new wards. A portion of \"Xã Hòa Bình\" went to \"Xã Hà Nam\", and the remaining portion went to the new \"Xã Kim Thành\". The source for both is Resolution 1669/NQ-UBTVQH15. I'd need to confirm the exact geographical split, but I believe I've identified the corresponding new units.\n",
+  "ellapsedInMs": 24327,
+  "estimatedCost": 0.0075877,
+  "thought": "**Finding the New Administrative Unit for Xã Hòa Bình**\n\nOkay, so I need to figure out what happened to \"Xã Hòa Bình\" in \"Huyện Kim Thành, Tỉnh Hải Dương.\" First, I'll break it down. We've got the ward, the district, and the province.  I know about the provincial mergers, so I quickly check the `60-NQ/TW` resolution.  Right, \"Tỉnh Hải Dương\" is now part of \"Thành phố Hải Phòng.\"\n\nNow, I'm diving into the resolutions for \"Thành phố Hải Phòng,\" specifically `1669/NQ-UBTVQH15`. I'm looking for mentions of \"Xã Hòa Bình.\" I spot a few, but they require careful analysis. There's a \"phường Hòa Bình,\" but that's likely a different unit. Then, there's a \"xã Hòa Bình\" in line 63, but no district is specified. That's a red flag. Lines 79 and 112 are more promising, mentioning splitting \"xã Hòa Bình.\" Again, no district is specified. I keep reading.\n\nSuddenly, I see that lines 79 and 112 talk about a \"xã Hòa Bình\" that's split to create \"xã Hà Nam\" and then \"xã Kim Thành.\" Crucially, line 112 mentions the \"phần còn lại của xã Hòa Bình\" *after* the split mentioned in line 79. That's a strong connection. Then, in line 111, I see \"huyện Kim Thành\" mentioned in the context of creating a new ward. Bingo! This is likely the \"Xã Hòa Bình\" from \"Huyện Kim Thành\" that I'm interested in. The resolution is talking about the old \"Hải Dương\" units.\n\nSo, the key is line 79: a part of \"Xã Hòa Bình\" went into the new \"Xã Hà Nam.\" Then, line 112 says the rest went into \"Xã Kim Thành.\" I then search my provided ward list for \"Hà Nam\" and \"Kim Thành\" within \"Thành phố Hải Phòng.\" And there they are! I've confirmed both wards.\n\nI'll build the JSON response, two objects, one for each new ward. I set the `province_name` to \"Thành phố Hải Phòng,\" the `ward_name` and `ward_code` from the list, and a `confidence` of \"high\" because the resolution is very clear. The citations for each object will include the resolution header and the relevant line. Finally, I confirm that the former province is in fact \"Hải Phòng\" and that the unit in question is split in the manner described. The result should be solid.\n",
   "result": [
     {
       "citation": {
-        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
-        "line": "Hợp nhất tỉnh Hải Dương và thành phố Hải Phòng, lấy tên là thành phố Hải Phòng"
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "79. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Thanh Xuân, Liên Mạc, Thanh Lang,một phần diện tích tự nhiên, quy mô dân số của xã Thanh An và một phần diện tích tự nhiên của xã Hòa Bình thành xã mới có tên gọi là **xã Hà Nam**."
       },
       "confidence": "high",
       "province_name": "Thành phố Hải Phòng",
@@ -16,8 +16,8 @@
     },
     {
       "citation": {
-        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
-        "line": "Hợp nhất tỉnh Hải Dương và thành phố Hải Phòng, lấy tên là thành phố Hải Phòng"
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "112. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Đồng Cẩm, Tam Kỳ, Đại Đức và phần còn lại của xã Hòa Bình sau khi sắp xếp theo quy định tại khoản 79 Điều nàythành xã mới có tên gọi là **xã Kim Thành**."
       },
       "confidence": "high",
       "province_name": "Thành phố Hải Phòng",

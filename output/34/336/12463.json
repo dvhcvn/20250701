@@ -1,23 +1,13 @@
 {
   "address": "Xã Phú Xuân, Thành phố Thái Bình, Tỉnh Thái Bình",
-  "ellapsedInMs": 6451,
-  "estimatedCost": 0.0039457,
-  "thought": "**Navigating the Administrative Unit Shift**\n\nOkay, so I'm tackling this address: \"Xã Phú Xuân, Thành phố Thái Bình, Tỉnh Thái Bình.\" My initial thought is to figure out the new administrative structure based on the provided resolutions. I know the user is a knowledgeable expert, so I'll be precise.\n\nFirst things first, the province has changed. I'm recalling \"60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất,\" and it's clear that \"Tỉnh Thái Bình\" is now part of \"Tỉnh Hưng Yên.\" Got it. That's the first key piece of information.\n\nNow, I'm digging into these resolutions, zeroing in on any mention of \"Xã Phú Xuân\" within the context of the merged province. I quickly dismissed those An Giang, Đắk Lắk, and Đồng Nai references as irrelevant. They're valuable information for the general dataset but don't apply here.\n\nThe crucial one seems to be **1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên**. This aligns perfectly because \"Tỉnh Hưng Yên\" is now the relevant province. There is a mention of \"phường Thái Bình\" and \"xã Tân Hòa (huyện Vũ Thư),\" in it. At this point, I think I need to look into this resolution further.\n",
+  "ellapsedInMs": 16855,
+  "estimatedCost": 0.009160699999999999,
+  "thought": "**Administrative Unit Identification for Xã Phú Xuân**\n\nAs an expert in the field, my analysis focuses on pinpointing the new administrative designation for the old ward \"Xã Phú Xuân, Thành phố Thái Bình, Tỉnh Thái Bình\". My process involves:\n\n1.  Establishing the old province: \"Tỉnh Thái Bình.\"\n2.  Understanding province mergers: Confirmed that \"Tỉnh Thái Bình\" is now part of \"Tỉnh Hưng Yên\" according to Resolution 60-NQ/TW.\n3.  Cross-referencing across resolutions and new ward data, specifically looking for mentions linking \"Phú Xuân\" to either \"Thái Bình\" or \"Hưng Yên.\"\n\nInitial review of resolutions ruled out those unrelated to Thái Bình/Hưng Yên (An Giang, Đắk Lắk, Đồng Nai, Lạng Sơn, Huế, Phú Thọ, Tây Ninh, Tuyên Quang, Hồ Chí Minh City, Thanh Hóa).\n\nCrucially, **resolution 1666/NQ-UBTVQH15 (for Hưng Yên) stands out**:\n\n*   Line 102 states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Trần Hưng Đạo, Đề Thám, Quang Trung và xã Phú Xuân thành phường mới có tên gọi là **phường Trần Hưng Đạo**.\"\n\nThis resolution is specific to the \"Tỉnh Hưng Yên,\" which now encompasses the old \"Tỉnh Thái Bình.\" While the resolution doesn't explicitly state the origin of \"xã Phú Xuân\", the context strongly implies that this particular \"xã Phú Xuân\" is the one from the former \"Tỉnh Thái Bình\" due to the merger information.\n\nFurthermore, there is a clear match: `{\"ward_code\":\"12452\",\"ward_name\":\"Phường Trần Hưng Đạo\",\"province_name\":\"Tỉnh Hưng Yên\"}` in the new ward data.\n\nThe schema matches.\n\nThus, my high-confidence determination is that the old \"Xã Phú Xuân, Thành phố Thái Bình, Tỉnh Thái Bình\" is now part of the new \"Phường Trần Hưng Đạo, Tỉnh Hưng Yên.\" This conclusion is reinforced by the lack of conflicting mentions of \"xã Phú Xuân\" within the relevant resolutions and the direct match in the new ward data.\n",
   "result": [
     {
       "citation": {
-        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
-        "line": "6. Hợp nhất tỉnh Hưng Yên và tỉnh Thái Bình, lấy tên là tỉnh Hưng Yên"
-      },
-      "confidence": "high",
-      "province_name": "Tỉnh Hưng Yên",
-      "ward_code": "13225",
-      "ward_name": "Phường Thái Bình"
-    },
-    {
-      "citation": {
         "header": "1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên",
-        "line": "102. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Trần Hưng Đạo, Đề Thám, Quang Trung và xã Phú Xuân thành phường mới có tên gọi là **phường Trần Hưng Đạo**."
+        "line": "102. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Trần Hưng Đạo, Đề Thám, Quang Trung và xã Phú Xuân thành phường mới có tên gọi là phường Trần Hưng Đạo."
       },
       "confidence": "high",
       "province_name": "Tỉnh Hưng Yên",

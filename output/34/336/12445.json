@@ -1,23 +1,13 @@
 {
   "address": "Phường Quang Trung, Thành phố Thái Bình, Tỉnh Thái Bình",
-  "ellapsedInMs": 8082,
-  "estimatedCost": 0.0052794999999999995,
-  "thought": "**Finding the New Administrative Unit for the Old Address**\n\nOkay, so I've got this old address: \"Phường Quang Trung, Thành phố Thái Bình, Tỉnh Thái Bình\". My task is to figure out the current administrative unit. First things first: I need to check if \"Tỉnh Thái Bình\" underwent any changes.  I recall Resolution 60-NQ/TW merging it with Hưng Yên, creating \"Tỉnh Hưng Yên\". So, I'll be looking for \"Quang Trung\" within either the former or current administrative areas.\n\nI've been working through the resolutions, starting with the ones that might relate to the former province. I quickly ruled out Hà Nội, Cao Bằng, Bắc Ninh, Đồng Nai, and Gia Lai – all those resolutions focused on changes in those specific provinces, not Thái Bình or Hưng Yên.\n\nThen I got to 1666/NQ-UBTVQH15, the one dealing with Hưng Yên (the successor to Thái Bình). I scanned through it carefully. I found a couple of mentions of \"Quang Trung,\" but the details don't quite fit. One involves \"Quang Trung (huyện Hưng Hà),\" but that's a *xã* (commune), not a *phường* (ward), and in Hưng Hà district, not the city of Thái Bình. The other is a rearrangement in \"Kiến Xương\" and is also a *xã*.\n\nThe situation with those \"Quang Trung\" mentions is confusing. They are all in *xã* (communes) and not in the city. Then I finally saw an interesting item: \"100. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Lê Hồng Phong, Bồ Xuyên, Tiền Phong và các xã Tân Hòa (huyện Vũ Thư), Phúc Thành, Tân Phong, Tân Bình thành phường mới có tên gọi là **phường Thái Bình**.\"\n\nUnfortunately, it isn't \"Quang Trung\". This seems to create a new \"Phường Thái Bình\" from some other *phường* and *xã*. It is the closest thing. I will continue to search for the specific \"Quang Trung\" of the city of Thái Bình.\n",
+  "ellapsedInMs": 19367,
+  "estimatedCost": 0.0061595,
+  "thought": "**My Analysis of Administrative Unit Changes**\n\nOkay, I've got to figure out the current administrative unit for \"Phường Quang Trung, Thành phố Thái Bình, Tỉnh Thái Bình\". Here's my thought process, breaking it down step by step:\n\n1.  **Understanding the Input:**  First, I've clearly identified the old ward (\"Phường Quang Trung\"), the old district (\"Thành phố Thái Bình\"), and the old province (\"Tỉnh Thái Bình\").\n\n2.  **Province Merger First:** Based on my knowledge of the `60-NQ/TW` resolution on province mergers, I know \"Tỉnh Thái Bình\" merged into \"Tỉnh Hưng Yên\". So, I'll need to focus on Hưng Yên from now on.\n\n3.  **Resolutions are Key:** Now I'm scanning through the relevant resolutions to see if I can find \"Phường Quang Trung.\" I have to be extremely meticulous because there are a lot of places with similar names.\n    *   I eliminated irrelevant resolutions by checking their contexts carefully, ensuring they didn't involve the right city or province.\n    *   I landed on `1666/NQ-UBTVQH15` (Hưng Yên) and was immediately suspicious. I meticulously scanned the lines, checking for mentions of \"Phường Quang Trung\" in the context of Thành phố Thái Bình.\n    *   I found the gold! Line 102 directly states that \"Phường Quang Trung\" was merged into a new ward called \"Phường Trần Hưng Đạo.\" Bingo!\n\n4.  **Finding the New Ward:** Now I know the old ward is part of the new ward, and that is \"Phường Trần Hưng Đạo\"\n5.  **Confirming the Result:** From the list of the new wards I confirmed that there is indeed a \"Phường Trần Hưng Đạo\" in \"Tỉnh Hưng Yên\" (code 12452).\n\n6.  **Constructing the JSON Output:** I know the province is \"Tỉnh Hưng Yên,\" the new ward is \"Phường Trần Hưng Đạo,\" and the ward code is \"12452.\"  Confidence is very high because the resolution is very specific. And I'll provide the citation: 1666/NQ-UBTVQH15, line 102.\n\n7.  **Final Review:** I've followed the logic, the information is coherent, and the citation is solid. Ready to generate the final JSON object.\n",
   "result": [
     {
       "citation": {
-        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
-        "line": "Hợp nhất tỉnh Hưng Yên và tỉnh Thái Bình, lấy tên là tỉnh Hưng Yên"
-      },
-      "confidence": "high",
-      "province_name": "Tỉnh Hưng Yên",
-      "ward_code": "13225",
-      "ward_name": "Phường Thái Bình"
-    },
-    {
-      "citation": {
         "header": "1666/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Hưng Yên",
-        "line": "Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Trần Hưng Đạo, Đề Thám, Quang Trung và xã Phú Xuân thành phường mới có tên gọi là phường Trần Hưng Đạo."
+        "line": "102. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Trần Hưng Đạo, Đề Thám, Quang Trung và xã Phú Xuân thành phường mới có tên gọi là phường Trần Hưng Đạo."
       },
       "confidence": "high",
       "province_name": "Tỉnh Hưng Yên",

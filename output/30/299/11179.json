@@ -1,18 +1,18 @@
 {
   "address": "Xã Tân Hương, Huyện Ninh Giang, Tỉnh Hải Dương",
-  "ellapsedInMs": 6813,
-  "estimatedCost": 0.0030635,
-  "thought": "**Identifying the New Administrative Unit for \"Xã Tân Hương\"**\n\nOkay, here's my thought process. The user has given me an old address: \"Xã Tân Hương, Huyện Ninh Giang, Tỉnh Hải Dương.\" My job is to find the *new* address based on recent administrative changes. I know from my expertise that I need to consult the relevant resolutions and new ward data.\n\nFirst, I need to account for the province change. I quickly reference \"60-NQ/TW\" and see that \"Tỉnh Hải Dương\" (Hai Duong Province) has merged with \"thành phố Hải Phòng\" (Hai Phong City) to become \"Thành phố Hải Phòng\".\n\nNow, I'm focusing on \"Xã Tân Hương\" within \"Huyện Ninh Giang\" (Ninh Giang District) under the new jurisdiction of \"Thành phố Hải Phòng.\" I start by examining the provided resolutions, keeping a close eye on the province context.\n\nI see several resolutions listed: 1663, 1665, 1667, and 1669. I quickly discard the first three (covering Đồng Tháp, Hà Tĩnh, and Khánh Hòa) because they're in the wrong provinces. The key here is to find the resolution that deals with \"Thành phố Hải Phòng\" or \"Tỉnh Hải Dương,\" which is now merged.\n\nResolution 1669/NQ-UBTVQH15 catches my attention immediately. It's specifically about \"Thành phố Hải Phòng,\" which aligns with the updated administrative structure. I carefully read the relevant section. It discusses the merging of \"thị trấn Ninh Giang\" and \"xã Vĩnh Hòa\" from \"huyện Ninh Giang\", alongside other areas to create a new \"xã Ninh Giang\". It doesn't mention \"Xã Tân Hương\" explicitly, but it details the administrative changes within Ninh Giang District, which is the relevant geographical unit. This implies there isn't a direct replacement for \"Xã Tân Hương\" in the context of this resolution.\n\nTherefore, the old address doesn't perfectly map to the administrative changes I've analyzed. While I've located relevant changes within Ninh Giang District, no specific transformation of \"Xã Tân Hương\" is described within the provided data.\n",
+  "ellapsedInMs": 10866,
+  "estimatedCost": 0.005948500000000001,
+  "thought": "**Determining the New Administrative Unit for \"Xã Tân Hương, Huyện Ninh Giang, Tỉnh Hải Dương\"**\n\nOkay, so I've got this query about finding the new administrative unit for \"Xã Tân Hương\".  First, I need to remember that \"Tỉnh Hải Dương\" is now part of \"Thành phố Hải Phòng\" thanks to that 60-NQ/TW resolution.  So, I'm looking for \"Tân Hương\" within the context of \"Thành phố Hải Phòng\" or the old \"Tỉnh Hải Dương.\"\n\nI started by checking the resolutions, ignoring the ones for provinces that are clearly irrelevant (like Đồng Tháp, Hà Tĩnh, Khánh Hòa, etc.). The key is going to be finding the resolution that covers administrative changes in Hải Phòng, and I found it: 1669/NQ-UBTVQH15.\n\nWithin 1669, I scanned the lines and I hit paydirt. Line 100 explicitly states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Ứng Hòe, Tân Hương và Nghĩa An thành xã mới có tên gọi là **xã Vĩnh Lại**.\" Bingo!  It mentions \"Tân Hương\" directly, indicating it's now part of the new \"Xã Vĩnh Lại\".\n\nNow, I double-checked by looking at the \"New wards\" data, and there it is:  `{\"ward_code\":\"11164\",\"ward_name\":\"Xã Vĩnh Lại\",\"province_name\":\"Thành phố Hải Phòng\"}`.  It's a perfect match!\n\nThe confidence level here is really high.  The resolution is directly related to Hải Phòng, which includes Hải Dương. It specifically names \"Tân Hương\" in the merging process. The fact that other lines in the same resolution mention \"Huyện Ninh Giang\" just solidifies the conclusion.\n\nSo, the answer is: \"Xã Tân Hương, Huyện Ninh Giang, Tỉnh Hải Dương\" is now part of **\"Xã Vĩnh Lại\"** with code **\"11164\"** in **\"Thành phố Hải Phòng\"**.  The reference is \"1669/NQ-UBTVQH15\", specifically line 100.\n",
   "result": [
     {
       "citation": {
-        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
-        "line": "7. Hợp nhất tỉnh Hải Dương và thành phố Hải Phòng, lấy tên là thành phố Hải Phòng"
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "100. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Ứng Hòe, Tân Hương và Nghĩa An thành xã mới có tên gọi là xã Vĩnh Lại."
       },
       "confidence": "high",
       "province_name": "Thành phố Hải Phòng",
-      "ward_code": "11167",
-      "ward_name": "Xã Tân An"
+      "ward_code": "11164",
+      "ward_name": "Xã Vĩnh Lại"
     }
   ]
 }

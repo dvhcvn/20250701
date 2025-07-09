@@ -1,13 +1,13 @@
 {
   "address": "Phường Văn Đức, Thành phố Chí Linh, Tỉnh Hải Dương",
-  "ellapsedInMs": 6930,
-  "estimatedCost": 0.00343,
-  "thought": "**Identifying the New Administrative Units**\n\nOkay, so I'm looking at \"Phường Văn Đức, Thành phố Chí Linh, Tỉnh Hải Dương,\" right? First thing I do is recognize \"Tỉnh Hải Dương.\"  Based on Resolution 60-NQ/TW, I know that's now \"Thành phố Hải Phòng.\"  High confidence there, that's a straightforward merger.\n\nNow, the tricky part: \"Phường Văn Đức.\" I've got to dig into the \"Other resolutions\" to see how that's changed.  Ah, here it is, 1669/NQ-UBTVQH15, \"Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng.\"  This is key because it pertains to the very location in question.\n\nLooks like \"Phường Văn Đức\" isn't a single unit anymore.  It's been *partially* merged into both \"Phường Chu Văn An\" and \"Phường Trần Nhân Tông.\"  And the remaining *portion* goes into \"Phường Bắc An Phụ\".\n\nI cross-reference these findings with the \"New wards\" list to verify.  \"Phường Chu Văn An,\" \"Phường Trần Nhân Tông,\" and \"Phường Bắc An Phụ\" all match the data, confirming the restructuring.\n\nGiven the direct references and explicit wording in the resolutions, I have high confidence in this analysis.  Therefore, I'll need to generate a JSON output array with these three new wards as possibilities, each representing a part of the original \"Phường Văn Đức.\"\n",
+  "ellapsedInMs": 9026,
+  "estimatedCost": 0.004240000000000001,
+  "thought": "**Analysis of Administrative Changes for \"Phường Văn Đức\"**\n\nOkay, so the user wants to know what happened to \"Phường Văn Đức, Thành phố Chí Linh, Tỉnh Hải Dương\". My process starts with understanding that \"Tỉnh Hải Dương\" is now part of \"Thành phố Hải Phòng\" based on resolution 60-NQ/TW.\n\nI then dive into the other resolutions, specifically 1669/NQ-UBTVQH15, the one covering administrative changes in Hải Phòng. Examining the details, I see \"Phường Văn Đức\" has been split up.\n\n*   Part of it, specifically \"một phần diện tích tự nhiên, quy mô dân số của phường Văn Đức\", goes into the newly formed **\"phường Chu Văn An\"**.\n*   Another \"một phần diện tích tự nhiên, quy mô dân số của phường Văn Đức\" contributes to the creation of **\"phường Trần Nhân Tông\"**.\n*   And finally, the \"phần còn lại\" (the remainder) of \"Phường Văn Đức\" ends up in **\"phường Bắc An Phụ\"** after the first two splits.\n\nTherefore, the new wards that replace \"Phường Văn Đức\" are **Chu Văn An**, **Trần Nhân Tông**, and **Bắc An Phụ**. All of these belong to \"Thành phố Hải Phòng\".\n\nHere's the data, structured appropriately:\n\n```json\n[\n  {\n    \"citation\": \"1669/NQ-UBTVQH15\",\n    \"confidence\": \"high\",\n    \"province_name\": \"Thành phố Hải Phòng\",\n    \"ward_code\": \"10549\",\n    \"ward_name\": \"Phường Chu Văn An\"\n  },\n  {\n    \"citation\": \"1669/NQ-UBTVQH15\",\n    \"confidence\": \"high\",\n    \"province_name\": \"Thành phố Hải Phòng\",\n    \"ward_code\": \"10573\",\n    \"ward_name\": \"Phường Trần Nhân Tông\"\n  },\n  {\n    \"citation\": \"1669/NQ-UBTVQH15\",\n    \"confidence\": \"high\",\n    \"province_name\": \"Thành phố Hải Phòng\",\n    \"ward_code\": \"10678\",\n    \"ward_name\": \"Phường Bắc An Phụ\"\n  }\n]\n```\n\nThis should be a complete and accurate answer. The confidence level is \"high\" because the information is directly derived from the resolutions.\n",
   "result": [
     {
       "citation": {
-        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
-        "line": "Hợp nhất tỉnh Hải Dương và thành phố Hải Phòng, lấy tên là thành phố Hải Phòng"
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "34. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các phường Sao Đỏ, Văn An, Chí Minh, Thái Học, một phần diện tích tự nhiên, quy mô dân số của phường Cộng Hòa và một phần diện tích tự nhiên của phường Văn Đức thành phường mới có tên gọi là phường Chu Văn An."
       },
       "confidence": "high",
       "province_name": "Thành phố Hải Phòng",
@@ -16,8 +16,8 @@
     },
     {
       "citation": {
-        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
-        "line": "Hợp nhất tỉnh Hải Dương và thành phố Hải Phòng, lấy tên là thành phố Hải Phòng"
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "38. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Hoàng Tân, phường Hoàng Tiến và một phần diện tích tự nhiên, quy mô dân số của phường Văn Đức thành phường mới có tên gọi là phường Trần Nhân Tông."
       },
       "confidence": "high",
       "province_name": "Thành phố Hải Phòng",
@@ -26,8 +26,8 @@
     },
     {
       "citation": {
-        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
-        "line": "Hợp nhất tỉnh Hải Dương và thành phố Hải Phòng, lấy tên là thành phố Hải Phòng"
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "43. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân sốcủa phường Thất Hùng, xã Bạch Đằng (thị xã Kinh Môn), xã Lê Ninh vàphần còn lạicủa phường Văn Đức sau khi sắp xếp theo quy định tại khoản 34, khoản 38 Điều nàythành phường mới có tên gọi là phường Bắc An Phụ."
       },
       "confidence": "high",
       "province_name": "Thành phố Hải Phòng",

@@ -1,13 +1,13 @@
 {
   "address": "Phường Trần Phú, Thành phố Hải Dương, Tỉnh Hải Dương",
-  "ellapsedInMs": 6171,
-  "estimatedCost": 0.0042241,
-  "thought": "**Navigating the Administrative Landscape: A Breakdown of the Address Restructuring**\n\nOkay, so I'm presented with the old address: \"Phường Trần Phú, Thành phố Hải Dương, Tỉnh Hải Dương,\" and the task is to pinpoint the current administrative units.  My initial thought is to dive right in and deconstruct this problem methodically.\n\nFirst, I need to check for any provincial mergers. I'll pull up the \"Province resolutions,\" and sure enough, there's a key piece of information: \"Tỉnh Hải Dương\" and \"thành phố Hải Phòng\" have been combined into \"thành phố Hải Phòng.\"  That's my first key takeaway.\n\nNow, I'm focusing my search on \"Thành phố Hải Phòng\" and looking for \"Phường Trần Phú\" in the \"Other resolutions\" category. I find resolution \"1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng,\" which seems promising.  I scan through this, paying close attention to any mention of \"Phường Trần Phú.\"\n\nAh, there it is!  Line 26 clearly states that *part* of \"Phường Trần Phú\" is being combined with other wards to form a *new* ward called \"phường Lê Thanh Nghị.\" Further down, in Line 30, it indicates that the *remaining* portion of \"Phường Trần Phú\" is being merged into \"phường Tân Hưng.\" Excellent!\n\nNext, I need to validate these new wards. I'll quickly check the \"New wards\" database to ensure \"phường Lê Thanh Nghị\" and \"phường Tân Hưng\" exist under the new province, \"Thành phố Hải Phòng.\" Sure enough, they are there, with their corresponding codes.\n\nGiven that \"Phường Trần Phú\" is explicitly mentioned as being split and incorporated into two new wards, and coupled with the clarity of the province name change, I'd say I have a very high confidence level in these findings. I can now confidently construct the JSON output reflecting the new address breakdown.\n",
+  "ellapsedInMs": 20884,
+  "estimatedCost": 0.0066541,
+  "thought": "**Analysis of \"Phường Trần Phú, Thành phố Hải Dương, Tỉnh Hải Dương\"**\n\nOkay, so I need to figure out what happened to the old ward \"Phường Trần Phú\" after these administrative changes.  First, I confirm the basics: the ward is in \"Thành phố Hải Dương\", which in turn is within \"Tỉnh Hải Dương\". I know from my knowledge base and a quick check of the relevant resolutions, specifically `60-NQ/TW`, that \"Tỉnh Hải Dương\" merged with \"Hải Phòng\", becoming \"Thành phố Hải Phòng\". This sets the stage.  My focus now shifts to resolutions concerning the re-organization of administrative units within the newly formed \"Thành phố Hải Phòng\".\n\nI immediately zero in on resolution `1669/NQ-UBTVQH15`, which deals with the specific restructuring of wards within Hải Phòng. I carefully review each line, searching for any mention of \"Phường Trần Phú\" and/or \"Thành phố Hải Dương\".  I meticulously analyze each entry, filtering out irrelevant references like the one to \"Trần Phú\" that's actually a *commune* in a different district.\n\nBingo! Line 26 directly addresses the issue. It states that part of \"Phường Trần Phú\" was merged with other wards to form the new \"Phường Lê Thanh Nghị\". I mark this as a strong candidate with a high confidence level, noting the precise citation: `1669/NQ-UBTVQH15`, line 26.\n\nBut I'm not done. I continue my careful review. Line 30 also mentions \"Phường Trần Phú\", indicating that the *remaining part* of the original ward was incorporated into the new \"Phường Tân Hưng\".  Another strong match!  Again, I attach a high confidence level and record the citation: `1669/NQ-UBTVQH15`, line 30.\n\nTo ensure accuracy, I cross-reference these findings with my master list of newly created administrative units.  Both \"Phường Lê Thanh Nghị\" (code \"10532\") and \"Phường Tân Hưng\" (code \"10537\") are present in the list, confirming that these are indeed valid new wards in \"Thành phố Hải Phòng\".\n\nMy reasoning is solid: the old \"Phường Trần Phú\" has been split into two new wards due to administrative restructuring. Therefore, I will construct a JSON array, with two well-defined elements: one detailing \"Phường Lê Thanh Nghị\" and the other for \"Phường Tân Hưng\", along with their respective citations from resolution `1669/NQ-UBTVQH15`. All data is verified and consistent.\n",
   "result": [
     {
       "citation": {
-        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
-        "line": "7. Hợp nhất tỉnh Hải Dương và thành phố Hải Phòng, lấy tên là thành phố Hải Phòng"
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "26. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số củacác phường Tân Bình, Thanh Bình, Lê Thanh Nghịvà một phần diện tích tự nhiên, quy mô dân số của phường Trần Phú thành phường mới có tên gọi là phường Lê Thanh Nghị."
       },
       "confidence": "high",
       "province_name": "Thành phố Hải Phòng",
@@ -16,8 +16,8 @@
     },
     {
       "citation": {
-        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
-        "line": "7. Hợp nhất tỉnh Hải Dương và thành phố Hải Phòng, lấy tên là thành phố Hải Phòng"
+        "header": "1669/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Hải Phòng",
+        "line": "30. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của phường Hải Tân, phườngTân Hưng, xã Ngọc Sơn và phần còn lại của phường Trần Phú sau khi sắp xếp theo quy định tại khoản 26 Điều này thành phường mới có tên gọi là phường Tân Hưng."
       },
       "confidence": "high",
       "province_name": "Thành phố Hải Phòng",

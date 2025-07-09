@@ -1,13 +1,13 @@
 {
   "address": "Xã Bình Thuận, Huyện Tây Sơn, Tỉnh Bình Định",
-  "ellapsedInMs": 6116,
-  "estimatedCost": 0.0035066999999999997,
-  "thought": "**Navigating the Administrative Unit Shift**\n\nOkay, so the user's asking about the new administrative unit for an old address: \"Xã Bình Thuận, Huyện Tây Sơn, Tỉnh Bình Định.\" My first thought is to check the resolutions and the new ward data.\n\nI start by looking at the province merger resolutions, particularly 60-NQ/TW. Ah, \"Tỉnh Bình Định\" is merged into \"Tỉnh Gia Lai.\"  Got it.  Now I need to check the \"Other resolutions\" for \"Xã Bình Thuận\" within the context of \"Tỉnh Gia Lai.\"\n\nLet's see... Resolution 1659/NQ-UBTVQH15 and 1660/NQ-UBTVQH15 are irrelevant, mentioning \"phường Bình Thuận\" in Da Nang and \"xã Bình Thuận\" in Dak Lak respectively, and neither are what I'm looking for.\n\nBingo! 1664/NQ-UBTVQH15, the one related to Gia Lai, is where it's at. Line 23 is promising: it explicitly states that \"Xã Bình Thuận\" is merged into \"xã Bình Hiệp.\" The new province is \"Tỉnh Gia Lai\" and that matches the data. Then checking the `New wards` list for \"xã Bình Hiệp\" in \"Tỉnh Gia Lai,\" I find the match.\n\nThis seems like a strong confidence match and it provides the user with the answer.\n",
+  "ellapsedInMs": 25194,
+  "estimatedCost": 0.0059517,
+  "thought": "**The Logic Behind Finding the New Administrative Unit**\n\nOkay, so I need to figure out what happened to \"Xã Bình Thuận, Huyện Tây Sơn, Tỉnh Bình Định\".  First, let's break down what we have. We've got the ward, the district, and the province.  I know right off the bat that \"Tỉnh Bình Định\" got merged, as per Resolution 60-NQ/TW. That old province is now part of \"Tỉnh Gia Lai\".  So, anything I find has to be in relation to Gia Lai now.\n\nNext, I started sifting through the relevant resolutions from the National Assembly.  I systematically checked each resolution, focusing on Gia Lai.  I'm looking for anything that mentions \"Xã Bình Thuận\", \"Huyện Tây Sơn\", or any potential name changes.\n\nResolution 1664/NQ-UBTVQH15 (for Gia Lai) seemed promising.  I read through that one carefully. Line 23 of the resolution is a crucial piece of information. It explicitly states that \"Xã Bình Thuận\" was merged with a couple of other wards to form a new one, called \"Xã Bình Hiệp\".  Bingo! That seems to be the one.\n\nNow I double-checked the new list.  I'm looking for \"Xã Bình Hiệp\" in \"Tỉnh Gia Lai\". I found it! I confirmed that the entry had the appropriate code. With that verified, I built the JSON response.\n\nThe province is \"Tỉnh Gia Lai\", the new ward is \"Xã Bình Hiệp\", and the code is \"21817\".  I'm pretty confident in this one, so I'm assigning a \"high\" confidence level. And for citation, I'll include the relevant line from Resolution 1664/NQ-UBTVQH15.  I need to add the correct header for the citation as well. So, all data is valid. Good to go.\n",
   "result": [
     {
       "citation": {
-        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
-        "line": "12. Hợp nhất tỉnh Gia Lai và tỉnh Bình Định, lấy tên là tỉnh Gia Lai"
+        "header": "1664/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Gia Lai",
+        "line": "23. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Bình Thuận, Bình Tân và Tây An thành xã mới có tên gọi là xã Bình Hiệp."
       },
       "confidence": "high",
       "province_name": "Tỉnh Gia Lai",

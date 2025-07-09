@@ -1,13 +1,13 @@
 {
   "address": "Xã Đồng Tân, Huyện Mai Châu, Tỉnh Hoà Bình",
-  "ellapsedInMs": 7248,
-  "estimatedCost": 0.0033990999999999995,
-  "thought": "**Determining the New Administrative Location for \"Xã Đồng Tân, Huyện Mai Châu, Tỉnh Hoà Bình\"**\n\nOkay, so I've been tasked with finding the new administrative unit(s) for the old address \"Xã Đồng Tân, Huyện Mai Châu, Tỉnh Hoà Bình.\"  My first thought is, this requires careful analysis of the provided resolutions and the associated data. The key is to trace the changes stemming from the mergers and rearrangements.\n\nFirst, I need to handle the province level.  The text explicitly states that \"Tỉnh Hoà Bình\" is now part of \"Tỉnh Phú Thọ\" due to the merger.  This is based on my understanding of resolution 60-NQ/TW.\n\nNow, with \"Tỉnh Phú Thọ\" as the target, I must scrutinize the ward-level resolutions. I've quickly eliminated irrelevant resolutions (1656, 1662, 1663, 1666, and 1672) because they deal with other provinces, namely Hà Nội, Đồng Nai, Đồng Tháp, Hưng Yên, and Lạng Sơn.\n\nThe key resolution is 1676/NQ-UBTVQH15, which concerns \"Tỉnh Phú Thọ.\"  Here's where the details matter:\n\n*   Lines 39, 123, and 122 deal specifically with relevant data and do not help with mapping Dong Tan to a new administrative unit\n*   Line 119 explicitly states that \"một phần diện tích tự nhiên, quy mô dân số của xã Đồng Tân\" is incorporated into the new \"xã Mai Châu\". The resolution explicitly mentions both \"xã Đồng Tân\" and the corresponding \"huyện Mai Châu\", which aligns with the provided search criteria.\n*   Line 122 mentions the \"phần còn lại của xã Đồng Tân\" merges to become part of the new \"xã Pà Cò.\"\n\nTherefore, it seems that \"Xã Đồng Tân\" is now partially split between the new wards: **\"xã Mai Châu\"** and **\"xã Pà Cò\"** which are located in \"Tỉnh Phú Thọ\".\n",
+  "ellapsedInMs": 6262,
+  "estimatedCost": 0.0031340999999999995,
+  "thought": "**My Analysis of the Administrative Reorganization of Xã Đồng Tân**\n\nOkay, here's my breakdown of how to handle this administrative change. First, the old ward is \"Xã Đồng Tân, Huyện Mai Châu, Tỉnh Hoà Bình.\" I'll need to figure out its new administrative units.\n\nMy initial step is always to pinpoint the province: \"Tỉnh Hoà Bình.\" Then, I check for any province-level reorganizations based on province resolutions. Ah, here it is: Resolution 60-NQ/TW states that Hòa Bình merged with Phú Thọ to become the latter.\n\nNext, I need to look specifically for \"Đồng Tân\" within the provided resolutions. I've found a key resolution, 1676/NQ-UBTVQH15, that addresses this. It clearly outlines the changes. Line 119 indicates that parts of \"Đồng Tân\" will merge with other wards to form the new **\"Xã Mai Châu\"**. And line 122 states that the remaining part of \"Đồng Tân\" will merge with others to become **\"Xã Pà Cò\"**.\n\nNow, it's a simple matter of matching these new wards to the `New wards` data I have. \"Xã Mai Châu\" corresponds to a record with a ward code and name, and, importantly, the province name \"Tỉnh Phú Thọ.\" \"Xã Pà Cò\" does the same.\n\nTherefore, my final output will be two JSON objects, one for each new ward. Both objects will accurately reflect the province as \"Tỉnh Phú Thọ\" due to the province merger. I'll confidently mark these findings with a \"high\" confidence level, because the source material is explicit.\n",
   "result": [
     {
       "citation": {
-        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
-        "line": "4. Hợp nhất tỉnh Vĩnh Phúc, tỉnh Phú Thọ và tỉnh Hoà Bình; lấy tên là tỉnh Phú Thọ"
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "119. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Mai Châu, các xã Nà Phòn, Thành Sơn, Tòng Đậu và một phần diện tích tự nhiên, quy mô dân số của xã Đồng Tân thành xã mới có tên gọi là xã Mai Châu."
       },
       "confidence": "high",
       "province_name": "Tỉnh Phú Thọ",
@@ -16,8 +16,8 @@
     },
     {
       "citation": {
-        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
-        "line": "4. Hợp nhất tỉnh Vĩnh Phúc, tỉnh Phú Thọ và tỉnh Hoà Bình; lấy tên là tỉnh Phú Thọ"
+        "header": "1676/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Phú Thọ",
+        "line": "122. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Cun Pheo, Hang Kia, Pà Cò và phần còn lại của xã Đồng Tân sau khi sắp xếp theo quy định tại khoản 119 Điều này thành xã mới có tên gọi là xã Pà Cò."
       },
       "confidence": "high",
       "province_name": "Tỉnh Phú Thọ",

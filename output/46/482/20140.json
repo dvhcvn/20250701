@@ -1,13 +1,13 @@
 {
   "address": "Xã Lộc An, Huyện Phú Lộc, Thành phố Huế",
-  "ellapsedInMs": 6540,
-  "estimatedCost": 0.0034711000000000004,
-  "thought": "**Finding the New Administrative Unit for Xã Lộc An, Thành phố Huế**\n\nOkay, so I'm tasked with identifying the new administrative unit for \"Xã Lộc An, Huyện Phú Lộc, Thành phố Huế.\"  Let's break this down. First, I see the province is \"Thành phố Huế.\" Good. Next, I need to check the resolutions to see if there have been any changes at the provincial level.  Resolution 60-NQ/TW tells me that \"Thành phố Huế\" remains unchanged. Great, one less thing to worry about.\n\nNow, the tricky part: \"Xã Lộc An.\" I know this is a ward, so I need to go through the \"Other resolutions\" and see if there are any mergers.\n\nI quickly scan through the resolutions for An Giang, Đắk Lắk, Đồng Tháp, Hà Tĩnh, Cần Thơ, and Ninh Bình. Nothing there. Then I come to the resolutions for Đồng Nai and Lâm Đồng. I spot \"Xã Lộc An\" in both. However, both resolutions are in the wrong province: Long Thành, Đồng Nai, and Bảo Lâm, Lâm Đồng. So, not the right \"Xã Lộc An.\"\n\nFinally, I reach the resolution for *Thành phố Huế* itself, 1675/NQ-UBTVQH15. Bingo! Line 29 is the key: it explicitly states that \"Xã Lộc An\" is merged with \"Lộc Hòa\" and \"Lộc Điền\" to form a *new* \"Xã Lộc An.\" So, the old \"Xã Lộc An\" is now part of this new, combined \"Xã Lộc An.\" Case closed.\n",
+  "ellapsedInMs": 7681,
+  "estimatedCost": 0.003913600000000001,
+  "thought": "**Identifying the New Administrative Unit**\n\nOkay, so I'm tasked with figuring out the new administrative unit for the old \"Xã Lộc An, Huyện Phú Lộc, Thành phố Huế.\"  First, the province is \"Thành phố Huế,\" and since Huế didn't undergo any province mergers according to 60-NQ/TW, that part's straightforward.\n\nNow, I need to check the \"Other resolutions\" to see if there's anything about \"Lộc An\" within the context of Huế. After a quick scan, I hit the jackpot with **1675/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Huế.**  Boom! Line 29 explicitly states: \"Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Lộc Hòa, Lộc Điền và Lộc An thành xã mới có tên gọi là **xã Lộc An**.\" Perfect! A direct match.\n\nThe old ward was \"Xã Lộc An, Huyện Phú Lộc, Thành phố Huế,\" and the resolution mentions \"xã Lộc An\" within the Huế context. Now, I need to look at the \"New wards\" list for \"xã Lộc An\" in \"Thành phố Huế.\"\n\nLuckily, I find `{\"ward_code\":\"20140\",\"ward_name\":\"Xã Lộc An\",\"province_name\":\"Thành phố Huế\"}`.  That's a clean match!\n\nSo, the old \"Xã Lộc An, Huyện Phú Lộc, Thành phố Huế\" is now the new \"Xã Lộc An\" within \"Thành phố Huế,\" as outlined in resolution 1675/NQ-UBTVQH15. I'd say the confidence on this is pretty high.\n",
   "result": [
     {
       "citation": {
-        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh không thực hiện sáp nhập",
-        "line": "2. Thành phố Huế"
+        "header": "1675/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của thành phố Huế",
+        "line": "29. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Lộc Hòa, Lộc Điền và Lộc An thành xã mới có tên gọi là **xã Lộc An**."
       },
       "confidence": "high",
       "province_name": "Thành phố Huế",

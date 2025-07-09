@@ -1,13 +1,13 @@
 {
   "address": "Xã Phong Phú, Huyện Tuy Phong, Tỉnh Bình Thuận",
-  "ellapsedInMs": 9971,
-  "estimatedCost": 0.0038157000000000004,
-  "thought": "**Analysis of Administrative Unit Changes**\n\nOkay, so I'm presented with a task: to map an old address, specifically involving \"Tỉnh Bình Thuận\" and \"Xã Phong Phú,\" to its modern administrative equivalents. My initial approach is methodical, leveraging the provided resolutions and a list of new wards.\n\nFirst, I identify the initial province: \"Tỉnh Bình Thuận\".  The very first thing I need to do is verify if there's been any province-level restructuring.  Examining \"60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất,\" immediately reveals a significant change.  Resolution \"14\" explicitly states the merger of \"Tỉnh Lâm Đồng,\" \"Tỉnh Đắk Nông,\" and \"Tỉnh Bình Thuận\" into a single entity, now known as \"Tỉnh Lâm Đồng.\" This is a high-confidence determination; the resolution is quite clear.\n\nNext, I need to pinpoint the specific old ward: \"Xã Phong Phú\". With that identified, the real work begins.  My focus shifts to resolutions related to \"Tỉnh Lâm Đồng,\" as that's now the relevant province.  Resolution \"1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng\" seems promising, given the province merger.  Skimming through, line 43 and 44 jump out. \"Xã Phong Phú\" is not simply renamed; it's *split* and merged into two new wards: \"Xã Tuy Phong\" and \"Xã Phan Rí Cửa.\" This is a definitive transformation, the sort of direct mapping that is key to accuracy.\n\nThe next step is cross-referencing with the \"New wards\" list. Checking the ward codes and province names confirms that \"Xã Tuy Phong\" corresponds to `ward_code`: \"22978\", `province_name`: \"Tỉnh Lâm Đồng\", and \"Xã Phan Rí Cửa\" matches  `ward_code`: \"22972\", `province_name`: \"Tỉnh Lâm Đồng\".  All the pieces fit.\n\nNow, considering the *confidence* in this conclusion, the province merger is straightforward. The ward-level change relies on a direct and clear instruction within resolution 1671.  To be extra thorough, I'll quickly check other resolutions involving similar name fragments like \"Phong\" to ensure no other wards are mistakenly identified.  The quick scan through resolution 1663, 1667, 1670, 1674, and 1675 confirms no instances of confusion occur here.  This added check solidifies my high confidence in the output.\n\nSo, for output, I'll need to create JSON objects, each with `citation`, `confidence`, `province_name`, `ward_code`, and `ward_name` for both \"Xã Tuy Phong\" and \"Xã Phan Rí Cửa\".  This structured format will be clean and easy to integrate for the end user.\n",
+  "ellapsedInMs": 22154,
+  "estimatedCost": 0.0053107,
+  "thought": "**Analyzing the Reorganization of \"Xã Phong Phú\"**\n\nOkay, let's break this down. First, I had to identify the new administrative location for \"Xã Phong Phú, Huyện Tuy Phong, Tỉnh Bình Thuận.\" The initial step was to establish the updated province, and after consulting Resolution 60-NQ/TW, it was clear that \"Tỉnh Bình Thuận\" was merged into \"Tỉnh Lâm Đồng.\"\n\nNext, the search began for any relevant resolutions concerning \"Xã Phong Phú.\" I methodically reviewed several resolutions, including 1663/NQ-UBTVQH15, 1667/NQ-UBTVQH15, 1670/NQ-UBTVQH15, 1674/NQ-UBTVQH15, 1675/NQ-UBTVQH15, 1676/NQ-UBTVQH15, 1685/NQ-UBTVQH15, and 1687/NQ-UBTVQH15. Most of these were quick no-matches, either due to the wrong province or the lack of mention of \"Phong Phú\".\n\nFinally, resolution `1671/NQ-UBTVQH15` for \"Tỉnh Lâm Đồng\" proved to be the key. This resolution described the precise re-organization. The critical lines, specifically lines 43 and 44, detailed the splitting of \"Xã Phong Phú\" into two new wards: \"Xã Tuy Phong\" and \"Xã Phan Rí Cửa,\" both within the new \"Tỉnh Lâm Đồng.\" The mention of \"huyện Tuy Phong\" in the same resolution provided additional verification that I was on the right track.\n\nWith these new wards identified, I confirmed their presence in the `New wards` list, solidifying the two new entities as \"Xã Tuy Phong\" (ward code 22978) and \"Xã Phan Rí Cửa\" (ward code 22972).\n\nTo present this information clearly, I'll generate a JSON array, with high confidence in the accuracy, supported by the explicit details from resolution `1671/NQ-UBTVQH15`, and the matching entries in the provided ward data.\n",
   "result": [
     {
       "citation": {
-        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
-        "line": "14. Hợp nhất tỉnh Lâm Đồng, tỉnh Đắk Nông và tỉnh Bình Thuận; lấy tên là tỉnh Lâm Đồng"
+        "header": "1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng",
+        "line": "43. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của xã Phan Dũng và một phần diện tích tự nhiên, quy mô dân số của xã Phong Phú thành xã mới có tên gọi là xã Tuy Phong."
       },
       "confidence": "high",
       "province_name": "Tỉnh Lâm Đồng",
@@ -16,8 +16,8 @@
     },
     {
       "citation": {
-        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
-        "line": "14. Hợp nhất tỉnh Lâm Đồng, tỉnh Đắk Nông và tỉnh Bình Thuận; lấy tên là tỉnh Lâm Đồng"
+        "header": "1671/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Lâm Đồng",
+        "line": "44. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Phan Rí Cửa, xã Chí Công, xã Hòa Minh và phần còn lại của xã Phong Phú sau khi sắp xếp theo quy định tại khoản 43 Điều này thành xã mới có tên gọi là xã Phan Rí Cửa."
       },
       "confidence": "high",
       "province_name": "Tỉnh Lâm Đồng",

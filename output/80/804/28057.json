@@ -1,13 +1,13 @@
 {
   "address": "Xã Nhị Thành, Huyện Thủ Thừa, Tỉnh Long An",
-  "ellapsedInMs": 7309,
-  "estimatedCost": 0.0032302,
-  "thought": "**My Analysis of the Administrative Changes**\n\nAlright, let's break this down. The user's input, \"Xã Nhị Thành, Huyện Thủ Thừa, Tỉnh Long An,\" immediately signals a need to navigate the recent administrative restructuring. My first step is to establish the new province. The old province is \"Tỉnh Long An.\" I know, based on my familiarity with the area, that I need to consult the provincial resolutions (60-NQ/TW series). A quick check reveals that Long An was *not* merged. This indicates that it still exists.\n\nNext, I turn my attention to the ward level, specifically \"Xã Nhị Thành.\" I need to find the specific resolution impacting Nhị Thành. My search lands me on Resolution 1682/NQ-UBTVQH15, the definitive source. Line 20 clearly states that a portion of \"Xã Nhị Thành\" along with parts of other wards, will go into a new ward called \"Xã Thủ Thừa\". However, Line 52 presents a wrinkle; it indicates that a \"phần còn lại\" (the remaining part) of \"Xã Nhị Thành\" is folded into the new ward, \"Xã Nhựt Tảo.\" This creates an intriguing implication of a split.\n\nAnalyzing the language, I see that the full portion of Xã Nhị Thành is not fully merged into \"Xã Thủ Thừa\". It says \"a portion of\", which suggests that Xã Nhị Thành will not exist as a whole anymore.\n\nTherefore, the old \"Xã Nhị Thành\" appears to be split. The first part goes to \"Xã Thủ Thừa\", and the remaining to \"Xã Nhựt Tảo\".\n\nBased on this analysis, the province map is clear with Long An. My confidence is high, and the map should show the split.\n",
+  "ellapsedInMs": 9865,
+  "estimatedCost": 0.0040527,
+  "thought": "**Here's my thought process on identifying the new administrative unit(s) for \"Xã Nhị Thành, Huyện Thủ Thừa, Tỉnh Long An\".**\n\nFirst, I need to understand the context. The task is to map an old ward to its new representation based on recent resolutions. The given information includes resolutions and a list of new wards. I am operating under the assumption that these data are accurate and relevant.\n\n**Step 1: Province Determination**\nI started by establishing the new province name for \"Tỉnh Long An\" because province changes would affect the search space.  Looking at \"60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất\", I determined that \"Tỉnh Long An\" has merged into \"Tỉnh Tây Ninh.\" This sets the context for my search.\n\n**Step 2 & 3: Resolution Analysis**\nThe core of this task involves examining the provided resolutions for references to \"Xã Nhị Thành.\" I scrutinized the resolutions, specifically `1682/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tây Ninh`.\n\nWithin this resolution, I identified the following:\n\n*   **Mapping to Thủ Thừa:** One section clearly states that the natural area and population scale of \"Xã Nhị Thành\" combined with that of other towns/wards will become a new ward named \"Xã Thủ Thừa\". However, this statement doesn't align with the other statement in the resolution, which specifies that only a portion of \"Xã Nhị Thành\" is actually part of \"Xã Thủ Thừa\".\n*   **Mapping to Nhựt Tảo:** Another section states that the population of various wards, including \"the remaining part of Xã Nhị Thành,\" will form the new \"Xã Nhựt Tảo\".\n\n**Step 4: New Ward Verification**\nWith \"Xã Thủ Thừa\" and \"Xã Nhựt Tảo\" identified as potential new wards, the next step is cross-referencing them against the \"New Wards\" list. I must verify if these wards exist in the list. Importantly, I will verify the *province_name* of those matching new wards as *Tỉnh Tây Ninh*.\n\n**Step 5: Confidence Assessment**\nBased on the direct language of the resolution and the clear mapping of \"Xã Nhị Thành\" into \"Xã Thủ Thừa\" and \"Xã Nhựt Tảo,\" I would confidently classify the mapping between old and new wards as *high*.\n\n**Final Thoughts**\nThe output will be an array of objects, one for each new ward incorporating \"Xã Nhị Thành.\" Each object will contain the resolution citation, confidence level, the new *province_name* \"Tỉnh Tây Ninh\", the new ward’s *ward_code*, and its *ward_name*. This format will provide a clear and well-structured answer to the original question. In my opinion, because of these steps, I can be certain I have provided a complete and accurate answer.\n",
   "result": [
     {
       "citation": {
-        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
-        "line": "18. Hợp nhất tỉnh Tây Ninh và tỉnh Long An, lấy tên là tỉnh Tây Ninh"
+        "header": "1682/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tây Ninh",
+        "line": "20. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của thị trấn Thủ Thừa, một phần diện tích tự nhiên, quy mô dân số của xã Bình Thạnh và xã Tân Thành (huyện Thủ Thừa), xã Nhị Thành thành xã mới có tên gọi là xã Thủ Thừa."
       },
       "confidence": "high",
       "province_name": "Tỉnh Tây Ninh",
@@ -16,8 +16,8 @@
     },
     {
       "citation": {
-        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
-        "line": "18. Hợp nhất tỉnh Tây Ninh và tỉnh Long An, lấy tên là tỉnh Tây Ninh"
+        "header": "1682/NQ-UBTVQH15: Sắp xếp các đơn vị hành chính cấp xã của tỉnh Tây Ninh",
+        "line": "52. Sắp xếp toàn bộ diện tích tự nhiên, quy mô dân số của các xã Tân Bình (huyện Tân Trụ), Quê Mỹ Thạnh, Lạc Tấn và phần còn lại của xã Nhị Thành sau khi sắp xếp theo quy định tại khoản 20 Điều này thành xã mới có tên gọi là xã Nhựt Tảo."
       },
       "confidence": "high",
       "province_name": "Tỉnh Tây Ninh",
