@@ -19,7 +19,7 @@ Không rõ vì sao một số văn bản không tìm thấy trên https://chinhp
 
 ## Các bước xử lý
 
-Đoạn này hơi kỹ thuật một tí nhé. Cơ bản là mình prompt cho coding agent nó làm là chính (mình xài [Codebuff](https://www.codebuff.com)).
+Đoạn này hơi kỹ thuật một tí nhé. Cơ bản là mình prompt cho coding agent nó làm là chính (mình xài [Codebuff](https://www.codebuff.com), ngó qua prompts và scripts ở branch [này](https://github.com/dvhcvn/20250701/tree/codebuff)).
 
 ### Bước 1: Tiền xử lý
 
