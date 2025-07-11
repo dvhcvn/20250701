@@ -5,10 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Đơn vị hành chính mới tháng 7, 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
     <script>
       // Tailwind config for custom theme
       tailwind.config = {
@@ -38,16 +34,16 @@
     </script>
   </head>
   <body
-    class="p-4 bg-slate-100 dark:bg-gray-900 font-sans transition-colors duration-300 min-h-screen flex flex-col items-center justify-center"
+    class="p-4 bg-slate-100 dark:bg-gray-900 font-sans transition-colors duration-300"
   >
     <div
       class="max-w-4xl w-full mx-auto p-8 bg-white dark:bg-gray-800 rounded-2xl shadow-2xl dark:shadow-gray-900/50 transition-all duration-300 mb-8"
     >
-      <h1
+      <h2
         class="text-3xl font-bold text-center text-gray-800 dark:text-white mb-6"
       >
-        Đơn vị hành chính mới tháng 7, 2025
-      </h1>
+        Tìm phường / xã mới sau ngày 1 tháng 7, 2025
+      </h2>
       <div class="mb-6 flex flex-col sm:flex-row gap-4">
         <input
           type="text"
@@ -75,31 +71,21 @@
         <div id="exampleButtons" class="flex flex-wrap gap-2">
           <button
             class="bg-slate-200 hover:bg-slate-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-slate-600 dark:text-gray-300 px-4 py-2 rounded-lg font-medium cursor-pointer transition-colors duration-200 ease-in-out whitespace-nowrap"
-            data-address="Trung Tự, Đống Đa, Hà Nội"
           >
-            Trung Tự, Đống Đa, Hà Nội
+            Cái Rồng, QN
           </button>
           <button
             class="bg-slate-200 hover:bg-slate-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-slate-600 dark:text-gray-300 px-4 py-2 rounded-lg font-medium cursor-pointer transition-colors duration-200 ease-in-out whitespace-nowrap"
-            data-address="Lộc Thọ, Nha Trang"
-          >
-            Lộc Thọ, Nha Trang
-          </button>
-          <button
-            class="bg-slate-200 hover:bg-slate-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-slate-600 dark:text-gray-300 px-4 py-2 rounded-lg font-medium cursor-pointer transition-colors duration-200 ease-in-out whitespace-nowrap"
-            data-address="Cửa Nam, Nam Định"
           >
             Cửa Nam, Nam Định
           </button>
           <button
             class="bg-slate-200 hover:bg-slate-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-slate-600 dark:text-gray-300 px-4 py-2 rounded-lg font-medium cursor-pointer transition-colors duration-200 ease-in-out whitespace-nowrap"
-            data-address="Cửa Nam, Vinh"
           >
             Cửa Nam, Vinh
           </button>
           <button
             class="bg-slate-200 hover:bg-slate-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-slate-600 dark:text-gray-300 px-4 py-2 rounded-lg font-medium cursor-pointer transition-colors duration-200 ease-in-out whitespace-nowrap"
-            data-address="Cửa Nam, HN"
           >
             Cửa Nam, HN
           </button>
@@ -110,17 +96,17 @@
       </div>
     </div>
 
-    <footer class="mt-8 text-center text-gray-600 dark:text-gray-400">
+    <footer class="mt-8 text-center text-xs text-gray-600 dark:text-gray-400">
       <p class="items-center">
+        góp ý xin gửi về
         <a
-          href="https://github.com/dvhcvn/20250701"
+          href="https://github.com/dvhcvn/20250701/issues"
           target="_blank"
-          rel="noopener noreferrer"
           class="text-primary-600 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300 font-medium transition-colors duration-200"
-          aria-label="GitHub Repository"
         >
-          <i class="fab fa-github"></i>
+          github
         </a>
+        💪
       </p>
     </footer>
 
@@ -190,34 +176,30 @@
             return;
           }
 
-          // Create a card for the original address (always show this)
-          const addressText = apiResponseData.address;
-          if (typeof addressText === "string") {
-            const originalCard = document.createElement("div");
-            originalCard.className =
-              "bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-xl p-6 mb-4 shadow-md";
-            originalCard.innerHTML = `
-                    <h3 class="text-xl font-normal text-gray-800 dark:text-white mb-2">
-                        ${addressText}
-                    </h3>
-                `;
-            resultsDiv.appendChild(originalCard);
-          }
-
           // Render the results found
           apiResponseData.result.forEach((res) => {
             const resultCard = document.createElement("div");
             resultCard.className =
               "bg-slate-50 dark:bg-gray-700 border border-slate-200 dark:border-gray-600 rounded-xl p-6 shadow-md";
 
-            const wardCode = res.ward_code || "N/A";
-            const wardName = res.ward_name || "N/A";
-            const provinceName = res.province_name || "N/A";
-            resultCard.innerHTML = `
+            if ("ward_code" in res) {
+              const wardCode = res.ward_code || "N/A";
+              const wardName = res.ward_name || "N/A";
+              const provinceCode = res.province_code || "N/A";
+              const provinceName = res.province_name || "N/A";
+              resultCard.innerHTML = `
                         <p class="text-gray-600 dark:text-gray-300 mb-1"><strong>Mã số:</strong> ${wardCode}</p>
                         <p class="text-gray-600 dark:text-gray-300 mb-1"><strong>Tên đầy đủ:</strong> ${wardName}</p>
                         <p class="text-gray-600 dark:text-gray-300 mb-3"><strong>Trực thuộc:</strong> ${provinceName}</p>
                     `;
+            } else {
+              const provinceCode = res.province_code || "N/A";
+              const provinceName = res.province_name || "N/A";
+              resultCard.innerHTML = `
+                        <p class="text-gray-600 dark:text-gray-300 mb-1"><strong>Mã số:</strong> ${provinceCode}</p>
+                        <p class="text-gray-600 dark:text-gray-300 mb-1"><strong>Tên đầy đủ:</strong> ${provinceName}</p>
+                    `;
+            }
 
             const citationHeader = res.citation?.header;
             const citationLine = res.citation?.line;
@@ -247,7 +229,7 @@
          */
         async function fetchParsedData(searchTerm) {
           const parserResponse = await fetch(
-            "https://dvhcvn.vercel.app/demo/parser/api",
+            "https://www.dvhcvn.com/demo/parser/api",
             {
               method: "POST",
               headers: { "Content-Type": "text/plain" },
@@ -274,8 +256,7 @@
             .map((item) => item.id)
             .sort((a, b) => a.length - b.length)
             .join("/");
-          const dataUrl = `https://raw.githubusercontent.com/dvhcvn/20250701/refs/heads/main/output/${ids}.json`;
-          const detailResponse = await fetch(dataUrl);
+          const detailResponse = await fetch(`/output/${ids}.json`);
           return await detailResponse.json();
         }
 
@@ -313,11 +294,9 @@
 
         // Add event listeners for example buttons
         exampleButtonsContainer.addEventListener("click", (event) => {
-          if (event.target.hasAttribute("data-address")) {
-            const exampleAddress = event.target.dataset.address;
-            addressInput.value = exampleAddress;
-            handleSearch();
-          }
+          const exampleAddress = event.target.innerHTML.trim();
+          addressInput.value = exampleAddress;
+          handleSearch();
         });
       })();
     </script>
