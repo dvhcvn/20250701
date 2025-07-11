@@ -1,0 +1,17 @@
+{
+  "address": "Tỉnh Hoà Bình",
+  "ellapsedInMs": 16605,
+  "estimatedCost": 0.0031247,
+  "thought": "**Analyzing the Request and Delving into the Data**\n\nOkay, first things first, I need to understand what the user is asking. They want the new administrative unit for \"Tỉnh Hoà Bình,\" based on the resolutions provided.  The ideal output is a JSON array with a specific schema. If I'm unsure about anything, I need to mark the confidence as \"low\" and provide appropriate citations.\n\nNow, I'll dive into the resolutions. Resolution 1 (60-NQ/TW) doesn't mention \"Tỉnh Hoà Bình\" at all, but this means that it *was* merged and its data is likely in Resolution 2. I'll focus my search on Resolution 2.  I'm looking closely at each line for \"Hoà Bình\" in any context.\n\nAha! Line 4 in Resolution 2 is the key: \"Hợp nhất tỉnh Vĩnh Phúc, tỉnh Phú Thọ và tỉnh Hoà Bình; lấy tên là tỉnh Phú Thọ\" - it explicitly states the merger of Vĩnh Phúc, Phú Thọ, and *Hoà Bình* into *Phú Thọ*. This is my answer.\n\nTo finalize, I have to determine the `province_code` for \"tỉnh Phú Thọ\" which matches the item in the list: `{\"provinceId\":\"25\",\"provinceName\":\"Phú Thọ\"}`. So the `province_code` is \"25\". I am confident in this finding, so I set the `confidence` to \"high\".\n\nFinally, I'll package this information into the correct JSON format. The final JSON array will contain my findings, including the relevant citation details. It's time to build the JSON.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "4. Hợp nhất tỉnh Vĩnh Phúc, tỉnh Phú Thọ và tỉnh Hoà Bình; lấy tên là tỉnh Phú Thọ"
+      },
+      "confidence": "high",
+      "province_code": "25",
+      "province_name": "Phú Thọ"
+    }
+  ]
+}

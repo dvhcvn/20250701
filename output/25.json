@@ -1,0 +1,17 @@
+{
+  "address": "Tỉnh Phú Thọ",
+  "ellapsedInMs": 13404,
+  "estimatedCost": 0.0028447,
+  "thought": "**Analyzing the Administrative Restructuring of \"Tỉnh Phú Thọ\"**\n\nOkay, let's break this down. My task is to find the *current* administrative structure for the old entity \"Tỉnh Phú Thọ.\"  The user has provided `<resolution>` blocks, which are my source of truth.  I need to output a JSON array, and the request requires a confidence level and citation.\n\nFirst, I need to scan the resolutions provided.  Resolution 1 lists provinces *not* undergoing merger.  \"Tỉnh Phú Thọ\" isn't there, so it's a candidate for change.  Then I examine Resolution 2.  Line 4 jumps out: \"Hợp nhất tỉnh Vĩnh Phúc, tỉnh Phú Thọ và tỉnh Hoà Bình; lấy tên là tỉnh Phú Thọ.\"  Bingo! It explicitly details the merger involving the old \"Tỉnh Phú Thọ\" and establishes \"Tỉnh Phú Thọ\" as the new entity.\n\nNext, I have to determine the corresponding province code.  The provided list offers province names and IDs for *current* provinces. \"Phú Thọ\" is listed with the ID \"25.\" While the provided resolution doesn't specify a code, the ID list is meant to be the current truth, so that's the code I'll use.\n\nFinally, I construct the JSON object.  The province name is straightforward: \"Phú Thọ,\" and the province code is \"25.\"  My confidence is high since the resolution clearly describes the merger and resulting entity.  The citation will include the resolution header and line 4 from Resolution 2.  It's a clear-cut case. I have everything I need to assemble the JSON output. I'm ready to proceed.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "4. Hợp nhất tỉnh Vĩnh Phúc, tỉnh Phú Thọ và tỉnh Hoà Bình; lấy tên là tỉnh Phú Thọ"
+      },
+      "confidence": "high",
+      "province_code": "25",
+      "province_name": "Phú Thọ"
+    }
+  ]
+}

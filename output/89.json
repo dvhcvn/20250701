@@ -1,0 +1,17 @@
+{
+  "address": "Tỉnh An Giang",
+  "ellapsedInMs": 16013,
+  "estimatedCost": 0.0030419000000000006,
+  "thought": "**Answering the Administrative Unit Question**\n\nMy task is to find the new administrative unit corresponding to the old unit \"Tỉnh An Giang\". The user wants the output in a specific JSON format, with confidence levels and citations included.\n\nFirst, I examined the resolutions. I started with Resolution 1, but it didn't list An Giang, implying it was merged. Then, I thoroughly scanned Resolution 2, focusing on the lines detailing mergers. Line 23 immediately caught my eye: \"Hợp nhất tỉnh An Giang và tỉnh Kiên Giang, lấy tên là tỉnh An Giang\". Bingo! This is the key.\n\nThis confirms that the old \"Tỉnh An Giang\" and \"Tỉnh Kiên Giang\" combined to form a new \"Tỉnh An Giang\". Now, I needed the province ID. From the list, I confirmed that \"91\" is the `provinceId` for \"An Giang\".\n\nTherefore, the final JSON is straightforward. The `province_name` is \"An Giang\". The `province_code` is \"91\".  The `confidence` is \"high\" because the resolution provides explicit instruction on the merger. The `citation` includes the relevant header and the specific line (23) from the resolution. This accurately represents the merger of \"Tỉnh An Giang\" and \"Tỉnh Kiên Giang\", resulting in a new entity named \"An Giang\". The format adheres to the specified JSON schema.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "23. Hợp nhất tỉnh An Giang và tỉnh Kiên Giang, lấy tên là tỉnh An Giang"
+      },
+      "confidence": "high",
+      "province_code": "91",
+      "province_name": "An Giang"
+    }
+  ]
+}

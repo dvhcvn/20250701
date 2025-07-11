@@ -1,0 +1,17 @@
+{
+  "address": "Tỉnh Hưng Yên",
+  "ellapsedInMs": 14487,
+  "estimatedCost": 0.0030772,
+  "thought": "**Determining the New Administrative Unit for \"Tỉnh Hưng Yên\"**\n\nOkay, here's how I'd approach this. First, I need to understand the request: I'm looking for the new administrative unit replacing the old \"Tỉnh Hưng Yên\" based on the provided resolutions. I know the desired output is a JSON array adhering to the specified schema, and I'll include a confidence level and the necessary citations.\n\nMy initial thought is to go through the resolutions meticulously. I'll start with Resolution 1, which lists provinces *not* involved in mergers. I'll be looking for \"Tỉnh Hưng Yên\" here, but since it's not present, I'll know immediately that it must have been merged. This tells me to focus on the resolutions detailing mergers.\n\nNext, I'll move onto Resolution 2. I'll carefully scan each line to find where \"Tỉnh Hưng Yên\" is mentioned. Aha! Line 6 clearly states, *\"Hợp nhất tỉnh Hưng Yên và tỉnh Thái Bình, lấy tên là tỉnh Hưng Yên\"* - \"Merger of Hung Yen province and Thai Binh province, taking the name Hung Yen province\". This is crystal clear. \"Tỉnh Hưng Yên\" and \"Thái Bình\" merged, and the new name *is* \"tỉnh Hưng Yên\". This gives me high confidence in my finding.\n\nNow, I'll need to confirm the province code. I know from the earlier context that the province code for Hưng Yên is \"33\", which is given in the list provided. I'll construct the JSON object: `province_name` is \"Hưng Yên\", `province_code` is \"33\", `confidence` is \"high\", and the citation header and line from Resolution 2.\n\nFinally, a quick check. The output should be a single JSON array with one object, and the structure and content match the required schema. I'm satisfied this should provide the correct, unambiguous answer.\n",
+  "result": [
+    {
+      "citation": {
+        "header": "60-NQ/TW: Các đơn vị hành chính cấp tỉnh mới sau sáp nhập, hợp nhất",
+        "line": "6. Hợp nhất tỉnh Hưng Yên và tỉnh Thái Bình, lấy tên là tỉnh Hưng Yên"
+      },
+      "confidence": "high",
+      "province_code": "33",
+      "province_name": "Hưng Yên"
+    }
+  ]
+}
